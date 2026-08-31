@@ -122,8 +122,8 @@ No numerical smoke result existed at that point; the later successful test is
 documented below. A two-epoch integration score does not
 count toward the reference's 300-epoch training protocol or any gate acceptance.
 
-Next: qualify the implemented resumable full-evaluation worker with one declared
-full-protocol fold, then execute and independently audit the prepared grid. Four repeat seeds
+Next: complete and independently audit the prepared grid; the first declared
+full-protocol fold has now passed its record checks. Four repeat seeds
 are required by the day plan; the reference YAML fixes model seed 42, so explain
 any repeated-seed extension explicitly. Preserve per-fold predictions, split
 identities, preprocessing/source/configuration hashes and elapsed time. Report
@@ -178,7 +178,8 @@ a restart triggered by an observation timeout.
 and five within-session folds. Seed 42 is the published-configuration anchor
 (90 fits). The earlier Gate A repeat seeds 11/23/37/53 remain a separate four-seed
 extension (360 fits). Thus the prepared grid has 450 fits, not 450 independent
-subjects and not 450 existing results. It has not been launched. The CV split seed
+subjects and not 450 existing results. One declared fit has completed; the full
+queue has not yet been launched. The CV split seed
 remains 42 across model seeds, isolating training-seed variation.
 
 The configuration preserves 300 epochs, batch 64, Adam 0.001, 20% validation,
@@ -199,7 +200,7 @@ provenance still need a separate audit before any completion claim.
 
 ## Resumable worker and record checks
 
-The full worker is implemented, but has not yet completed a full-protocol fit.
+The full worker is implemented and its first full-protocol fit passed record checks.
 It shares the exact numerical training/preprocessing function with the successful
 smoke. The refactor adds session labels, channel names, prediction timing and
 early-stopping history metadata; it does not change numerical operations. The
@@ -232,3 +233,40 @@ shapes. Missing/invalid/unexpected records or pending locks prevent completion.
 These checks do not yet independently reconstruct epochs from raw recordings or
 resolve the scientific acceptance decision; neither a smoke nor a complete
 record table automatically approves Gate A.
+
+## First full-protocol fit and independent input-audit implementation
+
+At 2026-08-31T11:24Z the unchanged resource guard permitted model seed 42,
+subject 1/session 0train/fold 0. It completed all 300 epochs (no early stopping)
+in 71.352 fit seconds plus 0.162 prediction seconds. ROC-AUC was 0.9142857143
+on 29 query trials. This is a single fold, not the published aggregate.
+Record: `runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_0.json`.
+Source commit `8f100aee0c2e23441c7fa2965b832197830ae8d8`, clean; fingerprint
+`d7e592dee19e210dd655703cb39377414862705d023311d84dc7e3cf8d080df4`.
+The full-grid record audit found 1/450 valid fits, no invalid fits, and explicitly
+reported incomplete. The other 449 fits still need execution.
+
+The main queue was paused after Cho tangent subject 45 was saved. All 1,877
+pre-pause records were retained, and all 1,878 paused files were independently
+rehashed unchanged before resumption at 11:26:12 UTC. Paused snapshot:
+`19b1c8aa7fc27be94aab16d787e486903ddc1d62d89a49d18bfbd0945cd76cf6`.
+Resumed log: `runs/compute_logs/20260831T1126123805071Z.stdout.log`.
+
+The independent input auditor is implemented and unit-tested; its real-data
+execution remains to be qualified:
+
+```powershell
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.audit_moabb_reference_inputs
+```
+
+It reads MAT event labels and one-based onsets directly, constructs the 22-EEG
+raw runs without MOABB dataset/pipeline calls, and reconstructs continuous-run
+IIR filtering, inclusive [2,6]-second epochs, query-fold resampling and per-epoch
+spatial scaling. It compares exact transformed-array hashes and label/channel/
+split identities for every saved fit against a shared subject/session proof.
+It uses the same pinned MNE/sklearn numerical primitives, so it is independent
+orchestration, not an independently implemented filter or scaler. It does not
+train/import TensorFlow, uses one computational thread, checks the existing
+4-GiB memory stop threshold before each run/fold, and keeps timestamped audit
+reports outside the training-record folder. The 10-GiB training-start guard
+remains unchanged. Partial coverage cannot produce a complete audit.
