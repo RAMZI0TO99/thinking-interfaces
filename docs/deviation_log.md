@@ -457,3 +457,43 @@ measurements. No model, split, seed, artifact threshold or acceptance criterion
 was tuned. High scores in MMIDB subjects 001, 002 and 007 remain unresolved flags;
 their roughly 35 query trials per subject do not support a scientific claim on
 the basis of the first seed alone.
+
+## 2026-08-31 — Tangent-thread speedups rejected on real-fold parity
+
+The main queue was deliberately paused after Cho tangent seed 11 subject 15 was
+atomically saved. Its 1,848 valid benchmark records were preserved, with snapshot
+`642142cc88fa1807eaacfbd7dd117d9a7e9d85d32b5c4098f24c11d627d3253e`.
+Three isolated probes extended the existing runtime tool without changing any
+production decoder or runtime configuration. All used the frozen benchmark
+configuration and independently verified corpus snapshot; probe files are outside
+the benchmark tree. Reference subject 01 record SHA-256 is
+`e9b3dd307fb50dbcd37c69eb534c843998debaa734bb2d016ad609f8e1f9adb4`.
+
+- Whole-pipeline one-thread probe: fit 49.774 seconds, exact parity failed.
+  Artifact `runs/runtime_probe/20260831T082232746942Z/result.json`, SHA-256
+  `f3476dfafabb13e4de95cb0c7e545812511439380a41867190778434e73dd6ac`.
+- Original 24-thread profiled reference: fit 305.930 seconds, every non-timing
+  metric reproduced exactly. Profiling adds overhead, so this is not a production
+  timing measurement. Artifact `runs/runtime_probe/20260831T082857261291Z/result.json`,
+  SHA-256 `00defb605928a57b9c069c48bbcc41e98e5cc4206ad9c281e9295ff97fd62b5e`.
+  The saved call profile attributed 282.976 of 306.909 seconds to 44 eigensolver
+  calls; covariance estimation occupied about 11.163 seconds.
+- One thread only inside those 44 eigensolver calls, with other BLAS work at 24:
+  fit 54.116 seconds, exact parity also failed. Artifact
+  `runs/runtime_probe/20260831T084208857781Z/result.json`, SHA-256
+  `2a307e0261d26ba03b8232830d8f14ad2f1a53b0e452630a460fe605eaf63174`.
+
+Both faster variants reduced balanced accuracy from 0.5578947368421052 to
+0.5526315789473685, with one net fewer correct left-hand trial in the confusion
+counts (67 to 66 out of 95); kappa and calibration error also changed. Individual
+prediction identities were not saved by the original run, so these counts do
+not establish exactly how many individual predictions changed. Each failed
+two-subject configuration stopped after subject 01; subject 02 was not tested.
+Earlier small synthetic/operation checks had matched but did not generalize to
+the full iterative pipeline. Historical timings are not a controlled speed trial.
+
+Neither faster setting was adopted, and no parity tolerance or scientific gate
+was relaxed. Original 24-thread execution is retained. The temporary selective
+hook exists only within the isolated probe process and restores the original
+function after each fold. This investigation is diagnostic evidence, not new
+benchmark evidence, and does not clear any high-score flag.

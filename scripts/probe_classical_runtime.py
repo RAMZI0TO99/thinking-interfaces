@@ -3,18 +3,23 @@
 from __future__ import annotations
 
 import argparse
+import cProfile
 import json
+import pstats
 from collections.abc import Mapping
+from contextlib import nullcontext
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, cast
+from unittest.mock import patch
 
+import numpy as np
 from threadpoolctl import threadpool_info, threadpool_limits  # type: ignore[import-untyped]
 
 from core.config import config_digest, load_toml
 from core.provenance import capture_source
-from evaluation.baselines import FilterBankCSP, TorchTrainingConfig
+from evaluation.baselines import FilterBankCSP, FloatArray, TorchTrainingConfig
 from evaluation.benchmark import _decoder, load_dataset_matrix, run_fold
 from evaluation.benchmark_audit import inspect_record
 from evaluation.corpus_duplicates import verify_corpus_snapshot
@@ -30,10 +35,22 @@ def main() -> None:
     config = cast(Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml"))
     probe_config = cast(Mapping[str, Any], load_toml(root / args.config))
     probe = probe_config["probe"]
-    if probe["method"] != "fbcsp" or probe["require_exact_non_timing_metrics"] is not True:
-        raise ValueError("this probe only verifies exact-metric FBCSP runtime parity")
+    method = str(probe["method"])
+    if method not in {"fbcsp", "tangent_lr"} or (
+        probe["require_exact_non_timing_metrics"] is not True
+    ):
+        raise ValueError("this probe only verifies exact-metric FBCSP/tangent runtime parity")
+    if method != "fbcsp" and probe.get("certify_csp_rank", False):
+        raise ValueError("CSP rank certification cannot apply to a tangent-space probe")
     if type(probe["blas_threads"]) is not int or probe["blas_threads"] < 1:
         raise ValueError("a positive CPU BLAS thread bound is required")
+    if type(probe.get("profile_calls", False)) is not bool:
+        raise ValueError("call profiling must be an explicit boolean")
+    eigh_threads = probe.get("eigh_blas_threads")
+    if eigh_threads is not None and (
+        type(eigh_threads) is not int or eigh_threads < 1 or method != "tangent_lr"
+    ):
+        raise ValueError("selective eigensolver limits require a positive tangent-only bound")
     dataset = str(probe["dataset"])
     settings = config["datasets"][dataset]
     subjects = {
@@ -58,19 +75,21 @@ def main() -> None:
         absolute_peak_volts=settings["artifact_threshold_volts"],
     )
     training = TorchTrainingConfig(**config["training"])
-    filtering = _decoder(
-        "fbcsp",
-        matrix,
-        classes=len(set(matrix.labels.tolist())),
-        seed=probe["seed"],
-        torch_config=training,
-    )
-    if not isinstance(filtering, FilterBankCSP):
-        raise TypeError("FBCSP factory returned a different decoder")
-    bands = filtering.filtered_bands_memmap(
-        matrix.signals,
-        root / "runs" / "benchmark" / ".cache" / dataset / config_digest(config) / "fbcsp",
-    )
+    bands: tuple[FloatArray, ...] | None = None
+    if method == "fbcsp":
+        filtering = _decoder(
+            "fbcsp",
+            matrix,
+            classes=len(set(matrix.labels.tolist())),
+            seed=probe["seed"],
+            torch_config=training,
+        )
+        if not isinstance(filtering, FilterBankCSP):
+            raise TypeError("FBCSP factory returned a different decoder")
+        bands = filtering.filtered_bands_memmap(
+            matrix.signals,
+            root / "runs" / "benchmark" / ".cache" / dataset / config_digest(config) / "fbcsp",
+        )
     result: dict[str, Any] = {
         "passed": False,
         "scope": "isolated runtime probe, not benchmark evidence",
@@ -82,9 +101,10 @@ def main() -> None:
         "default_threadpools": threadpool_info(),
         "rows": [],
         "limitations": [
-            "Two existing folds only; matching metrics do not prove every fold is identical.",
+            f"{len(probe['subjects'])} existing folds only; parity here does not prove all folds.",
             "Historical timings used different machine loads, not a paired speed trial.",
             "Input/cache preparation time is excluded from fit/prediction timing in both cases.",
+            "Call profiling, when enabled, adds overhead; times are not production measurements.",
         ],
     }
     with threadpool_limits(limits=probe["blas_threads"], user_api="blas"):
@@ -92,13 +112,14 @@ def main() -> None:
         blas = [row for row in result["limited_threadpools"] if row["user_api"] == "blas"]
         if not blas or any(row["num_threads"] != probe["blas_threads"] for row in blas):
             raise RuntimeError("the requested BLAS thread limit was not applied")
+        original_eigh = np.linalg.eigh
         for subject in probe["subjects"]:
             reference_path = (
                 root
                 / "runs"
                 / "benchmark"
                 / dataset
-                / "fbcsp"
+                / method
                 / f"seed_{probe['seed']}"
                 / f"{subject}.json"
             )
@@ -106,17 +127,44 @@ def main() -> None:
             if "reused_from_seed" in reference.metrics:
                 raise ValueError("probe reference must contain a real fitted timing")
             print(f"Probing {subject} with {probe['blas_threads']} BLAS threads...", flush=True)
-            fold_result = run_fold(
-                matrix,
-                target_subject=subject,
-                method="fbcsp",
-                seed=probe["seed"],
-                shots_per_class=config["benchmark"]["shots_per_class"],
-                confidence_threshold=config["benchmark"]["confidence_threshold"],
-                torch_config=training,
-                prefiltered_fbcsp=bands,
-                certify_csp_rank=bool(probe.get("certify_csp_rank", False)),
+            eigh_calls = 0
+
+            def limited_eigh(*arguments: Any, **keywords: Any) -> Any:
+                nonlocal eigh_calls
+                eigh_calls += 1
+                with threadpool_limits(limits=eigh_threads, user_api="blas"):
+                    observed = [p for p in threadpool_info() if p["user_api"] == "blas"]
+                    if not observed or any(p["num_threads"] != eigh_threads for p in observed):
+                        raise RuntimeError("the selective eigensolver thread limit was not applied")
+                    return original_eigh(*arguments, **keywords)
+
+            eigensolver_context = (
+                patch("numpy.linalg.eigh", new=limited_eigh)
+                if eigh_threads is not None else nullcontext()
             )
+            profiler = cProfile.Profile() if probe.get("profile_calls", False) else None
+            if profiler is not None:
+                profiler.enable()
+            try:
+                with eigensolver_context:
+                    fold_result = run_fold(
+                        matrix,
+                        target_subject=subject,
+                        method=method,
+                        seed=probe["seed"],
+                        shots_per_class=config["benchmark"]["shots_per_class"],
+                        confidence_threshold=config["benchmark"]["confidence_threshold"],
+                        torch_config=training,
+                        prefiltered_fbcsp=bands,
+                        certify_csp_rank=bool(probe.get("certify_csp_rank", False)),
+                    )
+            finally:
+                if profiler is not None:
+                    profiler.disable()
+                    profiler.dump_stats(str(output.with_name(f"{subject}_profile.prof")))
+                    pstats.Stats(profiler).strip_dirs().sort_stats("cumulative").print_stats(30)
+            if eigh_threads is not None and not eigh_calls:
+                raise RuntimeError("the selective eigensolver hook was never used")
             measured = fold_result.scalar_metrics()
             names = (set(measured) | set(reference.metrics)) - {"fit_seconds", "prediction_seconds"}
             differences = {
@@ -133,6 +181,11 @@ def main() -> None:
                 "exact_non_timing_metrics_equal": not differences,
                 "differences": differences,
                 "rank_certificates": [asdict(item) for item in fold_result.csp_rank_certificates],
+                "selective_eigh_calls": eigh_calls,
+                "call_profile": (
+                    output.with_name(f"{subject}_profile.prof").relative_to(root).as_posix()
+                    if profiler is not None else None
+                ),
             }
             result["rows"].append(row)
             result["passed"] = len(result["rows"]) == len(probe["subjects"]) and all(

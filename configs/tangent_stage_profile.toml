@@ -1,0 +1,9 @@
+# Original 24-thread path, with call profiling; not a benchmark run or speed claim.
+[probe]
+dataset = "cho2017"
+method = "tangent_lr"
+subjects = ["subject_01"]
+seed = 11
+blas_threads = 24
+profile_calls = true
+require_exact_non_timing_metrics = true
