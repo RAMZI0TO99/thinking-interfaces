@@ -7,6 +7,7 @@ from typing import Any, cast
 
 from core.config import config_digest, load_toml
 from evaluation.gate_b import evaluate_gate_b
+from evaluation.live_demo_audit import verify_live_demo
 
 
 def main() -> None:
@@ -14,9 +15,7 @@ def main() -> None:
     gate_config = cast(Mapping[str, Any], load_toml(root / "configs" / "gate_b.toml"))
     gate = cast(Mapping[str, Any], gate_config["gate_b"])
     subject_counts = cast(Mapping[str, Any], gate_config["subjects"])
-    benchmark_config = cast(
-        Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml")
-    )
+    benchmark_config = cast(Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml"))
     benchmark_datasets = cast(Mapping[str, Any], benchmark_config["datasets"])
     artifact_config = cast(
         Mapping[str, Any], load_toml(root / "configs" / "artifact_rejection.toml")
@@ -28,13 +27,9 @@ def main() -> None:
         if artifact_audit_path.is_file()
         else {}
     )
-    demo_path = root / "runs" / "replay_demo_subject_09_cuda.json"
-    demonstrator_passed = False
-    if demo_path.is_file():
-        demo = json.loads(demo_path.read_text(encoding="utf-8"))
-        demonstrator_passed = bool(demo.get("frames")) and int(
-            demo.get("query_trials", 0)
-        ) > 0
+    # Require the same hash-verified, held-out, visible native LSL evidence as
+    # the Phase I completion report; legacy array frames are not sufficient.
+    demonstrator_passed = verify_live_demo(root)
     datasets = tuple(cast(list[str], gate["required_datasets"]))
     dataset_subjects: dict[str, tuple[str, ...]] = {}
     for dataset in datasets:

@@ -94,7 +94,7 @@ not convert Gate A into a pass.
 | Complete-cohort exact signal-copy review | Complete; no exact copies found | 170 subjects, 20,599 retained trials; `runs/corpus_duplicate_audit.json` and `docs/corpus_duplicate_review.md`; not blanket leakage clearance |
 | Preprocessing/artifact thresholds permanently frozen | Complete | Frozen config, 22 rejected trials total, every class retained |
 | Working held-out demonstrator and CPU backup path | Complete locally | A09 GPU and A08 CPU persisted records; no second physical machine |
-| Gate B local deliverables | Pending complete table | Fail-closed Gate B checker |
+| Gate B local deliverables | Pending complete table | Gate B now requires the same hash/config-verified visible native LSL receipt as the Phase I status checker; legacy array frames alone are insufficient |
 | Gate B scientific sign-off | Cannot pass while Gate A is unsigned | Separate `passed` and `local_deliverables_complete` fields |
 | H2 equivalence margin and achieved power from Cho variance | Complete conditional planning freeze | 260 source records, 52 subjects, ±5.20290793 pp; approximate design power 0.80, not guaranteed H2 power |
 | E3 window sweep config | Complete | 0.5/1/2/4 s, 250 ms stride, causal/query-only |

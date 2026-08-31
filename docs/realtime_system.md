@@ -49,6 +49,10 @@ Local completion requires an actual visible rehearsal, a matching
 configuration, verified result/receipt/preview hashes, and one display receipt
 per decoded window (`evaluation/live_demo_audit.py`). A hidden render alone
 cannot satisfy that check. The latest receipt is `runs/live_demo/latest.json`.
+Both `scripts/evaluate_gate_b.py` and `scripts/phase1_status.py` now use this same
+native-evidence verifier. The legacy array replay's frame list alone cannot
+pass Gate B's demonstrator check. This remains a functional integration check,
+not an accuracy claim or scientific sign-off.
 
 To rehearse on this laptop, from the project folder:
 
