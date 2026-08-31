@@ -129,6 +129,47 @@ the reference's aggregation separately from subject-level uncertainty.
 
 No current run or historical result may be relabeled as this reproduction.
 
+## Successful real-data smoke and protected benchmark resumption
+
+After saving Cho tangent subject 38, the verified main queue was deliberately
+paused. The first post-pause memory check was still below 10 GiB and deferred;
+a fresh check then exceeded the unchanged limit and permitted the two-epoch test.
+No memory threshold, benchmark setting or completed result was changed.
+
+The real reference smoke completed on CPU at 2026-08-31T10:51:39Z:
+`runs/moabb_reference/smoke/20260831T105139058810Z/result.json`, SHA-256
+`680339220612ce4c17a8410831d924d16f314427aafe65af9996b8bd74240c5b`.
+Its RunRecord hash is
+`f586445559fe4619af38469b3604ab1eafb9e74bd7d39b662d407f3e02dc206c`.
+Source commit: `4eee55848ff6cd6da3a03818bead543aa0125a53`, clean;
+source fingerprint: `d2dbaacb152c827271ef53dd4ba58dc0081a78cd1a570fc230ff7d9c27bee218`.
+
+Subject 1/session 0train contained 144 left/right epochs of 22 channels and 1,001
+native samples. The reference resampled these to **513 samples**, preserving the
+inclusive endpoint; do not truncate to the earlier pipeline's 512. The first fold
+had 92 optimization, 23 validation and 29 query trials; query classes were 14/15.
+All three index sets were disjoint and together covered the session. Fit time was
+2.073 seconds for two epochs, including setup overhead, not a full-training time
+estimate. Losses and query probabilities were finite. ROC-AUC was 0.6523809524;
+this two-epoch integration score is not a Gate A reproduction or a comparison
+against the published 300-epoch training protocol. Best-weight restoration was off.
+
+An independent check recomputed ROC-AUC from saved probabilities, checked the
+split partition and rehashed both MAT inputs. It agreed with the RunRecord and
+result. The upstream warnings about epoch display, Keras input_shape and absent
+optional PyTorch were retained; PyTorch was not installed into this Keras-only
+environment. The successful run does not prove causal filtering or absence of
+acquisition confounds.
+
+All 1,870 pre-pause benchmark files remained unchanged; subject 38 added one new
+record. All 1,871 files at the paused snapshot were rehashed successfully before
+resumption. Snapshot: `750dd8b52f071a82b210dcdb9783371ce4864bcef0131d8a516633141ad846f8`.
+The benchmark resumed at 10:52:23 UTC in
+`runs/compute_logs/20260831T1052234984766Z.stdout.log` with a separate stderr log.
+The queue reused previous controls and neural records and returned to the unfinished
+Cho classical work. This deliberate bounded interruption is not a failed fit or
+a restart triggered by an observation timeout.
+
 ## Prepared full evaluation grid
 
 `configs/moabb_reference_evaluation.toml` declares all nine subjects, both sessions

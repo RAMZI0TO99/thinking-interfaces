@@ -593,3 +593,24 @@ are labeled; neither is an acceptance band. These are planning/aggregation tests
 only; numerical reference training and independent run-integrity review remain
 outstanding. A short pause at the next saved main-benchmark boundary is planned
 to test the new reference safely, followed by immediate benchmark resumption.
+
+## 2026-08-31 — Real MOABB reference smoke passed; benchmark resumed
+
+The verified main queue was deliberately paused only after Cho tangent subject 38
+was saved. All 1,870 preceding records and the new record remained byte-identical
+through the pause. The two-epoch reference smoke first deferred below 10 GiB, then
+ran after a fresh memory check passed the unchanged guard. It used subject 1's
+first session and produced finite probabilities with ROC-AUC 0.6523809524; fit time
+was 2.073 seconds. That is an integration result, not the published-protocol score.
+
+The actual reference input was 144 x 22 x 1,001 native samples and resampled query
+input was 29 x 22 x 513. Its inclusive endpoint is retained, not changed to Profile
+A's 512. The 92/23/29 optimization/validation/query partition and both raw hashes
+were independently checked, and ROC-AUC was recomputed from saved predictions.
+Receipt: runs/moabb_reference/smoke/20260831T105139058810Z/result.json.
+
+After rehashing all 1,871 benchmark files, the main queue was resumed at 10:52:23
+UTC, reused its completed work and returned to Cho classical fitting. The smoke
+does not authorize a gate threshold, replace the complete 300-epoch/four-repeat
+evaluation, or change the frozen main benchmark. Full reference execution and
+independent record auditing remain outstanding.
