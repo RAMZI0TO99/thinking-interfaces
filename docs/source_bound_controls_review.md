@@ -129,3 +129,18 @@ unchanged inputs were hash-linked again for all 45 new records:
 `88c4a656335d81523a811856bf064e841bed65505621363611a34df7bc1d4efa`.
 This was a fresh verification against the pinned raw reconstruction, not another
 claimed raw preprocessing execution. Earlier bundles remain preserved.
+
+## Full refresh for the predeclared ordered bridge
+
+Before observing intermediate bridge scores, source
+`84d859ea25235c6a17dcc193efef6a7e0e52f2b97dd6fae17925c9775fa34550`
+completed all 45 controls under context
+`f8672cbace3cc7bc1a652070c06c69d8fbeb8837a9500f3fbba1f15431e4e9cc`.
+Snapshot: `cb784deae33ae50bec4a84c7408be34aa0913aaf80b3a6414185a7d183483123`.
+All checks passed and all results, histories and predictions exactly matched the
+initial refresh. The 1,166 epochs took 64.352 seconds of fit/prediction time;
+minimum free RAM was 8.323 GiB and maximum process memory 1.681 GiB.
+Hash-linked independent input verification covered all 45 records again:
+`runs/source_bound_controls/input_audits/20260831T163313704362Z.json`, SHA-256
+`aeb518b754bdf9f1a6f0c18ff57cf3e1f692dc365aa55471f7cc4ec3279a1d06`.
+The preserved raw reconstruction was reused by hash, not rerun or relabeled.

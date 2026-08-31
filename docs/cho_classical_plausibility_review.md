@@ -120,3 +120,42 @@ physiological confirmation. Balanced class counts do not remove Cho's unresolved
 class-block chronology, artificial boundary and offline-filter concerns. No
 EA-specific shuffled-label result is available, and the neural controls are not
 transferred as clearance. The final review must add every later EA and MMIDB flag.
+
+## Completed Cho EA method and full Cho grid — 2026-08-31T16:31Z
+
+This supplement supersedes the earlier incomplete EA coverage, while preserving
+its historical snapshots. All 52 EA + tangent fits and 208 labeled deterministic
+seed copies are now complete. The complete Cho grid contains 1,820 records across
+seven methods and five seed labels. Independent arithmetic/input-count review
+found no invalid records or input-count mismatches across all 2,353 currently
+saved benchmark records. The three-dataset grid is still incomplete by 3,597
+MMIDB records; no final scientific clearance is claimed.
+
+EA + tangent mean balanced accuracy is 60.5460%, with subject SD 9.3786 percentage
+points. All its flagged cases are listed below; seed copies are not independent
+replications. The fixed 78% trigger, data and all results are retained unchanged.
+
+| Subject | Balanced accuracy | Left correct/query | Right correct/query | Gated correct/accepted |
+|---|---:|---:|---:|---:|
+| 03 | 84.2105% | 75/95 | 85/95 | 140/160 |
+| 14 | 83.6842% | 71/95 | 88/95 | 135/153 |
+| 43 | 89.4737% | 80/95 | 90/95 | 143/151 |
+
+Each has ten support trials and 190 query trials. Subject 43 has ECE 0.0451185490;
+its record SHA-256 is
+`f17f19a323d917eb062e706a24d271c0fd06b698d09404e743612d72bcc47181`.
+All three flags remain unresolved for the same acquisition-block chronology and
+offline-filter limitations stated above. Their balanced classes and agreement
+with other classifiers do not establish physiological independence. No new
+EA-specific shuffled-label experiment or post-result exclusion was performed.
+
+Complete Cho subset snapshot:
+`ec450fdda0dbb911fbe7702408cd921d940dfa7ad36363047762d7b5110a4f20`.
+Current full benchmark snapshot:
+`8d718ae2231c1c14fa36b523f2d1a8176890e9480e01a6f823d2799ff786f50f`.
+Full EA review receipt: `runs/runtime_probe/cho_ea_final_review_20260831T1631.json`,
+SHA-256 `82ab6dd409a369e649eeec79f0a33363438afed44a4e36fd37aa8a9c56ee622f`.
+The final Cho worker completed without interruption; only its queue supervisor
+was stopped to reserve a diagnostic slot before MMIDB. All 2,141 files from the
+preceding alignment pause remain unchanged. No unsaved fit was discarded in this
+queue-only pause, and no unrelated process was stopped.

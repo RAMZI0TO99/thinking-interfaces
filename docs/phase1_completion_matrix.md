@@ -75,7 +75,7 @@ not convert Gate A into a pass.
 |---|---|---|
 | Checkpoint/resume/incremental atomic records and cost estimate | Complete | Benchmark runner, schema/hash validation, launch estimates |
 | EEGNet, Shallow, Deep, FBCSP, tangent LR and EA variants | Complete in harness | Seven configured variants and baseline tests |
-| Dry fold and full five-seed sweep | Running to final hashes | BCI 315/315; Cho/MMIDB tracked in `runs/phase1_status.json` |
+| Dry fold and full five-seed sweep | BCI and Cho complete; MMIDB running to final hashes | BCI 315/315, Cho 1,820/1,820; MMIDB tracked in `runs/phase1_status.json` |
 | ITR, ECE/reliability and accuracy–coverage | Complete implementation, including chart rendering | Evaluation modules, hand-worked/unit tests and synthetic calibration diagram; benchmark ECE scalars alone cannot reconstruct empirical reliability bins |
 | Safe LaBraM real-epoch input, mapping, sequence handling | Complete | Ready-state record, encoder tests |
 | Pretraining hours, partial-tuning appendix and matched fine-tuning reference | Complete | `docs/labram_reference_notes.md`, `configs/labram_paper_reference.toml`; targets are not local reproductions |
@@ -90,7 +90,7 @@ not convert Gate A into a pass.
 | Complete three-dataset benchmark table with intervals | Running | Final-hash resumable sweep; status generator is authoritative |
 | Seed variation distinguished from subject variation | Complete in reporting | Separate seed-mean SD and shared-subject count; subject SD still drives intervals and H2 |
 | Full aggregated diagnostic table and class balance beside accuracy figures | Complete implementation; final grid regeneration pending | Snapshot-locked primary/diagnostic CSVs, tested subject weighting and repeated-seed counts, visually checked class-balance-labelled figures |
-| Plausibility review/red-team above 65–78% | Targeted controls and completed Cho neural/FBCSP/tangent review complete; final grid review pending | Six Cho subject 43 and three MMIDB subject 085 shuffled-label controls; preliminary reviews (including `docs/cho_classical_plausibility_review.md`) retain unresolved flags and the Cho loader-boundary limitation |
+| Plausibility review/red-team above 65–78% | Targeted controls and all completed Cho-method reviews complete; final MMIDB/grid review pending | Six Cho subject 43 and three MMIDB subject 085 shuffled-label controls; Cho reviews including all 52 EA fits retain unresolved flags and the loader-boundary limitation. See `docs/cho_classical_plausibility_review.md`. |
 | Complete-cohort exact signal-copy review | Complete; no exact copies found | 170 subjects, 20,599 retained trials; `runs/corpus_duplicate_audit.json` and `docs/corpus_duplicate_review.md`; not blanket leakage clearance |
 | Preprocessing/artifact thresholds permanently frozen | Complete | Frozen config, 22 rejected trials total, every class retained |
 | Working held-out demonstrator and CPU backup path | Complete locally | A09 GPU and A08 CPU persisted records; no second physical machine |

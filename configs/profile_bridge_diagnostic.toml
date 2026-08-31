@@ -1,0 +1,19 @@
+# Fixed before intermediate fits; report every condition, not a selected winner.
+comparison_config = "configs/profile_comparison.toml"
+output_directory = "runs/profile_bridge_diagnostic"
+conditions = [
+  { name = "profile_b_original_units", hz = 200.0, car = false, baseline = false, unit_volts = 0.0001, input_scale = 1.0, saved_b = true },
+  { name = "profile_b_microvolts", hz = 200.0, car = false, baseline = false, unit_volts = 0.0001, input_scale = 100.0, saved_b = true },
+  { name = "a_band", hz = 200.0, car = false, baseline = false, unit_volts = 0.0001, input_scale = 100.0, saved_b = false },
+  { name = "a_reference", hz = 200.0, car = true, baseline = false, unit_volts = 0.0001, input_scale = 100.0, saved_b = false },
+  { name = "a_rate", hz = 128.0, car = true, baseline = false, unit_volts = 0.0001, input_scale = 100.0, saved_b = false },
+  { name = "a_baseline", hz = 128.0, car = true, baseline = true, unit_volts = 0.0001, input_scale = 100.0, saved_b = false },
+  { name = "profile_a_microvolts", hz = 128.0, car = true, baseline = true, unit_volts = 1.0, input_scale = 1000000.0, saved_b = false },
+]
+
+[runtime]
+device = "cuda"
+cpu_threads = 2
+minimum_free_memory_gib = 6.0
+stop_below_free_memory_gib = 4.0
+minimum_free_gpu_gib = 1.0
