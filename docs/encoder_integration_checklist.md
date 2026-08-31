@@ -27,3 +27,7 @@ in the deviation log. Retained-weight correspondence is now verified, but this
 does not establish forward-implementation parity. The mismatch prevents the
 literal Week 0 count check from passing; verified loading and inference remain
 separate functional evidence.
+
+The Week 5 adaptation handoff is in `docs/adaptation_integration_contract.md`.
+It distinguishes the verified common episode loop from future real-backbone
+integration and records the installed LaBraM QKV call-path incompatibility.

@@ -64,6 +64,7 @@ not convert Gate A into a pass.
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |
 | Generic LoRA, adapters, prompt generator; stand-in runs | Complete | Modules, tests, `runs/adaptation_standin_smoke.json` |
 | Prompt tokens actually condition attention and query predictions | Complete locally | Both modes in `runs/prompt_transformer_smoke.json`; frozen backbone, fixed support context, no query-time updates, bounded sequence length |
+| Common adaptation interface documented for encoder handoff | Complete locally; real LaBraM adaptation remains Phase II | `docs/adaptation_integration_contract.md` documents shapes, selectors, query/state boundaries and verified call-path limitations; tiny installed-attention probe preserved separately. |
 | Ten-shot real episodic LoRA number | Complete/negative result | `runs/episodic_lora_eegnet.json`; support-only, timed |
 | Confidence gate, explicit neutral state, accumulated evidence | Complete | Modules, tests, persisted demos |
 | CPU/GPU latency | Complete | `runs/latency_cpu_gpu.json` |
