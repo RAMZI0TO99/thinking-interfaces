@@ -378,6 +378,27 @@ means instead of trusting saved pass flags alone. It validates historical
 controls; it does not retrain those models on every commit. Local hooks remain
 bypassable and do not replace remote required checks or branch protection.
 
+## 2026-08-31 — Later native-runtime interruption and preserved resumption
+
+The long-running main worker exited after saving Cho EA+tangent subject 13 at
+12:58:35 UTC. Its log again reports libzmq "Bad file descriptor", followed by
+supervisor exit status 1073741845; the exact underlying cause is not established.
+The old launcher/supervisor/worker tree was confirmed absent before restarting.
+All 2,106 saved records passed arithmetic/configuration auditing and were checked
+byte-identical after resumption. The preserved interruption audit is
+`runs/compute_logs/interruption_20260831T1303_integrity.json`, SHA-256
+`1c6e7da5af5f0ca4f069ebb5f070467e975109ddcb8a0eab3d1d348e47d7727b`.
+The original terminal log is
+`runs/compute_logs/20260831T1126123805071Z.stderr.log`.
+
+The queue resumed at 13:07:21 UTC from clean `86193812cf487939000c312477af7e82897b548c`
+with source fingerprint `125b2e191b42910a46d3567d1db675e769fd01567140bb7c10816d520c3d7aed`.
+New log: `runs/compute_logs/20260831T1307219034652Z.stdout.log`.
+The benchmark configuration, BLAS thread settings, model operations and saved
+results were not changed. Four additional reference fits completed in the memory
+window; that separate queue then deferred normally at its 10-GiB startup guard.
+See `docs/moabb_reference_reproduction.md` for the five-fit input-audit proof.
+
 ## 2026-08-31 — Bound the extra CSP selection copy
 
 The first Cho FBCSP fold completed in 356.949 seconds of fitting while the laptop

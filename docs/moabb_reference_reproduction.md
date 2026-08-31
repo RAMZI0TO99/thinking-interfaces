@@ -243,8 +243,8 @@ on 29 query trials. This is a single fold, not the published aggregate.
 Record: `runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_0.json`.
 Source commit `8f100aee0c2e23441c7fa2965b832197830ae8d8`, clean; fingerprint
 `d7e592dee19e210dd655703cb39377414862705d023311d84dc7e3cf8d080df4`.
-The full-grid record audit found 1/450 valid fits, no invalid fits, and explicitly
-reported incomplete. The other 449 fits still need execution.
+That first full-grid record audit found 1/450 valid fits, no invalid fits, and
+explicitly reported incomplete. At that point, 449 fits remained.
 
 The main queue was paused after Cho tangent subject 45 was saved. All 1,877
 pre-pause records were retained, and all 1,878 paused files were independently
@@ -283,5 +283,39 @@ the audited reference-record snapshot is
 `d9047388756d2fddcafa49f6645d6995602886b6a6ba93a00d3c020d599cd3b4`.
 Input-audit source was clean commit `163636dd38fe26e150d2f6de94eaa57110fe2cbb`,
 fingerprint `307ef48048490806a3fb1620150c1dd7ec816cb80cbeb49ad20308b8856e060c`.
-No model was trained by this audit. Existing inputs match, but full coverage is
-still false: 449 reference fits remain. The scientific gate remains unsigned.
+No model was trained by that audit. Existing inputs matched, but full coverage
+was false with 449 fits remaining. The scientific gate remained unsigned.
+
+## Continued execution and five-fold raw-input proof
+
+At 13:02:30 UTC on 2026-08-31, the unchanged training-start resource check
+allowed the full queue to resume (11.326 GiB available immediately before launch).
+Four additional seed-42/A01/0train folds completed. Epoch counts for folds 0–4
+are 300, 300, 186, 300, and 263; the two shorter fits satisfy the configured
+patience-75 early-stopping rule, not a shortened training override. This completes
+one subject/session's five-fold evaluation, not the 18-session reference table.
+
+The main benchmark had already exited with a native runtime error at 12:58:35 UTC;
+this was confirmed from the absent process tree and its terminal error log.
+Its 2,106 saved records passed integrity checks and were rehashed unchanged after
+resumption at 13:07:21 UTC. No previously saved fit was discarded. The main
+worker resumed from the unfinished Cho EA+tangent subject 14. When it needed
+memory again, the reference queue deferred **before training** the sixth unit
+(A01/1test/fold 0): 9.535 GiB available versus the unchanged 10-GiB start limit.
+The 4-GiB in-training stop and 10-GiB disk floor are also unchanged.
+
+Reference parent log:
+`runs/moabb_reference/full_queue_20260831T1302307067532Z.stdout.log`.
+The complete saved subset now contains 5/450 valid fits, no invalid units and no
+pending locks; 445 fits remain. Snapshot:
+`af475cedeaf328741a8032e191589021e79312f659f2b777c42aca196bfd2c1f`.
+The original pilot record hash remains unchanged.
+
+All five fits' raw-input reconstruction passed independently:
+`runs/moabb_reference/input_audits/20260831T130948347755Z.json`, SHA-256
+`83cabcd4fe3c804d13f350be66d3617852b933364006a26b324c57962db257ed`.
+Both the four new fits and this audit used clean commit
+`86193812cf487939000c312477af7e82897b548c`, source fingerprint
+`125b2e191b42910a46d3567d1db675e769fd01567140bb7c10816d520c3d7aed`.
+The earlier pilot retains its own actual source provenance. As before, exact
+input correspondence does not establish full-grid coverage or scientific sign-off.

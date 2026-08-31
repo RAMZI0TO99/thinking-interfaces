@@ -49,7 +49,7 @@ separate and are never silently converted into local successes.
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
-| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and one full 300-epoch fold passed, including independent raw-input reconstruction. 449/450 matched fits remain and acceptance rule is unresolved. See Gate A/deviation/reference records. |
+| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and 5/450 full-protocol fits validated, including independent raw-input reconstruction for all five. 445 fits remain; the reference queue defers when RAM is below its unchanged start threshold. Acceptance rule remains unresolved. See Gate A/deviation/reference records. |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does
 not convert Gate A into a pass.
