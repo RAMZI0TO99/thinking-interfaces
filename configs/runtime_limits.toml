@@ -1,0 +1,7 @@
+# Operational cooling only; not a model, data, seed or acceptance-threshold change.
+[gpu]
+pause_at_celsius = 80
+resume_at_or_below_celsius = 76
+poll_seconds = 5.0
+fallback_delay_seconds = 5.0
+maximum_cooling_sleep_seconds = 60.0

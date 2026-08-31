@@ -14,6 +14,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 from core.config import config_digest
+from core.gpu_cooling import cool_gpu, load_cooling_policy
 from core.metrics import classification_report
 from core.provenance import capture_source
 from core.run_record import RunRecord
@@ -336,6 +337,12 @@ def run_benchmark(
     completed = 0
     expected_config_sha256 = config_digest(config)
     source_provenance = capture_source(Path(__file__).resolve().parents[1])
+    cooling_policy = (
+        load_cooling_policy(Path(__file__).resolve().parents[1] / "configs" / "runtime_limits.toml")
+        if str(torch_config.device).startswith("cuda")
+        else None
+    )
+    initial_temperature_checked = False
     prealigned_source_signals: FloatArray | None = None
     subjects = tuple(sorted(set(matrix.subjects.tolist())))
     for method in methods:
@@ -381,6 +388,13 @@ def run_benchmark(
                     expected_config_sha256=expected_config_sha256,
                 )
                 if reusable is None:
+                    if (
+                        cooling_policy is not None
+                        and method not in DETERMINISTIC_METHODS
+                        and not initial_temperature_checked
+                    ):
+                        cool_gpu(cooling_policy)
+                        initial_temperature_checked = True
                     result = run_fold(
                         matrix,
                         target_subject=subject,
@@ -425,11 +439,8 @@ def run_benchmark(
                 record.write_json(output)
                 outputs.append(output)
                 completed += 1
-                if (
-                    str(torch_config.device).startswith("cuda")
-                    and method not in DETERMINISTIC_METHODS
-                ):
-                    time.sleep(5.0)
+                if cooling_policy is not None and method not in DETERMINISTIC_METHODS:
+                    cool_gpu(cooling_policy)
         prefiltered_fbcsp = None
         collect_garbage()
     return tuple(outputs)

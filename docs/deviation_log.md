@@ -299,3 +299,19 @@ including MMIDB's three-digit file names. Final local completion now requires a
 current artifact-hash snapshot, no exact train/query copies, and a plausibility
 review tied to that same input snapshot. Near-duplicate, chronology, filtering
 and pretraining-overlap limitations remain open; no scientific sign-off follows.
+
+## 2026-08-31 — Temperature-aware operational pauses
+
+The fixed five-second pause after every neural fold is replaced, for subsequently
+launched workers, by `configs/runtime_limits.toml`: pause at 80 C and resume at
+76 C or below. The local NVIDIA status reported a target temperature of 87 C;
+no hardware power, clock, fan, driver or sleep setting was changed. Cold folds
+need no artificial delay. An unavailable initial sensor retains the prior
+five-second delay; a failed sensor while known-hot or failure to cool within
+60 seconds of scheduled pauses stops the batch with completed records intact.
+
+Unit tests cover cool, hot, unavailable, malformed and failed-sensor cases.
+This changes operational waiting only, not epochs, labels, seeds, fitting,
+preprocessing, benchmark configuration hash or acceptance criteria. Earlier
+workers retain their original fixed pauses and code provenance. Fit/prediction
+timing reports continue to exclude cooling pauses explicitly.
