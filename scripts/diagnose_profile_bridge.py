@@ -194,6 +194,18 @@ def ordered_summary(scores: dict[str, float]) -> dict[str, Any]:
                       "not independent additive causal effects or profile superiority.")}
 
 
+def endpoint_compatibility(actual: dict[str, Any], reference: dict[str, Any]) -> dict[str, bool]:
+    # ClassificationReport contains tuples in memory and lists after JSON loading.
+    # Compare exact canonical serialized values; no numeric tolerance or fields omitted.
+    return {
+        "exact_result_equal": config_digest(actual["result"]) == config_digest(reference["result"]),
+        "exact_probabilities_equal": actual["query_probabilities"]
+        == reference["query_probabilities"],
+        "exact_split_and_targets_equal": actual["split"] == reference["split"]
+        and actual["query_targets"] == reference["query_targets"],
+    }
+
+
 def main() -> int:
     config: Any = load_toml(ROOT / "configs/profile_bridge_diagnostic.toml")
     original: Any = load_toml(ROOT / "configs/profile_comparison.toml")
@@ -316,13 +328,7 @@ def main() -> int:
         endpoints = {}
         for name in REFERENCE_HASHES:
             reference = json.loads(paths[name].read_text("utf-8"))
-            endpoints[name] = {
-                "exact_result_equal": saved[name]["result"] == reference["result"],
-                "exact_probabilities_equal": saved[name]["query_probabilities"]
-                == reference["query_probabilities"],
-                "exact_split_and_targets_equal": saved[name]["split"] == reference["split"]
-                and saved[name]["query_targets"] == reference["query_targets"],
-            }
+            endpoints[name] = endpoint_compatibility(saved[name], reference)
         if (capture_source(ROOT).source_sha256 != source.source_sha256
                 or config_digest(environment_identity()) != config_digest(context["environment"])
                 or any(file_digest(paths[name]) != value for name, value in hashes.items())):

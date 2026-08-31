@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import json
 import unittest
 from dataclasses import asdict
 
@@ -14,6 +15,7 @@ from scripts.diagnose_profile_bridge import (
     ROOT,
     array_identity,
     bridge_cooling_policy,
+    endpoint_compatibility,
     independent_split,
     ordered_summary,
     reconstruct_condition,
@@ -23,6 +25,30 @@ from scripts.diagnose_profile_bridge import (
 
 
 class ProfileBridgeTests(unittest.TestCase):
+    def test_endpoint_matches_exact_serialized_values_not_tuple_list_type(self):
+        actual = {"result": {"metrics": {"labels": ("a", "b"),
+                                         "confusion_matrix": ((1, 0), (0, 1))},
+                             "history": [{"validation_loss": 1.0}], "best_epoch": 1},
+                  "query_probabilities": [[1.0, 0.0]], "query_targets": ["a"],
+                  "split": {"train": [0], "validation": [1], "test": [2]}}
+        saved = json.loads(json.dumps(actual))
+        self.assertNotEqual(actual["result"], saved["result"])
+        self.assertTrue(all(endpoint_compatibility(actual, saved).values()))
+        for field in ("loss", "epoch", "matrix", "probability", "split"):
+            bad = copy.deepcopy(saved)
+            if field == "loss":
+                bad["result"]["history"][0]["validation_loss"] = 1.0000000000000002
+            elif field == "epoch":
+                bad["result"]["best_epoch"] = 2
+            elif field == "matrix":
+                bad["result"]["metrics"]["confusion_matrix"][0][0] = 0
+            elif field == "probability":
+                bad["query_probabilities"][0][0] = 0.9999999999999999
+            else:
+                bad["split"]["test"] = [3]
+            with self.subTest(field=field):
+                self.assertFalse(all(endpoint_compatibility(actual, bad).values()))
+
     def test_real_cooling_configuration_path(self):
         policy = bridge_cooling_policy()
         self.assertEqual(policy.pause_at_celsius, 80)

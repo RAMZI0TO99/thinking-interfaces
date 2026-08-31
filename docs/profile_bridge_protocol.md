@@ -48,3 +48,22 @@ and error log are retained; no condition score was observed. The lookup was
 corrected to `configs/runtime_limits.toml`, with a real-path regression test and
 another complete source-bound control refresh. No declared condition, training
 rule or cooling threshold changed in response to this startup error.
+
+The first seven-fit execution then completed at clean commit
+`6163e0dd2e1c2e45668deca52ada58d0031ed07b`, source
+`0aec5f63da937ebea3fc0806e9fa976a8ceabc019708818faefd1d8481463341`.
+Its endpoint booleans initially failed solely because `ClassificationReport`
+retains tuple labels/confusion rows in memory while JSON reload returns lists.
+All three saved endpoint results, complete histories, probabilities and splits
+are exactly equal to the pinned earlier unit diagnostic. No numerical tolerance
+was introduced: the corrected comparison uses exact canonical serialized values,
+and tests reject even one-representable-step changes to losses/probabilities.
+
+The original false summary remains preserved at
+`runs/profile_bridge_diagnostic/18d425057c93393dc5aeab7ee4c5f9ae6b34b893dd1368e6de42023626d6e89f/summary.json`,
+SHA-256 `ad9be35064e6ce369852af34adf772a541e78bc6b3f15f36ef0808d96cf8fc7a`.
+Independent serialized-record review checked all seven prediction reports:
+`runs/runtime_probe/profile_bridge_serialization_review_20260831T1643.json`,
+SHA-256 `8545550df8c5cd59d98409f8a9b02310511010468dbaef3b2826953c734f68ff`.
+The reporting correction requires refreshed controls and a separately identified
+complete rerun; none of the initial numerical records is overwritten or relabeled.
