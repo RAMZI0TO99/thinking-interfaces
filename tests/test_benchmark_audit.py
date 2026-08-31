@@ -51,6 +51,42 @@ class BenchmarkAuditTests(unittest.TestCase):
     def inspect(self, path: Path) -> None:
         inspect_record(path, expected_config_sha256=config_digest(self.config))
 
+    def test_process_diagnostics_require_qualified_scope_and_intact_bounds(self) -> None:
+        cases = (
+            ("cho2017", "ea_tangent_lr", {}, True),
+            ("d", "ea_tangent_lr", {}, False),
+            ("cho2017", "tangent_lr", {}, False),
+            ("cho2017", "ea_tangent_lr", {"process_eigh_worker_count": 1}, False),
+            ("cho2017", "ea_tangent_lr", {"process_eigh_block_count": 1.5}, False),
+            ("cho2017", "ea_tangent_lr", {"process_eigh_block_count": 0}, False),
+            ("cho2017", "ea_tangent_lr", {"process_eigh_minimum_free_memory_gib": 3.9}, False),
+            ("cho2017", "ea_tangent_lr", {"process_eigh_worker_count": None}, False),
+        )
+        for dataset, method, changes, valid in cases:
+            with (
+                self.subTest(dataset=dataset, method=method, changes=changes),
+                tempfile.TemporaryDirectory() as directory,
+            ):
+                root = Path(directory)
+                payload = json.loads(self.record(root, method=method).read_text())
+                payload["dataset"] = dataset
+                payload["metrics"].update({
+                    "process_eigh_worker_count": 2,
+                    "process_eigh_block_count": 3,
+                    "process_eigh_minimum_free_memory_gib": 4.0,
+                    **changes,
+                })
+                if payload["metrics"].get("process_eigh_worker_count") is None:
+                    del payload["metrics"]["process_eigh_worker_count"]
+                path = root / dataset / method / "seed_11/subject_01.json"
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(payload))
+                if valid:
+                    self.inspect(path)
+                else:
+                    with self.assertRaises(ValueError):
+                        self.inspect(path)
+
     def test_optional_csp_diagnostics_accept_certified_and_fallback_bands(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             for certified, automatic, ratio in ((6, 0, 1000), (2, 4, 65), (0, 6, None)):

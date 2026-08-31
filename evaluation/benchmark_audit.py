@@ -155,6 +155,21 @@ def inspect_record(path: Path, *, expected_config_sha256: str) -> AuditedRecord:
             certified == 0 and ratio is not None
         ):
             raise ValueError("CSP certified rank lacks its required numerical separation")
+    process_keys = {
+        "process_eigh_worker_count",
+        "process_eigh_block_count",
+        "process_eigh_minimum_free_memory_gib",
+    }
+    if process_keys & set(metrics):
+        if (
+            dataset != "cho2017"
+            or method != "ea_tangent_lr"
+            or not process_keys <= set(metrics)
+            or metrics["process_eigh_worker_count"] != 2.0
+            or metrics["process_eigh_minimum_free_memory_gib"] < 4.0
+        ):
+            raise ValueError("incomplete or unqualified process eigensolver diagnostics")
+        count("process_eigh_block_count", positive=True)
     origin = metrics.get("reused_from_seed")
     if origin is not None:
         if method not in DETERMINISTIC_METHODS or not origin.is_integer() or origin == seed:

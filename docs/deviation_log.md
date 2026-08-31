@@ -1,5 +1,21 @@
 # Deviation log
 
+## 2026-08-31 — Qualify and bound the Cho alignment scheduling change
+
+After pausing at saved Cho EA+tangent subject 25, the isolated two-fold process
+qualification matched every original non-timing metric exactly. The optional
+production scheduler is now restricted to this dataset/method, the reviewed
+receipt and reference hashes, and the same NumPy/backend identity. Below the
+unchanged 10 GiB startup threshold or on backend mismatch, it uses the original
+calculation; active worker calls retain the 4 GiB stop. Other methods and MMIDB
+remain unchanged. New operational diagnostics are independently audited and
+deterministic copies retain their original measured provenance.
+
+No scientific setting, completed measurement, artifact threshold, subject/seed
+selection or gate approval changed. Historical timing differences are not a
+controlled speed claim. See `docs/tangent_process_runtime_review.md` for both
+qualified folds, exact hashes, paused-record preservation and interpretation.
+
 ## 2026-08-31 — Qualify isolated tangent scheduling without adoption
 
 Two full Cho normal-tangent folds reproduced every saved non-timing metric exactly

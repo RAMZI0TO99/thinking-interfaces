@@ -1,4 +1,4 @@
-"""Experimental isolated eigensolver scheduling; not enabled in the benchmark."""
+"""Bounded isolated eigensolver; production use requires the qualification policy."""
 
 from __future__ import annotations
 

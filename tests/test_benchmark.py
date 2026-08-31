@@ -23,6 +23,47 @@ from evaluation.benchmark import (
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_process_eigh_is_scoped_and_diagnostics_are_saved(self) -> None:
+        class Candidate:
+            stats = {
+                "parallel_calls": 1, "worker_pids": [101, 102], "blocks": 12,
+                "minimum_observed_free_memory_gib": 4.5,
+            }
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *unused):
+                pass
+
+        for dataset, method, ready, expected in (
+            ("cho2017", "ea_tangent_lr", True, 1),
+            ("cho2017", "ea_tangent_lr", False, 0),
+            ("cho2017", "tangent_lr", True, 0),
+            ("mmidb", "ea_tangent_lr", True, 0),
+        ):
+            with (
+                self.subTest(dataset=dataset, method=method, ready=ready),
+                tempfile.TemporaryDirectory() as directory,
+                patch("evaluation.benchmark.load_toml",
+                      return_value={"tangent_process": {"enabled": True}}),
+                patch("evaluation.benchmark.ProcessEighProbe", return_value=Candidate()) as factory,
+            ):
+                outputs = run_benchmark(
+                    replace(self.matrix, dataset=dataset), methods=(method,), seeds=(11,),
+                    shots_per_class=2, confidence_threshold=0.7, torch_config=self.training,
+                    output_root=Path(directory), config={"test": True}, max_new_runs=1,
+                    process_eigh_startup_headroom=ready,
+                )
+                self.assertEqual(factory.call_count, expected)
+                metrics = json.loads(outputs[0].read_text())["metrics"]
+                if expected:
+                    self.assertEqual(metrics["process_eigh_worker_count"], 2)
+                    self.assertEqual(metrics["process_eigh_block_count"], 12)
+                    self.assertEqual(metrics["process_eigh_minimum_free_memory_gib"], 4.5)
+                else:
+                    self.assertNotIn("process_eigh_worker_count", metrics)
+
     def setUp(self) -> None:
         rng = np.random.default_rng(9)
         signals = rng.normal(size=(36, 3, 64)).astype(np.float32)

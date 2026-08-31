@@ -9,3 +9,8 @@ maximum_cooling_sleep_seconds = 60.0
 # Exact original metrics reproduced on two real Cho folds; inconclusive -> original MNE.
 [csp]
 certify_full_numerical_rank = true
+
+# Cho EA+tangent only; immutable two-fold evidence and backend checked at startup.
+# Below 10 GiB at startup -> original calculation; active workers retain 4 GiB stop.
+[tangent_process]
+enabled = true

@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import time
 from collections.abc import Mapping, Sequence
+from contextlib import nullcontext
 from dataclasses import asdict, dataclass
 from gc import collect as collect_garbage
 from pathlib import Path
@@ -30,6 +31,8 @@ from evaluation.baselines import (
     TorchTrainingConfig,
 )
 from evaluation.csp_rank_certificate import FullRankCertificate
+from evaluation.process_eigh_probe import ProcessEighProbe
+from evaluation.process_eigh_runtime import process_eigh_enabled
 from evaluation.realtime_metrics import accuracy_coverage_curve, calibration_report
 
 FloatArray = NDArray[np.float32]
@@ -347,6 +350,7 @@ def run_benchmark(
     output_root: Path,
     config: Mapping[str, Any],
     max_new_runs: int | None = None,
+    process_eigh_startup_headroom: bool = False,
 ) -> tuple[Path, ...]:
     """Run missing folds only and atomically write every completed record."""
 
@@ -355,6 +359,9 @@ def run_benchmark(
     expected_config_sha256 = config_digest(config)
     source_provenance = capture_source(Path(__file__).resolve().parents[1])
     runtime = load_toml(Path(__file__).resolve().parents[1] / "configs" / "runtime_limits.toml")
+    process_enabled = process_eigh_enabled(runtime)
+    if type(process_eigh_startup_headroom) is not bool:
+        raise ValueError("process startup headroom must be an explicit boolean")
     csp_settings = runtime.get("csp", {})
     if not isinstance(csp_settings, dict):
         raise ValueError("CSP runtime settings must be a table")
@@ -419,19 +426,38 @@ def run_benchmark(
                     ):
                         cool_gpu(cooling_policy)
                         initial_temperature_checked = True
-                    result = run_fold(
-                        matrix,
-                        target_subject=subject,
-                        method=method,
-                        seed=seed,
-                        shots_per_class=shots_per_class,
-                        confidence_threshold=confidence_threshold,
-                        torch_config=torch_config,
-                        prealigned_source_signals=prealigned_source_signals,
-                        prefiltered_fbcsp=prefiltered_fbcsp,
-                        certify_csp_rank=certify_csp and method == "fbcsp",
+                    process_eigh = (
+                        ProcessEighProbe(workers=2, chunk_matrices=64, minimum_memory_gib=4.0)
+                        if process_enabled
+                        and process_eigh_startup_headroom
+                        and matrix.dataset == "cho2017"
+                        and method == "ea_tangent_lr"
+                        else None
                     )
+                    with process_eigh if process_eigh is not None else nullcontext():
+                        result = run_fold(
+                            matrix,
+                            target_subject=subject,
+                            method=method,
+                            seed=seed,
+                            shots_per_class=shots_per_class,
+                            confidence_threshold=confidence_threshold,
+                            torch_config=torch_config,
+                            prealigned_source_signals=prealigned_source_signals,
+                            prefiltered_fbcsp=prefiltered_fbcsp,
+                            certify_csp_rank=certify_csp and method == "fbcsp",
+                        )
                     metrics = result.scalar_metrics()
+                    if process_eigh is not None:
+                        if not process_eigh.stats["parallel_calls"]:
+                            raise RuntimeError("qualified process eigensolver was not used")
+                        metrics["process_eigh_worker_count"] = float(
+                            len(process_eigh.stats["worker_pids"])
+                        )
+                        metrics["process_eigh_block_count"] = float(process_eigh.stats["blocks"])
+                        metrics["process_eigh_minimum_free_memory_gib"] = float(
+                            process_eigh.stats["minimum_observed_free_memory_gib"]
+                        )
                     if result.csp_rank_certificates:
                         certificates = result.csp_rank_certificates
                         certified = [item for item in certificates if item.certified]

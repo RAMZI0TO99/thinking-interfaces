@@ -1,7 +1,8 @@
-# Tangent-space process scheduling: diagnostic only
+# Tangent-space process scheduling: bounded qualification and use
 
-The production benchmark still uses its original calculation. This investigation
-does not change the frozen benchmark configuration, BLAS thread counts, inputs,
+An optional production scheduler is restricted to the qualified Cho EA+tangent
+method under the conditions below. It changes neither the per-matrix numerical
+operation nor the frozen benchmark configuration, BLAS thread counts, inputs,
 classifier settings, completed records, or scientific gates.
 
 ## Candidate and limits
@@ -60,7 +61,55 @@ experimental production switch.
 
 Exact agreement on two normal-tangent folds does not establish agreement on
 alignment-enabled folds, every subject, another dataset, or another numerical
-backend. The candidate remains disabled in production. Alignment-specific
-qualification, if pursued when resource limits permit, must be separate and must
-not overwrite benchmark records. No high-score flag or scientific gate is cleared
-by this runtime investigation.
+backend. At that stage the candidate remained disabled in production. The later
+alignment-specific qualification below was separate and did not overwrite
+benchmark records. No high-score flag or scientific gate is cleared by this
+runtime investigation.
+
+## EA qualification and guarded production switch
+
+The main queue subsequently paused after saved Cho EA+tangent subject 25 at
+14:18:51 UTC. The snapshot
+`runs/runtime_probe/paused_ea_process_probe_integrity_20260831T1419.json`
+contains 2,118 valid records, with no invalid or unexpected entries. All 2,117
+preceding records were independently rehashed unchanged before the checks.
+
+The separate alignment qualification used clean commit
+`c75dbc49abbc9dad4e6fce7b73a3016c5962de6b`, source fingerprint
+`4653c69b9c1bef66e6f9091cb2bc6fb2599dd3a1a19bd234101a594f755ce1ff`,
+and `configs/ea_tangent_process_probe.toml`. Every non-timing metric matched on
+both full original LOSO folds, including calibration, coverage and confusion.
+
+Receipt: `runs/runtime_probe/20260831T142216253834Z/result.json`.
+SHA-256: `4f793152d3e5c66f9c03689d0774407891746a2aace9ae10cfae21110be38bf6`.
+
+| Cho EA+tangent subject, seed 11 | Candidate fit seconds | Historical fit seconds | Minimum observed free GiB |
+|---|---:|---:|---:|
+| 01 | 164.113929 | 252.129533 | 6.489006 |
+| 02 | 167.786059 | 222.988054 | 6.786396 |
+
+Each fold used 11 parallel calls, 29 fallback calls and 1,623 blocks with at most
+two pending blocks. Timings are historical comparisons under different loads,
+not a controlled speed estimate. Preprocessing/alignment preparation is excluded
+from both reported fit times. Production retains the existing per-subject source
+alignment cache; target support/query alignment remains support-fitted.
+
+The enabled operational switch applies only to Cho `ea_tangent_lr`. Before heavy
+model imports, `evaluation/process_eigh_runtime.py` verifies the immutable reviewed
+receipt, both original reference hashes, the frozen benchmark configuration and
+the exact NumPy/backend identity. Startup below 10 GiB or a different backend
+uses the original calculation. Missing or changed qualification evidence fails
+closed. The worker context retains the 4 GiB active stop, unchanged NumPy
+operations and 24 threads, and restores the facade on exit or failure.
+
+The benchmark entry point keeps heavy model imports inside `main`, so spawned
+numerical workers do not each load the training stack. New fitted records expose
+worker count, block count and minimum observed free memory; the independent
+auditor checks method/dataset scope and the required bounds. Deterministic seed
+copies retain the original fit's diagnostics and zero new fit/prediction time;
+they do not claim another worker execution. Existing records remain untouched.
+
+Other methods and MMIDB are not enabled by this switch. Two-fold agreement is not
+blanket scientific clearance, proof of every future outcome or a reproduced Gate
+A result. Final record/input audits and all unresolved plausibility reviews remain
+required.

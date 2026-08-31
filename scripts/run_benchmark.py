@@ -6,13 +6,9 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, cast
 
-from core.config import load_toml
-from evaluation.baselines import TorchTrainingConfig
-from evaluation.benchmark import (
-    load_dataset_matrix,
-    run_benchmark,
-)
+from core.config import config_digest, load_toml
 from evaluation.compute_estimate import benchmark_work_report
+from evaluation.process_eigh_runtime import process_eigh_enabled, process_eigh_startup_ready
 
 
 def main() -> None:
@@ -27,13 +23,26 @@ def main() -> None:
     training = cast(Mapping[str, Any], config["training"])
     datasets = cast(Mapping[str, Any], config["datasets"])
     dataset = cast(Mapping[str, Any], datasets[args.dataset])
+    methods = tuple(args.method or cast(list[str], benchmark["methods"]))
+    runtime = load_toml(project_root / "configs/runtime_limits.toml")
+    process_startup_ready = process_eigh_startup_ready(
+        project_root,
+        enabled=process_eigh_enabled(runtime),
+        dataset=args.dataset,
+        methods=methods,
+        benchmark_sha256=config_digest(config),
+    )
+    print(json.dumps({"process_eigh_qualified_startup": process_startup_ready}), flush=True)
+    # Spawned numerical workers must not import the heavy EEG/Torch stack.
+    from evaluation.baselines import TorchTrainingConfig
+    from evaluation.benchmark import load_dataset_matrix, run_benchmark
+
     matrix = load_dataset_matrix(
         project_root / str(dataset["artifact_directory"]),
         dataset=args.dataset,
         sampling_rate_hz=float(dataset["sampling_rate_hz"]),
         absolute_peak_volts=float(dataset["artifact_threshold_volts"]),
     )
-    methods = tuple(args.method or cast(list[str], benchmark["methods"]))
     print(
         json.dumps(
             benchmark_work_report(project_root, config, datasets=(args.dataset,), methods=methods),
@@ -58,6 +67,7 @@ def main() -> None:
         output_root=project_root / "runs" / "benchmark",
         config=config,
         max_new_runs=args.max_new_runs,
+        process_eigh_startup_headroom=process_startup_ready,
     )
     print(json.dumps({"valid_records": len(outputs)}, sort_keys=True))
 
