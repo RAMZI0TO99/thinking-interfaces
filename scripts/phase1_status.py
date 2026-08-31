@@ -9,6 +9,7 @@ from typing import Any, cast
 from core.config import config_digest, load_toml
 from evaluation.benchmark_audit import audit_benchmark
 from evaluation.equivalence_freeze import source_margin_record
+from evaluation.live_demo_audit import verify_live_demo
 from evaluation.quality_audit import read_quality_status, verify_quality_bundle
 from evaluation.support_adaptation_audit import audit_support_adaptation
 
@@ -73,6 +74,7 @@ def main() -> None:
     figures = read_json(root / "runs" / "figures" / "manifest.json")
     quality = read_quality_status(root)
     quality_passed = verify_quality_bundle(root, quality)
+    live_demo_passed = verify_live_demo(root)
 
     def hash_matches(path: Path, expected: object) -> bool:
         return path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected
@@ -146,6 +148,7 @@ def main() -> None:
         and review_complete
         and reports_complete
         and quality_passed
+        and live_demo_passed
         and margin_frozen
         and support_audit["complete"]
         and gate_b.get("local_deliverables_complete")
@@ -165,6 +168,7 @@ def main() -> None:
         "plausibility_review_complete": review_complete,
         "benchmark_reporting_bundle_complete": reports_complete,
         "current_source_quality_passed": quality_passed,
+        "integrated_lsl_native_demo_passed": live_demo_passed,
         "equivalence_margin_frozen": margin_frozen,
         "source_then_support_baseline": support_audit,
         "public_datasets_complete": bool(inventory.get("complete")),

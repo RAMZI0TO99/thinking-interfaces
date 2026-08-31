@@ -1,0 +1,38 @@
+[data]
+dataset = "bci_iv_2a"
+held_out_subject = "subject_09"
+query_trials_per_class = 3
+# Profile A and artifact thresholds are taken unchanged from benchmark.toml.
+
+[training]
+seed = 11
+epochs = 1
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+input_scale = 1000000.0
+device = "cpu"
+cpu_threads = 2
+# Source subjects only: this demo uses no target-subject support or fine-tuning.
+
+[stream]
+window_seconds = 4.0
+stride_seconds = 4.0
+chunk_seconds = 0.25
+startup_seconds = 0.25
+timeout_extra_seconds = 15.0
+maximum_wall_drift_seconds = 3.0
+
+[decision]
+confidence_threshold = 0.40
+required_consecutive = 3
+
+[interface]
+title = "Thinking Interfaces | live held-out replay"
+poll_interval_ms = 50
+width = 1000
+height = 690
+close_after_complete_ms = 1800
+
+[output]
+directory = "runs/live_demo"

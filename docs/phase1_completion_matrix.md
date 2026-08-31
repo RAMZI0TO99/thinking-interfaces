@@ -45,6 +45,7 @@ separate and are never silently converted into local successes.
 | Shuffled-label and subject-disjointness CI | Complete | `runs/leakage_ci_status.json` |
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
+| Actual true-rate LSL → decoder → native command grid | Hidden-render rehearsal verified; visible rehearsal pending | 6,144 unchanged samples, 12 acknowledged windows; final status requires a visible run, not a console-only or hidden-only substitute |
 | Gate A MOABB reproduction | **Not signed** | Named MOABB EEGNet reference is absent and comparator was not reproduced; detailed Gate A/deviation records |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does

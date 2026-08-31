@@ -59,11 +59,16 @@ class LSLInletStream:
             raise TimeoutError(f"no LSL stream named {name!r} was found")
         info = streams[0]
         inlet = StreamInlet(info, max_buflen=60, max_chunklen=0, recover=True)
+        # Discovery responses can omit the extended channel description.
+        info = inlet.info(timeout=timeout_s)
         labels: list[str] = []
         channel = info.desc().child("channels").child("channel")
         for _ in range(info.channel_count()):
             labels.append(channel.child_value("label"))
             channel = channel.next_sibling()
+        if not all(labels) or len(set(labels)) != len(labels):
+            inlet.close_stream()
+            raise ValueError("LSL stream is missing unique named-channel metadata")
         return cls(inlet, tuple(labels), float(info.nominal_srate()))
 
     @property
@@ -81,6 +86,9 @@ class LSLInletStream:
         if not samples:
             return np.empty((len(self.channel_names), 0), dtype=np.float32)
         return np.asarray(samples, dtype=np.float32).T
+
+    def close(self) -> None:
+        self._inlet.close_stream()
 
 
 @dataclass(frozen=True, slots=True)

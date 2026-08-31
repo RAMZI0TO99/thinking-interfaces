@@ -22,7 +22,7 @@ def source_files(root: Path) -> tuple[Path, ...]:
         "tests",
         "configs",
     ):
-        for extension in ("*.py", "*.toml"):
+        for extension in ("*.py", "*.toml", "*.ps1"):
             for path in (root / directory).rglob(extension):
                 relative = path.relative_to(root).parts
                 if (

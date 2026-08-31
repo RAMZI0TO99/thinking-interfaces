@@ -261,3 +261,18 @@ frozen scientific configuration, existing records, or the H2 source freeze.
 Deterministic fit reuse preserves the original fit's identity. Final local
 completion also requires lint, type checks, and tests with unchanged source and
 verified output logs (`scripts/verify_phase1_quality.py`).
+
+## 2026-08-31 — Integrated native streaming closure
+
+The original-plan audit found that LSL transport and array-based decoder replay
+had been tested separately. That did not establish the requested true-rate,
+on-screen end-to-end path. A distinct live LSL/native Windows Forms demo now
+joins these pieces, hashes received samples, requires every prediction to be
+acknowledged by the display, and records failure instead of accepting a closed
+or missing UI. The final completion checker now requires a visible rehearsal.
+
+The new demo uses source-only training and zero target support, so its held-out
+subject framing is literal. Earlier array demonstrations included target support
+and cannot truthfully be described as never seeing any data from that person.
+No earlier artifacts were rewritten. The source fingerprint now includes native
+PowerShell display code as well as Python, configuration and environment locks.
