@@ -1,0 +1,14 @@
+# Candidate only. Exact metrics on both existing folds are required before adoption.
+[probe]
+dataset = "cho2017"
+method = "tangent_lr"
+subjects = ["subject_01", "subject_02"]
+seed = 11
+blas_threads = 24
+eigh_processes = 2
+eigh_chunk_matrices = 64
+require_exact_non_timing_metrics = true
+
+[runtime]
+minimum_free_memory_gib = 10.0
+stop_below_free_memory_gib = 4.0

@@ -19,10 +19,9 @@ from threadpoolctl import threadpool_info, threadpool_limits  # type: ignore[imp
 
 from core.config import config_digest, load_toml
 from core.provenance import capture_source
-from evaluation.baselines import FilterBankCSP, FloatArray, TorchTrainingConfig
-from evaluation.benchmark import _decoder, load_dataset_matrix, run_fold
 from evaluation.benchmark_audit import inspect_record
 from evaluation.corpus_duplicates import verify_corpus_snapshot
+from evaluation.process_eigh_probe import ProcessEighProbe, available_memory_gib
 
 
 def main() -> None:
@@ -35,6 +34,31 @@ def main() -> None:
     config = cast(Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml"))
     probe_config = cast(Mapping[str, Any], load_toml(root / args.config))
     probe = probe_config["probe"]
+    process_workers = probe.get("eigh_processes")
+    initial_source = capture_source(root)
+    if process_workers is not None:
+        runtime = probe_config["runtime"]
+        if (
+            process_workers != 2
+            or type(process_workers) is not int
+            or probe.get("eigh_chunk_matrices") != 64
+            or runtime.get("minimum_free_memory_gib") != 10.0
+            or runtime.get("stop_below_free_memory_gib") != 4.0
+            or probe["blas_threads"] != 24
+            or probe.get("eigh_blas_threads") is not None
+            or probe["method"] != "tangent_lr"
+        ):
+            raise ValueError("isolated process probe settings do not match its bounded protocol")
+        if initial_source.git_dirty is not False:
+            raise ValueError("commit the process-probe source before measuring real folds")
+        if available_memory_gib() < runtime["minimum_free_memory_gib"]:
+            raise SystemExit(
+                "Process probe deferred: insufficient free memory before model imports"
+            )
+    # Keep spawned numerical workers lightweight; do not import the EEG stack in them.
+    from evaluation.baselines import FilterBankCSP, FloatArray, TorchTrainingConfig
+    from evaluation.benchmark import _decoder, load_dataset_matrix, run_fold
+
     method = str(probe["method"])
     if method not in {"fbcsp", "tangent_lr"} or (
         probe["require_exact_non_timing_metrics"] is not True
@@ -138,9 +162,19 @@ def main() -> None:
                         raise RuntimeError("the selective eigensolver thread limit was not applied")
                     return original_eigh(*arguments, **keywords)
 
-            eigensolver_context = (
-                patch("numpy.linalg.eigh", new=limited_eigh)
-                if eigh_threads is not None else nullcontext()
+            process_eigensolver = (
+                ProcessEighProbe(workers=process_workers, chunk_matrices=64, minimum_memory_gib=4.0)
+                if process_workers is not None
+                else None
+            )
+            eigensolver_context: Any = (
+                process_eigensolver
+                if process_eigensolver is not None
+                else (
+                    patch("numpy.linalg.eigh", new=limited_eigh)
+                    if eigh_threads is not None
+                    else nullcontext()
+                )
             )
             profiler = cProfile.Profile() if probe.get("profile_calls", False) else None
             if profiler is not None:
@@ -165,6 +199,12 @@ def main() -> None:
                     pstats.Stats(profiler).strip_dirs().sort_stats("cumulative").print_stats(30)
             if eigh_threads is not None and not eigh_calls:
                 raise RuntimeError("the selective eigensolver hook was never used")
+            if process_eigensolver is not None and not process_eigensolver.stats["parallel_calls"]:
+                raise RuntimeError("the isolated process eigensolver was never used")
+            if process_workers is not None and (
+                capture_source(root).source_sha256 != initial_source.source_sha256
+            ):
+                raise RuntimeError("process-probe source changed during qualification")
             measured = fold_result.scalar_metrics()
             names = (set(measured) | set(reference.metrics)) - {"fit_seconds", "prediction_seconds"}
             differences = {
@@ -182,9 +222,13 @@ def main() -> None:
                 "differences": differences,
                 "rank_certificates": [asdict(item) for item in fold_result.csp_rank_certificates],
                 "selective_eigh_calls": eigh_calls,
+                "isolated_process_eigh": (
+                    process_eigensolver.stats if process_eigensolver is not None else None
+                ),
                 "call_profile": (
                     output.with_name(f"{subject}_profile.prof").relative_to(root).as_posix()
-                    if profiler is not None else None
+                    if profiler is not None
+                    else None
                 ),
             }
             result["rows"].append(row)
