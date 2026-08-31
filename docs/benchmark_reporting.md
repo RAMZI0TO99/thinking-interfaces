@@ -12,6 +12,20 @@ Python environment. The figure manifest records its own source fingerprint and
 image hashes. Final completion requires table and figure snapshots to match the
 complete current benchmark, not merely for the files to exist.
 
+Gate B and the Phase I status command share the same read-only deliverable checks:
+both CSVs and every expected figure must match their manifests and the complete
+current record/configuration snapshot. The final plausibility attestation must
+match that snapshot and the independently verified current corpus snapshot. The
+persisted H2 freeze must still match the audited source records and unchanged
+planning formula; neither checker creates or replaces a freeze or review.
+Missing, malformed, stale or hash-mismatched evidence fails local completion.
+
+Phase I recomputes Gate B instead of trusting `runs/gate_b_status.json`. Its
+`gate_a_signed` and scientific-signoff fields use the current explicit boolean
+`upstream_gate_a_signed` setting, which remains false until separately authorized.
+These checks bind evidence; they neither decide Gate A acceptance nor authenticate
+the scientific judgment in a manually supplied review attestation.
+
 ## Primary table
 
 `runs/benchmark_table.csv` reports balanced accuracy averaged first across seeds

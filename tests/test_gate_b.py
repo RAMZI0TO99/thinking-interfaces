@@ -4,10 +4,12 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from core.config import config_digest
 from core.run_record import RunRecord
 from evaluation.gate_b import evaluate_gate_b
+from evaluation.gate_evidence import GateEvidence
 
 
 class GateBTests(unittest.TestCase):
@@ -48,21 +50,28 @@ class GateBTests(unittest.TestCase):
         return path
 
     def evaluate(self, root: Path, *, signed: bool = True, evidence: bool = True):
-        return evaluate_gate_b(
-            root,
-            dataset_subjects={"cho2017": ("subject_001", "subject_002")},
-            methods=("eegnet",),
-            seeds=(11, 23),
-            preprocessing_frozen=True,
-            margin_source_dataset="cho2017",
-            margin_source_method="eegnet",
-            target_power=0.8,
-            alpha=0.05,
-            upstream_gate_a_signed=signed,
-            artifact_audit_passed=evidence,
-            demonstrator_passed=evidence,
-            expected_config_sha256=config_digest(self.config),
-        )
+        # Arithmetic-only unit tests; disk-backed evidence is tested separately
+        # in test_gate_evidence.py without stubbing its verifier.
+        with patch(
+            "evaluation.gate_b.verify_gate_evidence",
+            return_value=GateEvidence(True, True, True, True, True),
+        ):
+            return evaluate_gate_b(
+                root,
+                project_root=root,
+                dataset_subjects={"cho2017": ("subject_001", "subject_002")},
+                methods=("eegnet",),
+                seeds=(11, 23),
+                preprocessing_frozen=True,
+                margin_source_dataset="cho2017",
+                margin_source_method="eegnet",
+                target_power=0.8,
+                alpha=0.05,
+                upstream_gate_a_signed=signed,
+                artifact_audit_passed=evidence,
+                demonstrator_passed=evidence,
+                expected_config_sha256=config_digest(self.config),
+            )
 
     def test_complete_grid_and_freeze_pass(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

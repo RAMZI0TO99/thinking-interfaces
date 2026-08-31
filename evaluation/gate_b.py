@@ -6,6 +6,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from evaluation.benchmark_audit import audit_benchmark
+from evaluation.gate_evidence import verify_gate_evidence
 from evaluation.reporting import (
     aggregate_observations,
     collect_observations,
@@ -29,6 +30,11 @@ class GateBResult:
     preprocessing_frozen: bool
     artifact_audit_passed: bool
     demonstrator_passed: bool
+    reporting_bundle_complete: bool
+    plausibility_review_complete: bool
+    equivalence_margin_frozen: bool
+    corpus_duplicate_audit_current: bool
+    no_exact_train_query_copies: bool
     margin_source_dataset: str
     margin_source_method: str
     source_standard_deviation: float
@@ -45,6 +51,7 @@ class GateBResult:
 def evaluate_gate_b(
     run_root: Path,
     *,
+    project_root: Path,
     dataset_subjects: dict[str, tuple[str, ...]],
     methods: tuple[str, ...],
     seeds: tuple[int, ...],
@@ -108,17 +115,30 @@ def evaluate_gate_b(
         if source_complete
         else 0.0
     )
+    evidence = verify_gate_evidence(
+        project_root,
+        run_root,
+        integrity=integrity,
+        dataset_subjects=dataset_subjects,
+        seeds=seeds,
+        expected_config_sha256=expected_config_sha256,
+        margin_source_dataset=margin_source_dataset,
+        margin_source_method=margin_source_method,
+        target_power=target_power,
+        alpha=alpha,
+    )
     local_complete = bool(
         integrity["complete"]
         and preprocessing_frozen
         and source_complete
         and artifact_audit_passed
         and demonstrator_passed
+        and evidence.complete
     )
     return GateBResult(
-        passed=local_complete and upstream_gate_a_signed,
+        passed=local_complete and upstream_gate_a_signed is True,
         local_deliverables_complete=local_complete,
-        upstream_gate_a_signed=upstream_gate_a_signed,
+        upstream_gate_a_signed=upstream_gate_a_signed is True,
         missing_records=len(integrity["missing_records"]),
         invalid_records=len(integrity["invalid_records"]),
         unexpected_records=len(integrity["unexpected_records"]),
@@ -127,6 +147,11 @@ def evaluate_gate_b(
         preprocessing_frozen=preprocessing_frozen,
         artifact_audit_passed=artifact_audit_passed,
         demonstrator_passed=demonstrator_passed,
+        reporting_bundle_complete=evidence.reporting_bundle_complete,
+        plausibility_review_complete=evidence.plausibility_review_complete,
+        equivalence_margin_frozen=evidence.equivalence_margin_frozen,
+        corpus_duplicate_audit_current=evidence.corpus_duplicate_audit_current,
+        no_exact_train_query_copies=evidence.no_exact_train_query_copies,
         margin_source_dataset=margin_source_dataset,
         margin_source_method=margin_source_method,
         source_standard_deviation=standard_deviation,

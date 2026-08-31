@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import json
 from collections.abc import Mapping
 from pathlib import Path
@@ -9,19 +8,12 @@ from typing import Any, cast
 from core.config import config_digest, load_toml
 from core.contract_freeze import verify_contract_freeze
 from evaluation.benchmark_audit import audit_benchmark
-from evaluation.corpus_duplicates import verify_corpus_snapshot
-from evaluation.equivalence_freeze import source_margin_record
+from evaluation.gate_b import evaluate_gate_b
+from evaluation.gate_evidence import hash_matches, read_json
 from evaluation.leakage_ci import run_leakage_ci
 from evaluation.live_demo_audit import verify_live_demo
 from evaluation.quality_audit import read_quality_status, verify_quality_bundle
 from evaluation.support_adaptation_audit import audit_support_adaptation
-
-
-def read_json(path: Path) -> dict[str, Any]:
-    if not path.is_file():
-        return {}
-    value: object = json.loads(path.read_text(encoding="utf-8"))
-    return cast(dict[str, Any], value) if isinstance(value, dict) else {}
 
 
 def main() -> None:
@@ -71,10 +63,6 @@ def main() -> None:
     labram = read_json(root / "runs" / "labram_ready_state.json")
     gpu_demo = read_json(root / "runs" / "replay_demo_subject_09_cuda.json")
     cpu_demo = read_json(root / "runs" / "replay_demo_subject_08_cpu.json")
-    gate_b = read_json(root / "runs" / "gate_b_status.json")
-    review = read_json(root / "runs" / "plausibility_review.json")
-    table_status = read_json(root / "runs" / "benchmark_status.json")
-    figures = read_json(root / "runs" / "figures" / "manifest.json")
     quality = read_quality_status(root)
     quality_passed = verify_quality_bundle(root, quality)
     contract_frozen = verify_contract_freeze(root)
@@ -106,14 +94,36 @@ def main() -> None:
         )
     )
     live_demo_passed = verify_live_demo(root)
-    corpus = read_json(root / "runs" / "corpus_duplicate_audit.json")
-    corpus_current = verify_corpus_snapshot(
-        root, corpus, config=benchmark_config, subjects=dataset_subjects
-    )
-    no_exact_copies = bool(corpus_current and corpus.get("no_exact_train_query_copies") is True)
-
-    def hash_matches(path: Path, expected: object) -> bool:
-        return path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected
+    gate_settings = gate_b_config["gate_b"]
+    policy = cast(Mapping[str, Any], load_toml(root / "configs" / "artifact_rejection.toml"))[
+        "policy"
+    ]
+    gate_a_signed = gate_settings.get("upstream_gate_a_signed") is True
+    # Re-evaluate current evidence and the current upstream decision. A cached
+    # gate_b_status.json (even for this benchmark snapshot) is not an approval.
+    gate_b = evaluate_gate_b(
+        root / "runs" / "benchmark",
+        project_root=root,
+        dataset_subjects={
+            name: dataset_subjects[name] for name in gate_settings["required_datasets"]
+        },
+        methods=tuple(gate_settings["required_methods"]),
+        seeds=tuple(gate_settings["seeds"]),
+        preprocessing_frozen=policy["frozen"] is True and bool(policy["freeze_date"]),
+        margin_source_dataset=gate_settings["margin_source_dataset"],
+        margin_source_method=gate_settings["margin_source_method"],
+        target_power=gate_settings["target_power"],
+        alpha=gate_settings["alpha"],
+        expected_config_sha256=config_digest(benchmark_config),
+        artifact_audit_passed=artifact_audit.get("passed") is True,
+        demonstrator_passed=live_demo_passed,
+        upstream_gate_a_signed=gate_a_signed,
+    ).as_dict()
+    reports_complete = gate_b["reporting_bundle_complete"] is True
+    review_complete = gate_b["plausibility_review_complete"] is True
+    margin_frozen = gate_b["equivalence_margin_frozen"] is True
+    corpus_current = gate_b["corpus_duplicate_audit_current"] is True
+    no_exact_copies = gate_b["no_exact_train_query_copies"] is True
 
     calibration_smoke = read_json(root / "runs" / "calibration_smoke" / "result.json")
     calibration_diagram_passed = bool(
@@ -127,46 +137,6 @@ def main() -> None:
             calibration_smoke.get("figure_sha256"),
         )
     )
-    reports_complete = bool(
-        table_status.get("complete")
-        and figures.get("complete")
-        and all(
-            report.get("record_snapshot_sha256") == integrity["record_snapshot_sha256"]
-            and report.get("config_sha256") == config_digest(benchmark_config)
-            for report in (table_status, figures)
-        )
-        and hash_matches(root / "runs" / "benchmark_table.csv", table_status.get("table_sha256"))
-        and hash_matches(
-            root / "runs" / "benchmark_diagnostics.csv", table_status.get("diagnostics_sha256")
-        )
-        and isinstance(figures.get("files"), dict)
-        and set(figures["files"]) == {f"{dataset}_benchmark.png" for dataset in dataset_subjects}
-        and all(
-            hash_matches(root / "runs" / "figures" / name, digest)
-            for name, digest in figures["files"].items()
-        )
-    )
-    freeze = read_json(root / "runs" / "equivalence_margin_freeze.json")
-    gate_settings = gate_b_config["gate_b"]
-    margin_frozen = False
-    try:
-        expected_freeze = source_margin_record(
-            root / "runs" / "benchmark",
-            dataset=gate_settings["margin_source_dataset"],
-            method=gate_settings["margin_source_method"],
-            subjects=dataset_subjects[gate_settings["margin_source_dataset"]],
-            seeds=tuple(seeds),
-            expected_config_sha256=config_digest(benchmark_config),
-            target_power=gate_settings["target_power"],
-            alpha=gate_settings["alpha"],
-        )
-        margin_frozen = bool(
-            freeze.get("config") == expected_freeze.config
-            and freeze.get("metrics") == expected_freeze.metrics
-            and freeze.get("config_sha256") == expected_freeze.config_sha256
-        )
-    except (OSError, ValueError, KeyError, TypeError):
-        margin_frozen = False
     support_settings = cast(
         Mapping[str, Any], load_toml(root / "configs" / "eegnet_support_adaptation.toml")
     )
@@ -176,13 +146,6 @@ def main() -> None:
         settings=support_settings,
         subjects=dataset_subjects[support_dataset],
         benchmark_sha256=config_digest(benchmark_config),
-    )
-    review_complete = bool(
-        review.get("local_review_complete")
-        and review.get("record_snapshot_sha256") == integrity["record_snapshot_sha256"]
-        and review.get("config_sha256") == config_digest(benchmark_config)
-        and corpus_current
-        and review.get("artifact_snapshot_sha256") == corpus.get("artifact_snapshot_sha256")
     )
     local_evidence_complete = bool(
         inventory.get("complete")
@@ -211,8 +174,10 @@ def main() -> None:
     )
     report = {
         "local_evidence_complete": local_evidence_complete,
-        "scientifically_signed": bool(local_evidence_complete and gate_b.get("passed")),
-        "gate_a_signed": False,
+        "scientifically_signed": bool(
+            local_evidence_complete and gate_a_signed and gate_b.get("passed") is True
+        ),
+        "gate_a_signed": gate_a_signed,
         "gate_b": gate_b,
         "benchmark": benchmark_counts,
         "benchmark_integrity_passed": integrity["complete"],

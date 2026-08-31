@@ -7,6 +7,7 @@ from typing import Any, cast
 
 from core.config import config_digest, load_toml
 from evaluation.gate_b import evaluate_gate_b
+from evaluation.gate_evidence import read_json
 from evaluation.live_demo_audit import verify_live_demo
 
 
@@ -22,11 +23,7 @@ def main() -> None:
     )
     policy = cast(Mapping[str, Any], artifact_config["policy"])
     artifact_audit_path = root / "runs" / "artifact_audit_status.json"
-    artifact_audit = (
-        json.loads(artifact_audit_path.read_text(encoding="utf-8"))
-        if artifact_audit_path.is_file()
-        else {}
-    )
+    artifact_audit = read_json(artifact_audit_path)
     # Require the same hash-verified, held-out, visible native LSL evidence as
     # the Phase I completion report; legacy array frames are not sufficient.
     demonstrator_passed = verify_live_demo(root)
@@ -42,18 +39,19 @@ def main() -> None:
         dataset_subjects[dataset] = subjects
     result = evaluate_gate_b(
         root / "runs" / "benchmark",
+        project_root=root,
         dataset_subjects=dataset_subjects,
         methods=tuple(cast(list[str], gate["required_methods"])),
         seeds=tuple(cast(list[int], gate["seeds"])),
-        preprocessing_frozen=bool(policy["frozen"]) and bool(policy["freeze_date"]),
+        preprocessing_frozen=policy["frozen"] is True and bool(policy["freeze_date"]),
         margin_source_dataset=str(gate["margin_source_dataset"]),
         margin_source_method=str(gate["margin_source_method"]),
         target_power=float(gate["target_power"]),
         alpha=float(gate["alpha"]),
         expected_config_sha256=config_digest(benchmark_config),
-        artifact_audit_passed=bool(artifact_audit.get("passed", False)),
+        artifact_audit_passed=artifact_audit.get("passed") is True,
         demonstrator_passed=demonstrator_passed,
-        upstream_gate_a_signed=bool(gate["upstream_gate_a_signed"]),
+        upstream_gate_a_signed=gate.get("upstream_gate_a_signed") is True,
     )
     output = root / "runs" / "gate_b_status.json"
     output.parent.mkdir(parents=True, exist_ok=True)
