@@ -1,0 +1,28 @@
+[subject]
+dataset = "bci_iv_2a"
+held_out = "subject_09"
+support_shots_per_class = 5
+repeated_query_windows = 3
+
+[stream]
+window_seconds = 4.0
+stride_seconds = 4.0
+chunk_seconds = 0.25
+
+[decoder]
+model = "eegnet"
+epochs = 1
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+input_scale = 1000000.0
+device = "cuda"
+
+[decision]
+confidence_threshold = 0.40
+required_consecutive = 3
+neutral_state = "neutral"
+
+[interface]
+target = "held-out subject command grid"
+confidence_bar_width = 20

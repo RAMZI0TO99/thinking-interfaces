@@ -1,0 +1,155 @@
+from __future__ import annotations
+
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from core.config import config_digest
+from core.run_record import RunRecord
+from evaluation.benchmark_audit import audit_benchmark, inspect_record
+
+
+class BenchmarkAuditTests(unittest.TestCase):
+    config = {"benchmark": {"shots_per_class": 1}}
+
+    def record(self, root: Path, *, method: str = "eegnet", seed: int = 11) -> Path:
+        metrics = {
+            "benchmark_schema_version": 2.0,
+            "seed": float(seed),
+            "balanced_accuracy": 0.9,
+            "cohen_kappa": 0.8,
+            "class_support_left": 10.0,
+            "class_support_right": 10.0,
+            "confusion_true_left_pred_left": 9.0,
+            "confusion_true_left_pred_right": 1.0,
+            "confusion_true_right_pred_left": 1.0,
+            "confusion_true_right_pred_right": 9.0,
+            "query_trials": 20.0,
+            "support_trials": 2.0,
+            "dataset_input_trials": 50.0,
+            "dataset_rejected_trials": 0.0,
+            "fit_seconds": 1.0,
+            "prediction_seconds": 0.1,
+            "expected_calibration_error": 0.1,
+            "coverage_at_threshold": 1.0,
+            "selective_accuracy": 0.9,
+        }
+        path = root / "d" / method / f"seed_{seed}" / "subject_01.json"
+        return RunRecord.create(
+            config=self.config,
+            seed=seed,
+            git_commit="test",
+            dataset="d",
+            fold="subject_01",
+            metrics=metrics,
+        ).write_json(path)
+
+    def inspect(self, path: Path) -> None:
+        inspect_record(path, expected_config_sha256=config_digest(self.config))
+
+    def test_valid_high_score_flagged_without_claiming_scientific_clearance(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.record(root)
+            report = audit_benchmark(
+                root,
+                datasets_subjects={"d": ("subject_01",)},
+                methods=("eegnet",),
+                seeds=(11,),
+                expected_config_sha256=config_digest(self.config),
+            )
+        self.assertTrue(report["complete"])
+        self.assertEqual(report["valid_records"], 1)
+        self.assertEqual(len(report["flagged_subjects"]), 1)
+        self.assertEqual(len(report["flagged_methods"]), 1)
+        self.assertFalse(report["scientific_review_complete"])
+
+    def test_corrupt_metrics_fail_even_with_matching_hash_and_schema(self) -> None:
+        corruptions = {
+            "balanced_accuracy": 0.99,
+            "cohen_kappa": 0.1,
+            "class_support_left": 11.0,
+            "query_trials": 21.0,
+            "support_trials": 4.0,
+            "dataset_input_trials": 20.0,
+            "fit_seconds": -1.0,
+            "expected_calibration_error": float("nan"),
+            "seed": 23.0,
+            "confusion_true_left_pred_left": 9.5,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            for key, value in corruptions.items():
+                with self.subTest(key=key):
+                    path = self.record(Path(directory))
+                    payload = json.loads(path.read_text())
+                    payload["metrics"][key] = value
+                    path.write_text(json.dumps(payload))
+                    with self.assertRaises(ValueError):
+                        self.inspect(path)
+
+    def test_identity_config_and_timestamp_are_checked(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            for key, value in (
+                ("dataset", "wrong"),
+                ("fold", "wrong"),
+                ("seed", 23),
+                ("config", {"different": True}),
+                ("timestamp_utc", "2026-08-31T12:00:00"),
+            ):
+                with self.subTest(key=key):
+                    path = self.record(Path(directory))
+                    payload = json.loads(path.read_text())
+                    payload[key] = value
+                    path.write_text(json.dumps(payload))
+                    with self.assertRaises(ValueError):
+                        self.inspect(path)
+
+    def test_missing_or_extra_identity_prevents_completion(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.record(root)
+            self.record(root, seed=99)
+            report = audit_benchmark(
+                root,
+                datasets_subjects={"d": ("subject_01",)},
+                methods=("eegnet",),
+                seeds=(11, 23),
+                expected_config_sha256=config_digest(self.config),
+            )
+        self.assertFalse(report["complete"])
+        self.assertEqual(len(report["missing_records"]), 1)
+        self.assertEqual(len(report["unexpected_records"]), 1)
+
+    def test_reuse_requires_matching_measured_origin(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.record(root, method="tangent_lr")
+            path = self.record(root, method="tangent_lr", seed=23)
+            payload = json.loads(path.read_text())
+            payload["metrics"].update(
+                reused_from_seed=11.0, seed=11.0, fit_seconds=0.0, prediction_seconds=0.0
+            )
+            path.write_text(json.dumps(payload))
+            arguments = {
+                "datasets_subjects": {"d": ("subject_01",)},
+                "methods": ("tangent_lr",),
+                "seeds": (11, 23),
+                "expected_config_sha256": config_digest(self.config),
+            }
+            report = audit_benchmark(root, **arguments)
+            self.assertTrue(report["complete"])
+            payload["metrics"]["expected_calibration_error"] = 0.2
+            path.write_text(json.dumps(payload))
+            report = audit_benchmark(root, **arguments)
+            self.assertFalse(report["complete"])
+            self.assertEqual(len(report["invalid_records"]), 1)
+
+    def test_neural_reuse_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = self.record(Path(directory))
+            payload = json.loads(path.read_text())
+            payload["metrics"]["reused_from_seed"] = 23.0
+            path.write_text(json.dumps(payload))
+            with self.assertRaises(ValueError):
+                self.inspect(path)

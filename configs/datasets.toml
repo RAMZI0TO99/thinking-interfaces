@@ -1,0 +1,34 @@
+[datasets.bci_iv_2a]
+display_name = "BCI Competition IV 2a"
+enabled = true
+access = "public"
+status = "downloaded"
+needed_by_week = 1
+
+[datasets.cho2017]
+display_name = "Cho2017"
+enabled = true
+access = "public"
+status = "downloaded"
+needed_by_week = 3
+
+[datasets.mmidb]
+display_name = "PhysioNet EEG Motor Movement/Imagery Dataset"
+enabled = true
+access = "public"
+status = "downloaded"
+needed_by_week = 3
+
+[datasets.tuab]
+display_name = "TUH Abnormal EEG Corpus"
+enabled = false
+access = "agreement_required"
+status = "agreement_not_confirmed"
+needed_by_week = 6
+
+[datasets.tuev]
+display_name = "TUH EEG Events Corpus"
+enabled = false
+access = "agreement_required"
+status = "agreement_not_confirmed"
+needed_by_week = 6

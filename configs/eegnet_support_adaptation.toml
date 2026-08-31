@@ -1,0 +1,23 @@
+[episode]
+dataset = "bci_iv_2a"
+included_labels = ["left_hand", "right_hand"]
+seeds = [11, 23, 37, 53, 71]
+shots_per_class = 5
+protocol = "source_only_fit_then_full_model_support_only_finetuning"
+
+[training]
+epochs = 5
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+input_scale = 1000000.0
+device = "cuda"
+
+[adaptation]
+steps = 10
+learning_rate = 0.0001
+# adapt_torch_model's unchanged AdamW default; explicitly recorded here.
+weight_decay = 0.01
+
+[runtime]
+cooldown_seconds = 5.0

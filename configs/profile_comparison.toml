@@ -1,0 +1,21 @@
+[comparison]
+subject = 1
+seed = 11
+train_session = "0train"
+test_session = "1test"
+epochs = 20
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+validation_fraction = 0.2
+early_stopping_patience = 5
+
+[profile_a]
+artifact = "data/processed/bci_iv_2a/profile_a/subject_01.npz"
+sampling_rate_hz = 128.0
+input_scale = 1000000.0
+
+[profile_b]
+artifact = "data/processed/bci_iv_2a/profile_b/subject_01.npz"
+sampling_rate_hz = 200.0
+input_scale = 1.0

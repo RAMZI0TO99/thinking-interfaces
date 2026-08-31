@@ -1,0 +1,46 @@
+# Prepared for Phase II verification; these are published targets, not local results.
+[source]
+paper_url = "https://proceedings.iclr.cc/paper_files/paper/2024/file/47393e8594c82ce8fd83adc672cf9872-Paper-Conference.pdf"
+paper_sha256 = "5ac7a9b3ee783d1a70340c7248b91e4f661204e0415393f8b30b10795d82e01d"
+verified_date = "2026-08-31"
+hyperparameter_table = 5
+partial_finetuning_table = 10
+local_reproduction_complete = false
+
+[pretraining]
+total_hours = 2534.78
+mmidb_hours = 47.3
+bci_competition_iv_1_hours = 8.21
+mmidb_is_pretraining_overlap = true
+bci_competition_iv_1_is_not_bci_iv_2a = true
+
+[finetuning_base]
+effective_batch_size = 512
+learning_rate = 0.0005
+minimum_learning_rate = 0.000001
+scheduler = "cosine"
+optimizer = "AdamW"
+betas = [0.9, 0.999]
+weight_decay = 0.05
+epochs = 50
+warmup_epochs = 5
+drop_path = 0.1
+layer_decay = 0.65
+multiclass_label_smoothing = 0.1
+linear_probe_weight_decay = 0.0
+depth_sweep = ["0", "4", "8", "12", "all"]
+
+# The paper's full-model condition differs from unfreezing only all 12 blocks.
+[partial_tuab_balanced_accuracy]
+all = [0.8140, 0.0019]
+blocks_12 = [0.8141, 0.0022]
+blocks_8 = [0.8134, 0.0022]
+blocks_4 = [0.8074, 0.0032]
+linear_probe = [0.7954, 0.0059]
+
+[partial_tuev_balanced_accuracy]
+all = [0.6409, 0.0065]
+blocks_12 = [0.6541, 0.0250]
+blocks_8 = [0.6611, 0.0152]
+blocks_4 = [0.6188, 0.0118]
+linear_probe = [0.3461, 0.0225]

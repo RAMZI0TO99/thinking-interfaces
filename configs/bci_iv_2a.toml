@@ -1,0 +1,27 @@
+[dataset]
+key = "bci_iv_2a"
+moabb_class = "BNCI2014_001"
+subjects = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+raw_root = "data/raw/moabb"
+expected_subject_count = 9
+expected_sampling_rate_hz = 250.0
+expected_eeg_channels = 22
+expected_eog_channels = 3
+expected_stim_channels = 1
+expected_events = ["left_hand", "right_hand", "feet", "tongue"]
+
+[smoke_test]
+download = true
+force_update = false
+
+[verification.subject_1]
+verified_on = "2026-08-30"
+sessions = 2
+runs = 12
+sampling_rate_hz = 250.0
+eeg_channels = 22
+eog_channels = 3
+stim_channels = 1
+total_samples = 1160820
+training_sha256 = "054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325"
+evaluation_sha256 = "53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62"

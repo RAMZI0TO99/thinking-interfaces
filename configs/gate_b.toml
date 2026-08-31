@@ -1,0 +1,14 @@
+[gate_b]
+required_datasets = ["bci_iv_2a", "cho2017", "mmidb"]
+required_methods = ["eegnet", "shallow", "deep", "fbcsp", "tangent_lr", "ea_eegnet", "ea_tangent_lr"]
+seeds = [11, 23, 37, 53, 71]
+margin_source_dataset = "cho2017"
+margin_source_method = "eegnet"
+target_power = 0.80
+alpha = 0.05
+upstream_gate_a_signed = false
+
+[subjects]
+bci_iv_2a = 9
+cho2017 = 52
+mmidb = 109

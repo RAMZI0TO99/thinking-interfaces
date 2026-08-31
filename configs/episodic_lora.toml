@@ -1,0 +1,21 @@
+[episode]
+dataset = "bci_iv_2a"
+target_subject = "subject_09"
+included_labels = ["left_hand", "right_hand"]
+shots_per_class = 5
+seed = 11
+
+[base_training]
+epochs = 1
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+input_scale = 1000000.0
+device = "cuda"
+
+[lora]
+rank = 4
+alpha = 8.0
+dropout = 0.0
+steps = 20
+learning_rate = 0.01

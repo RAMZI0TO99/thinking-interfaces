@@ -1,0 +1,443 @@
+"""Resumable LOSO benchmark execution with support-only target adaptation."""
+
+from __future__ import annotations
+
+import json
+import time
+from collections.abc import Mapping, Sequence
+from dataclasses import asdict, dataclass
+from gc import collect as collect_garbage
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+from numpy.typing import NDArray
+
+from core.config import config_digest
+from core.metrics import classification_report
+from core.run_record import RunRecord
+from core.splits import earliest_balanced_episode
+from data.artifact_rejection import reject_amplitude_artifacts
+from data.unified import UnifiedArtifact, load_unified_artifact
+from evaluation.alignment import EuclideanAlignment, align_training_subjects
+from evaluation.baselines import (
+    BASELINE_METHODS,
+    BraindecodeClassifier,
+    FilterBankCSP,
+    TangentSpaceLogistic,
+    TorchTrainingConfig,
+)
+from evaluation.realtime_metrics import accuracy_coverage_curve, calibration_report
+
+FloatArray = NDArray[np.float32]
+IntArray = NDArray[np.int64]
+DETERMINISTIC_METHODS = frozenset({"fbcsp", "tangent_lr", "ea_tangent_lr"})
+
+
+@dataclass(frozen=True, slots=True)
+class DatasetMatrix:
+    dataset: str
+    signals: FloatArray
+    labels: NDArray[np.str_]
+    subjects: NDArray[np.str_]
+    channel_names: tuple[str, ...]
+    sampling_rate_hz: float
+    input_trials: int = 0
+    rejected_trials: int = 0
+
+
+def load_dataset_matrix(
+    directory: Path,
+    *,
+    dataset: str,
+    sampling_rate_hz: float,
+    absolute_peak_volts: float | None = None,
+) -> DatasetMatrix:
+    paths = tuple(sorted(directory.glob("subject_*.npz")))
+    if len(paths) < 2:
+        raise ValueError(f"{dataset} needs at least two subject artifacts for LOSO")
+    artifacts: list[UnifiedArtifact] = []
+    input_trials = 0
+    rejected_trials = 0
+    for path in paths:
+        artifact = load_unified_artifact(path)
+        input_trials += int(artifact.signals.shape[0])
+        if absolute_peak_volts is not None:
+            artifact, rejection = reject_amplitude_artifacts(
+                artifact, absolute_peak_volts=absolute_peak_volts
+            )
+            rejected_trials += rejection.rejected_trials
+        artifacts.append(artifact)
+    shape = artifacts[0].signals.shape[1:]
+    names = artifacts[0].channel_names
+    if any(item.signals.shape[1:] != shape or item.channel_names != names for item in artifacts):
+        raise ValueError(f"{dataset} artifacts do not share channel/sample dimensions")
+    signals = np.concatenate([item.signals for item in artifacts])
+    labels = np.concatenate([item.labels for item in artifacts])
+    subjects = np.concatenate(
+        [
+            np.full(item.labels.shape, path.stem)
+            for path, item in zip(paths, artifacts, strict=True)
+        ]
+    )
+    return DatasetMatrix(
+        dataset,
+        signals,
+        labels,
+        subjects,
+        names,
+        sampling_rate_hz,
+        input_trials,
+        rejected_trials,
+    )
+
+
+def _decoder(
+    method: str,
+    matrix: DatasetMatrix,
+    *,
+    classes: int,
+    seed: int,
+    torch_config: TorchTrainingConfig,
+) -> Any:
+    base_method = method.removeprefix("ea_")
+    if base_method == "tangent_lr":
+        return TangentSpaceLogistic()
+    if base_method == "fbcsp":
+        nyquist = matrix.sampling_rate_hz / 2.0
+        standard_bands = (
+            (8.0, 12.0),
+            (12.0, 16.0),
+            (16.0, 20.0),
+            (20.0, 24.0),
+            (24.0, 28.0),
+            (28.0, 32.0),
+        )
+        bands = tuple(
+            (low, min(high, nyquist - 1.0))
+            for low, high in standard_bands
+            if low < nyquist - 1.0
+        )
+        return FilterBankCSP(sampling_rate_hz=matrix.sampling_rate_hz, bands_hz=bands)
+    return BraindecodeClassifier(
+        base_method,
+        channels=matrix.signals.shape[1],
+        classes=classes,
+        samples=matrix.signals.shape[2],
+        sampling_rate_hz=matrix.sampling_rate_hz,
+        seed=seed,
+        training=torch_config,
+    )
+
+
+@dataclass(frozen=True, slots=True)
+class BenchmarkFoldResult:
+    target_subject: str
+    method: str
+    seed: int
+    balanced_accuracy: float
+    cohen_kappa: float
+    expected_calibration_error: float
+    coverage_at_threshold: float
+    selective_accuracy: float | None
+    fit_seconds: float
+    prediction_seconds: float
+    support_trials: int
+    query_trials: int
+    dataset_input_trials: int
+    dataset_rejected_trials: int
+    class_support: dict[str, int]
+    confusion_matrix: tuple[tuple[int, ...], ...]
+    class_names: tuple[str, ...]
+
+    def scalar_metrics(self) -> dict[str, float]:
+        metrics = {
+            key: float(value)
+            for key, value in asdict(self).items()
+            if isinstance(value, int | float) and not isinstance(value, bool)
+        }
+        metrics["benchmark_schema_version"] = 2.0
+        for label, support in self.class_support.items():
+            metrics[f"class_support_{label}"] = float(support)
+        for true_index, true_label in enumerate(self.class_names):
+            for predicted_index, predicted_label in enumerate(self.class_names):
+                metrics[f"confusion_true_{true_label}_pred_{predicted_label}"] = float(
+                    self.confusion_matrix[true_index][predicted_index]
+                )
+        return metrics
+
+
+def run_fold(
+    matrix: DatasetMatrix,
+    *,
+    target_subject: str,
+    method: str,
+    seed: int,
+    shots_per_class: int,
+    confidence_threshold: float,
+    torch_config: TorchTrainingConfig,
+    prealigned_source_signals: FloatArray | None = None,
+    prefiltered_fbcsp: tuple[FloatArray, ...] | None = None,
+) -> BenchmarkFoldResult:
+    if method not in BASELINE_METHODS:
+        raise ValueError(f"unknown baseline method: {method}")
+    target_global = np.flatnonzero(matrix.subjects == target_subject)
+    source_global = np.flatnonzero(matrix.subjects != target_subject)
+    if not target_global.size or not source_global.size:
+        raise ValueError("target and source trials must both be present")
+    episode = earliest_balanced_episode(
+        matrix.labels[target_global].tolist(),
+        subject_id=target_subject,
+        shots_per_class=shots_per_class,
+    )
+    support_global = target_global[np.asarray(episode.support_indices, dtype=np.int64)]
+    query_global = target_global[np.asarray(episode.query_indices, dtype=np.int64)]
+    train_global = np.concatenate((source_global, support_global))
+    class_names = tuple(sorted(set(matrix.labels.tolist())))
+    class_to_index = {name: index for index, name in enumerate(class_names)}
+    targets = np.asarray([class_to_index[name] for name in matrix.labels], dtype=np.int64)
+    train_signals = matrix.signals[train_global]
+    query_signals = matrix.signals[query_global]
+    if method.startswith("ea_"):
+        target_aligner = EuclideanAlignment().fit(matrix.signals[support_global])
+        aligned_support = target_aligner.transform(matrix.signals[support_global])
+        if prealigned_source_signals is None:
+            train_signals = align_training_subjects(
+                train_signals, matrix.subjects[train_global]
+            )
+        else:
+            if prealigned_source_signals.shape != matrix.signals.shape:
+                raise ValueError("prealigned source signals must match the dataset matrix")
+            train_signals = np.concatenate(
+                (prealigned_source_signals[source_global], aligned_support)
+            )
+        query_signals = target_aligner.transform(query_signals)
+    decoder = _decoder(
+        method,
+        matrix,
+        classes=len(class_names),
+        seed=seed,
+        torch_config=torch_config,
+    )
+    fit_started = time.perf_counter()
+    if method == "fbcsp" and prefiltered_fbcsp is not None:
+        if not isinstance(decoder, FilterBankCSP):
+            raise TypeError("FBCSP cache requires a FilterBankCSP decoder")
+        decoder.fit_prefiltered(
+            prefiltered_fbcsp,
+            targets[train_global],
+            indices=train_global,
+        )
+    else:
+        decoder.fit(train_signals, targets[train_global])
+    fit_seconds = time.perf_counter() - fit_started
+    prediction_started = time.perf_counter()
+    if method == "fbcsp" and prefiltered_fbcsp is not None:
+        probabilities = np.asarray(
+            decoder.predict_proba_prefiltered(
+                prefiltered_fbcsp,
+                indices=query_global,
+            ),
+            dtype=np.float32,
+        )
+    else:
+        probabilities = np.asarray(decoder.predict_proba(query_signals), dtype=np.float32)
+    prediction_seconds = time.perf_counter() - prediction_started
+    predicted = probabilities.argmax(axis=1)
+    report = classification_report(
+        [class_names[index] for index in targets[query_global]],
+        [class_names[index] for index in predicted],
+        labels=class_names,
+    )
+    calibration = calibration_report(probabilities, targets[query_global], bins=10)
+    coverage = accuracy_coverage_curve(
+        probabilities,
+        targets[query_global],
+        thresholds=(confidence_threshold,),
+    )[0]
+    return BenchmarkFoldResult(
+        target_subject,
+        method,
+        seed,
+        report.balanced_accuracy,
+        report.cohen_kappa,
+        calibration.expected_calibration_error,
+        coverage.coverage,
+        coverage.accuracy,
+        fit_seconds,
+        prediction_seconds,
+        int(support_global.size),
+        int(query_global.size),
+        matrix.input_trials or int(matrix.signals.shape[0]),
+        matrix.rejected_trials,
+        report.class_support,
+        report.confusion_matrix,
+        class_names,
+    )
+
+
+def valid_run_record(path: Path, *, expected_config_sha256: str | None = None) -> bool:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        required = {"config", "config_sha256", "seed", "dataset", "fold", "metrics"}
+        if not isinstance(payload, dict) or not required <= set(payload):
+            return False
+        metrics = payload["metrics"]
+        config_matches = (
+            expected_config_sha256 is None
+            or payload.get("config_sha256") == expected_config_sha256
+        )
+        return (
+            isinstance(metrics, dict)
+            and metrics.get("benchmark_schema_version") == 2.0
+            and config_matches
+        )
+    except (OSError, json.JSONDecodeError):
+        return False
+
+
+def _reusable_metrics(
+    output_root: Path,
+    *,
+    dataset: str,
+    method: str,
+    subject: str,
+    seeds: Sequence[int],
+    expected_config_sha256: str,
+) -> tuple[dict[str, float], int] | None:
+    """Find a completed equivalent deterministic run for another seed."""
+
+    if method not in DETERMINISTIC_METHODS:
+        return None
+    for source_seed in seeds:
+        source = output_root / dataset / method / f"seed_{source_seed}" / f"{subject}.json"
+        if not valid_run_record(source, expected_config_sha256=expected_config_sha256):
+            continue
+        payload = json.loads(source.read_text(encoding="utf-8"))
+        raw_metrics = payload["metrics"]
+        if not isinstance(raw_metrics, dict):
+            continue
+        metrics = {str(key): float(value) for key, value in raw_metrics.items()}
+        metrics["fit_seconds"] = 0.0
+        metrics["prediction_seconds"] = 0.0
+        metrics["reused_from_seed"] = float(source_seed)
+        return metrics, source_seed
+    return None
+
+
+def run_benchmark(
+    matrix: DatasetMatrix,
+    *,
+    methods: Sequence[str],
+    seeds: Sequence[int],
+    shots_per_class: int,
+    confidence_threshold: float,
+    torch_config: TorchTrainingConfig,
+    output_root: Path,
+    config: Mapping[str, Any],
+    max_new_runs: int | None = None,
+) -> tuple[Path, ...]:
+    """Run missing folds only and atomically write every completed record."""
+
+    outputs: list[Path] = []
+    completed = 0
+    expected_config_sha256 = config_digest(config)
+    prealigned_source_signals: FloatArray | None = None
+    subjects = tuple(sorted(set(matrix.subjects.tolist())))
+    for method in methods:
+        method_needs_work = any(
+            not valid_run_record(
+                output_root / matrix.dataset / method / f"seed_{seed}" / f"{subject}.json",
+                expected_config_sha256=expected_config_sha256,
+            )
+            for seed in seeds
+            for subject in subjects
+        )
+        prefiltered_fbcsp: tuple[FloatArray, ...] | None = None
+        if method == "fbcsp" and method_needs_work:
+            filter_decoder = _decoder(
+                method,
+                matrix,
+                classes=len(set(matrix.labels.tolist())),
+                seed=int(seeds[0]),
+                torch_config=torch_config,
+            )
+            if not isinstance(filter_decoder, FilterBankCSP):
+                raise TypeError("FBCSP factory returned the wrong decoder type")
+            prefiltered_fbcsp = filter_decoder.filtered_bands_memmap(
+                matrix.signals,
+                output_root
+                / ".cache"
+                / matrix.dataset
+                / expected_config_sha256
+                / "fbcsp",
+            )
+        if (
+            method.startswith("ea_")
+            and method_needs_work
+            and prealigned_source_signals is None
+        ):
+            prealigned_source_signals = align_training_subjects(
+                matrix.signals, matrix.subjects
+            )
+        for seed in seeds:
+            for subject in subjects:
+                output = output_root / matrix.dataset / method / f"seed_{seed}" / f"{subject}.json"
+                if valid_run_record(
+                    output, expected_config_sha256=expected_config_sha256
+                ):
+                    outputs.append(output)
+                    continue
+                if max_new_runs is not None and completed >= max_new_runs:
+                    return tuple(outputs)
+                reusable = _reusable_metrics(
+                    output_root,
+                    dataset=matrix.dataset,
+                    method=method,
+                    subject=subject,
+                    seeds=seeds,
+                    expected_config_sha256=expected_config_sha256,
+                )
+                if reusable is None:
+                    result = run_fold(
+                        matrix,
+                        target_subject=subject,
+                        method=method,
+                        seed=seed,
+                        shots_per_class=shots_per_class,
+                        confidence_threshold=confidence_threshold,
+                        torch_config=torch_config,
+                        prealigned_source_signals=prealigned_source_signals,
+                        prefiltered_fbcsp=prefiltered_fbcsp,
+                    )
+                    metrics = result.scalar_metrics()
+                else:
+                    metrics, _ = reusable
+                record = RunRecord.create(
+                    config=config,
+                    seed=seed,
+                    git_commit="no-git-workspace",
+                    dataset=matrix.dataset,
+                    fold=subject,
+                    metrics=metrics,
+                )
+                record.write_json(output)
+                outputs.append(output)
+                completed += 1
+                if (
+                    str(torch_config.device).startswith("cuda")
+                    and method not in DETERMINISTIC_METHODS
+                ):
+                    time.sleep(5.0)
+        prefiltered_fbcsp = None
+        collect_garbage()
+    return tuple(outputs)
+
+
+def estimated_instance_hours(
+    *, completed_run_seconds: float, methods: int, datasets_and_folds: Mapping[str, int], seeds: int
+) -> float:
+    if completed_run_seconds <= 0 or methods < 1 or seeds < 1:
+        raise ValueError("cost-estimate inputs must be positive")
+    total_runs = methods * seeds * sum(datasets_and_folds.values())
+    return completed_run_seconds * total_runs / 3600.0

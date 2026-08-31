@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinking-interfaces"
+version = "0.1.0"
+description = "Reproducible EEG decoding and real-time interface research harness."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<4",
+  "scipy>=1.14,<2",
+  "scikit-learn>=1.5,<2",
+]
+
+[project.optional-dependencies]
+data = [
+  "mne>=1.9,<2",
+  "moabb>=1.2,<2",
+]
+eeg = [
+  "mne>=1.9,<2",
+  "moabb>=1.2,<2",
+  "braindecode>=1.1,<2",
+  "pyriemann>=0.8,<1",
+  "pylsl>=1.17,<2",
+]
+torch = [
+  "torch==2.13.0",
+]
+dev = [
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.11,<1",
+  "mypy>=1.15,<2",
+]
+
+[tool.setuptools]
+packages = ["core", "encoder", "adaptation", "data", "realtime", "evaluation"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true

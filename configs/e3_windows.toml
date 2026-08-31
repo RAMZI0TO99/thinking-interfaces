@@ -1,0 +1,11 @@
+[experiment]
+name = "E3 causal window-duration sweep"
+profile = "profile_a"
+window_seconds = [0.5, 1.0, 2.0, 4.0]
+stride_seconds = 0.25
+causal = true
+query_only_evaluation = true
+
+[reporting]
+primary_metric = "balanced_accuracy"
+secondary_metrics = ["latency_ms", "itr_bits_per_minute", "coverage", "expected_calibration_error"]

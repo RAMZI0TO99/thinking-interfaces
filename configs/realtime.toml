@@ -1,0 +1,8 @@
+[confidence_gate]
+threshold = 0.70
+neutral_state = "neutral"
+probability_tolerance = 0.0001
+
+[accumulated_evidence]
+required_consecutive = 3
+neutral_state = "neutral"

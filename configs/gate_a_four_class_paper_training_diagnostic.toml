@@ -1,0 +1,32 @@
+[gate_a]
+attempt = "four_class_paper_training_diagnostic"
+source = "moabb_reference"
+subjects = [4, 5, 6, 7]
+seeds = [11]
+events = ["left_hand", "right_hand", "feet", "tongue"]
+included_labels = ["left_hand", "right_hand", "feet", "tongue"]
+bandpass_low_hz = 0.5
+bandpass_high_hz = 100.0
+common_average_reference = false
+sampling_rate_hz = 250.0
+confidence_level = 0.95
+reference_name = "Du et al. 2022 four-class EEGNet comparison"
+reference_status = "paper_training_settings_diagnostic"
+reference_score = 0.745
+
+[gate_a.model]
+drop_prob = 0.2
+
+[gate_a.training]
+epochs = 1000
+batch_size = 16
+learning_rate = 0.001
+weight_decay = 0.0
+validation_fraction = 0.2
+early_stopping_patience = 1001
+input_scale = 1000000.0
+
+[output]
+runs_root = "runs/gate_a/four_class_paper_training_diagnostic"
+checkpoints_root = "checkpoints/eegnet/gate_a/four_class_paper_training_diagnostic"
+summary = "runs/gate_a/gate_a_four_class_paper_training_diagnostic_summary.json"

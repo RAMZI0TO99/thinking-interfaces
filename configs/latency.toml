@@ -1,0 +1,10 @@
+[benchmark]
+artifact = "data/processed/bci_iv_2a/profile_a/subject_09.npz"
+sampling_rate_hz = 128.0
+classes = 4
+training_trials = 288
+training_epochs = 1
+batch_size = 64
+iterations = 100
+seed = 11
+input_scale = 1000000.0

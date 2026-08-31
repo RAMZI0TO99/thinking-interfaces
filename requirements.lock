@@ -1,0 +1,5 @@
+# Complete Phase I environment entry point for Windows / Python 3.12.
+# Component lockfiles remain separate to make dependency conflicts auditable.
+-r requirements-core.lock
+-r requirements-data.lock
+-r requirements-ml.lock

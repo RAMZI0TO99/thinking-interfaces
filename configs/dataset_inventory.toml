@@ -1,0 +1,14 @@
+[datasets.bci_iv_2a]
+raw_directory = "data/raw/moabb/MNE-bnci-data"
+processed_directory = "data/processed/bci_iv_2a/profile_a"
+expected_subjects = 9
+
+[datasets.cho2017]
+raw_directory = "data/raw/moabb/cho2017"
+processed_directory = "data/processed/cho2017/profile_a"
+expected_subjects = 52
+
+[datasets.mmidb]
+raw_directory = "data/raw/mmidb"
+processed_directory = "data/processed/mmidb/profile_a"
+expected_subjects = 109

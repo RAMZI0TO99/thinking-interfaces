@@ -1,0 +1,23 @@
+[policy]
+frozen = true
+freeze_date = "2026-08-30"
+selection_rule = "dataset-specific absolute trial-peak 99.9th percentile over the complete Phase I cohort; label-blind; class preservation required"
+quantile = 0.999
+label_blind = true
+
+[thresholds_volts]
+bci_iv_2a = 0.00005448345685727081
+cho2017 = 0.005895795032848071
+mmidb = 0.0009869709666818407
+
+[datasets.bci_iv_2a]
+artifact_directory = "data/processed/bci_iv_2a/profile_a"
+expected_subjects = 9
+
+[datasets.cho2017]
+artifact_directory = "data/processed/cho2017/profile_a"
+expected_subjects = 52
+
+[datasets.mmidb]
+artifact_directory = "data/processed/mmidb/profile_a"
+expected_subjects = 109

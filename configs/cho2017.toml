@@ -1,0 +1,26 @@
+[dataset]
+key = "cho2017"
+moabb_class = "Cho2017"
+subjects = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+raw_root = "data/raw/moabb/cho2017"
+expected_subject_count = 52
+expected_sampling_rate_hz = 512.0
+expected_eeg_channels = 64
+expected_emg_channels = 4
+expected_events = ["left_hand", "right_hand"]
+line_frequency_hz = 60.0
+
+[smoke_test]
+subject = 1
+download = true
+force_update = false
+
+[verification.subject_1]
+verified_on = "2026-08-30"
+sessions = 1
+runs = 1
+sampling_rate_hz = 512.0
+eeg_channels = 64
+emg_channels = 4
+total_samples = 717300
+source_sha256 = "57f2f10056b3c240adc78324872597d9b06b282df537a7763e98467275efe6db"
