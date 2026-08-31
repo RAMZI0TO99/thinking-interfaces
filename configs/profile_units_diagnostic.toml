@@ -1,0 +1,24 @@
+# Post-hoc compatibility debugging; never a new benchmark or a gate threshold.
+[diagnostic]
+comparison_config = "configs/profile_comparison.toml"
+output_directory = "runs/profile_units_diagnostic"
+legacy_result = "runs/profile_comparison.json"
+
+[runtime]
+device = "cuda"
+cpu_threads = 2
+minimum_free_memory_gib = 6.0
+minimum_free_gpu_gib = 1.0
+
+[conditions.profile_a_microvolts]
+profile = "profile_a"
+input_scale = 1000000.0
+
+[conditions.profile_b_original_units]
+profile = "profile_b"
+input_scale = 1.0
+
+[conditions.profile_b_microvolts]
+profile = "profile_b"
+# One stored Profile B unit is 0.1 mV = 100 microvolts.
+input_scale = 100.0

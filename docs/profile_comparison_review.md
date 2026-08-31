@@ -53,3 +53,26 @@ Evidence inspected: `configs/profile_comparison.toml`, `scripts/compare_profiles
 artifact metadata arrays, `runs/profile_comparison.json`, and the pinned-EEGNet
 implementation review. This is a read-through of current code and existing
 results, not a rerun or a reconstruction of missing historical provenance.
+
+## Declared post-hoc unit diagnostic
+
+`configs/profile_units_diagnostic.toml` declares three bounded conditions before
+new scores are observed: Profile A in microvolts (the original multiplier of
+1,000,000), Profile B in its original 0.1-mV units (multiplier 1), and Profile B
+converted to microvolts (multiplier 100). The latter two use exactly the same
+stored signals, model, seed 11, sessions, validation split and training recipe.
+Only their numerical input multiplier differs. All other settings come from the
+unchanged original comparison configuration: A01, maximum 20 epochs, batch 64,
+learning rate 0.001, validation fraction 0.2 and patience 5.
+
+`scripts/diagnose_profile_units.py` saves full histories, class counts, confusion
+matrices, query probabilities, exact split indices, source identity and artifact
+hashes in a separate resumable output folder. The existing comparison result
+and frozen benchmark are never overwritten. The declared GPU run checks free
+memory first, uses two CPU threads and does not compete with the main CPU-only
+classical worker for GPU training. No diagnostic scores exist yet.
+
+This is post-hoc compatibility debugging, not a preregistered performance claim.
+Its B-vs-B comparison can isolate the conditional effect of input scaling under
+this recipe. It cannot isolate the remaining A/B changes (band, reference,
+baseline or physical kernel duration), and no outcome automatically signs a gate.
