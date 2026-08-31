@@ -95,7 +95,8 @@ class ReferencePlan:
                    for key, value in expected.items()):
                 raise ValueError(f"reference {section} differs from the specified protocol")
         paths = config["paths"]
-        expected_paths = {"environment_config", "raw_directory", "output_directory"}
+        expected_paths = {"environment_config", "raw_directory", "output_directory",
+                          "prerequisite_smoke_result", "prerequisite_smoke_sha256"}
         if not isinstance(paths, Mapping) or set(paths) != expected_paths:
             raise ValueError("reference paths have missing or unknown fields")
         if any(not isinstance(value, str) or not value for value in paths.values()):

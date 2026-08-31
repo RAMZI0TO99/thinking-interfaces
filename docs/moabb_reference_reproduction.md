@@ -122,8 +122,8 @@ No numerical smoke result existed at that point; the later successful test is
 documented below. A two-epoch integration score does not
 count toward the reference's 300-epoch training protocol or any gate acceptance.
 
-Next: implement the resumable full-evaluation worker and independent record audit,
-then execute the prepared grid. Four repeat seeds
+Next: qualify the implemented resumable full-evaluation worker with one declared
+full-protocol fold, then execute and independently audit the prepared grid. Four repeat seeds
 are required by the day plan; the reference YAML fixes model seed 42, so explain
 any repeated-seed extension explicitly. Preserve per-fold predictions, split
 identities, preprocessing/source/configuration hashes and elapsed time. Report
@@ -196,3 +196,39 @@ These functions are tested with synthetic scores, not a reproduced EEGNet result
 Even a complete score table explicitly leaves underlying run integrity unverified
 and scientific gate approval false; actual recorded predictions, identities and
 provenance still need a separate audit before any completion claim.
+
+## Resumable worker and record checks
+
+The full worker is implemented, but has not yet completed a full-protocol fit.
+It shares the exact numerical training/preprocessing function with the successful
+smoke. The refactor adds session labels, channel names, prediction timing and
+early-stopping history metadata; it does not change numerical operations. The
+two-epoch smoke wrapper remains bounded and separate. Its saved prerequisite
+result is pinned by SHA-256 in the full-evaluation configuration.
+
+```powershell
+# Audit saved reference records without training (exit 2 means incomplete).
+.\.venv\Scripts\python.exe -m scripts.run_moabb_reference --check-only
+# Qualify the first declared full-protocol unit; no shortened training override.
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.run_moabb_reference --unit-index 0
+# Resume all 450 declared fits, in isolated sequential child processes.
+.\.venv\Scripts\python.exe -m scripts.run_moabb_reference
+```
+
+Each fit requires a fresh verified environment/resource receipt and committed,
+clean source. It preserves raw-input hashes, all splits, predictions and history
+in an atomic RunRecord envelope under a configuration-specific reference folder.
+Existing results are checked before reuse and never silently replaced. Exclusive
+per-unit locks prevent concurrent writers; stale locks require process-identity
+review. Low startup resources defer before importing the training stack; the
+per-epoch memory stop remains active. The main benchmark's configuration and
+records are not changed by this runner.
+
+The record checker reconstructs the five-fold split and final-20% validation
+partition, independently computes pairwise ROC-AUC from saved probabilities,
+and replays the configured patience-75 early-stopping rule from validation loss.
+It verifies full-protocol epoch counts, provenance, raw-input identity and input
+shapes. Missing/invalid/unexpected records or pending locks prevent completion.
+These checks do not yet independently reconstruct epochs from raw recordings or
+resolve the scientific acceptance decision; neither a smoke nor a complete
+record table automatically approves Gate A.
