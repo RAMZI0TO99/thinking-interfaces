@@ -49,7 +49,7 @@ separate and are never silently converted into local successes.
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
-| Gate A MOABB reproduction | **Not signed** | Published reference verified and separate real-data Keras smoke passed. Full protocol-matched grid remains unexecuted and acceptance rule unresolved. See Gate A/deviation/reference records. |
+| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and one full 300-epoch fold passed, including independent raw-input reconstruction. 449/450 matched fits remain and acceptance rule is unresolved. See Gate A/deviation/reference records. |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does
 not convert Gate A into a pass.
@@ -59,7 +59,7 @@ not convert Gate A into a pass.
 | Requirement | State | Evidence |
 |---|---|---|
 | Pre-cue control at chance in CI | Complete/pass | 24.86%, subject CI 24.20–25.51%; leakage CI record |
-| Profile B implementation and Profile A/B cross-check | Cross-check complete/negative result; causal explanation unresolved | All BCI Profile B artifacts, `runs/profile_comparison.json`, and `docs/profile_comparison_review.md`; equal trial metadata but different input units, physical-time kernels, reference, baseline and band |
+| Profile B implementation and Profile A/B cross-check | Cross-check negative; input-unit effect isolated, remaining gap unresolved | Three-condition same-split diagnostic exactly reproduced original scores; converting B to microvolts gained 11.4583 pp but left a 19.7917-pp gap. Histories/predictions preserved separately; frozen profiles unchanged. See `docs/profile_comparison_review.md`. |
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |
 | Generic LoRA, adapters, prompt generator; stand-in runs | Complete | Modules, tests, `runs/adaptation_standin_smoke.json` |
