@@ -58,7 +58,7 @@ not convert Gate A into a pass.
 | Requirement | State | Evidence |
 |---|---|---|
 | Pre-cue control at chance in CI | Complete/pass | 24.86%, subject CI 24.20–25.51%; leakage CI record |
-| Profile B implementation and Profile A/B cross-check | Complete/negative result | All BCI Profile B artifacts and `runs/profile_comparison.json` |
+| Profile B implementation and Profile A/B cross-check | Cross-check complete/negative result; causal explanation unresolved | All BCI Profile B artifacts, `runs/profile_comparison.json`, and `docs/profile_comparison_review.md`; equal trial metadata but different input units, physical-time kernels, reference, baseline and band |
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |
 | Generic LoRA, adapters, prompt generator; stand-in runs | Complete | Modules, tests, `runs/adaptation_standin_smoke.json` |

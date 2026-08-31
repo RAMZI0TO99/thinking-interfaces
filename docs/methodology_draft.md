@@ -25,6 +25,12 @@ a one-second pre-cue baseline, and a four-second post-cue epoch. Profile B appli
 the LaBraM-compatible 0.1-75 Hz band, origin-specific 50/60 Hz notch, 200 Hz
 resampling, 0.1 mV scaling, and one-second patches.
 
+The A01 Profile A/B compatibility check yielded 56.60% versus 25.35% balanced
+accuracy. Trial metadata matched exactly, but the comparison also changed input
+units, effective temporal-kernel duration, referencing and baseline correction.
+It does not isolate a causal effect of filtering or establish interchangeability;
+the unresolved differences are detailed in `profile_comparison_review.md`.
+
 The public cohort contains nine BCI Competition IV 2a subjects (5,184 trials),
 52 Cho2017 subjects (10,520 trials), and 109 MMIDB subjects (4,917 trials before
 artifact rejection). S088, S089, S092, and S100 follow the precommitted
