@@ -1,0 +1,43 @@
+# Isolated compatibility environment, not a claim about the paper's exact lockfile.
+# Never install these requirements into the main .venv.
+[environment]
+directory = "runs/moabb_reference/environment"
+python_version = "3.12"
+source_revision = "507a4cccda9efbd5ef019aceeeeb3d298308ec43"
+source_archive_sha256 = "9f5914dbb073b06f4fdd45207db3dfec904bbb4323e3a5fec94cbe7f769d27ff"
+source_ref_verified = "v1.1.2"
+requirements = [
+  "moabb @ https://codeload.github.com/NeuroTechX/moabb/zip/507a4cccda9efbd5ef019aceeeeb3d298308ec43#sha256=9f5914dbb073b06f4fdd45207db3dfec904bbb4323e3a5fec94cbe7f769d27ff",
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+  "scikit-learn==1.5.2",
+  "pandas==2.2.2",
+  "mne==1.7.1",
+  "mne-bids==0.14",
+  "tensorflow==2.16.1",
+  "keras==3.3.3",
+  "scikeras==0.13.0",
+  "pyriemann==0.7",
+  "h5py==3.11.0",
+  "matplotlib==3.8.4",
+  "seaborn==0.12.2",
+]
+
+[runtime]
+device = "cpu"
+intra_op_threads = 1
+inter_op_threads = 1
+minimum_free_memory_gib = 10.0
+stop_below_free_memory_gib = 4.0
+minimum_free_disk_gib = 10.0
+
+[source_files]
+"moabb/pipelines/deep_learning.py" = "5f4a4e8e40f975f5e778fd02d0dae4b93e9bed43bc971e46e9187c78c1badda2"
+"moabb/pipelines/features.py" = "b098ae0033bec6c16e128d35a47ea84df78088930ae5cdf831ae0b8284c3a987"
+"moabb/pipelines/utils_deep_model.py" = "7f7d2e5b964495f7bf7eec9ed3eecf54602b7d26f85638120782eafe85c8c63f"
+"moabb/paradigms/motor_imagery.py" = "3954f14f2e640bb6072ed8e5829fbec93ec5da77ebba0b8b70862000022252d9"
+"moabb/paradigms/base.py" = "dfb313fc3f24be57f5e23d026326e4be61890b45602106217cfc5787155c567f"
+"moabb/datasets/bnci.py" = "c74af9666e8873520ab2b76d0c3e0291867d0da44ba94ef666ec7a6465842467"
+"moabb/datasets/preprocessing.py" = "86f9824203afc690900868ba1666dc6e077e6ae66ca72de7df6827ec375c4d0f"
+"moabb/evaluations/evaluations.py" = "d6cf29a0442048ebf86eab96efc2cd899c5e531b9b5f99aaaf1e3756d6f77f2a"
+"moabb/benchmark.py" = "b3dda1819239cdaa001d5bdd3cc890bb301f5469ae07d9d41fd008cf51bb0440"

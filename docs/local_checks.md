@@ -44,3 +44,19 @@ A changed existing signal audit is rejected and preserved, not overwritten.
 New control records include the selected control configuration, its hash and
 source provenance; these fields are not retroactively inserted into old records.
 These targeted controls remain separate from the three historical merge checks.
+
+## Isolated MOABB reference environment
+
+The reference's older dependencies live under `runs/moabb_reference/environment`,
+not the main `.venv`. Its configuration and upstream source-file hashes are in
+`configs/moabb_reference_environment.toml`. The lightweight check is:
+
+```powershell
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.check_moabb_reference_environment
+```
+
+This verifies installed versions, exact upstream archive identity and nine reviewed
+source files, then measures available resources without importing TensorFlow or
+MOABB. The environment may verify successfully while training readiness is false;
+these are separate fields. An environment check is not a training smoke test or
+Gate A reproduction. Source hash mismatch or invalid resource limits fail closed.

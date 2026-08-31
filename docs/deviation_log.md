@@ -539,3 +539,24 @@ reference. Current status documents are corrected; historical configurations and
 result hashes remain unchanged, including their then-recorded reference-status
 strings. No benchmark setting, acceptance tolerance, gate approval, or scientific
 clearance changes as a consequence of this discovery.
+
+## 2026-08-31 — Isolate the verified MOABB reference software
+
+The linked reference resolves to commit 507a4cccda9efbd5ef019aceeeeb3d298308ec43,
+later than the 2024 paper; it is the currently linked implementation, not proof
+of the paper's original dependency lock. Its older NumPy/scikit-learn requirements
+are incompatible with the main environment's versions. A separate Python 3.12
+environment was installed under runs/moabb_reference/environment from an explicit
+configuration and a successful dependency dry-run. All install URLs were restricted
+to official package hosting/GitHub source archives and bound to the resolved hashes.
+The initial Seaborn version conflict was corrected before installation; no dependency
+was downgraded in the main environment, whose package/version snapshot hash remained
+unchanged. Installed logical file size was approximately 2.04 GB.
+
+The installation passed dependency consistency, archive identity, nine source-file
+hash checks and installed-version verification. Resource readiness was false at
+7.20 GiB available memory against the unchanged 10 GiB startup limit; no ML import,
+training, or benchmark interruption was performed for this check. The live Cho
+benchmark continues on its original loaded source. Environment verification is
+not a reproduced score, a leakage control, or a gate sign-off. See the separate
+MOABB reference investigation for the evidence and remaining smoke/full-run work.
