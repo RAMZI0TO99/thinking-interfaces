@@ -577,3 +577,19 @@ epochs/one five-fold split. The first on-laptop call correctly deferred at 6.95 
 free memory. No reference model was imported or trained, no numerical smoke result
 was produced, and no gate or benchmark record was changed. The running benchmark
 keeps priority; the 10 GiB startup guard has not been lowered.
+
+## 2026-08-31 — Specify the complete reference grid before training
+
+The newly verified reference motivates a separate nine-subject, two-session,
+five-fold grid. It contains the published model seed 42 plus the four earlier
+Gate A seeds as a separately reported extension: 90 anchor fits and 360 repeat
+fits. No source benchmark or historical gate record is overwritten. The reference
+CV split seed stays 42; model seeds change only the training random state.
+
+Configuration and aggregation tests require the full grid, reject altered
+reference settings or a newly inserted acceptance tolerance, and keep confidence
+intervals at the nine-subject level. Both between-subject/session SD conventions
+are labeled; neither is an acceptance band. These are planning/aggregation tests
+only; numerical reference training and independent run-integrity review remain
+outstanding. A short pause at the next saved main-benchmark boundary is planned
+to test the new reference safely, followed by immediate benchmark resumption.

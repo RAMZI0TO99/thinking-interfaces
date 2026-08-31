@@ -128,3 +128,28 @@ identities, preprocessing/source/configuration hashes and elapsed time. Report
 the reference's aggregation separately from subject-level uncertainty.
 
 No current run or historical result may be relabeled as this reproduction.
+
+## Prepared full evaluation grid
+
+`configs/moabb_reference_evaluation.toml` declares all nine subjects, both sessions
+and five within-session folds. Seed 42 is the published-configuration anchor
+(90 fits). The earlier Gate A repeat seeds 11/23/37/53 remain a separate four-seed
+extension (360 fits). Thus the prepared grid has 450 fits, not 450 independent
+subjects and not 450 existing results. It has not been launched. The CV split seed
+remains 42 across model seeds, isolating training-seed variation.
+
+The configuration preserves 300 epochs, batch 64, Adam 0.001, 20% validation,
+dropout 0.5, patience 75, no best-weight restoration and upstream preprocessing.
+The plan validator rejects an incomplete subject/session grid, altered protocol,
+ambiguous identity types or an added pass tolerance. The descriptive aggregator
+requires every unique configured fold, averages folds within sessions, reports
+each seed separately and computes the four-repeat-seed interval over nine subject
+means. Seed 42 is excluded from that four-seed interval. Sample and population SDs
+across subject/session pairs are both labeled because the table's precise ddof
+has not been established from the linked converter. The published SD is not used
+as a tolerance.
+
+These functions are tested with synthetic scores, not a reproduced EEGNet result.
+Even a complete score table explicitly leaves underlying run integrity unverified
+and scientific gate approval false; actual recorded predictions, identities and
+provenance still need a separate audit before any completion claim.

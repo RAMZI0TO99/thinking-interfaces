@@ -1,0 +1,36 @@
+# Published-seed anchor plus the four seeds used by the earlier Gate A attempts.
+# This is not a pass threshold, and no smoke score counts toward this grid.
+[reference]
+subjects = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+sessions = ["0train", "1test"]
+reference_model_seed = 42
+repeat_model_seeds = [11, 23, 37, 53]
+split_seed = 42
+fold_count = 5
+published_roc_auc = 0.7715
+published_between_subject_session_sd = 0.1933
+confidence_level = 0.95
+
+[training]
+epochs = 300
+batch_size = 64
+learning_rate = 0.001
+validation_split = 0.2
+drop_rate = 0.5
+patience = 75
+learning_rate_factor = 0.5
+restore_best_weights = false
+
+[preprocessing]
+fmin = 8.0
+fmax = 32.0
+resample_hz = 128.0
+common_average_reference = false
+baseline = "none"
+epoch_interval = "dataset_default_inclusive"
+standardization = "upstream_per_epoch_across_channels_at_each_time_sample"
+
+[paths]
+environment_config = "configs/moabb_reference_environment.toml"
+raw_directory = "data/raw/moabb/MNE-bnci-data/~bci/database/001-2014"
+output_directory = "runs/moabb_reference/evaluation"
