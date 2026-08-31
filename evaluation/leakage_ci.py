@@ -13,6 +13,7 @@ from typing import Any, cast
 
 from core.config import config_digest, load_toml
 from core.splits import grouped_k_fold, leave_one_subject_out
+from evaluation.source_bound_controls import verify_current_controls
 
 
 @dataclass(frozen=True, slots=True)
@@ -20,6 +21,7 @@ class LeakageCIReport:
     subject_disjointness_passed: bool
     shuffled_label_passed: bool
     pre_cue_passed: bool
+    current_source_controls_passed: bool
 
     @property
     def passed(self) -> bool:
@@ -89,16 +91,9 @@ def run_leakage_ci(project_root: Path) -> LeakageCIReport:
     loso = leave_one_subject_out(subjects)
     grouped = grouped_k_fold(subjects, folds=3)
     disjoint = all(not fold.support_subjects & fold.query_subjects for fold in (*loso, *grouped))
-    shuffled = verified_control_summary(
-        project_root,
-        "gate_a_shuffle.toml",
-        flag_key="negative_control_passed",
-        limit_key="negative_control_max_accuracy",
-    )
-    pre_cue = verified_control_summary(
-        project_root,
-        "pre_cue_control.toml",
-        flag_key="control_passed",
-        limit_key="control_max_accuracy",
-    )
-    return LeakageCIReport(disjoint, shuffled, pre_cue)
+    evidence = verify_current_controls(project_root)
+    controls = evidence["controls"]
+    shuffled = controls.get("gate_a_shuffle.toml", {}).get("passed") is True
+    pre_cue = controls.get("pre_cue_control.toml", {}).get("passed") is True
+    current = evidence.get("passed") is True
+    return LeakageCIReport(disjoint, shuffled, pre_cue, current)

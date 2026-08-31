@@ -11,6 +11,7 @@ from core.contract_freeze import verify_contract_freeze
 from evaluation.benchmark_audit import audit_benchmark
 from evaluation.corpus_duplicates import verify_corpus_snapshot
 from evaluation.equivalence_freeze import source_margin_record
+from evaluation.leakage_ci import run_leakage_ci
 from evaluation.live_demo_audit import verify_live_demo
 from evaluation.quality_audit import read_quality_status, verify_quality_bundle
 from evaluation.support_adaptation_audit import audit_support_adaptation
@@ -65,7 +66,7 @@ def main() -> None:
     inventory = read_json(root / "runs" / "dataset_inventory.json")
     artifact_audit = read_json(root / "runs" / "artifact_audit_status.json")
     threshold_audit = read_json(root / "runs" / "artifact_threshold_audit.json")
-    leakage = read_json(root / "runs" / "leakage_ci_status.json")
+    leakage = run_leakage_ci(root)
     lsl = read_json(root / "runs" / "lsl_loopback_60s.json")
     labram = read_json(root / "runs" / "labram_ready_state.json")
     gpu_demo = read_json(root / "runs" / "replay_demo_subject_09_cuda.json")
@@ -187,7 +188,7 @@ def main() -> None:
         inventory.get("complete")
         and artifact_audit.get("passed")
         and threshold_audit.get("frozen")
-        and leakage.get("passed")
+        and leakage.passed
         and lsl.get("passed")
         and labram.get("finite_logits")
         and gpu_demo.get("frames")
@@ -232,7 +233,8 @@ def main() -> None:
         "public_datasets_complete": bool(inventory.get("complete")),
         "artifact_audit_passed": bool(artifact_audit.get("passed")),
         "preprocessing_frozen": bool(threshold_audit.get("frozen")),
-        "leakage_ci_passed": bool(leakage.get("passed")),
+        "leakage_ci_passed": leakage.passed,
+        "current_source_controls_passed": leakage.current_source_controls_passed,
         "lsl_loopback_passed": bool(lsl.get("passed")),
         "labram_ready": bool(labram.get("finite_logits")),
         "gpu_demo_recorded": bool(gpu_demo.get("frames")),

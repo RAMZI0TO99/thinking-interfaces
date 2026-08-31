@@ -695,3 +695,25 @@ UTC, reused its completed work and returned to Cho classical fitting. The smoke
 does not authorize a gate threshold, replace the complete 300-epoch/four-repeat
 evaluation, or change the frozen main benchmark. Full reference execution and
 independent record auditing remain outstanding.
+
+## 2026-08-31 — Replace historical-only CI with current-source full controls
+
+The original local checks revalidated historical control records without a source
+fingerprint. A separate current-source refresh now preserves all original settings
+and cohorts: nine shuffled-development-label fits and 36 pre-cue fits. It passed
+at subject-weighted means 48.7654% and 24.8553%, under unchanged 60%/35% limits.
+Independent raw/artifact reconstruction matched all 45 recorded inputs and query
+targets. Historical records/checkpoints were not overwritten or relabeled.
+
+The local hooks and Phase I status now require a complete verified bundle keyed
+to source, configurations, input files and environment. Matching records can be
+reused after independent validation; changed contexts fail until refreshed. This
+closes the local current-source control evidence gap, not remote branch protection,
+Gate A reproduction, the support-seed decision or all-dataset plausibility flags.
+See `docs/source_bound_controls_review.md` for immutable evidence identifiers.
+
+The preceding benchmark stopped after Cho EA tangent subject 39 with a native
+libzmq bad-file-descriptor error. Its cause remains unresolved. All 2,132 completed
+benchmark records audited valid, including byte-identical preservation of all
+2,118 earlier snapshotted files. The full control refresh used this existing stop;
+no unrelated process was terminated and no scientific benchmark settings changed.

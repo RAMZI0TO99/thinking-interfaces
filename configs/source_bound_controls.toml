@@ -1,0 +1,9 @@
+[controls]
+configurations = ["gate_a_shuffle.toml", "pre_cue_control.toml"]
+output_directory = "runs/source_bound_controls"
+device = "cuda"
+
+[runtime]
+minimum_free_memory_gib = 10.0
+stop_below_free_memory_gib = 4.0
+minimum_free_disk_gib = 10.0

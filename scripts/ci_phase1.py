@@ -16,6 +16,9 @@ def main() -> None:
     output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(payload, indent=2, sort_keys=True))
     if not report.passed:
+        print("Current-source leakage evidence is missing, stale or failed. "
+              "Inspect with python -m scripts.refresh_source_bound_controls --check-only; "
+              "run without --check-only to refresh the full 45-fit controls safely.")
         raise SystemExit(1)
 
 

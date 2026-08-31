@@ -45,7 +45,7 @@ separate and are never silently converted into local successes.
 | EEGNet under the decoder harness and support-only adaptation | Complete | Baseline/adaptation modules and real episodic LoRA record |
 | EEGNet implementation checked against Lawhern et al. | Review complete; exact parity not established | `docs/eegnet_implementation_review.md`; known padding, dropout and classifier-constraint differences remain explicit |
 | Distinct source-only EEGNet fit followed by full-model support-only fine-tuning | Complete locally | 45/45 separately audited two-class BCI records; source/support/query boundaries tested, high subject scores remain flagged |
-| Shuffled-label and subject-disjointness CI | Local checks implemented; current-source negative-control coverage not yet established | Fresh split assertions plus historical control-record revalidation; see `docs/phase1_protocol_decisions.md`. |
+| Shuffled-label and subject-disjointness CI | Complete locally, with current-source full-cohort controls | Nine fresh shuffled-label fits: 48.77%; exact source/input/environment binding, reconstructed inputs and fail-closed merge checks. See `docs/source_bound_controls_review.md`. |
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
@@ -58,7 +58,7 @@ not convert Gate A into a pass.
 
 | Requirement | State | Evidence |
 |---|---|---|
-| Pre-cue control at chance in CI | Historical control passed and is revalidated locally | 24.86%, subject CI 24.20–25.51%; current-source control binding/rerun remains to be verified, not inferred from the saved pass flag. |
+| Pre-cue control at chance in CI | Complete locally, with current-source full-cohort controls | All 36 configured fresh fits: 24.86%; all input identities and predictions independently checked. Matching evidence is revalidated on each merge; source/input/environment changes require a new bundle. Historical evidence remains separate. |
 | Profile B implementation and Profile A/B cross-check | Cross-check negative; input-unit effect isolated, remaining gap unresolved | Three-condition same-split diagnostic exactly reproduced original scores; converting B to microvolts gained 11.4583 pp but left a 19.7917-pp gap. Histories/predictions preserved separately; frozen profiles unchanged. See `docs/profile_comparison_review.md`. |
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |

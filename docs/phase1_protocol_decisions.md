@@ -35,23 +35,32 @@ decision is pending. In particular:
 - Cho's unproven acquisition chronology remains a separate limitation. Adding a
   seed cannot reconstruct the original chronology from separate class arrays.
 
-## Merge checks: historical control revalidation is not fresh pipeline coverage
+## Merge checks: source-bound controls now required
 
 Week 2 installs shuffled-label and subject-disjointness checks in CI; Week 3 adds
 the pre-cue control, and the final plan describes three tests on every merge.
-The local hooks really execute three checks. `evaluation/leakage_ci.py` freshly
-constructs LOSO/grouped subject splits, but the other two checks validate saved
-control configurations, cohort/seed coverage, individual metrics and recomputed
-subject means. They do not retrain the negative-control models on each merge.
+The earlier local hooks freshly constructed LOSO/grouped subject splits but
+revalidated historical control records for the other two checks. Those records
+had no source fingerprint, so their passing means could not establish current
+pipeline coverage. They remain preserved with their actual original provenance.
 
-This is useful historical-evidence checking, not proof that the current numerical
-training/data path would reproduce those controls. A green check must not be
-described as that stronger claim. The historical scores remain valid evidence
-with their original provenance; no current code identity is assigned to old fits.
+The implementation now requires all 45 configured real-data control fits, keyed
+by the full local source fingerprint, original configurations, 18 raw MAT and nine
+pre-cue artifact hashes, installed packages, Python/platform, NVIDIA device/driver
+and relevant numerical thread environment. A missing, changed or incomplete key
+fails CI. A matching bundle is independently revalidated on each merge; it is
+not retrained for documentation-only changes. Source, data or environment changes
+require a new full bundle before the local hook can pass.
 
-Remaining local verification is to refresh the configured real-data controls and
-bind any reused control evidence to the numerical code, input identities and
-environment that actually produced it, or rerun it when those change. The
-complete configured control cohorts must not be replaced with a conveniently
-small chance-level example. This remains separate from the matched MOABB
-reference evaluation and from remote branch protection, which is unavailable.
+Verification reconstructs the exact session split and development-only shuffle,
+checks full training/early-stopping histories, counts scores from the actual saved
+query predictions, and checks the unchanged cohort-level limits. Historical
+summary booleans cannot substitute for that evidence. The Phase I status command
+also rechecks the current bundle instead of trusting the last saved CI status.
+
+`scripts/refresh_source_bound_controls.py` runs/resumes the complete cohorts in a
+separate keyed directory. It preserves historical runs and checkpoints, uses the
+original training routine, and retains the 10 GiB start / 4 GiB model-call RAM
+guards and GPU cooling policy. This is a check of the configured BCI controls,
+not a new blanket clearance for Cho/MMIDB or the matched MOABB reference. Remote
+branch protection and the pending support-draw decision remain separate.
