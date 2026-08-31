@@ -319,3 +319,20 @@ Both the four new fits and this audit used clean commit
 `125b2e191b42910a46d3567d1db675e769fd01567140bb7c10816d520c3d7aed`.
 The earlier pilot retains its own actual source provenance. As before, exact
 input correspondence does not establish full-grid coverage or scientific sign-off.
+
+## Four further fits and bounded shared scheduling
+
+At 17:03 UTC on 2026-08-31 the reference queue resumed with 10.383 GiB free
+memory. Seed-42/A01/1test folds 0–3 completed under the original full protocol.
+Fold 4 deferred before training at 9.100 GiB, below the unchanged 10-GiB start
+guard. All nine saved fits passed the independent record validator; no invalid
+units or pending locks remained. The snapshot was
+`a20f77feed6ae2651cbe71cac001eddaf26bee1b1cbb2c85736f953e605fd913`.
+The earlier five-fold raw-input reconstruction remains separate; these four
+new fits were not covered by that historical audit.
+
+The shared `scripts/finish_phase1_compute.py` supervisor now alternates a bounded
+main-benchmark batch with one isolated reference fit. Each reference child still
+performs its original environment, source, input, epoch and 4-GiB memory checks.
+No scientific setting, acceptance tolerance or old record is changed by scheduling.
+The reference integrity JSON is refreshed after each successful bounded unit.

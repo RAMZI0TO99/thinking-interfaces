@@ -167,3 +167,25 @@ RAM 8.595 GiB, maximum process memory 1.681 GiB. All 45 inputs were hash-linked
 to the pinned independent reconstruction:
 `runs/source_bound_controls/input_audits/20260831T164551199457Z.json`, SHA-256
 `c20671d22375d47fed25659c1c9797a46139779b0b30f754cf60df1b9cc2543b`.
+
+## Full refresh for bounded shared compute scheduling
+
+The bounded benchmark/reference supervisor and its regression tests changed the
+source fingerprint to
+`b35ac4a10503748ec44243f1c3cfaced415a761c5e8c5ea6a1a8ef7a53a44446`.
+All 45 controls were rerun under context
+`c961ef68b30c9d18f0ec5ba2c41d0248c33accfb00f62dc2ba6dd9e8943284dc`,
+snapshot `4de9db1b1580b1256e38099fb5f1c6f73195d8a4382f2fef8bc42d50adebc339`.
+No units were missing or invalid. Every result, history, prediction, input/split
+identity and training/query target exactly matched the initial refresh. Means
+remain 48.7654% shuffled-label and 24.8553% pre-cue under unchanged limits.
+
+The 1,166 epochs took 56.275 seconds of recorded fit/prediction time; minimum free
+RAM was 8.938 GiB and maximum process memory 1.681 GiB. All 45 new records were
+hash-linked to the pinned independently reconstructed inputs, without claiming
+another preprocessing execution:
+`runs/source_bound_controls/input_audits/20260831T173206998783Z.json`, SHA-256
+`69f6e692ac4323cfcda9466b183891ea214f2905e1dfe2b8205e65152cf0ee9a`.
+The separate 20-record bounded MMIDB recovery also preserved all 2,390 earlier
+records; its 2,410-record snapshot was
+`3c026dd9cb15bb8de3de2620932a19e04a92f66282008ccbcd68b6083f1dc861`.

@@ -49,7 +49,7 @@ separate and are never silently converted into local successes.
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
-| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and 5/450 full-protocol fits validated, including independent raw-input reconstruction for all five. 445 fits remain; the reference queue defers when RAM is below its unchanged start threshold. Acceptance rule remains unresolved. See Gate A/deviation/reference records. |
+| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and 9/450 full-protocol fits validated at 17:11 UTC, with independent raw-input reconstruction initially covering the first five. Later counts are in the reference integrity record. The queue defers below its unchanged resource thresholds; acceptance remains unresolved. See Gate A/deviation/reference records. |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does
 not convert Gate A into a pass.
@@ -74,7 +74,7 @@ not convert Gate A into a pass.
 
 | Requirement | State | Evidence |
 |---|---|---|
-| Checkpoint/resume/incremental atomic records and cost estimate | Complete | Benchmark runner, schema/hash validation, launch estimates |
+| Checkpoint/resume/incremental atomic records and cost estimate | Complete | Benchmark runner, schema/hash validation, launch estimates; bounded supervisor alternates at most 20 benchmark records with one isolated reference fit and checks append-only preservation. |
 | EEGNet, Shallow, Deep, FBCSP, tangent LR and EA variants | Complete in harness | Seven configured variants and baseline tests |
 | Dry fold and full five-seed sweep | BCI and Cho complete; MMIDB running to final hashes | BCI 315/315, Cho 1,820/1,820; MMIDB tracked in `runs/phase1_status.json` |
 | ITR, ECE/reliability and accuracy–coverage | Complete implementation, including chart rendering | Evaluation modules, hand-worked/unit tests and synthetic calibration diagram; benchmark ECE scalars alone cannot reconstruct empirical reliability bins |

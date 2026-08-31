@@ -739,3 +739,37 @@ SHA-256 `ee125602182066855739e8d8595e63fd946fead73c680e24bf29d3a2d0ae5ec3`.
 Post-removal verification:
 `runs/runtime_probe/cho_cache_retired_verified_20260831T1638.json`, SHA-256
 `5bd7f9211a387e993f4c5403343f95f528cfe50c5aca763ff5ba88a8c678022e`.
+
+## 2026-08-31 — Bounded, alternating unattended compute after another native stop
+
+The MMIDB worker stopped after EEGNet seed 37/subject 037 with the same reported
+native libzmq bad-file-descriptor failure and exit code 1073741845. Its cause is
+not established. No driver, security-agent, model or data settings were changed.
+All 2,390 saved records audited valid, including exact preservation of the earlier
+2,353-file Cho-complete snapshot. The reference queue then saved four additional
+fits before a separate, explicit low-memory deferral. These are distinct events,
+not evidence that memory pressure caused the native failure.
+
+Receipt: `runs/runtime_probe/mmidb_native_interruption_20260831T1719.json`, SHA-256
+`a302c27d2981281abd180c5f3ec326f69d1de0636dcdcb8a5606c7436ea49268`.
+A subsequent unchanged-protocol `--max-new-runs 20` batch completed normally,
+bringing the valid main-grid count to 2,410. Bounded process lifetime is an
+operational precaution, not a demonstrated repair of the native failure.
+
+The unattended supervisor now alternates at most 20 missing main-grid records
+from one method with one missing full-protocol reference fit. Existing seed order,
+deterministic seed-copy semantics, model settings and numerical runners remain
+unchanged. It validates both grids before work and after every child, requires
+append-only file hashes and positive bounded progress, and refreshes integrity
+snapshots. It requires current-source controls and clean, unchanged source.
+An exclusive parent lock blocks duplicate supervisors; stale locks are preserved
+for explicit process-identity review. Independently launched workers must still be
+checked before launching this supervisor.
+
+Before either type of child starts, the supervisor checks the reference's unchanged
+10-GiB available-memory and disk floors, waiting up to five minutes in five-second
+increments before returning a deferral. The reference retains its own per-epoch
+4-GiB stop; this scheduler does not add or claim a new in-epoch main-model monitor.
+Each worker has separate timestamped logs. Any child failure stops the supervisor,
+without blind retries, source changes, deletion of partial evidence or process
+termination. Completing both grids still does not approve either scientific gate.
