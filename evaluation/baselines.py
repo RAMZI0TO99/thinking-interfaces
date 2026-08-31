@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass
+from importlib.metadata import version
 from pathlib import Path
 from typing import Any, cast
 
@@ -11,6 +13,8 @@ from numpy.typing import NDArray
 from scipy.signal import butter, sosfiltfilt  # type: ignore[import-untyped]
 from sklearn.linear_model import LogisticRegression  # type: ignore[import-untyped]
 
+from core.config import config_digest
+from data.array_cache import verified_float32_cache
 from data.runtime import configure_scientific_runtime
 
 configure_scientific_runtime()
@@ -99,33 +103,39 @@ class FilterBankCSP:
         *,
         chunk_trials: int = 256,
     ) -> tuple[FloatArray, ...]:
-        """Build/reuse a bounded-memory on-disk filter-bank cache."""
+        """Build/reuse atomic, input-keyed and content-verified filter-bank caches."""
 
         values = np.asarray(epochs)
         if values.ndim != 3 or chunk_trials < 1:
             raise ValueError("epochs or chunk_trials are invalid")
         directory.mkdir(parents=True, exist_ok=True)
+        input_sha256 = hashlib.sha256(
+            memoryview(np.ascontiguousarray(values)).cast("B")
+        ).hexdigest()
         outputs: list[FloatArray] = []
         for band_index in range(len(self.bands_hz)):
             path = directory / f"band_{band_index:02d}.npy"
-            cached: np.memmap[Any, Any] | None = None
-            if path.is_file():
-                candidate = np.load(path, mmap_mode="r")
-                if candidate.shape == values.shape and candidate.dtype == np.float32:
-                    cached = candidate
-            if cached is None:
-                target = np.lib.format.open_memmap(
-                    path, mode="w+", dtype=np.float32, shape=values.shape
-                )
+            key = config_digest(
+                {
+                    "input_sha256": input_sha256,
+                    "input_dtype": str(values.dtype),
+                    "shape": list(values.shape),
+                    "filter_sos": self._filters[band_index].tolist(),
+                    "operation": "scipy.sosfiltfilt(axis=-1), float32 output",
+                    "scipy_version": version("scipy"),
+                    "numpy_version": np.__version__,
+                }
+            )
+
+            def fill(target: np.memmap[Any, Any], index: int = band_index) -> None:
                 for start in range(0, values.shape[0], chunk_trials):
                     stop = min(start + chunk_trials, values.shape[0])
                     target[start:stop] = np.asarray(
-                        self._filtered(values[start:stop], band_index),
+                        self._filtered(values[start:stop], index),
                         dtype=np.float32,
                     )
-                target.flush()
-                cached = np.load(path, mmap_mode="r")
-            outputs.append(np.asarray(cached))
+
+            outputs.append(verified_float32_cache(path, shape=values.shape, key=key, fill=fill))
         return tuple(outputs)
 
     def fit_prefiltered(
@@ -274,9 +284,7 @@ class BraindecodeClassifier:
         for _ in range(self.training.epochs):
             for batch, target in loader:
                 optimizer.zero_grad(set_to_none=True)
-                device_batch = batch.to(device, non_blocking=True).mul(
-                    self.training.input_scale
-                )
+                device_batch = batch.to(device, non_blocking=True).mul(self.training.input_scale)
                 logits = cast(torch.Tensor, model(device_batch))
                 loss = criterion(logits, target.to(device, non_blocking=True))
                 loss.backward()

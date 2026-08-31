@@ -276,3 +276,14 @@ subject framing is literal. Earlier array demonstrations included target support
 and cannot truthfully be described as never seeing any data from that person.
 No earlier artifacts were rewritten. The source fingerprint now includes native
 PowerShell display code as well as Python, configuration and environment locks.
+
+## 2026-08-31 — Atomic filter-bank caches before the remaining classical sweeps
+
+The restart audit found that the old FBCSP cache accepted an array solely by its
+shape and dtype. A process interrupted while filling it could leave a plausible
+header and incomplete signal values. New caches are written to unique temporary
+files and published atomically, then sealed with input/filter identity and a
+content hash. Missing, unsealed, changed-input or corrupted caches are rebuilt.
+Interruption and corruption regression tests verify this behavior. The actual
+filter operation and frozen training configuration are unchanged; original
+completed records remain untouched.
