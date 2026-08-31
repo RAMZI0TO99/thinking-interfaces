@@ -38,7 +38,14 @@ processing p95 was 6.327 ms. All decisions abstained at the fixed 0.40 threshold
 so no command was emitted. These are functional transport/gating checks, not
 evidence of useful decoding accuracy. No threshold was lowered to force a demo.
 
-Local completion additionally requires an actual visible rehearsal, a matching
+The visible rehearsal also passed from clean source commit
+`95b93536c7204aa22d2a4d9ab7e03f6aadd39e00`. It received 6,144/6,144 samples and
+displayed 12/12 predictions, all neutral. Wall time was 48.254 s (drift 0.262 s),
+processing p95 5.245 ms and maximum 6.241 ms. Initial and final native renders
+were inspected and were readable without clipping. The complete result and
+display receipt are in `runs/live_demo/20260831T022419655475Z/`.
+
+Local completion requires an actual visible rehearsal, a matching
 configuration, verified result/receipt/preview hashes, and one display receipt
 per decoded window (`evaluation/live_demo_audit.py`). A hidden render alone
 cannot satisfy that check. The latest receipt is `runs/live_demo/latest.json`.

@@ -41,11 +41,12 @@ separate and are never silently converted into local successes.
 |---|---|---|
 | LOSO/grouped splitters, metrics, intervals over subjects | Complete | Split/metric/reporting modules and tests |
 | EEGNet under the decoder harness and support-only adaptation | Complete | Baseline/adaptation modules and real episodic LoRA record |
+| EEGNet implementation checked against Lawhern et al. | Review complete; exact parity not established | `docs/eegnet_implementation_review.md`; known padding, dropout and classifier-constraint differences remain explicit |
 | Distinct source-only EEGNet fit followed by full-model support-only fine-tuning | Complete locally | 45/45 separately audited two-class BCI records; source/support/query boundaries tested, high subject scores remain flagged |
 | Shuffled-label and subject-disjointness CI | Complete | `runs/leakage_ci_status.json` |
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
-| Actual true-rate LSL → decoder → native command grid | Hidden-render rehearsal verified; visible rehearsal pending | 6,144 unchanged samples, 12 acknowledged windows; final status requires a visible run, not a console-only or hidden-only substitute |
+| Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
 | Gate A MOABB reproduction | **Not signed** | Named MOABB EEGNet reference is absent and comparator was not reproduced; detailed Gate A/deviation records |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does

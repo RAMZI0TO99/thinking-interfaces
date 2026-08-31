@@ -5,6 +5,14 @@ subjects form the source set. The target support set contains the earliest five
 trials per class; every remaining target trial is query-only. Source and target
 identifiers are asserted disjoint, and support/query trial indices cannot overlap.
 
+In the main seven-method matrix, source and target-support trials are fitted
+jointly. This is distinct from the separate 45-run two-class EEGNet baseline
+that first fits on source subjects and then fine-tunes on target support only
+(`eegnet_support_finetuning.md`). Neither protocol is mislabeled as the other.
+The pinned Braindecode EEGNet implementation is reviewed in
+`eegnet_implementation_review.md`; known differences from the authors' Keras
+model prevent any claim of exact implementation parity.
+
 For Cho2017, "earliest" refers to the available within-class order: the installed
 MOABB loader concatenates left and right arrays, not a reconstructed original
 acquisition timeline. Its noncontinuous-trial edge warning and the use of

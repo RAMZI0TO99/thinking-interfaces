@@ -39,6 +39,17 @@ evidence, CPU/GPU latency, and the held-out replay demonstrator are operational.
 The final configuration-hash benchmark sweep is resumable and writes one atomic
 record per fold and seed.
 
+A native Windows demonstration now connects actual true-rate LSL replay to
+causal windows, CPU EEGNet, confidence gating and an on-screen command grid.
+The visible A09 rehearsal received all 6,144 samples and displayed all 12 windows;
+training used the other eight subjects only. All decisions abstained, so this
+verifies the integration, not useful decoding accuracy. See
+`docs/realtime_system.md` for the one-command rehearsal and its limitations.
+
+Run `scripts/verify_phase1_quality.py` with the project Python to record lint,
+type checks and tests for the exact source snapshot. The final completion checker
+also verifies report hashes, benchmark completeness and the native display receipt.
+
 Gate A remains unsigned because the named MOABB EEGNet reference does not exist in
 MOABB's published table and the available four-class comparator was not reproduced.
 The user explicitly authorized later Phase I work as exploratory; no downstream
