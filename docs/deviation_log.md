@@ -363,3 +363,16 @@ checks the configured subject/seed grid and configuration, and recomputes subjec
 means instead of trusting saved pass flags alone. It validates historical
 controls; it does not retrain those models on every commit. Local hooks remain
 bypassable and do not replace remote required checks or branch protection.
+
+## 2026-08-31 — Bound the extra CSP selection copy
+
+The first Cho FBCSP fold completed in 356.949 seconds of fitting while the laptop
+experienced memory pressure. MNE already converts selected epochs to writable,
+C-contiguous float64. Future workers now construct that identical float64 array
+directly in 32-trial chunks, avoiding a retained full-size float32 selection
+(about 1.3 GB for Cho training). Each band selection is released before the next.
+MNE's internal rank, covariance and CSP algorithms remain unchanged and can still
+require considerable memory. This is not a bounded-memory CSP implementation.
+The regression check compares predictions bit-for-bit with the original MNE
+float32-selection path. Previously completed records retain their actual source
+and timings; neither the scientific configuration nor earlier results is edited.

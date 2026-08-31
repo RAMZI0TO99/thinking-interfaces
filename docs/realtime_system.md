@@ -60,3 +60,15 @@ Processing latency includes the ready-window copy, prediction and decision logic
 It excludes acquisition of the four-second window, file handoff and native screen
 paint. Display acknowledgments are separately timestamped. CPU fallback on the
 same laptop is not a substitute for testing a second physical machine.
+
+## Calibration diagnostics utility
+
+`evaluation/calibration_plot.py` plots reliability bins and the accuracy–coverage
+curve from probability vectors plus evaluation labels. Empty bins and selections
+with zero coverage are omitted, not represented as zero accuracy. This utility
+does not fit calibration or tune a decision threshold. The hand-worked synthetic
+rendering check is `runs/calibration_smoke/reliability_and_coverage.png`, with
+its inputs, numeric expectations and image hash in the companion JSON record.
+It is explicitly not an EEG calibration result. Existing benchmark records store
+ECE and a selected coverage point but not full probability vectors; empirical
+reliability diagrams cannot honestly be recovered from those scalar records.

@@ -114,6 +114,18 @@ def main() -> None:
     def hash_matches(path: Path, expected: object) -> bool:
         return path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected
 
+    calibration_smoke = read_json(root / "runs" / "calibration_smoke" / "result.json")
+    calibration_diagram_passed = bool(
+        calibration_smoke.get("passed") is True
+        and calibration_smoke.get("synthetic_only") is True
+        and quality_passed
+        and calibration_smoke.get("source", {}).get("source_sha256")
+        == quality.get("source_sha256_after")
+        and hash_matches(
+            root / "runs" / "calibration_smoke" / "reliability_and_coverage.png",
+            calibration_smoke.get("figure_sha256"),
+        )
+    )
     reports_complete = bool(
         table_status.get("complete")
         and figures.get("complete")
@@ -187,6 +199,7 @@ def main() -> None:
         and quality_passed
         and contract_frozen
         and prompt_standin_passed
+        and calibration_diagram_passed
         and live_demo_passed
         and no_exact_copies
         and margin_frozen
@@ -210,6 +223,7 @@ def main() -> None:
         "current_source_quality_passed": quality_passed,
         "local_contract_v1_frozen": contract_frozen,
         "prompt_attention_standin_passed": prompt_standin_passed,
+        "calibration_diagram_smoke_passed": calibration_diagram_passed,
         "integrated_lsl_native_demo_passed": live_demo_passed,
         "corpus_duplicate_audit_current": corpus_current,
         "no_exact_train_query_copies": no_exact_copies,

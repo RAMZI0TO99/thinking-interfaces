@@ -75,7 +75,7 @@ not convert Gate A into a pass.
 | Checkpoint/resume/incremental atomic records and cost estimate | Complete | Benchmark runner, schema/hash validation, launch estimates |
 | EEGNet, Shallow, Deep, FBCSP, tangent LR and EA variants | Complete in harness | Seven configured variants and baseline tests |
 | Dry fold and full five-seed sweep | Running to final hashes | BCI 315/315; Cho/MMIDB tracked in `runs/phase1_status.json` |
-| ITR, ECE/reliability and accuracy–coverage | Complete | Evaluation modules and hand-worked/unit tests |
+| ITR, ECE/reliability and accuracy–coverage | Complete implementation, including chart rendering | Evaluation modules, hand-worked/unit tests and synthetic calibration diagram; benchmark ECE scalars alone cannot reconstruct empirical reliability bins |
 | Safe LaBraM real-epoch input, mapping, sequence handling | Complete | Ready-state record, encoder tests |
 | Pretraining hours, partial-tuning appendix and matched fine-tuning reference | Complete | `docs/labram_reference_notes.md`, `configs/labram_paper_reference.toml`; targets are not local reproductions |
 | Partial depth 0/4/8/12/all | Complete | Config and trainable-parameter counts in ready-state record |

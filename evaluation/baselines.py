@@ -35,6 +35,32 @@ FloatArray = NDArray[np.float32]
 IntArray = NDArray[np.int64]
 
 
+def _csp_input(
+    band: NDArray[np.floating],
+    indices: NDArray[np.integer] | None,
+    *,
+    chunk_trials: int = 32,
+) -> NDArray[np.float64]:
+    """Select directly into MNE's float64 input without a full float32 copy.
+
+    MNE CSP already requires C-contiguous, writable float64 epochs. Casting
+    float32 values this way is exact and does not change CSP or its rank rule.
+    Only the indexed temporary is bounded; MNE's own fit still needs memory.
+    """
+    if band.ndim != 3 or chunk_trials < 1:
+        raise ValueError("CSP input must be 3D with a positive selection chunk size")
+    if indices is None:
+        values = np.ascontiguousarray(band, dtype=np.float64)
+        return values if values.flags.writeable else values.copy()
+    if indices.ndim != 1:
+        raise ValueError("CSP selection indices must be one-dimensional")
+    selected = np.empty((len(indices), *band.shape[1:]), dtype=np.float64)
+    for start in range(0, len(indices), chunk_trials):
+        stop = min(start + chunk_trials, len(indices))
+        selected[start:stop] = band[indices[start:stop]]
+    return selected
+
+
 class TangentSpaceLogistic:
     def __init__(self, *, c: float = 1.0, max_iterations: int = 1000) -> None:
         self.covariances = Covariances(estimator="oas")
@@ -154,7 +180,7 @@ class FilterBankCSP:
         features: list[NDArray[np.float64]] = []
         self._csps = []
         for band in bands:
-            selected = band if indices is None else band[indices]
+            selected = _csp_input(band, indices)
             csp = CSP(
                 n_components=self.components_per_band,
                 reg="oas",
@@ -166,6 +192,7 @@ class FilterBankCSP:
             with use_log_level("ERROR"):
                 features.append(np.asarray(csp.fit_transform(selected, labels)))
             self._csps.append(csp)
+            del selected
         self._classifier.fit(np.concatenate(features, axis=1), labels)
         return self
 
@@ -182,7 +209,7 @@ class FilterBankCSP:
             raise RuntimeError("FilterBankCSP must be fitted before prediction")
         with use_log_level("ERROR"):
             features = [
-                np.asarray(csp.transform(band if indices is None else band[indices]))
+                np.asarray(csp.transform(_csp_input(band, indices)))
                 for csp, band in zip(self._csps, bands, strict=True)
             ]
         return np.asarray(

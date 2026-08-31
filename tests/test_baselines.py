@@ -6,8 +6,9 @@ from gc import collect as collect_garbage
 from pathlib import Path
 
 import numpy as np
+from sklearn.linear_model import LogisticRegression
 
-from evaluation.baselines import FilterBankCSP, TangentSpaceLogistic
+from evaluation.baselines import CSP, FilterBankCSP, TangentSpaceLogistic, _csp_input
 
 
 class ClassicalBaselineTests(unittest.TestCase):
@@ -59,3 +60,51 @@ class ClassicalBaselineTests(unittest.TestCase):
             del actual
             collect_garbage()
             np.testing.assert_allclose(copied, expected, rtol=1e-6, atol=1e-7)
+
+    def test_csp_selection_is_exact_writable_contiguous_and_bounded(self) -> None:
+        class BoundedIndexing(np.ndarray):
+            def __getitem__(self, key: object) -> np.ndarray:
+                if isinstance(key, np.ndarray) and key.size > 3:
+                    raise AssertionError("full-size float32 advanced-index copy")
+                return super().__getitem__(key)
+
+        indices = np.asarray([19, 1, 5, 2, 1, 13, 0], dtype=np.int64)
+        actual = _csp_input(self.epochs.view(BoundedIndexing), indices, chunk_trials=3)
+        np.testing.assert_array_equal(actual, self.epochs[indices].astype(np.float64))
+        self.assertEqual(actual.dtype, np.float64)
+        self.assertTrue(actual.flags.c_contiguous and actual.flags.writeable)
+        readonly = actual.copy()
+        readonly.setflags(write=False)
+        writable = _csp_input(readonly, None)
+        np.testing.assert_array_equal(writable, readonly)
+        self.assertTrue(writable.flags.writeable)
+        with self.assertRaises(ValueError):
+            _csp_input(self.epochs, indices, chunk_trials=0)
+
+    def test_csp_float64_selection_matches_original_mne_path_exactly(self) -> None:
+        model = FilterBankCSP(
+            sampling_rate_hz=128.0, bands_hz=((8.0, 12.0), (12.0, 20.0))
+        )
+        bands = model.filtered_bands(self.epochs)
+        train = np.arange(16)
+        query = np.arange(16, 20)
+        reference_csps = []
+        features = []
+        for band in bands:
+            csp = CSP(
+                n_components=2, reg="oas", log=True, cov_est="concat",
+                norm_trace=False, component_order="mutual_info",
+            )
+            features.append(csp.fit_transform(band[train], self.labels[train]))
+            reference_csps.append(csp)
+        classifier = LogisticRegression(max_iter=1000, class_weight="balanced").fit(
+            np.concatenate(features, axis=1), self.labels[train]
+        )
+        expected = classifier.predict_proba(np.concatenate([
+            csp.transform(band[query])
+            for csp, band in zip(reference_csps, bands, strict=True)
+        ], axis=1)).astype(np.float32)
+        model.fit_prefiltered(bands, self.labels[train], indices=train)
+        np.testing.assert_array_equal(
+            model.predict_proba_prefiltered(bands, indices=query), expected
+        )
