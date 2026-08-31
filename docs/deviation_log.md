@@ -287,3 +287,15 @@ content hash. Missing, unsealed, changed-input or corrupted caches are rebuilt.
 Interruption and corruption regression tests verify this behavior. The actual
 filter operation and frozen training configuration are unchanged; original
 completed records remain untouched.
+
+## 2026-08-31 — Complete-cohort copy review
+
+The targeted subject 43 check was extended to every retained trial across all
+170 public subjects, reading one artifact at a time. No exact duplicate groups
+were found among 20,599 retained trials. The 22 frozen exclusions were unchanged.
+The audit normalizes channel order but excludes labels and subject identities
+from signal signatures, and verifies the actual numeric subject inventories,
+including MMIDB's three-digit file names. Final local completion now requires a
+current artifact-hash snapshot, no exact train/query copies, and a plausibility
+review tied to that same input snapshot. Near-duplicate, chronology, filtering
+and pretraining-overlap limitations remain open; no scientific sign-off follows.
