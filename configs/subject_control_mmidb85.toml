@@ -1,0 +1,6 @@
+# Existing three targeted controls; settings moved from the legacy CLI unchanged.
+[control]
+dataset = "mmidb"
+subject = "subject_085"
+methods = ["eegnet"]
+seeds = [11, 23, 37]

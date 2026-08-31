@@ -23,3 +23,24 @@ fast-forward update. Therefore these checks are local guardrails, not proof of
 required remote CI. Remote branch protection and the team merge rehearsal remain
 external closure items. On another checkout, the hook setting must be installed
 explicitly; it is not automatically transferred by Git.
+
+## Targeted control configuration
+
+The separate high-score controls now take only a configuration-file selector:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/audit_subject_falsification.py --config configs/subject_control_cho43.toml
+.\.venv\Scripts\python.exe scripts/audit_subject_falsification.py --config configs/subject_control_mmidb85.toml
+```
+
+Dataset, subject, methods and seeds are declared in those files; training and
+episode settings remain in the frozen benchmark configuration. Unknown fields,
+noncanonical subjects, duplicate methods/seeds and invalid seed types are rejected.
+The default Cho configuration keeps the existing compute queue compatible.
+
+Existing controls retain their historical bytes and provenance. Resume checks
+also verify the method and shuffle seed inside each record, not just its filename.
+A changed existing signal audit is rejected and preserved, not overwritten.
+New control records include the selected control configuration, its hash and
+source provenance; these fields are not retroactively inserted into old records.
+These targeted controls remain separate from the three historical merge checks.

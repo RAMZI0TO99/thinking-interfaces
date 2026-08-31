@@ -13,9 +13,15 @@ from pathlib import Path
 from typing import Any, cast
 
 from core.config import config_digest, load_toml
+from core.provenance import capture_source
 from evaluation.baselines import TorchTrainingConfig
 from evaluation.benchmark import _decoder, load_dataset_matrix
-from evaluation.falsification import shuffled_training_control, signal_audit
+from evaluation.falsification import (
+    SubjectControlPlan,
+    saved_control_matches,
+    shuffled_training_control,
+    signal_audit,
+)
 
 
 def write_report(path: Path, report: Mapping[str, Any]) -> None:
@@ -34,34 +40,40 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Independent fixed-episode shuffled-label controls"
     )
-    parser.add_argument("--dataset", default="cho2017", choices=("bci_iv_2a", "cho2017", "mmidb"))
-    parser.add_argument("--subject", default="subject_43")
-    parser.add_argument("--method", action="append", choices=("eegnet", "shallow", "deep"))
-    parser.add_argument("--seed", action="append", type=int)
+    parser.add_argument("--config", default="configs/subject_control_cho43.toml")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
+    control_config = load_toml(root / args.config)
+    plan = SubjectControlPlan.from_config(control_config)
+    source = asdict(capture_source(root))
     config = cast(Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml"))
-    settings = config["datasets"][args.dataset]
+    settings = config["datasets"][plan.dataset]
     training = TorchTrainingConfig(**config["training"])
     matrix = load_dataset_matrix(
         root / settings["artifact_directory"],
-        dataset=args.dataset,
+        dataset=plan.dataset,
         sampling_rate_hz=settings["sampling_rate_hz"],
         absolute_peak_volts=settings["artifact_threshold_volts"],
     )
-    output = root / "runs" / "falsification" / args.dataset / args.subject
+    output = root / "runs" / "falsification" / plan.dataset / plan.subject
     shots = int(config["benchmark"]["shots_per_class"])
     provenance = {
         "benchmark_config_sha256": config_digest(config),
-        "dataset": args.dataset,
-        "target_subject": args.subject,
+        "dataset": plan.dataset,
+        "target_subject": plan.subject,
         "training": asdict(training),
         "shots_per_class": shots,
         "control_schema_version": 1,
         "scientific_leakage_clearance": False,
     }
-    audit = signal_audit(matrix, target_subject=args.subject, shots_per_class=shots)
-    write_report(output / "signal_audit.json", {**provenance, **audit})
+    audit = signal_audit(matrix, target_subject=plan.subject, shots_per_class=shots)
+    signal_path = output / "signal_audit.json"
+    signal_payload = {**provenance, **audit}
+    if signal_path.exists():
+        if json.loads(signal_path.read_text("utf-8")) != signal_payload:
+            raise ValueError(f"signal audit changed; preserve and review {signal_path}")
+    else:
+        write_report(signal_path, signal_payload)
     print(
         json.dumps(
             {
@@ -71,12 +83,12 @@ def main() -> None:
         ),
         flush=True,
     )
-    for method in args.method or ("eegnet", "shallow"):
-        for seed in args.seed or (11, 23, 37):
+    for method in plan.methods:
+        for seed in plan.seeds:
             path = output / f"{method}_shuffled_seed_{seed}.json"
             if path.exists():
                 saved = json.loads(path.read_text(encoding="utf-8"))
-                if all(saved.get(key) == value for key, value in provenance.items()):
+                if saved_control_matches(saved, provenance, method=method, seed=seed):
                     print(f"Reusing control: {path.name}", flush=True)
                     continue
                 raise ValueError(f"control provenance changed; preserve and review {path}")
@@ -90,7 +102,7 @@ def main() -> None:
             result = shuffled_training_control(
                 matrix,
                 decoder,
-                target_subject=args.subject,
+                target_subject=plan.subject,
                 shots_per_class=shots,
                 shuffle_seed=seed,
             )
@@ -100,6 +112,9 @@ def main() -> None:
                     **provenance,
                     **result,
                     "method": method,
+                    "control_plan_config": control_config,
+                    "control_plan_config_sha256": config_digest(control_config),
+                    "source": source,
                     "timestamp_utc": datetime.now(UTC).isoformat(),
                 },
             )

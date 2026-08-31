@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import hashlib
+import re
 import time
 from collections import Counter
-from dataclasses import asdict
+from collections.abc import Mapping
+from dataclasses import asdict, dataclass
 from typing import Any, Protocol
 
 import numpy as np
@@ -14,6 +16,61 @@ from numpy.typing import NDArray
 from core.metrics import classification_report
 from core.splits import earliest_balanced_episode
 from evaluation.benchmark import DatasetMatrix
+
+
+@dataclass(frozen=True, slots=True)
+class SubjectControlPlan:
+    dataset: str
+    subject: str
+    methods: tuple[str, ...]
+    seeds: tuple[int, ...]
+
+    @classmethod
+    def from_config(cls, config: Mapping[str, Any]) -> SubjectControlPlan:
+        settings = config.get("control")
+        if set(config) != {"control"} or not isinstance(settings, dict) or set(settings) != {
+            "dataset", "subject", "methods", "seeds"
+        }:
+            raise ValueError("control configuration must explicitly declare all four settings")
+        dataset, subject = settings["dataset"], settings["subject"]
+        limits = {"bci_iv_2a": (9, 2), "cho2017": (52, 2), "mmidb": (109, 3)}
+        if not isinstance(dataset, str) or dataset not in limits:
+            raise ValueError("unknown control dataset")
+        match = re.fullmatch(r"subject_(\d+)", subject) if isinstance(subject, str) else None
+        maximum, width = limits[dataset]
+        if (
+            match is None
+            or not 1 <= int(match[1]) <= maximum
+            or subject != f"subject_{int(match[1]):0{width}d}"
+        ):
+            raise ValueError("control subject must be a canonical in-cohort identifier")
+        methods, seeds = settings["methods"], settings["seeds"]
+        if (
+            not isinstance(methods, list) or not methods
+            or any(not isinstance(value, str) for value in methods)
+            or any(value not in {"eegnet", "shallow", "deep"} for value in methods)
+            or len(set(methods)) != len(methods)
+        ):
+            raise ValueError("control methods must be a nonempty unique supported list")
+        if (
+            not isinstance(seeds, list) or not seeds
+            or any(type(value) is not int or not 0 <= value < 2**32 for value in seeds)
+            or len(set(seeds)) != len(seeds)
+        ):
+            raise ValueError("control seeds must be a nonempty unique unsigned 32-bit integer list")
+        return cls(dataset, subject, tuple(methods), tuple(seeds))
+
+
+def saved_control_matches(
+    saved: Mapping[str, Any], provenance: Mapping[str, Any], *, method: str, seed: int
+) -> bool:
+    """Resume legacy records without backfilling metadata or trusting the filename."""
+    return (
+        all(saved.get(key) == value for key, value in provenance.items())
+        and saved.get("method") == method
+        and type(saved.get("shuffle_seed")) is int
+        and saved.get("shuffle_seed") == seed
+    )
 
 
 class ControlDecoder(Protocol):

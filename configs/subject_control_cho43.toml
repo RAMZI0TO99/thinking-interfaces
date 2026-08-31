@@ -1,0 +1,6 @@
+# Existing six targeted controls; settings moved from the legacy CLI unchanged.
+[control]
+dataset = "cho2017"
+subject = "subject_43"
+methods = ["eegnet", "shallow"]
+seeds = [11, 23, 37]

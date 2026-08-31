@@ -497,3 +497,22 @@ was relaxed. Original 24-thread execution is retained. The temporary selective
 hook exists only within the isolated probe process and restores the original
 function after each fold. This investigation is diagnostic evidence, not new
 benchmark evidence, and does not clear any high-score flag.
+
+## 2026-08-31 — Put targeted control settings into files
+
+A renewed check of Week 1 Day 3 found that the targeted subject-control script
+still accepted experimental seeds directly on the command line. Dataset, subject,
+methods and seeds now come from `subject_control_cho43.toml` or
+`subject_control_mmidb85.toml`; only the configuration-file path is selected on
+the command line. These files codify the already executed grids without changing
+their settings. They were added after those diagnostic controls and are not
+represented as prior registration or retroactively inserted into old run records.
+
+Configuration validation rejects unknown/missing fields, noncanonical subject
+identifiers, unsupported/duplicate methods and invalid/duplicate seeds. Resume
+also checks the method and seed inside each saved control rather than trusting
+its filename. An existing signal audit that differs from the newly computed
+audit is preserved and rejected, not overwritten. New controls record their
+control configuration/hash and source provenance; old files keep their actual
+historical provenance. Benchmark algorithms, frozen settings and completed
+records are unchanged; the active benchmark is not restarted for this change.
