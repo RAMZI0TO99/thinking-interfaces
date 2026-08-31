@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import tempfile
 from collections.abc import Mapping
 from contextlib import suppress
@@ -25,6 +26,8 @@ class RunRecord:
     fold: str
     metrics: Mapping[str, float]
     timestamp_utc: str
+    source_sha256: str | None = None
+    git_dirty: bool | None = None
 
     @classmethod
     def create(
@@ -36,11 +39,17 @@ class RunRecord:
         dataset: str,
         fold: str,
         metrics: Mapping[str, float],
+        source_sha256: str | None = None,
+        git_dirty: bool | None = None,
     ) -> RunRecord:
         if seed < 0:
             raise ValueError("seed must be non-negative")
         if not git_commit or not dataset or not fold:
             raise ValueError("git_commit, dataset, and fold are required")
+        if source_sha256 is not None and re.fullmatch(r"[0-9a-f]{64}", source_sha256) is None:
+            raise ValueError("source_sha256 must be a lowercase SHA-256 digest")
+        if git_dirty is not None and not isinstance(git_dirty, bool):
+            raise ValueError("git_dirty must be a boolean or unknown")
         return cls(
             config=config_snapshot(config),
             config_sha256=config_digest(config),
@@ -50,6 +59,8 @@ class RunRecord:
             fold=fold,
             metrics=dict(metrics),
             timestamp_utc=datetime.now(UTC).isoformat(),
+            source_sha256=source_sha256,
+            git_dirty=git_dirty,
         )
 
     def write_json(self, path: str | Path) -> Path:

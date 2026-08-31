@@ -117,6 +117,9 @@ class BenchmarkTests(unittest.TestCase):
             payload = json.loads(outputs[-1].read_text(encoding="utf-8"))
             self.assertEqual(payload["metrics"]["reused_from_seed"], 11.0)
             self.assertEqual(payload["metrics"]["fit_seconds"], 0.0)
+            original = json.loads(outputs[0].read_text(encoding="utf-8"))
+            self.assertEqual(payload["git_commit"], original["git_commit"])
+            self.assertEqual(payload["source_sha256"], original["source_sha256"])
 
     def test_loaded_subject_names_are_not_truncated(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

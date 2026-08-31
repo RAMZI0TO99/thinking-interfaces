@@ -96,6 +96,8 @@ class BenchmarkAuditTests(unittest.TestCase):
                 ("seed", 23),
                 ("config", {"different": True}),
                 ("timestamp_utc", "2026-08-31T12:00:00"),
+                ("source_sha256", "not-a-digest"),
+                ("git_dirty", "false"),
             ):
                 with self.subTest(key=key):
                     path = self.record(Path(directory))

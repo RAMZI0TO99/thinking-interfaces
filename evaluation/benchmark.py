@@ -15,6 +15,7 @@ from numpy.typing import NDArray
 
 from core.config import config_digest
 from core.metrics import classification_report
+from core.provenance import capture_source
 from core.run_record import RunRecord
 from core.splits import earliest_balanced_episode
 from data.artifact_rejection import reject_amplitude_artifacts
@@ -75,10 +76,7 @@ def load_dataset_matrix(
     signals = np.concatenate([item.signals for item in artifacts])
     labels = np.concatenate([item.labels for item in artifacts])
     subjects = np.concatenate(
-        [
-            np.full(item.labels.shape, path.stem)
-            for path, item in zip(paths, artifacts, strict=True)
-        ]
+        [np.full(item.labels.shape, path.stem) for path, item in zip(paths, artifacts, strict=True)]
     )
     return DatasetMatrix(
         dataset,
@@ -114,9 +112,7 @@ def _decoder(
             (28.0, 32.0),
         )
         bands = tuple(
-            (low, min(high, nyquist - 1.0))
-            for low, high in standard_bands
-            if low < nyquist - 1.0
+            (low, min(high, nyquist - 1.0)) for low, high in standard_bands if low < nyquist - 1.0
         )
         return FilterBankCSP(sampling_rate_hz=matrix.sampling_rate_hz, bands_hz=bands)
     return BraindecodeClassifier(
@@ -202,9 +198,7 @@ def run_fold(
         target_aligner = EuclideanAlignment().fit(matrix.signals[support_global])
         aligned_support = target_aligner.transform(matrix.signals[support_global])
         if prealigned_source_signals is None:
-            train_signals = align_training_subjects(
-                train_signals, matrix.subjects[train_global]
-            )
+            train_signals = align_training_subjects(train_signals, matrix.subjects[train_global])
         else:
             if prealigned_source_signals.shape != matrix.signals.shape:
                 raise ValueError("prealigned source signals must match the dataset matrix")
@@ -284,8 +278,7 @@ def valid_run_record(path: Path, *, expected_config_sha256: str | None = None) -
             return False
         metrics = payload["metrics"]
         config_matches = (
-            expected_config_sha256 is None
-            or payload.get("config_sha256") == expected_config_sha256
+            expected_config_sha256 is None or payload.get("config_sha256") == expected_config_sha256
         )
         return (
             isinstance(metrics, dict)
@@ -342,6 +335,7 @@ def run_benchmark(
     outputs: list[Path] = []
     completed = 0
     expected_config_sha256 = config_digest(config)
+    source_provenance = capture_source(Path(__file__).resolve().parents[1])
     prealigned_source_signals: FloatArray | None = None
     subjects = tuple(sorted(set(matrix.subjects.tolist())))
     for method in methods:
@@ -366,26 +360,14 @@ def run_benchmark(
                 raise TypeError("FBCSP factory returned the wrong decoder type")
             prefiltered_fbcsp = filter_decoder.filtered_bands_memmap(
                 matrix.signals,
-                output_root
-                / ".cache"
-                / matrix.dataset
-                / expected_config_sha256
-                / "fbcsp",
+                output_root / ".cache" / matrix.dataset / expected_config_sha256 / "fbcsp",
             )
-        if (
-            method.startswith("ea_")
-            and method_needs_work
-            and prealigned_source_signals is None
-        ):
-            prealigned_source_signals = align_training_subjects(
-                matrix.signals, matrix.subjects
-            )
+        if method.startswith("ea_") and method_needs_work and prealigned_source_signals is None:
+            prealigned_source_signals = align_training_subjects(matrix.signals, matrix.subjects)
         for seed in seeds:
             for subject in subjects:
                 output = output_root / matrix.dataset / method / f"seed_{seed}" / f"{subject}.json"
-                if valid_run_record(
-                    output, expected_config_sha256=expected_config_sha256
-                ):
+                if valid_run_record(output, expected_config_sha256=expected_config_sha256):
                     outputs.append(output)
                     continue
                 if max_new_runs is not None and completed >= max_new_runs:
@@ -413,10 +395,29 @@ def run_benchmark(
                     metrics = result.scalar_metrics()
                 else:
                     metrics, _ = reusable
+                if reusable is None:
+                    git_commit = source_provenance.git_commit
+                    source_sha256 = source_provenance.source_sha256
+                    git_dirty = source_provenance.git_dirty
+                else:
+                    # Reused measurements retain the original fit's code provenance.
+                    original_path = (
+                        output_root
+                        / matrix.dataset
+                        / method
+                        / f"seed_{reusable[1]}"
+                        / f"{subject}.json"
+                    )
+                    original = json.loads(original_path.read_text(encoding="utf-8"))
+                    git_commit = original["git_commit"]
+                    source_sha256 = original.get("source_sha256")
+                    git_dirty = original.get("git_dirty")
                 record = RunRecord.create(
                     config=config,
                     seed=seed,
-                    git_commit="no-git-workspace",
+                    git_commit=git_commit,
+                    source_sha256=source_sha256,
+                    git_dirty=git_dirty,
                     dataset=matrix.dataset,
                     fold=subject,
                     metrics=metrics,

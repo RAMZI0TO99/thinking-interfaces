@@ -11,6 +11,7 @@ import numpy as np
 import torch
 
 from core.config import config_digest, load_toml
+from core.provenance import capture_source
 from core.run_record import RunRecord
 from evaluation.baselines import TorchTrainingConfig
 from evaluation.benchmark import DatasetMatrix, load_dataset_matrix
@@ -19,6 +20,7 @@ from evaluation.support_adaptation import source_then_support_fold
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
+    source_provenance = capture_source(root)
     config = cast(Mapping[str, Any], load_toml(root / "configs" / "eegnet_support_adaptation.toml"))
     benchmark = cast(Mapping[str, Any], load_toml(root / "configs" / "benchmark.toml"))
     episode = config["episode"]
@@ -87,7 +89,9 @@ def main() -> None:
             RunRecord.create(
                 config={**provenance, "split": result["split"]},
                 seed=seed,
-                git_commit="unversioned-workspace",
+                git_commit=source_provenance.git_commit,
+                source_sha256=source_provenance.source_sha256,
+                git_dirty=source_provenance.git_dirty,
                 dataset=dataset,
                 fold=subject,
                 metrics=result["metrics"],

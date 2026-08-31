@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import re
 from collections import defaultdict
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
@@ -31,6 +32,9 @@ class AuditedRecord:
     classes: int
     metrics: dict[str, float]
     sha256: str
+    git_commit: str = "unversioned-workspace"
+    source_sha256: str | None = None
+    git_dirty: bool | None = None
 
 
 def inspect_record(path: Path, *, expected_config_sha256: str) -> AuditedRecord:
@@ -57,6 +61,14 @@ def inspect_record(path: Path, *, expected_config_sha256: str) -> AuditedRecord:
     timestamp = datetime.fromisoformat(str(payload.get("timestamp_utc", "")))
     if timestamp.tzinfo is None or not payload.get("git_commit"):
         raise ValueError("timezone-aware timestamp and code provenance are required")
+    source_sha256 = payload.get("source_sha256")
+    if source_sha256 is not None and (
+        not isinstance(source_sha256, str) or re.fullmatch(r"[0-9a-f]{64}", source_sha256) is None
+    ):
+        raise ValueError("invalid source fingerprint")
+    git_dirty = payload.get("git_dirty")
+    if git_dirty is not None and not isinstance(git_dirty, bool):
+        raise ValueError("invalid dirty-source indicator")
     raw_metrics = payload.get("metrics")
     if not isinstance(raw_metrics, dict) or any(
         isinstance(value, bool) or not isinstance(value, int | float) or not math.isfinite(value)
@@ -127,7 +139,16 @@ def inspect_record(path: Path, *, expected_config_sha256: str) -> AuditedRecord:
     if metrics.get("seed") != (origin if origin is not None else seed):
         raise ValueError("metric seed disagrees with fitting origin")
     return AuditedRecord(
-        dataset, method, path.stem, seed, len(labels), metrics, hashlib.sha256(raw).hexdigest()
+        dataset,
+        method,
+        path.stem,
+        seed,
+        len(labels),
+        metrics,
+        hashlib.sha256(raw).hexdigest(),
+        str(payload["git_commit"]),
+        source_sha256,
+        git_dirty,
     )
 
 
@@ -230,6 +251,20 @@ def audit_benchmark(
         "record_files": {key: record.sha256 for key, record in sorted(valid.items())},
         "expected_records": len(expected),
         "valid_records": len(valid),
+        "source_provenance": {
+            "records_with_git_revision": sum(
+                re.fullmatch(r"[0-9a-f]{40}|[0-9a-f]{64}", record.git_commit) is not None
+                for record in valid.values()
+            ),
+            "records_with_source_fingerprint": sum(
+                record.source_sha256 is not None for record in valid.values()
+            ),
+            "records_from_dirty_source": sum(record.git_dirty is True for record in valid.values()),
+            "legacy_unversioned_records": sum(
+                record.git_commit in {"no-git-workspace", "unversioned-workspace"}
+                for record in valid.values()
+            ),
+        },
         "valid_records_by_dataset": {
             dataset: sum(record.dataset == dataset for record in valid.values())
             for dataset in datasets_subjects

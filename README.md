@@ -22,6 +22,13 @@ Phase I builds a reproducible EEG-decoding harness and a working real-time demon
 - Support data may change a model; query data may only evaluate it.
 - Phase I Gate A must pass before later results are treated as interpretable.
 
+The local Git history begins at `bf78379b6ec67a6fef3db83d8e3c34f37b35299b`.
+Runs made before versioning keep their original explicit unversioned identity;
+they are not retroactively attributed to this commit. New benchmark runs capture
+the current commit, a source/configuration fingerprint and dirty-state flag.
+Reused deterministic fits keep the original fit's provenance. Local snapshots
+use the assistant identity `Codex <codex@localhost>` and have not been uploaded.
+
 ## Current status
 
 All 170 public subjects are downloaded and structurally audited: BCI Competition

@@ -11,6 +11,7 @@ from typing import Any
 
 import numpy as np
 
+from core.provenance import capture_source
 from core.run_record import RunRecord
 from encoder.eegnet_baseline import train_eegnet, write_checkpoint_atomic, write_result_json
 
@@ -29,6 +30,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    source = capture_source(PROJECT_ROOT)
     with args.config.open("rb") as stream:
         config: dict[str, Any] = tomllib.load(stream)
     data_config = config["data"]
@@ -75,7 +77,9 @@ def main() -> None:
     record = RunRecord.create(
         config=run_config,
         seed=int(training_config["seed"]),
-        git_commit="unversioned-workspace",
+        git_commit=source.git_commit,
+        source_sha256=source.source_sha256,
+        git_dirty=source.git_dirty,
         dataset=str(data_config["dataset"]),
         fold=f"subject-{data_config['subject']}:session-{data_config['test_session']}",
         metrics=result.report.record_metrics(),

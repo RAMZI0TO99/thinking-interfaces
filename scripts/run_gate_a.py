@@ -11,6 +11,7 @@ from typing import Any
 
 import numpy as np
 
+from core.provenance import capture_source
 from core.run_record import RunRecord
 from data.moabb_gate_a import apply_common_average_reference, load_reference_subject
 from encoder.eegnet_baseline import train_eegnet, write_checkpoint_atomic
@@ -67,6 +68,7 @@ def write_json_atomic(payload: object, output: Path) -> Path:
 
 def main() -> int:
     args = parse_args()
+    source = capture_source(PROJECT_ROOT)
     model_config = load_toml(PROJECT_ROOT / "configs" / "eegnet.toml")
     gate_config = load_toml(args.config)
     gate = gate_config["gate_a"]
@@ -126,7 +128,9 @@ def main() -> int:
             record = RunRecord.create(
                 config=resolved_config,
                 seed=seed,
-                git_commit="unversioned-workspace",
+                git_commit=source.git_commit,
+                source_sha256=source.source_sha256,
+                git_dirty=source.git_dirty,
                 dataset=str(data["dataset"]),
                 fold=f"subject-{subject}:session-{data['test_session']}",
                 metrics=result.report.record_metrics(),

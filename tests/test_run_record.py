@@ -17,11 +17,15 @@ class RunRecordTests(unittest.TestCase):
             dataset="bci_iv_2a",
             fold="A01",
             metrics={"balanced_accuracy": 0.5},
+            source_sha256="a" * 64,
+            git_dirty=False,
         )
         with tempfile.TemporaryDirectory() as directory:
             output = record.write_json(Path(directory) / "record.json")
             payload = json.loads(output.read_text(encoding="utf-8"))
         self.assertEqual(payload["git_commit"], "abc123")
+        self.assertEqual(payload["source_sha256"], "a" * 64)
+        self.assertFalse(payload["git_dirty"])
         self.assertEqual(len(payload["config_sha256"]), 64)
         self.assertEqual(payload["metrics"]["balanced_accuracy"], 0.5)
         self.assertTrue(payload["timestamp_utc"].endswith("+00:00"))

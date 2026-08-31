@@ -253,3 +253,11 @@ Earlier records labelled `no-git-workspace` or `unversioned-workspace` remain
 unchanged. They cannot truthfully be relabelled as having run from a later commit.
 This local repository does not satisfy remote branch protection, off-machine
 backup, or a five-person pull-request rehearsal.
+
+The initial committed snapshot is `bf78379b6ec67a6fef3db83d8e3c34f37b35299b`.
+Subsequent runs capture the current commit, exact source fingerprint, and dirty
+state. This optional, backward-compatible metadata extension does not change the
+frozen scientific configuration, existing records, or the H2 source freeze.
+Deterministic fit reuse preserves the original fit's identity. Final local
+completion also requires lint, type checks, and tests with unchanged source and
+verified output logs (`scripts/verify_phase1_quality.py`).

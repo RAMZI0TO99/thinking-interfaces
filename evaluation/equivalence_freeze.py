@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from core.provenance import capture_source
 from core.run_record import RunRecord
 from evaluation.benchmark_audit import inspect_record
 from evaluation.reporting import RecordObservation, aggregate_observations
@@ -80,10 +81,13 @@ def source_margin_record(
             "Gate A unsigned; Cho loader-order confounds unresolved; actual H2 power unknown"
         ),
     }
+    source_provenance = capture_source(Path(__file__).resolve().parents[1])
     return RunRecord.create(
         config=config,
         seed=0,
-        git_commit="unversioned-workspace",
+        git_commit=source_provenance.git_commit,
+        source_sha256=source_provenance.source_sha256,
+        git_dirty=source_provenance.git_dirty,
         dataset=dataset,
         fold="h2_design_margin_freeze",
         metrics={

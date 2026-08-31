@@ -10,7 +10,7 @@ separate and are never silently converted into local successes.
 | Requirement | State | Evidence |
 |---|---|---|
 | Both plans read; lane skeleton and ownership | Complete locally | Lane READMEs, root `README.md`, and this plan-derived matrix |
-| Local source repository | Initialized; versioned snapshot being recorded | Local `main` branch; raw data, weights, run outputs and secrets excluded |
+| Local source repository | Complete locally | Local `main` branch, initial snapshot `bf78379b6ec67a6fef3db83d8e3c34f37b35299b`; raw data, weights, run outputs and secrets excluded |
 | Branch protection, five-person PR/conflict rehearsal | External-only | `docs/external_dependencies.md`; no remote/team supplied |
 | Cloud instance, persistent disk, hourly cost | Replaced by approved laptop | `configs/benchmark.toml`, `runs/dataset_inventory.json`, and measured cost report |
 | Reproducible pinned environment | Complete | `requirements.lock` plus three exact component lockfiles |
