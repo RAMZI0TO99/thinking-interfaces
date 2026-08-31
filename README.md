@@ -26,8 +26,10 @@ The local Git history begins at `bf78379b6ec67a6fef3db83d8e3c34f37b35299b`.
 Runs made before versioning keep their original explicit unversioned identity;
 they are not retroactively attributed to this commit. New benchmark runs capture
 the current commit, a source/configuration fingerprint and dirty-state flag.
-Reused deterministic fits keep the original fit's provenance. Local snapshots
-use the assistant identity `Codex <codex@localhost>` and have not been uploaded.
+Reused deterministic fits keep the original fit's provenance. These source
+changes were created by the assistant and have not been uploaded. Most snapshots
+use `Codex <codex@localhost>`; commit `659949a` inherited Git's automatic local
+identity. Commit metadata is not evidence of manual user review or gate approval.
 
 ## Current status
 
