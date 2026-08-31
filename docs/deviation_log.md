@@ -315,3 +315,14 @@ This changes operational waiting only, not epochs, labels, seeds, fitting,
 preprocessing, benchmark configuration hash or acceptance criteria. Earlier
 workers retain their original fixed pauses and code provenance. Fit/prediction
 timing reports continue to exclude cooling pauses explicitly.
+
+## 2026-08-31 — Cross-check saved results against independently audited inputs
+
+The plausibility evidence packet now joins every valid saved result to the
+independent complete-cohort audit. It checks support/query size, class counts,
+and full-dataset input/rejection totals, in addition to the result auditor's
+existing arithmetic checks. A changed result hash aborts packet generation;
+newly completed folds belong to the next snapshot. Every high two-class
+subject/method case is listed with per-seed class recall and an unresolved
+disposition. The packet cannot grant final review completion or scientific
+clearance automatically, and it does not alter training or frozen records.

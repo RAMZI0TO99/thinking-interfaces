@@ -48,3 +48,20 @@ All current benchmark plots and tables remain exploratory because Gate A is
 unsigned. The seven-method sweep jointly fits source and support trials. The
 separate 45-run EEGNet support-fine-tuning baseline is not mixed into that table
 or used to inflate its record count.
+
+## Plausibility review evidence
+
+`scripts/prepare_plausibility_review.py` verifies the current processed-file
+snapshot, re-audits benchmark records and cross-checks every saved support/query
+count, query class count, and dataset rejection total against the independent
+corpus audit. It publishes `runs/plausibility_packet.json` for a single fixed
+record snapshot. Partial grids stay explicitly partial.
+
+The packet includes every two-class subject/method case exceeding the frozen
+78% review trigger in any seed, with each seed's class recall and record hash.
+It does not automatically create the final plausibility review, clear high
+scores, or claim scientific gate approval. Matching counts establish size and
+class balance, not proof that model fitting respected all split boundaries.
+Final review must consider all cases and retain unresolved acquisition,
+preprocessing, chronology and pretraining-overlap limitations. Four-class BCI
+results and the separate two-class support-fine-tuning protocol are distinguished.
