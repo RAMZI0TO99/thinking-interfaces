@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from dataclasses import replace
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
 
@@ -32,6 +33,51 @@ class BenchmarkTests(unittest.TestCase):
             "synthetic", signals, labels, subjects, ("C3", "Cz", "C4"), 64.0
         )
         self.training = TorchTrainingConfig(epochs=1, device="cpu")
+
+    def test_opt_in_csp_certificate_counts_are_saved_with_the_fit(self) -> None:
+        with (
+            tempfile.TemporaryDirectory() as directory,
+            patch(
+                "evaluation.benchmark.load_toml",
+                return_value={"csp": {"certify_full_numerical_rank": True}},
+            ),
+        ):
+            outputs = run_benchmark(
+                self.matrix,
+                methods=("fbcsp",),
+                seeds=(11,),
+                shots_per_class=2,
+                confidence_threshold=0.7,
+                torch_config=self.training,
+                output_root=Path(directory),
+                config={"test": True},
+                max_new_runs=1,
+            )
+            metrics = json.loads(outputs[0].read_text("utf-8"))["metrics"]
+            self.assertEqual(metrics["csp_certified_band_count"], 6)
+            self.assertEqual(metrics["csp_automatic_rank_band_count"], 0)
+            self.assertGreater(metrics["csp_minimum_certified_bound_ratio"], 64)
+
+    def test_csp_runtime_switch_rejects_ambiguous_text(self) -> None:
+        with (
+            tempfile.TemporaryDirectory() as directory,
+            patch(
+                "evaluation.benchmark.load_toml",
+                return_value={"csp": {"certify_full_numerical_rank": "false"}},
+            ),
+            self.assertRaises(ValueError),
+        ):
+            run_benchmark(
+                self.matrix,
+                methods=("fbcsp",),
+                seeds=(11,),
+                shots_per_class=2,
+                confidence_threshold=0.7,
+                torch_config=self.training,
+                output_root=Path(directory),
+                config={"test": True},
+                max_new_runs=1,
+            )
 
     def test_query_is_held_out_and_fold_runs(self) -> None:
         result = run_fold(

@@ -376,3 +376,36 @@ require considerable memory. This is not a bounded-memory CSP implementation.
 The regression check compares predictions bit-for-bit with the original MNE
 float32-selection path. Previously completed records retain their actual source
 and timings; neither the scientific configuration nor earlier results is edited.
+
+## 2026-08-31 — Interrupted native worker and isolated runtime probe
+
+The resumed classical queue saved Cho FBCSP subjects 01–04. Its console later
+reported a libzmq "Bad file descriptor" error; the worker remained present but
+its CPU time stayed at 2,387.25 seconds across checks approximately two minutes
+apart, with no subject 05 result. The exact project supervisor, worker and launcher
+were verified and terminated using the Windows process-management API. Completed
+atomic results and verified filter caches were preserved. The underlying native
+communication failure is not diagnosed, and dependency pins were not changed.
+
+`scripts/probe_classical_runtime.py` and its separate configuration perform an
+isolated four-BLAS-thread check against two already saved FBCSP folds. Probe
+results go outside the benchmark directory, bind the independently verified input
+snapshot and reference-record hashes, and require exact equality for every
+non-timing metric. Runtime comparisons are historical, not a controlled paired
+speed experiment. No model/data setting is changed merely by running this probe.
+
+The four-thread probe matched both reference folds exactly but was slower, so
+that setting was not adopted. A separate full-numerical-rank certificate was
+then validated against MNE on small full-rank/rank-deficient cases and two full
+Cho folds. It bounds the original numerical threshold using a training-only
+column subset and chunked norm, retaining MNE's original automatic calculation
+whenever inconclusive or when the installed MNE version is not the reviewed
+1.12.1. It never unconditionally assumes full rank or infers physical rank.
+
+Both real folds reproduced every original non-timing metric exactly, with fit
+times 164.272/171.887 seconds versus historical 356.949/369.696 seconds. The guarded
+shortcut is enabled for later workers, with per-record certified/fallback band
+counts and the minimum bound ratio checked by the independent auditor. The
+scientific configuration hash and completed records are unchanged. Full details,
+mathematical assumptions, source link and limitations are in
+`docs/csp_runtime_optimization.md`.

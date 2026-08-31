@@ -130,6 +130,31 @@ def inspect_record(path: Path, *, expected_config_sha256: str) -> AuditedRecord:
         raise ValueError("nonempty coverage requires selective accuracy")
     if metrics["fit_seconds"] < 0 or metrics["prediction_seconds"] < 0:
         raise ValueError("negative runtime")
+    certificate_keys = {
+        "csp_certified_band_count",
+        "csp_automatic_rank_band_count",
+        "csp_minimum_certified_bound_ratio",
+    }
+    if certificate_keys & set(metrics):
+        if method != "fbcsp" or not {
+            "csp_certified_band_count",
+            "csp_automatic_rank_band_count",
+        } <= set(metrics):
+            raise ValueError("incomplete or misplaced CSP rank diagnostics")
+        dataset_settings = payload["config"].get("datasets", {}).get(dataset, {})
+        sampling_rate = dataset_settings.get("sampling_rate_hz")
+        if type(sampling_rate) not in (int, float) or not math.isfinite(sampling_rate):
+            raise ValueError("CSP diagnostics require a configured sampling rate")
+        expected_bands = sum(low < sampling_rate / 2 - 1 for low in (8, 12, 16, 20, 24, 28))
+        certified = count("csp_certified_band_count")
+        automatic = count("csp_automatic_rank_band_count")
+        if certified + automatic != expected_bands or expected_bands < 1:
+            raise ValueError("CSP rank diagnostic counts disagree with the filter bank")
+        ratio = metrics.get("csp_minimum_certified_bound_ratio")
+        if (certified > 0 and (ratio is None or ratio <= 64)) or (
+            certified == 0 and ratio is not None
+        ):
+            raise ValueError("CSP certified rank lacks its required numerical separation")
     origin = metrics.get("reused_from_seed")
     if origin is not None:
         if method not in DETERMINISTIC_METHODS or not origin.is_integer() or origin == seed:

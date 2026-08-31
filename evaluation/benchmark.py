@@ -13,7 +13,7 @@ from typing import Any
 import numpy as np
 from numpy.typing import NDArray
 
-from core.config import config_digest
+from core.config import config_digest, load_toml
 from core.gpu_cooling import cool_gpu, load_cooling_policy
 from core.metrics import classification_report
 from core.provenance import capture_source
@@ -29,6 +29,7 @@ from evaluation.baselines import (
     TangentSpaceLogistic,
     TorchTrainingConfig,
 )
+from evaluation.csp_rank_certificate import FullRankCertificate
 from evaluation.realtime_metrics import accuracy_coverage_curve, calibration_report
 
 FloatArray = NDArray[np.float32]
@@ -146,6 +147,7 @@ class BenchmarkFoldResult:
     class_support: dict[str, int]
     confusion_matrix: tuple[tuple[int, ...], ...]
     class_names: tuple[str, ...]
+    csp_rank_certificates: tuple[FullRankCertificate, ...] = ()
 
     def scalar_metrics(self) -> dict[str, float]:
         metrics = {
@@ -175,6 +177,7 @@ def run_fold(
     torch_config: TorchTrainingConfig,
     prealigned_source_signals: FloatArray | None = None,
     prefiltered_fbcsp: tuple[FloatArray, ...] | None = None,
+    certify_csp_rank: bool = False,
 ) -> BenchmarkFoldResult:
     if method not in BASELINE_METHODS:
         raise ValueError(f"unknown baseline method: {method}")
@@ -220,6 +223,10 @@ def run_fold(
         torch_config=torch_config,
     )
     fit_started = time.perf_counter()
+    if certify_csp_rank:
+        if not isinstance(decoder, FilterBankCSP):
+            raise ValueError("CSP rank certification only applies to the FBCSP decoder")
+        decoder.certify_rank = True
     if method == "fbcsp" and prefiltered_fbcsp is not None:
         if not isinstance(decoder, FilterBankCSP):
             raise TypeError("FBCSP cache requires a FilterBankCSP decoder")
@@ -277,6 +284,7 @@ def run_fold(
         report.class_support,
         report.confusion_matrix,
         class_names,
+        tuple(decoder.rank_certificates) if isinstance(decoder, FilterBankCSP) else (),
     )
 
 
@@ -346,6 +354,13 @@ def run_benchmark(
     completed = 0
     expected_config_sha256 = config_digest(config)
     source_provenance = capture_source(Path(__file__).resolve().parents[1])
+    runtime = load_toml(Path(__file__).resolve().parents[1] / "configs" / "runtime_limits.toml")
+    csp_settings = runtime.get("csp", {})
+    if not isinstance(csp_settings, dict):
+        raise ValueError("CSP runtime settings must be a table")
+    certify_csp = csp_settings.get("certify_full_numerical_rank", False)
+    if type(certify_csp) is not bool:
+        raise ValueError("CSP rank certification must be an explicit boolean")
     cooling_policy = (
         load_cooling_policy(Path(__file__).resolve().parents[1] / "configs" / "runtime_limits.toml")
         if str(torch_config.device).startswith("cuda")
@@ -414,8 +429,21 @@ def run_benchmark(
                         torch_config=torch_config,
                         prealigned_source_signals=prealigned_source_signals,
                         prefiltered_fbcsp=prefiltered_fbcsp,
+                        certify_csp_rank=certify_csp and method == "fbcsp",
                     )
                     metrics = result.scalar_metrics()
+                    if result.csp_rank_certificates:
+                        certificates = result.csp_rank_certificates
+                        certified = [item for item in certificates if item.certified]
+                        metrics["csp_certified_band_count"] = float(len(certified))
+                        metrics["csp_automatic_rank_band_count"] = float(
+                            len(certificates) - len(certified)
+                        )
+                        if certified:
+                            metrics["csp_minimum_certified_bound_ratio"] = min(
+                                item.sample_lower_bound / item.global_threshold_upper_bound
+                                for item in certified
+                            )
                 else:
                     metrics, _ = reusable
                 if reusable is None:

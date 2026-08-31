@@ -16,6 +16,7 @@ from sklearn.linear_model import LogisticRegression  # type: ignore[import-untyp
 from core.config import config_digest
 from data.array_cache import verified_float32_cache
 from data.runtime import configure_scientific_runtime
+from evaluation.csp_rank_certificate import FullRankCertificate, full_rank_certificate
 
 configure_scientific_runtime()
 
@@ -93,6 +94,7 @@ class FilterBankCSP:
             (28.0, 32.0),
         ),
         components_per_band: int = 2,
+        certify_rank: bool = False,
     ) -> None:
         if sampling_rate_hz <= 0 or components_per_band < 1:
             raise ValueError("sampling rate and component count must be positive")
@@ -101,6 +103,8 @@ class FilterBankCSP:
         self.sampling_rate_hz = sampling_rate_hz
         self.bands_hz = bands_hz
         self.components_per_band = components_per_band
+        self.certify_rank = certify_rank
+        self.rank_certificates: list[FullRankCertificate] = []
         self._filters = tuple(
             butter(4, (low, high), btype="bandpass", fs=sampling_rate_hz, output="sos")
             for low, high in bands_hz
@@ -179,8 +183,15 @@ class FilterBankCSP:
             raise ValueError("prefilter indices and labels have different trial counts")
         features: list[NDArray[np.float64]] = []
         self._csps = []
+        self.rank_certificates = []
         for band in bands:
             selected = _csp_input(band, indices)
+            rank = None
+            # The shortcut was reviewed against this pinned MNE implementation.
+            if self.certify_rank and version("mne") == "1.12.1":
+                certificate = full_rank_certificate(selected)
+                self.rank_certificates.append(certificate)
+                rank = certificate.mne_rank
             csp = CSP(
                 n_components=self.components_per_band,
                 reg="oas",
@@ -188,6 +199,7 @@ class FilterBankCSP:
                 cov_est="concat",
                 norm_trace=False,
                 component_order="mutual_info",
+                rank=rank,
             )
             with use_log_level("ERROR"):
                 features.append(np.asarray(csp.fit_transform(selected, labels)))

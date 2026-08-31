@@ -1,0 +1,8 @@
+# Operational experiment only: original model/data parameters come from benchmark.toml.
+[probe]
+dataset = "cho2017"
+method = "fbcsp"
+subjects = ["subject_01", "subject_02"]
+seed = 11
+blas_threads = 4
+require_exact_non_timing_metrics = true

@@ -1,0 +1,9 @@
+# Same frozen data/model settings; 24 is the observed default BLAS thread count.
+[probe]
+dataset = "cho2017"
+method = "fbcsp"
+subjects = ["subject_01", "subject_02"]
+seed = 11
+blas_threads = 24
+certify_csp_rank = true
+require_exact_non_timing_metrics = true

@@ -11,7 +11,10 @@ from evaluation.benchmark_audit import audit_benchmark, inspect_record
 
 
 class BenchmarkAuditTests(unittest.TestCase):
-    config = {"benchmark": {"shots_per_class": 1}}
+    config = {
+        "benchmark": {"shots_per_class": 1},
+        "datasets": {"d": {"sampling_rate_hz": 128.0}},
+    }
 
     def record(self, root: Path, *, method: str = "eegnet", seed: int = 11) -> Path:
         metrics = {
@@ -47,6 +50,48 @@ class BenchmarkAuditTests(unittest.TestCase):
 
     def inspect(self, path: Path) -> None:
         inspect_record(path, expected_config_sha256=config_digest(self.config))
+
+    def test_optional_csp_diagnostics_accept_certified_and_fallback_bands(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            for certified, automatic, ratio in ((6, 0, 1000), (2, 4, 65), (0, 6, None)):
+                with self.subTest(certified=certified):
+                    path = self.record(Path(directory), method="fbcsp")
+                    payload = json.loads(path.read_text())
+                    payload["metrics"].update(
+                        {
+                            "csp_certified_band_count": certified,
+                            "csp_automatic_rank_band_count": automatic,
+                        }
+                    )
+                    if ratio is not None:
+                        payload["metrics"]["csp_minimum_certified_bound_ratio"] = ratio
+                    path.write_text(json.dumps(payload))
+                    self.inspect(path)
+
+    def test_csp_diagnostic_arithmetic_and_method_are_checked(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            for method, certified, automatic, ratio in (
+                ("eegnet", 6, 0, 1000),
+                ("fbcsp", 5, 0, 1000),
+                ("fbcsp", 6, 0, 64),
+                ("fbcsp", 6, 0, None),
+                ("fbcsp", 0, 6, 1000),
+                ("fbcsp", 5.5, 0.5, 1000),
+            ):
+                with self.subTest(method=method, certified=certified, ratio=ratio):
+                    path = self.record(Path(directory), method=method)
+                    payload = json.loads(path.read_text())
+                    payload["metrics"].update(
+                        {
+                            "csp_certified_band_count": certified,
+                            "csp_automatic_rank_band_count": automatic,
+                        }
+                    )
+                    if ratio is not None:
+                        payload["metrics"]["csp_minimum_certified_bound_ratio"] = ratio
+                    path.write_text(json.dumps(payload))
+                    with self.assertRaises(ValueError):
+                        self.inspect(path)
 
     def test_valid_high_score_flagged_without_claiming_scientific_clearance(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
