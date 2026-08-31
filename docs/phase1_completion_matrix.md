@@ -17,7 +17,7 @@ separate and are never silently converted into local successes.
 | Official LaBraM Base checkpoint load and real forward pass | Complete with documented mismatch | `runs/labram_ready_state.json`, `configs/labram.toml`, deviation log |
 | Email authors about Large/Huge | External-only | No correspondence fabricated; external ledger |
 | TUH agreement and ethics submission | External-only/unconfirmed | Requires user identity/institution; TUAB/TUEV disabled |
-| TCPL/LoRA/adapter/prompt design study | Complete locally | Prompt design, TCPL reproduction plan, generic modules and smoke record |
+| TCPL/LoRA/adapter/prompt design study | Local method review complete; missing original critique remains external | `docs/adaptation_reference_notes.md`, corrected TCPL source review and implemented prompt contract; generic variants are not claimed as paper reproductions |
 | BCI IV 2a, Cho2017, MMIDB downloaded; anomalies and footprint recorded | Complete | 9/52/109 subjects; inventory, artifact audits, channel/anomaly docs |
 | LSL stock loopback and 60-second true-rate replay | Complete | `runs/lsl_loopback_60s.json` (7,680/7,680 samples, drift gate passed) |
 | Interface/stream contract drafted | Complete | `core/contracts.py`, `realtime/streaming.py` |
@@ -27,6 +27,7 @@ separate and are never silently converted into local successes.
 | Requirement | State | Evidence |
 |---|---|---|
 | Contracted Epoch, Split, Decoder, Stream, RunRecord/Episode types | Complete | `core/contracts.py`, tests |
+| Explicit local contract v1 freeze | Complete, recorded late rather than backdated | `configs/contract_freeze.toml`, hash-verification tests; original team circulation remains unavailable |
 | Deterministic configuration and machine-written atomic run records | Complete | `core/config.py`, `core/run_record.py`, tests |
 | BCI IV 2a all subjects, named canonical channels, Profile A | Complete | Processed artifacts, manifests, 9/9 structural audits |
 | Earliest balanced support and disjoint query | Complete | `core/splits.py`, episodic tests |
@@ -61,6 +62,7 @@ not convert Gate A into a pass.
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |
 | Generic LoRA, adapters, prompt generator; stand-in runs | Complete | Modules, tests, `runs/adaptation_standin_smoke.json` |
+| Prompt tokens actually condition attention and query predictions | Complete locally | Both modes in `runs/prompt_transformer_smoke.json`; frozen backbone, fixed support context, no query-time updates, bounded sequence length |
 | Ten-shot real episodic LoRA number | Complete/negative result | `runs/episodic_lora_eegnet.json`; support-only, timed |
 | Confidence gate, explicit neutral state, accumulated evidence | Complete | Modules, tests, persisted demos |
 | CPU/GPU latency | Complete | `runs/latency_cpu_gpu.json` |

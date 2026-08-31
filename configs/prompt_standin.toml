@@ -1,0 +1,15 @@
+[standin]
+seed = 20260831
+cpu_threads = 2
+embedding_dim = 32
+classes = 2
+prompt_tokens = 4
+hidden_dim = 256
+layers = 2
+heads = 4
+support_trials = 10
+query_trials = 6
+sequence_tokens = 8
+steps = 3
+learning_rate = 0.05
+modes = ["temporal_prefix", "per_block_prefix"]

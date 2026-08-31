@@ -1,0 +1,9 @@
+[freeze]
+version = 1
+recorded_at_utc = "2026-08-31T03:45:40.126243+00:00"
+hash_encoding = "UTF-8 with CRLF normalized to LF"
+scope = "Local interface snapshot; not a retroactive team announcement or scientific sign-off"
+
+[files]
+"core/contracts.py" = "89ef34875dda863ac7a69a37ba22361b45982cea47abc9618b616594196c6893"
+"core/run_record.py" = "1afc1086e8ace8f8e4dccbde8e20befe4dc03ee1269a1a9eaddf6c228f64a5bb"

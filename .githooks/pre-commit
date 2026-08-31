@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+project_root=$(git rev-parse --show-toplevel)
+cd "$project_root"
+if [ ! -x .venv/Scripts/python.exe ]; then
+    echo "The project-local Windows Python environment is required for local checks." >&2
+    exit 1
+fi
+exec .venv/Scripts/python.exe scripts/local_merge_check.py

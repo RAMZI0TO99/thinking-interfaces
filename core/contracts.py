@@ -1,4 +1,8 @@
-"""Contract v0 for data, adaptation, decoding, and streaming boundaries."""
+"""Contract v1 for data, adaptation, decoding, and streaming boundaries.
+
+The local freeze is recorded in configs/contract_freeze.toml. Earlier runs are
+not retroactively relabelled as having used a previously announced v1 freeze.
+"""
 
 from __future__ import annotations
 

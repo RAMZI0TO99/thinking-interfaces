@@ -1,53 +1,44 @@
-# Prompt generator design contract
+# Prompt generator: implemented local contract
 
-## Purpose
+This is a support-conditioned prototype, not a TCPL reproduction. The source
+review and reproduction decisions are in `tcpl_reproduction_plan.md`.
 
-Generate a small set of subject/task-conditioning tokens from the support set of
-an episode. The generator must work first with a stand-in transformer and later
-with LaBraM without changing the adaptation boundary.
+## Input and output
 
-## Input
+`SupportPromptGenerator` receives support features [batch, shots, embedding]
+and integer support labels [batch, shots]. It embeds each label, concatenates
+features and label embeddings, averages over shots, and applies a two-layer
+MLP with GELU. Output is [batch, prompt_tokens, embedding].
 
-The generator receives support-only encoder features with shape
-`[batch, support_examples, embedding_dim]` and their support labels. Features are
-pooled into one prototype per observed class, ordered by the episode's canonical
-class order. Missing classes use a learned missing-class vector and an explicit
-mask. Query signals, query features, and query labels are forbidden inputs.
+The current code does not build per-class prototypes, learn a missing-class
+vector, return a prompt mask, or add separate prompt positional embeddings.
+Those were unimplemented proposals in the earlier note, not existing features.
+The Phase I episode splitter supplies balanced nonempty support classes.
 
-## Output
+## Injection and query boundary
 
-The output is a contiguous floating-point tensor with shape
-`[batch, prompt_tokens, embedding_dim]`.
+`PromptedTransformerStandIn` uses a detached copy of one support context and a
+frozen attention backbone/head. The generator is the only adapted component.
+The same context conditions all query examples; query labels are not accepted.
 
-- `prompt_tokens` is configured and independent of the number of EEG patches.
-- `embedding_dim` must equal the backbone token width exactly.
-- The generator returns prompt tokens only; it does not alter backbone tokens.
-- A prompt mask with shape `[batch, prompt_tokens]` marks valid prompt positions.
+In temporal_prefix mode, prompts are inserted once before block zero and
+propagate through later blocks. In per_block_prefix mode, each block receives
+fresh support prompts; its prompt outputs are removed before the next insertion.
+Thus the sequence does not grow by the prompt count at every block. Both modes
+classify the mean of the original signal-token representations after attention,
+not the prompt tokens alone. These are sequence prefixes, not direct key/value
+activation prefixes.
 
-## Injection point
+The stand-in consumes token features, not raw EEG. A LaBraM integration still
+needs to preserve EEG positional/electrode embeddings and respect its sequence
+budget; Phase I does not claim that integration has already happened.
 
-Prompt tokens are prepended after EEG patch, channel, and positional embeddings
-have been formed, and immediately before the first transformer block:
+## Evidence and limitations
 
-`EEG -> patch/channel embedding -> prepend prompt -> transformer blocks -> head`
-
-Prompt positional embeddings are learned separately. EEG token positions and
-channel indices remain unchanged. The classification head reads the backbone's
-normal pooled representation after prompt-conditioned transformer processing.
-
-## Adaptation and leakage rules
-
-1. Fit or update the prompt generator using support data only.
-2. Freeze the generated prompt before evaluating any query example.
-3. Never use query loss, query accuracy, or query labels for checkpoint selection,
-   early stopping, normalization statistics, or prompt construction.
-4. Rebuild prompts independently for each episode; do not carry state between
-   subjects unless an experiment explicitly defines a meta-trained initialization.
-5. Save prompt count, embedding width, support indices, class order, seed, and
-   parameter digest in the run record.
-
-## First implementation test
-
-Use a stand-in transformer with a known embedding width. Confirm that generated
-prompts have the contracted shape, change the model output, receive gradients from
-support loss, and remain bitwise unchanged during query-only evaluation.
+`scripts/smoke_prompt_transformer.py` exercises both modes using the common
+support-only adapt_torch_model interface. It checks changed prompts and held-out
+query logits, unchanged base/backbone state, and no query-time updates. Tests
+also check bounded sequence length and sensitivity to the actual query tokens.
+The small CPU smoke uses synthetic data: it establishes integration, not EEG
+accuracy, meta-training success, or paper-level reproducibility. The previous
+generator-only smoke remains separate historical evidence.

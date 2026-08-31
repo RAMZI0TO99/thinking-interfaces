@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any, cast
 
 from core.config import config_digest, load_toml
+from core.contract_freeze import verify_contract_freeze
 from evaluation.benchmark_audit import audit_benchmark
 from evaluation.corpus_duplicates import verify_corpus_snapshot
 from evaluation.equivalence_freeze import source_margin_record
@@ -75,6 +76,34 @@ def main() -> None:
     figures = read_json(root / "runs" / "figures" / "manifest.json")
     quality = read_quality_status(root)
     quality_passed = verify_quality_bundle(root, quality)
+    contract_frozen = verify_contract_freeze(root)
+    prompt_smoke = read_json(root / "runs" / "prompt_transformer_smoke.json")
+    prompt_config = load_toml(root / "configs" / "prompt_standin.toml")
+    prompt_modes = prompt_smoke.get("modes", {})
+    prompt_standin_passed = bool(
+        prompt_smoke.get("passed") is True
+        and prompt_smoke.get("config") == prompt_config
+        and prompt_smoke.get("config_sha256") == config_digest(prompt_config)
+        and quality_passed
+        and prompt_smoke.get("source", {}).get("source_sha256")
+        == quality.get("source_sha256_after")
+        and set(prompt_modes) == {"temporal_prefix", "per_block_prefix"}
+        and all(
+            all(
+                row.get(key) is True
+                for key in (
+                    "passed",
+                    "base_model_unchanged",
+                    "finite_query_logits",
+                    "frozen_backbone_unchanged",
+                    "query_did_not_update_state_or_prompts",
+                )
+            )
+            and row.get("prompt_maximum_change", 0) > 0
+            and row.get("query_output_maximum_change", 0) > 0
+            for row in prompt_modes.values()
+        )
+    )
     live_demo_passed = verify_live_demo(root)
     corpus = read_json(root / "runs" / "corpus_duplicate_audit.json")
     corpus_current = verify_corpus_snapshot(
@@ -156,6 +185,8 @@ def main() -> None:
         and review_complete
         and reports_complete
         and quality_passed
+        and contract_frozen
+        and prompt_standin_passed
         and live_demo_passed
         and no_exact_copies
         and margin_frozen
@@ -177,6 +208,8 @@ def main() -> None:
         "plausibility_review_complete": review_complete,
         "benchmark_reporting_bundle_complete": reports_complete,
         "current_source_quality_passed": quality_passed,
+        "local_contract_v1_frozen": contract_frozen,
+        "prompt_attention_standin_passed": prompt_standin_passed,
         "integrated_lsl_native_demo_passed": live_demo_passed,
         "corpus_duplicate_audit_current": corpus_current,
         "no_exact_train_query_copies": no_exact_copies,

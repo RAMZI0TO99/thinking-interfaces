@@ -337,3 +337,29 @@ settings are unchanged. A regression test makes any raw-signal indexing fail in
 the cached FBCSP path and verifies identical non-timing fold metrics against the
 direct path; the existing cached/local alignment parity test remains in place.
 Already-running workers and completed records retain their original provenance.
+
+## 2026-08-31 — Final original-plan audit: contract, prompts and local checks
+
+The contract module still carried a v0 label with no dated freeze receipt. The
+existing interface is now explicitly recorded as local v1 at 03:45:40 UTC, with
+normalized-text hashes of its two interface files and a regression test. This
+does not backdate a freeze, team announcement, or the earlier experiment history.
+
+The prompt design note described unimplemented prototypes/masks, and the TCPL
+note attributed three uncited objections to a paper. These claims are corrected
+against current code and primary-source method sections. The missing Full Project
+Plan section 5.2 remains an external source gap. Local variants are differentiated
+from exact published LoRA, adapter, input-prompt and key/value-prefix recipes.
+
+The prior prompt smoke classified generator outputs without a transformer.
+A distinct synthetic CPU attention smoke now tests both injection modes with
+real query token sequences, support-only adaptation, unchanged frozen weights,
+and no query-time state updates. No EEG accuracy or TCPL reproduction is claimed.
+Final local completion requires this smoke for the current tested source.
+
+Local commit and non-fast-forward merge hooks invoke source-quality checks and
+three leakage checks. Negative-control verification now reads individual results,
+checks the configured subject/seed grid and configuration, and recomputes subject
+means instead of trusting saved pass flags alone. It validates historical
+controls; it does not retrain those models on every commit. Local hooks remain
+bypassable and do not replace remote required checks or branch protection.

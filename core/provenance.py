@@ -40,9 +40,12 @@ def source_files(root: Path) -> tuple[Path, ...]:
         "requirements-data.lock",
         "requirements-ml.lock",
         ".python-version",
+        ".gitattributes",
     ):
         if (root / name).is_file():
             paths.add(root / name)
+    if (root / ".githooks").is_dir():
+        paths.update(path for path in (root / ".githooks").iterdir() if path.is_file())
     return tuple(sorted(paths))
 
 

@@ -16,6 +16,7 @@ data/raw/
 data/interim/
 data/processed/
 runs/
+tmp/
 checkpoints/
 *.edf
 *.gdf
