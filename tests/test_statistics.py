@@ -24,6 +24,44 @@ class StatisticsTests(unittest.TestCase):
         result = paired_tost(first, first.copy(), margin=0.03)
         self.assertTrue(result.equivalent)
 
+    def test_tost_rejects_unpaired_shapes_before_broadcasting(self) -> None:
+        scores = np.asarray([0.60, 0.61, 0.59, 0.60])
+        invalid_pairs = (
+            (scores, np.asarray([0.60])),
+            (np.asarray([0.60]), scores),
+            (scores, np.asarray(0.60)),
+            (scores, scores[:3]),
+            (scores[:, None], scores[:, None]),
+            (scores[:0], scores[:0]),
+            (scores[:1], scores[:1]),
+        )
+        for first, second in invalid_pairs:
+            with (
+                self.subTest(first=first.shape, second=second.shape),
+                self.assertRaises(ValueError),
+            ):
+                paired_tost(first, second, margin=0.03)
+
+    def test_tost_rejects_nonfinite_scores_and_bounds(self) -> None:
+        scores = np.asarray([0.60, 0.61, 0.59, 0.60])
+        for value in (float("nan"), float("inf"), float("-inf")):
+            with self.subTest(margin=value), self.assertRaises(ValueError):
+                paired_tost(scores, scores, margin=value)
+            with self.subTest(alpha=value), self.assertRaises(ValueError):
+                paired_tost(scores, scores, margin=0.03, alpha=value)
+            invalid = scores.copy()
+            invalid[0] = value
+            for first, second in ((invalid, scores), (scores, invalid)):
+                with self.subTest(score=value), self.assertRaises(ValueError):
+                    paired_tost(first, second, margin=0.03)
+
+    def test_tost_variable_paired_scores_respect_both_bounds(self) -> None:
+        first = np.asarray([0.60, 0.63, 0.62, 0.64])
+        second = np.asarray([0.60, 0.61, 0.61, 0.62])
+        # Paired mean = 0.0125; the 90% t interval is about [0.00124, 0.02376].
+        self.assertTrue(paired_tost(first, second, margin=0.03).equivalent)
+        self.assertFalse(paired_tost(first, second, margin=0.015).equivalent)
+
     def test_variance_derived_margin_scales_with_variance(self) -> None:
         small = variance_derived_equivalence_margin(0.05, subjects=9)
         large = variance_derived_equivalence_margin(0.15, subjects=9)

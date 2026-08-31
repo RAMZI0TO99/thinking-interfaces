@@ -67,12 +67,18 @@ def paired_tost(
     margin: float,
     alpha: float = 0.05,
 ) -> TOSTResult:
-    """Paired two-one-sided t tests for equivalence within ``±margin``."""
+    """Paired TOST on equally sized, caller-aligned subject score vectors."""
 
-    if margin <= 0 or not 0.0 < alpha < 0.5:
+    if not isfinite(margin) or margin <= 0 or not 0.0 < alpha < 0.5:
         raise ValueError("margin and alpha are invalid")
-    differences = np.asarray(first, dtype=np.float64) - np.asarray(second, dtype=np.float64)
-    if differences.ndim != 1 or differences.size < 2 or not np.isfinite(differences).all():
+    left = np.asarray(first, dtype=np.float64)
+    right = np.asarray(second, dtype=np.float64)
+    if left.ndim != 1 or right.shape != left.shape or left.size < 2:
+        raise ValueError("paired score arrays must be one-dimensional and equal length")
+    if not np.isfinite(left).all() or not np.isfinite(right).all():
+        raise ValueError("paired scores must be finite")
+    differences = left - right
+    if not np.isfinite(differences).all():
         raise ValueError("paired differences must contain at least two finite values")
     lower = ttest_1samp(differences, popmean=-margin, alternative="greater")
     upper = ttest_1samp(differences, popmean=margin, alternative="less")

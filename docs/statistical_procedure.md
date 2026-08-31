@@ -47,6 +47,13 @@ not guaranteed by the reported design power.
 The selected margin, source benchmark row, subject count, and achieved design
 power must be written to the freeze record before any Phase II comparison is run.
 
+Input validation was tightened on 2026-08-31: paired TOST requires two finite,
+equal-length, one-dimensional vectors with at least two subjects and a finite
+positive margin. A scalar or singleton may not be broadcast across subjects.
+The caller must still align subject/fold/seed identities; equal lengths alone
+cannot establish pairing. This changes invalid-input handling, not the TOST
+formula, frozen H2 margin, or any completed benchmark result.
+
 ## Multiple views
 
 Every benchmark row reports balanced accuracy, standard deviation across

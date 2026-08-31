@@ -409,3 +409,19 @@ counts and the minimum bound ratio checked by the independent auditor. The
 scientific configuration hash and completed records are unchanged. Full details,
 mathematical assumptions, source link and limitations are in
 `docs/csp_runtime_optimization.md`.
+
+## 2026-08-31 — Original-plan pairing and evidence check
+
+The paired TOST helper could silently broadcast one score across multiple
+subjects, and accepted nonfinite equivalence margins. Regression tests first
+reproduced three mismatched-shape failures and two nonfinite-margin failures.
+Input checks now require finite, equally sized one-dimensional subject vectors
+and a finite positive margin. Caller identity alignment remains necessary;
+shape validation cannot prove matching subject/fold/seed identities. Valid-input
+TOST arithmetic, the H2 freeze, preprocessing and benchmark records are unchanged.
+
+The scope checklist now distinguishes the supplied Phase I/II day-by-day files
+from the absent Full Project Plan and Team Execution Plan. It also distinguishes
+observed file-modification spans from unavailable instrumented download times,
+and local resumability from the unconfigured off-machine backup requirement.
+None of these historical or external gaps is relabelled as completed.

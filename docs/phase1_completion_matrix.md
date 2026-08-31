@@ -9,7 +9,7 @@ separate and are never silently converted into local successes.
 
 | Requirement | State | Evidence |
 |---|---|---|
-| Both plans read; lane skeleton and ownership | Complete locally | Lane READMEs, root `README.md`, and this plan-derived matrix |
+| Supplied plans read; lane skeleton and ownership | Complete for the supplied Phase I/II day-by-day documents | Lane READMEs and root `README.md`; the referenced Full Project Plan and Team Execution Plan were not supplied |
 | Local source repository | Complete locally | Local `main` branch, initial snapshot `bf78379b6ec67a6fef3db83d8e3c34f37b35299b`; raw data, weights, run outputs and secrets excluded |
 | Branch protection, five-person PR/conflict rehearsal | External-only | `docs/external_dependencies.md`; no remote/team supplied |
 | Cloud instance, persistent disk, hourly cost | Replaced by approved laptop | `configs/benchmark.toml`, `runs/dataset_inventory.json`, and measured cost report |
@@ -19,6 +19,7 @@ separate and are never silently converted into local successes.
 | TUH agreement and ethics submission | External-only/unconfirmed | Requires user identity/institution; TUAB/TUEV disabled |
 | TCPL/LoRA/adapter/prompt design study | Local method review complete; missing original critique remains external | `docs/adaptation_reference_notes.md`, corrected TCPL source review and implemented prompt contract; generic variants are not claimed as paper reproductions |
 | BCI IV 2a, Cho2017, MMIDB downloaded; anomalies and footprint recorded | Complete | 9/52/109 subjects; inventory, artifact audits, channel/anomaly docs |
+| Actual download elapsed times | Not retrospectively verifiable | Inventory records first-to-last file-modification spans, not instrumented transfer durations; no missing historical times are fabricated |
 | LSL stock loopback and 60-second true-rate replay | Complete | `runs/lsl_loopback_60s.json` (7,680/7,680 samples, drift gate passed) |
 | Interface/stream contract drafted | Complete | `core/contracts.py`, `realtime/streaming.py` |
 

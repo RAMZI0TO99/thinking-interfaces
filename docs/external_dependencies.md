@@ -10,6 +10,8 @@ These items cannot be completed by local code or public downloads alone.
 | TUH data-use agreement submission | Not confirmed | Requires the user's identity, institutional details, and external acceptance. TUAB/TUEV remain disabled. |
 | Email LaBraM authors about Large/Huge | Not sent | Author contact is published, but no sender account, sender identity, or specific correspondence approval is supplied. |
 | Backup replay machine | Not available | A CPU fallback can be tested on this laptop, but no second machine is in scope. |
+| Immediate off-machine synchronization of results | Not configured | Local atomic records are resumable, not an independent backup; no remote destination or credentials were supplied. |
+| Read the referenced Full Project Plan and Team Execution Plan | Source documents absent | The supplied Phase I/II day-by-day files are not those two referenced companion plans. |
 | Amend original Full Project Plan section 4 | Source document absent | Only the Phase I/II day-by-day documents were supplied; the empirical H2 amendment is recorded in a local companion instead. |
 | Match the exact TCPL critique in Full Project Plan section 5.2 | Source document absent | The current primary article is reviewed locally, but the original plan's three objections cannot be reconstructed or attributed to it. |
 
