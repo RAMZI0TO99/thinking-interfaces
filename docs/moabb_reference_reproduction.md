@@ -1,7 +1,8 @@
 # MOABB EEGNet reference reproduction investigation
 
-Status: reference identified on 2026-08-31; no matched run completed and no pass
-tolerance adopted. This is separate from the frozen Phase I benchmark grid.
+Status: reference identified and real-data integration smoke passed on 2026-08-31;
+full matched evaluation is still outstanding and no pass tolerance is adopted.
+This is separate from the frozen Phase I benchmark grid.
 
 ## Verified primary sources
 
@@ -117,11 +118,12 @@ imports and an additional stop check runs before fit and at each epoch.
 The first actual invocation at 10:34:42 UTC deferred at 6.95 GiB free memory, with
 training_performed=false. Receipt:
 `runs/moabb_reference/environment_check_20260831T103442143787Z.json`.
-No numerical smoke result exists yet. A two-epoch integration score will not
+No numerical smoke result existed at that point; the later successful test is
+documented below. A two-epoch integration score does not
 count toward the reference's 300-epoch training protocol or any gate acceptance.
 
-Next: execute the bounded smoke when resources permit, then prepare the full
-nine-subject/four-seed evaluation. Four seeds
+Next: implement the resumable full-evaluation worker and independent record audit,
+then execute the prepared grid. Four repeat seeds
 are required by the day plan; the reference YAML fixes model seed 42, so explain
 any repeated-seed extension explicitly. Preserve per-fold predictions, split
 identities, preprocessing/source/configuration hashes and elapsed time. Report
