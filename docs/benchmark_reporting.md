@@ -44,6 +44,17 @@ audited snapshot. It excludes preprocessing, cache construction, alignment
 preparation, loading, cooldowns, earlier experiments, and auxiliary controls.
 It is not total elapsed project time or an electricity-cost estimate.
 
+The separate `scripts/estimate_benchmark_work.py` reports remaining fit work from
+matching dataset/method durations. It counts deterministic seed copies separately,
+excludes their zero runtimes from medians, and leaves unmeasured methods unknown.
+It does not borrow a neural model's duration to forecast a classical model. The
+result is snapshot-bound in `runs/benchmark_work_estimate.json`. Small samples,
+source variants and machine contention limit even the measured-method estimate;
+an in-progress unsaved fit counts as a full remaining fit. Preparation, copying
+records, cooling, retries and final review are additional unmeasured elapsed time.
+The launch report uses this same estimator. Earlier generic launch estimates
+are not reliable remaining-time forecasts and are superseded, not rewritten.
+
 All current benchmark plots and tables remain exploratory because Gate A is
 unsigned. The seven-method sweep jointly fits source and support trials. The
 separate 45-run EEGNet support-fine-tuning baseline is not mixed into that table

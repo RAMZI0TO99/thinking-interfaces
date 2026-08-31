@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import statistics
 from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, cast
@@ -10,11 +9,10 @@ from typing import Any, cast
 from core.config import load_toml
 from evaluation.baselines import TorchTrainingConfig
 from evaluation.benchmark import (
-    estimated_instance_hours,
     load_dataset_matrix,
     run_benchmark,
 )
-from evaluation.reporting import collect_observations
+from evaluation.compute_estimate import benchmark_work_report
 
 
 def main() -> None:
@@ -27,7 +25,6 @@ def main() -> None:
     config = cast(Mapping[str, Any], load_toml(project_root / "configs" / "benchmark.toml"))
     benchmark = cast(Mapping[str, Any], config["benchmark"])
     training = cast(Mapping[str, Any], config["training"])
-    cost = cast(Mapping[str, Any], config["cost"])
     datasets = cast(Mapping[str, Any], config["datasets"])
     dataset = cast(Mapping[str, Any], datasets[args.dataset])
     matrix = load_dataset_matrix(
@@ -37,43 +34,9 @@ def main() -> None:
         absolute_peak_volts=float(dataset["artifact_threshold_volts"]),
     )
     methods = tuple(args.method or cast(list[str], benchmark["methods"]))
-    observations = collect_observations(project_root / "runs" / "benchmark")
-    completed_durations: list[float] = []
-    for observation in observations:
-        if observation.dataset != args.dataset:
-            continue
-        path = (
-            project_root
-            / "runs"
-            / "benchmark"
-            / observation.dataset
-            / observation.method
-            / f"seed_{observation.seed}"
-            / f"{observation.subject}.json"
-        )
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        metrics = cast(Mapping[str, Any], payload["metrics"])
-        completed_durations.append(
-            float(metrics["fit_seconds"]) + float(metrics["prediction_seconds"])
-        )
-    seconds_per_run = (
-        statistics.median(completed_durations)
-        if completed_durations
-        else float(cost["fallback_seconds_per_run"])
-    )
-    estimate = estimated_instance_hours(
-        completed_run_seconds=seconds_per_run,
-        methods=len(methods),
-        datasets_and_folds={args.dataset: len(set(matrix.subjects.tolist()))},
-        seeds=len(cast(list[int], benchmark["seeds"])),
-    )
     print(
         json.dumps(
-            {
-                "cost_basis": str(cost["cost_basis"]),
-                "estimated_instance_hours": estimate,
-                "seconds_per_run_basis": seconds_per_run,
-            },
+            benchmark_work_report(project_root, config, datasets=(args.dataset,), methods=methods),
             sort_keys=True,
         ),
         flush=True,
