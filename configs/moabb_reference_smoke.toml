@@ -1,0 +1,21 @@
+# One short integration check; never counted as a Gate A reference reproduction.
+[smoke]
+subject = 1
+session = "0train"
+fold_index = 0
+fold_count = 5
+split_seed = 42
+model_seed = 42
+epochs = 2
+batch_size = 64
+learning_rate = 0.001
+validation_split = 0.2
+drop_rate = 0.5
+patience = 75
+learning_rate_factor = 0.5
+fmin = 8.0
+fmax = 32.0
+resample_hz = 128.0
+environment_config = "configs/moabb_reference_environment.toml"
+raw_directory = "data/raw/moabb/MNE-bnci-data/~bci/database/001-2014"
+output_directory = "runs/moabb_reference/smoke"

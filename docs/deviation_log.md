@@ -560,3 +560,20 @@ training, or benchmark interruption was performed for this check. The live Cho
 benchmark continues on its original loaded source. Environment verification is
 not a reproduced score, a leakage control, or a gate sign-off. See the separate
 MOABB reference investigation for the evidence and remaining smoke/full-run work.
+
+## 2026-08-31 — Prepare a guarded reference fold smoke
+
+A separate two-epoch, one-fold real-data smoke now uses the upstream Keras EEGNet
+and preprocessing directly. A process-local download-path redirect reuses the two
+existing MAT files without duplicate downloads or signal changes. The reference's
+final-20%-of-training validation split and no-best-weight-restoration behavior are
+preserved and explicitly recorded, rather than substituting the project's earlier
+cross-session checkpoint convention. Split identities, raw hashes, probabilities,
+training history and RunRecord provenance will be retained upon a successful run.
+
+Three new tests verify low-resource deferral, failure before training when the
+environment check fails, and rejection of edits that expand the smoke beyond two
+epochs/one five-fold split. The first on-laptop call correctly deferred at 6.95 GiB
+free memory. No reference model was imported or trained, no numerical smoke result
+was produced, and no gate or benchmark record was changed. The running benchmark
+keeps priority; the 10 GiB startup guard has not been lowered.

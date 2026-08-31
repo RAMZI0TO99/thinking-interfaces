@@ -33,8 +33,12 @@ The YAML sets 300 epochs, batch size 64, sparse categorical cross-entropy, Adam 
 0.001, classifier random state 42, and a 20% validation split. It configures
 validation-loss early stopping and learning-rate reduction with patience 75 and
 reduction factor 0.5. It does not explicitly enable best-weight restoration;
-the installed callback default must be checked rather than assuming the current
-project's best-validation-checkpoint behavior.
+installed Keras 3.3.3 source confirms restore_best_weights=False, unlike the
+current project's best-validation-checkpoint behavior. Its validation splitter
+uses the final 20% of the supplied outer-training rows before training shuffle;
+it is not a separately randomized/stratified inner validation split. The source
+also confirms early-stopping min_delta 0 and the learning-rate callback's default
+min_delta 1e-4, cooldown 0 and minimum learning rate 0.
 
 The wrapper sets F1=8, D=2, temporal kernel 64, dropout 0.5 and a dense classifier
 with max-norm 0.5 followed by softmax. Inspection of the called block confirms
@@ -94,8 +98,30 @@ package/version snapshot hash was unchanged before/after:
 Only 7.20 GiB memory was free, so training readiness was false and no model was
 imported or trained. Available disk was 26.88 GiB after installation.
 
-Next: implement and run a resource-guarded bounded fold smoke test before committing
-to the nine-subject/four-seed grid. Four seeds
+The bounded smoke is now implemented and its refusal paths are tested:
+
+```powershell
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.smoke_moabb_reference
+```
+
+Its committed settings select subject 1, session 0train, fold 0 of five, model
+and split seeds 42, and only two epochs. It uses the verified upstream loader,
+preprocessing and classifier directly. The only loader override redirects its
+download resolver to the two existing local MAT files; unexpected filenames are
+rejected and raw hashes are recorded. It retains optimization/validation/query
+indices and query probabilities, verifies callback/class order, finite losses and
+probabilities, and confirms the reference's spatial centering. Outputs and a
+RunRecord are separate from the main benchmark. A low-memory check precedes ML
+imports and an additional stop check runs before fit and at each epoch.
+
+The first actual invocation at 10:34:42 UTC deferred at 6.95 GiB free memory, with
+training_performed=false. Receipt:
+`runs/moabb_reference/environment_check_20260831T103442143787Z.json`.
+No numerical smoke result exists yet. A two-epoch integration score will not
+count toward the reference's 300-epoch training protocol or any gate acceptance.
+
+Next: execute the bounded smoke when resources permit, then prepare the full
+nine-subject/four-seed evaluation. Four seeds
 are required by the day plan; the reference YAML fixes model seed 42, so explain
 any repeated-seed extension explicitly. Preserve per-fold predictions, split
 identities, preprocessing/source/configuration hashes and elapsed time. Report
