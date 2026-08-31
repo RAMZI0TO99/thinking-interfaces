@@ -717,3 +717,25 @@ libzmq bad-file-descriptor error. Its cause remains unresolved. All 2,132 comple
 benchmark records audited valid, including byte-identical preservation of all
 2,118 earlier snapshotted files. The full control refresh used this existing stop;
 no unrelated process was terminated and no scientific benchmark settings changed.
+
+## 2026-08-31 — Retire completed Cho filter cache to preserve disk headroom
+
+After all 1,820 Cho records completed and the worker exited, six generated FBCSP
+band arrays were independently checked against their content hashes and removed
+from the exact configuration-keyed Cho cache directory. They totaled
+8,264,614,656 bytes. Their six original JSON metadata files and the verification
+receipt remain. All raw/processed recordings, models and 2,353 completed results
+were kept; each result was independently rehashed before and after cleanup.
+
+These are rebuildable temporary arrays, not unique evidence. The original
+`FilterBankCSP.filtered_bands_memmap` path can reproduce them from the retained
+inputs, filter/version key and metadata. They were not moved to a recovery bin.
+Completed methods skip cache preparation, so ordinary resume does not recreate
+them. Free disk after removal was 20.497 GiB, leaving room for the MMIDB cache
+without reducing the reference runner's 10-GiB disk guard.
+
+Pre-removal inventory: `runs/runtime_probe/cho_cache_retirement_20260831T1637.json`,
+SHA-256 `ee125602182066855739e8d8595e63fd946fead73c680e24bf29d3a2d0ae5ec3`.
+Post-removal verification:
+`runs/runtime_probe/cho_cache_retired_verified_20260831T1638.json`, SHA-256
+`5bd7f9211a387e993f4c5403343f95f528cfe50c5aca763ff5ba88a8c678022e`.

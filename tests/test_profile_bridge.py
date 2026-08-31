@@ -13,6 +13,7 @@ from scripts.diagnose_profile_bridge import (
     NAMES,
     ROOT,
     array_identity,
+    bridge_cooling_policy,
     independent_split,
     ordered_summary,
     reconstruct_condition,
@@ -22,6 +23,12 @@ from scripts.diagnose_profile_bridge import (
 
 
 class ProfileBridgeTests(unittest.TestCase):
+    def test_real_cooling_configuration_path(self):
+        policy = bridge_cooling_policy()
+        self.assertEqual(policy.pause_at_celsius, 80)
+        self.assertEqual(policy.resume_at_or_below_celsius, 76)
+        self.assertEqual(policy.maximum_cooling_sleep_seconds, 60.0)
+
     def setUp(self):
         self.config = load_toml(ROOT / "configs/profile_bridge_diagnostic.toml")
         self.original = load_toml(ROOT / "configs/profile_comparison.toml")

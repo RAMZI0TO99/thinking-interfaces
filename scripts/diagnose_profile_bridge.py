@@ -18,6 +18,7 @@ from numpy.typing import NDArray
 from sklearn.model_selection import train_test_split  # type: ignore[import-untyped]
 
 from core.config import config_digest, load_toml
+from core.gpu_cooling import CoolingPolicy, load_cooling_policy
 from core.provenance import capture_source
 from core.run_record import RunRecord
 from evaluation.source_bound_controls import environment_identity, file_digest
@@ -42,6 +43,10 @@ REFERENCE_HASHES = {
     NAMES[1]: "eb25fb982479057e6bd89f0635e1b45e0afb8c21ed62ad968ca304b6629e3395",
     NAMES[-1]: "d408d6b6d1e3a56e28bbbf65c4ee81772ef99c48db8602f6f165cbe7d44b3229",
 }
+
+
+def bridge_cooling_policy() -> CoolingPolicy:
+    return load_cooling_policy(ROOT / "configs/runtime_limits.toml")
 
 
 def validate_config(config: dict[str, Any], original: dict[str, Any]) -> None:
@@ -220,7 +225,7 @@ def main() -> int:
     with lock.open("x", encoding="utf-8") as stream:
         json.dump({"pid": os.getpid(), "source": asdict(source)}, stream)
     try:
-        from core.gpu_cooling import cool_gpu, load_cooling_policy
+        from core.gpu_cooling import cool_gpu
         from encoder import eegnet_baseline as baseline
 
         torch = importlib.import_module("torch")
@@ -267,7 +272,7 @@ def main() -> int:
                 payload = json.loads(path.read_text("utf-8"))
                 validate_record(payload, **check)
             else:
-                cool_gpu(load_cooling_policy(ROOT))
+                cool_gpu(bridge_cooling_policy())
                 started = time.perf_counter()
                 with patch.object(baseline, "EEGNet",
                                   side_effect=guarded_constructor(vars(baseline)["EEGNet"], guard)):

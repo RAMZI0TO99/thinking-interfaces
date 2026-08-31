@@ -144,3 +144,14 @@ Hash-linked independent input verification covered all 45 records again:
 `runs/source_bound_controls/input_audits/20260831T163313704362Z.json`, SHA-256
 `aeb518b754bdf9f1a6f0c18ff57cf3e1f692dc365aa55471f7cc4ec3279a1d06`.
 The preserved raw reconstruction was reused by hash, not rerun or relabeled.
+
+The bridge's pre-fit cooling-path correction required a further complete refresh
+at source `0aec5f63da937ebea3fc0806e9fa976a8ceabc019708818faefd1d8481463341`.
+All 45 fits passed under context
+`4b32ad6730b52bb6e1cd9fd58042a88b0949b75d404421af27d0efd56247bd8d`,
+snapshot `99f01a8e31040969dbb3918c86d8437c70c5aaa41d25c8fbd34d4b98e2a9bf51`.
+Every result/history/prediction again matched the initial refresh. Across 1,166
+epochs, recorded fit/prediction time was 71.231 seconds, minimum free RAM 8.651 GiB
+and maximum process memory 1.682 GiB. Hash-linked input receipt:
+`runs/source_bound_controls/input_audits/20260831T163848306240Z.json`, SHA-256
+`b7a609bd97d52a863ea05429d3bd20cfdad50473492e689f96cbd66ca621d3b6`.

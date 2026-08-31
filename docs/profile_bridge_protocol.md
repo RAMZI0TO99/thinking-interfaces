@@ -41,3 +41,10 @@ Execution requires clean committed source, at least 6 GiB free startup RAM and
 4-GiB running guard applies. GPU cooling policy is retained. Source-wide leakage
 controls must be refreshed after adding this implementation; existing guards,
 benchmark settings, outputs and user processes are unchanged.
+
+The first committed invocation stopped before its first model fit: the cooling
+loader was passed the project directory instead of its TOML file. Its context
+and error log are retained; no condition score was observed. The lookup was
+corrected to `configs/runtime_limits.toml`, with a real-path regression test and
+another complete source-bound control refresh. No declared condition, training
+rule or cooling threshold changed in response to this startup error.
