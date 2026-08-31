@@ -129,3 +129,34 @@ Across 310 model-call checks, free memory never fell below 4.868 GiB; maximum
 sampled diagnostic process memory was 1.693 GiB. The main benchmark was not
 paused or modified. Timings include resource checks and are not general runtime
 estimates; the first condition also paid initial GPU setup overhead.
+
+## Source-session signal-energy cross-check
+
+`scripts/audit_profile_signals.py` inspected only the unchanged 288-trial training
+session, not the held-out test outcomes. Both profiles were expressed in volts
+before comparison. It used a one-sided DFT of each four-second epoch, no
+window taper or detrending, separate DC, 0.25-Hz bins, and verified Parseval's
+identity. These are finite-window energy allocations, including spectral
+leakage, not perfectly isolated physiological frequency-band powers.
+
+| Source-session quantity | Profile A | Profile B |
+|---|---:|---:|
+| RMS amplitude | 2.6792 microvolts | 10.0279 microvolts |
+| DC energy fraction | 0.0456% | 0.8134% |
+| Above DC but below 8 Hz | 4.7490% | 66.3801% |
+| 8–30 Hz, inclusive | 92.8968% | 26.7328% |
+| Above 30 Hz | 2.3086% | 6.0738% |
+| Spatial common-mean energy fraction | approximately zero | 83.4320% |
+
+This verifies that the profiles differ in more than storage units: the broad-
+band/original-reference B input retains substantial low-frequency and shared-
+channel components that A suppresses. The shared component is not identified
+as artifact or physiology by this analysis. These signal facts do not assign
+the remaining 19.7917-point accuracy gap to any one operation or justify changing
+the frozen pipelines; model physical-time kernels and learning dynamics also
+differ. No model was trained, no test data selected and no artifact rewritten.
+
+Report: `runs/profile_signal_review/20260831T115831022928Z.json`, SHA-256
+`9c1e48965378cc2d5457575eb81acf04877b4bf0694af9a3ae65e32d7f1f1a05`.
+It records source provenance, both artifact hashes, complete preprocessing
+configuration and the exact source-session indices.
