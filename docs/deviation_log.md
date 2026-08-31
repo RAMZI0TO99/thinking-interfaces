@@ -1,5 +1,24 @@
 # Deviation log
 
+## 2026-08-31 — Literal support-seed requirement and CI evidence scope
+
+A complete reread of the unchanged Phase I DOCX confirmed that Week 1 Day 2
+assigns the seed a role in choosing earliest support trials. The implemented
+splitter instead selects the same first five retained trials per class for all
+model seeds. This was already described in the seed-reuse note, but was not
+explicitly distinguished from the plan's literal seeded-draw requirement in the
+completion matrix. That claim is now qualified, and the user has been asked to
+decide whether to retain the fixed-earliest deviation or define a new early pool.
+No approval, early-pool size, new split, rerun or change to frozen evidence is
+assumed while the current sweep continues.
+
+The same review confirms that the local merge checks freshly assert subject
+disjointness but revalidate historical shuffled-label/pre-cue records. They do
+not establish current-source training-pipeline control results. The completion
+matrix now distinguishes historical evidence from the remaining current-source
+control binding/rerun work. Original control scores and provenance are preserved.
+See `docs/phase1_protocol_decisions.md` for the exact scope and consequences.
+
 ## 2026-08-31 — Qualify and bound the Cho alignment scheduling change
 
 After pausing at saved Cho EA+tangent subject 25, the isolated two-fold process

@@ -31,7 +31,7 @@ separate and are never silently converted into local successes.
 | Explicit local contract v1 freeze | Complete, recorded late rather than backdated | `configs/contract_freeze.toml`, hash-verification tests; original team circulation remains unavailable |
 | Deterministic configuration and machine-written atomic run records | Complete | `core/config.py`, `core/run_record.py`, tests |
 | BCI IV 2a all subjects, named canonical channels, Profile A | Complete | Processed artifacts, manifests, 9/9 structural audits |
-| Earliest balanced support and disjoint query | Complete | `core/splits.py`, episodic tests |
+| Earliest balanced support and disjoint query | Fixed-earliest implementation complete; literal seeded-draw requirement unresolved | `core/splits.py` has no seed argument; all model seeds share the same partition. User decision pending in `docs/phase1_protocol_decisions.md`; frozen results remain unchanged. |
 | Cho earliest-trial chronology caveat | Documented limitation | Loader concatenates class arrays; available within-class order is not proven acquisition chronology |
 | Channel inventory/canonicalisation including MMIDB dot padding | Complete | `data/channel_names.py`, canonicalisation table, tests |
 | Configured amplitude rejection | Complete and permanently frozen | Complete-cohort 99.9th-percentile rule and audit record |
@@ -45,7 +45,7 @@ separate and are never silently converted into local successes.
 | EEGNet under the decoder harness and support-only adaptation | Complete | Baseline/adaptation modules and real episodic LoRA record |
 | EEGNet implementation checked against Lawhern et al. | Review complete; exact parity not established | `docs/eegnet_implementation_review.md`; known padding, dropout and classifier-constraint differences remain explicit |
 | Distinct source-only EEGNet fit followed by full-model support-only fine-tuning | Complete locally | 45/45 separately audited two-class BCI records; source/support/query boundaries tested, high subject scores remain flagged |
-| Shuffled-label and subject-disjointness CI | Complete | `runs/leakage_ci_status.json` |
+| Shuffled-label and subject-disjointness CI | Local checks implemented; current-source negative-control coverage not yet established | Fresh split assertions plus historical control-record revalidation; see `docs/phase1_protocol_decisions.md`. |
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
@@ -58,7 +58,7 @@ not convert Gate A into a pass.
 
 | Requirement | State | Evidence |
 |---|---|---|
-| Pre-cue control at chance in CI | Complete/pass | 24.86%, subject CI 24.20–25.51%; leakage CI record |
+| Pre-cue control at chance in CI | Historical control passed and is revalidated locally | 24.86%, subject CI 24.20–25.51%; current-source control binding/rerun remains to be verified, not inferred from the saved pass flag. |
 | Profile B implementation and Profile A/B cross-check | Cross-check negative; input-unit effect isolated, remaining gap unresolved | Three-condition same-split diagnostic exactly reproduced original scores; converting B to microvolts gained 11.4583 pp but left a 19.7917-pp gap. Histories/predictions preserved separately; frozen profiles unchanged. See `docs/profile_comparison_review.md`. |
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |

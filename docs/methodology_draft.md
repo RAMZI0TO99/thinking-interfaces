@@ -49,7 +49,14 @@ Euclidean-aligned tangent-space logistic regression. Euclidean Alignment is fit
 separately per source domain and from target support only; query trials do not
 contribute to the target alignment matrix.
 
-Five fixed seeds are used. Every fold writes an atomic run record immediately.
+Five fixed model seeds are used; the earliest support/query partition is identical
+across those seeds. Neural fits vary their training random state. Deterministic
+classical fits are computed once and explicitly reused in the other seed-labelled
+records, with zero additional fitting time. These are not five support resamples.
+The build plan's seeded-earliest-draw wording requires a still-pending protocol
+decision (`phase1_protocol_decisions.md`); no larger early-trial pool is invented.
+
+Every fold writes an atomic run record immediately.
 Aggregation averages seeds within subjects before reporting a 95% interval over
 subjects. Each record includes class support, a flattened confusion matrix, kappa,
 calibration error, coverage, latency, and rejected-trial counts. Failed, stale, or
