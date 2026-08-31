@@ -3,10 +3,17 @@ from __future__ import annotations
 import copy
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 from core.metrics import classification_report
-from scripts.diagnose_profile_units import ROOT, resolve_config, validate_predictions
+from scripts.diagnose_profile_units import (
+    ROOT,
+    guarded_constructor,
+    make_resource_guard,
+    resolve_config,
+    validate_predictions,
+)
 
 
 class ProfileUnitsDiagnosticTests(unittest.TestCase):
@@ -43,6 +50,23 @@ class ProfileUnitsDiagnosticTests(unittest.TestCase):
 
     def test_exact_predictions_and_history(self):
         validate_predictions(self.payload)
+
+    def test_resource_hook_records_and_stops_before_forward(self):
+        memory = SimpleNamespace(available=5 * 1024**3)
+        process = SimpleNamespace(memory_info=lambda: SimpleNamespace(rss=1024**3))
+        provider = SimpleNamespace(virtual_memory=lambda: memory, Process=lambda: process)
+        guard, observations = make_resource_guard(provider, 4.0)
+        callbacks = []
+        model = SimpleNamespace(register_forward_pre_hook=callbacks.append)
+        wrapped = guarded_constructor(lambda: model, guard)
+        self.assertIs(wrapped(), model)
+        self.assertIsNone(callbacks[0](model, ()))
+        self.assertEqual(observations["minimum_observed_free_memory_gib"], 5.0)
+        self.assertEqual(observations["maximum_observed_process_rss_gib"], 1.0)
+        memory.available = 3 * 1024**3
+        with self.assertRaisesRegex(RuntimeError, "before a model call"):
+            callbacks[0](model, ())
+        self.assertEqual(observations["model_call_checks"], 2)
 
     def test_prediction_or_split_tampering_is_rejected(self):
         for key, value in (

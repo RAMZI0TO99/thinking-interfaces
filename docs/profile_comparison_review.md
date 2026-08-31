@@ -72,6 +72,18 @@ and frozen benchmark are never overwritten. The declared GPU run checks free
 memory first, uses two CPU threads and does not compete with the main CPU-only
 classical worker for GPU training. No diagnostic scores exist yet.
 
+The first invocation deferred before its first fit because the initial version
+reapplied its 6-GiB startup threshold after its own imports/input loading. A
+no-training memory probe measured 6.647 GiB free before imports, 6.061 after CUDA
+initialisation, 5.905 after baseline imports and 5.832 after both artifacts;
+process resident memory was 0.874 GiB. The two signal arrays total only 63.422 MiB.
+Before any diagnostic scores were observed, startup and running thresholds were
+separated: startup still requires 6 GiB, while a process-local hook checks for at
+least 4 GiB before every model call, including validation and prediction. Minimum
+observed free memory and maximum sampled process memory are recorded. The hook
+does not change the model or optimizer operations; timing includes its overhead.
+The main benchmark and MOABB reference resource thresholds remain unchanged.
+
 This is post-hoc compatibility debugging, not a preregistered performance claim.
 Its B-vs-B comparison can isolate the conditional effect of input scaling under
 this recipe. It cannot isolate the remaining A/B changes (band, reference,

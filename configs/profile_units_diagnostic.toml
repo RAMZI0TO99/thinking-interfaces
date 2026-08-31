@@ -8,6 +8,7 @@ legacy_result = "runs/profile_comparison.json"
 device = "cuda"
 cpu_threads = 2
 minimum_free_memory_gib = 6.0
+stop_below_free_memory_gib = 4.0
 minimum_free_gpu_gib = 1.0
 
 [conditions.profile_a_microvolts]

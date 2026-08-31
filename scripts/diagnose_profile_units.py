@@ -14,6 +14,7 @@ import tomllib
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any
+from unittest.mock import patch
 
 from core.config import config_digest
 from core.provenance import capture_source
@@ -124,6 +125,38 @@ def validate_predictions(payload: dict[str, Any]) -> None:
             raise ValueError("diagnostic RunRecord metrics differ")
 
 
+def make_resource_guard(provider: Any, minimum: float) -> tuple[Any, dict[str, float]]:
+    observations = {
+        "minimum_observed_free_memory_gib": math.inf,
+        "maximum_observed_process_rss_gib": 0.0,
+        "model_call_checks": 0,
+    }
+
+    def before_model_call(*unused: Any) -> None:
+        available = provider.virtual_memory().available / 1024**3
+        resident = provider.Process().memory_info().rss / 1024**3
+        observations["minimum_observed_free_memory_gib"] = min(
+            observations["minimum_observed_free_memory_gib"], available
+        )
+        observations["maximum_observed_process_rss_gib"] = max(
+            observations["maximum_observed_process_rss_gib"], resident
+        )
+        observations["model_call_checks"] += 1
+        if available < minimum:
+            raise RuntimeError("diagnostic stopped before a model call at low memory")
+
+    return before_model_call, observations
+
+
+def guarded_constructor(constructor: Any, guard: Any) -> Any:
+    def build(*args: Any, **kwargs: Any) -> Any:
+        model = constructor(*args, **kwargs)
+        model.register_forward_pre_hook(guard)
+        return model
+
+    return build
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -206,7 +239,7 @@ def main() -> int:
                 saved[name] = payload
                 print(json.dumps({"reused": name}), flush=True)
                 continue
-            if psutil.virtual_memory().available / 1024**3 < runtime["minimum_free_memory_gib"]:
+            if psutil.virtual_memory().available / 1024**3 < runtime["stop_below_free_memory_gib"]:
                 print(json.dumps({"deferred": name}), flush=True)
                 return 2
             profile = condition["profile"]
@@ -227,15 +260,25 @@ def main() -> int:
                 flush=True,
             )
             started = time.perf_counter()
-            result, model = train_eegnet(
-                signals=signals,
-                labels=artifact["labels"],
-                sessions=artifact["sessions"],
-                sampling_rate_hz=original[profile]["sampling_rate_hz"],
-                input_scale=condition["input_scale"],
-                device_name=runtime["device"],
-                **{key: value for key, value in shared.items() if key != "subject"},
+            before_model_call, resources = make_resource_guard(
+                psutil, runtime["stop_below_free_memory_gib"]
             )
+            baseline = importlib.import_module("encoder.eegnet_baseline")
+            # Process-local resource hook only; model/optimizer numerical operations are unchanged.
+            with patch.object(
+                baseline,
+                "EEGNet",
+                side_effect=guarded_constructor(baseline.EEGNet, before_model_call),
+            ):
+                result, model = train_eegnet(
+                    signals=signals,
+                    labels=artifact["labels"],
+                    sessions=artifact["sessions"],
+                    sampling_rate_hz=original[profile]["sampling_rate_hz"],
+                    input_scale=condition["input_scale"],
+                    device_name=runtime["device"],
+                    **{key: value for key, value in shared.items() if key != "subject"},
+                )
             fit_seconds = time.perf_counter() - started
             values = np.ascontiguousarray(
                 signals[split.test] * np.float32(condition["input_scale"])
@@ -267,6 +310,7 @@ def main() -> int:
                 "artifact_sha256": hashes,
                 "execution_sha256": execution,
                 "legacy_result_sha256": legacy_hash,
+                "resource_observations": resources,
                 "query_probabilities": probabilities,
                 "query_targets": artifact["labels"][split.test].tolist(),
                 "signal_shape": list(signals.shape),
