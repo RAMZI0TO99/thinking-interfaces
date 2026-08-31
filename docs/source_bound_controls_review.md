@@ -155,3 +155,15 @@ epochs, recorded fit/prediction time was 71.231 seconds, minimum free RAM 8.651 
 and maximum process memory 1.682 GiB. Hash-linked input receipt:
 `runs/source_bound_controls/input_audits/20260831T163848306240Z.json`, SHA-256
 `b7a609bd97d52a863ea05429d3bd20cfdad50473492e689f96cbd66ca621d3b6`.
+
+The subsequent exact-JSON endpoint reporting fix was verified with another full
+45-fit refresh, source
+`c8af5d97c0965f0933621a53389a3a558e593e78a0ca42d7ae48ee4832a48679`,
+context `4bdc1385ab9445529e3d8dd72764f58bcbb22162aee4610ae72e5a716eac279c`,
+snapshot `8260e403754ba4d5d55be805ee0d9c8198323d8934dbd7debc31b97c12e7e4a6`.
+All results, histories and predictions again matched the initial refresh exactly.
+Recorded fit/prediction time was 68.917 seconds over 1,166 epochs, minimum free
+RAM 8.595 GiB, maximum process memory 1.681 GiB. All 45 inputs were hash-linked
+to the pinned independent reconstruction:
+`runs/source_bound_controls/input_audits/20260831T164551199457Z.json`, SHA-256
+`c20671d22375d47fed25659c1c9797a46139779b0b30f754cf60df1b9cc2543b`.

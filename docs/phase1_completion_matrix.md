@@ -59,7 +59,7 @@ not convert Gate A into a pass.
 | Requirement | State | Evidence |
 |---|---|---|
 | Pre-cue control at chance in CI | Complete locally, with current-source full-cohort controls | All 36 configured fresh fits: 24.86%; all input identities and predictions independently checked. Matching evidence is revalidated on each merge; source/input/environment changes require a new bundle. Historical evidence remains separate. |
-| Profile B implementation and Profile A/B cross-check | Raw alignment independently verified; unit effect isolated, remaining gap unresolved | All 576 A01 trials reconstructed directly from raw MAT match both profiles exactly. Same-split unit conversion gained 11.4583 pp but left a 19.7917-pp gap. Histories/predictions preserved separately; frozen profiles unchanged. See `docs/profile_comparison_review.md`. |
+| Profile B implementation and Profile A/B cross-check | Local cross-check and ordered conditional explanation complete; no score-equivalence claim | All 576 A01 raw trials match both profiles exactly. Seven predeclared conditions reconstruct the full 31.25-pp score gap; units and CAR give the largest positive conditional effects. All endpoint histories/predictions reproduce exactly; interactions and one-subject limits remain explicit. See `docs/profile_comparison_review.md`. |
 | Cho2017 and MMIDB unified Epoch records | Complete | 52/109 artifacts; all structural audits pass |
 | Explicit MMIDB anomaly handling | Complete | Named anomalies plus fail-closed S104 boundary policy and regression test |
 | Generic LoRA, adapters, prompt generator; stand-in runs | Complete | Modules, tests, `runs/adaptation_standin_smoke.json` |

@@ -193,3 +193,61 @@ establishes online causal filtering or Gate A acceptance. The main benchmark was
 deliberately paused at 16:07:58 UTC, about 69 seconds after saving Cho EA subject
 48; some unsaved subject-49 work was discarded. All 2,141 completed records
 remained valid and unchanged. No unrelated process was stopped.
+
+## Complete ordered explanation — 2026-08-31T16:47Z
+
+The seven-condition protocol in `docs/profile_bridge_protocol.md` was fixed
+before intermediate fits. Every condition used the original A01/seed-11 model,
+230/58/288 split and training/stopping recipe. Both B endpoints and the final A
+endpoint exactly reproduce the earlier complete results, histories, probabilities
+and splits. Independent checking verified every saved prediction report. The
+final raw-reconstructed A input also exactly matches the unchanged saved A input.
+
+| Ordered condition | Balanced accuracy | Change from preceding condition |
+|---|---:|---:|
+| Original B, 0.1-mV units | 25.3472% | — |
+| B converted to microvolts | 36.8056% | +11.4583 pp |
+| Replace B filter/notch with A 8–30 Hz, no notch | 35.4167% | -1.3889 pp |
+| Add common-average reference | 59.0278% | +23.6111 pp |
+| Change 200 to 128 Hz, keeping four seconds | 54.8611% | -4.1667 pp |
+| Add one-second pre-cue baseline | 56.9444% | +2.0833 pp |
+| Use exact canonical A float32 representation | 56.5972% | -0.3472 pp |
+
+These adjacent conditional changes reconstruct the full 31.25-pp endpoint gap.
+After the unit correction, the other five changes sum to the remaining 19.7917
+points. The largest positive conditional change is CAR after narrowing the band;
+this is consistent with the separately observed large shared-channel component
+in B, but does not identify it as physiology or artifact. Narrowing the filter
+alone did not improve this particular recipe. The final rounding-only step
+changes one correctly classified query trial and is reported rather than hidden.
+
+This is an ordered one-subject/one-seed compatibility explanation, not a unique
+causal decomposition: preprocessing operations interact, band/notch changes are
+grouped, and resampling also changes the physical duration of the fixed 64-sample
+kernel. The original 20-epoch stopping limit is retained; the band-only condition
+stopped at epoch 19 under the original patience rule. No winner was selected,
+no further outcome-driven tuning followed, and no frozen artifact, original
+comparison, benchmark, gate threshold or support partition was changed.
+
+Corrected run directory:
+`runs/profile_bridge_diagnostic/ff5fe8556b0a342ade4450dfcfa8ccc9e1a406516fc5331f28a43f1fdbc33536/`.
+Summary SHA-256:
+`440a41843d93015e2eeea45c7025c2a3884a3fd59048ed5456636ef13f25fc3f`.
+Source fingerprint:
+`c8af5d97c0965f0933621a53389a3a558e593e78a0ca42d7ae48ee4832a48679`.
+All seven fits were rerun after a tuple/list reporting correction; their complete
+numerical results and signal identities exactly match the retained initial seven
+fits. The initial false summary and independent serialization explanation remain
+preserved, not overwritten. The corrected summary's endpoint checks all pass.
+
+Independent verification: `runs/runtime_probe/profile_bridge_verified_20260831T1646.json`,
+SHA-256 `3e2c395a5a15422e877bcaa4a3e517859d4d0746c8ea2a967dd2c4c0b0b696ba`.
+The 135 total training epochs took 8.991 seconds of recorded fit/prediction work,
+excluding raw preprocessing/cooling/auditing. Across 822 preprocessing/model
+resource checks, free RAM stayed at least 8.673 GiB and process memory at most
+1.754 GiB. All 2,353 benchmark files and raw inputs remained unchanged.
+
+The local one-subject profile cross-check and its bounded explanation are now
+complete. The earlier negative profile-score comparison remains negative under
+its original rule: an explanation is not a claim of score equivalence, general
+profile superiority, online filtering validity or Gate A scientific sign-off.
