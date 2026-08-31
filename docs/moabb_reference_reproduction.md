@@ -252,8 +252,8 @@ rehashed unchanged before resumption at 11:26:12 UTC. Paused snapshot:
 `19b1c8aa7fc27be94aab16d787e486903ddc1d62d89a49d18bfbd0945cd76cf6`.
 Resumed log: `runs/compute_logs/20260831T1126123805071Z.stdout.log`.
 
-The independent input auditor is implemented and unit-tested; its real-data
-execution remains to be qualified:
+The independent input auditor is implemented and unit-tested; its first real-data
+execution matched the completed fold exactly:
 
 ```powershell
 .\runs\moabb_reference\environment\Scripts\python.exe -m scripts.audit_moabb_reference_inputs
@@ -270,3 +270,18 @@ train/import TensorFlow, uses one computational thread, checks the existing
 4-GiB memory stop threshold before each run/fold, and keeps timestamped audit
 reports outside the training-record folder. The 10-GiB training-start guard
 remains unchanged. Partial coverage cannot produce a complete audit.
+
+Real-data input audit: `runs/moabb_reference/input_audits/20260831T113124878690Z.json`,
+SHA-256 `ba285b614dc02af8d3e95f650e047ca85ed4655e0b08273f0dbb49e04e258033`.
+It reconstructed subject 1/session 0train directly from MAT arrays, including all
+144 left/right events, and matched the saved fold's labels, channel order, native
+shape, query split and transformed bytes exactly. Query SHA-256:
+`2667b47c752d3c3a169db9c397739adca6b86b9ebe74b3a3c26bce714524d667`.
+The single saved full record's SHA-256 is
+`139c967a874bf6ee06e53c78445d3e738778c0feb9eb4a48830778c160071927`;
+the audited reference-record snapshot is
+`d9047388756d2fddcafa49f6645d6995602886b6a6ba93a00d3c020d599cd3b4`.
+Input-audit source was clean commit `163636dd38fe26e150d2f6de94eaa57110fe2cbb`,
+fingerprint `307ef48048490806a3fb1620150c1dd7ec816cb80cbeb49ad20308b8856e060c`.
+No model was trained by this audit. Existing inputs match, but full coverage is
+still false: 449 reference fits remain. The scientific gate remains unsigned.
