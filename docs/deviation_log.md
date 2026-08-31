@@ -425,3 +425,35 @@ from the absent Full Project Plan and Team Execution Plan. It also distinguishes
 observed file-modification spans from unavailable instrumented download times,
 and local resumability from the unconfigured off-machine backup requirement.
 None of these historical or external gaps is relabelled as completed.
+
+## 2026-08-31 — Bounded CPU/GPU overlap after the memory-heavy CSP stage
+
+The first three Cho tangent-space fits took 282-297 seconds including prediction,
+while the GPU was idle. After verifying more than 10 GiB free system memory and
+an idle GPU at 64 C, a separate MMIDB EEGNet batch was limited to ten new fits.
+It completed subjects 001-010 for seed 11 under the unchanged scientific config
+`434fc4d25a5071a094268ab410c47f79bd92823aacd8e9d06e9f684609aab258`.
+All ten records passed the independent arithmetic/provenance and corpus-count
+checks. Observed free system memory remained above 8 GiB; GPU temperature was
+76 C during a check and 70 C after the bounded batch. The existing 80/76 C cooling
+policy and hardware settings were not changed. This is sampled monitoring, not
+continuous thermal telemetry or proof of the maximum temperature reached.
+
+The batch's separate stdout/stderr logs are
+`runs/compute_logs/20260831T0715420524418Z.mmidb-eegnet-10.*.log`.
+Its worker exited before a second bounded batch of the remaining 99 subjects
+was started. Concurrent work is restricted to distinct datasets and checked for
+existing MMIDB workers; the original queue remains on Cho classical methods.
+Do not launch another overlapping worker for the same dataset/method, or let an
+auxiliary batch overlap the original queue's later MMIDB stage. Reassess memory,
+temperature and queue position before each further bounded launch; stop the
+auxiliary work if free system memory falls below 4 GiB. This is not authorization
+for unbounded parallel batches. Logs and actual process identities, not a stale
+launch receipt, determine whether a batch is still running.
+
+These are genuine planned benchmark fits, not speed-probe results. Their timings
+were measured under mixed CPU/GPU load and are not dedicated-machine performance
+measurements. No model, split, seed, artifact threshold or acceptance criterion
+was tuned. High scores in MMIDB subjects 001, 002 and 007 remain unresolved flags;
+their roughly 35 query trials per subject do not support a scientific claim on
+the basis of the first seed alone.
