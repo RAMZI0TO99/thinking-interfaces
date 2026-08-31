@@ -46,7 +46,7 @@ def main() -> None:
             or runtime.get("stop_below_free_memory_gib") != 4.0
             or probe["blas_threads"] != 24
             or probe.get("eigh_blas_threads") is not None
-            or probe["method"] != "tangent_lr"
+            or probe["method"] not in {"tangent_lr", "ea_tangent_lr"}
         ):
             raise ValueError("isolated process probe settings do not match its bounded protocol")
         if initial_source.git_dirty is not False:
@@ -60,7 +60,7 @@ def main() -> None:
     from evaluation.benchmark import _decoder, load_dataset_matrix, run_fold
 
     method = str(probe["method"])
-    if method not in {"fbcsp", "tangent_lr"} or (
+    if method not in {"fbcsp", "tangent_lr", "ea_tangent_lr"} or (
         probe["require_exact_non_timing_metrics"] is not True
     ):
         raise ValueError("this probe only verifies exact-metric FBCSP/tangent runtime parity")

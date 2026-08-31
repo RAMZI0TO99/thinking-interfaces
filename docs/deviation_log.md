@@ -1,5 +1,21 @@
 # Deviation log
 
+## 2026-08-31 — Qualify isolated tangent scheduling without adoption
+
+Two full Cho normal-tangent folds reproduced every saved non-timing metric exactly
+using a bounded two-process eigensolver candidate while retaining the original
+24-thread NumPy operations. The same-process threaded approach had failed with a
+native access violation and was rejected. Both investigations are diagnostic only.
+See `docs/tangent_process_runtime_review.md` for the persisted qualification,
+historical-timing limitations and exact source identity.
+
+The main benchmark paused only after saved EA+tangent subject 21. All 2,114 saved
+records were rehashed unchanged before resumption at 13:57:43 UTC. Insufficient
+free memory deferred the alignment-enabled qualification without lowering its
+10 GiB startup guard. The benchmark resumed with its original calculation; no
+production speed-up, frozen-setting change, retroactive provenance, or gate
+approval was introduced.
+
 ## 2026-08-30 — Gate A reference mismatch
 
 **Historical entry, corrected on 2026-08-31:** the absence/classical-only claims

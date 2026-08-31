@@ -74,3 +74,49 @@ the complete record/input snapshot, and keep scientific sign-off separate from
 completion of the local review. Existing input/control detail is in
 `docs/cho_subject43_review.md`, `docs/cho_neural_plausibility_review.md` and
 `docs/corpus_duplicate_review.md`.
+
+## Supplemental EA + tangent review: two early flags, incomplete method
+
+The 2,115-record audit snapshot
+`e20bad0b555b8d02cdb099fef01fa38c74d62dee8bf1ed73814cae69ba297901`
+contained 22/52 actual Cho EA + tangent fits and two flagged cases, both at seed
+11. Later subjects and the deterministic seed copies remain outside this review.
+This section does not claim a complete EA-method review or a final review packet.
+
+| Subject | Balanced accuracy | Left correct/query | Right correct/query | Confidence-gated correct/accepted |
+|---|---:|---:|---:|---:|
+| 03 | 84.2105% | 75/95 | 85/95 | 140/160 |
+| 14 | 83.6842% | 71/95 | 88/95 | 135/153 |
+
+Both records retain 200 original trials, zero rejected trials, ten support trials
+and 190 balanced query trials, agreeing with the existing corpus summaries. Their
+ECE values are 0.0378367794 and 0.0366613382 respectively; this is descriptive
+calibration on these query sets, not independent generalization evidence.
+
+The exact seed-11 record hashes under
+`runs/benchmark/cho2017/ea_tangent_lr/seed_11/` are:
+
+- `subject_03.json`:
+  `fb3b61177f324e21a1c4d30f57cd9bfb606e62a058db5b1616cb0acd0658cd1e`.
+- `subject_14.json`:
+  `a69b6f4d0031db4815b81b280ba52f5e29f9c4feece6e82acb7d40dc9afa4c4d`.
+
+Inspection of `evaluation/benchmark.py` and `evaluation/alignment.py` confirms
+that the held-out subject's whitener is fitted from support trials only. Cached
+alignment is computed independently per subject; this fold takes only other
+subjects' rows from that cache. Target support is separately aligned, and target
+query uses the support-fitted whitener without fitting on query data. These two
+code files are unchanged between the two recorded historical commits and the
+reviewed HEAD `573f62a61f00f4eef2c94598e62cc5a1bac09ed0`.
+
+The existing synthetic regression compares cached and fold-local alignment
+accuracy/confusion, and the domain tests check separate source alignment. This
+static path review is not a newly executed real-data leakage control, a proof
+about all preprocessing, or a claim that the shared query sets are independent.
+
+Both flags remain unresolved and retained. Subjects 03 and 14 were already high
+in other methods; reusing the same recordings does not provide independent
+physiological confirmation. Balanced class counts do not remove Cho's unresolved
+class-block chronology, artificial boundary and offline-filter concerns. No
+EA-specific shuffled-label result is available, and the neural controls are not
+transferred as clearance. The final review must add every later EA and MMIDB flag.
