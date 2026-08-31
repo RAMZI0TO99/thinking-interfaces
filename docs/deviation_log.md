@@ -326,3 +326,14 @@ newly completed folds belong to the next snapshot. Every high two-class
 subject/method case is listed with per-seed class recall and an unresolved
 disposition. The packet cannot grant final review completion or scientific
 clearance automatically, and it does not alter training or frozen records.
+
+## 2026-08-31 — Avoid unused raw-signal copies in cached folds
+
+Ahead of the remaining classical batches, cached FBCSP no longer allocates raw
+source/query signal copies that it never passes to the decoder. Cached alignment
+also avoids an unused raw source copy before constructing the aligned input.
+Split indices, filtering, alignment fitting domains, decoder inputs and frozen
+settings are unchanged. A regression test makes any raw-signal indexing fail in
+the cached FBCSP path and verifies identical non-timing fold metrics against the
+direct path; the existing cached/local alignment parity test remains in place.
+Already-running workers and completed records retain their original provenance.

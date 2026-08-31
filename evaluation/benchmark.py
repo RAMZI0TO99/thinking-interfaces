@@ -193,20 +193,25 @@ def run_fold(
     class_names = tuple(sorted(set(matrix.labels.tolist())))
     class_to_index = {name: index for index, name in enumerate(class_names)}
     targets = np.asarray([class_to_index[name] for name in matrix.labels], dtype=np.int64)
-    train_signals = matrix.signals[train_global]
-    query_signals = matrix.signals[query_global]
+    train_signals: FloatArray | None = None
+    query_signals: FloatArray | None = None
     if method.startswith("ea_"):
         target_aligner = EuclideanAlignment().fit(matrix.signals[support_global])
         aligned_support = target_aligner.transform(matrix.signals[support_global])
         if prealigned_source_signals is None:
-            train_signals = align_training_subjects(train_signals, matrix.subjects[train_global])
+            train_signals = align_training_subjects(
+                matrix.signals[train_global], matrix.subjects[train_global]
+            )
         else:
             if prealigned_source_signals.shape != matrix.signals.shape:
                 raise ValueError("prealigned source signals must match the dataset matrix")
             train_signals = np.concatenate(
                 (prealigned_source_signals[source_global], aligned_support)
             )
-        query_signals = target_aligner.transform(query_signals)
+        query_signals = target_aligner.transform(matrix.signals[query_global])
+    elif method != "fbcsp" or prefiltered_fbcsp is None:
+        train_signals = matrix.signals[train_global]
+        query_signals = matrix.signals[query_global]
     decoder = _decoder(
         method,
         matrix,
@@ -224,6 +229,8 @@ def run_fold(
             indices=train_global,
         )
     else:
+        if train_signals is None:
+            raise RuntimeError("uncached decoder needs training signals")
         decoder.fit(train_signals, targets[train_global])
     fit_seconds = time.perf_counter() - fit_started
     prediction_started = time.perf_counter()
@@ -236,6 +243,8 @@ def run_fold(
             dtype=np.float32,
         )
     else:
+        if query_signals is None:
+            raise RuntimeError("uncached decoder needs query signals")
         probabilities = np.asarray(decoder.predict_proba(query_signals), dtype=np.float32)
     prediction_seconds = time.perf_counter() - prediction_started
     predicted = probabilities.argmax(axis=1)

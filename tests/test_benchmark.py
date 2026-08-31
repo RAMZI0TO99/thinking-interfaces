@@ -3,15 +3,17 @@ from __future__ import annotations
 import json
 import tempfile
 import unittest
+from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
 
 from data.profile_a import save_epoch_artifact
 from evaluation.alignment import align_training_subjects
-from evaluation.baselines import TorchTrainingConfig
+from evaluation.baselines import FilterBankCSP, TorchTrainingConfig
 from evaluation.benchmark import (
     DatasetMatrix,
+    _decoder,
     load_dataset_matrix,
     run_benchmark,
     run_fold,
@@ -72,6 +74,31 @@ class BenchmarkTests(unittest.TestCase):
         )
         self.assertAlmostEqual(local.balanced_accuracy, cached.balanced_accuracy)
         self.assertEqual(local.confusion_matrix, cached.confusion_matrix)
+
+    def test_cached_filter_bank_does_not_copy_unused_raw_signals(self) -> None:
+        class NoRawIndexing(np.ndarray):
+            def __getitem__(self, key):
+                raise AssertionError("cached FBCSP should not index raw signal arrays")
+
+        decoder = _decoder("fbcsp", self.matrix, classes=2, seed=11, torch_config=self.training)
+        self.assertIsInstance(decoder, FilterBankCSP)
+        bands = decoder.filtered_bands(self.matrix.signals)
+        arguments = {
+            "target_subject": "C",
+            "method": "fbcsp",
+            "seed": 11,
+            "shots_per_class": 2,
+            "confidence_threshold": 0.7,
+            "torch_config": self.training,
+        }
+        direct = run_fold(self.matrix, **arguments)
+        guarded = replace(self.matrix, signals=self.matrix.signals.view(NoRawIndexing))
+        cached = run_fold(guarded, prefiltered_fbcsp=bands, **arguments)
+        direct_metrics, cached_metrics = direct.scalar_metrics(), cached.scalar_metrics()
+        for name in ("fit_seconds", "prediction_seconds"):
+            direct_metrics.pop(name)
+            cached_metrics.pop(name)
+        self.assertEqual(direct_metrics, cached_metrics)
 
     def test_atomic_records_resume(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
