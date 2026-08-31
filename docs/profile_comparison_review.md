@@ -160,3 +160,36 @@ Report: `runs/profile_signal_review/20260831T115831022928Z.json`, SHA-256
 `9c1e48965378cc2d5457575eb81acf04877b4bf0694af9a3ae65e32d7f1f1a05`.
 It records source provenance, both artifact hashes, complete preprocessing
 configuration and the exact source-session indices.
+
+## Independent raw-event and epoch alignment — 2026-08-31
+
+`scripts/audit_profile_alignment.py` independently reconstructed all 576 A01
+trials directly from the two original MAT files. It used neither the production
+profile helper nor the MOABB dataset/annotation parser. Native MAT trial markers
+are one-based trial starts; the cue is two seconds later. The installed MOABB
+annotation conversion already applies that offset. Adding another two seconds
+to the existing production epochs would be incorrect.
+
+The independent path checked labels, sessions, six run identities per session,
+within-run trial order, channels, sample counts, filtering, reference, resampling,
+baseline and stored-unit quantization. All 24 run/profile comparisons passed:
+576 epochs per profile, 1,152 comparisons in total. Every reconstructed float32
+value was exactly equal to the corresponding saved value (maximum difference
+0.0 volts), stronger than the declared numerical tolerance. Raw inputs and both
+saved artifacts remained byte-identical. No model was trained or profile changed.
+
+Receipt: `runs/profile_alignment_review/20260831T160810847353Z.json`, SHA-256
+`79e7492050c1fc40cd53b56e1a0e3b907bed1800c9fc3ef8e64e6586508c7e06`.
+Audit-code SHA-256:
+`de491723f4ee704ec02e6262e884483b77f854f4df35a1c5fffbc5370019abc9`.
+Its actual staged source was
+`3a004d326f567c021b2a3a475d2bc5dfc50683007527ebc20aec9912c3d6c1fc`;
+the receipt correctly records the preceding commit with dirty source. Forty
+resource checkpoints observed at least 10.848 GiB free RAM.
+
+This closes the independent A01 epoch/timing check, not the remaining 19.7917-pp
+accuracy attribution. It neither validates all nine subjects independently nor
+establishes online causal filtering or Gate A acceptance. The main benchmark was
+deliberately paused at 16:07:58 UTC, about 69 seconds after saving Cho EA subject
+48; some unsaved subject-49 work was discarded. All 2,141 completed records
+remained valid and unchanged. No unrelated process was stopped.

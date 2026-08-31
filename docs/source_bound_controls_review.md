@@ -109,3 +109,23 @@ unchanged. Subject 39 SHA-256:
 The main benchmark remains incomplete and is to resume from these preserved
 records after the control refresh. No reference grid, frozen thresholds, epochs
 or benchmark scientific settings were changed to recover execution.
+
+## Full refresh after adding independent profile alignment
+
+The new alignment audit and tests changed the source fingerprint to
+`3a004d326f567c021b2a3a475d2bc5dfc50683007527ebc20aec9912c3d6c1fc`.
+All 45 controls were consequently rerun, not relabeled from earlier records.
+Context: `02639784f82afe61505186aa45c3a079fcfc7051c40a355615bf865612825d21`.
+Snapshot: `0eb6d0ff8523fb0a13abb497ae83961f7a53c1dd0eeba9dc842c4badd994e935`.
+Every record passed, with no missing, invalid or unexpected units. All numerical
+results, histories and predictions exactly matched the initial refresh. The
+unchanged means remain 48.7654% shuffled-label and 24.8553% pre-cue.
+
+The 1,166 completed epochs took 58.067 seconds of recorded fit/prediction time,
+excluding preprocessing, cooling and auditing. Minimum free memory was 9.502 GiB;
+maximum process resident memory was 1.680 GiB. The independently reconstructed
+unchanged inputs were hash-linked again for all 45 new records:
+`runs/source_bound_controls/input_audits/20260831T161659383311Z.json`, SHA-256
+`88c4a656335d81523a811856bf064e841bed65505621363611a34df7bc1d4efa`.
+This was a fresh verification against the pinned raw reconstruction, not another
+claimed raw preprocessing execution. Earlier bundles remain preserved.
