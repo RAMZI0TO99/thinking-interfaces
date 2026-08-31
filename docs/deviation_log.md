@@ -2,6 +2,11 @@
 
 ## 2026-08-30 — Gate A reference mismatch
 
+**Historical entry, corrected on 2026-08-31:** the absence/classical-only claims
+below are incorrect against the verified official table. They are retained as
+history, not current evidence. See the correction appended at the end of this log
+and the current `gate_a_status.md`.
+
 The Phase I plan requires a four-seed, nine-subject, within-subject EEGNet result on
 BCI Competition IV 2a to reproduce a published MOABB score.
 
@@ -516,3 +521,21 @@ audit is preserved and rejected, not overwritten. New controls record their
 control configuration/hash and source provenance; old files keep their actual
 historical provenance. Benchmark algorithms, frozen settings and completed
 records are unchanged; the active benchmark is not restarted for this change.
+
+## 2026-08-31 — Correct the MOABB EEGNet reference claim
+
+Direct inspection of the official benchmark table confirmed EEGNet_8_2 for
+BNCI2014_001. The earlier statement that the reference was unavailable, and the
+attribution of a required cross-session protocol to the original day plan, were
+incorrect. The plan specifies within-subject work; the implementation selected
+cross-session evaluation. No historical web snapshot establishes when the table
+changed, and this correction does not imply that the result was newly published.
+
+The published left/right target uses within-session five-fold ROC-AUC, whereas
+the existing attempts report cross-session balanced accuracy. Their values cannot
+be used to claim reproduction. A matching reference implementation is linked by
+MOABB and now requires local investigation, not external provision of a missing
+reference. Current status documents are corrected; historical configurations and
+result hashes remain unchanged, including their then-recorded reference-status
+strings. No benchmark setting, acceptance tolerance, gate approval, or scientific
+clearance changes as a consequence of this discovery.

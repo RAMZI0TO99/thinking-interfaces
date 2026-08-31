@@ -52,8 +52,11 @@ Run `scripts/verify_phase1_quality.py` with the project Python to record lint,
 type checks and tests for the exact source snapshot. The final completion checker
 also verifies report hashes, benchmark completeness and the native display receipt.
 
-Gate A remains unsigned because the named MOABB EEGNet reference does not exist in
-MOABB's published table and the available four-class comparator was not reproduced.
+Gate A remains unsigned. MOABB does publish an EEGNet reference for this dataset;
+the earlier statement that it was absent was incorrect. Its within-session
+five-fold protocol and scoring differ from the existing cross-session attempts,
+so those attempts do not establish reproduction. A protocol-matched run and an
+explicit acceptance rule are still outstanding.
 The user explicitly authorized later Phase I work as exploratory; no downstream
 result is represented as resolving Gate A. See `docs/gate_a_status.md` and
 `docs/deviation_log.md`.

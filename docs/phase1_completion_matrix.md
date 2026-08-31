@@ -49,7 +49,7 @@ separate and are never silently converted into local successes.
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
-| Gate A MOABB reproduction | **Not signed** | Named MOABB EEGNet reference is absent and comparator was not reproduced; detailed Gate A/deviation records |
+| Gate A MOABB reproduction | **Not signed** | Published EEGNet reference verified; earlier absence claim corrected. Matching within-session protocol/metric has not been reproduced; acceptance rule remains unresolved. See Gate A/deviation records. |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does
 not convert Gate A into a pass.

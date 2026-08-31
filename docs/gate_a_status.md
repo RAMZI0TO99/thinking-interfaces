@@ -1,6 +1,6 @@
 # Phase I Gate A status
 
-**Status: not signed off — stop before post-Gate-A work.**
+**Status: not signed off — reference verified; matched reproduction outstanding.**
 
 On 2026-08-30, the user explicitly directed the build to continue to the next
 milestone despite this unsigned gate. Downstream work is therefore exploratory
@@ -24,26 +24,38 @@ passing shuffled-label control and subject-disjointness tests.
 | Full 300-epoch difficult-subject check | Projected all-subject mean about 61.8% | Insufficient |
 | Published-training difficult-subject check | 52.43% mean for A04–A07 | Insufficient |
 
-All final evaluation scores use the held-out second session once, after selecting
+All existing diagnostic evaluation scores use the held-out second session once, after selecting
 the model checkpoint from a validation subset of the first session. Evaluation
 labels are never used for training or checkpoint selection.
 
-## Blocking issue
+## Correction: verified MOABB reference
 
-MOABB's public benchmark table does not contain an EEGNet score for this dataset,
-and MOABB has not published the cross-session result required by this project. The
-74.50% comparison is from Du et al. (2022), not MOABB, and its Keras implementation
-and full preprocessing/checkpoint-selection details are not available in the
-paper. Matching its stated 1,000-epoch, batch-size-16, learning-rate-0.001, and
-dropout-0.2 settings did not reproduce its subject-level results.
+On 2026-08-31, direct inspection of the [official benchmark table](https://moabb.neurotechx.com/docs/paper_results.html)
+confirmed EEGNet_8_2 results for BNCI2014_001. The earlier assertion that the table
+contained only classical pipelines was incorrect. No historical page snapshot
+establishes when its content changed, so this is a correction, not a claim of a
+new publication.
 
-## Decision required
+The table reports within-session five-fold evaluation: left/right hand ROC-AUC
+77.15% with SD 19.33 percentage points; all four classes accuracy 60.46% with SD
+20.20 points. Its folds are averaged per subject/session, then summarized across
+subject/session pairs. The SD is not a confidence interval or an acceptance band.
+The day plan asks for within-subject reproduction and introduces two classes;
+cross-session evaluation was our implementation choice, not a requirement of that
+wording. The old balanced-accuracy scores are not directly comparable to the
+published left/right ROC-AUC. The 74.50% Du et al. comparison is separate evidence,
+not the MOABB target.
 
-Choose and document one valid acceptance target before continuing:
+The table links [MOABB v1.1.2's Keras EEGNet pipeline](https://github.com/NeuroTechX/moabb/blob/v1.1.2/pipelines/Keras_EEGNet_8_2.yml).
+That is a different implementation from the current Braindecode model. Its exact
+preprocessing, split, training and dependency behavior must be checked before
+launching a matching run; see `docs/moabb_reference_reproduction.md`.
 
-1. Change Gate A to a fully specified, reproducible Braindecode cross-session
-   protocol and approve a new threshold; or
-2. Supply the exact implementation associated with the 74.50% result; or
-3. Keep the current gate and stop Phase I here as a failed reproduction.
+## Remaining local work and acceptance decision
 
-No acceptance threshold has been invented or changed automatically.
+Prepare and test an isolated, protocol-matched left/right reference reproduction,
+then report all nine subjects and the plan's four seeds without selecting a best
+seed or tuning to the published mean. Keep it outside the frozen cross-subject
+benchmark and retain every earlier diagnostic record unchanged. Final sign-off
+still needs an explicit, scientifically defensible acceptance rule; no tolerance
+has been inferred from the table's SD, invented, or changed automatically.
