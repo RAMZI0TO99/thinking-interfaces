@@ -5,6 +5,8 @@
 - [x] Safe Braindecode safetensors conversion loaded without executing the
   upstream pickle payload.
 - [x] Loaded backbone count measured: 5,819,936 parameters.
+- [x] All 221 retained safe tensors matched the original in exact shape and bytes
+  without executing pickle; see `docs/checkpoint_correspondence_review.md`.
 - [x] Plan's stated count, 5,822,770, checked and found not to match the current
   safe conversion; no parameter was added merely to force equality.
 - [x] Temporal embeddings cropped from fifteen to four one-second patches for
@@ -20,6 +22,8 @@
 - [x] Appendix K/Table 10 partial-tuning targets recorded separately from local results.
 - [x] Complete Table 5 fine-tuning reference prepared in `configs/labram_paper_reference.toml`.
 
-The count mismatch is an upstream/version discrepancy and is recorded in the
-deviation log. It prevents the literal Week 0 count check from passing but does
-not prevent verified loading or inference.
+The exact cause of the plan's count mismatch remains unresolved and is recorded
+in the deviation log. Retained-weight correspondence is now verified, but this
+does not establish forward-implementation parity. The mismatch prevents the
+literal Week 0 count check from passing; verified loading and inference remain
+separate functional evidence.

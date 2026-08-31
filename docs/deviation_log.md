@@ -121,6 +121,15 @@ position cropping. A real `(2, 22, 800)` forward pass produced finite
 `(2, 88, 200)` features and `(2, 4)` logits. The count mismatch is retained rather
 than hidden by adding unused parameters.
 
+Update 2026-08-31: an inert metadata/ZIP audit established exact shape and byte
+identity for all 221 retained safe tensors (5,819,936 elements). The original
+student dictionary additionally contains a 200-element mask token and
+1,646,592-element output layer. This accounts for the original-to-conversion
+student difference, not the plan's 5,822,770 count. No pickle was executed, no
+allowlist changed, and no implementation/inference parity is inferred.
+`docs/checkpoint_correspondence_review.md` records the full tensor accounting,
+input hashes, report hash, and unchanged unresolved literal count check.
+
 ## 2026-08-30 — Profile A/Profile B cross-check
 
 On the same A01 fold, Profile A reached 56.60% balanced accuracy and Profile B

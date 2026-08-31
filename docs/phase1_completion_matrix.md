@@ -14,7 +14,7 @@ separate and are never silently converted into local successes.
 | Branch protection, five-person PR/conflict rehearsal | External-only | `docs/external_dependencies.md`; no remote/team supplied |
 | Cloud instance, persistent disk, hourly cost | Replaced by approved laptop | `configs/benchmark.toml`, `runs/dataset_inventory.json`, and measured cost report |
 | Reproducible pinned environment | Complete | `requirements.lock` plus three exact component lockfiles |
-| Official LaBraM Base checkpoint load and real forward pass | Complete with documented mismatch | `runs/labram_ready_state.json`, `configs/labram.toml`, deviation log |
+| Official LaBraM Base checkpoint load and real forward pass | Functional evidence complete; literal parameter-count check unresolved | `runs/labram_ready_state.json`, `configs/labram.toml`, `docs/checkpoint_correspondence_review.md`: all 221 retained tensors match original bytes/shapes without executing pickle; no claim of forward parity |
 | Email authors about Large/Huge | External-only | No correspondence fabricated; external ledger |
 | TUH agreement and ethics submission | External-only/unconfirmed | Requires user identity/institution; TUAB/TUEV disabled |
 | TCPL/LoRA/adapter/prompt design study | Local method review complete; missing original critique remains external | `docs/adaptation_reference_notes.md`, corrected TCPL source review and implemented prompt contract; generic variants are not claimed as paper reproductions |
