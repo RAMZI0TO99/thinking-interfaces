@@ -336,3 +336,28 @@ main-benchmark batch with one isolated reference fit. Each reference child still
 performs its original environment, source, input, epoch and 4-GiB memory checks.
 No scientific setting, acceptance tolerance or old record is changed by scheduling.
 The reference integrity JSON is refreshed after each successful bounded unit.
+
+## Conservative 8-GiB startup operating mode
+
+On 2026-09-01 the shared queue reached 269/450 valid fits before unit 269
+deferred prior to importing the training stack. The supervisor observed 10.036
+GiB free before launch, while the isolated child's independent preflight measured
+9.621 GiB. No fit record or unit lock was left behind. Successful neighboring
+workers had an observed working set below 0.8 GiB.
+
+The resumed queue may therefore use an explicit 8-GiB startup-admission mode. It
+leaves over seven GiB after the observed worker allocation and remains four GiB
+above the unchanged 4-GiB emergency-stop floor. The effective threshold is stored
+in each new environment receipt. The canonical environment configuration remains
+at 10 GiB, so the model, preprocessing, seeds, splits, epochs, dependencies,
+output identity, existing receipts and old record hashes are unchanged. The
+10-GiB disk guard also remains unchanged.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m scripts.finish_phase1_compute `
+  --reference-startup-minimum-free-memory-gib 8.0
+```
+
+Only sequential isolated children are permitted. The first resumed fit is
+monitored as a live operating-mode check, and any child failure still stops the
+supervisor without retry.

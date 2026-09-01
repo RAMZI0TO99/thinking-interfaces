@@ -773,3 +773,24 @@ increments before returning a deferral. The reference retains its own per-epoch
 Each worker has separate timestamped logs. Any child failure stops the supervisor,
 without blind retries, source changes, deletion of partial evidence or process
 termination. Completing both grids still does not approve either scientific gate.
+
+## 2026-09-01 — Reference startup admission lowered operationally to 8 GiB
+
+The shared queue reached 269/450 valid reference fits before unit 269 returned a
+resource deferral. The supervisor measured 10.036 GiB free before launch, but the
+child's independent preflight measured 9.621 GiB and stopped before importing the
+training stack. The result count and all prior hashes were preserved; no unit lock
+or Phase I worker remained.
+
+Successful neighboring reference workers used less than 0.8 GiB observed working
+set. A tested command-line operating mode now permits reference admission at 8
+GiB, leaving over seven times that measured working set and a 4-GiB margin above
+the unchanged 4-GiB per-epoch emergency stop. The 10-GiB disk guard, CPU-only
+execution, one-process isolation, numerical dependencies, model settings, seeds,
+splits, epochs, output identity and acceptance state are unchanged. Each new
+environment receipt records the effective startup threshold. Historical receipts
+and records are not edited or relabeled.
+
+This is resource scheduling, not a scientific protocol change or evidence that
+resource pressure caused any earlier native error. A nonzero child still stops the
+supervisor without an automatic retry.

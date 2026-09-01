@@ -20,6 +20,7 @@ from core.provenance import capture_source
 from core.run_record import RunRecord
 from evaluation.moabb_reference_plan import ReferencePlan, ReferenceUnit, summarize_reference_scores
 from evaluation.moabb_reference_records import validate_reference_record
+from evaluation.reference_environment import startup_runtime
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -118,6 +119,39 @@ def require_smoke(config: dict[str, Any], environment: dict[str, Any]) -> None:
         raise ValueError("reference training/preprocessing differs from the qualified smoke")
 
 
+def validate_operating_mode(proof: dict[str, Any], environment: dict[str, Any]) -> None:
+    """Validate new explicit admission receipts while accepting original 10-GiB receipts."""
+    configured_runtime = environment["runtime"]
+    mode = proof.get("operating_mode")
+    if mode is None:
+        selected = float(configured_runtime["minimum_free_memory_gib"])
+    else:
+        if not isinstance(mode, dict) or mode.get("version") != 1:
+            raise ValueError("reference operating-mode receipt is invalid")
+        selected = float(mode["startup_minimum_free_memory_gib"])
+        expected_override = selected != float(configured_runtime["minimum_free_memory_gib"])
+        if (
+            mode.get("scope")
+            != "startup admission only; scientific and numerical configuration unchanged"
+            or mode.get("configured_minimum_free_memory_gib")
+            != float(configured_runtime["minimum_free_memory_gib"])
+            or mode.get("startup_override_applied") is not expected_override
+            or mode.get("stop_below_free_memory_gib")
+            != float(configured_runtime["stop_below_free_memory_gib"])
+            or mode.get("minimum_free_disk_gib")
+            != float(configured_runtime["minimum_free_disk_gib"])
+        ):
+            raise ValueError("reference operating-mode receipt is inconsistent")
+    expected_runtime = startup_runtime(configured_runtime, selected)
+    resources = proof["resources"]
+    if (
+        resources["minimum_free_memory_gib"]
+        != expected_runtime["minimum_free_memory_gib"]
+        or resources["minimum_free_disk_gib"] != expected_runtime["minimum_free_disk_gib"]
+    ):
+        raise ValueError("reference operating-mode receipt does not match its resource gate")
+
+
 def check_saved(
     path: Path, *, config: dict[str, Any], environment: dict[str, Any], unit: ReferenceUnit
 ) -> float:
@@ -134,6 +168,7 @@ def check_saved(
         or proof["training_ready"] is not True
     ):
         raise ValueError("reference fit did not have a verified, resource-ready environment")
+    validate_operating_mode(proof, environment)
     return validate_reference_record(
         payload,
         unit=unit,
@@ -150,6 +185,7 @@ def execute_unit(
     environment: dict[str, Any],
     output: Path,
     index: int,
+    startup_minimum_free_memory_gib: float | None = None,
 ) -> int:
     if not 0 <= index < len(plan.units):
         raise ValueError("unit selector is outside the configuration's declared grid")
@@ -163,14 +199,20 @@ def execute_unit(
     if Path(sys.prefix).resolve() != expected_prefix:
         raise ValueError("full reference fits require the isolated reference interpreter")
     require_smoke(config, environment)
+    preflight_arguments = [
+        sys.executable,
+        "-m",
+        "scripts.check_moabb_reference_environment",
+        "--config",
+        str(ROOT / config["paths"]["environment_config"]),
+    ]
+    if startup_minimum_free_memory_gib is not None:
+        startup_runtime(environment["runtime"], startup_minimum_free_memory_gib)
+        preflight_arguments.extend(
+            ["--startup-minimum-free-memory-gib", str(startup_minimum_free_memory_gib)]
+        )
     preflight = subprocess.run(
-        [
-            sys.executable,
-            "-m",
-            "scripts.check_moabb_reference_environment",
-            "--config",
-            str(ROOT / config["paths"]["environment_config"]),
-        ],
+        preflight_arguments,
         cwd=ROOT,
         check=True,
         capture_output=True,
@@ -305,12 +347,25 @@ def main() -> int:
     )
     parser.add_argument("--unit-index", type=int, help="Internal selector into the committed grid")
     parser.add_argument("--check-only", action="store_true")
+    parser.add_argument(
+        "--startup-minimum-free-memory-gib",
+        type=float,
+        help="Operational admission threshold; the 4-GiB in-fit stop remains unchanged",
+    )
     args = parser.parse_args()
     if args.check_only and args.unit_index is not None:
         raise ValueError("choose either a grid audit or a single declared unit")
     config, plan, environment, output = resolve_config(args.config)
     if args.unit_index is not None:
-        return execute_unit(args.config, config, plan, environment, output, args.unit_index)
+        return execute_unit(
+            args.config,
+            config,
+            plan,
+            environment,
+            output,
+            args.unit_index,
+            args.startup_minimum_free_memory_gib,
+        )
     report = audit(config, plan, environment, output)
     atomic_json(output / "integrity.json", report)
     if args.check_only or report["complete"]:
@@ -356,6 +411,14 @@ def main() -> int:
                     str(args.config.resolve()),
                     "--unit-index",
                     str(index),
+                    *(
+                        [
+                            "--startup-minimum-free-memory-gib",
+                            str(args.startup_minimum_free_memory_gib),
+                        ]
+                        if args.startup_minimum_free_memory_gib is not None
+                        else []
+                    ),
                 ],
                 cwd=ROOT,
                 stdout=stdout,

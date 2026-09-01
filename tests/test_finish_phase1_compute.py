@@ -116,6 +116,7 @@ class CompletionSupervisorTests(unittest.TestCase):
         changed=False,
         progress=True,
         invalid=False,
+        startup_memory=None,
     ):
         main_before = {
             "complete": already_complete,
@@ -163,7 +164,14 @@ class CompletionSupervisorTests(unittest.TestCase):
                     "return_value": (
                         {},
                         SimpleNamespace(units=[SimpleNamespace(key="unit")]),
-                        {"environment": {"directory": "reference"}, "runtime": {}},
+                        {
+                            "environment": {"directory": "reference"},
+                            "runtime": {
+                                "minimum_free_memory_gib": 10.0,
+                                "stop_below_free_memory_gib": 4.0,
+                                "minimum_free_disk_gib": 10.0,
+                            },
+                        },
                         Path("output"),
                     )
                 },
@@ -182,9 +190,18 @@ class CompletionSupervisorTests(unittest.TestCase):
             )
             if changed or not progress or invalid:
                 with self.assertRaises((ValueError, RuntimeError)):
-                    run_grids(Path("fixture"))
+                    run_grids(
+                        Path("fixture"),
+                        reference_startup_minimum_free_memory_gib=startup_memory,
+                    )
                 return None, child.call_args_list
-            return run_grids(Path("fixture")), child.call_args_list
+            return (
+                run_grids(
+                    Path("fixture"),
+                    reference_startup_minimum_free_memory_gib=startup_memory,
+                ),
+                child.call_args_list,
+            )
 
     def test_both_grids_run_sequentially_with_original_arguments(self):
         code, calls = self.exercise_grid()
@@ -198,6 +215,15 @@ class CompletionSupervisorTests(unittest.TestCase):
         second = calls[1].args[1]
         self.assertEqual(second[1:4], ["-u", "-m", "scripts.run_moabb_reference"])
         self.assertEqual(second[-2:], ["--unit-index", "0"])
+
+    def test_lower_memory_mode_is_forwarded_only_to_reference_child(self):
+        code, calls = self.exercise_grid(startup_memory=8.0)
+        self.assertEqual(code, 0)
+        self.assertNotIn("--startup-minimum-free-memory-gib", calls[0].args[1])
+        self.assertEqual(
+            calls[1].args[1][-4:],
+            ["--unit-index", "0", "--startup-minimum-free-memory-gib", "8.0"],
+        )
 
     def test_grid_failure_stops_before_other_worker_without_retry(self):
         code, calls = self.exercise_grid(code=1073741845)

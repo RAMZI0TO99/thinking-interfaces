@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import importlib
 import json
 import os
@@ -18,7 +19,7 @@ from typing import Any, cast
 from core.config import config_digest, load_toml
 from core.provenance import capture_source
 from evaluation.benchmark_audit import audit_benchmark
-from evaluation.reference_environment import resource_gate
+from evaluation.reference_environment import resource_gate, startup_runtime
 from evaluation.source_bound_controls import verify_current_controls
 from scripts.run_moabb_reference import atomic_json, audit, resolve_config
 
@@ -148,13 +149,18 @@ def require_source(root: Path, expected: str) -> None:
         raise RuntimeError("source changed between/during batches; stop before the next fit")
 
 
-def run_grids(root: Path) -> int:
+def run_grids(
+    root: Path, *, reference_startup_minimum_free_memory_gib: float | None = None
+) -> int:
     source = capture_source(root)
     if source.git_dirty is not False:
         raise ValueError("commit source changes before starting unattended compute")
     config = load_toml(root / "configs/benchmark.toml")
     reference_path = root / "configs/moabb_reference_evaluation.toml"
     ref_config, plan, environment, output = resolve_config(reference_path)
+    reference_runtime = startup_runtime(
+        environment["runtime"], reference_startup_minimum_free_memory_gib
+    )
     reference_python = root / environment["environment"]["directory"] / "Scripts/python.exe"
     main_report = inspect_benchmark(root, config)
     reference = audit(ref_config, plan, environment, output)
@@ -166,7 +172,7 @@ def run_grids(root: Path) -> int:
         for kind in ("benchmark", "reference"):
             if (main_report if kind == "benchmark" else reference)["complete"]:
                 continue
-            if not await_resources(root, environment["runtime"]):
+            if not await_resources(root, reference_runtime):
                 return 2
             require_source(root, source.source_sha256)
             if kind == "benchmark":
@@ -213,6 +219,14 @@ def run_grids(root: Path) -> int:
                         str(reference_path),
                         "--unit-index",
                         str(index),
+                        *(
+                            [
+                                "--startup-minimum-free-memory-gib",
+                                str(reference_startup_minimum_free_memory_gib),
+                            ]
+                            if reference_startup_minimum_free_memory_gib is not None
+                            else []
+                        ),
                     ],
                     "reference_unit",
                 )
@@ -246,6 +260,13 @@ def run_grids(root: Path) -> int:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--reference-startup-minimum-free-memory-gib",
+        type=float,
+        help="Operational reference admission threshold; preserves the 4-GiB emergency stop",
+    )
+    args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     with exclusive_supervisor(root):
         if verify_current_controls(root).get("passed") is not True:
@@ -260,7 +281,12 @@ def main() -> int:
             )
             if code:
                 return code
-        code = run_grids(root)
+        code = run_grids(
+            root,
+            reference_startup_minimum_free_memory_gib=(
+                args.reference_startup_minimum_free_memory_gib
+            ),
+        )
         if code:
             return code
         subprocess.run([sys.executable, "scripts/audit_benchmark.py"], cwd=root, check=True)

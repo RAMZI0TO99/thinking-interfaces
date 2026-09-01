@@ -9,6 +9,25 @@ from pathlib import Path
 from typing import Any
 
 
+def startup_runtime(
+    runtime: Mapping[str, Any], requested_minimum_free_memory_gib: float | None = None
+) -> dict[str, Any]:
+    """Resolve an operational admission threshold without changing experiment identity."""
+    configured = float(runtime["minimum_free_memory_gib"])
+    stop = float(runtime["stop_below_free_memory_gib"])
+    selected = configured if requested_minimum_free_memory_gib is None else float(
+        requested_minimum_free_memory_gib
+    )
+    if not all(math.isfinite(value) for value in (configured, stop, selected)):
+        raise ValueError("reference memory limits must be finite")
+    if not 0 < stop < selected <= configured:
+        raise ValueError(
+            "operational startup memory must remain above the emergency stop and at or below "
+            "the configured startup limit"
+        )
+    return {**runtime, "minimum_free_memory_gib": selected}
+
+
 def resource_gate(
     runtime: Mapping[str, Any], *, free_memory_gib: float, free_disk_gib: float
 ) -> dict[str, object]:

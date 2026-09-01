@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from evaluation.reference_environment import resource_gate, verify_reference_files
+from evaluation.reference_environment import resource_gate, startup_runtime, verify_reference_files
 
 
 class ReferenceEnvironmentTests(unittest.TestCase):
@@ -28,6 +28,17 @@ class ReferenceEnvironmentTests(unittest.TestCase):
             with self.subTest(stop=stop), self.assertRaises(ValueError):
                 resource_gate({**self.runtime, "stop_below_free_memory_gib": stop},
                               free_memory_gib=11, free_disk_gib=30)
+
+    def test_operational_startup_override_preserves_other_limits(self):
+        self.assertEqual(startup_runtime(self.runtime), self.runtime)
+        lowered = startup_runtime(self.runtime, 8.0)
+        self.assertEqual(lowered["minimum_free_memory_gib"], 8.0)
+        self.assertEqual(lowered["stop_below_free_memory_gib"], 4.0)
+        self.assertEqual(lowered["minimum_free_disk_gib"], 10.0)
+        self.assertEqual(self.runtime["minimum_free_memory_gib"], 10.0)
+        for invalid in (4.0, 3.9, 10.1, float("nan"), float("inf")):
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                startup_runtime(self.runtime, invalid)
 
     def test_source_verification_checks_bytes_and_containment(self):
         with tempfile.TemporaryDirectory() as directory:

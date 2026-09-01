@@ -12,7 +12,13 @@ from unittest.mock import patch
 
 from core.config import load_toml
 from evaluation.moabb_reference_plan import ReferencePlan
-from scripts.run_moabb_reference import ROOT, audit, execute_unit, resolve_config
+from scripts.run_moabb_reference import (
+    ROOT,
+    audit,
+    execute_unit,
+    resolve_config,
+    validate_operating_mode,
+)
 
 
 class MoabbReferenceRunnerTests(unittest.TestCase):
@@ -102,6 +108,75 @@ class MoabbReferenceRunnerTests(unittest.TestCase):
                 )
                 trainer.assert_not_called()
             self.assertFalse((output / "results").exists())
+
+    def test_lower_startup_mode_is_forwarded_and_still_defers_cleanly(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            receipt = output / "receipt.json"
+            receipt.write_text(
+                json.dumps({"training_ready": False, "resources": {"ready": False}}),
+                encoding="utf-8",
+            )
+            completed = subprocess.CompletedProcess(
+                [], 0, stdout=json.dumps({"report": str(receipt)})
+            )
+            expected_prefix = str(ROOT / self.environment["environment"]["directory"])
+            with (
+                patch("scripts.run_moabb_reference.sys.prefix", expected_prefix),
+                patch("scripts.run_moabb_reference.require_smoke"),
+                patch(
+                    "scripts.run_moabb_reference.subprocess.run", return_value=completed
+                ) as child,
+                redirect_stdout(StringIO()),
+            ):
+                self.assertEqual(
+                    execute_unit(
+                        self.config_path,
+                        self.config,
+                        self.plan,
+                        self.environment,
+                        output / "results",
+                        0,
+                        8.0,
+                    ),
+                    2,
+                )
+            arguments = child.call_args.args[0]
+            self.assertEqual(
+                arguments[-2:], ["--startup-minimum-free-memory-gib", "8.0"]
+            )
+
+    def test_explicit_and_historical_operating_receipts_validate(self):
+        runtime = self.environment["runtime"]
+        historical = {
+            "resources": {
+                "minimum_free_memory_gib": 10.0,
+                "minimum_free_disk_gib": 10.0,
+            }
+        }
+        validate_operating_mode(historical, self.environment)
+        lowered = copy.deepcopy(historical)
+        lowered["resources"]["minimum_free_memory_gib"] = 8.0
+        lowered["operating_mode"] = {
+            "version": 1,
+            "scope": "startup admission only; scientific and numerical configuration unchanged",
+            "configured_minimum_free_memory_gib": 10.0,
+            "startup_minimum_free_memory_gib": 8.0,
+            "startup_override_applied": True,
+            "stop_below_free_memory_gib": runtime["stop_below_free_memory_gib"],
+            "minimum_free_disk_gib": runtime["minimum_free_disk_gib"],
+        }
+        validate_operating_mode(lowered, self.environment)
+        for field, value in (
+            ("startup_minimum_free_memory_gib", 4.0),
+            ("stop_below_free_memory_gib", 3.0),
+            ("minimum_free_disk_gib", 9.0),
+            ("startup_override_applied", False),
+        ):
+            tampered = copy.deepcopy(lowered)
+            tampered["operating_mode"][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                validate_operating_mode(tampered, self.environment)
 
 
 if __name__ == "__main__":

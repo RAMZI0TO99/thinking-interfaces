@@ -7,7 +7,6 @@ import hashlib
 import importlib.metadata
 import json
 import shutil
-import subprocess
 import sys
 import sysconfig
 import tomllib
@@ -16,7 +15,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from core.provenance import capture_source
-from evaluation.reference_environment import resource_gate, verify_reference_files
+from evaluation.reference_environment import resource_gate, startup_runtime, verify_reference_files
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,6 +24,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--config", type=Path, default=ROOT / "configs/moabb_reference_environment.toml"
+    )
+    parser.add_argument(
+        "--startup-minimum-free-memory-gib",
+        type=float,
+        help="Operational admission threshold; scientific/environment configuration is unchanged",
     )
     args = parser.parse_args()
     config = tomllib.loads(args.config.read_text(encoding="utf-8"))
@@ -62,18 +66,34 @@ def main() -> int:
         if importlib.metadata.version(metadata["name"]) != metadata["version"]:
             raise ValueError(f"resolved dependency changed: {metadata['name']}")
     hashes = verify_reference_files(Path(sysconfig.get_path("purelib")), config["source_files"])
-    powershell = shutil.which("pwsh") or shutil.which("powershell")
-    if powershell is None:
-        raise RuntimeError("cannot measure available memory on this Windows reference host")
-    memory = subprocess.run(
-        [powershell, "-NoProfile", "-Command",
-         "(Get-CimInstance Win32_OperatingSystem).FreePhysicalMemory"],
-        check=True, capture_output=True, text=True, timeout=20,
+    free_memory_gib = (
+        importlib.import_module("psutil").virtual_memory().available / 1024**3
+    )
+    operational_runtime = startup_runtime(
+        config["runtime"], args.startup_minimum_free_memory_gib
     )
     resources = resource_gate(
-        config["runtime"], free_memory_gib=float(memory.stdout.strip()) / 1024**2,
+        operational_runtime, free_memory_gib=free_memory_gib,
         free_disk_gib=shutil.disk_usage(ROOT).free / 1024**3,
     )
+    operating_mode = {
+        "version": 1,
+        "scope": "startup admission only; scientific and numerical configuration unchanged",
+        "configured_minimum_free_memory_gib": float(
+            config["runtime"]["minimum_free_memory_gib"]
+        ),
+        "startup_minimum_free_memory_gib": float(
+            operational_runtime["minimum_free_memory_gib"]
+        ),
+        "startup_override_applied": (
+            operational_runtime["minimum_free_memory_gib"]
+            != config["runtime"]["minimum_free_memory_gib"]
+        ),
+        "stop_below_free_memory_gib": float(
+            config["runtime"]["stop_below_free_memory_gib"]
+        ),
+        "minimum_free_disk_gib": float(config["runtime"]["minimum_free_disk_gib"]),
+    }
     report = {
         "timestamp_utc": datetime.now(UTC).isoformat(),
         "source": asdict(capture_source(ROOT)),
@@ -87,6 +107,7 @@ def main() -> int:
         "environment_verified": True,
         "training_ready": resources["ready"],
         "resources": resources,
+        "operating_mode": operating_mode,
         "model_imported": False,
         "training_performed": False,
         "reference_reproduction_passed": False,
