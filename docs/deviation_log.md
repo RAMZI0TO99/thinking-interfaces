@@ -794,3 +794,56 @@ and records are not edited or relabeled.
 This is resource scheduling, not a scientific protocol change or evidence that
 resource pressure caused any earlier native error. A nonzero child still stops the
 supervisor without an automatic retry.
+
+## 2026-09-01 — Preserve stale locks and detach the verified supervisor
+
+Attached terminal sessions could end while the OS child process had already
+exited, leaving lock files whose recorded owners no longer existed. Each incident
+was handled by checking the exact supervisor and child PIDs through both process
+and CIM views, checking the target record and hashing the associated logs before
+moving the stale locks to preserved runtime-probe inventories. No live lock was
+deleted and no unrelated process was touched. The native libzmq error remains
+unexplained; no driver, security or operating-system setting was changed.
+
+A harmless detached-process probe established the Windows process behavior. The
+productive supervisor was then launched once through a hidden one-shot wrapper;
+the scientific command, source, inputs, model settings and output identity were
+unchanged. Launch receipt:
+`runs/runtime_probe/20260901T1811014494137Z.os_detached_supervisor_launch.json`,
+SHA-256 `b3220d5d17b82512b4915d2e2efc141a48df91822748ead1dbc27de3029a691a`.
+
+## 2026-09-01 — Exact low-disk cache cleanup
+
+Available disk fell below the unchanged 10-GiB guard after a reference fit had
+completed and no compute child remained. The only eligible project-owned target
+was the derived MMIDB FBCSP cache under the frozen benchmark configuration: 12
+files totaling 3,862,956,102 bytes. Its six array hashes and full file inventory
+matched the preserved manifest, every file was exclusively openable and no
+remaining task depended on retaining the rebuildable cache. It was moved to an
+exact quarantine and permanently removed. Free disk increased from 8.915470 to
+12.513153 GiB. Raw inputs, processed source artifacts, weights, source, saved
+scientific records, logs and audit evidence were not removed. Receipt:
+`runs/runtime_probe/fbcsp_cache_cleanup_executed_20260901T173100Z.json`, SHA-256
+`97879f3f8e88dc27319415e8dc4377a9537bd08c400ab6ffe33ad467d1281fbb`.
+
+## 2026-09-01 — Both compute grids and local final audits completed
+
+The shared queue reached 5,950/5,950 valid main records and 450/450 valid separate
+MOABB reference fits, then exited naturally with no compute lock or child process.
+Its final stdout SHA-256 is
+`2b69eb3110b99ae941bc206473277d18d5049e748721e0f8bffcaa593354d930`;
+stderr is empty. The main record snapshot is
+`ff7076b53efd77569d35b6b4d9460be3505376dd174cd690e22c6dee3cfe461a`.
+The reference record snapshot is
+`196b419bf2f15c02fd55b9046fd78260605e2be869e3695bb09196616921427e`;
+its 450-fit raw-input reconstruction found zero mismatches.
+
+Final inventory, threshold, public-artifact, duplicate, support-adaptation,
+record, split and metric checks passed. The 21-row table and diagnostics retained
+hashes `34a9fe6c…` and `aa874801…`; all three final figures retained their recorded
+hashes and passed visual QA. All 261 plausibility cases remain bound to the final
+benchmark/config/artifact snapshots and manually reviewed. The separate BCI audit
+also covers all 315 records, 63 subject/method cases and all eight 65–78% band
+cases. Unresolved chronology, filtering and control-coverage limitations remain
+explicit. Gate A is still unsigned, Gate B cannot be scientifically signed, and
+the fixed-earliest versus seeded-support choice still requires user direction.

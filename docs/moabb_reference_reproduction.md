@@ -1,7 +1,8 @@
 # MOABB EEGNet reference reproduction investigation
 
-Status: reference identified and real-data integration smoke passed on 2026-08-31;
-full matched evaluation is still outstanding and no pass tolerance is adopted.
+Status: reference identified, real-data integration smoke passed and all 450
+declared full-protocol fits completed and audited on 2026-09-01. No pass tolerance
+or Gate A approval is adopted.
 This is separate from the frozen Phase I benchmark grid.
 
 ## Verified primary sources
@@ -86,9 +87,11 @@ The lightweight checker runs as:
 It verifies the interpreter, pinned dependency versions, upstream archive URL and
 source-file bytes without importing the ML stack. Its timestamped receipt separates
 environment verification from training readiness and explicitly records that no
-training or reproduction occurred. Training needs at least 10 GiB free memory and
-10 GiB free disk; the existing benchmark retains priority. Successful installation
-or a future short smoke test must not be presented as a reference reproduction.
+training or reproduction occurred. The canonical training configuration requests
+10 GiB free memory and 10 GiB free disk; the completed queue later used the tested
+8-GiB startup-admission override documented below while retaining the 4-GiB
+in-training stop and 10-GiB disk guard. Successful installation or a short smoke
+test must not be presented as a reference reproduction.
 
 The first installation check passed at 2026-08-31T10:28:26Z, including all nine
 source hashes and resolved dependency versions; `pip check` found no broken
@@ -122,12 +125,11 @@ No numerical smoke result existed at that point; the later successful test is
 documented below. A two-epoch integration score does not
 count toward the reference's 300-epoch training protocol or any gate acceptance.
 
-Next: complete and independently audit the prepared grid; the first declared
-full-protocol fold has now passed its record checks. Four repeat seeds
-are required by the day plan; the reference YAML fixes model seed 42, so explain
-any repeated-seed extension explicitly. Preserve per-fold predictions, split
-identities, preprocessing/source/configuration hashes and elapsed time. Report
-the reference's aggregation separately from subject-level uncertainty.
+The completed-grid evidence is recorded below. Four repeat seeds are required by
+the day plan; the reference YAML fixes model seed 42, so the repeated-seed
+extension remains explicitly separate. Per-fold predictions, split identities,
+preprocessing/source/configuration hashes and elapsed time are preserved, and the
+reference aggregation remains separate from subject-level uncertainty.
 
 No current run or historical result may be relabeled as this reproduction.
 
@@ -178,9 +180,8 @@ a restart triggered by an observation timeout.
 and five within-session folds. Seed 42 is the published-configuration anchor
 (90 fits). The earlier Gate A repeat seeds 11/23/37/53 remain a separate four-seed
 extension (360 fits). Thus the prepared grid has 450 fits, not 450 independent
-subjects and not 450 existing results. One declared fit has completed; the full
-queue has not yet been launched. The CV split seed
-remains 42 across model seeds, isolating training-seed variation.
+subjects. All 450 declared fits are now present and independently audited. The CV
+split seed remains 42 across model seeds, isolating training-seed variation.
 
 The configuration preserves 300 epochs, batch 64, Adam 0.001, 20% validation,
 dropout 0.5, patience 75, no best-weight restoration and upstream preprocessing.
@@ -193,10 +194,10 @@ across subject/session pairs are both labeled because the table's precise ddof
 has not been established from the linked converter. The published SD is not used
 as a tolerance.
 
-These functions are tested with synthetic scores, not a reproduced EEGNet result.
-Even a complete score table explicitly leaves underlying run integrity unverified
-and scientific gate approval false; actual recorded predictions, identities and
-provenance still need a separate audit before any completion claim.
+These functions were first tested with synthetic scores and are now exercised on
+the complete real-data grid. The record and raw-input audits are separate; their
+completion still leaves scientific gate approval false and does not create an
+acceptance tolerance.
 
 ## Resumable worker and record checks
 
@@ -209,11 +210,11 @@ result is pinned by SHA-256 in the full-evaluation configuration.
 
 ```powershell
 # Audit saved reference records without training (exit 2 means incomplete).
-.\.venv\Scripts\python.exe -m scripts.run_moabb_reference --check-only
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.run_moabb_reference --check-only
 # Qualify the first declared full-protocol unit; no shortened training override.
 .\runs\moabb_reference\environment\Scripts\python.exe -m scripts.run_moabb_reference --unit-index 0
 # Resume all 450 declared fits, in isolated sequential child processes.
-.\.venv\Scripts\python.exe -m scripts.run_moabb_reference
+.\runs\moabb_reference\environment\Scripts\python.exe -m scripts.run_moabb_reference
 ```
 
 Each fit requires a fresh verified environment/resource receipt and committed,
@@ -230,9 +231,10 @@ partition, independently computes pairwise ROC-AUC from saved probabilities,
 and replays the configured patience-75 early-stopping rule from validation loss.
 It verifies full-protocol epoch counts, provenance, raw-input identity and input
 shapes. Missing/invalid/unexpected records or pending locks prevent completion.
-These checks do not yet independently reconstruct epochs from raw recordings or
-resolve the scientific acceptance decision; neither a smoke nor a complete
-record table automatically approves Gate A.
+The record checker alone does not independently reconstruct epochs from raw
+recordings; `scripts.audit_moabb_reference_inputs` supplies that separate check.
+Neither audit resolves the scientific acceptance decision, and neither a smoke
+nor a complete record table automatically approves Gate A.
 
 ## First full-protocol fit and independent input-audit implementation
 
@@ -361,3 +363,39 @@ output identity, existing receipts and old record hashes are unchanged. The
 Only sequential isolated children are permitted. The first resumed fit is
 monitored as a live operating-mode check, and any child failure still stops the
 supervisor without retry.
+
+## Final completed grid and independent closeout
+
+The shared supervisor completed the 5,950-record main benchmark and the separate
+450-fit reference grid on 2026-09-01, then exited naturally with no compute lock
+or child process left. Its final stdout log is
+`runs/compute_logs/20260901T1811014494137Z.shared_queue_8g_os_detached.stdout.log`,
+SHA-256 `2b69eb3110b99ae941bc206473277d18d5049e748721e0f8bffcaa593354d930`;
+the paired stderr log is empty. The detached launch receipt is
+`runs/runtime_probe/20260901T1811014494137Z.os_detached_supervisor_launch.json`,
+SHA-256 `b3220d5d17b82512b4915d2e2efc141a48df91822748ead1dbc27de3029a691a`.
+
+The final reference integrity receipt is
+`runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/integrity.json`,
+SHA-256 `7906cab224131e8affba78705cdfb2d499d4b2f0ebff7939c215c92bb0bbb8df`.
+It reports 450/450 valid fits, no missing, invalid or unexpected units, no locks,
+and record snapshot
+`196b419bf2f15c02fd55b9046fd78260605e2be869e3695bb09196616921427e`.
+The final independent raw-input audit is
+`runs/moabb_reference/input_audits/20260901T202959749411Z.json`, SHA-256
+`e80ed6a7e0a3d21b453c031733671f149f44536055e06145459c5d3ca0e3922a`.
+It reconstructed all 450 saved fits and found zero mismatches against that same
+record snapshot; it did not train a model.
+
+Seed 42 averages 0.756606 ROC-AUC across the 18 subject/session means, versus the
+published 0.7715 (−0.014894). The four repeat seeds average 0.750192 by subject,
+with a 95% subject interval of 0.590398–0.909986 and SD 0.009463 across seed
+means. These are descriptive results. The published SD is not treated as a pass
+band, `scientific_gate_approved` remains false, and Gate A remains unsigned.
+
+Disk cleanup occurred only after available space fell below the 10-GiB guard and
+no fit was live. The exact derived MMIDB FBCSP cache was hash-verified against its
+manifest, inventoried, quarantined and removed; raw inputs, source, results,
+weights, logs and audit evidence were untouched. Receipt:
+`runs/runtime_probe/fbcsp_cache_cleanup_executed_20260901T173100Z.json`, SHA-256
+`97879f3f8e88dc27319415e8dc4377a9537bd08c400ab6ffe33ad467d1281fbb`.

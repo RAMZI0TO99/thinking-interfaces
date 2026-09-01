@@ -1,6 +1,6 @@
 # Phase I Gate A status
 
-**Status: not signed off — reference verified; matched reproduction outstanding.**
+**Status: not signed off — protocol-matched grid complete; acceptance decision outstanding.**
 
 On 2026-08-30, the user explicitly directed the build to continue to the next
 milestone despite this unsigned gate. Downstream work is therefore exploratory
@@ -23,6 +23,8 @@ passing shuffled-label control and subject-disjointness tests.
 | Four-class 4–38 Hz + common average | 57.91% mean, nine subjects, one seed | Fail against 74.50% comparator |
 | Full 300-epoch difficult-subject check | Projected all-subject mean about 61.8% | Insufficient |
 | Published-training difficult-subject check | 52.43% mean for A04–A07 | Insufficient |
+| Protocol-matched MOABB seed 42 | 75.66% mean ROC-AUC, 90 anchor fits | Descriptive comparison only |
+| Protocol-matched repeat seeds 11/23/37/53 | 75.02% subject mean; 95% interval 59.04–91.00% | Descriptive comparison only |
 
 All existing diagnostic evaluation scores use the held-out second session once, after selecting
 the model checkpoint from a validation subset of the first session. Evaluation
@@ -48,14 +50,22 @@ not the MOABB target.
 
 The table links [MOABB v1.1.2's Keras EEGNet pipeline](https://github.com/NeuroTechX/moabb/blob/v1.1.2/pipelines/Keras_EEGNet_8_2.yml).
 That is a different implementation from the current Braindecode model. Its exact
-preprocessing, split, training and dependency behavior must be checked before
-launching a matching run; see `docs/moabb_reference_reproduction.md`.
+preprocessing, split, training and dependency behavior was checked before the
+separate matching grid was launched; see `docs/moabb_reference_reproduction.md`.
 
-## Remaining local work and acceptance decision
+## Completed local reproduction and remaining acceptance decision
 
-Prepare and test an isolated, protocol-matched left/right reference reproduction,
-then report all nine subjects and the plan's four seeds without selecting a best
-seed or tuning to the published mean. Keep it outside the frozen cross-subject
-benchmark and retain every earlier diagnostic record unchanged. Final sign-off
-still needs an explicit, scientifically defensible acceptance rule; no tolerance
-has been inferred from the table's SD, invented, or changed automatically.
+The separate grid now contains all 450 declared fits: nine subjects, two sessions,
+five folds, published seed 42 and repeat seeds 11/23/37/53. Its record audit found
+450 valid fits, no missing/invalid/unexpected units or locks, with snapshot
+`196b419bf2f15c02fd55b9046fd78260605e2be869e3695bb09196616921427e`.
+The independent raw-input audit reconstructed every saved fit and found zero
+mismatches. Earlier diagnostics and the frozen cross-subject benchmark remain
+unchanged.
+
+The published seed comparison is 75.6606% versus 77.15%, a difference of −1.4894
+percentage points. The published 19.33-point SD is descriptive, not an acceptance
+band, and the exact original 2024 environment is not established by the later
+linked implementation. Final sign-off therefore still needs an explicit,
+scientifically defensible acceptance decision; no tolerance has been inferred,
+invented or changed automatically. Gate A remains unsigned.

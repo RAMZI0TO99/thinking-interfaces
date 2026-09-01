@@ -189,3 +189,28 @@ another preprocessing execution:
 The separate 20-record bounded MMIDB recovery also preserved all 2,390 earlier
 records; its 2,410-record snapshot was
 `3c026dd9cb15bb8de3de2620932a19e04a92f66282008ccbcd68b6083f1dc861`.
+
+## Final checked bundle and completed compute
+
+After the bounded supervisor and lower-memory admission tests were committed, the
+full 45-control bundle was refreshed under checked commit
+`833226aaee929c2199d8b7febf92840c7df02f8f`, source fingerprint
+`715ae9b44364e83d7fa2f4fd6cd4c0209bc20a710a9537173619d48da1b2856c`,
+context `81b6157ad794a7a0d8ff29b85854fc7ee31ab05b0dadd6b10c9e1051c65c37ab`
+and record snapshot
+`9b5611c9e736fa2ed43a506005ebd94483bd4e74c75ed3e9ad81e8a88efb42ce`.
+All 45 records pass with zero missing, invalid or unexpected units. The means and
+limits remain 48.7654% versus 60% for shuffled labels and 24.8553% versus 35% for
+pre-cue classification. A final check-only validation after both compute grids
+completed reproduced these exact identities and results.
+
+Full quality at that unchanged source fingerprint passed lint, typing, 339 tests
+and 376 subtests. Logs are preserved under
+`runs/quality/20260901T204550797050Z/`; documentation-only working-tree changes
+do not alter the source fingerprint.
+
+The separately audited main benchmark is now complete at 5,950/5,950 records,
+and the separate MOABB grid is complete at 450/450 fits. This does not broaden the
+controls' scientific scope: they still do not erase plausibility flags, choose
+fixed-earliest versus seeded support, create a MOABB acceptance tolerance or sign
+Gate A.

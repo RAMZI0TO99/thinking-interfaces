@@ -49,7 +49,7 @@ separate and are never silently converted into local successes.
 | Figure regeneration and results aggregation | Complete | Scripts plus generated partial/final artifacts |
 | End-to-end replay → gate → interface | Complete | Persisted GPU and CPU held-out demo records |
 | Actual true-rate LSL → decoder → native command grid | Complete locally, including visible rehearsal | `runs/live_demo/20260831T022419655475Z/result.json`; 6,144 unchanged samples, 12 acknowledged windows, explicit abstention, inspected native renders |
-| Gate A MOABB reproduction | **Not signed** | Published reference verified; real Keras smoke and 9/450 full-protocol fits validated at 17:11 UTC, with independent raw-input reconstruction initially covering the first five. Later counts are in the reference integrity record. The queue defers below its unchanged resource thresholds; acceptance remains unresolved. See Gate A/deviation/reference records. |
+| Gate A MOABB reproduction | **450/450 locally complete; not signed** | All declared folds pass identity/split/metric checks; snapshot `196b419bf2f15c02fd55b9046fd78260605e2be869e3695bb09196616921427e`. Independent raw-input reconstruction matched all 450 fits with zero mismatches. Seed 42 is 75.66% ROC-AUC versus published 77.15%; no acceptance tolerance or approval is adopted. See Gate A/deviation/reference records. |
 
 Work after Gate A is explicitly exploratory under the user's direction. This does
 not convert Gate A into a pass.
@@ -76,7 +76,7 @@ not convert Gate A into a pass.
 |---|---|---|
 | Checkpoint/resume/incremental atomic records and cost estimate | Complete | Benchmark runner, schema/hash validation, launch estimates; bounded supervisor alternates at most 20 benchmark records with one isolated reference fit and checks append-only preservation. |
 | EEGNet, Shallow, Deep, FBCSP, tangent LR and EA variants | Complete in harness | Seven configured variants and baseline tests |
-| Dry fold and full five-seed sweep | BCI and Cho complete; MMIDB running to final hashes | BCI 315/315, Cho 1,820/1,820; MMIDB tracked in `runs/phase1_status.json` |
+| Dry fold and full five-seed sweep | Complete | BCI IV 2a 315/315, Cho2017 1,820/1,820 and MMIDB 3,815/3,815; final 5,950-record snapshot `ff7076b53efd77569d35b6b4d9460be3505376dd174cd690e22c6dee3cfe461a` |
 | ITR, ECE/reliability and accuracy–coverage | Complete implementation, including chart rendering | Evaluation modules, hand-worked/unit tests and synthetic calibration diagram; benchmark ECE scalars alone cannot reconstruct empirical reliability bins |
 | Safe LaBraM real-epoch input, mapping, sequence handling | Complete | Ready-state record, encoder tests |
 | Pretraining hours, partial-tuning appendix and matched fine-tuning reference | Complete | `docs/labram_reference_notes.md`, `configs/labram_paper_reference.toml`; targets are not local reproductions |
@@ -88,14 +88,14 @@ not convert Gate A into a pass.
 
 | Requirement | State | Evidence |
 |---|---|---|
-| Complete three-dataset benchmark table with intervals | Running | Final-hash resumable sweep; status generator is authoritative |
+| Complete three-dataset benchmark table with intervals | Complete locally | 5,950/5,950 valid records, zero missing/invalid/unexpected; seven methods, five seeds and 170 subjects produce 21 primary rows in `runs/benchmark_table.csv` |
 | Seed variation distinguished from subject variation | Complete in reporting | Separate seed-mean SD and shared-subject count; subject SD still drives intervals and H2 |
-| Full aggregated diagnostic table and class balance beside accuracy figures | Complete implementation; final grid regeneration pending | Snapshot-locked primary/diagnostic CSVs, tested subject weighting and repeated-seed counts, visually checked class-balance-labelled figures |
-| Plausibility review/red-team above 65–78% | Targeted controls and all completed Cho-method reviews complete; final MMIDB/grid review pending | Six Cho subject 43 and three MMIDB subject 085 shuffled-label controls; Cho reviews including all 52 EA fits retain unresolved flags and the loader-boundary limitation. See `docs/cho_classical_plausibility_review.md`. |
+| Full aggregated diagnostic table and class balance beside accuracy figures | Complete locally | Final primary/diagnostic hashes are `34a9fe6c…` and `aa874801…`; all three snapshot-bound figures were regenerated and visually inspected in `runs/reviews/final_reporting_visual_qa_20260901.md` |
+| Plausibility review/red-team above 65–78% | Complete locally; scientific limitations remain | All 261 packet cases were manually reviewed (63 Cho2017, 198 MMIDB): 63 plausibly high, 140 indeterminate and 58 suspicious/actionable. All 315 BCI records and 63 subject/method cases were separately inspected, including all eight 65–78% band cases. Snapshot/hash bindings pass; chronology, filtering and control-coverage limitations remain explicit in `runs/plausibility_review.json`. |
 | Complete-cohort exact signal-copy review | Complete; no exact copies found | 170 subjects, 20,599 retained trials; `runs/corpus_duplicate_audit.json` and `docs/corpus_duplicate_review.md`; not blanket leakage clearance |
 | Preprocessing/artifact thresholds permanently frozen | Complete | Frozen config, 22 rejected trials total, every class retained |
 | Working held-out demonstrator and CPU backup path | Complete locally | A09 GPU and A08 CPU persisted records; no second physical machine |
-| Gate B local deliverables | Pending complete table | Gate B now requires the same hash/config-verified visible native LSL receipt as the Phase I status checker; legacy array frames alone are insufficient |
+| Gate B local deliverables | Complete locally | Complete benchmark/reporting/plausibility evidence plus the hash/config-verified visible native LSL receipt; legacy array frames alone remain insufficient |
 | Gate B scientific sign-off | Cannot pass while Gate A is unsigned | Separate `passed` and `local_deliverables_complete` fields |
 | H2 equivalence margin and achieved power from Cho variance | Complete conditional planning freeze | 260 source records, 52 subjects, ±5.20290793 pp; approximate design power 0.80, not guaranteed H2 power |
 | E3 window sweep config | Complete | 0.5/1/2/4 s, 250 ms stride, causal/query-only |

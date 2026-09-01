@@ -30,6 +30,9 @@ Reused deterministic fits keep the original fit's provenance. These source
 changes were created by the assistant and have not been uploaded. Most snapshots
 use `Codex <codex@localhost>`; commit `659949a` inherited Git's automatic local
 identity. Commit metadata is not evidence of manual user review or gate approval.
+The final plausibility audit retains 1,051 legacy unversioned records and 4,899
+records with source fingerprints; it does not rewrite either group. A separate
+45/45 current-source control bundle verifies the present training paths.
 
 ## Current status
 
@@ -38,8 +41,12 @@ IV 2a (9), Cho2017 (52), and MMIDB (109). Profile A, Profile B, label-blind froz
 artifact thresholds, leakage controls, seven benchmark variants, safe LaBraM
 loading, LoRA/adapters/prompts, LSL streaming, confidence gating, accumulated
 evidence, CPU/GPU latency, and the held-out replay demonstrator are operational.
-The final configuration-hash benchmark sweep is resumable and writes one atomic
-record per fold and seed.
+The final configuration-hash benchmark sweep is complete: 5,950/5,950 records
+across 170 subjects, seven methods and five seeds independently pass the record
+audit. Its snapshot is
+`ff7076b53efd77569d35b6b4d9460be3505376dd174cd690e22c6dee3cfe461a`.
+The 21-row primary table, diagnostic table and three snapshot-bound figures were
+regenerated and visually checked. These remain exploratory results.
 
 A native Windows demonstration now connects actual true-rate LSL replay to
 causal windows, CPU EEGNet, confidence gating and an on-screen command grid.
@@ -55,8 +62,11 @@ also verifies report hashes, benchmark completeness and the native display recei
 Gate A remains unsigned. MOABB does publish an EEGNet reference for this dataset;
 the earlier statement that it was absent was incorrect. Its within-session
 five-fold protocol and scoring differ from the existing cross-session attempts,
-so those attempts do not establish reproduction. A protocol-matched run and an
-explicit acceptance rule are still outstanding.
+so those attempts do not establish reproduction. The separate protocol-matched
+grid is now complete at 450/450 valid fits, and an independent raw-input audit
+matched every fit. The seed-42 mean ROC-AUC is 75.66% versus the published 77.15%;
+the four declared repeat seeds average 75.02%. No acceptance tolerance or approval
+has been adopted, so this descriptive comparison does not sign Gate A.
 The user explicitly authorized later Phase I work as exploratory; no downstream
 result is represented as resolving Gate A. See `docs/gate_a_status.md` and
 `docs/deviation_log.md`.
