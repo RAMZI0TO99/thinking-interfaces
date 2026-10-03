@@ -4386,3 +4386,23 @@ never approached ([receipt](../runs/phase2/freeze_readiness/20261003_88de6af5_ra
 This closes the current-source raw-validation gap; the older
 9d32cb1a-staged copy remains preserved unexecuted. Read-only audit; no
 training, no cells, and Gate A remains unsigned.
+
+## 36/36 no-future matched controls pass on 88de6af5: 3 October 2026, 22:30 UTC
+
+The no-future matched control (module mode, self-deferring below its 10 GiB
+startup floor; first try deferred at 9.949 GiB and retried) completed with
+exit 0: **36 valid records, zero invalid, zero unexpected**, mean balanced
+accuracy **0.2451** under the 0.35 limit, in the fresh batch
+`runs/no_future_matched_control/893a7ea57fb2749e571c5b19591cead424357f1ebe382126ca2eb72b674d6a9f/`,
+every record bound to source `88de6af5`, and the batch context pins the
+newly published quality pointer bytes (`quality_bundle.status_sha256 =
+152f972e…`, source `88de6af5…`). Historical batches, including the 1 October
+`6523283e` set, remain preserved.
+
+With this, the full settled-source validation chain on `88de6af5` is
+complete for the first time since 1 October: guarded full quality (lint 0 /
+strict types 0 / 1041 tests), the current-source raw audit, the 45
+source-bound controls and the 36 no-future controls — each with preserved
+receipts and independent audits where required. Engineering evidence only:
+Gate A and the experiment freeze remain unsigned and no real case is
+accepted.
