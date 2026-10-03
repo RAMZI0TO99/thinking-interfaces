@@ -4228,3 +4228,26 @@ Parent Job termination, empty/closed Job and closed handles are recorded without
 The last completed mypy output remains TYPE004's [no issues in 205 source files](../runs/phase2/type_validation/pro3_types_20261003_004/mypy.stdout.log), qualified by that attempt's native deadline-witness failure. Source `423faa13`, frozen operations and all failed receipts are preserved. Full QA/Windows remain unexecuted on current source, their 10 GiB startup floors remain, and the global quality pointer is still failed. Gate A and experiment freeze remain unsigned, with zero accepted real cases. Raw data, weights, shared services and WSL cache were preserved.
 
 Future work requires an explicit user resume and fresh coordination. First investigate stage timing and durable API-entry/return evidence within the original caps; do not infer a pass from buffered output or enlarge limits automatically. Any later validation needs settled source/runtime pins, independent reviews, a fresh genuine grant and a new attempt. This is a handoff recommendation, not scheduled work.
+
+## Session resume: 3 October 2026, 18:54 UTC
+
+The user explicitly resumed engineering work for a bounded 12-hour window
+ending 2026-10-04 06:54:53 UTC, with instructions to test and audit every
+major step, fix problems found, coordinate cooperatively with any other agent
+on the shared machine, and commit after docs/handoff updates before pushing.
+The [session ledger](../runs/coordination/12h_session_20261003.json) records
+the authorization and resource policy; Gate A and the experiment freeze remain
+unsigned owner decisions.
+
+The settled source was reverified live at 18:55 UTC as `423faa13` (git clean
+at `560ebc0`; disk 245.99 GiB, RAM 7.13 GiB — below the 10 GiB full-quality
+startup floor). No peer coordination records newer than the 18:22 UTC
+publication existed at session start. The selected first step is the
+[quality phase](../runs/coordination/next_step_20261003_quality/phase_plan.json):
+one guarded full-quality attempt on `423faa13` with a fresh attempt directory
+and current-pointer publication, subsuming lint/types/tests instead of a
+sixth isolated type attempt. A read-only
+[RAM monitor](../runs/coordination/next_step_20261003_quality/ram_monitor.py)
+waits for two consecutive 10 GiB samples while light preflight and
+documentation proceed. Controls refresh, Windows qualification and the first
+real case follow as floors permit. No guard lowering or scientific admission.

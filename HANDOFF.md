@@ -1,5 +1,37 @@
 # Project handoff
 
+## Current session: resumed under 12-hour user authorization, 3 October 2026, 18:54 UTC
+
+The user explicitly resumed work for a bounded 12-hour window ending
+**2026-10-04 06:54:53 UTC**, with instructions to test and audit every major
+step, fix problems found, coordinate cooperatively with any other agent using
+the shared machine, and commit after updating docs/handoff before pushing.
+The [session ledger](runs/coordination/12h_session_20261003.json) records the
+authorization, scope and resource policy. Gate A and the experiment freeze
+remain unsigned owner decisions; this session produces engineering evidence
+only and signs neither.
+
+The settled source was reverified live at 18:55 UTC as
+`423faa138200b85c56463ad8e0cfad48469fc9a061a7429782ea7b1be170f820` (git clean
+at `560ebc0`, disk 245.99 GiB, RAM 7.13 GiB). No peer coordination records
+newer than the 18:22 UTC publication existed at session start; any new peer
+interval record in `runs/coordination/` will be honored by holding
+pro3-owned Python/tests/Jobs for the agreed interval.
+
+The selected first step is the [quality phase](runs/coordination/next_step_20261003_quality/phase_plan.json):
+one guarded full-quality attempt on `423faa13` with a fresh attempt directory
+and current-pointer publication (`--startup-ram-gib 10`, wall 4200 s). It
+subsumes lint, strict types and the full test suite, replacing a sixth
+isolated type attempt; TYPE004's observed mypy 0/205 remains historical.
+Because RAM is below the 10 GiB startup floor, a read-only
+[RAM monitor](runs/coordination/next_step_20261003_quality/ram_monitor.py)
+waits for two consecutive qualifying samples while light preflight
+(native Ruff, informational strict mypy) and documentation proceed. After a
+pass and its independent audit, the plan refreshes the 45 source-bound and 36
+no-future controls on the current source. Windows qualification and the first
+real case remain stretch steps behind the same floors. No guard lowering,
+automatic retries or scientific admission are authorized.
+
 ## Repository publication: 3 October 2026, 18:22 UTC
 
 The user authorized committing the current project, then corrected the destination: this project must use a new repository rather than `beyond-uncertainty`. The new repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), private as explicitly selected by the user. This publication packages the existing local Git history, current source/configuration/tests, research plans and status documentation. Raw and processed data, model weights, credentials, caches and run outputs remain excluded. Links into ignored local evidence directories therefore require the original workspace or separately supplied artifacts.

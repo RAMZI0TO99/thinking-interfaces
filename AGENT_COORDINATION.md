@@ -1,5 +1,24 @@
 # Project coordination
 
+## Current session coordination: 12-hour resume, 3 October 2026, 18:54 UTC
+
+The user resumed engineering work for 12 hours (ends 2026-10-04 06:54:53 UTC).
+The [session ledger](runs/coordination/12h_session_20261003.json) is the
+current authority; this session's root owns the ledger, the
+[quality phase plan](runs/coordination/next_step_20261003_quality/phase_plan.json),
+execution evidence and docs updates. Commits are authorized after docs/handoff
+updates, then push to the private `thinking-interfaces` repository.
+
+Shared-machine policy for this session: resource floors stay intact
+(full-quality startup 10 GiB RAM twice / 9 GiB disk, active stop 4/8, wall
+4200 s; control fits 10 GiB startup). No active peer lease or interval record
+existed at session start; root monitors `runs/coordination/` for new peer
+records and will hold pro3-owned Python/tests/Jobs/fits for any genuinely
+acknowledged peer interval, acknowledging via a shared record. Contentions are
+to be solved cooperatively with the peer per the user's instruction. The
+obsolete `6566e348` watcher stays disarmed. Gate A and the experiment freeze
+remain unsigned; no scientific fits or cell admission occur in this session.
+
 ## Publication ownership: 3 October 2026, 18:22 UTC
 
 The user authorized a new private GitHub repository, [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), instead of `beyond-uncertainty`. Root owns repository creation, credential handling, publication notes, staging, commit, push and remote verification. `/root/evidence_audit` performs a read-only review of eligible files, exclusions and research-plan documents. It may not edit source, start validation or claim a scientific pass. Other agents' work and frozen receipts are preserved.
