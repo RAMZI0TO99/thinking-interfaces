@@ -1,5 +1,40 @@
 # Project handoff
 
+## Session state: Windows qualification executed, host-Job defect isolated, 3 October 2026, 23:30 UTC
+
+After the quality pass (below), the session completed the settled-source
+validation chain and pushed a sealed V3 Windows-qualification package, then
+executed the 120-second no-fit ceremony twice. Both attempts failed
+honestly and the root cause is now isolated with a reproducible probe:
+**this host jobs every session process (flags 0x3000), Windows nests Jobs,
+and the ceremony child's NULL-handle job query returns the host Job instead
+of the ceremony Job**, so its exact-limit verification can never pass under
+this host ([root cause + repair proposal](runs/coordination/windows_qualification_20261003_v3/host_job_conflict_root_cause_001.md)).
+The same pattern exists in the type-component v5 child and retroactively
+explains TYPE001's bootstrap refusal. All attempt/release receipts are
+preserved; releases 001-003 were unconsumed schema-learning supersessions.
+The qualification remains unaccepted; a named-Job repair is proposed for the
+next session. Gate A and the freeze remain unsigned.
+
+Completed this session and pushed (commits `28abc22`…`bec4dfb` + closeout):
+guarded full-quality pass on `88de6af5` (lint 0 / strict types 0 / 1041
+tests) with pointer publication and independent audit; 45/45 source-bound
+controls and 36/36 no-future controls (mean 0.2451 < 0.35, pointer-bound);
+current-source raw audit (52 sources, 10.7 GB); three real repairs
+(script-mode import bootstrap, three never-executed Windows tests, plus the
+test-suite fixes' repin `423faa13→23bdfb5f→88de6af5`); the V3 package with
+consolidated/seal reviews. Cooperation with the peer ZCode session (pro2)
+worked exactly as the user instructed: an agreed quiet interval made the
+quality pass possible after a transient combined-suite MemoryError, and both
+sides exchange records in `runs/coordination/`.
+
+Remaining chain for the next session, in order: (1) implement the named-Job
+repair per the root-cause record, re-seal, review and re-execute the
+qualification; (2) the first real Cho engineering case still needs the M4b
+whole-CLI wrapper repin, a measured Torch environment pin and a fresh scoped
+admission (NOT_READY_TO_LAUNCH blockers otherwise stand); (3) owner decisions
+on Gate A and the scientific freeze remain outside engineering authority.
+
 ## Quality pass achieved on current source: 3 October 2026, 21:23 UTC
 
 The guarded full-quality attempt on `88de6af5` **passed and published the

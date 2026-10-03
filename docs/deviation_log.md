@@ -4406,3 +4406,43 @@ source-bound controls and the 36 no-future controls — each with preserved
 receipts and independent audits where required. Engineering evidence only:
 Gate A and the experiment freeze remain unsigned and no real case is
 accepted.
+
+## Windows qualification V3: sealed, executed twice, host-Job defect found: 3 October 2026, 23:30 UTC
+
+The Windows-qualification package was repinned to `88de6af5` as V3
+(`runs/coordination/windows_qualification_20261003_v3/`): complete
+byte-substitution proofs from frozen V2 (five literal pairs plus intra-package
+pin repinning), a fresh native runtime record, the seal check completed
+(native parse 0 errors, plan exit 0, ruff exit 0, 33/33 runtime rows, 14
+preserved originals intact), and independent reviews — a consolidated receipt
+superseding an accidentally deleted first review
+([incident record](../runs/coordination/windows_qualification_20261003_v3/receipt_incident_001.json)),
+then `ACCEPTED_SEALED_PREPARATION_ONLY` from
+[seal_review_001](../runs/coordination/windows_qualification_20261003_v3/seal_review_001.json)
+with zero blockers.
+
+Execution under pinned release records consumed two one-use attempts
+(`winqual88de6af5a001/b002`, all receipts preserved; releases 001-003 were
+unconsumed schema-learning steps, each supersession documented in the record
+itself). Attempt b002 ran the full supervised chain in 1.6 seconds and
+failed with the driver exiting 1 before any driver log. Root cause
+established by reproducible probe and preserved in
+[host_job_conflict_root_cause_001.md](../runs/coordination/windows_qualification_20261003_v3/host_job_conflict_root_cause_001.md):
+**this host runs every session process inside a Job (flags 0x3000), Windows
+nests Jobs, and the ceremony's child-side NULL-handle job query returns the
+host Job rather than the ceremony Job**, so `current_job`'s exact comparison
+can never pass under this host. The same pattern exists in the type-component
+v5 child and retroactively explains the TYPE001 bootstrap refusal. A named-Job
+repair is proposed in the root-cause record and left for the next session; no
+guard was lowered and the qualification remains unaccepted (candidate_pass
+false, accepted false, honestly recorded).
+
+Diagnostics under
+`runs/phase2/first_case_windows_qualification/diag88de6af5x001/` are
+root-session probing artifacts (contract/driver/leaf/probe outputs), clearly
+separated from the launcher's one-use attempt directories. The peer was
+informed via
+[closeout record](../runs/coordination/pro3_windows_qual_closeout_001.json),
+including the honest disclosure that its request-002 acknowledgement never
+arrived before execution and that the ceremony's failures were unrelated to
+its workloads.
