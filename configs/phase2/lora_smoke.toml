@@ -1,0 +1,21 @@
+[smoke]
+purpose = "bounded_cpu_engineering_smoke_not_scientific_experiment"
+checkpoint_config = "configs/labram_checkpoint_audit.toml"
+model_config = ".cache/huggingface/hub/models--braindecode--labram-pretrained/snapshots/0563b6c626e7b40d9a36653b763715db94d945d7/config.json"
+seed = 20260905
+samples = 800
+channel_names = ["C3", "Cz", "C4"]
+classes = 2
+support_examples = 4
+query_examples = 2
+synthetic_input_scale = 0.1
+target_modules = ["backbone.blocks.11.attn.qkv"]
+rank = 4
+alpha = 8.0
+steps = 3
+learning_rate = 0.05
+optimizer = "sgd"
+device = "cpu"
+threads = 2
+normalization_policy = "eval_mode_all_source_state_frozen_except_lora"
+output_root = "runs/phase2/adaptation_smoke"

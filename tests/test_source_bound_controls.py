@@ -210,7 +210,9 @@ class SourceBoundControlTests(unittest.TestCase):
                 refresh, "build_context", return_value=context
             ), patch("sys.argv", ["refresh"]), patch("builtins.print"):
                 self.assertEqual(refresh.main(), 0)
-            refresh.atomic_json(directory / "context.json", {"changed": True})
+            with self.assertRaisesRegex(ValueError, "existing control evidence differs"):
+                refresh.atomic_json(directory / "context.json", {"changed": True})
+            (directory / "context.json").write_text('{"changed": true}\n', encoding="utf-8")
             self.assertIn("context.json", controls.audit_context(root, context)["invalid_records"])
 
     def test_resource_deferral_precedes_training_and_capture_is_pass_through(self):

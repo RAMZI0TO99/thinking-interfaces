@@ -1,0 +1,13 @@
+[roster]
+schema_version = 1
+systems = ["labram_linear", "labram_full", "labram_partial", "labram_lora", "labram_adapter", "labram_support_prompt", "tcpl"]
+anchors = ["eegnet", "ea_tangent_lr"]
+same_backbone = ["labram_linear", "labram_full", "labram_partial", "labram_lora", "labram_adapter", "labram_support_prompt"]
+separate_architecture = ["tcpl"]
+experiment_frozen = false
+
+[selection]
+target_query_tuning = false
+inner_validation = "source_subject_loso"
+optimizer_and_search_budget_status = "pending_verified_implementation_and_runtime_pilot"
+tcpl_target_protocol = "support_conditioning_no_target_query_updates"

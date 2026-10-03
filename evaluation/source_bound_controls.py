@@ -38,11 +38,17 @@ def file_digest(path: Path) -> str:
 def environment_identity() -> dict[str, Any]:
     # Editable metadata can be discovered twice when the repository is sys.path[0].
     # Deduplicate identical identities only; differing versions remain distinct.
-    packages = sorted({
-        (distribution.metadata["Name"].lower(), distribution.version)
-        for distribution in importlib.metadata.distributions()
-        if distribution.metadata["Name"]
-    })
+    # Emit JSON-native lists: an in-memory tuple here can never equal the
+    # parsed copy of its own published context, so audits that compare the
+    # saved context byte-for-byte against a rebuild would always differ.
+    packages = sorted(
+        [name, version]
+        for name, version in {
+            (distribution.metadata["Name"].lower(), distribution.version)
+            for distribution in importlib.metadata.distributions()
+            if distribution.metadata["Name"]
+        }
+    )
     executable = shutil.which("nvidia-smi")
     if executable is None:
         raise ValueError("NVIDIA device/driver identity is unavailable for CUDA controls")

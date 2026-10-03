@@ -1,0 +1,552 @@
+{
+  "schema": "phase2-pilot-draft-v1",
+  "status": "specified_not_executed",
+  "recorded_date": "2026-09-08",
+  "compute_admitted": false,
+  "scientific_experiment_frozen": false,
+  "runnable_training_configuration": false,
+  "source": {
+    "git_commit": "e378dfd5f65e53b7ae7da62c778e829b60c61b98",
+    "source_sha256": "8f06f3f62df988711715169302feb3cac132755bdf254341e45d0160186fe34f",
+    "git_dirty": true
+  },
+  "inspection_sha256": "aa24149c192fad1bf1f81ce42be0ed2a6b8bafd164100654e28ee73c3feac94d",
+  "input_config_sha256": {
+    "configs/phase2/protocol.toml": "d8b56cdb28c7cbf3999e9fc65f089535930bff23373ddf46b903695cf095fa95",
+    "configs/phase2/methods.toml": "3558cf64a2438eaf5885dbd6d5f9329d8fc5dc1471ef546681037c7024b283f6",
+    "configs/phase2/analysis.toml": "3dac7de1bae03f62f2307b0afc812517a31d9867d0303ae75f544b4335e73711",
+    "configs/base.toml": "02c8e3011abfcafe170f791ec688c791b2187d8e547dd3b2655bae2b5eedf2c4",
+    "configs/runtime_limits.toml": "83593b5c17a47a7a135cf1b1cc9875c3e8ad261cfe76db93e7681c05e1375eaa"
+  },
+  "subject_selection": "lexicographically_first_eligible_target_then_first_different_eligible_inner_subject",
+  "uses_target_prediction_scores_for_selection": false,
+  "dataset_contexts": {
+    "bci_iv_2a": {
+      "input_subjects": 9,
+      "eligible_subjects": 9,
+      "excluded_subjects": {},
+      "profile_artifact_counts": {
+        "profile_a": 9,
+        "profile_b": 9
+      },
+      "development_target": "subject_01",
+      "development_inner_validation": "subject_02",
+      "channels": 22,
+      "samples_per_trial": 512,
+      "classes": [
+        "feet",
+        "left_hand",
+        "right_hand",
+        "tongue"
+      ],
+      "development_query_trials": 496,
+      "query_count_range": [
+        490,
+        496
+      ]
+    },
+    "cho2017": {
+      "input_subjects": 52,
+      "eligible_subjects": 52,
+      "excluded_subjects": {},
+      "profile_artifact_counts": {
+        "profile_a": 52,
+        "profile_b": 0
+      },
+      "development_target": "subject_01",
+      "development_inner_validation": "subject_02",
+      "channels": 64,
+      "samples_per_trial": 512,
+      "classes": [
+        "left_hand",
+        "right_hand"
+      ],
+      "development_query_trials": 160,
+      "query_count_range": [
+        154,
+        200
+      ]
+    },
+    "mmidb": {
+      "input_subjects": 109,
+      "eligible_subjects": 107,
+      "excluded_subjects": {
+        "subject_079": "insufficient retained support/query trials per class: {'left_fist': 19}",
+        "subject_100": "insufficient retained support/query trials per class: {'left_fist': 18, 'right_fist': 18}"
+      },
+      "profile_artifact_counts": {
+        "profile_a": 109,
+        "profile_b": 0
+      },
+      "development_target": "subject_001",
+      "development_inner_validation": "subject_002",
+      "channels": 64,
+      "samples_per_trial": 512,
+      "classes": [
+        "left_fist",
+        "right_fist"
+      ],
+      "development_query_trials": 5,
+      "query_count_range": [
+        2,
+        17
+      ]
+    }
+  },
+  "method_ids": [
+    "labram_linear",
+    "labram_full",
+    "labram_partial",
+    "labram_lora",
+    "labram_adapter",
+    "labram_support_prompt",
+    "tcpl",
+    "eegnet",
+    "ea_tangent_lr"
+  ],
+  "tcpl_identity": "local_reconstruction_author_parity_unverified",
+  "model_seed": 23,
+  "support_draw_seed": "not_applicable_fixed_order",
+  "measured_repetitions": 3,
+  "cases": [
+    {
+      "id": "bci_iv_2a__labram_linear__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_linear",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_linear__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_linear",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__labram_full__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_full",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_full__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_full",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__labram_partial__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_partial",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_partial__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_partial",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__labram_lora__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_lora",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_lora__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_lora",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__labram_adapter__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_adapter",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_adapter__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_adapter",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__labram_support_prompt__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_support_prompt",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__labram_support_prompt__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "labram_support_prompt",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__tcpl__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "tcpl",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__tcpl__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "tcpl",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__eegnet__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "eegnet",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__eegnet__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "eegnet",
+      "shots_per_class": 20
+    },
+    {
+      "id": "bci_iv_2a__ea_tangent_lr__1shot",
+      "dataset": "bci_iv_2a",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 1
+    },
+    {
+      "id": "bci_iv_2a__ea_tangent_lr__20shot",
+      "dataset": "bci_iv_2a",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_linear__1shot",
+      "dataset": "cho2017",
+      "method": "labram_linear",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_linear__20shot",
+      "dataset": "cho2017",
+      "method": "labram_linear",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_full__1shot",
+      "dataset": "cho2017",
+      "method": "labram_full",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_full__20shot",
+      "dataset": "cho2017",
+      "method": "labram_full",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_partial__1shot",
+      "dataset": "cho2017",
+      "method": "labram_partial",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_partial__20shot",
+      "dataset": "cho2017",
+      "method": "labram_partial",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_lora__1shot",
+      "dataset": "cho2017",
+      "method": "labram_lora",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_lora__20shot",
+      "dataset": "cho2017",
+      "method": "labram_lora",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_adapter__1shot",
+      "dataset": "cho2017",
+      "method": "labram_adapter",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_adapter__20shot",
+      "dataset": "cho2017",
+      "method": "labram_adapter",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_support_prompt__1shot",
+      "dataset": "cho2017",
+      "method": "labram_support_prompt",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__labram_support_prompt__20shot",
+      "dataset": "cho2017",
+      "method": "labram_support_prompt",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__tcpl__1shot",
+      "dataset": "cho2017",
+      "method": "tcpl",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__tcpl__20shot",
+      "dataset": "cho2017",
+      "method": "tcpl",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__eegnet__1shot",
+      "dataset": "cho2017",
+      "method": "eegnet",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__eegnet__20shot",
+      "dataset": "cho2017",
+      "method": "eegnet",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__ea_tangent_lr__1shot",
+      "dataset": "cho2017",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 1
+    },
+    {
+      "id": "cho2017__ea_tangent_lr__20shot",
+      "dataset": "cho2017",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_linear__1shot",
+      "dataset": "mmidb",
+      "method": "labram_linear",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_linear__20shot",
+      "dataset": "mmidb",
+      "method": "labram_linear",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_full__1shot",
+      "dataset": "mmidb",
+      "method": "labram_full",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_full__20shot",
+      "dataset": "mmidb",
+      "method": "labram_full",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_partial__1shot",
+      "dataset": "mmidb",
+      "method": "labram_partial",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_partial__20shot",
+      "dataset": "mmidb",
+      "method": "labram_partial",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_lora__1shot",
+      "dataset": "mmidb",
+      "method": "labram_lora",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_lora__20shot",
+      "dataset": "mmidb",
+      "method": "labram_lora",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_adapter__1shot",
+      "dataset": "mmidb",
+      "method": "labram_adapter",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_adapter__20shot",
+      "dataset": "mmidb",
+      "method": "labram_adapter",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__labram_support_prompt__1shot",
+      "dataset": "mmidb",
+      "method": "labram_support_prompt",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__labram_support_prompt__20shot",
+      "dataset": "mmidb",
+      "method": "labram_support_prompt",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__tcpl__1shot",
+      "dataset": "mmidb",
+      "method": "tcpl",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__tcpl__20shot",
+      "dataset": "mmidb",
+      "method": "tcpl",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__eegnet__1shot",
+      "dataset": "mmidb",
+      "method": "eegnet",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__eegnet__20shot",
+      "dataset": "mmidb",
+      "method": "eegnet",
+      "shots_per_class": 20
+    },
+    {
+      "id": "mmidb__ea_tangent_lr__1shot",
+      "dataset": "mmidb",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 1
+    },
+    {
+      "id": "mmidb__ea_tangent_lr__20shot",
+      "dataset": "mmidb",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 20
+    },
+    {
+      "id": "cho2017__labram_linear__5shot",
+      "dataset": "cho2017",
+      "method": "labram_linear",
+      "shots_per_class": 5
+    },
+    {
+      "id": "cho2017__labram_lora__5shot",
+      "dataset": "cho2017",
+      "method": "labram_lora",
+      "shots_per_class": 5
+    },
+    {
+      "id": "cho2017__labram_full__5shot",
+      "dataset": "cho2017",
+      "method": "labram_full",
+      "shots_per_class": 5
+    },
+    {
+      "id": "cho2017__eegnet__5shot",
+      "dataset": "cho2017",
+      "method": "eegnet",
+      "shots_per_class": 5
+    },
+    {
+      "id": "cho2017__ea_tangent_lr__5shot",
+      "dataset": "cho2017",
+      "method": "ea_tangent_lr",
+      "shots_per_class": 5
+    }
+  ],
+  "case_count_per_repetition": 59,
+  "target_measurement_count": 177,
+  "scientific_model_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "scientific_shots_per_class": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "primary_comparison": {
+    "dataset": "cho2017",
+    "shots_per_class": 5,
+    "first": "labram_lora",
+    "second": "labram_linear"
+  },
+  "operational_caps": {
+    "workers": 1,
+    "minimum_free_disk_gib": 20,
+    "minimum_gpu_capacity_mib": 8192,
+    "minimum_free_host_ram_gib": 4,
+    "gpu_pause_celsius": 80,
+    "gpu_resume_at_or_below_celsius": 76,
+    "max_active_seconds_per_probe": 600,
+    "max_active_seconds_first_session": 7200,
+    "max_retries_per_case": 1,
+    "host_memory_sample_interval_ms": 100
+  },
+  "neural_source_probe": {
+    "warmup_steps": 2,
+    "measured_blocks": 3,
+    "steps_per_block": 20,
+    "max_steps": 100,
+    "convergence_claim": false
+  },
+  "required_before_execution": [
+    "bound_preprocessing_and_cross_profile_identity",
+    "explicit_method_candidate_and_stopping_configuration",
+    "common_manifest_runner_and_matched_anchors",
+    "source_episode_eligibility_policy",
+    "stage_resource_recorder",
+    "exclusive_claim_and_failure_audit",
+    "fresh_runtime_and_resource_admission"
+  ],
+  "required_before_scientific_publication": [
+    "verified_source_fit_training_history",
+    "completed_source_only_selection",
+    "frozen_scientific_cell_and_dependency_manifest",
+    "scientific_result_audit"
+  ],
+  "required_measurements": [
+    "read_prepare_seconds",
+    "transfer_seconds",
+    "source_fit_seconds",
+    "inner_validation_seconds",
+    "target_support_seconds",
+    "query_seconds",
+    "persistence_audit_seconds",
+    "cooling_wait_seconds",
+    "peak_host_rss_bytes",
+    "minimum_available_host_ram_bytes",
+    "peak_gpu_allocated_bytes",
+    "peak_gpu_reserved_bytes",
+    "disk_growth_bytes",
+    "checkpoint_bytes",
+    "actual_trials_steps_and_batches",
+    "failure_retry_lineage",
+    "environment_and_source_identity"
+  ],
+  "forecast": {
+    "retry_multiplier": 1.25,
+    "hours_estimate": null,
+    "primary_tranche_cells": 1300,
+    "expanded_system_cells": 23520,
+    "expanded_anchor_cells": 6720,
+    "expanded_total_cells": 30240,
+    "source_fit_count": null,
+    "inner_search_fit_count": null,
+    "unknown_reason": "Candidate counts, source budgets, source episode policy and measured stage costs remain pending."
+  }
+}

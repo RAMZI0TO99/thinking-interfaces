@@ -1,5 +1,11 @@
 # TCPL reproduction plan and source review
 
+Update 2026-09-06: the Phase II [reference review](phase2/tcpl_reference_review.md)
+and [machine-readable inventory](../configs/phase2/tcpl_reference.toml) extend
+this historical review. They record a newly verified Cho class mismatch and
+unresolved constructor settings. Full architecture/numerical reproduction remains
+unverified; the next bounded task is an explicitly specified causal TCN component.
+
 Reviewed 2026-08-31. The original Full Project Plan section 5.2 is absent, so
 its exact three objections cannot be reconstructed. The earlier uncited list
 of alleged contradictions is withdrawn; it is not evidence about the paper.

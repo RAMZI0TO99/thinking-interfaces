@@ -1,0 +1,87 @@
+# Engineering contract, not a training configuration or verified author model.
+schema_version = 1
+recorded_date = "2026-09-08"
+reference_inventory = "configs/phase2/tcpl_reference.toml"
+author_parity_verified = false
+numerical_reproduction_ready = false
+training_budget_frozen = false
+
+[support]
+status = "implemented_local_component"
+input_layout = "episodes_shots_channels_time"
+trial_embedding_dim = 64
+conv_widths = [64, 64] # Local: absent from the reference description.
+kernel_size = 3
+stride = 1
+padding = "symmetric_zero_one_each_side"
+activation = "relu_after_each_convolution" # Local ordering.
+normalization = "none" # Local.
+dropout = 0.0 # Local.
+temporal_pool = "mean_per_trial"
+support_pool = "mean_of_trial_embeddings_per_episode"
+labels_used = false
+padded_shots_supported = false
+variable_lengths_within_batch_supported = false
+
+[generator]
+status = "implemented_local_component"
+hidden_dim = 64
+activation = "relu"
+prompt_count = 10
+prompt_dim = 64
+output_layout = "episodes_prompts_embedding"
+independent_prompt_parameters = false
+normalization = "none"
+dropout = 0.0
+
+[initialization]
+# Explicit local variants of the article's broad Xavier instruction.
+linear_weight = "xavier_uniform"
+linear_bias = "zero"
+convolution = "installed_pytorch_conv1d_default"
+bias_enabled = true
+
+[tcn]
+status = "implemented_local_component"
+module = "encoder.tcpl_tcn.TCPLCausalTCN"
+stride = 1
+temporal_downsampling = false
+output_layout = "batch_time_64"
+ordering = "two_conv_relu_dropout_stages_then_relu_branch_plus_skip"
+
+[transformer_candidate]
+# Implemented by encoder.tcpl.TCPLClassifier; author parity remains unverified.
+status = "implemented_local_component"
+layers = 4
+heads = 8
+model_dim = 64
+ffn_dim = 256
+dropout = 0.1
+norm_first = false
+ffn_activation = "relu" # Local.
+layer_norm_epsilon = 0.00001 # Local.
+positional_encoding = "none" # Local; TCN already carries ordered temporal features.
+attention_mask = "none" # Local: offline complete-epoch classification.
+prefix_placement = "once_after_tcn_projection_before_transformer"
+final_extra_norm = false # Local.
+bias_enabled = true
+attention_linear_weights = "xavier_uniform" # Includes packed QKV, a local choice.
+linear_biases = "zero"
+norm_weight = "one"
+norm_bias = "zero"
+
+[readout_candidate]
+status = "implemented_local_component"
+pool = "mean_final_eeg_tokens_excluding_prompt_positions" # Local.
+head = "linear_64_to_dataset_class_count" # Local.
+output = "logits"
+cls_token = false
+
+[episode_policy]
+status = "runner_not_implemented"
+source_training = "joint_backbone_support_encoder_generator"
+target_inference = "fixed_parameters_support_conditioning_only"
+target_parameter_updates = false
+target_query_selection = false
+normalization_fit = "existing_phase2_support_only_policy"
+scientific_protocol_issues = "unresolved_as_recorded_in_reference_inventory"

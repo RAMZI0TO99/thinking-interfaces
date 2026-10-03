@@ -33,13 +33,23 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def atomic_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    contents = (
+        json.dumps(payload, indent=2, sort_keys=True, allow_nan=False) + "\n"
+    ).replace("\n", os.linesep).encode("utf-8")
     descriptor, name = tempfile.mkstemp(dir=path.parent, prefix=".control-", suffix=".tmp")
     temporary = Path(name)
     try:
-        with os.fdopen(descriptor, "w", encoding="utf-8") as stream:
-            json.dump(payload, stream, indent=2, sort_keys=True, allow_nan=False)
-            stream.write("\n")
-        temporary.replace(path)
+        with os.fdopen(descriptor, "wb") as stream:
+            stream.write(contents)
+            stream.flush()
+            os.fsync(stream.fileno())
+        try:
+            # A hard link publishes the complete same-directory temporary without
+            # replacing a record that another process may have claimed first.
+            os.link(temporary, path)
+        except FileExistsError:
+            if path.read_bytes() != contents:
+                raise ValueError(f"existing control evidence differs: {path}") from None
     finally:
         temporary.unlink(missing_ok=True)
 
@@ -105,10 +115,10 @@ def main() -> int:
             raise ValueError("source changed before control training")
         context_path = directory / "context.json"
         if context_path.is_file():
-            if config_digest(json.loads(context_path.read_text("utf-8"))) != key:
+            saved_context = json.loads(context_path.read_text("utf-8"))
+            if config_digest(saved_context) != key:
                 raise ValueError("saved control context changed")
-        else:
-            atomic_json(context_path, context)
+        atomic_json(context_path, context)
         cooling = load_cooling_policy(ROOT / "configs/runtime_limits.toml")
         loaded: tuple[str, int] | None = None
         signals: Any = None
@@ -119,7 +129,9 @@ def main() -> int:
             name, subject, seed = unit
             path = directory / unit_name(*unit)
             if path.is_file():
-                validate_unit(json.loads(path.read_text("utf-8")), context, unit)
+                saved_unit = json.loads(path.read_text("utf-8"))
+                validate_unit(saved_unit, context, unit)
+                atomic_json(path, saved_unit)
                 continue
             if source_fingerprint(ROOT) != context["source_sha256"]:
                 raise ValueError("source changed during control refresh")

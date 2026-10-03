@@ -1,0 +1,86 @@
+# Reference inventory only: not an executable model/training configuration.
+schema_version = 1
+review_date = "2026-09-06"
+review_complete = true
+author_code_verified = false
+author_checkpoint_verified = false
+architecture_reproduction_ready = false
+numerical_reproduction_ready = false
+
+[source]
+doi = "10.3389/fnins.2025.1689286"
+url = "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1689286/full"
+html_path = ".cache/phase2/tcpl-reference/20260906/publisher.html"
+html_sha256 = "d9b6e11fec76c7efa886d5ae2b1bd29cd126c842b45f6eb7ad369c3aff154c68"
+algorithm_path = ".cache/phase2/tcpl-reference/20260906/algorithm.webp"
+algorithm_sha256 = "2c9fac5a5249737713ba89408d9736363a19461106766131cb5564117df05d75"
+
+[reported.support_encoder]
+convolutions = 2
+kernel_size = 3
+stride = 1
+padding = "same"
+temporal_pool = "global_average"
+embedding_dim = 64
+support_pool = "mean"
+label_embedding_specified = false
+
+[reported.generator]
+linear_layers = 2
+hidden_dim = 64
+activation = "relu"
+prompt_count = 10
+prompt_dim = 64
+placement = "temporal_prefix_after_tcn_projection"
+
+[reported.tcn]
+blocks = 4
+convolutions_per_block = 2
+causal = true
+kernel_size = 3
+dilations = [1, 2, 4, 8]
+channels = [64, 64, 128, 128]
+activation = "relu"
+dropout = 0.1
+residual_projection = "conv1x1_when_channel_width_changes"
+output_dim = 64
+
+[reported.transformer]
+layers = 4
+heads = 8
+model_dim = 64
+ffn_dim = 256
+dropout = 0.1
+normalization = "post_attention_and_post_ffn"
+
+[reported.training]
+optimizer = "adam"
+learning_rate = 0.001
+weight_decay = 0.0001
+meta_batch_size = 16
+prompt_l2_weight = 0.0001
+joint_updates = ["backbone", "support_encoder", "prompt_generator"]
+seed_count = 5
+linear_initialization = "xavier"
+
+[unresolved]
+# Do not interpret omitted constructor fields as framework defaults.
+architecture = ["support_conv_widths_and_activation_layout", "tcn_stride_downsampling_and_residual_activation_layout", "transformer_positional_encoding", "transformer_ffn_activation_and_norm_epsilon", "classifier_readout_and_prompt_token_pooling", "biases_and_initialization_details"]
+protocol = ["cho_class_inventory_conflicts_with_original_dataset", "bci_loso_vs_tenfold_conflict", "exact_subject_folds_and_validation_partition", "normalization_fit_scope", "artifact_thresholds_and_filter_implementation", "episode_budget_stopping_rules_and_seed_values", "support_query_sampling_and_optimizer_schedule_details"]
+
+[local_policy]
+benchmark_protocol = "configs/phase2/protocol.toml"
+cho_classes = ["left_hand", "right_hand"]
+support_only_target_preprocessing_fit = true
+target_query_tuning = false
+same_backbone_prompt_is_tcpl = false
+heavy_training_performed = false
+next_step = "causal_tcn_component_with_explicit_local_stride_one_contract"
+
+[local_component_candidate]
+# Proposed engineering contract for the NEXT step, not a reported paper setting.
+adopted_as_faithful_architecture = false
+stride = 1
+temporal_downsampling = false
+derived_receptive_field_samples = 61
+acceptance_checks = ["causality_under_future_input_perturbation", "dilation_and_receptive_field", "variable_length_shapes_and_projection", "finite_gradients_through_residual_paths", "state_round_trip"]

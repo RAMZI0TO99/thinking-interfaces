@@ -1,0 +1,68 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+*.egg-info/
+%LOCALAPPDATA%/
+.coverage
+htmlcov/
+
+# EEG data, model weights, caches, and experiment outputs never belong in Git.
+artifacts/
+data/raw/
+data/interim/
+data/processed/
+runs/
+tmp/
+checkpoints/
+*.edf
+*.gdf
+*.fif
+*.set
+*.pth
+*.pt
+*.ckpt
+
+# Local secrets and machine-specific settings.
+.env
+.env.*
+!.env.example
+configs/local.toml
+
+# Editors and operating systems.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== ↑ 以上同步自 .gitignore（「从 .gitignore 同步」只重写以上部分）=====
+.git/
+.hg/
+.svn/
+node_modules/
+bower_components/
+jspm_packages/
+site-packages/
+venv/
+coverage/
+lcov-report/
+cmakefiles/
+cmake-build-*/
+bazel-*/
+pods/
+deriveddata/
+storybook-static/
+playwright-report/
+test-results/
+allure-results/
+allure-report/
+cdk.out/
+*.dist-info/
+eggs/
+pip-wheel-metadata/
+wheels/
+# ----- ↑ 以上为 ZCode 默认排除规则（自定义规则请写在本行下方，不会被同步/恢复改动）-----
+# 自定义规则写在下方（本行提示可删除）

@@ -150,10 +150,9 @@ def preprocess_profile_b_run(
     return scaled, labels, tuple(processed.ch_names)
 
 
-def preprocess_profile_b_subject(
-    subject: int,
-    project_root: Path,
-    raw_root: Path,
+def collect_profile_b_runs(
+    subject_data: Mapping[Any, Mapping[Any, Any]],
+    event_id: Mapping[str, int],
     config: ProfileBConfig,
 ) -> tuple[
     FloatArray,
@@ -163,12 +162,7 @@ def preprocess_profile_b_subject(
     IntArray,
     tuple[str, ...],
 ]:
-    """Build Profile B epochs for every run while preserving provenance."""
-
-    configure_local_cache(project_root, raw_root)
-    download_subject(subject, raw_root)
-    dataset = BNCI2014_001()
-    subject_data = dataset.get_data(subjects=[subject], n_jobs=1)[subject]
+    """Collect one MOABB subject's runs through the shared run-level pipeline."""
     batches: list[FloatArray] = []
     labels: list[str] = []
     sessions: list[str] = []
@@ -178,7 +172,7 @@ def preprocess_profile_b_subject(
     for session_id, session_runs in subject_data.items():
         for run_id, raw in session_runs.items():
             batch, batch_labels, batch_channels = preprocess_profile_b_run(
-                raw, dataset.event_id, config
+                raw, event_id, config
             )
             if channel_names is None:
                 channel_names = batch_channels
@@ -199,6 +193,55 @@ def preprocess_profile_b_subject(
         np.asarray(trial_indices, dtype=np.int64),
         channel_names,
     )
+
+
+def preprocess_profile_b_subject(
+    subject: int,
+    project_root: Path,
+    raw_root: Path,
+    config: ProfileBConfig,
+) -> tuple[
+    FloatArray,
+    NDArray[np.str_],
+    NDArray[np.str_],
+    NDArray[np.str_],
+    IntArray,
+    tuple[str, ...],
+]:
+    """Build Profile B epochs for every run while preserving provenance."""
+
+    configure_local_cache(project_root, raw_root)
+    download_subject(subject, raw_root)
+    dataset = BNCI2014_001()
+    subject_data = dataset.get_data(subjects=[subject], n_jobs=1)[subject]
+    return collect_profile_b_runs(subject_data, dataset.event_id, config)
+
+
+def preprocess_profile_b_cho_subject(
+    subject: int,
+    project_root: Path,
+    raw_root: Path,
+    config: ProfileBConfig,
+) -> tuple[
+    FloatArray,
+    NDArray[np.str_],
+    NDArray[np.str_],
+    NDArray[np.str_],
+    IntArray,
+    tuple[str, ...],
+]:
+    """Build Cho2017 Profile B epochs from the pinned local GIGADB raw files."""
+
+    from moabb.datasets import Cho2017
+
+    from data.cho2017 import configure_local_cache as configure_cho_cache
+    from data.cho2017 import download_subject as download_cho_subject
+
+    configure_cho_cache(project_root, raw_root)
+    download_cho_subject(subject, raw_root)
+    dataset = Cho2017()
+    subject_data = dataset.get_data(subjects=[subject], n_jobs=1)[subject]
+    return collect_profile_b_runs(subject_data, dataset.event_id, config)
 
 
 def build_profile_b_summary(
@@ -228,4 +271,70 @@ def build_profile_b_summary(
         fraction_within_unit_interval=float(np.mean(absolute <= 1.0)),
         absolute_amplitude_p95=float(np.percentile(absolute, 95)),
         config_sha256=config_digest(asdict(config)),
+    )
+
+
+def preprocess_profile_b_mmidb_subject(
+    subject: int,
+    project_root: Path,
+    raw_root: Path,
+    config: ProfileBConfig,
+) -> tuple[
+    FloatArray,
+    NDArray[np.str_],
+    NDArray[np.str_],
+    NDArray[np.str_],
+    IntArray,
+    tuple[str, ...],
+]:
+    """Build MMIDB Profile B epochs from the pinned local PhysioNet EDF runs.
+
+    The three left/right-fist motor runs are loaded, cues that cannot supply a
+    complete post-cue epoch are dropped (the same completeness rule as Profile A
+    with a zero baseline), T1/T2 annotations are renamed to the canonical
+    classes, and channel names are canonicalized so Profile A and B agree on
+    the standard sixty-four-electrode montage (T9/T10, not P9/P10).
+    """
+    from data.channel_names import canonicalize_channel_names
+    from data.mmidb import drop_incomplete_motor_annotations, load_left_right_fist_raws
+
+    runs = load_left_right_fist_raws(subject, raw_root)
+    prepared: list[tuple[str, str, Any]] = []
+    for _index, (source, raw) in enumerate(runs):
+        complete, _dropped = drop_incomplete_motor_annotations(
+            raw, baseline_s=0.0, epoch_s=config.epoch_duration_s
+        )
+        renamed = complete.copy()
+        descriptions = [
+            {"T1": "left_fist", "T2": "right_fist"}.get(str(d), str(d))
+            for d in renamed.annotations.description
+        ]
+        renamed.set_annotations(
+            mne.Annotations(
+                onset=renamed.annotations.onset,
+                duration=renamed.annotations.duration,
+                description=descriptions,
+            )
+        )
+        canonical = canonicalize_channel_names(tuple(renamed.ch_names))
+        rename_map = {
+            old: new for old, new in zip(renamed.ch_names, canonical, strict=True)
+        }
+        renamed.rename_channels(rename_map)
+        # Some MMIDB recordings are native 128 Hz, below the Profile B bandpass
+        # Nyquist; upsample every run to the target rate BEFORE filtering. The
+        # run-level resample is then a same-rate no-op. Upsampling adds no
+        # information above the native Nyquist; this order is the MMIDB policy.
+        renamed.resample(config.resample_hz, npad="auto", n_jobs=1, verbose=False)
+        # Profile A names sessions "0" and runs by the EDF run number
+        # (S001R04.edf -> "04"); the A/B join key must match exactly.
+        run_code = source.stem.split("R")[-1].zfill(2)
+        prepared.append(("0", run_code, renamed))
+    grouped: dict[str, dict[str, Any]] = {}
+    for session, run, raw in prepared:
+        grouped.setdefault(session, {})[run] = raw
+    return collect_profile_b_runs(
+        grouped,
+        {"left_fist": 2, "right_fist": 3},
+        config,
     )

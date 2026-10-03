@@ -1,0 +1,25 @@
+[identity]
+schema_version = 1
+dataset = "bci_iv_2a"
+control_id = "pre_cue_no_future_v1"
+artifact_kind = "pre_cue_no_future_control_v1"
+manifest_kind = "pre_cue_no_future_manifest_v1"
+status = "proposed_unratified"
+output_namespace = "data/processed/bci_iv_2a/pre_cue_no_future_v1"
+
+[preprocessing]
+raw_sampling_rate_hz = 250.0
+channel_names = [
+  "Fz", "FC3", "FC1", "FCz", "FC2", "FC4", "C5", "C3", "C1", "Cz", "C2",
+  "C4", "C6", "CP3", "CP1", "CPz", "CP2", "CP4", "P1", "Pz", "P2", "POz",
+]
+bandpass_low_hz = 8.0
+bandpass_high_hz = 30.0
+filter_method = "fir"
+filter_phase = "zero"
+reference = "common_average"
+resample_hz = 128.0
+window_duration_s = 1.0
+prefix_policy = "raw_eeg_strictly_before_cue_before_filter_and_resample"
+minimum_prefix_policy = "at_least_one_raw_window_and_full_fir_kernel"
+window_policy = "last_resampled_second_mean_center_each_channel"

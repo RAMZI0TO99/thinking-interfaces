@@ -1,0 +1,15 @@
+# Committed Cho first-tranche sweep parameters.
+#
+# The per-case analysis memory cap is ratified at 5.5 GiB: 2.07x over the
+# measured 2.657 GiB peak process commit of a supervised tensor-case child
+# (probe receipt runs/phase2/case_memory_measurements/
+# 20260930_peak_commit_probe_4542cc11/receipt.json), remaining below the
+# tensor helper's separate 6 GiB host-RAM-before-case floor. The selection
+# ceiling lives in selection_ceiling.toml. Changing any value here is an
+# owner decision recorded in this committed file.
+[analysis]
+memory_limit_bytes = 5905580032
+attempt_seconds = 480.0
+
+[selection]
+ceiling_config = "configs/phase2/selection_ceiling.toml"
