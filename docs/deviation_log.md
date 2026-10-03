@@ -4307,3 +4307,31 @@ the authoritative seven-package types gate, so these are recorded as known
 out-of-gate findings, not gate blockers. Canonical source pin moves from
 `23bdfb5f` to `88de6af5ae1595c40f4da6e23a9facac770c285f2e86d71db3f9d0f68c8d9698`;
 the guarded attempt targets the new pin.
+
+## First guarded full-quality attempt failed on transient MemoryError: 3 October 2026, 20:36 UTC
+
+The guarded attempt on `88de6af5` (launched 19:59:21 UTC after RAM recovered to
+six consecutive samples at/above 10 GiB) ran clean preflight, lint exit 0,
+strict types exit 0 inside the guard, and the full pytest stage for 1,876
+seconds with available RAM sustained at 7.7-9.8 GiB — then failed on exactly
+one test,
+`tests/test_phase2_cho_source_restore.py::ChoSelectedSourceRestoreTests::test_real_store_round_trip_still_refuses_incomplete_cho_evidence`,
+with a `MemoryError` at `evaluation/phase2_selected_source_store.py:228`
+inside `_read_bounded_regular`'s already-bounded read (≤64 MiB). 1,040 tests
+passed; source stayed stable before/after; no resource-floor stop; no pointer
+publication; the failed attempt and receipt are preserved at
+`runs/phase2/quality_attempts/20261003_88de6af5_fullq_guarded/` and the
+previous (failed, 1 October) pointer bytes are untouched.
+
+Diagnosis: transient system commit-charge pressure while both projects' Python
+test suites ran concurrently (the peer pro2 session runs its own suite in
+parallel; its availability note is
+`runs/coordination/pro2_peer_session_20261003_001.json`). The read is bounded
+by design; no code defect is indicated. This test passed in the same session's
+unguarded pre-verification an hour earlier.
+
+Response: pro3 posted a cooperative quiet-interval request
+(`runs/coordination/pro3_request_peer_quiet_interval_001.json`, 20:40-~21:20
+UTC) asking pro2 to hold its partitions for one rerun in a fresh attempt
+directory; absent an acknowledgement by 20:50 UTC pro3 proceeds then anyway.
+No guard is lowered; the 10 GiB startup floor and all limits are unchanged.
