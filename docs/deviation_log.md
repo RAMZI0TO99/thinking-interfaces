@@ -4355,3 +4355,19 @@ failed predecessor attempts remain preserved, and accepted the result
 quality only: Gate A and the experiment freeze remain unsigned and no real
 case is accepted. Next: refresh the 45 source-bound and 36 no-future controls
 on this source.
+
+## 45/45 source-bound controls refreshed on 88de6af5: 3 October 2026, 21:48 UTC
+
+With the current quality pointer now certifying `88de6af5`, the
+source-bound control refresh ran in module mode
+(`python -m scripts.refresh_source_bound_controls`, self-deferring below its
+configured 10 GiB startup floor) and completed with exit 0:
+**45 valid records, zero invalid, zero unexpected**, in the fresh
+context-digest batch
+`runs/source_bound_controls/16b9105ef6632a5a1a6bbd12ab04a62ae227b2c20e35fcb019520b7a6ff660b7/`
+(36 `pre_cue_control` + 9 `gate_a_shuffle` receipts, each a real CUDA EEGNet
+training record bound to source `88de6af5`; the runner's audit_context
+re-verified every unit against its actual code, inputs and environment).
+Historical batches, including the 1 October `6523283e` batch, remain
+preserved. Engineering control evidence only; no scientific admission.
+Next: the 36 no-future matched controls, which bind the new pointer bytes.
