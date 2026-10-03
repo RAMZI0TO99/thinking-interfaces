@@ -4371,3 +4371,18 @@ re-verified every unit against its actual code, inputs and environment).
 Historical batches, including the 1 October `6523283e` batch, remain
 preserved. Engineering control evidence only; no scientific admission.
 Next: the 36 no-future matched controls, which bind the new pointer bytes.
+
+## Current-source raw audit passes on 88de6af5: 3 October 2026, 22:04 UTC
+
+The staged raw-verifier repin pattern was applied: a fresh dated copy at
+`runs/phase2/freeze_readiness/20261003_88de6af5_raw_source_readonly/` changed
+exactly two literals (the expected-source hash and its error-label short form;
+reverse substitution reproduces the 9d32cb1a-staged bytes — see
+[repin_provenance.json](../runs/phase2/freeze_readiness/20261003_88de6af5_raw_source_readonly/repin_provenance.json)),
+and the copy passes native Ruff. Executed read-only at 22:04 UTC it
+**passed**: 52 Cho raw sources rehashed (10,704,036,837 bytes) in 18.8
+seconds with minimum available RAM 9.36 GiB and disk 234.8 GiB, floors 6/8
+never approached ([receipt](../runs/phase2/freeze_readiness/20261003_88de6af5_raw_source_readonly/receipt.json)).
+This closes the current-source raw-validation gap; the older
+9d32cb1a-staged copy remains preserved unexecuted. Read-only audit; no
+training, no cells, and Gate A remains unsigned.
