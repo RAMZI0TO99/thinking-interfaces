@@ -4335,3 +4335,23 @@ Response: pro3 posted a cooperative quiet-interval request
 UTC) asking pro2 to hold its partitions for one rerun in a fresh attempt
 directory; absent an acknowledgement by 20:50 UTC pro3 proceeds then anyway.
 No guard is lowered; the 10 GiB startup floor and all limits are unchanged.
+
+## Guarded full-quality pass on 88de6af5: 3 October 2026, 21:23 UTC
+
+Attempt 3 ([receipt](../runs/phase2/quality_attempts/20261003_88de6af5_fullq_guarded3/receipt.json),
+launched 20:55:52 UTC inside the peer-agreed quiet interval) **passed**:
+lint 0, strict types 0 (205 files), pytest 1041 passed / 3 skipped / 1121
+subtests in 1617 s; total elapsed 1626.9 s; source stable `88de6af5` before,
+during and after; minimum available RAM 6.90 GiB and disk 235.95 GiB never
+approached the 4/8 active floors; the current quality pointer was published
+(sha `152f972e…`) replacing the 1 October failed pointer (preserved bytes
+sha `fbe512e6…`); the pass archive is
+`runs/phase2/quality_history/20261003_88de6af5_fullq_guarded3.json`. The
+[independent audit](../runs/coordination/next_step_20261003_quality/quality_pass_audit_001.json)
+recomputed all artifact hashes (before/stdout/archive/pointer/logs),
+re-verified `verify_quality_bundle` against the live tree, confirmed the two
+failed predecessor attempts remain preserved, and accepted the result
+`ACCEPTED_QUALITY_PASS_ENGINEERING_ONLY` with zero blockers. Engineering
+quality only: Gate A and the experiment freeze remain unsigned and no real
+case is accepted. Next: refresh the 45 source-bound and 36 no-future controls
+on this source.

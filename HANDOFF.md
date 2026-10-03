@@ -1,5 +1,36 @@
 # Project handoff
 
+## Quality pass achieved on current source: 3 October 2026, 21:23 UTC
+
+The guarded full-quality attempt on `88de6af5` **passed and published the
+current pointer**: lint exit 0, strict types exit 0 (205 files), full pytest
+**1041 passed, 3 skipped, 1121 subtests passed in 1617 s**, elapsed 1626.9 s
+under the unchanged guards (startup 10 GiB RAM twice, active floors never
+approached: minimum RAM 6.90 GiB, minimum disk 235.95 GiB). The
+[attempt receipt](runs/phase2/quality_attempts/20261003_88de6af5_fullq_guarded3/receipt.json)
+records `quality_bundle_verified=true`, pointer publication
+(`152f972e…`), and the preserved previous failed pointer (`fbe512e6…`). The
+pass archive is
+[runs/phase2/quality_history/20261003_88de6af5_fullq_guarded3.json](runs/phase2/quality_history/20261003_88de6af5_fullq_guarded3.json).
+The [independent audit](runs/coordination/next_step_20261003_quality/quality_pass_audit_001.json)
+recomputed every hash and accepted it `ACCEPTED_QUALITY_PASS_ENGINEERING_ONLY`
+with zero blockers. This accepts the engineering quality pass for `88de6af5`
+only: no scientific gate, no real-case acceptance; Gate A and the freeze stay
+unsigned.
+
+The road there required real repairs and coordination, all preserved:
+attempt 1 failed on a transient `MemoryError` inside an already-bounded 64 MiB
+read under combined-suite commit pressure (peer pro2 running its own test
+suite concurrently; receipt preserved), attempt 2 was honestly refused at
+preflight by the 10 GiB startup floor (9.87 GiB samples), and attempt 3 ran
+inside a cooperatively agreed quiet interval — the peer accepted the
+[request](runs/coordination/pro3_request_peer_quiet_interval_001.json),
+held its partitions, and was
+[released](runs/coordination/pro3_quiet_interval_completion_001.json)
+immediately after the pass. The current
+[quality pointer](runs/quality_status.json) now certifies `88de6af5`;
+controls refresh on this source follows.
+
 ## Current session: resumed under 12-hour user authorization, 3 October 2026, 18:54 UTC
 
 The user explicitly resumed work for a bounded 12-hour window ending
@@ -11,43 +42,49 @@ authorization, scope and resource policy. Gate A and the experiment freeze
 remain unsigned owner decisions; this session produces engineering evidence
 only and signs neither.
 
-The settled source was reverified live at 18:55 UTC as
-`423faa138200b85c56463ad8e0cfad48469fc9a061a7429782ea7b1be170f820` (git clean
-at `560ebc0`, disk 245.99 GiB, RAM 7.13 GiB). No peer coordination records
-newer than the 18:22 UTC publication existed at session start; any new peer
-interval record in `runs/coordination/` will be honored by holding
-pro3-owned Python/tests/Jobs for the agreed interval.
+The settled source was reverified live at 18:55 UTC as `423faa13` (git clean
+at `560ebc0`). No peer coordination records newer than the 18:22 UTC
+publication existed at session start; a peer Codex-runtime process was later
+observed running a duplicate of this session's read-only RAM monitor, and a
+[coordination note](runs/coordination/next_step_20261003_quality/peer_duplicate_monitor_note_001.md)
+requested it stop its duplicate. The launch gate is unaffected: the guarded
+runner takes its own two fresh startup samples.
 
-The selected first step is the [quality phase](runs/coordination/next_step_20261003_quality/phase_plan.json):
-one guarded full-quality attempt with a fresh attempt directory and
-current-pointer publication (`--startup-ram-gib 10`, wall 4200 s). It
-subsumes lint, strict types and the full test suite, replacing a sixth
-isolated type attempt; TYPE004's observed mypy 0/205 remains historical.
+Progress this session (all committed and pushed):
 
-Preflight found and fixed a real blocker: running
-`scripts/verify_phase1_quality.py` in script mode (exactly how the guarded
-runner and the tracked pre-commit hook invoke it) failed with
-`ModuleNotFoundError: No module named 'scripts'`, because the venv's editable
-install maps only the six pyproject packages and script mode does not put the
-project root on `sys.path`. The fix adds the same guarded root bootstrap
-already used by `scripts/run_guarded_quality.py` to the two execution-path
-entry points (`verify_phase1_quality.py`, `run_no_future_matched_control.py`);
-whole-project ruff and strict mypy (205 files) pass, and the
-[independent patch audit](runs/coordination/next_step_20261003_quality/source_fix_audit_001.json)
-accepted it `ACCEPTED_STATIC_ONLY` with no blockers. The canonical pin
-therefore moved from `423faa13` to
-`23bdfb5fc60e4b64fe3b6f7de185253f1839aeeaa2ff9aeb6e995b043ad3093b`, which the
-guarded attempt now targets. The audit also noted
-`refresh_source_bound_controls.py` must be invoked in module mode, which this
-session uses.
+- Whole-project ruff and informational strict mypy (205 files) pass.
+- A deterministic blocker was found and fixed: script-mode execution of
+  `scripts/verify_phase1_quality.py` (the guarded runner's own child) and
+  `scripts/run_no_future_matched_control.py` crashed with
+  `ModuleNotFoundError: No module named 'scripts'` because the venv editable
+  install maps only the six pyproject packages. The same guarded root
+  bootstrap used by `run_guarded_quality.py` was added to exactly those two
+  files; independently audited `ACCEPTED_STATIC_ONLY` with no blockers
+  ([receipt](runs/coordination/next_step_20261003_quality/source_fix_audit_001.json)).
+- A full unguarded suite pre-verification (1038 passed / 3 failed / 3
+  skipped) exposed three never-executed Windows test bugs, now repaired:
+  two provenance tests resealed forged records via `write_text` (CRLF on
+  Windows, refused by the canonical-bytes guard before the branch under
+  test) and one wiring-test fixture lacked the typed
+  `support.query_batch_size` field. All 65 tests in the three files now
+  pass; 27 pre-existing mypy findings in those test files are out-of-gate
+  and recorded in the deviation log.
+- Canonical pin moved `423faa13` → `23bdfb5f` → `88de6af5` (the latter is
+  the quality-attempt pin; commits `28abc22`, `4937146`, `4939aa1` pushed).
 
-Because RAM is below the 10 GiB startup floor, a read-only
-[RAM monitor](runs/coordination/next_step_20261003_quality/ram_monitor.py)
-waits for two consecutive qualifying samples. After a
-pass and its independent audit, the plan refreshes the 45 source-bound and 36
-no-future controls on the current source. Windows qualification and the first
-real case remain stretch steps behind the same floors. No guard lowering,
-automatic retries or scientific admission are authorized.
+RAM recovered above the 10 GiB floor at 19:55 UTC (six consecutive samples
+10.03–10.52 GiB; [recovery marker](runs/coordination/next_step_20261003_quality/ram_recovered.json))
+and the guarded full-quality attempt on `88de6af5` launched at 19:59 UTC
+([phase plan](runs/coordination/next_step_20261003_quality/phase_plan.json)):
+fresh attempt directory `runs/phase2/quality_attempts/20261003_88de6af5_fullq_guarded`,
+`--startup-ram-gib 10`, wall 4200 s, pointer publication requested. Inside
+the guarded run, lint passed and strict types exited 0; the test stage is
+running. On a pass and independent audit, the 45 source-bound and 36
+no-future controls will be refreshed on this source (module mode; both are
+self-deferring below their own 10 GiB floors, and the 36-control binds the
+published pointer bytes). Windows qualification and the first real case
+remain stretch steps. No guard lowering, automatic retries or scientific
+admission are authorized.
 
 ## Repository publication: 3 October 2026, 18:22 UTC
 
