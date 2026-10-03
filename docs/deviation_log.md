@@ -4276,3 +4276,34 @@ path inside `main()`; this session invokes it in module mode as documented.
 The canonical source pin moved from `423faa13` to
 `23bdfb5fc60e4b64fe3b6f7de185253f1839aeeaa2ff9aeb6e995b043ad3093b`; the
 guarded quality attempt targets the new pin.
+
+## Full-suite pre-verification and three Windows test repairs: 3 October 2026, 19:55 UTC
+
+Before spending the scarce 10 GiB window on the guarded attempt, the full
+pytest suite was pre-verified unguarded at ~5-7 GiB available RAM:
+**3 failed, 1038 passed, 3 skipped, 1121 subtests passed in 1727 s** (the
+historical 1 October pointer failure's nine selector-budget failures are
+already repaired at this source). The three failures were diagnosed and
+repaired:
+
+1. `tests/test_phase2_cho_execution.py::test_parent_claim_rehash_cannot_hide_git_provenance_change`
+   and 2. `tests/test_phase2_cho_sweep_resume.py::SweepResumeTests::test_resealed_historical_claim_cannot_complete_a_current_cell`
+   resealed forged records with `Path.write_text(... + "\n")`, which on
+   Windows writes CRLF, so the (correct) canonical-bytes guard refused the
+   forged file before the provenance branch under test. Both now write exact
+   bytes with `write_bytes((...) + "\n").encode("utf-8")`, preserving the
+   adversarial intent. These tests had never executed before (per the 30h
+   ledger M2 note).
+3. `tests/test_phase2_cho_sweep.py::ProductionChoCaseRunnerTests::test_eegnet_case_full_real_wiring_and_ceiling_boundaries`
+   failed because the fixture's hard-coded method template lacked the
+   `support.query_batch_size` field (default 8) that the typed candidate
+   schema now carries; both candidates now include it.
+
+After the fixes the three tests and all 65 tests in the three files pass;
+ruff passes. Strict mypy over the three TEST files reports 27 pre-existing
+structural findings (FakeRecorder arg-types, JsonValue indexing, untyped
+braindecode import) at sites unrelated to these edits; test files are outside
+the authoritative seven-package types gate, so these are recorded as known
+out-of-gate findings, not gate blockers. Canonical source pin moves from
+`23bdfb5f` to `88de6af5ae1595c40f4da6e23a9facac770c285f2e86d71db3f9d0f68c8d9698`;
+the guarded attempt targets the new pin.

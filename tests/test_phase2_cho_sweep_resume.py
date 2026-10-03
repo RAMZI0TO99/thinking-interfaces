@@ -155,9 +155,9 @@ class SweepResumeTests(unittest.TestCase):
         )
         claim = json.loads(claim_path.read_text("utf-8"))
         claim["payload"]["source"]["source_sha256"] = "9" * 64
-        claim_path.write_text(canonical_config_json(envelope(
+        claim_path.write_bytes((canonical_config_json(envelope(
             "engineering_smoke", claim["payload"],
-        )) + "\n", encoding="utf-8")
+        )) + "\n").encode("utf-8"))
         receipt = self.run_sweep()
         self.assertEqual(receipt["completed_cases"], 0)
         self.assertEqual(receipt["status"], "stopped")

@@ -390,7 +390,7 @@ def test_parent_claim_rehash_cannot_hide_git_provenance_change(
         record = json.loads(claim.read_bytes())
         record["payload"]["source"]["git_commit"] = "2" * 40
         forged = envelope("engineering_smoke", record["payload"])
-        claim.write_text(canonical_config_json(forged) + "\n", encoding="utf-8")
+        claim.write_bytes((canonical_config_json(forged) + "\n").encode("utf-8"))
         with pytest.raises(ValueError, match="parent final claim provenance"):
             execution.verify_parent_claim(
                 recorder, plan, identity, attempt=1, expected_source=asdict(source)
