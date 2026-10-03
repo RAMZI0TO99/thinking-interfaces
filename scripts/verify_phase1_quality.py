@@ -15,9 +15,13 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, TextIO
 
-from core.provenance import capture_source, source_fingerprint
-from evaluation.quality_audit import QUALITY_COMMANDS
-from scripts.run_guarded_quality import OwnedProcessTree
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from core.provenance import capture_source, source_fingerprint  # noqa: E402
+from evaluation.quality_audit import QUALITY_COMMANDS  # noqa: E402
+from scripts.run_guarded_quality import OwnedProcessTree  # noqa: E402
 
 QUALITY_COMMAND_TIMEOUT_SECONDS = 3600
 QUALITY_PROCESS_POLL_SECONDS = 0.1

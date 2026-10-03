@@ -19,14 +19,31 @@ interval record in `runs/coordination/` will be honored by holding
 pro3-owned Python/tests/Jobs for the agreed interval.
 
 The selected first step is the [quality phase](runs/coordination/next_step_20261003_quality/phase_plan.json):
-one guarded full-quality attempt on `423faa13` with a fresh attempt directory
-and current-pointer publication (`--startup-ram-gib 10`, wall 4200 s). It
+one guarded full-quality attempt with a fresh attempt directory and
+current-pointer publication (`--startup-ram-gib 10`, wall 4200 s). It
 subsumes lint, strict types and the full test suite, replacing a sixth
 isolated type attempt; TYPE004's observed mypy 0/205 remains historical.
+
+Preflight found and fixed a real blocker: running
+`scripts/verify_phase1_quality.py` in script mode (exactly how the guarded
+runner and the tracked pre-commit hook invoke it) failed with
+`ModuleNotFoundError: No module named 'scripts'`, because the venv's editable
+install maps only the six pyproject packages and script mode does not put the
+project root on `sys.path`. The fix adds the same guarded root bootstrap
+already used by `scripts/run_guarded_quality.py` to the two execution-path
+entry points (`verify_phase1_quality.py`, `run_no_future_matched_control.py`);
+whole-project ruff and strict mypy (205 files) pass, and the
+[independent patch audit](runs/coordination/next_step_20261003_quality/source_fix_audit_001.json)
+accepted it `ACCEPTED_STATIC_ONLY` with no blockers. The canonical pin
+therefore moved from `423faa13` to
+`23bdfb5fc60e4b64fe3b6f7de185253f1839aeeaa2ff9aeb6e995b043ad3093b`, which the
+guarded attempt now targets. The audit also noted
+`refresh_source_bound_controls.py` must be invoked in module mode, which this
+session uses.
+
 Because RAM is below the 10 GiB startup floor, a read-only
 [RAM monitor](runs/coordination/next_step_20261003_quality/ram_monitor.py)
-waits for two consecutive qualifying samples while light preflight
-(native Ruff, informational strict mypy) and documentation proceed. After a
+waits for two consecutive qualifying samples. After a
 pass and its independent audit, the plan refreshes the 45 source-bound and 36
 no-future controls on the current source. Windows qualification and the first
 real case remain stretch steps behind the same floors. No guard lowering,

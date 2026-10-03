@@ -4251,3 +4251,28 @@ sixth isolated type attempt. A read-only
 waits for two consecutive 10 GiB samples while light preflight and
 documentation proceed. Controls refresh, Windows qualification and the first
 real case follow as floors permit. No guard lowering or scientific admission.
+
+## Execution-path import fix: 3 October 2026, 19:20 UTC
+
+Session preflight reproduced a deterministic blocker: `scripts/verify_phase1_quality.py`
+executed in script mode (the exact child invocation of the guarded quality
+runner and of the tracked pre-commit hook) crashed with
+`ModuleNotFoundError: No module named 'scripts'` before creating any output.
+Cause: the venv's editable install maps only the six pyproject packages
+(`core`, `encoder`, `adaptation`, `data`, `realtime`, `evaluation`), script
+mode puts the scripts directory rather than the project root on `sys.path`,
+and the file imports `from scripts.run_guarded_quality import ...`.
+`scripts/run_no_future_matched_control.py` has the identical latent fault on
+its `from scripts.refresh_source_bound_controls import ...` line.
+
+The repair adds the guarded root bootstrap already used at the top of
+`scripts/run_guarded_quality.py` to exactly those two files; no other logic,
+literals, guards or outputs changed. Whole-project ruff, strict mypy over 205
+files, and script-mode `--help` from a foreign cwd all pass for both files.
+The [independent patch audit](../runs/coordination/next_step_20261003_quality/source_fix_audit_001.json)
+accepted the change `ACCEPTED_STATIC_ONLY` with no blockers, and noted that
+`refresh_source_bound_controls.py` remains script-mode-unsafe on its training
+path inside `main()`; this session invokes it in module mode as documented.
+The canonical source pin moved from `423faa13` to
+`23bdfb5fc60e4b64fe3b6f7de185253f1839aeeaa2ff9aeb6e995b043ad3093b`; the
+guarded quality attempt targets the new pin.

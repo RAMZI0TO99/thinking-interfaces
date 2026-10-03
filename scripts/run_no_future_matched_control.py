@@ -47,9 +47,13 @@ from evaluation.source_bound_controls import (
     resolved_config,
     unit_name,
 )
-from scripts.refresh_source_bound_controls import prediction_capture
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.refresh_source_bound_controls import prediction_capture  # noqa: E402
+
 LOCK_RELATIVE = f"{RUNS_RELATIVE}/.run.lock"
 WRITER_TIMEOUT_SECONDS = 1800
 POLL_SECONDS = 2.0
