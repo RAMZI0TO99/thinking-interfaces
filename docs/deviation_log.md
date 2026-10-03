@@ -4446,3 +4446,12 @@ informed via
 including the honest disclosure that its request-002 acknowledgement never
 arrived before execution and that the ceremony's failures were unrelated to
 its workloads.
+
+## Named-Job repair mechanism validated by probe: 3 October 2026, 23:40 UTC
+
+The repair proposed in the Windows-qualification root-cause record was
+validated under the same jobbed host: a child process opened the named
+ceremony-style Job by name, read back its exact `0x2300` flags and both
+6 GiB caps through an explicit handle, and verified its own membership —
+all steps green (`repair_probe_out.txt` in the diagnostics directory). The
+next session can implement the V4 package repair from a proven mechanism.
