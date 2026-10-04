@@ -4687,3 +4687,82 @@ the previous pin `88de6af5` and must be regenerated (fresh audits,
 admission and inputs) after the new environment pin lands. The failed
 first-case attempt `execcase88de6af5c001` remains preserved with
 quarantined outputs and a manual recovery record.
+
+## Quality pass on the repaired source after a day of RAM contention: 4 October 2026, 17:58 UTC
+
+The repaired pin 62536382 got its guarded full-quality pass on the fifth
+honest attempt of the day. Attempts guarded4-6 were refused at the startup
+floor seconds after watcher gates of 10.14-10.20 GiB (the boundary flaps
+~0.3 GiB within seconds; receipts preserved), and guarded7 was killed by the
+safety floor 16 minutes in when the user's WSL VM returned mid-run (min RAM
+3.93 GiB). The user then closed WSL deliberately and held it closed;
+guarded8 ran clean 16:54:04-17:29:31Z (lint/types/tests exit 0, min RAM
+10.62 GiB) and published the pointer (09df1f6b...; the 88de6af5 pointer
+152f972e... preserved). An independent subagent audit recomputed 57 checks
+and accepted it (ACCEPTED_QUALITY_PASS_ENGINEERING_ONLY, zero blockers;
+1041 passed / 3 skipped / 1121 subtests).
+
+Operational lessons recorded: (1) killing another session's background task
+makes its harness respawn it ~60 s later - suspend (NtSuspendProcess) is the
+durable neutralization, and the respawn/interference is documented in
+session_20261004_next/old_retry_respawn_note_001.json; (2) a two-sample RAM
+gate at the floor is insufficient - the watcher now requires three samples
+spanning the launcher's own startup re-sampling delay (~32 s); (3) the WSL
+VM re-absorbs any RAM the user frees within minutes, so a sustained window
+requires the VM actually down for the whole run.
+
+With the pointer authoritative, the chain advanced rapidly: the fresh Torch
+environment pin passed supervised inside the original deadline (release
+b003, candidate_pass, ~13 s child), the 45 source-bound controls (45/45,
+mean 0.2486) and 36 no-future controls (36/36, mean 0.2451, raw writer
+verified) re-ran on the pin in fresh namespaces, and the 52-source raw
+verifier was repinned and passed (10.7 GB rehashed). Because the supervisor
+launcher's hardcoded 17:45Z global deadline passed during the RAM wait, a
+V5 package extends only that literal to 21:00Z (reverse-provable
+substitution, provenance + independent static review in the package dir);
+the fresh prerequisite board was delegated to an independent subagent. Gate
+A and the experiment freeze remain unsigned; nothing here is a scientific
+result.
+
+## First real Cho engineering case completes after measured cap recalibration: 4 October 2026, 19:35 UTC
+
+The fresh prerequisite board (first_case_prep_20261004_v2, 74 checks) caught
+four real launch blockers before execution: V5 was structurally unlaunchable
+(parent.py and design.json carry their own 17:45Z deadline literals),
+recorder state from the failed 88de6af5 attempt blocked the case claim
+(resolved by deliberate bit-exact quarantine relocation), the working tree
+was dirty relative to the env pin's captured source (resolved by reverting
+the deviation-log edit until post-run), and the controls36 audit pins the
+live session ledger (ordering constraint). The V5->V6 package fix was itself
+REJECTED by its review (a build-loop overwrite left one design.json literal
+unsubstituted - exactly why every package gets an independent review); V7
+passed.
+
+The first execute attempt (c002) then exposed the real memory envelope: the
+inner CLI died at its first-fold data load with a numpy MemoryError, and the
+kernel-tracked parent receipt proved the 6 GiB AGGREGATE Job cap was hit
+exactly (peak_job 6.001 GiB; single process only 3.38 GiB). The case
+receipt itself labels the cap "initial_unmeasured_engineering_probe; no
+production cap ratified", so the designed path was measured recalibration:
+V8 raised only the aggregate cap to 7.5 GiB (process stays 6 GiB, keeping
+the source ceiling and pin 62536382 untouched) - and was REJECTED by review
+(the parent's post-run peak gate still bounded aggregates at 6 GiB); V9
+fixed that and was REJECTED again (the child's contract validation still
+compared aggregates to the 6 GiB constant - inherited from V8 and missed by
+its review); V10 passed an exhaustive 42-site inventory review.
+
+c003 then ran the fixed case (EEGNet / subject_01 / seed 11 / 5 shots) to
+completion in 244 s under supervision_reason normal: process peak 4.05 GiB,
+aggregate peak 6.673 GiB (inside the recalibrated cap, proving the
+measurement right), exactly one accepted engineering cell published
+(balanced accuracy 79/160 on the 160-trial query with bound selection
+evidence), success record and publication intent durable, parent
+attestation present, no recovery required. The native launcher then
+rejected at its own final validation - a never-exercised field-name defect
+(it checks result.completion.measured_cases while the child schema emits
+'measured'; every real field matched). Recorded as a launcher finding for
+future cases; the published cell stands on the recorder's own acceptance.
+All failed attempts (c001, c002, guarded4-7, V6/V8/V9 packages) are
+preserved with their receipts. Gate A and the experiment freeze remain
+unsigned; the balanced-accuracy number is engineering output, not a
+scientific claim.

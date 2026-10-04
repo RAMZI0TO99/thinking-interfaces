@@ -1,6 +1,28 @@
 # Project coordination
 
-## Current session coordination: next-session chain on repaired source, 4 October 2026, 14:55 UTC
+## Current session coordination: FIRST CASE COMPLETE, chain done, 4 October 2026, 19:45 UTC
+
+The 4 October chain completed end-to-end under the user's directions
+(16:23Z "go do your thing"; 17:40Z "go back to work"; the user closed WSL
+twice to open RAM windows and held it closed for the final pass). Canonical
+pin `62536382…` unchanged throughout; working tree `30794ac` clean during
+execution. Summary: guarded quality pass guarded8 + audit; env pin b003;
+controls 45/36 + raw on the pin; board `first_case_prep_20261004_v2` (four
+launch blockers caught pre-execution); c002 measured the 6 GiB aggregate
+Job cap as insufficient (kernel evidence 6.001 GiB); V8/V9 recalibration
+packages rejected by their reviews (real catches), V10 accepted (process 6
+GiB unchanged, aggregate 7.5 GiB); **c003 completed the fixed first case**
+— one accepted engineering cell (balanced accuracy 79/160), peaks 4.05 /
+6.67 GiB, post-run audit ACCEPTED zero blockers, root acceptance recorded
+(engineering only). Recorded finding: the native launcher's final check
+uses a field name the child schema never emits (`measured_cases` vs
+`measured`) — fix in a future package; the published cell stands. All
+failures preserved. The suspended prior-session retry process
+(`old_retry_respawn_note_001.json`) should be terminated when its parent
+session closes. Gate A and the experiment freeze remain unsigned owner
+decisions; the obsolete `6566e348` watcher stays disarmed.
+
+## Session coordination: next-session chain on repaired source, 4 October 2026, 14:55 UTC
 
 Session resumed at 14:30 UTC by the next coordinator under the standing
 next-session delegation; state re-verified live (pin `62536382`, git clean at

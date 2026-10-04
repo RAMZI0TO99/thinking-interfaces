@@ -2,6 +2,8 @@
 
 Phase I builds a reproducible EEG-decoding harness and a working real-time demonstration. Research claims begin only in Phase II.
 
+Current engineering status (4 October 2026): the repaired source (pin `62536382…`) carries a guarded full-quality pass with a published pointer, and the first real Cho engineering case (EEGNet / subject_01 / seed 11 / 5 shots) has executed under supervised named-Job containment and published one accepted engineering cell. This is engineering validation only: Scientific Gate A and the experiment freeze are unsigned, and no scientific result is claimed. See [HANDOFF.md](HANDOFF.md) for the current validation limits and evidence map.
+
 The project repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), created as a private repository on 3 October 2026. It preserves the local Git history and publishes the source, configurations, tests and project documentation. Read [HANDOFF.md](HANDOFF.md) for the current validation limits.
 
 Links into `runs/`, `artifacts/`, data caches and checkpoints refer to local evidence or external inputs. These files are intentionally excluded from Git; the repository alone does not contain the runtime receipts, EEG datasets or model weights needed to reproduce every historical run. Historical passing records do not certify the current source. No new validation or experiment is authorized by repository publication.

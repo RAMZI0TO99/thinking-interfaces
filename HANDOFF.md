@@ -7,9 +7,66 @@ step-by-step chain, non-negotiable rules, hard-won pitfalls, and artifact
 locations — is at
 [runs/coordination/session_20261004_next/NEXT_AGENT_PROMPT.md](runs/coordination/session_20261004_next/NEXT_AGENT_PROMPT.md)
 (local evidence directory; not part of the Git publication). Paste it as
-the next agent's first message.
+the next agent's first message. NOTE (4 Oct evening): that prompt describes
+the chain as it stood at 14:25 UTC; the section below records what has
+since completed. Write a fresh prompt from the current state before the
+next session.
 
-## Current state: full chain staged on repaired source 62536382, 4 October 2026, 14:25 UTC
+## Current state: FIRST REAL CHO ENGINEERING CASE COMPLETE, 4 October 2026, 19:45 UTC
+
+Under the user's standing delegation ("go do your thing", "go back to
+work"), the staged chain completed end-to-end on the repaired source pin
+`62536382eb85…` (commit `a2e2bb6`; working tree at `30794ac`, clean during
+execution). Engineering acceptance only — Gate A and the experiment freeze
+remain unsigned owner decisions.
+
+Completed this session, every major step independently audited (receipts
+under `runs/coordination/`):
+
+- **Guarded full-quality PASS on `62536382`** (attempt guarded8,
+  16:54–17:29 UTC, lint/types/tests exit 0, min RAM 10.62 GiB) after four
+  honest floor stops preserved (guarded4–7: three startup flaps and one
+  active-floor kill when the user's WSL VM returned mid-run). Pointer
+  published (`09df1f6b…`); the `88de6af5` pointer preserved. Independent
+  audit: `next_step_20261004_quality/quality_pass_audit_001.json`
+  (ACCEPTED, zero blockers, 57 checks).
+- **Fresh Torch environment pin** supervised via release b003
+  (candidate_pass, ~13 s) inside the original deadline.
+- **Controls 45/45 and 36/36 re-run on the pin** (means 0.2486 / 0.2451 <
+  0.35; fresh namespaces) plus the **52-source raw verifier repinned and
+  passed** (10.7 GB).
+- **Fresh prerequisite board** (`first_case_prep_20261004_v2/`, 74 checks;
+  three ledger re-stamps) — its audit caught four real launch blockers
+  pre-execution (V5 structurally unlaunchable, recorder state, dirty tree,
+  ledger pin ordering).
+- **First execute attempt (c002) measured the memory envelope**: the inner
+  CLI died at a 25 MiB allocation with kernel proof the 6 GiB AGGREGATE Job
+  cap was hit exactly (6.001 GiB; process only 3.38 GiB). The receipt's own
+  `initial_unmeasured_engineering_probe` calibration field authorized
+  measured recalibration → V8 (rejected: parent peak gate), V9 (rejected:
+  child contract gate — both reviews caught real bugs), **V10 accepted**
+  (exhaustive 42-site review): process stays 6 GiB (source ceiling and pin
+  untouched), aggregate raised to 7.5 GiB.
+- **c003 ran the fixed case to completion** (EEGNet / subject_01 / seed 11 /
+  5 shots, 244 s, supervision normal): exactly one accepted engineering
+  cell published — balanced accuracy **79/160 (0.49375)** with bound
+  selection evidence — peaks 4.05 / 6.67 GiB inside caps. Post-run audit
+  ACCEPTED (zero blockers): `session_20261004_next/first_case_postrun_audit_001.json`;
+  root acceptance: `first_case_root_acceptance_001.json`.
+- **Recorded finding**: the native launcher rejected the completed run at
+  its own never-exercised final check (field name `measured_cases` vs the
+  child's `measured`); the cell stands on the recorder's own acceptance.
+  Fix belongs in any future package.
+
+Everything failed along the way is preserved (guarded4–7, c001–c002, V5–V9
+packages with their rejection receipts, recorder quarantines). Remaining
+engineering next steps: fix the launcher field-name check in a future
+package; more engineering cases / methods toward the Phase II comparison
+remain unstarted. Scientific Gate A evidence summary sits in
+`docs/gate_a_status.md` when the user asks; the freeze stays unsigned.
+Historical milestones below are preserved in order.
+
+## Session state: full chain staged on repaired source 62536382, 4 October 2026, 14:25 UTC
 
 Under the user's standing next-session delegation, the 4 October chain
 advanced through every preparable milestone and is now blocked on a single
