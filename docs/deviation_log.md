@@ -4525,3 +4525,31 @@ additionally requires the Windows qualification to pass first, a measured
 Torch environment pin, a fresh scoped engineering admission, two 10 GiB
 startup samples and root physical-exit witness. Gate A and the experiment
 freeze remain unsigned.
+
+## Audit sweep of unaudited session artifacts, remediation verified: 4 October 2026, 08:00 UTC
+
+Per the user's instruction to audit the unaudited work, an independent sweep
+([audit_sweep_001](../runs/coordination/session_20261004_next/audit_sweep_001.json))
+examined every artifact this session produced without a prior receipt: the
+auto-launcher, the four package build scripts, the hand-written release
+record and the session ledger. Findings and outcomes:
+
+- The auto-launcher's release generation was verified field-by-field against
+  both the launcher's and the child's validation code — correct.
+- **DEFECT-001 (real)**: the retry loop was inert (unconditional return
+  inside the tag loop), so a launcher refusal would end the watch. Fixed by
+  rewriting `auto_launch.py`: a real re-gated retry over six one-use tags
+  (c004–c009), one-use existence checks on every release record, an
+  `O_EXCL` single-instance lock, and a JSONL event log of every transition.
+- **DEFECT-002 (false positive)**: the "two live instances" were a
+  venv-launcher trampoline parent-child pair (child ppid == launcher pid) —
+  one logical instance; both were terminated anyway and the new lock makes
+  duplicates structurally impossible.
+- The corrected state was independently re-verified
+  ([audit_sweep_002](../runs/coordination/session_20261004_next/audit_sweep_002.json),
+  REMEDIATION_VERIFIED): one live instance holding the lock, event log
+  consistent, old PIDs gone, release semantics unchanged.
+- Low-severity documentation items (build scripts partially generate the
+  provenance chains; ledger wording) were recorded and stand as notes.
+
+The launcher remains armed behind the unchanged 10 GiB gate.
