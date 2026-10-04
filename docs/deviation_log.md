@@ -4455,3 +4455,40 @@ ceremony-style Job by name, read back its exact `0x2300` flags and both
 6 GiB caps through an explicit handle, and verified its own membership —
 all steps green (`repair_probe_out.txt` in the diagnostics directory). The
 next session can implement the V4 package repair from a proven mechanism.
+
+## Named-Job repair implemented through V4-V6 review iterations: 4 October 2026, 06:40 UTC
+
+Under the next-session authorization (`runs/coordination/session_20261004_next.json`),
+the validated named-Job repair was implemented as successive sealed packages,
+each independently reviewed by the same reviewer agent whose blockers drove
+the fixes:
+
+- **V4** (`windows_qualification_20261004_v4`, manifest `c9a99c9a…`): the
+  repair itself — `current_job` opens the named ceremony/per-leaf Job via
+  `OpenJobObjectW`, verifies exact limits by handle and own membership via
+  `IsProcessInJob`; the adapter names the ceremony Job
+  (`pro3_winqual_{attempt_id}`) and the contract carries
+  `ceremony_job_name`; leaves receive `--job-name` with cancel-root and
+  grandchild sharing one name; caps/deadlines/pins updated. Review
+  `repair_review_001.json` **REJECTED**: BLOCKER-001 — `leaf_verified`'s
+  strict dict equality can never accept the additive `job_name` key.
+- **V5** (`…_v5`, manifest `45a9208c…`): per-key comparison added. Review
+  `repair_review_002.json` **REJECTED**: BLOCKER-002 — the generator used
+  `is` (identity), which fails for large ints from `json.loads`
+  (empirically demonstrated: `limit_flags` 8448 and 6 GiB/64 MiB caps are
+  never identical).
+- **V6** (`…_v6`, manifest `2f8aaacf…`): `==` equality with the strict
+  boolean retained. Review `repair_review_003.json`
+  **ACCEPTED_REPAIRED_SEALED_PREPARATION_ONLY** with zero blockers; the
+  reviewer re-demonstrated acceptance for both cap classes, rejection of
+  tampered flags, and tolerance of additive keys.
+
+Release `release_001.json` (window 06:03–06:18Z) expired unconsumed:
+available RAM stayed 5.7–7.5 GiB (largest holders: `vmmemWSL` 3.6 GiB —
+preserved per the standing no-reclaim direction — Windows memory compression
+and a security agent; neither project runs compute). An auto-launcher
+(`windows_qualification_20261004_v6_build/auto_launch.py`) now gates on two
+fresh ≥10.05 GiB samples, writes a fresh one-use release per try
+(tags c004–c006) and invokes the sealed V6 launcher, bounded by the session
+cap 17:45Z. No guard lowered; all V3-V6 packages, reviews and releases
+preserved; the qualification remains unaccepted until a ceremony passes.
