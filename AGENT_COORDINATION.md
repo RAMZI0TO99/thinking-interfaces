@@ -1,6 +1,28 @@
 # Project coordination
 
-## Current session coordination: next-session chain on repaired source, 4 October 2026, 14:25 UTC
+## Current session coordination: next-session chain on repaired source, 4 October 2026, 14:55 UTC
+
+Session resumed at 14:30 UTC by the next coordinator under the standing
+next-session delegation; state re-verified live (pin `62536382`, git clean at
+`4bddd27` = remote main, pointer still on `88de6af5`, prior retry alive but
+unfired). The user then directed (14:44 UTC): **WSL stays up — "work with the
+ram you have"** — after freeing other RAM (native avail 7.33 → ~9.75 GiB,
+cycling back to ~8). The WSL-down-gated auto-retry was superseded and stopped
+([decision](../runs/coordination/session_20261004_next/quality_retry_supersession_001.json));
+its successor
+([quality_retry_ram_only.py](../runs/coordination/session_20261004_next/quality_retry_ram_only.py))
+fires the guarded pass on the native metric alone (two-sample 10.05 GiB gate,
+fresh dirs `guarded4..guarded7`, launch deadline 16:25Z, single launcher path).
+The V4 runtime record was re-verified reproducing exactly. Chain after the
+pass: independent audit → M4b V4 env pin (release b003 builder staged) →
+controls 45/36 re-run on `62536382` (module mode; the child gate requires
+current-source control records and a pointer-bound writer check) → fresh raw
+receipt → prerequisite-board regeneration (subagent) → first-case execute
+launch before the launcher's hardcoded 17:45Z global deadline. Gate A and the
+experiment freeze remain unsigned owner decisions; the obsolete `6566e348`
+watcher stays disarmed; floors unchanged.
+
+## Session coordination: next-session chain on repaired source, 4 October 2026, 14:25 UTC
 
 The user's standing next-session delegation governs ("decide for me and do
 what you see fit"; "next step"; "update the docs and handoff"). The
