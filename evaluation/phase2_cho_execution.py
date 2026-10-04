@@ -18,12 +18,13 @@ import sys
 import tempfile
 import time
 import tomllib
+import uuid
 from collections.abc import Callable, Mapping, Sequence
 from contextlib import suppress
 from dataclasses import asdict, dataclass, replace
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from core.config import canonical_config_json, config_digest
 from core.provenance import capture_source
@@ -316,8 +317,14 @@ def _runtime(threads: int, expected_environment: str) -> None:
         raise ValueError("configured runtime differs from the external environment pin")
 
 
-def _require_capped_job(memory_limit: int) -> None:
-    """Refuse direct unsupervised invocation before importing a training runtime."""
+def _require_capped_job(memory_limit: int, job_name: str) -> None:
+    """Refuse direct unsupervised invocation before importing a training runtime.
+
+    The engineering child verifies the EXACT named Job the parent created.
+    A NULL-handle job query cannot identify that Job when the host already
+    nests this process tree inside its own Job, so verification opens the
+    Job by name and queries it through that handle.
+    """
     import ctypes
     from ctypes import wintypes
 
@@ -331,6 +338,12 @@ def _require_capped_job(memory_limit: int) -> None:
     if sys.platform != "win32":
         raise SupervisionError("child requires a capped Windows Job Object")
     kernel = ctypes.WinDLL("kernel32", use_last_error=True)
+    open_job = kernel.OpenJobObjectW
+    open_job.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.LPCWSTR]
+    open_job.restype = wintypes.HANDLE
+    is_in_job = kernel.IsProcessInJob
+    is_in_job.argtypes = [wintypes.HANDLE, wintypes.HANDLE, ctypes.POINTER(wintypes.BOOL)]
+    is_in_job.restype = wintypes.BOOL
     query = kernel.QueryInformationJobObject
     query.argtypes = [
         wintypes.HANDLE,
@@ -340,20 +353,32 @@ def _require_capped_job(memory_limit: int) -> None:
         ctypes.POINTER(wintypes.DWORD),
     ]
     query.restype = wintypes.BOOL
+    if not job_name:
+        raise SupervisionError("named engineering Job required before any training import")
+    named = open_job(0x0007, False, job_name)
+    if not named:
+        raise SupervisionError("named engineering Job unavailable")
     limits = _ExtendedLimit()
-    if (
-        not query(
-            None,
-            JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
-            ctypes.byref(limits),
-            ctypes.sizeof(limits),
-            None,
-        )
-        or limits.BasicLimitInformation.LimitFlags
-        != JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE | JOB_OBJECT_LIMIT_PROCESS_MEMORY
-        or limits.ProcessMemoryLimit != memory_limit
-    ):
-        raise SupervisionError("child is not inside the exact capped kill-on-close Job")
+    present = wintypes.BOOL()
+    member = wintypes.HANDLE(-1)
+    try:
+        if (
+            not is_in_job(member, wintypes.HANDLE(named), ctypes.byref(present))
+            or not present.value
+            or not query(
+                wintypes.HANDLE(named),
+                JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
+                ctypes.byref(limits),
+                ctypes.sizeof(limits),
+                None,
+            )
+            or limits.BasicLimitInformation.LimitFlags
+            != JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE | JOB_OBJECT_LIMIT_PROCESS_MEMORY
+            or limits.ProcessMemoryLimit != memory_limit
+        ):
+            raise SupervisionError("child is not inside the exact capped kill-on-close Job")
+    finally:
+        kernel.CloseHandle(wintypes.HANDLE(named))
 
 
 def _contract_guard(root: Path, contract: Mapping[str, Any]) -> dict[str, Any]:
@@ -441,7 +466,7 @@ def run_cho_execution_child(
         or direct_path(root, contract["deadline_path"]) != contract_path.parent / "deadline.json"
     ):
         raise ValueError("child output or deadline is outside this attempt's quarantine")
-    _require_capped_job(limits.process_memory_limit_bytes)
+    _require_capped_job(limits.process_memory_limit_bytes, str(contract["job_name"]))
     pins = _contract_guard(root, contract)
     _runtime(limits.torch_threads, pins["environment_sha256"])
     from evaluation.phase2_cho_case_inputs import ChoCaseInputPins, prepare_cho_first_tranche
@@ -683,6 +708,39 @@ def verify_staged_proposal(
     )
 
 
+def _named_job_supervisor(job_name: str) -> Callable[..., SupervisionResult]:
+    """Wrap run_supervised so the created Job carries the contract's name.
+
+    The child opens this exact Job by name (see _require_capped_job); a
+    NULL-handle query cannot identify it when the host nests the process
+    tree inside its own Job. The primitive binds create_job per instance,
+    so the name is injected by replacing the API class for the call window
+    and restoring it afterwards.
+    """
+    from evaluation import phase2_supervision_primitives as primitive
+
+    class NamedApi(primitive._WinApi):
+        def __init__(self) -> None:
+            super().__init__()
+            bound_create_job = self.create_job
+
+            def named_create_job(*args: Any) -> Any:
+                return bound_create_job(args[0], job_name)
+
+            cast(Any, self).create_job = named_create_job
+
+    original_api = primitive._WinApi
+
+    def supervisor(command: Sequence[str], **kwargs: Any) -> SupervisionResult:
+        cast(Any, primitive)._WinApi = NamedApi
+        try:
+            return run_supervised(command, **kwargs)
+        finally:
+            cast(Any, primitive)._WinApi = original_api
+
+    return supervisor
+
+
 def supervise_attempt(
     *,
     root: Path,
@@ -700,6 +758,11 @@ def supervise_attempt(
     status = "stopped"
     reason = "supervision_not_started"
     error_text: str | None = None
+    if supervisor is run_supervised:
+        job_name = contract.get("job_name")
+        if not job_name:
+            raise SupervisionError("named engineering Job required before supervision")
+        supervisor = _named_job_supervisor(str(job_name))
     try:
         _resources(root, launching=True)
         fresh_record(
@@ -798,6 +861,7 @@ def prepare_attempt(
     contract = {
         **dict(context), "schema": "cho_engineering_child_contract_v1",
         "case": asdict(case), "limits": asdict(limits),
+        "job_name": f"pro3_choexec_{uuid.uuid4().hex}",
         "deadline_path": deadline_path.relative_to(root).as_posix(),
         "staged_recorder_path": (attempt_dir / "staged_recorder").relative_to(root).as_posix(),
         "proposal_path": (attempt_dir / "proposal.json").relative_to(root).as_posix(),

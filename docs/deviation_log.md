@@ -4627,3 +4627,30 @@ but it lives in project source: fixing it moves the canonical pin off
 `88de6af5` and requires the matching revalidation cascade (pin, scoped
 checks/full quality, fresh environment pin, fresh inputs board) before
 the case can relaunch. That cascade is the staged next action.
+
+## Named-Job repair applied to project source: 4 October 2026, 13:25 UTC
+
+The first real case's innermost-child refusal (third host-Job NULL-query
+occurrence) was repaired in `evaluation/phase2_cho_execution.py`: the child
+now verifies the exact **named** engineering Job
+(`_require_capped_job(memory_limit, job_name)` opens it via
+`OpenJobObjectW`, checks the limits through that handle and its own
+membership via `IsProcessInJob`, refusing when unnamed), the contract
+carries `job_name` (`pro3_choexec_{uuid}`), and `supervise_attempt` wraps
+the default `run_supervised` with `_named_job_supervisor` — a scoped
+class-replacement of the primitive's API class that rebinds `create_job`
+per instance (the proven V6/M4b pattern). The first wrapper draft used a
+class-attribute patch that the independent audit proved could never work
+(`create_job` is bound per-instance in `__init__` — audit-001 REJECTED
+with live reproduction); the stopped quality run on the intermediate pin
+`a87a1615` certified nothing. The corrected repair was verified live
+end-to-end (a real child inside the named Job executed
+`_require_capped_job` successfully), passes ruff + strict mypy + 46
+focused tests, and was re-audited
+([source_repair_audit_002](../runs/coordination/next_step_20261004_source_repair/source_repair_audit_002.json),
+ACCEPTED_SOURCE_REPAIR_VERIFIED, zero blockers; a wrapper-path regression
+test is a recorded advisory). Canonical pin:
+`62536382eb85a7626d6d45b110b688dbb374281d136733e75cf77301a4c77cf0`; a
+guarded full-quality pass on this pin is running and its receipt is the
+authoritative current-source quality evidence. The M4b supervisor was
+repinned to the new source (V4 package, fresh runtime record).
