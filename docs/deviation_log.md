@@ -4492,3 +4492,36 @@ fresh ≥10.05 GiB samples, writes a fresh one-use release per try
 (tags c004–c006) and invokes the sealed V6 launcher, bounded by the session
 cap 17:45Z. No guard lowered; all V3-V6 packages, reviews and releases
 preserved; the qualification remains unaccepted until a ceremony passes.
+
+## First-case supervisor repinned and repaired for the current source: 4 October 2026, 07:45 UTC
+
+While the qualification auto-launcher waits for RAM recovery, the next chain
+step was prepared. The frozen M4b first-case supervisor
+(`runs/coordination/first_case_supervision/`, binding source `9d32cb1a` and
+the expired 2026-10-02 deadline) was repinned in two reviewed stages:
+
+- **V1** (`first_case_supervision_20261004_v1/`): four literal pairs
+  (source→`88de6af5`, both deadline forms→2026-10-04T17:45:00, the parent's
+  deadline constructor), fresh native runtime record (33 rows, digest
+  `1013164d…`), reverse-byte proofs. Review `repin_review_001.json`
+  ACCEPTED_STATIC_PREPARATION_ONLY — but its point-7 note wrongly called the
+  child's NULL-handle job query "distinct" from the host-Job defect.
+- **V2** (`first_case_supervision_20261004_v2/`): direct inspection proved
+  the child's `require_outer_job` does the exact flags/limits comparison
+  against a NULL-handle `QueryInformationJobObject` — the identical
+  cannot-pass defect under this jobbed host (the first real case would have
+  refused at "verified outer6GiB … Job required before imports"). The
+  validated named-Job repair was applied: the parent names the outer Job
+  (`pro3_firstcase_{attempt_id}`), passes `--job-name`, and the child
+  verifies by open-by-name, explicit-handle limits query and own-membership
+  check. Review `repair_review_001.json`
+  ACCEPTED_REPAIRED_STATIC_PREPARATION_ONLY with the point-7 correction
+  retracted on the record; V1 and the frozen original are marked
+  must-not-execute.
+
+Both stages preserve their originals byte-exactly; all packages, reviews and
+runtime records are under `runs/coordination/`. First-case execution
+additionally requires the Windows qualification to pass first, a measured
+Torch environment pin, a fresh scoped engineering admission, two 10 GiB
+startup samples and root physical-exit witness. Gate A and the experiment
+freeze remain unsigned.
