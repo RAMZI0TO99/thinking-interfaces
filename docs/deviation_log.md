@@ -4553,3 +4553,32 @@ record and the session ledger. Findings and outcomes:
   provenance chains; ledger wording) were recorded and stand as notes.
 
 The launcher remains armed behind the unchanged 10 GiB gate.
+
+## Windows qualification PASSES on the repaired V6 package: 4 October 2026, 10:35 UTC
+
+After the user freed RAM at ~10:24 UTC, the audited auto-launcher's gate
+passed and fired the sealed V6 ceremony under one-use release
+`release_auto_c004.json` at 10:27:27Z. **All three scenarios passed in 8.45
+seconds** — normal nested exit, exact owned-tree cancellation (live-PID
+witness before termination) and the 64 MiB cap denying the 96 MiB allocation
+— with the launcher observing its owned parent's physical exit 0 at
+10:27:41Z. The attempt receipts record `candidate_pass`,
+`validation_passed`, `source_stable` (88de6af5) and
+`whole_job_cleanup_confirmed` true with `manual_review_required` false;
+the named-Job repair is visible in the evidence itself (outer Job
+`pro3_winqual_{attempt_id}` at 0x2300/6 GiB/6 GiB; per-leaf Jobs
+`{ceremony}:{role}` at 0x2100 with the scenario-specific process caps).
+Root acceptance is recorded separately per the ceremony's design
+([root_acceptance_001](../runs/coordination/windows_qualification_20261004_v6/root_acceptance_001.json)),
+and the independent post-run audit recomputed every hash, window and pin
+([postrun_audit_001](../runs/coordination/windows_qualification_20261004_v6/postrun_audit_001.json),
+ACCEPTED_QUALIFICATION_PASS_ENGINEERING_ONLY, zero blockers). This is the
+first Windows-supervision qualification pass in project history; engineering
+acceptance only — Gate A and the experiment freeze remain unsigned.
+
+Immediately after, the next chain step began: the Torch environment pin via
+the repaired M4b supervisor's `prepare-environment` mode. Release
+`release_env_001.json` was written to the V2 package's schema; two launch
+attempts were refused at the launcher's own two-fresh-10-GiB-sample gate
+(RAM settled at 9.3–9.9 GiB). A dedicated RAM-gated auto-launcher is being
+armed for it.
