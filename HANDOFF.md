@@ -1,5 +1,14 @@
 # Project handoff
 
+## Resume prompt for the next agent
+
+The full resume prompt — required reading order, exact current state, the
+step-by-step chain, non-negotiable rules, hard-won pitfalls, and artifact
+locations — is at
+[runs/coordination/session_20261004_next/NEXT_AGENT_PROMPT.md](runs/coordination/session_20261004_next/NEXT_AGENT_PROMPT.md)
+(local evidence directory; not part of the Git publication). Paste it as
+the next agent's first message.
+
 ## Current state: full chain staged on repaired source 62536382, 4 October 2026, 14:25 UTC
 
 Under the user's standing next-session delegation, the 4 October chain
