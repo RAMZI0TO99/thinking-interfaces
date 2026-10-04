@@ -4582,3 +4582,48 @@ the repaired M4b supervisor's `prepare-environment` mode. Release
 attempts were refused at the launcher's own two-fresh-10-GiB-sample gate
 (RAM settled at 9.3–9.9 GiB). A dedicated RAM-gated auto-launcher is being
 armed for it.
+
+## Environment pin passes; first case attempt exposes the host-Job defect in project source: 4 October 2026, 12:50 UTC
+
+The RAM floor was cleared by an explicit delegated decision
+([wsl_shutdown_decision_001](../runs/coordination/session_20261004_next/wsl_shutdown_decision_001.json);
+data-preserving VM restart under the user's "decide for me" delegation;
+physical free RAM rose 8.16 → 12.94 GiB). Two further real defects were
+found and fixed en route, then the chain advanced two full steps:
+
+- The env-pin watcher was corrected to measure `ullAvailPhys` (the
+  launcher's native metric) after psutil's standby-credited "available"
+  produced phantom margins and seven futile release tags.
+- The M4b supervisor V3
+  ([API-drift repair](../runs/coordination/first_case_supervision_20261004_v3/repair_provenance.json))
+  replaced the removed `primitive.create_deadline_lease` call with the
+  current `DeadlineLease.open_or_create` (observed live as AttributeError
+  in preserved attempts a017/a018).
+- **The Torch environment pin then PASSED** (attempt envpin88de6af5b001,
+  13.1 s): Torch 2.13.0+cu130, threads=1, deterministic algorithms on,
+  full package/GPU inventory, source-bound at `88de6af5` — independently
+  audited with zero blockers
+  ([envpin_audit_001](../runs/coordination/first_case_supervision_20261004_v3/envpin_audit_001.json)).
+- The full first-case prerequisite board was assembled with fresh
+  schema-exact audits (quality, 45/45, 36/36, raw, environment,
+  readiness), an engineering admission, execution pins and the 15-key
+  inputs board (`first_case_prep_20261004/inputs_v1.json`, sha
+  `e9f657df…`).
+- The **first real Cho engineering case was launched** (EEGNet /
+  subject_01 / seed 11, execute mode, release `release_exec_c001.json`).
+  The whole supervision chain worked — launcher, named-Job parent,
+  sweep admission, contract, staged child — and the innermost engineering
+  child refused with
+  `SupervisionError: child is not inside the exact capped kill-on-close
+  Job`. Diagnosis: **the same host-Job NULL-query defect, third
+  occurrence, this time in project source**
+  (`evaluation/phase2_cho_execution.py:340-356` — NULL-handle
+  `QueryInformationJobObject` with exact flag/cap comparison). The
+  attempt is preserved with quarantined staged outputs and a manual
+  recovery record; nothing was retried.
+
+The repair is known and validated (the named-Job pattern, twice proven),
+but it lives in project source: fixing it moves the canonical pin off
+`88de6af5` and requires the matching revalidation cascade (pin, scoped
+checks/full quality, fresh environment pin, fresh inputs board) before
+the case can relaunch. That cascade is the staged next action.
