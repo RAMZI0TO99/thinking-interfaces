@@ -1,6 +1,22 @@
 # Phase II agent handoff
 
-## Active handoff, 1 October 2026
+## Active handoff, 4 October 2026
+
+Use the [root handoff](../HANDOFF.md) and [start page](../PHASE2_START_HERE.md)
+as the current authority. On the repaired source `62536382…`: the guarded
+full-quality pass, fresh environment pin, controls 45/45 + 36/36 and raw
+verification all landed with independent audits, and the **first real Cho
+engineering case published one accepted engineering cell** (EEGNet /
+subject_01 / seed 11 / 5 shots, balanced accuracy 79/160) under the V10
+measured aggregate-cap recalibration (process 6 GiB unchanged, aggregate
+7.5 GiB). Open engineering items: the native launcher's final field-name
+check (`measured_cases` vs the child's `measured`) rejected the completed
+run after publication — fix in a future package; more engineering cases and
+the LaBraM arms of the Phase II comparison remain unstarted. Gate A and the
+scientific freeze remain unsigned. Every section below is historical
+source-specific evidence, not a current execution instruction.
+
+## Historical handoff, 1 October 2026
 
 Use the [root handoff](../HANDOFF.md) and [start page](../PHASE2_START_HERE.md)
 for the active 30-hour engineering session and resource coordination.

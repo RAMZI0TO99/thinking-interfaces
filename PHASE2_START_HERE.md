@@ -1,8 +1,30 @@
 # Phase II - Start Here
 
-The project's new private repository is [thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), preserving its original local history. Source, tests, configurations and plans are included; runtime receipts under `runs/`, EEG data and model weights remain local or external. Publication does not resume research or certify a new validation pass. See [HANDOFF.md](HANDOFF.md) for the publication scope and stopped research status.
+The project's new private repository is [thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), preserving its original local history. Source, tests, configurations and plans are included; runtime receipts under `runs/`, EEG data and model weights remain local or external. Publication does not resume research or certify a new validation pass. See [HANDOFF.md](HANDOFF.md) for the current evidence map.
 
-## Current status: stopped — 3 October 2026, 18:11 UTC
+## Current status: first real Cho engineering case complete — 4 October 2026, 19:45 UTC
+
+**4 October 2026, 19:45 UTC — chain complete (engineering only):** on the
+repaired source pin `62536382…`, the guarded full-quality pass landed
+(attempt guarded8: 1041 tests / lint / types exit 0) with its pointer
+published and independently audited; the fresh Torch environment pin,
+controls 45/45 and 36/36, and the 52-source raw verification re-ran on the
+pin; and the **first real Cho engineering case executed and published one
+accepted engineering cell** (EEGNet / subject_01 / seed 11 / 5 shots,
+balanced accuracy 79/160, 244 s, memory peaks 4.05/6.67 GiB inside the
+measured 6/7.5 GiB caps). A first execute attempt (c002) had measured the
+original 6 GiB aggregate cap as insufficient with kernel evidence; the
+reviewed V10 recalibration (process 6 GiB unchanged, aggregate 7.5 GiB)
+carried the completed run. Every major step has an independent audit
+receipt under `runs/coordination/`; every failure is preserved. One
+recorded finding: the native launcher rejected the completed run at its own
+never-exercised final field check (`measured_cases` vs `measured`); the
+published cell stands and the fix belongs to a future package. **Scientific
+Gate A and the experiment freeze remain unsigned owner decisions; no
+scientific result is claimed.** See [HANDOFF.md](HANDOFF.md) for the full
+chain and evidence links.
+
+## Historical: stopped — 3 October 2026, 18:11 UTC
 
 **3 October 2026, 18:11 UTC — stopped:** The final TYPE005 attempt hit its session deadline and produced no completed mypy result. Its native command exited 1 in 96.922 seconds, within the 120-second limit; scoped cleanup and peer release are confirmed. The [independent failure audit](runs/coordination/next_step_20261003_types5/type_execution_audit_001.json) and [root closeout](runs/coordination/next_step_20261003_types5/root_manual_failure_review_001.json) accept failure evidence only; no new component, type or runtime pass is claimed. Work is stopped at the user's request, with no retry or next phase queued. The original goal is already complete and no active goal remains. Full QA/Windows, the failed quality pointer, 10 GiB floors and unsigned scientific gates remain unchanged. See [HANDOFF.md](HANDOFF.md).
 

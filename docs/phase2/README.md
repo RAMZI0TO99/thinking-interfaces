@@ -1,6 +1,22 @@
 # Phase II implementation status
 
-## Active status, 1 October 2026
+## Active status, 4 October 2026
+
+The [root handoff](../../HANDOFF.md) and [start page](../../PHASE2_START_HERE.md)
+track the executed chain and its independent audits. On the repaired source
+`62536382…`: guarded full-quality pass with published pointer (attempt
+guarded8, audited), fresh supervised environment pin (b003), controls
+45/45 and 36/36 plus the 52-source raw verification re-run on the pin, and
+the **first real Cho engineering case complete** — one accepted engineering
+cell published (EEGNet / subject_01 / seed 11 / 5 shots, balanced accuracy
+79/160) under the reviewed V10 aggregate-cap recalibration (process 6 GiB,
+aggregate 7.5 GiB, kernel-measured from the c002 attempt). The native
+launcher's final field-name check is a recorded open defect. Scientific
+freeze and Gate A remain unsigned; no scientific result is claimed. The
+following sections preserve historical evidence for their named sources
+only.
+
+## Historical status, 1 October 2026
 
 The [root handoff](../../HANDOFF.md) and [start page](../../PHASE2_START_HERE.md)
 track the user-authorized 30-hour work session, independent audits and

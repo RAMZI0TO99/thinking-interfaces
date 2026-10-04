@@ -6,6 +6,12 @@ On 2026-08-30, the user explicitly directed the build to continue to the next
 milestone despite this unsigned gate. Downstream work is therefore exploratory
 and does not retroactively change the Gate A result.
 
+Note (4 October 2026): the Phase II engineering chain completed on source
+`62536382…` (guarded quality pass with published pointer, environment pin,
+controls 45/36, raw verification, and one accepted engineering cell from the
+first real Cho case) is engineering validation only. It neither signs this
+gate nor changes its evidence; the acceptance decision remains the owner's.
+
 ## Required acceptance condition
 
 The Phase I build plan requires a four-seed, nine-subject, within-subject EEGNet
