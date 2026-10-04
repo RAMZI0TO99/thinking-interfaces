@@ -4654,3 +4654,36 @@ test is a recorded advisory). Canonical pin:
 guarded full-quality pass on this pin is running and its receipt is the
 authoritative current-source quality evidence. The M4b supervisor was
 repinned to the new source (V4 package, fresh runtime record).
+
+## Machine-state lessons and staged chain after the source repair: 4 October 2026, 14:22 UTC
+
+Three guarded quality attempts on the repaired pin `62536382` stopped
+honestly at the RAM floors (receipts preserved: `guarded` at the 4 GiB
+active floor with WSL regrown to 6.5 GiB; `guarded2` at the same floor
+within 21 s; `guarded3` at the startup floor with WSL at 7.7 GiB at the
+launch instant). Root cause identified by process forensics: an
+**interactive Ubuntu session launched from explorer.exe**
+(`wsl.exe --cd ~`) restart-cycles a ~6–8 GiB VM every few minutes. The
+coordinator's WSL shutdown under the 3 October delegation remains valid
+([decision record](../runs/coordination/session_20261004_next/wsl_shutdown_decision_001.json))
+and enabled the qualification and environment-pin passes earlier; a
+service hold was attempted and recorded
+([record](../runs/coordination/session_20261004_next/wsl_service_hold_decision_001.json))
+but did not hold. The user's own session is not closed by the coordinator.
+A patient auto-retry
+([quality_retry.py](../runs/coordination/session_20261004_next/quality_retry.py))
+fires the pass when WSL stays down 60 s with ≥10.5 GiB free (fresh one-use
+directories g4–g11, deadline 17:45Z), and the user has been asked to close
+WSL for ~35 minutes if they want the chain sooner.
+
+Operational notes recorded for future sessions: (1) my truncated
+`MEMORYSTATUSEX` probes read 0.0 garbage — the launcher's full-struct
+native gate is authoritative; (2) the M4b V4 package
+(`first_case_supervision_20261004_v4`) repins the supervisor to `62536382`
+with a fresh runtime record and a pre-built environment-pin release whose
+window must be refreshed at fire time; (3) the first-case prerequisite
+board (`first_case_prep_20261004/inputs_v1.json`, sha `e9f657df`) binds
+the previous pin `88de6af5` and must be regenerated (fresh audits,
+admission and inputs) after the new environment pin lands. The failed
+first-case attempt `execcase88de6af5c001` remains preserved with
+quarantined outputs and a manual recovery record.

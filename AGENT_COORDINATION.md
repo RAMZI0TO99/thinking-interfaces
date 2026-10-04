@@ -1,6 +1,30 @@
 # Project coordination
 
-## Current session coordination: 12-hour resume, 3 October 2026, 18:54 UTC
+## Current session coordination: next-session chain on repaired source, 4 October 2026, 14:25 UTC
+
+The user's standing next-session delegation governs ("decide for me and do
+what you see fit"; "next step"; "update the docs and handoff"). The
+[session ledger](runs/coordination/session_20261004_next.json) is the
+current authority. Canonical source
+`62536382eb85a7626d6d45b110b688dbb374281d136733e75cf77301a4c77cf0`
+(commit `a2e2bb6`); commits through the current docs update are pushed.
+
+Coordination state: the pro2 peer is idle (documentation closeout only, per
+`pro2_session_status_002.json`); no interval requests are pending either
+way. Machine contention is with the **user's own interactive WSL session**
+(explorer-launched Ubuntu cycling ~6–8 GiB), which the coordinator will not
+close; the WSL shutdown/service-hold decision records under
+`runs/coordination/session_20261004_next/` document the two interventions
+taken under delegation. A patient quality auto-retry
+(`runs/coordination/session_20261004_next/quality_retry.py`, deadline
+17:45Z) fires on a 60-second WSL-down window with the 10 GiB floor clear;
+its completion notification continues the chain (fresh env pin via the M4b
+V4 package → prerequisite-board regeneration → first-case relaunch). All
+10 GiB floors and review/audit discipline remain unchanged; Gate A and the
+experiment freeze remain unsigned owner decisions. The obsolete
+`6566e348` watcher stays disarmed.
+
+## Historical: 12-hour resume, 3 October 2026, 18:54 UTC
 
 The user resumed engineering work for 12 hours (ends 2026-10-04 06:54:53 UTC).
 The [session ledger](runs/coordination/12h_session_20261003.json) is the

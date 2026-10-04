@@ -1,5 +1,52 @@
 # Project handoff
 
+## Current state: full chain staged on repaired source 62536382, 4 October 2026, 14:25 UTC
+
+Under the user's standing next-session delegation, the 4 October chain
+advanced through every preparable milestone and is now blocked on a single
+physical resource (the user's interactive WSL session). Canonical pin:
+`62536382eb85a7626d6d45b110b688dbb374281d136733e75cf77301a4c77cf0`
+(commit `a2e2bb6`, clean).
+
+Completed and audited this chain (all receipts preserved):
+
+- **Windows qualification PASSED** (V6 package, all three scenarios in
+  8.45 s; root-accepted; post-run audit zero blockers) — first pass in
+  project history. The host-Job NULL-query defect was root-caused, the
+  named-Job repair validated by probe, implemented through three review
+  iterations (two real blockers caught pre-execution), and executed.
+- **Torch environment pin MEASURED** on `88de6af5` (Torch 2.13.0+cu130,
+  threads=1, deterministic on; audited zero blockers) after fixing the
+  M4b supervisor's API drift (V3) and the env-watcher's metric mismatch.
+- **First real Cho engineering case LAUNCHED** (EEGNet/subject_01/seed 11
+  on a fully assembled prerequisite board): every supervision layer worked
+  end-to-end down to the innermost child, which refused on the **third
+  occurrence of the host-Job defect — this time in project source**
+  (`evaluation/phase2_cho_execution.py`). Attempt preserved with
+  quarantined outputs.
+- **Source repaired**: the named-Job pattern applied in project source —
+  child verifies its exact named Job; parent injects the name via the
+  proven class-replacement adapter. First wrapper draft rejected by
+  independent audit (class-attribute patch cannot shadow per-instance
+  binding); corrected repair verified live end-to-end and re-audited
+  (`ACCEPTED_SOURCE_REPAIR_VERIFIED`, zero blockers; a wrapper-path
+  regression test is a recorded advisory). Pin moved
+  `88de6af5 → a87a1615(rejected) → 62536382`.
+- **M4b V4** repinned to `62536382` with a fresh runtime record; the
+  environment-pin release is pre-built (window refreshed at fire time).
+
+Pending, in order: (1) guarded full-quality pass on `62536382` — three
+attempts stopped honestly at RAM floors because the user's interactive
+Ubuntu session (explorer-launched `wsl.exe --cd ~`) restart-cycles ~6–8 GiB
+every few minutes; a patient auto-retry
+(`runs/coordination/session_20261004_next/quality_retry.py`) is armed until
+17:45 UTC and the user has been asked to close WSL for ~35 minutes;
+(2) fresh environment pin via M4b V4; (3) regenerate the prerequisite
+board (the existing `first_case_prep_20261004/inputs_v1.json` binds the
+previous pin); (4) execute-mode release and the first-case relaunch; (5)
+post-run audit. Gate A and the experiment freeze remain unsigned owner
+decisions. Historical milestones below are preserved in order.
+
 ## Session state: Windows qualification executed, host-Job defect isolated, 3 October 2026, 23:30 UTC
 
 After the quality pass (below), the session completed the settled-source
