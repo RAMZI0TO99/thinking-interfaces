@@ -1,5 +1,33 @@
 # Deviation log
 
+## 2026-10-05, evening - Separate LaBraM supervisor preparation
+
+The next engineering case has a separate prospective five-file package and
+tracked reproducible recipes. Native fixture003 passed 131 checks, including
+72 acceptance fixtures, under exact fresh coordination; physical exit0 and
+PID absence were recorded. A separate direct-base `-I -S -B` check compiled
+the generated parent/child/raw verifier without executing target code or
+importing numerical libraries. Independent review accepts static package and
+bounded fixture evidence only, zero blockers; full supervision remains pending.
+
+The first two native attempts refused before package output. Attempt001 found
+that equality included access timestamps changed by an ordinary file read;
+the repair retains all eleven stable native identity fields. Attempt002 found
+authored CRLF search literals against five LF-only originals; only authored
+replacement literals now normalize to LF, with exact forward/reverse byte
+proof retained. The first watcher's exit code was null; the fresh watcher
+retains the OS process handle before waiting and records actual exit codes.
+All failed logs/witnesses and a blank failed closeout001 are preserved; valid
+closeout002 explicitly discloses and corrects that reporting failure.
+
+New recipes are outside the canonical source, which remains `b7452847` with
+its accepted morning quality evidence. Native runtime preparation hashes 33
+selected files but does not measure the Torch environment; raw-verifier code
+generation is not raw validation. Heavy RAM admission remains below 10 GiB
+and no heavy peer release exists. No controls/raw/environment/case ran, no
+automatic retry is armed, and WSL/shared services/data/weights remain untouched.
+Scientific Gate A and the experiment freeze stay unsigned.
+
 ## 2026-10-05 — Resume audit and preserved operational repairs
 
 Guarded2 subsequently passed on settled source `b7452847`: lint/types exit 0,

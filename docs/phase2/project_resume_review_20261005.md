@@ -99,9 +99,13 @@ despite preserved stale prose in the old completion receipt.
 
 ## Ordered engineering continuation
 
-1. Build a separate method-capable supervisor for the predeclared next case:
-   LaBraM linear / subject_01 / seed 11 / five shots / repetition 1. V11 is fixed
-   to the already-recorded first EEGNet case and is not that runner.
+1. The [separate LaBraM linear supervisor](labram_linear_supervisor/README.md)
+   is now built for subject_01 / seed11 / five shots / repetition1. It passed
+   131 native checks, including 72 extracted-predicate fixtures, and isolated
+   syntax compilation of generated parent/child/raw-verifier code. Independent
+   review accepts static/bounded fixture evidence, zero blockers; real process
+   interoperability remains unexecuted.
+   V11 stays fixed to the historical EEGNet case.
 2. Refresh source-bound controls, raw verification, measured environment and
    immutable prerequisite audits on the settled source/Git state. Obtain a new
    scoped release and fresh attempt paths; no old board or grant can be reused.
@@ -111,8 +115,12 @@ despite preserved stale prose in the old completion receipt.
 4. Resolve scientific Gate A/freeze and checkpoint-cohort decisions before interpreting a broad
    comparison as research evidence.
 
-The bounded repair phase has an internal 10:00 UTC preparation cap, not a new
-owner session deadline or compute lease. Current authority and executed receipts
-are in [HANDOFF.md](../../HANDOFF.md) and
-`runs/coordination/session_20261005_resume/`. Historical receipts, raw data,
-weights, peer edits and shared services remain preserved.
+The morning repair phase completed before its internal 10:00 UTC cap. The
+evening continuation has an internal 22:40 UTC preparation cap, not a new owner
+window or compute lease. Fresh RAM remains below the 10 GiB heavy startup floor;
+no heavy prerequisites or case are admitted or queued. Native checks and the
+separate isolated syntax check completed under fresh exact peer responses,
+physical witnesses and explicit releases. Current authority and receipts are
+in [HANDOFF.md](../../HANDOFF.md) and
+`runs/coordination/labram_linear_prep_20261005_v1/`. Historical receipts, raw data,
+weights, peer edits, WSL and shared services remain preserved.

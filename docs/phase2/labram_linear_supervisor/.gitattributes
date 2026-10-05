@@ -1,0 +1,2 @@
+# Preserve the byte-pinned recipes across Git checkout and publication.
+*.ps1 -text

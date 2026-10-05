@@ -1,6 +1,22 @@
 # Phase II - Start Here
 
-## Current state: engineering quality passed, 5 October 2026
+## Current continuation: LaBraM linear package prepared, 5 October, 19:19 UTC
+
+The [separate supervisor recipes](docs/phase2/labram_linear_supervisor/README.md)
+generated the prospective Cho/LaBraM-linear/subject_01/seed11/five-shot/repetition1
+package. Native checks passed 131/131, including 72 actual acceptance fixtures;
+isolated AST/compile passed for the parent, child and fresh raw verifier.
+Physical exits and scoped peer releases are recorded; independent package
+review accepts static and bounded fixture evidence, zero blockers. Production source remains `b7452847`; operational recipes
+are outside that fingerprint and require their own byte review.
+
+The next work is the [prerequisite refresh](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md).
+Available RAM is below the 10 GiB heavy startup floor and there is no heavy
+compute release, so no refresh or real case is admitted. Whole launcher/parent
+interoperability is still unexecuted. WSL/shared services/data/weights remain
+preserved, and no automatic retry is armed. Gate A/freeze remain unsigned.
+
+## Completed morning milestone: engineering quality passed, 5 October 2026
 
 The bounded repair phase completed its guarded quality check on source
 `b7452847`: lint/types exit 0, 1,048 tests passed, three skips and 1,121 subtests
@@ -8,9 +24,10 @@ passed. Independent audit accepts engineering quality, and physical cleanup
 and peer release are confirmed. Seven new named Windows Job cases passed in
 the suite. The V11 historical launcher template fixes its completion field
 and cap prose; 15/15 native predicate checks and a static/native audit pass.
-The fixed first-case wrapper is not a next-case runner. LaBraM linear needs a
-separate supervisor, fresh source-bound controls/environment/raw evidence,
-a new prerequisite board and measured resource admission. The sole accepted
+The fixed historical first-case wrapper is not a next-case runner. The separate
+LaBraM linear supervisor is now prepared as described above; fresh source-bound
+controls/environment/raw evidence, a new board and measured admission remain.
+The sole accepted
 real cell remains the EEGNet engineering case on `62536382`.
 Read [HANDOFF.md](HANDOFF.md) for current authority; the 4 October chain below
 remains accepted historical engineering evidence. Gate A/freeze are unsigned.

@@ -1,6 +1,38 @@
 # Project coordination
 
-## Current phase: 5 October 2026 engineering validation complete
+## Current phase: LaBraM linear preparation, resumed 5 October 2026, 18:40 UTC
+
+The user resumed the next documented engineering step. Root owns the fresh
+[phase plan](runs/coordination/labram_linear_prep_20261005_v1/phase_plan.json),
+peer coordination, documentation, final acceptance and Git. New builder/recipe
+and native-regression workers own separate files under
+`docs/phase2/labram_linear_supervisor/`; source reviewers are read-only.
+No frozen production or historical package edits are assigned. Maximum five
+active agents; finished children are interrupted.
+
+Pro3's fresh static package/docs/byte-AST scope is 18:45–20:15 UTC, explicitly
+accepted by pro2. Pro2 Source011 is concurrently 18:45–19:45 UTC with its
+disclosed isolated admission microfixtures. The
+[response011](runs/coordination/session_20261005_resume/pro2_source_window_response_011.json)
+records both scopes; old interval/lease ends supply no new authority.
+Pro3 separately obtained exact native fixture acceptances002/003/004 for the
+19:05-19:25 slot and isolated syntax acceptance001 for 19:15-19:25. Each request
+bound current recipes, a fresh watcher and fresh outputs, with independent
+static review before launch. Failed native attempts001/002 are preserved.
+Native attempt003 passed 131 checks/72 fixtures, exited physically at 19:16:22
+with PID144580 absent in 1.876 seconds; request004 was explicitly released.
+The direct-base `-I -S -B` AST/compile check passed at 19:18:47, exit0/PID73076
+absent in 0.431 seconds; its separate scope was explicitly released.
+No Python tests, numerical imports, raw compute, training or case Job launched.
+Independent package audit accepts static/bounded fixture scope, zero blockers;
+root owns milestone documentation, final acceptance and Git. Fresh RAM
+is below 10 GiB, so no heavy prerequisite/case is admitted or queued. Future
+heavy work needs its own exact finite interval and unchanged measured floors.
+Preserve shared services, WSL, data and weights; no automatic retry is armed.
+Internal 22:40 preparation cap is not a lease/user expiry/new30-hour window.
+Scientific Gate A/freeze remain unsigned.
+
+## Completed phase: 5 October 2026 engineering validation
 
 Guarded2 completed at 09:14:12 UTC under fresh grant005 (08:45–09:50):
 lint/types/tests exit 0, 1,048 tests passed, three skips, 1,121 subtests passed

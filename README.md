@@ -4,6 +4,13 @@ Phase I builds a reproducible EEG-decoding harness and a working real-time demon
 
 Current engineering status (5 October 2026): source `b7452847…` has an independently audited guarded quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The launcher contract repair passed 15 native checks, and seven new named-Job regression cases passed. The sole accepted real case remains the 4 October EEGNet engineering case on `62536382…`; current controls, environment and the next LaBraM case still need fresh prerequisites. Scientific Gate A and the experiment freeze are unsigned. See the [project review](docs/phase2/project_resume_review_20261005.md) and [HANDOFF.md](HANDOFF.md).
 
+The separate [LaBraM linear supervisor recipe](docs/phase2/labram_linear_supervisor/README.md)
+now builds the prospective next-case package. It passed 131 native contract
+checks, including 72 acceptance fixtures, and isolated syntax compilation of
+three generated Python files. Independent review accepts this preparation scope. Controls,
+raw verification, measured environment and resource admission remain required;
+these preparation checks do not establish a LaBraM execution result.
+
 The project repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), created as a private repository on 3 October 2026. It preserves the local Git history and publishes the source, configurations, tests and project documentation. Read [HANDOFF.md](HANDOFF.md) for the current validation limits.
 
 Links into `runs/`, `artifacts/`, data caches and checkpoints refer to local evidence or external inputs. These files are intentionally excluded from Git; the repository alone does not contain the runtime receipts, EEG datasets or model weights needed to reproduce every historical run. Historical passing records do not certify the current source. No new validation or experiment is authorized by repository publication.

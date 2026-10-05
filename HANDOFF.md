@@ -1,6 +1,64 @@
 # Project handoff
 
-## Current state: engineering repairs validated, 5 October 2026
+## Current phase: LaBraM linear supervisor preparation, 5 October 2026, 18:40 UTC
+
+The user explicitly resumed work after the completed morning repair phase.
+The fresh bounded [phase plan](runs/coordination/labram_linear_prep_20261005_v1/phase_plan.json)
+continues the next engineering step: a separate prospective LaBraM linear /
+subject_01 / seed 11 / five shots / repetition 1 supervisor. Its internal
+22:40 UTC preparation cap is not a renewed owner window or compute lease.
+Production and historical package files remain frozen; new files have explicit
+worker ownership and at most five agents are active.
+
+Current source remains `b7452847` (431 files), clean starting commit `d987d3e`.
+Three scoped source reviews found the production route already supports the
+case, with prospective CasePlan ID
+`af0f24764e577f2223db4759582852aacc2b1b2b0b0a549f1d4b43f8f14998b5`.
+The [new tracked recipes](docs/phase2/labram_linear_supervisor/README.md) now
+build a five-file prospective package with 42 reversible substitutions. At
+19:16 UTC, [native fixture003](runs/coordination/labram_linear_prep_20261005_v1/package_contract_fixture_003.json)
+passed **131 checks, including 72 actual extracted-predicate JSON fixtures**.
+Its [physical witness](runs/coordination/labram_linear_prep_20261005_v1/native_fixture_physical_witness_003.json)
+records exit 0, 1.876 seconds and owned PID144580 absent. Fresh peer acceptance004
+and a separate independent watcher review bound the exact bytes before entry.
+The generated package is `runs/coordination/labram_linear_supervision_20261005_v3`;
+historical V10/V11 packages and the accepted EEGNet cell remain preserved.
+
+A separately coordinated [isolated syntax check](runs/coordination/labram_linear_prep_20261005_v1/isolated_syntax_physical_witness_001.json)
+passed at 19:18 UTC for the generated parent, child and raw verifier: direct
+base Python with `-I -S -B`, AST/compile only, exit 0, 0.431 seconds, PID73076
+absent. Target code, site hooks and numerical modules were not executed.
+The [independent package audit](runs/coordination/labram_linear_prep_20261005_v1/package_static_independent_audit_001.json)
+accepts static package and bounded fixture evidence, zero blockers; SHA
+`665371d532501ad311e312baf055fe3980deaad2eeeec7cb3b9b2db5cae1f218`.
+It independently reconstructs the 42 substitutions, frozen/generated hashes,
+raw repin, runtime digest and current `b7452847`/431 source. No whole
+parent/native interoperability or actual supervision is certified.
+
+Native byte preparation measured 33 selected runtime file hashes with digest
+`1013164d...`; its source/count remain declared and no Torch environment was
+measured. The fresh raw verifier was generated with reverse proof and hash
+`0d0fc54a...`; it has not read EEG or passed raw verification. First native
+attempt001 refused on a read-dependent access-time comparison; attempt002
+refused on CRLF/LF literal mismatch. Their logs and witnesses remain intact.
+The fixes preserve all stable identity fields, exact frozen bytes and guards;
+the fresh watcher also retains the process handle to capture physical exit.
+
+Pro2 confirmed concurrent static preparation for pro3 18:45–20:15 UTC;
+pro2's separate Source011 scope is 18:45–19:45. The
+[fresh response](runs/coordination/session_20261005_resume/pro2_source_window_response_011.json)
+discloses both scopes. Native fixture and syntax scopes were separately accepted
+and explicitly released after physical completion. All work used native
+Windows/PowerShell; WSL and shared services remain untouched. Heavy compute
+has not launched. The [fresh resource observation](runs/coordination/labram_linear_prep_20261005_v1/prerequisite_resource_gate_001.json)
+records available RAM below the unchanged 10 GiB heavy startup floor, with no
+heavy peer interval or release. No automatic retry or old watcher is armed.
+Controls45/36, immutable writer evidence, raw52, measured environment and a
+fresh board still need current-source refresh before a separately admitted case.
+See the [ordered prerequisite runbook](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md).
+Scientific Gate A/freeze remain unsigned; checkpoint pretraining is unverified.
+
+## Completed milestone: engineering repairs validated, 5 October 2026
 
 **09:14 UTC guarded full-quality PASS:** source
 `b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442`
