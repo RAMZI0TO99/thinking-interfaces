@@ -2,6 +2,13 @@
 
 ## Current bounded phase: 5 October 2026 engineering repair
 
+At 08:30 UTC the first full-quality foreground session was no longer available;
+matching owned validation commands were absent without a terminal receipt.
+Partial lint/types and 39% tests are preserved, not a quality pass. Grant004 is
+released. A separate guarded2 helper/admission/output namespace and fresh grant005
+are required; a hidden persistent helper avoids dependence on a live tool session.
+No source/resource/time policy is relaxed and no old attempt is replayed.
+
 The user resumed analysis and work, with at most five active subagents.
 Root owns admission/execution records, docs and Git. The named-Job worker owns
 only `tests/test_phase2_named_job_wrapper.py`; the launcher worker owns only

@@ -2,6 +2,14 @@
 
 ## 2026-10-05 — Resume audit and preserved operational repairs
 
+The first full-quality attempt lost its foreground tool session across user
+resume steering. At 08:30 UTC its validation commands were absent, no terminal
+receipt/physical witness existed, and the global pointer still held the old
+`62536382` pass. The last test log showed 39%; lint/types had exited 0. The cause
+is unproven. Preserve those partial logs and accept no full pass. A retry uses
+a new peer grant, fresh paths and a hidden helper with durable PID/log files,
+while retaining the existing guards.
+
 The current resume uses a bounded repair/validation phase with fresh pro2
 coordination and at most five active subagents. No historical lease or 30-hour
 window is renewed. Scientific Gate A and the experiment freeze stay unsigned.

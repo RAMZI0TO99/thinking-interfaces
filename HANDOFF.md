@@ -2,6 +2,17 @@
 
 ## Current bounded resume: engineering repair and validation, 5 October 2026
 
+**08:30 UTC validation interruption:** full-quality attempt `guarded1` observed
+lint/types exit 0 and 39% test progress, then its tool execution session vanished
+across resume steering. Native inventory found no matching guard/verifier/pytest
+processes, but neither terminal receipt nor physical witness exists. The cause
+is unproven; no full pass is accepted and the old quality pointer is unchanged.
+[Interruption observation](runs/coordination/session_20261005_resume/quality_interruption_001.json)
+preserves the evidence. The first grant is released; `guarded2` needs a fresh
+peer response and fresh admission. Its helper will run as a hidden background
+process with durable PID and redirected logs; resource/source/time guards remain
+unchanged. Do not restart or overwrite the interrupted attempt.
+
 The user resumed project analysis and work, later limiting active subagents
 to five. The phase is recorded in
 [phase_plan.json](runs/coordination/session_20261005_resume/phase_plan.json).
