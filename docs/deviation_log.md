@@ -1,5 +1,39 @@
 # Deviation log
 
+## 2026-10-05 — Resume audit and preserved operational repairs
+
+The current resume uses a bounded repair/validation phase with fresh pro2
+coordination and at most five active subagents. No historical lease or 30-hour
+window is renewed. Scientific Gate A and the experiment freeze stay unsigned.
+The named-Job production repair remains unchanged; a test-only addition protects
+instance-bound injection and restoration. That test changes the source pin,
+so the baseline quality pass does not certify the new tree.
+
+A fresh V11 historical-baseline template corrects `measured_cases` to `measured`,
+two stale 6 GiB aggregate descriptions to the measured 6/7.5 GiB split, and
+four bounded staging deadline sites. V10, failed native receipts and the accepted
+engineering cell remain intact. Fifteen actual predicate checks pass; an
+independent audit accepts static/native contract scope only. The template is
+unadmitted, has no release and remains fixed to the already-recorded EEGNet case.
+Its tracked recipes require ignored historical files and do not make Git alone
+sufficient to reproduce the local runtime chain.
+
+The old child witness map has 116 entries, of which the mutable session ledger
+is the sole current mismatch. Historical acceptance is retained with this
+replay limitation; future boards must pin an immutable writer-execution receipt.
+The old audit's 130 count has no located corresponding map. Immutable stale
+prose/counts are preserved and qualified here rather than rewritten.
+
+Focused001 failed before Job/pytest entry because the root admission driver
+used wrong resource-sample fields; focused002 refused before entry for insufficient
+remaining peer-window reserve. Both records and spent intervals are preserved;
+no pass is inferred and a successor needs fresh coordination and attempt paths.
+Focused003 entered its owned Job but physically exited nonzero before producing
+JUnit, with a process peak of about 0.97 GiB under its proposed 1 GiB limit.
+The exact exit cause is unproven; no test pass or cap recalibration is inferred.
+The source pin was stable at `b7452847...`. Root released that interval and
+requested the standard guarded full-quality envelope on this test-only source.
+
 ## 2026-10-03 — Private repository publication after research stop
 
 The user requested committing the work, then clarified that `beyond-uncertainty` is a different project and authorized creating a new repository with a chosen name. `RAMZI0TO99/thinking-interfaces` was created private, matching the user's explicit visibility choice. The existing local history and current source, configuration, tests and documentation are packaged without raw/processed data, credentials, weights, caches or run outputs. Local-evidence links remain local; frozen receipts and their recorded document hashes are not rewritten.

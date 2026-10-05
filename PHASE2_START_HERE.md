@@ -1,5 +1,15 @@
 # Phase II - Start Here
 
+## Current resume: 5 October 2026
+
+Work has resumed for a bounded engineering repair/validation phase. The V11
+historical launcher template fixes its completion field and cap prose; 15/15
+native predicate checks and an independent static/native audit pass. New
+named Windows Job tests await executed validation and a new test-inclusive
+quality source pin. The fixed first-case wrapper is not a next-case runner.
+Read [HANDOFF.md](HANDOFF.md) for current authority; the 4 October chain below
+remains accepted historical engineering evidence. Gate A/freeze are unsigned.
+
 The project's new private repository is [thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), preserving its original local history. Source, tests, configurations and plans are included; runtime receipts under `runs/`, EEG data and model weights remain local or external. Publication does not resume research or certify a new validation pass. See [HANDOFF.md](HANDOFF.md) for the current evidence map.
 
 ## Current status: first real Cho engineering case complete — 4 October 2026, 19:45 UTC

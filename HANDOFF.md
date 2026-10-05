@@ -1,6 +1,57 @@
 # Project handoff
 
-## Resume prompt for the next agent
+## Current bounded resume: engineering repair and validation, 5 October 2026
+
+The user resumed project analysis and work, later limiting active subagents
+to five. The phase is recorded in
+[phase_plan.json](runs/coordination/session_20261005_resume/phase_plan.json).
+Its internal 10:00 UTC preparation cap does not renew the original 30-hour
+session, grant compute, or sign Scientific Gate A or the experiment freeze.
+Fresh pro2 coordination governs each validation interval. Production source,
+historical packages, raw data and weights remain preserved.
+
+Five parallel reviews verified the completed 4 October engineering case and
+identified bounded repairs. A new V11 historical-baseline template corrects
+the launcher's `measured_cases`/`measured` mismatch and stale memory-cap prose.
+The tracked [builder and native validator](docs/phase2/native_launcher_contract/README.md)
+preserve exact V10 bytes through reversible substitutions. Native predicate
+checks passed 15/15; independent review accepted static/native contract scope
+only, zero blockers. V11 creates no release and is not a next-case runner.
+
+The new [named-Job tests](tests/test_phase2_named_job_wrapper.py) cover
+instance-bound name injection, restoration, default dispatch, missing-name
+refusal and custom-supervisor bypass. Static review and native Ruff pass;
+executed regression and full quality on the new test-inclusive source are
+pending. The settled pin is `b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442`;
+the baseline `62536382` quality pass certifies its own source only.
+
+The old c003 witness map pins a mutable session ledger changed during closeout:
+115 of 116 witness files still match. Preserve historical acceptance and
+receipts; the complete chain cannot be replayed from the live ledger and
+cannot authorize another launch. Future boards must pin an immutable
+writer-execution receipt, fresh environment/source/Git records and a new release.
+The historical audit's count of 130 witness files lacks a located corresponding
+map; the inspected child map has 116. Recorded numeric process/aggregate caps
+are 6/7.5 GiB despite stale prose in the immutable completion receipt.
+
+Focused001 failed before Job/pytest entry because the root driver used incorrect
+resource-sample field names. Focused002 honestly refused before entry because
+the peer interval lacked the mandatory 125-second launch/cleanup reserve.
+Both attempts and spent releases are preserved. Focused003 entered its owned
+Job and physically exited nonzero in 4.72 seconds with no JUnit output; its
+process peak was about 0.97 GiB under the separately proposed 1 GiB cap. That
+does not certify a test result or prove the exact exit cause. Root released
+the interval and requested full quality under the existing guarded envelope,
+without another focused retry or changing a reviewed cap. No accepted cell
+is rerun for bookkeeping.
+
+The next substantive engineering case is predeclared as LaBraM linear /
+subject_01 / seed 11 / five shots, after a separate method-capable supervisor,
+fresh board and measured resource admission. The first-case wrapper is fixed
+to EEGNet and refuses existing canonical case state. Broad sweeps are unstarted;
+Scientific Gate A and experiment freeze remain unsigned.
+
+## Historical resume prompt from 4 October
 
 The full resume prompt — required reading order, exact current state, the
 step-by-step chain, non-negotiable rules, hard-won pitfalls, and artifact

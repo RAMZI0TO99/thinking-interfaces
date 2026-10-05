@@ -1,5 +1,31 @@
 # Project coordination
 
+## Current bounded phase: 5 October 2026 engineering repair
+
+The user resumed analysis and work, with at most five active subagents.
+Root owns admission/execution records, docs and Git. The named-Job worker owns
+only `tests/test_phase2_named_job_wrapper.py`; the launcher worker owns only
+new `docs/phase2/native_launcher_contract/` recipes and new V11 staging.
+Independent reviewers own fresh audit receipts. Production implementation and
+historical evidence remain frozen. See
+[phase_plan.json](runs/coordination/session_20261005_resume/phase_plan.json).
+The internal 10:00 UTC cap is not a lease, user expiry or renewed 30-hour
+window. This phase signs neither Scientific Gate A nor the experiment freeze.
+
+Pro2 is active, with runtime earliest 12:00 UTC. Fresh scoped responses under
+`runs/coordination/session_20261005_resume/` require physical completion/release
+and claim no whole-host quiet. Focused001 failed before test/Job entry;
+focused002 refused with insufficient launch reserve. Both intervals are spent.
+Successors and full quality need fresh explicit responses; no old grant is reused.
+Native startup RAM remains 10 GiB twice; active floors and deadlines remain
+unchanged. Do not close the user's WSL session, stop services or rearm old watchers.
+
+V11 is historical repair staging: old source/runtime pins are template evidence,
+no release is created, and the fixed first-case wrapper cannot admit a new
+method or replay the accepted case. The new test file changes the source pin;
+baseline quality is not a pass for the changed tree. Future boards must pin
+immutable writer-execution records instead of mutable session ledgers.
+
 ## Current session coordination: FIRST CASE COMPLETE, chain done, 4 October 2026, 19:45 UTC
 
 The 4 October chain completed end-to-end under the user's directions

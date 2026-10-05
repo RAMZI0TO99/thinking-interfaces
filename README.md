@@ -46,6 +46,17 @@ The later Cho 60 Hz source/config/test edits require another matching refresh.
 
 ## Current status
 
+**5 October 2026 — work resumed for engineering repair and validation.**
+Five parallel reviews confirmed the accepted 4 October EEGNet engineering
+case. A reversible V11 launcher repair template is independently accepted for
+static/native contract scope, with 15/15 predicate checks; named Windows Job
+regression tests are added and awaiting executed validation. The changed
+test-inclusive source needs a fresh quality pass. See [HANDOFF.md](HANDOFF.md)
+and the [repair recipe](docs/phase2/native_launcher_contract/README.md).
+The accepted case remains 79/160; Gate A and the scientific freeze are unsigned.
+
+The 14:25 checkpoint below is historical; its staged chain completed that evening.
+
 **4 October 2026, 14:25 UTC — qualification PASSED, source repaired (`62536382`), first case staged behind one RAM window.** The Windows-qualification ceremony passed all three scenarios (root-accepted, audited zero blockers), the Torch environment pin was measured and audited, and the first real Cho engineering case ran its full supervision chain to the innermost child — exposing the same host-Job defect in project source, now repaired with the twice-proven named-Job pattern, verified live and re-audited (`ACCEPTED_SOURCE_REPAIR_VERIFIED`). The remaining chain (quality pass on the new pin → fresh env pin → prerequisite board → case relaunch) is fully staged; a patient auto-retry fires the moment the machine's interactive WSL session stays down for a minute with the 10 GiB floor clear. Gate A and the experiment freeze remain unsigned; no scientific result is claimed. See the [session ledger](runs/coordination/session_20261004_next.json) and [HANDOFF.md](HANDOFF.md).
 
 **Historical 3 October 2026, 23:40 UTC — validation chain green on `88de6af5`; qualification blocked by a now-isolated host-Job defect.** In the user's 12-hour window: guarded full-quality pass (lint 0 / strict types 0 / 1041 tests, [audited](runs/coordination/next_step_20261003_quality/quality_pass_audit_001.json), pointer published), 45/45 source-bound controls, 36/36 no-future controls (0.2451 < 0.35), and the current-source raw audit all completed and are pushed. The sealed Windows-qualification V3 package executed twice and failed for a genuine environment reason: this host jobs every process (0x3000) and the frozen ceremony's child-side NULL-handle Job query returns the host Job, so its verification can never pass — [root cause + validated named-Job repair](runs/coordination/windows_qualification_20261003_v3/host_job_conflict_root_cause_001.md) (also explains TYPE001). Next session: V4 repair, then the first-case chain. See [HANDOFF.md](HANDOFF.md).
