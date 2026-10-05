@@ -36,7 +36,10 @@ declared `engineering_only=true`, `scientific_evaluation=false`. It establishes
 execution integrity; it cannot establish convergence, population performance
 or comparative benefit. New named-Job tests change the source fingerprint, so
 the historical quality/controls/environment chain is not certification of the
-new tree.
+new tree. The new source `b7452847` now has its own independently audited
+guarded quality pass: lint/types exit 0, 1,048 tests passed, three skips and
+1,121 subtests passed. Controls, raw and measured-environment evidence still
+need refresh on this source before the next case.
 
 ## Scientific decisions still required
 
@@ -57,6 +60,14 @@ findings. TCPL remains a local reconstruction with unresolved author-model
 correspondence; E1 tokenizer/masked-loss feasibility and causal E3/hardware E4
 evidence remain separate unfinished work.
 
+Static tracing of LaBraM linear found no concrete route leakage or identity
+defect: the outer target is excluded from 51 source subjects, each inner
+held-out source is excluded from training, support/query are disjoint, and
+the 102 candidate/fold pairs bind the winner, settings and model digest.
+This is source review, not execution. The pretrained checkpoint declares
+`prior_template_training_verified=false`; its training cohort is unverified
+and scientific independence from Cho cannot be inferred.
+
 ## Repairs completed in this bounded phase
 
 The V10 native launcher checked `completion.measured_cases`, while the recorder
@@ -71,8 +82,12 @@ are tracked; the historical runtime inputs remain local and ignored.
 Seven named-Job regression cases protect per-instance `create_job` injection,
 restoration on success and exception, default dispatch using the contract name,
 missing-name refusal and explicit custom supervision. Production implementation
-is unchanged. Static review and native Ruff pass; executed status is recorded
-in the current handoff rather than inferred from static review.
+is unchanged. Static review and native Ruff pass; all seven cases passed in
+the guarded full suite. Its 1,737.11-second run retained the exact source,
+minimum available RAM 10.188 GiB and disk 239.424 GiB; native physical exit,
+independent audit, scoped process cleanup and peer release are recorded in
+the current handoff. The interrupted first full attempt and three failed or
+refused focused attempts remain intact, without inferred passes.
 
 The old case witness map has 116 entries; 115 currently match. Its mutable
 session ledger changed during closeout. Historical acceptance was contemporaneous,
@@ -84,18 +99,16 @@ despite preserved stale prose in the old completion receipt.
 
 ## Ordered engineering continuation
 
-1. Complete focused named-Job validation and a guarded full-quality pass on the
-   settled test-inclusive source, with fresh peer coordination and resource floors.
-2. Build a separate method-capable supervisor for the predeclared next case:
+1. Build a separate method-capable supervisor for the predeclared next case:
    LaBraM linear / subject_01 / seed 11 / five shots / repetition 1. V11 is fixed
    to the already-recorded first EEGNet case and is not that runner.
-3. Refresh source-bound controls, raw verification, measured environment and
+2. Refresh source-bound controls, raw verification, measured environment and
    immutable prerequisite audits on the settled source/Git state. Obtain a new
    scoped release and fresh attempt paths; no old board or grant can be reused.
-4. Measure the LaBraM runtime/memory envelope within reviewed limits before any
+3. Measure the LaBraM runtime/memory envelope within reviewed limits before any
    expansion. EEGNet's measured envelope is not a LaBraM measurement. A matched
    LoRA engineering case can follow after its own admission.
-5. Resolve scientific Gate A/freeze decisions before interpreting a broad
+4. Resolve scientific Gate A/freeze and checkpoint-cohort decisions before interpreting a broad
    comparison as research evidence.
 
 The bounded repair phase has an internal 10:00 UTC preparation cap, not a new

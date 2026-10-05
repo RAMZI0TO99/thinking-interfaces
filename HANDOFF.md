@@ -1,17 +1,42 @@
 # Project handoff
 
-## Current bounded resume: engineering repair and validation, 5 October 2026
+## Current state: engineering repairs validated, 5 October 2026
 
-**08:30 UTC validation interruption:** full-quality attempt `guarded1` observed
+**09:14 UTC guarded full-quality PASS:** source
+`b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442`
+(431 canonical files; clean validation commit `97f8b69`) passed lint, strict
+types for 205 files and tests: **1,048 passed, 3 skipped, 1,121 subtests passed**.
+The seven new named-Job regression cases passed as part of this suite.
+[Guarded2 receipt](runs/phase2/quality_attempts/20261005_b7452847_fullq_guarded2/receipt.json)
+records stable before/after source, exit 0, 1,737.11 seconds, minimum available
+RAM 10.188 GiB and disk 239.424 GiB, with no cleanup error. The native helper
+recorded physical exit 0 at 09:14:12 UTC, within grant005's 08:45–09:50 interval
+and effective 3,856-second wall cap. Independent
+[post-run audit](runs/coordination/session_20261005_resume/quality_pass_independent_audit_001.json)
+accepted engineering quality only, zero blockers. The published quality pointer
+SHA is `f5f84e9e8669facc516a0fc48a8dca6e56b0c62beb6854b271b2f15d6914ecb9`;
+the previous pointer and archive are preserved. Root's
+[cleanup observation](runs/coordination/session_20261005_resume/quality_cleanup_observation_001.json)
+found all eight observed owned processes absent at 09:18:39 UTC, with no
+matching attempt commands. Root then explicitly released peer grant005.
+
+This establishes current engineering quality. Controls 45/45 and 36/36,
+raw verification, the measured environment and the sole accepted EEGNet
+engineering cell still belong to source `62536382`; they have not been
+re-certified on `b7452847`. No new real case or scientific fit was admitted.
+Scientific Gate A and the experiment freeze remain unsigned.
+
+**Preserved 08:30 UTC interruption:** full-quality attempt `guarded1` observed
 lint/types exit 0 and 39% test progress, then its tool execution session vanished
 across resume steering. Native inventory found no matching guard/verifier/pytest
 processes, but neither terminal receipt nor physical witness exists. The cause
-is unproven; no full pass is accepted and the old quality pointer is unchanged.
+is unproven; no pass is accepted for that attempt. At interruption the old
+quality pointer was unchanged; guarded2 subsequently replaced it after success.
 [Interruption observation](runs/coordination/session_20261005_resume/quality_interruption_001.json)
-preserves the evidence. The first grant is released; `guarded2` needs a fresh
-peer response and fresh admission. Its helper will run as a hidden background
-process with durable PID and redirected logs; resource/source/time guards remain
-unchanged. Do not restart or overwrite the interrupted attempt.
+preserves the evidence. Guarded2 used a fresh peer response and admission,
+plus a hidden background helper with durable PID and redirected logs; all
+resource/source/time guards remained enforced. Do not restart or overwrite
+the interrupted attempt.
 
 The user resumed project analysis and work, later limiting active subagents
 to five. The phase is recorded in
@@ -31,9 +56,9 @@ only, zero blockers. V11 creates no release and is not a next-case runner.
 
 The new [named-Job tests](tests/test_phase2_named_job_wrapper.py) cover
 instance-bound name injection, restoration, default dispatch, missing-name
-refusal and custom-supervisor bypass. Static review and native Ruff pass;
-executed regression and full quality on the new test-inclusive source are
-pending. The settled pin is `b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442`;
+refusal and custom-supervisor bypass. Static review, native Ruff and all seven
+executed cases pass; the guarded full suite above certifies the settled
+test-inclusive pin `b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442`;
 the baseline `62536382` quality pass certifies its own source only.
 
 The old c003 witness map pins a mutable session ledger changed during closeout:
@@ -62,6 +87,16 @@ fresh board and measured resource admission. The first-case wrapper is fixed
 to EEGNet and refuses existing canonical case state. Broad sweeps are unstarted;
 Scientific Gate A and experiment freeze remain unsigned.
 
+Static tracing found no concrete source/target leakage or selection identity
+defect in the LaBraM route. It did not execute that route or read signal/weight
+bytes. The pretrained checkpoint declares
+`prior_template_training_verified=false`; its pretraining cohort remains
+unverified and no scientific independence claim follows. The detailed
+[project review](docs/phase2/project_resume_review_20261005.md) and fresh
+[resume prompt](runs/coordination/session_20261005_resume/NEXT_AGENT_PROMPT.md)
+describe the ordered continuation. The current repair phase has no further
+compute queued; a successor requires fresh coordination and its own scope.
+
 ## Historical resume prompt from 4 October
 
 The full resume prompt — required reading order, exact current state, the
@@ -74,7 +109,7 @@ the chain as it stood at 14:25 UTC; the section below records what has
 since completed. Write a fresh prompt from the current state before the
 next session.
 
-## Current state: FIRST REAL CHO ENGINEERING CASE COMPLETE, 4 October 2026, 19:45 UTC
+## Historical milestone: FIRST REAL CHO ENGINEERING CASE COMPLETE, 4 October 2026, 19:45 UTC
 
 Under the user's standing delegation ("go do your thing", "go back to
 work"), the staged chain completed end-to-end on the repaired source pin

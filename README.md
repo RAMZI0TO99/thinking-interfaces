@@ -2,7 +2,7 @@
 
 Phase I builds a reproducible EEG-decoding harness and a working real-time demonstration. Research claims begin only in Phase II.
 
-Current engineering status (4 October 2026): the repaired source (pin `62536382…`) carries a guarded full-quality pass with a published pointer, and the first real Cho engineering case (EEGNet / subject_01 / seed 11 / 5 shots) has executed under supervised named-Job containment and published one accepted engineering cell. This is engineering validation only: Scientific Gate A and the experiment freeze are unsigned, and no scientific result is claimed. See [HANDOFF.md](HANDOFF.md) for the current validation limits and evidence map.
+Current engineering status (5 October 2026): source `b7452847…` has an independently audited guarded quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The launcher contract repair passed 15 native checks, and seven new named-Job regression cases passed. The sole accepted real case remains the 4 October EEGNet engineering case on `62536382…`; current controls, environment and the next LaBraM case still need fresh prerequisites. Scientific Gate A and the experiment freeze are unsigned. See the [project review](docs/phase2/project_resume_review_20261005.md) and [HANDOFF.md](HANDOFF.md).
 
 The project repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), created as a private repository on 3 October 2026. It preserves the local Git history and publishes the source, configurations, tests and project documentation. Read [HANDOFF.md](HANDOFF.md) for the current validation limits.
 
@@ -46,12 +46,14 @@ The later Cho 60 Hz source/config/test edits require another matching refresh.
 
 ## Current status
 
-**5 October 2026 — work resumed for engineering repair and validation.**
+**5 October 2026 — engineering repairs validated.**
 Five parallel reviews confirmed the accepted 4 October EEGNet engineering
 case. A reversible V11 launcher repair template is independently accepted for
-static/native contract scope, with 15/15 predicate checks; named Windows Job
-regression tests are added and awaiting executed validation. The changed
-test-inclusive source needs a fresh quality pass. See [HANDOFF.md](HANDOFF.md)
+static/native contract scope, with 15/15 predicate checks. The guarded full
+suite passed on the changed test-inclusive source `b7452847`: lint/types exit 0,
+1,048 tests passed, three Windows privilege skips and 1,121 subtests passed.
+Independent audit accepted the quality result and physical cleanup is confirmed.
+The V11 template remains unadmitted and is not a next-case runner. See [HANDOFF.md](HANDOFF.md)
 and the [repair recipe](docs/phase2/native_launcher_contract/README.md).
 The accepted case remains 79/160; Gate A and the scientific freeze are unsigned.
 

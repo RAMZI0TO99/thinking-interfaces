@@ -2,6 +2,15 @@
 
 ## 2026-10-05 — Resume audit and preserved operational repairs
 
+Guarded2 subsequently passed on settled source `b7452847`: lint/types exit 0,
+1,048 tests passed, three skips and 1,121 subtests passed. It used fresh grant005,
+a hidden durable helper and unchanged resource guards. Physical exit was
+09:14:12 UTC, within its 3,856-second cap and 09:50 peer end; minimum available
+RAM was 10.188 GiB. Independent audit accepted engineering quality only,
+zero blockers. Root confirmed all eight owned PIDs absent at 09:18:39 and
+released the peer hold. No real case or scientific fit was admitted; older
+controls/environment/raw evidence remains bound to `62536382`.
+
 The first full-quality attempt lost its foreground tool session across user
 resume steering. At 08:30 UTC its validation commands were absent, no terminal
 receipt/physical witness existed, and the global pointer still held the old
@@ -41,6 +50,11 @@ JUnit, with a process peak of about 0.97 GiB under its proposed 1 GiB limit.
 The exact exit cause is unproven; no test pass or cap recalibration is inferred.
 The source pin was stable at `b7452847...`. Root released that interval and
 requested the standard guarded full-quality envelope on this test-only source.
+
+Static review of the next LaBraM route found no concrete split/selection
+identity defect, but the checkpoint's prior pretraining cohort is unverified
+(`prior_template_training_verified=false`). That limit remains explicit;
+route review and quality tests do not establish scientific independence.
 
 ## 2026-10-03 — Private repository publication after research stop
 

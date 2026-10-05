@@ -1,18 +1,23 @@
 # Phase II - Start Here
 
-## Current resume: 5 October 2026
+## Current state: engineering quality passed, 5 October 2026
 
-Work has resumed for a bounded engineering repair/validation phase. The V11
-historical launcher template fixes its completion field and cap prose; 15/15
-native predicate checks and an independent static/native audit pass. New
-named Windows Job tests await executed validation and a new test-inclusive
-quality source pin. The fixed first-case wrapper is not a next-case runner.
+The bounded repair phase completed its guarded quality check on source
+`b7452847`: lint/types exit 0, 1,048 tests passed, three skips and 1,121 subtests
+passed. Independent audit accepts engineering quality, and physical cleanup
+and peer release are confirmed. Seven new named Windows Job cases passed in
+the suite. The V11 historical launcher template fixes its completion field
+and cap prose; 15/15 native predicate checks and a static/native audit pass.
+The fixed first-case wrapper is not a next-case runner. LaBraM linear needs a
+separate supervisor, fresh source-bound controls/environment/raw evidence,
+a new prerequisite board and measured resource admission. The sole accepted
+real cell remains the EEGNet engineering case on `62536382`.
 Read [HANDOFF.md](HANDOFF.md) for current authority; the 4 October chain below
 remains accepted historical engineering evidence. Gate A/freeze are unsigned.
 
 The project's new private repository is [thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), preserving its original local history. Source, tests, configurations and plans are included; runtime receipts under `runs/`, EEG data and model weights remain local or external. Publication does not resume research or certify a new validation pass. See [HANDOFF.md](HANDOFF.md) for the current evidence map.
 
-## Current status: first real Cho engineering case complete — 4 October 2026, 19:45 UTC
+## Historical milestone: first real Cho engineering case complete — 4 October 2026, 19:45 UTC
 
 **4 October 2026, 19:45 UTC — chain complete (engineering only):** on the
 repaired source pin `62536382…`, the guarded full-quality pass landed

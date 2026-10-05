@@ -1,13 +1,19 @@
 # Project coordination
 
-## Current bounded phase: 5 October 2026 engineering repair
+## Current phase: 5 October 2026 engineering validation complete
 
-At 08:30 UTC the first full-quality foreground session was no longer available;
-matching owned validation commands were absent without a terminal receipt.
-Partial lint/types and 39% tests are preserved, not a quality pass. Grant004 is
-released. A separate guarded2 helper/admission/output namespace and fresh grant005
-are required; a hidden persistent helper avoids dependence on a live tool session.
-No source/resource/time policy is relaxed and no old attempt is replayed.
+Guarded2 completed at 09:14:12 UTC under fresh grant005 (08:45–09:50):
+lint/types/tests exit 0, 1,048 tests passed, three skips, 1,121 subtests passed
+on settled source `b7452847`. Independent audit accepted engineering quality,
+zero blockers. Native startup samples exceeded 10 GiB; 1,378 active samples
+had minimum RAM 10.188 GiB/disk 239.424 GiB. The 1,737.11-second guarded run
+stayed within its effective 3,856-second cap. Root observed all eight owned
+PIDs absent at 09:18:39 UTC and explicitly released grant005; no further
+compute is queued in this repair phase. See
+[cleanup](runs/coordination/session_20261005_resume/quality_cleanup_observation_001.json)
+and [independent audit](runs/coordination/session_20261005_resume/quality_pass_independent_audit_001.json).
+The interrupted guarded1 logs remain preserved without a terminal pass.
+No source/resource/time policy was relaxed and no old attempt was replayed.
 
 The user resumed analysis and work, with at most five active subagents.
 Root owns admission/execution records, docs and Git. The named-Job worker owns
@@ -19,7 +25,9 @@ historical evidence remain frozen. See
 The internal 10:00 UTC cap is not a lease, user expiry or renewed 30-hour
 window. This phase signs neither Scientific Gate A nor the experiment freeze.
 
-Pro2 is active, with runtime earliest 12:00 UTC. Fresh scoped responses under
+Pro2 was active during validation, with ceremony earliest 12:00:05 UTC.
+Reconfirm peer state before any successor; this snapshot is not a new lease.
+Fresh scoped responses under
 `runs/coordination/session_20261005_resume/` require physical completion/release
 and claim no whole-host quiet. Focused001 failed before test/Job entry;
 focused002 refused with insufficient launch reserve. Both intervals are spent.
@@ -30,10 +38,11 @@ unchanged. Do not close the user's WSL session, stop services or rearm old watch
 V11 is historical repair staging: old source/runtime pins are template evidence,
 no release is created, and the fixed first-case wrapper cannot admit a new
 method or replay the accepted case. The new test file changes the source pin;
-baseline quality is not a pass for the changed tree. Future boards must pin
+guarded2 certifies current quality, while baseline controls/environment/raw
+evidence remains bound to `62536382`. Future boards must pin
 immutable writer-execution records instead of mutable session ledgers.
 
-## Current session coordination: FIRST CASE COMPLETE, chain done, 4 October 2026, 19:45 UTC
+## Historical coordination: FIRST CASE COMPLETE, chain done, 4 October 2026, 19:45 UTC
 
 The 4 October chain completed end-to-end under the user's directions
 (16:23Z "go do your thing"; 17:40Z "go back to work"; the user closed WSL
