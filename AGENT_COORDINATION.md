@@ -1,6 +1,29 @@
 # Project coordination
 
-## Current phase: LaBraM linear preparation, resumed 5 October 2026, 18:40 UTC
+## Current coordination: documentation refresh, 6 October 2026
+
+The user's current request is to update docs and handoff. Root owns this
+documentation-only change and fresh native metadata/source observations under
+`runs/coordination/documentation_refresh_20261006_0600/`. No production or
+operational recipe implementation edits, numerical validation, raw/weight reads,
+training, case Job or automatic retry are assigned or launched.
+
+The prior package phase [closed at 19:29 UTC on 5 October](runs/coordination/labram_linear_prep_20261005_v1/phase_closeout_001.json).
+Native fixture and isolated syntax scopes were explicitly released; the
+[static scope was released at 19:30 UTC](runs/coordination/labram_linear_prep_20261005_v1/static_peer_release_001.json).
+Its 22:40 UTC package deadline and all 5 October intervals have expired.
+No elapsed interval, internal cap or peer acknowledgement supplies new
+compute authority. Before any successor, obtain fresh coordination information
+and an exact finite response for that scope; rebuilding deadline/peer bindings
+also requires fresh operation pins and review.
+
+The 06:00 UTC observation found 3.23 GiB RAM against the unchanged 10 GiB heavy
+startup floor. It is not an admission or a whole-host quiet claim. No fresh
+heavy interval or one-use case release has been obtained. Preserve WSL, shared
+services, raw data, weights and historical receipts; leave the obsolete watcher
+disarmed. Scientific Gate A/freeze remain unsigned. See current [HANDOFF.md](HANDOFF.md).
+
+## Historical completed phase: LaBraM preparation, 5 October 2026
 
 The user resumed the next documented engineering step. Root owns the fresh
 [phase plan](runs/coordination/labram_linear_prep_20261005_v1/phase_plan.json),

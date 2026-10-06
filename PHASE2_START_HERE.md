@@ -1,6 +1,24 @@
 # Phase II - Start Here
 
-## Current continuation: LaBraM linear package prepared, 5 October, 19:19 UTC
+## Current continuation: new bindings and prerequisites required, 6 October
+
+The package preparation phase completed and was published as `ee5c278` on
+5 October. Its [closeout](runs/coordination/labram_linear_prep_20261005_v1/phase_closeout_001.json)
+and [explicit static release](runs/coordination/labram_linear_prep_20261005_v1/static_peer_release_001.json)
+are preserved. The v3 package deadline, 5 October 22:40 UTC, has expired;
+all prior peer intervals are historical. A fresh package/deadline/peer binding,
+exact new operation audit and compute coordination are required before entry.
+
+Native source hashing on 6 October rechecked `b7452847`/431 files; no new
+quality suite or real case ran. RAM at 06:00 UTC was 3.23 GiB against the
+10 GiB heavy startup floor, with no fresh heavy interval or case release.
+Follow the [prerequisite runbook](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md):
+refresh controls45/36, immutable writer evidence, raw52 and measured environment,
+then audit a new board before a separately admitted single LaBraM engineering
+case. Whole process interoperability remains unexecuted. No automatic retry
+is armed; WSL/services/data/weights are preserved. Gate A/freeze are unsigned.
+
+## Completed package milestone: 5 October 2026
 
 The [separate supervisor recipes](docs/phase2/labram_linear_supervisor/README.md)
 generated the prospective Cho/LaBraM-linear/subject_01/seed11/five-shot/repetition1

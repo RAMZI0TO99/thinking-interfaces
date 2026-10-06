@@ -1,5 +1,14 @@
 # Project review and engineering resume, 5 October 2026
 
+Current update, 6 October 06:00 UTC: the package milestone completed and was
+published as `ee5c278`; root closeout and explicit scope release are linked in
+[HANDOFF.md](../../HANDOFF.md). Source hashing rechecked `b7452847`/431 files.
+The v3 deadline, 5 October 22:40 UTC, is expired; new deadline/peer bindings,
+fresh operation review and compute coordination are required. The RAM sample
+was 3.23 GiB against the unchanged 10 GiB heavy startup floor. No new controls,
+raw verification, measured environment, full interoperability or real LaBraM
+case is accepted. The review below retains the 5 October evidence boundaries.
+
 Thinking Interfaces is a substantial EEG decoding and adaptation research
 harness. The core question is whether pretrained LaBraM with controlled
 target-support adaptation improves cross-subject motor-imagery decoding.
@@ -106,6 +115,9 @@ despite preserved stale prose in the old completion receipt.
    review accepts static/bounded fixture evidence, zero blockers; real process
    interoperability remains unexecuted.
    V11 stays fixed to the historical EEGNet case.
+   The v3 deadline has now expired. Before continuation, rebuild in a fresh
+   directory with current finite deadline/peer/source bindings and independently
+   validate/audit the exact new operations under fresh coordination.
 2. Refresh source-bound controls, raw verification, measured environment and
    immutable prerequisite audits on the settled source/Git state. Obtain a new
    scoped release and fresh attempt paths; no old board or grant can be reused.
@@ -116,9 +128,10 @@ despite preserved stale prose in the old completion receipt.
    comparison as research evidence.
 
 The morning repair phase completed before its internal 10:00 UTC cap. The
-evening continuation has an internal 22:40 UTC preparation cap, not a new owner
-window or compute lease. Fresh RAM remains below the 10 GiB heavy startup floor;
-no heavy prerequisites or case are admitted or queued. Native checks and the
+evening continuation closed at 19:29 UTC on 5 October; its internal 22:40 UTC
+preparation cap elapsed and was not a new owner window or compute lease. The
+6 October RAM sample remains below the 10 GiB heavy startup floor; no fresh
+heavy interval or case release has been obtained. Native checks and the
 separate isolated syntax check completed under fresh exact peer responses,
 physical witnesses and explicit releases. Current authority and receipts are
 in [HANDOFF.md](../../HANDOFF.md) and

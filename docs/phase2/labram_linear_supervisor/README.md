@@ -1,5 +1,14 @@
 # Prospective one-case LaBraM linear supervisor
 
+Status on 6 October: the 5 October package passed its bounded checks and the
+preparation phase closed, with explicit scope releases. The local v3 deadline
+**2026-10-05T22:40:00Z has expired**. Preserve its files and receipts; use the
+recipes below to create a fresh package with current source, peer and finite
+future deadline bindings, then validate/audit the new bytes under fresh
+coordination. No historical grant, fixture pass or publication admits new
+execution. The [current handoff](../../../HANDOFF.md) and
+[prerequisite runbook](prerequisite_runbook.md) govern the next steps.
+
 `Build-LabramLinearPackage.ps1` creates a reproducible operational successor
 for **Cho 2017 / LaBraM linear / subject_01 / seed 11 / five shots / repetition 1**.
 It constructs five files from byte-pinned historical V10 originals: `parent.py`,

@@ -1,14 +1,64 @@
 # Project handoff
 
-## Current phase: LaBraM linear supervisor preparation, 5 October 2026, 18:40 UTC
+## Current status: prerequisites pending, 6 October 2026, 06:00 UTC
+
+The LaBraM package preparation milestone is complete. Root accepted its limited
+scope in [package_root_acceptance_001.json](runs/coordination/labram_linear_prep_20261005_v1/package_root_acceptance_001.json),
+closed the phase at 19:29 UTC on 5 October in
+[phase_closeout_001.json](runs/coordination/labram_linear_prep_20261005_v1/phase_closeout_001.json),
+and explicitly released the static scope at 19:30 UTC in
+[static_peer_release_001.json](runs/coordination/labram_linear_prep_20261005_v1/static_peer_release_001.json).
+The package milestone was published as commit `ee5c2784a23e9bdf33d59ed649f59244b5062295`;
+its private remote commit/tree were verified on 5 October at 19:27 UTC in the
+[publication receipt](runs/coordination/labram_linear_prep_20261005_v1/private_publication_receipt_001.json).
+These records certify preparation and bounded checks, not a LaBraM execution.
+
+The v3 package's deadline **2026-10-05T22:40:00Z has expired**. All listed
+5 October coordination intervals are historical and supply no current compute
+authority. Preserve v3 and its receipts. Before execution, construct a new
+package in a fresh directory with a finite future deadline and current peer
+binding; validate and independently audit its exact new bytes. Reusing or
+editing the expired package in place is not the next step.
+
+The [6 October observation](runs/coordination/documentation_refresh_20261006_0600/current_observation_001.json)
+recomputed source `b7452847` across 431 canonical files using native source
+hashing. At 06:00 UTC, available RAM was **3.23 GiB**, disk 224.62 GiB. This is
+a point-in-time observation, not resource admission; the heavy startup RAM
+floor remains 10 GiB. No fresh heavy peer interval or one-use case release
+has been obtained. This update launches no validation, training or retry.
+Native Windows/PowerShell remains the execution route; WSL and shared services
+are preserved. No new 30-hour window or elapsed lease is inferred.
+
+Next steps, in order:
+
+1. Settle the source/Git state, obtain fresh preparation coordination and build,
+   validate and audit a new package with current deadline/peer/operation pins.
+2. Obtain fresh finite heavy intervals and measured resource admission; refresh
+   controls45/36 sequentially, immutable writer evidence, raw52 verification and
+   the measured environment on the current source. Commit docs before final
+   environment measurement and keep Git/environment stable through execution.
+3. Assemble and independently audit a fresh prerequisite board, check canonical
+   case conflicts and obtain a separate one-use release for the single LaBraM
+   linear / subject_01 / seed11 / five-shot / repetition1 engineering probe.
+   Whole parent/native/child interoperability and physical post-run acceptance
+   remain unexecuted requirements.
+
+The sole accepted real case is still the historical EEGNet engineering cell on
+`62536382`. Current-source quality passed on 5 October; controls/raw/measured
+environment still need refresh. Scientific Gate A and the experiment freeze
+remain unsigned; checkpoint pretraining provenance remains unverified. Use the
+[prerequisite runbook](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md)
+for commands, evidence ordering and unchanged limits.
+
+## Completed milestone: LaBraM supervisor preparation, 5 October 2026
 
 The user explicitly resumed work after the completed morning repair phase.
-The fresh bounded [phase plan](runs/coordination/labram_linear_prep_20261005_v1/phase_plan.json)
-continues the next engineering step: a separate prospective LaBraM linear /
-subject_01 / seed 11 / five shots / repetition 1 supervisor. Its internal
-22:40 UTC preparation cap is not a renewed owner window or compute lease.
-Production and historical package files remain frozen; new files have explicit
-worker ownership and at most five agents are active.
+The bounded [phase plan](runs/coordination/labram_linear_prep_20261005_v1/phase_plan.json)
+covered a separate prospective LaBraM linear / subject_01 / seed11 / five shots /
+repetition1 supervisor and completed at 19:29 UTC. Its elapsed internal 22:40
+UTC cap was not a renewed owner window or compute lease. Production and
+historical files stayed frozen, new files had explicit worker ownership and
+finished workers were interrupted. The evidence below is the 5 October snapshot.
 
 Current source remains `b7452847` (431 files), clean starting commit `d987d3e`.
 Three scoped source reviews found the production route already supports the

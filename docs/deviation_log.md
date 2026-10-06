@@ -1,5 +1,23 @@
 # Deviation log
 
+## 2026-10-06 - Documentation and handoff refresh only
+
+The current status now distinguishes the completed 5 October package phase
+from pending prerequisites. Root acceptance, publication `ee5c278`, phase
+closeout at 19:29 UTC and explicit static release at 19:30 UTC are linked.
+The v3 deadline **2026-10-05T22:40:00Z is expired**; all old coordination
+intervals remain historical. Continuation requires a fresh package with current
+bindings, new byte checks/audit and exact fresh compute responses. Old packages,
+failed attempts, receipts and raw/weight files remain preserved.
+
+Native source hashing on 6 October rechecked `b7452847`/431 files. The
+[06:00 UTC resource observation](../runs/coordination/documentation_refresh_20261006_0600/current_observation_001.json)
+found 3.23 GiB RAM and 224.62 GiB free disk. This is a dated sample, not admission;
+the common heavy startup RAM floor remains 10 GiB. No fresh heavy interval or
+case release has been obtained. This change edits documentation only and starts
+no Python tests, numerical imports, raw verification, training or retry watcher.
+WSL/shared services remain untouched; scientific gates remain unsigned.
+
 ## 2026-10-05, evening - Separate LaBraM supervisor preparation
 
 The next engineering case has a separate prospective five-file package and

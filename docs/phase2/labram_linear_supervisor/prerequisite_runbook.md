@@ -5,15 +5,27 @@ five shots / repetition1. Preparing the package or this runbook grants no
 execution release. Scientific Gate A and the experiment freeze remain unsigned;
 checkpoint pretraining cohort provenance remains unverified.
 
+Status refreshed on 6 October: the 5 October package milestone completed its
+131 native checks, 72 extracted acceptance fixtures, isolated compilation of
+three generated Python files and independent limited-scope audit. Its v3
+deadline **2026-10-05T22:40:00Z is expired**, and the static/native/syntax scopes
+are explicitly released. The tracked builders remain reusable recipes; v3
+and all its receipts remain historical evidence. No current execution release
+or fresh heavy interval is inherited. The 06:00 UTC RAM sample was 3.23 GiB,
+below the unchanged 10 GiB heavy startup floor; it is not resource admission.
+
 The production route already supports this case. New operational files under
 `runs/coordination/` and recipes here are outside `core.provenance.source_files`;
 their exact bytes require separate operational review and pins. Preserve the
 current `b7452847` source and accepted quality pointer. Any selected production,
 test, configuration or lockfile change needs a fresh matching quality pass.
 
-1. Finish the new method-specific package and native contract regressions.
-   Audit the generated five files and reversible build proof. No old runtime,
-   board, release or LaBraM result is inherited from EEGNet.
+1. Settle current source/Git and obtain fresh preparation coordination. Build
+   a new method-specific package in a fresh directory with a finite future
+   deadline and current peer binding; preserve the expired v3 unchanged.
+   Re-run native contract checks and independently audit the exact new five
+   files, operation hashes and reversible proof. Prior fixtures certify their
+   own bytes; no old runtime, board, release or LaBraM result is inherited.
 2. Obtain fresh finite peer intervals and resource admission for sequential
    controls45 and controls36:
 
@@ -27,7 +39,9 @@ test, configuration or lockfile change needs a fresh matching quality pass.
    policy ceiling and 1800-second writer bound; the peer interval may be
    shorter and must still cap execution. Never run these CUDA cohorts together.
    Startup floors remain 10GiB RAM, with 10GiB disk for45 and 20GiB for36;
-   active RAM floor is4GiB. Retain genuine output, exit and cleanup receipts.
+   active RAM floor is4GiB. Take fresh admission samples at actual entry;
+   a documentation RAM observation cannot admit execution. Retain genuine
+   output, exit and cleanup receipts.
 3. Capture this additional writer check with immutable stdout/stderr and a
    terminal receipt bound to source before/after and the fixed quality SHA:
 
