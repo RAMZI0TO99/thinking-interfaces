@@ -1,8 +1,8 @@
 # Project coordination
 
-## Current coordination: fresh bounded engineering resume, 7 October 2026
+## Current coordination: preparation complete, heavy work on hold, 7 October 2026
 
-The user's resume instruction opens the
+The user's resume instruction opened the
 [new phase](runs/coordination/session_20261007_resume/phase_plan.json).
 Root owns only new operational preparation/coordination records and project
 documentation. Production, historical packages, accepted cells, data and weights
@@ -37,6 +37,13 @@ is metadata observation rather than execution admission.
 No heavy interval, one-use case release, training or automatic retry exists.
 Preserve WSL/shared services and the obsolete watcher in its disarmed state.
 Scientific Gate A/freeze remain unsigned. See current [HANDOFF.md](HANDOFF.md).
+
+The preparation milestone is [closed](runs/coordination/session_20261007_resume/phase_closeout_001.json),
+with [explicit static peer release](runs/coordination/session_20261007_resume/static_peer_release_001.json).
+The reciprocal different-root review of two pro2 helper drafts completed
+127 native read/hash/reconstruction/PowerShell-parser checks; no Python grammar
+parse, target function or runtime entry was executed. All new receipts remain
+local and ignored. Further compute requires fresh coordination and admission.
 
 ## Current coordination: documentation refresh, 6 October 2026
 

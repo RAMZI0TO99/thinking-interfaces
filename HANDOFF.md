@@ -42,6 +42,12 @@ passed 40 checks with eight referenced inputs rehashed. Root
 [accepts preparation and limited checks only](runs/coordination/session_20261007_resume/package_root_acceptance_001.json).
 These checks do not establish whole-launcher interoperability or a LaBraM case result.
 
+This preparation milestone is complete. Its [closeout](runs/coordination/session_20261007_resume/phase_closeout_001.json)
+retains the unadmitted prerequisites, and the [static release](runs/coordination/session_20261007_resume/static_peer_release_001.json)
+ends this preparation scope. Documentation is committed locally; no remote
+push is attempted. The finite package deadline may expire before the resource
+window opens; an expired package requires fresh bindings and review.
+
 The first byte-preparation helper refused before any operational output;
 its failed bytes and
 [refusal](runs/coordination/session_20261007_resume/watcher_preparation_refusal_001.json)
