@@ -1,6 +1,26 @@
 # Phase II - Start Here
 
-## Current continuation: new bindings and prerequisites required, 6 October
+## Current continuation: fresh package checks complete, 7 October
+
+The user's resume instruction opened a bounded engineering phase. A new
+LaBraM-linear/subject_01/seed11/five-shot/repetition1 package has current source
+`b7452847`/431-file and peer bindings, with a finite 7 October 14:30 UTC
+deadline. Native validation passed 131 checks/72 extracted acceptance fixtures;
+separate isolated compilation passed three generated Python targets. Both
+owned processes exited and their exact scopes were released. Different-root
+review passed 394 package checks and 40 saved syntax-result checks. Root
+[accepted preparation only](runs/coordination/session_20261007_resume/package_root_acceptance_001.json).
+
+The saved 45-fit and 36-fit control contexts are still on older source versions.
+Current-source controls, immutable writer evidence, raw52, measured environment,
+an audited prerequisite board and a separate one-use case release remain in
+the [runbook](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md).
+Two RAM samples at 11:04 UTC were 7.383/7.476 GiB, below the 10 GiB heavy startup floor; no heavy
+work or LaBraM case is admitted. Full launcher interoperability is unexecuted.
+Gate A/freeze remain unsigned, and no automatic retry is armed. See the
+[current handoff](HANDOFF.md) for exact evidence and coordination.
+
+## Historical continuation: new bindings and prerequisites required, 6 October
 
 The package preparation phase completed and was published as `ee5c278` on
 5 October. Its [closeout](runs/coordination/labram_linear_prep_20261005_v1/phase_closeout_001.json)

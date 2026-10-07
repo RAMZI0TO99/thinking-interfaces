@@ -2,19 +2,22 @@
 
 Phase I builds a reproducible EEG-decoding harness and a working real-time demonstration. Research claims begin only in Phase II.
 
-Current engineering status (6 October 2026): source `b7452847…` has the independently audited 5 October guarded quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The launcher contract repair passed 15 native checks, and seven new named-Job regression cases passed. Native source hashing rechecked the same 431-file source on 6 October. The sole accepted real case remains the 4 October EEGNet engineering case on `62536382…`; current controls, environment and the next LaBraM case still need fresh prerequisites. Scientific Gate A and the experiment freeze are unsigned. See the [project review](docs/phase2/project_resume_review_20261005.md) and [HANDOFF.md](HANDOFF.md).
+Current engineering status (7 October 2026): source `b7452847…` remains unchanged across 431 canonical files, with the independently audited 5 October quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The sole accepted real case remains the historical EEGNet engineering case on `62536382…`. Scientific Gate A and the experiment freeze are unsigned. See [HANDOFF.md](HANDOFF.md) for the current evidence and next steps.
 
 The separate [LaBraM linear supervisor recipe](docs/phase2/labram_linear_supervisor/README.md)
-now builds the prospective next-case package. It passed 131 native contract
-checks, including 72 acceptance fixtures, and isolated syntax compilation of
-three generated Python files. Independent review accepts this preparation scope. Controls,
+has built a fresh next-case package with current source/peer bindings and a
+finite 7 October 14:30 UTC deadline. It passed 131 native contract checks,
+including 72 extracted acceptance fixtures, and isolated compilation of three
+generated Python files. Physical exits and scope releases are confirmed;
+independent package and syntax-result reviews passed 394 and 40 checks.
+Root accepts this preparation scope only. Controls,
 raw verification, measured environment and resource admission remain required;
 these preparation checks do not establish a LaBraM execution result.
 
-The preparation phase closed on 5 October and its package deadline has expired.
-The next step requires a new package with current bindings, fresh compute
-coordination, prerequisite refresh and at least 10 GiB available startup RAM.
-The 6 October 06:00 UTC sample was 3.23 GiB; no training or retry is queued.
+The saved 45-fit and 36-fit controls belong to older source versions. Their
+refresh requires fresh compute coordination and at least 10 GiB available
+startup RAM. Two 7 October 11:04 UTC samples were 7.383/7.476 GiB; no heavy work or
+automatic retry is admitted. The expired 5 October package is preserved.
 
 The project repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), created as a private repository on 3 October 2026. It preserves the local Git history and publishes the source, configurations, tests and project documentation. Read [HANDOFF.md](HANDOFF.md) for the current validation limits.
 

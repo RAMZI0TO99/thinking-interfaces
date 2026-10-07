@@ -1,5 +1,73 @@
 # Project handoff
 
+## Current status: fresh preparation accepted, prerequisites on hold, 7 October 2026
+
+The user directed "ok then resume working" after a read-only project review.
+The new [bounded phase](runs/coordination/session_20261007_resume/phase_plan.json)
+targets a fresh LaBraM linear / subject_01 / seed11 / five-shot / repetition1
+package and its current-source prerequisites. Its internal 14:30 UTC cap is
+not a user deadline, compute lease or renewed 30-hour window.
+
+The [fresh native observation](runs/coordination/session_20261007_resume/initial_observation_001.json)
+recomputed `b7452847` across 431 canonical files, with clean starting Git
+commit `f41ead9`. The accepted 5 October quality pointer still hashes to
+`f5f84e9e8669facc516a0fc48a8dca6e56b0c62beb6854b271b2f15d6914ecb9`.
+At 10:28 UTC available RAM was 6.264 GiB and disk 188.899 GiB. This is
+metadata observation, not admission; the heavy startup RAM floor stays 10 GiB.
+
+Current roots are pro3 `01a115a0-5f96-7472-880f-e1d92e46d853` and pro2
+`01a1159f-a60d-7c03-bded-71f2047fb8fb`. Fresh pro3 static preparation is
+accepted for 10:30-12:30 UTC in the [adoption](runs/coordination/session_20261007_resume/static_preparation_adoption_001.json).
+Pro3 separately accepted pro2 Source012 and then the expanded Source013 in
+[response013 attempt002](runs/coordination/session_20261007_resume/pro2_source_window_response_013_attempt002.json),
+effective prospectively from 10:57:50 UTC to 12:32 UTC. The peer's own user
+authorized up to five source-review agents; pro3 has spawned none.
+Neither response grants whole-host quiet, numerical validation or case entry.
+
+Fresh native and isolated-syntax watcher bytes are prepared from preserved
+historical scripts with reversible binding proofs and different-root reviews.
+The new [package](runs/coordination/labram_linear_supervision_20261007_v1/)
+has current peer/source bindings and a finite **7 October 14:30 UTC** deadline.
+Its [native contract check](runs/coordination/session_20261007_resume/package_contract_fixture_001.json)
+passed **131 checks, including 72 extracted acceptance fixtures**. The
+[physical witness](runs/coordination/session_20261007_resume/native_fixture_physical_witness_001.json)
+records exit0, 1.966 seconds and owned PID199232 absent. The separate isolated
+`-I -S -B` [AST/compile witness](runs/coordination/session_20261007_resume/isolated_syntax_physical_witness_001.json)
+records three generated Python targets, exit0, 0.406 seconds and PID197080
+absent, without executing target code. Both scopes are explicitly released.
+The [different-root package audit](runs/coordination/session_20261007_resume/package_static_independent_audit_001.json)
+passed 394 checks; its 23 referenced inputs were rehashed before adoption.
+The separate [saved syntax audit](runs/coordination/session_20261007_resume/isolated_syntax_independent_results_audit_001.json)
+passed 40 checks with eight referenced inputs rehashed. Root
+[accepts preparation and limited checks only](runs/coordination/session_20261007_resume/package_root_acceptance_001.json).
+These checks do not establish whole-launcher interoperability or a LaBraM case result.
+
+The first byte-preparation helper refused before any operational output;
+its failed bytes and
+[refusal](runs/coordination/session_20261007_resume/watcher_preparation_refusal_001.json)
+are retained. Correcting the new helper did not change production or old files.
+An empty failed Source013 response write is also retained as a nonreceipt;
+only the explicit attempt002 response supplies the stated static agreement.
+
+The [prerequisite inventory](runs/coordination/session_20261007_resume/prerequisite_inventory_001.json)
+read 19 saved control contexts and found none on the current source. Existing
+45-fit and 36-fit receipts remain evidence for their older source versions.
+Two fresh 11:04 UTC RAM samples were 7.383 and 7.476 GiB, below the 10 GiB
+heavy startup floor, as recorded in the [resource hold](runs/coordination/session_20261007_resume/heavy_resource_hold_001.json).
+The [11:07 metadata observation](runs/coordination/session_20261007_resume/post_preparation_observation_001.json)
+reconfirmed the source, quality pointer, single accepted EEGNet cell and owned
+process absence. No heavy interval or case release exists; controls, raw verification,
+environment measurement, training and case Jobs have not launched. No
+automatic retry is armed.
+
+The next evidence ordering remains the [prerequisite runbook](docs/phase2/labram_linear_supervisor/prerequisite_runbook.md):
+controls45/36 plus immutable writer evidence,
+raw52, final measured environment on settled Git, a fresh audited board and a
+separate one-use case release. The expired v3, all historical receipts and the
+accepted EEGNet cell remain preserved. Scientific Gate A/freeze remain unsigned;
+checkpoint pretraining remains unverified. Native Windows is the execution
+route; shared services, WSL, raw data and weights remain intact.
+
 ## Current status: prerequisites pending, 6 October 2026, 06:00 UTC
 
 The LaBraM package preparation milestone is complete. Root accepted its limited

@@ -1,6 +1,20 @@
 # Prospective one-case LaBraM linear supervisor
 
-Status on 6 October: the 5 October package passed its bounded checks and the
+Status on 7 October: the new local
+[package](../../../runs/coordination/labram_linear_supervision_20261007_v1/)
+has current source/peer bindings and a finite **2026-10-07T14:30:00Z** deadline.
+It passed 131 native checks, including 72 extracted acceptance fixtures, and
+isolated AST/compile of three generated Python targets under separately
+reviewed and accepted scopes. Physical exits and scope releases are recorded.
+Different-root reviews passed 394 package checks and 40 saved syntax-result
+checks; root [acceptance](../../../runs/coordination/session_20261007_resume/package_root_acceptance_001.json)
+certifies preparation and limited checks only.
+The saved controls require a current-source refresh; observed RAM is below
+the 10 GiB heavy startup floor. There is no execution release or LaBraM result.
+Use the [current handoff](../../../HANDOFF.md) and
+[prerequisite runbook](prerequisite_runbook.md).
+
+Historical status on 6 October: the 5 October package passed its bounded checks and the
 preparation phase closed, with explicit scope releases. The local v3 deadline
 **2026-10-05T22:40:00Z has expired**. Preserve its files and receipts; use the
 recipes below to create a fresh package with current source, peer and finite

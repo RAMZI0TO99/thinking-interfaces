@@ -5,7 +5,17 @@ five shots / repetition1. Preparing the package or this runbook grants no
 execution release. Scientific Gate A and the experiment freeze remain unsigned;
 checkpoint pretraining cohort provenance remains unverified.
 
-Status refreshed on 6 October: the 5 October package milestone completed its
+Status on 7 October: a fresh package with current source/peer bindings and a
+14:30 UTC deadline passed 131 native checks/72 extracted acceptance fixtures
+and separate isolated compilation of three generated Python files. Both
+processes exited cleanly and their scopes were explicitly released. Different-root
+reviews passed 394 package and 40 saved syntax-result checks; root accepts
+preparation only. The current
+19-context inventory has no matching control bundle on source `b7452847`.
+RAM samples at 11:04 UTC were 7.383/7.476 GiB against the 10 GiB heavy startup floor. No
+heavy refresh, measured environment or case release is admitted.
+
+Historical 6 October status: the 5 October package milestone completed its
 131 native checks, 72 extracted acceptance fixtures, isolated compilation of
 three generated Python files and independent limited-scope audit. Its v3
 deadline **2026-10-05T22:40:00Z is expired**, and the static/native/syntax scopes

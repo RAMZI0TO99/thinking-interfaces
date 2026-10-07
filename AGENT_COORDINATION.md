@@ -1,5 +1,43 @@
 # Project coordination
 
+## Current coordination: fresh bounded engineering resume, 7 October 2026
+
+The user's resume instruction opens the
+[new phase](runs/coordination/session_20261007_resume/phase_plan.json).
+Root owns only new operational preparation/coordination records and project
+documentation. Production, historical packages, accepted cells, data and weights
+remain frozen. No subagents have been spawned. The internal 14:30 UTC cap is
+not a compute lease, user expiry or new 30-hour window.
+
+Current pro3/pro2 roots are `01a115a0-5f96-7472-880f-e1d92e46d853` and
+`01a1159f-a60d-7c03-bded-71f2047fb8fb`. Fresh pro3 native static package/docs/
+byte-AST preparation is accepted for 10:30-12:30 UTC in
+[static adoption001](runs/coordination/session_20261007_resume/static_preparation_adoption_001.json).
+Pro3's [response013 attempt002](runs/coordination/session_20261007_resume/pro2_source_window_response_013_attempt002.json)
+accepts expanded peer Source013 prospectively from 10:57:50 UTC to 12:32 UTC.
+The peer's own user separately authorized up to five source-review agents.
+Pro3 has spawned none. The failed empty response013 write is a nonreceipt;
+only attempt002 is the accepted response. These are concurrent static scopes;
+neither supplies numerical, native fixture, case or whole-host-quiet authority.
+
+Separate exact native fixture005 and isolated syntax002 peer grants and
+different-root watcher reviews were obtained before entry. The native fixture
+passed 131 checks/72 extracted fixtures, exit0/PID199232 absent in 1.966 seconds.
+The isolated compiler passed three targets, exit0/PID197080 absent in 0.406
+seconds. Their [native](runs/coordination/session_20261007_resume/native_fixture_scope_release_001.json)
+and [syntax](runs/coordination/session_20261007_resume/isolated_syntax_scope_release_001.json)
+scopes are explicitly released; unused time cannot admit a second attempt.
+The different-root package audit passed 394 checks, and the saved syntax
+results audit passed 40. Root [acceptance](runs/coordination/session_20261007_resume/package_root_acceptance_001.json)
+certifies preparation and these limited checks only.
+Current source remains `b7452847`/431 files with its accepted engineering
+quality pointer. Two 11:04 UTC RAM samples were 7.383/7.476 GiB, below the
+10 GiB heavy startup floor; the [hold](runs/coordination/session_20261007_resume/heavy_resource_hold_001.json)
+is metadata observation rather than execution admission.
+No heavy interval, one-use case release, training or automatic retry exists.
+Preserve WSL/shared services and the obsolete watcher in its disarmed state.
+Scientific Gate A/freeze remain unsigned. See current [HANDOFF.md](HANDOFF.md).
+
 ## Current coordination: documentation refresh, 6 October 2026
 
 The user's current request is to update docs and handoff. Root owns this
