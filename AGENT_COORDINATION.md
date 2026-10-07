@@ -1,6 +1,42 @@
 # Project coordination
 
-## Current coordination: preparation complete, heavy work on hold, 7 October 2026
+## Current coordination: controls scopes released, 7 October 2026
+
+Root owns new operational candidates, coordination records, documentation and
+local Git. Frozen production, old receipts, raw data and weights remain intact.
+Pro3 has spawned no agents. Current roots remain pro3
+`01a115a0-5f96-7472-880f-e1d92e46d853` and pro2
+`01a1159f-a60d-7c03-bded-71f2047fb8fb`.
+
+The separately admitted v4 controls45 attempt002 passed its original 45 units,
+was physically closed and explicitly released. Root accepted the different
+2,557-check saved review. The separately admitted v5 controls36 attempt001
+reached its 500-second whole-cohort deadline during raw recomputation, exited1
+and was physically reaped. Its
+[release](runs/coordination/prerequisite_refresh_20261007_v5/controls36_cpu_scope_release_001.json)
+does not admit a second attempt or certify a control result. Saved-refusal
+review is pending; no automatic retry or later CPU scope is active.
+
+Fresh [static010](runs/coordination/prerequisite_refresh_20261007_v4/native_static_adoption_010.json)
+permits native read/hash/JSON/PowerShell AST preparation and docs through
+16:20 UTC, with no Python/fixture/numerical entry implied. Peer
+[Source015 response](runs/coordination/session_20261007_resume/pro2_source_window_response_015.json)
+permits up to its user-authorized five source agents through 16:20 UTC and
+requires separate exact grants for original fixture execution. Neither scope
+claims whole-host quiet. A future source, fixture, cohort or case window must
+have a fresh genuine acknowledgment; elapsed windows are not active leases.
+
+The v2 LaBraM package and v3 validation watchers passed 2,148 independent source
+checks; current native fixtures and isolated syntax remain unexecuted and
+unadmitted. A new whole-cohort runner must respect the original writer1800
+and matched7200 policy rather than inherit the insufficient spent500 budget.
+Each actual operation still needs its own reviewed bytes, finite one-use
+grant, full startup reserve, resource admission, physical exit and saved-result
+acceptance. Preserve startup10/active4 GiB RAM, disk floors, 6/7.5 GiB memory
+caps and the single-case 480/520/600 limits. Scientific Gate A/freeze remain
+unsigned. See [HANDOFF.md](HANDOFF.md) for the current evidence.
+
+## Historical completed preparation snapshot, 7 October 2026, 11:07 UTC
 
 The user's resume instruction opened the
 [new phase](runs/coordination/session_20261007_resume/phase_plan.json).

@@ -5,7 +5,20 @@ five shots / repetition1. Preparing the package or this runbook grants no
 execution release. Scientific Gate A and the experiment freeze remain unsigned;
 checkpoint pretraining cohort provenance remains unverified.
 
-Status on 7 October: a fresh package with current source/peer bindings and a
+Current 7 October refresh: the original full45 cohort passed on `b7452847`
+and its different 2,557-check saved review was accepted. The separate full36
+attempt reached the new external500-second deadline during the required raw
+writer check, with no current-source matched context published. Physical
+cleanup and CPU release are saved; no36 result, immutable writer execution,
+raw52 pass or LaBraM result is accepted. RAM stayed above14.704 GiB.
+The original writer1800/matched7200 ceilings remain unchanged. A successor
+must review and admit a suitable whole-cohort guard in a fresh attempt;
+preserve the spent refusal and all per-case/time/resource policies. The v2
+case package/v3 validation watchers passed2,148 source checks, but their
+current native fixtures and isolated compilation remain unexecuted. See
+[HANDOFF.md](../../../HANDOFF.md) for exact receipts and current peer scopes.
+
+Historical 7 October preparation: a fresh package with current source/peer bindings and a
 14:30 UTC deadline passed 131 native checks/72 extracted acceptance fixtures
 and separate isolated compilation of three generated Python files. Both
 processes exited cleanly and their scopes were explicitly released. Different-root

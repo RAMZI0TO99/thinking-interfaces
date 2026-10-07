@@ -4,20 +4,27 @@ Phase I builds a reproducible EEG-decoding harness and a working real-time demon
 
 Current engineering status (7 October 2026): source `b7452847…` remains unchanged across 431 canonical files, with the independently audited 5 October quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The sole accepted real case remains the historical EEGNet engineering case on `62536382…`. Scientific Gate A and the experiment freeze are unsigned. See [HANDOFF.md](HANDOFF.md) for the current evidence and next steps.
 
-The separate [LaBraM linear supervisor recipe](docs/phase2/labram_linear_supervisor/README.md)
-has built a fresh next-case package with current source/peer bindings and a
-finite 7 October 14:30 UTC deadline. It passed 131 native contract checks,
-including 72 extracted acceptance fixtures, and isolated compilation of three
-generated Python files. Physical exits and scope releases are confirmed;
-independent package and syntax-result reviews passed 394 and 40 checks.
-Root accepts this preparation scope only. Controls,
-raw verification, measured environment and resource admission remain required;
-these preparation checks do not establish a LaBraM execution result.
+The original full45 controls now passed on the current source, and root
+accepted the independent 2,557-check saved-results review. The separate full36
+attempt reached its new external500-second deadline during the required raw
+writer check. Its owned processes were reaped and its private Job closed;
+available RAM stayed above14.704 GiB. The spent attempt produced no accepted
+36-control result. A fresh reviewed whole-cohort runner must account for the
+original writer1800/matched7200 ceilings. No automatic retry is admitted.
 
-The saved 45-fit and 36-fit controls belong to older source versions. Their
-refresh requires fresh compute coordination and at least 10 GiB available
-startup RAM. Two 7 October 11:04 UTC samples were 7.383/7.476 GiB; no heavy work or
-automatic retry is admitted. The expired 5 October package is preserved.
+The [LaBraM linear supervisor recipe](docs/phase2/labram_linear_supervisor/README.md)
+has prepared a new v2 case package with a finite16:20 UTC cap. Its package and
+v3 validation watchers passed2,148 independent source checks. Current native
+fixtures, isolated compilation, immutable writer evidence, raw52 verification,
+final measured environment, the complete board and a separately released
+LaBraM engineering case remain outstanding. These source checks certify no
+LaBraM result. See [HANDOFF.md](HANDOFF.md) for exact evidence and peer scopes.
+
+Historical 7 October11:07 preparation: the earlier v1 package passed131 native
+checks/72 acceptance fixtures and isolated compilation of three targets, with
+394 package and40 syntax-result review checks. Its14:30 UTC cap has expired.
+Those receipts certify only that earlier package. Historical packages and
+the accepted EEGNet cell remain preserved.
 
 The project repository is [RAMZI0TO99/thinking-interfaces](https://github.com/RAMZI0TO99/thinking-interfaces), created as a private repository on 3 October 2026. It preserves the local Git history and publishes the source, configurations, tests and project documentation. Read [HANDOFF.md](HANDOFF.md) for the current validation limits.
 

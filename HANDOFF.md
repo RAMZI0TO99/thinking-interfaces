@@ -1,6 +1,71 @@
 # Project handoff
 
-## Current status: fresh preparation accepted, prerequisites on hold, 7 October 2026
+## Current status: controls45 accepted, controls36 deadline refusal, 7 October 2026
+
+The user resumed work after freeing RAM. Canonical source remains `b7452847`
+across 431 files; the accepted 5 October quality pointer remains unchanged.
+Quality was not rerun in this refresh. The following executed attempts used
+clean Git commit `41dc5574` and preserved production, historical receipts,
+data, weights and the sole accepted historical EEGNet cell.
+
+The original full **45-control cohort passed on the current source** in
+[v4 attempt002](runs/coordination/prerequisite_refresh_20261007_v4/controls45_attempt_002/).
+Its immutable inventory has expected=valid=45, with shuffle9 mean **0.4876543**
+against 0.6 and precue36 mean **0.2485532** against 0.35. Owned runtime was
+143.175 seconds; minimum active available RAM was 10.183 GiB. Process and
+aggregate peaks were 4,699,398,144 and 4,712,271,872 bytes. The private Job and
+owned handles closed, and the CPU scope was explicitly released. Root
+[acceptance](runs/coordination/prerequisite_refresh_20261007_v4/controls45_root_acceptance_002.json)
+adopted the genuine different-reviewer **2,557-check saved-results review**
+after 544 referenced inputs were rehashed. The
+[first-case audit](runs/coordination/prerequisite_refresh_20261007_v4/controls45_first_case_audit_003.json)
+is current-source engineering evidence; it does not sign a scientific gate.
+
+The original **36-control cohort did not pass**. Its fresh
+[v5 attempt001](runs/coordination/prerequisite_refresh_20261007_v5/controls36_attempt_001/)
+entered after the genuine 1,957-check source review and separate exact peer
+acknowledgment. It reached the allocated 500-second deadline during the
+required all-nine-subject raw writer check, before any current-source matched
+context was published. Native owned runtime was 502.275 seconds including
+cleanup, within 660 seconds. Available RAM stayed above **14.704 GiB**; this
+was a time refusal, not a RAM refusal. All nine observed owned PIDs were
+absent, the private Job was empty and closed, and process/thread handles
+closed. The immutable
+[refusal candidate](runs/coordination/prerequisite_refresh_20261007_v5/controls36_deadline_refusal_candidate_001.json)
+and [CPU release](runs/coordination/prerequisite_refresh_20261007_v5/controls36_cpu_scope_release_001.json)
+preserve exit1, empty target logs, missing worker completion and the missing
+controller source-after field. A separate fresh native observation recomputed
+`b7452847`/431; it does not fill in the missing controller field. Independent
+saved-refusal review remains required. The spent attempt cannot be replayed.
+
+The mismatch to fix is the external whole-cohort budget: the original writer
+has an 1,800-second bound and the original matched cohort a 7,200-second
+ceiling. A successor needs a separately reviewed cohort runner, fresh finite
+coordination, an unused attempt and actual-entry resource samples. Preserve
+the original writer/control code, 6/7.5 GiB caps, startup10/active4 GiB RAM
+floors, disk floors and the single-case 480/520/600-second limits. Preparing
+that successor supplies no execution authority or renewed 30-hour window.
+
+The fresh [LaBraM package v2](runs/coordination/labram_linear_supervision_20261007_v2/)
+has a 16:20 UTC internal cap. Its five files and the
+[v3 validation watchers](runs/coordination/labram_linear_prep_20261007_v3/)
+passed a genuine different-reviewer **2,148-check source review**, with 513
+inputs rehashed before root's source-only acceptance. Current native131/72
+fixtures and three-target isolated compilation remain unexecuted. Source
+review does not certify those checks, a measured environment or a LaBraM
+result. Earlier v1 preparation and expired candidate watchers remain intact.
+
+Current pro3 static010 and peer Source015 scopes end at **16:20 UTC**.
+Pro3 has no active CPU scope and has spawned no agents. Peer Source015 permits
+its explicitly authorized five source agents and separately admitted bounded
+stdlib fixtures; it supplies no whole-host quiet or numerical authority.
+Writer execution, raw52, the final measured environment, an audited complete
+board and a separately released LaBraM engineering case remain outstanding.
+Update and commit documentation before final environment measurement.
+Scientific Gate A and the experiment freeze remain unsigned; checkpoint
+pretraining cohort provenance remains unverified.
+
+## Historical preparation snapshot, 7 October 2026, 11:07 UTC
 
 The user directed "ok then resume working" after a read-only project review.
 The new [bounded phase](runs/coordination/session_20261007_resume/phase_plan.json)
