@@ -1,5 +1,45 @@
 # Project handoff
 
+## Current work: cache performance prototype validated, 8 October 2026
+
+The user authorized continuing until pro2 requests a pause. Pro3 proceeded
+independently; the latest peer owner steering requests no pause. Genuine
+Source020 permits the peer's concurrent lightweight Source work through16:30UTC,
+at most five peer Source agents total including overlap. It grants no peer
+runtime or scientific authority. Pro3 numerical diagnostics use direct user
+authorization, fresh owned attempt directories and finite per-operation guards;
+the expired12:30UTC interval is not reused. Frozen production/data/weights,
+historical receipts and the two spent case attempts remain unchanged.
+
+The original512MiB LRU trace measured **100 misses in100 source loads**, with
+88 evictions over the first two source-validation loading orders. Verified
+source episodes total2,111,365,672 bytes. A private Windows file-cache prototype
+passed **23 fixture checks**, including exact linear/full/LoRA model, losses,
+history/evidence/RNG and file protection/cleanup. One earlier compatibility
+failure is preserved; the corrected `clear()` discards reusable file entries.
+The prototype is shipped as a [separate operational recipe](docs/phase2/cho_b_disk_cache/README.md),
+with exact tested code SHA `52177237`; production is not rewired.
+
+Real-data no-fit comparison: original100-load time105.4028s; identical prototype
+orders65.6483s. A third fully warm50-subject order took **0.5370s**. The prototype
+made51 original loads and99 file restores across150 calls, with exact arrays and
+binding identities. All private files were verified and removed. Its measured
+aggregate Job peak was2.573GiB, within unchanged6GiB process/7.5GiB aggregate
+caps. The [145-check root milestone review](runs/coordination/cache_performance_20261008_v1/cache_performance_root_review_001.json)
+accepts diagnostics and physical release only; it is self-review.
+
+The pinned real encoder was also measured without training, an optimizer,
+accuracy calculation or target-query use. Source batch2 took about0.09s and
+batch8 about0.36-0.40s. Reusing frozen features and the original head produced
+identical logits for those representative batches; model state and caller RNG
+were unchanged. This is not a full selector or performance guarantee. Next:
+prepare a bounded feature-reuse prototype, test exact synthetic model/history/
+evidence/RNG equivalence and invalidation, then plan guarded integration and
+progress instrumentation. No real fit is admitted in the spent two-attempt
+ledger. Scientific Gate A/freeze remain unsigned; no LaBraM score is claimed.
+
+The following sections preserve prior checkpoints.
+
 ## Current status: prerequisites passed; LaBraM retry stopped at its deadline
 
 The user directed pro3 to work independently and pause when pro2 needs the

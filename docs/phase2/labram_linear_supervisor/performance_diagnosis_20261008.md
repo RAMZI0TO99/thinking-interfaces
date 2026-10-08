@@ -1,5 +1,16 @@
 # LaBraM engineering performance diagnosis, 8 October 2026
 
+Later cache work executed the proposed full-roster loading trace and validated
+a [private file-cache prototype](../cho_b_disk_cache/README.md). The original
+two loading orders produced100 misses/88 evictions in105.4028s. Exact prototype
+orders took65.6483s, followed by a fully warmed50-subject order in0.5370s.
+Twenty-three fixture checks and the145-check root milestone review passed;
+these are engineering self-reviews. A pinned source-only encoder diagnostic
+measured batch2 about0.09s and batch8 about0.36-0.40s, with unchanged model/RNG
+and exact frozen-feature/head logits on those batches. A feature-reuse prototype
+is the next work. Production remains frozen; the analysis below preserves the
+earlier checkpoint. No accepted LaBraM case or scientific approval is inferred.
+
 The prerequisite pipeline passed, but the first LaBraM engineering case has
 no accepted result. This document records the two actual attempts and the
 performance work needed next. It is a root self-review and implementation

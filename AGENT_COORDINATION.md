@@ -1,5 +1,27 @@
 # Project coordination
 
+Current8October cache work: direct user continuation remains active until an
+actual pro2 pause/resource request. Genuine Source020 was accepted through
+16:30UTC for the peer's lightweight Source work, at most five peer Source agents
+total including overlap; it grants no peer runtime authority. Pro3 owns
+`runs/coordination/cache_performance_20261008_v1` and the new operational recipe
+`docs/phase2/cho_b_disk_cache`. No frozen implementation, raw inputs or weights
+changed. No pro3 agents have been spawned.
+
+Original100-load LRU trace, corrected23-check file-cache fixtures,150-load
+file-cache comparison and pinned source-only encoder forwards physically
+completed and released. Root's145-check saved review accepts engineering
+diagnostics/cleanup under self-review, not an accepted real case. Preserve the
+failed first fixture and archived exact worker/prototype bytes. All current
+owned compute has exited; future diagnostics use fresh attempts and finite
+guards, actual startup10/active4 RAM and disk20 floors,6/7.5GiB caps and the
+shared pause sensor. Do not reuse expired12:30UTC windows. Both real case
+attempts remain spent and the scientific gates remain unsigned.
+
+Continue with feature-reuse prototype/equivalence work and guarded integration
+planning. Pro2's actual pause request is honored immediately for owned work;
+unrelated processes and peer files are preserved.
+
 Current scope, 8 October2026: pro3 proceeds independently under the user's
 direct instruction and pauses for an actual pro2 machine/resource need. No
 peer permission wait is active. The full36, all9 writer, raw52, final measured

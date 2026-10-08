@@ -1,5 +1,13 @@
 # Thinking Interfaces
 
+Current cache work: a separate Windows file-cache prototype passed23 synthetic
+equivalence/integrity checks. It reduced the same two source-loading orders
+from105.4s to65.6s; a fully warmed third order took0.54s, with exact arrays and
+clean guarded release. Production remains unchanged and no new LaBraM accuracy
+is claimed. The [prototype recipe](docs/phase2/cho_b_disk_cache/README.md) records
+the measured limits. Work continues under the user's instruction, with a pause
+for an actual pro2 resource need.
+
 Latest LaBraM status, 8 October2026: both engineering attempts have finished.
 Attempt1 failed a memory allocation; the explicit512MiB-cache retry stayed
 within measured memory caps but reached its480-second deadline. **No LaBraM
