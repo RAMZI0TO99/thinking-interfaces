@@ -1,5 +1,12 @@
 # Thinking Interfaces
 
+Latest cache checkpoint:35 synthetic equivalence/invalidation/cleanup checks
+passed for bounded frozen-feature reuse. Pinned real source-only cache hits
+averaged1.27ms versus81.3ms for batch2, and2.07ms versus353.3ms for batch8, with
+bitwise logits and unchanged state/RNG. The [operational recipe](docs/phase2/cho_b_disk_cache/README.md)
+is separate from production. This is no full-case runtime or accuracy result.
+Work continues until an actual pro2 pause request; see [HANDOFF.md](HANDOFF.md).
+
 Current cache work: a separate Windows file-cache prototype passed23 synthetic
 equivalence/integrity checks. It reduced the same two source-loading orders
 from105.4s to65.6s; a fully warmed third order took0.54s, with exact arrays and

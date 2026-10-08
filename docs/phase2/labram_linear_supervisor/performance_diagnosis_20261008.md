@@ -1,5 +1,18 @@
 # LaBraM engineering performance diagnosis, 8 October 2026
 
+The next feature checkpoint is now executed. A bounded32MiB feature prototype
+passed35 synthetic input/disk/feature checks, including exact original linear/
+full/LoRA selector model/history/evidence/RNG, invalidation and scope cleanup.
+Pinned real source-only forwards averaged81.337ms original versus1.269ms cached
+for batch2 and353.340ms versus2.068ms for batch8. Both first misses and22 hits/
+copy reuses had bitwise logits, unchanged model/RNG and final cleanup. Whole-
+model state hashing measured about12ms per call. The169-check root self-review
+accepts diagnostic/resource-release evidence only. Production remains frozen;
+no real training, target inputs, accuracy or new case attempt occurred. Continue
+with operational integration/progress and interruption handling. The earlier
+checkpoints below are retained; sampled forward speed does not establish a
+complete selector's runtime.
+
 Later cache work executed the proposed full-roster loading trace and validated
 a [private file-cache prototype](../cho_b_disk_cache/README.md). The original
 two loading orders produced100 misses/88 evictions in105.4028s. Exact prototype

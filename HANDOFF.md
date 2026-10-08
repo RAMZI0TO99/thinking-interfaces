@@ -1,5 +1,43 @@
 # Project handoff
 
+## Current work: bounded frozen-feature reuse validated, 8 October 2026
+
+Pro3 continues under the user's instruction until an actual pro2 resource/pause
+request. None was present at the latest checkpoint. Source020 still permits
+the peer's lightweight Source-only work through16:30UTC, at most five Source
+agents including overlap. Frozen production, raw inputs, weights, the accepted
+quality pointer and both spent case attempts remain unchanged.
+
+The separate [feature-cache prototype](docs/phase2/cho_b_disk_cache/frozen_feature_cache.py)
+passed **35 synthetic checks**:15 existing input/selector checks,8 disk-store
+checks and12 feature checks. Linear/full/LoRA selector model/history/evidence/
+RNG equivalence remained exact. Frozen linear features are reused; trainable
+backbones bypass. Tests cover head gradients/updates, copied models, input and
+backbone/forward changes, budgets, unsupported modes/hooks, failure cleanup and
+original forward behavior after selection returns. Earlier failed fixtures and
+the33-test pass with a stale reported subcount are preserved. The final receipt
+has correct15+8+12 accounting.
+
+The pinned real source subject02 diagnostic performed no training, optimizer,
+accuracy computation or target-input use. Original batch2 forwards averaged
+81.337ms versus1.269ms for cache hits; batch8 averaged353.340ms versus2.068ms.
+First reuse across a copied model took about12-13ms including its backbone
+state hash. It observed2 misses/22 hits, retained8,000 feature bytes within32MiB,
+and verified bitwise logits, unchanged model state and caller RNG, deactivation/
+clearing and private-file removal. Native execution took22.628s and released
+its guarded Job. These are representative forwards, not complete-case timings.
+
+The [169-check root milestone review](runs/coordination/cache_performance_20261008_v1/feature_performance_root_review_001.json)
+accepts diagnostic and physical-release evidence under self-review. Executed
+Git was clean `e463c1e`; canonical source remains `b7452847` /431 files. Tested
+feature code SHA-256 is `fcbb966e`; the historical quality pass was not rerun and
+does not certify this separately tested recipe. No production wiring or new
+case admission occurred. Next: operational source-scope integration, progress
+instrumentation and interruption/cleanup checks under the same finite guards.
+No attempt3 is available; Scientific Gate A/freeze remain unsigned.
+
+The following sections preserve earlier checkpoints.
+
 ## Current work: cache performance prototype validated, 8 October 2026
 
 The user authorized continuing until pro2 requests a pause. Pro3 proceeded

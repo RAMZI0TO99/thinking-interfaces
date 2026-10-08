@@ -1,5 +1,15 @@
 # Project coordination
 
+Latest8October checkpoint: feature reuse passed35 synthetic checks and a pinned
+real source-only no-fit measurement. Root's169-check saved self-review verifies
+operation pins, old failures, unchanged Source/runtime/case artifacts and private
+Job/handle release. All checkpoint compute exited. Root owns new operational
+cache-scope/progress/cleanup work; frozen implementation remains unchanged.
+Continue until an actual pro2 pause/resource request, under finite per-operation
+guards and unchanged startup10/active4/disk20 floors and process6/Job7.5GiB caps.
+Do not treat representative feature timings as a full-case result or reopen the
+spent two-attempt recorder. Scientific Gate A/freeze remain unsigned.
+
 Current8October cache work: direct user continuation remains active until an
 actual pro2 pause/resource request. Genuine Source020 was accepted through
 16:30UTC for the peer's lightweight Source work, at most five peer Source agents

@@ -93,3 +93,61 @@ case480/520/600-second limits and protocol are unchanged.
 - [Actual150-load prototype trace](../../../runs/coordination/cache_performance_20261008_v1/disk_roster_001/result.json)
 - [145-check root milestone review](../../../runs/coordination/cache_performance_20261008_v1/cache_performance_root_review_001.json)
 - [Pinned encoder forward diagnostic](../../../runs/coordination/cache_performance_20261008_v1/encoder_forward_001/result.json)
+
+## Bounded frozen-feature reuse
+
+The separate [feature prototype](frozen_feature_cache.py) has exact executed
+SHA-256 `fcbb966e883725e9a4e0000aac7ced05695aec1fb19541e8c1695d56f372e3e6`.
+It retains detached cls-token features in a32MiB LRU while executing the live
+classifier head each time. Head gradients and updates still run normally.
+Activation must be limited to an explicit source-selection scope; deactivate
+and clear on both success and failure before any selected-model use.
+
+Eligibility requires frozen float32 CPU eval-mode backbones, contiguous inputs
+without gradients, no backbone hooks, no CPU autocast and no inference mode.
+Trainable/full/LoRA backbones bypass. Keys include the explicit pinned recipe,
+exact backbone state, every module's forward-function identity, channel order,
+input bytes/shape and numerical execution settings. Normal in-place parameter/
+buffer changes invalidate the cached state through PyTorch version counters.
+Arbitrary `.data` mutation and arbitrary non-tensor architecture mutations are
+unsupported; retain the original final frozen-state validation. This is a
+pinned-recipe experiment, not a general cache for arbitrary models.
+
+The final guarded fixture ran35 checks:15 existing input/selector checks,
+8 file-store checks and12 feature checks. Exact original-versus-cached linear,
+full and LoRA selector model/history/evidence/RNG comparisons passed, along with
+head losses/gradients/updates, deepcopy reuse after `.eval()`, state and forward
+invalidation, input keys, budgets, unsupported-mode bypasses, cleanup after an
+injected selection failure and original forward behavior after selection returns.
+The first copy-reuse check failed because two custom copied layout modules were
+in training mode; production's copy-then-`.eval()` route resolves that condition.
+A later new test used the wrong result field and was corrected. All failed
+receipts and exact worker/prototype versions remain preserved. The intermediate
+33-test pass has a stale `new_feature_tests=8` field; the final35-test receipt
+correctly reports12. No historical receipt was rewritten.
+
+The pinned real source subject02 no-fit diagnostic measured:
+
+| Batch | Original forward mean | Feature hit mean | First copied-model reuse |
+|---|---:|---:|---:|
+| 2 | 81.337ms | 1.269ms | 12.445ms |
+| 8 | 353.340ms | 2.068ms | 13.003ms |
+
+Both first misses and22 subsequent hits/copy reuses produced bitwise original
+logits. Retained features totaled8,000 bytes; model state and caller RNG were
+unchanged. The feature namespace was cleared/deactivated and private source
+files removed. Whole-model state hashing took about12ms per call. No optimizer,
+training, target inputs, accuracy or recorder claim occurred. These sampled
+timings do not guarantee a complete selector within the480-second case deadline.
+Native execution completed in22.628s under the unchanged guarded limits.
+
+The169-check root self-review accepts diagnostic and physical-release evidence,
+not independent case approval. Canonical source remains `b7452847` /431 files;
+the accepted canonical quality receipt was not rerun and does not certify these
+separately tested operational files. Next is explicit operational scope lifetime,
+progress instrumentation and interrupted-worker cleanup, before any production
+ownership/integration decision or reviewed recorder recovery plan.
+
+- [Actual35-check fixture result](../../../runs/coordination/cache_performance_20261008_v1/feature_fixture_004/result.json)
+- [Pinned real source feature measurement](../../../runs/coordination/cache_performance_20261008_v1/feature_forward_001/result.json)
+- [169-check root self-review](../../../runs/coordination/cache_performance_20261008_v1/feature_performance_root_review_001.json)
