@@ -1,5 +1,11 @@
 # Thinking Interfaces
 
+Latest LaBraM status: the first engineering attempt failed a memory allocation
+during source selection and produced **no accuracy result**. An owner-reviewed
+second attempt is prepared with the existing512MiB private-cache option;
+16 cache-integrity/equivalence tests passed. Memory caps and scientific settings
+are unchanged. The prerequisite passes below remain valid engineering evidence.
+
 Current milestone, 8 October 2026: under the user's instruction to work
 independently, the current-source full36 diagnostic passed **36/36** with mean
 **24.51%**, below its35% control ceiling. The standalone nine-subject raw

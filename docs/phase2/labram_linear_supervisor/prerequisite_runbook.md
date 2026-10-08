@@ -1,5 +1,16 @@
 # Fresh LaBraM linear engineering prerequisites
 
+Latest checkpoint: actual environment preparation and the exact15-key board
+completed, but initial LaBraM attempt1 failed a39.1MiB allocation during real
+source selection. No LaBraM cell or metric exists. Preserve its claim/failure;
+the saved root recovery review permits only the existing policy's one explicit
+second attempt. The new pinned inner bootstrap limits the original private Cho B
+cache to512MiB; no data, model, candidate, RNG or scientific protocol change.
+Sixteen actual cache tests and isolated compilation passed. After committing
+this checkpoint, measure a fresh environment and build a new actual board/release
+for attempt2. Verify the exact prior claim/failure snapshot before entry, preserve
+all prior artifacts and keep the original time/resource/memory caps.
+
 Current autonomous milestone, 8 October 2026: the user's direct instruction to
 work independently supersedes the old peer-ACK/pre-execution review wait for
 bounded engineering work. Honor existing confirmed resource leases and pause

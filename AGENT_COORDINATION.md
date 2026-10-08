@@ -1,5 +1,16 @@
 # Project coordination
 
+Current memory-recovery checkpoint: the first LaBraM probe failed allocation
+without a metric cell. Preserve its claim/failure and all runtime receipts.
+Root's saved manual review confirms known process absence and the completion's
+owned Job/handle closure, without upgrading native candidateFalse or accepting
+the failed aggregate peak as compliant. A fresh one-use **attempt2** is prepared
+under the original recorder's maximum of two attempts. Its pinned inner bootstrap
+uses the existing512MiB cache option; frozen implementation/scientific settings
+are unchanged. Sixteen actual cache tests and isolated compilation passed under
+root self-review. No retry has run yet. Settle docs/Git, remeasure environment,
+then enter only the explicit fresh release with the recorded prior failure pins.
+
 ## Current coordination: user-directed independent work, 8 October 2026
 
 The user's current instruction is: "work on your own and and only stop only

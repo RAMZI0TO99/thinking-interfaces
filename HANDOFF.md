@@ -1,5 +1,39 @@
 # Project handoff
 
+## Current status: first LaBraM probe failed memory allocation; explicit retry prepared
+
+All autonomous prerequisites below passed. Final environment preparation also
+passed on clean Git `0398139`, with actual CPU/Torch1/deterministic descriptor
+`1bc12a28`. The complete exact15-key board was assembled from actual evidence.
+The first LaBraM linear / Cho subject01 / seed11 / five-shot / repetition1
+engineering attempt reached the real source-selection learner, then failed
+allocating a39.1MiB float32 array. **No LaBraM accuracy or accepted cell exists.**
+Its native parent exited1 after117.692 seconds. The inner training child peaked
+at5,269,905,408 bytes; the outer aggregate Job reported8,086,417,408 bytes
+against8,053,063,680. This failed run is not accepted as memory-cap compliant.
+Native candidate cleanup certification remains false; the saved parent completion
+independently records an empty/closed private Job and closed owned handles, and
+all four known owned PIDs were freshly absent. Do not reinterpret the missing
+successful source-after witness as a passing runtime validation.
+
+[Owner recovery review](runs/coordination/session_20261008_resume/labram_memory_failure_manual_recovery_001.json)
+found exactly the immutable attempt1 claim and failure, with no success intent
+or cell. It permits **one explicit second attempt**, consistent with the existing
+recorder's initial-attempt-plus-one-retry policy. Preserve attempt1 and every
+receipt; never replay its paths or undo its failure. The retry package is
+`runs/coordination/labram_linear_autonomous_20261008_v10`.
+
+The pinned inner bootstrap sets the loader's already supported private input
+cache limit to512MiB instead of2GiB. No frozen implementation, weights, candidates,
+scientific settings or model substitution changed. All **16 existing cache tests**
+passed against this policy, including exact selector evidence/model/history/RNG
+equivalence, eviction and file-tampering checks. The owned validation Job closed,
+and the new parent/child/bootstrap passed actual isolated compilation. These
+are root self-reviews; scientific Gate A/freeze remain unsigned. Original6/7.5GiB
+caps and480/520/600 case bounds remain unchanged. Commit this checkpoint before
+fresh environment preparation and the prospective explicit attempt2. The retry
+is prepared, not executed; its performance and capacity remain unmeasured.
+
 ## Current milestone: autonomous prerequisites passed, 8 October 2026
 
 The user explicitly directed pro3 to work independently and stop when pro2
