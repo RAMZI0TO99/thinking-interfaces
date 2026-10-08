@@ -1,6 +1,32 @@
 # Fresh LaBraM linear engineering prerequisites
 
-Latest checkpoint: actual environment preparation and the exact15-key board
+Current checkpoint, 8 October2026: full45, fresh full36, immutable all9 writer,
+raw52, final measured environment and the exact15-key board are complete.
+Environment `envaut10_002` passed on clean Git8092860/current sourceb7452847.
+The explicit LaBraM retry `labaut10_002` stopped at the original480-second
+attempt deadline, with zero completed cases and no metric cell. Measured outer
+Job peak6.129GiB and process peak3.505GiB were within7.5/6GiB limits. Parent
+completion confirms Job/handle closure and all eight known environment/case
+PIDs were freshly absent. Native failed cleanup candidateFalse and missing
+successful source-after witnesses are retained. The separate later source/
+Git/runtime/operation observation and103-check root self-review accept failure
+evidence and resource release, not a successful case. A separate guarded no-fit
+loader benchmark subsequently passed, measuring one source subject's first
+load1.0748s/cache hit0.00465s/reload0.9035s with exact arrays/binding equality.
+Its180/200-second Job/native scope released after18.087s; root17-check review
+accepts this limited diagnostic only. No additional case claim was made.
+
+Both permitted recorder attempts are spent. Preserve their immutable claims/
+failures and receipts; never replay paths, invent attempt3 or enlarge caps.
+Continue with the [runtime diagnosis and instrumentation plan](performance_diagnosis_20261008.md)
+before proposing another training phase. Any implementation change requires
+frozen-file ownership coordination and exact equivalence validation; changed
+canonical source also requires matching quality/source-bound prerequisites.
+The user authorizes independent engineering work with a pause for an actual
+pro2 resource need. Scientific Gate A/freeze remain unsigned. The older
+instructions below describe historical checkpoints and reusable mechanics.
+
+Historical recovery checkpoint: actual environment preparation and the exact15-key board
 completed, but initial LaBraM attempt1 failed a39.1MiB allocation during real
 source selection. No LaBraM cell or metric exists. Preserve its claim/failure;
 the saved root recovery review permits only the existing policy's one explicit

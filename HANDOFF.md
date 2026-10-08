@@ -1,6 +1,73 @@
 # Project handoff
 
-## Current status: first LaBraM probe failed memory allocation; explicit retry prepared
+## Current status: prerequisites passed; LaBraM retry stopped at its deadline
+
+The user directed pro3 to work independently and pause when pro2 needs the
+machine. Pro3 completed the remaining engineering prerequisites and both
+permitted LaBraM probe attempts. There is no peer-approval wait and no active
+pro3 compute scope. Full45 remains independently accepted; fresh full36 passed
+36/36, the immutable all9 writer passed, and raw52 verified all52 sources and
+1040 planned identities. The new execution reviews are explicitly root
+self-reviews. Scientific Gate A and the experiment freeze remain unsigned.
+
+Fresh final environment preparation `envaut10_002` passed on clean Git
+`8092860`, canonical source `b7452847` /431 files, with actual CPU/Torch1/
+deterministic descriptor `1bc12a28`. The exact15-key board was assembled from
+actual controls, writer, raw and environment evidence. See the
+[environment root acceptance](runs/coordination/session_20261008_resume/environment_cache_bound_root_acceptance_002.json).
+
+The explicit second LaBraM linear / Cho subject01 / seed11 / five-shot /
+repetition1 attempt `labaut10_002` stopped at **attempt_deadline** under the
+unchanged480/520/600-second bounds. Session elapsed480.109 seconds; the native
+parent physically exited1 after500.383 seconds. **No LaBraM accuracy, completed
+case, success intent or accepted cell exists.** Training was invoked; completed
+engineering fit count and the last completed selection stage are unknown.
+The retry's measured outer aggregate Job peak was **6,580,506,624 bytes
+(6.129 GiB)** and process peak **3,762,991,104 bytes (3.505 GiB)**, within the
+original7.5/6 GiB limits. No allocation exception was reported in this attempt;
+this does not certify that the entire case can finish within those limits.
+
+The saved parent completion records an empty/closed private Job and closed
+owned handles. Eight known environment/case PIDs were freshly absent. The
+failed native candidate's cleanup flag remains false; successful runtime
+source-after checks were not completed. A separate later observation verified
+unchanged source, clean execution Git, operation bytes, selected runtime files
+and the accepted quality pointer. The
+[103-check root failure review](runs/coordination/session_20261008_resume/labram_attempt2_deadline_root_review_001.json)
+accepts deadline evidence and physical scope release only. Both canonical
+claims/failures and all receipts are preserved; the existing two-attempt
+allowance is exhausted. **No attempt3 or replay is admitted.** The historical
+EEGNet79/160 cell remains the sole accepted real engineering case.
+
+Root also completed a separate no-fit source-loader benchmark in18.087 native
+seconds, under a180-second private Job/200-second native guard. Subject02 first
+load took1.0748 seconds, cache hit0.00465 seconds, and reload after cache clear
+0.9035 seconds. All three returned identical arrays and bindings; touched-file
+verification, source/Git stability and Job/handle cleanup passed. Its measured
+aggregate peak was2.542GiB. The benchmark's Git dirty flag is explicitly true
+because current documentation edits were pending; canonical source remained
+unchanged. The [17-check benchmark root review](runs/coordination/session_20261008_resume/source_loader_diagnostic_root_acceptance_001.json)
+is self-review of one source subject, not a full selection profile or model fit.
+
+Next work is broader runtime instrumentation and an implementation plan before
+further training. Read the [performance diagnosis](docs/phase2/labram_linear_supervisor/performance_diagnosis_20261008.md).
+Static code review identifies repeated full-subject loads, hashing,
+decompression/copies and model work as candidates for measurement. Read-only
+ZIP headers show51 source signal payloads totaling1.968 GiB including NPY
+headers; that exceeds the512MiB retained cache. Full-case cache misses and model
+stage timings were not measured, so cache thrashing remains a hypothesis. Prepare bounded
+progress/timing instrumentation, establish frozen-file ownership before any
+implementation change, and require exact behavioral equivalence for any
+optimization. Preserve source roster, candidate order, data identities, RNG,
+metrics and caps. A changed canonical source requires a new matching quality
+receipt and source-bound prerequisites. Any future case needs an explicitly
+reviewed recorder recovery plan; do not erase spent attempts or infer scientific
+approval. Pro2 coordination concerns actual resource needs; direct user
+authorization continues to govern independent engineering work.
+
+The following checkpoints preserve historical states and are superseded above.
+
+## Historical checkpoint: first LaBraM probe failed memory allocation; explicit retry prepared
 
 All autonomous prerequisites below passed. Final environment preparation also
 passed on clean Git `0398139`, with actual CPU/Torch1/deterministic descriptor
@@ -34,7 +101,7 @@ caps and480/520/600 case bounds remain unchanged. Commit this checkpoint before
 fresh environment preparation and the prospective explicit attempt2. The retry
 is prepared, not executed; its performance and capacity remain unmeasured.
 
-## Current milestone: autonomous prerequisites passed, 8 October 2026
+## Historical milestone: autonomous prerequisites passed, 8 October 2026
 
 The user explicitly directed pro3 to work independently and stop when pro2
 needs the machine. This supersedes the previous wait for peer compute ACKs

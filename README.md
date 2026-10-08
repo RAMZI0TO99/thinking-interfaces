@@ -1,10 +1,15 @@
 # Thinking Interfaces
 
-Latest LaBraM status: the first engineering attempt failed a memory allocation
-during source selection and produced **no accuracy result**. An owner-reviewed
-second attempt is prepared with the existing512MiB private-cache option;
-16 cache-integrity/equivalence tests passed. Memory caps and scientific settings
-are unchanged. The prerequisite passes below remain valid engineering evidence.
+Latest LaBraM status, 8 October2026: both engineering attempts have finished.
+Attempt1 failed a memory allocation; the explicit512MiB-cache retry stayed
+within measured memory caps but reached its480-second deadline. **No LaBraM
+accuracy or accepted cell exists.** Sixteen cache-integrity/equivalence tests
+passed, and a103-check root self-review verified failure evidence and resource
+release. Both recorder attempts are spent. The next work is bounded timing
+instrumentation and runtime optimization planning. A separate no-fit loader
+benchmark measured1.075s first load,4.65ms cache hit and0.903s reload for one
+source subject, with identical arrays/bindings and clean resource release; see the
+[performance diagnosis](docs/phase2/labram_linear_supervisor/performance_diagnosis_20261008.md).
 
 Current milestone, 8 October 2026: under the user's instruction to work
 independently, the current-source full36 diagnostic passed **36/36** with mean
@@ -13,8 +18,8 @@ preprocessing check passed with matching output identity, and raw verification
 passed all **52 sources** and **1,040 planned case identities** without fits.
 Owned processes/Jobs closed cleanly; these new results have explicit root
 self-reviews. Full45 and the 5 October quality pass remain independently accepted.
-The next step is measured environment preparation and one LaBraM linear
-engineering probe. No LaBraM result or scientific gate/freeze approval is claimed.
+Final measured CPU/Torch1/deterministic environment preparation passed and the
+LaBraM probe outcomes are recorded above. No scientific gate/freeze approval is claimed.
 See [HANDOFF.md](HANDOFF.md) for current evidence. Earlier dated status paragraphs
 below preserve historical snapshots.
 
@@ -84,7 +89,7 @@ records with source fingerprints; it does not rewrite either group. A separate
 Milestone 51 supplied a matching 45/45 bundle for its Phase II source snapshot.
 The later Cho 60 Hz source/config/test edits require another matching refresh.
 
-## Current status
+## Historical status snapshots
 
 **8 October 2026, resumed prerequisite validation.** The original full45
 cohort passed on current source `b7452847`; the accepted 5 October quality

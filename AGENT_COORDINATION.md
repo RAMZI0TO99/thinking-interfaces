@@ -1,6 +1,34 @@
 # Project coordination
 
-Current memory-recovery checkpoint: the first LaBraM probe failed allocation
+Current scope, 8 October2026: pro3 proceeds independently under the user's
+direct instruction and pauses for an actual pro2 machine/resource need. No
+peer permission wait is active. The full36, all9 writer, raw52, final measured
+environment and both LaBraM attempts physically finished; all current pro3
+compute scopes are released. The second case reached its480-second attempt
+deadline without a cell or score. Its measured process/aggregate peaks stayed
+within6/7.5GiB; its parent completion records private Job/handle closure and
+all eight known environment/case PIDs are freshly absent. Failed native cleanup
+candidateFalse and missing successful runtime source-after witnesses remain
+preserved. The103-check saved review is root self-review, not independent
+acceptance of a case result. Both recorder attempts are spent; no attempt3,
+automatic replay, source-roster reduction or cap increase is admitted.
+
+The separate no-fit loader diagnostic also completed and released its capped
+private Job in18.087 native seconds. Root's17-check self-review accepts the
+one-source cold/hit/reload timings and exact arrays/binding identity only; it
+consumed no case attempt and constructed no model. No pro3 compute remains.
+
+Continue with broader runtime diagnosis and new operational instrumentation
+preparation. Root owns those new files and documentation. Coordinate ownership
+before changing frozen implementation; preserve data, weights, receipts and
+accepted cells. See the [performance diagnosis](docs/phase2/labram_linear_supervisor/performance_diagnosis_20261008.md)
+and [HANDOFF.md](HANDOFF.md). Scientific Gate A/freeze remain unsigned. Existing
+Source019 covers peer Source work through12:30UTC; it does not supply a new
+pro3 compute lease. Stop-file monitoring remains available for a genuine peer
+pause request. No pro3 subagents have been spawned and no whole-host quiet is
+claimed.
+
+Historical memory-recovery checkpoint: the first LaBraM probe failed allocation
 without a metric cell. Preserve its claim/failure and all runtime receipts.
 Root's saved manual review confirms known process absence and the completion's
 owned Job/handle closure, without upgrading native candidateFalse or accepting
