@@ -1,5 +1,35 @@
 # Project coordination
 
+## Current coordination: user-directed independent work, 8 October 2026
+
+The user's current instruction is: "work on your own and and only stop only
+when he needs you to." Pro3 proceeds with bounded engineering work under that
+direct authorization. Previous peer-ACK and peer pre-execution review gates
+are superseded for this phase; no peer approval or independent review is forged.
+Respect confirmed shared-machine resource leases and floors, monitor genuine
+peer messages and stop the owned workload if pro2 needs the machine. The peer
+can create `D:\Aenv\pro2\WORK\resume-20261007-001\coordination\PRO2_REQUEST_PRO3_PAUSE.json`;
+the owned Job sensor checks that file at every poll. No unrelated process is killed.
+
+Full36 passed36/36 with mean0.2450810185, standalone all9 verified its matching
+stdout hash, and raw52 verified all52 sources/catalogs/Profile B assets and1040
+planned identities. All three scopes physically exited and were released.
+Their saved execution reviews are root self-reviews, explicitly identified as
+such. Full45 retains its genuine historical different-reviewer acceptance.
+No scientific Gate A or experiment freeze signature is implied.
+
+Root owns only new operational candidates, coordination records, documentation
+and local Git. Frozen implementation, other agents' edits, raw data, weights,
+historical receipts and accepted cells remain preserved. No subagents have been
+spawned. Keep original protocol/time limits, startup10/active4 GiB RAM, disk20
+GiB, process6/aggregate7.5 GiB caps and single-case480/520/600 bounds. Temporary
+per-thread awake requests affect only owned runs, without power-setting edits.
+The current guard end12:30 UTC remains finite; no new30h window is inferred.
+Commit milestone docs before final environment measurement and preserve that
+source/Git/thread environment through the one LaBraM engineering probe.
+
+The following sections retain historical coordination policies and snapshots.
+
 ## Current coordination: Source resume only, 8 October 2026
 
 Root owns new operational candidates, coordination records, documentation and

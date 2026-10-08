@@ -1,5 +1,17 @@
 # Thinking Interfaces
 
+Current milestone, 8 October 2026: under the user's instruction to work
+independently, the current-source full36 diagnostic passed **36/36** with mean
+**24.51%**, below its35% control ceiling. The standalone nine-subject raw
+preprocessing check passed with matching output identity, and raw verification
+passed all **52 sources** and **1,040 planned case identities** without fits.
+Owned processes/Jobs closed cleanly; these new results have explicit root
+self-reviews. Full45 and the 5 October quality pass remain independently accepted.
+The next step is measured environment preparation and one LaBraM linear
+engineering probe. No LaBraM result or scientific gate/freeze approval is claimed.
+See [HANDOFF.md](HANDOFF.md) for current evidence. Earlier dated status paragraphs
+below preserve historical snapshots.
+
 Phase I builds a reproducible EEG-decoding harness and a working real-time demonstration. Research claims begin only in Phase II.
 
 Current engineering status (7 October 2026): source `b7452847…` remains unchanged across 431 canonical files, with the independently audited 5 October quality pass: lint, strict types, 1,048 tests and 1,121 subtests. The sole accepted real case remains the historical EEGNet engineering case on `62536382…`. Scientific Gate A and the experiment freeze are unsigned. See [HANDOFF.md](HANDOFF.md) for the current evidence and next steps.

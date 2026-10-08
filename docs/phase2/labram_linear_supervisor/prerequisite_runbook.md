@@ -1,5 +1,25 @@
 # Fresh LaBraM linear engineering prerequisites
 
+Current autonomous milestone, 8 October 2026: the user's direct instruction to
+work independently supersedes the old peer-ACK/pre-execution review wait for
+bounded engineering work. Honor existing confirmed resource leases and pause
+if pro2 requests the machine. The saved stop signal is
+`D:\Aenv\pro2\WORK\resume-20261007-001\coordination\PRO2_REQUEST_PRO3_PAUSE.json`.
+Actual current-source full36 passed36/36 (mean0.2450810185<=0.35), the immutable
+standalone all9 writer passed with matching stdoutSHA, and raw52 passed52 sources/
+catalogs/Profile B assets and1040 planned identities. All private Jobs and owned
+handles closed. New acceptance records identify root self-review, without
+claiming different-reviewer or scientific acceptance. Keep the exact original
+data/quality/runtime checks, floors, memory caps and case480/520/600 bounds.
+
+Commit milestone documentation before measuring the final CPU/Torch1/
+deterministic environment. Then assemble the complete actual15-key prerequisite
+board, explicitly identifying self-review records, and run one LaBraM linear
+engineering probe with fresh actual-entry resources and one-use paths. Preserve
+the accepted EEGNet cell, all failed attempts and unsigned scientific gates.
+The remaining paragraphs describe historical policies and reusable technical
+steps; prior peer-ACK waits are superseded by the user's current instruction.
+
 The prospective case is Cho2017 / LaBraM linear / subject_01 / seed11 /
 five shots / repetition1. Preparing the package or this runbook grants no
 execution release. Scientific Gate A and the experiment freeze remain unsigned;

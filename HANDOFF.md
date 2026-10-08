@@ -1,5 +1,53 @@
 # Project handoff
 
+## Current milestone: autonomous prerequisites passed, 8 October 2026
+
+The user explicitly directed pro3 to work independently and stop when pro2
+needs the machine. This supersedes the previous wait for peer compute ACKs
+and peer pre-execution review for bounded engineering work. The original
+phase remains bounded; no new 30-hour window or scientific approval is inferred.
+Respect confirmed resource leases and floors. Pro2 can request a pause by
+creating `D:\Aenv\pro2\WORK\resume-20261007-001\coordination\PRO2_REQUEST_PRO3_PAUSE.json`;
+the owned Job sensor polls its presence. Root also monitors peer messages.
+
+Canonical source remains `b7452847` across 431 files, with the unchanged
+accepted 5 October lint/types/1,048-test/1,121-subtest quality receipt. Full45
+remains independently accepted. Fresh autonomous full36 completed **36/36**,
+mean **0.2450810185** below **0.35**, in **543.826 seconds**. The original
+module performed the all9 raw preprocessing recomputation and all36 fits;
+its actual final inventory verified the raw inputs and admitted no scientific
+cells. See the [saved execution self-review](runs/coordination/prerequisite_autonomous_20261008_v9/controls36_root_self_review_001.json).
+
+The standalone all9 check completed in **422.287 seconds**. All nine subjects
+were verified and its stdout SHA matches the successful36 context. Its
+[immutable terminal receipt](runs/coordination/prerequisite_autonomous_20261008_v9/writer_terminal_receipt_001.json)
+distinguishes original module arguments from the guarded worker invocation.
+Raw verification completed in **25.233 seconds**: **52 raw sources**, catalogs
+and Profile B assets; **1,040 planned identities**; **10,704,036,837 raw bytes**;
+no model fits. See the [actual raw receipt](runs/phase2/freeze_readiness/20261008_b7452847_raw_source_readonly_v1/receipt.json).
+The native/controller witnesses certify normal0 exits, private Job closure,
+owned handle cleanup, retained memory caps and actual-entry resource samples.
+The three new saved reviews are explicitly **root self-reviews**, not different
+reviewer acceptance. Scientific Gate A and the experiment freeze remain unsigned.
+
+The autonomous packages use direct user authorization without fabricating peer
+ACKs. They retain startup10/active4 GiB RAM, disk20 GiB, process6/aggregate7.5
+GiB caps and original time/protocol limits. Temporary per-run awake requests
+prevent host sleep during owned execution and are reset at cleanup; machine
+power settings are unchanged. Old failed attempts and unused V8 requests/
+ACK026 remain preserved. No frozen implementation, raw data or weights changed.
+
+Next: commit this milestone before measuring the actual CPU/Torch1/deterministic
+environment; assemble a genuine complete exact15-key board with explicitly
+identified self-reviews; execute one LaBraM linear / Cho subject01 / seed11 /
+five-shot / repetition1 engineering probe under unchanged480/520/600 bounds;
+review physical completion and resulting artifacts. The sole accepted real case
+is still the historical EEGNet79/160 case. No LaBraM result is claimed yet;
+checkpoint pretraining cohort provenance remains unverified. The existing
+12:30 UTC guard boundary is an operational cap, not a user deadline or new lease.
+
+The following sections preserve historical snapshots and prior coordination rules.
+
 ## Current status: fresh resume after interrupted validation, 8 October 2026
 
 The user directed continued work. Canonical source remains `b7452847` across
