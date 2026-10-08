@@ -1,6 +1,71 @@
 # Project handoff
 
-## Current status: controls45 accepted, controls36 deadline refusal, 7 October 2026
+## Current status: fresh resume after interrupted validation, 8 October 2026
+
+The user directed continued work. Canonical source remains `b7452847` across
+431 files and the accepted 5 October quality pointer remains unchanged;
+quality was not rerun. Root owns new operational candidates and documentation.
+Production, data, weights, historical receipts and the sole accepted EEGNet
+engineering cell remain preserved. Scientific Gate A and the experiment
+freeze remain unsigned; LaBraM pretraining cohort provenance is unverified.
+
+The original full45 cohort passed on the current source: expected=valid=45,
+shuffle9 mean 0.4876543 and precue36 mean 0.2485532. Its v4 attempt002,
+physical cleanup, explicit release, different 2,557-check saved review and
+first-case audit remain accepted. The first-case audit's 24-hour freshness
+ends on 8 October at 14:29 UTC; a later case needs a fresh independent audit
+of the saved evidence. Historical results must not be restamped.
+
+**No current-source full36 result is accepted.** Preserve all three spent
+attempts: v5 attempt001 reached its 500-second deadline during the mandatory
+all9 raw writer check; v6 attempt002 lost its controller during a daemon
+restart; v6 attempt003 was interrupted by overnight host sleep. The revised
+v6 cohort runner passed 1,777 independent source checks and separately
+admitted isolated compilation of three files. It retains the original
+writer1800/matched7200 policy, with external controls36 Job2700/native2860
+and writer Job1800/native1960 bounds, and the original single-case ceiling.
+
+Attempt003's saved native witness reports 43,868.335 seconds, exit -1 and
+watchdog termination, exceeding its 2,860-second bound. Windows power events
+confirm overnight sleep from 7 October 17:18 to 8 October 05:19 UTC; the
+initiating actor is unknown. All nine recorded PIDs were absent in the fresh
+8 October observation. Missing controller/worker terminal receipts, private
+Job closure and unknown descendant absence are explicitly uncertified. The
+[154-check independent saved review](runs/coordination/session_20261008_resume/controls36_attempt003_saved_refusal_root_acceptance_001.json)
+is adopted as overdeadline refusal evidence only, with 34 inputs rehashed.
+The [scope release](runs/coordination/session_20261008_resume/controls36_attempt003_scope_release_001.json)
+does not revive spent ACK017/ACK020 or admit another attempt.
+
+The exact historical LaBraM package v3 and prep4 watchers completed 131
+native checks, including 72 extracted predicate fixtures, and isolated
+compilation of three targets. Root adopted the different
+[saved preparation review](runs/coordination/session_20261008_resume/labram_prep4_saved_results_root_acceptance_001.json)
+after rehashing 537 inputs. Its full immutable proof contains **3,918 checks**;
+the summary capsule says 3,921. Root adopts the full proof and records that
+discrepancy without rewriting either file. These checks certify their exact
+historical bytes only; the package's 7 October 18:20 UTC deadline is expired.
+The raw52 successor passed 1,556 independent source checks but was not run.
+No current raw52 pass, measured environment or LaBraM case is claimed.
+
+Fresh [Source018 response](runs/coordination/session_20261008_resume/pro2_source_window_response_018.json)
+and [handoff021 adoption](runs/coordination/session_20261008_resume/static_source_handoff021_adoption_001.json)
+permit concurrent native source preparation and saved-result reconciliation
+through **8 October 10:00 UTC**. Pro3 has spawned no agents and has no active
+CPU scope. Peer Source018 permits at most its five user-authorized source
+agents in total, including overlap; neither scope supplies numerical authority
+or whole-host quiet. The internal cap is not a user deadline or new30h window.
+
+Next: settle and commit documentation, prepare fresh unused operational
+scripts/manifests against that clean Git commit, obtain independent source
+review and a genuine exact finite peer acknowledgment, then run full36 with
+fresh actual-entry resource samples. Follow with the separately admitted
+immutable all9 writer, raw52, committed milestone docs, final measured
+environment, audited exact15-key board and one LaBraM linear / subject01 /
+seed11 / five-shot / repetition1 engineering probe. Preserve startup10/active4
+GiB RAM, disk floors, 6/7.5 GiB memory caps and single-case480/520/600 bounds.
+Old passing receipts certify their own bytes; elapsed intervals are not leases.
+
+## Historical status: controls45 accepted, controls36 deadline refusal, 7 October 2026
 
 The user resumed work after freeing RAM. Canonical source remains `b7452847`
 across 431 files; the accepted 5 October quality pointer remains unchanged.

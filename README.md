@@ -68,6 +68,21 @@ The later Cho 60 Hz source/config/test edits require another matching refresh.
 
 ## Current status
 
+**8 October 2026, resumed prerequisite validation.** The original full45
+cohort passed on current source `b7452847`; the accepted 5 October quality
+pointer remains unchanged. Full36 has no accepted current-source result:
+one attempt reached its initial deadline, one lost its controller during a
+daemon restart, and one exceeded its revised deadline during overnight host
+sleep. All recorded PIDs are absent; the independent saved review accepts
+refusal evidence only and discloses missing cleanup certifications. Historical
+LaBraM package preparation passed native131/72 checks and three-target isolated
+compilation; its runtime deadline expired. Fresh source preparation is admitted
+through 8 October10:00 UTC, with separate coordination and resource admission
+required for full36, immutable all9 writer, raw52 and the eventual single
+LaBraM engineering probe. No LaBraM result is claimed. The sole accepted
+EEGNet case remains79/160; Gate A and the scientific freeze are unsigned.
+See [HANDOFF.md](HANDOFF.md) for exact receipts and current next steps.
+
 **5 October 2026 — engineering repairs validated.**
 Five parallel reviews confirmed the accepted 4 October EEGNet engineering
 case. A reversible V11 launcher repair template is independently accepted for

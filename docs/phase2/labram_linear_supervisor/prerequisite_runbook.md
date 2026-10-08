@@ -5,7 +5,27 @@ five shots / repetition1. Preparing the package or this runbook grants no
 execution release. Scientific Gate A and the experiment freeze remain unsigned;
 checkpoint pretraining cohort provenance remains unverified.
 
-Current 7 October refresh: the original full45 cohort passed on `b7452847`
+Current 8 October refresh: full45 remains accepted on `b7452847`; no
+current-source full36 result is accepted. Preserve the initial500-second
+refusal, daemon-interrupted attempt and overnight-sleep overdeadline attempt.
+The last native witness reports43,868.335 seconds against2860; all nine known
+PIDs are now absent, while missing terminal/private-Job cleanup evidence remains
+uncertified. A different154-check saved review accepts refusal evidence only.
+Historical packagev3/prep4 completed native131/72 and isolated compilation of
+three targets; the full saved proof has3,918 checks (capsule3,921 discrepancy
+recorded). These certify exact historical bytes, whose7October deadline expired.
+Raw52 has Source-only review, no execution. Source018/handoff021 admit fresh
+native preparation through8October10:00 UTC, not numerical entry. Commit docs
+before generating exact-Git numerical manifests. Prepare a new unused full36
+attempt and independently review its source/finite bindings, then obtain a
+genuine separate mutual CPU acknowledgment and actual-entry resources.
+Preserve original writer1800/matched7200, cohort Job2700/native2860,
+writer Job1800/native1960 and all case/resource bounds. Follow accepted36 with
+the immutable writer and raw52; commit milestone docs before final measured
+environment and the independently audited complete board. See
+[HANDOFF.md](../../../HANDOFF.md) for current evidence and coordination.
+
+Historical 7 October refresh: the original full45 cohort passed on `b7452847`
 and its different 2,557-check saved review was accepted. The separate full36
 attempt reached the new external500-second deadline during the required raw
 writer check, with no current-source matched context published. Physical

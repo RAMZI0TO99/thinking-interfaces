@@ -1,6 +1,46 @@
 # Project coordination
 
-## Current coordination: controls scopes released, 7 October 2026
+## Current coordination: Source resume only, 8 October 2026
+
+Root owns new operational candidates, coordination records, documentation and
+local Git. Preserve frozen implementation, data, weights and historical
+receipts. Current roots remain pro3 `01a115a0-5f96-7472-880f-e1d92e46d853`
+and pro2 `01a1159f-a60d-7c03-bded-71f2047fb8fb`. Pro3 has spawned no agents.
+
+The genuine [Source018 response](runs/coordination/session_20261008_resume/pro2_source_window_response_018.json)
+binds the peer's exact saved request and permits its user-authorized maximum
+of five concurrent Source agents total, including overlapping scopes, through
+8 October **10:00 UTC**. The peer's saved handoff021 is adopted for pro3
+native read/hash/JSON/PowerShell AST preparation, saved-result reconciliation,
+documentation and fresh inert run requests. No Python, fixture, numerical,
+raw, Torch, training or Job operation is admitted by this Source scope.
+Neither root claims whole-host quiet; current communication uses exact saved
+workspace records. A future numerical operation requires a genuine separate
+mutual acknowledgment, reviewed bytes, unused attempt, full remaining time
+reserve and actual-entry RAM/disk samples. Old intervals and release estimates
+are not active leases. No new 30-hour window is inferred.
+
+Full45 v4 attempt002 is accepted and released. Full36 v5 attempt001 is an
+accepted deadline refusal with physical cleanup; v6 attempt002 lost its
+controller on daemon restart; v6 attempt003 exceeded its native2860 bound
+during overnight host sleep. The latter's independent 154-check saved review
+is accepted as refusal evidence only. All nine recorded PIDs are freshly
+absent, but missing controller/worker receipts, private Job closure and unknown
+descendant absence remain uncertified. The
+[explicit release](runs/coordination/session_20261008_resume/controls36_attempt003_scope_release_001.json)
+ends that spent scope. ACK017 and ACK020 cannot be replayed. No CPU scope is
+currently active and no current-source full36 result is accepted.
+
+Historical packagev3/prep4 native131/72 and three-target isolated compilation
+are independently accepted for their exact bytes. Root uses the full saved
+proof's 3,918 checks, recording the capsule's 3,921 discrepancy. All historical
+7 October runtime deadlines expired. Preserve original writer1800/matched7200,
+external cohort2700/2860 and writer1800/1960, single-case480/520/600,
+startup10/active4 GiB RAM, disk floors and 6/7.5 GiB memory caps. Fresh runtime
+entry needs current source/Git pins and separate physical-result acceptance.
+Scientific Gate A/freeze remain unsigned. See [HANDOFF.md](HANDOFF.md).
+
+## Historical coordination: controls scopes released, 7 October 2026
 
 Root owns new operational candidates, coordination records, documentation and
 local Git. Frozen production, old receipts, raw data and weights remain intact.
