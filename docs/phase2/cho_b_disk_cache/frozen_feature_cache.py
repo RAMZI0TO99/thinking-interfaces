@@ -40,8 +40,11 @@ class FrozenFeatureCache:
             return False
         if torch.is_autocast_enabled("cpu") or torch.is_inference_mode_enabled():
             return False
+        hooks = torch.nn.modules.module
+        if any(getattr(hooks, name) for name in ("_global_forward_hooks", "_global_forward_pre_hooks", "_global_backward_hooks", "_global_backward_pre_hooks")):
+            return False
         for module in model.backbone.modules():
-            if module.training or module._forward_hooks or module._forward_pre_hooks or module._backward_hooks:
+            if module.training or module._forward_hooks or module._forward_pre_hooks or module._backward_hooks or module._backward_pre_hooks:
                 return False
         tensors = tuple(model.backbone.parameters()) + tuple(model.backbone.buffers())
         return all(not value.requires_grad and value.device.type == "cpu" and value.dtype in (torch.float32, torch.int64, torch.int32, torch.bool) for value in tensors)

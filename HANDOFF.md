@@ -1,5 +1,42 @@
 # Project handoff
 
+## Current work: source-scope progress and interruption cleanup validated
+
+The operational selector adapter passed **15 checks**, including exact linear/
+full/LoRA selection evidence, model state and RNG against the original route.
+It records fit/fold start/completion outside scientific evidence, restores owned
+instance methods and the original input cache/byte limit, removes feature
+wrappers from the returned model, and closes source files. A failing fit that
+holds a mapped episode in its traceback retains its original exception and
+reports deferred registered-file cleanup. The hardened feature cache passed
+**36 checks**, including preservation of global-hook callback execution.
+
+Actual interrupted-worker fixtures exercised a20-second deadline and an
+attempt-local stop file while a read-only mapped cache remained borrowed.
+The private Job was terminated/emptied/closed, owned handles closed, and parent
+cleanup removed only the registered1,843,272-byte file/directory after verifying
+its hash. Outside sentinels survived. The first stop test exposed an uncaught
+sensor exception: its missing guard/cleanup receipts remain missing. A separate
+fresh named-Job/known-PID absence proof permitted later cache recovery; the
+fixed repeat saved the actual stop reason and cleanup receipt. Local fixture
+stop files are explicitly synthetic, not pro2 pause requests.
+
+The hardened pinned real source-only no-fit check completed in21.803 native
+seconds: original/hit means76.688/1.177ms for batch2 and339.275/2.069ms for batch8.
+All original/miss/hit/copy logits were bitwise equal, model/RNG unchanged, and
+features/private files cleared. No training, target inputs, accuracy or new
+case attempt occurred. The [160-check root review](runs/coordination/cache_performance_20261008_v1/scope_interruption_root_review_001.json)
+accepts diagnostics and physical release under self-review. Executed Git was
+clean `1f793cf`; canonical source/runtime/old case artifacts remain unchanged.
+
+See the [operational recipe](docs/phase2/cho_b_disk_cache/README.md). Current
+feature SHA is `f55fa5be`, adapter `b5ac2391`, cleanup utility `66d44ab0`; the
+earlier feature version is retained. Production remains frozen and the
+historical quality pass was not rerun. Next: a guarded no-fit full source-query
+batch trace for cache capacity, batch-order correctness and realistic cold/warm
+costs, followed by integration planning. Continue until an actual pro2 pause
+request. Both real attempts remain spent; Scientific Gate A/freeze are unsigned.
+
 ## Current work: bounded frozen-feature reuse validated, 8 October 2026
 
 Pro3 continues under the user's instruction until an actual pro2 resource/pause
@@ -8,7 +45,7 @@ the peer's lightweight Source-only work through16:30UTC, at most five Source
 agents including overlap. Frozen production, raw inputs, weights, the accepted
 quality pointer and both spent case attempts remain unchanged.
 
-The separate [feature-cache prototype](docs/phase2/cho_b_disk_cache/frozen_feature_cache.py)
+The separate [earlier feature-cache prototype](docs/phase2/cho_b_disk_cache/frozen_feature_cache_v2.py)
 passed **35 synthetic checks**:15 existing input/selector checks,8 disk-store
 checks and12 feature checks. Linear/full/LoRA selector model/history/evidence/
 RNG equivalence remained exact. Frozen linear features are reused; trainable

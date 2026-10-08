@@ -1,5 +1,14 @@
 # Project coordination
 
+Latest scope checkpoint:15 source-adapter/cleanup checks and36 hardened feature
+checks passed. Actual deadline and attempt-local stop fixtures closed the owned
+Job/handles and removed only registered cache files. The first unhandled sensor
+failure is preserved, with a separate later absence/recovery proof. Root's
+160-check saved review is self-review of diagnostics/release. The local stop
+fixture is not a peer request. All checkpoint compute exited; no production,
+raw/weights, case ledger or scientific gate changed. Next owned scope is finite
+source-only no-fit query-batch profiling under the same resource/pause guards.
+
 Latest8October checkpoint: feature reuse passed35 synthetic checks and a pinned
 real source-only no-fit measurement. Root's169-check saved self-review verifies
 operation pins, old failures, unchanged Source/runtime/case artifacts and private

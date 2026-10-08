@@ -1,5 +1,12 @@
 # Thinking Interfaces
 
+Current checkpoint:15 source-scope/cleanup checks and36 hardened feature checks
+passed. Actual deadline and local-stop fixtures released their Jobs and cleaned
+registered files; the pinned real no-fit check preserved exact logits/state/RNG.
+Fit/fold progress now has an operational adapter. See the [recipe](docs/phase2/cho_b_disk_cache/README.md)
+and [HANDOFF.md](HANDOFF.md). Production and the two spent real-case attempts
+remain unchanged; work continues until pro2 requests a pause.
+
 Latest cache checkpoint:35 synthetic equivalence/invalidation/cleanup checks
 passed for bounded frozen-feature reuse. Pinned real source-only cache hits
 averaged1.27ms versus81.3ms for batch2, and2.07ms versus353.3ms for batch8, with

@@ -96,7 +96,7 @@ case480/520/600-second limits and protocol are unchanged.
 
 ## Bounded frozen-feature reuse
 
-The separate [feature prototype](frozen_feature_cache.py) has exact executed
+The [earlier feature prototype](frozen_feature_cache_v2.py) has exact executed
 SHA-256 `fcbb966e883725e9a4e0000aac7ced05695aec1fb19541e8c1695d56f372e3e6`.
 It retains detached cls-token features in a32MiB LRU while executing the live
 classifier head each time. Head gradients and updates still run normally.
@@ -151,3 +151,67 @@ ownership/integration decision or reviewed recorder recovery plan.
 - [Actual35-check fixture result](../../../runs/coordination/cache_performance_20261008_v1/feature_fixture_004/result.json)
 - [Pinned real source feature measurement](../../../runs/coordination/cache_performance_20261008_v1/feature_forward_001/result.json)
 - [169-check root self-review](../../../runs/coordination/cache_performance_20261008_v1/feature_performance_root_review_001.json)
+
+## Source-scope adapter and interrupted-worker cleanup
+
+The current [feature code](frozen_feature_cache.py), SHA-256
+`f55fa5be0c78a46ca0223cc51a01cb71ec0dd8a067af6ba0ec83045855dc5d93`, also
+bypasses global PyTorch hooks and local backward pre-hooks. Its36-check fixture
+verified callback counts as well as the earlier exact equivalence checks.
+The hardened pinned real source-only check measured76.688ms original/1.177ms
+cached for batch2 and339.275ms/2.069ms for batch8. These are a separate later
+measurement; both sets of receipts remain unchanged.
+
+The [one-use selector adapter](source_selection_cache_scope.py), SHA-256
+`b5ac2391522a65ed8499a368af8fd62ba9b2dfec832d4484ad710d44ef1b5cca`,
+temporarily replaces only owned instance attributes. It preserves existing
+input provenance pins and original selection/SGD/evidence routines, caps the
+resident input cache at512MiB within the scope, then restores the old limit.
+It writes sequenced fit/fold start/completion events outside scientific evidence.
+On return it restores the original input cache/methods and removes feature
+wrappers from both initialization and selected source model. A failed fit's
+traceback can retain a borrowed mapping; its original exception is preserved,
+cleanup is marked deferred, and the registered directory remains for the guard.
+Progress-sink failure also restores the owned instance state.
+
+The [owned cleanup utility](owned_cache_cleanup.py), SHA-256
+`66d44ab072280c48327674ecfa5c2ac709253cc7da4a90ba809c9665bbea29f7`,
+registers one exact private directory under an owned attempt. After the owned
+Job is physically empty/closed, parent cleanup verifies the registry/worker,
+directory identities, absence of aliases/reparse points, permitted flat file
+names and aggregate2GiB budget before deleting any cache file. It hashes each
+file and removes only those files and their empty registered directory.
+Unknown content, nested directories, changed identity, traversal and excess
+bytes refuse cleanup. Input data, receipts and outside files are preserved.
+Registration/cleanup receipts stay on disk. There is no recursive deletion.
+
+Fifteen synthetic scope/cleanup checks passed, including exact linear/full/
+LoRA evidence/model/RNG,7 completed fits/6 folds per complete fixture, sequenced
+events, original-method restoration, injected failures and cleanup refusal
+paths. Synthetic release flags in these utility tests are distinguished from
+the separately executed Job interruption fixtures.
+
+Actual fixtures held a read-only mapped1,843,272-byte cache file until a20-second
+deadline or an attempt-local stop sensor ended the worker. Both owned Jobs
+closed; parent cleanup removed the exact hashed registered file and directory,
+with outside sentinels unchanged. The first stop test raised before saving a
+guard/cleanup receipt; that failure remains missing those receipts. A later
+fresh named-Job and known-PID absence proof allowed separate cache recovery.
+The fixed repeat catches supervision errors, saves their chain and actual stop
+reason, then runs registered cleanup after Job release. It preserves candidate
+failure status. The local stop fixture never writes the peer's pause file.
+
+The160-check root self-review accepts engineering/release evidence only. The
+source remains `b7452847` /431 files and execution Git was clean `1f793cf`.
+Neither production integration, another case attempt nor a scientific gate is
+admitted. The code copies here preserve executed bytes; their runtime harness
+uses its own phase directory and fresh operation pins. Do not execute recipe
+copies against historical output directories or treat this folder as a release.
+
+- [Actual15-check source scope/cleanup result](../../../runs/coordination/cache_performance_20261008_v1/scope_fixture_002/result.json)
+- [Actual36-check hardened feature result](../../../runs/coordination/cache_performance_20261008_v1/feature_fixture_005/result.json)
+- [Actual hardened real source no-fit measurement](../../../runs/coordination/cache_performance_20261008_v1/feature_forward_002/result.json)
+- [Actual deadline cleanup](../../../runs/coordination/cache_performance_20261008_v1/cache_deadline_fixture_001/cache_cleanup.json)
+- [Actual fixed local-stop guard](../../../runs/coordination/cache_performance_20261008_v1/cache_local_stop_fixture_002/guard.json)
+- [Separate failed-stop scope recovery](../../../runs/coordination/cache_performance_20261008_v1/cache_local_stop_fixture_001/fresh_scope_absence_recovery.json)
+- [160-check root self-review](../../../runs/coordination/cache_performance_20261008_v1/scope_interruption_root_review_001.json)

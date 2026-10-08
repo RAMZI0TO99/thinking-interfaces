@@ -1,5 +1,16 @@
 # LaBraM engineering performance diagnosis, 8 October 2026
 
+The next operational checkpoint passed15 source-scope/cleanup checks and36
+hardened feature checks. Exact selector evidence/model/RNG, fit/fold progress,
+state restoration and global-hook callbacks were verified. Actual deadline and
+local-stop fixtures proved owned Job release and registered-file cleanup. An
+initial uncaught sensor failure remains preserved with separate later recovery;
+the fixed guard saves failure evidence and performs cleanup. Root's160-check
+self-review admits engineering/release evidence only. The hardened real source
+no-fit trace again preserved exact logits/state/RNG. Next is a complete source
+query-batch no-fit trace, rather than inferring full-case runtime from two small
+representative batches. Frozen production and both spent attempts are unchanged.
+
 The next feature checkpoint is now executed. A bounded32MiB feature prototype
 passed35 synthetic input/disk/feature checks, including exact original linear/
 full/LoRA selector model/history/evidence/RNG, invalidation and scope cleanup.
