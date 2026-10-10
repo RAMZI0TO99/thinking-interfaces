@@ -29,6 +29,15 @@ class ImmediatePool:
 
 
 class ProcessEighProbeTests(unittest.TestCase):
+    def setUp(self):
+        # These unit tests replace the process pool. Declare its expected backend
+        # metadata too, without changing the real NumPy pool's thread settings.
+        backend = patch(
+            "evaluation.process_eigh_probe.numpy_backend", return_value={"num_threads": 24},
+        )
+        backend.start()
+        self.addCleanup(backend.stop)
+
     def candidate(self, **settings):
         return ProcessEighProbe(
             **{
@@ -98,6 +107,22 @@ class ProcessEighProbeTests(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "differ"),
         ):
             _initialize_worker({"threads": 24}, 4.0)
+
+    def test_parent_backend_thread_drift_is_rejected_before_pool_creation(self):
+        original = facade.linalg.eigh
+        for threads in (1, 2, 23, 25):
+            with (
+                self.subTest(threads=threads),
+                patch(
+                    "evaluation.process_eigh_probe.numpy_backend",
+                    return_value={"num_threads": threads},
+                ),
+                patch("evaluation.process_eigh_probe.ProcessPoolExecutor") as pool,
+                self.assertRaisesRegex(RuntimeError, "original 24-thread"),
+            ):
+                self.candidate().__enter__()
+            pool.assert_not_called()
+            self.assertIs(facade.linalg.eigh, original)
 
     def test_worker_failure_restores_facade_and_closes_pool(self):
         original = facade.linalg.eigh
