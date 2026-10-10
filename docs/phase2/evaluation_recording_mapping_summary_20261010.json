@@ -1,0 +1,67 @@
+{
+  "cached_signal_processing_lineage_verified": false,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "checkpoint_cohort_or_overlap_verified": false,
+  "created_utc": "2026-10-10T22:27:17.142768+00:00",
+  "datasets": {
+    "bci_iv_2a": {
+      "distinct_raw_files": 18,
+      "project_session_run_groups": 108,
+      "subjects": 9
+    },
+    "cho2017": {
+      "distinct_raw_files": 52,
+      "project_session_run_groups": 52,
+      "subjects": 52
+    },
+    "mmidb": {
+      "distinct_raw_files": 327,
+      "project_session_run_groups": 327,
+      "subjects": 109
+    }
+  },
+  "distinct_raw_files": 397,
+  "execution_git_commit": "89d136d6e224efa1baee20209ae3a5aaea8b8938",
+  "execution_review": {
+    "path": "runs/coordination/evaluation_recording_mapping_20261010_v1/execution_root_review_002.json",
+    "sha256": "6836cf0aabcb8ae4e3d5bebb5177126f5fbc5a1e047cbad13eaec0ac8ac9e416"
+  },
+  "fresh_raw_bytes_hashed": 1613814207,
+  "fresh_raw_files_hashed": 345,
+  "historical_cho_hashes_retained": 52,
+  "mapping_scope": "pinned loader filename relation; MMIDB raw file bytes independently match publisher checksum metadata",
+  "mmidb_raw_file_published_and_installed_registry_sha256_matches": 327,
+  "original_case_attempts_remaining": 0,
+  "prior_inventory": {
+    "path": "runs/coordination/evaluation_identity_inventory_20261010_v1/candidate/attempt_001/inventory.json",
+    "sha256": "b046ea009cc5cca252ff0d5379b61ab003963e97726a2626dc537f73f3b5e875"
+  },
+  "publisher_metadata": {
+    "bytes": 259919,
+    "headers": {
+      "Content-Length": "259919",
+      "Content-Type": "text/plain; charset=utf-8",
+      "ETag": "\"5c6dbcac-3f74f\"",
+      "Last-Modified": "Wed, 20 Feb 2019 20:46:36 GMT"
+    },
+    "retrieved_utc": "2026-10-10T22:24:19.506196+00:00",
+    "sha256": "7f5d16957d8ee7bce86cc7ccba0e5994f63f33781607eb3f838392d49311a208",
+    "status": 200,
+    "url": "https://physionet.org/files/eegmmidb/1.0.0/SHA256SUMS.txt"
+  },
+  "publisher_metadata_body": {
+    "path": "runs/coordination/evaluation_recording_mapping_20261010_v1/candidate/attempt_001/publisher_SHA256SUMS.txt",
+    "sha256": "7f5d16957d8ee7bce86cc7ccba0e5994f63f33781607eb3f838392d49311a208"
+  },
+  "real_training_or_original_case_admission": false,
+  "recording_map": {
+    "path": "runs/coordination/evaluation_recording_mapping_20261010_v1/candidate/attempt_001/recording_map.json",
+    "sha256": "241606bdd6db4e6356cd5e5013c79b82d0537421397874af532096269831e69d"
+  },
+  "schema": "pro3_loader_defined_recording_mapping_evidence_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "scientifically_eligible_roster_or_query_freeze": false,
+  "signal_or_annotation_arrays_decoded": false,
+  "total_project_groups": 487
+}

@@ -21,6 +21,23 @@ Our converted file also matches the public Braindecode snapshot
 `0563b6c626e7b40d9a36653b763715db94d945d7`, with SHA-256
 `53b752edb366fd6395dd3cb7d63ae3e1e16aabed040aa0901d64ef32e8f444f8`.
 
+For a concrete recording-level comparison, our local catalogs cover:
+
+- MMIDB version 1.0.0: S001 through S109, runs 04, 08 and 12. All 327 local
+  EDF files match PhysioNet's published SHA-256 list and the installed MNE
+  registry. The requested manifest should establish which of those actual
+  subject/run recordings were used, excluded or split during pretraining.
+- BCI IV-2a: local A01T/A01E through A09T/A09E MAT files, with freshly measured
+  local hashes. Publisher checksum identity was not independently verified.
+- Cho2017: local s01.mat through s52.mat, with retained previously verified
+  raw-file hashes and sidecar source declarations.
+
+These identifiers describe local file identity and pinned loader mappings.
+Cached signal-processing lineage has not been recertified; scientific scope
+and query eligibility remain unratified. Raw-file integrity does not establish
+whether the released checkpoint ever used those recordings or their labels.
+We can provide the exact local recording/hash inventory for comparison.
+
 Could you provide a training manifest, execution log reference or a provenance
 statement tied to the original checkpoint hash that identifies the datasets,
 versions and recording/subject identifiers actually used for its pretraining?

@@ -1,5 +1,28 @@
 # Thinking Interfaces
 
+## Current work: recording mapping and checksum audit executed, 10 October UTC
+
+All 327 selected MMIDB EDF files match both PhysioNet's published SHA-256 list
+and the installed MNE registry. The read/hash scope also measured 18 BCI files,
+retaining 52 historical Cho raw hashes. Loader filename rules map 487 project
+groups to 397 distinct raw-file paths. Nine boundary fixtures and root's
+1,643-check execution self-review passed. Native 8.0427967 s; peak aggregate
+33,820,672 bytes. All 16 owned Job names are freshly absent; floors unchanged.
+
+No signals or annotations were decoded. The mapping supplements local file
+identity; cached signal-processing lineage and checkpoint cohort overlap
+remain unverified. All 109 MMIDB subjects are retained without an eligibility
+decision. The request now includes concrete recording IDs and remains unsent.
+Gate A and seven owner decisions stay unsigned; original attempts stay spent,
+zero remaining. No model or recorder operation occurred. Canonical
+Source3114ec43/432 and quality4eb4d556 remain, with separate candidate evidence.
+Pro2 requests no pause.
+
+See the [executed recording map](docs/phase2/evaluation_recording_mapping_20261010.md). Earlier sections retain their
+dated evidence and scope.
+
+
+
 ## Current work: evaluation identity inventory executed, 10 October UTC
 
 The read-only Profile A inventory covers 170 subjects, 20,621 stored epoch
