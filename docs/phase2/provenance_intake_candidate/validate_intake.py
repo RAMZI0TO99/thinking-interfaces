@@ -50,7 +50,7 @@ def blank_unknown():
     assert result["input_sha256"] == hashlib.sha256(template_bytes).hexdigest()
 
 
-def populated_still_unverified():
+def populated_declarations():
     value = copy.deepcopy(template)
     value["claimant"] = {"identity_or_public_handle": "SYNTHETIC_TEST_ONLY", "role": "synthetic",
                          "statement_date_utc": "2026-10-10T00:00:00Z", "source_or_channel_reference": "synthetic:no-network"}
@@ -73,10 +73,59 @@ def populated_still_unverified():
         item["evaluation_inventory_sha256"] = "b" * 64
         item["dataset_versions"] = ["synthetic_v1"]
         item["coverage_basis"] = "synthetic assertion, not accepted evidence"
+        item["training_inclusion_statement"] = "synthetic inclusion assertion only"
+        item["label_exposure_statement"] = "synthetic exposure assertion only"
+        for key in ("subject_identifier_mapping", "recording_identifier_mapping"):
+            item[key] = [{"training_identifier": "SYNTHETIC_TRAINING_ONLY", "evaluation_identifier": "SYNTHETIC_EVALUATION_ONLY",
+                          "mapping_evidence_reference": "synthetic:no-file-read"}]
+        item["subject_intersection"] = []
+        item["recording_intersection"] = []
+    return value
+
+
+def populated_still_unverified():
+    value = populated_declarations()
     result = candidate.inspect_bytes(encoded(value))
     assert_unverified(result)
     assert result["status"] == "declarations_present_unverified"
     assert result["missing_declaration_fields"] == []
+
+
+def missing_target_declarations_reported():
+    value = populated_declarations()
+    target = value["evaluation_intersections"][0]
+    target["training_inclusion_statement"] = None
+    target["label_exposure_statement"] = None
+    target["subject_identifier_mapping"] = []
+    target["recording_identifier_mapping"] = []
+    target["subject_intersection"] = None
+    target["recording_intersection"] = None
+    result = candidate.inspect_bytes(encoded(value))
+    assert_unverified(result)
+    assert result["status"] == "incomplete_declarations"
+    expected = {"evaluation_intersections.cho2017." + key for key in
+                ("training_inclusion_statement", "label_exposure_statement", "subject_identifier_mapping",
+                 "recording_identifier_mapping", "subject_intersection", "recording_intersection")}
+    assert expected <= set(result["missing_declaration_fields"])
+
+
+def missing_training_identifiers_reported():
+    value = populated_declarations()
+    value["training_inventory"]["dataset_entries"][0]["subject_identifiers"] = []
+    value["training_inventory"]["dataset_entries"][0]["recording_identifiers"] = []
+    result = candidate.inspect_bytes(encoded(value))
+    assert_unverified(result)
+    assert result["status"] == "incomplete_declarations"
+    assert {"training_inventory.dataset_entries.0.subject_identifiers", "training_inventory.dataset_entries.0.recording_identifiers"} <= set(result["missing_declaration_fields"])
+
+
+def empty_evidence_claims_reported():
+    value = populated_declarations()
+    value["evidence_items"][0]["supported_claims"] = []
+    result = candidate.inspect_bytes(encoded(value))
+    assert_unverified(result)
+    assert result["status"] == "incomplete_declarations"
+    assert "evidence_items.0.supported_claims" in result["missing_declaration_fields"]
 
 
 def partial_list_no_exclusion():
@@ -103,7 +152,10 @@ def main():
     args = parser.parse_args()
     assert args.output.is_dir()
     cases = [("blank_unknown", blank_unknown), ("all_declarations_unverified", populated_still_unverified),
-             ("partial_empty_intersection_unknown", partial_list_no_exclusion)]
+             ("partial_empty_intersection_unknown", partial_list_no_exclusion),
+             ("missing_target_declarations_reported", missing_target_declarations_reported),
+             ("missing_training_identifiers_reported", missing_training_identifiers_reported),
+             ("empty_evidence_claims_reported", empty_evidence_claims_reported)]
     negatives = [
         ("duplicate_top_key", b'{"x":1,"x":2}', "duplicate_json_key"),
         ("duplicate_nested_key", b'{"x":{"y":1,"y":2}}', "duplicate_json_key"),

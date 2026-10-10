@@ -195,9 +195,20 @@ def inspect_bytes(raw):
         missing.append("training_inventory.complete_coverage_claim")
     if not value["evidence_items"]:
         missing.append("evidence_items")
+    for index, entry in enumerate(training["dataset_entries"]):
+        for key in ("subject_identifiers", "recording_identifiers"):
+            if not entry[key]:
+                missing.append(f"training_inventory.dataset_entries.{index}.{key}")
+    for index, entry in enumerate(value["evidence_items"]):
+        if not entry["supported_claims"]:
+            missing.append(f"evidence_items.{index}.supported_claims")
     for item in targets:
-        for key in ("evaluation_inventory_reference", "evaluation_inventory_sha256", "dataset_versions", "coverage_basis"):
+        for key in ("evaluation_inventory_reference", "evaluation_inventory_sha256", "dataset_versions", "coverage_basis",
+                    "training_inclusion_statement", "label_exposure_statement", "subject_identifier_mapping", "recording_identifier_mapping"):
             if not item[key]:
+                missing.append("evaluation_intersections." + item["dataset"] + "." + key)
+        for key in ("subject_intersection", "recording_intersection"):
+            if item[key] is None:
                 missing.append("evaluation_intersections." + item["dataset"] + "." + key)
     return {"schema": "pro3_cohort_metadata_inspection_candidate_report_v1", "format_valid": True,
             "status": "incomplete_declarations" if missing else "declarations_present_unverified",

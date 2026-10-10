@@ -1,5 +1,12 @@
 # Cohort metadata inspection candidate
 
+## Completeness refinement: prepared, execution pending
+
+The current refinement also reports absent target mappings/exposure declarations,
+per-dataset identifiers and evidence claim lists. Three new regression cases are
+prepared. The older 23-case receipt below qualifies its recorded earlier bytes;
+the changed candidate needs its own fresh guarded qualification.
+
 ## Current metadata checker: synthetic qualification passed, 10 October UTC
 
 The separate standard-library intake checker passed23 synthetic cases and
