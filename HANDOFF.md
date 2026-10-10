@@ -1,5 +1,40 @@
 # Project handoff
 
+## Current work: Source checks complete, numerical entry held, 10 October
+
+The resumable query operations and checkpoint provenance report were committed
+at `d406f1e`. A fresh **114-check root Source/held-entry self-review** passed:
+current pins,33 runtime files, five historical results,431 canonical Source
+files, unchanged spent case artifacts, actual wait journals and absence of all
+14 reserved model Jobs/attempt directories. This accepts Source preparation
+and held entry only; the15-check adapter fixture and remaining26 query subjects
+remain unexecuted. No completed-unit numerical resume has run.
+
+Three finite600-second fixture entry checks and a600-second query entry window
+ended without model launches; a zero-wait query invocation also exercised the
+actual hold/exit path. Every journal remains separate and no attempt was created.
+Current resource availability failed the unchanged10GiB startup floor. A host
+snapshot observed SentinelAgent at about7.7GiB working set; this is an observation,
+not a cause diagnosis. Pro2 genuinely continued Source021 with no pause request;
+its disclosures supply no whole-host release or pro3 result acceptance.
+
+Conditional Source-only iterator arithmetic counts5151 original source-step
+visits and at most1326 distinct source-batch keys (at least3825 repeats) if
+the unchanged seeded linear iterator/frozen namespace remains supported and
+entries are retained. It sampled no permutations, read no signals or fitted
+a model. Actual hits, full-selector runtime and480-second completion remain
+unproved. See the [conditional bound](runs/coordination/cache_performance_20261008_v1/linear_source_prefix_reuse_bound_20261010_001.json).
+
+The [latest operational resume record](runs/coordination/cache_performance_20261008_v1/CURRENT_PENDING_DIAGNOSTICS.json)
+identifies fresh plans/commands after this documentation checkpoint. Enter one
+owned Job after actual floors permit, validate/review the15-check fixture and
+physical release, then finish/review all51 no-fit queries. No case replay, frozen
+production edit, cap increase or scientific signature is admitted. All bounded
+entry watchers exited at this checkpoint; no numerical compute remains active.
+User continuation remains active until a genuine pro2 pause, with numerical
+entry held by the resource floor. Source021 expires20:40UTC10October; later
+resumes must refresh coordination rather than infer an old lease is active.
+
 ## Current work: resumable query preparation and provenance review, 10 October
 
 The inference cache's actual40-check fixture/real source02 comparison and

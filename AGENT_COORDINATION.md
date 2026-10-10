@@ -1,5 +1,15 @@
 # Project coordination
 
+10October final Source/entry checkpoint:114 root Source checks passed; no new
+numerical pass, independent acceptance or case. All three finite fixture waits
+and the600-second query wait exited without model launches; no reserved attempt
+exists. Preserve separate journals and unused13 pairs/all51 coverage. The
+latest operational resume record in the cache-performance phase binds fresh
+post-doc pins/commands. No watcher/owned model compute remains at checkpoint.
+Keep startup10/active4/disk20 floors, process6/Job7.5 caps, CPU/Torch1 and genuine
+pause sensors. Pro2 requested no pause; Source021 is scheduling only through
+20:40UTC. Both real attempts are spent and scientific gates remain unsigned.
+
 10October10:32UTC Source checkpoint: pro2 genuinely confirmed no pause in
 native messaging; user continuation remains active. The finite600-second
 fixture resource-entry check ended at10:30:15UTC without a model launch or
