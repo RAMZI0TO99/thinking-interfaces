@@ -1,5 +1,60 @@
 # Explicit LaBraM production selection hook, 10 October 2026
 
+## Executed current-source engineering checkpoint
+
+The six hook dispatch/evidence regressions and seven eigensolver unit tests
+passed:13 tests/8 subtests, focused lint/types, native time
+6.738s and peak Job
+1,238,556,672 bytes. The84-check execution self-review
+verified original production bytes/remaining AST,33 runtime pins, original case
+history, physical release and actual NumPy1. The eigensolver's production
+24-thread backend qualification is unchanged; the already mocked pool tests
+now declare their backend input. Four non24-thread settings are rejected
+before any pool/Array API patch is created. Six pre-existing tests remain
+otherwise AST-identical. This is synthetic unit validation, not live backend
+or real-data qualification.
+
+Original full quality and the outer guard passed lint, types and **1055 tests**
+on canonical Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432, clean execution Git `cde1964`.
+Actual terminal summary: `1055 passed, 3 skipped, 5 warnings, 1125 subtests passed in 1637.29s (0:27:17)`. Inner time was
+1647.078s; outer native time
+1649.295s. Peak Job was 6,365,016,064 bytes
+(5.928GiB), within process6/Job7.5GiB. Startup10/active4 RAM,
+disk20GiB and NumPy/Torch1 remained. All six phase Job names are freshly absent;
+owned handles/awake/private cleanup released. Current pointer SHA-256:
+`4eb4d5566f496bc3d6143fc7046ca505e750829631332fc3697cb60dc2a01357`. Its predecessor is preserved exactly.
+
+The prior full run remains failed:1050 passed,4 failed,3 skipped,1121 subtests
+on earlier Source638f6c14. All four failures assumed the real NumPy24 backend
+in tests that already mocked the process pool, conflicting with the guard's
+NumPy1 policy. The fixture-only correction and new drift-rejection regression
+were first tested in a fresh focused scope, then this full rerun. Production
+guard bytes and physical thread settings were unchanged. Earlier lint-only
+failure and pre-worker case-specific deadline refusal also remain preserved.
+The fresh private quality-only4200s instance changes no original case source or
+480/520/600s real-case bounds. A latent `passed` receipt-field mismatch was fixed
+before this fresh worker ran; the original receipt uses `status=pass`. This
+successful worker reports and binds that actual original receipt. Old attempts
+are never overwritten, inferred successful or attributed to this source.
+
+- [Focused84-check actual review](../../../runs/coordination/cho_selection_hook_20261010_v1/focused_execution_root_review_003.json)
+- [Original successful quality receipt](../../../runs/phase2/quality_attempts/cho_selection_hook_20261010_004/receipt.json)
+- [Full actual execution self-review](../../../runs/coordination/cho_selection_hook_20261010_v1/full_quality_execution_root_review_004.json)
+- [Successful outer native receipt](../../../runs/coordination/cho_selection_hook_20261010_v1/hook_full_quality_004/native_exit.json)
+- [Preserved failed earlier full run](../../../runs/phase2/quality_attempts/cho_selection_hook_20261010_002/receipt.json)
+- [Next recovery/admission plan](recorder_recovery_admission_plan_20261010.md)
+
+The explicit hook is available; default and EEGNet selection still use the
+original route and all downstream gates remain. The namespaced cache is
+separately tested operational code; any caller must supply its confined owned
+directory, actual worker hash and progress sink under fresh admission. This
+checkpoint supplies no default activation, accepted LaBraM cell, full real
+cached-selector result, accuracy or scientific signature. Both original cases
+remain spent; Gate A/freeze and checkpoint cohort provenance remain unresolved.
+Earlier15/51/221 diagnostics keep their own source and limited measured scope.
+
+## Initial preparation (historical snapshot)
+
 `ProductionChoCaseRunner` now accepts an optional
 `labram_source_selection_runner` callable. Its default is `None`, so existing
 callers retain the original selector execution. EEGNet always uses its original

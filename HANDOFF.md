@@ -1,6 +1,48 @@
 # Project handoff
 
-## Current work: explicit production selection hook, validation pending, 10 October
+## Current work: production hook engineering quality passed, 10 October
+
+The optional LaBraM production selection callable is implemented. Default and
+EEGNet dispatch and all downstream evidence/publication/target/recorder gates
+remain. Six hook and seven eigensolver unit regressions passed, with lint/types
+and 84 actual self-review checks. Production NumPy backend
+qualification is byte-for-byte unchanged; the mocked-pool tests now declare
+their backend prerequisite and explicitly reject four non24-thread settings.
+Actual NumPy/Torch settings stayed at1; no production rule was weakened.
+
+Original guarded full quality and the outer Job both passed on clean execution
+Git `cde1964`, canonical Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432 files. Actual pytest summary:
+`1055 passed, 3 skipped, 5 warnings, 1125 subtests passed in 1637.29s (0:27:17)`. Lint/types also passed. The current pointer `4eb4d5566f496bc3d6143fc7046ca505e750829631332fc3697cb60dc2a01357` certifies
+this source and its predecessor remains archived exactly. Root's
+97-check executed-quality self-review passed; this is
+engineering evidence, not independent review or accuracy/scientific admission.
+
+The earlier full run remains failed/unaccepted: 1050 passed/4 failed/3 skipped on the prior
+source, because four mocked-pool tests assumed actual NumPy24 under the bounded
+NumPy1 guard. The fixture-only repair and new backend rejection test justified
+the fresh current-source rerun. A latent receipt-field reporting mismatch was
+also fixed in the fresh worker before execution. No old receipt was relabeled.
+The initial case-specific deadline refusal remains preserved; the quality-only
+private4200s instance changed no original case source/caps or480/520/600s bounds.
+
+Full quality retained startup10/active4GiB RAM/disk20GiB, NumPy/Torch1,
+process6/Job7.5GiB and4200/4230s guard/native limits. Actual peak Job was
+6,365,016,064 bytes (5.928GiB). All six current phase Job names are
+freshly absent, owned handles/awake/private cleanup released and no watcher
+remains. The genuine Source022 response admits lightweight peer Source only
+through03:30UTC11October; future lease Source needs a different gate and separate
+Root decision. It grants no runtime, host or case release. Both LaBraM claims/failures remain spent; no LaBraM
+cell exists and Gate A/freeze/cohort provenance remain unsigned/unresolved.
+
+The next [recorder recovery/admission plan](docs/phase2/cho_b_disk_cache/recorder_recovery_admission_plan_20261010.md)
+and pinned Source-only packet are prepared. They admit no third attempt, reset,
+default cache activation, changed case/resource cap or scientific signature.
+Any separately proposed operation needs current-source controls, measured
+environment, admission/readiness and actual coordination. Full real cached
+selector completion remains unverified. See the [executed hook report](docs/phase2/cho_b_disk_cache/production_selection_hook_20261010.md).
+Earlier sections are dated historical snapshots.
+
+## Earlier production hook preparation, 10 October (historical)
 
 Root coordinated exact ownership of `evaluation/phase2_cho_sweep.py` and the new
 hook regression test file; pro2 confirmed no conflict/pause. The production

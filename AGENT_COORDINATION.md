@@ -1,5 +1,31 @@
 # Project coordination
 
+10October hook engineering closeout: root owns the runner hook and tests/docs.
+Pro2 genuinely confirms no Pro3 Eigh/test ownership or pause; communication
+only. Focused13 tests/8 subtests, lint/types and84 actual review checks passed.
+The fixture backend declaration preserves physical NumPy/Torch1 and the
+production24-thread qualification guard unchanged. Four drift cases reject
+before pool creation. The failed prior1050/4/3 full scope remains preserved.
+
+Fresh full quality lint/types/1055 tests and both original/outer guards
+passed on Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432, clean execution Git `cde1964`.
+Current quality pointer exactly matches the fresh attempt; root's
+97-check actual review passed. Corrected reporting schema
+was exercised in the fresh worker. All six phase Job names freshly absent;
+owned handles/awake/private cleanup released and no watcher remains.
+
+Original full-quality startup10/active4 RAM/disk20, NumPy/Torch1, process6/Job7.5
+and4200/4230s quality-only guard/native bounds retained. Original real-case
+480/520/600s and primitive600/7200 caps unchanged. Both real claims/failures spent,
+no LaBraM cell. Next inert recorder recovery/admission packet creates no compute,
+reset/third attempt, cap increase or scientific signature. Current-source
+controls/environment/admission need fresh evidence for any separate proposal.
+Gate A/freeze and checkpoint cohort provenance remain unsigned/unresolved.
+Source022 permits lightweight peer Source only until03:30UTC11October. Exact
+request/response are recorded in this phase; future lease Source needs a
+different current gate and separate lawful Root decision. No lease, runtime,
+case, result, Job, host quiet or science grant follows; priorSource021 unchanged.
+
 10October production hook scope: pro3 Root explicitly owns the implementation
 change to `evaluation/phase2_cho_sweep.py`, new hook tests and phase records/docs.
 Pro2 genuinely confirms no competing ownership/pause, with communication-only

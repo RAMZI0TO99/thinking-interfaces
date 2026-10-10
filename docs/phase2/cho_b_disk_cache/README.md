@@ -1,5 +1,19 @@
 # Private Cho B file-cache prototype
 
+The [production selection hook](production_selection_hook_20261010.md) now
+passed13 focused tests/8 subtests, lint/types and full quality (1055 tests).
+Canonical Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432 is certified by the fresh exact-source quality
+pointer; both original and outer guards passed and owned scopes released.
+The prior four backend-fixture failures remain preserved; mocked metadata is
+now explicit, while physical NumPy/Torch1 and production qualification remain.
+
+The [next recovery/admission plan](recorder_recovery_admission_plan_20261010.md)
+is Source-prepared only. Both real attempts remain spent, no LaBraM cell exists,
+science gates unsigned and checkpoint provenance unresolved. Default cache
+activation and a new real run are not admitted. Earlier material is historical.
+
+## Historical prototype and adoption checkpoints
+
 The [production runner hook](production_selection_hook_20261010.md) is now
 implemented as an explicit optional LaBraM selection callable. Default/EEGNet
 routes and downstream gates remain. Its new432-file source requires fresh

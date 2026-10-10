@@ -1,5 +1,15 @@
 # Inference-cache adoption plan, 10 October 2026
 
+The [explicit production hook](production_selection_hook_20261010.md) is now
+implemented and quality verified:13 focused tests plus full lint/types/1055
+tests on Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432. Original default/EEGNet routes and downstream
+gates remain. The separately tested namespaced cache has no default CLI
+activation. Next is the inert [recorder recovery/admission plan](recorder_recovery_admission_plan_20261010.md),
+preserving both spent real attempts and requiring current-source prerequisites
+for any separate proposal. No new compute or scientific authority is created.
+
+## Earlier adoption preparation (historical snapshot)
+
 The [namespaced successor](NAMESPACED_INTEGRATION_REVIEW.json) now implements
 relative package imports and preserves a module-parent-confined cleanup root.
 It passed15 fresh synthetic checks and120 actual execution-review checks; see
