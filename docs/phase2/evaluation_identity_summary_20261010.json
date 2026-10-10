@@ -1,0 +1,57 @@
+{
+  "actual_checkpoint_cohort_submission_received": false,
+  "all_109_mmidb_inventoried_without_eligibility_decision": true,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "checkpoint_cohort_or_overlap_verified": false,
+  "created_utc": "2026-10-10T22:16:21.342070+00:00",
+  "datasets": {
+    "bci_iv_2a": {
+      "epoch_count": 5184,
+      "project_recording_group_count": 108,
+      "subject_count": 9,
+      "subjects_with_historical_raw_hash_match": 0,
+      "subjects_with_raw_path_declarations": 9
+    },
+    "cho2017": {
+      "epoch_count": 10520,
+      "project_recording_group_count": 52,
+      "subject_count": 52,
+      "subjects_with_historical_raw_hash_match": 52,
+      "subjects_with_raw_path_declarations": 52
+    },
+    "mmidb": {
+      "epoch_count": 4917,
+      "project_recording_group_count": 327,
+      "subject_count": 109,
+      "subjects_with_historical_raw_hash_match": 0,
+      "subjects_with_raw_path_declarations": 0
+    }
+  },
+  "execution_git_commit": "5590735d1b4811c21932f14c514542042df016b5",
+  "execution_review": {
+    "path": "runs/coordination/evaluation_identity_inventory_20261010_v1/execution_root_review_004.json",
+    "sha256": "bf5628a6e63026d79bdb07b92803f254174da11c125139e0a8eaaa977f0ebc10"
+  },
+  "identity_namespace": "project Profile A artifact basenames and stored session/run/trial values",
+  "inventory": {
+    "path": "runs/coordination/evaluation_identity_inventory_20261010_v1/candidate/attempt_001/inventory.json",
+    "sha256": "b046ea009cc5cca252ff0d5379b61ab003963e97726a2626dc537f73f3b5e875"
+  },
+  "original_case_attempts_remaining": 0,
+  "project_subject_id_patterns": {
+    "bci_iv_2a": "bci_iv_2a/subject_01..subject_09",
+    "cho2017": "cho2017/subject_01..subject_52",
+    "mmidb": "mmidb/subject_001..subject_109"
+  },
+  "provider_identity_mapping_verified": false,
+  "raw_signal_files_opened_or_rehashed": false,
+  "real_training_or_original_case_admission": false,
+  "schema": "pro3_evaluation_identity_evidence_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "scientifically_eligible_roster_or_query_freeze": false,
+  "signal_or_label_arrays_decoded": false,
+  "total_project_session_run_groups": 487,
+  "total_stored_epoch_identities": 20621,
+  "total_subjects": 170
+}

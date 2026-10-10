@@ -1,5 +1,28 @@
 # Project handoff
 
+## Current work: evaluation identity inventory executed, 10 October UTC
+
+The read-only Profile A inventory covers 170 subjects, 20,621 stored epoch
+identities and 487 session/run groups. All 24 synthetic reader cases and root's
+1,927-check execution self-review passed. Native execution took 2.8787148 s;
+peak aggregate Job commit was 29,626,368 bytes. All 15 owned Job names are
+freshly absent; resource floors and original case limits remain unchanged.
+
+Only three small identity members were decoded. Cho's 52 raw path/hash
+declarations agree with the earlier raw audit; BCI lists two raw paths per
+subject; MMIDB raw mapping remains unknown. Raw EEG was not opened or rehashed.
+Project IDs are not authenticated publisher IDs, and this is not a scientific
+eligibility roster or query freeze. No cohort response, overlap acceptance,
+model work or recorder operation occurred. Gate A and the seven owner decisions
+remain unsigned; the request is unsent and original attempts remain spent, zero
+remaining. Canonical Source3114ec43/432 and quality4eb4d556 remain; the candidate
+has separate exact-byte evidence. Pro2 requests no pause.
+
+See the [executed identity inventory](docs/phase2/evaluation_identity_inventory_20261010.md). Earlier sections retain
+their dated evidence and scope.
+
+
+
 ## Current metadata checker: synthetic qualification passed, 10 October UTC
 
 The separate standard-library intake checker passed26 synthetic cases and
