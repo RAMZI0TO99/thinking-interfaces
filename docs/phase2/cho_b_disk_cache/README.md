@@ -215,3 +215,40 @@ copies against historical output directories or treat this folder as a release.
 - [Actual fixed local-stop guard](../../../runs/coordination/cache_performance_20261008_v1/cache_local_stop_fixture_002/guard.json)
 - [Separate failed-stop scope recovery](../../../runs/coordination/cache_performance_20261008_v1/cache_local_stop_fixture_001/fresh_scope_absence_recovery.json)
 - [160-check root self-review](../../../runs/coordination/cache_performance_20261008_v1/scope_interruption_root_review_001.json)
+
+## Partial full-query trace and 10 October recovery
+
+Five bounded groups completed25 non-target subjects and4078 query trials:
+510 distinct batches,510 feature misses and1020 warm hits, with no evictions.
+Every original/cold/warm query output was bitwise equal. Reversed subject/batch
+order through a copied model reused the same features; repeated ordered passes
+had identical trial/logit hashes. Original forwards totaled210.3179s, cold
+feature forwards210.3504s and two warm passes2.6917s. Disjoint retained features
+totaled3,262,400 bytes and the maximum measured Job peak was2.901GiB.
+
+The223-check root self-review on10October accepts these25 source-only diagnostic
+subjects and their recorded scope release. It does not accept full51 coverage,
+a complete selector, accuracy or a single full-roster cache. Group6 was
+interrupted after partial cold progress, with no terminal native/guard/result
+receipt. Those missing receipts remain missing. A fresh named-Job absence proof
+allowed separate recovery of204,808,000 registered private bytes, preserving
+original inputs and all evidence. The interrupted attempt is still unaccepted.
+
+The fresh resume maps group6 to `source_query_g06_a002` and groups7-11 to their
+unused `a001` directories. Reused-result/operation/runtime pins, exact group
+order, settled Git and actual resources are checked before execution. A source-
+only validation mode checks the package without launching/importing a model.
+The new progress stream allows concurrent reading. At the10October checkpoint
+available RAM was about9.1-9.4GiB; model runs await the existing10GiB startup
+floor while engineering Source work continues. The peer explicitly requested
+no pause; its new Source021 scheduling authority is distinct from runtime.
+
+Cold encoding was about as costly as original encoding on these batches.
+Warm reuse gives a substantial measured reduction, but model fitting, support
+adaptation, full-cohort data loading and integrity/state hashing still require
+measurement. The remaining26 subjects and whole-case feasibility are unproven.
+Do not reopen the spent case ledger or claim a480-second case result.
+
+- [223-check partial query review](../../../runs/coordination/cache_performance_20261008_v1/source_query_partial_root_review_20261010_001.json)
+- [Fresh interrupted-group absence proof](../../../runs/coordination/cache_performance_20261008_v1/source_query_g06_a001/fresh_scope_absence_20261010.json)
+- [Separate private-cache recovery](../../../runs/coordination/cache_performance_20261008_v1/source_query_g06_a001/fresh_cache_recovery_20261010.json)

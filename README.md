@@ -1,5 +1,12 @@
 # Thinking Interfaces
 
+10October resume:25 of51 source-query subjects passed a223-check root review,
+with exact outputs for4078 query trials. Original forwards totaled210.3s;
+two warm passes took2.69s. An interrupted group was preserved and its private
+cache recovered separately. Remaining no-fit groups have a fresh resume path;
+model launches currently await the existing10GiB startup RAM floor while Source
+work continues. See [HANDOFF.md](HANDOFF.md). No full-case score is claimed.
+
 Current checkpoint:15 source-scope/cleanup checks and36 hardened feature checks
 passed. Actual deadline and local-stop fixtures released their Jobs and cleaned
 registered files; the pinned real no-fit check preserved exact logits/state/RNG.

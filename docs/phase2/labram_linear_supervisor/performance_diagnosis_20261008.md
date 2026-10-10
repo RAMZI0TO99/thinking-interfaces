@@ -1,5 +1,17 @@
 # LaBraM engineering performance diagnosis, 8 October 2026
 
+10October recovery: the full-query trace completed25 of51 subjects before
+interruption. A fresh223-check root review verified4078 query trials/510 batches,
+exact original/cold/warm logits and recorded Job release. Original forwards
+totaled210.3179s, cold feature forwards210.3504s, and two warm passes2.6917s.
+Warm reuse reduces repeated work; cold encoding remains. Group6's missing
+terminal receipts are preserved, with separate fresh named-Job absence and
+registered-file recovery. Remaining26 subjects have a fresh guarded resume
+package; actual10GiB startup RAM is required, with observed9.1-9.4GiB currently
+holding model launches. Continue Source preparation/integration planning.
+Full-cohort and whole-case feasibility are still unproven; no new fit or metric
+is admitted in the spent two-attempt ledger.
+
 The next operational checkpoint passed15 source-scope/cleanup checks and36
 hardened feature checks. Exact selector evidence/model/RNG, fit/fold progress,
 state restoration and global-hook callbacks were verified. Actual deadline and

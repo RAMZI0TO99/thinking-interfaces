@@ -1,5 +1,21 @@
 # Project coordination
 
+10October: user resume remains active; pro2 explicitly requests no pause. Genuine
+Source021 response binds request `e72d926c` /5571 bytes, actual interval start
+08:37:52.975066UTC through20:40UTC, max5 lightweight peer Source agents including
+overlap. It grants no runtime, lease issuance/extension or scientific authority.
+Old Source020 and lease009 are expired. Pro3 has no agents or active model Job.
+
+Five completed no-fit query groups (25 subjects) passed223 root self-review
+checks. Interrupted group6 remains unaccepted with missing terminal receipts;
+its registered private cache was recovered only after fresh named-Job absence
+proof. Next fresh diagnostic attempt is group6 `a002`, followed by groups7-11
+`a001`. Keep original180/210 operation limits, startup10/active4/disk20 floors,
+process6/Job7.5GiB caps, CPU/Torch1 and the shared pause sensor. RAM measured
+about9.1-9.4GiB: hold model launches and continue Source preparation/planning.
+No real training, case replay, frozen production change or scientific signature
+is admitted. Root owns new operational resume files and repository docs.
+
 Latest scope checkpoint:15 source-adapter/cleanup checks and36 hardened feature
 checks passed. Actual deadline and attempt-local stop fixtures closed the owned
 Job/handles and removed only registered cache files. The first unhandled sensor

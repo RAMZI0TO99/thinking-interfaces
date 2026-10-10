@@ -1,5 +1,46 @@
 # Project handoff
 
+## Current work: 10 October recovery and partial source-query review
+
+The user resumed work on10October. Pro3 recovered **25 of51** completed source-
+query subjects from five clean8October diagnostic groups. A fresh **223-check
+root self-review** verified their exact operation/source/runtime pins, query
+ordering, result hashes and recorded physical release. The4078 query trials
+formed510 distinct batches:510 feature misses and1020 warm hits, no eviction.
+Original forwards totaled210.3179s, first cold feature forwards210.3504s, and
+two warm passes2.6917s. Disjoint retained query features totaled3,262,400 bytes;
+measured maximum Job peak was2.901GiB. These are untrained source-only forwards,
+not a complete selector, accuracy result or single-instance full-roster cache.
+
+Group6 `source_query_g06_a001` was interrupted with partial progress and no
+result, guard, native-exit or cleanup receipt. It remains unaccepted. A fresh
+named-Job absence proof permitted removal of only its registered204,808,000
+private cache bytes; raw inputs, weights and historical receipts remain intact.
+The original terminal receipts stay missing; no historical Job flags or reason
+were invented. See the [partial review](runs/coordination/cache_performance_20261008_v1/source_query_partial_root_review_20261010_001.json)
+and [separate recovery](runs/coordination/cache_performance_20261008_v1/source_query_g06_a001/fresh_cache_recovery_20261010.json).
+
+The remaining26 subjects are prepared for six fresh180-second/210-second
+guard/native operations, starting with `source_query_g06_a002`, then groups7-11
+in fresh `a001` directories. The resume runner checks reused-result/operation
+pins, exact group order, clean settled Git and actual startup resources; its
+progress log permits concurrent reading. Parser validation passed. No new model
+operation has run on10October: observed available RAM was about9.1-9.4GiB,
+below the retained10GiB startup floor. Source work continues under direct user
+authorization; no unrelated process is stopped and no resource limit is relaxed.
+
+Pro2 resumed and explicitly requested no pause. Pro3 authored a genuine Source021
+response bound to request `e72d926c`, permitting only the exact lightweight peer
+Source scope, max5 agents including overlap, from08:37:52.975066UTC through
+20:40UTC10October. Old Source020/lease009 expired and remain unchanged. This is
+scheduling only, not runtime/case/lease/scientific authority or peer acceptance
+of pro3 results. Current canonical source remains `b7452847` /431 files; both
+real LaBraM attempts remain spent and Scientific Gate A/freeze remain unsigned.
+
+Next: finish the fresh resume package and integration/performance planning;
+complete the remaining no-fit groups when actual startup floors are met, then
+review the combined51-source cohort. Continue until a genuine pro2 pause request.
+
 ## Current work: source-scope progress and interruption cleanup validated
 
 The operational selector adapter passed **15 checks**, including exact linear/
