@@ -1,5 +1,17 @@
 # Inference-query cache integration preparation
 
+## Completed adapter and source diagnostics,10 October
+
+The separate inference selector adapter now passed all15 fixture checks and a
+123-check execution self-review. All51 no-fit source queries passed a768-check
+combined review, and the221 actual source-step batches passed a separate852-check
+review with exact original/cold/copied/warm logits and442 cache hits. This follows
+the40-check inference fixture and source02 comparison recorded below. See the
+[completed diagnostic report](cache_diagnostics_20261010.md) for actual scopes,
+resource envelopes, preserved failures and ownership requirements for adoption.
+Older sections retain their original preparation snapshots. No real-data fit,
+full selector, new case, production integration or scientific signature followed.
+
 ## Executed inference checkpoint,10 October
 
 The candidate below now passed40 actual synthetic checks and the pinned real

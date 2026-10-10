@@ -1,5 +1,44 @@
 # Project handoff
 
+## Current work: bounded cache diagnostics completed, 10 October
+
+The15-check inference selector adapter passed. All51 source subjects now have
+reviewed no-fit query results:8269 trials,1035 distinct batches,1035 cold misses
+and2070 warm hits with exact logits. Completed-unit reuse actually executed.
+Root's123-check adapter and768-check complete-cohort execution self-reviews
+passed; failed/interrupted units remain preserved and excluded.
+
+The original seeded iterator was actually sampled:5151 visits,221 distinct
+subject/ordered-position-pair keys and4930 repeats, with153 execution-review
+checks. A separate real-source no-fit operation then forwarded all221 distinct
+batch2 input-byte keys, recording442 cache hits and exact original/cold/copied/
+warm logits. Its852-check execution self-review passed. Head gradient graphs,
+model state and RNG were unchanged; no optimizer, loss/backward, real-data fit,
+target-signal forward, accuracy calculation or full selector ran.
+
+The latest source-forward native operation finished in224.778s within its
+unchanged240/270-second guard/native limits. Maximum measured Job commit was
+1,467,752,448 bytes. Available-resource diagnostic launchers used smaller
+process/Job caps and startup floors; active4GiB RAM/disk20GiB, CPU/Torch1,
+one owned Job and genuine pause sensors remained enforced. Original guards and
+real-case limits stayed unchanged. Reviewed Jobs/handles/private caches released;
+all entry watchers exited. Root self-review is not independent case acceptance.
+
+See the [completed diagnostic report and integration step](docs/phase2/cho_b_disk_cache/cache_diagnostics_20261010.md)
+and [current operational status](runs/coordination/cache_performance_20261008_v1/CURRENT_PENDING_DIAGNOSTICS.json).
+Fresh numerical execution Git was clean `8c5b251`; canonical Source remains
+`b7452847` /431 files. The historical quality pointer was not rerun. Older
+sections below are historical snapshots, including their pending-work claims.
+
+Next: coordinate frozen implementation ownership and adopt/review the exact
+tested inference cache/adapter, then validate the resulting settled source using
+the guarded quality runner. No numerical diagnostic remains pending in this
+bounded phase. Production integration and complete-selector runtime remain
+unproved. Both real cases are spent; Scientific Gate A/freeze and checkpoint
+cohort provenance remain unsigned/unresolved. No genuine pro2 pause was present;
+Source021 remains peer scheduling only through20:40UTC10October. User continuation
+is not a new30-hour window, runtime lease, case admission or scientific signature.
+
 ## Current work: Source checks complete, numerical entry held, 10 October
 
 The resumable query operations and checkpoint provenance report were committed

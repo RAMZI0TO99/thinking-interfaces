@@ -1,5 +1,31 @@
 # Project coordination
 
+10October completed diagnostic checkpoint: root's15-check inference adapter,
+all51 no-fit source queries, actual original-iterator sampling and221 real
+source-batch forward comparisons passed. Execution self-reviews passed123,
+768,153 and852 checks respectively. Completed-unit reuse ran. No optimizer,
+loss/backward, real-data fit, target-signal forward, accuracy or full selector ran.
+All reviewed owned Jobs/process identities/handles/private caches released;
+entry watchers exited. Preserved failures retain failed/missing terminal results.
+
+User-directed available-resource policies apply only to new diagnostic launchers:
+first adapter/query startup8/process3.25/Job3.5GiB; later query/sampling/forward
+startup7/process2.25/Job2.5GiB. Active4GiB RAM, disk20GiB, CPU/Torch1, at most one
+owned Job and genuine pause sensors remain. Original startup10/process6/Job7.5
+guards and real-case limits are byte-for-byte unchanged. The221-batch operation
+retained240/270-second guard/native limits and completed in224.778s. No caps or
+old leases were extended and no unrelated processes were stopped.
+
+Root owns the operational cache-performance phase and recipe/docs. Next is
+owner-coordinated adoption/review of the exact tested inference cache and adapter
+before production changes; both real case attempts remain spent. Canonical
+Source stays `b7452847` /431 files, actual execution Git `8c5b251`; quality was
+not rerun and neither scientific gate is signed. Read the completed diagnostic
+report and refreshed operational index before any further work. No numerical
+diagnostic remains pending in this phase. Older sections preserve earlier states.
+Pro2 has requested no pause; Source021 remains lightweight scheduling only until
+20:40UTC10October, supplying no runtime/host release or result acceptance.
+
 10October final Source/entry checkpoint:114 root Source checks passed; no new
 numerical pass, independent acceptance or case. All three finite fixture waits
 and the600-second query wait exited without model launches; no reserved attempt

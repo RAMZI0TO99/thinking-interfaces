@@ -1,5 +1,12 @@
 # Private Cho B file-cache prototype
 
+The [10October completed diagnostic report](cache_diagnostics_20261010.md)
+records the15-check inference adapter pass, all51 no-fit query results,
+actual source-iterator sampling and221 real source-batch forward comparisons.
+All owned compute released. These are engineering self-reviews; production
+integration and full-case completion remain pending owner-coordinated adoption.
+The earlier measurements below remain historical evidence.
+
 This Windows-only operational prototype keeps verified source episodes in a
 private file tier so an evicted subject can be restored without decoding its
 NPZ/raw inputs again. It is **not wired into production or admitted for another
