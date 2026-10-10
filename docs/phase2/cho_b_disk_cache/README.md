@@ -1,5 +1,36 @@
 # Private Cho B file-cache prototype
 
+## Current work: current-source prerequisites and 81 original controls passed, 10 October
+
+Fresh checks of 52 raw sources, catalogs and B assets and environment/checkpoint-byte checks passed,
+and the original all-nine no-future writer actually verified existing artifacts.
+All 81 original EEGNet controls now have fresh current-source records: shuffled
+mean 0.48765432 < 0.60, pre-cue 0.24855324 < 0.35, matched no-future 0.24508102 < 0.35.
+Original subjects/seeds/configs/epochs/thresholds/cooling/evidence remain intact.
+Canonical Source3114ec43/432 and accepted full-quality pointer4eb4d556 remain.
+
+Native times were 28.673/434.247/81.131/74.755 seconds for raw/writer/45/36.
+Root actual execution self-reviews 217/212/551/488 and 307 closeout checks passed.
+Startup 10/active 4 GiB RAM/disk 20 GiB, process 6/Job 7.5 GiB and CPU/NumPy/Torch 1
+were retained; current guard/native scopes 180/210, 480/510 and 300/330 seconds.
+The 36-control original supervisor reused the fresh reviewed all-nine writer
+proof and spawned its original ancestry-checked worker. All 12 owned Job names
+are freshly absent; original history/raw artifacts/recorder files are retained.
+
+This closes the separately authorized engineering prerequisite refresh.
+Both original LaBraM attempts remain spent, zero remain and no original intent
+is recoverable. Gate A/freeze and checkpoint cohort/overlap provenance remain
+unsigned/unresolved; full real cached-selector completion remains unverified.
+Next is those evidence/owner decisions and a separately reviewed real worker
+environment/admission if an allowed operation is proposed. No relaunch/reset,
+third/renamed equivalent case, default cache activation or cap change is granted.
+Pro2 reports no confirmed conflicting heavy/GPU lease or pause; Source022/010
+are separately scoped Source scheduling information, not Pro3 runtime authority.
+Older sections below retain their dated source and evidence snapshots.
+
+See the [executed prerequisite/control report](source_prerequisites_refresh_20261010.md).
+
+
 ## Current callback and recorder checkpoint
 
 The explicit one-use cache callback now passed10 synthetic tests and lint,
