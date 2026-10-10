@@ -77,15 +77,17 @@ class ChoCachedSelectionHookTests(unittest.TestCase):
             patch.object(sweep, "materialize_cho_candidates", return_value=(candidate,)),
             patch.object(sweep, "sweep_cell_identity", return_value=SimpleNamespace()),
             patch("adaptation.labram_source.BCILaBraMSourceSelector", return_value=self.selector),
-            patch("adaptation.source_selection.BCIEEGNetSourceSelector", return_value=self.selector),
+            patch(
+                "adaptation.source_selection.BCIEEGNetSourceSelector", return_value=self.selector,
+            ),
             patch(
                 "evaluation.phase2_selection_evidence_binding.verify_cho_selection_evidence",
                 side_effect=_EvidenceRejected("unchanged publication boundary"),
             ) as verify,
             patch("evaluation.phase2_cho_publication_gate.publish_verified_cho_source") as publish,
+            self.assertRaisesRegex(_EvidenceRejected, "unchanged publication boundary"),
         ):
-            with self.assertRaisesRegex(_EvidenceRejected, "unchanged publication boundary"):
-                runner(plan=plan, executor=self.executor, route=None, method_config={})
+            runner(plan=plan, executor=self.executor, route=None, method_config={})
         verify.assert_called_once()
         self.assertIs(verify.call_args.kwargs["record"], self.evidence.record)
         publish.assert_not_called()
@@ -131,9 +133,9 @@ class ChoCachedSelectionHookTests(unittest.TestCase):
             patch.object(sweep, "materialize_cho_candidates", return_value=()),
             patch("adaptation.labram_source.BCILaBraMSourceSelector", return_value=self.selector),
             patch("evaluation.phase2_cho_publication_gate.publish_verified_cho_source") as publish,
+            self.assertRaisesRegex(RuntimeError, "owned cache scope failed"),
         ):
-            with self.assertRaisesRegex(RuntimeError, "owned cache scope failed"):
-                runner(plan=plan, executor=self.executor, route=None, method_config={})
+            runner(plan=plan, executor=self.executor, route=None, method_config={})
         hook.assert_called_once_with(self.selector)
         self.evidence.write.assert_not_called()
         self.selector.run_selection.assert_not_called()
