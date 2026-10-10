@@ -1,5 +1,34 @@
 # Project coordination
 
+## Current engineering result: MMIDB subject 001 reconstructed, 10 October UTC
+
+The fresh guarded raw-to-cache comparison reproduces all 45 stored epochs
+exactly, including signals, labels, session/run/trial identities and channel
+order, shapes and dtypes. Maximum signal error is 0 V. Raw/cache hashes,
+sizes and modification times remain; the cache was not rewritten. The
+other 108 MMIDB subjects were not reconstructed. This verifies current
+processing for one subject, not authenticated historical generation/cohort.
+
+The measured synthetic probe passed12 boundaries; root's3,323-check actual
+execution self-review passed. Native17.8833662s; peak aggregate1,207,357,440
+bytes. All25 cumulative owned Job names are freshly absent. Startup10/active4
+RAM/disk20 GiB floors, process4/Job5 GiB finite data caps and CPU1 remained;
+original model-case6/7.5 GiB limits are unchanged. All failed observations
+and spent revision admissions are retained. No model/checkpoint/recorder or
+original-case work occurred. Dependencies imported Torch with CPU/native
+threads1 and no CUDA context. Pro2 reports no conflict/pause, not a case grant.
+
+Source3114ec43/432 and quality4eb4d556 remain; the candidate has separate
+exact-byte evidence. Gate A and seven owner decisions/freeze stay unsigned,
+checkpoint cohort/overlap unknown, request unsent, original attempts spent,
+zero remaining. A broader engineering reconstruction still needs a defined
+finite protocol, fresh pins/admission and coordination.
+
+See the [executed reconstruction report](docs/phase2/mmidb_cache_reconstruction_20261010.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current evidence navigation: repaired and rechecked, 10 October UTC
 
 The fresh corrective audit matched 100 direct checksum references across

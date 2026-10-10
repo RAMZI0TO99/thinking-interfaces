@@ -1,0 +1,306 @@
+{
+  "all_current_owned_job_names_freshly_absent": [
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_callback_diagnostic_cb_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls36_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls45_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_no_future_writer_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_completeness_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_identity_inventory_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_recording_mapping_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_diagnostic_attempt_005",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_002",
+      "open_job_error": 2
+    }
+  ],
+  "all_dataset_cached_processing_lineage_verified": false,
+  "authenticated_historical_cache_generation": false,
+  "canonical_files": 432,
+  "checkpoint_cohort_or_overlap_verified": false,
+  "class_counts": {
+    "left_fist": 23,
+    "right_fist": 22
+  },
+  "created_utc": "2026-10-10T23:46:49.218230+00:00",
+  "cuda_context_initialized": false,
+  "current_processing_reproduced_for_subject001": true,
+  "declared_absolute_tolerance_volts": 1e-12,
+  "declared_relative_tolerance": 1e-06,
+  "epochs": 45,
+  "execution_git_commit": "7777d6ce438fa83b6b9904942dc4ceaefa912b59",
+  "execution_observations": [
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate/probe_attempt_001",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate/probe_attempt_001/guard.json",
+        "sha256": "30da68007ef048ee133e76eb7942976187e58815de2b4fecdcabfcd65adf2f54"
+      },
+      "guard_seconds": 8.91772850000416,
+      "label": "Initial synthetic probe",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate/probe_attempt_001/native_exit.json",
+        "sha256": "525182a8826163abee46abe886afc96cf1e8eca16b3ce9e294f6d100ca24acfe"
+      },
+      "native_seconds": 9.0951355,
+      "passed": false,
+      "peak_job_commit_bytes": 1116004352,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_002/probe_attempt_002",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_002/probe_attempt_002/guard.json",
+        "sha256": "245feb3240ab16d7f223cb8a16baff840d7f895f8589825e57d5a7b34a4c9f15"
+      },
+      "guard_seconds": 5.931939600006444,
+      "label": "Logged diagnostic revision",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_002/probe_attempt_002/native_exit.json",
+        "sha256": "083d56a3d6fd35a03ee86a78ad73212a0442eb72353df5bdeb67203a5bc1ba84"
+      },
+      "native_seconds": 6.2117852,
+      "passed": false,
+      "peak_job_commit_bytes": 1115369472,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_004/probe_attempt_003",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_004/probe_attempt_003/guard.json",
+        "sha256": "3245965bab8a6dd620c7f53ad7307e6fe384f8d28c03766686a7ed986e2d8b58"
+      },
+      "guard_seconds": 9.03758740000194,
+      "label": "Empty-runtime-file correction",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_004/probe_attempt_003/native_exit.json",
+        "sha256": "40b7c196987f76b1128f9aacf629414d8a15fdcad9cf3ba060d569167e5db4eb"
+      },
+      "native_seconds": 9.2243987,
+      "passed": false,
+      "peak_job_commit_bytes": 1116360704,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_005/diagnostic_attempt_005",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_005/diagnostic_attempt_005/guard.json",
+        "sha256": "5674d71ccd561c8b05087ca79e59104d639df9d14492da26253749c694873e75"
+      },
+      "guard_seconds": 8.597782799995912,
+      "label": "Denied-call stack diagnostic",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_005/diagnostic_attempt_005/native_exit.json",
+        "sha256": "0eddfb8b0a14f6c699064cc87a0afd9633a656626759608673d321bcd0bebd38"
+      },
+      "native_seconds": 8.794590699999999,
+      "passed": false,
+      "peak_job_commit_bytes": 1115983872,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/probe_attempt_004",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/probe_attempt_004/guard.json",
+        "sha256": "cdccd84430418d9e01d02a73d32789675091e88382dfc4711b02662aa2be812f"
+      },
+      "guard_seconds": 10.092573699999775,
+      "label": "Qualified synthetic probe",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/probe_attempt_004/native_exit.json",
+        "sha256": "b25ac1ed291cb0d8e3890e5309fc22a795c6b54ffadb9fed9808aaf8f6498d5c"
+      },
+      "native_seconds": 10.3525774,
+      "passed": true,
+      "peak_job_commit_bytes": 1115693056,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/reconstruct_attempt_001",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/reconstruct_attempt_001/guard.json",
+        "sha256": "7e8e5aa86eefaabea88dcc7191769ba6d6d489d56a67e673782db38a300d2f59"
+      },
+      "guard_seconds": 15.615747899995768,
+      "label": "First reconstruction / JSON failure",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_006/reconstruct_attempt_001/native_exit.json",
+        "sha256": "1bb146498c97dcac1b2cec25798421bdd9fb5f7d1146412c0d7a3321cbfed307"
+      },
+      "native_seconds": 17.8321832,
+      "passed": false,
+      "peak_job_commit_bytes": 1208258560,
+      "physical_cleanup_verified": true
+    },
+    {
+      "directory": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_009/reconstruct_attempt_002",
+      "guard_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_009/reconstruct_attempt_002/guard.json",
+        "sha256": "31eb0dc382807f91fe92cd7bf94732d2f18c0fab208f122b9874e6fa11cbb5ca"
+      },
+      "guard_seconds": 15.497563700002502,
+      "label": "Scalar-corrected reconstruction",
+      "native_receipt": {
+        "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_009/reconstruct_attempt_002/native_exit.json",
+        "sha256": "e44656d2638430dca65cf80409bd2535b069e23b3f3b340bb62f8f0b90f55d30"
+      },
+      "native_seconds": 17.883366199999998,
+      "passed": true,
+      "peak_job_commit_bytes": 1207357440,
+      "physical_cleanup_verified": true
+    }
+  ],
+  "execution_root_review": {
+    "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/reconstruction_execution_root_review_010.json",
+    "sha256": "ffdb9eab7c95db8913147192fba69b8b670cc85f89159274acb1797565ceb806"
+  },
+  "expected_existing_directory_creation_requests_denied": 2,
+  "identities_channels_shapes_dtypes_exact_equal": true,
+  "independent_review": false,
+  "input_bytes_sizes_mtimes_retained": true,
+  "maximum_absolute_error_volts": 0.0,
+  "model_or_original_case_executed": false,
+  "native_seconds": 17.883366199999998,
+  "network_or_child_process_attempts": 0,
+  "original_case_attempts_remaining": 0,
+  "other_mmidb_subjects_not_reconstructed": 108,
+  "peak_job_commit_bytes": 1207357440,
+  "probe_execution_git_commit": "a8c3bd86708848881b184e83b5cc37bee37ff8ab",
+  "processed_artifact_written": false,
+  "provenance_request_sent": false,
+  "result": {
+    "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_009/reconstruct_attempt_002/result.json",
+    "sha256": "57c1d6f86fb062983371ae0df5c1d8cfd6ae665ca01dcab7239b4d2cb80ff609"
+  },
+  "root_execution_self_review_checks": 3323,
+  "runtime_probe_boundaries_passed": 12,
+  "runtime_probe_root_review": {
+    "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/probe_execution_root_review_007.json",
+    "sha256": "623b09579bbf9c4a98e79c358a807a323cfed648c8e5ed4d84cc3b35ffd30730"
+  },
+  "schema": "pro3_executed_mmidb_subject001_reconstruction_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "shape": [
+    45,
+    64,
+    512
+  ],
+  "signal_values_exact_equal": true,
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "subject": "mmidb/001",
+  "subject_count": 1,
+  "torch_and_native_threadpools": 1,
+  "torch_imported_as_dependency": true
+}
