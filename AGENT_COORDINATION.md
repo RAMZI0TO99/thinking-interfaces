@@ -1,5 +1,25 @@
 # Project coordination
 
+## Current evidence navigation: repaired and rechecked, 10 October UTC
+
+The fresh corrective audit matched 100 direct checksum references across
+70 metadata files, with zero stale/missing/excluded references. Two older
+cache-document pins now have exact historical Git archives and current byte
+pins; the next-step text now states the executed 26-case intake result.
+Both initial and corrective observations are preserved. Root's 189-check
+execution self-review passed; all 18 owned Job names are freshly absent.
+
+This is metadata navigation repair, with no raw/model/numerical/recorder work
+or referenced-code execution. Canonical Source3114ec43/432 and quality4eb4d556
+remain. Scientific Gate A and seven owner decisions remain unsigned; cached
+processing lineage/cohort overlap are unverified. The request is unsent and
+original attempts remain spent, zero remaining. Pro2 requests no pause.
+
+See the [navigation integrity report](docs/phase2/evidence_navigation_integrity_20261010.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current work: recording mapping and checksum audit executed, 10 October UTC
 
 All 327 selected MMIDB EDF files match both PhysioNet's published SHA-256 list
