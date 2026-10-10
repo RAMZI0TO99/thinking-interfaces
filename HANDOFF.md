@@ -1,5 +1,35 @@
 # Project handoff
 
+## Current work: public release identities verified; owner packet prepared, 10 October
+
+Read-only public metadata verifies both checkpoint release identities: the
+original matches the official Git blob/size; the safe conversion matches its
+pinned LFS SHA-256/size. Thirteen HTTP 200 metadata responses are preserved;
+root's 680-check evidence self-review passed. No model loading, unpickling,
+training, numerical replay or recorder operation occurred in this phase.
+
+The recording-level pretraining cohort and target overlap remain unresolved.
+The concrete owner packet is unratified: Gate A acceptance rationale, cohort
+evidence, prospective Cho analysis and freeze decisions remain unsigned.
+A complete provenance request is drafted and unsent. Historical 450-fit
+record preservation does not recertify those outcomes against current source.
+
+The preceding 81 original control records remain qualified. Current committed
+settings are 5,253 selection steps and a 5.5 GiB analysis cap; old missing
+controls/256-step/untracked-config statements below are dated snapshots.
+Source3114ec43/432 and accepted quality pointer4eb4d556 remain. Both original
+LaBraM attempts stay spent, zero remain; no reset, relaunch or renamed equivalent
+case is supplied. Full real cached-selector and real worker admission remain
+unverified. Pro2 confirmed no pause/ownership conflict; its lightweight Source
+scheduling is peer disclosure, not numerical acceptance or runtime authority.
+
+Next inputs are checkpoint-bound cohort evidence and explicit scientific
+owner decisions. Any allowed separate engineering operation needs its own
+defined protocol, fresh measured worker/admission and coordination.
+
+See the [release provenance](docs/checkpoint_release_provenance_20261010.md), [owner decision packet](docs/phase2/cho_owner_decision_packet_20261010.md) and [unsent request](docs/phase2/checkpoint_provenance_request_draft_20261010.md). Older sections retain their evidence scopes.
+
+
 ## Current work: current-source prerequisites and 81 original controls passed, 10 October
 
 Fresh checks of 52 raw sources, catalogs and B assets and environment/checkpoint-byte checks passed,
