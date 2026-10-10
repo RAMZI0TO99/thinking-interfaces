@@ -1,5 +1,25 @@
 # Project coordination
 
+## Current metadata checker: synthetic qualification passed, 10 October UTC
+
+The separate standard-library intake checker passed23 synthetic cases and
+both CLI paths in an actual guarded metadata-only Job. Native1.1905499s,
+peak aggregate40,214,528bytes; root's56-check execution self-review passed.
+Startup10/active4RAM/disk20GiB and process2.25/Job2.5GiB,60/90s remained.
+All13 owned Job names freshly absent, handles/awake scope released.
+
+The candidate enforces1MiB, strict JSON/checkpoint/approval/attempt boundaries
+and reports incomplete or populated-but-unverified declarations. It does not
+authenticate authors, read cited evidence or infer verified cohort overlap.
+No actual cohort response, model work, recorder action or scientific admission
+occurred. All seven owner decisions and Gate A/freeze remain unsigned; the
+request stays unsent and both original attempts spent, zero remaining.
+Source3114ec43/432 and existing quality4eb4d556 remain; old full-suite receipts
+do not certify the new documentation namespace. Pro2 requests no pause.
+
+See the [executed metadata qualification](docs/phase2/cohort_intake_checker_20261010.md). Older sections retain their dates/scopes.
+
+
 ## Current work: cohort evidence intake prepared, 10 October
 
 The empty cohort input template and proposed review contract now separate
