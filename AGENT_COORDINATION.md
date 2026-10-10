@@ -1,5 +1,29 @@
 # Project coordination
 
+## Current work: cohort evidence intake prepared, 10 October
+
+The empty cohort input template and proposed review contract now separate
+checkpoint identity, actual training-run coverage, claimant authentication
+and subject/recording intersection. Empty or missing identifiers mean unknown,
+not exclusion. No cohort response has been received and no executable parser
+is supplied. The complete provenance request remains unsent.
+
+The existing release identities,81 original controls and450 historical
+reference records retain their evidence scopes. Source3114ec43/432 and
+accepted quality pointer4eb4d556 remain. Gate A, seven owner decisions and
+the experiment freeze are unsigned; original LaBraM attempts remain spent,
+zero remaining. No numerical replay, model loading, recorder operation,
+new case, frozen/configuration edit or scientific admission occurred.
+
+Pro2's latest genuine Root status requests no pause and describes lightweight
+Source022 scheduling only. No numerical/native Parser/fixture/science or
+physical resource release is inferred. Next requires actual checkpoint-bound
+cohort evidence and the explicit owner decisions; a future allowed separate
+engineering operation still needs defined scope and fresh worker admission.
+
+See the [blank cohort template](docs/phase2/checkpoint_cohort_evidence_template_20261010.json) and [review contract](docs/phase2/checkpoint_cohort_review_contract_20261010.md). Earlier sections retain their dated evidence.
+
+
 ## Current work: public release identities verified; owner packet prepared, 10 October
 
 Read-only public metadata verifies both checkpoint release identities: the
