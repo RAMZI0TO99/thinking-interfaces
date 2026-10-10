@@ -1,5 +1,11 @@
 # Private Cho B file-cache prototype
 
+The exact tested inference adapter and three dependencies are packaged in the
+[integration manifest](INTEGRATION_REVIEW.json). The [adoption plan](integration_adoption_plan_20261010.md)
+defines the remaining import/cleanup-root interface and validation work.
+Its23-check source preparation review launched no model and changed no canonical
+implementation; production adoption remains pending that defined scope.
+
 The [10October completed diagnostic report](cache_diagnostics_20261010.md)
 records the15-check inference adapter pass, all51 no-fit query results,
 actual source-iterator sampling and221 real source-batch forward comparisons.

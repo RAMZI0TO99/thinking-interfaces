@@ -1,5 +1,11 @@
 # Inference-query cache integration preparation
 
+The [tested inference adapter copy](source_selection_cache_scope_inference.py)
+and its three dependencies are now pinned by the [integration manifest](INTEGRATION_REVIEW.json).
+The [adoption plan](integration_adoption_plan_20261010.md) records23 actual Source
+preparation checks and the module-location ownership-root constraint. This adds
+reviewable source packaging, with no production integration or new model run.
+
 ## Completed adapter and source diagnostics,10 October
 
 The separate inference selector adapter now passed all15 fixture checks and a

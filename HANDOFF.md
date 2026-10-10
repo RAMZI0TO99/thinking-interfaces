@@ -1,5 +1,30 @@
 # Project handoff
 
+## Current work: inference adoption recipe Source-prepared, 10 October
+
+The completed15-check adapter/all51-query/221-source-batch diagnostics below
+remain the latest numerical evidence. The exact tested inference adapter is now
+tracked alongside its three dependencies, with an [integration manifest](docs/phase2/cho_b_disk_cache/INTEGRATION_REVIEW.json)
+and [concrete adoption plan](docs/phase2/cho_b_disk_cache/integration_adoption_plan_20261010.md).
+Root's23-check Source preparation self-review passed without model imports or
+execution. Canonical Source remains `b7452847` /431 files; quality was not rerun.
+
+Pro2 genuinely confirms no conflicting ownership of Pro3 frozen implementation
+and no pause/resource request. Root owns the new recipe/manifest/plan/docs;
+frozen edit targets and runtime admission are not assigned by this preparation.
+The cleanup helper's module-location-derived ownership root is an explicit
+migration issue: copying/importing it does not authorize existing attempt paths
+or arbitrary output directories. The plan specifies import/root decisions,
+original evidence/SGD/target preservation and current-source guarded validation.
+
+Next is the plan's defined implementation scope and fresh source validation.
+No completed diagnostic replay is needed. Both original real attempts remain
+spent; Gate A/freeze and checkpoint cohort provenance remain unsigned/unresolved.
+All owned numerical scopes and entry watchers remain released. Source021 is
+peer scheduling only until20:40UTC10October; continuation supplies no new30h
+window, scientific signature or case admission. The operational index binds the
+latest documentation checkpoint and keeps old receipts/indices archived.
+
 ## Current work: bounded cache diagnostics completed, 10 October
 
 The15-check inference selector adapter passed. All51 source subjects now have

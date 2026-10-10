@@ -143,6 +143,12 @@ documented cleanup-refusal sentinels. Unrelated processes were not stopped.
 
 ## Integration step and limits
 
+The exact tested [inference adapter](source_selection_cache_scope_inference.py)
+is now tracked with its dependencies in the [candidate manifest](INTEGRATION_REVIEW.json).
+The [adoption plan](integration_adoption_plan_20261010.md) supplies23 Source-only
+preparation checks and concrete import/cleanup-root decisions for migration.
+This packaging changes no canonical implementation or executed-result claim.
+
 The next engineering step is owner-coordinated adoption of the exact tested
 inference cache and selector adapter, followed by source review and the existing
 guarded quality checks against the resulting source. Root owns the operational

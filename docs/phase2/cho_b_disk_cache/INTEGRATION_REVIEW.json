@@ -1,0 +1,78 @@
+{
+  "actual_execution_self_reviews": [
+    {
+      "checks_passed": 123,
+      "independent_review": false,
+      "path": "runs/coordination/cache_performance_20261008_v1/inference_scope_available_execution_root_review_20261010_002.json",
+      "sha256": "ba266d4d0918b9546b316980a1d0803cab5377ee318dacd83261fb86078f4456"
+    },
+    {
+      "checks_passed": 768,
+      "independent_review": false,
+      "path": "runs/coordination/cache_performance_20261008_v1/source_query_available_combined_root_review_20261010_006.json",
+      "sha256": "45caf8736fd66ade6e44fc9af73552385805a246bd6d726228d48dfc0b1bf721"
+    },
+    {
+      "checks_passed": 153,
+      "independent_review": false,
+      "path": "runs/coordination/cache_performance_20261008_v1/source_sampler_trace_execution_root_review_20261010_001.json",
+      "sha256": "ab86eae6e40c076885cbc19a61eda76b259af13d8f24fcd668ef7d4ccadabe83"
+    },
+    {
+      "checks_passed": 852,
+      "independent_review": false,
+      "path": "runs/coordination/cache_performance_20261008_v1/source_step_feature_execution_root_review_20261010_004.json",
+      "sha256": "bb411ae6d860afb2bb9df635a1bc917656893075951e9ef553b6b23de0d68c1f"
+    }
+  ],
+  "canonical_source_files": 431,
+  "canonical_source_sha256": "b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442",
+  "case_replay_authorized": false,
+  "cleanup_root_is_module_parent": true,
+  "copy_or_import_path_is_not_a_new_runtime_admission": true,
+  "created_utc": "2026-10-10T13:19:08.469487+00:00",
+  "fixture_tests_passed": 15,
+  "independent_review": false,
+  "logical_episode_lru_bytes": 536870912,
+  "logical_feature_limit_bytes": 33554432,
+  "modules": {
+    "disk_backed_snapshot.py": {
+      "class": "DiskBackedChoSnapshot",
+      "exact_executed_copy": true,
+      "sha256": "521772373625feaa11c5b0e36cf4353e83dd9ccd88f8ff401d85a44a557a384c"
+    },
+    "frozen_feature_cache_inference.py": {
+      "class": "FrozenFeatureCache",
+      "exact_executed_copy": true,
+      "sha256": "d5eff3a68996a6f6918fee0ace83572767f1ef3df1b85712989331443ce4c8c1"
+    },
+    "owned_cache_cleanup.py": {
+      "class": null,
+      "exact_executed_copy": true,
+      "sha256": "66d44ab072280c48327674ecfa5c2ac709253cc7da4a90ba809c9665bbea29f7"
+    },
+    "source_selection_cache_scope_inference.py": {
+      "class": "SourceSelectionCacheScope",
+      "exact_executed_copy": true,
+      "sha256": "5fed1301b216efcebf0218a928046f9fad3b97d4ef59980a1a6ec8280b152e5b"
+    }
+  },
+  "pending_adoption_requirements": [
+    "Choose explicit production/operational import and ownership interfaces before editing frozen files.",
+    "Preserve or explicitly design/review the cleanup root when relocating modules; do not widen paths to bypass PHASE confinement.",
+    "Preserve original selector evidence, SGD, batch order, candidates, model/RNG and target boundary.",
+    "Use fresh source/runtime/operation pins and guarded validation if canonical implementation changes.",
+    "Obtain a separately reviewed recorder/admission plan before any future real case; two original attempts remain spent."
+  ],
+  "preparation_git_commit": "60651cd3b2c82068fdfe0dc8035c62e1ccc85013",
+  "private_disk_limit_bytes": 2147483648,
+  "production_integrated": false,
+  "query_subjects_reviewed": 51,
+  "real_source_batch_keys_reviewed": 221,
+  "real_training_authorized": false,
+  "schema": "pro3_tested_inference_cache_recipe_for_owner_source_review_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "selector_runtime_or_480_second_completion_proven": false,
+  "state": "tested_prototype_copies_prepared_for_integration_review",
+  "supported_scope": "pinned CPU Cho B source selector with source-selection lifetime only"
+}
