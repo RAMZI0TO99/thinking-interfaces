@@ -1,5 +1,13 @@
 # Inference-cache adoption plan, 10 October 2026
 
+The [namespaced successor](NAMESPACED_INTEGRATION_REVIEW.json) now implements
+relative package imports and preserves a module-parent-confined cleanup root.
+It passed15 fresh synthetic checks and120 actual execution-review checks; see
+the [validation report](namespaced_candidate_validation_20261010.md). This
+completes the operational import/root choice. Production call-site ownership,
+canonical integration and fresh-source quality remain pending; the earlier plan
+below preserves the initial preparation snapshot and its original candidate.
+
 The tested inference adapter is now a tracked, byte-exact recipe alongside its
 three dependencies. The [candidate manifest](INTEGRATION_REVIEW.json) pins all
 four modules and the four actual execution self-reviews. Root's23-check source

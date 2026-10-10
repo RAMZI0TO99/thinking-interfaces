@@ -1,0 +1,66 @@
+{
+  "accepted_real_case": false,
+  "active_ram_bytes": 4294967296,
+  "actual_execution_review": {
+    "path": "runs/coordination/inference_cache_adoption_20261010_v1/pro3_inference_candidate/execution_root_review_002.json",
+    "sha256": "fc3c75213f7209fb06c630bd66fd622930cdc33956690a9e97f8a8333bb850ff"
+  },
+  "actual_fixture_tests_passed": 15,
+  "all_fifteen_test_names_and_cases_retained": true,
+  "arbitrary_output_roots_admitted": false,
+  "canonical_implementation_changed": false,
+  "canonical_source_files": 431,
+  "canonical_source_sha256": "b7452847edf2ee5d8a46638c6cf6549080cb44adbe37142277b364b5898dd442",
+  "cleanup_outputs_confined_to_helper_module_parent": true,
+  "cpu_torch_threads": 1,
+  "created_utc": "2026-10-10T13:42:01.920566+00:00",
+  "disk_floor_bytes": 21474836480,
+  "execution_package_root": "D:\\Aenv\\pro3\\runs\\coordination\\inference_cache_adoption_20261010_v1\\pro3_inference_candidate",
+  "execution_self_review_checks": 120,
+  "first_attempt_failed_with_five_fixture_file_creation_errors": true,
+  "first_attempt_preserved_and_unaccepted": true,
+  "full_selector_or_480_second_completion_proven": false,
+  "guard_seconds": 90,
+  "independent_review": false,
+  "job_cap_bytes": 2684354560,
+  "maximum_job_commit_bytes": 1363542016,
+  "modules": {
+    "__init__.py": {
+      "exact_executed_copy": true,
+      "sha256": "bc4d5ecb4626bb7792fd8b8556278b46789b917bc2036a54ffe8e1b831b04964"
+    },
+    "disk_backed_snapshot.py": {
+      "exact_executed_copy": true,
+      "sha256": "521772373625feaa11c5b0e36cf4353e83dd9ccd88f8ff401d85a44a557a384c"
+    },
+    "frozen_feature_cache_inference.py": {
+      "exact_executed_copy": true,
+      "sha256": "d5eff3a68996a6f6918fee0ace83572767f1ef3df1b85712989331443ce4c8c1"
+    },
+    "owned_cache_cleanup.py": {
+      "exact_executed_copy": true,
+      "sha256": "66d44ab072280c48327674ecfa5c2ac709253cc7da4a90ba809c9665bbea29f7"
+    },
+    "source_selection_cache_scope_inference.py": {
+      "exact_executed_copy": true,
+      "sha256": "679733a55893e77250f0418db393f9a80e482f022a1d42b0c133d9b1390b0507"
+    }
+  },
+  "native_seconds": 19.199935,
+  "native_seconds_limit": 120,
+  "numerical_execution_git_commit": "52924c5443d8bbc1ba3de3255cdb874db02fdc5b",
+  "process_cap_bytes": 2415919104,
+  "production_integrated": false,
+  "quality_rerun": false,
+  "real_dataset_training_performed": false,
+  "relative_imports_ignore_unrelated_top_level_aliases": true,
+  "retry_shortens_only_fixture_directory_labels": true,
+  "schema": "pro3_namespaced_cache_candidate_actual_synthetic_equivalence_manifest_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "scope_body_differs_only_in_three_sibling_import_levels": true,
+  "source_preparation_checks": 54,
+  "startup_ram_bytes": 7516192768,
+  "synthetic_fixture_training_performed": true,
+  "three_dependencies_remain_exact_prior_executed_bytes": true,
+  "tracked_copy_is_not_runtime_admission_at_another_location": true
+}

@@ -1,5 +1,11 @@
 # Private Cho B file-cache prototype
 
+The [namespaced candidate](NAMESPACED_INTEGRATION_REVIEW.json) now passed15 fresh
+synthetic checks and a120-check execution self-review after implementing relative
+imports while preserving cleanup confinement. Its [validation report](namespaced_candidate_validation_20261010.md)
+records actual limits/release and the preserved first fixture failure. Frozen
+production is unchanged; canonical-source integration/quality remain next.
+
 The exact tested inference adapter and three dependencies are packaged in the
 [integration manifest](INTEGRATION_REVIEW.json). The [adoption plan](integration_adoption_plan_20261010.md)
 defines the remaining import/cleanup-root interface and validation work.

@@ -1,3 +1,4 @@
 # Retain the tested source and manifest bytes across Windows checkouts.
 *.py text eol=lf
 INTEGRATION_REVIEW.json text eol=lf
+NAMESPACED_INTEGRATION_REVIEW.json text eol=lf

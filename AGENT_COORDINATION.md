@@ -1,5 +1,22 @@
 # Project coordination
 
+10October namespaced candidate checkpoint: root owns the new operational phase
+`runs/coordination/inference_cache_adoption_20261010_v1` and exact recipe copies/
+manifest/docs. Three relative sibling imports are the only adapter-body change;
+other dependencies and cleanup confinement are unchanged. Source54 checks and
+native parsing passed; fresh15 synthetic checks and120 execution-review checks
+passed. First five fixture file-creation errors remain preserved/unaccepted.
+Shorter fixture labels retained all tests; no module/cap/deadline was changed.
+
+The accepted scope finished in19.200s, max Job1,363,542,016 bytes, under90/120s,
+process2.25/Job2.5GiB, startup7/active4 RAM/disk20, CPU1 and genuine pause sensors.
+Tiny fixture training only; no real fit/accuracy/case. Owned Job/handles/caches
+and entry invocations released. Canonical Source stays `b7452847` /431 files;
+actual execution Git `52924c5`. Quality was not rerun; frozen production/case
+limits remain unchanged. Next assign exact production call-site ownership before
+integration/fresh-source validation. Both cases spent, scientific gates unsigned.
+No pro2 pause/conflict exists; Source021 remains scheduling only through20:40UTC.
+
 10October inference adoption Source checkpoint: pro2 genuinely confirms no
 ownership conflict in Pro3 frozen implementation and no pause/resource request;
 its reply accepts communication only. Root owns the new tracked inference

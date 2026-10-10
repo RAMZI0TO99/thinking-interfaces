@@ -1,5 +1,36 @@
 # Project handoff
 
+## Current work: namespaced cache candidate tested, 10 October
+
+The next import/ownership interface is implemented in a separate operational
+package. Only the adapter's three sibling imports changed to relative imports;
+the other three dependencies remain byte-exact. The cleanup helper still
+confines outputs beneath its own package directory, with no arbitrary-root
+bypass. Root's54-check Source preparation and native parsing passed.
+
+The fresh namespaced candidate passed all15 synthetic selector/lifetime/cleanup
+checks and a120-check actual execution self-review. Native time was19.200s,
+maximum Job commit1,363,542,016 bytes, within90/120-second and2.25/2.5GiB bounds.
+Startup7/active4GiB RAM, disk20GiB, CPU/Torch1 and genuine pause checks remained.
+The fixture trains tiny synthetic models only; no real-data fit, accuracy or
+case ran. Owned Job/handles/private caches released; entry invocations exited.
+
+The first attempt's five long-path fixture file-creation errors remain preserved
+and unaccepted. Only fixture directory labels and complete initializer-pin
+receipt accounting changed for the fresh retry; all15 cases and candidate module
+bytes stayed intact. See the [namespaced validation report](docs/phase2/cho_b_disk_cache/namespaced_candidate_validation_20261010.md),
+[candidate manifest](docs/phase2/cho_b_disk_cache/NAMESPACED_INTEGRATION_REVIEW.json)
+and latest operational index. Both earlier prototype versions/receipts remain.
+
+Actual execution Git was clean `52924c5`; canonical Source remains `b7452847`
+/431 files. Frozen production and real-case limits are unchanged; quality was
+not rerun. Next is explicit production call-site ownership/integration and fresh
+guarded canonical-source validation. Both real case attempts remain spent;
+scientific gates and checkpoint cohort provenance remain unresolved. No peer
+pause is present; Source021 supplies scheduling only until20:40UTC10October.
+Older sections preserve their dated states. No completed diagnostic replay is
+required and no30h session, new case or scientific signature is admitted.
+
 ## Current work: inference adoption recipe Source-prepared, 10 October
 
 The completed15-check adapter/all51-query/221-source-batch diagnostics below

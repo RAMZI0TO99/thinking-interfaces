@@ -1,5 +1,10 @@
 # Inference-query cache integration preparation
 
+The [namespaced successor](NAMESPACED_INTEGRATION_REVIEW.json) now passed15 fresh
+synthetic checks and120 execution-review checks with relative imports and
+unchanged cleanup confinement. See its [validation report](namespaced_candidate_validation_20261010.md)
+for the corrected fixture paths, source lineage and production adoption boundary.
+
 The [tested inference adapter copy](source_selection_cache_scope_inference.py)
 and its three dependencies are now pinned by the [integration manifest](INTEGRATION_REVIEW.json).
 The [adoption plan](integration_adoption_plan_20261010.md) records23 actual Source
