@@ -1,5 +1,27 @@
 # Project coordination
 
+10October10:32UTC Source checkpoint: pro2 genuinely confirmed no pause in
+native messaging; user continuation remains active. The finite600-second
+fixture resource-entry check ended at10:30:15UTC without a model launch or
+attempt directory. Its actual exit0/journal are preserved; no entry watcher or
+pro3 model Job remains. Latest sampled RAM was6.329GiB. Keep startup10/active4/
+disk20 floors, process6/Job7.5 caps and both genuine pause sensors.
+
+Root owns new resumable13-unit query operations and Source/provenance review.
+Source-only preflight actually passed with33 runtime files and five historical
+results checked; runner/reviewer parsing passed. Completed-unit reuse is
+prepared, not executed against new units. Partial/failed attempts are refused;
+bounded600-second waiting changes no180/210 model cap or all51-source coverage.
+The15-check inference adapter fixture and all26 remaining queries are pending.
+
+Inert checkpoint argument/path inspection and complete local-paper Appendix D
+visual review are saved as root Source evidence. Checkpoint-to-training-cohort
+mapping/target overlap and the printed-hours discrepancy remain unresolved.
+No model, real training, accuracy, new case, independent acceptance or scientific
+signature follows. Frozen production, raw/weights, prior tested prototypes and
+spent case receipts remain unchanged. Settle docs/Git, refresh future operation
+pins, and continue independently under unchanged resource/pause checks.
+
 10October actual inference checkpoint:40 synthetic checks and the real source02
 no-fit comparison passed. Root's105-check execution self-review accepts exact
 mode/gradient/state/RNG and physical-release evidence only. Both90/120 scopes

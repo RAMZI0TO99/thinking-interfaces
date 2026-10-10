@@ -1,5 +1,13 @@
 # LaBraM original-to-safe checkpoint correspondence
 
+10October2026 addendum: a separate
+[inert metadata and pretraining provenance review](checkpoint_pretraining_provenance_20261010.md)
+records original training declarations and a complete local-paper Appendix D
+review. They do not establish the checkpoint's recording-level training cohort
+or resolve target overlap. The historical tensor-byte evidence below retains
+its original scope; no new numerical correspondence or scientific acceptance
+is inferred from the addendum.
+
 The safe working conversion retains **221 tensors / 5,819,936 elements** from
 the original checkpoint. Every retained tensor has exactly the same shape and
 serialized bytes under the explicit name-only mapping. No tensor was reshaped,

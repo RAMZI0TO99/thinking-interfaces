@@ -285,3 +285,24 @@ ceilings, with all51 total sources and original no-grad diagnostic route retaine
 No remaining operation launched under the low-RAM entry checks. Frozen production
 and both spent real attempts remain unchanged. The integration note above records
 the executed checkpoint separately from its earlier Source-only preparation.
+
+## Resumable query preparation and held entry,10 October
+
+The reserved15-check inference selector fixture remains unexecuted. A finite
+600-second entry check ended at its resource-wait deadline with exit0 and no
+model launch/attempt directory; its actual journal is retained. No watcher
+remained after that checkpoint. Available RAM never met the10GiB startup floor.
+
+The separate resumable query runner's actual Source-only preflight passed with
+33 runtime files, five reused results and all13 remaining two-subject units
+checked. Runner/reviewer parsing passed. Its prepared reuse path requires exact
+existing native/guard/result/release bytes and refuses partial/failed units.
+Each invocation bounds cumulative waiting to600 seconds while preserving each
+180/210-second guard/native cap, batch8, CPU/Torch1 and all51 sources. This is
+Source preparation: no new unit or completed-unit resume has numerically run.
+The whole-cohort review still requires actual evidence for every remaining unit.
+
+The [checkpoint provenance review](../../checkpoint_pretraining_provenance_20261010.md)
+adds inert argument/path inspection and complete local-paper Appendix D visual
+review. It resolves no training-cohort/target-overlap question or scientific
+signature. Freeze/production and both spent case attempts remain unchanged.

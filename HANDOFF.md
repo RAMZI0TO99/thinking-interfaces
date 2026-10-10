@@ -1,5 +1,49 @@
 # Project handoff
 
+## Current work: resumable query preparation and provenance review, 10 October
+
+The inference cache's actual40-check fixture/real source02 comparison and
+105-check execution self-review remain the latest numerical evidence. The
+inference selector adapter's15-check fixture and remaining26 query subjects
+are still unexecuted. A finite resource-entry check ran from10:20:12 to10:30:15
+UTC, ended at its waiting deadline and created no model attempt. Available RAM
+remained below the unchanged10GiB startup floor; its actual journal and exit0
+are retained. No pro3 model Job or entry watcher remains at this checkpoint.
+
+The remaining13 two-subject units now have a separate resumable runner.
+Its actual Source-only preflight passed:33 selected runtime files, five
+historical results, exact all51/remaining26 roster and operation pins checked.
+PowerShell parsing passed for runner/reviewer. The prepared runner can reverify
+completed units' terminal receipt bytes, refuses existing partial/failed units,
+and bounds cumulative resource waiting to600 seconds per invocation. Waiting
+extends no180/210-second model cap. Resume/reuse behavior has **not** executed
+with new model results; the combined18-operation review remains unexecuted.
+
+Read-only checkpoint inspection used the pinned inert parser without torch,
+unpickling or model construction. Stored epoch49/50 configured epochs, the
+1600-sample model declaration, generic `image_folder` label and directory label
+`061417` do not identify a verified pretraining cohort. Complete local-paper
+Appendix D pages17-18 were visually checked; its16 grouped entries sum to
+2538.38 hours versus the stated2534.78, a3.60-hour discrepancy with no cause
+inferred. MMIDB is explicitly listed; Cho2017/IV-2a's absence from the named
+list does not prove exclusion from this checkpoint. See the
+[provenance review](docs/checkpoint_pretraining_provenance_20261010.md).
+
+All new work is root Source preparation/self-review. Clean execution Git was
+`d8b7a44`; fresh canonical Source remains `b7452847` /431 files. Frozen
+production, earlier tested prototypes, raw/weights and spent case artifacts
+are preserved. Quality was not rerun; Scientific Gate A/freeze remain unsigned.
+Pro2 genuinely confirmed no pause through native messaging; Source021 remains
+peer scheduling only through20:40UTC, with no pro3 result acceptance inferred.
+
+Next: settle this documentation checkpoint and refresh the reserved15-check
+fixture/resumable13-unit plan pins to the new clean Git. Enter at most one
+owned model Job after actual startup floors permit, review the fixture and
+physical release, then complete/review all51 queries. Continue independent
+Source work until a genuine pro2 pause; both real case attempts remain spent.
+See the [actual resumable Source preflight](runs/coordination/cache_performance_20261008_v1/source_query_resumable_preflight_execution_20261010_003.json)
+and [resource-entry journal](runs/coordination/cache_performance_20261008_v1/inference_scope_resource_entry_20261010_001.jsonl).
+
 ## Current work: actual inference reuse validated, 10 October
 
 The separate inference-compatible cache passed **40 synthetic checks** and the
