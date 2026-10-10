@@ -1,5 +1,44 @@
 # Project handoff
 
+## Current work: inference-query integration preparation, 10 October
+
+The saved source-only resume preflight actually executed and passed: five reused
+query results, six fresh remaining attempts, operation pins and33 selected
+runtime files were checked. It launched no model. A prepared combined review
+keeps the first five groups' historical Git separate from the fresh groups'
+settled Git, requires actual release receipts for every new group, and excludes
+interrupted `source_query_g06_a001`. That full review remains unexecuted.
+
+Static integration review found that original manifest query prediction enters
+`torch.inference_mode()`, which the current tested feature cache bypasses.
+Its measured warm no-grad query timings therefore do not establish selector
+query acceleration. A **separate prospective prototype** preserves the actual
+backbone/head caller mode, stores ordinary detached features for later head
+gradients, and bypasses inference-created backbone state. The tested cache and
+frozen production remain unchanged. **40 fixture checks** and a pinned real
+source-only inference comparison are prepared, but neither has executed.
+
+The pinned original two-candidate linear workload contains5151 source-gradient
+steps. Conservative arithmetic counting every declared encoding as a cache miss
+bounds retained feature values at **25,552,000 bytes (24.37MiB)**, within32MiB.
+This excludes dictionary/model/input/runtime memory and proves no selector or
+480-second runtime result. A **27-check root source self-review** passed for
+the preparation/arithmetic, explicitly accepting no numerical validation or case.
+
+At this checkpoint available RAM was about8.49GiB, below the retained10GiB startup
+floor; no new model operation ran on10October. Both pause sensors were absent.
+Pro2's genuine Source021 scheduling adoption began08:40:04.938890UTC and ends
+20:40UTC; it grants no runtime/case/scientific authority or pro3 result acceptance.
+The peer was informed of this additional bounded diagnostic preparation.
+
+Next: settle the documentation checkpoint and fresh resume pins; execute the
+90/120-second inference fixture after actual startup floors are met, then the
+real no-fit comparison only after fixture pass and physical release. Complete
+the remaining26 query subjects under their original180/210 limits and review
+the combined51. Continue Source work until a genuine pro2 pause. Both real case
+attempts remain spent; Scientific Gate A and experiment freeze remain unsigned.
+See the [integration note](docs/phase2/cho_b_disk_cache/inference_query_integration_20261010.md).
+
 ## Current work: 10 October recovery and partial source-query review
 
 The user resumed work on10October. Pro3 recovered **25 of51** completed source-

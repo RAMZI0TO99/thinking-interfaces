@@ -1,5 +1,26 @@
 # Project coordination
 
+10October inference preparation: pro3 owns new operational candidate/workers,
+prospective review sources and documentation. The original selector's query
+inference-mode context bypasses the currently tested cache; do not carry its
+warm no-grad timings into whole-selector claims. A separate candidate and40
+synthetic fixture checks are Source-prepared, not numerically validated. Root's
+27-check source self-review accepts preparation and feature-value capacity
+arithmetic only. Pinned original workload bound25,552,000 bytes fits32MiB;
+this is not a complete process-memory or execution-time bound.
+
+Pro3 disclosed the additional future diagnostic scope to pro2: at most one owned
+model Job,90-second guard/120-second native ceiling for the synthetic fixture
+and subsequent real no-fit comparison, only after actual startup10/active4/disk20
+floors, process6/Job7.5GiB caps, CPU/Torch1 and settled source/pins. Run the real
+comparison only after the fixture passes and its Job physically releases.
+Remaining query groups retain180/210 limits and fresh identities. No real-data
+training, case replay, production mutation or scientific signature is admitted.
+Latest sampled RAM was about8.49GiB; no new model Job was launched. Both pause
+sensors were absent. Source021's genuine root adoption starts08:40:04.938890UTC
+through20:40UTC; it accepts scheduling, not pro3 results. Source work continues
+under the user's instruction, with no permission wait or unrelated process stop.
+
 10October: user resume remains active; pro2 explicitly requests no pause. Genuine
 Source021 response binds request `e72d926c` /5571 bytes, actual interval start
 08:37:52.975066UTC through20:40UTC, max5 lightweight peer Source agents including

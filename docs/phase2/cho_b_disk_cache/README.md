@@ -252,3 +252,19 @@ Do not reopen the spent case ledger or claim a480-second case result.
 - [223-check partial query review](../../../runs/coordination/cache_performance_20261008_v1/source_query_partial_root_review_20261010_001.json)
 - [Fresh interrupted-group absence proof](../../../runs/coordination/cache_performance_20261008_v1/source_query_g06_a001/fresh_scope_absence_20261010.json)
 - [Separate private-cache recovery](../../../runs/coordination/cache_performance_20261008_v1/source_query_g06_a001/fresh_cache_recovery_20261010.json)
+
+## Inference-query integration preparation,10 October
+
+The original manifest query predictor uses inference mode, which the currently
+tested cache bypasses. Warm no-grad query timings therefore do not establish
+complete-selector query reuse. A separate operational candidate and40-check
+fixture plus pinned real inference comparison are Source-prepared, not executed.
+The existing tested cache and frozen production remain unchanged.
+
+Executed conservative arithmetic for the unchanged two-candidate linear recipe
+bounds retained feature values at25,552,000 bytes (24.37MiB), within32MiB. It
+counts every declared encoding as a miss and excludes other process memory;
+it makes no selector or480-second runtime claim. A27-check root Source self-review
+passed for this preparation, explicitly accepting no numerical validation/case.
+See the [integration note](inference_query_integration_20261010.md) for exact
+mode boundaries, test accounting, receipts and pending admission requirements.
