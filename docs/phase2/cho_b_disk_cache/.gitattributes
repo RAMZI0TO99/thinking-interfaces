@@ -2,3 +2,4 @@
 *.py text eol=lf
 INTEGRATION_REVIEW.json text eol=lf
 NAMESPACED_INTEGRATION_REVIEW.json text eol=lf
+SELECTION_CALLBACK_REVIEW.json text eol=lf

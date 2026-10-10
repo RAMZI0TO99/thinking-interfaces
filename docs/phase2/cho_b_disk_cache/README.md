@@ -1,5 +1,25 @@
 # Private Cho B file-cache prototype
 
+## Current callback and recorder checkpoint
+
+The explicit one-use cache callback now passed10 synthetic tests and lint,
+including exact linear/full/LoRA evidence/state/RNG and production dispatch to
+the existing evidence boundary. Lazy construction imports no scientific packages
+and writes no cache. Five existing modules and canonical Source3114ec43/432 remain
+unchanged. Root's142-check actual self-review passed; native22.506seconds,
+Jobpeak1,356,558,336bytes within2.25/2.5GiB and90/120seconds. Owned Job/handles/
+awake/private caches released; current full-quality bundle remains valid.
+
+The48-check read-only recorder audit found no LaBraM intent to recover and zero
+remaining attempts. No recorder operation, real fitting, target/accuracy or
+scientific admission occurred. The next inert current-source prerequisites bind
+the callback and recovery decision; they require a separately authorized operation,
+fresh real controls/environment/admission and cohort/Gate A/freeze evidence.
+Default CLI, original case limits and spent history remain. Earlier sections
+preserve their dated evidence; synthetic limits do not qualify a real case.
+
+See the [callback report](selection_callback_validation_20261010.md) and [manifest](SELECTION_CALLBACK_REVIEW.json).
+
 The [production selection hook](production_selection_hook_20261010.md) now
 passed13 focused tests/8 subtests, lint/types and full quality (1055 tests).
 Canonical Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432 is certified by the fresh exact-source quality

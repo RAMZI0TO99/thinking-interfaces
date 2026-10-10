@@ -1,5 +1,25 @@
 # Recorder recovery and admission preparation, 10 October 2026
 
+## Read-only recovery decision and callback evidence
+
+The explicit one-use cache callback now passed10 synthetic tests and lint,
+including exact linear/full/LoRA evidence/state/RNG and production dispatch to
+the existing evidence boundary. Lazy construction imports no scientific packages
+and writes no cache. Five existing modules and canonical Source3114ec43/432 remain
+unchanged. Root's142-check actual self-review passed; native22.506seconds,
+Jobpeak1,356,558,336bytes within2.25/2.5GiB and90/120seconds. Owned Job/handles/
+awake/private caches released; current full-quality bundle remains valid.
+
+The48-check read-only recorder audit found no LaBraM intent to recover and zero
+remaining attempts. No recorder operation, real fitting, target/accuracy or
+scientific admission occurred. The next inert current-source prerequisites bind
+the callback and recovery decision; they require a separately authorized operation,
+fresh real controls/environment/admission and cohort/Gate A/freeze evidence.
+Default CLI, original case limits and spent history remain. Earlier sections
+preserve their dated evidence; synthetic limits do not qualify a real case.
+
+The [fresh recorder decision](../../../runs/coordination/cho_cached_callback_20261010_v1/recorder_read_only_recovery_decision_001.json) establishes that there is no original LaBraM intent to replay. The [callback report](selection_callback_validation_20261010.md) and [new inert prerequisites](../../../runs/coordination/cho_cached_callback_20261010_v1/next_operation_prerequisites_001.json) replace preparation uncertainty with actual engineering evidence; they supply no real-case authority.
+
 The optional production hook and engineering quality are verified. The
 [pinned Source-only packet](../../../runs/coordination/cho_selection_hook_20261010_v1/recorder_recovery_admission_preparation_004.json)
 binds Source `3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529` /432, the successful quality receipt/current pointer,

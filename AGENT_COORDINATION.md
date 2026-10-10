@@ -1,5 +1,25 @@
 # Project coordination
 
+## 10 October cached callback engineering closeout
+
+The explicit one-use cache callback now passed10 synthetic tests and lint,
+including exact linear/full/LoRA evidence/state/RNG and production dispatch to
+the existing evidence boundary. Lazy construction imports no scientific packages
+and writes no cache. Five existing modules and canonical Source3114ec43/432 remain
+unchanged. Root's142-check actual self-review passed; native22.506seconds,
+Jobpeak1,356,558,336bytes within2.25/2.5GiB and90/120seconds. Owned Job/handles/
+awake/private caches released; current full-quality bundle remains valid.
+
+The48-check read-only recorder audit found no LaBraM intent to recover and zero
+remaining attempts. No recorder operation, real fitting, target/accuracy or
+scientific admission occurred. The next inert current-source prerequisites bind
+the callback and recovery decision; they require a separately authorized operation,
+fresh real controls/environment/admission and cohort/Gate A/freeze evidence.
+Default CLI, original case limits and spent history remain. Earlier sections
+preserve their dated evidence; synthetic limits do not qualify a real case.
+
+Pro3 root owns only the new recipe/phase/docs; no frozen implementation changed. Genuine pro2 continuation requests no pause and accepts communication only. Source022 future lease decisions remain separate from Pro3 runtime authority.
+
 10October hook engineering closeout: root owns the runner hook and tests/docs.
 Pro2 genuinely confirms no Pro3 Eigh/test ownership or pause; communication
 only. Focused13 tests/8 subtests, lint/types and84 actual review checks passed.

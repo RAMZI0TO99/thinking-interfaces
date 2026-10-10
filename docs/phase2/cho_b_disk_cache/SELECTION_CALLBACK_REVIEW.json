@@ -1,0 +1,74 @@
+{
+  "active_ram_bytes": 4294967296,
+  "actual_callback_lint_passed": true,
+  "actual_execution_review": {
+    "path": "runs/coordination/cho_cached_callback_20261010_v1/execution_root_review_002.json",
+    "sha256": "24614f933e136fd02a6cba6745ae69ec87bb44ae8bc24b91e9ac5e969f2a4d65"
+  },
+  "actual_linear_full_lora_evidence_state_rng_equal": true,
+  "actual_native_seconds": 22.5061705,
+  "actual_root_self_review_checks": 142,
+  "actual_synthetic_callback_tests_passed": 10,
+  "callback_lazy_at_import_and_construction": true,
+  "callback_one_use_even_after_failure": true,
+  "canonical_files": 432,
+  "canonical_implementation_changed_by_callback_recipe": false,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "checkpoint_cohort_provenance_verified": false,
+  "created_utc": "2026-10-10T15:58:36.394370+00:00",
+  "default_cli_activation": false,
+  "disk_floor_bytes": 21474836480,
+  "full_real_selector_completed": false,
+  "guard_seconds_limit": 90,
+  "independent_review": false,
+  "job_cap_bytes": 2684354560,
+  "local_ignored_receipts_required_for_execution_evidence": true,
+  "modules": {
+    "__init__.py": {
+      "exact_executed_copy": true,
+      "sha256": "bc4d5ecb4626bb7792fd8b8556278b46789b917bc2036a54ffe8e1b831b04964"
+    },
+    "disk_backed_snapshot.py": {
+      "exact_executed_copy": true,
+      "sha256": "521772373625feaa11c5b0e36cf4353e83dd9ccd88f8ff401d85a44a557a384c"
+    },
+    "frozen_feature_cache_inference.py": {
+      "exact_executed_copy": true,
+      "sha256": "d5eff3a68996a6f6918fee0ace83572767f1ef3df1b85712989331443ce4c8c1"
+    },
+    "owned_cache_cleanup.py": {
+      "exact_executed_copy": true,
+      "sha256": "66d44ab072280c48327674ecfa5c2ac709253cc7da4a90ba809c9665bbea29f7"
+    },
+    "selection_callback.py": {
+      "exact_executed_copy": true,
+      "sha256": "2238228be346caf8ced0b402c652c1e3359d8190982eefda125001e233bcd41a"
+    },
+    "source_selection_cache_scope_inference.py": {
+      "exact_executed_copy": true,
+      "sha256": "679733a55893e77250f0418db393f9a80e482f022a1d42b0c133d9b1390b0507"
+    }
+  },
+  "native_seconds_limit": 120,
+  "next_source_only_packet": {
+    "path": "runs/coordination/cho_cached_callback_20261010_v1/next_operation_prerequisites_001.json",
+    "sha256": "6f900a75eb7f0047fd6c73a13287fcd144871f3ff1946b96b8d6770be43acf77"
+  },
+  "numerical_execution_git_commit": "b09e2f9023c085e03bfb40ad9692e7f4c12d31a8",
+  "numpy_torch_threads": 1,
+  "original_attempts_remaining": 0,
+  "original_five_modules_unchanged": true,
+  "owned_job_freshly_absent": true,
+  "peak_job_commit_bytes": 1356558336,
+  "process_cap_bytes": 2415919104,
+  "production_dispatch_reached_existing_evidence_gate": true,
+  "real_training_or_case_performed": false,
+  "recorder_read_only_decision": {
+    "path": "runs/coordination/cho_cached_callback_20261010_v1/recorder_read_only_recovery_decision_001.json",
+    "sha256": "69ac9a1b9e90c0099d68c65ea32a33f282f630adcdc99a2e046c12f361465d95"
+  },
+  "schema": "pro3_cached_selection_callback_executed_recipe_review_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "source_only_recorder_audit_checks": 48,
+  "startup_ram_bytes": 7516192768
+}

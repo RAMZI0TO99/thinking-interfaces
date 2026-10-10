@@ -1,5 +1,25 @@
 # Project handoff
 
+## Current work: explicit cached callback verified, 10 October
+
+The explicit one-use cache callback now passed10 synthetic tests and lint,
+including exact linear/full/LoRA evidence/state/RNG and production dispatch to
+the existing evidence boundary. Lazy construction imports no scientific packages
+and writes no cache. Five existing modules and canonical Source3114ec43/432 remain
+unchanged. Root's142-check actual self-review passed; native22.506seconds,
+Jobpeak1,356,558,336bytes within2.25/2.5GiB and90/120seconds. Owned Job/handles/
+awake/private caches released; current full-quality bundle remains valid.
+
+The48-check read-only recorder audit found no LaBraM intent to recover and zero
+remaining attempts. No recorder operation, real fitting, target/accuracy or
+scientific admission occurred. The next inert current-source prerequisites bind
+the callback and recovery decision; they require a separately authorized operation,
+fresh real controls/environment/admission and cohort/Gate A/freeze evidence.
+Default CLI, original case limits and spent history remain. Earlier sections
+preserve their dated evidence; synthetic limits do not qualify a real case.
+
+See the [callback report](docs/phase2/cho_b_disk_cache/selection_callback_validation_20261010.md) and [recovery/admission plan](docs/phase2/cho_b_disk_cache/recorder_recovery_admission_plan_20261010.md).
+
 ## Current work: production hook engineering quality passed, 10 October
 
 The optional LaBraM production selection callable is implemented. Default and
