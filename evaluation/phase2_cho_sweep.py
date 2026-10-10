@@ -612,6 +612,10 @@ class ProductionChoCaseRunner:
     orchestration. All heavy behaviour lives in the tested selectors, the
     publication gate and the admission-gated executor; this class only
     wires them in the order the analysis chain has verified.
+
+    A supplied LaBraM selection runner wraps only source selection. Its returned
+    evidence and model still pass the same publication and target checks.
+    Without that explicit runner, every selector follows its original route.
     """
 
     def __init__(
@@ -624,9 +628,14 @@ class ProductionChoCaseRunner:
         profile_a_manifests: Mapping[str, str],
         labram_template: Any | None,
         maximum_gradient_steps: int,
+        labram_source_selection_runner: Callable[[Any], Any] | None = None,
     ) -> None:
         if type(maximum_gradient_steps) is not int or maximum_gradient_steps < 1:
             raise ValueError("a positive gradient-step ceiling is required")
+        if labram_source_selection_runner is not None and not callable(
+            labram_source_selection_runner
+        ):
+            raise ValueError("LaBraM source selection runner must be callable")
         # The selectors enforce their own hard engineering ceilings; this
         # runner only passes the configured value through.
         self.root = root.resolve()
@@ -639,6 +648,7 @@ class ProductionChoCaseRunner:
         self.profile_a_manifests = profile_a_manifests
         self.labram_template = labram_template
         self.maximum_gradient_steps = maximum_gradient_steps
+        self._labram_source_selection_runner = labram_source_selection_runner
 
     def __call__(
         self, *, plan: Any, executor: Any, route: Any,
@@ -685,7 +695,10 @@ class ProductionChoCaseRunner:
                 shots_per_class=plan.shots_per_class,
                 maximum_gradient_steps=self.maximum_gradient_steps,
             )
-        selected = selector.run_selection()
+        if plan.method != "eegnet" and self._labram_source_selection_runner is not None:
+            selected = self._labram_source_selection_runner(selector)
+        else:
+            selected = selector.run_selection()
         evidence = selected.evidence
         evidence_sha256 = evidence.record["sha256"]
         evidence_path = self.root / "runs/phase2/selection_evidence" / f"{evidence_sha256}.json"

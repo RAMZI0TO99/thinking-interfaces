@@ -1,5 +1,30 @@
 # Project handoff
 
+## Current work: explicit production selection hook, validation pending, 10 October
+
+Root coordinated exact ownership of `evaluation/phase2_cho_sweep.py` and the new
+hook regression test file; pro2 confirmed no conflict/pause. The production
+runner now accepts an explicit optional LaBraM-only selection callable. Default
+and EEGNet routes retain original selection. Returned model/evidence still pass
+all existing selection, publication, target and recorder checks. No default CLI
+activation, real fitting, new case or scientific signature was introduced.
+
+Six meaningful dispatch/evidence regressions are prepared but unexecuted.
+Canonical Source is now432 files and differs from historical `b7452847`; its
+fresh settled pin must be captured in the new validation plan. The old quality
+pointer remains unchanged and does not certify this source. Earlier diagnostic
+receipts retain their own dated source, including the namespaced15-check pass.
+See the [production hook report](docs/phase2/cho_b_disk_cache/production_selection_hook_20261010.md).
+
+Next: settle the implementation checkpoint, prepare exact current-source/runtime/
+operation pins, run guarded focused synthetic regressions/lint/types and then
+guarded full quality when actual resources permit. Preserve original full-quality
+startup10GiB, active4GiB RAM/disk20GiB, CPU1, one owned Job and genuine pause
+sensors. All former scopes remain released; no validation/entry watcher is
+active yet. Both real attempts remain spent and scientific gates unsigned.
+Source021 remains scheduling only until20:40UTC10October; no new30h window or
+old numerical grant is inferred. Older sections are historical source snapshots.
+
 ## Current work: namespaced cache candidate tested, 10 October
 
 The next import/ownership interface is implemented in a separate operational

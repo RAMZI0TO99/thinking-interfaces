@@ -1,5 +1,20 @@
 # Project coordination
 
+10October production hook scope: pro3 Root explicitly owns the implementation
+change to `evaluation/phase2_cho_sweep.py`, new hook tests and phase records/docs.
+Pro2 genuinely confirms no competing ownership/pause, with communication-only
+acceptance. The optional LaBraM selector callable defaultsNone; EEGNet/default
+routes and all downstream verification/publication/target/recorder gates remain.
+Six regressions are Source-prepared and unexecuted. New canonical Source432
+files requires fresh settled pins; historical quality does not certify it.
+
+Next guarded focused checks then existing full quality, under actual resources,
+full-quality startup10/active4GiB RAM/disk20, CPU1, one owned Job and genuine pause
+sensors. No old grant/watcher is reused. Prior numerical Jobs remain released;
+no new validation is active at this preparation checkpoint. No real fitting,
+case replay, cap increase or scientific signature follows. Source021 remains
+peer scheduling only through20:40UTC; both original cases are spent.
+
 10October namespaced candidate checkpoint: root owns the new operational phase
 `runs/coordination/inference_cache_adoption_20261010_v1` and exact recipe copies/
 manifest/docs. Three relative sibling imports are the only adapter-body change;

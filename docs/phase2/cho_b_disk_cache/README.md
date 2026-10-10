@@ -1,5 +1,10 @@
 # Private Cho B file-cache prototype
 
+The [production runner hook](production_selection_hook_20261010.md) is now
+implemented as an explicit optional LaBraM selection callable. Default/EEGNet
+routes and downstream gates remain. Its new432-file source requires fresh
+guarded validation; prepared regressions/full quality have not yet executed.
+
 The [namespaced candidate](NAMESPACED_INTEGRATION_REVIEW.json) now passed15 fresh
 synthetic checks and a120-check execution self-review after implementing relative
 imports while preserving cleanup confinement. Its [validation report](namespaced_candidate_validation_20261010.md)
