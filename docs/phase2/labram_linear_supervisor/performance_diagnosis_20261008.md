@@ -192,6 +192,19 @@ that a particular optimization will meet the480-second cap.
 
 ## Local evidence references
 
+Later10October diagnosis found that the original manifest predictor enters
+inference mode, which the earlier tested feature cache bypassed. A separate
+candidate passed40 synthetic checks and pinned real source02 inference forwards,
+with bitwise original/miss/hit/copy logits and unchanged state/RNG. Root's105-check
+self-review accepts diagnostics/release, not a selector/case. Batch8 original/hit
+means were1077.019/4.524ms: cold work was slower than the8October samples.
+Remaining26 query subjects are prepared in13 smaller two-subject operations,
+preserving all51 source subjects and original180/210 ceilings. A15-check adapter
+lifecycle fixture is pending. See [the dated integration note](../cho_b_disk_cache/inference_query_integration_20261010.md).
+Neither this evidence nor its24.37MiB feature-value bound guarantees480-second
+completion or admits another spent case attempt. Production and science gates
+remain unchanged.
+
 The runtime evidence is intentionally excluded from Git; these paths refer to
 the workspace receipts, not files distributed with the repository.
 

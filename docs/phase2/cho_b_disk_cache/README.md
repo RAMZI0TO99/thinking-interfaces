@@ -268,3 +268,20 @@ it makes no selector or480-second runtime claim. A27-check root Source self-revi
 passed for this preparation, explicitly accepting no numerical validation/case.
 See the [integration note](inference_query_integration_20261010.md) for exact
 mode boundaries, test accounting, receipts and pending admission requirements.
+
+## Actual inference-mode validation,10 October
+
+The separate [inference cache](frozen_feature_cache_inference.py), SHA `d5eff3a6`,
+passed40 checks and a pinned real no-fit comparison in the original query mode.
+Batch2 original/hit means were247.305/2.336ms; batch8 means1077.019/4.524ms.
+Original/miss/hit/copy logits were bitwise equal, and subsequent ordinary reuse
+was exact. Real model/RNG stayed unchanged; no optimizer, real training, target,
+accuracy or case occurred. Both scopes closed; maximum Job peak2.821GiB.
+Root's105-check review accepts diagnostics and release under self-review only.
+
+The inference-capable selector adapter has15 prepared lifecycle checks pending.
+Remaining26 subjects are prepared as13 two-subject operations at the same180/210
+ceilings, with all51 total sources and original no-grad diagnostic route retained.
+No remaining operation launched under the low-RAM entry checks. Frozen production
+and both spent real attempts remain unchanged. The integration note above records
+the executed checkpoint separately from its earlier Source-only preparation.

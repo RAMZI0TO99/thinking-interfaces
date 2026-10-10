@@ -1,5 +1,47 @@
 # Inference-query cache integration preparation
 
+## Executed inference checkpoint,10 October
+
+The candidate below now passed40 actual synthetic checks and the pinned real
+source02 no-fit comparison. Exact original/cold/warm/copied logits were preserved
+under inference mode, with exact ordinary-context reuse and ordinary detached
+retained values. The synthetic transition test preserved head losses, gradients,
+updates, full state and RNG after an inference-first miss. Real training, target
+data, accuracy and case claims remained absent.
+
+| Batch | Original mean | First cold | Warm mean | First copied reuse |
+| --- | ---: | ---: | ---: | ---: |
+|2|247.305ms|265.349ms|2.336ms|18.239ms|
+|8|1077.019ms|1074.903ms|4.524ms|22.094ms|
+
+Actual cache statistics were2 misses,24 hits, no bypass/eviction and8000 retained
+feature bytes. Pinned model state remained `90a9d34e`; Source stayed `b7452847`
+/431 files at clean execution Git `c8d10e8`. Native times were64.891/36.247s,
+maximum Job peak2.821GiB. Features/wrappers/private files and owned Jobs/handles
+cleared. Root's105-check self-review accepted diagnostics and release only.
+It recorded two retained exited Windows objects with exit0 without falsely
+calling their PIDs absent; the earlier failed review/source remain preserved.
+
+The tested [inference cache copy](frozen_feature_cache_inference.py) preserves
+the exact executed candidate bytes. The separate selector adapter using it is
+prepared with15 lifecycle checks, which remain unexecuted. The original scope
+and frozen production are preserved. This recipe is not a standalone release.
+
+Current cold forwards were slower than historical samples. Remaining26 query
+subjects are now prepared in13 units of two, with all51 total sources retained,
+the original no-grad diagnostic route, batch8 and unchanged180/210 ceilings.
+Source-only preflight checked33 runtime files. Subsequent actual entry checks
+held for startup RAM and created no remaining model attempt. These samples still
+do not prove a complete selector within480 seconds or sign a scientific gate.
+
+- [Actual40-check fixture](../../../runs/coordination/cache_performance_20261008_v1/inference_feature_fixture_001/result.json)
+- [Actual pinned real inference comparison](../../../runs/coordination/cache_performance_20261008_v1/inference_feature_forward_001/result.json)
+- [105-check execution self-review](../../../runs/coordination/cache_performance_20261008_v1/inference_execution_root_review_20261010_001.json)
+- [Smaller remaining query scope](../../../runs/coordination/cache_performance_20261008_v1/source_query_remaining_scope_20261010_001.json)
+- [Prospective15-check adapter fixture](../../../runs/coordination/cache_performance_20261008_v1/inference_scope_preparation_20261010_001.json)
+
+## Initial Source-preparation snapshot
+
 10 October2026. This records Source-only preparation and executed arithmetic.
 It records no new numerical fixture, real source forward, selector or case.
 

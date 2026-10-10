@@ -1,5 +1,47 @@
 # Project handoff
 
+## Current work: actual inference reuse validated, 10 October
+
+The separate inference-compatible cache passed **40 synthetic checks** and the
+pinned real source02 no-fit comparison. Original/cold/hit/copied logits were
+bitwise equal in the original inference-mode query context; subsequent ordinary
+reuse was exact. Synthetic checks also verified exact head losses, gradients and
+updates after inference-first caching. Real model/RNG and Source remained stable;
+there was no optimizer, real-data training, target use, accuracy or case claim.
+
+Measured original/hit means were247.305/2.336ms for batch2 and1077.019/4.524ms
+for batch8. First cold forwards took265.349/1074.903ms; copied-model first reuse
+took18.239/22.094ms. Native operations finished in64.891s and36.247s with maximum
+Job peak2.821GiB, within the unchanged6/7.5GiB caps. Both Jobs/handles closed;
+private files/features cleared. A fresh **105-check root execution self-review**
+accepted diagnostics and release, not an independent review or accepted case.
+
+The first absence-only reviewer failed because Windows retained two exited
+process objects. Its exact source and failure receipt are preserved. Fresh
+queries recorded exit0 for both and named-Job absence; the corrected review
+distinguishes exited objects from absent PIDs without killing anything.
+
+Current cold forwards were much slower than8October. Remaining26 subjects are
+therefore prepared as **13 fresh two-subject operations**, preserving the full
+51-source roster, query batch8, CPU/Torch1 and180/210-second guard/native limits.
+The original diagnostic no-grad route is retained. The revised source-only
+preflight passed with33 runtime files checked. No remaining operation launched:
+subsequent entry checks found insufficient startup RAM and created no attempt.
+
+A separate selector adapter now imports the tested inference cache; its15-check
+lifecycle/equivalence fixture is Source-prepared and still unexecuted. Frozen
+production and the earlier tested cache/scope are unchanged. Execution Git was
+clean `c8d10e8`; canonical Source remains `b7452847` /431 files. The historical
+quality pointer was not rerun. Both real case attempts remain spent; Scientific
+Gate A/freeze and checkpoint pretraining-cohort provenance remain open.
+
+Next: settle this checkpoint and fresh plan pins, then run the15-check adapter
+fixture and remaining two-subject queries when actual startup floors permit.
+Prepare/review the mixed historical-plus-fresh51-source cohort using its exact
+attempt map. Continue until a genuine pro2 pause; none was present at checkpoint.
+See [inference integration](docs/phase2/cho_b_disk_cache/inference_query_integration_20261010.md)
+and the [105-check review](runs/coordination/cache_performance_20261008_v1/inference_execution_root_review_20261010_001.json).
+
 ## Current work: inference-query integration preparation, 10 October
 
 The saved source-only resume preflight actually executed and passed: five reused

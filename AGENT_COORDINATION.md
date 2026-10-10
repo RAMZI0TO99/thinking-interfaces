@@ -1,5 +1,22 @@
 # Project coordination
 
+10October actual inference checkpoint:40 synthetic checks and the real source02
+no-fit comparison passed. Root's105-check execution self-review accepts exact
+mode/gradient/state/RNG and physical-release evidence only. Both90/120 scopes
+closed with compliant peaks, max Job2.821GiB; no pro3 model Job remains. Two
+retained exited Windows process objects were recorded as exit0, not absent PIDs.
+The first failed absence-only review is preserved; nothing unrelated was stopped.
+
+Root owns separate inference adapter/15-check fixture preparation, and smaller
+remaining query units.13 fresh two-subject operations retain all26 pending and
+all51 total sources, original no-grad route, batch8, CPU/Torch1 and180/210 limits.
+Revised preflight checked33 runtime files without a model launch. Startup checks
+held subsequent numerical entries; no remaining unit/adapter attempt was created.
+Keep startup10/active4/disk20 floors, process6/Job7.5 caps and genuine pause sensors.
+Frozen production, raw/weights, earlier cache/scope and spent case records remain
+unchanged. Engineering validation supplies no scientific signature or case replay.
+Source021 remains scheduling through20:40UTC; no peer result acceptance is inferred.
+
 10October inference preparation: pro3 owns new operational candidate/workers,
 prospective review sources and documentation. The original selector's query
 inference-mode context bypasses the currently tested cache; do not carry its
