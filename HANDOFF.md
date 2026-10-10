@@ -1,5 +1,33 @@
 # Project handoff
 
+## Current engineering result: all109 MMIDB caches reproduced, 10 October UTC
+
+All109 subjects/4,917 epochs reproduce exactly from their327 pinned raw EDF
+recordings: signals, labels, session/run/trial identities, channel order,
+shapes and dtypes agree; maximum signal error0V. The fresh batch checked
+108subjects/4,872epochs and reused001's complete receipt without numerical
+replay. All raw/cache bytes, sizes and mtimes remain; caches were not written.
+All IDs are retained without scientific eligibility/exclusion decisions.
+
+Root's4,305-check execution self-review passed. Native65.6960171s, peak Job
+1,213,194,240bytes. All26 cumulative owned Jobnames freshly absent. Startup10/
+active4RAM/disk20GiB, process4/Job5GiB and CPU/Torch/native1 remained; the finite
+scope was inner300/native330s. Dependencies imported Torch but no CUDA context,
+checkpoint, model, fitting/inference, recorder or original case occurred.
+Pro2 reports no conflict/pause; no peer quiet/case/scientific grant is inferred.
+
+Source3114ec43/432 and quality4eb4d556 remain, with separate candidate evidence.
+This is current MMIDB processing reproducibility, not authenticated historical
+cache generation, checkpoint cohort/overlap or scientific eligibility. Gate A,
+seven owner decisions/freeze stay unsigned, request unsent, original attempts
+spent/zero remaining. BCI/Cho engineering lineage retains its separate scope;
+any expansion needs a fresh finite protocol, pins/admission and coordination.
+
+See the [full reconstruction report](docs/phase2/mmidb_full_cache_reconstruction_20261010.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current engineering result: MMIDB subject 001 reconstructed, 10 October UTC
 
 The fresh guarded raw-to-cache comparison reproduces all 45 stored epochs

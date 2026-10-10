@@ -1,0 +1,189 @@
+{
+  "all_current_owned_job_names_freshly_absent": [
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_callback_diagnostic_cb_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls36_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls45_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_no_future_writer_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_completeness_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_identity_inventory_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_recording_mapping_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_diagnostic_attempt_005",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_remaining_attempt_001",
+      "open_job_error": 2
+    }
+  ],
+  "all_signal_and_identity_values_exact_equal": true,
+  "authenticated_historical_cache_generation": false,
+  "canonical_files": 432,
+  "checkpoint_cohort_or_overlap_verified": false,
+  "combined_class_counts": {
+    "left_fist": 2479,
+    "right_fist": 2438
+  },
+  "combined_epochs": 4917,
+  "combined_raw_recordings": 327,
+  "combined_signal_values": 161120256,
+  "combined_subjects": 109,
+  "cpu_torch_native_threads": 1,
+  "created_utc": "2026-10-10T23:58:32.987811+00:00",
+  "cuda_context_initialized": false,
+  "current_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "execution_git_commit": "8e9de5c3ff514ac2afffe0e15a90f642c94e2408",
+  "execution_root_review": {
+    "path": "runs/coordination/mmidb_full_cache_reconstruction_20261010_v1/execution_root_review_002.json",
+    "sha256": "8bfe62585eb32e3f18ea4eb73a0556cfee321d89876638a4020786bf110e1056"
+  },
+  "guard_seconds": 63.41169620000437,
+  "incomplete_annotations_dropped_by_frozen_policy": [
+    {
+      "dropped": 1,
+      "recording": "data/raw/mmidb/MNE-eegbci-data/files/eegmmidb/1.0.0/S104/S104R08.edf",
+      "subject": 104
+    }
+  ],
+  "independent_review": false,
+  "maximum_signal_error_volts": 0.0,
+  "minimum_available_ram_bytes": 14436593664,
+  "model_checkpoint_recorder_or_original_case_executed": false,
+  "native_seconds": 65.69601709999999,
+  "new_caches_decoded": 108,
+  "new_epochs_in_this_batch": 4872,
+  "new_raw_recordings_decoded": 324,
+  "new_subjects_in_this_batch": 108,
+  "original_case_attempts_remaining": 0,
+  "peak_job_commit_bytes": 1213194240,
+  "processed_artifacts_written": false,
+  "provenance_request_sent": false,
+  "raw_and_cache_bytes_sizes_mtimes_retained": true,
+  "result": {
+    "path": "runs/coordination/mmidb_full_cache_reconstruction_20261010_v1/candidate/attempt_001/result.json",
+    "sha256": "888b0d1de74ae24eef3c987a0a8d8372e553eccde16385d816527da414afc67b"
+  },
+  "reused_subject001_result": {
+    "path": "runs/coordination/mmidb_cache_lineage_20261010_v1/candidate_009/reconstruct_attempt_002/result.json",
+    "sha256": "57c1d6f86fb062983371ae0df5c1d8cfd6ae665ca01dcab7239b4d2cb80ff609"
+  },
+  "root_execution_self_review_checks": 4305,
+  "schema": "pro3_all109_mmidb_current_processing_reproduction_summary_v1",
+  "scientific_eligibility_gate_a_or_freeze_signed": false,
+  "subject001_reused_without_numerical_replay": true
+}
