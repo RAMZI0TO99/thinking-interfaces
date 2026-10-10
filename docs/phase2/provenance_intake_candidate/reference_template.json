@@ -1,0 +1,131 @@
+{
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "checkpoint_training_link": {
+    "checkpoint_mapping_explanation": null,
+    "execution_record_reference": null,
+    "supplied_execution_record_sha256": null,
+    "training_run_identifier": null
+  },
+  "claimant": {
+    "identity_or_public_handle": null,
+    "role": null,
+    "source_or_channel_reference": null,
+    "statement_date_utc": null
+  },
+  "contract": "docs/phase2/checkpoint_cohort_review_contract_20261010.md",
+  "current_prerequisite_execution_reviews": [
+    {
+      "path": "runs/coordination/source_prerequisites_20261010_v1/raw_environment_002_execution_root_review.json",
+      "sha256": "6b05c7f572ae5cdc74019a44beca25501e88d3e3ad9288924730eec917097a36"
+    },
+    {
+      "path": "runs/coordination/source_prerequisites_20261010_v1/no_future_writer_002_execution_root_review.json",
+      "sha256": "32f1d09d7fad9a7a1e07cde1e5f62cf17d70d9319ac777ba90bc3575d47046cf"
+    },
+    {
+      "path": "runs/coordination/current_controls_qualification_20261010_v1/controls45_001_execution_root_review.json",
+      "sha256": "f9faf66f0e1339fbb5582c1a7ca275b0a4aa25e7a441c804c97bf430c6dd55d8"
+    },
+    {
+      "path": "runs/coordination/current_controls_qualification_20261010_v1/controls36_001_execution_root_review.json",
+      "sha256": "ed4134a5a4944b98cce31cb071731d2fd480776b3fcba93acff952bf61338a50"
+    }
+  ],
+  "document_role": "blank_input_template",
+  "evaluation_intersections": [
+    {
+      "coverage_basis": null,
+      "current_finding": "unknown",
+      "dataset": "cho2017",
+      "dataset_versions": [],
+      "evaluation_inventory_reference": null,
+      "evaluation_inventory_sha256": null,
+      "label_exposure_statement": null,
+      "recording_identifier_mapping": [],
+      "recording_intersection": null,
+      "subject_identifier_mapping": [],
+      "subject_intersection": null,
+      "training_inclusion_statement": null
+    },
+    {
+      "coverage_basis": null,
+      "current_finding": "unknown",
+      "dataset": "bci_iv_2a",
+      "dataset_versions": [],
+      "evaluation_inventory_reference": null,
+      "evaluation_inventory_sha256": null,
+      "label_exposure_statement": null,
+      "recording_identifier_mapping": [],
+      "recording_intersection": null,
+      "subject_identifier_mapping": [],
+      "subject_intersection": null,
+      "training_inclusion_statement": null
+    },
+    {
+      "coverage_basis": null,
+      "current_finding": "unknown",
+      "dataset": "mmidb",
+      "dataset_versions": [],
+      "evaluation_inventory_reference": null,
+      "evaluation_inventory_sha256": null,
+      "label_exposure_statement": null,
+      "recording_identifier_mapping": [],
+      "recording_intersection": null,
+      "subject_identifier_mapping": [],
+      "subject_intersection": null,
+      "training_inclusion_statement": null
+    }
+  ],
+  "evidence_items": [],
+  "executable": false,
+  "experiment_freeze_signed": false,
+  "known_checkpoint_identity": {
+    "official_git_blob_sha1": "221148b5af403e9178629bb61e94b2e7d89ef172",
+    "official_repository_commit": "c431221e6cfd23dbfa9950e0180682fb322b0548",
+    "original_bytes": 96612769,
+    "original_sha256": "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c",
+    "release_identity_verified": true,
+    "safe_sha256": "53b752edb366fd6395dd3cb7d63ae3e1e16aabed040aa0901d64ef32e8f444f8",
+    "safe_snapshot": "0563b6c626e7b40d9a36653b763715db94d945d7",
+    "training_cohort_verified": false
+  },
+  "original_case_attempts_remaining": 0,
+  "owner_packet": {
+    "path": "docs/phase2/cho_owner_decision_packet_20261010.json",
+    "sha256": "2a890980541120b4d311078436fe85aac13e77f3f33871739ab62347320ff400"
+  },
+  "paper_context": {
+    "actual_checkpoint_recording_overlap_resolved": false,
+    "cho2017_or_iv2a_absence_proves_exclusion": false,
+    "mmidb_named_in_pretraining_corpus": true
+  },
+  "preparation_git_commit": "49094cfc8401fe4b9b1bcc8e0902ade764c220b0",
+  "prepared_utc": "2026-10-10T19:33:07.162535+00:00",
+  "prior_provenance_final_review": {
+    "path": "runs/coordination/checkpoint_provenance_decision_20261010_v1/final_index_root_review_008.json",
+    "sha256": "17d2e35c123934cf977767b958cf517ae534eac26eb0c83bb97daab18753324d"
+  },
+  "review_boundary": {
+    "author_claim_authenticated": false,
+    "checkpoint_training_link_verified": false,
+    "cohort_coverage_verified": false,
+    "complete_template_automatically_signs_gate_or_admits_case": false,
+    "empty_or_missing_identifiers_mean_exclusion": false,
+    "evaluation_intersections_verified": false,
+    "independent_evidence_acceptance": false,
+    "scientific_owner_acceptance": false
+  },
+  "schema": "pro3_checkpoint_training_cohort_submission_template_v1",
+  "scientific_gate_a_signed": false,
+  "status": "incomplete_unratified_template",
+  "submission_received": false,
+  "training_inventory": {
+    "coverage_complete_attestation": null,
+    "dataset_entries": [],
+    "exclusion_statements": [],
+    "identifier_namespaces": [],
+    "known_omissions": null,
+    "split_definitions": []
+  },
+  "unsent_request": "docs/phase2/checkpoint_provenance_request_draft_20261010.md"
+}
