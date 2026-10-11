@@ -1,5 +1,38 @@
 # Project handoff
 
+## Current next-step preparation: portable checkpoint-provenance inventory, 11 October UTC
+
+A512,992-byte metadata package is prepared and unsent:170 distinct evaluation
+subjects,397 raw recording filenames/hashes,487 session/run groups and20,621
+lossless Profile A trial identities. It includes222 cache artifacts:170
+Profile A and52 Cho60 Profile B; those52 are the same Cho participants and
+add no independent research cases. Exact executed reconstruction receipts are
+retained; this phase did not replay them or open raw/cache signal payloads.
+
+Root's metadata self-review passed3,697 checks. All671 raw/cache/manifest file
+sizes/mtimes/link identities and source metadata pins agree; hashes are reused
+from completed numerical receipts. Old Cho mapping timestamps were absent;
+the corrected fresh preparation requires executed-plan timestamps, preserving
+the failed pre-output version. All37 created owned Jobs are freshly absent;
+no new Job, model, checkpoint, scientific import, fitting or recorder ran.
+
+Canonical Source3114ec43/432 and quality4eb4d556 remain; no full-suite replay.
+All170 Profile A/20,621 and all52 Cho60/10,520 current reconstruction results
+remain exact. The package states unknown pretraining inclusion/coverage and
+target overlap; unknown does not mean exclusion or scientific eligibility.
+Gate A/seven owner decisions/freeze stay unsigned; original attempts spent/
+zero;81 controls and450 dated reference fits remain. No new30-hour window or
+peer quiet/compute/science grant is inferred.
+
+See the [package and scope](docs/phase2/evaluation_recording_provenance_package_20261011.md)
+and [updated unsent request](docs/phase2/checkpoint_provenance_request_draft_20261011_package.md).
+Next requires actual checkpoint-bound training coverage plus reviewed mapping
+and authorized owner decisions before scientific/model work. No external
+recipient/channel has been selected or message/file sent. Older sections
+retain their dated scopes and evidence.
+
+
+
 ## Current engineering result: all52 Cho 60 Hz Profile B caches reproduced, 11 October UTC
 
 All52 subjects/10,520 epochs reproduce exactly from52 local MAT recordings.
