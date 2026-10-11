@@ -1,0 +1,196 @@
+{
+  "actual_result": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/candidate_004/reconstruct_attempt_001/result.json",
+    "sha256": "066a6235ef2b4fde1c531dde5347d9c8529dc139de88d20e24e4e5f70036c1d3"
+  },
+  "all_current_owned_job_names_freshly_absent": [
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_callback_diagnostic_cb_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls36_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls45_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_no_future_writer_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_completeness_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_identity_inventory_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_recording_mapping_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_diagnostic_attempt_005",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_remaining_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_reconstruct_attempt_001",
+      "open_job_error": 2
+    }
+  ],
+  "all_signals_and_metadata_exact_equal": true,
+  "authenticated_historical_generation_or_checkpoint_cohort_or_eligibility": false,
+  "cache_count": 9,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "class_counts": {
+    "feet": 1296,
+    "left_hand": 1296,
+    "right_hand": 1296,
+    "tongue": 1296
+  },
+  "corrected_execution_root_review": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/reconstruction_execution_root_review_012.json",
+    "sha256": "d970c8690c0300ebb5d0972dcf918e4f570b1b03823908fb875a0de2b54608d6"
+  },
+  "created_utc": "2026-10-11T01:22:19.979915+00:00",
+  "earlier_review_counter_discrepancy_preserved": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/reconstruction_execution_root_review_011.json",
+    "sha256": "e1b0255270b94a219719a0b01fd41561f961c011d98640f928c4bc0542efb45e"
+  },
+  "epoch_count": 5184,
+  "execution_git_commit": "2ee23b08115c24444186b3ac86e48639aa783cdc",
+  "failed_probe_preserved_unaccepted": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/failed_probe_execution_review_008.json",
+    "sha256": "7ea96d5e10425c1917e941a799ad90efefd5b4df2fad04b4545fb91e0110a667"
+  },
+  "maximum_absolute_error_volts": 0.0,
+  "native_seconds": 48.1897667,
+  "original_case_attempts_remaining": 0,
+  "passing_probe": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/candidate_003/probe_attempt_003/result.json",
+    "sha256": "7fe23159c7540beae4644baad116e0d5a779a68c6d1e0f92c738bf148b430a49"
+  },
+  "peak_job_commit_bytes": 1604190208,
+  "probe_execution_root_review": {
+    "path": "runs/coordination/bci_cache_reconstruction_20261011_v1/probe_execution_root_review_010.json",
+    "sha256": "7245d102cb763e355306b2af83020dd197b551038c3f84400c5ccc6ff005aca9"
+  },
+  "publisher_raw_checksums_verified": false,
+  "raw_recording_count": 18,
+  "root_grouped_checks": 145,
+  "schema": "pro3_all9_bci_current_processing_reproduction_summary_v1",
+  "scientific_or_original_case_admission": false,
+  "subject_count": 9
+}

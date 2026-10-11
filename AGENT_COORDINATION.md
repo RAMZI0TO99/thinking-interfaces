@@ -1,5 +1,32 @@
 # Project coordination
 
+## Current engineering result: all9 BCI caches reproduced, 11 October UTC
+
+All9 subjects/5,184epochs reproduce exactly from18 pinned local MATs: signals,
+labels, session/run/trial identities, channel order, shapes and dtypes match;
+maximum error0V. All raw/cache bytes, sizes and mtimes remain; caches were not
+written. Corrected BCI probe003 passed five boundaries; failed probe002 stays
+unaccepted. The converter's500-sample cue offset and2008 recording year are
+verified. Root's corrected145-check review passed without numerical replay.
+
+Native48.1897667s, peak Job1,604,190,208bytes; all29 owned Jobs freshly absent.
+Startup10/active4RAM/disk20GiB, process4/Job5GiB, CPU/native/Torch1, inner300/
+native330s and genuine pause checks remained. No model/checkpoint/fitting/
+recorder/original case occurred. Source3114ec43/432 and quality4eb4d556 remain.
+MMIDB109subjects/4,917epochs remain exact; Cho52/10,520 are prepared only.
+Pro2 requests no pause, supplying no quiet/compute/science grant.
+
+This proves current BCI processing, not historical generation, publisher raw
+checksums, checkpoint cohort/overlap, eligibility or scientific acceptance.
+Gate A/seven owner decisions/freeze remain unsigned; request unsent; original
+case attempts spent/zero. Cho needs its own finite measured probe/subject001/
+remaining-batch admission and coordination under unchanged resource floors.
+
+See the [BCI reconstruction report](docs/phase2/bci_cache_reconstruction_20261011.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current BCI/Cho next-step preparation, 11 October UTC
 
 BCI's compiled two-stage candidate and metadata bindings cover9subjects,
