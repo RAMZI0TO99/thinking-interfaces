@@ -1,5 +1,39 @@
 # Project handoff
 
+## Current engineering result: all170 Profile A caches reproduced, 11 October UTC
+
+Cho's52Profile A subjects/10,520epochs now reproduce exactly from52 local MATs; signals,
+labels, session/run/trial identities, channels, shapes and dtypes agree,
+maximum error0V. Together with BCI9/5,184 and MMIDB109/4,917, all170subjects/
+20,621epochs match current processing from397 local raw files. Raw/cache
+hashes, sizes and mtimes remain; no cache was rewritten or eligibility decided.
+
+Cho probe passed five boundaries. Subject001200epochs reused its complete
+receipt; remaining2..26 and27..52 ran as two disjoint guarded groups. Their
+native times were149.191/157.811s,
+with367/397s and377/407s inner/native bounds. The earlier624s proposal was
+refused before Job/worker by immutable600s cap; refusal remains, not rearmed.
+Peak real Cho Job 3,004,788,736bytes; all33 created owned Jobs
+freshly absent. Startup10/active4RAM/disk20GiB, process4/Job5GiB and CPU/native/
+Torch1 remained; no model/checkpoint/fitting/recorder/original case occurred.
+
+Source3114ec43/432 and quality4eb4d556 remain; no full-suite replay. These are
+Root-reviewed data engineering results, not historical generation, checkpoint
+cohort/overlap or scientific acceptance. Gate A/seven owner decisions/freeze
+stay unsigned; original attempts spent/zero. Cho class-block order does not
+authenticate acquisition chronology. Pro2 requests no pause; no quiet/grant
+is inferred. The updated checkpoint cohort request is prepared and unsent.
+
+The separate60Hz Profile B family needs its own numerical lineage scope;
+this phase does not recertify its signals. Scientific/model work still needs
+actual checkpoint-bound cohort evidence and authorized owner decisions.
+No further scientific/model operation is admitted by the reconstruction.
+See the [all52 Cho/all170 report](docs/phase2/cho_all52_cache_reconstruction_20261011.md)
+and [updated unsent request](docs/phase2/checkpoint_provenance_request_draft_20261011.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current engineering result: all9 BCI caches reproduced, 11 October UTC
 
 All9 subjects/5,184epochs reproduce exactly from18 pinned local MATs: signals,

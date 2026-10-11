@@ -1,0 +1,241 @@
+{
+  "all52_aggregate_root_review": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/all52_reconstruction_root_review_012.json",
+    "sha256": "8f0955868e1f35a8ba4b2efcea9e68063809b4ea9bd5706dbe214ec3a3f14184"
+  },
+  "all_current_owned_job_names_freshly_absent": [
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_callback_diagnostic_cb_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls36_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls45_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_no_future_writer_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_completeness_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_identity_inventory_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_recording_mapping_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_diagnostic_attempt_005",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_remaining_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_subject001_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_slice_a_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_slice_b_attempt_002",
+      "open_job_error": 2
+    }
+  ],
+  "all_signals_and_metadata_exact_equal": true,
+  "all_three_datasets_epochs": 20621,
+  "all_three_datasets_raw_recordings": 397,
+  "all_three_datasets_subjects": 170,
+  "authenticated_historical_generation_or_checkpoint_cohort_or_eligibility": false,
+  "cache_count": 52,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "class_counts": {
+    "left_hand": 5260,
+    "right_hand": 5260
+  },
+  "created_utc": "2026-10-11T01:43:20.152584+00:00",
+  "epoch_count": 10520,
+  "execution_git_commit": "7f62d207f8dc908cbaf14e19b833825517b795c4",
+  "maximum_absolute_error_volts": 0.0,
+  "original_case_attempts_remaining": 0,
+  "passing_probe_root_review": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/probe_execution_root_review_002.json",
+    "sha256": "651187e6120ca225e6480347aadb59549fe0bf75520e2a62f57da38330087b5f"
+  },
+  "peak_job_commit_bytes": 3004788736,
+  "prejob_deadline_refusal_preserved": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/prejob_deadline_refusal_review_008.json",
+    "sha256": "d5365e0558d72b91278ee720cf949eef56313c4cbafeb2aebd1bdcecc73eb01d"
+  },
+  "previous_checkpoint_request_unchanged": {
+    "path": "docs/phase2/checkpoint_provenance_request_draft_20261010.md",
+    "sent": false,
+    "sha256": "7272904c00ce55c85e124f28aee8dadb5859728d89a0f9070244b9fe528576fd"
+  },
+  "profile_b_60hz_numerical_recertification_by_this_phase": false,
+  "raw_recording_count": 52,
+  "reconstructed_cache_family": "profile_a",
+  "schema": "pro3_all52_cho_all170_current_processing_reproduction_summary_v1",
+  "scientific_or_original_case_admission": false,
+  "slice_a_execution_root_review": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/slice_a_execution_root_review_010.json",
+    "sha256": "9e9e68da955b57cc290d96956b1b60fe524563244f0a709837b88a6d257e0104"
+  },
+  "slice_a_native_seconds": 149.19082699999998,
+  "slice_a_result": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/candidate_002/cho_slice_a_attempt_002/result.json",
+    "sha256": "c0e73b81f2eeba6a8fb91070125a917111da2351743958a4340f7b4dffe4e011"
+  },
+  "slice_b_execution_root_review": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/slice_b_execution_root_review_011.json",
+    "sha256": "368f6eefb1badd19aecd601bdf3917780e757f26844a370b99e22b7b70386481"
+  },
+  "slice_b_native_seconds": 157.8112349,
+  "slice_b_result": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/candidate_002/cho_slice_b_attempt_002/result.json",
+    "sha256": "b878b6d06e2defb4fccbda8aaf0c734398cf819cff4ae88b14764fa5ab6ac552"
+  },
+  "subject001_execution_root_review": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/subject001_execution_root_review_004.json",
+    "sha256": "7d603aeecfd97ed4409f1c22e51e72d53f16ad1326109288f31e3dc71b05ba40"
+  },
+  "subject001_result": {
+    "path": "runs/coordination/cho_cache_reconstruction_20261011_v1/candidate/cho_subject001_attempt_001/result.json",
+    "sha256": "f361165074703457a9fe5a42ebbb3834df71a3b05e5873f0f40d6f0886be11ee"
+  },
+  "subject001_reused_without_numerical_replay": true,
+  "subject_count": 52,
+  "updated_checkpoint_request": {
+    "path": "docs/phase2/checkpoint_provenance_request_draft_20261011.md",
+    "sent": false,
+    "sha256": "31abb098d1923cb11649602308204f10a997f192fb8395e5649dc22580b7cac5"
+  }
+}
