@@ -1,5 +1,37 @@
 # Project handoff
 
+## Current engineering result: synthetic report publication qualified, 11 October UTC
+
+The separate report candidate passed27 behavioral tests and four CLI paths in
+an actual guarded Job. Five internal fixtures each cover1,040 fabricated cells,
+208 exact seed means and52 subject pairs. The JSON/preview and last-written
+completion receipt retain exact values, source/context hashes and unsigned rules.
+Replay, partial publication and self-consistent tampering are refused. Every
+output is synthetic engineering evidence; no real-cell or scientific report
+is admitted. The production analysis command/configuration remain unadopted.
+
+Root's132-check self-review passed: native7.438s,
+peak Job157,188,096 bytes; all43 created owned Jobs freshly
+absent. Bounds60/90s, RAM10/4 and disk20 GiB, process2.25/Job2.5 GiB and
+one Python/native thread remain. One local hostname lookup during imports was
+denied and recorded; no connection/resolution, child, protected read or outside
+write occurred. Four failed Jobs and two pre-attempt floor refusals remain.
+
+Source3114ec43/432 and quality4eb4d556 remain; no full-suite/data reconstruction
+replay, weights/raw-signal read, fit, real model inference, recorder or original
+case occurred. Gate A/seven owner responses/freeze stay unsigned; actual
+checkpoint coverage/overlap unknown; original attempts0;81 controls/450 dated
+fits retained. No new30-hour session or peer quiet/compute grant follows.
+
+See the [qualification and preview](docs/phase2/cho_synthetic_report_qualification_20261011.md).
+The exact maintainer request is still unsent with its publication question
+pending. Explicit posting instruction/account access and actual authenticated
+checkpoint-bound evidence, mapping review and owner decisions remain next for
+the scientific path. Any further finite engineering operation needs fresh scope,
+pins, feasibility, admission and coordination. Older sections preserve history.
+
+
+
 ## Current next action prepared: exact maintainer provenance request, 11 October UTC
 
 A concrete [public issue proposal](docs/phase2/checkpoint_provenance_public_issue_ready_20261011.md)
