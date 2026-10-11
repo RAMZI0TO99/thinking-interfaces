@@ -1,0 +1,33 @@
+{
+  "GitHub_connection_confirmed": false,
+  "actual_checkpoint_cohort_or_overlap_verified": false,
+  "attachments": [],
+  "created_utc": "2026-10-11T05:00:56.166905+00:00",
+  "distinct_candidate_issues_reviewed": 11,
+  "exact_body": {
+    "bytes": 2144,
+    "path": "runs/coordination/provenance_contact_preparation_20261011_v1/proposed_issue_body_001.md",
+    "sha256": "e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5"
+  },
+  "independent_review": false,
+  "metadata_deadline_is_os_job_bound": false,
+  "named_jobs_created": 0,
+  "original_case_attempts_remaining": 0,
+  "outside_party_contacted": false,
+  "posting_account_confirmed": false,
+  "proposed_issue_envelope": {
+    "path": "runs/coordination/provenance_contact_preparation_20261011_v1/proposed_issue_envelope_002.json",
+    "sha256": "b251e2278476cfbc63d53b7d7fecf4ffdd6c5b857459ab1ecba94577fc3eb6f2"
+  },
+  "public_gets_completed": 4,
+  "publication_authorized": false,
+  "publication_submitted": false,
+  "repository": "935963004/LaBraM",
+  "root_metadata_review": {
+    "path": "runs/coordination/provenance_contact_preparation_20261011_v1/contact_preparation_root_review_003.json",
+    "sha256": "a1824e56a42f48b898124ebde6be67ff04fa089e9a1e43f0bbb1492945557c89"
+  },
+  "schema": "pro3_public_checkpoint_provenance_issue_preparation_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "title": "Recording-level pretraining provenance for the released LaBraM base checkpoint"
+}
