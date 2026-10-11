@@ -1,5 +1,41 @@
 # Project handoff
 
+## Current engineering result: all52 Cho 60 Hz Profile B caches reproduced, 11 October UTC
+
+All52 subjects/10,520 epochs reproduce exactly from52 local MAT recordings.
+Stored float32 signals in0.1mV units, labels, session/run/trial identities,
+channels, shapes and dtypes match; maximum error0 in stored units and volts.
+Raw/cache bytes, sizes and mtimes and all52 sidecars remain. No cache was
+rewritten. The prior all170 Profile A subjects/20,621 epochs remain qualified;
+these52 Profile B subjects are the same Cho participants, not extra cases.
+
+Actual synthetic probe passed six boundaries, including scaling and physical
+voltage tolerance. Subject001 passed200 epochs; disjoint2..26/5,080 and
+27..52/5,240 epochs passed under separately admitted measured bounds.
+Native times: 24.269/196.567/200.536s.
+Peak real Job: 2,953,322,496 bytes; all37 created owned Jobs
+freshly absent. Startup10/active4 RAM/disk20 GiB, process4/Job5 GiB and
+CPU/native/Torch1 remained, with actual pause guards and unchanged600s cap.
+
+Execution Git798064ee; canonical Source3114ec43/432 and quality4eb4d556 remain.
+No full-suite replay, checkpoint/model/fitting/recorder/original case occurred.
+This is root-reviewed current data processing, not historical generation,
+checkpoint cohort/overlap or scientific acceptance. Cho class-block order
+does not authenticate acquisition chronology. Gate A/seven owner decisions/
+freeze remain unsigned; original attempts spent/zero;81 controls and450 dated
+reference records remain. No new30-hour window or peer quiet/grant is inferred.
+
+Next scientific/model work needs actual checkpoint-bound cohort evidence and
+authorized owner decisions. The updated provenance request is prepared and
+unsent; no further scientific/model operation is admitted. See the
+[Cho60 report](docs/phase2/cho60_all52_cache_reconstruction_20261011.md) and
+[updated request](docs/phase2/checkpoint_provenance_request_draft_20261011_cho60.md).
+The [owner engineering addendum](docs/phase2/cho_owner_decision_engineering_addendum_20261011.md)
+maps the completed evidence to the seven undecided owner responses.
+Older sections preserve their dated evidence and scope.
+
+
+
 ## Current engineering result: all170 Profile A caches reproduced, 11 October UTC
 
 Cho's52Profile A subjects/10,520epochs now reproduce exactly from52 local MATs; signals,
