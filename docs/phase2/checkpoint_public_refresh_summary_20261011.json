@@ -1,0 +1,52 @@
+{
+  "actual_checkpoint_cohort_submission_received": false,
+  "actual_checkpoint_evaluation_overlap": null,
+  "actual_training_subject_and_recording_coverage": null,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "cohort_or_overlap_verified": false,
+  "collection_git_commit": "4d8888afb9ce90fec100964d45a346beb4597761",
+  "collection_receipt": {
+    "path": "runs/coordination/checkpoint_public_refresh_20261011_v1/public_metadata_receipt_001.json",
+    "sha256": "0aa3692e9fa09659a975aee07a1aa72f01c35dc525ade5263f2546de91c45550"
+  },
+  "created_utc": "2026-10-11T03:19:30.436090+00:00",
+  "exact_response_bodies_unchanged": 4,
+  "external_provenance_request_sent": false,
+  "independent_review": false,
+  "metadata_root_review": {
+    "path": "runs/coordination/checkpoint_public_refresh_20261011_v1/public_metadata_root_review_002.json",
+    "sha256": "d51237501aae19ec742f8d12636148e0259221cf7f954205b96913bf71d43d65"
+  },
+  "named_jobs_created": 0,
+  "official_repository_blob_count": 28,
+  "official_repository_commit": "c431221e6cfd23dbfa9950e0180682fb322b0548",
+  "original_case_attempts_remaining": 0,
+  "public_gets_completed": 4,
+  "schema": "pro3_checkpoint_public_provenance_refresh_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "scientific_or_model_case_admission": false,
+  "scope_is_all_public_or_private_provenance_sources": false,
+  "selected_issue_discussions": {
+    "35": {
+      "bytes_identical_to_20261010_response": true,
+      "comment_count": 4,
+      "latest_created_at": "2025-07-12T08:41:27Z",
+      "latest_updated_at": "2025-07-12T08:41:27Z",
+      "owner_comment_urls": [
+        "https://github.com/935963004/LaBraM/issues/35#issuecomment-2270321673",
+        "https://github.com/935963004/LaBraM/issues/35#issuecomment-2285361279"
+      ]
+    },
+    "60": {
+      "bytes_identical_to_20261010_response": true,
+      "comment_count": 7,
+      "latest_created_at": "2025-12-17T06:02:02Z",
+      "latest_updated_at": "2025-12-17T06:02:02Z",
+      "owner_comment_urls": [
+        "https://github.com/935963004/LaBraM/issues/60#issuecomment-2870835041"
+      ]
+    }
+  },
+  "unknown_means_exclusion": false
+}

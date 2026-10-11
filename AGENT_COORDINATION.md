@@ -1,5 +1,30 @@
 # Project coordination
 
+## Current next step: checkpoint public sources refreshed, 11 October UTC
+
+Four fresh bounded public API reads returned the same official commit,
+complete 28-blob repository tree and all 11 comments in issues 35 and 60 as
+the 10 October audit. These selected records add no checkpoint-bound training
+inventory. The visible pretraining source still contains placeholder paths;
+the converted model card supplies no cohort inventory. This finding is limited
+to the reviewed sources; actual training coverage and overlap remain unknown.
+
+The root metadata review passed 97 checks. No new named Job, weight read,
+model, fitting or recorder operation occurred; all 38 created owned Jobs were
+freshly absent. Canonical Source3114ec43/432 and quality4eb4d556 remain,
+without a full-suite or numerical replay. The prior 42-case/two-CLI declared
+overlap qualification and all cache reconstruction receipts retain their scopes.
+
+The [public-source refresh](docs/checkpoint_public_provenance_refresh_20261011.md)
+records the evidence limits. The [prepared provenance request and attachment](docs/phase2/checkpoint_provenance_request_draft_20261011_package.md)
+remain unsent. Next requires actual checkpoint-bound coverage, authentication
+and mapping review, followed by the seven scientific owner decisions. Gate A
+and the freeze remain unsigned; original case attempts remain zero. No peer
+host-wide quiet, future compute grant or new 30-hour session is inferred.
+Older sections preserve their dated evidence.
+
+
+
 ## Current engineering result: declared cohort overlap checker qualified, 11 October UTC
 
 The separate SHA-bound metadata comparison passed42 owned synthetic cases and
