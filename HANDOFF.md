@@ -1,5 +1,27 @@
 # Project handoff
 
+## Current BCI/Cho next-step preparation, 11 October UTC
+
+BCI's compiled two-stage candidate and metadata bindings cover9subjects,
+18MATs/9caches/5,184epochs. Cho's quarantined local-loader prototype and input
+map cover52subjects/10,520epochs. Both are preparation, not executed numerical
+validation. The BCI native launch refused before attempt creation: actual
+available RAM8.291GiB was below the unchanged10GiB startup floor. No probe
+Job or attempt was created/consumed; no floor/unrelated process was changed.
+
+Pro2 reports no pause; Source scheduling is not a compute/science/quiet grant.
+The all109 MMIDB/4,917epoch exact result remains complete. Source3114ec43/432,
+quality4eb4d556 and all earlier receipts stay intact. A future BCI probe needs
+fresh current Git/Source/runtime/operation/admission bindings, resource floors
+and coordination. Cho remains unadmitted. No checkpoint/model/recorder or
+original case ran; Gate A, seven owner decisions/freeze and cohort/overlap
+remain unsigned/unverified, request unsent, original attempts spent/zero.
+
+See the [readiness and launch-refusal report](docs/phase2/bci_cho_cache_reconstruction_readiness_20261011.md).
+Older sections retain their dated evidence and scope.
+
+
+
 ## Current engineering result: all109 MMIDB caches reproduced, 10 October UTC
 
 All109 subjects/4,917 epochs reproduce exactly from their327 pinned raw EDF
