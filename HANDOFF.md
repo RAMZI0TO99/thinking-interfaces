@@ -1,5 +1,37 @@
 # Project handoff
 
+## Current engineering result: declared cohort overlap checker qualified, 11 October UTC
+
+The separate SHA-bound metadata comparison passed42 owned synthetic cases and
+both in-process CLI entry paths in one actual guarded Job. It computes only
+declared mapped subject/recording intersections against the prepared evaluation
+package. Aliases retain unique counts; contradictory/cross-dataset/unbound or
+ambiguous mappings are refused. Zero matches do not prove exclusion or
+independence. All authentication/scientific verification flags remain false;
+no actual cohort response was received or processed.
+
+Root's98-check execution self-review passed. Native0.674912s,
+peak Job27,881,472 bytes; all38 created owned Jobs freshly absent.
+The60/90s bounds,10/4 RAM20 disk GiB floors,2.25 process/2.5 Job GiB caps,
+CPU1, one Python thread and genuine pause guards remained. No network/child/
+outside-write attempt, scientific import, model/checkpoint/raw-signal access,
+fitting, recorder or original case occurred. Supervisor defaults remain.
+
+Canonical Source3114ec43/432 and quality4eb4d556 remain; no full-suite replay.
+All170 Profile A/20,621 and all52 Cho60/10,520 exact reconstruction receipts
+remain in their previous scopes. The recording package/request are unsent;
+actual training coverage/overlap and Gate A/seven decisions/freeze remain
+unresolved/unsigned. Original attempts spent/zero;81 controls and450 dated
+reference fits remain. No new30-hour window or peer quiet/compute grant follows.
+
+See the [qualification](docs/phase2/cohort_declared_overlap_qualification_20261011.md)
+and [candidate](docs/phase2/cohort_overlap_candidate/README.md). Actual evidence
+must pass completeness/authentication/training-run/mapping review, followed by
+authorized scientific owner decisions. No scientific/model operation is admitted.
+Older sections retain their dated scopes and evidence.
+
+
+
 ## Current next-step preparation: portable checkpoint-provenance inventory, 11 October UTC
 
 A512,992-byte metadata package is prepared and unsent:170 distinct evaluation

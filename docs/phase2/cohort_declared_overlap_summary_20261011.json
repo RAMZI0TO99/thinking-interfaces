@@ -1,0 +1,231 @@
+{
+  "actual_checkpoint_target_overlap_verified": false,
+  "actual_cohort_response_processed_or_authenticated": false,
+  "all_current_owned_job_names_freshly_absent": [
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_focused_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cache_diagnostic_hook_full_quality_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_callback_diagnostic_cb_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls36_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_current_controls_controls45_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_no_future_writer_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_prerequisite_current_raw_environment_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cohort_metadata_completeness_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_identity_inventory_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evaluation_recording_mapping_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_evidence_navigation_audit_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_diagnostic_attempt_005",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_probe_attempt_004",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_cache_lineage_reconstruct_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_mmidb_remaining_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_probe_attempt_003",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_bci_cache_reconstruction_reconstruct_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_probe_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_subject001_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_slice_a_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho_cache_reconstruction_cho_slice_b_attempt_002",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho60_cache_reconstruction_probe60_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho60_cache_reconstruction_subject60_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho60_cache_reconstruction_slice_a60_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_cho60_cache_reconstruction_slice_b60_attempt_001",
+      "open_job_error": 2
+    },
+    {
+      "job_absent": true,
+      "job_name": "pro3_declared_cohort_overlap_attempt_001",
+      "open_job_error": 2
+    }
+  ],
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "created_utc": "2026-10-11T03:05:11.808359+00:00",
+  "declared_zero_matches_prove_independence": false,
+  "evaluation_package_sha256": "b9ea3dfefed137a2264313bed1b7b3c392a1be799fbd767583500f44024bfc69",
+  "execution_git_commit": "e34737ec5899bc5bf90d4cf829f36539d47a17df",
+  "execution_root_review": {
+    "path": "runs/coordination/cohort_overlap_qualification_20261011_v1/execution_root_review_002.json",
+    "sha256": "44c0df4301d55ef42ee81d8ccb4a4d5c66786ef79163daec35ad3a52759216d7"
+  },
+  "guard": {
+    "path": "runs/coordination/cohort_overlap_qualification_20261011_v1/candidate/attempt_001/guard.json",
+    "sha256": "205dac69efc8df61e5fff3e0a33a4b31830584d035022a73368c490b2feb0fc2"
+  },
+  "guard_native_bounds_seconds": [
+    60,
+    90
+  ],
+  "guard_seconds": 0.5128515999967931,
+  "in_process_cli_paths_passed": 2,
+  "independent_review": false,
+  "native_exit": {
+    "path": "runs/coordination/cohort_overlap_qualification_20261011_v1/candidate/attempt_001/native_exit.json",
+    "sha256": "f3a99d38fb741179f474e1f9d3c8b8e0e78aa3e865e967e6967817d965570396"
+  },
+  "native_seconds": 0.674912,
+  "original_case_attempts_remaining": 0,
+  "peak_job_commit_bytes": 27881472,
+  "schema": "pro3_declared_overlap_synthetic_qualification_summary_v1",
+  "scientific_gate_or_freeze_signed": false,
+  "scientific_or_original_case_admission": false,
+  "synthetic_cases_passed": 42,
+  "synthetic_tests": {
+    "path": "runs/coordination/cohort_overlap_qualification_20261011_v1/candidate/attempt_001/tests.json",
+    "sha256": "28c8e76fcc6b69d9a5fcae6a586e84e558ba12035a3fed1847847cde98445977"
+  }
+}
