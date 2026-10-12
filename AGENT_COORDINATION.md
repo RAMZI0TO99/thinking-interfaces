@@ -1,5 +1,25 @@
 # Project coordination
 
+## Gate A review prepared; record audit admission refused, 12 October UTC
+
+Pro3 root owns the Gate A review/evidence and
+runs/coordination/gate_a_review_20261012_v1. Root1/no child agents. One read-only
+issue75 collection passed at13:08:51 UTC, with zero comments. The separate
+450-record metadata/probability-output audit refused startup at7.708GiB against
+10GiB RAM in20261012T131425Z_1975510152: no child or Job was created and no
+audit pass is claimed. No runtime-environment probe was launched and no guard
+floor or frozen implementation changed. Failed admission and prepared recipe
+remain preserved. No background retry is armed.
+
+The [exact retrospective Gate A amendment](docs/phase2/gate_a_retrospective_review_20261012.md)
+requires direct scientific owner adoption; root's engineering delegation is no
+signature. Four design choices remain adopted; Gate A/cohort/freeze pending,
+original attempts0 and no scientific execution budget. Source3114ec43/432 and
+13 config pins remain. Pro2 reports no heavy execution/new resource claim and
+requests no pause. Source026 original14:00UTC/shared5/reserve60s remains dated
+coordination only; no host quiet/runtime/lease/science follows. Future execution
+needs fresh admission and current coordination; archived Jobs/launchers are inert.
+
 ## Four delegated design choices recorded, 12 October UTC
 
 The user delegated the exact four named design choices; root adopted the pinned

@@ -7,6 +7,14 @@ agent instructions, portable asset identities, and verified historical evidence
 download manifests. The private GitHub Release holds the historical snapshot;
 Git commit history preserves the earlier implementation and decisions.
 
+The newest [Gate A review](docs/phase2/gate_a_retrospective_review_20261012.md)
+prepares an explicit retrospective amendment for direct owner decision. It
+does not sign Gate A or claim numerical equivalence. The13:08 UTC issue75 read
+on12 October found zero comments; the new record re-audit and worker environment
+probe are unexecuted after a10GiB startup-floor refusal. Historical receipts and
+the refusal are preserved in Git. Four design choices remain adopted, with
+Gate A/cohort/freeze pending and the original case's zero attempts unchanged.
+
 The newest [design decision record](docs/phase2/cho_design_decisions_20261012.md)
 adopts four exact proposed choices under the user's explicit delegation: Cho
 scope/candidates, primary analysis, empty secondary superiority family and

@@ -1,5 +1,29 @@
 # Project handoff
 
+## Current step: explicit Gate A amendment ready for owner review, 12 October UTC
+
+The [evidence review and exact proposed criterion](docs/phase2/gate_a_retrospective_review_20261012.md)
+are prepared and preserved in [portable evidence](evidence/gate-a-review-20261012/README.md).
+The amendment would accept the historically audited linked-procedure baseline,
+while disclosing its1.4894-percentage-point ROC-AUC shortfall and unverified
+original2024 environment. This is a retrospective amendment of the criterion,
+not a claim of numerical equivalence or a predefined passing tolerance. It is
+proposed only: Gate A remains unsigned and needs direct scientific owner adoption.
+
+The live issue75 read at13:08:51 UTC still found zero comments. A prepared
+450-record output re-audit was refused before any child/Job at7.708GiB RAM
+versus10GiB startup. It did not execute; its recipe/refusal are retained. No
+floor was relaxed, watcher armed or runtime-environment probe launched. The
+old integrity/input-audit hashes and13 live config pins still match; those
+historical results were not recertified as current-source training.
+
+Four design choices remain adopted; Gate A, checkpoint-cohort review and final
+freeze remain pending. Actual recording coverage/overlap unknown, original
+attempts2 spent/0 left, Source3114ec43/432 and live configurations unchanged.
+No fit/model/raw EEG/recorder/original case ran. Pro2 requests no pause or new
+resource claim; this supplies no lease or host quiet. Further execution needs
+fresh scope/resources/coordination. Older sections retain their dated state.
+
 ## Current owner decisions: four designs adopted, 12 October UTC
 
 The user explicitly delegated the four proposed design choices by replying

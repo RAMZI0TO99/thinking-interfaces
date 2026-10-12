@@ -1,5 +1,14 @@
 # Thinking Interfaces
 
+## Gate A review ready, 12 October UTC
+
+The [exact proposed retrospective criterion](docs/phase2/gate_a_retrospective_review_20261012.md)
+is prepared for direct scientific owner decision; Gate A stays unsigned.
+The issue75 read at13:08 UTC still had zero replies. The new record re-audit
+did not launch below10GiB startup RAM. Four design choices remain adopted;
+checkpoint-cohort review and final freeze remain pending. Current config/source
+and original attempts0 are unchanged; earlier sections retain dated evidence.
+
 ## Four design choices adopted, 12 October UTC
 
 Under the user's explicit delegation, root adopted the four proposed Cho design

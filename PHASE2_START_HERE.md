@@ -1,5 +1,14 @@
 # Phase II - Start Here
 
+## Current next decision: retrospective Gate A amendment, 12 October UTC
+
+Read the [exact criterion and evidence limits](docs/phase2/gate_a_retrospective_review_20261012.md).
+It is proposed for direct owner adoption; engineering work does not sign Gate A.
+Four design choices remain adopted, with Gate A/cohort/freeze pending. The new
+record audit was not launched below10GiB RAM, and issue75 had zero comments at
+13:08 UTC. Use fresh resource admission and coordination for later execution;
+no original-case retry or default model activation follows.
+
 ## Current decisions: four adopted, three pending, 12 October UTC
 
 The [delegated design decision record](docs/phase2/cho_design_decisions_20261012.md)
