@@ -1,0 +1,10 @@
+{
+  "offline_identity_check": "PASS",
+  "files_verified": 104,
+  "issues": 67,
+  "pr_entries": 6,
+  "comments": 222,
+  "owner_comments": 65,
+  "exact_public_request_verified": true,
+  "scientific_admission": false
+}

@@ -1,0 +1,16 @@
+{
+  "files": 96,
+  "bytes": 1150690,
+  "issue_url": "https://github.com/935963004/LaBraM/issues/75",
+  "all_owned_jobs_freshly_absent": true,
+  "literal_term_hit_counts": {
+    "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c": 0,
+    "c431221e6cfd23dbfa9950e0180682fb322b0548": 0,
+    "MMIDB": 0,
+    "Cho2017": 0,
+    "IV-2a": 0,
+    "manifest": 0,
+    "PhysioNet": 0,
+    "motor imagery": 0
+  }
+}

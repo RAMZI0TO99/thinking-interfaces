@@ -1,0 +1,749 @@
+{
+  "acquisition_observed_utc": "2026-10-12T11:08:14.728719+00:00",
+  "assembled_utc": "2026-10-12T11:25:45.803576+00:00",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "checkpoint_recording_coverage": "unknown",
+  "comment_count": 222,
+  "credential_pattern_scan": "no GitHub credential-shaped values found in copied bytes",
+  "evaluation_overlap": "unknown",
+  "executed_recipes_preserved": true,
+  "experiment_freeze_signed": false,
+  "files": [
+    {
+      "bytes": 300508,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issues.json",
+      "path": "acquisition/issues.json",
+      "sha256": "c11d1098903ae944915ec0f0826d8eda8cc8bacd9e4688b0f488e6bd77291180"
+    },
+    {
+      "bytes": 57487,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_001_comments_1.json",
+      "path": "acquisition/issue_001_comments_1.json",
+      "sha256": "f95918bf56d7a41dfb504661a44485fee74143144e3e6272d70a76ae7cfd86f6"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_002_comments_1.json",
+      "path": "acquisition/issue_002_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 9299,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_003_comments_1.json",
+      "path": "acquisition/issue_003_comments_1.json",
+      "sha256": "9d1bbc71b440dee9dfb4e983ad03463b1feecb54a54edcf5dd29db5fe9ca968e"
+    },
+    {
+      "bytes": 39742,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_004_comments_1.json",
+      "path": "acquisition/issue_004_comments_1.json",
+      "sha256": "0da92de40a9a4ea68869feea35190bd76e5eb49e547e46b7bfe8c9dc638cd191"
+    },
+    {
+      "bytes": 12697,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_005_comments_1.json",
+      "path": "acquisition/issue_005_comments_1.json",
+      "sha256": "097455a533921d179a795b609548672e04705fa3acd6b2acf9552dc8b2fa7ae5"
+    },
+    {
+      "bytes": 1616,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_006_comments_1.json",
+      "path": "acquisition/issue_006_comments_1.json",
+      "sha256": "bb618f0397d76b38ba3b6e531e7ea21e7e309ef6cf08a05f6b993a2b17217adc"
+    },
+    {
+      "bytes": 5171,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_007_comments_1.json",
+      "path": "acquisition/issue_007_comments_1.json",
+      "sha256": "c1a4bc9954f0a3582477cc6e5b12a35c4a22bfae6c87e1aab0fe655987300f53"
+    },
+    {
+      "bytes": 25654,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_008_comments_1.json",
+      "path": "acquisition/issue_008_comments_1.json",
+      "sha256": "7e79c97accb604e4f3473dad5938cd34b332a9f0634c26e21359dd9f103718bd"
+    },
+    {
+      "bytes": 16569,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_009_comments_1.json",
+      "path": "acquisition/issue_009_comments_1.json",
+      "sha256": "50bc784502c40da18548ffe8e7f9c88a90d10c45268568f73974163296e18b0a"
+    },
+    {
+      "bytes": 1602,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_010_comments_1.json",
+      "path": "acquisition/issue_010_comments_1.json",
+      "sha256": "63710f88d207c97bfce36d88372e98ddbd7702b78d12e33b700e04171300633f"
+    },
+    {
+      "bytes": 7052,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_011_comments_1.json",
+      "path": "acquisition/issue_011_comments_1.json",
+      "sha256": "fba3f7ed80b76023097bb558690db30c1db111397bda752c59e11e6fca7631dc"
+    },
+    {
+      "bytes": 1793,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_012_comments_1.json",
+      "path": "acquisition/issue_012_comments_1.json",
+      "sha256": "46e505f774efcca4b90e9948df200104a6069a3b817f3883f0c29cc04924b05c"
+    },
+    {
+      "bytes": 6165,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_013_comments_1.json",
+      "path": "acquisition/issue_013_comments_1.json",
+      "sha256": "5a732bda2f1573a9d8270bf958ef71ad9fbb0a45b15ab99da08837146a2287b8"
+    },
+    {
+      "bytes": 7121,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_014_comments_1.json",
+      "path": "acquisition/issue_014_comments_1.json",
+      "sha256": "d50531067e13a4dabfd430000fc56dc8a8638f2df0a26b54c2ef828a819c6c1d"
+    },
+    {
+      "bytes": 1676,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_015_comments_1.json",
+      "path": "acquisition/issue_015_comments_1.json",
+      "sha256": "5d909174431a1d7a6dec73d017b3621cb2220671f2d3328d604346088f8ab593"
+    },
+    {
+      "bytes": 2397,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_016_comments_1.json",
+      "path": "acquisition/issue_016_comments_1.json",
+      "sha256": "8abdbc2a4527bb21ae0a5bf141caf58cfd35b086e0ce577ae8a318bdfe11cfb9"
+    },
+    {
+      "bytes": 10855,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_017_comments_1.json",
+      "path": "acquisition/issue_017_comments_1.json",
+      "sha256": "620f0d0cc4a7f2c623afafccb16538d511d83f7f78b00ad903291256bbc2c694"
+    },
+    {
+      "bytes": 3602,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_018_comments_1.json",
+      "path": "acquisition/issue_018_comments_1.json",
+      "sha256": "1184e6879cfef543b7155ea5dec493ebbf5047712925f1857351b3ff3e72bb2b"
+    },
+    {
+      "bytes": 1618,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_019_comments_1.json",
+      "path": "acquisition/issue_019_comments_1.json",
+      "sha256": "b2655aa20ea16ce6df7327479d8f90b8b27785c5e3919a1b9925653ad8fc3c94"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_020_comments_1.json",
+      "path": "acquisition/issue_020_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 8814,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_021_comments_1.json",
+      "path": "acquisition/issue_021_comments_1.json",
+      "sha256": "1a58235539f9dd9bb5fd3e163a4b9f33fb9c33067035b28e16baa689c298ad3a"
+    },
+    {
+      "bytes": 26819,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_022_comments_1.json",
+      "path": "acquisition/issue_022_comments_1.json",
+      "sha256": "b399499e5ca6a21477bf7ab3825d606462e4da85411cc2c0ca6035b0e4944de9"
+    },
+    {
+      "bytes": 14027,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_023_comments_1.json",
+      "path": "acquisition/issue_023_comments_1.json",
+      "sha256": "e30a72c562d594da5b934d4269a65a0f9051f778e178ff74eb5f6a4b74abfb67"
+    },
+    {
+      "bytes": 6234,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_024_comments_1.json",
+      "path": "acquisition/issue_024_comments_1.json",
+      "sha256": "730b02235525ecbb8315ccc8914341adba8518f526be8075f9da4f5b6d56f7b8"
+    },
+    {
+      "bytes": 1694,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_025_comments_1.json",
+      "path": "acquisition/issue_025_comments_1.json",
+      "sha256": "d14fe09ec16ffe1b08bbe888b26d5118532631125d92c19a6e2534d2e86ae092"
+    },
+    {
+      "bytes": 14444,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_026_comments_1.json",
+      "path": "acquisition/issue_026_comments_1.json",
+      "sha256": "1d3cf9e9ad593af75ab7a52e1425c1f79834dda944f03b4d194b8d8811cd9de5"
+    },
+    {
+      "bytes": 16373,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_027_comments_1.json",
+      "path": "acquisition/issue_027_comments_1.json",
+      "sha256": "a841e6353c6e95ede54973e3ddcd55164d5fc86a63617ef13fa24a599fd1f3f2"
+    },
+    {
+      "bytes": 1914,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_028_comments_1.json",
+      "path": "acquisition/issue_028_comments_1.json",
+      "sha256": "7a698816316e9b37084c43500a373102acb5f8cdc2141594d2391cfd17bc584c"
+    },
+    {
+      "bytes": 3424,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_029_comments_1.json",
+      "path": "acquisition/issue_029_comments_1.json",
+      "sha256": "4c56a55a96fd239bab88eac5026f9d0d4a9c64abb4c4ddd187985b28d00213f1"
+    },
+    {
+      "bytes": 6944,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_030_comments_1.json",
+      "path": "acquisition/issue_030_comments_1.json",
+      "sha256": "b84ab7881854c44e0fc2ab8e23b40e76f88d4a7bdce396e5e4ad3e7fe2dd6516"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_031_comments_1.json",
+      "path": "acquisition/issue_031_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_032_comments_1.json",
+      "path": "acquisition/issue_032_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_033_comments_1.json",
+      "path": "acquisition/issue_033_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 3860,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_034_comments_1.json",
+      "path": "acquisition/issue_034_comments_1.json",
+      "sha256": "a82e10ca4e4af7a2572b0450770d6a93db6d7a0ea1f54dd23c65105a6b0f9635"
+    },
+    {
+      "bytes": 7126,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_035_comments_1.json",
+      "path": "acquisition/issue_035_comments_1.json",
+      "sha256": "7ac0c087c05d6ad1262258bb4f1429262b9473ccf20b3e10bb1ff59756d88f17"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_036_comments_1.json",
+      "path": "acquisition/issue_036_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 7273,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_037_comments_1.json",
+      "path": "acquisition/issue_037_comments_1.json",
+      "sha256": "f317edccc94a1b3e4fa4af8561305ac4261e1fd91c45f89efe8a292730f63d58"
+    },
+    {
+      "bytes": 1664,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_038_comments_1.json",
+      "path": "acquisition/issue_038_comments_1.json",
+      "sha256": "578be027bc8f09e8d94d2d608853e150b72f50645f77f5cff0b51b54e3fffb2e"
+    },
+    {
+      "bytes": 2240,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_039_comments_1.json",
+      "path": "acquisition/issue_039_comments_1.json",
+      "sha256": "fc522bc4cf2feebd16f16d07838ad7b28e8a01f22678258149411ae46e8ea51b"
+    },
+    {
+      "bytes": 1835,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_040_comments_1.json",
+      "path": "acquisition/issue_040_comments_1.json",
+      "sha256": "e3fdc7cb65427474fe0d95f6099f7a2ad062ec1fcde7d5d7e25d7ce42b9b9454"
+    },
+    {
+      "bytes": 5485,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_041_comments_1.json",
+      "path": "acquisition/issue_041_comments_1.json",
+      "sha256": "5b4a7bdaf3640e6e6ac9d077a7c5bee1e5a1f65af7dc8f7013c6cedd76987ae6"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_042_comments_1.json",
+      "path": "acquisition/issue_042_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 5368,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_043_comments_1.json",
+      "path": "acquisition/issue_043_comments_1.json",
+      "sha256": "479d3ec34f1b46c6384645691b4145df1241f4c1ac966928d7c8683d9e8127cc"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_044_comments_1.json",
+      "path": "acquisition/issue_044_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 30501,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_045_comments_1.json",
+      "path": "acquisition/issue_045_comments_1.json",
+      "sha256": "68c971ad465ba0ff6e903e6ca587d98523104826b138a0d9177e8926123414ff"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_046_comments_1.json",
+      "path": "acquisition/issue_046_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 6304,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_047_comments_1.json",
+      "path": "acquisition/issue_047_comments_1.json",
+      "sha256": "ee15da3f213509039ee77711c873b6e7f0ccbe5e58f8092cc279d0d3bc5620ae"
+    },
+    {
+      "bytes": 36817,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_048_comments_1.json",
+      "path": "acquisition/issue_048_comments_1.json",
+      "sha256": "e53a12205a38c94cc470135b531927096acb823931a9df29aca4ae2fc1bc2d45"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_049_comments_1.json",
+      "path": "acquisition/issue_049_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 1659,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_050_comments_1.json",
+      "path": "acquisition/issue_050_comments_1.json",
+      "sha256": "8399b85e8fde8c22d0689254022737e49f2eef92fd6c59f7139ed11f1c1437aa"
+    },
+    {
+      "bytes": 1719,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_051_comments_1.json",
+      "path": "acquisition/issue_051_comments_1.json",
+      "sha256": "85ff1c6e42fad4ecffef3608e352b4efe137f5b64fe7c6d02d1b75213f687a3b"
+    },
+    {
+      "bytes": 2170,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_053_comments_1.json",
+      "path": "acquisition/issue_053_comments_1.json",
+      "sha256": "5ef60b4e48b0bd96471f2a8fc5d991fe8be5a4f672acfaf1de512967915dc446"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_054_comments_1.json",
+      "path": "acquisition/issue_054_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_055_comments_1.json",
+      "path": "acquisition/issue_055_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 3426,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_056_comments_1.json",
+      "path": "acquisition/issue_056_comments_1.json",
+      "sha256": "7dcbbf1d5c33864564b41314358ae8ee6e6d5e92c453bc8052d90a4435c83c4d"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_057_comments_1.json",
+      "path": "acquisition/issue_057_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_058_comments_1.json",
+      "path": "acquisition/issue_058_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 1880,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_059_comments_1.json",
+      "path": "acquisition/issue_059_comments_1.json",
+      "sha256": "dbe2c981c3aa0582d3d6970b964fac8a832e2623ec5f728a8a2ad49c94fd7ee0"
+    },
+    {
+      "bytes": 15364,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_060_comments_1.json",
+      "path": "acquisition/issue_060_comments_1.json",
+      "sha256": "e3ecfda6a576a487639f007140aa2ecd1f3b4cfd3aadab0d7a009bf1a1ffb55c"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_061_comments_1.json",
+      "path": "acquisition/issue_061_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 7313,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_062_comments_1.json",
+      "path": "acquisition/issue_062_comments_1.json",
+      "sha256": "aacc87cc0d3d8e8e26ade7157b1b049c10f91e4a257aab6ea9b15fa37a4fa37b"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_063_comments_1.json",
+      "path": "acquisition/issue_063_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 1729,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_064_comments_1.json",
+      "path": "acquisition/issue_064_comments_1.json",
+      "sha256": "356fdbda894633c65d11f5847e09ff8927ac95503f6d4d5155a92da4225b6499"
+    },
+    {
+      "bytes": 1737,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_065_comments_1.json",
+      "path": "acquisition/issue_065_comments_1.json",
+      "sha256": "ab1ca67bf730189910c7070ae0772a0b575c6647441e919e6df214a62c63f70a"
+    },
+    {
+      "bytes": 2156,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_066_comments_1.json",
+      "path": "acquisition/issue_066_comments_1.json",
+      "sha256": "03f692cebb908b34f8da3e005499d678432d465c822f4624ba9b981e7b9d47ad"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_067_comments_1.json",
+      "path": "acquisition/issue_067_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_068_comments_1.json",
+      "path": "acquisition/issue_068_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_069_comments_1.json",
+      "path": "acquisition/issue_069_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_070_comments_1.json",
+      "path": "acquisition/issue_070_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_071_comments_1.json",
+      "path": "acquisition/issue_071_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_072_comments_1.json",
+      "path": "acquisition/issue_072_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 1689,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_073_comments_1.json",
+      "path": "acquisition/issue_073_comments_1.json",
+      "sha256": "d91fa58e5f69d4738becf4c0de00c05a501cf7afdfe0b16b53a7d0ec31a0f97c"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/issue_074_comments_1.json",
+      "path": "acquisition/issue_074_comments_1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 47822,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/acquisition_001/summary.json",
+      "path": "acquisition/summary.json",
+      "sha256": "7ee18112377fa98302415878a1b84d7927a3f26e428e593789add6e097d31c8c"
+    },
+    {
+      "bytes": 2902,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/publication_001/authorized-request.json",
+      "path": "publication/authorized-request.json",
+      "sha256": "c07b98420d5f6de1b0a4c38190c56e70eb474df3428b1804fd0d193249c214f7"
+    },
+    {
+      "bytes": 4511,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/publication_001/created-response.json",
+      "path": "publication/created-response.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c"
+    },
+    {
+      "bytes": 4511,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/publication_001/verified-response.json",
+      "path": "publication/verified-response.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c"
+    },
+    {
+      "bytes": 956,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/publication_001/verification.json",
+      "path": "publication/verification.json",
+      "sha256": "6bfd3cdae8afdff136cdd910e09b36ff4949fbde3f69d61ed2d4a75922a7d65f"
+    },
+    {
+      "bytes": 300508,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/publication_001/dedup_page_1.json",
+      "path": "publication/dedup_page_1.json",
+      "sha256": "e4808e5e5f46609ba48c78bc9758303e0658445cbf86b05a07e97a0c0019c99f"
+    },
+    {
+      "bytes": 4207,
+      "original_path": "docs/phase2/checkpoint_provenance_public_issue_ready_20261011.md",
+      "path": "publication/approved-draft-before-posting.md",
+      "sha256": "5563ed7a099de9a9d031a04773e491cf42d78503ebcb2fb4c29492835d53f52c"
+    },
+    {
+      "bytes": 4781,
+      "original_path": "runs/migration/20261012T110220Z_70bf55b493/admission.json",
+      "path": "guards/20261012T110220Z_70bf55b493/admission.json",
+      "sha256": "1f2565c0eb8b053648e73b83cfd181550f8717daa67b999dbb273d764b556186"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T110220Z_70bf55b493/command-result.json",
+      "path": "guards/20261012T110220Z_70bf55b493/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 140,
+      "original_path": "runs/migration/20261012T110220Z_70bf55b493/command.log",
+      "path": "guards/20261012T110220Z_70bf55b493/command.log",
+      "sha256": "b82e541d4e3a85b501c44f251bb31d6f2d438c43a7f95686bcb6ec6278651662"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T110220Z_70bf55b493/deadline.json",
+      "path": "guards/20261012T110220Z_70bf55b493/deadline.json",
+      "sha256": "39f91864f28dceb1fe30aefc297583b9ffdeca7f7e5b2a7662103456566bf8e2"
+    },
+    {
+      "bytes": 1675,
+      "original_path": "runs/migration/20261012T110220Z_70bf55b493/receipt.json",
+      "path": "guards/20261012T110220Z_70bf55b493/receipt.json",
+      "sha256": "9a4bd707d593bf65ad9556cf8981329506b1f7c3dc90b7089aa977d4e266e0d8"
+    },
+    {
+      "bytes": 4285,
+      "original_path": "runs/migration/20261012T110733Z_2d5e27de8c/admission.json",
+      "path": "guards/20261012T110733Z_2d5e27de8c/admission.json",
+      "sha256": "effe80fbc05b3f689ac606d12ad33eea16622dd6c15a9a2041f99a431b50b151"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T110733Z_2d5e27de8c/command-result.json",
+      "path": "guards/20261012T110733Z_2d5e27de8c/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 2582,
+      "original_path": "runs/migration/20261012T110733Z_2d5e27de8c/command.log",
+      "path": "guards/20261012T110733Z_2d5e27de8c/command.log",
+      "sha256": "284ba72917cf05f019fac0123256d9709adafce0233cd92f469d9a16952c0ba3"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T110733Z_2d5e27de8c/deadline.json",
+      "path": "guards/20261012T110733Z_2d5e27de8c/deadline.json",
+      "sha256": "89ad6819056930ee36f907ed0ef748660c9f3a0dd9032dde9c5004b71a5a4012"
+    },
+    {
+      "bytes": 1675,
+      "original_path": "runs/migration/20261012T110733Z_2d5e27de8c/receipt.json",
+      "path": "guards/20261012T110733Z_2d5e27de8c/receipt.json",
+      "sha256": "b784c1ae790272c261c0b3355b82dc68d7b20f8d369ada9c52355c27439bb1a1"
+    },
+    {
+      "bytes": 4278,
+      "original_path": "runs/migration/20261012T112320Z_e80ca451ee/admission.json",
+      "path": "guards/20261012T112320Z_e80ca451ee/admission.json",
+      "sha256": "be640ca719cdb6dbc09225a931ba618fa0b1b170fb0a2884e7daf28fc48afae7"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T112320Z_e80ca451ee/command-result.json",
+      "path": "guards/20261012T112320Z_e80ca451ee/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 977,
+      "original_path": "runs/migration/20261012T112320Z_e80ca451ee/command.log",
+      "path": "guards/20261012T112320Z_e80ca451ee/command.log",
+      "sha256": "52725b9718f1ced3a0952465492881eab22ce620838e673f35bc572a321e8e4e"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T112320Z_e80ca451ee/deadline.json",
+      "path": "guards/20261012T112320Z_e80ca451ee/deadline.json",
+      "sha256": "34e3d1ca79ecc7978e7d4ea4b954ddfa7e40a0b89799ceee17116f71484a4776"
+    },
+    {
+      "bytes": 1674,
+      "original_path": "runs/migration/20261012T112320Z_e80ca451ee/receipt.json",
+      "path": "guards/20261012T112320Z_e80ca451ee/receipt.json",
+      "sha256": "cd21464ec9bff98cfb0fec75b0b0a05370b089024d1372495b92fa34c8b6032f"
+    },
+    {
+      "bytes": 3699,
+      "original_path": "docs/phase2/checkpoint_comment_review_20261012/acquire.py",
+      "path": "recipes/acquire.py",
+      "sha256": "89533c48ffbcf3951edca639a5446bdeae4759828a969400f17a4cf33e6cb154"
+    },
+    {
+      "bytes": 5466,
+      "original_path": "docs/phase2/checkpoint_comment_review_20261012/publish.py",
+      "path": "recipes/publish.py",
+      "sha256": "ba952d2cf6ca353ced2a0dce786c7947c6379f89ab0c8b3736813f06ed56c56a"
+    },
+    {
+      "bytes": 6988,
+      "original_path": "docs/phase2/checkpoint_comment_review_20261012/assemble.py",
+      "path": "recipes/assemble.py",
+      "sha256": "00f0afa3c923c543fce2420675e951591b59eb968476701b53a72fd861bf1725"
+    },
+    {
+      "bytes": 4288,
+      "original_path": "runs/migration/20261012T112544Z_3d6d4afdff/admission.json",
+      "path": "guards/20261012T112544Z_3d6d4afdff/admission.json",
+      "sha256": "cde795285ebec776512ea48a83c39a9c42ce834a04dbf264217c61cb4367556b"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T112544Z_3d6d4afdff/command-result.json",
+      "path": "guards/20261012T112544Z_3d6d4afdff/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 433,
+      "original_path": "runs/migration/20261012T112544Z_3d6d4afdff/command.log",
+      "path": "guards/20261012T112544Z_3d6d4afdff/command.log",
+      "sha256": "6cccb62feaf1ab9b96a0ddf8ce95c623e069543a95d6ccb1ca3c417722e3ec2f"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T112544Z_3d6d4afdff/deadline.json",
+      "path": "guards/20261012T112544Z_3d6d4afdff/deadline.json",
+      "sha256": "753511553c5a3c4f6c94ad8219f7d90a032e4df882782d0d9c618dd34d916ac9"
+    },
+    {
+      "bytes": 1672,
+      "original_path": "runs/migration/20261012T112544Z_3d6d4afdff/receipt.json",
+      "path": "guards/20261012T112544Z_3d6d4afdff/receipt.json",
+      "sha256": "ec6d0d694a62e06ee450f7a3e9911145d1435ecb669e7b7157a588571fec16f2"
+    },
+    {
+      "bytes": 3377,
+      "original_path": "docs/phase2/checkpoint_comment_review_20261012/verify.py",
+      "path": "recipes/verify.py",
+      "sha256": "f45e1a18b93801b5b7b9dae6c9ddcc8d8ede999cbedfdb0cb0ddb8209e2337d0"
+    },
+    {
+      "bytes": 4280,
+      "original_path": "runs/migration/20261012T113017Z_90b11fe7e5/admission.json",
+      "path": "guards/20261012T113017Z_90b11fe7e5/admission.json",
+      "sha256": "4d9301aa523c798785e7adf9fe7f382c54318d4b30a1317176db58121b6a9cbe"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T113017Z_90b11fe7e5/command-result.json",
+      "path": "guards/20261012T113017Z_90b11fe7e5/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 226,
+      "original_path": "runs/migration/20261012T113017Z_90b11fe7e5/command.log",
+      "path": "guards/20261012T113017Z_90b11fe7e5/command.log",
+      "sha256": "03916ed4f736278080295fabc5dc68c9e596b5069530fe4511f55edddf37ec20"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T113017Z_90b11fe7e5/deadline.json",
+      "path": "guards/20261012T113017Z_90b11fe7e5/deadline.json",
+      "sha256": "29ae79a50dd47e5d23f681829a8466bf4aefb1901a55a2f39a0e1d22dc754a92"
+    },
+    {
+      "bytes": 1671,
+      "original_path": "runs/migration/20261012T113017Z_90b11fe7e5/receipt.json",
+      "path": "guards/20261012T113017Z_90b11fe7e5/receipt.json",
+      "sha256": "70ed476ae5a4c5645fd90184b25fa876e8f4136a6d804d3ebee30289ffd12815"
+    },
+    {
+      "bytes": 660,
+      "original_path": "runs/coordination/checkpoint_comments_20261012_v1/final-owned-job-absence.json",
+      "path": "final-owned-job-absence.json",
+      "sha256": "15e2c5bb97785c8624ebe724ce89b7b948d21cc99011fcd1a4d9634cacbe923c"
+    }
+  ],
+  "final_owned_job_absence_count": 5,
+  "fresh_owned_job_absence": [
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T110220Z_70bf55b493",
+      "run": "20261012T110220Z_70bf55b493"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T110733Z_2d5e27de8c",
+      "run": "20261012T110733Z_2d5e27de8c"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T112320Z_e80ca451ee",
+      "run": "20261012T112320Z_e80ca451ee"
+    }
+  ],
+  "gate_a_signed": false,
+  "historical_quality_sha256": "4eb4d5566f496bc3d6143fc7046ca505e750829631332fc3697cb60dc2a01357",
+  "issue_count": 67,
+  "limitations": [
+    "PR inline review comments",
+    "Discussions",
+    "images and attachments",
+    "deleted historical entries",
+    "external archives and repositories",
+    "future comments"
+  ],
+  "listed_issue_comment_pages_complete": true,
+  "literal_body_term_hits_before_our_issue": {
+    "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c": [],
+    "Cho2017": [],
+    "IV-2a": [],
+    "MMIDB": [],
+    "PhysioNet": [],
+    "c431221e6cfd23dbfa9950e0180682fb322b0548": [],
+    "manifest": [],
+    "motor imagery": []
+  },
+  "maintainer_response_reviewed": false,
+  "original_case_attempts_remaining": 0,
+  "owner_comment_count": 65,
+  "owner_decision_packet_sha256": "2a890980541120b4d311078436fe85aac13e77f3f33871739ab62347320ff400",
+  "owner_decisions_signed": false,
+  "public_request": {
+    "account": "RAMZI0TO99",
+    "attachments": [],
+    "authorization_request_sha256": "c07b98420d5f6de1b0a4c38190c56e70eb474df3428b1804fd0d193249c214f7",
+    "body_sha256": "e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5",
+    "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+    "created_utc": "2026-10-12T11:23:25Z",
+    "exact_title_account_repository_body_verified": true,
+    "issue_id": 5812871791,
+    "issue_number": 75,
+    "observed_utc": "2026-10-12T11:23:26.631981+00:00",
+    "original_case_attempts_remaining": 0,
+    "post_http_status": 201,
+    "repository": "935963004/LaBraM",
+    "reused_existing_exact_issue": false,
+    "schema": "verified_authorized_provenance_issue_v1",
+    "scientific_admission": false,
+    "title": "Recording-level pretraining provenance for the released LaBraM base checkpoint",
+    "url": "https://github.com/935963004/LaBraM/issues/75",
+    "verification_get_http_status": 200
+  },
+  "pull_request_entry_count": 6,
+  "recipe_note": "Executed recipe bytes are archived under recipes; current assembler may remove its unused import after this capture.",
+  "schema": "portable_checkpoint_comment_review_v1",
+  "scientific_admission": false
+}

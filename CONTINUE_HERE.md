@@ -49,10 +49,14 @@ Gate A, the experiment freeze and the seven owner decisions remain unsigned.
 Actual checkpoint pretraining coverage and evaluation overlap remain unknown.
 
 The next scientific action needs authenticated checkpoint-bound training
-provenance, mapping review and owner decisions. The exact
-[LaBraM maintainer issue proposal](docs/phase2/checkpoint_provenance_public_issue_ready_20261011.md)
-is prepared and **unsent**. Permission to push this repository does not authorize
-posting that separate message. Any new execution needs a fresh finite scope,
+provenance, mapping review and owner decisions. The owner-approved exact request
+is now posted as [LaBraM issue #75](https://github.com/935963004/LaBraM/issues/75)
+from `RAMZI0TO99`, without attachments. The subsequent
+[73-entry/222-comment review and verified publication](docs/phase2/checkpoint_comment_review_20261012.md)
+and [portable raw metadata](evidence/checkpoint-comments-20261012/README.md)
+are committed in Git. No maintainer response has been reviewed. Earlier migration
+state, archived drafts and the Release snapshot retain their original dates;
+this newer handoff and evidence record the posting. Any new execution needs a fresh finite scope,
 current source/operations/runtime pins, resource admission and relevant current
 machine coordination.
 

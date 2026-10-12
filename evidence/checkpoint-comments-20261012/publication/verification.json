@@ -1,0 +1,21 @@
+{
+  "account": "RAMZI0TO99",
+  "attachments": [],
+  "authorization_request_sha256": "c07b98420d5f6de1b0a4c38190c56e70eb474df3428b1804fd0d193249c214f7",
+  "body_sha256": "e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "created_utc": "2026-10-12T11:23:25Z",
+  "exact_title_account_repository_body_verified": true,
+  "issue_id": 5812871791,
+  "issue_number": 75,
+  "observed_utc": "2026-10-12T11:23:26.631981+00:00",
+  "original_case_attempts_remaining": 0,
+  "post_http_status": 201,
+  "repository": "935963004/LaBraM",
+  "reused_existing_exact_issue": false,
+  "schema": "verified_authorized_provenance_issue_v1",
+  "scientific_admission": false,
+  "title": "Recording-level pretraining provenance for the released LaBraM base checkpoint",
+  "url": "https://github.com/935963004/LaBraM/issues/75",
+  "verification_get_http_status": 200
+}

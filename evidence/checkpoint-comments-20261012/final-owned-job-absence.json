@@ -1,0 +1,27 @@
+{
+  "jobs": [
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T110220Z_70bf55b493"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T110733Z_2d5e27de8c"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T112320Z_e80ca451ee"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T112544Z_3d6d4afdff"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T113017Z_90b11fe7e5"
+    }
+  ],
+  "observed_utc": "2026-10-12T11:32:37.067437+00:00",
+  "owned_job_count": 5,
+  "scientific_admission": false
+}

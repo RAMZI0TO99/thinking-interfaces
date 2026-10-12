@@ -1,0 +1,36 @@
+{
+  "accepted": true,
+  "files": [
+    {
+      "bytes": 4276,
+      "path": "admission.json",
+      "sha256": "c2de89a2684e7b56efcd3a95c3abafce905e2b32f219f46869082abe4eb35008"
+    },
+    {
+      "bytes": 17,
+      "path": "command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 226,
+      "path": "command.log",
+      "sha256": "c3f6f9bac95bcdc3ca2ed7f384344a5c9cdf7eef7f04c42dbd8aaf45e305ec20"
+    },
+    {
+      "bytes": 161,
+      "path": "deadline.json",
+      "sha256": "2e262fe31f542c53a774e32b0c7e18796e3f95c97f1d0a5091e45bd6140905d9"
+    },
+    {
+      "bytes": 1669,
+      "path": "receipt.json",
+      "sha256": "6dcb4060886582ef193ef7bd3e7f66e681818aeca40a3e0592e5c13f5b887082"
+    }
+  ],
+  "indexed_files_verified": 111,
+  "input_index_sha256": "3b3e62a97e0c021e0a651f5294822f5cc73852fcb52579489bfdb09998e6cfc2",
+  "job": "20261012T113237Z_7f5562a17e",
+  "owned_job_absent": true,
+  "schema": "finalized_provenance_evidence_qualification_v1",
+  "scientific_admission": false
+}

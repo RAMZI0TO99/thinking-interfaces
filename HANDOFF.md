@@ -1,5 +1,29 @@
 # Project handoff
 
+## Current step: provenance review complete and request posted, 12 October UTC
+
+The owner-approved exact request is now
+[LaBraM issue #75](https://github.com/935963004/LaBraM/issues/75), posted from
+`RAMZI0TO99` at 11:23:25 UTC with no attachments. A fresh GET verified the
+account, repository, title and complete body. The prior public review covered
+67 issues, 6 PR entries and 222 comments, including 65 maintainer comments.
+It found no checkpoint-bound recording cohort in that scope. In particular,
+the unrecorded-subject statement in issue 13 concerns TUAB fine-tuning.
+See the [review and next-input report](docs/phase2/checkpoint_comment_review_20261012.md)
+and [portable captures/receipts](evidence/checkpoint-comments-20261012/README.md).
+
+Actual checkpoint training coverage and evaluation overlap remain unknown;
+no maintainer reply has been reviewed. Next, capture authenticated new provenance,
+review its mapping against the evaluation inventory, and obtain the seven owner
+decisions. Gate A and freeze remain unsigned; original attempts2 spent/0 left.
+Source3114ec43/432, the historical quality receipt and owner packet are unchanged.
+No model, fit, raw EEG, recorder or original case ran; no full-suite replay.
+Windows migration remains complete and published as documented below. Earlier
+unsent/prepared descriptions, the migration state and Release are dated snapshots;
+this newer Git evidence records publication. No automatic polling is enabled.
+Pro2's latest coordination reply requests no pause. Pro3 remains one root with
+no children; fresh coordination/admission is required for subsequent execution.
+
 ## Windows continuation published and verified, 12 October UTC
 
 The owner-requested Windows migration is complete. Source, setup tools, exact

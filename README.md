@@ -1,5 +1,16 @@
 # Thinking Interfaces
 
+## Current provenance step, 12 October UTC
+
+The public comment review is complete and the owner-approved checkpoint request
+is posted as [LaBraM #75](https://github.com/935963004/LaBraM/issues/75).
+The [report](docs/phase2/checkpoint_comment_review_20261012.md) and
+[portable evidence](evidence/checkpoint-comments-20261012/README.md) preserve
+the 73-entry/222-comment review and verified posting. Recording-level training
+coverage and evaluation overlap remain unknown; Gate A, seven owner decisions
+and freeze remain unsigned. Original attempts remain zero. Windows continuation
+is complete below; older prepared/unsent sections preserve dated snapshots.
+
 ## Windows continuation published and verified, 12 October UTC
 
 The owner-requested Windows migration is complete. Source, setup tools, exact

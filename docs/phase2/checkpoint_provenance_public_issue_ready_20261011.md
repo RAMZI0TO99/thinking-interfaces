@@ -1,5 +1,16 @@
 # Proposed public checkpoint-provenance request
 
+**Posted and verified, 12 October 2026, 11:23:25 UTC:**
+[LaBraM issue #75](https://github.com/935963004/LaBraM/issues/75), using
+`RAMZI0TO99` after the user's explicit approval of this exact title/body,
+repository, account and no-attachment action. No attachments were uploaded.
+An independent GET verified the exact body SHA256
+`e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5`.
+See the [publication and broader comment review](checkpoint_comment_review_20261012.md).
+The original approved file is preserved byte-for-byte in the portable evidence.
+The 11 October preparation and local review notes below remain historical;
+their unsent status and pending approval describe that earlier date.
+
 Prepared and **unsent**, 11 October 2026. Proposed channel: a new issue in
 [935963004/LaBraM](https://github.com/935963004/LaBraM/issues/new).
 Recipient: the repository maintainer. Posting account is not yet confirmed.

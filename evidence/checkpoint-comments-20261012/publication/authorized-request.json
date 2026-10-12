@@ -1,0 +1,14 @@
+{
+  "schema": "explicitly_authorized_exact_provenance_issue_v1",
+  "repository": "935963004/LaBraM",
+  "account": "RAMZI0TO99",
+  "title": "Recording-level pretraining provenance for the released LaBraM base checkpoint",
+  "body": "Hello, and thank you for making LaBraM available.\n\nWe are preparing a subject-level motor-imagery evaluation and would like to\ndescribe pretraining exposure accurately for the released base checkpoint:\n\n- File: `checkpoints/labram-base.pth`, 96,612,769 bytes.\n- Official commit: `c431221e6cfd23dbfa9950e0180682fb322b0548`.\n- SHA-256: `7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c`.\n- Git blob: `221148b5af403e9178629bb61e94b2e7d89ef172`.\n\nCould you provide a manifest, execution-record reference or provenance\nstatement linked to these exact checkpoint bytes, identifying the datasets,\nversions, subjects and recordings actually used for pretraining?\n\nOur planned evaluation catalogs are:\n\n1. **MMIDB 1.0.0:** S001-S109, runs 04, 08 and 12. Which of these subjects,\n   runs or splits were included, and were any evaluation recordings excluded?\n2. **BCI Competition IV-2a:** A01T/A01E through A09T/A09E. Were any of these\n   subjects or recordings included? We understand that the paper's named\n   BCI Competition IV-1 dataset is distinct from IV-2a.\n3. **Cho2017:** s01.mat through s52.mat. Were any of these subjects or\n   recordings included, and which versions or exclusions apply?\n\nWe understand that MMIDB is named in the paper. We are asking about the actual\nreleased checkpoint's recording/subject coverage, rather than assuming that\nthe paper's dataset list or source placeholder paths determine its cohort.\nPlease also distinguish unlabeled EEG exposure from any use of task labels.\n\nPublic identifiers or reproducible pseudonymous mappings would be sufficient;\nwe are not requesting raw-data redistribution. We have prepared a local\nmetadata-only catalog of 170 evaluation subjects and 397 recording filenames\nand hashes, which we can provide separately if useful. No recording arrays,\nlabels or weights are attached to this request.\n\nPlease identify the statement's source/date, how its training run is linked\nto this checkpoint, and whether the supplied coverage is complete. If the\nmapping is unavailable, an explicit statement of that limitation would also\nhelp us constrain our evaluation claims.\n\nThank you.\n",
+  "attachments": [],
+  "draft_path": "docs/phase2/checkpoint_provenance_public_issue_ready_20261011.md",
+  "draft_sha256": "5563ed7a099de9a9d031a04773e491cf42d78503ebcb2fb4c29492835d53f52c",
+  "body_sha256": "e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5",
+  "authorization": "User answered do what you see fit to the exact account/repository/title/body/no-attachments posting question",
+  "original_case_attempts_remaining": 0,
+  "scientific_admission": false
+}

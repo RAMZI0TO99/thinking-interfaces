@@ -1,5 +1,19 @@
 # Phase II - Start Here
 
+## Current step: provenance request posted, 12 October UTC
+
+Windows migration is complete and published; begin another device with
+[WINDOWS_SETUP.md](WINDOWS_SETUP.md) and [CONTINUE_HERE.md](CONTINUE_HERE.md).
+The next prerequisite review captured 67 issues, 6 PR entries and 222 public
+comments, and the owner-approved exact maintainer request was posted as
+[LaBraM #75](https://github.com/935963004/LaBraM/issues/75) with no attachments.
+See the [review and continuation report](docs/phase2/checkpoint_comment_review_20261012.md).
+Actual checkpoint recording coverage/overlap remain unknown. Authenticated
+provenance, mapping review and seven owner decisions remain the next inputs.
+Gate A/freeze remain unsigned; original attempts0; Source3114ec43/432 unchanged.
+No new training or scientific case is inferred. Read the newest handoff and
+coordination first; older prepared/unsent sections retain historical scope.
+
 ## Windows continuation package prepared, 12 October UTC
 
 The owner requested a clone-ready Windows repository and authorized pushing it.

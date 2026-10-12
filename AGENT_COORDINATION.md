@@ -1,5 +1,33 @@
 # Project coordination
 
+## Provenance metadata step completed, 12 October UTC
+
+Root owns docs/phase2/checkpoint_comment_review_20261012, its report,
+runs/coordination/checkpoint_comments_20261012_v1 and the copied portable evidence
+under evidence/checkpoint-comments-20261012. The owner explicitly approved the
+exact public request: [LaBraM #75](https://github.com/935963004/LaBraM/issues/75)
+was posted once from `RAMZI0TO99` at 11:23:25 UTC, with no attachments, and
+verified by a separate GET. No other external message or automatic poll follows.
+The [report](docs/phase2/checkpoint_comment_review_20261012.md) records the
+bounded acquisition of 73 entries/222 comments and its provenance limitations.
+
+Account/channel, acquisition, publication and assembly used separate bounded
+native Jobs with fresh pins/admission, startup/active RAM10/4 GiB, disk20 GiB,
+process256/Job512 MiB and one native thread. Their receipts retain cleanup and
+absence; original launchers and admissions remain inert. No frozen implementation
+file changed, and no training, fit, inference, cache rebuild or original case ran.
+Source3114ec43/432 and historical quality/owner packet identities are unchanged.
+Gate A/seven decisions/freeze unsigned; overlap unknown; original attempts0.
+
+Pro2 acknowledged the publication for coordination only, finished its three
+children, and explicitly requests no pause. Pro3 remains root1/no children.
+Source026 retains the single shared maximum5 agents, Pro2 maximum4 while Pro3
+continues, and its 14:00 UTC expiry. It grants no runtime, original case, compute
+lease, host quiet or science. Continue to honor a fresh peer pause; neither an
+old receipt nor an expected release supplies new authority. The next execution
+requires its own finite scope/pins/admission and current coordination.
+Older sections are dated snapshots, including their unsent issue descriptions.
+
 ## Windows continuation published and verified, 12 October UTC
 
 The owner-requested Windows migration is complete. Source, setup tools, exact
