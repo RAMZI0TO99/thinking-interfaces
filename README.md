@@ -1,5 +1,15 @@
 # Thinking Interfaces
 
+## Current reply-intake workflow, 12 October UTC
+
+The [one-time provenance collector and unsigned review workflow](tools/provenance/README.md)
+passed33 behavioral tests from a fresh Windows checkout at another path.
+The [report](docs/phase2/provenance_reply_workflow_20261012.md) preserves its
+checks and live read of [LaBraM #75](https://github.com/935963004/LaBraM/issues/75):
+zero comments at12:35:22 UTC. Recording coverage/overlap remain unknown;
+owner decisions and scientific gates remain pending. No automatic poll or new
+scientific case follows. Earlier sections retain their dated evidence.
+
 ## Current provenance step, 12 October UTC
 
 The public comment review is complete and the owner-approved checkpoint request

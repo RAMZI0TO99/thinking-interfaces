@@ -1,0 +1,51 @@
+{
+  "schema": "pro3_reply_workflow_windows_checkout_qualification_v1",
+  "accepted": true,
+  "checkout_path": "tmp/Provenance Windows checkout 001",
+  "candidate_index_tree": "46e710a593282a01d577fbc5ee0bad99f1cfd1d1",
+  "autocrlf": true,
+  "core_eol": "crlf",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "byte_identical_qualified_dependencies": [
+    {
+      "bytes": 8275,
+      "original_path": "docs/phase2/cohort_overlap_candidate/declared_overlap.py",
+      "path": "declared_overlap.py",
+      "sha256": "96cfe17e9e4a6c865d85399f784a5fedbff28136bd91b02f112bed25b7ea5189"
+    },
+    {
+      "bytes": 11354,
+      "original_path": "docs/phase2/provenance_intake_candidate/inspect_cohort.py",
+      "path": "inspect_cohort.py",
+      "sha256": "9221d82a8035b851e56e76dcd50124846050dded5727755f2f939bfa0f04ba3b"
+    },
+    {
+      "bytes": 5203,
+      "original_path": "docs/phase2/provenance_intake_candidate/reference_template.json",
+      "path": "reference_template.json",
+      "sha256": "d62cb5450578fa8ea0e90856cb314eb183db93f401a64e1aae5d28f4f536ceab"
+    },
+    {
+      "bytes": 512992,
+      "original_path": "docs/phase2/evaluation_recording_provenance_package_20261011.json",
+      "path": "evaluation-package.json",
+      "sha256": "b9ea3dfefed137a2264313bed1b7b3c392a1be799fbd767583500f44024bfc69"
+    }
+  ],
+  "behavioral_tests_passed": 33,
+  "public_api_or_network_used": false,
+  "scientific_admission": false
+}
+k
+test_plaintext_checkpoint_and_subject_mentions_are_not_extracted (__main__.ReplyTests.test_plaintext_checkpoint_and_subject_mentions_are_not_extracted) ... ok
+test_prepare_preserves_unicode_statement_and_does_not_execute_or_fetch (__main__.ReplyTests.test_prepare_preserves_unicode_statement_and_does_not_execute_or_fetch) ... ok
+test_qualified_dependency_drift_refuses_import (__main__.ReplyTests.test_qualified_dependency_drift_refuses_import) ... ok
+test_receipt_cannot_reset_original_attempts_or_use_boolean_zero (__main__.ReplyTests.test_receipt_cannot_reset_original_attempts_or_use_boolean_zero) ... ok
+test_two_complete_pages_are_preserved_and_reviewable (__main__.ReplyTests.test_two_complete_pages_are_preserved_and_reviewable) ... ok
+test_unselected_or_absent_comment_never_creates_review_output (__main__.ReplyTests.test_unselected_or_absent_comment_never_creates_review_output) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 37.135s
+
+OK
+

@@ -1,0 +1,207 @@
+{
+  "assembled_utc": "2026-10-12T12:45:54.028731+00:00",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "experiment_freeze_signed": false,
+  "files": [
+    {
+      "bytes": 4511,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/received_001/issue-start.json",
+      "path": "received/issue-start.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c"
+    },
+    {
+      "bytes": 2,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/received_001/comments-1.json",
+      "path": "received/comments-1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 4511,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/received_001/issue-end.json",
+      "path": "received/issue-end.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c"
+    },
+    {
+      "bytes": 1559,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/received_001/receipt.json",
+      "path": "received/receipt.json",
+      "sha256": "246a2576423c4d1bddfe90f9fea972d2201c5bae7b1b283671926aee7939046c"
+    },
+    {
+      "bytes": 1487,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/checkout_001/receipt.json",
+      "path": "checkout/receipt.json",
+      "sha256": "6d58820b82a4d1137412236ae4893a98c29957d96bde0fb5cac4b3d16ac4eeef"
+    },
+    {
+      "bytes": 4765,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/checkout_001/tests.log",
+      "path": "checkout/tests.log",
+      "sha256": "9c7645e2c3942cb3992e823990cb88d8e41b4055129dd2c3b749c2d160ab0641"
+    },
+    {
+      "bytes": 2671,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/checkout_check.py",
+      "path": "recipes/checkout_check.py",
+      "sha256": "2af0b4ef5f19e52d829aa1ad545b6a72afc1438f8a3e25514b13035a595567de"
+    },
+    {
+      "bytes": 17229,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/executed_recipes_001/reply.py",
+      "path": "recipes/initial_31/reply.py",
+      "sha256": "0357e024d6095b91b9277a40c4465565aadd4616aff81e2825cd5e1e489288e9"
+    },
+    {
+      "bytes": 17153,
+      "original_path": "tools/provenance/reply.py",
+      "path": "recipes/current/reply.py",
+      "sha256": "8bb40148103f6a6dd4a622ae632d0fbe7f10a676273c58699ff17096ef714c11"
+    },
+    {
+      "bytes": 17627,
+      "original_path": "tmp/Provenance Windows checkout 001/tools/provenance/reply.py",
+      "path": "recipes/windows_checkout/reply.py",
+      "sha256": "41266b9a2f43e88b73e73d2ca62312a56f7cf3cbbc87009e31c82a7839261f95"
+    },
+    {
+      "bytes": 14563,
+      "original_path": "runs/coordination/provenance_reply_workflow_20261012_v1/executed_recipes_001/test_reply.py",
+      "path": "recipes/initial_31/test_reply.py",
+      "sha256": "5edf86577555fcb802401cdce3882ab04b85c69664764841a18173d089a88aea"
+    },
+    {
+      "bytes": 15598,
+      "original_path": "tools/provenance/test_reply.py",
+      "path": "recipes/current/test_reply.py",
+      "sha256": "1f150f374a00676454e023746aec467340b35f476f27a498d6d922eecd29554e"
+    },
+    {
+      "bytes": 15961,
+      "original_path": "tmp/Provenance Windows checkout 001/tools/provenance/test_reply.py",
+      "path": "recipes/windows_checkout/test_reply.py",
+      "sha256": "2f821a3594f41f061a8030646cda47ad81396c4b8a4591bdb89740a07fc7e448"
+    },
+    {
+      "bytes": 1190,
+      "original_path": "tools/provenance/qualified/manifest.json",
+      "path": "qualified-dependencies.json",
+      "sha256": "268b2461965d6cc6047a88826b81618bd27c702d7442062e379c889b062a737a"
+    },
+    {
+      "bytes": 4242,
+      "original_path": "runs/migration/20261012T123202Z_fd1de22245/admission.json",
+      "path": "guards/20261012T123202Z_fd1de22245/admission.json",
+      "sha256": "60720bebe7ae55164ce11f80c605458db1910a55ab319e8b0b2bbb71411d2daa"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T123202Z_fd1de22245/command-result.json",
+      "path": "guards/20261012T123202Z_fd1de22245/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 4495,
+      "original_path": "runs/migration/20261012T123202Z_fd1de22245/command.log",
+      "path": "guards/20261012T123202Z_fd1de22245/command.log",
+      "sha256": "fa1d024d1e2b803ccea523f4fc9e4d4f452380bb9be8714acbb4be269c5f68b2"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T123202Z_fd1de22245/deadline.json",
+      "path": "guards/20261012T123202Z_fd1de22245/deadline.json",
+      "sha256": "66c1010d532901e74b651a4ef40116fd353201d36454b0e8e34ef61f25dae3ee"
+    },
+    {
+      "bytes": 1673,
+      "original_path": "runs/migration/20261012T123202Z_fd1de22245/receipt.json",
+      "path": "guards/20261012T123202Z_fd1de22245/receipt.json",
+      "sha256": "322538d21eba0bee65ed29febd6ab02b01d2889ae81df5d968a75538cdfa40d6"
+    },
+    {
+      "bytes": 4351,
+      "original_path": "runs/migration/20261012T123518Z_9e4530553f/admission.json",
+      "path": "guards/20261012T123518Z_9e4530553f/admission.json",
+      "sha256": "c86081f34b5be318793adff0382cf61ca788a92bad9a8dc47f722d370ba83a06"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T123518Z_9e4530553f/command-result.json",
+      "path": "guards/20261012T123518Z_9e4530553f/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 220,
+      "original_path": "runs/migration/20261012T123518Z_9e4530553f/command.log",
+      "path": "guards/20261012T123518Z_9e4530553f/command.log",
+      "sha256": "80e7e4ff1c1ffbffbd49c00139f3154f8ed9c478f9ce2d3845f30164b54bf4ea"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T123518Z_9e4530553f/deadline.json",
+      "path": "guards/20261012T123518Z_9e4530553f/deadline.json",
+      "sha256": "46ceb31e31698c2479c95f047098b6e8b5b23dd6ad4311dbb9bc2b62072232bb"
+    },
+    {
+      "bytes": 1674,
+      "original_path": "runs/migration/20261012T123518Z_9e4530553f/receipt.json",
+      "path": "guards/20261012T123518Z_9e4530553f/receipt.json",
+      "sha256": "4d96b6f7c12ac89d408961ad647af6f2d374ff3c5f9b677c32cc20066d557de9"
+    },
+    {
+      "bytes": 4325,
+      "original_path": "runs/migration/20261012T123726Z_39f3043012/admission.json",
+      "path": "guards/20261012T123726Z_39f3043012/admission.json",
+      "sha256": "c58536460c945f8a981c4f4fe3bbd2ca78ceaaf2a2dc1a1e8ea8c0d888f3f78a"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T123726Z_39f3043012/command-result.json",
+      "path": "guards/20261012T123726Z_39f3043012/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 2539,
+      "original_path": "runs/migration/20261012T123726Z_39f3043012/command.log",
+      "path": "guards/20261012T123726Z_39f3043012/command.log",
+      "sha256": "12d11aa59cdbd6909d637671028c70f99c1ff98c0845606354cba9c31bed3632"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T123726Z_39f3043012/deadline.json",
+      "path": "guards/20261012T123726Z_39f3043012/deadline.json",
+      "sha256": "0f393edc9f16dbb9cbc899096a43a034393198799b0fbee508b5b68679ea2a63"
+    },
+    {
+      "bytes": 1673,
+      "original_path": "runs/migration/20261012T123726Z_39f3043012/receipt.json",
+      "path": "guards/20261012T123726Z_39f3043012/receipt.json",
+      "sha256": "5df2feb4f89de53065264290da1756a41f3f1c8eab5e41b826724ca3e9b39bc2"
+    }
+  ],
+  "final_behavioral_tests_passed": 33,
+  "fresh_owned_job_absence": [
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T123202Z_fd1de22245"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T123518Z_9e4530553f"
+    },
+    {
+      "freshly_absent": true,
+      "job_name": "pro3_migration_20261012T123726Z_39f3043012"
+    }
+  ],
+  "fresh_windows_checkout": true,
+  "historical_quality_sha256": "4eb4d5566f496bc3d6143fc7046ca505e750829631332fc3697cb60dc2a01357",
+  "live_capture_observed_utc": "2026-10-12T12:35:22.563519+00:00",
+  "live_comment_count": 0,
+  "live_owner_reply_received": false,
+  "original_case_attempts_remaining": 0,
+  "other_device_runtime_certified": false,
+  "owner_packet_sha256": "2a890980541120b4d311078436fe85aac13e77f3f33871739ab62347320ff400",
+  "schema": "portable_provenance_reply_workflow_qualification_v1",
+  "scientific_admission": false,
+  "scientific_gate_a_signed": false
+}

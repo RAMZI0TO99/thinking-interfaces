@@ -7,6 +7,16 @@ agent instructions, portable asset identities, and verified historical evidence
 download manifests. The private GitHub Release holds the historical snapshot;
 Git commit history preserves the earlier implementation and decisions.
 
+The latest [provenance reply workflow](tools/provenance/README.md) collects the
+public request once and prepares an unsigned draft for an explicitly selected
+owner reply. Its different-path Windows checkout passed33 behavioral tests.
+The live read at12:35:22 UTC on12 October found zero comments. See the
+[report](docs/phase2/provenance_reply_workflow_20261012.md) and
+[portable evidence](evidence/provenance-reply-workflow-20261012/README.md).
+There is no automatic polling or scientific admission. Four proposed design
+decisions await explicit owner ratification; provenance, Gate A and final freeze
+remain separate. Read the newest handoff before older status snapshots.
+
 The migration commands derive their paths from this clone. They do not require
 the old `D:\Aenv\pro3` folder, Windows username, Codex installation or Pro2 thread.
 Python environments are installed again; public recordings and checkpoints are

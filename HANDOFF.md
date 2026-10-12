@@ -1,5 +1,28 @@
 # Project handoff
 
+## Current step: provenance reply workflow qualified, 12 October UTC
+
+The new [one-time collector and unsigned review workflow](tools/provenance/README.md)
+is ready. It preserves public reply bytes and connects an explicitly selected
+owner comment to the existing strict intake/declared-overlap checkers. A fresh
+Windows checkout at a different path passed33 behavioral tests with every pinned
+dependency hash intact. The [qualification report](docs/phase2/provenance_reply_workflow_20261012.md)
+and [portable receipts](evidence/provenance-reply-workflow-20261012/README.md)
+retain the exact code/capture/Job evidence.
+
+The one live collection of [LaBraM #75](https://github.com/935963004/LaBraM/issues/75)
+at12:35:22 UTC found zero comments; no actual reply/cohort submission was prepared.
+No automatic polling, new external message or model work occurred. Next, collect
+an authentic reply in a fresh directory and review its checkpoint/run linkage,
+coverage and evaluation mapping. Four already proposed design choices have been
+presented for explicit owner ratification; no answer is inferred. Gate A,
+checkpoint-cohort review and final freeze remain separate outstanding decisions.
+All seven responses are still unsigned in the unchanged original owner packet.
+Actual coverage/overlap unknown; original attempts2 spent/0 left; Source3114ec43/432
+and historical quality unchanged. Engineering completion does not admit science.
+Use fresh pins/admission/coordination for any later execution. Earlier sections
+retain dated results and status. Windows migration remains complete/published.
+
 ## Current step: provenance review complete and request posted, 12 October UTC
 
 The owner-approved exact request is now

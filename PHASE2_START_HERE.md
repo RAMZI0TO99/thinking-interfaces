@@ -1,5 +1,16 @@
 # Phase II - Start Here
 
+## Current step: reply workflow ready, 12 October UTC
+
+Use the [one-time collector and unsigned draft commands](tools/provenance/README.md)
+when a relevant response to LaBraM #75 arrives. The new workflow passed33
+behavioral tests in a fresh different-path Windows checkout; the single live read
+at12:35:22 UTC found zero comments. The [report](docs/phase2/provenance_reply_workflow_20261012.md)
+and newest handoff retain the scope. Four proposed design choices await owner
+ratification; checkpoint-cohort evidence/review, Gate A and final freeze remain
+separate outstanding inputs. No scientific/model execution or original case reset
+is admitted. Read current coordination before any fresh guarded command.
+
 ## Current step: provenance request posted, 12 October UTC
 
 Windows migration is complete and published; begin another device with

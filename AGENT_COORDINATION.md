@@ -1,5 +1,29 @@
 # Project coordination
 
+## One-time reply workflow qualification completed, 12 October UTC
+
+Pro3 root owns tools/provenance, its new qualification report and
+runs/coordination/provenance_reply_workflow_20261012_v1. Root1/no child agents.
+Three finite metadata Jobs passed:31 initial synthetic cases, one read-only
+issue75 capture, and a different-path Windows checkout with33 final cases.
+The live capture at12:35:22 UTC found zero comments. No actual training statement
+was accepted, no follow-up posted and no automatic poll enabled. Existing checker
+and evaluation-package bytes were copied exactly into the owned qualified folder;
+originals and all frozen implementation files remain unchanged.
+
+Fresh guards used180s, startup/active RAM10/4GiB, disk20GiB, process256/Job512MiB
+and one native thread. Native receipts preserve Job emptiness, closure and absence.
+See the [qualification](docs/phase2/provenance_reply_workflow_20261012.md).
+No fits, model/raw EEG/cache reads, recorder or original case operation occurred.
+Source3114ec43/432 and historical quality unchanged; original attempts0, actual
+coverage/overlap unknown. Four design choices are presented for owner decision;
+no engineering result signs any scientific decision or the final freeze.
+
+Source026 retains the shared maximum5 agents, Pro2 maximum4 while Pro3 continues
+and its14:00 UTC expiry. A peer disclosure is not runtime/lease/host quiet/science
+authority; honor any genuine fresh pause and establish current coordination for
+subsequent execution. Old metadata Job receipts and copied launchers remain inert.
+
 ## Provenance metadata step completed, 12 October UTC
 
 Root owns docs/phase2/checkpoint_comment_review_20261012, its report,

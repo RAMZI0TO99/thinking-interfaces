@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "bytes": 8275,
+      "original_path": "docs/phase2/cohort_overlap_candidate/declared_overlap.py",
+      "path": "declared_overlap.py",
+      "sha256": "96cfe17e9e4a6c865d85399f784a5fedbff28136bd91b02f112bed25b7ea5189"
+    },
+    {
+      "bytes": 11354,
+      "original_path": "docs/phase2/provenance_intake_candidate/inspect_cohort.py",
+      "path": "inspect_cohort.py",
+      "sha256": "9221d82a8035b851e56e76dcd50124846050dded5727755f2f939bfa0f04ba3b"
+    },
+    {
+      "bytes": 5203,
+      "original_path": "docs/phase2/provenance_intake_candidate/reference_template.json",
+      "path": "reference_template.json",
+      "sha256": "d62cb5450578fa8ea0e90856cb314eb183db93f401a64e1aae5d28f4f536ceab"
+    },
+    {
+      "bytes": 512992,
+      "original_path": "docs/phase2/evaluation_recording_provenance_package_20261011.json",
+      "path": "evaluation-package.json",
+      "sha256": "b9ea3dfefed137a2264313bed1b7b3c392a1be799fbd767583500f44024bfc69"
+    }
+  ],
+  "role": "Pinned existing metadata checkers and evaluation identifiers; no scientific authority",
+  "schema": "byte_identical_qualified_provenance_dependencies_v1"
+}

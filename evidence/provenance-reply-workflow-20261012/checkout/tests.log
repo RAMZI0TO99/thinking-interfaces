@@ -1,0 +1,38 @@
+test_author_handle_alone_does_not_supply_owner_association (__main__.ReplyTests.test_author_handle_alone_does_not_supply_owner_association) ... ok
+test_capture_cannot_claim_scientific_admission (__main__.ReplyTests.test_capture_cannot_claim_scientific_admission) ... ok
+test_capture_roster_cannot_traverse_to_another_file (__main__.ReplyTests.test_capture_roster_cannot_traverse_to_another_file) ... ok
+test_changed_captured_bytes_fail_hash_check (__main__.ReplyTests.test_changed_captured_bytes_fail_hash_check) ... ok
+test_changed_request_body_refuses_collection (__main__.ReplyTests.test_changed_request_body_refuses_collection) ... ok
+test_cli_failure_does_not_echo_statement_or_source_values (__main__.ReplyTests.test_cli_failure_does_not_echo_statement_or_source_values) ... ok
+test_cli_success_uses_only_get_collection_and_safe_summary (__main__.ReplyTests.test_cli_success_uses_only_get_collection_and_safe_summary) ... ok
+test_cli_successful_prepare_keeps_review_unsigned (__main__.ReplyTests.test_cli_successful_prepare_keeps_review_unsigned) ... ok
+test_comment_addition_during_collection_refuses_completion (__main__.ReplyTests.test_comment_addition_during_collection_refuses_completion) ... ok
+test_comment_count_mismatch_refuses_collection (__main__.ReplyTests.test_comment_count_mismatch_refuses_collection) ... ok
+test_comment_from_another_issue_refuses_collection (__main__.ReplyTests.test_comment_from_another_issue_refuses_collection) ... ok
+test_comment_update_before_creation_refuses_collection (__main__.ReplyTests.test_comment_update_before_creation_refuses_collection) ... ok
+test_different_repository_refuses_collection (__main__.ReplyTests.test_different_repository_refuses_collection) ... ok
+test_different_request_author_refuses_collection (__main__.ReplyTests.test_different_request_author_refuses_collection) ... ok
+test_duplicate_comment_ids_refuse_collection (__main__.ReplyTests.test_duplicate_comment_ids_refuse_collection) ... ok
+test_duplicate_json_key_rejected_and_raw_response_retained (__main__.ReplyTests.test_duplicate_json_key_rejected_and_raw_response_retained) ... ok
+test_empty_owner_statement_never_creates_review_output (__main__.ReplyTests.test_empty_owner_statement_never_creates_review_output) ... ok
+test_existing_output_is_preserved_before_any_transport (__main__.ReplyTests.test_existing_output_is_preserved_before_any_transport) ... ok
+test_invalid_utf8_nonfinite_and_oversized_json_are_rejected (__main__.ReplyTests.test_invalid_utf8_nonfinite_and_oversized_json_are_rejected) ... ok
+test_issue_edit_during_collection_refuses_completion (__main__.ReplyTests.test_issue_edit_during_collection_refuses_completion) ... ok
+test_more_than_two_pages_never_marks_partial_capture_complete (__main__.ReplyTests.test_more_than_two_pages_never_marks_partial_capture_complete) ... ok
+test_no_owner_reply_is_received_evidence_without_cohort_acceptance (__main__.ReplyTests.test_no_owner_reply_is_received_evidence_without_cohort_acceptance) ... ok
+test_non_utc_or_reversed_comment_dates_refuse_collection (__main__.ReplyTests.test_non_utc_or_reversed_comment_dates_refuse_collection) ... ok
+test_observed_owner_reply_remains_unverified (__main__.ReplyTests.test_observed_owner_reply_remains_unverified) ... ok
+test_output_must_stay_under_runs_without_traversal (__main__.ReplyTests.test_output_must_stay_under_runs_without_traversal) ... ok
+test_own_request_and_third_party_reply_cannot_be_prepared_as_owner_statement (__main__.ReplyTests.test_own_request_and_third_party_reply_cannot_be_prepared_as_owner_statement) ... ok
+test_owner_association_alone_does_not_supply_expected_owner_handle (__main__.ReplyTests.test_owner_association_alone_does_not_supply_expected_owner_handle) ... ok
+test_plaintext_checkpoint_and_subject_mentions_are_not_extracted (__main__.ReplyTests.test_plaintext_checkpoint_and_subject_mentions_are_not_extracted) ... ok
+test_prepare_preserves_unicode_statement_and_does_not_execute_or_fetch (__main__.ReplyTests.test_prepare_preserves_unicode_statement_and_does_not_execute_or_fetch) ... ok
+test_qualified_dependency_drift_refuses_import (__main__.ReplyTests.test_qualified_dependency_drift_refuses_import) ... ok
+test_receipt_cannot_reset_original_attempts_or_use_boolean_zero (__main__.ReplyTests.test_receipt_cannot_reset_original_attempts_or_use_boolean_zero) ... ok
+test_two_complete_pages_are_preserved_and_reviewable (__main__.ReplyTests.test_two_complete_pages_are_preserved_and_reviewable) ... ok
+test_unselected_or_absent_comment_never_creates_review_output (__main__.ReplyTests.test_unselected_or_absent_comment_never_creates_review_output) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 37.135s
+
+OK
