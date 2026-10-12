@@ -1,6 +1,6 @@
 # Windows setup and verified restoration
 
-Install Git (including Git Credential Manager) and **64-bit Python 3.12**.
+Use **Windows x64**, Git (including Git Credential Manager) and **x64 Python 3.12**.
 This repository and its evidence Release are private: sign in to the GitHub
 account that can clone it. The same cached Git login downloads the evidence;
 no token needs to be put in a file or environment variable.
@@ -32,7 +32,10 @@ The original root lockfiles keep their historical bytes.
 is useful for source-only inspection. `-DownloadWeights` fetches the pinned
 original and converted public checkpoints without deserializing them.
 
-Commands are finite (at most ten minutes each). A slow network can hit a deadline;
+Setup operations are finite (at most ten minutes each). Each of the 58 history
+parts has its own bounded download/verification Job, followed by a separate
+local restoration Job. Completed matching parts are reused automatically.
+A slow network can hit a deadline;
 the failure is recorded and the owned process tree is stopped. Rerun bootstrap
 to create a fresh setup attempt; pip preserves completed installations. No setup
 retry changes the separate original model-case attempt ledger.

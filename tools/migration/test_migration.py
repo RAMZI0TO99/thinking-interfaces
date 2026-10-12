@@ -260,6 +260,33 @@ class MigrationTests(unittest.TestCase):
         self.assertEqual(path.read_bytes(), b"user contents")
         self.assertFalse((self.root / "checkpoints/prior.pt").exists())
 
+    def test_history_parts_download_once_and_reuse_before_local_restore(self):
+        part, manifest = self.fake_history()
+        raw = part.read_bytes()
+        manifest["parts"][0]["github_asset"] = {"name": "part.001"}
+        (self.root / restore.HISTORY_MANIFEST).unlink()
+        common.write_json(self.root / restore.HISTORY_MANIFEST, manifest)
+        part.unlink()
+        with patch(
+            "github.download_asset", side_effect=lambda root, row: part.write_bytes(raw)
+        ) as request:
+            restore.history_part(self.root, "part.001")
+            restore.history_part(self.root, "part.001")
+            restore.restore_history(self.root, local_parts_only=True)
+            self.assertEqual(request.call_count, 1)
+        self.assertEqual(
+            (self.root / "checkpoints/prior.pt").read_bytes(),
+            b"synthetic opaque bytes; never unpickle",
+        )
+
+    def test_local_history_restore_refuses_missing_part_without_network(self):
+        part, _ = self.fake_history()
+        part.unlink()
+        with patch("github.download_asset") as request, self.assertRaises(ValueError):
+            restore.restore_history(self.root, local_parts_only=True)
+        request.assert_not_called()
+        self.assertFalse((self.root / "runs/attempt.json").exists())
+
     def test_corrupted_part_rejected_without_publishing(self):
         part, _ = self.fake_history()
         data = bytearray(part.read_bytes())

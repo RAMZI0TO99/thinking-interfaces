@@ -40,7 +40,12 @@ if (-not $SkipInstall) {
     Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'verify installed runtime imports without loading a model', '--', $VenvPython, '-I', '-B', 'tools/migration/doctor.py', '--imports', $ImportProfile)
 }
 if (-not $SkipHistory) {
-    Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'restore and verify inert historical evidence', '--', $Python, '-I', '-S', '-B', 'tools/migration/restore.py', 'history')
+    $HistoryManifest = Get-Content -LiteralPath 'evidence/portable-20261012-v2/manifest.json' -Raw | ConvertFrom-Json
+    foreach ($HistoryPart in $HistoryManifest.parts) {
+        $PartName = [IO.Path]::GetFileName($HistoryPart.path)
+        Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', "download or verify inert history archive part $PartName", '--', $Python, '-I', '-S', '-B', 'tools/migration/restore.py', 'history-part', '--part', $PartName)
+    }
+    Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'restore and verify inert historical evidence from locally verified parts', '--', $Python, '-I', '-S', '-B', 'tools/migration/restore.py', 'history', '--local-parts-only')
 }
 if ($DownloadWeights) {
     Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'download exact public checkpoint bytes without loading models', '--', $Python, '-I', '-S', '-B', 'tools/migration/restore.py', 'fetch', '--dataset', 'weights')

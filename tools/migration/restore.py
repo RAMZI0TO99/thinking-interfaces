@@ -100,7 +100,32 @@ def history_preflight(root: Path, manifest: dict):
     return rows
 
 
-def restore_history(root: Path):
+def verified_history_part(root: Path, row: dict, *, allow_download: bool):
+    path = safe_path(root, row["path"])
+    if not path.exists() and allow_download and "github_asset" in row:
+        from github import download_asset
+
+        download_asset(root, row)
+    if not path.is_file():
+        raise ValueError("download the missing history part in its own bounded Job: " + row["path"])
+    if path.stat().st_size != row["bytes"] or digest(path) != row["sha256"]:
+        raise ValueError("history archive part differs: " + row["path"])
+    return path
+
+
+def history_part(root: Path, name: str):
+    manifest = read_json(root / HISTORY_MANIFEST)
+    rows = [row for row in manifest["parts"] if Path(row["path"]).name == name]
+    if len(rows) != 1:
+        raise ValueError("unknown or duplicated history part name")
+    row = rows[0]
+    if shutil.disk_usage(root).free < row["bytes"] + 20 * 1024**3:
+        raise ValueError("history download requires part size plus a 20 GiB free disk floor")
+    verified_history_part(root, row, allow_download=True)
+    print("Verified history archive part: " + name, flush=True)
+
+
+def restore_history(root: Path, *, local_parts_only: bool = False):
     print("Read historical manifest", flush=True)
     manifest = read_json(root / HISTORY_MANIFEST)
     print("Preflight historical destinations", flush=True)
@@ -115,13 +140,7 @@ def restore_history(root: Path):
         total = 0
         with archive.open("xb") as target:
             for row in manifest["parts"]:
-                path = safe_path(root, row["path"])
-                if not path.exists() and "github_asset" in row:
-                    from github import download_asset
-
-                    download_asset(root, row)
-                if path.stat().st_size != row["bytes"] or digest(path) != row["sha256"]:
-                    raise ValueError("history archive part differs")
+                path = verified_history_part(root, row, allow_download=not local_parts_only)
                 with path.open("rb") as stream:
                     shutil.copyfileobj(stream, target, length=1024**2)
                 total += row["bytes"]
@@ -237,14 +256,20 @@ def fetch(root: Path, dataset: str, subjects=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=("normalize", "history", "fetch"))
+    parser.add_argument("mode", choices=("normalize", "history", "history-part", "fetch"))
     parser.add_argument("--dataset", choices=("bci_iv_2a", "cho2017", "mmidb", "weights"))
     parser.add_argument("--subjects", nargs="+", type=int)
+    parser.add_argument("--part")
+    parser.add_argument("--local-parts-only", action="store_true")
     args = parser.parse_args()
     if args.mode == "normalize":
         normalize(ROOT)
     elif args.mode == "history":
-        restore_history(ROOT)
+        restore_history(ROOT, local_parts_only=args.local_parts_only)
+    elif args.mode == "history-part":
+        if not args.part:
+            parser.error("history-part requires --part")
+        history_part(ROOT, args.part)
     else:
         if args.dataset is None:
             parser.error("fetch requires --dataset")
