@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import re
+import ssl
 import stat
 from pathlib import Path, PurePosixPath
 
@@ -24,6 +25,15 @@ def io_path(path: Path) -> Path:
     if value.startswith("\\\\"):
         return Path("\\\\?\\UNC\\" + value[2:])
     return Path("\\\\?\\" + value)
+
+
+def tls_context(root: Path):
+    """Keep TLS verification and add the installed, hash-locked public CA bundle."""
+    context = ssl.create_default_context()
+    bundle = root / ".venv/Lib/site-packages/certifi/cacert.pem"
+    if bundle.is_file():
+        context.load_verify_locations(cafile=str(bundle))
+    return context
 
 
 def digest(path: Path) -> str:
@@ -164,9 +174,10 @@ def npz_members(path: Path) -> dict:
 
 
 def replace_new(temp: Path, destination: Path) -> None:
-    """Publish without overwriting a racing writer (Windows rename is exclusive)."""
-    if os.name == "nt":
-        os.rename(io_path(temp), io_path(destination))
-    else:
-        os.link(temp, destination)
-        temp.unlink()
+    """Publish complete bytes exclusively, then remove the temporary link.
+
+    Bulk MoveFileEx calls caused a native stack overflow on the shared Windows
+    host. NTFS hard-link publication keeps no-overwrite semantics without rename.
+    """
+    os.link(io_path(temp), io_path(destination))
+    io_path(temp).unlink()

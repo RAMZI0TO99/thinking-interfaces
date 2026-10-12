@@ -5,7 +5,7 @@ This repository and its evidence Release are private: sign in to the GitHub
 account that can clone it. The same cached Git login downloads the evidence;
 no token needs to be put in a file or environment variable.
 Use PowerShell from a normal user account.
-Choose a short clone path with enough disk space; no matching username or drive
+Choose a short clone path on an NTFS drive with enough disk space; no matching username or drive
 letter is required. Setup runs one native thread, hides worker windows, contains
 each operation in a Windows Job and records fresh receipts. The current machine
 policy requires 10 GiB available RAM at admission, 4 GiB during execution and

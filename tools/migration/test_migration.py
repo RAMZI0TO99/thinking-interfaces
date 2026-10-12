@@ -320,6 +320,11 @@ class MigrationTests(unittest.TestCase):
             self.assertEqual(restore.fetch_one(self.root, row), "downloaded")
             self.assertEqual(restore.fetch_one(self.root, row), "verified")
             self.assertEqual(request.call_count, 1)
+            import ssl
+
+            context = request.call_args.kwargs["context"]
+            self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
+            self.assertTrue(context.check_hostname)
 
     def test_download_size_or_hash_mismatch_never_published(self):
         data, row = self.download_row()

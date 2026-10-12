@@ -12,7 +12,16 @@ import uuid
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ROOT, digest, io_path, read_json, replace_new, safe_path, source_check
+from common import (
+    ROOT,
+    digest,
+    io_path,
+    read_json,
+    replace_new,
+    safe_path,
+    source_check,
+    tls_context,
+)
 
 HISTORY_MANIFEST = "evidence/portable-20261012-v2/manifest.json"
 
@@ -92,8 +101,11 @@ def history_preflight(root: Path, manifest: dict):
 
 
 def restore_history(root: Path):
+    print("Read historical manifest", flush=True)
     manifest = read_json(root / HISTORY_MANIFEST)
+    print("Preflight historical destinations", flush=True)
     rows = history_preflight(root, manifest)
+    print("Verify and join historical archive parts", flush=True)
     work = safe_path(root, ".cache/migration")
     work.mkdir(parents=True, exist_ok=True)
     if shutil.disk_usage(root).free < manifest["uncompressed_bytes"] + 20 * 1024**3:
@@ -115,6 +127,7 @@ def restore_history(root: Path):
                 total += row["bytes"]
         if total != manifest["archive_bytes"] or digest(archive) != manifest["archive_sha256"]:
             raise ValueError("complete archive differs")
+        print("Verified complete archive; restore each independently pinned member", flush=True)
         consumed = set()
         restored = 0
         with tarfile.open(archive, mode="r|*") as source:
@@ -147,6 +160,8 @@ def restore_history(root: Path):
                     if temp.exists():
                         temp.unlink()
                 consumed.add(info.name)
+                if len(consumed) % 2000 == 0:
+                    print(f"Verified historical members: {len(consumed)}", flush=True)
         if consumed != set(rows):
             raise ValueError("archive is incomplete")
         print(
@@ -176,7 +191,10 @@ def fetch_one(root: Path, row: dict):
         row["url"], headers={"User-Agent": "thinking-interfaces-migration/1"}
     )
     try:
-        with urllib.request.urlopen(request, timeout=45) as response, temp.open("xb") as target:
+        with (
+            urllib.request.urlopen(request, timeout=45, context=tls_context(root)) as response,
+            temp.open("xb") as target,
+        ):
             if not response.url.startswith("https://"):
                 raise ValueError("insecure redirect refused")
             while block := response.read(1024**2):
