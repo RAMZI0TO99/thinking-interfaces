@@ -1,0 +1,2 @@
+# Captured receipts retain their exact bytes, including mixed Windows line endings.
+* -text
