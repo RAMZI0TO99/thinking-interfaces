@@ -186,19 +186,19 @@ def publish(mode: str, name: str | None):
             print("Existing release asset retained: " + name)
             return
         url = release["upload_url"].split("{")[0] + "?" + urllib.parse.urlencode({"name": name})
-        with (
-            path.open("rb") as stream,
-            request(
-                url,
-                credential,
-                data=stream,
-                method="POST",
-                headers={
-                    "Content-Type": "application/octet-stream",
-                    "Content-Length": str(row["bytes"]),
-                },
-            ) as response,
-        ):
+        if row["bytes"] > 40 * 1024**2:
+            raise ValueError("archive upload exceeds the reviewed 40 MiB buffer")
+        # A bounded bytes body avoids thousands of small synchronous TLS writes.
+        with request(
+            url,
+            credential,
+            data=path.read_bytes(),
+            method="POST",
+            headers={
+                "Content-Type": "application/octet-stream",
+                "Content-Length": str(row["bytes"]),
+            },
+        ) as response:
             uploaded = json.load(response)
         if uploaded["size"] != row["bytes"] or uploaded.get("digest") not in {
             None,
