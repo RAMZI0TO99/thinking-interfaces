@@ -14,6 +14,8 @@ def build(root: Path, dataset: str, profile: str, subject: int):
     sys.path.insert(0, str(root))
     os.chdir(root)
     os.environ["GIT_CEILING_DIRECTORIES"] = str(root.parent)
+    from data.runtime import configure_scientific_runtime
+    configure_scientific_runtime(root)
     if dataset == "bci_iv_2a" and profile in {"profile_a", "pre_cue_control"}:
         from data.profile_a import ProfileAConfig, preprocess_subject, save_epoch_artifact
         with (root / "configs/base.toml").open("rb") as stream:

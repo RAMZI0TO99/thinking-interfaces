@@ -34,10 +34,27 @@ def normalize(root: Path):
         stop = previous.index(end, start) + len(end)
         previous = previous[:start] + previous[stop:]
     rows = read_json(root / "tools/migration/source-files.json")["files"]
-    block = begin + "".join('"/' + row["path"] + '" text eol=lf\n' for row in rows) + end
+    block = begin + "* text=auto\n" + "".join('"/' + row["path"] + '" text eol=lf\n' for row in rows) + end
     attributes.write_text(previous.rstrip("\n") + "\n" + block, encoding="utf-8", newline="\n")
     import subprocess
     subprocess.run(["git", "config", "--local", "core.autocrlf", "false"], cwd=root, check=True)
+    # Refresh stat information after changing local filters; keep all user edits.
+    subprocess.run(["git", "update-index", "--refresh"], cwd=root, capture_output=True, check=False)
+    # Git for Windows can retain the old checkout's conversion/stat flags even
+    # when raw working bytes equal the blob. Reapply only pinned canonical paths,
+    # only with an unstaged index, and verify that the index tree stays identical.
+    staged = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=root, check=False)
+    if staged.returncode == 0:
+        before = subprocess.run(["git", "write-tree"], cwd=root, capture_output=True,
+                                text=True, check=True).stdout
+        names = [row["path"] for row in rows]
+        for start in range(0, len(names), 60):
+            subprocess.run(["git", "add", "--renormalize", "--", *names[start:start + 60]],
+                           cwd=root, capture_output=True, check=True)
+        after = subprocess.run(["git", "write-tree"], cwd=root, capture_output=True,
+                               text=True, check=True).stdout
+        if before != after:
+            raise ValueError("normalization changed the index tree; review staged changes")
     print("Exact source bytes restored: " + source_check(root))
 
 

@@ -33,7 +33,7 @@ if (-not $SkipInstall) {
         Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'create isolated Python 3.12 environment', '--', $Python, '-I', '-B', '-m', 'venv', '.venv')
     }
     $Lock = if ($CoreOnly) { 'tools/migration/requirements-windows-core.lock' } else { 'tools/migration/requirements-windows-full.lock' }
-    Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', "install pinned Windows dependencies from $Lock", '--', $VenvPython, '-I', '-B', '-m', 'pip', '--isolated', '--disable-pip-version-check', 'install', '--no-index', '--no-deps', '--require-hashes', '--only-binary=:all:', '-r', $Lock)
+    Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', "install pinned Windows dependencies from $Lock", '--', $VenvPython, '-I', '-B', '-X', 'faulthandler', '-m', 'pip', '--isolated', '--disable-pip-version-check', 'install', '--no-index', '--no-deps', '--require-hashes', '--only-binary=:all:', '--no-compile', '-r', $Lock)
     Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'install project entry points', '--', $VenvPython, '-I', '-B', '-m', 'pip', '--isolated', '--disable-pip-version-check', 'install', '--no-deps', '--no-build-isolation', '-e', '.')
     Invoke-Checked @('-I', '-S', '-B', 'tools/migration/guard.py', '--purpose', 'verify dependency consistency', '--', $VenvPython, '-I', '-B', '-m', 'pip', 'check')
     $ImportProfile = if ($CoreOnly) { 'core' } else { 'full' }

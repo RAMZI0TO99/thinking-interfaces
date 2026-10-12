@@ -97,6 +97,36 @@ class MigrationTests(unittest.TestCase):
             common.source_check(self.root, normalize=True)
         self.assertEqual(first.read_bytes(), changed)
 
+    def test_actual_autocrlf_clone_is_clean_after_exact_byte_restoration(self):
+        import subprocess
+        self.source_fixture()
+
+        def git(*args, cwd=None):
+            return subprocess.run(["git", *args], cwd=cwd or self.root, capture_output=True,
+                                  text=True, check=True).stdout
+
+        git("init", "-q")
+        git("config", "core.autocrlf", "true")
+        git("config", "user.name", "Synthetic Migration Test")
+        git("config", "user.email", "synthetic@example.invalid")
+        git("add", ".")
+        git("-c", "core.hooksPath=.git/unused_test_hooks", "commit", "-qm", "Synthetic exact-source fixture")
+        cloned = self.root / "checkout with spaces"
+        git("-c", "core.autocrlf=true", "clone", "--no-hardlinks", "--config", "core.autocrlf=true",
+            str(self.root), str(cloned))
+        restore.normalize(cloned)
+        self.assertEqual(common.source_check(cloned), common.SOURCE_SHA)
+        self.assertEqual(git("status", "--porcelain", cwd=cloned), "")
+        # A user can have a staged edit while the working copy has been restored.
+        source = cloned / "core/config.py"
+        original = source.read_bytes()
+        source.write_bytes(original + b"\n# staged user edit\n")
+        git("add", "core/config.py", cwd=cloned)
+        staged_before = git("write-tree", cwd=cloned)
+        source.write_bytes(original)
+        restore.normalize(cloned)
+        self.assertEqual(git("write-tree", cwd=cloned), staged_before)
+
     def test_private_release_redirect_drops_credentials(self):
         import urllib.request
         request = urllib.request.Request("https://api.github.com/repos/test/releases/assets/1",

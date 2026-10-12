@@ -58,6 +58,19 @@ def api(path, credential, payload=None, method=None):
         return json.load(response)
 
 
+def release_by_tag(credential):
+    try:
+        return api("/releases/tags/" + TAG, credential)
+    except urllib.error.HTTPError as exc:
+        if exc.code != 404:
+            raise
+    # Draft releases may not yet have a Git tag. Do not create a duplicate draft.
+    candidates = [r for r in api("/releases?per_page=100", credential) if r["tag_name"] == TAG]
+    if len(candidates) > 1:
+        raise ValueError("duplicate release drafts; preserve them for review")
+    return candidates[0] if candidates else None
+
+
 def download_asset(root: Path, row: dict):
     # Resolve the pinned asset id on the private release, then verify all bytes.
     credential = token()
@@ -68,7 +81,9 @@ def download_asset(root: Path, row: dict):
     asset = row["github_asset"]
     if asset["tag"] != TAG:
         raise ValueError("unexpected release tag")
-    release = api("/releases/tags/" + TAG, credential)
+    release = release_by_tag(credential)
+    if release is None or release["draft"]:
+        raise ValueError("published private evidence release is unavailable")
     matches = [a for a in release["assets"] if a["name"] == asset["name"]]
     if len(matches) != 1 or matches[0]["size"] != row["bytes"]:
         raise ValueError("private release asset identity differs")
@@ -99,13 +114,10 @@ def download_asset(root: Path, row: dict):
 def publish(mode: str, name: str | None):
     credential = token()
     manifest = read_json(ROOT / "evidence/portable-20261012-v2/manifest.json")
-    try:
-        release = api("/releases/tags/" + TAG, credential)
-    except urllib.error.HTTPError as exc:
-        if exc.code != 404:
-            raise
+    release = release_by_tag(credential)
+    if release is None:
         if mode != "create":
-            raise ValueError("release draft has not been created") from None
+            raise ValueError("release draft has not been created")
         revision = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                                   text=True, capture_output=True, check=True).stdout.strip()
         release = api("/releases", credential, {
