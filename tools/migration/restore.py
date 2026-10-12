@@ -4,17 +4,15 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import os
 import shutil
 import sys
 import tarfile
-import tempfile
 import urllib.request
 import uuid
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ROOT, digest, read_json, replace_new, safe_path, source_check
+from common import ROOT, digest, io_path, read_json, replace_new, safe_path, source_check
 
 HISTORY_MANIFEST = "evidence/portable-20261012-v2/manifest.json"
 
@@ -34,9 +32,15 @@ def normalize(root: Path):
         stop = previous.index(end, start) + len(end)
         previous = previous[:start] + previous[stop:]
     rows = read_json(root / "tools/migration/source-files.json")["files"]
-    block = begin + "* text=auto\n" + "".join('"/' + row["path"] + '" text eol=lf\n' for row in rows) + end
+    block = (
+        begin
+        + "* text=auto\n"
+        + "".join('"/' + row["path"] + '" text eol=lf\n' for row in rows)
+        + end
+    )
     attributes.write_text(previous.rstrip("\n") + "\n" + block, encoding="utf-8", newline="\n")
     import subprocess
+
     subprocess.run(["git", "config", "--local", "core.autocrlf", "false"], cwd=root, check=True)
     # Refresh stat information after changing local filters; keep all user edits.
     subprocess.run(["git", "update-index", "--refresh"], cwd=root, capture_output=True, check=False)
@@ -45,14 +49,20 @@ def normalize(root: Path):
     # only with an unstaged index, and verify that the index tree stays identical.
     staged = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=root, check=False)
     if staged.returncode == 0:
-        before = subprocess.run(["git", "write-tree"], cwd=root, capture_output=True,
-                                text=True, check=True).stdout
+        before = subprocess.run(
+            ["git", "write-tree"], cwd=root, capture_output=True, text=True, check=True
+        ).stdout
         names = [row["path"] for row in rows]
         for start in range(0, len(names), 60):
-            subprocess.run(["git", "add", "--renormalize", "--", *names[start:start + 60]],
-                           cwd=root, capture_output=True, check=True)
-        after = subprocess.run(["git", "write-tree"], cwd=root, capture_output=True,
-                               text=True, check=True).stdout
+            subprocess.run(
+                ["git", "add", "--renormalize", "--", *names[start : start + 60]],
+                cwd=root,
+                capture_output=True,
+                check=True,
+            )
+        after = subprocess.run(
+            ["git", "write-tree"], cwd=root, capture_output=True, text=True, check=True
+        ).stdout
         if before != after:
             raise ValueError("normalization changed the index tree; review staged changes")
     print("Exact source bytes restored: " + source_check(root))
@@ -68,9 +78,12 @@ def history_preflight(root: Path, manifest: dict):
         if relative.casefold() in seen:
             raise ValueError("duplicate/aliased history target")
         seen.add(relative.casefold())
-        path = safe_path(root, relative)
-        if path.exists() and (not path.is_file() or path.stat().st_size != row["bytes"]
-                              or digest(path) != row["sha256"]):
+        path = io_path(safe_path(root, relative))
+        if path.exists() and (
+            not path.is_file()
+            or path.stat().st_size != row["bytes"]
+            or digest(path) != row["sha256"]
+        ):
             raise ValueError("conflicting historical file refused: " + relative)
         rows[relative] = row
     if sum(row["bytes"] for row in rows.values()) != manifest["uncompressed_bytes"]:
@@ -93,6 +106,7 @@ def restore_history(root: Path):
                 path = safe_path(root, row["path"])
                 if not path.exists() and "github_asset" in row:
                     from github import download_asset
+
                     download_asset(root, row)
                 if path.stat().st_size != row["bytes"] or digest(path) != row["sha256"]:
                     raise ValueError("history archive part differs")
@@ -110,12 +124,12 @@ def restore_history(root: Path):
                 row = rows[info.name]
                 if info.size != row["bytes"]:
                     raise ValueError("history member size differs")
-                destination = safe_path(root, info.name)
+                destination = io_path(safe_path(root, info.name))
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 stream = source.extractfile(info)
                 h = hashlib.sha256()
                 # Even skipped members are checked against their independent ledger.
-                temp = destination.with_name(destination.name + ".restore-" + uuid.uuid4().hex)
+                temp = destination.with_name(".restore-" + uuid.uuid4().hex[:16])
                 try:
                     with temp.open("xb") as target:
                         while block := stream.read(1024**2):
@@ -135,7 +149,10 @@ def restore_history(root: Path):
                 consumed.add(info.name)
         if consumed != set(rows):
             raise ValueError("archive is incomplete")
-        print(f"Verified {len(rows)} historical files; restored {restored}. Old admissions remain expired.")
+        print(
+            f"Verified {len(rows)} historical files; restored {restored}. "
+            "Old admissions remain expired."
+        )
     finally:
         if archive.exists():
             archive.unlink()
@@ -155,7 +172,9 @@ def fetch_one(root: Path, row: dict):
     h = hashlib.sha256()
     if not row["url"].startswith("https://"):
         raise ValueError("HTTPS download required")
-    request = urllib.request.Request(row["url"], headers={"User-Agent": "thinking-interfaces-migration/1"})
+    request = urllib.request.Request(
+        row["url"], headers={"User-Agent": "thinking-interfaces-migration/1"}
+    )
     try:
         with urllib.request.urlopen(request, timeout=45) as response, temp.open("xb") as target:
             if not response.url.startswith("https://"):
@@ -177,14 +196,19 @@ def fetch_one(root: Path, row: dict):
 
 def fetch(root: Path, dataset: str, subjects=None):
     manifest = read_json(root / "tools/migration/assets.json")
-    rows = [row for row in manifest["assets"] if row["dataset"] == dataset
-            and (subjects is None or row["subject"] in subjects)]
+    rows = [
+        row
+        for row in manifest["assets"]
+        if row["dataset"] == dataset and (subjects is None or row["subject"] in subjects)
+    ]
     if not rows:
         raise ValueError("no assets selected")
     for row in rows:
         print(fetch_one(root, row) + ": " + row["path"], flush=True)
     if dataset == "weights":
-        refs = safe_path(root, ".cache/huggingface/hub/models--braindecode--labram-pretrained/refs/main")
+        refs = safe_path(
+            root, ".cache/huggingface/hub/models--braindecode--labram-pretrained/refs/main"
+        )
         refs.parent.mkdir(parents=True, exist_ok=True)
         revision = manifest["hf_revision"]
         if refs.exists() and refs.read_text().strip() != revision:

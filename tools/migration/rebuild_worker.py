@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import os
 import runpy
 import sys
@@ -15,9 +14,11 @@ def build(root: Path, dataset: str, profile: str, subject: int):
     os.chdir(root)
     os.environ["GIT_CEILING_DIRECTORIES"] = str(root.parent)
     from data.runtime import configure_scientific_runtime
+
     configure_scientific_runtime(root)
     if dataset == "bci_iv_2a" and profile in {"profile_a", "pre_cue_control"}:
         from data.profile_a import ProfileAConfig, preprocess_subject, save_epoch_artifact
+
         with (root / "configs/base.toml").open("rb") as stream:
             values = tomllib.load(stream)["preprocessing"]["profile_a"]
         if profile == "profile_a":
@@ -26,20 +27,31 @@ def build(root: Path, dataset: str, profile: str, subject: int):
                 bandpass_high_hz=float(values["bandpass_high_hz"]),
                 resample_hz=float(values["resample_hz"]),
                 baseline_duration_s=float(values["pre_cue_s"]),
-                epoch_duration_s=float(values["epoch_duration_s"]), reference=str(values["reference"]))
+                epoch_duration_s=float(values["epoch_duration_s"]),
+                reference=str(values["reference"]),
+            )
             arrays = preprocess_subject(subject, root, root / "data/raw/moabb", config)
         else:
             from data.pre_cue import PreCueConfig, preprocess_pre_cue_subject
+
             config = PreCueConfig(
                 bandpass_low_hz=float(values["bandpass_low_hz"]),
                 bandpass_high_hz=float(values["bandpass_high_hz"]),
                 resample_hz=float(values["resample_hz"]),
-                window_duration_s=float(values["pre_cue_s"]), reference=str(values["reference"]))
+                window_duration_s=float(values["pre_cue_s"]),
+                reference=str(values["reference"]),
+            )
             arrays = preprocess_pre_cue_subject(subject, root, root / "data/raw/moabb", config)
         signals, labels, sessions, runs, trial_indices, channel_names = arrays
-        save_epoch_artifact(root / f"data/processed/bci_iv_2a/{profile}/subject_{subject:02d}.npz",
-                            signals=signals, labels=labels, sessions=sessions, runs=runs,
-                            trial_indices=trial_indices, channel_names=channel_names)
+        save_epoch_artifact(
+            root / f"data/processed/bci_iv_2a/{profile}/subject_{subject:02d}.npz",
+            signals=signals,
+            labels=labels,
+            sessions=sessions,
+            runs=runs,
+            trial_indices=trial_indices,
+            channel_names=channel_names,
+        )
     else:
         scripts = {
             ("bci_iv_2a", "profile_b"): "preprocess_profile_b_bci_iv_2a.py",

@@ -4,18 +4,20 @@ Original parent SHA256: 3ca90de6dcf62f7c272301e9da2358189bf7095f9d2afe2436552448
 Only the adapter is reused. No historical admission, case runner or deadline is copied.
 Migration callers set their own process/aggregate caps before installing it.
 """
+
 from __future__ import annotations
+
 import ctypes
 from types import ModuleType
 from typing import Any
+
 MEMORY_LIMIT_BYTES = 4 * 1024**3
 AGGREGATE_LIMIT_BYTES = 5 * 1024**3
 JOB_MEMORY_FLAG = 0x00000200
 JOB_LIST_ATTRIBUTE = 0x0002000D
 
-def install_job_adapter(
-    primitive: ModuleType, state: dict[str, Any], job_name: str
-) -> None:
+
+def install_job_adapter(primitive: ModuleType, state: dict[str, Any], job_name: str) -> None:
     # This existing isolated API also exposes the native attribute-list
     # functions. It does not create any pipe or process in its constructor.
     original_api = primitive._FrameWinApi
@@ -37,31 +39,41 @@ def install_job_adapter(
         configured = primitive._ExtendedLimit()
         flags = (
             primitive.JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
-            | primitive.JOB_OBJECT_LIMIT_PROCESS_MEMORY | JOB_MEMORY_FLAG
+            | primitive.JOB_OBJECT_LIMIT_PROCESS_MEMORY
+            | JOB_MEMORY_FLAG
         )
         configured.BasicLimitInformation.LimitFlags = flags
         configured.ProcessMemoryLimit = MEMORY_LIMIT_BYTES
         configured.JobMemoryLimit = AGGREGATE_LIMIT_BYTES
         if not api.set_job(
-            job, primitive.JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
-            ctypes.byref(configured), ctypes.sizeof(configured),
+            job,
+            primitive.JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
+            ctypes.byref(configured),
+            ctypes.sizeof(configured),
         ):
             raise primitive.SupervisionError("aggregate Job limit could not be set")
         state["limits_set"] = True
         observed = primitive._ExtendedLimit()
         if not api.query_job(
-            job, primitive.JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
-            ctypes.byref(observed), ctypes.sizeof(observed), None,
+            job,
+            primitive.JOB_OBJECT_EXTENDED_LIMIT_INFORMATION_CLASS,
+            ctypes.byref(observed),
+            ctypes.sizeof(observed),
+            None,
         ) or (
             observed.BasicLimitInformation.LimitFlags != flags
-            or observed.JobMemoryLimit != AGGREGATE_LIMIT_BYTES or observed.ProcessMemoryLimit != MEMORY_LIMIT_BYTES  # noqa: E501
+            or observed.JobMemoryLimit != AGGREGATE_LIMIT_BYTES
+            or observed.ProcessMemoryLimit != MEMORY_LIMIT_BYTES  # noqa: E501
         ):
             raise primitive.SupervisionError("aggregate/process/kill-on-close limits not verified")
-        state.update({
-            "limits_query_verified": True, "limit_flags": flags,
-            "aggregate_limit_bytes": int(observed.JobMemoryLimit),
-            "process_limit_bytes": int(observed.ProcessMemoryLimit),
-        })
+        state.update(
+            {
+                "limits_query_verified": True,
+                "limit_flags": flags,
+                "aggregate_limit_bytes": int(observed.JobMemoryLimit),
+                "process_limit_bytes": int(observed.ProcessMemoryLimit),
+            }
+        )
 
     class ObservedApi:
         def __init__(self) -> None:
@@ -92,7 +104,9 @@ def install_job_adapter(
 
         def create_process(self, *args: Any) -> Any:
             if (
-                not self.job or not state["limits_query_verified"] or len(args) != 10
+                not self.job
+                or not state["limits_query_verified"]
+                or len(args) != 10
                 or args[4]
                 or args[5] != (primitive.CREATE_SUSPENDED | primitive.CREATE_NO_WINDOW)
             ):
@@ -117,13 +131,19 @@ def install_job_adapter(
             try:
                 jobs = (primitive.wintypes.HANDLE * 1)(key(self.job))
                 if not self.api.update_attribute(
-                    attributes, 0, JOB_LIST_ATTRIBUTE,
-                    ctypes.cast(jobs, ctypes.c_void_p), ctypes.sizeof(jobs), None, None,
+                    attributes,
+                    0,
+                    JOB_LIST_ATTRIBUTE,
+                    ctypes.cast(jobs, ctypes.c_void_p),
+                    ctypes.sizeof(jobs),
+                    None,
+                    None,
                 ):
                     raise primitive._error("UpdateProcThreadAttribute(Job list)")
                 startup = primitive._StartupInfoEx()
                 ctypes.memmove(
-                    ctypes.byref(startup.StartupInfo), args[8],
+                    ctypes.byref(startup.StartupInfo),
+                    args[8],
                     ctypes.sizeof(primitive._StartupInfo),
                 )
                 startup.StartupInfo.cb = ctypes.sizeof(startup)
@@ -160,7 +180,8 @@ def install_job_adapter(
             # never attempt a second AssignProcessToJobObject on the same Job.
             state["assignment_step_seen"] = True
             if (
-                len(args) != 2 or key(args[0]) != key(self.job)
+                len(args) != 2
+                or key(args[0]) != key(self.job)
                 or key(args[1]) != key(self.process)
                 or not state["atomic_job_assignment_requested"]
             ):
@@ -180,7 +201,8 @@ def install_job_adapter(
 
         def resume(self, *args: Any) -> Any:
             if (
-                not state["limits_query_verified"] or not state["membership_verified"]
+                not state["limits_query_verified"]
+                or not state["membership_verified"]
                 or not state["atomic_job_assignment_verified"]
                 or state["cleanup_errors"]
             ):
@@ -211,8 +233,10 @@ def install_job_adapter(
         def close(self, handle: Any) -> Any:
             self.remember_created_handles()
             if key(handle) != key(self.job):
-                for own, flag in ((self.thread, "thread_handle_closed"),
-                                  (self.process, "process_handle_closed")):
+                for own, flag in (
+                    (self.thread, "thread_handle_closed"),
+                    (self.process, "process_handle_closed"),
+                ):
                     if own and key(handle) == key(own):
                         if state[flag]:
                             return True  # Already closed only by this adapter.
@@ -252,7 +276,8 @@ def install_job_adapter(
                 if not state["process_handle_closed"]:
                     state["process_handle_closed"] = bool(self.api.close(self.process))
                 if not (
-                    state["thread_handle_closed"] and state["process_handle_closed"]
+                    state["thread_handle_closed"]
+                    and state["process_handle_closed"]
                     and state["root_exit_after_job_close"]
                 ):
                     state["cleanup_errors"].append("recovered creation handles cleanup unconfirmed")

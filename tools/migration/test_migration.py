@@ -14,8 +14,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 import common
-import restore
 import github
+import restore
 
 
 class MigrationTests(unittest.TestCase):
@@ -26,11 +26,34 @@ class MigrationTests(unittest.TestCase):
         self.root = Path(self.temp.name)
 
     def tearDown(self):
+        # Only this test's newly allocated workspace directory is removed.
+        # Extended paths are needed even for recursive cleanup on stock Windows.
+        if self.root.resolve() != self.root or not self.root.is_relative_to(
+            common.ROOT / "tmp/migration_tests"
+        ):
+            raise ValueError("test cleanup escapes owned scope")
+        if common.io_path(self.root).exists():
+
+            def readonly_cleanup(function, path, error):
+                import os
+                import stat
+
+                target = Path(path)
+                if not target.is_relative_to(common.io_path(self.root)):
+                    raise ValueError("readonly cleanup escapes owned test tree")
+                if not isinstance(error, PermissionError):
+                    raise error
+                os.chmod(target, stat.S_IREAD | stat.S_IWRITE)
+                function(target)
+
+            shutil.rmtree(common.io_path(self.root), onexc=readonly_cleanup)
         self.temp.cleanup()
 
     def fake_history(self, files=None, extra=None):
-        files = files or {"runs/attempt.json": b'{"spent":2,"remaining":0}',
-                          "checkpoints/prior.pt": b"synthetic opaque bytes; never unpickle"}
+        files = files or {
+            "runs/attempt.json": b'{"spent":2,"remaining":0}',
+            "checkpoints/prior.pt": b"synthetic opaque bytes; never unpickle",
+        }
         archive = self.root / "archive.tar.xz"
         with tarfile.open(archive, "w:xz") as stream:
             for name, data in {**files, **(extra or {})}.items():
@@ -40,12 +63,23 @@ class MigrationTests(unittest.TestCase):
         part = self.root / "evidence/test/part.001"
         part.parent.mkdir(parents=True)
         archive.rename(part)
-        rows = [{"path": name, "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
-                for name, data in files.items()]
-        manifest = {"files": rows, "uncompressed_bytes": sum(r["bytes"] for r in rows),
-                    "archive_bytes": part.stat().st_size, "archive_sha256": common.digest(part),
-                    "parts": [{"path": "evidence/test/part.001", "bytes": part.stat().st_size,
-                               "sha256": common.digest(part)}]}
+        rows = [
+            {"path": name, "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+            for name, data in files.items()
+        ]
+        manifest = {
+            "files": rows,
+            "uncompressed_bytes": sum(r["bytes"] for r in rows),
+            "archive_bytes": part.stat().st_size,
+            "archive_sha256": common.digest(part),
+            "parts": [
+                {
+                    "path": "evidence/test/part.001",
+                    "bytes": part.stat().st_size,
+                    "sha256": common.digest(part),
+                }
+            ],
+        }
         common.write_json(self.root / restore.HISTORY_MANIFEST, manifest)
         return part, manifest
 
@@ -99,21 +133,37 @@ class MigrationTests(unittest.TestCase):
 
     def test_actual_autocrlf_clone_is_clean_after_exact_byte_restoration(self):
         import subprocess
+
         self.source_fixture()
 
         def git(*args, cwd=None):
-            return subprocess.run(["git", *args], cwd=cwd or self.root, capture_output=True,
-                                  text=True, check=True).stdout
+            return subprocess.run(
+                ["git", *args], cwd=cwd or self.root, capture_output=True, text=True, check=True
+            ).stdout
 
         git("init", "-q")
         git("config", "core.autocrlf", "true")
         git("config", "user.name", "Synthetic Migration Test")
         git("config", "user.email", "synthetic@example.invalid")
         git("add", ".")
-        git("-c", "core.hooksPath=.git/unused_test_hooks", "commit", "-qm", "Synthetic exact-source fixture")
+        git(
+            "-c",
+            "core.hooksPath=.git/unused_test_hooks",
+            "commit",
+            "-qm",
+            "Synthetic exact-source fixture",
+        )
         cloned = self.root / "checkout with spaces"
-        git("-c", "core.autocrlf=true", "clone", "--no-hardlinks", "--config", "core.autocrlf=true",
-            str(self.root), str(cloned))
+        git(
+            "-c",
+            "core.autocrlf=true",
+            "clone",
+            "--no-hardlinks",
+            "--config",
+            "core.autocrlf=true",
+            str(self.root),
+            str(cloned),
+        )
         restore.normalize(cloned)
         self.assertEqual(common.source_check(cloned), common.SOURCE_SHA)
         self.assertEqual(git("status", "--porcelain", cwd=cloned), "")
@@ -129,17 +179,37 @@ class MigrationTests(unittest.TestCase):
 
     def test_private_release_redirect_drops_credentials(self):
         import urllib.request
-        request = urllib.request.Request("https://api.github.com/repos/test/releases/assets/1",
-                                         headers={"Authorization": "Bearer synthetic-test-token"})
+
+        request = urllib.request.Request(
+            "https://api.github.com/repos/test/releases/assets/1",
+            headers={"Authorization": "Bearer synthetic-test-token"},
+        )
         redirected = github.PrivateRedirect().redirect_request(
-            request, None, 302, "Found", {}, "https://release-assets.githubusercontent.com/file")
+            request, None, 302, "Found", {}, "https://release-assets.githubusercontent.com/file"
+        )
         self.assertFalse(redirected.has_header("Authorization"))
         with self.assertRaises(ValueError):
-            github.PrivateRedirect().redirect_request(request, None, 302, "Found", {}, "http://example.invalid/file")
+            github.PrivateRedirect().redirect_request(
+                request, None, 302, "Found", {}, "http://example.invalid/file"
+            )
 
     def test_windows_path_aliases_and_traversal_refused(self):
-        for name in ("../x", "/x", "dir/../x", "dir//x", "C:x", "C:/x", "dir\\x",
-                     "CON", "con.txt", "a.", "a ", "a:stream", "LPT9", "dir/./x"):
+        for name in (
+            "../x",
+            "/x",
+            "dir/../x",
+            "dir//x",
+            "C:x",
+            "C:/x",
+            "dir\\x",
+            "CON",
+            "con.txt",
+            "a.",
+            "a ",
+            "a:stream",
+            "LPT9",
+            "dir/./x",
+        ):
             with self.subTest(name=name), self.assertRaises(ValueError):
                 common.safe_path(self.root, name)
 
@@ -149,9 +219,13 @@ class MigrationTests(unittest.TestCase):
         link = self.root / "linked"
         import subprocess
         import sys
+
         if sys.platform == "win32":
-            result = subprocess.run(["cmd.exe", "/d", "/c", "mklink", "/J", str(link), str(target)],
-                                    capture_output=True, check=False)
+            result = subprocess.run(
+                ["cmd.exe", "/d", "/c", "mklink", "/J", str(link), str(target)],
+                capture_output=True,
+                check=False,
+            )
             self.assertEqual(result.returncode, 0, "test junction creation failed")
         else:
             link.symlink_to(target, target_is_directory=True)
@@ -167,11 +241,14 @@ class MigrationTests(unittest.TestCase):
     def test_history_roundtrip_preserves_attempts_and_is_idempotent(self):
         self.fake_history()
         restore.restore_history(self.root)
-        self.assertEqual(json.loads((self.root / "runs/attempt.json").read_bytes()),
-                         {"spent": 2, "remaining": 0})
+        self.assertEqual(
+            json.loads((self.root / "runs/attempt.json").read_bytes()), {"spent": 2, "remaining": 0}
+        )
         restore.restore_history(self.root)
-        self.assertEqual((self.root / "checkpoints/prior.pt").read_bytes(),
-                         b"synthetic opaque bytes; never unpickle")
+        self.assertEqual(
+            (self.root / "checkpoints/prior.pt").read_bytes(),
+            b"synthetic opaque bytes; never unpickle",
+        )
 
     def test_conflicting_history_preserved_before_any_restore(self):
         self.fake_history()
@@ -194,8 +271,13 @@ class MigrationTests(unittest.TestCase):
 
     def test_outside_history_target_and_case_alias_refused(self):
         for files in ({"README.md": b"x"}, {"runs/A.json": b"x", "runs/a.json": b"x"}):
-            manifest = {"files": [{"path": n, "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
-                                  for n, b in files.items()], "uncompressed_bytes": len(files)}
+            manifest = {
+                "files": [
+                    {"path": n, "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+                    for n, b in files.items()
+                ],
+                "uncompressed_bytes": len(files),
+            }
             with self.assertRaises(ValueError):
                 restore.history_preflight(self.root, manifest)
 
@@ -205,10 +287,26 @@ class MigrationTests(unittest.TestCase):
             restore.restore_history(self.root)
         self.assertFalse((self.root / "runs/extra.json").exists())
 
+    def test_long_windows_history_path_restores_exactly(self):
+        relative = (
+            "runs/"
+            + "/".join(["long_history_directory_" + str(i) for i in range(10)])
+            + "/receipt.json"
+        )
+        self.fake_history(files={relative: b"dated inert receipt bytes"})
+        restore.restore_history(self.root)
+        path = common.io_path(common.safe_path(self.root, relative))
+        self.assertGreater(len(str(path)), 260)
+        self.assertEqual(path.read_bytes(), b"dated inert receipt bytes")
+
     def download_row(self):
         data = b"opaque public checkpoint bytes"
-        row = {"path": "checkpoints/synthetic.pth", "bytes": len(data),
-               "sha256": hashlib.sha256(data).hexdigest(), "url": "https://example.invalid/weights"}
+        row = {
+            "path": "checkpoints/synthetic.pth",
+            "bytes": len(data),
+            "sha256": hashlib.sha256(data).hexdigest(),
+            "url": "https://example.invalid/weights",
+        }
         return data, row
 
     def response(self, data):
@@ -226,9 +324,11 @@ class MigrationTests(unittest.TestCase):
     def test_download_size_or_hash_mismatch_never_published(self):
         data, row = self.download_row()
         for broken in (data + b"extra", data[:-1], b"x" * len(data)):
-            with patch("urllib.request.urlopen", return_value=self.response(broken)):
-                with self.assertRaises(ValueError):
-                    restore.fetch_one(self.root, row)
+            with (
+                patch("urllib.request.urlopen", return_value=self.response(broken)),
+                self.assertRaises(ValueError),
+            ):
+                restore.fetch_one(self.root, row)
             self.assertFalse((self.root / row["path"]).exists())
             self.assertEqual(list((self.root / "checkpoints").iterdir()), [])
 
