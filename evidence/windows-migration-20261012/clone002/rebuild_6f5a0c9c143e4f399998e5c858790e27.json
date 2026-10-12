@@ -1,0 +1,45 @@
+{
+  "cache": "data/processed/cho2017/profile_a/subject_01.npz",
+  "container_sha256": "7fb31191fba371712823a3738dc054144a82a440d01718596e27b08d98eb975f",
+  "historical_sidecars_preserved": true,
+  "original_case_attempts_remaining": 0,
+  "raw_assets": [
+    {
+      "bytes": 203446256,
+      "dataset": "cho2017",
+      "path": "data/raw/moabb/cho2017/MNE-gigadb-data/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s01.mat",
+      "sha256": "57f2f10056b3c240adc78324872597d9b06b282df537a7763e98467275efe6db",
+      "subject": 1,
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s01.mat"
+    }
+  ],
+  "schema": "verified_data_rebuild_v1",
+  "scientific_admission": false,
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "verified_members": {
+    "channel_names.npy": {
+      "bytes": 896,
+      "sha256": "64f685bc0df79f951b4e00bf6ec096989affa654317c56cb48dae5d33e75239f"
+    },
+    "labels.npy": {
+      "bytes": 8128,
+      "sha256": "f72dfb8bb91740e5b15079c64463a4a4cc034bc4857580073ec8e574c614b3b4"
+    },
+    "runs.npy": {
+      "bytes": 928,
+      "sha256": "0b549f085bf4e9bcfd356f7358a2e3084a611cf10ab2abe87cf4f1df5faaa5b6"
+    },
+    "sessions.npy": {
+      "bytes": 928,
+      "sha256": "0b549f085bf4e9bcfd356f7358a2e3084a611cf10ab2abe87cf4f1df5faaa5b6"
+    },
+    "signals.npy": {
+      "bytes": 26214528,
+      "sha256": "6b9269c88c9f008ee8e7fd376b81ea0b89b1b1ac3c3f7ccd61107d2af2d95d22"
+    },
+    "trial_indices.npy": {
+      "bytes": 1728,
+      "sha256": "ed1113d120f6db782c16613e6675b090a45828b4db69e0e5975fa2892ceaad2c"
+    }
+  }
+}

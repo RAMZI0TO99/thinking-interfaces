@@ -1,0 +1,29 @@
+{
+  "imports": {
+    "braindecode": "1.7.0",
+    "core": "project",
+    "evaluation": "project",
+    "mne": "1.12.1",
+    "moabb": "1.6.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "safetensors": "0.8.0",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "torch": "2.13.0+cu130",
+    "torchaudio": "2.11.0+cu130"
+  },
+  "missing": {
+    "assets": 400,
+    "caches": 410,
+    "history": 28679
+  },
+  "original_case_attempts_remaining": 0,
+  "scientific_admission": false,
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "verified": {
+    "assets": 0,
+    "caches": 0,
+    "history": 0
+  }
+}

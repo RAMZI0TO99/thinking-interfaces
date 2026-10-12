@@ -1,5 +1,42 @@
 # Project handoff
 
+## Windows continuation published and verified, 12 October UTC
+
+The owner-requested Windows migration is complete. Source, setup tools, exact
+wheel locks, data/weight identities and continuation context are pushed to the
+private [GitHub repository](https://github.com/RAMZI0TO99/thinking-interfaces).
+The [private evidence Release](https://github.com/RAMZI0TO99/thinking-interfaces/releases/tag/windows-portable-20261012)
+holds 58 parts totaling 2,407,031,049 bytes; all server SHA256 values match.
+Start another device with [WINDOWS_SETUP.md](WINDOWS_SETUP.md) and
+[CONTINUE_HERE.md](CONTINUE_HERE.md).
+
+A fresh Windows checkout installed all 123 hash-locked wheels, passed pip check
+and imported the full EEG environment. All 22 migration boundary tests passed.
+Both checkpoint formats and six representative raw recordings downloaded with
+matching hashes; subject 1 in all nine cache families reproduced every NumPy
+member and original whole-NPZ SHA256. A separate HTTPS GitHub clone downloaded
+all 58 Release parts and restored all 28,679 historical files with exact hashes.
+Its final native Job closed, emptied and was freshly absent. The small migration
+receipts are committed under evidence/windows-migration-20261012; see the
+[qualification report](docs/phase2/windows_migration_qualification_20261012.md).
+
+Setup uses a fresh bounded Job per history part, followed by local-only archive
+restoration. It preserves matching files and refuses conflicts. Public recordings
+and all 410 cache identities have verified download/rebuild commands; this step
+exercised nine reconstructions, not the full 410. These checks describe fresh
+folders on this host; another device establishes fresh runtime/admission.
+
+Canonical Source3114ec43/432 and historical quality1055/3/5/1125 remain unchanged;
+the canonical suite was not replayed for migration. Archived admissions, paths,
+leases and launchers remain inert. Original attempts2 spent/0 remaining; Gate A,
+seven owner decisions and freeze unsigned; actual checkpoint coverage/overlap
+unknown. The maintainer issue remains prepared and unsent. Authenticated training
+provenance, mapping review and owner decisions remain the next scientific inputs.
+No new30-hour window, host quiet or scientific authority follows. Older sections
+preserve dated snapshots. Fresh Source026 peer scheduling covers lightweight
+Pro2 static work through14:00 UTC, with one shared maximum5 agents; it grants no
+peer runtime/lease/science and requests no Pro3 pause.
+
 ## Windows continuation package prepared, 12 October UTC
 
 The owner requested a clone-ready Windows repository and authorized pushing it.

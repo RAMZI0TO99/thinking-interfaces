@@ -1,0 +1,2 @@
+Trials demeaned and stacked with zero buffer to create continuous data -- edge effects present
+{"class_counts": {"left_hand": 100, "right_hand": 100}, "dataset": "cho2017", "output": "D:\\Aenv\\pro3\\tmp\\Windows clone check 002\\tmp\\migration_rebuild\\6f5a0c9c143e4f399998e5c858790e27\\data\\processed\\cho2017\\profile_a\\subject_01.npz", "shape": [200, 64, 512], "subject": 1}

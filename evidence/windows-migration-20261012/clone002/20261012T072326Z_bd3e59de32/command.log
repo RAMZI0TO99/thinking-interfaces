@@ -1,0 +1,13 @@
+Obtaining file:///D:/Aenv/pro3/tmp/Windows%20clone%20check%20002
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: thinking-interfaces
+  Building editable for thinking-interfaces (pyproject.toml): started
+  Building editable for thinking-interfaces (pyproject.toml): finished with status 'done'
+  Created wheel for thinking-interfaces: filename=thinking_interfaces-0.1.0-0.editable-py3-none-any.whl size=23332 sha256=cd360d2feafd7ec48c89b045df340df4cbb25e512785f0c83eda3efe08387c1d
+  Stored in directory: C:\Users\aladdin-alyanai\AppData\Local\Temp\pip-ephem-wheel-cache-xhkdjm7u\wheels\7c\57\4e\5e955c337f72b6a8fea8f8763573b78f23ee1e51b68a5e6952
+Successfully built thinking-interfaces
+Installing collected packages: thinking-interfaces
+Successfully installed thinking-interfaces-0.1.0

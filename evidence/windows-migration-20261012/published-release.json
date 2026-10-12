@@ -1,0 +1,422 @@
+{
+  "all_server_sha256_values_match": true,
+  "asset_bytes": 2407031049,
+  "asset_count": 58,
+  "assets": [
+    {
+      "digest": "sha256:9f302d2feea18d170d1a1fae608f352be034183b2af3fc52d2c2f7140b84ce6b",
+      "id": 633322267,
+      "name": "history.tar.gz.001",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:26a58362611209ef840b3393c89a68132478b1250469341bb1f7c9f209a0d862",
+      "id": 633330787,
+      "name": "history.tar.gz.002",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:e447528ce8d2cea6378935fc9063cd365eeb10178f2bffb8494f61d61e543330",
+      "id": 633334479,
+      "name": "history.tar.gz.003",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:77267c52347a447fddd84ff6dc9b7b227fdbede45bbce63e21d078c8b2ab43c9",
+      "id": 633335647,
+      "name": "history.tar.gz.004",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:457cb14bc31042fa6557fdb86338c58d1e2450953e0be84d0dca2ee69c0ee969",
+      "id": 633336481,
+      "name": "history.tar.gz.005",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:21d31fc51a52bf072e2561611cf5304311771ef65abb2d55bf76bc97f869d403",
+      "id": 633337705,
+      "name": "history.tar.gz.006",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:4dd253edf5164f38a71550bbc44d5e15797f060f6dcba9ed18e38c530c599fc9",
+      "id": 633338897,
+      "name": "history.tar.gz.007",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:6796dcebd872b67b00fc548280bb802dfd91230d856659135e555e7e25b15d2c",
+      "id": 633339835,
+      "name": "history.tar.gz.008",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:900e03989c9a548e447774f997742efda890916b076300bd444952c47e234afe",
+      "id": 633340967,
+      "name": "history.tar.gz.009",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:1628fd771330eb0fe09eccec37a28e5b84a9667a636ca856624e85e250c036a8",
+      "id": 633341907,
+      "name": "history.tar.gz.010",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:82b5930386942eb0eab8077fe28d5b44ca6dd97e415f0270e418cacfb08fe284",
+      "id": 633344419,
+      "name": "history.tar.gz.011",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:72e60b0f2ebf27d249b2a30159808fc9e55b4dd27445a66b44ff05d0b2b5db40",
+      "id": 633345426,
+      "name": "history.tar.gz.012",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:c64b0ec4222bf1f76c0173844174760973274c5dd5dfd4d13d494900b821882b",
+      "id": 633346711,
+      "name": "history.tar.gz.013",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:472268af77823499b51f470b6040cc50c24af845d9a6eb3cacc093f7402538a3",
+      "id": 633347493,
+      "name": "history.tar.gz.014",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:d579a973d8b6d3babca0c2ebe479685640a42afb3bd8bc554ed773726fa9e54a",
+      "id": 633348340,
+      "name": "history.tar.gz.015",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:1b835b116577c7f875be7deaad23652a653faddf04113c8e5f623a2a8c1abdcd",
+      "id": 633349349,
+      "name": "history.tar.gz.016",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:278fe806f5d88d84f85019147704291ce78d8bff1652ea938fbe39b9f838b3f3",
+      "id": 633350396,
+      "name": "history.tar.gz.017",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:6e1abbfcaf8be3a7c297b6ebd85f92bc1ba0759d9c65583119ec38a99a24cee0",
+      "id": 633351355,
+      "name": "history.tar.gz.018",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:ae41ff87009f14f24e5f6cdb8a4dc6c855c2724a7436a9b4b4e4692913cb321c",
+      "id": 633353763,
+      "name": "history.tar.gz.019",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a0cb0f6c7f4fea4a4558bf371092d691b2bca1ea07650ad6444d6e000a61adb8",
+      "id": 633354919,
+      "name": "history.tar.gz.020",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:561a9d13ead85f74aaa07b236204dede1aa9a308bbbcecba68184bfda8d3cc2a",
+      "id": 633356207,
+      "name": "history.tar.gz.021",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a80d4f6bbb130266a82ecbd6ede914ca3634891869d20176e775a23654f3df5b",
+      "id": 633357665,
+      "name": "history.tar.gz.022",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:aeb3b089957e64284957e2e69dbd7139d9fe88fd76897ecbf8c86280d1628229",
+      "id": 633359007,
+      "name": "history.tar.gz.023",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:1db61e69e3ad1ddbda3463def387c76ee1098dbc63faa18c533a51790d68878c",
+      "id": 633360268,
+      "name": "history.tar.gz.024",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:c1f4ef0bfb5f9b4dc75fbe963ec5a3b952be4e01423805f12724db0f94aa2fd4",
+      "id": 633361681,
+      "name": "history.tar.gz.025",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:605e0568ec600c17a4c6b5b77fb12ebd233cd45334e4c486c8e31668ccf957f3",
+      "id": 633362910,
+      "name": "history.tar.gz.026",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:3f272d12a0e44882d178062cfa6ebcef5345dfed9ce3b960878271aeba920380",
+      "id": 633364147,
+      "name": "history.tar.gz.027",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:4b244980901a7b7aa2227b45bf1a884b8244b5e8907cc3d49eadac41eeaeb3fe",
+      "id": 633365617,
+      "name": "history.tar.gz.028",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:6734293616014f2626be94a997fa1153852b8abde20309bc2a5553176ba8d603",
+      "id": 633368240,
+      "name": "history.tar.gz.029",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:f6f7a4b933bd363b64af094b0e91ce23317d2d2d33cd7c9953dd60e5efb8dcc4",
+      "id": 633369514,
+      "name": "history.tar.gz.030",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:235fd2a358f663e5429b17ff6e48b5dfbcececdb3b4a640572c24302cd45000f",
+      "id": 633370996,
+      "name": "history.tar.gz.031",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:19572b3ddaf0344e709d3975bcd13398d4aa3afd697a1c577a193d69f818673e",
+      "id": 633372308,
+      "name": "history.tar.gz.032",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a5dde0f12b82070dc230f8e5e0985190e08053eed60f445589641ec5c8f6b135",
+      "id": 633373562,
+      "name": "history.tar.gz.033",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:0958405ef16c97ac7cc36c2fe8e362b9e5d76190990fc8a0ffac8e36d3dabf36",
+      "id": 633375119,
+      "name": "history.tar.gz.034",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:8a7a6d728872f7c4b670a7a3c2a2817614883be6dcd2eeaf3d4fe1bf3a9f39c9",
+      "id": 633376153,
+      "name": "history.tar.gz.035",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:9e8d953d47ff6bb3759b4910eb2c0c645b2fca03e73d2ad410f25ca3a46f3c8c",
+      "id": 633377153,
+      "name": "history.tar.gz.036",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a7f97ed7bd958a9ea8cf6fb2a47f41570780bc7e284b898579f254fd95c3fdf0",
+      "id": 633378354,
+      "name": "history.tar.gz.037",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:6492afef372708e52bcae13edd42313516c41a2ed0c96a1581e947ef5907f273",
+      "id": 633379607,
+      "name": "history.tar.gz.038",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:d255f2866f69d34503667cc218e454755b2b99557297face4c2fd75e98f8badd",
+      "id": 633380881,
+      "name": "history.tar.gz.039",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:473bc43fab716d5270b68ccefcfdf09b7bdffe6cc019d9f8cf83fa487098fd01",
+      "id": 633381895,
+      "name": "history.tar.gz.040",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:6a5d69c2211915943d25203519dd32c3422bede55c9f2b447d0f2e8ed15dfbf1",
+      "id": 633383193,
+      "name": "history.tar.gz.041",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:8c3765e679d8e64d912503e799fce3823d760399665530991212d7b43d91b4aa",
+      "id": 633384180,
+      "name": "history.tar.gz.042",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:7c751f776f4970af950efe87a1116e37d4e9ad51bcfef772bec10c78548636f8",
+      "id": 633385264,
+      "name": "history.tar.gz.043",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:8b3d36b97fdd301c7208bbbaf6a8723daf28828fe9494b19cd04f8a0806e1f67",
+      "id": 633353934,
+      "name": "history.tar.gz.044",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:559b45b1f60f0d14fc91c1c7aa515232e8147c6bed98f74a2d3611392f2e834a",
+      "id": 633355119,
+      "name": "history.tar.gz.045",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:1065389b469d9c46bcd242689706ee78d9ac12d3ac62a6d9f511b03e1951e7dd",
+      "id": 633356565,
+      "name": "history.tar.gz.046",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:904c30004523094f8d86e79eef4b1b4a8da13944efd50e1a83f05968e6634857",
+      "id": 633358022,
+      "name": "history.tar.gz.047",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:23c0564e0574e64d99aae3ff422c771f72483330decc24dc35537ba5f350ffab",
+      "id": 633359453,
+      "name": "history.tar.gz.048",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:8a394ce5c93208952f316ee47d9434e19d38c8e738e3b5456985fe9555ad336c",
+      "id": 633361035,
+      "name": "history.tar.gz.049",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:f5677eb2947fbd99820b7dff84fcf630287942a94426eb0097bda2aff7be72d2",
+      "id": 633362161,
+      "name": "history.tar.gz.050",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:4b3d09020315e53d9ea19fe310b0d825f34a659141492c65977943b4f294c5e1",
+      "id": 633363338,
+      "name": "history.tar.gz.051",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:7877cb33f019b9008dfb634756424195a89ea7b4c0252db6f6ca97e5f1100dbf",
+      "id": 633364736,
+      "name": "history.tar.gz.052",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:265f9261f23889bf96d32e1560c3c6d15b096e9d7676401a00ca38bc88458b6b",
+      "id": 633365891,
+      "name": "history.tar.gz.053",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:c732dc8d043b2f676eef43bafab2179aa50717415835af46758ed49a984b8b33",
+      "id": 633368233,
+      "name": "history.tar.gz.054",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:96cb7085a81f4b9b0551b079b1fb5ed5c8f331aa812c1970286fc7e055debbf7",
+      "id": 633369649,
+      "name": "history.tar.gz.055",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:cf9f023049acb4625dc9973ab122cc70607daa97179e1a6e0b324b63a31b3cbe",
+      "id": 633370913,
+      "name": "history.tar.gz.056",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a50cc6c0e2f80c1abab279c4f6f6d196409f29de629b811b1317a7263f67c36e",
+      "id": 633372406,
+      "name": "history.tar.gz.057",
+      "size": 41943040,
+      "state": "uploaded"
+    },
+    {
+      "digest": "sha256:a7d93eddd1cc87a0e2084dcc515f476d103982bb85f301f355f4b7a0440ed3f6",
+      "id": 633373873,
+      "name": "history.tar.gz.058",
+      "size": 16277769,
+      "state": "uploaded"
+    }
+  ],
+  "private": true,
+  "published_at": "2026-10-12T10:05:17Z",
+  "release_id": 410436577,
+  "repository": "RAMZI0TO99/thinking-interfaces",
+  "schema": "published_private_windows_evidence_release_v1",
+  "scientific_admission": false,
+  "tag": "windows-portable-20261012",
+  "target_commitish": "08af982f9efd2eab1b007b1ac7e8103af1314755",
+  "url": "https://github.com/RAMZI0TO99/thinking-interfaces/releases/tag/windows-portable-20261012"
+}

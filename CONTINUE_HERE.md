@@ -26,8 +26,17 @@ The historical full quality run passed 1,055 tests, with 3 skips, 5 warnings and
 1,125 subtests. That receipt describes the old runtime. Bootstrap checks source
 identity; new-device validation needs its own environment and guarded attempt.
 
-The latest completed engineering step qualified the synthetic Cho report
-publisher (27 behavioral tests and four CLI paths). All its outputs are synthetic.
+The latest engineering step verified this Windows continuation package: a fresh
+123-wheel environment and its imports, 22 migration tests, nine exact cache
+reconstructions, public weight/raw downloads and a separate GitHub clone that
+downloaded all 58 history parts and restored all 28,679 files. See the
+[qualification report](docs/phase2/windows_migration_qualification_20261012.md).
+These checks ran on this Windows host; the new device establishes its own runtime
+and admission. Data restoration commands cover the full 410-cache catalog; this
+migration exercised one subject in every family.
+
+The earlier synthetic Cho report publisher passed 27 behavioral tests and four
+CLI paths. All its outputs are synthetic.
 The 170 Profile A caches and 52 Cho 60 Hz caches have prior exact-processing
 reconstruction receipts. Other restored evidence keeps its original scope.
 No accepted real LaBraM cached-selector case or scientific result is inferred.

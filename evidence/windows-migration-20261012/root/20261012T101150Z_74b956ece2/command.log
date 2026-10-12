@@ -1,0 +1,63 @@
+test_actual_autocrlf_clone_is_clean_after_exact_byte_restoration (test_migration.MigrationTests.test_actual_autocrlf_clone_is_clean_after_exact_byte_restoration) ... ok
+test_conflicting_history_preserved_before_any_restore (test_migration.MigrationTests.test_conflicting_history_preserved_before_any_restore) ... Exact source bytes restored: 3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529
+Exact source bytes restored: 3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529
+Read historical manifest
+Preflight historical destinations
+ok
+test_corrupted_part_rejected_without_publishing (test_migration.MigrationTests.test_corrupted_part_rejected_without_publishing) ... Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+ok
+test_download_size_or_hash_mismatch_never_published (test_migration.MigrationTests.test_download_size_or_hash_mismatch_never_published) ... ok
+test_exclusive_publication_preserves_racing_writer (test_migration.MigrationTests.test_exclusive_publication_preserves_racing_writer) ... ok
+test_existing_asset_conflict_is_preserved_without_network (test_migration.MigrationTests.test_existing_asset_conflict_is_preserved_without_network) ... ok
+test_extra_hook_prevents_any_source_rewrite (test_migration.MigrationTests.test_extra_hook_prevents_any_source_rewrite) ... ok
+test_history_parts_download_once_and_reuse_before_local_restore (test_migration.MigrationTests.test_history_parts_download_once_and_reuse_before_local_restore) ... Verified history archive part: part.001
+Verified history archive part: part.001
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+ok
+test_history_roundtrip_preserves_attempts_and_is_idempotent (test_migration.MigrationTests.test_history_roundtrip_preserves_attempts_and_is_idempotent) ... Verified 2 historical files; restored 2. Old admissions remain expired.
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+Verified 2 historical files; restored 2. Old admissions remain expired.
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+ok
+test_local_history_restore_refuses_missing_part_without_network (test_migration.MigrationTests.test_local_history_restore_refuses_missing_part_without_network) ... Verified 2 historical files; restored 0. Old admissions remain expired.
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+ok
+test_long_windows_history_path_restores_exactly (test_migration.MigrationTests.test_long_windows_history_path_restores_exactly) ... Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+ok
+test_new_canonical_file_refused (test_migration.MigrationTests.test_new_canonical_file_refused) ... ok
+test_npz_verification_ignores_zip_metadata_but_detects_array_change (test_migration.MigrationTests.test_npz_verification_ignores_zip_metadata_but_detects_array_change) ... ok
+test_outside_history_target_and_case_alias_refused (test_migration.MigrationTests.test_outside_history_target_and_case_alias_refused) ... ok
+test_private_release_redirect_drops_credentials (test_migration.MigrationTests.test_private_release_redirect_drops_credentials) ... ok
+test_reparse_ancestor_refused (test_migration.MigrationTests.test_reparse_ancestor_refused) ... ok
+test_source_restores_mixed_and_uniform_endings_exactly (test_migration.MigrationTests.test_source_restores_mixed_and_uniform_endings_exactly) ... ok
+test_source_semantic_edit_stops_before_normalizing_any_file (test_migration.MigrationTests.test_source_semantic_edit_stops_before_normalizing_any_file) ... ok
+test_unknown_archive_member_refused (test_migration.MigrationTests.test_unknown_archive_member_refused) ... Verified 1 historical files; restored 1. Old admissions remain expired.
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+ok
+test_unsigned_science_and_zero_attempts_survive_migration_state (test_migration.MigrationTests.test_unsigned_science_and_zero_attempts_survive_migration_state) ... ok
+test_verified_download_and_existing_file_skip (test_migration.MigrationTests.test_verified_download_and_existing_file_skip) ... ok
+test_windows_path_aliases_and_traversal_refused (test_migration.MigrationTests.test_windows_path_aliases_and_traversal_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 20.546s
+
+OK

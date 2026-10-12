@@ -1,0 +1,53 @@
+{
+  "cache": "data/processed/bci_iv_2a/pre_cue_control/subject_01.npz",
+  "container_sha256": "ba5d55b55efc47fcdaea71274b7648c5da77172d22eea06b716161afe8ce69cc",
+  "historical_sidecars_preserved": true,
+  "original_case_attempts_remaining": 0,
+  "raw_assets": [
+    {
+      "bytes": 43772146,
+      "dataset": "bci_iv_2a",
+      "path": "data/raw/moabb/MNE-bnci-data/~bci/database/001-2014/A01E.mat",
+      "sha256": "53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62",
+      "subject": 1,
+      "url": "https://lampx.tugraz.at/~bci/database/001-2014/A01E.mat"
+    },
+    {
+      "bytes": 42806453,
+      "dataset": "bci_iv_2a",
+      "path": "data/raw/moabb/MNE-bnci-data/~bci/database/001-2014/A01T.mat",
+      "sha256": "054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325",
+      "subject": 1,
+      "url": "https://lampx.tugraz.at/~bci/database/001-2014/A01T.mat"
+    }
+  ],
+  "schema": "verified_data_rebuild_v1",
+  "scientific_admission": false,
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "verified_members": {
+    "channel_names.npy": {
+      "bytes": 392,
+      "sha256": "8d6b211e1323b3f372cfa6e03483702615fcbdd9b0f2f8839e54bdc657925dca"
+    },
+    "labels.npy": {
+      "bytes": 23168,
+      "sha256": "1fbd713eee9cc31ed5615ccf6d10bf4fa82f6f93198e3aeb8b0df325fc6748d8"
+    },
+    "runs.npy": {
+      "bytes": 2432,
+      "sha256": "55a774598561f4c3228a9b7170380723e5442a4ffe3cfdffef855f039ba93b97"
+    },
+    "sessions.npy": {
+      "bytes": 13952,
+      "sha256": "d6f048d447691ad1f1c17bac359231681e64c10eff0783ddcf5367ef8a22874f"
+    },
+    "signals.npy": {
+      "bytes": 6488192,
+      "sha256": "c65d43ed74caaa329fb3368b399c02c9e9fda41d5ae8860449bb5360cbe8f1d2"
+    },
+    "trial_indices.npy": {
+      "bytes": 4736,
+      "sha256": "cdcd65b1fc0299857951b5feafedace996e419ed34947e3acd47d177515ec2de"
+    }
+  }
+}

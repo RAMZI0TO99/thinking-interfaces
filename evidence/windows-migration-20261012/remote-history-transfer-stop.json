@@ -1,0 +1,13 @@
+{
+  "schema": "owned_migration_transfer_stop_v1",
+  "observed_utc": "2026-10-12T10:09:56.666453+00:00",
+  "job_name": "pro3_migration_20261012T100546Z_c8dea17446",
+  "namespace": "D:\\Aenv\\pro3\\tmp\\Remote Windows clone check 003\\runs\\migration\\20261012T100546Z_c8dea17446",
+  "reason": "Stop own whole-archive network operation after measured transfer speed; replace with bounded per-part Jobs and independent local restore",
+  "verified_parts_preserved": true,
+  "historical_files_changed": false,
+  "peer_pause_requested": false,
+  "original_case_attempts_remaining": 0,
+  "scientific_admission": false,
+  "termination_api_success": true
+}

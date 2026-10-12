@@ -1,0 +1,11 @@
+{
+  "schema": "repository_publication_audit_v1",
+  "scope": "outgoing Git blob history, current tracked files and repository-context ZIP",
+  "blob_count": 339,
+  "max_blob_bytes": 7448852,
+  "tracked_files": 756,
+  "credential_patterns_found": [],
+  "remote_base": "f41ead9adc1c030222228abf2be81a7436f65daa",
+  "candidate_head": "b2e7280f4797e325a93069aa1301fe7299b84bc2",
+  "accepted": true
+}

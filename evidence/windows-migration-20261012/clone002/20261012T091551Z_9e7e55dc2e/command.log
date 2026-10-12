@@ -1,0 +1,15 @@
+Read historical manifest
+Preflight historical destinations
+Verify and join historical archive parts
+Verified complete archive; restore each independently pinned member
+Verified historical members: 2000
+Verified historical members: 4000
+Verified historical members: 6000
+Verified historical members: 8000
+Windows fatal exception: stack overflow
+
+Current thread 0x0000773c (most recent call first):
+  File "D:\Aenv\pro3\tmp\Windows clone check 002\tools\migration\common.py", line 179 in replace_new
+  File "D:\Aenv\pro3\tmp\Windows clone check 002\tools\migration\restore.py", line 157 in restore_history
+  File "D:\Aenv\pro3\tmp\Windows clone check 002\tools\migration\restore.py", line 247 in main
+  File "D:\Aenv\pro3\tmp\Windows clone check 002\tools\migration\restore.py", line 255 in <module>

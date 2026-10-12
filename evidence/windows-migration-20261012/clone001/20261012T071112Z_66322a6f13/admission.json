@@ -1,0 +1,74 @@
+{
+  "active_disk_gib": 20,
+  "active_ram_gib": 4,
+  "authority": "operator setup command; no training or scientific admission",
+  "command": [
+    "D:/Aenv/pro3/tmp/Windows clone check 001/.venv/Scripts/python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pip",
+    "--isolated",
+    "--disable-pip-version-check",
+    "install",
+    "--no-index",
+    "--no-deps",
+    "--require-hashes",
+    "--only-binary=:all:",
+    "--no-compile",
+    "-r",
+    "tools/migration/requirements-windows-full.lock"
+  ],
+  "deadline_utc": "2026-10-12T07:21:12.826909+00:00",
+  "job_mib": 5120,
+  "native_threads": 1,
+  "operation_pins": {
+    "evaluation/phase2_supervision_primitives.py": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e",
+    "tools/migration/activate.ps1": "7b997d79928ed35906d67a25255f97d9534bc43045156742109333551881935f",
+    "tools/migration/assets.json": "d8b5d7d981ff6c83dd3429b2d0e6c086a77e206cd190b6962868190bbc5f461f",
+    "tools/migration/bootstrap.ps1": "809016f92213c96eb64ffce4bd9333764b0aedf5cb962fb66995ab7354aadbce",
+    "tools/migration/caches.json": "14e3a1658cbdb59b22f620bbf0326516d636fe1a9cdaed5152cd3afcdb8043af",
+    "tools/migration/common.py": "20d7d635e601a8b015040fb53cccb7573cd4f3880f92d3b640d6f7b3b82c7df9",
+    "tools/migration/dependency-resolution.json": "611d5f4380f1ddd273cf8139cf6d85d7990e97de3f2b80b5cb70093082557b2e",
+    "tools/migration/doctor.py": "51f4727396629915f8caf8ddb9e3328c1841a29bdcf9fe6506eb7243572527a2",
+    "tools/migration/export.py": "09d5ab8e3cafc352053350cd43c821167f054706e3ebc8781276f5a09572a55e",
+    "tools/migration/github.py": "1400c80bdb067c3ab7df64b6e6278dc5a5f7f91268fcb5856f7087e7a580e4db",
+    "tools/migration/guard.py": "98399ff4852b08fb07056aebd6e078292f3e2c87aa7f13b633b2fce2b3343727",
+    "tools/migration/job_adapter.py": "22e7689bac739e1bc2ce975f64d9235a26ec5b63a388f02cf4cf03babb189575",
+    "tools/migration/pin_dependencies.py": "d7f9d5ac2b7b9b114a909298a47befa8659bb61a9c5b461e64f33fcfae369c18",
+    "tools/migration/quality.ps1": "2f600b3e55694653f22ad6b0567117dfc90398ee3aef951a42eae53e124941a0",
+    "tools/migration/rebuild.ps1": "fe16adbb4bc440ac1f5e81b3d61d90c5facc3f08d06fb081cd0d56481addccbb",
+    "tools/migration/rebuild.py": "7a49a426e3fcdc38e8f5a191a5eeca75e8ccf6de4244752f1b5aaf159c3db533",
+    "tools/migration/rebuild_worker.py": "a9bfb09743d667199919d7bd84319c1529d473e3af476fad236023974a11f6d6",
+    "tools/migration/requirements-windows-core.lock": "c7d38a600c3936063aa70065fab8bc2852c87112b2bbd0fa53ec2aff6599c957",
+    "tools/migration/requirements-windows-full.lock": "3038e83e512b605afdfdce9bcac0701c357c3d35bafd5c29a8f3bf9b0aae1b90",
+    "tools/migration/restore.py": "83e12f9ed12fda683c39dd7e7b02b8bf7bacc73e1b90ec0aed3a307bbfd957b0",
+    "tools/migration/source-files.json": "778386aa52d354614c689055d26a2bbc844f063f7f6cf267cc1f7ba9048bbe68",
+    "tools/migration/state.json": "3418957221bb16970ce9d22469ad941cebccf1604dcfc43ee1cbf9b1053e822f",
+    "tools/migration/task.py": "8ffb5d42cfe7107d57b8bb7d69d07909cd1dd14bc32a5e645b1d675e0c3e8a70",
+    "tools/migration/test_migration.py": "bde5b4397b49a7114f6f8d1480452dbe8eb5f2011e0d9a24409050f7bba6f6ee"
+  },
+  "peer_pause_file": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+  "process_mib": 4096,
+  "purpose": "Reproduce dependency installer failure with bytecode compilation disabled and native traceback",
+  "schema": "migration_admission_v1",
+  "selected_runtime_pins": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "dd5f8d19f6755d6491ee7c4bef2fe35ddd521334cc3ca3ed8fc93ebcadf135d0",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll": "5321bba2d7f95c6bca9a19fd8e0415ca850b2cf85c8c1711c605f9932e9c2826",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll": "baa2a3924bc1309284d0a720ccd213f37002fbda82d5761a61ddee8c4c31f608"
+  },
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "started_utc": "2026-10-12T07:11:12.826909+00:00",
+  "startup_samples": [
+    {
+      "available_ram_bytes": 14883147776,
+      "free_disk_bytes": 109614723072
+    },
+    {
+      "available_ram_bytes": 14885310464,
+      "free_disk_bytes": 109614723072
+    }
+  ]
+}

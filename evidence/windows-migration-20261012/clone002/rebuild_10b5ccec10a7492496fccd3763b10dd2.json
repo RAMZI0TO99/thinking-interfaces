@@ -1,0 +1,61 @@
+{
+  "cache": "data/processed/mmidb/profile_b/subject_001.npz",
+  "container_sha256": "9af8d27c696406b4a54633ba237f2802a1202ecdd153f90e701f3fc184908eed",
+  "historical_sidecars_preserved": true,
+  "original_case_attempts_remaining": 0,
+  "raw_assets": [
+    {
+      "bytes": 2596896,
+      "dataset": "mmidb",
+      "path": "data/raw/mmidb/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+      "sha256": "3d161f88e1c00632585287d2ce584c2bc0f08862438eb255ea8723e00fac693d",
+      "subject": 1,
+      "url": "https://physionet.org/files/eegmmidb/1.0.0/S001/S001R04.edf"
+    },
+    {
+      "bytes": 2596896,
+      "dataset": "mmidb",
+      "path": "data/raw/mmidb/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R08.edf",
+      "sha256": "358fb5189220725141968ae285fbe9e3f36210b834ffba71d940af308e3aca68",
+      "subject": 1,
+      "url": "https://physionet.org/files/eegmmidb/1.0.0/S001/S001R08.edf"
+    },
+    {
+      "bytes": 2596896,
+      "dataset": "mmidb",
+      "path": "data/raw/mmidb/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R12.edf",
+      "sha256": "2b281c9b687b4c4176e83251d74743721f2d6ebd76656a972a3b9c44d9d88cd5",
+      "subject": 1,
+      "url": "https://physionet.org/files/eegmmidb/1.0.0/S001/S001R12.edf"
+    }
+  ],
+  "schema": "verified_data_rebuild_v1",
+  "scientific_admission": false,
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "verified_members": {
+    "channel_names.npy": {
+      "bytes": 896,
+      "sha256": "2ad87a779e234886a7c53585b12f2d8bf1644afa2a897708492f136fd1521719"
+    },
+    "labels.npy": {
+      "bytes": 1928,
+      "sha256": "266d8568634602c292d0b843d76163fdc77e7f5002a93530e77a53cf31f0c307"
+    },
+    "runs.npy": {
+      "bytes": 488,
+      "sha256": "d5aafb031eaf330a67313d0c3045eb65c0ab676fb62ef3ea8b8cff0b7fd4bc23"
+    },
+    "sessions.npy": {
+      "bytes": 308,
+      "sha256": "0e61dc99c3ef1a6f094170d3c886709eb1bf02e405e1159b2f9a04d0423190bf"
+    },
+    "signals.npy": {
+      "bytes": 9216128,
+      "sha256": "ff7691651d66fce19f20e030c67c1318dcdf466e0c694cd4341d125a8bbed802"
+    },
+    "trial_indices.npy": {
+      "bytes": 488,
+      "sha256": "130c705133f044f91cc2e6d5e80856db9183e73e7d8111a81c3b5b1bf0488ac8"
+    }
+  }
+}

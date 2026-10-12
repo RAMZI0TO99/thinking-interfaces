@@ -1,0 +1,3 @@
+downloaded: checkpoints/labram-base.pth
+downloaded: .cache/huggingface/hub/models--braindecode--labram-pretrained/snapshots/0563b6c626e7b40d9a36653b763715db94d945d7/model.safetensors
+downloaded: .cache/huggingface/hub/models--braindecode--labram-pretrained/snapshots/0563b6c626e7b40d9a36653b763715db94d945d7/config.json

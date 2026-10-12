@@ -1,0 +1,65 @@
+{
+  "active_disk_gib": 20,
+  "active_ram_gib": 4,
+  "authority": "operator setup command; no training or scientific admission",
+  "command": [
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "tools/migration/github.py",
+    "upload",
+    "--asset",
+    "history.tar.gz.010"
+  ],
+  "deadline_utc": "2026-10-12T09:47:59.525678+00:00",
+  "job_mib": 5120,
+  "native_threads": 1,
+  "operation_pins": {
+    "evaluation/phase2_supervision_primitives.py": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e",
+    "tools/migration/activate.ps1": "7b997d79928ed35906d67a25255f97d9534bc43045156742109333551881935f",
+    "tools/migration/assets.json": "d8b5d7d981ff6c83dd3429b2d0e6c086a77e206cd190b6962868190bbc5f461f",
+    "tools/migration/bootstrap.ps1": "a5b6d825250682b4a38240ab40d84aa5bba3513472b6a282e76cfd0e1eaa3a2e",
+    "tools/migration/caches.json": "14e3a1658cbdb59b22f620bbf0326516d636fe1a9cdaed5152cd3afcdb8043af",
+    "tools/migration/common.py": "fe2790bc2703af17b930dffe109d8c750fb8d0abfa205fbd40245aec178936d5",
+    "tools/migration/dependency-resolution.json": "611d5f4380f1ddd273cf8139cf6d85d7990e97de3f2b80b5cb70093082557b2e",
+    "tools/migration/doctor.py": "dc17b38ca5ebe1a3807719d62ac6008252b0c412eafc8096bb842910f96fb5bd",
+    "tools/migration/export.py": "bc89d09974f5f27515bfb3c29aab6f2c253ca63720e434adb410ed496fe288a9",
+    "tools/migration/github.py": "64a33dddd32a18ef839a37e04118d21d40e300b4187deddc58613321dd42928e",
+    "tools/migration/guard.py": "1150228137873b783ba5800b89ded0e7598448f05da3b87a7ac0a62e6079f157",
+    "tools/migration/job_adapter.py": "a6902fabf675b329440b39404cdc4306e562fda4b47efefb19982c6c2502ae8b",
+    "tools/migration/pin_dependencies.py": "dc95a4e11fdf288f897ae79c070e3b3b0b1a438c3b3bd5f1017d9d8350fdc695",
+    "tools/migration/quality.ps1": "2f600b3e55694653f22ad6b0567117dfc90398ee3aef951a42eae53e124941a0",
+    "tools/migration/rebuild.ps1": "fe16adbb4bc440ac1f5e81b3d61d90c5facc3f08d06fb081cd0d56481addccbb",
+    "tools/migration/rebuild.py": "0f6e2635cf8629753c4cb229856444993175d958e091ed0b7d8a52d05eedb00e",
+    "tools/migration/rebuild_worker.py": "3b0b075bbfa7038dd6d9854f7e6e8e15c07a667113bd9ed41e77681b4c61de96",
+    "tools/migration/requirements-windows-core.lock": "c7d38a600c3936063aa70065fab8bc2852c87112b2bbd0fa53ec2aff6599c957",
+    "tools/migration/requirements-windows-full.lock": "3038e83e512b605afdfdce9bcac0701c357c3d35bafd5c29a8f3bf9b0aae1b90",
+    "tools/migration/restore.py": "092312fba44066c550e7182d9d16e3960376acca5e7f551e8174aaacda2f16f8",
+    "tools/migration/source-files.json": "778386aa52d354614c689055d26a2bbc844f063f7f6cf267cc1f7ba9048bbe68",
+    "tools/migration/state.json": "3418957221bb16970ce9d22469ad941cebccf1604dcfc43ee1cbf9b1053e822f",
+    "tools/migration/task.py": "8ffb5d42cfe7107d57b8bb7d69d07909cd1dd14bc32a5e645b1d675e0c3e8a70",
+    "tools/migration/test_migration.py": "03aa3e468979ec60a10da8f4fa18f55e6b2f07c8a71a7313c57abdb2a60618c2"
+  },
+  "peer_pause_file": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+  "process_mib": 4096,
+  "purpose": "upload verified private history archive history.tar.gz.010",
+  "schema": "migration_admission_v1",
+  "selected_runtime_pins": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "dd5f8d19f6755d6491ee7c4bef2fe35ddd521334cc3ca3ed8fc93ebcadf135d0",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll": "5321bba2d7f95c6bca9a19fd8e0415ca850b2cf85c8c1711c605f9932e9c2826",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll": "baa2a3924bc1309284d0a720ccd213f37002fbda82d5761a61ddee8c4c31f608"
+  },
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "started_utc": "2026-10-12T09:44:59.525678+00:00",
+  "startup_samples": [
+    {
+      "available_ram_bytes": 12772409344,
+      "free_disk_bytes": 85661929472
+    },
+    {
+      "available_ram_bytes": 12676386816,
+      "free_disk_bytes": 85661929472
+    }
+  ]
+}

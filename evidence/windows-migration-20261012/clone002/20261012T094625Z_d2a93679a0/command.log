@@ -1,0 +1,1 @@
+{"class_counts": {"left_fist": 23, "right_fist": 22}, "dataset": "mmidb", "dropped_incomplete_annotations": 0, "output": "D:\\Aenv\\pro3\\tmp\\Windows clone check 002\\tmp\\migration_rebuild\\f59448c7756d431a9e936a99e9b030c2\\data\\processed\\mmidb\\profile_a\\subject_001.npz", "shape": [45, 64, 512], "subject": 1}

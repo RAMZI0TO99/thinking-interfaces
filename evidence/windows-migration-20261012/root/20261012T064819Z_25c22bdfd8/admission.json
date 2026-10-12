@@ -1,0 +1,52 @@
+{
+  "active_disk_gib": 20,
+  "active_ram_gib": 4,
+  "authority": "operator setup command; no training or scientific admission",
+  "command": [
+    "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "tools/migration/export.py",
+    "history"
+  ],
+  "deadline_utc": "2026-10-12T06:58:19.050479+00:00",
+  "job_mib": 768,
+  "native_threads": 1,
+  "operation_pins": {
+    "evaluation/phase2_supervision_primitives.py": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e",
+    "tools/migration/common.py": "054a887f2861de81f2b84bd59e560de220de173126f8258a28cdad5cbb99ad4b",
+    "tools/migration/doctor.py": "36494ea43db5f9401149a16bcf58a11ba5791cc2ef1f2a21b979eb0861333277",
+    "tools/migration/export.py": "09d5ab8e3cafc352053350cd43c821167f054706e3ebc8781276f5a09572a55e",
+    "tools/migration/github.py": "1400c80bdb067c3ab7df64b6e6278dc5a5f7f91268fcb5856f7087e7a580e4db",
+    "tools/migration/guard.py": "745d10f18bdecdcce539febd1b16874da128f8c009a778d28390b9581e1c0575",
+    "tools/migration/job_adapter.py": "22e7689bac739e1bc2ce975f64d9235a26ec5b63a388f02cf4cf03babb189575",
+    "tools/migration/pin_dependencies.py": "d7f9d5ac2b7b9b114a909298a47befa8659bb61a9c5b461e64f33fcfae369c18",
+    "tools/migration/rebuild.py": "7a49a426e3fcdc38e8f5a191a5eeca75e8ccf6de4244752f1b5aaf159c3db533",
+    "tools/migration/rebuild_worker.py": "a9bfb09743d667199919d7bd84319c1529d473e3af476fad236023974a11f6d6",
+    "tools/migration/restore.py": "83e12f9ed12fda683c39dd7e7b02b8bf7bacc73e1b90ec0aed3a307bbfd957b0",
+    "tools/migration/task.py": "8ffb5d42cfe7107d57b8bb7d69d07909cd1dd14bc32a5e645b1d675e0c3e8a70",
+    "tools/migration/test_migration.py": "562d394a0a7e23bf343c4080fe98834b1f22f242caec5a32290a8f1c6a53d2dc"
+  },
+  "peer_pause_file": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+  "process_mib": 512,
+  "purpose": "Fresh fast-streaming inert history export; previous timed-out archive retained privately",
+  "schema": "migration_admission_v1",
+  "selected_runtime_pins": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "dd5f8d19f6755d6491ee7c4bef2fe35ddd521334cc3ca3ed8fc93ebcadf135d0",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll": "5321bba2d7f95c6bca9a19fd8e0415ca850b2cf85c8c1711c605f9932e9c2826",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll": "baa2a3924bc1309284d0a720ccd213f37002fbda82d5761a61ddee8c4c31f608"
+  },
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "started_utc": "2026-10-12T06:48:19.050479+00:00",
+  "startup_samples": [
+    {
+      "available_ram_bytes": 14888910848,
+      "free_disk_bytes": 117564604416
+    },
+    {
+      "available_ram_bytes": 14887424000,
+      "free_disk_bytes": 117564604416
+    }
+  ]
+}
