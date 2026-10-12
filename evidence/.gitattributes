@@ -1,0 +1,12 @@
+*.json text eol=lf
+*.md text eol=lf
+*.001 -text
+*.002 -text
+*.003 -text
+*.004 -text
+*.005 -text
+*.006 -text
+*.007 -text
+*.008 -text
+*.009 -text
+*.xz.* -text

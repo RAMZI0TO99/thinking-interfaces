@@ -1,0 +1,51 @@
+{
+  "schema": "portable_continuation_state_v1",
+  "snapshot_utc_date": "2026-10-12",
+  "git_before_migration": "c994101334864579a0082f3d242a5d54b0b0d0b2",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "canonical_source_files": 432,
+  "historical_quality": {
+    "path": "runs/quality_status.json",
+    "sha256": "4eb4d5566f496bc3d6143fc7046ca505e750829631332fc3697cb60dc2a01357",
+    "tests_passed": 1055,
+    "skipped": 3,
+    "warnings": 5,
+    "subtests_passed": 1125,
+    "certifies_new_machine_environment": false
+  },
+  "historical_state_pointer": {
+    "path": "runs/coordination/cache_performance_20261008_v1/CURRENT_PENDING_DIAGNOSTICS.json",
+    "sha256": "42757e4da651973b798797baf87509499c044436fffbe71032aecef38caaecca"
+  },
+  "original_case": {
+    "case_id": "af0f24764e577f2223db4759582852aacc2b1b2b0b0a549f1d4b43f8f14998b5",
+    "attempts_spent": 2,
+    "attempts_remaining": 0,
+    "reset_or_renamed_retry_authorized": false
+  },
+  "engineering": {
+    "current_original_controls": 81,
+    "historical_reference_fits": 450,
+    "profile_a_exact_reconstructions": 170,
+    "cho_60hz_exact_reconstructions": 52,
+    "synthetic_report_behavioral_cases": 27,
+    "synthetic_report_cli_paths": 4
+  },
+  "scientific": {
+    "gate_a_signed": false,
+    "experiment_freeze_signed": false,
+    "seven_owner_decisions_signed": false,
+    "actual_checkpoint_pretraining_coverage": null,
+    "evaluation_pretraining_overlap": null,
+    "accepted_real_labram_cached_selector_case": false
+  },
+  "public_maintainer_issue": {
+    "prepared_document": "docs/phase2/checkpoint_provenance_public_issue_ready_20261011.md",
+    "sent": false,
+    "repository_push_authorizes_posting": false
+  },
+  "current_machine_admission": null,
+  "active_compute_lease_restored": false,
+  "archived_launchers_executable_admission": false,
+  "next_read": ["CONTINUE_HERE.md", "WINDOWS_SETUP.md", "HANDOFF.md", "AGENT_COORDINATION.md"]
+}

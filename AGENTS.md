@@ -1,5 +1,12 @@
 # Working in this project
 
+For a fresh Windows clone, read [CONTINUE_HERE.md](CONTINUE_HERE.md) and run the
+verified restoration in [WINDOWS_SETUP.md](WINDOWS_SETUP.md). Restored run history
+and archived launchers are inert; establish fresh pins, admission and coordination.
+The migration tools in tools/migration have their own checks; the historical
+canonical suite does not certify these new files or another device runtime.
+
+
 Read [HANDOFF.md](HANDOFF.md) for the current evidence and next steps, and
 [AGENT_COORDINATION.md](AGENT_COORDINATION.md) before launching validation or
 training. Older sections of status documents preserve historical snapshots;

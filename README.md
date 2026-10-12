@@ -1,5 +1,30 @@
 # Thinking Interfaces
 
+## Windows continuation package prepared, 12 October UTC
+
+The owner requested a clone-ready Windows repository and authorized pushing it.
+Start with [WINDOWS_SETUP.md](WINDOWS_SETUP.md) and [CONTINUE_HERE.md](CONTINUE_HERE.md).
+New tools normalize independently pinned source bytes, install complete hashed
+wheel locks, restore historical evidence from private verified downloads and
+rebuild data caches without fitting. The manifest covers 397 raw recordings,
+three public weight/config assets and 410 NPZs across nine cache families.
+
+The separate migration boundary suite passed18 stdlib tests, including actual
+Windows junction rejection and removal of credentials on external redirects.
+A finite fast-streaming export preserved28,679 historical files and trained
+checkpoints (2.407 GB compressed). A725-file raw repository context preserves
+old documentation/source bytes. Clean-clone install/restore checks are in progress;
+publication and final executed results will be recorded in the migration report.
+
+Canonical Source3114ec43/432 remains. Historical quality1055/3/5/1125 is preserved
+without a full-suite replay. Old admissions/launchers/schedules remain dated inert
+history. Original attempts2 spent/0 remaining; Gate A/seven decisions/freeze
+unsigned; checkpoint coverage/overlap unknown; maintainer issue still unsent.
+Repository publication does not sign scientific decisions or authorize that issue.
+No new30-hour window, peer quiet or future compute lease follows. Older sections
+retain their original evidence and scope.
+
+
 ## Current engineering result: synthetic report publication qualified, 11 October UTC
 
 The separate report candidate passed27 behavioral tests and four CLI paths in
