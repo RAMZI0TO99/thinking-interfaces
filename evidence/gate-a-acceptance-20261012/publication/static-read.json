@@ -1,0 +1,154 @@
+{
+    "schema":  "pro3_publication_static_file_identity_read_v1",
+    "observed_utc":  "2026-10-12T14:04:54.2849774Z",
+    "scope":  "Read-only source/configuration/artifact hashes and decision fields before Git publication; no saved-record probability arithmetic or package validation",
+    "copied_artifacts":  [
+                             {
+                                 "path":  "decision.json",
+                                 "bytes":  10789,
+                                 "sha256":  "0870b98fc957df04cae925fec411929a7759fe3a9a8be6bcb2108f6270356e93"
+                             },
+                             {
+                                 "path":  "proposal.md",
+                                 "bytes":  5829,
+                                 "sha256":  "2b2faf12195a2f3377cc91ef501e530d487f8b65b760ed472a71a92b72423ab0"
+                             },
+                             {
+                                 "path":  "previous-four-decisions.json",
+                                 "bytes":  16637,
+                                 "sha256":  "654f06db0cadd3c67cca102edfadc3b667942bf84013e442aae700a7a3be7fc8"
+                             },
+                             {
+                                 "path":  "initial_ram_refusal/receipt.json",
+                                 "bytes":  1158,
+                                 "sha256":  "0f103c2f526ab026fab268fb2f4d8cf68bc7f9535b1339a9174683843d0afef8"
+                             },
+                             {
+                                 "path":  "import_failure/admission.json",
+                                 "bytes":  4297,
+                                 "sha256":  "7636339a1217a0dee1e45b5c8490c52d51df11726b8d51cee2a7e790fcf0c502"
+                             },
+                             {
+                                 "path":  "import_failure/command-result.json",
+                                 "bytes":  17,
+                                 "sha256":  "64a1526b099d75eed9d9da41a5562dcc164b6ffddeb729dd371c4496bbcded05"
+                             },
+                             {
+                                 "path":  "import_failure/command.log",
+                                 "bytes":  634,
+                                 "sha256":  "5fc08ca3096ff330d7c93bc56e9aedd305f28db9d53b945775f4989c21dd4bc1"
+                             },
+                             {
+                                 "path":  "import_failure/deadline.json",
+                                 "bytes":  161,
+                                 "sha256":  "c5d08346f84e2b04fc37f42f0d3bb3afbb8264a4ed73e8cc736ecf8d7dd2e59b"
+                             },
+                             {
+                                 "path":  "import_failure/receipt.json",
+                                 "bytes":  1820,
+                                 "sha256":  "698c835c09dfad565d863d1c8900e8c1737530c7ff41551e1bec0a7c9bf3bb48"
+                             },
+                             {
+                                 "path":  "corrected_retry_ram_refusal/receipt.json",
+                                 "bytes":  1158,
+                                 "sha256":  "40a812c5382ba688cf65fec5a9918440b651fa167497e86eb15e58688e657370"
+                             },
+                             {
+                                 "path":  "import_failure/audit_records.py",
+                                 "bytes":  5681,
+                                 "sha256":  "a409c5c9d9141f5507cba3a08c0257b16954ad4f525dacf6a47a0b0655b1bb8a"
+                             },
+                             {
+                                 "path":  "prepared_corrected/audit_records.py",
+                                 "bytes":  6499,
+                                 "sha256":  "9209aedfbb0a82a6c218366a2b29fd5e0781130a61a327c4c2514c0eb486db6c"
+                             },
+                             {
+                                 "path":  "coordination/source027-request.json",
+                                 "bytes":  4761,
+                                 "sha256":  "f159c231d33300dd7e7bc60f05a76250f6fe965ea667acc326f143aaa2ef2f18"
+                             },
+                             {
+                                 "path":  "coordination/source027-response.json",
+                                 "bytes":  6837,
+                                 "sha256":  "5a0bc517163354294a1bc71a17c0e63128505b00f5820f4e685751757cfd3327"
+                             }
+                         ],
+    "copied_artifact_count":  14,
+    "current_configuration_pins":  [
+                                       {
+                                           "path":  "configs/phase2/adapter_smoke.toml",
+                                           "sha256":  "a7fec4c67f21d94d87f1c57020ec4abdb10102fee3fafde739922ab98f9f0d79"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/analysis.toml",
+                                           "sha256":  "3dac7de1bae03f62f2307b0afc812517a31d9867d0303ae75f544b4335e73711"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/cho_profile_b_60hz.toml",
+                                           "sha256":  "6a3d5b9afca7bc0b82532276df1ef8f0a14db85da0eb609b5176ac967d04afb3"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/cho_sweep.toml",
+                                           "sha256":  "54318bcb8cbaa5a72b6df0d981860c880a7919d40c7a26eca94848e7fbdc2dc1"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/forward_parity.toml",
+                                           "sha256":  "c4fb40c5ad5ff8ec91e63b5c954d2ef6a15c9d164171991891536c8a7630ff3e"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/lora_smoke.toml",
+                                           "sha256":  "27946e268e89950b750836f2e1218e77fca6cba3525790ae6c54a56d4b86bee1"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/methods.toml",
+                                           "sha256":  "3558cf64a2438eaf5885dbd6d5f9329d8fc5dc1471ef546681037c7024b283f6"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/prompt_smoke.toml",
+                                           "sha256":  "7a2b09ffb54d8aec372c3a9c4557b8c8ef6707ec7d56ca06815eb3bfe787babe"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/protocol.toml",
+                                           "sha256":  "d8b56cdb28c7cbf3999e9fc65f089535930bff23373ddf46b903695cf095fa95"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/selection_ceiling.toml",
+                                           "sha256":  "a7db3ba233c71ff73c5599baa2f48ffb7616deb1c239b7bbfc41b6ac8e466548"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/tcpl_local_contract.toml",
+                                           "sha256":  "65d670882316fae71704503c66a2a3cef2f8a8f289a47cf35865064452f6d0fe"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/tcpl_reference.toml",
+                                           "sha256":  "cbe82db7b82e54e84a9972a24bec18007ac5fb226f2ce71c2dd6662f9d76f72b"
+                                       },
+                                       {
+                                           "path":  "configs/phase2/tuning_smoke.toml",
+                                           "sha256":  "5c8f90c9ffaba7b037c76a9c03f66820ce722e08048122b66440c57068f2342e"
+                                       }
+                                   ],
+    "canonical_files_hash_matched":  432,
+    "canonical_source_sha256":  "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+    "direct_gate_a_approval_recorded":  true,
+    "adopted_decision_count":  5,
+    "remaining_decision_count":  2,
+    "experiment_freeze_signed":  false,
+    "scientific_execution_budget_admitted":  false,
+    "saved_record_audit_pass_claimed":  false,
+    "full_quality_pass_claimed":  false,
+    "guarded_child_admission_claimed":  false,
+    "peer_pause_paths_at_observation":  [
+                                            {
+                                                "path":  "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+                                                "present":  false
+                                            },
+                                            {
+                                                "path":  "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+                                                "present":  false
+                                            }
+                                        ],
+    "raw_data_or_model_read":  false,
+    "original_case_attempts_remaining":  0
+}

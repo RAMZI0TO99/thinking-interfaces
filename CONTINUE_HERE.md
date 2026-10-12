@@ -1,5 +1,18 @@
 # Continue on another Windows device
 
+## Current scientific decision, 12 October UTC
+
+The [direct owner approval](docs/phase2/gate_a_acceptance_20261012.md) accepts
+Gate A under the exact retrospective amendment at `eb45c000`. It preserves the
+numeric shortfall and makes no equivalence or original 2024 runtime claim.
+Five decisions are adopted; checkpoint-cohort/overlap review and final freeze
+remain pending. The [portable packet](evidence/gate-a-acceptance-20261012/README.md)
+contains the approval, earlier four decisions, failed/refused audit receipts and
+Source027 coordination. The corrected saved-record audit has no passing receipt.
+Original attempts0, source/configuration identities and execution limits remain.
+Read the newest handoff before older unsigned snapshots below. Restoration
+supplies files; establish fresh runtime, pins, admission and coordination.
+
 Start with [WINDOWS_SETUP.md](WINDOWS_SETUP.md), then read [HANDOFF.md](HANDOFF.md)
 and [AGENT_COORDINATION.md](AGENT_COORDINATION.md). This repository contains the
 implementation, pinned dependencies, experiment configurations, original plans,

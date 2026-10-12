@@ -1,5 +1,17 @@
 # Thinking Interfaces
 
+## Gate A accepted under amended criterion, 12 October UTC
+
+The owner directly accepted the [exact retrospective Gate A amendment](docs/phase2/gate_a_acceptance_20261012.md).
+The historical baseline is accepted with its numerical shortfall disclosed;
+numerical equivalence and an original 2024 runtime match are unestablished.
+Five of seven decisions are adopted; checkpoint-cohort/overlap review and final
+freeze remain pending. No training budget or exhausted-case retry is admitted.
+The [execution record](docs/phase2/gate_a_acceptance_completion_20261012.md)
+preserves failed/refused audit runs; the corrected wrapper has no passing receipt.
+Source/configurations remain unchanged. Earlier sections below retain dated
+snapshots and are superseded within this amended scope.
+
 ## Gate A review ready, 12 October UTC
 
 The [exact proposed retrospective criterion](docs/phase2/gate_a_retrospective_review_20261012.md)

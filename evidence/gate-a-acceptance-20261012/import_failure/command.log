@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\gate_a_review_20261012_v1\audit_records.py", line 17, in <module>
+    from evaluation.moabb_reference_plan import ReferencePlan
+  File "D:\Aenv\pro3\evaluation\moabb_reference_plan.py", line 11, in <module>
+    from core.config import config_digest
+  File "D:\Aenv\pro3\core\__init__.py", line 5, in <module>
+    from .metrics import ClassificationReport, classification_report
+  File "D:\Aenv\pro3\core\metrics.py", line 9, in <module>
+    from sklearn.metrics import (  # type: ignore[import-untyped]
+ModuleNotFoundError: No module named 'sklearn'

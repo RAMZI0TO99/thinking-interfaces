@@ -1,5 +1,26 @@
 # Phase I Gate A status
 
+## Current decision: accepted under retrospective amendment, 12 October 2026
+
+The owner directly approved the exact amendment at `eb45c000` through the
+explicit choice **Accept the amended Gate A criterion**. The
+[successor decision](phase2/gate_a_acceptance_20261012.md) preserves the literal
+answer, immutable proposal identity and scope. Gate A is accepted as a
+historically audited linked-procedure EEGNet baseline under a retrospective
+process-based criterion, adopted after results were known.
+
+Retained 75.6606% ROC-AUC remains below the published 77.15%. Numerical
+equivalence, exact numerical reproduction, an original 2024 runtime match and a
+pre-existing tolerance remain unestablished. Published SD and the subject
+interval are descriptive. The original stronger acceptance condition is not
+claimed to have passed; it has been explicitly amended.
+
+Checkpoint-cohort independence and final freeze are not accepted. No model
+budget or original-case reset follows. The corrected record audit has no passing
+receipt; approval relies on dated evidence in the exact proposal. The historical
+unsigned status and acceptance condition below retain their earlier date and
+are superseded only within this amended scope.
+
 **Status: not signed off — protocol-matched grid complete; acceptance decision outstanding.**
 
 On 2026-08-30, the user explicitly directed the build to continue to the next

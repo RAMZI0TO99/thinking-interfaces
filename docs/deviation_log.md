@@ -1,5 +1,31 @@
 # Deviation log
 
+## 2026-10-12 - Direct retrospective Gate A criterion amendment
+
+The owner directly selected **Accept the amended Gate A criterion (Recommended)**
+for the exact immutable proposal at `eb45c000`. The
+[successor decision](phase2/gate_a_acceptance_20261012.md) preserves the literal
+response, proposal identity and retrospective scope. This explicitly changes
+the original numerical acceptance condition after the results were known,
+accepting the historically audited linked-procedure EEGNet reference baseline.
+It does not establish that the original stronger numerical condition passed.
+The retained 75.6606% versus published 77.15% ROC-AUC gap remains disclosed;
+equivalence, original 2024 runtime identity and a pre-existing tolerance remain
+unestablished. Published SD and subject intervals remain descriptive.
+
+Five decisions are adopted; checkpoint-cohort/overlap review and final freeze
+remain pending. Source3114ec43/432, all 13 configuration pins, prior decision
+records, raw data, weights and exhausted original case are preserved. No model
+execution budget or case reset is admitted. The separate saved-record audit
+has preserved failed/refused launches and no passing corrected result; see
+[the execution report](phase2/gate_a_acceptance_completion_20261012.md).
+
+The existing command-local documentation publication exception is used to avoid
+starting the full Python quality/CI hook without fresh guarded admission.
+The tracked hook is preserved. Static file/Git publication checks do not
+constitute a full quality or scientific runtime pass. Older sections below
+preserve their dated unsigned decisions and historical acceptance conditions.
+
 ## 2026-10-06 - Documentation and handoff refresh only
 
 The current status now distinguishes the completed 5 October package phase

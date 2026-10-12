@@ -1,0 +1,39 @@
+{
+  "accepted": false,
+  "completed_utc": "2026-10-12T13:45:50.755001+00:00",
+  "error": "startup requires 10 GiB available RAM and 20 GiB free disk",
+  "job_absent": true,
+  "job_name": "pro3_migration_20261012T134550Z_354e0f3f4a",
+  "native_state": {
+    "assigned": false,
+    "assignment_step_seen": false,
+    "atomic_job_assignment_requested": false,
+    "atomic_job_assignment_verified": false,
+    "cleanup_errors": [],
+    "created_suspended": false,
+    "job_closed": false,
+    "job_created": false,
+    "job_empty_before_close": false,
+    "limits_query_verified": false,
+    "limits_set": false,
+    "membership_verified": false,
+    "owned_job_termination_called": false,
+    "peak_job_commit_bytes": 0,
+    "peak_process_commit_bytes": 0,
+    "peak_samples": 0,
+    "peak_sampling_errors": [],
+    "process_handle_closed": false,
+    "resumed": false,
+    "root_exit_after_job_close": false,
+    "thread_handle_closed": false
+  },
+  "result": null,
+  "schema": "migration_guard_receipt_v1",
+  "scientific_admission": false,
+  "startup_samples": [
+    {
+      "available_ram_bytes": 8489349120,
+      "free_disk_bytes": 79909969920
+    }
+  ]
+}

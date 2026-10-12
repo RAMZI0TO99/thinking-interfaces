@@ -1,5 +1,41 @@
 # Project coordination
 
+## Direct Gate A acceptance and Source027 coordination, 12 October UTC
+
+Pro3 root owns the new approval docs/evidence and
+`runs/coordination/gate_a_acceptance_20261012_v1`; root1/no child agents.
+The owner directly accepted the exact retrospective amendment at `eb45c000`.
+[The decision](docs/phase2/gate_a_acceptance_20261012.md) adopts Gate A only
+under that amended baseline criterion. Five decisions are adopted; cohort/
+overlap and final freeze remain pending. No scientific budget or case retry is
+admitted; original attempts0, Source3114ec43/432 and all 13 config pins remain.
+Engineering delegation still cannot sign other scientific decisions.
+
+The saved-record audit has two startup refusals and one actual failed import
+launch with a closed/empty/absent native Job. The corrected wrapper has no passing
+receipt. See [the execution report](docs/phase2/gate_a_acceptance_completion_20261012.md).
+No owned background Job, watcher or automatic retry is armed. Fresh metadata
+admission retains RAM10/4 GiB, disk20 GiB, process256/Job512 MiB and one native
+thread. No floor or frozen implementation changed.
+
+Source027 request SHA256`f159c231` and genuine response SHA256`5a0bc517` are
+preserved in [portable coordination evidence](evidence/gate-a-acceptance-20261012/coordination/source027-response.json).
+Effective 13:42:52 to 18:00 UTC, this grants lightweight static Source work and
+conditional exact `phase_binding019 Root13` publication at the existing dated
+lease010 role path, after genuinely different review and separate Root adoption
+through reviewed current Source027 helpers. One shared maximum 5 includes both
+roots and every overlapping child; Pro2 maximum 4 while Pro3 continues.
+Pro2 reports no heavy execution/new resource claim and requests no pause.
+Honor any genuine fresh pause.
+
+Expired lease010 is wire data. No new lease, family selection, Parser, actual6,
+runtime, science, peer Git action or new primary-document authority follows.
+Source026's 14:00 end is unchanged. The response's earlier unsigned Pro3 snapshot
+predates the direct approval and is preserved. This response grants no Pro3
+model execution and proves no host quiet. Later execution needs fresh finite
+admission; historical intervals, Jobs and launchers are inert. Earlier sections
+below retain dated status.
+
 ## Gate A review prepared; record audit admission refused, 12 October UTC
 
 Pro3 root owns the Gate A review/evidence and

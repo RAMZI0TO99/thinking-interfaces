@@ -1,5 +1,43 @@
 # Project handoff
 
+## Current step: amended Gate A directly accepted, 12 October UTC
+
+The owner directly selected **Accept the amended Gate A criterion** for the
+exact proposal at `eb45c000`. The
+[successor decision](docs/phase2/gate_a_acceptance_20261012.md) and
+[portable approval/run evidence](evidence/gate-a-acceptance-20261012/README.md)
+preserve the literal answer and scope. This accepts the historically audited
+linked-procedure EEGNet baseline under an explicitly retrospective amendment.
+The 75.6606% versus 77.15% ROC-AUC gap remains disclosed; numerical equivalence
+and an original 2024 runtime match are unestablished.
+
+Five of seven decisions are adopted. Checkpoint-cohort/overlap review and final
+experiment freeze remain pending. The last one-time issue75 read at 13:08:51 UTC
+found zero comments; actual coverage and overlap remain unknown. Next, review
+authenticated checkpoint-bound provenance and its evaluation mapping. The reply
+workflow is ready for a relevant authentic response. Worker-environment
+qualification and feasible complete-roster handling remain separate prerequisites.
+
+The [execution report](docs/phase2/gate_a_acceptance_completion_20261012.md)
+retains two RAM admission refusals and one actual audit launch that failed on a
+package-initializer import. The corrected 450-record wrapper has no passing
+receipt. No raw-input replay, fit, inference or environment probe occurred;
+no floor was lowered and no automatic retry or watcher is armed.
+
+Source3114ec43/432, all 13 configuration pins, the original packet and earlier
+decisions are unchanged. Original case: two spent attempts/zero remaining;
+no reset, equivalent rename, invented result or training authority follows.
+The canonical suite was not replayed. Windows restoration remains published;
+new small approval/run records are in Git alongside the earlier Release.
+
+Source027 coordinates Pro2 static work through 18:00 UTC: one shared maximum
+5 agents, Pro2 maximum 4 while Pro3 root1/no children continues. Exact Root13
+Source publication needs genuinely different review and separate Root adoption;
+no runtime, Parser, lease or science follows. The response's earlier unsigned
+snapshot is preserved. Pro2 requests no pause. Future commands require fresh
+pins/admission/coordination. Earlier sections below retain dated snapshots,
+superseded by this direct acceptance only within its exact amended scope.
+
 ## Current step: explicit Gate A amendment ready for owner review, 12 October UTC
 
 The [evidence review and exact proposed criterion](docs/phase2/gate_a_retrospective_review_20261012.md)

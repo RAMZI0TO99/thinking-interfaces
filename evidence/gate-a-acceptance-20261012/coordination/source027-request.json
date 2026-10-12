@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "author": "/root",
+  "record_type": "Root_fresh_Source027_static_phasebinding_completion_window_request",
+  "created_utc": "2026-10-12T13:34:48+00:00",
+  "Root_thread": "01a1159f-a60d-7c03-bded-71f2047fb8fb",
+  "requested_window": "Source027",
+  "requested_interval_start": "2026-10-12T13:34:48+00:00",
+  "requested_interval_end": "2026-10-12T18:00:00+00:00",
+  "requested_scope": "Concurrent lightweight static Source inspection, preparation and genuinely different review; complete the finite phase_binding019 Root13 static Source record for the already selected dated lease010 family; separately reviewed Root publication of that exact canonical Source role through genuinely reviewed explicit current Source027 metadata helpers. Lease010 is immutable expired wire data. No new lease, family selection, Parser, fixtures, actual6, runtime or science authority follows.",
+  "expected_genuine_peer_response_path": "D:\\Aenv\\pro3\\runs\\coordination\\pro2_source027_scheduling_20261012_v1\\pro2_source027_response_001.json",
+  "peer_response_required": true,
+  "current_scope_not_accepted_by_request_alone": true,
+  "bootstrap_request_does_not_grant_tool_admission": true,
+  "genuine_different_gate_review_and_separate_Root_adoption_required": true,
+  "maximum_agents_including_overlap": 5,
+  "maximum_includes_Root_and_any_overlap": true,
+  "maximum_Pro2_agents_including_Root_while_Pro3_root_continues": 4,
+  "Root_current_agents_including_Root_at_request_preparation": 2,
+  "peer_current_preparation_and_agent_overlap_disclosure_requested": true,
+  "original_publication_reserve_seconds": 60,
+  "prior_Source026_interval_end_unchanged": "2026-10-12T14:00:00+00:00",
+  "canonical_Source_publication_authority_requested": true,
+  "canonical_Source_publication_requested_scope": "Only the genuinely different reviewed exact phase_binding019 Root13 Source bytes at the existing selected dated lease010 role path; never operational or scientific acceptance.",
+  "new_primary_document_publication_authority_requested": false,
+  "lease_source_preparation_or_issuance_or_extension_authority_requested": false,
+  "new_family_selection_or_paths_ordinals_duration_INIT_clock_results": null,
+  "original_target_import_function_main_oracle_fixture_native_Parser_actual6_science_authority": false,
+  "phase_peer020_Parser_evidence_or_publication_authority_requested": false,
+  "operational_authority": false,
+  "target_execution": false,
+  "Git_mutation_push_or_unrelated_stop_authority_requested": false,
+  "prior_sources_and_spent75_and_all_six_document_bytes_preserved_without_replay": true,
+  "Native001_and_Native002_refusals_preserved_without_replay_or_normalization": true,
+  "all_original_caps_reserves_and_Native10_PATH9_fd9_comparisons_preserved": true,
+  "standing_science_not_recounted": true,
+  "Pro3_continue_until_resource_pause": true,
+  "Pro3_pause_requested": false,
+  "Job_or_host_quiet_or_physical_PID_handle_absence_proved": false,
+  "peer_results_or_scientific_evidence_accepted": false,
+  "historical_support": {
+    "Source026": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\ROOT_SOURCE_COMPUTE_ACCEPTANCE_026.json",
+      "sha256": "55c7a96b4ed5ae437c833d915af0e22657d7bc742b242407e5a84b7fea3f1fd3",
+      "bytes": 11405
+    },
+    "Source026_Root_adoption": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\generation\\ROOT_SOURCE026_GENUINE_GATE_DIFFERENT_REVIEW_ADOPTION_001.json",
+      "sha256": "32365986d80c30b5c5ab2d0c48c1f70003fb7ebb6489e389d84722289e9003e5",
+      "bytes": 20013
+    },
+    "M3Metadata007_Root_adoption": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\generation\\ROOT_SOURCE026_M3_METADATA007_DIFFERENT_DORMANT_SOURCE_REVIEW_ADOPTION_001.json",
+      "sha256": "8e7d2145bf050e4b68d347cf486e8b08c2fc646ebc171ef6486fc75f3b4b0b50",
+      "bytes": 35662
+    },
+    "Publisher006_Root_adoption": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\generation\\ROOT_SOURCE026_PUBLISHER006_DIFFERENT_DORMANT_SOURCE_REVIEW_ADOPTION_001.json",
+      "sha256": "90c0bc302e9e59fd8a0e97d4b69a522362674204fc0d24db86589fd5e1656062",
+      "bytes": 21138
+    },
+    "dated_partial_inventory": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\observer010_lease009_root_001\\ROOT_SOURCE024_STEP079_DATED_CURRENT_COHORT_PRESENCE_AND_UNISSUED_LEASE_SOURCE_REFRESH_001.json",
+      "sha256": "ae56eb167d84198387a96a6fff1028b648e57c2104520ef6b221118a86defe35",
+      "bytes": 56794
+    },
+    "expired_lease010": {
+      "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\EXECUTION_LEASE_GG6_M3_010.json",
+      "sha256": "097a5e6cb30e7c3ac9cf5af9b93d0889b016003a986628644dee5d620ab41511",
+      "bytes": 663
+    }
+  }
+}

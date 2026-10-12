@@ -1,5 +1,21 @@
 # Phase II - Start Here
 
+## Current next input: checkpoint-cohort evidence, 12 October UTC
+
+The owner directly accepted [Gate A's exact retrospective amendment](docs/phase2/gate_a_acceptance_20261012.md).
+Five decisions are adopted; checkpoint-cohort/overlap review and final freeze
+remain pending. Actual checkpoint coverage and evaluation overlap are unknown;
+the last one-time issue75 read at 13:08:51 UTC found zero comments. Use the
+reply workflow for relevant authenticated provenance, then review checkpoint/run
+linkage, recording coverage and evaluation mapping.
+
+The final freeze also needs feasible roster handling and a qualified worker
+environment under fresh finite admission. The corrected record audit has no
+passing receipt; [the execution report](docs/phase2/gate_a_acceptance_completion_20261012.md)
+preserves failures/refusals. No training activation, scientific budget or
+original-case retry follows. Use current coordination; earlier sections below
+retain dated decisions.
+
 ## Current next decision: retrospective Gate A amendment, 12 October UTC
 
 Read the [exact criterion and evidence limits](docs/phase2/gate_a_retrospective_review_20261012.md).
