@@ -7,6 +7,14 @@ agent instructions, portable asset identities, and verified historical evidence
 download manifests. The private GitHub Release holds the historical snapshot;
 Git commit history preserves the earlier implementation and decisions.
 
+The newest [design decision record](docs/phase2/cho_design_decisions_20261012.md)
+adopts four exact proposed choices under the user's explicit delegation: Cho
+scope/candidates, primary analysis, empty secondary superiority family and
+exploratory margin. Three decisions remain pending: Gate A, checkpoint-cohort
+review and final freeze. All live configurations and the exhausted original case
+remain unchanged; no training or new compute budget is authorized. The older
+owner packet and unsigned descriptions below retain their earlier dates.
+
 The latest [provenance reply workflow](tools/provenance/README.md) collects the
 public request once and prepares an unsigned draft for an explicitly selected
 owner reply. Its different-path Windows checkout passed33 behavioral tests.

@@ -1,5 +1,14 @@
 # Thinking Interfaces
 
+## Four design choices adopted, 12 October UTC
+
+Under the user's explicit delegation, root adopted the four proposed Cho design
+choices in the [decision record](docs/phase2/cho_design_decisions_20261012.md).
+Gate A, checkpoint-cohort evidence/review and the final freeze remain pending;
+original attempts0, no scientific execution budget or changed live configuration.
+The reply workflow below is ready for new maintainer evidence. Earlier sections
+retain their dated state.
+
 ## Current reply-intake workflow, 12 October UTC
 
 The [one-time provenance collector and unsigned review workflow](tools/provenance/README.md)

@@ -1,5 +1,14 @@
 # Phase II - Start Here
 
+## Current decisions: four adopted, three pending, 12 October UTC
+
+The [delegated design decision record](docs/phase2/cho_design_decisions_20261012.md)
+adopts the exact scope/candidates, primary rule, empty secondary superiority
+family and exploratory margin rule. Gate A's rationale, checkpoint-cohort review
+and final freeze remain pending; no execution budget or original-case retry is
+admitted. Live source/configurations remain unchanged. Use the latest handoff
+and reply workflow; older all-undecided sections retain their historical scope.
+
 ## Current step: reply workflow ready, 12 October UTC
 
 Use the [one-time collector and unsigned draft commands](tools/provenance/README.md)

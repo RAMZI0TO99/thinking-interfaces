@@ -1,5 +1,22 @@
 # Project coordination
 
+## Four delegated design choices recorded, 12 October UTC
+
+The user delegated the exact four named design choices; root adopted the pinned
+scope/candidates, primary rule, empty secondary superiority family and exploratory
+margin interpretation. New [decision evidence](docs/phase2/cho_design_decisions_20261012.md)
+preserves that limited authority. Gate A, checkpoint-cohort review and final freeze
+remain pending; no training/model/case or compute budget is admitted. Original
+attempts0 and all live config/source bytes remain. Root owns the new decision
+docs and runs/coordination/cho_design_decisions_20261012_v1; no frozen file changes.
+
+Fresh metadata Job20261012T125505Z_f2ca1fc3a3 passed with120s,
+process256/Job512MiB, RAM10/4 and disk20GiB, one native thread and the confirmed
+peer-pause sensor. It verified13 configuration and proposal/candidate pins,
+then closed/emptied and was absent. Pro3 stays root1/no child agents. Peer
+Source026's shared maximum5 and14:00 UTC expiry remain; no further peer or
+scientific authority follows. Older sections retain their dated unsigned state.
+
 ## One-time reply workflow qualification completed, 12 October UTC
 
 Pro3 root owns tools/provenance, its new qualification report and

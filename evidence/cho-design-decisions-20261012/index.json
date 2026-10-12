@@ -1,0 +1,63 @@
+{
+  "adopted_decisions_verified": 4,
+  "assembled_utc": "2026-10-12T12:58:35.141559+00:00",
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "configuration_pins_verified": 13,
+  "exact_proposed_semantics_verified": true,
+  "experiment_freeze_signed": false,
+  "files": [
+    {
+      "bytes": 16637,
+      "original_path": "docs/phase2/cho_design_decisions_20261012.json",
+      "path": "decision.json",
+      "sha256": "654f06db0cadd3c67cca102edfadc3b667942bf84013e442aae700a7a3be7fc8"
+    },
+    {
+      "bytes": 6201,
+      "original_path": "runs/coordination/cho_design_decisions_20261012_v1/record_decision.py",
+      "path": "record_decision.py",
+      "sha256": "4fa989624e9fb67f8c82963e7dba9a9ec2d40f0cf50e6194779829bbc3d88cfc"
+    },
+    {
+      "bytes": 4303,
+      "original_path": "runs/migration/20261012T125505Z_f2ca1fc3a3/admission.json",
+      "path": "guard/admission.json",
+      "sha256": "8dc81e2c6e66f0188958c91cbf643822ae99fc19610e04d3236e3e9eea9d60d5"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261012T125505Z_f2ca1fc3a3/command-result.json",
+      "path": "guard/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 430,
+      "original_path": "runs/migration/20261012T125505Z_f2ca1fc3a3/command.log",
+      "path": "guard/command.log",
+      "sha256": "a6fa18f3d25d148a7a4cdcf4d83ffc44f7dcc3d8c547c265d339bc5b4a37824a"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261012T125505Z_f2ca1fc3a3/deadline.json",
+      "path": "guard/deadline.json",
+      "sha256": "dae8dd42b49f8574b2aa77bfbe393dc912999a4804ed3c880a455d205704b81d"
+    },
+    {
+      "bytes": 1672,
+      "original_path": "runs/migration/20261012T125505Z_f2ca1fc3a3/receipt.json",
+      "path": "guard/receipt.json",
+      "sha256": "0f1ed24d90415946da66cfa83f791d25335c24274523673ac9929c3017cf3107"
+    }
+  ],
+  "original_case_attempts_remaining": 0,
+  "original_owner_packet_sha256": "2a890980541120b4d311078436fe85aac13e77f3f33871739ab62347320ff400",
+  "owned_job_freshly_absent": true,
+  "remaining_decisions": [
+    "gate_a",
+    "checkpoint_cohort_and_overlap",
+    "experiment_freeze"
+  ],
+  "schema": "portable_delegated_design_decision_evidence_v1",
+  "scientific_execution_budget_admitted": false,
+  "scientific_gate_a_signed": false
+}

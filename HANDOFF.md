@@ -1,5 +1,23 @@
 # Project handoff
 
+## Current owner decisions: four designs adopted, 12 October UTC
+
+The user explicitly delegated the four proposed design choices by replying
+"do what you see fit!" to the exact pinned-packet question. Root adopted the
+Cho scope/candidate template, primary rule, empty secondary superiority family
+and exploratory margin rule. The [decision record](docs/phase2/cho_design_decisions_20261012.md)
+preserves the exact delegation, full proposed versions and13 unchanged config
+pins; it infers no direct human signature. The original owner packet is history.
+
+Three decisions remain: Gate A's retrospective acceptance rationale,
+checkpoint-cohort evidence/mapping/claim review, and final experiment freeze.
+Those gates remain pending and no scientific execution budget is admitted.
+Actual recording coverage/overlap remain unknown; issue75 had zero comments at
+the12:35:22 UTC read. Original attempts2 spent/0 left; no reset or score substitution.
+Source3114ec43/432 and all live configurations are unchanged. No fit/model/raw EEG
+or original case ran. The reply workflow and its different-path33-test result
+remain ready below. Earlier all-undecided descriptions are dated snapshots.
+
 ## Current step: provenance reply workflow qualified, 12 October UTC
 
 The new [one-time collector and unsigned review workflow](tools/provenance/README.md)

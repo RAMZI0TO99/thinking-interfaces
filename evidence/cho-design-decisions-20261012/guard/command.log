@@ -1,0 +1,17 @@
+{
+  "adopted_decisions": [
+    "cho_scope_and_candidates",
+    "margin_interpretation",
+    "primary_analysis",
+    "secondary_superiority_family"
+  ],
+  "remaining_decisions": [
+    "gate_a",
+    "checkpoint_cohort_and_overlap",
+    "experiment_freeze"
+  ],
+  "config_pins_verified": 13,
+  "scientific_gate_a_signed": false,
+  "experiment_freeze_signed": false,
+  "scientific_execution_budget_admitted": false
+}
