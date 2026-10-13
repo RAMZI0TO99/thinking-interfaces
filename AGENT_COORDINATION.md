@@ -1,5 +1,35 @@
 # Project coordination
 
+## Fresh Source030 scheduling, 13 October, 06:21 UTC
+
+The [exact request and genuine response](evidence/pro2-source030-coordination-20261013/README.md)
+are preserved byte-for-byte. Request SHA256 `99810a83`/7,371 bytes and response
+`1c5f69e6`/12,522 bytes bind a prospective window from 06:21:30.831431 through
+20:00 UTC, retaining the original 60-second reserve. Source028/029 remain expired.
+Only the three existing checker022 metadata roles are conditionally scheduled
+first, after actual different gate review, separate Root adoption and reviewed
+current Source030 helper/context/draft/canonical work. Incomplete Source001/002
+stay uninvoked; the successor must preserve explicit actual107 input caps and
+all17 original draft-path sites, equations, authorship, predecessor bytes and
+2MiB role/output caps. No functional lease follows.
+
+Only after all three roles are actually accepted: reviewed additive six-document
+checkpoint, then reviewed managed portable assembly, isolated restore/clone
+qualification and independently owner-authorized ordinary Git publication.
+The response supplies scoped scheduling, no independent owner Git permission,
+original target/Native/Parser/fixtures/actual6/science/new-family authority or
+peer-result acceptance. Root alone publishes, retaining complete prior bytes.
+
+Pro3 root1/no children: its read-only request-scope reviewer finished and was
+stopped before issuance. Pro2 reports Root plus one explorer, combined reported
+three. Shared maximum five includes all overlaps; Pro2max4 applies only while
+Pro3 remains root-only, otherwise remaining shared capacity is stricter. All
+three named pause paths were absent at issuance; this is a dated observation,
+not host-quiet, physical process/Job evidence or explicit release. Honor a fresh
+genuine pause. Pro3 is documenting this coordination after publication `c1a989d`;
+the 51-target design choice, cohort review, worker qualification and freeze
+remain pending. No numerical/model/original-case operation is admitted here.
+
 ## Publication continuation, 13 October, 06:10 UTC
 
 Source027 and Source028 have expired. The pending Source029 request ended at

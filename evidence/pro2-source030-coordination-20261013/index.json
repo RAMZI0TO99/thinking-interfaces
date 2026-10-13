@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-13T06:21:30.831431+00:00",
+  "files": [
+    {
+      "bytes": 7371,
+      "path": "request.json",
+      "sha256": "99810a834f58a1643c383ad5a87a6a4f4dfd386a4ccfcaad7f680b69950cdbe5"
+    },
+    {
+      "bytes": 12522,
+      "path": "response.json",
+      "sha256": "1c5f69e64979a3cac2258fd5a37b57b175f7091c86a2a4f8db94b04de69bfbb2"
+    }
+  ],
+  "peer_results_accepted": false,
+  "scheduling_only": true,
+  "schema": "pro3_source030_coordination_packet_v1"
+}

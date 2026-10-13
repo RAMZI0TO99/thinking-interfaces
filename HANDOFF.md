@@ -1,5 +1,23 @@
 # Project handoff
 
+## Published readiness and fresh peer scheduling, 13 October UTC
+
+Readiness docs, the exact unadopted 51-target proposal and 58-artifact evidence
+were committed and pushed in `c1a989d6ce8f9aa7ef8452c94f623731a7d46830`.
+Remote main matched and the working tree was clean. The owner design question
+remains pending; the original adopted 52-target roster stays blocked. No new
+numerical worker, scientific case, retry or final freeze follows from publication.
+
+The [Source030 coordination packet](evidence/pro2-source030-coordination-20261013/README.md)
+preserves the genuine exact-request response `1c5f69e6`/12,522 bytes. Effective
+06:21:30.831431 to 20:00 UTC, it retains shared max5, dynamic peer capacity and
+the 60-second reserve. Pro3 root1/no children plus peer-reported2 is a scheduling
+snapshot. Conditional peer checker022 triplet work comes first; actual acceptance
+and subsequent reviewed additive docs/package work remain Pro2 responsibilities.
+No original/Native/Parser/fixtures/actual6/science/lease/new-family authority or
+peer-result acceptance is supplied. Prior028/029 ends are unchanged and expired.
+Pro3 continues within its own authorized scope and honors a fresh genuine pause.
+
 ## Publication closeout, 13 October, 06:10 UTC
 
 The completed 12 October readiness work below is ready for publication with its
