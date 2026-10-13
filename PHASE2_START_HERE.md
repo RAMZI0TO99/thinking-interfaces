@@ -1,5 +1,33 @@
 # Phase II - Start Here
 
+## Current position: real bindings and read-only interfaces passed, 13 October UTC
+
+Start with [HANDOFF.md](HANDOFF.md) and [AGENT_COORDINATION.md](AGENT_COORDINATION.md).
+The [all52 real60Hz binding qualification](docs/phase2/cho51_episode_binding_qualification_20261013.md)
+passed18 checks and208 input-file hashes, covering51 evaluation targets plus
+subject01 solely as available source/inner-validation data. The
+[read-only51 execution interfaces](docs/phase2/cho51_execution_interfaces_qualification_20261013.md)
+passed36 actual-input/interface checks. Bounded selection retains1020 actual plans;
+sweep output is planning-only, while identity/score fixtures are fabricated.
+Both native Jobs closed cleanly. No model fitting, prediction, authenticated
+recorder collection, selected tensor restore or numerical sweep ran.
+
+The current adopted study is51 targets/four methods/five seeds/five shots per
+class, retaining all52 available subjects. Gate A is accepted under its exact
+retrospective amendment: historical reference ROC-AUC75.6606% versus published
+77.15%, without numerical-equivalence or original-runtime claims. Five decisions
+are adopted; checkpoint-cohort/overlap review and final freeze remain pending.
+There is no accepted complete comparative result or scientific execution budget.
+
+Next, version authenticated51 recorder/selection/publication/tensor collection
+and supervised numerical worker/sweep adapters; qualify whole-worker resource
+bounds before a newly admitted run. Preserve old1040 guards and original-case
+limits: two spent attempts/zero remaining, no reset/recovery/equivalent rename.
+Canonical432-file source3114ec43 and13 configs remain unchanged. A fresh Windows
+clone uses [CONTINUE_HERE.md](CONTINUE_HERE.md) and [WINDOWS_SETUP.md](WINDOWS_SETUP.md),
+then fresh whole-file input/source/runtime/coordination/admission. Archived
+recipes, Jobs and leases are inert. Older sections below retain dated snapshots.
+
 ## Actual worker/input bridge passed, 13 October UTC
 
 [The versioned51 bridge](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
