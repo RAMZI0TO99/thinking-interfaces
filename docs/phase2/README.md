@@ -1,5 +1,19 @@
 # Phase II implementation status
 
+## Current continuation, 13 October2026
+
+The [all52 real episode bindings](cho51_episode_binding_qualification_20261013.md)
+passed18 checks/208 input hashes;51 targets and source-only subject01 retain
+their actual support/query counts and cohort identities. The
+[read-only51 execution interfaces](cho51_execution_interfaces_qualification_20261013.md)
+passed36 actual-input/fabricated-record checks for bounded selection, planning
+and exact identity/aggregation interfaces. Separate18/21-artifact packets retain
+fresh finite native evidence; canonical432/3114ec43/config13 stay unchanged.
+The study amendment is adopted. Authenticated recorder/selection/publication/
+tensor/numerical integration, cohort/freeze and scientific budget remain pending;
+original attempts0. See current [HANDOFF.md](../../HANDOFF.md). Older sections
+below preserve historical status, without certifying current candidate source.
+
 ## Active status, 4 October 2026
 
 The [root handoff](../../HANDOFF.md) and [start page](../../PHASE2_START_HERE.md)

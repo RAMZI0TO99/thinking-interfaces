@@ -1,0 +1,45 @@
+Imports complete; verifying all52 real catalogs/assets.
+Complete52-subject inventory verified; checking adopted1020 worker inputs.
+Subject02 real60Hz episode binding complete.
+test_actual_worker_types (__main__.BridgeChecks.test_actual_worker_types) ... ok
+test_all1020_inputs_have_correct_types_profiles_and_source_pools (__main__.BridgeChecks.test_all1020_inputs_have_correct_types_profiles_and_source_pools) ... ok
+test_bad_full_route_refused (__main__.BridgeChecks.test_bad_full_route_refused) ... ok
+test_config_ceiling_and_adoption_freeze_boundaries (__main__.BridgeChecks.test_config_ceiling_and_adoption_freeze_boundaries) ... ok
+test_exact_retained_ids (__main__.BridgeChecks.test_exact_retained_ids) ... ok
+test_full_source_inventory_preserved (__main__.BridgeChecks.test_full_source_inventory_preserved) ... ok
+test_method_templates_unchanged (__main__.BridgeChecks.test_method_templates_unchanged) ... ok
+test_no_support_query_overlap_or_label_change (__main__.BridgeChecks.test_no_support_query_overlap_or_label_change) ... ok
+test_original_case_input_refused (__main__.BridgeChecks.test_original_case_input_refused) ... ok
+test_real_binding_type_hash_and_trial_counts (__main__.BridgeChecks.test_real_binding_type_hash_and_trial_counts) ... ok
+test_real_source_folds_keep_subject01 (__main__.BridgeChecks.test_real_source_folds_keep_subject01) ... ok
+test_returned_records_are_independent_copies (__main__.BridgeChecks.test_returned_records_are_independent_copies) ... ok
+test_target_records_rederived_from_real_catalogs (__main__.BridgeChecks.test_target_records_rederived_from_real_catalogs) ... ok
+test_untyped_plan_refused (__main__.BridgeChecks.test_untyped_plan_refused) ... ok
+test_wrong_seed_shot_or_repetition_refused (__main__.BridgeChecks.test_wrong_seed_shot_or_repetition_refused) ... ok
+test_1020_fabricated_pin_identities (__main__.InterfaceChecks.test_1020_fabricated_pin_identities) ... ok
+test_204_exact_five_seed_means_and51_pairs (__main__.InterfaceChecks.test_204_exact_five_seed_means_and51_pairs) ... ok
+test_all_broad_filters_need_bound (__main__.InterfaceChecks.test_all_broad_filters_need_bound) ... ok
+test_bounded_full1020_order (__main__.InterfaceChecks.test_bounded_full1020_order) ... ok
+test_bounded_method_filter_preserves_ids (__main__.InterfaceChecks.test_bounded_method_filter_preserves_ids) ... ok
+test_complete_actual_route_and_single_selection (__main__.InterfaceChecks.test_complete_actual_route_and_single_selection) ... ok
+test_episode_selection_preprocessing_protocol_or_seed_claim_drift_refused (__main__.InterfaceChecks.test_episode_selection_preprocessing_protocol_or_seed_claim_drift_refused) ... ok
+test_invalid_limits_and_filters (__main__.InterfaceChecks.test_invalid_limits_and_filters) ... ok
+test_method_map_drift_refused (__main__.InterfaceChecks.test_method_map_drift_refused) ... ok
+test_missing_duplicate_or_rounded_scores_refused (__main__.InterfaceChecks.test_missing_duplicate_or_rounded_scores_refused) ... ok
+test_missing_duplicate_or_untyped_pins_refused (__main__.InterfaceChecks.test_missing_duplicate_or_untyped_pins_refused) ... ok
+test_mixed_expected_source_refused (__main__.InterfaceChecks.test_mixed_expected_source_refused) ... ok
+test_record_envelope_drift_refused (__main__.InterfaceChecks.test_record_envelope_drift_refused) ... ok
+test_reordered_exact_scores_are_stable (__main__.InterfaceChecks.test_reordered_exact_scores_are_stable) ... ok
+test_reused_digest_or_outside_score_refused (__main__.InterfaceChecks.test_reused_digest_or_outside_score_refused) ... ok
+test_reversed_pin_order_is_accepted (__main__.InterfaceChecks.test_reversed_pin_order_is_accepted) ... ok
+test_source_absent_or_unknown_dirty_refused (__main__.InterfaceChecks.test_source_absent_or_unknown_dirty_refused) ... ok
+test_subject01_evaluation_selection_refused (__main__.InterfaceChecks.test_subject01_evaluation_selection_refused) ... ok
+test_sweep_refuses_excluded_duplicate_or_untyped_skip_ids (__main__.InterfaceChecks.test_sweep_refuses_excluded_duplicate_or_untyped_skip_ids) ... ok
+test_sweep_schedule_is_planning_without_resume_claim (__main__.InterfaceChecks.test_sweep_schedule_is_planning_without_resume_claim) ... ok
+test_wrong_route_type_or_truncated_contract_refused (__main__.InterfaceChecks.test_wrong_route_type_or_truncated_contract_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 46.076s
+
+OK
+{"passed": true, "tests_run": 36, "cases": 1020, "real_catalogs": 52, "data_files_verified": 157, "sample_binding": "subject_02", "scientific_admission": false}

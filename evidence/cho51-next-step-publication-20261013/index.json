@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "bytes": 4629,
+      "path": "review_publication_001.py",
+      "sha256": "01df88a11f11ce9c724becbc0f53efe7b85129fa1b9cd4931073e92869033ff4"
+    },
+    {
+      "bytes": 3962,
+      "path": "review_001.json",
+      "sha256": "639291129c5d01a6695ec7a46fe054987fe0c16681d2c0e14704ff6de7f51239"
+    }
+  ],
+  "passed": true,
+  "referenced_packets": {
+    "cho51-episode-bindings-20261013": {
+      "artifact_bytes": 1280289,
+      "artifacts": 18,
+      "index_sha256": "c58bcb58f7a77ea70ad903d2fd8de0977135ce77e89b2cfa3598d88836e585bb"
+    },
+    "cho51-execution-interfaces-20261013": {
+      "artifact_bytes": 968560,
+      "artifacts": 21,
+      "index_sha256": "7cb978936e7f2c9b1e5f65098d75b9b89531cb29b1378e19db2a2261c7bbc812"
+    }
+  },
+  "schema": "cho51_publication_review_packet_v1"
+}

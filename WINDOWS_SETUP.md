@@ -1,5 +1,14 @@
 # Windows setup and verified restoration
 
+The current [all52 episode binding](docs/phase2/cho51_episode_binding_qualification_20261013.md)
+and [read-only51 interface](docs/phase2/cho51_execution_interfaces_qualification_20261013.md)
+packets/candidates are tracked in Git. They preserve52 available subjects and51
+evaluation targets. Their exact input hashes apply to the audited current device;
+another device needs fresh restored-byte/runtime/source review and admission.
+Saved recipes, absolute paths and native receipts are inert. These checks do not
+certify authenticated recorder/tensor/numerical sweep execution or scientific
+cohort/freeze. The restoration procedure below remains required.
+
 Use **Windows x64**, Git (including Git Credential Manager) and **x64 Python 3.12**.
 This repository and its evidence Release are private: sign in to the GitHub
 account that can clone it. The same cached Git login downloads the evidence;

@@ -1,5 +1,51 @@
 # Project handoff
 
+## All52 B joins and read-only51 execution interfaces passed, 13 October,09:07 UTC
+
+The [all52 binding qualification](docs/phase2/cho51_episode_binding_qualification_20261013.md)
+passed18 checks: every available-subject60Hz support/query join and retained
+cohort binding hash matched, including51 targets and subject01 as source only.
+All208 input hashes/13,970,094,982 bytes and445 source/context pins matched.
+Support is10 x64 x800; query counts154/158/159/160/200 are preserved by subject,
+8,269 total target query trials. Raw52 MAT sources were hashed without decoding.
+The18-artifact packet retains all bindings/code/pins and finite600s native receipt.
+
+The [read-only execution interfaces](docs/phase2/cho51_execution_interfaces_qualification_20261013.md)
+passed36 checks (15 actual inputs plus21 interfaces). Bounded selection retains
+1020 actual plans and refuses subject01; sweep output is planning-only and skip
+IDs are not authenticated resume. Complete identity/score fixtures are explicitly
+fabricated, yielding204 exact means/51 pairs. All157 actual data hashes and446
+fresh pins matched. The21-artifact packet preserves the uninvoked draft/pins,
+reviewed contract-value successor and300s native receipt. No recorder publication,
+selected tensor, fitted selector, model, prediction or sweep execution was tested.
+
+Both2048/3072MiB Jobs closed, empty and absent. Peak Job bytes1,236,447,232
+and1,170,563,072; RAM10/4/disk20 and actual Torch1/1/GPU-hidden stayed. Canonical
+source432/3114ec43/config13 remain unchanged; no full canonical suite was replayed.
+Current51-target design/Gate A exact retrospective acceptance/five adopted
+decisions persist; cohort/freeze/science budget remain pending, original attempts0.
+Root1/no children; Source030/shared5/reserve60/end20:00UTC remains prospective,
+with no peer result/release/current count/host quiet assertion. Honor genuine pause.
+
+Next, version authenticated51 recorder/selection/publication/tensor collection
+and supervised numerical worker/sweep adapters, preserving all old1040 guards,
+then qualify whole-worker resource bounds before a newly admitted run. Archived
+code/guards are inert on another device; fresh restoration/whole-file input/source/
+runtime/coordination/admission remain required. No new original attempt, reset,
+equivalent rename, obsolete watcher or30-hour window follows.
+
+## Current all52 real episode-binding preparation, 13 October UTC
+
+Root is preparing a separate read-only [all52 binder check](docs/phase2/cho51_episode_bindings_v1/README.md)
+over the retained actual worker bridge. It will decode each available subject's
+processed60Hz support/query arrays and hash all52 raw sources, without raw
+decoding, models, predictions, fitted selection or recorder construction. The
+51-target/1020-case scope stays adopted; subject01 is source data only. Fresh445
+source/context pins and208 data paths/13,970,094,982 declared bytes are prepared.
+This phase has no passing receipt yet.600s/2048/3072MiB and RAM10/4/disk20 remain;
+root1/no children, fresh admission and genuine peer-pause handling apply.
+Canonical432/3114ec43/config13/original0/cohort/freeze boundaries stay unchanged.
+
 ## Actual worker bridge and real inputs checked, 13 October, 08:23 UTC
 
 The [new qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)

@@ -1,5 +1,19 @@
 # Continue on another Windows device
 
+## Current real binding and interface evidence, 13 October UTC
+
+The [18-check all52 binding result](docs/phase2/cho51_episode_binding_qualification_20261013.md)
+and [36-check read-only51 interfaces](docs/phase2/cho51_execution_interfaces_qualification_20261013.md)
+are included with18/21-artifact packets and separately versioned candidates.
+All51 target B array joins now match retained cohort hashes; subject01 is source
+only. Bounded selection/planning and fabricated identity/aggregation checks passed;
+authenticated recorder/tensor/numerical execution remains pending. Study scope is
+51 targets/52 available subjects. Restore using [WINDOWS_SETUP.md](WINDOWS_SETUP.md)
+and establish fresh whole-file input/source/runtime/coordination/admission. Archived
+recipes/guards/absolute paths are inert; no historical lease or scientific budget
+transfers. Preserve conflicts for reviewed successors. Cohort/freeze/original0
+boundaries persist. Older sections below are dated historical snapshots.
+
 ## Current actual worker/input evidence, 13 October UTC
 
 The [15-check actual51 worker bridge](docs/phase2/cho51_worker_bridge_qualification_20261013.md)

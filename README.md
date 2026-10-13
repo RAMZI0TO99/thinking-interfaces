@@ -1,5 +1,18 @@
 # Thinking Interfaces
 
+## All52 real B joins and read-only51 interfaces checked, 13 October UTC
+
+[All52 real60Hz bindings](docs/phase2/cho51_episode_binding_qualification_20261013.md)
+passed18 checks and208 input hashes, covering51 evaluation targets and source-only
+subject01. [The execution interfaces](docs/phase2/cho51_execution_interfaces_qualification_20261013.md)
+passed36 checks for actual input types, bounded1020-case selection, planning-only
+sweep output and fabricated identity/exact-score behavior. Both guarded Jobs
+closed cleanly;18/21-artifact packets and current handoff/Windows guidance are
+included. The adopted study has51 targets/52 available subjects. Authenticated
+recorder/tensor/selector/sweep execution, numerical bounds, cohort/freeze and
+science budget remain pending; no model or original attempt ran. Older snapshots
+below retain their original evidence boundaries.
+
 ## Actual51 worker/input bridge checked, 13 October UTC
 
 [The new bridge qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)

@@ -1,0 +1,147 @@
+{
+  "actual_case_plans": 1020,
+  "bounded_case_selection_qualified": true,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "data_file_hashes_verified": 157,
+  "exact_fixture_five_seed_means": 204,
+  "experiment_freeze_signed": false,
+  "fabricated_pin_and_score_fixture_cells": 1020,
+  "files": [
+    {
+      "bytes": 10996,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/prepare_candidate_001.py",
+      "path": "recipes/prepare_candidate_001.py",
+      "sha256": "8fa7ab845007c058b7c0b2eaffb8c1d766086145ea4a5a82f68d970a3de36177"
+    },
+    {
+      "bytes": 3922,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/prepare_pins_001.py",
+      "path": "recipes/prepare_pins_001.py",
+      "sha256": "6309e1d8983e7c6fe6753dad2222f6d3a43a22396c37ad15e6f860b316f8a135"
+    },
+    {
+      "bytes": 1239,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/prepare_pins_002.py",
+      "path": "recipes/prepare_pins_002.py",
+      "sha256": "fc9d2f0d689855fb1ca2a7c52cb3cea413ae6c6c17be0097b544c6de3917ecca"
+    },
+    {
+      "bytes": 90795,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/pins_001.json",
+      "path": "recipes/pins_001.json",
+      "sha256": "c4e8818401223a16840cea1a2c627213ae43e6feb0281a64fd9c456c642dc1c3"
+    },
+    {
+      "bytes": 91304,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/pins_002.json",
+      "path": "recipes/pins_002.json",
+      "sha256": "0d0f46ed32c363ddaf70688aebfd8cdd277c4ed0874efe0538ab7e775c4d0ff9"
+    },
+    {
+      "bytes": 9642,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/interfaces_draft_001.py",
+      "path": "recipes/interfaces_draft_001.py",
+      "sha256": "23782acda519333f933943018bc15638bc568bad32527e82445ababa3a3141db"
+    },
+    {
+      "bytes": 2941,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/assemble_evidence_001.py",
+      "path": "recipes/assemble_evidence_001.py",
+      "sha256": "cb56f30481332ed6a43ade2e442b1ad7a8b60843f6b98f5a7247cf3353d337d4"
+    },
+    {
+      "bytes": 10003,
+      "original_path": "docs/phase2/cho51_execution_interfaces_v1/interfaces.py",
+      "path": "candidate/interfaces.py",
+      "sha256": "96948c4b820230d6476e615a5288b1481f8210bd8bacbb8ebfed29013070a399"
+    },
+    {
+      "bytes": 24118,
+      "original_path": "docs/phase2/cho51_execution_interfaces_v1/validate_interfaces.py",
+      "path": "candidate/validate_interfaces.py",
+      "sha256": "50df5c198dbfcca52d2d9316c41a0e0315d62119e829a6ef5f09e9664f26ac86"
+    },
+    {
+      "bytes": 4405,
+      "original_path": "runs/migration/20261013T090634Z_01e9cd03ac/admission.json",
+      "path": "guard/admission.json",
+      "sha256": "a69b076c8f0cd8589c67e1c8bc8f1185f1190d4a3f104bfeef944a78a7b68f7f"
+    },
+    {
+      "bytes": 161,
+      "original_path": "runs/migration/20261013T090634Z_01e9cd03ac/deadline.json",
+      "path": "guard/deadline.json",
+      "sha256": "eb142e8052c5120a1b2c253b75905145a3b9c19d7705f1a2a48778a4a6f361c1"
+    },
+    {
+      "bytes": 17,
+      "original_path": "runs/migration/20261013T090634Z_01e9cd03ac/command-result.json",
+      "path": "guard/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 4639,
+      "original_path": "runs/migration/20261013T090634Z_01e9cd03ac/command.log",
+      "path": "guard/command.log",
+      "sha256": "770da48e51c4c3e85427cda10c3ac2d983e83f258d22643d67f9da1d1d63066e"
+    },
+    {
+      "bytes": 1685,
+      "original_path": "runs/migration/20261013T090634Z_01e9cd03ac/receipt.json",
+      "path": "guard/receipt.json",
+      "sha256": "ba10ab8661d8c3da4ec21a5c4dd1ea5134b9881d2204e030addfb5368ccc8bb1"
+    },
+    {
+      "bytes": 75910,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/validation_001/route.json",
+      "path": "results/route.json",
+      "sha256": "70ed514bcec5a985a1e2ddf3fddf9335a029a79b6398dba59249c33cadd2bb57"
+    },
+    {
+      "bytes": 427071,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/validation_001/qualification.json",
+      "path": "results/qualification.json",
+      "sha256": "a275be9f543fef9e5cc791f3dfa4f3136b7c3b37a72fbcedae1319866b9aed8a"
+    },
+    {
+      "bytes": 8007,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/validation_001/sample_binding.json",
+      "path": "results/sample_binding.json",
+      "sha256": "1f5121fe84ae53dfbfddfa61a79ec0c086b3ce90c3576f0245071ee76cdb8e7a"
+    },
+    {
+      "bytes": 147422,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/validation_001/sweep_schedule.json",
+      "path": "results/sweep_schedule.json",
+      "sha256": "c985515e61829a5fb370b1080eefcbc016e08d8829fa15db67030074c52ad0a3"
+    },
+    {
+      "bytes": 4082,
+      "original_path": "runs/coordination/cho51_execution_interfaces_20261013_v1/validation_001/fabricated_pairs.json",
+      "path": "results/fabricated_pairs.json",
+      "sha256": "bc3ab448ba2460e3a2a35a4edd7cbab05c4d8fc4008a548b48e1e3172e6c2b57"
+    },
+    {
+      "bytes": 40232,
+      "original_path": "runs/phase2/cho_60hz_subject01_checks/20260923_bounded/cohort_audit.json",
+      "path": "inputs/retained_cohort_audit.json",
+      "sha256": "4c6bc85467c94908385f47762a67c0f2703eb87332573d4df1139b441b30b57d"
+    },
+    {
+      "bytes": 9969,
+      "original_path": "evidence/cho51-adoption-route-20261013/owner/adoption.json",
+      "path": "inputs/direct_owner_adoption.json",
+      "sha256": "ae3295c2aa5acdfad2c9b2d7ffb602ec8b0daddb07b3d433d15dcaf9fd002709"
+    }
+  ],
+  "fixture_subject_pairs": 51,
+  "fresh_source_context_pins": 446,
+  "model_or_recorder_or_prediction_or_fitted_selector_or_sweep_executed": false,
+  "original_case_attempts_remaining": 0,
+  "real_available_subject_catalogs": 52,
+  "schema": "cho51_read_only_execution_interfaces_packet_v1",
+  "scientific_execution_budget_admitted": false,
+  "sweep_planning_only": true,
+  "tests_passed": 36,
+  "verified_resume_or_recorder_publication_or_tensor_restore": false
+}

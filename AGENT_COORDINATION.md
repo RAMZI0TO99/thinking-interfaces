@@ -1,5 +1,66 @@
 # Project coordination
 
+## Both fresh read-only phases passed, 13 October,09:07 UTC
+
+Root-owned all52 B binder and read-only51 execution interfaces passed18/36 checks.
+Job20261013T085955Z_a1d41f3724 (600s) verified208 input hashes/445 pins and all52
+available joins, subject01 source-only. Job20261013T090634Z_01e9cd03ac (300s)
+verified157 input hashes/446 pins, bounded actual1020 selection and fabricated
+identity/score behavior with planning-only sweep output. Both used2048/3072MiB,
+RAM10/4/disk20 and actual Torch1/1/GPU-hidden; peak process/Job bytes
+1,217,933,312/1,236,447,232 and1,151,815,680/1,170,563,072. Closed, emptied,
+absent, no cleanup/sampling errors; three pause paths checked/current13Oct watched.
+
+No owned Job remains active. Root1/no children preserves Source030/shared5/
+peermax4 when root-only/reserve60/end20:00UTC; current peer count/result/physical
+release/host quiet are unknown. The original uninvoked interface draft/pins and
+metadata preparation/assembly refusals are preserved with no-overwrite successors.
+Canonical432/3114ec43/config13 remain frozen; full canonical suite not replayed.
+No model, fitted selector, prediction, checkpoint, recorder, sweep execution or
+tensor restore. Next versioned authenticated51 recorder/publication/tensor and
+numerical worker adapters require separately reviewed ownership and fresh finite
+admission. Cohort/final freeze/science budget remain pending, original0. No new
+watcher, original recovery/reset/rename/third attempt or30-hour window is armed.
+
+## Current read-only51 execution-interface preparation, 13 October UTC
+
+The separate all52 binder Job20261013T085955Z_a1d41f3724 passed18 checks and all
+208 data hashes; closed, empty and absent. Root now owns
+`docs/phase2/cho51_execution_interfaces_v1` and
+`runs/coordination/cho51_execution_interfaces_20261013_v1` for bounded selection,
+planning-only sweep schedules, complete1020 identity coverage and exact51 paired
+aggregation. The fresh validation uses real52 input inventories but fabricated
+1020 pins/scores. No model, prediction, recorder, checkpoint, fitted selection,
+sweep execution, tensor restore or scientific record admission is authorized.
+The original uninvoked draft/pins are preserved; reviewed pins002 compare full
+contract values across private planner loads. This phase has not passed yet.
+
+Fresh300s/process2048/Job3072MiB admission, RAM10/4/disk20, native/Torch1 and
+current pause monitoring are required. Root1/no children, Source030/shared5/
+peermax4 when root-only/reserve60/end20:00UTC persist; no current peer count,
+release/result/host quiet is inferred. Canonical432/3114ec43/config13 stay
+unchanged; cohort/freeze/scientific budget remain pending, original attempts0.
+
+## Current all52 real episode-binding preparation, 13 October UTC
+
+Root owns `docs/phase2/cho51_episode_bindings_v1` and
+`runs/coordination/cho51_episode_bindings_20261013_v1`. Its fresh finite read-only
+check covers208 processed/raw input paths and all52 available-subject60Hz joins;
+subject01 is source/inner-validation data only. No model, checkpoint, prediction,
+fitted selector, recorder, raw decoding or original-case operation is admitted.
+Preparation pins445 context/source files and13,970,094,982 data bytes by declared
+hash/stat; actual large-file hashes are verified inside the guard. Candidate
+preparation001 refused an ambiguous text match after creating the validator;
+successor002 preserved it and completed pin preparation without overwriting.
+
+Planned600s/process2048/Job3072MiB, RAM10/4/disk20, native/Torch1 and hidden GPUs
+require fresh admission and current pause monitoring. Root1/no children preserves
+Source030/shared5/peermax4 when root-only/reserve60/end20:00UTC. No current peer
+count, physical release, accepted result or host quiet is inferred. Canonical432/
+3114ec43 and active13 configs stay frozen. Checkpoint-cohort/final freeze and
+science budget remain pending; original attempts0. No Job has passed this phase
+yet. Subsequent selector/sweep/collector work needs its own reviewed scope.
+
 ## Actual51 worker/input bridge qualified, 13 October, 08:23 UTC
 
 Root-owned [bridge qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)

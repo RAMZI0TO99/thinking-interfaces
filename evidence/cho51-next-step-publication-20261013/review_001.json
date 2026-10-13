@@ -1,0 +1,116 @@
+{
+  "active_config_files": 13,
+  "candidate_guards_passed": 2,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "current_document_links_verified": 22,
+  "experiment_freeze_signed": false,
+  "links": [
+    {
+      "document": "HANDOFF.md",
+      "target": "docs/phase2/cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2/cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "CONTINUE_HERE.md",
+      "target": "docs/phase2/cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "CONTINUE_HERE.md",
+      "target": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "CONTINUE_HERE.md",
+      "target": "WINDOWS_SETUP.md"
+    },
+    {
+      "document": "WINDOWS_SETUP.md",
+      "target": "docs/phase2/cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "WINDOWS_SETUP.md",
+      "target": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "docs/phase2/README.md",
+      "target": "cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "docs/phase2/README.md",
+      "target": "cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "docs/phase2/README.md",
+      "target": "../../HANDOFF.md"
+    },
+    {
+      "document": "docs/phase2/cho51_episode_binding_qualification_20261013.md",
+      "target": "cho51_episode_bindings_v1/README.md"
+    },
+    {
+      "document": "docs/phase2/cho51_episode_binding_qualification_20261013.md",
+      "target": "../../evidence/cho51-episode-bindings-20261013/README.md"
+    },
+    {
+      "document": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md",
+      "target": "cho51_execution_interfaces_v1/README.md"
+    },
+    {
+      "document": "docs/phase2/cho51_execution_interfaces_qualification_20261013.md",
+      "target": "../../evidence/cho51-execution-interfaces-20261013/README.md"
+    },
+    {
+      "document": "docs/phase2/cho51_episode_bindings_v1/README.md",
+      "target": "../cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "docs/phase2/cho51_execution_interfaces_v1/README.md",
+      "target": "../cho51_execution_interfaces_qualification_20261013.md"
+    },
+    {
+      "document": "evidence/cho51-episode-bindings-20261013/README.md",
+      "target": "index.json"
+    },
+    {
+      "document": "evidence/cho51-episode-bindings-20261013/README.md",
+      "target": "../../docs/phase2/cho51_episode_binding_qualification_20261013.md"
+    },
+    {
+      "document": "evidence/cho51-execution-interfaces-20261013/README.md",
+      "target": "index.json"
+    },
+    {
+      "document": "evidence/cho51-execution-interfaces-20261013/README.md",
+      "target": "../../docs/phase2/cho51_execution_interfaces_qualification_20261013.md"
+    }
+  ],
+  "no_new_arrays_or_model_or_recorder_executed": true,
+  "observed_utc": "2026-10-13T09:13:06.824907+00:00",
+  "original_case_attempts_remaining": 0,
+  "packets": {
+    "cho51-episode-bindings-20261013": {
+      "artifact_bytes": 1280289,
+      "artifacts": 18,
+      "index_sha256": "c58bcb58f7a77ea70ad903d2fd8de0977135ce77e89b2cfa3598d88836e585bb"
+    },
+    "cho51-execution-interfaces-20261013": {
+      "artifact_bytes": 968560,
+      "artifacts": 21,
+      "index_sha256": "7cb978936e7f2c9b1e5f65098d75b9b89531cb29b1378e19db2a2261c7bbc812"
+    }
+  },
+  "passed": true,
+  "schema": "cho51_two_phase_publication_metadata_review_v1",
+  "scientific_execution_budget_admitted": false
+}

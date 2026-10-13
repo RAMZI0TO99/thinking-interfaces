@@ -1,0 +1,78 @@
+Imports complete; verifying all52 real catalogs/assets.
+Complete52-subject inventory verified; checking adopted1020 worker inputs.
+Real60Hz support/query join verified: subject_01
+Real60Hz support/query join verified: subject_02
+Real60Hz support/query join verified: subject_03
+Real60Hz support/query join verified: subject_04
+Real60Hz support/query join verified: subject_05
+Real60Hz support/query join verified: subject_06
+Real60Hz support/query join verified: subject_07
+Real60Hz support/query join verified: subject_08
+Real60Hz support/query join verified: subject_09
+Real60Hz support/query join verified: subject_10
+Real60Hz support/query join verified: subject_11
+Real60Hz support/query join verified: subject_12
+Real60Hz support/query join verified: subject_13
+Real60Hz support/query join verified: subject_14
+Real60Hz support/query join verified: subject_15
+Real60Hz support/query join verified: subject_16
+Real60Hz support/query join verified: subject_17
+Real60Hz support/query join verified: subject_18
+Real60Hz support/query join verified: subject_19
+Real60Hz support/query join verified: subject_20
+Real60Hz support/query join verified: subject_21
+Real60Hz support/query join verified: subject_22
+Real60Hz support/query join verified: subject_23
+Real60Hz support/query join verified: subject_24
+Real60Hz support/query join verified: subject_25
+Real60Hz support/query join verified: subject_26
+Real60Hz support/query join verified: subject_27
+Real60Hz support/query join verified: subject_28
+Real60Hz support/query join verified: subject_29
+Real60Hz support/query join verified: subject_30
+Real60Hz support/query join verified: subject_31
+Real60Hz support/query join verified: subject_32
+Real60Hz support/query join verified: subject_33
+Real60Hz support/query join verified: subject_34
+Real60Hz support/query join verified: subject_35
+Real60Hz support/query join verified: subject_36
+Real60Hz support/query join verified: subject_37
+Real60Hz support/query join verified: subject_38
+Real60Hz support/query join verified: subject_39
+Real60Hz support/query join verified: subject_40
+Real60Hz support/query join verified: subject_41
+Real60Hz support/query join verified: subject_42
+Real60Hz support/query join verified: subject_43
+Real60Hz support/query join verified: subject_44
+Real60Hz support/query join verified: subject_45
+Real60Hz support/query join verified: subject_46
+Real60Hz support/query join verified: subject_47
+Real60Hz support/query join verified: subject_48
+Real60Hz support/query join verified: subject_49
+Real60Hz support/query join verified: subject_50
+Real60Hz support/query join verified: subject_51
+Real60Hz support/query join verified: subject_52
+test_actual_worker_types (__main__.BridgeChecks.test_actual_worker_types) ... ok
+test_all1020_inputs_have_correct_types_profiles_and_source_pools (__main__.BridgeChecks.test_all1020_inputs_have_correct_types_profiles_and_source_pools) ... ok
+test_all52_bindings_match_retained_cohort (__main__.BridgeChecks.test_all52_bindings_match_retained_cohort) ... ok
+test_all52_raw_sources_are_pinned_and_hash_only (__main__.BridgeChecks.test_all52_raw_sources_are_pinned_and_hash_only) ... ok
+test_bad_full_route_refused (__main__.BridgeChecks.test_bad_full_route_refused) ... ok
+test_config_ceiling_and_adoption_freeze_boundaries (__main__.BridgeChecks.test_config_ceiling_and_adoption_freeze_boundaries) ... ok
+test_exact_retained_ids (__main__.BridgeChecks.test_exact_retained_ids) ... ok
+test_full_source_inventory_preserved (__main__.BridgeChecks.test_full_source_inventory_preserved) ... ok
+test_method_templates_unchanged (__main__.BridgeChecks.test_method_templates_unchanged) ... ok
+test_no_support_query_overlap_or_label_change (__main__.BridgeChecks.test_no_support_query_overlap_or_label_change) ... ok
+test_original_case_input_refused (__main__.BridgeChecks.test_original_case_input_refused) ... ok
+test_real_binding_type_hash_and_trial_counts (__main__.BridgeChecks.test_real_binding_type_hash_and_trial_counts) ... ok
+test_real_source_folds_keep_subject01 (__main__.BridgeChecks.test_real_source_folds_keep_subject01) ... ok
+test_returned_records_are_independent_copies (__main__.BridgeChecks.test_returned_records_are_independent_copies) ... ok
+test_subject01_has_only_available_source_binding (__main__.BridgeChecks.test_subject01_has_only_available_source_binding) ... ok
+test_target_records_rederived_from_real_catalogs (__main__.BridgeChecks.test_target_records_rederived_from_real_catalogs) ... ok
+test_untyped_plan_refused (__main__.BridgeChecks.test_untyped_plan_refused) ... ok
+test_wrong_seed_shot_or_repetition_refused (__main__.BridgeChecks.test_wrong_seed_shot_or_repetition_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.498s
+
+OK
+{"passed": true, "tests_run": 18, "cases": 1020, "real_catalogs": 52, "data_files_verified": 208, "real_episode_bindings": 52, "target_bindings": 51, "source_only_bindings": 1, "scientific_admission": false}

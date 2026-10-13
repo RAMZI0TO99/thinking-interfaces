@@ -1,0 +1,294 @@
+{
+  "accepted_proposal": {
+    "commit": "c1a989d6ce8f9aa7ef8452c94f623731a7d46830",
+    "json_git_and_local_sha256": "26edbf77961af89fdc31941cbf0425c97ebd81ed263dff706a21aac933e9b965",
+    "json_path": "docs/phase2/cho_51_target_amendment_proposal_20261012.json",
+    "markdown_git_and_local_sha256": "ab1c313956907a13a1039430442ce791db63c44b5c3acbbb2a2702d85bfa0634",
+    "markdown_path": "docs/phase2/cho_51_target_amendment_proposal_20261012.md",
+    "url": "https://github.com/RAMZI0TO99/thinking-interfaces/blob/c1a989d6ce8f9aa7ef8452c94f623731a7d46830/docs/phase2/cho_51_target_amendment_proposal_20261012.md"
+  },
+  "active_protocol_configurations_modified": false,
+  "actual_checkpoint_recording_coverage": "unknown",
+  "adopted_decisions": [
+    "cho_scope_and_candidates",
+    "gate_a",
+    "margin_interpretation",
+    "primary_analysis",
+    "secondary_superiority_family"
+  ],
+  "adopted_primary_analysis": {
+    "all_zero_p": 1.0,
+    "alpha": 0.05,
+    "alternative": "greater",
+    "complete_verified_cells_required": 1020,
+    "contrast": "labram_lora_minus_labram_linear",
+    "correction": false,
+    "imputation_allowed": false,
+    "method": "asymptotic",
+    "metric": "balanced_accuracy",
+    "other_nonfinite_result": "fail_analysis",
+    "paired_mean_interval": {
+      "confidence_level": 0.95,
+      "df": 50,
+      "distribution": "student_t",
+      "sample_variance_denominator": 50,
+      "wilcoxon_inversion": false,
+      "zero_variance": "point_interval"
+    },
+    "ratified": true,
+    "seed_aggregation": "exact_rational_within_subject_mean",
+    "subjects": 51,
+    "superiority_requires_strictly_positive_exact_paired_mean": true,
+    "superiority_requires_unrounded_p_less_than_alpha": true,
+    "test": "wilcoxon_signed_ranks",
+    "tie_encoding": "signed_integer_levels_preserving_exact_absolute_tie_classes",
+    "unit": "subject",
+    "zero_method": "pratt"
+  },
+  "authorization": {
+    "direct_owner_choice_received": true,
+    "original_user_message_utc": null,
+    "owner_read_entire_document_independently_verified": false,
+    "question_call_id": "call_650aebd78fb8478e896a42934678f8b9",
+    "question_item_id": "[\"request_user_input_async\",\"call_650aebd78fb8478e896a42934678f8b9\",0]",
+    "scientific_signature_inferred_from_engineering_delegation": false,
+    "source": "direct owner answer in this project conversation",
+    "thread_id": "01a115a0-5f96-7472-880f-e1d92e46d853",
+    "timestamp_note": "recorded_utc is recording time; original message time is not inferred",
+    "verbatim_question": "Do you adopt the [published 51-target amendment](https://github.com/RAMZI0TO99/thinking-interfaces/blob/c1a989d6ce8f9aa7ef8452c94f623731a7d46830/docs/phase2/cho_51_target_amendment_proposal_20261012.md)? It excludes all 20 subject01 evaluation rows consistently, keeps all 52 subjects available as source data, and changes the analysis to 51 subjects with 50 degrees of freedom. The synthetic candidate now passes 22 checks. I can continue reversible engineering preparation, but adopting this change to your existing study design needs your explicit choice.",
+    "verbatim_user_response": "Adopt 51 targets (Recommended)"
+  },
+  "available_cohort_subject_count": 52,
+  "available_cohort_subject_ids": [
+    "subject_01",
+    "subject_02",
+    "subject_03",
+    "subject_04",
+    "subject_05",
+    "subject_06",
+    "subject_07",
+    "subject_08",
+    "subject_09",
+    "subject_10",
+    "subject_11",
+    "subject_12",
+    "subject_13",
+    "subject_14",
+    "subject_15",
+    "subject_16",
+    "subject_17",
+    "subject_18",
+    "subject_19",
+    "subject_20",
+    "subject_21",
+    "subject_22",
+    "subject_23",
+    "subject_24",
+    "subject_25",
+    "subject_26",
+    "subject_27",
+    "subject_28",
+    "subject_29",
+    "subject_30",
+    "subject_31",
+    "subject_32",
+    "subject_33",
+    "subject_34",
+    "subject_35",
+    "subject_36",
+    "subject_37",
+    "subject_38",
+    "subject_39",
+    "subject_40",
+    "subject_41",
+    "subject_42",
+    "subject_43",
+    "subject_44",
+    "subject_45",
+    "subject_46",
+    "subject_47",
+    "subject_48",
+    "subject_49",
+    "subject_50",
+    "subject_51",
+    "subject_52"
+  ],
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "current_configuration_pins": [
+    {
+      "path": "configs/phase2/adapter_smoke.toml",
+      "sha256": "a7fec4c67f21d94d87f1c57020ec4abdb10102fee3fafde739922ab98f9f0d79"
+    },
+    {
+      "path": "configs/phase2/analysis.toml",
+      "sha256": "3dac7de1bae03f62f2307b0afc812517a31d9867d0303ae75f544b4335e73711"
+    },
+    {
+      "path": "configs/phase2/cho_profile_b_60hz.toml",
+      "sha256": "6a3d5b9afca7bc0b82532276df1ef8f0a14db85da0eb609b5176ac967d04afb3"
+    },
+    {
+      "path": "configs/phase2/cho_sweep.toml",
+      "sha256": "54318bcb8cbaa5a72b6df0d981860c880a7919d40c7a26eca94848e7fbdc2dc1"
+    },
+    {
+      "path": "configs/phase2/forward_parity.toml",
+      "sha256": "c4fb40c5ad5ff8ec91e63b5c954d2ef6a15c9d164171991891536c8a7630ff3e"
+    },
+    {
+      "path": "configs/phase2/lora_smoke.toml",
+      "sha256": "27946e268e89950b750836f2e1218e77fca6cba3525790ae6c54a56d4b86bee1"
+    },
+    {
+      "path": "configs/phase2/methods.toml",
+      "sha256": "3558cf64a2438eaf5885dbd6d5f9329d8fc5dc1471ef546681037c7024b283f6"
+    },
+    {
+      "path": "configs/phase2/prompt_smoke.toml",
+      "sha256": "7a2b09ffb54d8aec372c3a9c4557b8c8ef6707ec7d56ca06815eb3bfe787babe"
+    },
+    {
+      "path": "configs/phase2/protocol.toml",
+      "sha256": "d8b56cdb28c7cbf3999e9fc65f089535930bff23373ddf46b903695cf095fa95"
+    },
+    {
+      "path": "configs/phase2/selection_ceiling.toml",
+      "sha256": "a7db3ba233c71ff73c5599baa2f48ffb7616deb1c239b7bbfc41b6ac8e466548"
+    },
+    {
+      "path": "configs/phase2/tcpl_local_contract.toml",
+      "sha256": "65d670882316fae71704503c66a2a3cef2f8a8f289a47cf35865064452f6d0fe"
+    },
+    {
+      "path": "configs/phase2/tcpl_reference.toml",
+      "sha256": "cbe82db7b82e54e84a9972a24bec18007ac5fb226f2ce71c2dd6662f9d76f72b"
+    },
+    {
+      "path": "configs/phase2/tuning_smoke.toml",
+      "sha256": "5c8f90c9ffaba7b037c76a9c03f66820ce722e08048122b66440c57068f2342e"
+    }
+  ],
+  "current_evaluation_target_ids": [
+    "subject_02",
+    "subject_03",
+    "subject_04",
+    "subject_05",
+    "subject_06",
+    "subject_07",
+    "subject_08",
+    "subject_09",
+    "subject_10",
+    "subject_11",
+    "subject_12",
+    "subject_13",
+    "subject_14",
+    "subject_15",
+    "subject_16",
+    "subject_17",
+    "subject_18",
+    "subject_19",
+    "subject_20",
+    "subject_21",
+    "subject_22",
+    "subject_23",
+    "subject_24",
+    "subject_25",
+    "subject_26",
+    "subject_27",
+    "subject_28",
+    "subject_29",
+    "subject_30",
+    "subject_31",
+    "subject_32",
+    "subject_33",
+    "subject_34",
+    "subject_35",
+    "subject_36",
+    "subject_37",
+    "subject_38",
+    "subject_39",
+    "subject_40",
+    "subject_41",
+    "subject_42",
+    "subject_43",
+    "subject_44",
+    "subject_45",
+    "subject_46",
+    "subject_47",
+    "subject_48",
+    "subject_49",
+    "subject_50",
+    "subject_51",
+    "subject_52"
+  ],
+  "design_amendment_adopted": true,
+  "evaluation_overlap": "unknown",
+  "evaluation_target_count": 51,
+  "excluded_all_methods_and_seeds_cells": 20,
+  "excluded_evaluation_target_ids": [
+    "subject_01"
+  ],
+  "executable": false,
+  "expected_cells": 1020,
+  "experiment_freeze_signed": false,
+  "exploratory_margin": 0.05202907926797159,
+  "formal_equivalence_or_interchangeability_claim": false,
+  "methods": [
+    "labram_linear",
+    "labram_lora",
+    "labram_full",
+    "eegnet"
+  ],
+  "model_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "model_training_or_case_authorized_by_this_decision": false,
+  "original52_target_implementation_and_history_preserved": true,
+  "original52_target_plan_claimed_completed": false,
+  "original52_target_scope_superseded_for_future_evaluation": true,
+  "original_case": {
+    "attempt_limit": 2,
+    "id": "af0f24764e577f2223db4759582852aacc2b1b2b0b0a549f1d4b43f8f14998b5",
+    "recorder_decision": {
+      "path": "runs/coordination/cho_cached_callback_20261010_v1/recorder_read_only_recovery_decision_001.json",
+      "sha256": "69ac9a1b9e90c0099d68c65ea32a33f282f630adcdc99a2e046c12f361465d95"
+    },
+    "recoverable_original_intent_present": false,
+    "relaunch_reset_or_renamed_equivalent_authorized": false,
+    "remaining_attempts": 0
+  },
+  "original_case_attempts_remaining": 0,
+  "original_case_recovery_reset_third_attempt_or_rename_authorized": false,
+  "per_case_source_pool_subjects": 51,
+  "per_inner_fold_training_subjects": 50,
+  "planned_selection_steps_total": 5358060,
+  "planned_target_support_steps_total": 1020,
+  "prior_decision_pins": {
+    "docs/phase2/cho_design_decisions_20261012.json": "654f06db0cadd3c67cca102edfadc3b667942bf84013e442aae700a7a3be7fc8",
+    "docs/phase2/gate_a_acceptance_20261012.json": "0870b98fc957df04cae925fec411929a7759fe3a9a8be6bcb2108f6270356e93"
+  },
+  "production51_route_collector_and_worker_qualified": false,
+  "recorded_utc": "2026-10-13T07:30:20.766562+00:00",
+  "remaining_decisions": [
+    "checkpoint_cohort_and_overlap",
+    "experiment_freeze"
+  ],
+  "repetition": 1,
+  "retained_case_ids_and_method_templates_unchanged": true,
+  "retrospective_amendment_after_known_engineering_history": true,
+  "schema": "cho51_direct_owner_amendment_adoption_v1",
+  "scientific_execution_budget_admitted": false,
+  "scientific_gate_a_accepted_under_exact_retrospective_amendment": true,
+  "secondary_and_margin_intervals_df": 50,
+  "secondary_and_margin_intervals_subjects": 51,
+  "secondary_superiority_family": [],
+  "selection_steps_per_case": 5253,
+  "shots_per_class": 5,
+  "source_policy": "all_non_target_subjects; inner_validation_also_excluded",
+  "subject01_available_as_source_or_inner_validation_for_other_targets": true
+}
