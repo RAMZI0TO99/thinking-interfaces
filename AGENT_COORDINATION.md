@@ -1,5 +1,81 @@
 # Project coordination
 
+## Publication continuation, 13 October, 06:10 UTC
+
+Source027 and Source028 have expired. The pending Source029 request ended at
+01:00 UTC on 13 October and has no response or grant. A fresh request covering
+the actual current window is required for further coordinated execution; no
+past lease, reported peer count or release estimate may supply it.
+
+Pro3 root owns the readiness docs, 51-target proposal and 58-artifact packet
+listed below and is completing their integrity checks and authorized Git push.
+Root has no children and will not start model validation, training or a new
+original-case attempt during this publication step. Both confirmed Pro2 pause
+paths were absent at 06:10 UTC; current peer counts and physical host state are
+not established by that observation. The shared maximum of five still applies.
+Historical Jobs and finite admissions remain closed receipts, not active grants.
+
+## Fresh Source028 response and metadata closeout, 12 October UTC
+
+The exact request SHA256`dac41463`/7380 bytes and genuine response
+SHA256`55a2da70`/8137 bytes are preserved in
+[the portable coordination record](evidence/phase2-readiness-20261012/coordination/source028-response.json).
+Effective16:23:44 through23:00 UTC, it permits only lightweight static Source
+work and Root-only conditional checker_dependency_audit022/protocol022/
+manifest022 publication at the existing selected dated paths/caps2MiB. Different
+actual gate review, separate Root adoption and reviewed current028 helpers are
+required. Original FreshThree003/Native8/Parser helpers remain uninvoked; no
+lease/family/native/fixtures/actual6/runtime/science/peer Git/new primary docs
+authority follows. Source027's18:00 end remains unchanged.
+
+One shared maximum5 includes both roots and all overlaps; Pro2max4 while Pro3
+continues. Request-time peer3 and updated reportedpeer2 remain distinct; updated
+peer2+Pro3root1=3 is reported scheduling data, not physical process/Job evidence.
+No resource pause requested. Root owns the response directory
+`runs/coordination/pro2_source028_scheduling_20261012_v1` and has no children.
+
+Metadata Job20261012T162657Z_56d000dd2c passed120s/process256/Job512MiB with
+RAM10/4/disk20 and one native thread. It verified51 packet artifacts,13 config
+pins and the exact1020-row proposed subset; Job closed, emptied and was absent.
+Final evidence index58 includes its seven recipe/review/guard artifacts. The
+51-target design remains an unsigned proposal; original52-target plan blocked,
+cohort/freeze pending, original attempts0 and no scientific execution budget.
+All later operations require fresh finite admission and current coordination.
+
+## Fresh worker/reference readiness phase completed, 12 October UTC
+
+Root owns `runs/coordination/phase2_readiness_20261012_v1`, its new reports,
+unsigned 51-target proposal and `evidence/phase2-readiness-20261012`.
+Root1/no child agents. The reference audit, one-time issue75 collection and
+restricted worker import/roster probe passed separate fresh finite native Jobs.
+One reference wrapper failure and two import-audit classifier failures remain
+preserved. All six executed Jobs closed, emptied and were absent; none is an
+active lease or reusable launcher. No original experiment attempt was consumed.
+
+Reference scope used180s/process512/Job768MiB. Worker imports used240s and
+2048/3072MiB, with peak Job1,188,110,336 bytes and one Torch intra/inter-op thread.
+Both kept startup/active RAM10/4 and disk20GiB. Array/checkpoint reads, model
+factories, fits, selectors and recorder operations were outside the probe.
+All binds remained blocked; only the pinned urllib3 loopback IPv6 capability
+denial was recognized. See [the precise limits](docs/phase2/phase2_readiness_review_20261012.md).
+No GPU, unrestricted worker, full numerical selector or scientific runtime
+qualification follows from module imports and metadata.
+
+The current1040-row plan includes one exhausted original case and cannot
+complete under unchanged recorder/analysis rules. The
+[1020-row alternative](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+is an unsigned owner proposal only: no active configs, frozen code, case IDs,
+original budget, scientific execution or final freeze changed. Gate A's exact
+direct retrospective acceptance remains; cohort review/freeze pending.
+Source3114ec43/432 and all13 config pins remain. No watcher/retry schedule is armed.
+
+Pro2's genuine update reports its Source027 static milestone completed, children
+stopped and Root-only preparation, with no pause. This is scheduling information,
+not peer result/host-quiet/Job/runtime/science acceptance. Original Source027
+end18:00UTC, shared maximum5 and60s reserve stay intact; honor a genuine fresh
+pause and establish new admission/coordination before any later execution.
+Older sections below preserve earlier unsigned/unexecuted snapshots.
+
 ## Direct Gate A acceptance and Source027 coordination, 12 October UTC
 
 Pro3 root owns the new approval docs/evidence and

@@ -1,0 +1,135 @@
+{
+  "author": "pro3_root",
+  "author_thread": "01a115a0-5f96-7472-880f-e1d92e46d853",
+  "canonical_source_publication_authority_granted": true,
+  "canonical_source_role_allowlist": [
+    "checker_dependency_audit",
+    "checker_protocol",
+    "checker_manifest"
+  ],
+  "created_utc": "2026-10-12T16:23:44.292155+00:00",
+  "current_pro3_scope": {
+    "active_owned_guard_jobs_snapshot": [],
+    "active_ram_gib": 4,
+    "canonical_files": 432,
+    "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+    "disk_floor_gib": 20,
+    "experiment_freeze_signed": false,
+    "native_threads": 1,
+    "next_job_mib": 512,
+    "next_metadata_guard_seconds": 120,
+    "next_process_mib": 256,
+    "no_model_fitting_or_original_case_operation": true,
+    "observed_utc": "2026-10-12T16:23:44.292155+00:00",
+    "original_case_attempts_remaining": 0,
+    "proposal_adopted": false,
+    "scientific_execution_budget_admitted": false,
+    "scientific_gate_a_signed_under_exact_retrospective_owner_amendment": true,
+    "startup_ram_gib": 10,
+    "status": "450 saved-record audit and restricted worker import/1040 roster checks passed; preparing portable evidence and unsigned51-target/1020-row owner proposal plus a fresh finite metadata review"
+  },
+  "dated_root_selection": {
+    "bytes": 41560,
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\observer010_lease009_root_001\\ROOT_SOURCE022_LEASE010_SEPARATE_FUTURE45_SOURCE_PATH_SELECTION_001.json",
+    "sha256": "67a20a299561fd163385e06f101c32dcd70e8bf380af6185f7c9abc02a85b47d"
+  },
+  "decision": "approve_lightweight_static_source_preparation_and_conditional_exact_checker022_triplet_publication",
+  "effective_source_interval_start_utc": "2026-10-12T16:23:44.292155+00:00",
+  "exact_existing_selected_rows": [
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_022.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_022.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 13294,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_021.json",
+        "sha256": "30aeeeec1a8c0900ca3c5a05295ab50b8ded444cdbd6557e05780261f2d2040c"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_protocol",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    },
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\CHECKER022_DEPENDENCY_PIN_AUDIT_001.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\CHECKER022_DEPENDENCY_PIN_AUDIT_001.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 165933,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\CHECKER021_DEPENDENCY_PIN_AUDIT_001.json",
+        "sha256": "0e8b33fce4e681baafad3eba63e564731d0595135e0fbc13ab642724a4e34a83"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_dependency_audit",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    },
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\AUTHOR_FROZEN_SOURCE_MANIFEST_022.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\AUTHOR_FROZEN_SOURCE_MANIFEST_022.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 2000,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\AUTHOR_FROZEN_SOURCE_MANIFEST_021.json",
+        "sha256": "df6612d65104ce42daf51fec2b89d61b8959a133b69924dfba992958b4dc26b0"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_manifest",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    }
+  ],
+  "exact_request": {
+    "bytes": 7380,
+    "descriptor_stable": true,
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\ROOT_SOURCE_COMPUTE_WINDOW_REQUEST_028.json",
+    "sha256": "dac41463f1e6673781a57a1e02ba5d60df7198bf15d12ccdd9943fb8a4469e0c",
+    "two_reads_match": true
+  },
+  "expired_lease010": {
+    "bytes": 663,
+    "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\EXECUTION_LEASE_GG6_M3_010.json",
+    "sha256": "097a5e6cb30e7c3ac9cf5af9b93d0889b016003a986628644dee5d620ab41511"
+  },
+  "expired_lease_is_wire_data_only": true,
+  "functional_lease_issued_extended_or_prepared": false,
+  "new_family_selection_paths_ordinals_duration_init_or_clocks_granted": false,
+  "no_new30_hour_window": true,
+  "old_leases_refusals_spent75_and_predecessors_preserved": true,
+  "ordinary_metadata_output_cap_bytes": 2097152,
+  "original_parser_native8_metadata_sampling_freshthree_fixtures_c8_actual6_runtime_or_science_granted": false,
+  "original_publication_reserve_seconds": 60,
+  "original_selected_source_cap_each_role_bytes": 2097152,
+  "pause_requested": false,
+  "peer_complete45_or_ten_tool_compound_accepted": false,
+  "peer_git_mutation_push_or_new_primary_document_granted": false,
+  "peer_latest_report_note": "Direct peer update: Root plus read-only Runtime role; Owner explorer finished. These are scheduling counts, not OS process/Job measurements.",
+  "peer_latest_reported_agents_including_root": 2,
+  "peer_maximum_agents_while_pro3_continues": 4,
+  "peer_reported_agents_at_dated_request_preparation": 3,
+  "peer_results_job_custody_host_quiet_pid_or_handle_absence_accepted": false,
+  "phase_peer020_publication_granted": false,
+  "prior_source027_end_unchanged": "2026-10-12T18:00:00+00:00",
+  "pro3_child_agents": 0,
+  "pro3_continues_until_genuine_peer_pause": true,
+  "pro3_current_agents_including_root": 1,
+  "publication_conditions": [
+    "Genuinely different review of actual fresh Source028 scheduling gate and separate Root adoption before preparation/publication",
+    "Genuinely reviewed current Source028 metadata helpers only; original FreshThree003/Native8/Parser helpers stay uninvoked",
+    "Root-only separately reviewed draft and exact canonical publication at these three existing selected dated lease010 paths; unchanged ordinals22/caps2097152",
+    "Original static content equations, authorship/ownership boundaries, API-specific guards, predecessor bytes, caps and reserves preserved; no other role publication"
+  ],
+  "recipient_thread": "01a1159f-a60d-7c03-bded-71f2047fb8fb",
+  "reported_current_combined_agent_snapshot": 3,
+  "requested_scope": "Concurrent lightweight static Source preparation and genuinely different review; Root-only separately reviewed draft and exact canonical publication of checker_dependency_audit022, checker_protocol022 and checker_manifest022 at the already selected dated lease010 paths. Port only the original static content equations through genuinely reviewed explicit Source028 metadata helpers. Preserve old FreshThree003/Native8/Parser helpers uninvoked and every predecessor byte. Lease010 is immutable expired wire data; no functional lease, new family or original runtime admission follows.",
+  "retroactive_source_approval": false,
+  "schema": "pro3_genuine_pro2_source028_exact_triplet_scheduling_response_v1",
+  "shared_maximum_agents_including_both_roots_and_all_children_and_overlap": 5,
+  "source_interval_end_utc": "2026-10-12T23:00:00+00:00",
+  "source_preparation_allowed": true,
+  "standing_science_totals_recounted": false,
+  "this_response_grants_pro3_model_case_or_scientific_execution": false
+}

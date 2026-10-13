@@ -1,5 +1,17 @@
 # Thinking Interfaces
 
+## Fresh readiness checks completed, 12 October UTC
+
+[The new review](docs/phase2/phase2_readiness_review_20261012.md) records a
+450/450 saved-reference audit, restricted worker imports/environment and all
+1,040 current case identities. The live ceiling is already5,253. One mandatory
+case has zero attempts remaining, so the unchanged complete roster is blocked.
+[The exact51-target alternative](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+preserves1,020 case IDs and the52-subject available cohort; it needs an owner
+design choice and separate implementation/qualification. It is not adopted.
+Gate A remains accepted under its amendment; cohort/freeze pending. No model
+or scientific case ran. Earlier sections below retain dated evidence.
+
 ## Gate A accepted under amended criterion, 12 October UTC
 
 The owner directly accepted the [exact retrospective Gate A amendment](docs/phase2/gate_a_acceptance_20261012.md).

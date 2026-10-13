@@ -1,0 +1,50 @@
+{
+  "denied_operations": [
+    {
+      "call_stack": [
+        {
+          "file": "D:\\Aenv\\pro3\\runs\\coordination\\phase2_readiness_20261012_v1\\worker_readiness_probe_002.py",
+          "function": "audit",
+          "line": 76
+        },
+        {
+          "file": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\urllib3\\util\\connection.py",
+          "function": "_has_ipv6",
+          "line": 127
+        },
+        {
+          "file": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\urllib3\\util\\connection.py",
+          "function": "<module>",
+          "line": 137
+        },
+        {
+          "file": "<frozen importlib._bootstrap>",
+          "function": "_call_with_frames_removed",
+          "line": 488
+        },
+        {
+          "file": "<frozen importlib._bootstrap_external>",
+          "function": "exec_module",
+          "line": 999
+        },
+        {
+          "file": "<frozen importlib._bootstrap>",
+          "function": "_load_unlocked",
+          "line": 935
+        },
+        {
+          "file": "<frozen importlib._bootstrap>",
+          "function": "_find_and_load_unlocked",
+          "line": 1331
+        },
+        {
+          "file": "<frozen importlib._bootstrap>",
+          "function": "_find_and_load",
+          "line": 1360
+        }
+      ],
+      "detail": "network/DNS/subprocess outside this import-only scope",
+      "event": "socket.bind"
+    }
+  ]
+}

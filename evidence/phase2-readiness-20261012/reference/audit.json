@@ -1,0 +1,5018 @@
+{
+  "actual_checkpoint_recording_coverage": "unknown",
+  "anchor_fits": 90,
+  "audit_dependency_versions": {
+    "numpy": "2.5.2",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1"
+  },
+  "audit_supplies_scientific_signature": false,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "confidence_interval_is_acceptance_band": false,
+  "current_source_training_recertified": false,
+  "direct_owner_gate_a_decision_sha256": "0870b98fc957df04cae925fec411929a7759fe3a9a8be6bcb2108f6270356e93",
+  "historical_environment_recreated": false,
+  "historical_input_audit_sha256": "e80ed6a7e0a3d21b453c031733671f149f44536055e06145459c5d3ca0e3922a",
+  "historical_integrity_sha256": "7906cab224131e8affba78705cdfb2d499d4b2f0ebff7939c215c92bb0bbb8df",
+  "historical_record_snapshot_sha256": "196b419bf2f15c02fd55b9046fd78260605e2be869e3695bb09196616921427e",
+  "independent_subject_count": 9,
+  "new_training_or_inference": false,
+  "observed_utc": "2026-10-12T14:29:17.476089+00:00",
+  "original_case_attempts_remaining": 0,
+  "published_mean_roc_auc": 0.7715,
+  "published_sd_is_acceptance_band": false,
+  "raw_input_audit_replayed": false,
+  "records": [
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_0.json",
+      "roc_auc": 0.9142857142857143,
+      "sha256": "139c967a874bf6ee06e53c78445d3e738778c0feb9eb4a48830778c160071927",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_1.json",
+      "roc_auc": 0.9,
+      "sha256": "17dc57b8c58ff0365af4613c0e6167e15f387b2541c1460be26eee21206cfff5",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_2.json",
+      "roc_auc": 0.9380952380952381,
+      "sha256": "f8ed139cedd470fbcfb8f5c7065b2b79f088c3a120a0bf59781237f550b31e88",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_3.json",
+      "roc_auc": 0.9095238095238095,
+      "sha256": "96d82115808de0807a2b2f81e7b48510daebc46268aa4ae69f9e19ff76c9fe69",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/0train/fold_4.json",
+      "roc_auc": 0.9540816326530612,
+      "sha256": "144329715c6787b2b311f697cb8821bda48be32d8dd70f023af42baec032f267",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/1test/fold_0.json",
+      "roc_auc": 0.9571428571428572,
+      "sha256": "ee52486e20cd9ebcd8e567ba71f41386a4ac329ff65a06d87ea007121b9c665c",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/1test/fold_1.json",
+      "roc_auc": 0.919047619047619,
+      "sha256": "b7f13d305202064be828d9f0f102ef17999ed7582ac91420a567ac268bafafff",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/1test/fold_2.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "c82df3f55735001036923288ded7655d0442dfa949fabb9a31af7a6313cf4da4",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/1test/fold_3.json",
+      "roc_auc": 0.9,
+      "sha256": "50a6922876125b45c43d3bafb460182cf7c08a7fcc723792031f7538763e0310",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_01/1test/fold_4.json",
+      "roc_auc": 0.9540816326530612,
+      "sha256": "e52271274b6b39081162344ec895bd827b6b76d70172f890a67f0b5d68a22380",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/0train/fold_0.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "48993ee0bed6449001727e81f9ed2f95948bb1776bc4578a16c91e8e96e25112",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/0train/fold_1.json",
+      "roc_auc": 0.580952380952381,
+      "sha256": "940095f571071cb02c578d66061fc9ee289e9331d99a17b98bb8acaf927aca4c",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/0train/fold_2.json",
+      "roc_auc": 0.41904761904761906,
+      "sha256": "1de653d5f1e407a44f50034dc38a86b1641d94c3ad88dbc744a31949402966a1",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/0train/fold_3.json",
+      "roc_auc": 0.47619047619047616,
+      "sha256": "dc758155eea6dfb7b3f195966d7ce74550d2a7da252379acfd62e1bdaf9a7ac1",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/0train/fold_4.json",
+      "roc_auc": 0.6530612244897959,
+      "sha256": "11654eb33e6ec7226e6d44d25f13adbb768978223bbcb19eda6d4f50954ff969",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/1test/fold_0.json",
+      "roc_auc": 0.5047619047619047,
+      "sha256": "7bb1826410b831409739e4921d475b882db5d0402549cd05e218dfa6d2a45893",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/1test/fold_1.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "cfdfda1905800577dd5f1c8073e96543c5577a93921273d22ab23cd225a1db42",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/1test/fold_2.json",
+      "roc_auc": 0.49047619047619045,
+      "sha256": "243edf551bd946330b5e9a8c009db05ffa6eb1c3601b8e916737a8583dca5ae0",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/1test/fold_3.json",
+      "roc_auc": 0.319047619047619,
+      "sha256": "9fdbab3889b697cbddecc8fa7ab368a24109b1003b92cc04d7dde026f5c6ad6e",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_02/1test/fold_4.json",
+      "roc_auc": 0.6122448979591837,
+      "sha256": "e114ad9392dfbca22aa54093e03be486c5764002f226075a1159febdfe1d4410",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "ed56336e5514520f2d9dabcc75592bf104f8d73267fc6e3ad33f2d0c2aad96c6",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "0a830ba8b01569f0d25dfebeed2c2c4085e175b904cb8ff4b4834691fd2e6baf",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/0train/fold_2.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "d8a0b296a7bb488022752e86a40fc98d367fb68876465c7590f615c07d14d341",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/0train/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "fefc5a0718127ddafb3998b0965ead1c53c9a5a260a703fc8fa65974897accac",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/0train/fold_4.json",
+      "roc_auc": 0.9846938775510204,
+      "sha256": "6882f16e3f32413924fd8f6743b180f834286d05e84b4f1de1c1e55274b10bb4",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/1test/fold_0.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "894a9711d5db025f9442e0d8ab425d9b8b49f5d7889bd5a4e0a2e1303f22f44e",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/1test/fold_1.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "22c5d274ef9c68a779d103fed953968451fe06376f2b2595e1064f8b0420270a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/1test/fold_2.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "4abd5da072eac92fa709090a0a99f3bd5119fbb85f865e8af62069530561d760",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "8a21ceeb1bf82d88137975231b8f27b758dec2e073144bf275747ecf978a0bc3",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_03/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "9af3fc993d85b57104252290b482b9c0e2f670f4ba734c7820aa63fd62be3092",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/0train/fold_0.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "17b13067c5d09233084a783809340793cec727ec6d4c091777c5d7f8cce7bd96",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/0train/fold_1.json",
+      "roc_auc": 0.4714285714285714,
+      "sha256": "b3f4d0d3f2a1814a25f04ea09e613e551cdeb426a4e042faa441a302dcfafa3b",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/0train/fold_2.json",
+      "roc_auc": 0.5380952380952381,
+      "sha256": "4a19c0ce2a307b13f5630b337d586783534ae4e6be1bc623949e2970502f5f04",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/0train/fold_3.json",
+      "roc_auc": 0.5619047619047619,
+      "sha256": "60773431bf057f6d4785400f8b96452b2071e01a11f8093c583d06d38026ab17",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/0train/fold_4.json",
+      "roc_auc": 0.6224489795918368,
+      "sha256": "d3596402e315dc04a9b87755848b3bf397948fc788712f0fb787e5b47a42cee7",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/1test/fold_0.json",
+      "roc_auc": 0.5380952380952381,
+      "sha256": "d182679f8f82aeb7040bf683a944e0e8da6f50752cc59befa8d6fc522c5c821c",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/1test/fold_1.json",
+      "roc_auc": 0.43333333333333335,
+      "sha256": "9da6013e02407ec6544a82aaa5430ba2db140821c58cfebdecab7a1faa9fa565",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/1test/fold_2.json",
+      "roc_auc": 0.6238095238095238,
+      "sha256": "ce7ff47a584a9cc7fc93730890579f48e81192aa05d5136f34087981ee21e550",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/1test/fold_3.json",
+      "roc_auc": 0.3904761904761905,
+      "sha256": "6e7f1afd2275884c9300d02d44307d2068793e50671997a6d7d1f5b2a241d815",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_04/1test/fold_4.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "810bb21f175609f8e4ac1d4c404f3f47ba9c92c6b29d694211c1f757e8e59f47",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/0train/fold_0.json",
+      "roc_auc": 0.8904761904761904,
+      "sha256": "27ce8645b00b69fb385768e6b72b4ed983dc761d40a1f11060045fc82154a777",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/0train/fold_1.json",
+      "roc_auc": 0.8428571428571429,
+      "sha256": "0147c602bc6fff2c75ce10cf969c6bc12e8c6c42c2a1d405c90b6b0d0f92ad82",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/0train/fold_2.json",
+      "roc_auc": 0.6047619047619047,
+      "sha256": "8807526e1b86a5316c4345af27197f6c4cf347e33651dfa690042adbc3bb0e97",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/0train/fold_3.json",
+      "roc_auc": 0.5238095238095238,
+      "sha256": "f70410ed7d1cb5a4a4772e7bbac8a221c0660a08f7a0050b1a09154619ef3151",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "359e93527a220aaeec4abf8ec32705b0a07774770756c510c5fc9bf1b427ffce",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/1test/fold_0.json",
+      "roc_auc": 0.6476190476190476,
+      "sha256": "263f7f68462a02092fd0dc0e3838df95c3985fbf0004afda0cbfa9dc957b31a1",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/1test/fold_1.json",
+      "roc_auc": 0.6190476190476191,
+      "sha256": "b674a45db3de011507b912da35e354b23357c3ec46f45b76edcee0835e242b22",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/1test/fold_2.json",
+      "roc_auc": 0.5952380952380952,
+      "sha256": "650f509f5193adb9704a45d0e8852eb484a4db2d2c7805eb30d791d1d784c18a",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/1test/fold_3.json",
+      "roc_auc": 0.40476190476190477,
+      "sha256": "1f917c162cc70d655333bcf06016ec371b03afda8ba9397a1f33712003bdb0db",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_05/1test/fold_4.json",
+      "roc_auc": 0.5204081632653061,
+      "sha256": "36b6b6be099495e36ceca75379f5a1c5c8d236c1716dab3358277d0ea313ae6a",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/0train/fold_0.json",
+      "roc_auc": 0.7523809523809524,
+      "sha256": "392057ac7f763e3df1123315aecf6241db31fe3d8ff2318acb03534252c53b44",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/0train/fold_1.json",
+      "roc_auc": 0.8380952380952381,
+      "sha256": "087554dadb1cc87eeb83e779fba4da9e83edf92970d183a02d7b57dd2bf6017b",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/0train/fold_2.json",
+      "roc_auc": 0.6904761904761905,
+      "sha256": "3f230b7d8c32907b7296a21c20a84c46c1452745403a245a9469df78a5335741",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/0train/fold_3.json",
+      "roc_auc": 0.8095238095238095,
+      "sha256": "088dc4d6d45271ba437c9c3aa081a7da868840f609805119c543300414e1d187",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/0train/fold_4.json",
+      "roc_auc": 0.4897959183673469,
+      "sha256": "6b0a570c667ca32cc9d17f4cb9db100ae98fbe916c45018bc41a66f28b6039bb",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/1test/fold_0.json",
+      "roc_auc": 0.46190476190476193,
+      "sha256": "28007321d57ea520b25c382461a3458c5b12eecc0632f8db1057602da6096ffe",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/1test/fold_1.json",
+      "roc_auc": 0.7333333333333333,
+      "sha256": "a1bfd97509cfdac0f977dd296fd2e69358a768ffb1ad9d8fe3c47fa8600fef77",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/1test/fold_2.json",
+      "roc_auc": 0.6523809523809524,
+      "sha256": "5f19571ba4ae02bf90e3657a10840abd8953f3d74512a322d36b52250a14963f",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/1test/fold_3.json",
+      "roc_auc": 0.5333333333333333,
+      "sha256": "f5c5642db4d7f4d4682a9d223137d7a1808f2f17f8466de29f32cc6d51204e95",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_06/1test/fold_4.json",
+      "roc_auc": 0.5663265306122449,
+      "sha256": "ce28f27eacf3856a25d471a77590a26b02216e633dded6e1c1489c40cdc50d90",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/0train/fold_0.json",
+      "roc_auc": 0.49523809523809526,
+      "sha256": "428943d16e39d30fadd1024a00cd18ec35b53a9de98a0823e561a18eab69d7a7",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/0train/fold_1.json",
+      "roc_auc": 0.3952380952380952,
+      "sha256": "e08a89f3bb1e2d687ff2c25c45af34dde5bfcf97d6c8903f77a6ed913aa82bac",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/0train/fold_2.json",
+      "roc_auc": 0.5095238095238095,
+      "sha256": "f65ef02400d7a039c1b243b58386d2d3e5d1e7beca6a7a12bb3757e76b359f76",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/0train/fold_3.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "580c8bcfffb6c7906d8f6776acbf2b85b076cf3cee1fe3d56f32170a7971856f",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/0train/fold_4.json",
+      "roc_auc": 0.5816326530612245,
+      "sha256": "d61b2f01239747b41ced2415327fa77d3efd651a2d973808543d5d52c7f0f98f",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/1test/fold_0.json",
+      "roc_auc": 0.6952380952380952,
+      "sha256": "b78d61a279b7405b4642560206e67c872d1270825a49203992f5a0b1d0e69100",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/1test/fold_1.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "7a3f2a89b5049d46de290f07f8bf08ff4d45bbaeb2f215808a2983b516217a54",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/1test/fold_2.json",
+      "roc_auc": 0.5095238095238095,
+      "sha256": "5cf0e67ef3df87b4370da8480453766cad8f07e2ddde869a366ae5d277fad148",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/1test/fold_3.json",
+      "roc_auc": 0.5571428571428572,
+      "sha256": "1f1bd7b51804fa08dd2566e3fabcf2b444033fd7c070f4f4e0a9be791dd1bd21",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_07/1test/fold_4.json",
+      "roc_auc": 0.413265306122449,
+      "sha256": "60a202628c3414f75222f7e3367283874b34f8001f790bc1641c8caefc755162",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/0train/fold_0.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "a9028b79582b0fd078203e45e6ad42dafbd6a89b5c89236d365ea4cc2e0caa22",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/0train/fold_1.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "2a1800409ada38e00b1e5615254b05e1bdd6b4b5df0434b15826ce129bae40be",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/0train/fold_2.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "c89a242d6686e7550b4e48e220427458d457acf46a6ecc9981f4d98ea84e0811",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/0train/fold_3.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "078d55d6f57373a08c445580f1528eca8664222a3292894b968df11b35eae514",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "11bfa1f3af679b2f27bea0bdf3d62556bc1fb8fdffd23e523bee7e89426ba794",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/1test/fold_0.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "acf935eb78bede5b9b33e3997cc76252f898335a8bc2bb0d69eb8df7160d3bc7",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/1test/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "e9e421eadc6db2d852e893244f1fbf24f5378ecec872e1af56a39a997da5bec9",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "07ec71ac46c8ee67b9ef88489fcb08f54f00662934bb33735ed90a2201167751",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "d20c073e72b31bddc6e68f2337a41412e54339456a7549ff11a919f329a3ac0b",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_08/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "ee60901965aeefa3029deaf4d24d98475cd0a2ababd70b188984a3018797445e",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/0train/fold_0.json",
+      "roc_auc": 0.9523809523809523,
+      "sha256": "3fbd7c750d8e0b3018817955b3cddd2b3046fb5096dd5d25bd1e3270b26ff845",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "b59359a2642fe173327e3ea013d75b3437184f6d8a9ba8fabf7785bd53854e72",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "324ed5a4f4c9ee6a4a294ed0080f7a9059de693ab1dcd21fc0a22b62abcd3c52",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/0train/fold_3.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "d7c63891253268d578f0437fea082a4e9a1b23f3c6e72fc9487470707d670ff7",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/0train/fold_4.json",
+      "roc_auc": 0.9948979591836735,
+      "sha256": "afbf50775f29550d4efe7827159031e8565518a6678f6c7356d708ea718f6fb3",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/1test/fold_0.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "f16508edba892dffb2d1358d011385348a6cd7601934b4a2b14443dce378d772",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/1test/fold_1.json",
+      "roc_auc": 0.9619047619047619,
+      "sha256": "8221e6435d046948b85b9eab1ce0acdbaa0935fe8cfbfbc618afb16639b26246",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/1test/fold_2.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "489f7166241bcde646a41e4ebc6719c03355c7fc4f4ac1452fcad3b69922f011",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/1test/fold_3.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "c959b9df22a490eb018caf212eb323c1059d7c160cc196c36bf0a311fd168348",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_42/subject_09/1test/fold_4.json",
+      "roc_auc": 0.9387755102040817,
+      "sha256": "de711d0b97e4e4b70820b3658456b6b2f26583da1c9e94b52fad2769617bc841",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 42,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/0train/fold_0.json",
+      "roc_auc": 0.8095238095238095,
+      "sha256": "ace9f9762e5d4ee71889a6e284e5cc66e4c963ee29b9745d442aaa3b1098e580",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/0train/fold_1.json",
+      "roc_auc": 0.8238095238095238,
+      "sha256": "9a8fe4d51370bb1523259b8f5deaf5b5f7736fd64c80ee328cb48302784d00fc",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/0train/fold_2.json",
+      "roc_auc": 0.8714285714285714,
+      "sha256": "3ae27f906dace5a8ee1f18e56bf791e1375656746649099e0418f3c3be1283b7",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/0train/fold_3.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "14d9610df6faa4216b2190406bcb5a34c0dada2448c1a0275bffb38c0b71bd6b",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/0train/fold_4.json",
+      "roc_auc": 0.5663265306122449,
+      "sha256": "be8c67caefb5f477d2f76740e1e9e9050aed171eab963fd5b2d401b5de20701c",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/1test/fold_0.json",
+      "roc_auc": 0.7904761904761904,
+      "sha256": "c5db299f9d20db2ae3170944919074b5b19283cafabb97db2f3936d4b85f9b78",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/1test/fold_1.json",
+      "roc_auc": 0.9238095238095239,
+      "sha256": "651c52e3271789ad58b0332f1b9d9b790c1303c534c7903e30a5451cef7d13ae",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/1test/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "fa87b66d90d009ade126d120ac79fd5f378a28bd0dccea0b4abdb33eeb93e03a",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/1test/fold_3.json",
+      "roc_auc": 0.8809523809523809,
+      "sha256": "4f9b2f3492a643634bdc692846a9156c471bb70272a494ccf3871348487dcc8c",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_01/1test/fold_4.json",
+      "roc_auc": 0.9030612244897959,
+      "sha256": "5e50392ed35f1f59a98fc228d8657380839a874b36f0cdd0bb3559ffb826a4fc",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/0train/fold_0.json",
+      "roc_auc": 0.3476190476190476,
+      "sha256": "1134438f5c799dea82bd4ea59fcb0c9334b69a65124872b0f8dcffe7870036ba",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/0train/fold_1.json",
+      "roc_auc": 0.5238095238095238,
+      "sha256": "9565e2f2ed787604c8ca51c0a3ac72681f5520d3b378edc1467417303f406ee6",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/0train/fold_2.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "37a38bb0a12a72c360f88d57995c52f7491aba73c9efc9026719213dcc21d207",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/0train/fold_3.json",
+      "roc_auc": 0.7476190476190476,
+      "sha256": "70cf5aa40ba07968d128f6f7e458ded5229d0dc3038b7a39b6236e549ee2d5e5",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/0train/fold_4.json",
+      "roc_auc": 0.5612244897959183,
+      "sha256": "1f6b04708d49b5a40c85e5e6a3c8083f6822d9bd769bd1a7f222cbd2d28591ed",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/1test/fold_0.json",
+      "roc_auc": 0.45714285714285713,
+      "sha256": "fdba18a213b8b2ab53d85046531b48798ddc9e5a6fb79178b68d920e1559a4b3",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/1test/fold_1.json",
+      "roc_auc": 0.5095238095238095,
+      "sha256": "16e5ded897e19fdeded1b0bd690e19e2d19eb3167a06b5ac0a3c553aad217625",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/1test/fold_2.json",
+      "roc_auc": 0.6952380952380952,
+      "sha256": "c27156488a3267c462a361e2c824f2d82712339d6511e08ef0acecbb7ab697e8",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/1test/fold_3.json",
+      "roc_auc": 0.42857142857142855,
+      "sha256": "cb70b1a90b37640a9af36c87e5cb4774a65f739523b092a414a0b22a5ee41877",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_02/1test/fold_4.json",
+      "roc_auc": 0.4744897959183674,
+      "sha256": "d005a635a4fccd33ea41d90a3b1809e5015fc3fa08c068eb959973e89bcfb1c9",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "145c51c554154e646d0d6fbf625f7164ff2208c934e40888aaa5cb7865f10b74",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "77d77a5e42a13dadfb7ff6331227ba3cfb3a64cb50f430cf04c2f8a0cb024503",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/0train/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "7ee1d3715913c8eaf993a658f79e99a363f9b31a28321c78d220781405285209",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/0train/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "702d425b1796c0644df5854ca555b9abddeee6f6b58b0d314c4103395d7c9158",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/0train/fold_4.json",
+      "roc_auc": 0.9744897959183674,
+      "sha256": "65a2ddd66e7e668b6894c8bc704de1917e41a65bfdebd4ab494a37f734c170bb",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/1test/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "7e0359be0a96bf2eea02079a0c8ef55785bf17a189563c88d09b469d7b1627b4",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/1test/fold_1.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "14223e6eb55029509cab58199ed3e4fc468e340678d3d1d26d5817279e5dd0b0",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "7e9097ed294a4939415a0c3f8244a66a6d2ce54a23540a90c2a6703303a0ac94",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "d7c87e51397f4127ad8d6e66b6317027cd31556a8e170ab75e0e49ea5ded4423",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_03/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "8c24079f866756017ed8b477cb97573851b1856af1dc563bff122a20637856b1",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/0train/fold_0.json",
+      "roc_auc": 0.5285714285714286,
+      "sha256": "171ddbc9ea214311a3085aa5ff13a37de9470f30d2a2ffa4e3beb7c5d760c1c5",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/0train/fold_1.json",
+      "roc_auc": 0.4857142857142857,
+      "sha256": "72428e9c08e4df005815bcc7f199ed3f96790a1853b8ca3e673a228c1927fe8f",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/0train/fold_2.json",
+      "roc_auc": 0.5142857142857142,
+      "sha256": "0d77e5314728bfdafc65120405e559ec6c9ff6735c18afe9d612e5e5ff92bf88",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/0train/fold_3.json",
+      "roc_auc": 0.5523809523809524,
+      "sha256": "b80738c4d0389e99d8450db9da2ec7a522c2a0a03be6d831b4026dc35f468957",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/0train/fold_4.json",
+      "roc_auc": 0.33163265306122447,
+      "sha256": "437270fa40a02d6aedc3cc3630c5a899ee46517fe422ef466c60186aa6f703d1",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/1test/fold_0.json",
+      "roc_auc": 0.5190476190476191,
+      "sha256": "b236035ce7631e62b0dc713a59536ec53691cf66f479fee0fed788e1aa97560e",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/1test/fold_1.json",
+      "roc_auc": 0.4857142857142857,
+      "sha256": "bdf08d9ca556e4a03768e7ae3088ccabb27cb3bc196b8ce3d91df10919a9277f",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/1test/fold_2.json",
+      "roc_auc": 0.6333333333333333,
+      "sha256": "cc29a581e0a82dc8738cbb11abd2b2a56a7266d183f62862a81317de40a9f570",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/1test/fold_3.json",
+      "roc_auc": 0.47619047619047616,
+      "sha256": "913fd4b5104129753f93826605eeedc2b197940134b8d9441e31db9a5a279028",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_04/1test/fold_4.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "df24eaeaab2c2ce76e91b4519d31b50e7455e42b587ccca4634eebc121491e8a",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/0train/fold_0.json",
+      "roc_auc": 0.7714285714285715,
+      "sha256": "6dc5aee1535f7911a8b323eb3c4e049b2c1f405f559875ac2d2bbee3fc33e8c5",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/0train/fold_1.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "067d62bf4e90a3f347053a3c959b36fe881a38224d45638566cddd81c976ac9a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/0train/fold_2.json",
+      "roc_auc": 0.8238095238095238,
+      "sha256": "29fd680e6ebb61fbfdd116334dcdec69626662c619a26f03236f98b927cb3495",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/0train/fold_3.json",
+      "roc_auc": 0.4714285714285714,
+      "sha256": "15273f2c9e9658b60dbed81ee1d7a03f66aa2933eb881f0ef8779b47531790bc",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/0train/fold_4.json",
+      "roc_auc": 0.6632653061224489,
+      "sha256": "26c806782740cc237d28b8be7753603535f1dd67e43f9fece9b8c212166327c1",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/1test/fold_0.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "f24c578d5c219aa6cd13dd9aa84af684d4ad36d2776474af9e7e4da3df2562d4",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/1test/fold_1.json",
+      "roc_auc": 0.5190476190476191,
+      "sha256": "ee10c6398bfc2339972a41ae53f0c5bafc682f0c1a8c2b053a35f487b519a6e0",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/1test/fold_2.json",
+      "roc_auc": 0.6952380952380952,
+      "sha256": "24db170222bade469b2db27bd17d509131bd968b4af266f24627f9533df5f972",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/1test/fold_3.json",
+      "roc_auc": 0.49523809523809526,
+      "sha256": "9d09ff504af1d069ee042c04e85acefe0904d996498945bb6e96559590f92c33",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_05/1test/fold_4.json",
+      "roc_auc": 0.6224489795918368,
+      "sha256": "ac2a01d315ea816547b972b22e4ac742f59b6f02a2c50b10c09f57dd2aff4968",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/0train/fold_0.json",
+      "roc_auc": 0.719047619047619,
+      "sha256": "4fc596acb17a766a6ae97cdefebb1454b17e0e1e96a7a91043dbceb8753e3132",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/0train/fold_1.json",
+      "roc_auc": 0.7904761904761904,
+      "sha256": "ac21e1f766ee07618fd4d08f3127b5ad894b28c5e4885e6c5fc7eac0f87767eb",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/0train/fold_2.json",
+      "roc_auc": 0.6571428571428571,
+      "sha256": "f6228b2ff347d7c99c14a09a41b5e8663acdd306264c244b46bed36c31cd14b0",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/0train/fold_3.json",
+      "roc_auc": 0.719047619047619,
+      "sha256": "572a6d2cdc55324c34a3fc4d396d67de6d6b0ac7cf605abe32fce569e50e5f0c",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/0train/fold_4.json",
+      "roc_auc": 0.6836734693877551,
+      "sha256": "fd7cec8b590467366c6e12f09219243797153329cae7f5d8be9633d8588d9de2",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/1test/fold_0.json",
+      "roc_auc": 0.5761904761904761,
+      "sha256": "a6827816a894df0af9bf9123fcc3d5b4039a560594870fee3e537b9fe2c8f520",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/1test/fold_1.json",
+      "roc_auc": 0.46190476190476193,
+      "sha256": "3a2b2b57cdfab3ffa7485d69f2b60180a98c5deb0d5d5b887f5e77ce1190c160",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/1test/fold_2.json",
+      "roc_auc": 0.7,
+      "sha256": "b361115819e44ffcc10c3a65f0b053c91ba7e7717e61a7dee8885ebdcc9a82f0",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/1test/fold_3.json",
+      "roc_auc": 0.5190476190476191,
+      "sha256": "774e2f583903312ee018df0d85d487aeb46995574049878d679c4cfc844f67dd",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_06/1test/fold_4.json",
+      "roc_auc": 0.5867346938775511,
+      "sha256": "a8461d1e9bd933c4cf51ba8e2a814c8ea60ba2fddbbe03adea921c8f1ecf315f",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/0train/fold_0.json",
+      "roc_auc": 0.42857142857142855,
+      "sha256": "595049fe683a2d529328df8008dd22d89ad7d270b64fbd56c652ef2529f214a7",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/0train/fold_1.json",
+      "roc_auc": 0.4666666666666667,
+      "sha256": "6b7c84ec25c66fcb41c0528a6e1089dcfd324a3f6b2acf250f979f72f63402c9",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/0train/fold_2.json",
+      "roc_auc": 0.6476190476190476,
+      "sha256": "a16ee1610f6db630aee76b5f809e281189c1ec5ac1268fd32c5ae53c6fba1800",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/0train/fold_3.json",
+      "roc_auc": 0.3904761904761905,
+      "sha256": "609d1db0d07f6e895a19fa29fda239e8716d99434f80cf02051244e03cc89166",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/0train/fold_4.json",
+      "roc_auc": 0.42346938775510207,
+      "sha256": "6e4f21fafb87bf0a029da61040d25436ad14aad654c9f6dbefad9ed4028a3d8f",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/1test/fold_0.json",
+      "roc_auc": 0.7619047619047619,
+      "sha256": "e3e4ab34774f79a4c11eebc5367fe9ca8f7dd15777c1a202330fcff45bbd3099",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/1test/fold_1.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "8ebde4f1d5c8ba8ae13c7256699535747d6a290ba6b178dca9a7bf60f153c0c3",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/1test/fold_2.json",
+      "roc_auc": 0.638095238095238,
+      "sha256": "0d1c4ed3a619b180af0ebe315597293c3dfa4361a64cd76347de77dd12c48c0c",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/1test/fold_3.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "97005198311021448cb35053919ac7c8d1086b3ec231aaf4d48acf4dd8af7a8c",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_07/1test/fold_4.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "1cc9007e8ae7a1f06547fa1f9927a0ca17806dcd85c4dd9ca460f6c7b8b5aef5",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/0train/fold_0.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "761aca86fdb785ddc9a629ad1c2f7d8d9ed039302a504b405429c256f851fa67",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/0train/fold_1.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "9de9b7cbd362721b01011dae1bbbfd0d1cc099d1e3ba069a5a99399891fc9f9a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/0train/fold_2.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "69be255bd79fefafae055c630ad35c65db753f36c048ad17926b0d8191e3f0e6",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/0train/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "a65361dec5e0f00acc04e0e1a5eb642c0ca34f2b3be8fb27016bfa54f161a08a",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "1423a31544a1c49fe3808b3c1e7ee4b656322ec12ef2804b09b6e63713901ff8",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/1test/fold_0.json",
+      "roc_auc": 0.9523809523809523,
+      "sha256": "f9994a819a094eb30add16d15ec2a1b070e0fe14b7a20e3c9809f88b760001b6",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/1test/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "94c1f06649f56c74e4142dd7e0f03e1ff8c81d700440ecca835b7dd41a1a3a39",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "a7cd70f3d1c376a2c22fcee332125f24974f2690b8d9a7e71229cf677d0e1d7d",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/1test/fold_3.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "e57e46fdaa1a4d4860bba2806cf39263a3a423546ad0c607ace54705b490f76b",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_08/1test/fold_4.json",
+      "roc_auc": 0.9948979591836735,
+      "sha256": "e1718ec6b1aeb6ffa71bdc291849a07cb69e201b75864923cbcbf01a91c31c44",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/0train/fold_0.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "1ec6b5abcbaf1b6680fbb16eb96977fd05c98e6d6efcfcc142d2404d8f798250",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "dfa1f6bc79ede1ade4fc71a94746bbd55dd327648ef65bc28be087c20e8f10ea",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "d0e0559eeccca0e8d83e497b4c1b175b69cd61f538acd1b8ee323995d410dfc3",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/0train/fold_3.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "193a759813758cbe78b0d0140e138a8302411c7b50dbdb6976dbc685ee0f3648",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "9b50ddf2e008bdc7c80fd755f031fe699bc12bdc7a9477d2123e76e53c6d7a66",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/1test/fold_0.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "4ddc41a6090ce55536bfaf74ac1c6faeed16e3ddf99e9044a6b0b446cac5505e",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/1test/fold_1.json",
+      "roc_auc": 0.9619047619047619,
+      "sha256": "993e72afc33e8e6f5682f2e34a5f82e019f6a772431ca3e6bfaeb0cef05edd77",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/1test/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "a68b0d13a54b657de50e9f36af9ac2f2adca611e12b9af3bae2e302d3691d603",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/1test/fold_3.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "9019a031bbf8fbb6fa9c42d94bf59a95866dbdde9ea194bcb5551e2a679113b4",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_11/subject_09/1test/fold_4.json",
+      "roc_auc": 0.9336734693877551,
+      "sha256": "17d46c0e64fb3d6dce30642388462fc884f86c8f35ccd08cddb33f1e58fcea59",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 11,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/0train/fold_0.json",
+      "roc_auc": 0.8571428571428571,
+      "sha256": "3d6c67e09e8b11025740a68b123a2299bc3d134ebaff64034f3294c036c6f7a0",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/0train/fold_1.json",
+      "roc_auc": 0.9476190476190476,
+      "sha256": "e893985e787b51f124a17a20f601bca2ff4ea1a3790f1d43d36168d400a41d6e",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/0train/fold_2.json",
+      "roc_auc": 0.9238095238095239,
+      "sha256": "9eeab9b9fdaef85e3addb18b9c15d26bde3e9d4f9b8693c1c64a882aeaf2005e",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/0train/fold_3.json",
+      "roc_auc": 0.6238095238095238,
+      "sha256": "a7998eed0443305a53c32fe4518efac0e82a2e3876dcaf74495ff55239bdf212",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "8dfbe8c9a6a35da3c8b095c2a0757ccc970e4461429e22aeca36349deec5c333",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/1test/fold_0.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "0318844bc23052c31aa2fbcb092671cf6fbd1ba210ecb21c9aeaae81aacfc9d8",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/1test/fold_1.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "b8a902ddaa5a148cfda37b175211a8b59548bf0cf18cd0a436ffbd57bdaf5e34",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/1test/fold_2.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "a3358f939252f729b5495933cfc10dc1573db0601a5c09120a66333b71535571",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/1test/fold_3.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "9d4ca753bb62610f6cc35cdd034368ede51522751ee6627d750dc2c9cefcdab3",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_01/1test/fold_4.json",
+      "roc_auc": 0.8367346938775511,
+      "sha256": "b454fee7c042d18ae697c6041f5961e2b8977bdff66374276482c30c8097f6d9",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/0train/fold_0.json",
+      "roc_auc": 0.5476190476190477,
+      "sha256": "149b8dc3585d2e63b56c75631c318a5861a71976686282c0e23a18b0d5915491",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/0train/fold_1.json",
+      "roc_auc": 0.580952380952381,
+      "sha256": "de120102c39787b68f902837f89bb6e23cfb166dbd2f4cb1ff1f38c7bd2393ea",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/0train/fold_2.json",
+      "roc_auc": 0.5095238095238095,
+      "sha256": "2333cfd1de6c051d15acf04a40b2f36aaa0546b98cbbbd1b33df7ec331886806",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/0train/fold_3.json",
+      "roc_auc": 0.4095238095238095,
+      "sha256": "1eb7e89a5a0a63ca065fd6173dcd62862a9bf800ab76e8fcc532e81359b74cf1",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/0train/fold_4.json",
+      "roc_auc": 0.576530612244898,
+      "sha256": "a566828ea3d33ab31d506858ceefefdb4fd6eace562c1847dd736c4b50ac1225",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/1test/fold_0.json",
+      "roc_auc": 0.5,
+      "sha256": "96109ae0a34014477641246ce0e69cacf39ada4308a791f426c977a590d54266",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/1test/fold_1.json",
+      "roc_auc": 0.5571428571428572,
+      "sha256": "5d8fd8eebd714596c77fb92fb090797c1ec4f81910798f043e895350c27a40b5",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/1test/fold_2.json",
+      "roc_auc": 0.4714285714285714,
+      "sha256": "ebf99e59e04e963c837695f9a09303b5de9eb2d50e67c09c1b679214645b01a7",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/1test/fold_3.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "ed2f7fb10ef7959611b279fff505a3ad24f5efb5e5169391c780cf1c9d80221f",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_02/1test/fold_4.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "96a9d6b6821bb4c6c05c18508d1e743b0cb2ed46a9cc819fb09f79d72a6eb582",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "918638f15a762c70824fe79971ec4e50c0190fb0b59fc18f7f0b4979af24daa6",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/0train/fold_1.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "61a5b0dae297bf8f69f46eb8abe5ca0ddc13820fae3dd3f2cb2077d24df3bab5",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/0train/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "fd9de85ca8768b78adfc655f4a2cc5ed916b1b858120a2bf2d2102b565114ece",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/0train/fold_3.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "52116395b75ea884c0a83a7eb79a29b17acca09d648d22d1fd8ec752f96b6a8b",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/0train/fold_4.json",
+      "roc_auc": 0.9795918367346939,
+      "sha256": "c6f637ba067ea83832fde9994dd359071cb813ab974e2fd5492c3fd10c197850",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/1test/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "941eb5bbf36ef5a0c8c574e9a7755d421b6ec9b2094437b5584e6a96cdfa1ebb",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/1test/fold_1.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "0602caeaa7975773d4e59667b2c1f018db84bcc12aea574c39f88cd56994dea4",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/1test/fold_2.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "dfdbcd17cd74828de555bc45b505af491183a1d4b60bac4f9549d586513acbf5",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "fd7298843ae1a7d223ff2ee580c9c2e1e6f423a9c3e29dc5883285ca4930da59",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_03/1test/fold_4.json",
+      "roc_auc": 0.9846938775510204,
+      "sha256": "e8b8982c91612fbdae3c1c19ffe0de070ce49703f18c213cc5a77dcd0f8913a4",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/0train/fold_0.json",
+      "roc_auc": 0.6285714285714286,
+      "sha256": "508ec7638553e4fa243da4db58944491d160be361d15eb7873c1cbe84ceabc57",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/0train/fold_1.json",
+      "roc_auc": 0.5047619047619047,
+      "sha256": "3e6d329058d6f17ef98e6b63a541a069e9690b6b513d10af736c2f5c7883c021",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/0train/fold_2.json",
+      "roc_auc": 0.3761904761904762,
+      "sha256": "0329a4467d5d29cc2e0efd7abef25b8d73656d525a397f0048923f069da8b064",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/0train/fold_3.json",
+      "roc_auc": 0.6857142857142857,
+      "sha256": "7358f600cd14f7a1fbe7697edbc0a54706ea5a803b5d531e751cf387a0ca3729",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/0train/fold_4.json",
+      "roc_auc": 0.39285714285714285,
+      "sha256": "c39e739b61b0e4164705e6b8c5c1479a276faa96edccf9d217accbcadc95c086",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/1test/fold_0.json",
+      "roc_auc": 0.7428571428571429,
+      "sha256": "feebf3c7d7f5573dcd03981aa98655cd5d84bbda943cb38da7f5bada439d94e7",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/1test/fold_1.json",
+      "roc_auc": 0.7142857142857143,
+      "sha256": "c759c3b9cd8e8c482b097f7d878a2b8b436fc607341d1f11bf85ef7adbf0165f",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/1test/fold_2.json",
+      "roc_auc": 0.719047619047619,
+      "sha256": "9cfcb0760e805cb30a457c8ba4d7582b56aee9935d707594013f011dd8949ae2",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/1test/fold_3.json",
+      "roc_auc": 0.5047619047619047,
+      "sha256": "7b40835c4edffb7748164dc5f168ccb80b987a11827f6371cef532c9f3b8a003",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_04/1test/fold_4.json",
+      "roc_auc": 0.5,
+      "sha256": "1da32e89a35b1e8d9580a10d39756128098c8433cedd5bdd2277af27a2e8738a",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/0train/fold_0.json",
+      "roc_auc": 0.8142857142857143,
+      "sha256": "cd0b3a015b78d08c9a9c859efe54fa7ba958281219eacf3d61734274b0aac6b8",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/0train/fold_1.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "611bf8adc75ba12c8db5ff3a3bb4fd494068dc8ade88cd7a80b56361ece0d8e5",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/0train/fold_2.json",
+      "roc_auc": 0.6142857142857143,
+      "sha256": "fa9ae7ebb5fff433a446813f5d6fc66d4c78274168b2448ddc912797924fd19c",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/0train/fold_3.json",
+      "roc_auc": 0.40476190476190477,
+      "sha256": "056fddf78ccce9f175e3e6a3b908bf942edb01c6b899581c3ff4e5414ce1cbf3",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/0train/fold_4.json",
+      "roc_auc": 0.3163265306122449,
+      "sha256": "42276d0c24676cf62a80e56dbce5a607fde962ee4390dd624630d1a19e75bece",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/1test/fold_0.json",
+      "roc_auc": 0.48095238095238096,
+      "sha256": "8ce3a6fd94b13b928e12e7ce9ec6a8c9194d7c5af32ba8daf21b0463b8d7a35a",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/1test/fold_1.json",
+      "roc_auc": 0.5952380952380952,
+      "sha256": "09188e1eebda2c64d9ee5d52cc12761213a34734134ace574d1641e1288e560d",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/1test/fold_2.json",
+      "roc_auc": 0.44285714285714284,
+      "sha256": "82b6dc72918d99a14b8729ce333b0f8213f8bc59080ef0e93b8af5b26ca3186d",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/1test/fold_3.json",
+      "roc_auc": 0.5523809523809524,
+      "sha256": "98413e8b07042271782116924448cf7f49128cf0ca67a96f82e064ce343783b4",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_05/1test/fold_4.json",
+      "roc_auc": 0.6377551020408163,
+      "sha256": "ce19ac12d4aab02665d2b838e74152423a21b12add2888acc0580c9482563084",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/0train/fold_0.json",
+      "roc_auc": 0.8952380952380953,
+      "sha256": "fe946e7e8d70b363a362793404621d91cfeced2e64b60ecd9565184fa46da480",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/0train/fold_1.json",
+      "roc_auc": 0.8047619047619048,
+      "sha256": "3e8ef426a863bf9ab2ec082a24893497d3d8aacf5b391f242d5d7e5f23a5282e",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/0train/fold_2.json",
+      "roc_auc": 0.7142857142857143,
+      "sha256": "24c100a72bfe5ef3351074588c92d0c9cac12b018179c372bc530b6a3c84e20d",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/0train/fold_3.json",
+      "roc_auc": 0.7285714285714285,
+      "sha256": "0ffb0551bff50c53ba83737d372ea3aace8b5575b78b6ba305c58247f3acbe73",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/0train/fold_4.json",
+      "roc_auc": 0.5612244897959183,
+      "sha256": "07ac9762d841eff53150cfd4746ba5d48dc6e4620ae1eb91759d5d119adc5347",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/1test/fold_0.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "1ea52f8ce9dbf5acc7dd1964aeb1446db02305bf425259964c023030646edfdf",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/1test/fold_1.json",
+      "roc_auc": 0.5857142857142857,
+      "sha256": "2316ccbed19d16e1bc7d9b94b568745bfd1b61b5df030e8c3aa95e1c4d7e785a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/1test/fold_2.json",
+      "roc_auc": 0.5666666666666667,
+      "sha256": "fb20d9bfc607841f5172bac1af53d851777e296df466c51ffe6aad357f45fb1d",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/1test/fold_3.json",
+      "roc_auc": 0.5619047619047619,
+      "sha256": "0b25dd4a0c59329f90a61c38ce6ec6aecca7ede32c7c656175a2b0135c713303",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_06/1test/fold_4.json",
+      "roc_auc": 0.5255102040816326,
+      "sha256": "513ebac44cd0e134276f1f7282c33f42c101d84c864a24b91c6fb3f898e8ac78",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/0train/fold_0.json",
+      "roc_auc": 0.4666666666666667,
+      "sha256": "074f34b92795874ba7a330dee4a7ff3699542addf8e64bdcafc071a27fb0799b",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/0train/fold_1.json",
+      "roc_auc": 0.5095238095238095,
+      "sha256": "fce3a9c7836c2d7e546f907bfbfbb42c7fc8ad69a1875ad86ebf5f27197e4ebe",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/0train/fold_2.json",
+      "roc_auc": 0.4380952380952381,
+      "sha256": "ae7f559f10473d94083d2753dda2f2fbe65d4bbaa06c0bd29da074510c9b0a70",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/0train/fold_3.json",
+      "roc_auc": 0.5285714285714286,
+      "sha256": "e67004b31b3f8e14cf2507791d47044b938905b57a9c09babe320784fda79111",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/0train/fold_4.json",
+      "roc_auc": 0.5255102040816326,
+      "sha256": "d6d3bc12931a2660c7257053031714f5684fa8bdfb20a69acc9b65cf947475ea",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/1test/fold_0.json",
+      "roc_auc": 0.3380952380952381,
+      "sha256": "c2ac957e35965d452e3d744aa1eca0272813ce2cd77b067b316ee5c1927b3f71",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/1test/fold_1.json",
+      "roc_auc": 0.7238095238095238,
+      "sha256": "d5d0d8a229aac74580c0ee72b26b6631531453ab6b42ecd6ee6a22583283e0ae",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/1test/fold_2.json",
+      "roc_auc": 0.45714285714285713,
+      "sha256": "3514b863cf1cfe0d6bd22ee490282217707aa8fe14a7ab0b7e59e504c7e2891b",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/1test/fold_3.json",
+      "roc_auc": 0.8952380952380953,
+      "sha256": "3834ff9fa11b53ca00920364e149fbca0e1164af01f44f9da175873348ea5d2c",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_07/1test/fold_4.json",
+      "roc_auc": 0.49489795918367346,
+      "sha256": "17860c42f4df6e6c11f961b6578493bb22b4bda7448ab1fca7d5f0d2703429c6",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/0train/fold_0.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "0e8bc9cb8c79bf2ce443302b6e7fd11fc64903338a5e997ecefa675cb7e3a807",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/0train/fold_1.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "790373b89635869ccb3e12628a2b7422f80d3f8b1e55eb59d62b145ce066ecfd",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/0train/fold_2.json",
+      "roc_auc": 0.9619047619047619,
+      "sha256": "4ca0d8f479baf9407cc62300166cddeb848e395bfc2934474ae7f533c982c068",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/0train/fold_3.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "9e98aa1e4f4bd3464ee5cdb02e9e43f0f489921ea88ede7f5b8c96d68535e653",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "293838e0e7020c5357ea170a401320f34c64e4a311cf2184f20fe5cedb51989a",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/1test/fold_0.json",
+      "roc_auc": 0.9571428571428572,
+      "sha256": "b7cb37fe823f33e02f8c4ca805dcf0b2e216b995e2e03c9f6fff85e497f365b7",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/1test/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "0af4bc37b2732a6050a30d0feea809387d6d862dcb18c58e37f9568997a90dad",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "7d2b9ec01971dc8e1dbcd1df9d9b43423065b1f88c1b81867f23d092dfd325f2",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "60606a00aadc9872ed0bb7d9266d4fadf8c9e7822ed5bc1926da4743e265a456",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_08/1test/fold_4.json",
+      "roc_auc": 0.9948979591836735,
+      "sha256": "fb4b122a4bc9df895f61739c254e754472de232044e67ce1bb5bccd472cdca63",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/0train/fold_0.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "cff622d049be3f8de39db455694ccf55454c386a7ca00591460b7ddd2176bd53",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "e82975ebc16daf91faf822258f5640d20ca85f1209c547767a2ab7eacba6358d",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "65bdb600cd0c56a857ea69090b46a4a0500d14d9a7526c3ec1d58bb7d8e2f11b",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/0train/fold_3.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "c227bd69af618ec698ac3b07037b1698f74300e999eb19176ff1f93191795a01",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "25fc83fae4b1f2b3b211be53552f8018ce60d9061c3ddf0f7ba8a78ac548cf98",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/1test/fold_0.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "24b609c5c7151bf9c43ee9210cf65751d532e4e80227bf4aa931877ac45aba4a",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/1test/fold_1.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "feb3ec10e732965212a29ec26ee49502e7ff30547d0ba2a6823b1aedda11da50",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/1test/fold_2.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "06f88dd1e7775ca9853af0a7940e50c51f0263b60f28137e882860ee78008f3e",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/1test/fold_3.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "a71c95ba3f210d7bc47a4f748d238f3630da82a92cdbfa5e56cac0b6639fd3fa",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_23/subject_09/1test/fold_4.json",
+      "roc_auc": 0.923469387755102,
+      "sha256": "feb7ce389ae9fd65ef82f03f6f1e0ab3029d9eb39af97b27ee7a5e112e309ad3",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 23,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/0train/fold_0.json",
+      "roc_auc": 0.7904761904761904,
+      "sha256": "b45b8c9bf1464d71138129fbb436e94d4209e711a24db02e3ccb59cace3a9b0f",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/0train/fold_1.json",
+      "roc_auc": 0.9619047619047619,
+      "sha256": "3ff98c954d3822ac294db1397ff37f6bf7a5eb2a3b0071d67a475db7b6b59caa",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/0train/fold_2.json",
+      "roc_auc": 0.9238095238095239,
+      "sha256": "ef5d2c43972df68474e3f03e06897d59a67b2afbfc451b2f239abcab9ce26ce6",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/0train/fold_3.json",
+      "roc_auc": 0.9333333333333333,
+      "sha256": "8b4ec36bdeabddc64873e972e106a60d2e6d20b5379da9e7401ac0c8633a5a87",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/0train/fold_4.json",
+      "roc_auc": 0.9744897959183674,
+      "sha256": "1fa3a52f49ab3a414501ab56cfb114ea89ab51c6ae9635fcf73f03fdb180accf",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/1test/fold_0.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "1848693ef1572fb2f44229009f2298e89431a9fd3b95af0f2742d1e01b6d3192",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/1test/fold_1.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "663602746f7e07e91533ed605067da50a5d46efe7bd654fb72e2a77f3af1718e",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "4307f92c64cc31f3ad26df8ca8baaa2096e03507ffbfb08dca194f50b7f0c990",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/1test/fold_3.json",
+      "roc_auc": 0.9380952380952381,
+      "sha256": "30c7e0b51c3090eba8ae3f51f835e5dcb1fad82128a90d1996e4e02704ab1158",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_01/1test/fold_4.json",
+      "roc_auc": 0.9336734693877551,
+      "sha256": "c46d20a5de97a190a0c4cbf90c411478751cec293eff6b4502ed8c7b2ad5f61a",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/0train/fold_0.json",
+      "roc_auc": 0.5666666666666667,
+      "sha256": "fce616d70bdf26e8aaf88e429779fd1f787ab1b4a96bb67548fac9a881173a63",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/0train/fold_1.json",
+      "roc_auc": 0.5476190476190477,
+      "sha256": "99bc04c5d0196d138aaad0d85b9b76099875057245c3faab7ce7a170122af5cc",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/0train/fold_2.json",
+      "roc_auc": 0.680952380952381,
+      "sha256": "c4faee8055cf4593e63ad2c314d363682cbe34e9eec62b1fb2b351d481c3f45a",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/0train/fold_3.json",
+      "roc_auc": 0.6904761904761905,
+      "sha256": "245aa786b5c2aed102ba7c06713934d39d27a0314898612d253e107d52aee2c2",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/0train/fold_4.json",
+      "roc_auc": 0.7602040816326531,
+      "sha256": "f44bf1b8d61f997061f31f1dd502b32c41c744b829bd384a17cabac75e6439a5",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/1test/fold_0.json",
+      "roc_auc": 0.3238095238095238,
+      "sha256": "b022bc22842f21fa4f6a2a03a0a4d78639d0d7939338eabc80ed311c71f6aa3c",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/1test/fold_1.json",
+      "roc_auc": 0.49047619047619045,
+      "sha256": "857a31e5df5032f454bfb5022e51867b2bf672a0677b4446999aa6eafc3a2a93",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/1test/fold_2.json",
+      "roc_auc": 0.5857142857142857,
+      "sha256": "6cb0507651f28811a95f5b27cf358f1aaec8498a1c373d8b5dbb9d77a212e12a",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/1test/fold_3.json",
+      "roc_auc": 0.5142857142857142,
+      "sha256": "c4a0e84cf6b2bacf034a23e2c3f7f359b26edb9ed3481425c3e86da42c1f927f",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_02/1test/fold_4.json",
+      "roc_auc": 0.24489795918367346,
+      "sha256": "0d182f8780146604c87d0cb4f543aa9ef5dfb1036d93ccc8b3f1f2e28220c199",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "e8253b7278f364d5a8cebbd921e0df30b4343650c41ca8eecb476baac083fe47",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/0train/fold_1.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "45a873c214ef61ffca71e777a1300a6467216784c23e42a57eb10b1e6610c5ed",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/0train/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "82905f38b0e92551688b709aa77652285e92b26ad8abd526767daa291b5bca4f",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/0train/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "9fd19e5876fd34590422235275860e85f59f59e53915b6d3e5be007c73a18b52",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/0train/fold_4.json",
+      "roc_auc": 0.9744897959183674,
+      "sha256": "fe167923fe66a3082c7bd82d23cd5eb9a0249fbb5463cd38804b02b716d6a0d5",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/1test/fold_0.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "f9bedcc56ad4c9372cfb6cbd7905f60ff6c525c984dd0390b37fb759e7e5ea82",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/1test/fold_1.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "3badbfe1a9bbaef8465a467846f605201f191581f68be5a4cece6c1c466b27ef",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/1test/fold_2.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "4190d6a09fc24d76a421e6ac8bd2516df722ea548cdc7a5f5473a3b53cd48fc8",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "6fa7a1fa33685b32da00965e8b50ee6e477c506d22532204abc447ea7d40727d",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_03/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "51a779841808b6e862dfff685299e660f04b63fe9d392a4d6b962345c7b96ac0",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/0train/fold_0.json",
+      "roc_auc": 0.6285714285714286,
+      "sha256": "52c2a610a51a54cde13f9322c7c8e932b8e8ab4869f4a52990a75faaf7d22277",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/0train/fold_1.json",
+      "roc_auc": 0.4666666666666667,
+      "sha256": "100c49063a9630ac3d0914f2f392c830f412cd4e43a2e7f5bfbc12cedc7d90a6",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/0train/fold_2.json",
+      "roc_auc": 0.49523809523809526,
+      "sha256": "9cabc3631964ebbdf8d815bda211deb2d857905256f3a5233acca6ca5224ec74",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/0train/fold_3.json",
+      "roc_auc": 0.5761904761904761,
+      "sha256": "82e09bb19ef7e9f7c4c2e0b9bc29383d6f1e65c03eb94cc89b4d251911492f21",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/0train/fold_4.json",
+      "roc_auc": 0.4489795918367347,
+      "sha256": "804f9e824cb4c821c7d2664223b60c90ed09d7fd4c1f36b7875c124e18b6041c",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/1test/fold_0.json",
+      "roc_auc": 0.6857142857142857,
+      "sha256": "4bfd74e044048743bc7667247964b68577e3f3943a4722dca15c3825cd1b7043",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/1test/fold_1.json",
+      "roc_auc": 0.8571428571428571,
+      "sha256": "75b6f7639294fd3d357dadc551240acd6870ff993036df2ae831b6ce59401913",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/1test/fold_2.json",
+      "roc_auc": 0.5619047619047619,
+      "sha256": "5b83b7e9c3ff1c0986804df18f3476f591e6965375d8952d85da8a771cab5f66",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/1test/fold_3.json",
+      "roc_auc": 0.28095238095238095,
+      "sha256": "af6842645d8f13fc709f8c1441b2098723867a809e58b0468fbdd4afc0e29579",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_04/1test/fold_4.json",
+      "roc_auc": 0.6836734693877551,
+      "sha256": "8318cf5a589086c026102e77bbc3fb4eb2ed65f98627e27571a6af4f853fb4dd",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/0train/fold_0.json",
+      "roc_auc": 0.23809523809523808,
+      "sha256": "9e9560388d906e87b299f8a835bc8c611bd1bcd493660dbfbf7cf5d645d43e81",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/0train/fold_1.json",
+      "roc_auc": 0.5619047619047619,
+      "sha256": "f83fd04cd71cc47d83e09ff3bf9ef2b5c84828c841e1c0863b3fbce54a185c19",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/0train/fold_2.json",
+      "roc_auc": 0.44285714285714284,
+      "sha256": "8602d5dc63cd68f2de57e6a2d27ddeaca5a29a075bd8f89d0788cb2c45f292b7",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/0train/fold_3.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "9b0c4bb3143111ff02ef051122b40108577afd125dee2ed1ca971641027757a7",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/0train/fold_4.json",
+      "roc_auc": 0.5306122448979592,
+      "sha256": "1d90e1fd72d8cd18480d941fc84facca2db7c69197a94875f2f5f80a4d9b52d2",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/1test/fold_0.json",
+      "roc_auc": 0.6952380952380952,
+      "sha256": "ccae53397e203be44f43b4c4cd0df2f6d9dfd2355b19f5a24c2f2acd700cb4ea",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/1test/fold_1.json",
+      "roc_auc": 0.580952380952381,
+      "sha256": "8f3cf6a5b4b5694d1bc7884a7d52ec28344f78625ad74d2fdc61999b2eea4d7d",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/1test/fold_2.json",
+      "roc_auc": 0.5190476190476191,
+      "sha256": "fa7e39d60bcf62e03e89dc672efd671acd305f1c14d3200f635a7d9434ba53c8",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/1test/fold_3.json",
+      "roc_auc": 0.6047619047619047,
+      "sha256": "986386752682291adfaa6bc6379ab4773b11746d6989a34c2c7a009d37318ce4",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_05/1test/fold_4.json",
+      "roc_auc": 0.6479591836734694,
+      "sha256": "45cc6b47a1bbf7d3881b26cf29be1d67c04c9169b6162356879224dd47c33dae",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/0train/fold_0.json",
+      "roc_auc": 0.680952380952381,
+      "sha256": "56c2d62d9e0e0b3a26cc9e9bae9b21090ff4f6650298f5ece189185ba49d9954",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/0train/fold_1.json",
+      "roc_auc": 0.7714285714285715,
+      "sha256": "05be39ff6fae4f7fd139ac632e913207f3437908ee5547b6d8f42d50f3839422",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/0train/fold_2.json",
+      "roc_auc": 0.6476190476190476,
+      "sha256": "52ff5f89d9328bf911744f83afebaab2f1e4e7a229fdc6e66d13d92db09c3bbd",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/0train/fold_3.json",
+      "roc_auc": 0.7571428571428571,
+      "sha256": "b384f72ada136262eafdc2fc1b0b99cd6145486a988db1f9565801acf28fbf36",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/0train/fold_4.json",
+      "roc_auc": 0.5306122448979592,
+      "sha256": "d09e7d897238a068853c11a49b69793b6b9d7f29d96e6db73e8cbd5e3d7b0243",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/1test/fold_0.json",
+      "roc_auc": 0.37142857142857144,
+      "sha256": "846a4f1aec2526169c8acc059f58dda22b770b2d22cf9c4ee34b5cece6c5ce09",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/1test/fold_1.json",
+      "roc_auc": 0.7619047619047619,
+      "sha256": "fcd59d6c59a47faa05d3fca49bc467929c51c9c02190e1b605b0b2780e44f79b",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/1test/fold_2.json",
+      "roc_auc": 0.6857142857142857,
+      "sha256": "1230879c3717f4e4f0f5a815e1fc00a96ebaf4000a4a131b5bb3ffd12da0084b",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/1test/fold_3.json",
+      "roc_auc": 0.6095238095238096,
+      "sha256": "003a49d011adc5657a43de0f4f61cd8db60d16f3be3134dd6aa9192317be7371",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_06/1test/fold_4.json",
+      "roc_auc": 0.5867346938775511,
+      "sha256": "e1b27a14c404fc337a7000b4a9c3f2822651df969661dfe1d2c2a0391e9cb5e5",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/0train/fold_0.json",
+      "roc_auc": 0.7,
+      "sha256": "545c5ddc88b9467832ff9ca9619eba66722d35407e8d542393a7edf8b3543076",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/0train/fold_1.json",
+      "roc_auc": 0.5142857142857142,
+      "sha256": "c416fa28de38381b589d3922a7cc008f073639b9c6a0d61bbcecbb0123249347",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/0train/fold_2.json",
+      "roc_auc": 0.6095238095238096,
+      "sha256": "436a3f1652a6cf9ecd06d5b797932777496a8ff8e6a44b5c35e5ff7e5db0afee",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/0train/fold_3.json",
+      "roc_auc": 0.7571428571428571,
+      "sha256": "b7ba04334e4d8287307786fc39f0891ff8733dd6ff5d40045529b6b648a8a249",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/0train/fold_4.json",
+      "roc_auc": 0.7602040816326531,
+      "sha256": "456ded8a04784e190eb69617f40cec17a8f02fef58c5b93ab4a9fa162bfc249e",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/1test/fold_0.json",
+      "roc_auc": 0.6714285714285714,
+      "sha256": "439dfd4a8823a0875779e81e2aed2cb63f8026cc97e4ff1b745025389309a070",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/1test/fold_1.json",
+      "roc_auc": 0.7095238095238096,
+      "sha256": "952ed994e5ff2b3fad7ae4756edddbc22f05f89b9b90e64158cd5f43c8e6abb6",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/1test/fold_2.json",
+      "roc_auc": 0.4666666666666667,
+      "sha256": "e6c30178f144788ca47b78022f0e7a50b8c39b0d19db0b845d99be9a695e6538",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/1test/fold_3.json",
+      "roc_auc": 0.5904761904761905,
+      "sha256": "d89374f88edce5a95138656ed91010d6cb047333de363960d63af088ba4b8733",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_07/1test/fold_4.json",
+      "roc_auc": 0.5816326530612245,
+      "sha256": "45fcbcb4221ae7b7650042d648015b3cf316c3f9ee3c85f93adf628e0e141f69",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "5da444c8a2afe62c3654e0ad2ea1fb376f36e2d1df024abe275ddd32139f7d8e",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/0train/fold_1.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "3f7e2da2369e0b86775bf50ea74d4e252390463eadc5e7d2a72a9994a75deb95",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/0train/fold_2.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "d31753a2aa2eaeef90b7855bca8b8fb77ad0c63f43d48f90a040c3230313a23e",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/0train/fold_3.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "40fd22d2ded7226e6c0e7272e9b4da350b9f884977e9a54587f657008c71cd80",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "f8256b0be8849f79bd3494a20635123771cec78998ce939a654121651c1cc2af",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/1test/fold_0.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "1eb63d91e493fa120e480c6f5171c08ebc65eab4dc9223fcf122deb55e474252",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/1test/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "945fc65c422e04eb76b57d3c61e4d70accb54473410f7a29d84ee9b91cb8c38c",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "9f73f1200327314b046999319772aec2c3fb678c4580e3fe8c76b2f42cb864ed",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/1test/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "b52546ee577a5cad0f630c8e65d90b102571ead8d1fdf47691e8fdbaf8c40034",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_08/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "21dd569b83ecc5e4213647bd629e7f1f4af869edd25858985b73d1120571aca9",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/0train/fold_0.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "f6b260253d03edeb96c8874ade6b2bbc30ed7b7872968da24314af0a883f2cc4",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "164c557453bb280f12642869d8b261406a9364f80ba1fc09ebfe86ee29ccdb98",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "55ad2c207e76f7495505859b0bb4b3491b92dc376869c2e872c09f93dde9afa9",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/0train/fold_3.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "b2c6ec006c8a1836f69046cfbca4da8e0d0fec43cb07d2856b64dd6338be33b1",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "151cd74ea18de9556908a8f1e7233eede6f9b204ba4460ebf27b6369af6bc37c",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/1test/fold_0.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "f4787733e069953465a81f9adf104e06398eec12b7bdf5553dc8636510b75e83",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/1test/fold_1.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "193893c339ee3e174cdd46a51625d280957d9dc951edebac827a33721bf12711",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/1test/fold_2.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "6da787feb5c0ee20bfe4e4ac81677a0ec6fab203f0fd65427cd165839a37e1a1",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/1test/fold_3.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "4d8537e79575a3de6f60be1ad86741c009d7674bb010b312a418a636b5774e40",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_37/subject_09/1test/fold_4.json",
+      "roc_auc": 0.9642857142857143,
+      "sha256": "9a44e2f40b5d9132fe46e6fc832d63ca884f390ed729194c01f4fbb9f43620d7",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 37,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/0train/fold_0.json",
+      "roc_auc": 0.8476190476190476,
+      "sha256": "85dad01793557d4e5c0ae3e7713bc56a05eefff5824518062bb6162894e2b643",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/0train/fold_1.json",
+      "roc_auc": 0.919047619047619,
+      "sha256": "b80dcd4088c781c15992d5d4e3dce38ec64e884e0f157aca02f5b37076fd234f",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/0train/fold_2.json",
+      "roc_auc": 0.8666666666666667,
+      "sha256": "856d4804ba625049d5724e10d5256a595e7fc11ecd0fabd0332de1078f24dd94",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/0train/fold_3.json",
+      "roc_auc": 0.8857142857142857,
+      "sha256": "b05152d347c382f21708818e3eb7463476616eeec68a0e90f2e0de7036d13f3e",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/0train/fold_4.json",
+      "roc_auc": 0.9081632653061225,
+      "sha256": "871ba89f82c54a6d64be559ffa6b1e53be606c2cd76991894accf585c7f3c3aa",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/1test/fold_0.json",
+      "roc_auc": 0.9238095238095239,
+      "sha256": "60030dac58123a5653c31dfd096dce7a3cde2517abc13e71a49866a59e48eed1",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/1test/fold_1.json",
+      "roc_auc": 0.9285714285714286,
+      "sha256": "d470831abf0e927155502198af6bfab9e70abdd7ebedf9fbbe30738130a68dbb",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/1test/fold_2.json",
+      "roc_auc": 0.9238095238095239,
+      "sha256": "7562e6c614e694b135e4a15c531af1565d88f267e9a9af612020416823024ce7",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/1test/fold_3.json",
+      "roc_auc": 0.8904761904761904,
+      "sha256": "a37051f1b500109c45e7663874299059cdb603559d0ffd9eae2dfe4e3b3cdca1",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_01/1test/fold_4.json",
+      "roc_auc": 0.9744897959183674,
+      "sha256": "74a13f155c4e96ae01e13bc36cb82a814947d59726fcfe0ee9765890db163ba2",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 1
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/0train/fold_0.json",
+      "roc_auc": 0.3476190476190476,
+      "sha256": "e83cf1c467a9bc4c93cfa29347ebbb323debb252631f80e52049b7c4cec0871a",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/0train/fold_1.json",
+      "roc_auc": 0.5238095238095238,
+      "sha256": "75fa020d3fae1dc5653ea1c619be4766dfae42d9518c6ce28c63c999d06e84cf",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/0train/fold_2.json",
+      "roc_auc": 0.49047619047619045,
+      "sha256": "5ec98ef483960b533d2a7639f875aeccee5d589978bdfcc04f42623318475adb",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/0train/fold_3.json",
+      "roc_auc": 0.3904761904761905,
+      "sha256": "95f1e42703c6581831c85396ea3e43089d36e9d223710d94420efda7a182eeff",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/0train/fold_4.json",
+      "roc_auc": 0.7704081632653061,
+      "sha256": "63c73d5726f16acab4277c10b44c1ca1d6a4fde5e517caf748cac2af22085502",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/1test/fold_0.json",
+      "roc_auc": 0.44285714285714284,
+      "sha256": "4430659689a0d0fdf298f02829fe630b284256b1729fb816847c1e1110049954",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/1test/fold_1.json",
+      "roc_auc": 0.6904761904761905,
+      "sha256": "fbbcea614d74f6673afcac9b2d978ae5d155e4dd2b8e9c5ec5007cf35873fb47",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/1test/fold_2.json",
+      "roc_auc": 0.5428571428571428,
+      "sha256": "88e33ac88850a0805ad4c53a7b52377a3e431274b2718549c6bf37ba5c172768",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/1test/fold_3.json",
+      "roc_auc": 0.30952380952380953,
+      "sha256": "c61fb82b24da4738699aa7b713fda5aa0310e04f266149f0b0c63e08735bd2c4",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_02/1test/fold_4.json",
+      "roc_auc": 0.5306122448979592,
+      "sha256": "a1f9eeb42f2c1c2247b31495264641163a166d48e2fe7e45af1580544e0a2981",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 2
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/0train/fold_0.json",
+      "roc_auc": 1.0,
+      "sha256": "8afc938b072cbc16fa8c570e724a1cf6f715d87d8c7fad747875679654d846a9",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "485c1df09f29a61a386d18cb9227381c85b288bbb4bf99b67836cc01ed7c6415",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "b228d30365b033fc5ab49c148bbb626d063322c353187932710354fd522d3cbc",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/0train/fold_3.json",
+      "roc_auc": 1.0,
+      "sha256": "511c1e5f40875a8c0ba1ddad2aa32833c1a343a61ee4a0bdf82e0c0671ee68b8",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "84865b652f801951b5fc63c455a0d6d93edf9123de2a7ccc4663b56b0657cc97",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/1test/fold_0.json",
+      "roc_auc": 0.9333333333333333,
+      "sha256": "d241feb0d6d6e9d047c2a491cc4b9200823bbf329322f47e2390fce2cbaf1587",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/1test/fold_1.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "0c4377a37a4e40ef2777573c04d96925171825baa26e274ef281679e4988236a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/1test/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "8f6831d69dc1b971f30fa7fe577a9a4db663d394e7f3e2fc6fac040c179ca7d3",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/1test/fold_3.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "5a9b42fd570da7a6297966cdb2c634e9884f0002474bf8890ccd0fc3944d1750",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_03/1test/fold_4.json",
+      "roc_auc": 0.9948979591836735,
+      "sha256": "d9ede3cddd292f9c9409cb48b74e59dfdbc5b04b29fa340a762e273fafa27aab",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 3
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/0train/fold_0.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "5db525220584afa6196967dccdd617beddccff94943c0afa9d94a818f7f18620",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/0train/fold_1.json",
+      "roc_auc": 0.6952380952380952,
+      "sha256": "f9042179a210fdd3b3c1e876afd5a3ad5abc3d040c7c154080243da49b9c9886",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/0train/fold_2.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "d5164c4bf8eb83123cb73dd8cc59869fb8094a033b6a8f457d0420dce0e79466",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/0train/fold_3.json",
+      "roc_auc": 0.6,
+      "sha256": "dbb9bb75cea4a5406075a7b27c70901e60ebb5b82a8e0114db9fc43ccc09a0a6",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/0train/fold_4.json",
+      "roc_auc": 0.5102040816326531,
+      "sha256": "5c7fcc58c09bdccd076b95efc339adbac60adab88128cdbd5ac14d9827519a46",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/1test/fold_0.json",
+      "roc_auc": 0.49523809523809526,
+      "sha256": "229b56f7896772409576282f9a077f6ef52c9b6a4eae37323363ca7840a5e50a",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/1test/fold_1.json",
+      "roc_auc": 0.7714285714285715,
+      "sha256": "1ed3a74e73f79a43db1495b2fb9e7840c2b2c4d3270e3066e9dc94e8474943ea",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/1test/fold_2.json",
+      "roc_auc": 0.6190476190476191,
+      "sha256": "b56bf568f6edd7be478e0368f71b0aeede3304e2da289a885bf28b27f7ec878f",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/1test/fold_3.json",
+      "roc_auc": 0.4142857142857143,
+      "sha256": "59fec1cb286fd7b83e03db5a2c6451cdc534c0ad32e093f93adca935b25a127e",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_04/1test/fold_4.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "6c673d6924a4c869f00269bd0efb3a7bc7ddccd6292d0a16c69819ff33a99a89",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 4
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/0train/fold_0.json",
+      "roc_auc": 0.6714285714285714,
+      "sha256": "2ceb5de9508c09be8b964f1684605a3123a4fefdc421ee5ed96c55fb46514ad4",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/0train/fold_1.json",
+      "roc_auc": 0.5,
+      "sha256": "0e36228fd8752d8e82ea08755f2041bf70b72edef9379a1375c4bc9a2aa76a24",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/0train/fold_2.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "8fced90b5758f3ae0f1800075cb6dfbf11414a7b90218bbc6ab027671fb8dad7",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/0train/fold_3.json",
+      "roc_auc": 0.7285714285714285,
+      "sha256": "4157a3d79844975a2aea85b6dcb914eb8e57e46eb5b5bebc20e0ed5af2453b47",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/0train/fold_4.json",
+      "roc_auc": 0.8928571428571429,
+      "sha256": "342f4a95669715e5757cacd9267ab40c1f0bf71e9a84837ec18acfe3ef0367c6",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/1test/fold_0.json",
+      "roc_auc": 0.4238095238095238,
+      "sha256": "47fcadf443942533cbfe40385d55a6820a49724dc8c1b417a04a714582228a12",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/1test/fold_1.json",
+      "roc_auc": 0.4142857142857143,
+      "sha256": "81eca70409c271011e9862fee2bcacf327409d6338f8fc65cc6f09fe588f523a",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/1test/fold_2.json",
+      "roc_auc": 0.45714285714285713,
+      "sha256": "1afd50ffdf418a39c8db83350c621b2429b44d83ef5322ff6bc69601644e671e",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/1test/fold_3.json",
+      "roc_auc": 0.4523809523809524,
+      "sha256": "6cc2627ecf67115fda33361454fb84c2e973d2f375a602984df8c4c7047b4554",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_05/1test/fold_4.json",
+      "roc_auc": 0.6581632653061225,
+      "sha256": "4b5c9a032134dfeee40110743eddd1931fe913ec2bfb9fdc0b7b7872239349f4",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 5
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/0train/fold_0.json",
+      "roc_auc": 0.8142857142857143,
+      "sha256": "f4c36b570b7aaa4d95130d53e6a65ff90ebae627bcf249061089b5d57db31c6c",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/0train/fold_1.json",
+      "roc_auc": 0.8285714285714286,
+      "sha256": "d7048e7094c7725563b6b1371271ca1afe27fe0cf9939e3073ee459846c273f3",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/0train/fold_2.json",
+      "roc_auc": 0.6714285714285714,
+      "sha256": "e4a461ec0c6629d247334a348bf49f7e7572bfab6650aa8588a0a56beba2fd86",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/0train/fold_3.json",
+      "roc_auc": 0.7952380952380952,
+      "sha256": "48ccd578941d033ee32f170efe2074f366b399fb43b7302cfdea05d0a1f8b9c5",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/0train/fold_4.json",
+      "roc_auc": 0.46938775510204084,
+      "sha256": "7de191696ff900ce168ae8e281ebdc7ef8c6b479334045ac0c654623b4022133",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/1test/fold_0.json",
+      "roc_auc": 0.44761904761904764,
+      "sha256": "a5c7145238e8566c357191c5584c27cf02e9a6e657194ca89a6ab789ba1a7f8e",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/1test/fold_1.json",
+      "roc_auc": 0.6619047619047619,
+      "sha256": "2321f69c3de79cdfe6b0ff796c17d9dd3fa9a97119aeabe321269bb0ed8f4b19",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/1test/fold_2.json",
+      "roc_auc": 0.719047619047619,
+      "sha256": "d5674c472f0b96deaab1e410dad7fde70c767b0c047548cabcf54f47be40991e",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/1test/fold_3.json",
+      "roc_auc": 0.6666666666666666,
+      "sha256": "8da22e6f6d1263d13e9bb114d8f267761ec1aff80f84b744c7fee7e4ebe87b6b",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_06/1test/fold_4.json",
+      "roc_auc": 0.6479591836734694,
+      "sha256": "7574ee2496c0cec5e3375ccc9f1b0041319a5ec5f3f7764a746c4bb562684b3c",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 6
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/0train/fold_0.json",
+      "roc_auc": 0.6571428571428571,
+      "sha256": "ad69322478481a95ed4450a210942119dee4319309eda37220f9fe41cce1fb04",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/0train/fold_1.json",
+      "roc_auc": 0.5619047619047619,
+      "sha256": "073a2bb28efbf232dde16cd2169e8b845053fcc4aa69099d436296ea5e317a0c",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/0train/fold_2.json",
+      "roc_auc": 0.6428571428571429,
+      "sha256": "189c170d5737a62216e44c44261bfcec9f2c9a825c18ab09eb89d503068d0772",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/0train/fold_3.json",
+      "roc_auc": 0.6190476190476191,
+      "sha256": "f26450a8326ae45c36500a53bcd5bab5871bfdf368c2ebba013aa6fc25643344",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/0train/fold_4.json",
+      "roc_auc": 0.5714285714285714,
+      "sha256": "9a13cbb461f70d63471c37887bdf2f948a1eff166c9857cab4529eec3e8fd5bc",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/1test/fold_0.json",
+      "roc_auc": 0.8476190476190476,
+      "sha256": "395ec633d5ac60a57f51c847e02e32106bc233b0f3fd0c7c2eee07b3430d5775",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/1test/fold_1.json",
+      "roc_auc": 0.7,
+      "sha256": "b479d60480b05c2bc8b21c88086e9e418412b0a702844ec256cc911b2af7b415",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/1test/fold_2.json",
+      "roc_auc": 0.680952380952381,
+      "sha256": "888e473f05435491346bf3ba6f434126123d940d6cd74dcdbf4e22facfccd100",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/1test/fold_3.json",
+      "roc_auc": 0.6857142857142857,
+      "sha256": "5540ae6acd03dee8e0457357b1c8c25b751c69e5c770e19e0128bb99968c4167",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_07/1test/fold_4.json",
+      "roc_auc": 0.336734693877551,
+      "sha256": "e657e9e9460dfcb05fbb92cec6488f89e88e0fd31ccdd11bb898103fb52701e8",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 7
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/0train/fold_0.json",
+      "roc_auc": 0.9761904761904762,
+      "sha256": "7418ff78a418759ee7befe261f4084554726537f19e4e68ecb8d0f3e5755bef0",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/0train/fold_1.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "9b0365ca77793e9805de1c1dd39c964b755c86096b1ba90f6c70ac5d8bb97fe2",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/0train/fold_2.json",
+      "roc_auc": 0.9285714285714286,
+      "sha256": "aece692612cbc721929e3e563e6780bf65806c83f8332acdafdaa6841bd99093",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/0train/fold_3.json",
+      "roc_auc": 0.9904761904761905,
+      "sha256": "59ac7b18e8a8c66a324fd668c7786eeee6cca1a4f618f93fe8902755448614fb",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/0train/fold_4.json",
+      "roc_auc": 0.9897959183673469,
+      "sha256": "99f02387f0e6da7d565ad974044ebe1bc4e31dfe27bc6c9d54ba270161a9a0b1",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/1test/fold_0.json",
+      "roc_auc": 0.9333333333333333,
+      "sha256": "b4290344b2f5f6dca910a609b54cfaa29573503a4d57084657d8aa6dd5930bdb",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/1test/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "051d366c737d58fb8c8226bbc659504500f844abbbeae27fa068282ada38d359",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/1test/fold_2.json",
+      "roc_auc": 0.9952380952380953,
+      "sha256": "8803cbfa8e629db1037df5f6f7dab2d790058073f8600b9a121ec91ce1bd6ce6",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/1test/fold_3.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "5db08ab7c8f83a6920941a66f1dffcf2a753248933422aebc545ba4e0e0a8dca",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_08/1test/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "28af5dcc0e8ead1375eb7df2d53670e8cd1d9fed8c42d520a541fb5725487fd0",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 8
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/0train/fold_0.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "4a6973ed48137fd9a4108bd16da065aa71080325f22f3230625c9bb0fcc36ab0",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/0train/fold_1.json",
+      "roc_auc": 1.0,
+      "sha256": "bab5e7ac7960ac64fdd1883b69e1548643011b56e54d6a015d45d440aa6a64ed",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/0train/fold_2.json",
+      "roc_auc": 1.0,
+      "sha256": "d963ada5a6f8d6cf7a4f497eede3bd1ddcf78f3a535851cb36d85fa23b13258b",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/0train/fold_3.json",
+      "roc_auc": 0.9857142857142858,
+      "sha256": "64d55e0f10b8251bccaf2dde81797691d30b3abdb5f685e7e07f0fd79274886d",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/0train/fold_4.json",
+      "roc_auc": 1.0,
+      "sha256": "9cc8bb4f30947efb5b29244b56e7c008b2bdc7710338b6029e515d9dd6ffacb3",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "0train",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/1test/fold_0.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "fcba01d6b0fe3845cd9ae1ad1f064283786dd7b979cd850500bbf2b391331fd4",
+      "unit": {
+        "fold_index": 0,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/1test/fold_1.json",
+      "roc_auc": 0.9666666666666667,
+      "sha256": "931ec37a0a3428456d56f526ba0d34414fa42635e90a8a4b9ad37654a4bc9226",
+      "unit": {
+        "fold_index": 1,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/1test/fold_2.json",
+      "roc_auc": 0.9809523809523809,
+      "sha256": "2daad19d10813f7cc18f6c806b73eaa17fd64906733fdba607ff7f389da07eaa",
+      "unit": {
+        "fold_index": 2,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/1test/fold_3.json",
+      "roc_auc": 0.9714285714285714,
+      "sha256": "b559d94cd5307a739acd6835fd74c25a040ec1757d8de344551bafe5c6691dbc",
+      "unit": {
+        "fold_index": 3,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 9
+      }
+    },
+    {
+      "path": "runs/moabb_reference/evaluation/75135218cfb8104fb74a879e2a73c2e2ac19c876bf551c71ff6526afe56b0a93/seed_53/subject_09/1test/fold_4.json",
+      "roc_auc": 0.9438775510204082,
+      "sha256": "c86b0018dc461308cb508c70fa690501becccd0ec855b1e5096841fb47553b32",
+      "unit": {
+        "fold_index": 4,
+        "model_seed": 53,
+        "session": "1test",
+        "subject": 9
+      }
+    }
+  ],
+  "reference_seed_difference": -0.014893801965230491,
+  "reference_seed_mean_roc_auc": 0.7566061980347695,
+  "reference_seed_subject_session_means": [
+    0.9231972789115647,
+    0.9431972789115646,
+    0.515374149659864,
+    0.5138775510204081,
+    0.9959863945578231,
+    0.9961904761904762,
+    0.5530612244897959,
+    0.5257142857142857,
+    0.7703401360544218,
+    0.5574149659863946,
+    0.7160544217687075,
+    0.5894557823129252,
+    0.5248979591836734,
+    0.5493197278911565,
+    0.9933333333333334,
+    0.9961904761904762,
+    0.9846938775510203,
+    0.9706122448979592
+  ],
+  "repeat_fits": 360,
+  "repeat_interval_recomputed": false,
+  "repeat_seed_subject_mean_roc_auc": 0.750191798941799,
+  "repeat_seed_subject_means": {
+    "1": 0.9021683673469388,
+    "2": 0.5299829931972789,
+    "3": 0.9905442176870748,
+    "4": 0.5628741496598639,
+    "5": 0.5606632653061225,
+    "6": 0.6482482993197279,
+    "7": 0.5896088435374149,
+    "8": 0.9868367346938776,
+    "9": 0.9807993197278911
+  },
+  "retained_records_verified": 450,
+  "saved_probability_auc_and_record_validation_passed": true,
+  "schema": "retained_gate_a_reference_output_reaudit_v1",
+  "scientific_admission": false,
+  "scientific_gate_a_signed": true
+}

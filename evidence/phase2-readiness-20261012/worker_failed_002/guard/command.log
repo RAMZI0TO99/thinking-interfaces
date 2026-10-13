@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\phase2_readiness_20261012_v1\worker_readiness_probe_002.py", line 169, in <module>
+    assert not denied
+           ^^^^^^^^^^
+AssertionError

@@ -1,5 +1,35 @@
 # Deviation log
 
+## 2026-10-12 - Fresh readiness evidence and unsigned target-roster alternative
+
+The [new review](phase2/phase2_readiness_review_20261012.md) retains a successful
+450-record output audit, restricted actual worker imports and1,040 case IDs.
+The live5,253 ceiling was confirmed without changing it; older256 wording is
+historical. Two failed import probes classified urllib3's denied loopback IPv6
+capability check in a fresh successor, keeping every bind blocked and recognizing
+only that pinned caller/address. No network permission or resource floor changed.
+This is restricted import/environment evidence, not numerical worker or GPU
+qualification. Source3114ec43/432 and all13 config pins remain unchanged.
+
+The current complete roster contains the exhausted original case and cannot
+complete under unchanged recorder/analysis rules. The
+[unsigned51-target amendment](phase2/cho_51_target_amendment_proposal_20261012.md)
+would remove all20 subject01 evaluation rows, retain the52-subject available
+cohort and1,020 unchanged IDs, and change analysis units/Student t df to51/50.
+It discloses the retrospective scope change and known engineering history.
+It is not adopted; the original52-target design stays adopted and blocked.
+No active configuration, frozen implementation, original attempts, scientific
+admission or freeze changed. No score imputation, recovery, reset, equivalent
+rename or third original attempt is authorized.
+
+A fresh finite metadata review passed on51 original packet artifacts and the
+exact proposed subset. Its seven additional artifacts make the final index58.
+The existing command-local documentation hook exception remains limited to this
+noncanonical publication; tracked hooks are intact and full quality was not
+replayed. Genuine Source028 peer scheduling extends only the exact static
+checker022 triplet scope through23:00UTC after actual gate review/Root adoption;
+it grants no runtime, lease, scientific, peer Git or primary-document authority.
+
 ## 2026-10-12 - Direct retrospective Gate A criterion amendment
 
 The owner directly selected **Accept the amended Gate A criterion (Recommended)**

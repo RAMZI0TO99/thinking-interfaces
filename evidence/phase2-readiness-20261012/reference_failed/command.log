@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\phase2_readiness_20261012_v1\reference_audit_001.py", line 72, in <module>
+    for unit in plan.units():
+                ^^^^^^^^^^^^
+TypeError: 'tuple' object is not callable

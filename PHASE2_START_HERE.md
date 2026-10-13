@@ -1,5 +1,21 @@
 # Phase II - Start Here
 
+## Current next choice: complete target roster, 12 October UTC
+
+The [readiness review](docs/phase2/phase2_readiness_review_20261012.md) passed
+450 retained-record checks and restricted worker imports, then identified the
+exact exhausted case in the current1040-row plan. Review
+[the unsigned51-target amendment](docs/phase2/cho_51_target_amendment_proposal_20261012.md):
+all20 subject01 evaluation rows removed consistently,52-subject available
+cohort retained,1020 remaining case IDs unchanged,51 analysis units/df50.
+The adopted52-target design remains blocked until an owner successor choice.
+
+No original-case exception, imputation, new science budget or freeze follows.
+Checkpoint-cohort/overlap review and numerical worker/resource qualification
+remain separate; issue75 had zero comments at14:32:40 UTC. Gate A remains
+accepted under the exact retrospective amendment. Read current coordination
+before later execution; earlier sections below retain dated states.
+
 ## Current next input: checkpoint-cohort evidence, 12 October UTC
 
 The owner directly accepted [Gate A's exact retrospective amendment](docs/phase2/gate_a_acceptance_20261012.md).

@@ -1,5 +1,15 @@
 # Phase I Gate A status
 
+## Fresh retained-record audit completed, 12 October 2026, 14:29 UTC
+
+The [new readiness review](phase2/phase2_readiness_review_20261012.md) passed
+all450 saved record hashes, configurations, split/history fields and retained
+probability ROC-AUC arithmetic. It used current installed dependencies without
+new fitting, raw-input replay or historical environment reconstruction. Scores
+and the numerical shortfall are unchanged. The owner's exact retrospective
+Gate A acceptance below remains authoritative; this separate audit supplies no
+scientific signature. Earlier unexecuted-audit descriptions are dated snapshots.
+
 ## Current decision: accepted under retrospective amendment, 12 October 2026
 
 The owner directly approved the exact amendment at `eb45c000` through the

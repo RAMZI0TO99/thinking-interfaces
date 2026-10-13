@@ -1,0 +1,41 @@
+{
+  "automatic_polling": false,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "cohort_coverage_verified": false,
+  "comment_count": 0,
+  "complete": true,
+  "external_message_sent": false,
+  "files": [
+    {
+      "bytes": 4511,
+      "next_page": false,
+      "path": "issue-start.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c",
+      "url": "https://api.github.com/repos/935963004/LaBraM/issues/75"
+    },
+    {
+      "bytes": 2,
+      "next_page": false,
+      "path": "comments-1.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "url": "https://api.github.com/repos/935963004/LaBraM/issues/75/comments?per_page=100&page=1"
+    },
+    {
+      "bytes": 4511,
+      "next_page": false,
+      "path": "issue-end.json",
+      "sha256": "a3ac9ca7492be2c2b0bbf25324ef7c2e1d022c0961259e09c0b67e24200c746c",
+      "url": "https://api.github.com/repos/935963004/LaBraM/issues/75"
+    }
+  ],
+  "issue_url": "https://github.com/935963004/LaBraM/issues/75",
+  "observed_owner_comment_ids": [],
+  "observed_utc": "2026-10-12T14:32:40.998757+00:00",
+  "original_case_attempts_remaining": 0,
+  "referenced_artifacts_fetched": false,
+  "request_body_sha256": "e8db8f6c1e690df9b1ceb763797dea21ae51acdac8233c29b3128881c272eed5",
+  "schema": "pro3_provenance_reply_capture_v1",
+  "scientific_admission": false,
+  "status": "no_owner_reply",
+  "workflow_sha256": "8bb40148103f6a6dd4a622ae632d0fbe7f10a676273c58699ff17096ef714c11"
+}

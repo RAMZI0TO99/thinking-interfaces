@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "record_type": "Root_fresh_Source028_static_checker_metadata_triplet_window_request",
+  "author": "/root",
+  "created_utc": "2026-10-12T16:17:33.4420220+00:00",
+  "Root_thread": "01a1159f-a60d-7c03-bded-71f2047fb8fb",
+  "requested_window": "Source028",
+  "requested_interval_start": "2026-10-12T16:17:33.4420220+00:00",
+  "requested_interval_end": "2026-10-12T23:00:00+00:00",
+  "requested_scope": "Concurrent lightweight static Source preparation and genuinely different review; Root-only separately reviewed draft and exact canonical publication of checker_dependency_audit022, checker_protocol022 and checker_manifest022 at the already selected dated lease010 paths. Port only the original static content equations through genuinely reviewed explicit Source028 metadata helpers. Preserve old FreshThree003/Native8/Parser helpers uninvoked and every predecessor byte. Lease010 is immutable expired wire data; no functional lease, new family or original runtime admission follows.",
+  "expected_genuine_peer_response_path": "D:\\Aenv\\pro3\\runs\\coordination\\pro2_source028_scheduling_20261012_v1\\pro2_source028_response_001.json",
+  "peer_response_required": true,
+  "request_alone_grants_no_admission": true,
+  "genuine_different_actual_gate_Source_review_and_separate_Root_adoption_required": true,
+  "maximum_shared_agents_including_both_roots_and_all_overlap": 5,
+  "maximum_Pro2_agents_including_Root_while_Pro3_root_continues": 4,
+  "Root_current_agents_including_Root_reported_at_request_preparation": 3,
+  "peer_current_preparation_and_overlap_disclosure_requested": true,
+  "original_publication_reserve_seconds": 60,
+  "prior_Source027_end_utc_unchanged": "2026-10-12T18:00:00+00:00",
+  "canonical_Source_publication_authority_requested": true,
+  "canonical_Source_role_allowlist_requested": [
+    "checker_dependency_audit",
+    "checker_protocol",
+    "checker_manifest"
+  ],
+  "dated_Root_selection": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\observer010_lease009_root_001\\ROOT_SOURCE022_LEASE010_SEPARATE_FUTURE45_SOURCE_PATH_SELECTION_001.json",
+    "sha256": "67a20a299561fd163385e06f101c32dcd70e8bf380af6185f7c9abc02a85b47d",
+    "bytes": 41560
+  },
+  "selected_existing_rows": [
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_022.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_022.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 13294,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\SOURCE_PROTOCOL_AND_REVIEW_CONTRACT_021.json",
+        "sha256": "30aeeeec1a8c0900ca3c5a05295ab50b8ded444cdbd6557e05780261f2d2040c"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_protocol",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    },
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\CHECKER022_DEPENDENCY_PIN_AUDIT_001.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\CHECKER022_DEPENDENCY_PIN_AUDIT_001.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 165933,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\CHECKER021_DEPENDENCY_PIN_AUDIT_001.json",
+        "sha256": "0e8b33fce4e681baafad3eba63e564731d0595135e0fbc13ab642724a4e34a83"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_dependency_audit",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    },
+    {
+      "canonical_path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\AUTHOR_FROZEN_SOURCE_MANIFEST_022.json",
+      "draft_path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\generation\\post_STEP077_parametric_cohort_prep_001\\drafts\\AUTHOR_FROZEN_SOURCE_MANIFEST_022.json",
+      "must_change_Source_bytes": true,
+      "predecessor": {
+        "bytes": 2000,
+        "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-actual-checker-prep001\\AUTHOR_FROZEN_SOURCE_MANIFEST_021.json",
+        "sha256": "df6612d65104ce42daf51fec2b89d61b8959a133b69924dfba992958b4dc26b0"
+      },
+      "preparation_Source_author": "/root/pipeline_source_editor",
+      "retained_semantic_Source_author": "/root/actual_record_checker",
+      "role": "checker_manifest",
+      "selected_ordinal": 22,
+      "source_cap": 2097152
+    }
+  ],
+  "original_selected_Source_cap_for_each_role_bytes": 2097152,
+  "ordinary_metadata_output_cap_bytes": 2097152,
+  "existing_Target_and_draft_paths_absent_at_preparation": [
+    {
+      "role": "checker_protocol",
+      "canonical_present": false,
+      "draft_present": false
+    },
+    {
+      "role": "checker_dependency_audit",
+      "canonical_present": false,
+      "draft_present": false
+    },
+    {
+      "role": "checker_manifest",
+      "canonical_present": false,
+      "draft_present": false
+    }
+  ],
+  "completed_phase_binding019_canonical": {
+    "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\metadata3-producer-core-prep001\\PHASE_PS_SOURCE_BINDING_019.json",
+    "sha256": "d4405b34af9d263ed3d73bbb047861d6ba58310b9446d568b562e73df7353d30",
+    "bytes": 1856
+  },
+  "completed_phase_binding019_Root_adoption": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\generation\\ROOT_SOURCE027_PHASEBINDING019_ACTUAL_CANONICAL_PUBLICATION_DIFFERENT_SOURCE_REVIEW_ADOPTION_001.json",
+    "sha256": "4b162921ed08ab7a435f24d1c0ea38a258722bcdf8de9b6f59001e1b277c9e61",
+    "bytes": 4204
+  },
+  "starting_selected_canonical_path_count": 32,
+  "current_complete45_or_ten_tool_compound_accepted": false,
+  "old_leases_Source_documents_refusals_and_spent75_preserved_without_replay": true,
+  "original_guard_equations_all_caps_reserves_and_API_specific_comparisons_preserved": true,
+  "expired_lease010": {
+    "path": "D:\\Aenv\\pro2\\resume-2026-10-03-continuation001\\EXECUTION_LEASE_GG6_M3_010.json",
+    "sha256": "097a5e6cb30e7c3ac9cf5af9b93d0889b016003a986628644dee5d620ab41511",
+    "bytes": 663
+  },
+  "lease_preparation_issuance_extension_or_new_family_selection_authority_requested": false,
+  "prospective_lease011_new_family_paths_ordinals_duration_INIT_and_case_clocks": null,
+  "Native8_metadata_sampling_or_Native_Parser_or_phase_peer020_authority_requested": false,
+  "original_target_import_function_main_oracle_fixture_C8_actual6_or_science_authority_requested": false,
+  "new_primary_document_publication_or_Git_mutation_push_authority_requested": false,
+  "standing_science_totals_recounted": false,
+  "Pro3_owner_continue_until_resource_pause_steering_remains_active": true,
+  "Pro3_pause_requested": false,
+  "whole_host_quiet_or_Job_PID_handle_absence_or_peer_results_accepted": false,
+  "target_execution": false,
+  "operational_authority": false,
+  "scientific_authority": false
+}

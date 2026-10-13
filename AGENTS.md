@@ -25,9 +25,11 @@ the guarded runner, a settled source pin and a fresh attempt directory.
 Preserve other agents' edits, historical receipts, raw data and weights.
 Coordinate ownership before changing frozen implementation files. Update
 the docs and handoff after major steps, retaining the distinction between
-static review, executed validation and accepted real cases. Scientific Gate A
-and the experiment freeze remain unsigned; engineering delegation does not
-sign either one.
+static review, executed validation and accepted real cases. The owner directly
+accepted Gate A on12 October2026 under the exact retrospective amendment in
+[the successor decision](docs/phase2/gate_a_acceptance_20261012.md); its original
+stronger numerical claim remains unestablished. The experiment freeze remains
+unsigned. Engineering delegation does not sign either scientific decision.
 
 After the session deadline, use the latest handoff and fresh coordination
 information; do not treat this session's elapsed lease proposals as active.

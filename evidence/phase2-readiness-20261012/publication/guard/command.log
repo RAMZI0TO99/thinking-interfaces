@@ -1,0 +1,18 @@
+{
+  "schema": "pro3_readiness_packet_metadata_integrity_review_v1",
+  "observed_utc": "2026-10-12T16:26:58.904869+00:00",
+  "passed": true,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "copied_artifacts_verified": 51,
+  "configuration_pins_verified": 13,
+  "reference_audit_receipt_records": 450,
+  "worker_loaded_file_identities_retained": 3928,
+  "original_current_case_ids": 1040,
+  "proposed_unchanged_case_ids": 1020,
+  "excluded_subject01_rows": 20,
+  "original_case_attempts_remaining": 0,
+  "proposal_adopted": false,
+  "numerical_study_qualified": false,
+  "scientific_admission": false,
+  "metadata_review_not_independent_acceptance": true
+}

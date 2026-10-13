@@ -1,0 +1,6 @@
+﻿{
+    "parent_recipe_sha256":  "9209aedfbb0a82a6c218366a2b29fd5e0781130a61a327c4c2514c0eb486db6c",
+    "fresh_recipe_sha256":  "56954b3ef52a1b59e89cde506c3102cda17a6bcc15367bc64998b4e8d982dd3e",
+    "gate_a_decision_sha256":  "0870b98fc957df04cae925fec411929a7759fe3a9a8be6bcb2108f6270356e93",
+    "attempt_scope":  "450 saved-record hashes/config/splits/history/retained-probability arithmetic only; no raw EEG/model/fit/case"
+}

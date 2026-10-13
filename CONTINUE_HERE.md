@@ -1,5 +1,19 @@
 # Continue on another Windows device
 
+## Latest preparation, 12 October UTC
+
+The [fresh readiness checks](docs/phase2/phase2_readiness_review_20261012.md)
+and [portable receipts](evidence/phase2-readiness-20261012/README.md) include
+the successful450-record audit, restricted worker import/environment snapshot
+and complete1040-case identity list. The current full roster is blocked by
+the exhausted original case. [The proposed51-target amendment](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+keeps1020 remaining IDs unchanged and requires an owner design choice; it is
+not an execution release or adopted configuration. Source, original attempts,
+raw data, weights, Gate A's narrow acceptance and pending cohort/freeze remain.
+Prepare fresh worker/runtime/source pins and admission on another device;
+archived probes and source paths are evidence only. Older sections below retain
+their dated states, including previously unexecuted audit descriptions.
+
 ## Current scientific decision, 12 October UTC
 
 The [direct owner approval](docs/phase2/gate_a_acceptance_20261012.md) accepts

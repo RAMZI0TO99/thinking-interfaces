@@ -1,5 +1,87 @@
 # Project handoff
 
+## Publication closeout, 13 October, 06:10 UTC
+
+The completed 12 October readiness work below is ready for publication with its
+58-artifact evidence packet. The reference audit passed for all 450 retained
+records; worker imports and plan identities passed within the stated restricted
+scope. The original 52-target design remains adopted and blocked. The exact
+[51-target amendment](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+is a reviewable, unadopted owner choice; checkpoint-cohort review, numerical
+worker qualification and the final experiment freeze remain pending.
+
+Source027 and Source028 scheduling windows have expired. The pending Source029
+request also expired at 01:00 UTC on 13 October without a response; it grants
+no current authority and must not receive a retrospective grant. Historical
+receipts and launchers remain inert. This continuation covers owned documentation,
+artifact integrity checks and the already authorized Git publication. Any new
+validation or training requires fresh coordination and admission.
+
+Both previously confirmed Pro2 pause-file paths were absent at 06:10 UTC. This
+is a dated file observation, not a current peer agent count, explicit release or
+whole-host process assertion. Pro3 has one root and no children; no new model,
+selector, recorder operation or original-case attempt is part of this closeout.
+
+## Latest metadata closeout and scheduling, 12 October, 16:26 UTC
+
+The [readiness packet](evidence/phase2-readiness-20261012/README.md) now retains
+58 exact artifacts. A fresh finite metadata Job verified51 original artifacts,
+13 configuration pins, all1,020 unchanged proposed case IDs and20 excluded rows.
+The [51-target proposal](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+is still unsigned/unadopted; the original52-target plan remains adopted and
+blocked. All numerical/resource/claim/freeze limits in the current phase below
+remain. No original-case exception or active configuration change occurred.
+
+Genuine Source028 peer scheduling is effective16:23:44 through23:00 UTC, with
+the same shared maximum5/Pro2max4 and60s reserve. It covers only conditional
+static checker022 audit/protocol/manifest preparation/publication at the exact
+selected dated lease010 paths after different review and Root adoption. Expired
+lease010 stays wire data; no native/Parser/runtime/science/peer Git authority
+follows. Source027's18:00 end is unchanged. Pro2 requests no pause. Pro3 is
+root1/no children/no active owned Job. Every later execution needs new admission.
+
+## Current step: fresh readiness checks complete; target amendment proposed, 12 October UTC
+
+The [readiness report](docs/phase2/phase2_readiness_review_20261012.md) records
+450/450 retained reference records re-audited successfully, actual worker module
+imports/environment measured, and all 1,040 current case identities checked.
+The [portable packet](evidence/phase2-readiness-20261012/README.md) preserves
+successful/failed recipes, native Jobs and the manual issue75 capture: zero
+comments at 14:32:40 UTC. Numerical worker execution, complete cached real
+selection and checkpoint-cohort/overlap remain unqualified or unknown.
+
+The actual live selection ceiling is already 5,253; older 256-step wording is
+historical. The unchanged full roster is blocked by the exhausted subject01/
+LaBraM-linear/seed11/five-shot case: two spent attempts, zero remaining and no
+success intent. The adopted analysis requires all 1,040 rows without imputation.
+
+The [exact unsigned 51-target proposal](docs/phase2/cho_51_target_amendment_proposal_20261012.md)
+removes all 20 subject01 evaluation rows, retains the 52-subject available
+cohort, all methods/seeds/five-shot settings and 1,020 unchanged remaining IDs.
+It changes analysis units to 51 and t degrees of freedom to 50. This is a
+retrospective design amendment requiring an owner choice, not a case rename,
+reset, original52-target completion claim or eligible-cohort finding. The
+current 52-target design remains adopted and blocked until a successor choice.
+An adopted alternative still needs versioned route/collector/inference validation,
+checkpoint-cohort review, a full worker/resource envelope, final owner freeze
+and fresh compute admission. No active configuration or frozen code changed.
+
+Gate A remains accepted only under its directly approved retrospective criterion;
+five of seven decisions adopted, cohort/freeze pending. Source3114ec43/432 and
+all 13 configuration pins are unchanged. No raw/processed array or checkpoint
+was opened, and no model factory, fitting, selector or recorder operation ran.
+The worker probe kept urllib3's exact loopback IPv6 bind blocked, classified it
+as an expected import capability denial, and recorded zero unexpected denials.
+GPU/unrestricted/numerical worker behavior is unqualified; full suite not replayed.
+
+All executed native Jobs emptied, closed and were absent. RAM10/4 and disk20
+floors remained unchanged. Root1/no children. Pro2 reports Root-only static work
+and no pause; Source027/shared5/reserve60s/end18:00 UTC remains bounded scheduling
+only. Later operations need fresh source/runtime pins, admission and coordination.
+Earlier sections below retain dated states, including their formerly unexecuted
+audit descriptions. Windows restoration and previous decision/evidence bytes
+remain preserved; new small reports and run receipts are in Git.
+
 ## Current step: amended Gate A directly accepted, 12 October UTC
 
 The owner directly selected **Accept the amended Gate A criterion** for the
