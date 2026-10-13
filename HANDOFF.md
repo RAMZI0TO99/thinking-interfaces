@@ -1,5 +1,30 @@
 # Project handoff
 
+## Separate 51-target synthetic analysis prepared and checked, 13 October, 07:12 UTC
+
+The [new qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)
+passed22 checks across six fabricated fixtures on a separate unadopted candidate.
+It requires1,020 retained cells, obtains204 exact five-seed means and51 subject
+pairs, and uses Student t df50. Missing/duplicate/changed cells and scope/authority
+claims are refused. The original52-subject function retains its existing contract.
+The [25-artifact packet](evidence/cho51-synthetic-analysis-20261013/README.md)
+preserves the failed initial scope check and successful fresh successor, all
+recipes/pins, outputs and native receipts. Both Jobs closed, emptied and were absent.
+
+The successful Job peaked at152,895,488 bytes, within512/768MiB process/Job caps
+and180 seconds; RAM10/4 and disk20 floors stayed unchanged. All numerical thread
+pools measured1. One precise pinned `platform._node` hostname import query stayed
+blocked; zero unexpected denials. Source3114ec43/432 and13 config pins remain.
+No raw array/checkpoint, model, real selector, recorder or original case ran.
+
+The exact51-target design choice remains pending. This candidate is independent
+engineering preparation; the current adopted52-target plan remains blocked.
+Next, the owner scope choice precedes production route/real-cell collector
+adoption. Checkpoint-cohort review, full numerical worker/resource qualification,
+final owner freeze and fresh execution admission remain required. Gate A's exact
+retrospective acceptance remains, original attempts0, and no new watcher/window
+or peer-result acceptance follows. Pro3 root1/no children; honor a genuine pause.
+
 ## Published readiness and fresh peer scheduling, 13 October UTC
 
 Readiness docs, the exact unadopted 51-target proposal and 58-artifact evidence

@@ -1,0 +1,667 @@
+{
+  "authority": {
+    "actual_checkpoint_target_overlap_verified": false,
+    "checkpoint_training_coverage_verified": false,
+    "design_amendment_adopted": false,
+    "experiment_freeze_signed": false,
+    "original_case_attempts_remaining": 0,
+    "real_training_or_case_admitted": false,
+    "scientific_cells_admitted": false,
+    "scientific_claim_issued": false
+  },
+  "available_cohort_subjects": 52,
+  "baseline_roster_sha256": "ab5b4c3f11abab8cc5f91c0d36cfc88e0c857f306f6f7a0510a4214e658b1b16",
+  "evaluation_target_ids": [
+    "subject_02",
+    "subject_03",
+    "subject_04",
+    "subject_05",
+    "subject_06",
+    "subject_07",
+    "subject_08",
+    "subject_09",
+    "subject_10",
+    "subject_11",
+    "subject_12",
+    "subject_13",
+    "subject_14",
+    "subject_15",
+    "subject_16",
+    "subject_17",
+    "subject_18",
+    "subject_19",
+    "subject_20",
+    "subject_21",
+    "subject_22",
+    "subject_23",
+    "subject_24",
+    "subject_25",
+    "subject_26",
+    "subject_27",
+    "subject_28",
+    "subject_29",
+    "subject_30",
+    "subject_31",
+    "subject_32",
+    "subject_33",
+    "subject_34",
+    "subject_35",
+    "subject_36",
+    "subject_37",
+    "subject_38",
+    "subject_39",
+    "subject_40",
+    "subject_41",
+    "subject_42",
+    "subject_43",
+    "subject_44",
+    "subject_45",
+    "subject_46",
+    "subject_47",
+    "subject_48",
+    "subject_49",
+    "subject_50",
+    "subject_51",
+    "subject_52"
+  ],
+  "exact_mean_difference": {
+    "denominator": 10,
+    "numerator": 1
+  },
+  "exact_sample_variance": {
+    "denominator": 1,
+    "numerator": 0
+  },
+  "fabricated_cells": 1020,
+  "five_seed_means": 204,
+  "fixture": "positive",
+  "formal_equivalence_decision": null,
+  "gate_a_acceptance_changed_or_supplied_by_candidate": false,
+  "nonzero_absolute_tie_class_count": 1,
+  "nonzero_tied_subject_count": 51,
+  "paired_differences": [
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_02"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_03"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_04"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_05"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_06"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_07"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_08"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_09"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_10"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_11"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_12"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_13"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_14"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_15"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_16"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_17"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_18"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_19"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_20"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_21"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_22"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_23"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_24"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_25"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_26"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_27"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_28"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_29"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_30"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_31"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_32"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_33"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_34"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_35"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_36"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_37"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_38"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_39"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_40"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_41"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_42"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_43"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_44"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_45"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_46"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_47"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_48"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_49"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_50"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_51"
+    },
+    {
+      "difference": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "subject": "subject_52"
+    }
+  ],
+  "paired_mean_ci_90": [
+    0.1,
+    0.1
+  ],
+  "paired_mean_ci_95": [
+    0.1,
+    0.1
+  ],
+  "production_route_recorder_or_real_cell_admission_qualified": false,
+  "proposal_sha256": "26edbf77961af89fdc31941cbf0425c97ebd81ed263dff706a21aac933e9b965",
+  "sample_variance_denominator": 50,
+  "schema": "cho51_unadopted_synthetic_analysis_v1",
+  "scope": "fabricated_fixture_engineering_only",
+  "secondary_superiority_p_values": [],
+  "signed_rank_levels": [
+    [
+      "subject_02",
+      1
+    ],
+    [
+      "subject_03",
+      1
+    ],
+    [
+      "subject_04",
+      1
+    ],
+    [
+      "subject_05",
+      1
+    ],
+    [
+      "subject_06",
+      1
+    ],
+    [
+      "subject_07",
+      1
+    ],
+    [
+      "subject_08",
+      1
+    ],
+    [
+      "subject_09",
+      1
+    ],
+    [
+      "subject_10",
+      1
+    ],
+    [
+      "subject_11",
+      1
+    ],
+    [
+      "subject_12",
+      1
+    ],
+    [
+      "subject_13",
+      1
+    ],
+    [
+      "subject_14",
+      1
+    ],
+    [
+      "subject_15",
+      1
+    ],
+    [
+      "subject_16",
+      1
+    ],
+    [
+      "subject_17",
+      1
+    ],
+    [
+      "subject_18",
+      1
+    ],
+    [
+      "subject_19",
+      1
+    ],
+    [
+      "subject_20",
+      1
+    ],
+    [
+      "subject_21",
+      1
+    ],
+    [
+      "subject_22",
+      1
+    ],
+    [
+      "subject_23",
+      1
+    ],
+    [
+      "subject_24",
+      1
+    ],
+    [
+      "subject_25",
+      1
+    ],
+    [
+      "subject_26",
+      1
+    ],
+    [
+      "subject_27",
+      1
+    ],
+    [
+      "subject_28",
+      1
+    ],
+    [
+      "subject_29",
+      1
+    ],
+    [
+      "subject_30",
+      1
+    ],
+    [
+      "subject_31",
+      1
+    ],
+    [
+      "subject_32",
+      1
+    ],
+    [
+      "subject_33",
+      1
+    ],
+    [
+      "subject_34",
+      1
+    ],
+    [
+      "subject_35",
+      1
+    ],
+    [
+      "subject_36",
+      1
+    ],
+    [
+      "subject_37",
+      1
+    ],
+    [
+      "subject_38",
+      1
+    ],
+    [
+      "subject_39",
+      1
+    ],
+    [
+      "subject_40",
+      1
+    ],
+    [
+      "subject_41",
+      1
+    ],
+    [
+      "subject_42",
+      1
+    ],
+    [
+      "subject_43",
+      1
+    ],
+    [
+      "subject_44",
+      1
+    ],
+    [
+      "subject_45",
+      1
+    ],
+    [
+      "subject_46",
+      1
+    ],
+    [
+      "subject_47",
+      1
+    ],
+    [
+      "subject_48",
+      1
+    ],
+    [
+      "subject_49",
+      1
+    ],
+    [
+      "subject_50",
+      1
+    ],
+    [
+      "subject_51",
+      1
+    ],
+    [
+      "subject_52",
+      1
+    ]
+  ],
+  "student_t_df": 50,
+  "subject_count": 51,
+  "synthetic_numeric_conditions_met": true,
+  "wilcoxon_p_value_unrounded": 4.618298308587013e-13,
+  "wilcoxon_statistic": 1326.0,
+  "zero_count": 0
+}

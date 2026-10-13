@@ -1,5 +1,14 @@
 # Thinking Interfaces
 
+## Separate synthetic51-target analysis checked, 13 October UTC
+
+[The new engineering step](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)
+passed22 checks across six fabricated fixtures on a separate candidate collector
+and paired calculator. It prepares1,020-cell/51-subject/df50 behavior without
+changing the adopted52-target path. The study-design amendment is still unadopted;
+production real-cell admission, numerical worker, cohort review and freeze remain
+pending. Exact recipes and both successful/failed native receipts are in Git.
+
 ## Fresh readiness checks completed, 12 October UTC
 
 [The new review](docs/phase2/phase2_readiness_review_20261012.md) records a

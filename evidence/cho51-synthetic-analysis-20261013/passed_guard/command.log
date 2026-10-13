@@ -1,0 +1,28 @@
+test_adoption_or_retry_claim_refused (__main__.CandidateChecks.test_adoption_or_retry_claim_refused) ... ok
+test_authority_always_false_and_no_real_interface (__main__.CandidateChecks.test_authority_always_false_and_no_real_interface) ... ok
+test_case_identity_change_refused (__main__.CandidateChecks.test_case_identity_change_refused) ... ok
+test_complete_retained_roster (__main__.CandidateChecks.test_complete_retained_roster) ... ok
+test_duplicate_cell_refused (__main__.CandidateChecks.test_duplicate_cell_refused) ... ok
+test_duplicate_pair_refused (__main__.CandidateChecks.test_duplicate_pair_refused) ... ok
+test_exact_seed_aggregation (__main__.CandidateChecks.test_exact_seed_aggregation) ... ok
+test_fifty_or_fiftytwo_pairs_refused (__main__.CandidateChecks.test_fifty_or_fiftytwo_pairs_refused) ... ok
+test_float_and_out_of_range_refused (__main__.CandidateChecks.test_float_and_out_of_range_refused) ... ok
+test_known_uniform_ramp_moments_and_df (__main__.CandidateChecks.test_known_uniform_ramp_moments_and_df) ... ok
+test_missing_cell_refused (__main__.CandidateChecks.test_missing_cell_refused) ... ok
+test_order_independent (__main__.CandidateChecks.test_order_independent) ... ok
+test_original52_contract_preserved (__main__.CandidateChecks.test_original52_contract_preserved) ... ok
+test_partial_subject_exclusion_refused (__main__.CandidateChecks.test_partial_subject_exclusion_refused) ... ok
+test_positive_and_negative (__main__.CandidateChecks.test_positive_and_negative) ... ok
+test_rank_and_mean_disagreement (__main__.CandidateChecks.test_rank_and_mean_disagreement) ... ok
+test_reused_cell_digest_refused (__main__.CandidateChecks.test_reused_cell_digest_refused) ... ok
+test_subject01_row_refused (__main__.CandidateChecks.test_subject01_row_refused) ... ok
+test_ties_and_pratt_zeros (__main__.CandidateChecks.test_ties_and_pratt_zeros) ... ok
+test_underflow_refused (__main__.CandidateChecks.test_underflow_refused) ... ok
+test_wrong_seed_or_shots_refused (__main__.CandidateChecks.test_wrong_seed_or_shots_refused) ... ok
+test_zero_point_interval (__main__.CandidateChecks.test_zero_point_interval) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.195s
+
+OK
+{"passed": true, "tests_run": 22, "fixtures": ["negative", "positive", "ramp", "rank_mean_disagree", "ties", "zero"], "duration_seconds": 4.735000000000582, "loaded_module_files": 1469, "numpy_version": "2.5.2", "scipy_version": "1.18.1", "scientific_admission": false}

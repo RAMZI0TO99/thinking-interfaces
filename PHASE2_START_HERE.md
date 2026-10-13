@@ -1,5 +1,16 @@
 # Phase II - Start Here
 
+## Synthetic51-target analysis checked, 13 October UTC
+
+The [separate candidate qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)
+passed22 checks across six fabricated fixtures: complete1,020-cell collection,
+exact204 five-seed means,51 paired units, Student t df50 and refusal boundaries.
+Its portable recipes and native receipts are published with the docs. This
+prepares engineering work while the exact51-target owner choice remains pending;
+the adopted52-target contract is unchanged and blocked. Production route and
+real-cell collector admission, checkpoint-cohort review, numerical worker/resource
+qualification and final freeze still precede any scientific execution.
+
 ## Current next choice: complete target roster, 12 October UTC
 
 The [readiness review](docs/phase2/phase2_readiness_review_20261012.md) passed

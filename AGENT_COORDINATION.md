@@ -1,5 +1,28 @@
 # Project coordination
 
+## Bounded synthetic analysis step, 13 October, 07:12 UTC
+
+Pro3 root owns `docs/phase2/cho_51_target_analysis_candidate`,
+`runs/coordination/cho51_synthetic_analysis_20261013_v1`, its qualification doc
+and25-artifact packet. Root1/no children preserves remaining shared capacity;
+no fresh peer agent count or result is inferred. Source030's20:00UTC end,
+shared maximum5 and60-second reserve remain; its conditional peer scope is unchanged.
+
+Two fresh finite synthetic Jobs used180s/process512/Job768MiB, RAM10/4 and disk20.
+The first scope assertion failed after a denied hostname query. The successor
+passed22 checks on six invented fixtures with the exact pinned `_node` caller
+still denied, zero unexpected denials, all numerical pools1, peak Job152,895,488
+bytes and30 input pins. Both Jobs closed, emptied and were absent. Current13Oct
+pause monitoring and all three named path checks applied; honor a fresh pause.
+
+This separate candidate leaves source432/3114ec43, all13 configs, adopted52-target
+analysis and original attempts unchanged. Its51-target scope remains unadopted;
+no real-cell collector, numerical model worker, selector, recorder, raw array,
+checkpoint or scientific execution ran. Read
+[the qualification limits](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)
+before further work. Owner design choice, cohort review, production qualification
+and final freeze remain pending; no new30-hour window or retry is admitted.
+
 ## Fresh Source030 scheduling, 13 October, 06:21 UTC
 
 The [exact request and genuine response](evidence/pro2-source030-coordination-20261013/README.md)

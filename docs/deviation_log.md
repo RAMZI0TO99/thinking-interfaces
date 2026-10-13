@@ -1,5 +1,24 @@
 # Deviation log
 
+## 2026-10-13 - Unadopted analysis candidate and precise denied import probe
+
+A separate [51-target synthetic candidate](phase2/cho51_synthetic_analysis_qualification_20261013.md)
+was prepared while the exact owner scope choice remains pending. Source432,
+all13 configs, the adopted52-target contract and original attempts are unchanged.
+The first harness failed its scope assertion after a denied hostname import
+query. A preserved successor kept every socket blocked and classified one
+no-argument call from the exact pinned `platform._node` source, recording its
+stack and zero unexpected denials. No permission or resource floor widened.
+It passed22 numerical/roster/refusal checks under fresh finite native admission.
+
+This noncanonical candidate/docs/evidence publication uses the existing
+command-local hook exception; the tracked full-quality hook is preserved.
+The full canonical suite, production real-cell admission, numerical model worker
+and scientific execution were not run or certified by these synthetic checks.
+The proposed51-target design and final freeze remain unsigned/unadopted;
+Gate A's separate exact retrospective acceptance is retained. No original-case
+reset, extra attempt, renamed equivalent or new execution window follows.
+
 ## 2026-10-12 - Fresh readiness evidence and unsigned target-roster alternative
 
 The [new review](phase2/phase2_readiness_review_20261012.md) retains a successful

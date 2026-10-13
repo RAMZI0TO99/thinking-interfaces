@@ -1,5 +1,15 @@
 # Continue on another Windows device
 
+## Latest candidate evidence, 13 October UTC
+
+The [51-target synthetic analysis qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)
+and [25-artifact packet](evidence/cho51-synthetic-analysis-20261013/README.md)
+are included in Git, alongside the separate candidate and its meaningful
+refusal/numerical checks. They passed on the current Windows runtime. Archived
+recipes and guards remain inert on a clone; prepare fresh runtime/source pins,
+scope, coordination and admission before running. The51-target study is still
+unadopted; production collector/worker/cohort/freeze decisions remain pending.
+
 ## Latest preparation, 12 October UTC
 
 The [fresh readiness checks](docs/phase2/phase2_readiness_review_20261012.md)
