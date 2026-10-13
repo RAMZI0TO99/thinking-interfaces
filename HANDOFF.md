@@ -1,5 +1,55 @@
 # Project handoff
 
+## Adopted51-target route metadata checked, 13 October, 07:41 UTC
+
+The [versioned route contract](docs/phase2/cho51_route_contract_qualification_20261013.md)
+passed27 checks after the owner's direct51-target adoption. It rederived all
+1,020 retained IDs using isolated original CasePlan source, kept all52 available
+subjects, and verified2,601 folds/130,050 training memberships. Every outer target
+has51 sources including subject01; every inner validation fold has50 training
+subjects excluding target and validation. Altered scope, identities, partial
+exclusions and execution/retry claims are refused. Full worker class and
+real catalog/episode/asset qualification remain pending.
+
+The [18-artifact packet](evidence/cho51-adoption-route-20261013/README.md)
+preserves the direct owner choice, exact accepted proposal and prior decision,
+recipes/pins/code/results and native receipt. Job20261013T074128Z_49acddee69
+passed180s/256/512MiB with peak Job45,404,160 bytes; closed, empty and absent.
+RAM10/4/disk20 remained. All24 input pins and13 configs matched, source432/
+3114ec43 unchanged, zero denials, no model/numerical-library/array/checkpoint/
+selector/recorder operation. Existing original-case receipts remain preserved.
+
+Current design51 targets is adopted; old52-target scope is superseded for future
+evaluation and remains historical implementation. Next, qualify actual worker
+type and real input/episode/asset bridges, then selector/recorder/collector and
+whole numerical worker/resource bounds. Checkpoint-cohort review and final owner
+freeze remain pending; five of seven decisions adopted, no scientific compute
+or new original attempt admitted. Gate A's exact retrospective acceptance stays.
+Root1/no children; honor a fresh genuine pause and prepare new finite admission.
+
+## Current owner decision: 51-target amendment adopted, 13 October UTC
+
+The owner directly selected **Adopt 51 targets (Recommended)** for the exact
+published proposal at `c1a989d`. The
+[successor decision](docs/phase2/cho_51_target_amendment_adoption_20261013.md)
+records the literal answer and scope. The current future evaluation design is
+subjects02–52/1,020 cells/51 subject units/Student t df50, retaining all52 available
+source subjects and unchanged methods, seeds, shots, case IDs and original limits.
+The old52-target scope is superseded for future evaluation; its implementation,
+decision history and known results remain preserved. This is retrospective.
+
+Root is preparing `docs/phase2/cho51_route_candidate_v1` and a fresh bounded
+metadata qualification in `runs/coordination/cho51_adoption_route_20261013_v1`.
+The existing synthetic51 candidate and its passing receipts retain their original
+bytes. The new route must distinguish52 available subjects from51 targets and
+verify all retained IDs/folds without opening arrays or creating a recorder.
+No production route has passed a qualification yet in this phase.
+
+Five decisions remain adopted, with checkpoint-cohort review and final freeze
+pending. Active configs and source432/3114ec43 are unchanged. No scientific
+execution budget, original-case retry/reset/rename, new watcher or30-hour window
+follows. Older sections below preserve the previously unadopted snapshots.
+
 ## Separate 51-target synthetic analysis prepared and checked, 13 October, 07:12 UTC
 
 The [new qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)

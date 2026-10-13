@@ -31,5 +31,12 @@ accepted Gate A on12 October2026 under the exact retrospective amendment in
 stronger numerical claim remains unestablished. The experiment freeze remains
 unsigned. Engineering delegation does not sign either scientific decision.
 
+The owner directly adopted the exact 51-target Cho amendment on 13 October in
+[the successor scope decision](docs/phase2/cho_51_target_amendment_adoption_20261013.md).
+Future evaluation targets are subjects02–52, while the available source cohort
+remains52. Preserve the old52-target implementation and historical proposal;
+prepare separately versioned route/collector/analysis work with fresh checks.
+This scope choice does not sign the final freeze or admit scientific execution.
+
 After the session deadline, use the latest handoff and fresh coordination
 information; do not treat this session's elapsed lease proposals as active.

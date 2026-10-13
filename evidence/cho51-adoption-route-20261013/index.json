@@ -1,0 +1,107 @@
+{
+  "available_subjects": 52,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "direct_owner_design_adopted": true,
+  "evaluation_targets": 51,
+  "experiment_freeze_signed": false,
+  "files": [
+    {
+      "bytes": 10427,
+      "path": "candidate/route_contract.py",
+      "sha256": "9c168cdb19ad882759d1b73ec23b821b1a2c7045bf7807cee3b9682a01d9a1e3"
+    },
+    {
+      "bytes": 12499,
+      "path": "candidate/validate_route.py",
+      "sha256": "265f1f185fab1620af46c1ce1aee31e2c11779bf03b07d7346a2cb6a31a4471f"
+    },
+    {
+      "bytes": 4392,
+      "path": "guard/admission.json",
+      "sha256": "8494027928fcae7a459d686bb0202db53b60844a923dae7457b8f0afee0d6c09"
+    },
+    {
+      "bytes": 17,
+      "path": "guard/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d"
+    },
+    {
+      "bytes": 3139,
+      "path": "guard/command.log",
+      "sha256": "8a0e1e46e32f8cfcb20f4f15ec02caea413c1bd0d0971714d63da4d437e2a686"
+    },
+    {
+      "bytes": 161,
+      "path": "guard/deadline.json",
+      "sha256": "b19aab89b5e3595b0935bbad3184af50c5ff881af8674be8435d94928bc1f402"
+    },
+    {
+      "bytes": 1674,
+      "path": "guard/receipt.json",
+      "sha256": "6e4bc523fa7260dbbab0ce1dccf613fc80bb54c34bbf1b34ac4109997f269a2c"
+    },
+    {
+      "bytes": 387911,
+      "path": "owner/accepted-proposal.json",
+      "sha256": "26edbf77961af89fdc31941cbf0425c97ebd81ed263dff706a21aac933e9b965"
+    },
+    {
+      "bytes": 4474,
+      "path": "owner/accepted-proposal.md",
+      "sha256": "ab1c313956907a13a1039430442ce791db63c44b5c3acbbb2a2702d85bfa0634"
+    },
+    {
+      "bytes": 9969,
+      "path": "owner/adoption.json",
+      "sha256": "ae3295c2aa5acdfad2c9b2d7ffb602ec8b0daddb07b3d433d15dcaf9fd002709"
+    },
+    {
+      "bytes": 2736,
+      "path": "owner/adoption.md",
+      "sha256": "a770e8a78f2ad75d2619d563ea72e4943afa9a20f1b6956f0a8d121323ad04ac"
+    },
+    {
+      "bytes": 10789,
+      "path": "owner/prior-gate-a-decision.json",
+      "sha256": "0870b98fc957df04cae925fec411929a7759fe3a9a8be6bcb2108f6270356e93"
+    },
+    {
+      "bytes": 2284,
+      "path": "recipes/assemble_evidence_001.py",
+      "sha256": "f833ab884c36f50f81d124e7700e4f7bc4e3b2f05ddbfa3989c81eb7947780f0"
+    },
+    {
+      "bytes": 1027,
+      "path": "recipes/prepare_route_inputs_001.py",
+      "sha256": "6c104db7974d5ab1ef7389875dc62ffa05c9500976cc8d3b98ca00fcfe69c6ac"
+    },
+    {
+      "bytes": 5581,
+      "path": "recipes/record_adoption_001.py",
+      "sha256": "c77cd8ec0a6fb914a1f095ed04eb78ae7797fa5d27e5033351f89b4174652116"
+    },
+    {
+      "bytes": 3293,
+      "path": "recipes/validation_pins_001.json",
+      "sha256": "c43156daa527efc5eb547d0d11dc3e1b5b3eb33a202d2041860bd197ec701f4b"
+    },
+    {
+      "bytes": 3541,
+      "path": "results/qualification.json",
+      "sha256": "a63804577e83db0fd94f5ca0b825e99e0ac90a87a8d5b32344230b54631cb375"
+    },
+    {
+      "bytes": 202681,
+      "path": "results/route-contract.json",
+      "sha256": "dff76f99b588ba0415c3373f582f3416d44689b4818e217248fd88583d649fc6"
+    }
+  ],
+  "inner_folds_verified": 2601,
+  "original_case_attempts_remaining": 0,
+  "real_assets_or_episodes_verified": false,
+  "retained_cases": 1020,
+  "schema": "cho51_direct_adoption_route_packet_v1",
+  "scientific_execution_budget_admitted": false,
+  "tests_passed": 27,
+  "worker_class_interoperability_qualified": false
+}

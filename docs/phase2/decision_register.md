@@ -1,5 +1,23 @@
 # Phase II execution decisions
 
+## Current successor scope decision, 13 October 2026
+
+The owner directly answered **Adopt 51 targets (Recommended)** to the exact
+[pinned amendment](cho_51_target_amendment_adoption_20261013.md). Future evaluation
+now has51 targets, subjects02–52, requiring1,020 complete cells; the available
+source cohort remains52. Independent units51/sample-variance denominator50/
+Student t df50 replace the prior52-target analysis counts. Methods, seeds,
+shots, retained IDs, exploratory margin and empty secondary family are unchanged.
+This is a disclosed retrospective change after known engineering history;
+historical proposal and52-target implementation remain preserved.
+
+Gate A retains its separately accepted exact retrospective criterion. Five of
+seven decisions remain adopted; checkpoint-cohort/overlap review and final
+experiment freeze remain pending. A27-check metadata route candidate passed;
+actual worker/real-input/collector and numerical/resource qualification remain.
+No scientific execution budget, original-case extra attempt or new30-hour
+window follows. Older sections below retain their dated authority and limits.
+
 Recorded 5 September 2026 following the user's instruction:
 "ok start exeucting the new plan."
 

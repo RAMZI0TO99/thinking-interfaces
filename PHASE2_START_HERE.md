@@ -1,5 +1,17 @@
 # Phase II - Start Here
 
+## Current51-target design adopted; metadata route checked, 13 October UTC
+
+The owner [directly selected51 targets](docs/phase2/cho_51_target_amendment_adoption_20261013.md)
+under the exact retrospective amendment, preserving52 available source subjects.
+The [versioned route contract qualification](docs/phase2/cho51_route_contract_qualification_20261013.md)
+passed27 checks on1,020 unchanged IDs and all2,601 inner folds. The current design
+supersedes future52-target evaluation scope; historical source/decisions/results
+remain preserved. Next, bridge to actual worker types and pinned real assets/
+episodes, then qualify selector/recorder/collector and numerical worker/resources.
+Checkpoint-cohort review and final owner freeze remain pending; no scientific
+execution or original retry follows. Older unadopted descriptions are snapshots.
+
 ## Synthetic51-target analysis checked, 13 October UTC
 
 The [separate candidate qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)

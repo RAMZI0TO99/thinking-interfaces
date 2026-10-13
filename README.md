@@ -1,5 +1,15 @@
 # Thinking Interfaces
 
+## 51-target study amendment adopted; route metadata checked, 13 October UTC
+
+The owner [directly adopted the exact amendment](docs/phase2/cho_51_target_amendment_adoption_20261013.md):
+51 evaluation targets/1,020 cells, retaining52 available source subjects and
+unchanged methods/seeds/shots/case IDs. The separate
+[route contract passed27 checks](docs/phase2/cho51_route_contract_qualification_20261013.md)
+on identities and all2,601 inner folds. Historic proposal/52-target implementation
+and earlier synthetic receipts remain preserved. Real worker/input/collector
+integration, checkpoint-cohort review and final freeze remain pending.
+
 ## Separate synthetic51-target analysis checked, 13 October UTC
 
 [The new engineering step](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)

@@ -1,5 +1,42 @@
 # Project coordination
 
+## Adopted-scope route metadata qualification completed, 13 October, 07:41 UTC
+
+Root-owned route contract and direct owner evidence are in
+[the18-artifact packet](evidence/cho51-adoption-route-20261013/README.md).
+The fresh native Job20261013T074128Z_49acddee69 passed27 standard-library/source
+fixture checks within180s/process256/Job512MiB. Peak process/Job26,755,072/
+45,404,160 bytes; closed, emptied and absent, with no cleanup/sampling errors.
+RAM10/4/disk20 floors and all24 input pins/13 config pins stayed unchanged.
+Source432/3114ec43 is unchanged. Current13Oct pause monitoring and three named
+path checks applied; no peer count, host quiet or peer result is inferred.
+
+Directly adopted51 targets retain52 available subjects and1,020 unchanged IDs.
+All2,601 folds and130,050 memberships were checked with source CasePlan AST and
+fabricated typed catalogs; full worker-class interoperability, real arrays/assets/
+episodes and production selector/recorder/collector are pending. No numerical
+library, model, checkpoint or original-case operation ran. Cohort/freeze remain
+pending, original attempts0, no science budget. Root1/no children; Source030/
+shared5/peermax4 while root-only/reserve60s/end20:00UTC are unchanged. No later
+validation is admitted by this closed receipt; honor a fresh genuine pause.
+
+## Direct 51-target adoption and route preparation, 13 October UTC
+
+Root owns the successor adoption docs, `docs/phase2/cho51_route_candidate_v1`,
+`runs/coordination/cho51_adoption_route_20261013_v1` and their new portable evidence.
+The owner directly adopted the exact proposal at `c1a989d`; no engineering
+delegation is used as a scientific signature. Current scope51 targets/52 available
+subjects/1,020 retained cases supersedes the old future52-target evaluation scope.
+The earlier proposal and implementation remain immutable historical inputs.
+
+Root1/no children preserves shared capacity; no current peer count is inferred.
+Source030/shared5/peermax4 while root-only/reserve60s/end20:00UTC remain unchanged.
+Fresh metadata qualification will use finite native admission, RAM10/4/disk20
+floors and current pause monitoring. No guard has launched in this new phase yet.
+No raw array/checkpoint, model, selector or recorder operation is planned.
+Checkpoint-cohort review, full production worker/collector qualification and
+final owner freeze remain pending; original attempts0 and no science budget.
+
 ## Bounded synthetic analysis step, 13 October, 07:12 UTC
 
 Pro3 root owns `docs/phase2/cho_51_target_analysis_candidate`,

@@ -1,5 +1,17 @@
 # Continue on another Windows device
 
+## Current study decision and route evidence, 13 October UTC
+
+The [direct owner51-target adoption](docs/phase2/cho_51_target_amendment_adoption_20261013.md)
+and [27-check route metadata qualification](docs/phase2/cho51_route_contract_qualification_20261013.md)
+are included with an18-artifact packet. The current evaluation design has51 targets
+and52 available subjects; the old52-target code remains historical implementation.
+Actual worker/input/episode/collector qualification, checkpoint-cohort review
+and final freeze remain pending. Restore via the Windows setup and establish
+fresh pins/runtime/coordination/admission before later work; archived recipes
+and absolute paths remain inert. Older snapshots below retain their previous
+unadopted status.
+
 ## Latest candidate evidence, 13 October UTC
 
 The [51-target synthetic analysis qualification](docs/phase2/cho51_synthetic_analysis_qualification_20261013.md)

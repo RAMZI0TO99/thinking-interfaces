@@ -1,5 +1,25 @@
 # Deviation log
 
+## 2026-10-13 - Direct retrospective51-target adoption and metadata route contract
+
+The owner directly selected **Adopt 51 targets (Recommended)** for the exact
+[proposal at c1a989d](phase2/cho_51_target_amendment_adoption_20261013.md).
+The successor decision preserves the full question, literal answer and byte
+pins. Future scope51/available52/cells1,020/df50 supersedes the prior evaluation
+scope after known engineering history. Historical proposal, implementation,
+known results and original case limits remain; no prospective specification
+or original52-target completion is claimed.
+
+A separate metadata route passed27 source/fixture checks on retained IDs and
+all2,601 folds. Original CasePlan AST was isolated without importing the runner;
+full worker type interoperability and real catalogs/assets/episodes remain
+unqualified. No numerical library, model, checkpoint, selector or recorder ran.
+Source432 and all13 configs remain unchanged. This tested noncanonical candidate/
+docs publication uses the existing command-local hook exception, preserving the
+tracked full-quality hook. The full canonical suite was not replayed. Final
+freeze/cohort review and scientific compute remain pending; no original extra
+attempt, reset, renamed equivalent or new30-hour window follows.
+
 ## 2026-10-13 - Unadopted analysis candidate and precise denied import probe
 
 A separate [51-target synthetic candidate](phase2/cho51_synthetic_analysis_qualification_20261013.md)

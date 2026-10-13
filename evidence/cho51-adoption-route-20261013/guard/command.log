@@ -1,0 +1,33 @@
+test_all_sources_keep_subject01 (__main__.RouteChecks.test_all_sources_keep_subject01) ... ok
+test_changed_case_identity_or_template_refused (__main__.RouteChecks.test_changed_case_identity_or_template_refused) ... ok
+test_complete_case_matrix (__main__.RouteChecks.test_complete_case_matrix) ... ok
+test_df_and_subject_units_change_refused (__main__.RouteChecks.test_df_and_subject_units_change_refused) ... ok
+test_direct_owner_answer_and_remaining_decisions (__main__.RouteChecks.test_direct_owner_answer_and_remaining_decisions) ... ok
+test_duplicate_or_unordered_catalogs_refused (__main__.RouteChecks.test_duplicate_or_unordered_catalogs_refused) ... ok
+test_every_inner_fold_excludes_target_and_validation (__main__.RouteChecks.test_every_inner_fold_excludes_target_and_validation) ... ok
+test_execution_and_retry_claims_refused (__main__.RouteChecks.test_execution_and_retry_claims_refused) ... ok
+test_historical_proposal_stays_false (__main__.RouteChecks.test_historical_proposal_stays_false) ... ok
+test_json_duplicate_or_nonfinite_refused (__main__.RouteChecks.test_json_duplicate_or_nonfinite_refused) ... ok
+test_lookup_retained_case (__main__.RouteChecks.test_lookup_retained_case) ... ok
+test_method_templates_unchanged (__main__.RouteChecks.test_method_templates_unchanged) ... ok
+test_missing_retained_class_refused (__main__.RouteChecks.test_missing_retained_class_refused) ... ok
+test_missing_subject01_catalog_refused (__main__.RouteChecks.test_missing_subject01_catalog_refused) ... ok
+test_original_exhausted_case_refused (__main__.RouteChecks.test_original_exhausted_case_refused) ... ok
+test_owner_adoption_cannot_be_inferred (__main__.RouteChecks.test_owner_adoption_cannot_be_inferred) ... ok
+test_partial_exclusion_refused (__main__.RouteChecks.test_partial_exclusion_refused) ... ok
+test_preprocessing_drift_refused (__main__.RouteChecks.test_preprocessing_drift_refused) ... ok
+test_rederived_case_ids_byte_identical (__main__.RouteChecks.test_rederived_case_ids_byte_identical) ... ok
+test_route_maps_are_immutable (__main__.RouteChecks.test_route_maps_are_immutable) ... ok
+test_seed_shot_repetition_change_refused (__main__.RouteChecks.test_seed_shot_repetition_change_refused) ... ok
+test_self_constructed_tampered_route_refused (__main__.RouteChecks.test_self_constructed_tampered_route_refused) ... ok
+test_subject01_as_inner_validation_and_training (__main__.RouteChecks.test_subject01_as_inner_validation_and_training) ... ok
+test_summary_scope_counts_and_false_authority (__main__.RouteChecks.test_summary_scope_counts_and_false_authority) ... ok
+test_target_scope_change_refused (__main__.RouteChecks.test_target_scope_change_refused) ... ok
+test_untyped_catalog_refused (__main__.RouteChecks.test_untyped_catalog_refused) ... ok
+test_wrong_dataset_refused (__main__.RouteChecks.test_wrong_dataset_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.639s
+
+OK
+{"passed": true, "tests_run": 27, "cases": 1020, "outer_sources": 51, "inner_training_subjects": 50, "inner_folds": 2601, "scientific_admission": false}
