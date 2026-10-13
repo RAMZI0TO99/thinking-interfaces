@@ -1,0 +1,24 @@
+Imports complete; verifying all52 real catalogs/assets.
+Complete52-subject inventory verified; checking adopted1020 worker inputs.
+Subject02 real60Hz episode binding complete.
+test_actual_worker_types (__main__.BridgeChecks.test_actual_worker_types) ... ok
+test_all1020_inputs_have_correct_types_profiles_and_source_pools (__main__.BridgeChecks.test_all1020_inputs_have_correct_types_profiles_and_source_pools) ... ok
+test_bad_full_route_refused (__main__.BridgeChecks.test_bad_full_route_refused) ... ok
+test_config_ceiling_and_adoption_freeze_boundaries (__main__.BridgeChecks.test_config_ceiling_and_adoption_freeze_boundaries) ... ok
+test_exact_retained_ids (__main__.BridgeChecks.test_exact_retained_ids) ... ok
+test_full_source_inventory_preserved (__main__.BridgeChecks.test_full_source_inventory_preserved) ... ok
+test_method_templates_unchanged (__main__.BridgeChecks.test_method_templates_unchanged) ... ok
+test_no_support_query_overlap_or_label_change (__main__.BridgeChecks.test_no_support_query_overlap_or_label_change) ... ok
+test_original_case_input_refused (__main__.BridgeChecks.test_original_case_input_refused) ... ok
+test_real_binding_type_hash_and_trial_counts (__main__.BridgeChecks.test_real_binding_type_hash_and_trial_counts) ... ok
+test_real_source_folds_keep_subject01 (__main__.BridgeChecks.test_real_source_folds_keep_subject01) ... ok
+test_returned_records_are_independent_copies (__main__.BridgeChecks.test_returned_records_are_independent_copies) ... ok
+test_target_records_rederived_from_real_catalogs (__main__.BridgeChecks.test_target_records_rederived_from_real_catalogs) ... ok
+test_untyped_plan_refused (__main__.BridgeChecks.test_untyped_plan_refused) ... ok
+test_wrong_seed_shot_or_repetition_refused (__main__.BridgeChecks.test_wrong_seed_shot_or_repetition_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.639s
+
+OK
+{"passed": true, "tests_run": 15, "cases": 1020, "real_catalogs": 52, "data_files_verified": 157, "sample_binding": "subject_02", "scientific_admission": false}

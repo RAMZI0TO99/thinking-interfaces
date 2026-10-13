@@ -1,5 +1,24 @@
 # Deviation log
 
+## 2026-10-13 - Actual worker bridge and extended Windows path audit spelling
+
+The [actual51 worker/input bridge](phase2/cho51_worker_bridge_qualification_20261013.md)
+passed15 checks and157 real data hash/size/mtime checks on a fresh successor.
+The first recipe passed input tests but refused its own final long-prefix hash
+read; it remains preserved. The successor normalizes only an extended local-drive
+prefix to the same canonical path, without adding allowed files or changing
+caps/floors. All52 A catalogs/B asset pairs,51 episode records and1020 actual
+inputs were checked, plus one subject02 B/raw-source binding. No old data/audit,
+source or first recipe was rewritten to obtain success.
+
+This measures actual type/input interoperability; full remaining B joins,
+fitted selector/sweep/recorder/collector, numerical worker/resources and scientific
+cohort/freeze remain pending. Model/recorder construction and checkpoint loading
+were blocked in the child; no fitting/prediction/claim occurred. Root source432
+and13 configs remain unchanged. The established command-local hook exception
+covers tested noncanonical candidate/docs publication; tracked hook intact,
+full canonical suite not replayed. No original retry/reset/rename or new window.
+
 ## 2026-10-13 - Direct retrospective51-target adoption and metadata route contract
 
 The owner directly selected **Adopt 51 targets (Recommended)** for the exact

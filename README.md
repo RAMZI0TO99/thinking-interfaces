@@ -1,5 +1,15 @@
 # Thinking Interfaces
 
+## Actual51 worker/input bridge checked, 13 October UTC
+
+[The new bridge qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
+passed15 checks on1020 actual retained inputs, all52 A catalogs/B asset pairs,
+51 target episode records and one real subject02 60Hz array binding. The current
+51-target design retains52 source subjects. Exact recipes, failed/passing native
+receipts and23 metadata artifacts are preserved in Git. Complete B joins,
+selector/sweep/recorder/collector and full numerical/resource qualification,
+checkpoint-cohort review and final freeze remain pending; no model case ran.
+
 ## 51-target study amendment adopted; route metadata checked, 13 October UTC
 
 The owner [directly adopted the exact amendment](docs/phase2/cho_51_target_amendment_adoption_20261013.md):

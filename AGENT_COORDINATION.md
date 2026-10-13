@@ -1,5 +1,48 @@
 # Project coordination
 
+## Actual51 worker/input bridge qualified, 13 October, 08:23 UTC
+
+Root-owned [bridge qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
+and23-artifact packet preserve two fresh300s/process2048/Job3072MiB Jobs.
+The first passed real checks but failed final audit on extended-drive path spelling;
+the successor kept157 exact allowed data paths and passed15 tests plus final hashes.
+Passing peak process/Job1,152,905,216/1,172,914,176 bytes; both closed, empty,
+absent, no cleanup/sampling errors. RAM10/4/disk20 and actual Torch1/1 remained.
+
+All1020 actual inputs,52 A catalogs/B artifact pairs and51 target episode records
+were checked, plus subject02's B array/raw-source binding. All157 data hashes/
+sizes/mtimes and442 source/context pins matched; canonical432/3114ec43 and13
+configs are unchanged. No checkpoint, model, fitted candidate selector, prediction
+or recorder operation. B array joins for the remaining targets, legacy1040 sweep/
+collector adaptation, full numerical/resource qualification and cohort/freeze
+remain pending. Current51-target scope is adopted; original attempts0.
+
+Root1/no children preserves shared capacity; no current peer count or physical
+release/result/host quiet is inferred. Source030/shared5/peermax4 while root-only/
+reserve60/end20:00 UTC is unchanged. Guard watched current13Oct pause path;
+three named paths were checked by the harness. No owned Job remains active and
+no watcher or new30-hour window is armed. Fresh admission is required later;
+honor a genuine fresh pause. Older preparation snapshots below remain historical.
+
+## Actual worker bridge preparation, 13 October UTC
+
+Root owns `docs/phase2/cho51_worker_bridge_v1`,
+`runs/coordination/cho51_worker_bridge_20261013_v1` and their qualification/evidence
+docs. Prior route/analysis candidates and all canonical implementation bytes
+remain frozen. Root1/no children preserves Source030/shared5/reserve60s/end20:00
+capacity; no current peer count, physical release or peer result is inferred.
+
+The next fresh finite read-only validation will import actual worker types,
+read all52 Profile A processed arrays, rehash all52 versioned B artifacts and
+sidecars, and bind one subject02 five-shot B episode with its pinned raw source.
+No other raw recording or checkpoint read is allowed. Source/checkpoint/model
+fitting, predictors, real selectors and recorder construction are excluded.
+Planning caps are300s/process2048/Job3072MiB with RAM10/4/disk20 unchanged and
+native/Torch threads1; current pause monitoring and fresh admission are required.
+No Job has launched in this phase yet. Cohort/final freeze and science budget
+remain pending, original attempts0. Existing1040 sweep/collector cannot be
+certified by the new1020 input wrapper.
+
 ## Adopted-scope route metadata qualification completed, 13 October, 07:41 UTC
 
 Root-owned route contract and direct owner evidence are in

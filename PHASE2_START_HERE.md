@@ -1,5 +1,16 @@
 # Phase II - Start Here
 
+## Actual worker/input bridge passed, 13 October UTC
+
+[The versioned51 bridge](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
+passed15 checks with actual worker classes, all1020 retained inputs,52 real A
+catalogs/B asset pairs,51 target episode records and subject02's real B binding.
+It preserves all52 source subjects and rejects subject01 evaluation inputs.
+Next, complete remaining B array joins and versioned selector/sweep/recorder/
+collector integration, then full numerical/resource bounds. Cohort review and
+final freeze remain pending; no model case or original retry ran. The existing
+1040 sweep/collector is preserved and cannot certify this1020 route.
+
 ## Current51-target design adopted; metadata route checked, 13 October UTC
 
 The owner [directly selected51 targets](docs/phase2/cho_51_target_amendment_adoption_20261013.md)

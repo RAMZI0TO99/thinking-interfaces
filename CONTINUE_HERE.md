@@ -1,5 +1,17 @@
 # Continue on another Windows device
 
+## Current actual worker/input evidence, 13 October UTC
+
+The [15-check actual51 worker bridge](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
+and23-artifact packet are included with all1020 retained input assignments,
+52 real A/B inventories and one subject02 array binding. Whole-file input pins
+are required by the loader; archive-member equality alone cannot qualify a
+different ZIP byte stream. Restore, review current input/runtime/source identity,
+and create fresh coordination/admission before execution. Preserve conflicting
+data and old audits for a separately reviewed input-lineage successor. Archived
+guards are inert. Full B joins/selector/sweep/collector/numerical/cohort/freeze
+qualification remains pending; current study scope is51 targets/52 available.
+
 ## Current study decision and route evidence, 13 October UTC
 
 The [direct owner51-target adoption](docs/phase2/cho_51_target_amendment_adoption_20261013.md)

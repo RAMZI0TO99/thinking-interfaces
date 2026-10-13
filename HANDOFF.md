@@ -1,5 +1,44 @@
 # Project handoff
 
+## Actual worker bridge and real inputs checked, 13 October, 08:23 UTC
+
+The [new qualification](docs/phase2/cho51_worker_bridge_qualification_20261013.md)
+passed15 actual worker/input checks: all1020 retained CasePlans/ChoCaseInputs,
+all52 real A catalogs and B artifact/manifest pairs, all51 target episode records
+and method/profile/source assignments. Subject02's real60Hz support/query binding
+is10/159 x64 x800 and matches its retained cohort hash; only its raw source was
+rehashed. All157 data files/3,471,414,871 bytes and442 input/source pins matched;
+data sizes/mtimes remained. Other targets' B array joins remain unqualified.
+
+The [23-artifact packet](evidence/cho51-worker-bridge-20261013/README.md) retains
+the original validator/failure and successful successor. The first run passed
+real input/tests but failed final audit on Windows extended-path spelling. The
+successor normalizes only local-drive spelling, with no additional allowed files.
+Both300s/2048/3072MiB Jobs closed, emptied and were absent. Passing peak Job
+1,172,914,176 bytes; RAM10/4/disk20 unchanged. Actual Torch1/1, GPUs hidden,
+environment digest8575381d, zero denials and one local hostname query.
+
+Actual worker type interoperability and the read-only1020 input wrapper are now
+qualified in this scope. Existing1040 sweep/collector compatibility is false.
+Next, complete B joins and versioned selector/sweep/recorder/collector integration,
+then full numerical worker/resource bounds. No model, fitted candidate selector,
+prediction, checkpoint or recorder operation ran; no original attempt changed.
+Current51-target design remains adopted, Gate A retains its exact retrospective
+acceptance, cohort/freeze remain pending. Source432/3114ec43 and13 configs are
+unchanged. Root1/no children, Source030/shared5/reserve60/end20:00 unchanged;
+later work needs fresh admission and honors a genuine peer pause.
+
+## Current preparation: actual51-target worker/input bridge, 13 October UTC
+
+Root is preparing a separate `cho51_worker_bridge_v1` over the unchanged complete
+real52-subject input loader. It will retain all52 source catalogs/assets while
+exposing only the1020 adopted actual CasePlans. Fresh validation will check
+actual worker types and all target episode records, with one subject02 60Hz
+array/raw-source binding. This phase is planned, without a passing receipt yet.
+No model, selector, prediction or recorder is admitted. Old1040 production
+sweep/collector integration remains separate; cohort/freeze and science budget
+remain pending. Root1/no children; Source030 limits and original attempts0 stay.
+
 ## Adopted51-target route metadata checked, 13 October, 07:41 UTC
 
 The [versioned route contract](docs/phase2/cho51_route_contract_qualification_20261013.md)
