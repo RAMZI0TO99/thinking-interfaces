@@ -1,0 +1,3 @@
+..uuu................uuuu...........uuuuuuuuuuuuuuuu...
+32 passed, 23 subtests passed in 1.49s
+{"passed": true, "actual_gradient_updates": 102, "full_selector_verified": false, "scientific_admission": false}

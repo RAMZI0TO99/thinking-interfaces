@@ -1,0 +1,114 @@
+{
+  "actual_gradient_updates": 5253,
+  "all_native_jobs_closed_empty_freshly_absent": true,
+  "artifact_count": 53,
+  "boundary_tests_passed": 33,
+  "bounded_restore_delegations_executed": 0,
+  "bounded_store_runtime_verified": false,
+  "claims": 1,
+  "cleanup_errors": [],
+  "detached_qualification_accepted": false,
+  "engineering_completion": false,
+  "engineering_successes": 0,
+  "final_source_subjects": 51,
+  "inner_folds": 102,
+  "input_blobs_archived": false,
+  "input_files_rehashed": 213,
+  "jobs": [
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T13:22:19.594285+00:00",
+      "exit_code": 1,
+      "job_name": "pro3_migration_20261015T131826Z_7d29560b93",
+      "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T131826Z_7d29560b93",
+      "peak_job_bytes": 2955096064,
+      "peak_process_bytes": 1691910144,
+      "started_utc": "2026-10-15T13:18:26.716152+00:00",
+      "startup_samples": [
+        {
+          "available_ram_bytes": 14985220096,
+          "free_disk_bytes": 98587418624
+        },
+        {
+          "available_ram_bytes": 14986223616,
+          "free_disk_bytes": 98587418624
+        }
+      ]
+    },
+    {
+      "accepted": true,
+      "completed_utc": "2026-10-15T13:21:52.549995+00:00",
+      "exit_code": 0,
+      "job_name": "pro3_migration_20261015T131859Z_0795c61e69",
+      "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T131859Z_0795c61e69",
+      "peak_job_bytes": 1725968384,
+      "peak_process_bytes": 1691910144,
+      "started_utc": "2026-10-15T13:18:59.720094+00:00",
+      "startup_samples": [
+        {
+          "available_ram_bytes": 13983936512,
+          "free_disk_bytes": 97842659328
+        },
+        {
+          "available_ram_bytes": 13984296960,
+          "free_disk_bytes": 97842659328
+        }
+      ]
+    },
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T13:22:15.798701+00:00",
+      "exit_code": 1,
+      "job_name": "pro3_migration_20261015T132158Z_6da3b33f16",
+      "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T132158Z_6da3b33f16",
+      "peak_job_bytes": 1351593984,
+      "peak_process_bytes": 1321295872,
+      "started_utc": "2026-10-15T13:21:58.210268+00:00",
+      "startup_samples": [
+        {
+          "available_ram_bytes": 11539050496,
+          "free_disk_bytes": 97822298112
+        },
+        {
+          "available_ram_bytes": 11183136768,
+          "free_disk_bytes": 97822298112
+        }
+      ]
+    }
+  ],
+  "linked_failures": 1,
+  "measured_cells": 0,
+  "observed_utc": "2026-10-15T13:25:25.450779+00:00",
+  "original_case_attempts_remaining": 0,
+  "peak_sampling_errors": [],
+  "pins_sha256": "a7a0dc3a554b9351d16070ee3ad12162fc69404c4dc08cccab4c7bf25e19dac8",
+  "publication": {
+    "evidence_format": "canonical_json_v1",
+    "evidence_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v4\\validation_001\\fixture\\runs\\phase2\\selected_sources\\evidence\\c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a.json",
+    "evidence_sha256": "c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a",
+    "manifest_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v4\\validation_001\\fixture\\runs\\phase2\\selected_sources\\manifests\\c150df9c3f3ab12cdf320aae2cb179d2f7254d81e407d059b906d6888a9632ad.json",
+    "manifest_sha256": "c150df9c3f3ab12cdf320aae2cb179d2f7254d81e407d059b906d6888a9632ad",
+    "model_state_sha256": "5fb284cea9c1e61dccfbdd96d4d92024973e30641d0ee078ed0be8cd930ddc5b",
+    "resumed": false,
+    "selected_candidate": "lr_1e-3",
+    "weights_format": "full_v1",
+    "weights_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v4\\validation_001\\fixture\\runs\\phase2\\selected_sources\\weights\\835681c4b38576e2560f836c562e425c5c2505a13a3252cb396edaf6cd9e585d.safetensors",
+    "weights_sha256": "835681c4b38576e2560f836c562e425c5c2505a13a3252cb396edaf6cd9e585d"
+  },
+  "publication_accepted": true,
+  "qualification_accepted": false,
+  "reason": "canonical_six_gib_host_ram_gate_refused_after_native_startup_admission",
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_complete_eegnet_resource_refusal_v1",
+  "scientific_admission": false,
+  "selected_candidate": "lr_1e-3",
+  "source_context_pins_rechecked": 635,
+  "source_loaded_modules_rechecked": 4719,
+  "source_qualification_accepted": true,
+  "source_qualification_file_sha256": "23a09120f3ebf8b023abeeea061b286d573a09f82d87944d85115ef84b0b58ba",
+  "source_updates": 5151,
+  "support_updates": 102,
+  "weights_archived": false,
+  "weights_file_bytes": 12664,
+  "weights_file_sha256": "835681c4b38576e2560f836c562e425c5c2505a13a3252cb396edaf6cd9e585d"
+}

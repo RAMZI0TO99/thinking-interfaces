@@ -1,0 +1,56 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 422, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 322, in main
+    from evaluation.phase2_cho_source_restore import verify_cho_selected_source_state
+  File "D:\Aenv\pro3\evaluation\phase2_cho_source_restore.py", line 27, in <module>
+    from adaptation.anchor_manifest import EEGNetAnchorSettings
+  File "D:\Aenv\pro3\adaptation\anchor_manifest.py", line 23, in <module>
+    from evaluation.baselines import TangentSpaceLogistic
+  File "D:\Aenv\pro3\evaluation\baselines.py", line 24, in <module>
+    from braindecode.models import (  # type: ignore[import-untyped]  # noqa: E402
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\__init__.py", line 1, in <module>
+    from .classifier import EEGClassifier
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\classifier.py", line 17, in <module>
+    from .eegneuralnet import _EEGNeuralNet
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\eegneuralnet.py", line 21, in <module>
+    from braindecode.datautil import infer_signal_properties
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\datautil\__init__.py", line 12, in <module>
+    from .util import infer_signal_properties
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\datautil\util.py", line 14, in <module>
+    from braindecode.models.util import SigArgName
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\models\__init__.py", line 26, in <module>
+    from .eegpt import EEGPT, InterpolatedEEGPT
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\models\eegpt.py", line 501, in <module>
+    EEGPT_CHANNELS = _get_eegpt_channels()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\models\eegpt.py", line 497, in _get_eegpt_channels
+    montage = mne.channels.make_standard_montage("standard_1020")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\channels\montage.py", line 2020, in make_standard_montage
+    return standard_montage_look_up_table[kind](head_size=head_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\channels\_standard_montage_utils.py", line 111, in _mgh_or_standard
+    lpa, nasion, rpa = (x["r"].copy() for x in get_mni_fiducials("fsaverage"))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-72>", line 12, in get_mni_fiducials
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\_freesurfer.py", line 470, in get_mni_fiducials
+    fids, coord_frame = read_fiducials(fname_fids_fs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-28>", line 12, in read_fiducials
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\_fiff\meas_info.py", line 2229, in read_fiducials
+    fid, tree, _ = fiff_open(fname)
+                   ^^^^^^^^^^^^^^^^
+  File "<decorator-gen-11>", line 12, in fiff_open
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\_fiff\open.py", line 131, in fiff_open
+    fid = _fiff_get_fid(fname)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\_fiff\open.py", line 53, in _fiff_get_fid
+    fid = open(fname, "rb")  # Open in binary mode
+          ^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 188, in __call__
+    self.refuse("recording_or_processed_array_read", path)
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 86, in refuse
+    raise PermissionError("Cho-51 tensor child denied: " + event)
+PermissionError: Cho-51 tensor child denied: recording_or_processed_array_read

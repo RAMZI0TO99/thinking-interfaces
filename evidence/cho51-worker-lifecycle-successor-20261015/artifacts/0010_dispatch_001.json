@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_worker_lifecycle_dispatch_v1",
+  "observed_utc": "2026-10-15T11:10:10.8717607Z",
+  "pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\pins.json",
+    "--expect-pins",
+    "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\validation_001",
+  "scientific_admission": false
+}

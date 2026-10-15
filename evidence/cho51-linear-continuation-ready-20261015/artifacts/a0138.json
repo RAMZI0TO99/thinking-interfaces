@@ -1,0 +1,22 @@
+{
+  "accepted": false,
+  "actual_gradient_updates": 0,
+  "artifacts": 26,
+  "baseline_tensor_decodes": 0,
+  "cleanup_errors": [],
+  "full_selector_verified": false,
+  "job_closed_empty_freshly_absent": true,
+  "main_tests_passed": 32,
+  "measured_cells": 0,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T143319Z_0e097ec22e",
+  "original_case_attempts_remaining": 0,
+  "pins_sha256": "6e5b533fc1bc0c56c2ca287cc7f8d81849a3587d4737d718d39cdec091a35650",
+  "pretrained_baseline_loaded": false,
+  "reason": "main_test_adapter_counted_subtest_reports_as_main_calls",
+  "sampling_errors": [],
+  "schema": "cho51_linear_lineage_reporting_refusal_v1",
+  "scientific_admission": false,
+  "subtests_passed": 23,
+  "synthetic_fixture_created": false,
+  "test_call_reports": 55
+}

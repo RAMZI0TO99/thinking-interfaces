@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_tensor_mne_library_resource_review_v1",
+  "reviewer": "/root/review_tensor_runtime",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "launcher_sha256": "ff9ab5dc5bef374c4a76f946a52cd412fd260d19ad88a6d9ea7828087d9b2f24",
+  "child_sha256": "eec6e85551f5b2e3b7fdd90cee962b75f088d0b9861a60c87d369f7a66c54fcf",
+  "resource": ".venv/Lib/site-packages/mne/data/fsaverage/fsaverage-fiducials.fif",
+  "resource_bytes": 260,
+  "resource_sha256": "0043895fd3167871a947a43019228ee30060c0335967df63f571c0e71bf344a3",
+  "scope": "Exact installed anatomical template is independently pinned and read-only; study recordings and processed arrays remain blocked.",
+  "resource_floors_or_caps_changed": false,
+  "scientific_admission": false
+}

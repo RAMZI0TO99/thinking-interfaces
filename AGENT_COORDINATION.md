@@ -1,5 +1,1035 @@
 # Project coordination
 
+<!-- cho51-push-checkpoint-status:begin -->
+## Repository publication checkpoint, 15 October 2026
+
+The completed linear publication and detached restoration are preserved in the
+[committed closeout export](evidence/cho51-linear-closeout-export-20261015/README.md).
+Its original final review (SHA `9422cb9ab3e660e415c293054f60d00ec9e85e6e82b0612225ba1a4500eccae9`)
+binds seven byte-preserved document snapshots. Those bindings are historical;
+they do not require these current resume documents to stop evolving.
+Twenty boundary tests passed, all 223 tensors matched, and new training updates
+were zero. See the [push checkpoint](docs/phase2/cho51_push_checkpoint_20261015.md)
+for exported scope, byte verification and restoration limits.
+
+Next: separately versioned linear staged recorder integration. A new commit
+changes current Git provenance: preserve the accepted `4491e2a` source identity
+as history and capture a fresh context for the recorder. Do not replay the
+frozen publication/restoration launchers. The source and evidence remain local;
+this Git metadata export does not restore October 15 arrays or trained weights.
+Single-root high-level factory compatibility, recorder qualification, the full
+1,020-cell worker, cohort/prior-training lineage, owner final freeze and science
+remain pending. Original case attempts remain zero.
+
+<!-- cho51-push-checkpoint-status:end -->
+
+<!-- cho51-linear-publication-status:begin -->
+## Linear publication and staged detached restoration accepted, 15 October, 17:30 UTC
+
+[The qualification report](docs/phase2/cho51_linear_publication_qualification_20261015.md)
+records two fresh native Jobs passing with zero new source/support training
+updates. All 5,253 accepted updates remain historical. Local canonical-store
+publication and two detached restorations matched all 223 tensors; separate
+models have disjoint storage and the actual LaBraMTunedAdapter was returned.
+Twenty boundary tests passed once; the detached Job reused their exact receipt.
+Both Jobs accepted exit 0 and closed empty/freshly absent under unchanged guards.
+
+The [51-artifact packet](evidence/cho51-linear-publication-20261015/README.md)
+preserves current metadata and complete canonical evidence. Original weights,
+baseline and all 213 inputs remain unchanged; arrays and weights stay outside
+the archive. Closure requires the passed
+[final review](runs/coordination/cho51_linear_publication_20261015_v1/final-review.json)
+with matching hashes for the report and all six resume heads. All 24 scoped
+historical/current Job names are freshly absent. Never replay or reset used paths.
+
+This explicit two-root staged bridge preserves the exact five-TOML evidence
+provenance and derives architecture from the project. The unchanged single-root
+high-level Cho factories remain unqualified. Next prepare separately versioned
+linear staged recorder integration using these accepted proofs. Recorder,
+full 1,020-cell worker, cohort/prior-training lineage, owner final freeze and
+science remain pending. Original attempts 0; canonical 432 unchanged. No new
+30-hour window, peer release or Source030 renewal is inferred.
+
+<!-- cho51-linear-publication-status:end -->
+
+
+## Preparation record for the completed publication/restoration phase, 15 October
+
+The next authorized engineering phase uses separately versioned sources in
+`docs/phase2/cho51_linear_publication_v1` and
+`runs/coordination/cho51_linear_publication_20261015_v1`. Root integrates,
+reviews, admits and closes the phase. Delegated ownership covers the two-root
+bridge, pure contract and boundary tests, origin metadata, and guarded ops.
+All participants preserve canonical432 sources, the accepted linear chain,
+original fixture, weights, evidence, native receipts and historical ledgers.
+
+Maximum two fresh numerical Jobs, each600s/4096MiB process/5120MiB Job,
+RAM10/4GiB startup/active,disk20GiB,Torch1/1,hidden GPUs and all four genuine
+pause paths; aggregate maximum1200 native seconds. First Job publishes the
+accepted complete source into a fresh local canonical selected-source store.
+Second Job independently reconstructs and verifies it, including release of a
+real LaBraMTunedAdapter through a separately versioned staged bridge. No source
+or support fitting, optimizer, backward pass, target prediction or new selector
+fold is authorized in this phase. All5253 accepted updates remain historical.
+
+The accepted record binds the synthetic fixture's exact five-config source
+context, while its independently derived LaBraM architecture belongs to the
+project root. The unchanged single-root high-level publication/restoration
+factories cannot represent both contexts. Do not rewrite accepted evidence,
+add declarations to the original fixture, patch canonical functions or claim
+those unchanged high-level factories passed. The explicit bridge preserves
+both externally pinned roots. Its fresh metadata-only mirror copies exactly
+the five original TOMLs and must reproduce full source provenance, including
+Git identity, before and after operations. It copies no arrays or baseline.
+The canonical SelectedSourceStore and complete-evidence verifier stay unchanged;
+model recipe and baseline construction use the independent project root.
+
+Ordinary metadata remains bounded8MiB. Only the exact accepted complete-evidence
+JSON and its canonical store/archive copies may use32MiB. Original and published
+full safetensors are bounded64MiB and hash-only outside a native Job; blobs and
+arrays stay outside compact archives. Publication budget is3 safe decodes,
+2 strict loads,1 safe save; detached budget is4 safe decodes,4 strict loads,
+0 saves. Both use0 optimizer/backward/gradient updates. First Job executes the
+new pure boundary tests once; the second explicitly reuses their accepted
+receipt. Each request, output and native Job must be fresh and externally pinned.
+
+Recorder integration, unchanged single-root high-level factory compatibility,
+full1020-cell worker, checkpoint cohort/prior-training lineage, owner final
+freeze and science remain pending. Original-case attempts remain0. No peer
+release, Source030 renewal, obsolete watcher or new30-hour window is inferred.
+
+
+<!-- cho51-linear-chain-status:begin -->
+## Complete staged linear selection accepted,15 October,16:38 UTC
+
+[The complete chain qualification](docs/phase2/cho51_linear_chain_qualification_20261015.md)
+records102 distinct native-origin folds and the fresh51-source winning fit,
+5253 verified updates total. Six new fold Jobs completed92 folds; ten earlier
+folds/510 updates were authenticated without replay. The separate seventh Job
+selected `lr_1e-3` (exact means8/17 versus22/51), passed the canonical public
+complete-evidence verifier and round-tripped a full223-tensor safe checkpoint.
+All seven Jobs accepted exit0 and closed empty/freshly absent under unchanged
+600s,4096/5120MiB,RAM10/4GiB,disk20GiB,Torch1/1,hidden-GPU limits and four genuine
+pause paths.36 tests passed once; Jobs2–7 explicitly reused that receipt.
+
+The [241-artifact packet](evidence/cho51-linear-chain-20261015/README.md) binds
+current proofs to the frozen historical root. Immutable1710/5/1 pins,chain007
+and the separately hashed23,294,624-byte checkpoint are preserved. Canonical432
+and all213 input files match. Actual complete canonical evidence is accepted;
+pure partial/chain metadata remains nonauthoritative and `complete=false`.
+The staged route was used; canonical `run_selection` was not invoked.
+
+Final independent metadata audit passed with no findings and binds this report
+and all six resume heads; all22 referenced native Jobs are freshly absent.
+Next qualify selected-source publication, detached public restoration and
+recorder integration in new bounded Jobs. Full1020-cell worker, checkpoint
+cohort/prior-training proof, owner finalfreeze and science remain pending;
+original attempts0. No used path may be replayed or reset. Inspect accepted
+chain007/dispatches and preserve historical packets,arrays and checkpoint.
+
+<!-- cho51-linear-chain-status:end -->
+
+
+## General linear fragment chain and completion in preparation, 15 October
+
+The next user-authorized engineering milestone introduces one immutable generic
+bundle in docs/phase2/cho51_linear_chain_v1 and
+runs/coordination/cho51_linear_chain_20261015_v1. Root owns integration, source
+review, fresh admission, sequential dispatch and status. Delegated ownership
+covers pure request/chain planning and tests, flat origin authentication,
+numerical execution, guarded operations and metadata settlement. Preserve all
+canonical432 sources, accepted candidates, old outputs and receipts.
+
+The accepted10 folds are the fixed historical root. Six planned new fold Jobs
+cover the deterministic remaining92 pairs in chunks16,16,16,16,16,12. A seventh
+separate Job may perform51 fresh winning-source updates only after102 authentic
+folds and5202 fold updates are independently verified. Maximum seven numerical
+Jobs and4200 native seconds are planned; every individual Job retains600s,
+4096/5120MiB process/Job caps, RAM10/4GiB, disk20GiB, Torch1/1, hidden GPUs and
+all four genuine pause paths. Each dispatch requires fresh floors and an unused
+request/output. A failed attempt contributes no coverage and remains preserved.
+No longer arbitrary-command deadline or canonical guard change is introduced.
+
+The generic source/pin bundle stays fixed. Each request binds the root digest,
+exact parent chain/head, next disjoint ordered pairs, current budgets and output.
+Immutable flat leaf/catalog snapshots bind their own accepted native receipts,
+code/runtime/lineage/input/module proofs and actual updates. Authenticate root
+and prior leaves iteratively; archive each fragment's own metadata rather than
+recursively copying ancestors. SHA bindings establish byte integrity, not
+cryptographic signatures or scientific authority.
+
+All213 original synthetic inputs remain read only. Full origin and input hashes
+are checked before and after target protection. The complete-origin capability
+may inspect compact proofs and input identities during protection, without
+reading outer02 content. Exact initial90a9d34e/contract8397d34e/pretrained53b752ed
+lineage and402-head mask remain mandatory. Final fit must start from the seeded
+initial state on all51 permitted sources; it must not continue a validation
+fold's fitted model. The canonical complete evidence verifier must accept the
+actual selected state. A bounded full safetensors checkpoint and exact safe
+round trip may then be qualified as a source artifact. Publication, public
+restoration, recorder, full1020-cell worker, checkpoint cohort, owner final
+freeze and scientific admission remain separate pending gates. Original attempts
+remain0; no peer release, Source030 renewal, watcher or new30-hour window follows.
+
+The final canonical102-fold JSON is expected to exceed the historical8MiB
+compact-proof limit. A new narrow32MiB stable JSON reader/archive exception is
+allowed only for final selection-evidence.json and its exact archive copy.
+All other metadata retains8MiB; canonical payload schema and native limits
+stay unchanged. Result/qualification wrappers must contain only its hash/pin
+and summary rather than embedding that full record. The full safetensors state
+is bounded to64MiB, hash-verified outside the child and excluded from archives.
+
+## Latest accepted linear continuation, 15 October, 15:09 UTC
+
+[The continuation qualification](docs/phase2/cho51_linear_continuation_qualification_20261015.md)
+records37 tests,23 subtests and8 new genuine public folds passing:400 source
+plus8 support updates. Two exact historical subject01 folds were independently
+authenticated through a new explicit origin contract; their102 updates were
+not replayed. Combined accepted coverage is10/102 folds, with92 pending.
+Both incomplete final-fit calls refused before fitting or an origin-capability
+call; final-source updates remain0 and no winner is selected.
+
+Job `20261015T150509Z_9344e1cd12` accepted exit0 in164.263090 seconds under
+600s4096/5120MiB, RAM10/4GiB, disk20GiB, Torch1/1 and hidden GPUs. It closed
+empty/freshly absent with no cleanup or sampling errors. All1224/5 pins plus
+baseline,4824 current module hashes and213 read-only physical inputs totaling
+734,579,463 bytes matched. The full12-block backbone stayed exact; only402
+head parameters trained. Canonical432/3114ec43 and original0 remain unchanged.
+The [230-artifact accepted packet](evidence/cho51-linear-continuation-20261015/README.md)
+preserves current execution and the exact historical origin chain.
+
+The [206-artifact ready packet](evidence/cho51-linear-continuation-ready-20261015/README.md)
+remains a historical source-only snapshot of three below-floor observations.
+A fresh fourth check recovered14,477,066,240 available RAM bytes before launch;
+no floor was reduced. The earlier preparation report and used launch/output
+paths are historical and must not be replayed or reset.
+
+Next authenticate a general fragment chain and prepare fresh bounded chunks
+for the remaining92 folds, then qualify the complete-origin gate and fresh51-
+source winning fit. The eventual5253-update declaration stays exact. The final
+numerical branch, complete selector, public selected-source restoration,
+publication and recorder remain unqualified. Current raw records/combined
+manifest stay incomplete; checkpoint cohort and prior training remain unverified.
+Full1020-cell worker/owner finalfreeze/science remain pending. Preserve all
+used sources, pins, inputs and receipts; require fresh review, resources and
+unused native outputs. No original retry, peer release, Source030 renewal,
+watcher, scheduled follow-up or new window follows. Older entries are historical.
+
+## Latest linear continuation preparation, 15 October, 15:03 UTC
+
+[The continuation handoff](docs/phase2/cho51_linear_continuation_preparation_20261015.md)
+records the new staged interface, generalized contract, explicit historical-
+origin adoption, independent source review and fresh1224/5 pins plus baseline.
+The [206-artifact ready packet](evidence/cho51-linear-continuation-ready-20261015/README.md)
+preserves twelve reviewed sources,187 origin proofs and three resource checks.
+Canonical432/3114ec43 and original0 remain exact; tested sources and the original
+213-file synthetic fixture remain frozen.
+
+Execution has NOT launched. Available RAM was8,369,242,112,8,054,829,056 and
+7,345,819,648 bytes at14:59:43,15:01:16 and15:02:24 UTC, all below the10GiB startup
+floor. Disk exceeded20GiB and all four pause paths were clear. No native attempt,
+current guarded37/23 test qualification, model probe or gradient update exists.
+The output and dispatch paths remain unused. Actual accepted linear coverage
+is still2/102 folds with100 pending.
+
+The planned next chunk is8 distinct public folds: each adopted candidate at
+validation03-06,400source+8support=408 new updates. Only after native success
+would coverage become10/102 with92 pending; the earlier102 updates remain
+historical. The final-fit API must refuse incomplete coverage before fitting.
+Its complete numerical branch and full native-origin capability remain
+unqualified, as do winner/finalfit/fullselector/restoration/publication/recorder.
+The eventual5253-update declaration, including a fresh51-source final fit,
+remains exact. No science or measured cell is admitted.
+
+Resume with a fresh unused resource observation, then the report's exact pinned
+launcher once floors and pauses permit. Existing pinsSHA1e16577546807821112e58f671f0941e0ba3ab0c5980c82efa67d92b14e4a42b
+must match; do not rerun preparation into used files or reset output. The native
+600s4096/5120MiB guard independently enforcesRAM10/4GiB,disk20GiB,Torch1/1 and
+hidden GPUs. Earlier accepted EEGNet stages and the linear two-fold qualification
+remain historical. Full1020-cell worker/cohort/finalfreeze/science remain pending;
+no lease, peer release, original retry, Source030 renewal, watcher, scheduled
+follow-up or new window follows. Older sections preserve prior checkpoints.
+
+## Bounded linear continuation in preparation, 15 October
+
+The next user-authorized engineering step adds a separately versioned interface
+under docs/phase2/cho51_linear_continuation_v1. Root owns integration, review,
+origin-contract creation, admission and checkpoint updates. Delegated owners
+cover the generalized metadata contract/tests, numerical staged interface,
+guarded operations, read-only origin verifier and metadata closeout. They may
+edit only their assigned new files; canonical432 and all tested sources,
+receipts, fixtures, claims and prior partial manifests remain frozen.
+
+A new explicit engineering adoption contract will authenticate the two accepted
+historical validation01 folds through their source/runtime/baseline pins,
+native closure, observed modules, optimizer transcript, physical inputs and
+91-artifact evidence packet. The old partial manifest retains reuse_authorized
+false. Matching metadata alone grants no continuation authority; the new origin
+verifier must establish every adopted proof before current execution.
+
+The next bounded chunk is eight distinct public folds: each adopted candidate
+at validation03,04,05,06 with outer target02, seed11, shot5 and repetition1.
+Exactly400 current source plus8 support updates are admitted; the old102 updates
+remain historical. The accepted213-file synthetic fixture is read only. Its
+four outer-target paths are denied throughout model construction and fitting.
+Exact pretrained/template/initial/contract lineage must reproduce the accepted
+state; only402 head parameters may train. The combined manifest may account
+for10/102 folds, with92 pending, and must remain incomplete without a winner.
+
+The new final-fit interface must refuse incomplete coverage before any fitting.
+Its future numerical branch requires an authenticated full origin chain and
+fresh51-source fit; it is not qualified by metadata fixtures. No canonical
+run_selection, selected-source restore, publication, recorder, study cell or
+science is admitted. Full logical workload remains5253; the current independent
+runtime cap is408 updates. Fresh source review, pins and unused native output
+must precede one600s4096/5120MiB Job, RAM10/4GiB, disk20GiB, Torch1/1, hidden GPUs
+and all four genuine pause paths. No new window, original retry, peer release,
+Source030 renewal or watcher follows. Older entries preserve prior checkpoints.
+
+## Latest LaBraM linear lineage checkpoint, 15 October, 14:42 UTC
+
+[The linear qualification report](docs/phase2/cho51_linear_lineage_qualification_20261015.md)
+records 32 tests, 23 subtests and two actual public folds passing with the audited
+pretrained baseline: 100 source plus two support updates. Independent canonical
+reconstruction matched the seeded initial state with disjoint tensor storage.
+Only the 402 head parameters changed; the full 12-block backbone stayed exact.
+The checkpoint's pretraining cohort remains unverified.
+
+Job `20261015T144029Z_cd0a5f5142` accepted exit0 in 69.131952 seconds under
+600s, 4096/5120 MiB, RAM10/4 GiB, disk20 GiB, Torch1/1 and hidden GPUs.
+It closed empty/freshly absent without cleanup or sampling errors. Current
+1047/5 pins plus the baseline, 4818 loaded modules and 213 physical synthetic
+inputs totaling 734,579,463 bytes matched. Canonical432/3114ec43 and original0
+remain exact. The [91-artifact packet](evidence/cho51-linear-lineage-20261015/README.md)
+also preserves the failed 26-artifact reporting attempt, which passed the tests
+but refused before fixture generation, baseline decode or any gradient update.
+The v2 adapter separately requires all32 parent reports and all23 subtests.
+
+This establishes 2 of 102 linear folds; 100 folds and the fresh51-source final
+fit remain pending. Raw evidence stays incomplete, with no winner, full
+selector, public selected-source restoration, publication, recorder or measured
+cell. Next prepare a reviewed bounded continuation/final-fit interface and
+complete-fold aggregation, or an independently admitted finite full-selector
+route. Public run_selection does not consume these partial records; the eventual
+5253-update workload and canonical guards remain exact. The two observed fold
+times, 20.434229/15.772072 seconds, do not qualify the whole run within600s.
+
+Use the frozen candidate docs/phase2/cho51_linear_lineage_v1 and accepted v2
+operations in runs/coordination/cho51_linear_lineage_20261015_v2 as evidence.
+Subsequent numerical work needs fresh review, pins, admission and unused output.
+Full1020-cell worker/cohort/finalfreeze/science remain pending; no replay,
+original retry, Source030 renewal, watcher or new window follows. Earlier EEGNet
+source/restoration/staged-recorder qualifications remain historical and unchanged.
+Older sections below preserve historical checkpoints.
+
+## Linear test-report refusal and versioned correction, 15 October,14:33 UTC
+
+Initial Job20261015T143319Z_0e097ec22e passed32 main tests and23 subtests in1.57s.
+The exact-count adapter included subtests in the main report list and refused55
+reports against32 cases. It stopped before baseline decode, fixture generation
+or SGD; qualification is false. The Job exited1, closed empty/freshly absent with
+no cleanup/sampling errors. V1 source/pins1037/5/output are frozen in the26-artifact
+packet evidence/cho51-linear-lineage-reporting-refusal-20261015.
+
+Root authorizes separately versioned v2 operations. Candidate numerical code and
+32 tests remain unchanged. The adapter separately binds32 main reports and23
+subtest reports, all passed without skips. Source review and fresh pins/resources
+must precede another unused600s4096/5120MiB attempt. No numerical scope, baseline,
+canonical guard, original attempt or scientific boundary changes. Old evidence
+remains historical and no automatic replay or new compute window is inferred.
+
+## LaBraM linear lineage and two-fold qualification in preparation, 15 October
+
+Root owns runs/coordination/cho51_linear_lineage_20261015_v1, independent source
+review, fresh pins/admission, metadata closeout and status. New candidate owners
+implement the numerical probe/README and pure partial-contract/tests; operations
+owner implements the guarded child and preparation/launcher. Historical tested
+sources, inputs, weights, pins and receipts remain frozen.
+
+This separately bounded engineering phase authenticates and safely decodes the
+existing audited23,299,672-byte pretrained safetensors baseline, never pickle or
+network loading. Only that SHA53b752ed... safetensors file, its exact architecture
+JSON SHA81307307..., and pinned forward-parity/checkpoint declarations are allowed
+as external baseline assets. Actual checkpoint pretraining cohort remains unknown;
+file integrity and initialization lineage do not establish scientific admissibility.
+
+A fresh full52-subject synthetic fixture supports both adopted linear candidates
+(rates.001/.002, batch2/source1step, supportquery8/1step), each validation01 with
+50 sources03-52 and excluded target02. Exactly100source+2support=102updates are
+admitted. Canonical lineage reconstruction must match the supplied pretrained
+template and selector-owned seeded initial state. Full12block/embed200 geometry,
+64channels/800samples and402head parameters remain exact. Both raw records stay
+complete=false; no winner/finalfit/publication/recorder is claimed. A new partial
+contract accounts for2/102folds and the unchanged5,253-update eventual workload.
+
+Independent source review precedes one600s4096/5120MiB native Job with RAM10/4GiB,
+disk20GiB,Torch1/1,hidden GPUs and all four genuine pause paths. Public CPU/no-
+checkpoint run_fold is used; no canonical source_execution_guard or scientific
+admission is bypassed. Pure boundary tests run first under that same Job.
+No complete run_selection, source checkpoint, study input, original-case retry,
+new30-hour window, Source030 renewal, peer release or watcher is inferred.
+Older sections preserve historical checkpoints.
+
+## Latest staged EEGNet recorder checkpoint, 15 October, 14:11 UTC
+
+[The staged recorder report](docs/phase2/cho51_staged_recorder_qualification_20261015.md)
+records 35 passed tests and one accepted fresh engineering transaction: real
+claim/identity lock, one backend call, two independent verifications, durable
+attestation and engineering receipt. The fresh ledger has zero failures,
+pending recovery or measured cells. Source/restoration evidence is explicitly
+reused; current gradient updates and tensor restores are zero. The original
+failed v4 parent stays failed and its ledger remains unchanged.
+
+Job20261015T141019Z_b74970d685 accepted exit0 in93.125870s under300s4096/5120MiB,
+RAM10/4GiB,disk20GiB,Torch1/1,hidden GPUs. It closed empty/freshly absent without
+cleanup/sampling errors. Current1024/5 pins,3988 loaded modules and370 nonempty
+origin proofs matched;213 inputs734,579,463B and both accepted stage histories
+were independently rechecked. Canonical432/3114ec43 and original0 remain exact.
+The [452-artifact packet](evidence/cho51-staged-recorder-20261015/README.md)
+also preserves the24-artifact v1 preclaim refusal. Its35 tests passed, but12
+empty diagnostic logs caused refusal before a production claim; the reviewed
+v2 correction omits only verified empty logs from the strict proof-reader list.
+All complete archive/source pairs remain checked; old sources/outputs stay frozen.
+
+EEGNet source, restoration and staged recorder composition now have accepted
+engineering evidence. Next remaining-method complete-selector/resource work,
+beginning with labram_linear, needs reviewed continuation/lineage and finite
+budgets. This staged API is EEGNet-only. Fullworker/cohort/checkpoint/finalfreeze/
+science remain pending; no automatic replay, launch or new window follows.
+Older sections below preserve historical evidence.
+
+## Staged recorder preclaim refusal and v2 correction,15 October,14:05 UTC
+
+V1 native Job20261015T140519Z_bcaedaf961 passed35 checks in7.11s, then refused
+before a production claim: twelve empty diagnostic logs had entered the origin
+contract, while the unchanged proof reader requires nonempty files. No production
+ledger, linked failure, attestation, engineering success or measured cell exists.
+The Job closed empty/freshly absent without cleanup/sampling errors. V1 source,
+pins1014/5, contract and outputs are frozen; the24-artifact preclaim refusal
+packet is `evidence/cho51-staged-recorder-preclaim-refusal-20261015`.
+
+Root authorizes separately versioned v2 operations, preserving candidate/35tests,
+budgets and all guards. The corrected origin list omits only twelve empty
+.txt/.log diagnostics after their hashes are verified; all complete archive/source
+pairs remain checked, and the transaction receives370 nonempty proof bindings.
+The strict reader is unchanged. Fresh review/pins/resources and an unused output
+must precede another single300s4096/5120MiB guarded staged transaction. No
+numerical work, historical failure reset or scientific admission is introduced.
+Older entries preserve historical evidence.
+
+## Staged EEGNet recorder integration in preparation,15 October
+
+Root owns `runs/coordination/cho51_staged_recorder_20261015_v1`, source review,
+fresh pins/admission, metadata closeout and status. Delegated owners implement
+new transaction/tests/README, read-only origin verifier, and operational runner.
+The integration uses a fresh control fixture containing only five byte-exact
+configuration copies and a new recorder ledger. The old source fixture and
+failed v4 ledger remain read only. Source and restoration work are explicitly
+reused as historical stages; current gradient updates remain0.
+
+Independent review precedes a single guarded300s4096/5120MiB parent Job with
+RAM10GiB startup/4GiB active,disk20GiB,Torch1/1,hidden GPUs and all four genuine
+pause paths. All model, optimizer, backward and tensor decode APIs are blocked.
+Historical input reads are permitted solely in exact pinned metadata byte-hash
+stacks; no input generation, array decode, fitting or restoration replay runs.
+Thirty-five focused recorder boundary cases and the actual locked fresh claim,
+double origin verification, durable attestation and engineering terminal must
+pass before staged qualification. Scientific cells and original attempts remain0.
+No historical receipt becomes fresh numerical proof and the failed original
+parent transaction stays failed. Older sections preserve historical evidence.
+
+## Latest standalone EEGNet restoration checkpoint,15 October,13:41 UTC
+
+[The staged restoration report](docs/phase2/cho51_staged_restore_qualification_20261015.md)
+records both actual public restore calls passing with1MiB bounds. All21 state
+tensors match the selected EEGNet state; no training was replayed. The accepted
+v4 source remains historical5,253-update work. The failed v4 parent stays failed;
+no engineering success, measured cell, new claim or original attempt was added.
+
+Fresh native Job20261015T134051Z_91181dffde accepted exit0 in32.285323s under
+90s2048/3072MiB,RAM10/4GiB,disk20GiB,Torch1/1,hidden GPUs. Canonical6/4GiB
+restore gates stayed exact. It closed empty/freshly absent with no cleanup or
+sampling errors. Fresh798/5 pins and3,936 loaded-module hashes matched; origin
+635/5,4,719 modules and213 inputs734,579,463B were independently rechecked.
+[The189-artifact packet](evidence/cho51-staged-eegnet-restore-20261015/README.md)
+preserves the explicit stage contract, current launch and unchanged origin.
+
+The1MiB correction is runtime-qualified for this standalone stage. Next prepare
+a separately versioned staged recorder contract with explicit origin/current
+bindings, a fresh claim namespace, locked verification and durable attestation.
+Existing CompleteRequest cannot consume these stages unchanged. Old claims,
+pins/outputs remain frozen; no automatic launch/replay/reset follows. Canonical
+432/3114ec43 and original0 remain exact; fullworker/cohort/finalfreeze/science
+remain pending. Older sections below preserve historical evidence.
+
+## Standalone EEGNet restoration in preparation,15 October,13:39 UTC
+
+The next bounded step explicitly reuses the accepted immutable v4 source
+publication in a new standalone restoration qualification. Root owns
+`runs/coordination/cho51_staged_restore_20261015_v1` and metadata closeout;
+new `docs/phase2/cho51_staged_restore_v1` changes only the detached output
+parameter while retaining the old request, claim and publication provenance.
+Independent source review, fresh pins, all four pause paths and current
+RAM10GiB/disk20GiB admission precede one90s2048/3072MiB native Job.
+Canonical6/4GiB restore guards, activeRAM4GiB,Torch1/1 and hidden GPUs remain.
+No source training, recorder claim, failed-case reset or engineering terminal
+is authorized in this stage. Its result can qualify detached restoration;
+the failed v4 parent stays failed and all original/scientific gates remain.
+Older sections preserve historical evidence.
+
+## Latest complete EEGNet source checkpoint,15 October,13:22 UTC
+
+The [new qualification report](docs/phase2/cho51_complete_eegnet_qualification_20261015.md)
+records33 passed checks and a complete canonical EEGNet selection/publication on
+52 physical synthetic subjects:102 folds,5,253 updates and fresh51-source winner
+fit. Real full_v1 weights are12,664 bytes. The source component passed; detached
+verification and the complete engineering transaction remain unqualified.
+
+After fresh10GiB startup admission, the unchanged canonical6GiB restore RAM gate
+refused. The reviewed1MiB store-bound correction has not executed its two restore
+calls. The parent retained one linked failure, zero complete-selector engineering
+successes or measured cells. The [53-artifact packet](evidence/cho51-complete-eegnet-resource-refusal-20261015/README.md)
+preserves current source acceptance and failure;24/38/51 earlier refusal packets
+remain intact. All nine native Jobs closed empty/freshly absent without cleanup or sampling errors.
+635 source/context and5 runtime pins match,4,719 source module hashes rechecked;
+canonical432/3114ec43 and old1040/256 remain unchanged. Original attempts remain0.
+
+V4 source/pins/output/failed claim are frozen. Next separately versioned
+qualification or explicit stage contract with fresh resource/peer coordination;
+no in-place retry, automatic launch, renewed Source030, watcher or new window.
+Other complete methods/full1,020-worker/cohort/final freeze/science remain pending.
+Older sections below preserve historical checkpoints.
+
+
+## Bounded restore successor launched,15 October,13:18 UTC
+
+New candidatev2/v4 operations passed independent source review;635 source/
+context and5 runtime pins SHAa7a0dc3a554b9351d16070ee3ad12162fc69404c4dc08cccab4c7bf25e19dac8.
+First RAM observation8,659,808,256 bytes refused startup; no launch occurred.
+Fresh13:18:18 observation14,942,818,304 bytes, disk/pause checks satisfied;
+parent native Job20261015T131826Z_7d29560b93 launched with600s4/6GiB deadline.
+Full5,253-update source child420s3/4GiB and detached90s2/3GiB remain required,
+using existing public store injection to bound EEGNet weight reads to1MiB.
+All actual results/parent engineering terminal remain pending. No old failed
+case or source is modified; canonical432/3114ec43 and original0 remain exact.
+
+## Source publication accepted; detached read allocation refused,15 October,13:06 UTC
+
+V3 source Job b7198c366e accepted full5,253-step selection and real publication,
+102 folds/fresh51-source winner,12,664-byte full_v1 EEGNet weights. The detached
+public tensor checker passed its1MiB bound; the subsequent full factory used
+the generic4GiB read maximum and raised MemoryError under the2GiB process cap.
+Parent6a387bb981 and detachedf5bb2b02b2 exited1, source exited0; all three closed
+empty/freshly absent, no cleanup/sampling errors. One linked failure, no parent
+attestation, engineering terminal or measured cell. All620/5 pins remain exact.
+The [51-artifact refusal packet](evidence/cho51-complete-eegnet-restore-refusal-20261015/README.md)
+preserves the accepted component and failed transaction separately.
+
+Root authorized new candidatev2 and v4 operations: supply a bounded store through
+the public factory's existing API, delegating unchanged canonical restoration
+with maximum_weights_bytes<=1MiB. No canonical reader/model/guard is patched,
+workload/caps remain exact. Fresh isolated fixture/claim and full end-to-end
+proof required after independent review/pins/admission. V1–v3 cases stay frozen.
+
+## Complete selector ran; publication scope refused,15 October,12:57 UTC
+
+V2 passed33 checks and persisted a complete4,204,515-byte EEGNet selector record:
+102 folds,5,151 source+102 support=5,253 updates, fresh51-source winner fit.
+The canonical publisher then refused its owned sibling publication-lock path,
+omitted from the two allowed output namespaces. Source/parent Jobs ad2d9d9c6f/
+c4bffd878a both exited1, closed empty/freshly absent, no cleanup/sampling errors.
+One production attempt1 claim/failure remains immutable. No weights, accepted
+source qualification, detached child, attestation, engineering success or cell.
+The [38-artifact refusal packet](evidence/cho51-complete-eegnet-publication-refusal-20261015/README.md)
+preserves all610 source/context and5 runtime pins, complete raw evidence and
+failed native/ledger proof. Complete history is not qualified publication.
+
+Root authorized separately versioned v3 operations and a fresh isolated
+engineering fixture/claim after review. Allow only the exact owned lock path
+in active source mode under both candidate selection and canonical publication
+lock frames. All other audit rules,5253-work budgets/settings and scientific
+boundaries remain. V1/v2 source, pins, outputs and failed cases stay frozen;
+neither old case is reset/retried/relabelled. Fresh pins/admission required.
+
+## Complete EEGNet startup refusal and successor preparation,15 October,12:47 UTC
+
+Initial native Job20261015T124552Z_4ab1a7c6a6 exited1 after33 test-body dots:
+the new strict audit refused pytest's session cleanup changing cwd to ROOT.
+The pytest session is unqualified. No complete-selector fixture/execution claim,
+source child, detached child or numerical selection began. Unit-test recorder
+fixtures are separate. The failed Job closed empty/freshly absent without
+cleanup/sampling errors. All600 source/context and5 runtime pins remain exact.
+The [24-artifact refusal packet](evidence/cho51-complete-eegnet-refusal-20261015/summary.json)
+preserves source/review/pins/dispatch/native failure without overwriting bytes.
+
+Root authorized separately versioned `cho51_complete_eegnet_20261015_v2`
+operational sources to enter the owned parent output directory before pytest.
+The audit policy stays strict; exact guard subprocess cwd remains ROOT.
+Candidate5 files, v1 source/pins/output and all historical evidence remain frozen.
+Independent successor review, fresh pins, resource admission and unused output
+must precede a new launch. Budgets/workload/settings below stay exact; original0.
+
+## Complete synthetic EEGNet selection in preparation, 15 October
+
+Root owns `runs/coordination/cho51_complete_eegnet_20261015_v1`, review, fresh
+pins/admission, dispatch, closeout and status. Delegated ownership is new
+`cho51_complete_eegnet_v1` inputs/transaction/tests, selection/README, operational
+runner sources and compact archiver; an independent reviewer checks the settled
+package before execution. Historical tested sources, pins and receipts remain
+frozen. Canonical432/3114ec43, old1040/256 and original case attempts0 remain.
+
+The bounded next step is one complete public EEGNet selection on fresh owned
+synthetic52-subject inputs, target02/seed11/shot5/rep1. Adopted candidate rates
+0.001/0.002, source batch4 and support query8 retain scale1e6. Real102 inner
+folds require5202 updates, followed by51 fresh winning-source updates:5253 total.
+Public complete-evidence verification and genuine selected-source publication
+must pass, followed by detached canonical restore and tensor-state verification.
+Parent alone holds the recorder lock from claim through native proof, external
+attestation and an engineering-only terminal. No measured study cell is planned.
+
+Fresh native budgets are parent600s4096/6144MiB, selection420s3072/4096MiB and
+detached verification90s2048/3072MiB, serial under the parent deadline. Runtime
+completion is unproven until fresh receipts. RAM10/4GiB, disk20GiB, CPU/Torch1/1,
+hidden GPUs and all four genuine pause paths remain. No canonical admission
+guard is weakened and no peer release/count or host quiet is inferred.
+
+No real study arrays/pretrained weights, target prediction, renewed Source030,
+watcher, schedule or new30-hour window. Other methods and the1020-cell worker,
+cohort review, final owner freeze and scientific execution remain pending.
+The closed-phase entries below preserve historical evidence only.
+
+## Public source-fold phase closed, 15 October,11:51 UTC
+
+Four actual canonical public diagnostic folds passed on52 physical synthetic
+subjects: target02, validation01,50 training03–52,51 gradient updates/method,
+204 total. Full shapes and real A/B loaders/source SGD/support adaptation
+retained. Complete5,253-step selection refused before work under declared51;
+raw incomplete evidence refused by public complete-selector verifier. No winner,
+publication, recorder, measured cell, study/pretrained data or original case.
+
+All four600s4/5GiB native Jobs exited0, closed empty/freshly absent, without
+cleanup/sampling errors. RAM10/4/disk20,Torch1/1,hidden GPUs/current pause paths
+retained. Public CPU/no-checkpoint route; no canonical guard replaced/lowered.
+Full process/Job peaks2,882,940,928/2,912,673,792 bytes.584 source/context and5
+runtime pins matched,4,698 unique loaded-module hashes rechecked; canonical432/
+3114ec43 and old1040/256 exact.852 synthetic input files(2,938,317,852 bytes)
+rehashed, no input blobs archived. Zero actual target reads during computation;
+eight planned target-open refusals and four exact IPv6 probes, zero unexpected
+denials. Two read-only Git queries per child.
+
+Original archiver's EEGNet/LaBraM target-field mismatch refused before creating
+an archive. Frozen source/pins/failure retained; reviewed archive-only successor
+validates exact SourceSelection and produced58 compact artifacts without any
+numerical/refusal replay. [Report](docs/phase2/cho51_source_fold_qualification_20261015.md),
+[accepted packet](evidence/cho51-source-fold-successor-20261015/README.md).
+All assigned workers/reviewers finished and were stopped, no active child or
+owned compute Job remains. Ownership stays new candidates/ops/evidence/docs.
+
+Next separately versioned full-selector continuation/execution and publication/
+recorder proof with complete real histories, fresh winning fit and explicit
+resource budget. Whole selector/worker/study/cohort/final freeze/science remain
+pending; original0. No peer release/count/quiet, renewed Source030, watcher,
+schedule or new30-hour window. Preparation and older sections are historical.
+
+## Full-cohort public source-fold qualification in preparation, 15 October
+
+Root owns fresh `runs/coordination/cho51_source_fold_20261015_v1`, source review,
+pins/admission/dispatch, evidence/report and status updates. Workers own only
+new fixture/probe/README and assigned new operational sources; independent
+source review precedes any runtime import or numerical execution. Prior tested
+574 pins, all historical code/receipts, canonical432/3114ec43 and study inputs
+remain unchanged. Existing original attempts remain0.
+
+Four fresh standalone native Jobs are planned, each600s,4096/5120MiB process/
+aggregate, CPU/Torch1/1, hidden GPUs, RAM10GiB startup/4GiB active and disk20GiB,
+with all four genuine peer-pause paths. These limits are a new explicit bounded
+engineering envelope, not a lowered canonical execution/GPU admission policy.
+The public CPU/no-checkpoint selector route is used without replacing guards.
+No peer release/count or host quiet is inferred and no old receipt grants launch.
+
+Each method calls real public run_fold on52 physical synthetic Cho subjects,
+outer target02, inner validation01 and50 training sources03–52. One source step
+per subject plus one support step gives51 actual gradient updates per method,
+204 total. Cohort52, source eligibility, full64-channel A512/B800 shapes, full
+12-block random LaBraM and shot5/common-query protocol remain explicit. Input
+formats/loaders, source SGD, support adaptation and exact diagnostic evidence
+are real; synthetic fixture provenance is separate from real study lineage.
+
+A diagnostic fold is incomplete and has no selected winner. The public evidence
+verifier must refuse that raw record; no padded histories, selected publication,
+recorded study cell or claimed5253-step completion follows. This phase does not
+use the previous fixed-eight-update lifecycle proof as if it certified51updates.
+Full selector/worker/publication composition, whole-sweep budgets, cohort/final
+owner freeze and science remain pending. No actual study arrays/pretrained
+weights, original case, renewed Source030, watcher, schedule or new30-hour window.
+
+## Fresh engineering lifecycle phase closed, 15 October,11:20 UTC
+
+New lifecycle candidate/69 tests and reviewed operational sources qualified four
+real isolated CaseRecorder claims through fresh native numerical work to durable
+engineering-only success. Each real case_session lock spans claim/backend/double
+native verification/attestation/terminal. Four claims/intents/successes, zero
+failures or measured/scientific records;32 observed synthetic gradient updates.
+All1020 adopted plan metadata remain exact, four subject02/seed11 cases executed.
+
+Outer Job20261015T111011Z_df33481f9f and four inner Jobs all exited0 normally,
+closed empty/freshly absent, without cleanup/sampling errors. Outer600s4/6GiB;
+inner300s2/3GiB except full3/4GiB. RAM10/4/disk20,Torch1/1, hidden GPUs and four
+pause paths retained. No machine quiet or peer release/count inferred.574 tested
+source/context and5 runtime pins match; canonical432/3114ec43 and old1040/256
+unchanged. Parent2,351/children4,674 module hashes rechecked, zero unexpected
+denials; four exact optional IPv6 child probes blocked.
+
+Original archiver's Windows long-path refusal and48 partial files are preserved.
+Reviewed archive-only successor produced82 compact artifacts and rechecked old
+partial identities, all proofs and five Job absence; no test/numerical replay.
+[Report](docs/phase2/cho51_worker_lifecycle_qualification_20261015.md) and
+[accepted packet](evidence/cho51-worker-lifecycle-successor-20261015/README.md).
+All assigned workers/reviewers finished and were stopped; root has no active
+child or owned compute Job. Ownership stays new candidates/ops/evidence/docs.
+
+Next separately versioned selected-source worker/selector/publication integration
+and full-selector resources. No study arrays/pretrained weights, original attempt,
+full selector, renewed Source030, watcher, schedule, new30-hour window or Git
+publication. Cohort/final freeze/science pending; original0. The preparation and
+older sections below are historical snapshots.
+
+## Fresh engineering worker lifecycle in preparation, 15 October
+
+Root owns new `runs/coordination/cho51_worker_lifecycle_20261015_v1`, its
+closeout/evidence/report and status updates. Workers own only new lifecycle
+module/tests/README and assigned operational parent/child/prepare/launch/observe
+files; independent source review precedes fresh pins. Previous sources, failed
+attempts, receipts, study data/weights and canonical432/3114ec43 stay unchanged.
+
+The next bounded rehearsal connects actual canonical CaseRecorder claims to
+fresh synthetic numerical work and engineering-only terminal receipts. Four
+subject02/seed11 cases retain adopted method IDs; subject01 is excluded. The
+parent holds each real case_session lock from claim_new through native proof
+verification and engineering success. It never publishes an evaluation cell.
+All52 source/51-target/1,020-case planning scope remains unchanged; this does not
+load or qualify real cohort inputs or run complete source selectors.
+
+Planned outer native Job is600s,4096/6144MiB process/aggregate, containing the
+Torch/recorder parent and four serial fresh inner Jobs. Inner numerical probes
+retain exact782fd518 source/full shapes/eight updates:300s,2048/3072MiB for
+EEGNet/linear/LoRA and3072/4096MiB for full. Every admission retains RAM10/4,
+disk20, CPU/Torch1/1, hidden GPUs and all four current pause paths. Nested Job
+assignment/cleanup requires new runtime proof; source review is not proof.
+The aggregate parent cap bounds all descendants rather than permitting both
+individual maxima simultaneously. No old receipt grants another launch.
+
+Before durable acceptance, failed work receives one linked engineering failure;
+after a parent attestation or engineering intent/success, failures require
+quarantine/recovery by an external digest and never automatic retry. Fixture
+project provenance stays separate from independently pinned execution code.
+Whole-worker/5,253-step resources, actual studies/cohort/final freeze/science
+remain pending, original0. No peer release/count/host quiet, renewed Source030,
+watcher, schedule or new30-hour window is inferred.
+
+## Numerical fixture phase closed, 15 October,10:43 UTC
+
+All four full-shape synthetic methods have successful numerical evidence;
+eight observed updates each, actual64-channel shapes/ten support trials and
+unchanged probe782fd518. Initial EEGNet/linear/LoRA passed under2/3GiB; full
+tuning's unsuccessful near-cap run remains in the41-artifact initial packet.
+The separate full-only3/4GiB successor passed at10:42:45 UTC with process/Job
+peaks2,364,608,512/2,394,779,648 bytes and18 compact artifacts. No workload
+shrank and no historical source/pins/refusal were rewritten. Exit4294967295
+alone does not uniquely identify the initial cause.
+
+All five Jobs retained300s,RAM10/4/disk20,Torch1/1/hidden GPUs and closed empty/
+freshly absent, no cleanup/sampling errors. Successful scopes each blocked one
+exact optional IPv6 import probe; zero unexpected audit denials. Initial556 /
+successor563 source/context and five identical runtime pins matched;4,673
+post-import module hashes per success rechecked. Canonical432/3114ec43 and old
+1040/256 guards remain exact. All workers/reviewers finished and were stopped;
+root has no active child or owned compute Job. Ownership stays new candidate/
+operational/evidence/docs. No study arrays/pretrained weights, original case,
+full selector, peer release/count/host quiet, renewed Source030, watcher,
+schedule or new30-hour window. Whole-worker resources, actual study proofs,
+cohort/final freeze and scientific budget remain pending; original0. See
+[report](docs/phase2/cho51_numerical_probes_20261015.md).
+
+## Full-tuning resource successor in preparation, 15 October,10:42 UTC
+
+The first four full-shape probes completed under2048/3072MiB: EEGNet, LaBraM
+linear and LoRA passed eight updates each; full tuning exited4294967295 near
+the2GiB process cap (2,147,426,304 process/2,178,310,144 Job bytes). This is
+consistent with cap pressure; the exit code alone does not uniquely prove its
+cause. All four Jobs closed empty/freshly absent. The unchanged556 source and
+five runtime pins, three passes and full refusal are preserved in the
+41-artifact `evidence/cho51-numerical-probes-20261015` packet.
+
+Root owns separate `runs/coordination/cho51_numerical_full_20261015_v2` and its
+closeout/report. The operational worker owns only its new prepare/child/launch/
+observe files; independent review precedes fresh pins. The exact numerical probe
+782fd518 and full architecture/batches/rates/eight-update schedule stay unchanged.
+Only this synthetic full-method successor uses3072/4096MiB, still300s, RAM10/4,
+disk20, CPU/Torch1/1, hidden GPUs and four current pause paths. This is within
+the existing native guard's configurable bounds. No previous source, receipt,
+canonical limit or scientific budget is changed. All other methods retain their
+original smaller-envelope evidence. No study/checkpoint/original attempt,
+peer release/count/host quiet, renewed Source030, watcher or new30-hour window.
+
+## Full-shape synthetic numerical probes in preparation, 15 October
+
+Root owns fresh `runs/coordination/cho51_numerical_20261015_v1`, closeout,
+evidence/report and status docs. Workers own only new numerical probe source
+and the assigned operational child/prepare/observe/launch files. Read-only
+review precedes fresh pins and execution. No canonical or earlier qualified
+source, study data, checkpoint or historical proof changes.
+
+The bounded scope is four serial native Jobs, one per method, at300s each and
+unchanged2048/3072MiB process/Job caps, RAM10/4/disk20, actual Torch1/1 and hidden
+GPUs. Inputs are seeded synthetic CPU float32:64channels,512samples for EEGNet
+or800 for the full12-block LaBraM architecture, source batch2, support batch10
+(five/class), query batch2. Random initialization uses only pinned LaBraM model
+configuration metadata; no baseline weights. Two declared engineering rates
+each receive two fixture source updates, one support update and one replay.
+Canonical public masks/LaBraM support helpers are used; EEGNet/source kernels
+are fixture-owned. No private selector,5,253-step selection, recorder or original
+case runs. A cap refusal is retained without shrinking the declared fixture.
+
+Measured fixture peaks cannot establish pretrained parity, selected-recipe or
+complete worker/sweep bounds. All52 sources/51 targets remain adopted; cohort/
+final owner freeze and science budget remain pending, original0. No peer
+release/count/host-quiet claim, renewed Source030, watcher, schedule or new
+30-hour window. All four genuine pause paths through15 October remain checked.
+
+## Receipt/selector engineering closed, 15 October,10:08 UTC
+
+Root completed202 checks in Job20261015T100055Z_8fde48f192:178 collection
+boundaries with mocked dependencies (including four real small-file helpers)
+and24 actual public-verifier checks on fabricated complete records. No actual
+1,020-case receipt roster, model or fitting run occurred. The Job retained600s,
+2048/3072MiB,RAM10/4/disk20,Torch1/1/hidden GPUs; zero skips/audit denials.
+Process/Job peaks1,341,018,112/1,370,341,376 bytes. Atomic limits/assignment,
+normal exit0, empty/closed Job and fresh name absence are confirmed; no cleanup
+or sampling errors. Fresh545 source/context and5 runtime pins match;2,379
+post-import observed module hashes rechecked. Canonical432/3114ec43 is exact.
+
+All workers/reviewers completed and were stopped; no root-owned compute Job
+remains. A metadata archiver's initial Windows ctime refusal is preserved;
+separately reviewed successor completed the26-artifact archive without changing
+tested code/pins or replaying tests. Ownership stays new candidates/operational/
+evidence/docs. No peer message/release/count/host-quiet claim, renewed Source030,
+original case, watcher, schedule or new30-hour window. Original0, Gate A's exact
+retrospective boundary and pending cohort/final freeze/science remain unchanged.
+Next remaining per-method numerical/resource qualification and eventual actual
+whole-roster proof/composition. See
+[report](docs/phase2/cho51_receipt_selector_qualification_20261015.md) and
+[packet](evidence/cho51-receipt-selector-qualification-20261015/README.md).
+
+## Receipt and selector integration preparation, 15 October
+
+Root owns fresh `runs/coordination/cho51_receipt_selector_20261015_v1`, its
+fabricated public-verifier fixture, next evidence/report and status updates.
+Workers own only new `cho51_tensor_collection_v1`, `cho51_selector_collection_v1`
+and assigned operational source; a separate reviewer checks their boundaries.
+Canonical432/3114ec43, earlier qualified candidates, data, weights, historical
+receipts and original0 remain unchanged. No prior grant or observation is reused.
+
+Planned finite guarded qualification covers178 mocked boundaries and24 actual
+public-selector metadata checks on fabricated complete records. No actual1,020
+native case proofs, model construction, tensor loading, fit or target prediction
+is requested. Fresh pins/source review precede600s/2048/3072MiB admission, with
+RAM10/4/disk20, CPU/Torch1/1, hidden GPUs and all four genuine pause paths through
+15 October. Read-only pinned Git provenance commands are confined to owned tiny
+fixture directories. The source fingerprint there is fixture-only. No peer
+release/count/host-quiet claim, renewed Source030, watcher, schedule or new30-hour
+window. Cohort/final owner freeze and scientific budget remain pending.
+
+## Tensor engineering closed, 15 October,09:24 UTC
+
+Root completed270 final boundaries and one actual untrained EEGNet full_v1
+reconstruction in separate fresh native Jobs20261015T092251Z_8f29dba7ae and
+20261015T092346Z_05ec5818d5. Both retained2048/3072MiB,RAM10/4/disk20,
+600s/180s,actualTorch1/1/hidden GPUs. One exact optional IPv6 probe blocked per
+scope, zero unexpected denials; no cleanup/sampling errors. All eight created
+Jobs (four accepted/four refused) are empty/closed/freshly absent at closeout.
+Independent reviews preceded source corrections/fresh successors; old artifacts
+were frozen before edits. Fresh532 source/context and5 runtime pins matched.
+
+Workers and both reviewers completed and were stopped; root has no active child
+or owned compute Job. Ownership remains new candidates/operational/evidence/docs.
+Canonical432/3114ec43, old1040/256 guards, study data/weights and original0 are
+unchanged. One actual untrained fixture is not whole-roster or fitted-selection
+proof. No peer message/count/release/host-quiet claim, renewed Source030, watcher,
+schedule or new30-hour window. Next complete51 receipt/full-selector integration,
+remaining model resources, cohort/final freeze/science. See
+[report](docs/phase2/cho51_tensor_qualification_20261015.md) and
+[248-artifact packet](evidence/cho51-tensor-qualification-20261015/README.md).
+
+## Finite tensor-wrapper preparation, 15 October,09:03 UTC
+
+Root owns fresh `runs/coordination/cho51_tensor_qualification_20261015_v1`,
+new tensor `launcher.py`, reports/evidence and status docs. Workers owned only
+new tensor `contract.py`/tests/README, `child.py`, and `test_launcher.py`.
+All completed workers were stopped. Two read-only reviewers now cover runtime
+binding and operational qualification separately. Canonical432/3114ec43, prior
+candidates, data, weights, historical evidence and original0 remain untouched.
+
+Planned first finite Job runs metadata/native-mocked boundary tests then prepares
+one actual untrained EEGNet full_v1 fixture for subject02/seed11, with fabricated
+selection/final-fit metadata, zero optimizer steps and no recording/target
+prediction. A separate one-case native Job may restore that fixture after fresh
+admission. Both retain2048/3072MiB, RAM10/4/disk20, CPU/Torch1/1, hidden GPUs and
+genuine current pause monitoring. First bound600s; per-case bound180s. Fresh
+09:03:18 UTC observation was20,584,366,080 available RAM bytes; it is not compute
+admission or a peer release/count/host-quiet claim. Source030 remains expired.
+No original case, watcher, schedule, new30-hour window or Git publication occurs.
+
+## Selected-publication engineering qualified and closed, 15 October,08:23 UTC
+
+Root completed90 checks in fresh Job20261015T082242Z_2ef303909f:63 mocked
+boundaries,2 one-publication fabricated-byte hybrid cases and25 canonical byte
+cases. Fresh502 source/context and4 runtime pins matched.600s/2048/3072MiB,
+RAM10/4/disk20, Torch1/1 and hidden GPUs remained; process/Job peaks
+1,161,273,344/1,191,546,880 bytes, zero audit/cleanup/sampling errors. The Job
+closed empty and its name was freshly absent at closeout. The earlier startup
+refusal created no Job or child and is preserved separately. No floor changed.
+
+Implementation worker and both read-only reviewers completed and were stopped;
+root has no active child or owned compute Job. Ownership remains new candidate/
+operational/evidence/docs only. Canonical432/3114ec43, historical guards, data,
+weights and prior evidence remain intact. No peer message/release/count/host-quiet
+claim or renewed Source030; no original case, watcher, schedule or new30-hour
+window. Actual publication/tensor/full-selector/science remain pending, original0.
+Next finite tensor wrapper and witness/native receipt binding, then selector/
+worker resources/cohort/final freeze. See
+[report](docs/phase2/cho51_publication_preparation_20261015.md) and
+[24-artifact packet](evidence/cho51-publication-qualification-20261015/README.md).
+
+## Selected-publication preparation, 15 October,08:14 UTC
+
+Root owns fresh `runs/coordination/cho51_publication_qualification_20261015_v1`
+and the next report/evidence/status updates. One source worker owns only new
+`docs/phase2/cho51_publication_collection_v1`; a read-only tensor-supervision
+reviewer completed and was stopped. Separate publication-source review precedes
+launch. No canonical or prior qualified source, data, weights or receipts change.
+Planned synthetic-only600s/2,048/3,072MiB native qualification keeps10/4/20 floors,
+CPU/Torch1/1, hidden GPUs and current genuine peer-pause checks. Fresh08:14:30 UTC
+RAM11,876,155,392 bytes is an observation, not admission or peer release. No
+current peer count/host-quiet claim is made; Source030 stays expired. Tensor/
+full-selector/scientific flags remain false; no original case, new lease window,
+watcher, schedule or Git publication occurs. See
+[the continuation report](docs/phase2/cho51_publication_preparation_20261015.md).
+
+## Actual-input composition qualified and closed, 15 October,08:00 UTC
+
+Root's fresh28-case actual-input/fabricated-record Job20261015T075508Z_e063b215c5
+passed600s/2,048/3,072 MiB, RAM10/4/disk20, actual Torch1/1 and hidden GPUs.
+All156 processed files/3,266,058,145 bytes and493 source/context/4 runtime pins
+matched before/after. Peak process/Job1,390,882,816/1,422,028,800 bytes; closed,
+empty and absent with a fresh name-absence check and zero audit/cleanup/sampling
+errors. The actual loader stayed unchanged; all recorder/prediction records
+were fabricated and marked, B binding declarations referenced rather than decoded.
+
+The source worker and different source reviewer completed and were stopped;
+root is sole active agent and no owned compute Job remains. Ownership stays
+new candidate/operational/evidence/docs only; canonical432/3114ec43, old guards,
+data, weights and historical evidence stay intact. Source030 remains expired;
+no peer message, current count/release/host-quiet grant was made. Current15Oct
+parent pause monitoring and four named child checks applied. No original case,
+new watcher, schedule or30-hour window ran. Any later publication/tensor/selector/
+worker work requires fresh finite source/runtime/input/coordination/admission.
+Cohort/final freeze/science budget remain pending, original attempts zero.
+See [the report](docs/phase2/cho51_input_composition_qualification_20261015.md)
+and [18-artifact packet](evidence/cho51-input-composition-20261015/README.md).
+
+## Actual-input/fabricated-record composition preparation, 15 October UTC
+
+Root owns `runs/coordination/cho51_real_collection_20261015_v1`, its explicit
+unused `runs/phase2/fabricated_cho51_input_20261015_v1` recorder fixture and
+current handoff/evidence docs. The source worker owns only the new
+`docs/phase2/cho51_input_collection_v1` composition; worker and subsequent
+source reviewer finished and were stopped. Canonical code and previous
+qualified candidates/receipts remain frozen. Root is preparing fresh28-case
+qualification:24 dependency-mocked boundaries and4 actual-input/fabricated-record
+checks. The actual loader stays unchanged, all156 processed inputs are pinned
+and hashed inside the guard; retained B binding declarations are referenced,
+not freshly decoded. Raw sources, weights, models and original attempts are
+excluded. Generated fixture records explicitly identify fabricated predictions.
+
+Planned600s/2,048/3,072 MiB, RAM10/4/disk20, actual Torch1/1/hidden GPUs and
+genuine peer-pause checks remain. Fresh observation at07:47:44 UTC was
+15,872,499,712 available RAM bytes; actual admission remains separate. No peer
+message/count/release/host-quiet claim or renewed Source030 is inferred. This
+phase has no passing native receipt yet; publication/tensor/full-selector and
+scientific flags stay false. Cohort/final freeze/science budget and original0
+remain; no watcher, schedule or new30-hour window is created.
+
+## 15 October qualification closed: root only, no owned Job
+
+Root completed20 recorder and43 selection-file synthetic checks in native Jobs
+`20261015T072828Z_014bc785d2`/`20261015T073716Z_96cdd95d61`, both accepted,
+closed/empty/absent. Four failed/stopped predecessors and all six native receipts
+are preserved in [the73-artifact packet](evidence/cho51-collection-qualification-20261015/README.md).
+The owned recorder002 leaf was identity-checked and stopped to replace repeated
+fixture construction; its live parent retained cleanup proof. No peer process
+was stopped. Fixture mapping/path repairs changed no implementation or assertion.
+
+All scopes retained600s/2,048/3,072 MiB, RAM10/4/disk20, actual Torch1/1 and hidden
+GPUs; both passes had zero audit denials. Canonical432/3114ec43 is unchanged.
+One source worker then one source reviewer operated sequentially; both finished
+and were stopped. Root owns new candidates, qualification packets and docs;
+there is no active child or owned compute Job. Actual checkout is `D:\Aenv\pro3`.
+
+Historical Source030 remains expired. Four named pause paths were checked by
+each child and the current15Oct path monitored by the parent. No peer message,
+current peer-count grant, release or host-quiet claim was made. Fresh admissions
+superseded the initial RAM hold without reusing a measurement or old lease.
+Any later real-input/publication/tensor/numerical operation needs its own fresh
+finite source/runtime/resource/coordination admission. Cohort/final freeze and
+scientific budget remain pending, original attempts zero, no new watcher/window.
+See [the qualification](docs/phase2/cho51_collection_qualification_20261015.md).
+
+## Fresh 15 October synthetic recorder qualification preparation
+
+The user's renewed resume instruction continues bounded engineering. Native
+RAM at 07:19:50 UTC was 14,018,535,424 bytes (about 13.1 GiB), above 10 GiB;
+this observation is not admission. Root owns the fresh create-once
+`runs/coordination/cho51_recorder_qualification_20261015_v1` package and will
+use the guarded Windows runner for 20 synthetic cases only, 600 seconds,
+2,048/3,072 MiB process/Job caps, RAM 10/4 GiB, disk 20 GiB, CPU/Torch 1/1,
+GPUs hidden and current genuine pause checks. All 432 canonical files freshly
+matched their expected hashes before preparation. No historical lease is reused.
+
+One worker owns only new `docs/phase2/cho51_selection_files_v1` source and
+prepared tests; it has no validation or data/model execution authority. Root
+owns collector qualification and status docs. Existing source, input bytes,
+weights, old 1040/256 guards and historical evidence stay unchanged. Current
+peer release/count and host quiet are unknown; no peer message is authorized
+or sent. Source030 remains expired. Cohort/freeze/science budget remain pending,
+original attempts zero. This preparation has no passing receipt yet.
+
+## 15 October source continuation; no compute admission
+
+Root owns the additive `docs/phase2/cho51_recorder_collection_v1`,
+`docs/phase2/project_resume_20261015.md` and `evidence/pro3-resume-20261015`
+plus current status-document updates. Existing canonical code/configuration,
+historical candidates/receipts, raw data, weights and initial line-ending Git
+differences remain intact. One read-only child reviewed legacy integration and
+the new candidate; it completed and was stopped. No compute Job was created.
+
+The recorded native observation at 07:08:31 UTC measured 5.05 GiB available RAM,
+below the unchanged 10 GiB startup floor; disk exceeded 20 GiB. Four named pause
+paths were absent then, without implying a release, host quiet, current peer
+count or scheduling grant. Pro2's current chat was observed active read-only;
+no peer message was sent. Expired Source030 is historical. No lease, watcher,
+schedule, model, tensor child, real recorder, original attempt or new 30-hour
+window was invoked. Canonical 432-file identity matches exactly; source-only
+syntax parsing and a different read-only source review do not qualify runtime.
+
+The 20 prepared synthetic cases remain unexecuted. Any later validation needs
+fresh finite native/source/runtime/coordination admission, RAM 10/4 GiB and disk
+20 GiB floors, actual thread/GPU limits and genuine peer pause monitoring. The
+new stage intentionally leaves selection/publication/tensors incomplete; the
+old 256 selection-file guard is unchanged despite the current 5,253 ceiling.
+Checkpoint-cohort/final freeze/science budget remain pending, original attempts
+zero. See [the resumption report](docs/phase2/project_resume_20261015.md).
+
 ## Both fresh read-only phases passed, 13 October,09:07 UTC
 
 Root-owned all52 B binder and read-only51 execution interfaces passed18/36 checks.

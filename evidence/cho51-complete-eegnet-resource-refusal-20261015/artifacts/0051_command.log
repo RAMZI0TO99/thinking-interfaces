@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v4\verify_child.py", line 53, in <module>
+    main()
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v4\verify_child.py", line 35, in main
+    result = verify_publication(request, source_result,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_complete_eegnet_v2\selection.py", line 671, in verify_publication
+    tensor_witness = verify_cho_selected_source_state(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_cho_source_restore.py", line 505, in verify_cho_selected_source_state
+    _require_host_ram(6.0)
+  File "D:\Aenv\pro3\evaluation\phase2_cho_source_restore.py", line 474, in _require_host_ram
+    raise ValueError(
+ValueError: Cho selected tensor restore requires 6 GiB available RAM

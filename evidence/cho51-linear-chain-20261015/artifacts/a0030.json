@@ -1,0 +1,30 @@
+{
+  "schema": "cho51_linear_chain_dispatch_result_v1",
+  "observed_utc": "2026-10-15T16:29:14.0446999Z",
+  "pins_sha256": "1e3776fd84c22fdba9d36c97113ca1fb90ec5912018cfdcdd0c4cfcaa264be2e",
+  "request_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\requests\\fragment_006.json",
+  "request_sha256": "be8c39a789ff54cf481ff83b862d3e8901223aae2efe5c69a05a04ca0f6fb5f1",
+  "request_index": 6,
+  "mode": "folds",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T162440Z_c60dfbb745",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\pins.json",
+    "--expect-pins",
+    "1e3776fd84c22fdba9d36c97113ca1fb90ec5912018cfdcdd0c4cfcaa264be2e",
+    "--request",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\requests\\fragment_006.json",
+    "--expect-request",
+    "be8c39a789ff54cf481ff83b862d3e8901223aae2efe5c69a05a04ca0f6fb5f1",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\fragments\\fragment_006"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_chain_20261015_v1\\fragments\\fragment_006",
+  "scientific_admission": false
+}

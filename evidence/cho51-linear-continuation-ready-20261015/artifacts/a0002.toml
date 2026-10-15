@@ -1,0 +1,13 @@
+[original]
+path = "checkpoints/labram-base.pth"
+sha256 = "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c"
+
+[safe_conversion]
+path = ".cache/huggingface/hub/models--braindecode--labram-pretrained/snapshots/0563b6c626e7b40d9a36653b763715db94d945d7/model.safetensors"
+sha256 = "53b752edb366fd6395dd3cb7d63ae3e1e16aabed040aa0901d64ef32e8f444f8"
+
+[inspection]
+expected_safe_tensors = 221
+expected_safe_elements = 5819936
+expected_plan_parameters = 5822770
+omitted_student_keys = ["student.mask_token", "student.lm_head.weight", "student.lm_head.bias"]

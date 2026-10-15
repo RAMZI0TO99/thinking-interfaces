@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_numerical_probe_dispatch_result_v1",
+  "observed_utc": "2026-10-15T10:35:49.2904919Z",
+  "method": "eegnet",
+  "pins_sha256": "963c24bbcc2afc12b9daaea601eaefef3194bbc8f807575f1e95668e2183ccda",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T103532Z_4548f1bc1e",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\pins.json",
+    "--expect-pins",
+    "963c24bbcc2afc12b9daaea601eaefef3194bbc8f807575f1e95668e2183ccda",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_eegnet_001",
+    "--method",
+    "eegnet"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_eegnet_001",
+  "scientific_admission": false
+}

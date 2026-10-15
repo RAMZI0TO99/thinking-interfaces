@@ -1,0 +1,31 @@
+{
+  "design_decision_sha256": "654f06db0cadd3c67cca102edfadc3b667942bf84013e442aae700a7a3be7fc8",
+  "expected_method_config_file_sha256": "8e34252201dfb2521a38357a6a51391006fb6875f34a89a15e44efd1e7b166d3",
+  "expected_method_config_sha256": "ee8d5570f8b71e4f80ec76864973684bfd4be39ed04e0152efd8ab08296be993",
+  "expected_tests": 33,
+  "files": {
+    "docs/phase2/cho51_complete_eegnet_v1/README.md": "d81544dea5572c76eae40365f68016a14cd11428cb062054a8f25ef19a1a4acd",
+    "docs/phase2/cho51_complete_eegnet_v1/inputs.py": "b2c4b09347cdf3a399cf5260c9e220012e1022f3d0e9f080dcf40b1df2c02ec5",
+    "docs/phase2/cho51_complete_eegnet_v1/selection.py": "5d91e291847efbf3fdf4ad1358318f116584fe6cb039d5823290c41499de7ea4",
+    "docs/phase2/cho51_complete_eegnet_v1/test_transaction.py": "f0aaed1ddb566c2efcd8f4f37d650a79ccfb2ebb250897e05cf4aca4116ef9a2",
+    "docs/phase2/cho51_complete_eegnet_v1/transaction.py": "2689071b5effb90163af3d40903fcab8afbd810ac7f2c1034a9a4bb8feb19eb8",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/closeout.py": "5692d3074159a2e8c4b88f6f8a68de35c539a60363426fc645a25545e89d9115",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/launch.ps1": "facc39f9f1b6952169359515ba747c16f0191d2a30918270b16941ccf54317cb",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/observe.py": "ecf31fadd9af60d84cd0a9d797a662b2217d21a267c2bdad538bdaeb50a3d294",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/parent.py": "e6cd454e1717c3d701e46341f02ae8fd036216e4d0c59f2abf85447ba7bd80d9",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/prepare.py": "bf0d535cd446f78be1c34066b5cd72b995c279d732a40b6f06aaad5b896168c0",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/select_child.py": "32968295409dc681318030fb79bd6f2c512cdd40ea6b10cd65fa0e1328aca0d1",
+    "runs/coordination/cho51_complete_eegnet_20261015_v1/verify_child.py": "2430eb890c1d004919bdef99d49603d8ae3b8736c34274f8a1965df7ea217c98"
+  },
+  "independent_reviewer": "/root/selector_collection",
+  "models_or_tests_or_jobs_executed": false,
+  "observed_utc": "2026-10-15T12:45:36.825000+00:00",
+  "original_case_attempts_remaining": 0,
+  "powershell_parse_errors": 0,
+  "python_ast_files": 10,
+  "remaining_actionable_findings": [],
+  "root_review": true,
+  "schema": "cho51_complete_eegnet_source_review_v1",
+  "scientific_admission": false,
+  "source_only": true
+}

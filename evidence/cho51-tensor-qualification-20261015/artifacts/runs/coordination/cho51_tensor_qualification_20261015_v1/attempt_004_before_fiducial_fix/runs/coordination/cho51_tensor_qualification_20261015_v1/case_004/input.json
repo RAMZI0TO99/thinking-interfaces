@@ -1,0 +1,82 @@
+{
+  "expected_source": {
+    "git_commit": "4491e2a68126d6b7293261f4954b88c11c29049d",
+    "git_dirty": true,
+    "source_sha256": "0c8c87c08eff04ab0350be888c2ae7c9c328d0eaf3282c8bd1b5b4f1a94776d0"
+  },
+  "method_config": {
+    "candidates": [
+      {
+        "name": "lr_1e-3",
+        "source": {
+          "batch_size": 4,
+          "input_scale": 1000000.0,
+          "learning_rate": 0.001,
+          "steps_per_subject": 1
+        },
+        "support": {
+          "input_scale": 1000000.0,
+          "learning_rate": 0.001,
+          "query_batch_size": 8,
+          "steps": 1
+        }
+      },
+      {
+        "name": "lr_2e-3",
+        "source": {
+          "batch_size": 4,
+          "input_scale": 1000000.0,
+          "learning_rate": 0.002,
+          "steps_per_subject": 1
+        },
+        "support": {
+          "input_scale": 1000000.0,
+          "learning_rate": 0.002,
+          "query_batch_size": 8,
+          "steps": 1
+        }
+      }
+    ],
+    "dataset": "cho2017",
+    "early_stopping": false,
+    "input_profile": "cho_profile_a",
+    "method": "eegnet",
+    "score": "mean_subject_balanced_accuracy_exact_rational",
+    "source_policy": "all_non_target_subjects; inner_validation_also_excluded",
+    "source_seed_policy": "none",
+    "tie_break": "first_in_declared_candidate_order",
+    "variant_config_sha256": null
+  },
+  "plan": {
+    "dataset": "cho2017",
+    "method": "eegnet",
+    "model_seed": 11,
+    "repetition": 1,
+    "shots_per_class": 5,
+    "target_subject": "subject_02"
+  },
+  "project_root": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_tensor_qualification_20261015_v1\\validation_004\\f",
+  "protocol_config": {
+    "datasets": {
+      "cho2017": {}
+    },
+    "protocol": {
+      "schema_version": 1
+    }
+  },
+  "publication": {
+    "case_id": "9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78",
+    "environment_sha256": "8575381d75374b1be7e8c9b142dcf6d9f3e0b471acd60c0af9a6e0f96eacc3ca",
+    "evidence_sha256": "186b840bc5addc7080705b68ba9bbb39ac3c99bbe788ca00cf6f2913cde16058",
+    "manifest_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_tensor_qualification_20261015_v1\\validation_004\\f\\runs\\phase2\\selected_sources\\manifests\\7b56003a9473ef7a333936a3c33cb11a0da43bb80385cb88b6f17bc2902c0287.json",
+    "manifest_sha256": "7b56003a9473ef7a333936a3c33cb11a0da43bb80385cb88b6f17bc2902c0287",
+    "method_config_sha256": "ee8d5570f8b71e4f80ec76864973684bfd4be39ed04e0152efd8ab08296be993",
+    "model_recipe_sha256": "44e4694dc9e0ab3abcbb8d4042424961746acbc7e2d5a2a549dc9e296545c1b2",
+    "model_state_sha256": "6a06d0e3a126517911621d55aa332dfdb8b8d6489efa41a43ce64273c9243826",
+    "protocol_config_sha256": "978467cde5d2ea721a8022e5e1cd2bd4d90722404127f71630c91fb3976f1639",
+    "selected_candidate": "lr_1e-3",
+    "selection_contract_sha256": "f23d762072036cb840d4c8247340529de450c0dcf828aef795793d4443bfdb93",
+    "weights_sha256": "2bda8df780504b3a9d7d2170c96a10b87cd5804f3dfd6f0a250a17d3d509e38e"
+  },
+  "schema": "cho51_tensor_child_input_v1"
+}

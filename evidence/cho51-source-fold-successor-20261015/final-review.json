@@ -1,0 +1,80 @@
+{
+  "actual_gradient_updates": 204,
+  "artifact_bytes": 5350851,
+  "artifact_count": 58,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "document_sha256": {
+    "AGENT_COORDINATION.md": "afe7127e606b5a5063183efa55ac378aea1afd2891412162caa1176af0a5cbae",
+    "CONTINUE_HERE.md": "81e58e10fd10e38780a0ed7a0ff09e2702f40a54da1d99cadc4ebe8be56d8094",
+    "HANDOFF.md": "4ec38e047b4934e9647ea43792e4611c39351867d7e0a298461a1a4b0e9bb72a",
+    "PHASE2_START_HERE.md": "ce0b1b56a30d317bb3c4443c51409d9405fc47e29792e89b40d6a8a41da998d4",
+    "README.md": "52e203238c8370c15b0bb1240287c3525cc7fba8f8f6dc8ff83cc3895d0b56fd",
+    "WINDOWS_SETUP.md": "47507af68a51262e8a236b8644d1b66827f9727a9e9b914078c4e68b0c389ab8",
+    "docs/phase2/cho51_source_fold_qualification_20261015.md": "9a80b22d3177a942eb1b3a1fbce111b88e931a1f5105f26942324a23d2a22056",
+    "evidence/cho51-source-fold-successor-20261015/README.md": "f309436072f88e6d403adee488df0861c5af0a3037e03368accbaed3260b976d"
+  },
+  "full_selector_verified": false,
+  "full_worker_verified": false,
+  "manifest_sha256": "8314e77486e4f045f8b55deac800bc47d073e19383dd2d22ee80989499ce8382",
+  "measured_cells": 0,
+  "methods": [
+    {
+      "actual_target_read_attempts": 0,
+      "loaded_modules": 4698,
+      "method": "eegnet",
+      "planned_target_refusals": 2,
+      "updates": 51
+    },
+    {
+      "actual_target_read_attempts": 0,
+      "loaded_modules": 4698,
+      "method": "labram_linear",
+      "planned_target_refusals": 2,
+      "updates": 51
+    },
+    {
+      "actual_target_read_attempts": 0,
+      "loaded_modules": 4698,
+      "method": "labram_lora",
+      "planned_target_refusals": 2,
+      "updates": 51
+    },
+    {
+      "actual_target_read_attempts": 0,
+      "loaded_modules": 4698,
+      "method": "labram_full",
+      "planned_target_refusals": 2,
+      "updates": 51
+    }
+  ],
+  "native_jobs_freshly_absent": [
+    "pro3_migration_20261015T114138Z_9ab5d4cf93",
+    "pro3_migration_20261015T114237Z_08421b4e27",
+    "pro3_migration_20261015T114359Z_679b02fe30",
+    "pro3_migration_20261015T114459Z_2ab091a20d"
+  ],
+  "numerical_or_refusal_work_replayed": false,
+  "observed_pause_paths": {
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false
+  },
+  "observed_utc": "2026-10-15T11:55:31.641744+00:00",
+  "original_case_attempts_remaining": 0,
+  "passed": true,
+  "physical_input_bytes_rechecked": 2938317852,
+  "physical_input_files_rechecked": 852,
+  "pins_sha256": "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+  "publication_performed": false,
+  "recorder_used": false,
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_source_fold_final_metadata_review_v1",
+  "scientific_admission": false,
+  "source_context_pins_rechecked": 584,
+  "source_gradient_updates": 200,
+  "summary_sha256": "424dcad89358c9ef2109a037724f04e2a19b088e038205b27dfdf02b88d468a4",
+  "support_gradient_updates": 4,
+  "unique_observed_module_files_rechecked": 4698
+}

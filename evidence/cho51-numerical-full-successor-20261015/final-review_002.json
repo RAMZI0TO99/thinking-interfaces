@@ -1,0 +1,36 @@
+{
+  "aborted_initial_full_partial_update_count": null,
+  "all_five_native_job_names_freshly_absent": true,
+  "all_four_synthetic_methods_qualified": true,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "certified_completed_gradient_updates": 32,
+  "compact_artifacts_rechecked": 59,
+  "document_hashes": {
+    "AGENT_COORDINATION.md": "3c078d8430ac5cf76cfcd264e54db44d1fbd261411a486458d91d5428790c1af",
+    "CONTINUE_HERE.md": "e56c4d3b3d94e4b3964e86abadce82458717835c902c08dc33721f294234344c",
+    "HANDOFF.md": "def9350c7acec0fb59e75b0b55f3a289f5f83719c01dc1b75333533c09bf11ee",
+    "PHASE2_START_HERE.md": "bdd95f2ce490d83a2b438ef4c82d565727354651685760bd3604228ad8a57f38",
+    "README.md": "1f8fc8d93477c65241d480efa0d3168300337345ceb8dd7b56913b2270c1ab59",
+    "WINDOWS_SETUP.md": "51e5113f8329d8f5b79d9eebf94864e839804166d440db60205435b544df9d69",
+    "docs/phase2/cho51_numerical_probes_20261015.md": "efae90645e5c0d8bfcb0f98703dc45c33866fb125183fb818ed27c5ccdca8073",
+    "evidence/cho51-numerical-full-successor-20261015/README.md": "57a8eb2b544941c0cb8c78e01acfc96268ac090bf609238e89f1617c5bfae554",
+    "evidence/cho51-numerical-probes-20261015/README.md": "f668df4dbeb240f880173027722df887e834fd4dcb47a20b982b31fbc98219f9"
+  },
+  "earlier_final_review_sha256": {
+    "evidence/cho51-numerical-full-successor-20261015": "63f067b0ce1aaafe59f0c644f041405229be46da2c9cc901cf90982919579aa8",
+    "evidence/cho51-numerical-probes-20261015": "63f067b0ce1aaafe59f0c644f041405229be46da2c9cc901cf90982919579aa8"
+  },
+  "independent_reviewer": "/root/review_receipt_roster",
+  "models_or_tests_replayed": false,
+  "observed_utc": "2026-10-15T10:48:59.894757+00:00",
+  "original_case_attempts_remaining": 0,
+  "passed": true,
+  "reason": "Independent final review corrected a successful resource envelope wording; no minimum memory requirement is inferred",
+  "remaining_actionable_findings": [],
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_numerical_final_documentation_review_v2",
+  "scientific_admission": false,
+  "source_context_pins_rechecked": 563,
+  "study_or_full_worker_admitted": false
+}

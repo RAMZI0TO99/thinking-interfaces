@@ -1,0 +1,149 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2695,
+      "path": "artifacts/0001_README.md",
+      "sha256": "34f550b7938a76b91275d512793d5dfa7168e2177c2a318c84745611efcb2ce2",
+      "source": "docs/phase2/cho51_staged_recorder_v1/README.md"
+    },
+    {
+      "bytes": 16032,
+      "path": "artifacts/0002_test_transaction.py",
+      "sha256": "5afd540767a4a2ba14e6da6910dc5922509bd04659b3c21e5771f5ff4a7b1780",
+      "source": "docs/phase2/cho51_staged_recorder_v1/test_transaction.py"
+    },
+    {
+      "bytes": 19978,
+      "path": "artifacts/0003_transaction.py",
+      "sha256": "97712d58d1fb67de944ccb5767650f7c5e8a17d1beff44b497bbecef2f90d6ff",
+      "source": "docs/phase2/cho51_staged_recorder_v1/transaction.py"
+    },
+    {
+      "bytes": 14025,
+      "path": "artifacts/0004_closeout.py",
+      "sha256": "66acf9a80455e5ec398982761dc24a3239785950e9b52e7d0c72935707292716",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/closeout.py"
+    },
+    {
+      "bytes": 987,
+      "path": "artifacts/0005_dispatch_001.json",
+      "sha256": "6af158ab756690e66b3b36f85e59659d96ac71590e14f5b2b55119c2936b60c2",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/dispatch_001.json"
+    },
+    {
+      "bytes": 1106,
+      "path": "artifacts/0006_dispatch_result_001.json",
+      "sha256": "d0de431443e5a4ed6394c6bbefede0342719217df1017e598f4dd13c57ed61fb",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/dispatch_result_001.json"
+    },
+    {
+      "bytes": 4288,
+      "path": "artifacts/0007_launch.ps1",
+      "sha256": "dfbacb7883d3978d73891b242e18b8301ef8ba2d76ccdd42e6ea04a132471eec",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/launch.ps1"
+    },
+    {
+      "bytes": 2218,
+      "path": "artifacts/0008_observe.py",
+      "sha256": "ae5a8d859694c031c31a23c77cd71235a9f9f1169372e47f9d8e856e48ed6602",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/observe.py"
+    },
+    {
+      "bytes": 71749,
+      "path": "artifacts/0009_origin-contract.json",
+      "sha256": "66039e93f3aa79d65eed9fd3b8577cd6e5abee98c4ad0c421b638b8217ef9fc1",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/origin-contract.json"
+    },
+    {
+      "bytes": 14486,
+      "path": "artifacts/0010_origin.py",
+      "sha256": "5a56d1d19cb6a7d26fdaebf769d7ffbde84b5d687d25d733c212431cbc27ca43",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/origin.py"
+    },
+    {
+      "bytes": 10139,
+      "path": "artifacts/0011_parent.py",
+      "sha256": "b23f9e3e6f8993ebf6acde8eaba85e28675990d47561bf2daa93b36681bdc256",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/parent.py"
+    },
+    {
+      "bytes": 136655,
+      "path": "artifacts/0012_pins.json",
+      "sha256": "e2db93cf10a055660b9caf0bc15435bc5031dac3f8c389a2cd8c6f379d2dad27",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/pins.json"
+    },
+    {
+      "bytes": 936,
+      "path": "artifacts/0013_preflight_001.json",
+      "sha256": "267bd1c53337c785284bc8be653db03c2afbec514c1501b1821aea3bd33229c0",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/preflight_001.json"
+    },
+    {
+      "bytes": 936,
+      "path": "artifacts/0014_preflight_002.json",
+      "sha256": "4f88d6b2625730375609d85c0d1206078d2d543e495cb8315e7acbe9a7182fe0",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/preflight_002.json"
+    },
+    {
+      "bytes": 6564,
+      "path": "artifacts/0015_prepare.py",
+      "sha256": "75bf7ab9c2dcf23473fb15d332b24ecff74cfa6c662030ec8dc67cf5b0d23585",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/prepare.py"
+    },
+    {
+      "bytes": 27515,
+      "path": "artifacts/0016_runtime.py",
+      "sha256": "3d009881e45f39440bc7770768f5602f83641b3b3d984e7440e1381b645b00c7",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/runtime.py"
+    },
+    {
+      "bytes": 2774,
+      "path": "artifacts/0017_source-review.json",
+      "sha256": "7353ff00a4da6aa9c87421bd751ddc46df028bacce6a31bd6eefba0cd477f9d2",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/source-review.json"
+    },
+    {
+      "bytes": 6223,
+      "path": "artifacts/0018_junit.xml",
+      "sha256": "2fe9d1c527e24e9fd810d0d8acb922d26ea324bde0eb2515ae1d2e4b0e8f4461",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/validation_001/junit.xml"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/0019_pytest.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "runs/coordination/cho51_staged_recorder_20261015_v1/validation_001/pytest.log"
+    },
+    {
+      "bytes": 4483,
+      "path": "artifacts/0020_admission.json",
+      "sha256": "667deb325fd47009a074482fed47e70f11330dbd68c62cfefec880131a164acb",
+      "source": "runs/migration/20261015T140519Z_bcaedaf961/admission.json"
+    },
+    {
+      "bytes": 17,
+      "path": "artifacts/0021_command-result.json",
+      "sha256": "64a1526b099d75eed9d9da41a5562dcc164b6ffddeb729dd371c4496bbcded05",
+      "source": "runs/migration/20261015T140519Z_bcaedaf961/command-result.json"
+    },
+    {
+      "bytes": 1024,
+      "path": "artifacts/0022_command.log",
+      "sha256": "cb01df48918b43409a07dcec4aa36fe255c9a59388a8ef3a185cab5d13cb76fe",
+      "source": "runs/migration/20261015T140519Z_bcaedaf961/command.log"
+    },
+    {
+      "bytes": 161,
+      "path": "artifacts/0023_deadline.json",
+      "sha256": "c0ca3e6992581b006ca2e3c92b86a22732d24685fb3c96ba262aecb198887e82",
+      "source": "runs/migration/20261015T140519Z_bcaedaf961/deadline.json"
+    },
+    {
+      "bytes": 1835,
+      "path": "artifacts/0024_receipt.json",
+      "sha256": "faf982124c088c1690f531bee535cb837879d26a49583fc2a5e02612361eac16",
+      "source": "runs/migration/20261015T140519Z_bcaedaf961/receipt.json"
+    }
+  ],
+  "schema": "cho51_staged_recorder_preclaim_refusal_manifest_v1"
+}

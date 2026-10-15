@@ -1,0 +1,36 @@
+{
+  "actual_tensor_restoration_performed": false,
+  "canonical_tensor_verifier_unchanged": true,
+  "cuda_visible_devices": "",
+  "denied_operations": [
+    {
+      "classification": "blocked_optional_ipv6_import_probe",
+      "event": "socket.__new__",
+      "source_file": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\urllib3\\util\\connection.py",
+      "source_sha256": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74"
+    },
+    {
+      "detail": "WindowsPath('D:/Aenv/pro3/.venv/Lib/site-packages/mne/data/fsaverage/fsaverage-fiducials.fif')",
+      "event": "recording_or_processed_array_read"
+    }
+  ],
+  "elapsed_seconds": 5.938000000000102,
+  "environment_sha256": null,
+  "error": "PermissionError: Cho-51 tensor child denied: recording_or_processed_array_read",
+  "existing_directory_mkdir_refusals": 4,
+  "gpu_hidden": true,
+  "hostname_queries": 1,
+  "no_fitting_hooks_installed": true,
+  "peer_pause_paths": [
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+  ],
+  "read_only_git_queries": 0,
+  "request_sha256": "cc8cf66f3b7ff08df90d15cbee5b8c6b45765705ffa9dd816c792a9b7ef9df61",
+  "schema": "cho51_tensor_child_scope_v1",
+  "status": "failed",
+  "torch_interop_threads": 1,
+  "torch_threads": 1
+}

@@ -1,0 +1,13 @@
+# Committed full-cohort source-selection gradient-step ceiling.
+#
+# The proposed, still-unratified minimal two-candidate method template
+# requires exactly 5,253 total selection gradient steps per case over the
+# 52-subject Cho cohort: 2 candidates x 51 leave-one-source-out folds x
+# (50 source subjects x 1 step + 1 support step) plus the two final
+# all-source fits' share. The former hard-coded engineering value of 256
+# was sized for smoke fixtures and mathematically forbade any full-cohort
+# selection. This file pins the admitted maximum exactly at the declared
+# requirement; both source selectors and the selection-evidence binder
+# enforce it unchanged. Raising it further is an owner decision recorded
+# here, not in code.
+maximum_gradient_steps = 5253

@@ -1,0 +1,281 @@
+{
+  "scope": "270boundaries_and_fixture_passed_separate_tensor_child_refused_shared_cache_before_restore",
+  "artifacts": [
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/child.py",
+      "path": "docs/phase2/cho51_tensor_verification_v1/child.py",
+      "sha256": "09f3164bed1a57bd40d906b2b9020ec368219d1768a663482a62a3a10bb4d84b",
+      "bytes": 19253
+    },
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/contract.py",
+      "path": "docs/phase2/cho51_tensor_verification_v1/contract.py",
+      "sha256": "a8d056bdb19743e5f89442b8e0911aa1cc89fa9dd2193e5e1cc19b80de95f2f4",
+      "bytes": 12506
+    },
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/launcher.py",
+      "path": "docs/phase2/cho51_tensor_verification_v1/launcher.py",
+      "sha256": "13075e3a16fa949055d29ce5cddc68ceda0576c60d5398bce6d97e025e9ebfba",
+      "bytes": 22586
+    },
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/README.md",
+      "path": "docs/phase2/cho51_tensor_verification_v1/README.md",
+      "sha256": "553ebed2b90b6dc2e20098ec6a82ed28b6c20e773b5876f643935e930e4f7d2f",
+      "bytes": 1842
+    },
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/test_contract.py",
+      "path": "docs/phase2/cho51_tensor_verification_v1/test_contract.py",
+      "sha256": "d2583ce6393cebc212409b87837f0129de3f424a19a0c45df35d2c84688e8a34",
+      "bytes": 12265
+    },
+    {
+      "source": "docs/phase2/cho51_tensor_verification_v1/test_launcher.py",
+      "path": "docs/phase2/cho51_tensor_verification_v1/test_launcher.py",
+      "sha256": "7b83794c088b61df7e30fbd7ed72916a12e19f2bcb7d4ba601182117fe21e421",
+      "bytes": 26904
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch.ps1",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch.ps1",
+      "sha256": "2bb4d72f0fcf92e5ddab1ffcea58eaa86d657644ce466e526ddb592d7c01da59",
+      "bytes": 1130
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch_002.ps1",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch_002.ps1",
+      "sha256": "1e30520777d900eb3dc30b2986a3b10ee45a2c7902975562e47cef2a1b2e7040",
+      "bytes": 1138
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch_003.ps1",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/launch_003.ps1",
+      "sha256": "84fad01e4bed8b511587944f5a57703c0ed29c521914614e277ff0e6f5d5f80c",
+      "bytes": 1138
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/observation_001.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/observation_001.json",
+      "sha256": "d95c98151add2ceda724725d28132eac0ff6a04c6113ce1a0a45b5b43b226409",
+      "bytes": 935
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/observe.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/observe.py",
+      "sha256": "9ce861f72b5713db1513259f99ae0ae2a04515ff10e208a54d5e8b0dc003b495",
+      "bytes": 2312
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins.json",
+      "sha256": "7e75343b314b2a348a4a19d6f35ff6f19d4d316907940c27ba4de2505eef2ccd",
+      "bytes": 64555
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins_002.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins_002.json",
+      "sha256": "ded113df96542f3470bad085b1fe1771c59064eb033031b9479279f8cf4a74d2",
+      "bytes": 65286
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins_003.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/pins_003.json",
+      "sha256": "f274b33d6c0bbd4d8a3bb37978794eea3f9e2f9e50808260db28e7398c81178d",
+      "bytes": 65885
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare.py",
+      "sha256": "271c04620ed6f6e0b098a784d28fde894343f93dc28d53342d48a5ec5bc8b604",
+      "bytes": 3672
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_002.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_002.py",
+      "sha256": "efb1cee3ebcf44fe7db2cc63ce3f0557e8795f0d643f189abd6be7e2012ea5c7",
+      "bytes": 3680
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_003.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_003.py",
+      "sha256": "c6ba70963ed11f9a0e038429203a85fdd349e8c763e963c482e85daa87dfaacb",
+      "bytes": 3839
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_fixture.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_fixture.py",
+      "sha256": "a8f493d186abfb1b3917cee4e8a43f16839ac099e4f2e312bd5f51409354c04a",
+      "bytes": 5455
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_successor_002.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_successor_002.py",
+      "sha256": "e45a7344a740cf2947b9e1aaff8198c61212ee448952dd59ce28325f614a1a66",
+      "bytes": 899
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_successor_003.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_successor_003.py",
+      "sha256": "a4550c34fe1e03765504388ecd6d4426319898b62f6364b83c70ac19e53a5a72",
+      "bytes": 2076
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_validator.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/prepare_validator.py",
+      "sha256": "194980e835d451fc9a49eb7fed2049d9f5f575c563faa51a3c5d94f3f1cc09e9",
+      "bytes": 5586
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review.json",
+      "sha256": "f9dab5a8a95280292940d7d0bc8f390c9785c2e21a10a46b342952220cefce42",
+      "bytes": 1385
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review_002.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review_002.json",
+      "sha256": "8415a50950c7993b4d80a2c13a37450c94e2d61d89ca65ca9f2ee0bed0400a0f",
+      "bytes": 801
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review_003.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/source-review_003.json",
+      "sha256": "f38bab839aeae4e6b5827dcedf9e9dc7c8ec6c2d750e9ea65262d662edf5569c",
+      "bytes": 755
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate.py",
+      "sha256": "3d24f1623d218572b8c669f93ba67ac8bbd66fb5532c0d0ad04031f64496494f",
+      "bytes": 11809
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate_002.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate_002.py",
+      "sha256": "1df28d921903fc584365252d47e88e1a8afc5f6812d72bc1a4dec55114204eb8",
+      "bytes": 11809
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate_003.py",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validate_003.py",
+      "sha256": "62d0450b137b0a794e2142b340c96d8f35eb722ef116a25d524d454cb8e01933",
+      "bytes": 11800
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/qualification.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/qualification.json",
+      "sha256": "6e3f57d72cb76b6d267ed91b601c53cd96ad9fb00b4702b7a8decf35d2979e72",
+      "bytes": 678607
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/junit.xml",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/junit.xml",
+      "sha256": "a3945ab65c2e25c461fd1ae229097ed20d38faeb0ec37b999be5ae32811b5623",
+      "bytes": 46188
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/pytest.log",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/pytest.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/fixture-scope.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/validation_003/fixture-scope.json",
+      "sha256": "7e612e32f1e8a7102af0b96dfde97158c940b039ba322beecd7ebec8a92e3bb9",
+      "bytes": 1273
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/bundle.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/bundle.json",
+      "sha256": "fb0b210878c6be6f56b204d2f7664226379a82b864deb557cdb0e5ae5408b319",
+      "bytes": 60704
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/child-scope.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/child-scope.json",
+      "sha256": "d0d6a7dc3315382ea1d7c152e2f4adcb652a290e70a5fdeca499d6c8f31e2d20",
+      "bytes": 1782
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/input.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/input.json",
+      "sha256": "f7d958d9a9c0c528fb3b021ae6ad5fd7441f8eb25deaa4cdc12d4e3cedaf6d94",
+      "bytes": 3034
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/launch-reservation.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/launch-reservation.json",
+      "sha256": "91b91029a0d23cf33c531a3ca28e9767878730bf6f3414810452c2c813aa582c",
+      "bytes": 144
+    },
+    {
+      "source": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/launch-result.json",
+      "path": "runs/coordination/cho51_tensor_qualification_20261015_v1/case_003/launch-result.json",
+      "sha256": "40da35cf09807d51f5b7c7afc967b86386dddce78992af84ab64c9381f5dbfe9",
+      "bytes": 4142
+    },
+    {
+      "source": "runs/migration/20261015T091523Z_5edeeecfe1/admission.json",
+      "path": "runs/migration/20261015T091523Z_5edeeecfe1/admission.json",
+      "sha256": "770ddfebd78356a2b80dd969fcbbd0e2ce0da954dc94ff046d1edcaf468e7a28",
+      "bytes": 4489
+    },
+    {
+      "source": "runs/migration/20261015T091523Z_5edeeecfe1/command-result.json",
+      "path": "runs/migration/20261015T091523Z_5edeeecfe1/command-result.json",
+      "sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "bytes": 17
+    },
+    {
+      "source": "runs/migration/20261015T091523Z_5edeeecfe1/command.log",
+      "path": "runs/migration/20261015T091523Z_5edeeecfe1/command.log",
+      "sha256": "c3a30f434cf860443e054c1761412133f5cbe7bd80c0771332eb4089be17f997",
+      "bytes": 1614
+    },
+    {
+      "source": "runs/migration/20261015T091523Z_5edeeecfe1/deadline.json",
+      "path": "runs/migration/20261015T091523Z_5edeeecfe1/deadline.json",
+      "sha256": "0ba86a5e89aa9308f7ae904013092951ea404dc1193822c1fe7c590bd0b008c9",
+      "bytes": 161
+    },
+    {
+      "source": "runs/migration/20261015T091523Z_5edeeecfe1/receipt.json",
+      "path": "runs/migration/20261015T091523Z_5edeeecfe1/receipt.json",
+      "sha256": "5eb058d4c83a08c1826c216bba37c8c4ed8590cc6c5a566560c795daebdc8f5a",
+      "bytes": 1685
+    },
+    {
+      "source": "runs/migration/20261015T091617Z_18ad558985/admission.json",
+      "path": "runs/migration/20261015T091617Z_18ad558985/admission.json",
+      "sha256": "a5e26cd2319dfd716b035115a17e61fe0a9a088ab0a037e49fd4decfe3918d16",
+      "bytes": 4336
+    },
+    {
+      "source": "runs/migration/20261015T091617Z_18ad558985/command-result.json",
+      "path": "runs/migration/20261015T091617Z_18ad558985/command-result.json",
+      "sha256": "64a1526b099d75eed9d9da41a5562dcc164b6ffddeb729dd371c4496bbcded05",
+      "bytes": 17
+    },
+    {
+      "source": "runs/migration/20261015T091617Z_18ad558985/command.log",
+      "path": "runs/migration/20261015T091617Z_18ad558985/command.log",
+      "sha256": "272df3e91e5149bf192cc3b234cdcb21c5a738bb02e6353ba207ddfad072d288",
+      "bytes": 3651
+    },
+    {
+      "source": "runs/migration/20261015T091617Z_18ad558985/deadline.json",
+      "path": "runs/migration/20261015T091617Z_18ad558985/deadline.json",
+      "sha256": "12edaecd596327a3eb12e9334d908c882e10778f268be5415614daf663c863f3",
+      "bytes": 161
+    },
+    {
+      "source": "runs/migration/20261015T091617Z_18ad558985/receipt.json",
+      "path": "runs/migration/20261015T091617Z_18ad558985/receipt.json",
+      "sha256": "16d2c4bfd436cd96fbd95034e7ed485dd90cc1f74969eaf4d0078060f41ff0f3",
+      "bytes": 1834
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "artifacts": [
+    {
+      "bytes": 22454,
+      "path": "artifacts/0001_contract.py",
+      "sha256": "6903cb5e1d898e76bd2652329c34eeae2126cbc1bba854de57fa3808f2ea813f",
+      "source": "docs/phase2/cho51_linear_lineage_v1/contract.py"
+    },
+    {
+      "bytes": 31161,
+      "path": "artifacts/0002_probe.py",
+      "sha256": "c8335bf912589d00f866953e7b8ff1fa62c52db065ee5b0b5e65d6317033be19",
+      "source": "docs/phase2/cho51_linear_lineage_v1/probe.py"
+    },
+    {
+      "bytes": 5022,
+      "path": "artifacts/0003_README.md",
+      "sha256": "c2d8ba4d58425f2ee336c1e45424447cde38de7b8380cc9df690938b6d6c06ae",
+      "source": "docs/phase2/cho51_linear_lineage_v1/README.md"
+    },
+    {
+      "bytes": 17798,
+      "path": "artifacts/0004_test_contract.py",
+      "sha256": "cce60f79d3a4ef3ba10ff7cfb61e2ed96d4edfa5b47a0898d776fe74e89d58b4",
+      "source": "docs/phase2/cho51_linear_lineage_v1/test_contract.py"
+    },
+    {
+      "bytes": 4846,
+      "path": "artifacts/0005_child.py",
+      "sha256": "2d7aa4597e08ee2e25d1a9d4e326008c142c8de2cdc1174829c353b109d9aa9e",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/child.py"
+    },
+    {
+      "bytes": 17170,
+      "path": "artifacts/0006_closeout.py",
+      "sha256": "d35e9057b55e57d4d3c00c5715515bb9fce3a9f5f1c307f7482da721629a2dc3",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/closeout.py"
+    },
+    {
+      "bytes": 988,
+      "path": "artifacts/0007_dispatch_001.json",
+      "sha256": "7f75d15df22a4fd4238f89abbcbe72c6588a97b577dc9b0c506735afb269edf3",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/dispatch_001.json"
+    },
+    {
+      "bytes": 1107,
+      "path": "artifacts/0008_dispatch_result_001.json",
+      "sha256": "4087555622b2c0e307aa94717706ab60e9ab0149afbec65df0a96b565c0ac069",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/dispatch_result_001.json"
+    },
+    {
+      "bytes": 4063,
+      "path": "artifacts/0009_launch.ps1",
+      "sha256": "d27a6067ac1fd1f732ceb867004fca3d8cbdbc19c55544f7a49c84c106a41733",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/launch.ps1"
+    },
+    {
+      "bytes": 886,
+      "path": "artifacts/0010_method-config.json",
+      "sha256": "37b07825274a45d0703bba56387aa75c42e612d84066996d4a3a8bf44cdd42af",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/method-config.json"
+    },
+    {
+      "bytes": 2217,
+      "path": "artifacts/0011_observe.py",
+      "sha256": "ac9f5feb959f85868eb2c370976606b57728df52aa82c8f2a5a40f1fbaf787b9",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/observe.py"
+    },
+    {
+      "bytes": 142566,
+      "path": "artifacts/0012_pins.json",
+      "sha256": "6e5b533fc1bc0c56c2ca287cc7f8d81849a3587d4737d718d39cdec091a35650",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/pins.json"
+    },
+    {
+      "bytes": 935,
+      "path": "artifacts/0013_preflight_001.json",
+      "sha256": "18c2f1425fa1bbe8f1d646e9eedb29a0e23f4a95f97586693b98b4352a4f3580",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/preflight_001.json"
+    },
+    {
+      "bytes": 935,
+      "path": "artifacts/0014_preflight_002.json",
+      "sha256": "18edaa1bee7aae634fcef30e2892d00dbc9d507450b8ae7f5b02323a6e3f92e1",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/preflight_002.json"
+    },
+    {
+      "bytes": 8742,
+      "path": "artifacts/0015_prepare.py",
+      "sha256": "8b563f8a89cc3d22dfd1008f6996122122584b0b768cbd2ca51026da252e4314",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/prepare.py"
+    },
+    {
+      "bytes": 28899,
+      "path": "artifacts/0016_runtime.py",
+      "sha256": "1fedcba999a1157c08b4e070478c9664c221692eb03bb7ee0cda02796d642cad",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/runtime.py"
+    },
+    {
+      "bytes": 3156,
+      "path": "artifacts/0017_source-review.json",
+      "sha256": "0e86ea115a865ed719fce631eb62b352013f8981871ac7178fa9a632b9a76f8b",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/source-review.json"
+    },
+    {
+      "bytes": 5260,
+      "path": "artifacts/0018_junit.xml",
+      "sha256": "1e118c8f9241d7eaa1901d55edb52f4bc7d7d77e5540fa42dbaa74ce47f4c9ac",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/validation_001/junit.xml"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/0019_pytest.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/validation_001/pytest.log"
+    },
+    {
+      "bytes": 681393,
+      "path": "artifacts/0020_qualification.json",
+      "sha256": "bd4cc03c1e8c5e4e2bac422f8eb5567c6c94a73f485fede4202fe22d212fe157",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/validation_001/qualification.json"
+    },
+    {
+      "bytes": 9496,
+      "path": "artifacts/0021_result.json",
+      "sha256": "2cf63238dde40fc3b1e607e062c8871b830d0e50c384feeda17b34c49e1e8a9a",
+      "source": "runs/coordination/cho51_linear_lineage_20261015_v1/validation_001/result.json"
+    },
+    {
+      "bytes": 4465,
+      "path": "artifacts/0022_admission.json",
+      "sha256": "79046940e01defb93c4ecff71f0f10b16832e299d1c3d6f38c4ca694d06dbecd",
+      "source": "runs/migration/20261015T143319Z_0e097ec22e/admission.json"
+    },
+    {
+      "bytes": 17,
+      "path": "artifacts/0023_command-result.json",
+      "sha256": "64a1526b099d75eed9d9da41a5562dcc164b6ffddeb729dd371c4496bbcded05",
+      "source": "runs/migration/20261015T143319Z_0e097ec22e/command-result.json"
+    },
+    {
+      "bytes": 210,
+      "path": "artifacts/0024_command.log",
+      "sha256": "248a0b4b28ffd0ab27ca7a586cc439d05813d30e079ad3b999ef0fd21daeb2a6",
+      "source": "runs/migration/20261015T143319Z_0e097ec22e/command.log"
+    },
+    {
+      "bytes": 161,
+      "path": "artifacts/0025_deadline.json",
+      "sha256": "a33e84d90a8de49bd26e9d9bfcb06c7a38c8f2b07fc0abb8ae3f405ab6747cd6",
+      "source": "runs/migration/20261015T143319Z_0e097ec22e/deadline.json"
+    },
+    {
+      "bytes": 1832,
+      "path": "artifacts/0026_receipt.json",
+      "sha256": "528e2e76a0e03206e06e705054069e0c913990976653fa2eba747021984d6304",
+      "source": "runs/migration/20261015T143319Z_0e097ec22e/receipt.json"
+    }
+  ],
+  "schema": "cho51_linear_lineage_reporting_refusal_manifest_v1"
+}

@@ -1,0 +1,4 @@
+D:\Aenv\pro3\runs\migration\20261015T111031Z_a7efd07604
+PASS
+{"passed": true, "method": "eegnet", "actual_gradient_updates": 8, "scientific_admission": false}
+

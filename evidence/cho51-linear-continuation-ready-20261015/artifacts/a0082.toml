@@ -1,0 +1,38 @@
+[project]
+name = "thinking-interfaces"
+phase = 1
+seed = 20260830
+
+[storage]
+data_root = "data"
+runs_root = "runs"
+checkpoints_root = "checkpoints"
+minimum_free_gb = 20
+
+[hardware]
+minimum_gpu_vram_mib = 8192
+
+[evaluation]
+fold_strategy = "leave-one-subject-out"
+seeds = [11, 23, 37, 53, 71]
+confidence_level = 0.95
+report_class_balance = true
+
+[preprocessing.profile_a]
+bandpass_low_hz = 8.0
+bandpass_high_hz = 30.0
+resample_hz = 128.0
+reference = "common_average"
+epoch_duration_s = 4.0
+pre_cue_s = 1.0
+
+[preprocessing.profile_b]
+bandpass_low_hz = 0.1
+bandpass_high_hz = 75.0
+notch_hz = 50.0
+resample_hz = 200.0
+reference = "original"
+epoch_duration_s = 4.0
+amplitude_unit_mv = 0.1
+patch_duration_s = 1.0
+maximum_patches = 256

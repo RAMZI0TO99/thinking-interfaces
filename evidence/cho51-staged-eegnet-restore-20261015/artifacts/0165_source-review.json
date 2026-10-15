@@ -1,0 +1,34 @@
+{
+  "engineering_successes": 0,
+  "files": {
+    "docs/phase2/cho51_staged_restore_v1/README.md": "acf0737b7281a668054e5952368ba8a253a4bea95baa65dda29c3c850539aef4",
+    "docs/phase2/cho51_staged_restore_v1/restore.py": "1328ee9bcbf90d2d7949ebe1a478d6e4892055aa07abc12d52ed2b822d9a0313",
+    "runs/coordination/cho51_staged_restore_20261015_v1/closeout.py": "9ca84dfcf59af5149ef6617a7de974260a7737afee7cf8518a9377a065de7147",
+    "runs/coordination/cho51_staged_restore_20261015_v1/launch.ps1": "8a08b55f7007ce4508ea5f9775878ba1d2f420d48d3e0e74bc7c32189cbd2f7b",
+    "runs/coordination/cho51_staged_restore_20261015_v1/metadata.py": "b6aa21ab7d56724c04c5c96d60259b5aed9f1174ca0c05ae82479716bfbf36df",
+    "runs/coordination/cho51_staged_restore_20261015_v1/observe.py": "ecf31fadd9af60d84cd0a9d797a662b2217d21a267c2bdad538bdaeb50a3d294",
+    "runs/coordination/cho51_staged_restore_20261015_v1/prepare.py": "a59b0b61ff4d9dc4f2a044c57cec99b53f0a6d8304b257f82f1201f121c6035f",
+    "runs/coordination/cho51_staged_restore_20261015_v1/runtime.py": "b1b4663182ce5d83b93a8a4061c871f1f85eb1284b2d047313753a8d3ffe1065",
+    "runs/coordination/cho51_staged_restore_20261015_v1/verify_child.py": "848f11e533e1ed696641dbeda0a7b6214bfb253f5eca0b3d753fe3618ea8be7a"
+  },
+  "measured_cells": 0,
+  "original_case_attempts_remaining": 0,
+  "parent_transaction_qualified": false,
+  "powershell_parse_passed": true,
+  "python_ast_parses": 7,
+  "remaining_actionable_findings": [],
+  "review_scope": [
+    "All nine candidate and operational files read; no tests, model imports, numerical execution or launch performed.",
+    "AST comparison of copied verify_publication confirms only required detached_output keyword and output assignment differ from frozen candidate v2.",
+    "Historical source request, claim, source qualification/result, pins, accepted native receipt, inputs, publication and failed recorder remain immutable.",
+    "Fresh stage contract, pins, source review, output and native command remain distinct from origin provenance.",
+    "Runtime permits detached-only owned writes and exact public restore stacks; fitting, checkpoint pickle loads, source replay and recorder success are excluded.",
+    "Closeout requires both actual one-MiB public restore delegations, two canonical safetensors loads and two state loads, complete tensor/history proof, zero current gradients and unchanged failed origin ledger."
+  ],
+  "reviewed_utc": "2026-10-15T13:40:27.721555+00:00",
+  "runtime_verified": false,
+  "schema": "cho51_staged_eegnet_restore_source_review_v1",
+  "scientific_admission": false,
+  "source_only": true,
+  "source_training_replayed": false
+}

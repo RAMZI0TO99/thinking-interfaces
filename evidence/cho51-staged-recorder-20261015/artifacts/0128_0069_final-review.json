@@ -1,0 +1,246 @@
+{
+  "actual_gradient_updates": 5253,
+  "boundary_tests_passed": 33,
+  "bounded_restore_delegations_executed": 0,
+  "bounded_store_runtime_verified": false,
+  "candidate_or_canonical_source_edited_by_reviewer": false,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "caps_or_floors_lowered": false,
+  "claim_file_sha256": "d8ae3fdddf6c6247b1c51fdc673cf943101fb7dc7a63fa79fca657d450c08a06",
+  "claims": 1,
+  "detached_qualification_accepted": false,
+  "documentation_files": {
+    "AGENT_COORDINATION.md": {
+      "bytes": 196036,
+      "sha256": "c58d86942df061d71a51d3b27d32abccd701dad9ca082b72e9df24bd5c0b3ad7"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 19823,
+      "sha256": "a084b04e41c72318a8c289456915ac2cab8ee4a0dd708c1587bc3486733aaaee"
+    },
+    "HANDOFF.md": {
+      "bytes": 283788,
+      "sha256": "bdf9cf6312697edb6c6a1384bf45e16b315b4509122d41a7d9eb2434a6f90fe5"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 124231,
+      "sha256": "3e67d145b338bb7e5d179b4bc2f8dc2ad3d29a8345e0e6aa3b03d3b88606e31f"
+    },
+    "README.md": {
+      "bytes": 80567,
+      "sha256": "6c7c5a7b5e425cbf62f1fd8e7cebb6e514b3957c21990c50eedc5dadc4bf48a3"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 14307,
+      "sha256": "0c01ee182b34a1ca515577eecc791d43d1cbedfe372bd310039841064294d4e4"
+    },
+    "docs/phase2/cho51_complete_eegnet_qualification_20261015.md": {
+      "bytes": 9746,
+      "sha256": "93c3d60cff6b953bd40f10ca6760f22b9c1c87c661db645f2b680da02af18a7d"
+    }
+  },
+  "engineering_completion": false,
+  "engineering_successes": 0,
+  "final_source_subjects": 51,
+  "full_worker_verified": false,
+  "gpu_hidden": true,
+  "inner_folds": 102,
+  "linked_failures": 1,
+  "loaded_source_module_files_rechecked": 4719,
+  "measured_cells": 0,
+  "native_jobs": [
+    {
+      "accepted": false,
+      "admission_sha256": "a5a92d696903d9042c855a4a79234d35242f59ffadf8c1e5e7bf75e5ef8df489",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 6144,
+      "job_name": "pro3_migration_20261015T124552Z_4ab1a7c6a6",
+      "native_directory": "runs/migration/20261015T124552Z_4ab1a7c6a6",
+      "peak_job_bytes": 1204432896,
+      "peak_process_bytes": 1174675456,
+      "process_mib": 4096,
+      "receipt_sha256": "530c7cb6a7c339b418f232980de92cca6a6b69e26e99f1998d55d4cd0bb5f27f",
+      "seconds": 600
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "f7521da328951311532192a209871431999c2c537222de378c72a2b29d9efc0f",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 6144,
+      "job_name": "pro3_migration_20261015T125205Z_c4bffd878a",
+      "native_directory": "runs/migration/20261015T125205Z_c4bffd878a",
+      "peak_job_bytes": 2978291712,
+      "peak_process_bytes": 1724243968,
+      "process_mib": 4096,
+      "receipt_sha256": "19c75b43fa8d692f69d4136a1c7700e3715aa68aa89d583a9546df6e8e825ff1",
+      "seconds": 600
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "07661a2c13b9d90cd42ff2b10887218607d3b9c74c07025e75765f4a0d8d8485",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 4096,
+      "job_name": "pro3_migration_20261015T125235Z_ad2d9d9c6f",
+      "native_directory": "runs/migration/20261015T125235Z_ad2d9d9c6f",
+      "peak_job_bytes": 1755648000,
+      "peak_process_bytes": 1724243968,
+      "process_mib": 3072,
+      "receipt_sha256": "b9f7d89c9acc413229697fbb1eef3605976a6b978fd3ead938cad6851e73591c",
+      "seconds": 420
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "5e56014bd007749836bc87b4f51114299a2915c5a61148a30e8cfd32e14fb6df",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 6144,
+      "job_name": "pro3_migration_20261015T130307Z_6a387bb981",
+      "native_directory": "runs/migration/20261015T130307Z_6a387bb981",
+      "peak_job_bytes": 2954350592,
+      "peak_process_bytes": 1701519360,
+      "process_mib": 4096,
+      "receipt_sha256": "fa152f26134c74deacc5d4d69102334358b7b0066f8c03e767bbd717979f57c7",
+      "seconds": 600
+    },
+    {
+      "accepted": true,
+      "admission_sha256": "ffcbd279a87ce16195ccf2bc56d41809cc5806c6142d37e51760aba14249ac70",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 0,
+      "job_mib": 4096,
+      "job_name": "pro3_migration_20261015T130336Z_b7198c366e",
+      "native_directory": "runs/migration/20261015T130336Z_b7198c366e",
+      "peak_job_bytes": 1731489792,
+      "peak_process_bytes": 1701519360,
+      "process_mib": 3072,
+      "receipt_sha256": "99ca348fef94937cf82972cf024fcaa448c264aedab610d0f0472df28cdc5bea",
+      "seconds": 420
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "59a4f6fb0444bf21e733e911e20bea3b6e4ac5f65b708277cfc81385ec638fbf",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 3072,
+      "job_name": "pro3_migration_20261015T130635Z_f5bb2b02b2",
+      "native_directory": "runs/migration/20261015T130635Z_f5bb2b02b2",
+      "peak_job_bytes": 1376825344,
+      "peak_process_bytes": 1346727936,
+      "process_mib": 2048,
+      "receipt_sha256": "568eab03a787412499ff6e2c8c6566558df12cd969ee1d0dbd870b788a6bfd86",
+      "seconds": 90
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "ef122e8045b5241a00b20a19fc4506d6704d3881d383c26ddf5d67a52bbe43da",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 6144,
+      "job_name": "pro3_migration_20261015T131826Z_7d29560b93",
+      "native_directory": "runs/migration/20261015T131826Z_7d29560b93",
+      "peak_job_bytes": 2955096064,
+      "peak_process_bytes": 1691910144,
+      "process_mib": 4096,
+      "receipt_sha256": "28d4697a5219a06c1546b392ded8de241a21fcf94a067a8dd537160cbd98fdb0",
+      "seconds": 600
+    },
+    {
+      "accepted": true,
+      "admission_sha256": "6e2ccf3f7d66e91afabf7cd67c556df12b7a1a2c812a651776674cc178418417",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 0,
+      "job_mib": 4096,
+      "job_name": "pro3_migration_20261015T131859Z_0795c61e69",
+      "native_directory": "runs/migration/20261015T131859Z_0795c61e69",
+      "peak_job_bytes": 1725968384,
+      "peak_process_bytes": 1691910144,
+      "process_mib": 3072,
+      "receipt_sha256": "1e627595f2ea34bd1c1e9df46cf1085d9684dbbf00650ce061bb1230598995cf",
+      "seconds": 420
+    },
+    {
+      "accepted": false,
+      "admission_sha256": "64ee3ba39843bf284b64da5fa52288df91d6d4eaa708c53722aef16d06b6dadc",
+      "closed_empty_freshly_absent": true,
+      "exit_code": 1,
+      "job_mib": 3072,
+      "job_name": "pro3_migration_20261015T132158Z_6da3b33f16",
+      "native_directory": "runs/migration/20261015T132158Z_6da3b33f16",
+      "peak_job_bytes": 1351593984,
+      "peak_process_bytes": 1321295872,
+      "process_mib": 2048,
+      "receipt_sha256": "8568168c6365c840e335bf44f0f6c4b2e1bb72082a1c302f8b90422db91a7ff4",
+      "seconds": 90
+    }
+  ],
+  "native_jobs_freshly_absent": 9,
+  "new_launch_or_watcher_created": false,
+  "numerical_imports_or_execution_by_reviewer": false,
+  "original_case_attempts_remaining": 0,
+  "physical_input_bytes_rechecked": 734579463,
+  "physical_input_files_rechecked": 213,
+  "pins_path": "runs/coordination/cho51_complete_eegnet_20261015_v4/pins.json",
+  "pins_sha256": "a7a0dc3a554b9351d16070ee3ad12162fc69404c4dc08cccab4c7bf25e19dac8",
+  "preserved_packets": [
+    {
+      "artifacts_rechecked": 24,
+      "manifest_sha256": "93e0e05617bfaf9e464d7d563cde208b70dc07f0683536fa4e9ae0690632b0f6",
+      "path": "evidence/cho51-complete-eegnet-refusal-20261015",
+      "summary_sha256": "4f6b3dd2908ef031334e76aa48df7969e41161b4fa7d04d7a92885c78101406f"
+    },
+    {
+      "artifacts_rechecked": 38,
+      "manifest_sha256": "304ac336788aea11a424486a1f43aebdd95b3bff133937d47eb8f9496e840fed",
+      "path": "evidence/cho51-complete-eegnet-publication-refusal-20261015",
+      "summary_sha256": "d4ad8b552a980e1851cb2ad42d4002a570a99a1716d87532686fabe07fa608b8"
+    },
+    {
+      "artifacts_rechecked": 51,
+      "manifest_sha256": "054b20b5d82db96e483ac0c7525c66316ebeab79c162ef6e1cc4c61fa0f88933",
+      "path": "evidence/cho51-complete-eegnet-restore-refusal-20261015",
+      "summary_sha256": "8067dcbe63ebdc206d62f2a207d7d23a49a204421d6e1a2c475fda6ab4a187c3"
+    },
+    {
+      "artifacts_rechecked": 53,
+      "manifest_sha256": "a9a469b47604e18f64df4b7c118ef624d05d86b2448c1f671cfb2e7545cdf81f",
+      "path": "evidence/cho51-complete-eegnet-resource-refusal-20261015",
+      "summary_sha256": "6881ff8496b3bee836ab69438537cfa7c6312205707027acd2004887b03b4cdc"
+    }
+  ],
+  "protected_outer_target_reads": 0,
+  "publication_accepted": true,
+  "publication_manifest_sha256": "c150df9c3f3ab12cdf320aae2cb179d2f7254d81e407d059b906d6888a9632ad",
+  "qualification_accepted": false,
+  "reason": "canonical_six_gib_host_ram_gate_refused_after_native_startup_admission",
+  "remaining_actionable_findings": [],
+  "request_file_sha256": "6eda5df56d046433d52022125b3278ffb8dc6df675750c9776afcf56c392c377",
+  "review_passed": true,
+  "review_scope": "read_only_evidence_and_document_consistency",
+  "reviewed_utc": "2026-10-15T13:30:56.408550+00:00",
+  "runtime_files_rechecked": 5,
+  "schema": "cho51_complete_eegnet_final_metadata_review_v1",
+  "scientific_admission": false,
+  "selected_candidate": "lr_1e-3",
+  "selected_state_sha256": "5fb284cea9c1e61dccfbdd96d4d92024973e30641d0ee078ed0be8cd930ddc5b",
+  "selected_weights_bytes": 12664,
+  "selected_weights_sha256": "835681c4b38576e2560f836c562e425c5c2505a13a3252cb396edaf6cd9e585d",
+  "selection_evidence_sha256": "c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a",
+  "source_files_rechecked": 635,
+  "source_qualification_accepted": true,
+  "source_qualification_file_sha256": "23a09120f3ebf8b023abeeea061b286d573a09f82d87944d85115ef84b0b58ba",
+  "source_qualification_path": "runs/coordination/cho51_complete_eegnet_20261015_v4/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/source_output/qualification.json",
+  "source_result_file_sha256": "70d312870f7d757e00b9743b31b69780ac7b45bfa8ffae26a4a91603dff505cf",
+  "source_runtime_module_drift": 0,
+  "source_selection_completed": true,
+  "source_subjects_available": 52,
+  "source_updates": 5151,
+  "support_updates": 102,
+  "tests_replayed_by_reviewer": false,
+  "torch_interop_threads": 1,
+  "torch_threads": 1,
+  "unexpected_denials": 0
+}

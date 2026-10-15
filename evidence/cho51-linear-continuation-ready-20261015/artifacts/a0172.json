@@ -1,0 +1,26 @@
+{
+  "schema": "cho51_linear_lineage_dispatch_result_v1",
+  "observed_utc": "2026-10-15T14:41:38.4909099Z",
+  "pins_sha256": "9d5c2da133dc1119304fe1e2219fef3d292d277fd4287bcceb019451f8cc30ca",
+  "actual_gradient_updates": 102,
+  "pretrained_baseline_loaded": true,
+  "cohort_lineage_verified": false,
+  "full_selector_verified": false,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T144029Z_cd0a5f5142",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_lineage_20261015_v2\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_lineage_20261015_v2\\pins.json",
+    "--expect-pins",
+    "9d5c2da133dc1119304fe1e2219fef3d292d277fd4287bcceb019451f8cc30ca",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_lineage_20261015_v2\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_lineage_20261015_v2\\validation_001",
+  "scientific_admission": false
+}

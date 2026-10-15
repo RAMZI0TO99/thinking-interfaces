@@ -1,0 +1,33 @@
+{
+  "archived_artifacts_rechecked": 24,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "fresh_job_absence": {
+    "20261015T082116Z_c458b93347": {
+      "absent": true,
+      "accepted": false,
+      "job_was_created": false
+    },
+    "20261015T082242Z_2ef303909f": {
+      "absent": true,
+      "accepted": true,
+      "job_was_created": true
+    }
+  },
+  "independently_reviewed_files_rechecked": 10,
+  "observed_utc": "2026-10-15T08:25:49.199100+00:00",
+  "runtime_pins_rechecked": 4,
+  "schema": "cho51_publication_final_metadata_review_v1",
+  "scientific_admission": false,
+  "selected_tensors_verified": false,
+  "source_pins_rechecked": 502,
+  "status_document_hashes": {
+    "AGENT_COORDINATION.md": "cda54f97eeed26af48344476e0bcff5a95710bc9eb0d730c6688e480b89dea38",
+    "CONTINUE_HERE.md": "01f8b68a01e2225e097a9580d258dfd657f773c88ef24524a2d8c1e146ebdcec",
+    "HANDOFF.md": "7f650917db30e3e64e0de77e04a89c9c6607a41f9b3f05c25207e4e55c8dcf19",
+    "PHASE2_START_HERE.md": "38db4d0bb98c7545c930770b1239cd013616d4a87b16f2ee31839c1fbd781607",
+    "README.md": "23d2788bca1da0ba3d5e6e99a4a90d6160c6ce002cc277ed259b8276a0a8f9a5",
+    "WINDOWS_SETUP.md": "668e631ff036be6a173053641f69190d61828311b9596d8d750456af08729ac5",
+    "docs/phase2/cho51_publication_preparation_20261015.md": "3529e0f3895283be7e7bd568122acc69d75f9c628e33c88f4ff9fa834c6d13c3"
+  },
+  "tests_rerun": false
+}

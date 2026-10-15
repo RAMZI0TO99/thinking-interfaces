@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="28" skipped="0" tests="43" time="5.319" timestamp="2026-10-15T10:34:45.048141+03:00" hostname="Ala-Yanai-PC"><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_accepts_exact_committed_file_with_independent_pin" time="0.014" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = true\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 0\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = -1\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 5254\n]" time="0.007" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 5253.0\n]" time="0.007" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 256\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 5253\nextra = 1\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[other = 5253\n]" time="0.007" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[maximum_gradient_steps = 5253\nmaximum_gradient_steps = 5253\n]" time="0.008" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_bad_value_shape_and_duplicate_key_even_when_repinned[]" time="0.009" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_witness_refuses_missing_changed_or_replaced_file[missing]" time="0.007" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_witness_refuses_missing_changed_or_replaced_file[bytes]" time="0.011" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_witness_refuses_missing_changed_or_replaced_file[replacement]" time="0.011" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_policy_refuses_hardlink_alias_and_oversize" time="0.010" /><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_each_method_binds_5253_without_mutating_contract[labram_linear]" time="1.239"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-dc20edebd4634605ad09b2d1834b3116\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+method = 'labram_linear'
+
+    @pytest.mark.parametrize("method", SELECTED_METHODS)
+    def test_each_method_binds_5253_without_mutating_contract(context, method):
+        pin = next(pin for pin in context.pins if pin.plan.method == method)
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-dc20edebd4634605ad09b2d1834b3116/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-dc20edebd4634605ad09b2d1834b3116\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_each_method_binds_5253_without_mutating_contract[labram_lora]" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-62c7b824c6494c4e9c3cf454f525b16e\\selection\\22e75092f429b22f1b72dcd5b1ad03f61970e5b8094078b9432718fef75e8d7d.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+method = 'labram_lora'
+
+    @pytest.mark.parametrize("method", SELECTED_METHODS)
+    def test_each_method_binds_5253_without_mutating_contract(context, method):
+        pin = next(pin for pin in context.pins if pin.plan.method == method)
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-62c7b824c6494c4e9c3cf454f525b16e/selection/22e75092f429b22f1b72dcd5b1ad03f61970e5b8094078b9432718fef75e8d7d.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-62c7b824c6494c4e9c3cf454f525b16e\\selection\\22e75092f429b22f1b72dcd5b1ad03f61970e5b8094078b9432718fef75e8d7d.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_each_method_binds_5253_without_mutating_contract[labram_full]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-5c216fd97eb447a8b27b92986862ab6a\\selection\\8722012c6bf13b5e6c74ae437787cff83bcadbda1656d4d37e5fcba63b2019d8.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+method = 'labram_full'
+
+    @pytest.mark.parametrize("method", SELECTED_METHODS)
+    def test_each_method_binds_5253_without_mutating_contract(context, method):
+        pin = next(pin for pin in context.pins if pin.plan.method == method)
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-5c216fd97eb447a8b27b92986862ab6a/selection/8722012c6bf13b5e6c74ae437787cff83bcadbda1656d4d37e5fcba63b2019d8.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-5c216fd97eb447a8b27b92986862ab6a\\selection\\8722012c6bf13b5e6c74ae437787cff83bcadbda1656d4d37e5fcba63b2019d8.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_each_method_binds_5253_without_mutating_contract[eegnet]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-922819aedafc48b692c4266f324eb064\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+method = 'eegnet'
+
+    @pytest.mark.parametrize("method", SELECTED_METHODS)
+    def test_each_method_binds_5253_without_mutating_contract(context, method):
+        pin = next(pin for pin in context.pins if pin.plan.method == method)
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-922819aedafc48b692c4266f324eb064/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-922819aedafc48b692c4266f324eb064\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_factored_file_preserves_physical_and_logical_binding" time="0.808"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-store-6ef139e0a0f54af7b9254e295a24610c\\evidence\\4b31e607e2b9707d8ac9b12a2726a45af33892bca458d724e1b6dc0e0f753200.factored.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+
+    def test_factored_file_preserves_physical_and_logical_binding(context):
+        pin = next(pin for pin in context.pins if pin.plan.method == "eegnet")
+&gt;       case = _publish(context, (pin,), factored=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:300: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:251: in _publish
+    evidence_path.write_bytes(raw)
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...139e0a0f54af7b9254e295a24610c/evidence/4b31e607e2b9707d8ac9b12a2726a45af33892bca458d724e1b6dc0e0f753200.factored.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-store-6ef139e0a0f54af7b9254e295a24610c\\evidence\\4b31e607e2b9707d8ac9b12a2726a45af33892bca458d724e1b6dc0e0f753200.factored.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_static_contract_uses_pinned_ceiling_across_the_old256_boundary[1]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ca6a00a652784299a2655bad3e2f2e09\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 1
+
+    @pytest.mark.parametrize("maximum", [1, 256, 257, 5252])
+    def test_static_contract_uses_pinned_ceiling_across_the_old256_boundary(context, maximum):
+        pin = next(pin for pin in context.pins if pin.plan.method == "eegnet")
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-ca6a00a652784299a2655bad3e2f2e09/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ca6a00a652784299a2655bad3e2f2e09\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_static_contract_uses_pinned_ceiling_across_the_old256_boundary[256]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c452e42cb5224ad8a300a95fb9344ed6\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 256
+
+    @pytest.mark.parametrize("maximum", [1, 256, 257, 5252])
+    def test_static_contract_uses_pinned_ceiling_across_the_old256_boundary(context, maximum):
+        pin = next(pin for pin in context.pins if pin.plan.method == "eegnet")
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-c452e42cb5224ad8a300a95fb9344ed6/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c452e42cb5224ad8a300a95fb9344ed6\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_static_contract_uses_pinned_ceiling_across_the_old256_boundary[257]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-2cca489aea4e4b73b722f20f7b4716a5\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 257
+
+    @pytest.mark.parametrize("maximum", [1, 256, 257, 5252])
+    def test_static_contract_uses_pinned_ceiling_across_the_old256_boundary(context, maximum):
+        pin = next(pin for pin in context.pins if pin.plan.method == "eegnet")
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-2cca489aea4e4b73b722f20f7b4716a5/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-2cca489aea4e4b73b722f20f7b4716a5\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_static_contract_uses_pinned_ceiling_across_the_old256_boundary[5252]" time="0.012"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-7fccdf996dd24e62a52b0ff748b26df4\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 5252
+
+    @pytest.mark.parametrize("maximum", [1, 256, 257, 5252])
+    def test_static_contract_uses_pinned_ceiling_across_the_old256_boundary(context, maximum):
+        pin = next(pin for pin in context.pins if pin.plan.method == "eegnet")
+&gt;       case = _publish(context, (pin,))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-7fccdf996dd24e62a52b0ff748b26df4/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-7fccdf996dd24e62a52b0ff748b26df4\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[True]" time="0.012"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-9d68bee195894046b63afc47ea6095f2\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = True
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-9d68bee195894046b63afc47ea6095f2/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-9d68bee195894046b63afc47ea6095f2\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[False]" time="0.012"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ed3276c0723f417cbc62f2967e2cc462\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = False
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-ed3276c0723f417cbc62f2967e2cc462/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ed3276c0723f417cbc62f2967e2cc462\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[0]" time="0.012"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-33c88b65d70d4be7a9b7104c31c43a31\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 0
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-33c88b65d70d4be7a9b7104c31c43a31/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-33c88b65d70d4be7a9b7104c31c43a31\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[-1]" time="0.012"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-93f323d92a514a22b968f12045ceb77c\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = -1
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-93f323d92a514a22b968f12045ceb77c/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-93f323d92a514a22b968f12045ceb77c\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[5254]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-7038b56ebe954466a62b438c0cee3f87\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 5254
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-7038b56ebe954466a62b438c0cee3f87/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-7038b56ebe954466a62b438c0cee3f87\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_contract_step_policy_refused[5253.0]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-05f6ce397b89413aa3df04b249c0bab1\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+maximum = 5253.0
+
+    @pytest.mark.parametrize("maximum", [True, False, 0, -1, 5254, 5253.0])
+    def test_repinned_contract_step_policy_refused(context, maximum):
+&gt;       case = _publish(context, (next(pin for pin in context.pins if pin.plan.method == "eegnet"),))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:320: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-05f6ce397b89413aa3df04b249c0bab1/selection/8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-05f6ce397b89413aa3df04b249c0bab1\\selection\\8f6a0bc67fb81e16ccd9a4d2c4f7fd5ac089cfd12f0d98e516bcc689a0e70956.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_candidate_mutation_refused_by_independent_method_digest" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-9fb28c74e51e474693c802bc6bc26bae\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+
+    def test_repinned_candidate_mutation_refused_by_independent_method_digest(context):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:330: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-9fb28c74e51e474693c802bc6bc26bae/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-9fb28c74e51e474693c802bc6bc26bae\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_path_escape_refused[runs/phase2/../outside.json]" time="0.016"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-5653040d5fbb456ca6a8fd82a0433029\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+bad_path = 'runs/phase2/../outside.json'
+
+    @pytest.mark.parametrize("bad_path", ["runs/phase2/../outside.json", "C:/outside.json", "runs\\phase2\\outside.json"])
+    def test_repinned_path_escape_refused(context, bad_path):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:341: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-5653040d5fbb456ca6a8fd82a0433029/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-5653040d5fbb456ca6a8fd82a0433029\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_path_escape_refused[C:/outside.json]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ca0f46e8245e49a89f19892631c71d66\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+bad_path = 'C:/outside.json'
+
+    @pytest.mark.parametrize("bad_path", ["runs/phase2/../outside.json", "C:/outside.json", "runs\\phase2\\outside.json"])
+    def test_repinned_path_escape_refused(context, bad_path):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:341: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-ca0f46e8245e49a89f19892631c71d66/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ca0f46e8245e49a89f19892631c71d66\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_repinned_path_escape_refused[runs\\phase2\\outside.json]" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-928d6282b12f43b882b2e78f8722efb3\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+bad_path = 'runs\\phase2\\outside.json'
+
+    @pytest.mark.parametrize("bad_path", ["runs/phase2/../outside.json", "C:/outside.json", "runs\\phase2\\outside.json"])
+    def test_repinned_path_escape_refused(context, bad_path):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:341: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-928d6282b12f43b882b2e78f8722efb3/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-928d6282b12f43b882b2e78f8722efb3\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_selection_witness_refuses_evidence_change" time="0.017"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ae9c04067730417c90a67ef04b00b952\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+
+    def test_selection_witness_refuses_evidence_change(context):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:353: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-ae9c04067730417c90a67ef04b00b952/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-ae9c04067730417c90a67ef04b00b952\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_complete_fabricated_roster_retains52_sources_and_exact51_targets" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c63a692322444e468f5e1debd8e8d639\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+
+    def test_public_complete_fabricated_roster_retains52_sources_and_exact51_targets(context):
+&gt;       case = _publish(context, context.pins)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:373: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-c63a692322444e468f5e1debd8e8d639/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c63a692322444e468f5e1debd8e8d639\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[missing]" time="0.013"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-85184f3aaf384340b22756a0b9b6442d\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000022761388080&gt;
+change = 'missing'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-85184f3aaf384340b22756a0b9b6442d/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-85184f3aaf384340b22756a0b9b6442d\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[duplicate]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-83320888b3494a69856f5f31fe9db4ee\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000022761389FA0&gt;
+change = 'duplicate'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-83320888b3494a69856f5f31fe9db4ee/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-83320888b3494a69856f5f31fe9db4ee\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[source01]" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-f57f6f9c41444149b93dcdfa60589646\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000022761388710&gt;
+change = 'source01'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-f57f6f9c41444149b93dcdfa60589646/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-f57f6f9c41444149b93dcdfa60589646\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[legacy_route]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-6ac1b54861f2408c94697880d4b44745\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002276152CEC0&gt;
+change = 'legacy_route'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-6ac1b54861f2408c94697880d4b44745/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-6ac1b54861f2408c94697880d4b44745\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[source]" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-312c2ac806ac4187b38a1a6ffe9ca5f8\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x00000227615B1190&gt;
+change = 'source'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-312c2ac806ac4187b38a1a6ffe9ca5f8/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-312c2ac806ac4187b38a1a6ffe9ca5f8\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[method]" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c2b794b09c9c419590a53fa43eeab332\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x00000227615B13A0&gt;
+change = 'method'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-c2b794b09c9c419590a53fa43eeab332/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-c2b794b09c9c419590a53fa43eeab332\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="docs.phase2.cho51_selection_files_v1.test_selection_files_002" name="test_public_bad_scope_or_independent_pins_refused_before_selection_reads[missing_source_catalog]" time="0.015"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-8b21ae61d63c41a3967fe9e640c263d5\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'">context = namespace(root=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/py...8ffb7616deb1c239b7bbfc41b6ac8e466548', protocol_sha='1028ac23554bee659189485a771758f1a53e32dfec6ac6ae34090a549208ffd6')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002276152C290&gt;
+change = 'missing_source_catalog'
+
+    @pytest.mark.parametrize("change", ["missing", "duplicate", "source01", "legacy_route", "source", "method", "missing_source_catalog"])
+    def test_public_bad_scope_or_independent_pins_refused_before_selection_reads(context, monkeypatch, change):
+&gt;       case = _publish(context, (context.pins[0],))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:254: in _publish
+    _write(evidence_path, evidence)
+docs\phase2\cho51_selection_files_v1\test_selection_files_002.py:54: in _write
+    path.write_bytes((canonical_config_json(value) + "\n").encode())
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1036: in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_selection_qualification_20261015_v1/validation_002/pytest-temp/fabri...ated-8b21ae61d63c41a3967fe9e640c263d5/selection/f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json')
+mode = 'wb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_selection_qualification_20261015_v1\\validation_002\\pytest-temp\\fabricated_cho51_selection0\\runs\\phase2\\fabricated-8b21ae61d63c41a3967fe9e640c263d5\\selection\\f57b0e2bb270a658eb946355466e0fb907e0b056a19bab2eee9516a1d084d5c1.json'
+
+C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1013: FileNotFoundError</failure></testcase></testsuite></testsuites>

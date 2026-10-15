@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_source_fold_dispatch_result_v1",
+  "observed_utc": "2026-10-15T11:45:57.2610195Z",
+  "pins_sha256": "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+  "method": "labram_full",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T114459Z_2ab091a20d",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\pins.json",
+    "--expect-pins",
+    "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_labram_full_001",
+    "--method",
+    "labram_full"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_labram_full_001",
+  "scientific_admission": false
+}

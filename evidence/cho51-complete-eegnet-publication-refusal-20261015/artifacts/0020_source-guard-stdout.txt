@@ -1,0 +1,39 @@
+D:\Aenv\pro3\runs\migration\20261015T125235Z_ad2d9d9c6f
+FAIL: guarded command failed: SupervisionResult(pid=21580, exit_code=1, reason='normal', peak_process_memory_bytes=1724243968, peak_job_memory_bytes=1755648000)
+{"observed_actual_sgd_updates": 500}
+{"observed_actual_sgd_updates": 1000}
+{"observed_actual_sgd_updates": 1500}
+{"observed_actual_sgd_updates": 2000}
+{"observed_actual_sgd_updates": 2500}
+{"observed_actual_sgd_updates": 3000}
+{"observed_actual_sgd_updates": 3500}
+{"observed_actual_sgd_updates": 4000}
+{"observed_actual_sgd_updates": 4500}
+{"observed_actual_sgd_updates": 5000}
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\select_child.py", line 510, in <module>
+    main()
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\select_child.py", line 492, in main
+    result = run_selection(request, set_protected_inputs=runtime.set_protected_inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_complete_eegnet_v1\selection.py", line 447, in run_selection
+    published = publish_verified_cho_source(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_cho_publication_gate.py", line 156, in publish_verified_cho_source
+    publication = SelectedSourceStore(root).publish(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 784, in publish
+    with self._publication_lock():
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 514, in _publication_lock
+    descriptor = os.open(path, flags, 0o600)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\select_child.py", line 275, in audit
+    self.refuse('outside_owned_write', path)
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\select_child.py", line 211, in refuse
+    raise PermissionError('complete EEGNet child denied: ' + event)
+PermissionError: complete EEGNet child denied: outside_owned_write
+

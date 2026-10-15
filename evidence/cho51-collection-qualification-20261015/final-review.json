@@ -1,0 +1,36 @@
+{
+  "canonical_files_verified": 432,
+  "fresh_owned_job_absence": [
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T072256Z_2517f51e08"
+    },
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T072355Z_5f7b901fd1"
+    },
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T072828Z_014bc785d2"
+    },
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T073122Z_b5c6ad9f05"
+    },
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T073438Z_15335afaa6"
+    },
+    {
+      "absent": true,
+      "job_name": "pro3_migration_20261015T073716Z_96cdd95d61"
+    }
+  ],
+  "indexed_artifacts_verified": 73,
+  "observed_utc": "2026-10-15T07:44:52.585985+00:00",
+  "schema": "cho51_collection_final_metadata_review_v1",
+  "scientific_admission": false,
+  "status_prose_updated_after_archiving_tested_sources": true,
+  "tested_python_files_unchanged": 391,
+  "tests_rerun_by_this_metadata_review": false
+}

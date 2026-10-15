@@ -1,0 +1,58 @@
+{
+  "accepted": false,
+  "completed_utc": "2026-10-15T12:55:01.018907+00:00",
+  "error": "guarded command failed: SupervisionResult(pid=26344, exit_code=1, reason='normal', peak_process_memory_bytes=1724243968, peak_job_memory_bytes=2978291712)",
+  "job_absent": true,
+  "job_name": "pro3_migration_20261015T125205Z_c4bffd878a",
+  "native_state": {
+    "active_before_cleanup": 0,
+    "aggregate_limit_bytes": 6442450944,
+    "assigned": true,
+    "assignment_step_seen": true,
+    "atomic_job_assignment_requested": true,
+    "atomic_job_assignment_verified": true,
+    "attribute_cleanup_confirmed": true,
+    "child_handle_inheritance": false,
+    "cleanup_errors": [],
+    "created_suspended": true,
+    "creation_flags": 134742020,
+    "job_closed": true,
+    "job_created": true,
+    "job_empty_before_close": true,
+    "job_named": "pro3_migration_20261015T125205Z_c4bffd878a",
+    "limit_flags": 8960,
+    "limits_query_verified": true,
+    "limits_set": true,
+    "membership_verified": true,
+    "owned_job_termination_called": false,
+    "peak_job_commit_bytes": 2978291712,
+    "peak_process_commit_bytes": 1724243968,
+    "peak_samples": 862,
+    "peak_sampling_errors": [],
+    "process_handle_closed": true,
+    "process_limit_bytes": 4294967296,
+    "resumed": true,
+    "root_exit_after_job_close": true,
+    "root_pid": 26344,
+    "thread_handle_closed": true
+  },
+  "result": {
+    "exit_code": 1,
+    "peak_job_memory_bytes": 2978291712,
+    "peak_process_memory_bytes": 1724243968,
+    "pid": 26344,
+    "reason": "normal"
+  },
+  "schema": "migration_guard_receipt_v1",
+  "scientific_admission": false,
+  "startup_samples": [
+    {
+      "available_ram_bytes": 15290175488,
+      "free_disk_bytes": 100105232384
+    },
+    {
+      "available_ram_bytes": 15296491520,
+      "free_disk_bytes": 100105232384
+    }
+  ]
+}

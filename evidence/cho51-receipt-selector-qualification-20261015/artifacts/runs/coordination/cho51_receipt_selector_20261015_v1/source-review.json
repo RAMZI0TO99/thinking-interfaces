@@ -1,0 +1,30 @@
+{
+  "executed_tests": false,
+  "files": {
+    "docs/phase2/cho51_selector_collection_v1/README.md": "d04f4f64539861e70b204f6dc78f2caaaf632ded9915a06c514be8aba99a1164",
+    "docs/phase2/cho51_selector_collection_v1/collection.py": "6990c47878970f6e146fd2bbef5de61f45a77ff74b6b6714c89763fb3f5882bf",
+    "docs/phase2/cho51_selector_collection_v1/test_collection.py": "11136c57f8cd7822de0cbd1a4ded3e63f2e1e17ea8def9eb660cbd57e3b0b4ae",
+    "docs/phase2/cho51_tensor_collection_v1/README.md": "efa85515de0bf388e3eb368319366a552013805cae88ca7342d44d99094855e3",
+    "docs/phase2/cho51_tensor_collection_v1/collection.py": "19dc2e0ff918fb7c895609f7aa7cf2882b6f93d631e1bac8d85bfc97748cd54c",
+    "docs/phase2/cho51_tensor_collection_v1/test_collection.py": "d59aefbe77865634389b7a80c94762d37a7705161a57522c1236dcf8d0de8e46",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/closeout.py": "1312b341ce6564367ab54efc26c7c69b129b71d2d80d10a19fb215ab8f4bb21d",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/launch.ps1": "d6c3031bf765be398499bcd2d5d8d92b3ea40d45137ec9390aa1e14b53925f6f",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/observe.py": "7d19412100736c0ffceb7d1bcabb2ec66f4f07b932c792b34b1ab0070bcf4539",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/prepare.py": "d46108a922c93c7f65a4d5ce5e86a333ec8e910fac2edd26718970c52539156c",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/test_public_selector.py": "c69bd0a6bb04f9015767b51c9248878fe3b0f7a002d4606c1824ad7e10fcb047",
+    "runs/coordination/cho51_receipt_selector_20261015_v1/validate.py": "d104a04479ae3998bc5b1ccd902350ffa4e1dd068b5269f85fb1e449ebc2ef32"
+  },
+  "observed_utc": "2026-10-15T10:00:50.005130+00:00",
+  "remaining_actionable_findings": [],
+  "resolved_findings": [
+    "reconstruct every ExpectedCell and ScoreRow before proof IO",
+    "assert owned fixture TEMP and ceiling-only source provenance",
+    "compare whole native operation and selected runtime maps and Job name",
+    "retain validated native receipt and admission physical identities across archival"
+  ],
+  "reviewer": "/root/review_receipt_roster",
+  "root_review_complete": true,
+  "schema": "cho51_receipt_selector_source_review_v1",
+  "scientific_admission": false,
+  "source_only": true
+}

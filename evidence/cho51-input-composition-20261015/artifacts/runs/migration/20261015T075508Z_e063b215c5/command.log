@@ -1,0 +1,7 @@
+All156 current actual input hashes matched; running24 boundary and4 hybrid cases.
+........................Reconstructing actual52 input route; no loader replacement.
+Publishing1020 explicitly fabricated selection/cell records.
+Fabricated ledger complete; checking composed unmocked input path.
+....
+28 passed in 302.43s (0:05:02)
+{"passed": true, "tests": 28, "unexpected_denials": 0, "scientific_admission": false}

@@ -1,0 +1,35 @@
+{
+  "actual_untrained_eegnet_case_verified": true,
+  "all8_native_names_freshly_absent": [
+    "runs/migration/20261015T090812Z_e79d725093",
+    "runs/migration/20261015T091134Z_76a8d891b1",
+    "runs/migration/20261015T091523Z_5edeeecfe1",
+    "runs/migration/20261015T091617Z_18ad558985",
+    "runs/migration/20261015T091908Z_1dbbfb5f2e",
+    "runs/migration/20261015T092023Z_a5772989ab",
+    "runs/migration/20261015T092251Z_8f29dba7ae",
+    "runs/migration/20261015T092346Z_05ec5818d5"
+  ],
+  "artifact_count_rechecked": 248,
+  "boundary_checks_passed": 270,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "full_roster_verified": false,
+  "full_selector_evidence_verified": false,
+  "observed_utc": "2026-10-15T09:27:17.447446+00:00",
+  "qualifier_expected_blocked_ipv6_probes": 1,
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_tensor_final_metadata_review_v1",
+  "scientific_admission": false,
+  "source_pins_rechecked": 532,
+  "status_document_hashes": {
+    "AGENT_COORDINATION.md": "ec0e009995084d8a0e3139991cd1edf407834ab569c2ad79f02b7ed52bd74813",
+    "CONTINUE_HERE.md": "c8a2b303ebb024641ed930c7a50d5b0ca46c6fdba4f0fc0d75bcb30a7676c2d6",
+    "HANDOFF.md": "1f4406904f1b55ec23dfb0e5079161d0bd22ea905d9384b4988f71f38fd08947",
+    "PHASE2_START_HERE.md": "f4291a9680acaba5c0056af06ee09763be7e6f89c6662fe5d4a3a88ce2c754fd",
+    "README.md": "88d127bef94e0950da61963a14263d592b85c537b2fcb8d5888341a83d4a5279",
+    "WINDOWS_SETUP.md": "3ad57609e524551b6bb4efd4ac6a253c681be4e8736d62807a4ff8500d7f74c8",
+    "docs/phase2/cho51_tensor_qualification_20261015.md": "49627182db92a10ef90ddc0bb45a5170c87e1577d451a2334db1fe4363c137b7"
+  },
+  "tensor_expected_blocked_ipv6_probes": 1,
+  "tests_rerun": false
+}

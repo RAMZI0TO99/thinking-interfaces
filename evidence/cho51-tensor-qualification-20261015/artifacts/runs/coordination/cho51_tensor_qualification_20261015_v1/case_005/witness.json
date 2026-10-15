@@ -1,0 +1,12 @@
+{
+  "case_id": "9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78",
+  "evidence_sha256": "186b840bc5addc7080705b68ba9bbb39ac3c99bbe788ca00cf6f2913cde16058",
+  "manifest_sha256": "7b56003a9473ef7a333936a3c33cb11a0da43bb80385cb88b6f17bc2902c0287",
+  "model_recipe_sha256": "44e4694dc9e0ab3abcbb8d4042424961746acbc7e2d5a2a549dc9e296545c1b2",
+  "model_state_sha256": "6a06d0e3a126517911621d55aa332dfdb8b8d6489efa41a43ce64273c9243826",
+  "request_sha256": "25906b1d1607eaed4a441d7a6a6ec26a5a5af5e046f5ada037ef081b1647ed19",
+  "schema": "cho51_tensor_child_witness_v1",
+  "selected_candidate": "lr_1e-3",
+  "training_performed": false,
+  "weights_sha256": "2bda8df780504b3a9d7d2170c96a10b87cd5804f3dfd6f0a250a17d3d509e38e"
+}

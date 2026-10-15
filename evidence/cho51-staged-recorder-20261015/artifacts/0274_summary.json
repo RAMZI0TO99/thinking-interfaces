@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "artifacts": 24,
+  "cleanup_errors": [],
+  "current_gradient_updates": 0,
+  "engineering_successes": 0,
+  "job_closed_empty_freshly_absent": true,
+  "measured_cells": 0,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T140519Z_bcaedaf961",
+  "original_case_attempts_remaining": 0,
+  "pins_sha256": "e2db93cf10a055660b9caf0bc15435bc5031dac3f8c389a2cd8c6f379d2dad27",
+  "production_claims": 0,
+  "production_failures": 0,
+  "reason": "nonempty_proof_reader_refused_twelve_empty_diagnostic_logs_before_claim",
+  "sampling_errors": [],
+  "schema": "cho51_staged_recorder_preclaim_refusal_v1",
+  "scientific_admission": false,
+  "tests_passed": 35
+}

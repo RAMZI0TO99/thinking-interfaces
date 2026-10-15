@@ -1,0 +1,35 @@
+[benchmark]
+methods = ["eegnet", "shallow", "deep", "fbcsp", "tangent_lr", "ea_eegnet", "ea_tangent_lr"]
+datasets = ["bci_iv_2a", "cho2017", "mmidb"]
+seeds = [11, 23, 37, 53, 71]
+shots_per_class = 5
+confidence_threshold = 0.70
+confidence_level = 0.95
+
+[training]
+epochs = 5
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0
+input_scale = 1000000.0
+device = "cuda"
+
+[cost]
+fallback_seconds_per_run = 30.0
+instance_hourly_cost_usd = 0.0
+cost_basis = "local laptop; no metered instance charge"
+
+[datasets.bci_iv_2a]
+artifact_directory = "data/processed/bci_iv_2a/profile_a"
+sampling_rate_hz = 128.0
+artifact_threshold_volts = 0.00005448345685727081
+
+[datasets.cho2017]
+artifact_directory = "data/processed/cho2017/profile_a"
+sampling_rate_hz = 128.0
+artifact_threshold_volts = 0.005895795032848071
+
+[datasets.mmidb]
+artifact_directory = "data/processed/mmidb/profile_a"
+sampling_rate_hz = 128.0
+artifact_threshold_volts = 0.0009869709666818407

@@ -1,0 +1,4 @@
+# Preserve audited candidate/report working bytes on all platforms.
+cho51* -text
+cho51*/** -text
+project_resume_20261015.md -text

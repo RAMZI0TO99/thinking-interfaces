@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_staged_recorder_dispatch_result_v1",
+  "observed_utc": "2026-10-15T14:11:52.9338494Z",
+  "pins_sha256": "a4139bd551d646cb0df23f38eff36a4317b42b5dfe62c9f4008020606d14d407",
+  "origin_contract_file_sha256": "40372ab30f049677783d6418eafe144ed54ad3a8d58e6b724b77f432e2f057af",
+  "source_training_replayed": false,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T141019Z_b74970d685",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_recorder_20261015_v2\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_recorder_20261015_v2\\pins.json",
+    "--expect-pins",
+    "a4139bd551d646cb0df23f38eff36a4317b42b5dfe62c9f4008020606d14d407",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_recorder_20261015_v2\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_recorder_20261015_v2\\validation_001",
+  "scientific_admission": false
+}

@@ -1,0 +1,34 @@
+[protocol]
+schema_version = 1
+phase = 2
+scientific_mode = "exploratory"
+support_policy = "nested_fixed_earliest"
+shots_per_class = [1, 5, 10, 20]
+maximum_support_per_class = 20
+query_policy = "all_retained_after_maximum_support"
+inner_validation = "source_subject_loso"
+model_seeds = [11, 23, 37, 53, 71]
+support_draw_seed = "not_applicable_fixed_order"
+decision_register = "docs/phase2/decision_register.md"
+experiment_frozen = false
+
+# P1 audits existing Profile A identities; this is not LaBraM input readiness.
+[datasets.bci_iv_2a]
+artifact_directory = "data/processed/bci_iv_2a/profile_a"
+classes = ["feet", "left_hand", "right_hand", "tongue"]
+expected_subjects = 9
+
+[datasets.cho2017]
+artifact_directory = "data/processed/cho2017/profile_a"
+classes = ["left_hand", "right_hand"]
+expected_subjects = 52
+
+[datasets.mmidb]
+artifact_directory = "data/processed/mmidb/profile_a"
+classes = ["left_fist", "right_fist"]
+expected_subjects = 109
+
+[preparation]
+threshold_config = "configs/benchmark.toml"
+profile_identity = "phase1_profile_a_frozen_thresholds_partition_audit_only"
+output_root = "runs/phase2/protocol_audit"

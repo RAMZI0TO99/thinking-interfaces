@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\verify_child.py", line 53, in <module>
+    main()
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\verify_child.py", line 35, in main
+    result = verify_publication(request, source_result,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_complete_eegnet_v1\selection.py", line 658, in verify_publication
+    restored = restore_cho_selected_source(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_cho_source_restore.py", line 610, in restore_cho_selected_source
+    restored = selected_store.restore(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 894, in restore
+    tensor_blob = _read_exact(
+                  ^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 172, in _read_exact
+    blob = _read_file(path, parent, maximum_bytes=maximum_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 181, in _read_file
+    return _read_bounded_regular(path, parent, maximum_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_selected_source_store.py", line 228, in _read_bounded_regular
+    blob = stream.read(maximum_bytes + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError

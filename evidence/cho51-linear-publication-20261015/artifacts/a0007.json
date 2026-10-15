@@ -1,0 +1,28 @@
+{
+  "schema": "cho51_linear_publication_dispatch_v1",
+  "observed_utc": "2026-10-15T17:14:18.6920854Z",
+  "pins_sha256": "30130ec6a122323e2504d70645f86d07cc430f587c2bc109d8aae5f125bd99e9",
+  "mode": "publication",
+  "publication_result_file_sha256": "",
+  "actual_gradient_updates": 0,
+  "pretrained_baseline_expected": true,
+  "cohort_lineage_verified": false,
+  "full_selector_verified": false,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_publication_20261015_v1\\child.py",
+    "--mode",
+    "publication",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_publication_20261015_v1\\pins.json",
+    "--expect-pins",
+    "30130ec6a122323e2504d70645f86d07cc430f587c2bc109d8aae5f125bd99e9",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_publication_20261015_v1\\publication_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_publication_20261015_v1\\publication_001",
+  "scientific_admission": false
+}

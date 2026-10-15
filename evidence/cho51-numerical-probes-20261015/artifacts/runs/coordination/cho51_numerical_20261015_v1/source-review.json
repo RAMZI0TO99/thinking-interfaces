@@ -1,0 +1,29 @@
+{
+  "files": {
+    "docs/phase2/cho51_numerical_probe_v1/README.md": "081c9ab299f57bd51c231f8031e7bd49cdcb73db95175e0d187909d4ff287c13",
+    "docs/phase2/cho51_numerical_probe_v1/probe.py": "782fd51846e41c093ac2a3c5d5db6c78ecd5148a310dd4a275fd488b773e0847",
+    "runs/coordination/cho51_numerical_20261015_v1/child.py": "a44dff9651de1ae1df460e45ca1947b27766b28f6deaf7061a8c30ad59d2379f",
+    "runs/coordination/cho51_numerical_20261015_v1/closeout.py": "e8cab3d6685b743d0fd8ea387f461343c1f7a9fd6e9cca041f5326a3a5602cef",
+    "runs/coordination/cho51_numerical_20261015_v1/launch.ps1": "49c29b6b96fa75501dcc37f86caaa64a1d7d8ae9b7e807440e99333555416db3",
+    "runs/coordination/cho51_numerical_20261015_v1/observe.py": "ee414f25eaeb66a87a4738a7c4844fcb0fde939e93647bbe5fe1b48774e3652e",
+    "runs/coordination/cho51_numerical_20261015_v1/prepare.py": "7001e3124a610c9080e170cb85d21dbc39108b9a22965cb9af9a1290aa6c21a2"
+  },
+  "models_or_tests_executed": false,
+  "observed_utc": "2026-10-15T10:35:26.676986+00:00",
+  "remaining_actionable_findings": [],
+  "resolved_findings": [
+    "nonvacuous LoRA A and B and effective QKV update assertions",
+    "full patcher embedding norm head and QKV update assertions",
+    "Windows-safe bounded artifact read and descriptor comparison",
+    "strict accepted native memory peaks and exact dispatch bindings",
+    "preserve timed-out and no-Job startup refusal scope"
+  ],
+  "reviewers": [
+    "/root/selector_admission_plan",
+    "/root/review_receipt_roster"
+  ],
+  "root_review_complete": true,
+  "schema": "cho51_numerical_probe_source_review_v1",
+  "scientific_admission": false,
+  "source_only": true
+}

@@ -1,0 +1,27 @@
+[parity]
+purpose = "bounded_cpu_reference_forward_parity_not_downstream_reproduction"
+device = "cpu"
+threads = 2
+seed = 20260905
+atol = 0.00001
+rtol = 0.0001
+float64_diagnostic_atol = 0.0000000001
+float64_diagnostic_rtol = 0.00000001
+synthetic_samples = [200, 400, 800, 3000]
+synthetic_channels = ["C3", "Cz", "C4"]
+checkpoint_config = "configs/labram_checkpoint_audit.toml"
+model_config = ".cache/huggingface/hub/models--braindecode--labram-pretrained/snapshots/0563b6c626e7b40d9a36653b763715db94d945d7/config.json"
+model_config_sha256 = "813073071865e6799f00f2c7ade117cb86238dd931c1b5f81e97ca68db00188b"
+real_input = "data/processed/bci_iv_2a/profile_b/subject_01.npz"
+real_manifest = "data/processed/bci_iv_2a/profile_b/subject_01.manifest.json"
+output_root = "runs/phase2/forward_parity"
+
+[reference]
+repository = "https://github.com/935963004/LaBraM"
+commit = "c431221e6cfd23dbfa9950e0180682fb322b0548"
+directory = ".cache/phase2/labram-reference/c431221e6cfd23dbfa9950e0180682fb322b0548"
+
+[reference.files]
+"modeling_finetune.py" = "7b3514c9a661ebd417a2dd9834a9f2fab0a2e518c8212c73ebebaaa165c29d88"
+"utils.py" = "c5ad729bd57ab31e04572f426d94f7fb164ef0fbfd1f7076da6bf8dfbd833e32"
+"LICENSE" = "bc3f03e2c9071fb40507f5c575d95eeaa98d07c54c54fb2855942b2a729adc71"

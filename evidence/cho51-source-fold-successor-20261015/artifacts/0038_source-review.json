@@ -1,0 +1,23 @@
+{
+  "actual_execution_verified": false,
+  "canonical_files_unchanged": 432,
+  "files": {
+    "docs/phase2/cho51_source_fold_probe_v1/README.md": "5413e6bbfb118e883ddff13d225cdd5951d62e005477878ca8213f5ce380524e",
+    "docs/phase2/cho51_source_fold_probe_v1/fixture.py": "f74b24f2ec37505a86aef6d9f4ca7c20476fb46ea358faa0d12b0e748c7ab85f",
+    "docs/phase2/cho51_source_fold_probe_v1/probe.py": "f428e3f4a1ef8a5820de58c67b4dc60af8522f64f77b91bd07d030374587c034",
+    "runs/coordination/cho51_source_fold_20261015_v1/child.py": "fc76356c2cd2f1414ca4d79fc2c0e3dae1e6fa2ef96e35789cac00ca6a13d6ce",
+    "runs/coordination/cho51_source_fold_20261015_v1/closeout.py": "83f72f67b14f5cf780a4865483c1c5f59b6001d9abdff334bdb5ac4c650d8fa7",
+    "runs/coordination/cho51_source_fold_20261015_v1/launch.ps1": "c0cae992a316766b007241dd0d1cae23cf07ef7ac1de875fccf3f8b54776080f",
+    "runs/coordination/cho51_source_fold_20261015_v1/observe.py": "3e852740fbb6e74cd20b8ccf99aec698a8d76fbb6798a9a35c9a45c23bb9bf06",
+    "runs/coordination/cho51_source_fold_20261015_v1/prepare.py": "2e9faa637e25f88d602fb96f1e75211fa84f10be08dd0334f80a1591d0f6b98a"
+  },
+  "observed_utc": "2026-10-15T11:41:25.475982+00:00",
+  "predecessor_source_pins_unchanged": 574,
+  "remaining_actionable_findings": [],
+  "reviewer": "selector_collection",
+  "root_semantic_review": true,
+  "schema": "cho51_source_fold_independent_source_review_v1",
+  "scientific_admission": false,
+  "scope": "four real public diagnostic source folds on52 owned synthetic subjects;51 updates per method;no selected winner/publication/recorder",
+  "source_only": true
+}

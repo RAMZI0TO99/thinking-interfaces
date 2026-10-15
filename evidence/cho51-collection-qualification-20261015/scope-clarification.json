@@ -1,0 +1,13 @@
+{
+  "schema": "cho51_qualification_scope_clarification_v1",
+  "recorded_by": "root",
+  "scope": "selection-file qualification metadata only",
+  "affected_field": "fixture_asset_loader_replaced",
+  "affected_records": "selection validation_001, validation_002 and validation_003 qualification.json",
+  "raw_value": true,
+  "clarification": "This generic harness field was inherited from the recorder runner. In selection tests it is not applicable: the tests construct fabricated typed catalog/asset metadata, never call the actual input loader, and do not replace it. The recorder qualification does explicitly replace its actual input-loader boundary.",
+  "raw_receipts_preserved": true,
+  "real_input_composition_qualified": false,
+  "test_outcomes_or_implementation_changed": false,
+  "scientific_admission": false
+}

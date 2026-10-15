@@ -1,0 +1,14 @@
+D:\Aenv\pro3\runs\migration\20261015T131859Z_0795c61e69
+PASS
+{"observed_actual_sgd_updates": 500}
+{"observed_actual_sgd_updates": 1000}
+{"observed_actual_sgd_updates": 1500}
+{"observed_actual_sgd_updates": 2000}
+{"observed_actual_sgd_updates": 2500}
+{"observed_actual_sgd_updates": 3000}
+{"observed_actual_sgd_updates": 3500}
+{"observed_actual_sgd_updates": 4000}
+{"observed_actual_sgd_updates": 4500}
+{"observed_actual_sgd_updates": 5000}
+{"passed": true, "actual_gradient_updates": 5253, "scientific_admission": false}
+

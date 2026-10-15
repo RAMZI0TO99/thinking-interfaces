@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 412, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 313, in main
+    from evaluation.phase2_cho_source_restore import verify_cho_selected_source_state
+  File "D:\Aenv\pro3\evaluation\phase2_cho_source_restore.py", line 27, in <module>
+    from adaptation.anchor_manifest import EEGNetAnchorSettings
+  File "D:\Aenv\pro3\adaptation\anchor_manifest.py", line 23, in <module>
+    from evaluation.baselines import TangentSpaceLogistic
+  File "D:\Aenv\pro3\evaluation\baselines.py", line 24, in <module>
+    from braindecode.models import (  # type: ignore[import-untyped]  # noqa: E402
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\__init__.py", line 1, in <module>
+    from .classifier import EEGClassifier
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\classifier.py", line 17, in <module>
+    from .eegneuralnet import _EEGNeuralNet
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\eegneuralnet.py", line 13, in <module>
+    import mne
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\__init__.py", line 35, in <module>
+    set_log_level(None, False)
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\utils\_logging.py", line 210, in set_log_level
+    verbose = _parse_verbose(verbose)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\utils\_logging.py", line 230, in _parse_verbose
+    verbose = get_config("MNE_LOGGING_LEVEL", "INFO")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\utils\config.py", line 358, in get_config
+    config = _load_config(config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\utils\config.py", line 272, in _load_config
+    with _open_lock(config_path, "r+") as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\mne\utils\config.py", line 258, in _open_lock
+    lock_context.acquire()
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\filelock\_api.py", line 1059, in acquire
+    self._poll_until_acquired(
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\filelock\_api.py", line 1220, in _poll_until_acquired
+    self._acquire_with_fork_tracking()
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\filelock\_api.py", line 1278, in _acquire_with_fork_tracking
+    self._acquire()
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\filelock\_windows.py", line 190, in _acquire
+    fd = _open_non_reparse_fd(self.lock_file, self._open_mode())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\filelock\_windows.py", line 248, in _open_non_reparse_fd
+    sys.audit("open", path, None, os.O_RDWR | os.O_CREAT)
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 177, in __call__
+    self._inside_workspace(path)
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 90, in _inside_workspace
+    self.refuse("outside_workspace_write", value)
+  File "D:\Aenv\pro3\docs\phase2\cho51_tensor_verification_v1\child.py", line 85, in refuse
+    raise PermissionError("Cho-51 tensor child denied: " + event)
+PermissionError: Cho-51 tensor child denied: outside_workspace_write

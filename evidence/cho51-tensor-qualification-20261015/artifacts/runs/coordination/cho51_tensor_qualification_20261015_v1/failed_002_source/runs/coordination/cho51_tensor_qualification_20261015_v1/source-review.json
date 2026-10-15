@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_tensor_successor_source_review_v1",
+  "runtime_reviewer": "/root/review_tensor_runtime",
+  "operational_reviewer": "/root/review_tensor_qualification",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "resolved_findings": [
+    "Pin all seven transitive versioned candidate source dependencies.",
+    "Match raw Windows Git command spelling against its resolved pinned executable.",
+    "Bind expected SHA to exact bytes parsed for bundle and input.",
+    "Refuse integer-descriptor writes in child open audit.",
+    "Count prepared cases from AST structure without numerical imports or evaluating parametrization values."
+  ],
+  "reviewed_runtime_hashes": {
+    "docs/phase2/cho51_tensor_verification_v1/contract.py": "a8d056bdb19743e5f89442b8e0911aa1cc89fa9dd2193e5e1cc19b80de95f2f4",
+    "docs/phase2/cho51_tensor_verification_v1/launcher.py": "404cca02e6cdcf674fdbf6658f80b4213ddbec15ff67ac15e8abcd13dfe672ff",
+    "docs/phase2/cho51_tensor_verification_v1/child.py": "55c5f9336901cfa017c9dc9395cf7760b5a5e262d589ac6de82c31a055ab73b1"
+  },
+  "test_message_corrections": "Two expected-message regexes now match the earlier exact parsed-byte SHA refusal; assertions and scope unchanged.",
+  "audit_hooks_are_observation_instrumentation_not_os_sandbox": true,
+  "runtime_execution_admitted_by_this_review": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_source_fold_dispatch_result_v1",
+  "observed_utc": "2026-10-15T11:42:11.0934660Z",
+  "pins_sha256": "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+  "method": "eegnet",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T114138Z_9ab5d4cf93",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\pins.json",
+    "--expect-pins",
+    "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_eegnet_001",
+    "--method",
+    "eegnet"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_eegnet_001",
+  "scientific_admission": false
+}

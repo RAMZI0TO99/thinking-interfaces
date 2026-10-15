@@ -1,0 +1,22 @@
+.................................
+33 passed in 10.65s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\parent.py", line 426, in <module>
+    completion = run_complete_case(recorder, plan, context=context, workspace=OUT / 'cases' / plan.case_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_complete_eegnet_v1\transaction.py", line 320, in run_complete_case
+    opaque = backend(request, request_path, request.sha256)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\parent.py", line 250, in backend
+    accepted = _verify_native(request, 'source', source)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\parent.py", line 141, in _verify_native
+    current = {path: identity(path) for path in paths}
+                     ^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v2\select_child.py", line 78, in identity
+    before = path.stat()
+             ^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 840, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v2\\validation_001\\cases\\9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78\\source_output\\qualification.json'

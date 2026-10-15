@@ -1,0 +1,9 @@
+{
+  "schema": "pro3_owned_validation_stop_v1",
+  "utc": "2026-10-15T07:27:56.7985465Z",
+  "owned_pid": 30952,
+  "observed_parent_pid": 32024,
+  "exact_owned_script": "runs/coordination/cho51_recorder_qualification_20261015_v1/validate_002.py",
+  "reason": "Four cases finished in about four minutes because full1020 fixture rebuilt per case; stop owned leaf and let guard close Job, then run identical20 cases with shared restored fixture",
+  "peer_process_stopped": false
+}

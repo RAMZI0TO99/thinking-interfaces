@@ -1,0 +1,20 @@
+{
+  "active_ram_required_bytes": 4294967296,
+  "available_ram_bytes": 10803429376,
+  "compute_admitted": false,
+  "free_disk_bytes": 98044071936,
+  "free_disk_required_bytes": 21474836480,
+  "job_launched": false,
+  "observation_satisfies_startup_floors": true,
+  "observed_pause_paths": {
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false
+  },
+  "observed_utc": "2026-10-15T13:23:30.495598+00:00",
+  "peer_release_or_host_quiet_inferred": false,
+  "schema": "cho51_complete_eegnet_resource_observation_v1",
+  "scientific_admission": false,
+  "startup_ram_required_bytes": 10737418240
+}

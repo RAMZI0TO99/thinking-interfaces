@@ -1,0 +1,63 @@
+{
+  "actual_accepted_folds": 2,
+  "actual_current_gradient_updates": 0,
+  "actual_pending_folds": 100,
+  "artifacts": 206,
+  "baseline_files": 1,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "cohort_lineage_verified": false,
+  "current_guarded_tests_qualified": false,
+  "current_job_launched": false,
+  "current_qualification_passed": false,
+  "final_fit_executed": false,
+  "full_selector_verified": false,
+  "full_worker_verified": false,
+  "historical_folds_authenticated": 2,
+  "historical_gradient_updates": 102,
+  "measured_cells": 0,
+  "native_attempt_directory": null,
+  "observed_utc": "2026-10-15T15:03:09.573622+00:00",
+  "origin_contract_file_sha256": "fddae6dae2e5cf8174127f24054d0b96d84c37b368dc12f273b26f575e332108",
+  "origin_proof_files": 187,
+  "original_case_attempts_remaining": 0,
+  "pins_sha256": "1e16577546807821112e58f671f0941e0ba3ab0c5980c82efa67d92b14e4a42b",
+  "planned_combined_folds_if_qualified": 10,
+  "planned_current_gradient_updates": 408,
+  "planned_current_source_updates": 400,
+  "planned_current_support_updates": 8,
+  "planned_new_folds": 8,
+  "planned_pending_folds_if_qualified": 92,
+  "prepared": true,
+  "publication_performed": false,
+  "recorder_used": false,
+  "resource_blocker": "available_ram_below_10_GiB_startup_floor",
+  "resource_observations": [
+    {
+      "available_ram_bytes": 8369242112,
+      "free_disk_bytes": 96250224640,
+      "observed_utc": "2026-10-15T14:59:43.977385+00:00",
+      "path": "runs/coordination/cho51_linear_continuation_20261015_v1/preflight_001.json"
+    },
+    {
+      "available_ram_bytes": 8054829056,
+      "free_disk_bytes": 96249995264,
+      "observed_utc": "2026-10-15T15:01:16.402464+00:00",
+      "path": "runs/coordination/cho51_linear_continuation_20261015_v1/preflight_002.json"
+    },
+    {
+      "available_ram_bytes": 7345819648,
+      "free_disk_bytes": 96249761792,
+      "observed_utc": "2026-10-15T15:02:24.133108+00:00",
+      "path": "runs/coordination/cho51_linear_continuation_20261015_v1/preflight_003.json"
+    }
+  ],
+  "reviewed_sources": 12,
+  "runtime_files": 5,
+  "schema": "cho51_linear_continuation_ready_summary_v1",
+  "scientific_admission": false,
+  "selected_candidate": null,
+  "source_context_files": 1224,
+  "source_only": true,
+  "source_review_sha256": "68f82525c2b7adf6118c53dd7abe38019488faf83153377a9480d67362a41dc4"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_staged_eegnet_restore_dispatch_v1",
+  "observed_utc": "2026-10-15T13:40:51.1542759Z",
+  "pins_sha256": "ebd67a1d9bc2807ada7bd73689e41b14fd393b4410f30b00c08af8b26c69332f",
+  "stage_contract_sha256": "0736f8f40446ea32c6727f9a8e6cd68e29457774b63ce8b9fc56d5fcb51b7b66",
+  "source_training_replayed": false,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_restore_20261015_v1\\verify_child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_restore_20261015_v1\\pins.json",
+    "--expect-pins",
+    "ebd67a1d9bc2807ada7bd73689e41b14fd393b4410f30b00c08af8b26c69332f",
+    "--contract",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_restore_20261015_v1\\stage-contract.json",
+    "--expect-contract",
+    "0736f8f40446ea32c6727f9a8e6cd68e29457774b63ce8b9fc56d5fcb51b7b66"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_staged_restore_20261015_v1\\verification_001",
+  "scientific_admission": false
+}

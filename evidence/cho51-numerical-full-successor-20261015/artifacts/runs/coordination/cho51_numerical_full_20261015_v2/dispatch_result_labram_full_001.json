@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_numerical_full_successor_dispatch_result_v1",
+  "observed_utc": "2026-10-15T10:42:45.4890225Z",
+  "method": "labram_full",
+  "pins_sha256": "0a1041b639dd3ef26e14d4c6d5fc00b0fde9fe41f821be9ca7f684608628f2e5",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T104219Z_ac3b37bb20",
+  "guard_exit_code": 0,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\pins.json",
+    "--expect-pins",
+    "0a1041b639dd3ef26e14d4c6d5fc00b0fde9fe41f821be9ca7f684608628f2e5",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\output_labram_full_001",
+    "--method",
+    "labram_full"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\output_labram_full_001",
+  "scientific_admission": false
+}

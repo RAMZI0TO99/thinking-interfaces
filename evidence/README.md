@@ -1,5 +1,18 @@
 # Portable historical evidence
 
+## Latest metadata publication, 15 October 2026
+
+The [linear closeout export](cho51-linear-closeout-export-20261015/README.md)
+preserves the final audit and its seven exact document snapshots. New dated
+Cho51 packets include their authenticated metadata artifacts in Git with exact
+byte preservation. Their arrays, safe weights, live runs and caches stay local.
+The October 12 bootstrap history described below is a separate dated snapshot;
+it does not restore these October 15 assets or admit replay of old launchers.
+Gate A was accepted on October 12 and the 51-target amendment adopted on October
+13; the final experiment freeze and scientific execution remain pending.
+
+## Historical portable snapshot, 12 October 2026
+
 `portable-20261012-v2/manifest.json` lists 28,679 historical files, their original
 sizes and SHA256 hashes, plus 58 independently hashed download parts. The parts
 are private GitHub Release assets under `windows-portable-20261012`; they restore
@@ -27,4 +40,5 @@ No credentials are stored in the repository or archive manifests.
 
 Old receipts, attempt counters, quarantines, schedules and absolute paths retain
 their dates and scopes. Bootstrap is not scientific admission. Original attempts
-remain zero; Gate A, owner decisions and experiment freeze remain unsigned.
+remain zero. The Gate A/owner/freeze statuses in this dated October 12 export
+are historical; use the current handoff for subsequent owner decisions.

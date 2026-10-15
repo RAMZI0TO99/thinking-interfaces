@@ -1,0 +1,81 @@
+{
+  "artifact_count": 73,
+  "assembled_utc": "2026-10-15T07:40:30.491576+00:00",
+  "canonical_files_verified": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "evidence_class": "synthetic engineering qualification; no real result or selected tensor",
+  "experiment_freeze_signed": false,
+  "independent_static_review_imported_or_executed_code": false,
+  "independent_static_reviewer": "/root/review_candidates",
+  "native_attempts": [
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T07:23:14.003182+00:00",
+      "directory": "runs/migration/20261015T072256Z_2517f51e08",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T072256Z_2517f51e08",
+      "peak_job_bytes": 1048207360,
+      "peak_process_bytes": 1018261504
+    },
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T07:27:57.133869+00:00",
+      "directory": "runs/migration/20261015T072355Z_5f7b901fd1",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T072355Z_5f7b901fd1",
+      "peak_job_bytes": 1076056064,
+      "peak_process_bytes": 1046069248
+    },
+    {
+      "accepted": true,
+      "completed_utc": "2026-10-15T07:30:34.654848+00:00",
+      "directory": "runs/migration/20261015T072828Z_014bc785d2",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T072828Z_014bc785d2",
+      "peak_job_bytes": 1077903360,
+      "peak_process_bytes": 1048100864
+    },
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T07:31:40.208524+00:00",
+      "directory": "runs/migration/20261015T073122Z_b5c6ad9f05",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T073122Z_b5c6ad9f05",
+      "peak_job_bytes": 1111818240,
+      "peak_process_bytes": 1082060800
+    },
+    {
+      "accepted": false,
+      "completed_utc": "2026-10-15T07:34:58.061963+00:00",
+      "directory": "runs/migration/20261015T073438Z_15335afaa6",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T073438Z_15335afaa6",
+      "peak_job_bytes": 1116037120,
+      "peak_process_bytes": 1085845504
+    },
+    {
+      "accepted": true,
+      "completed_utc": "2026-10-15T07:39:57.696263+00:00",
+      "directory": "runs/migration/20261015T073716Z_96cdd95d61",
+      "job_closed_empty_absent": true,
+      "job_name": "pro3_migration_20261015T073716Z_96cdd95d61",
+      "peak_job_bytes": 1438547968,
+      "peak_process_bytes": 1407426560
+    }
+  ],
+  "original_case_attempts_remaining": 0,
+  "real_input_composition_qualified": false,
+  "recorder_cases_passed": 20,
+  "retained_prior_failures": [
+    "pytest outside-output logging",
+    "owned stop of repeated fixture attempt",
+    "selection fixture list passed to mapping-only helper",
+    "selection fixture generated Windows paths beyond MAX_PATH"
+  ],
+  "root_review_of_fixture_successors": true,
+  "schema": "cho51_collection_qualification_closeout_v1",
+  "scientific_admission": false,
+  "selected_publication_or_tensor_qualified": false,
+  "selection_cases_passed": 43,
+  "total_cases_passed": 63
+}

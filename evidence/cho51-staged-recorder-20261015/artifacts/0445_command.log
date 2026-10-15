@@ -1,0 +1,15 @@
+...................................
+35 passed in 7.11s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_staged_recorder_20261015_v1\parent.py", line 175, in <module>
+    completion = run_staged_case(recorder, plan, context=context, workspace=OUT / 'cases' / plan.case_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_staged_recorder_v1\transaction.py", line 282, in run_staged_case
+    origin_identity = _origin_assets(preview)[1]
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_staged_recorder_v1\transaction.py", line 204, in _origin_assets
+    result[path] = L._read(path, digest)[1]
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py", line 252, in _read
+    raise ValueError('bounded single-linked proof file required')
+ValueError: bounded single-linked proof file required

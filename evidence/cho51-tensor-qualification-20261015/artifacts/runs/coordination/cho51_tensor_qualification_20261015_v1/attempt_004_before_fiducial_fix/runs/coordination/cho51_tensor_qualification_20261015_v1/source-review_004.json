@@ -1,0 +1,11 @@
+{
+  "schema": "cho51_tensor_owned_cache_review_v1",
+  "reviewer": "/root/review_tensor_runtime",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "child_sha256": "c91f11618f0b5ed572f4934eca1331a595041c724a8bffa0be26ceffcedf368e",
+  "change": "MNE home is owned per case; existing outside directory mkdir calls raise FileExistsError before OS creation. Missing outside paths remain denied.",
+  "outside_workspace_writes_allowed": false,
+  "resource_floors_or_caps_changed": false,
+  "scientific_admission": false
+}

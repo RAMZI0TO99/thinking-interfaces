@@ -1,0 +1,17 @@
+{
+  "archive_created": false,
+  "archive_only": true,
+  "cause_observed": "LaBraM contract binds outer target in selection.target_subject; EEGNet additionally has top-level outer_target. Original archiver wrongly required the EEGNet-only field for every method.",
+  "exception_type": "ValueError",
+  "exit_code": 1,
+  "failed_archive_path": "D:\\Aenv\\pro3\\evidence\\cho51-source-fold-20261015",
+  "numerical_or_boundary_work_replayed": false,
+  "observed_utc": "2026-10-15T11:48:12.315765+00:00",
+  "original_closeout_sha256": "83f72f67b14f5cf780a4865483c1c5f59b6001d9abdff334bdb5ac4c650d8fa7",
+  "original_source_and_pins_preserved": true,
+  "partial_artifact_count": 0,
+  "schema": "cho51_source_fold_archive_failure_v1",
+  "scientific_admission": false,
+  "tested_pins_sha256": "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\closeout.py\", line 567, in <module>\n    main()\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\closeout.py\", line 462, in main\n    fields(contract, dict(method=method, dataset='cho2017', outer_target='subject_02', shots_per_class=5,\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\closeout.py\", line 99, in fields\n    raise ValueError('literal typed evidence fields differ: ' + ','.join(expected))\nValueError: literal typed evidence fields differ: method,dataset,outer_target,shots_per_class,maximum_gradient_steps,engineering_only,scientific_evaluation,early_stopping,protocol_sha256,candidates\n"
+}

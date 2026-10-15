@@ -10,3 +10,29 @@
 *.008 -text
 *.009 -text
 *.xz.* -text
+
+# Byte-identical 15 October metadata exports; historical payload hashes include EOL.
+/cho51-collection-qualification-20261015/** -text
+/cho51-complete-eegnet-publication-refusal-20261015/** -text
+/cho51-complete-eegnet-refusal-20261015/** -text
+/cho51-complete-eegnet-resource-refusal-20261015/** -text
+/cho51-complete-eegnet-restore-refusal-20261015/** -text
+/cho51-input-composition-20261015/** -text
+/cho51-linear-chain-20261015/** -text
+/cho51-linear-closeout-export-20261015/** -text
+/cho51-linear-continuation-20261015/** -text
+/cho51-linear-continuation-ready-20261015/** -text
+/cho51-linear-lineage-20261015/** -text
+/cho51-linear-lineage-reporting-refusal-20261015/** -text
+/cho51-linear-publication-20261015/** -text
+/cho51-numerical-full-successor-20261015/** -text
+/cho51-numerical-probes-20261015/** -text
+/cho51-publication-qualification-20261015/** -text
+/cho51-receipt-selector-qualification-20261015/** -text
+/cho51-source-fold-successor-20261015/** -text
+/cho51-staged-eegnet-restore-20261015/** -text
+/cho51-staged-recorder-20261015/** -text
+/cho51-staged-recorder-preclaim-refusal-20261015/** -text
+/cho51-tensor-qualification-20261015/** -text
+/cho51-worker-lifecycle-successor-20261015/** -text
+/pro3-resume-20261015/** -text

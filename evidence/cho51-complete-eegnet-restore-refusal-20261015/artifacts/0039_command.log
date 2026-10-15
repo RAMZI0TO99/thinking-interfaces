@@ -1,0 +1,22 @@
+.................................
+33 passed in 9.68s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\parent.py", line 426, in <module>
+    completion = run_complete_case(recorder, plan, context=context, workspace=OUT / 'cases' / plan.case_id,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_complete_eegnet_v1\transaction.py", line 321, in run_complete_case
+    proof = verifier(request, opaque)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\parent.py", line 261, in verifier
+    detached = _verify_native(request, 'detached', opaque['detached'], source_sha)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\parent.py", line 141, in _verify_native
+    current = {path: identity(path) for path in paths}
+                     ^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_complete_eegnet_20261015_v3\select_child.py", line 78, in identity
+    before = path.stat()
+             ^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 840, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v3\\validation_001\\cases\\9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78\\detached_output\\qualification.json'

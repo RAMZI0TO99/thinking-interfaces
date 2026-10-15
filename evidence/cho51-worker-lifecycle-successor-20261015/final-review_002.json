@@ -1,0 +1,37 @@
+{
+  "artifact_count": 82,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "document_sha256": {
+    "AGENT_COORDINATION.md": "eb42232919fe49ff680c2b968df3295b72f7e78a884c9894a73ec7b73054e214",
+    "CONTINUE_HERE.md": "270dd37b9c48994f217d6922a0adfbc5e2c1ef87e5f659e0760d6cd95e51886b",
+    "HANDOFF.md": "8530ec2a42b8cdb8e966a31f4bdf8af9b34feecbb47bba94256c2535490938d3",
+    "PHASE2_START_HERE.md": "cd95367302f8dd3c43ba987eafbfaed6d2a799c18ef544ef7c5007be51d0d440",
+    "README.md": "5cfd45a2a7960d658dd8714028e49bc627d9f6959cf4dabdfd4ac0014b813c5a",
+    "WINDOWS_SETUP.md": "c526f5e0a014c8ce05c77019418f9ecc1b8b49218d96064386de8f36ac5eb448",
+    "docs/phase2/cho51_worker_lifecycle_qualification_20261015.md": "f61e55837caa3e547a6450f5af22d9006fd22e3f179c98dd3856110e79bdf0a3",
+    "evidence/cho51-worker-lifecycle-successor-20261015/README.md": "75f3a9f57643b0dcc4998972d5fe7a4818d0f2d0167b7262e182e0076bbff3ed"
+  },
+  "documentation_correction": "eight states total139806432 bytes, not per-state size",
+  "engineering_successes": 4,
+  "measured_cells": 0,
+  "native_jobs_freshly_absent": [
+    "pro3_migration_20261015T111011Z_df33481f9f",
+    "pro3_migration_20261015T111031Z_a7efd07604",
+    "pro3_migration_20261015T111102Z_e6aa708a2f",
+    "pro3_migration_20261015T111151Z_d38d63bba4",
+    "pro3_migration_20261015T111222Z_a9b51a79c8"
+  ],
+  "numerical_or_boundary_work_replayed": false,
+  "observed_module_and_state_hash_evidence": "full current verification retained in prior full review; no model restore",
+  "observed_utc": "2026-10-15T11:24:16.651168+00:00",
+  "original_case_attempts_remaining": 0,
+  "passed": true,
+  "pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+  "prior_full_review_sha256": "f0a3e2f819b316c9d6bbc65d6aacd43bf365282febfe087501cc2a6c236b96c2",
+  "prior_full_review_utc": "2026-10-15T11:23:09.138712+00:00",
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_worker_lifecycle_final_documentation_review_v2",
+  "scientific_admission": false,
+  "source_context_pins_rechecked": 574
+}

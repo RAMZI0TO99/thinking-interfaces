@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_publication_static_review_v1",
+  "reviewer": "/root/review_publication",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "resolved_finding": "Closeout now binds exact admitted validator command, output, current pins SHA, qualification pins SHA and canonical source SHA.",
+  "hashes": {
+    "docs/phase2/cho51_publication_collection_v1/collection.py": "90a7bf386b5c6123462120e53132b7be6d0d924da25691be009674f291865fde",
+    "docs/phase2/cho51_publication_collection_v1/test_collection.py": "6e928d1924050afc2841d339dc5d7d5cf68c84fc2c9655b289143a880af79a24",
+    "docs/phase2/cho51_publication_collection_v1/README.md": "9a70788137a714b29e9c538000209b4f8ccaeec926eff79de6bb436ffad82090",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/prepare.py": "70d8e506ed31a26d957f48e31f57fe5078c1abfb37b5bd8181d586f9956b8403",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/prepare_validator.py": "bb3b59ad3bb7b70313f05ed597633f1aacc5e55ce64b59f9b02383bda650f186",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/validate.py": "740e6dd0c22883679a4bc58404605c65bb94c148d32064ba72e3a45a03282ccc",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/observe.py": "a5292fab9acc0dbb10d9e1b945c20131fddca66035f6fe4e23db3ecb787dc998",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/closeout.py": "34cec118335370540cc24729790bafa5ed18d4a06033757a24d6f2379a860689",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/launch.ps1": "a1dfd6d6c68152cc3a44712ab56bca506c21fd47a2a701af736a203016f37116",
+    "runs/coordination/cho51_publication_qualification_20261015_v1/tensor-supervision-review.json": "b2d362979dcb841b239b60d3a3341446cc06969831bda2df7571f084fb3f95c2"
+  },
+  "runtime_validation_admitted": false,
+  "scientific_admission": false
+}

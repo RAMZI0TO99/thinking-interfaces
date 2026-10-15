@@ -1,0 +1,62 @@
+{
+  "accepted": false,
+  "all_native_jobs_closed_empty_freshly_absent": true,
+  "artifact_count": 38,
+  "boundary_tests_passed": 33,
+  "claims": 1,
+  "cleanup_errors": [],
+  "complete_evidence_file_bytes": 4204515,
+  "complete_evidence_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_complete_eegnet_20261015_v2\\validation_001\\fixture\\runs\\phase2\\selection_evidence\\c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a.json",
+  "complete_evidence_sha256": "c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a",
+  "complete_record": {
+    "actual_gradient_updates": 5253,
+    "contract_sha256": "d06a979b1ec57abad4acfd6b102bda8f1110886a028959660b9271f8a9f05451",
+    "evidence_sha256": "c4e5d2ca3c97e50f302eb8dcc03fd7a899b969d1b4eca59ff54825a5e7e7642a",
+    "final_source_subjects": 51,
+    "inner_folds": 102,
+    "scores": [
+      {
+        "candidate": "lr_1e-3",
+        "mean_balanced_accuracy": [
+          1,
+          2
+        ]
+      },
+      {
+        "candidate": "lr_2e-3",
+        "mean_balanced_accuracy": [
+          1,
+          2
+        ]
+      }
+    ],
+    "selected_candidate": "lr_1e-3",
+    "selected_state_sha256": "5fb284cea9c1e61dccfbdd96d4d92024973e30641d0ee078ed0be8cd930ddc5b",
+    "source_gradient_updates": 5151,
+    "support_gradient_updates": 102
+  },
+  "complete_record_described_gradient_updates": 5253,
+  "detached_child_launched": false,
+  "engineering_successes": 0,
+  "final_source_subjects": 51,
+  "inner_folds": 102,
+  "input_blobs_archived": false,
+  "linked_failures": 1,
+  "measured_cells": 0,
+  "native_directories": [
+    "D:\\Aenv\\pro3\\runs\\migration\\20261015T125205Z_c4bffd878a",
+    "D:\\Aenv\\pro3\\runs\\migration\\20261015T125235Z_ad2d9d9c6f"
+  ],
+  "observed_utc": "2026-10-15T12:57:18.982106+00:00",
+  "original_case_attempts_remaining": 0,
+  "peak_sampling_errors": [],
+  "pins_sha256": "68f582bf8ccb75b2c07690175bcc4af8e11d067db9504d62afb7560331ddb037",
+  "publication_accepted": false,
+  "reason": "exact_owned_canonical_publication_lock_outside_declared_write_scope",
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_complete_eegnet_publication_refusal_v1",
+  "scientific_admission": false,
+  "selected_weights_persisted": false,
+  "source_context_pins_rechecked": 610,
+  "source_qualification_accepted": false
+}

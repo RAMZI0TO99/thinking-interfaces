@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_source_fold_dispatch_v1",
+  "observed_utc": "2026-10-15T11:42:36.8987808Z",
+  "pins_sha256": "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+  "method": "labram_linear",
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\child.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\pins.json",
+    "--expect-pins",
+    "ebd55747bc0a863802b72e4ce51b6d444bdc88c4c1f04ff839fb60732615ec0d",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_labram_linear_001",
+    "--method",
+    "labram_linear"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_source_fold_20261015_v1\\output_labram_linear_001",
+  "scientific_admission": false
+}

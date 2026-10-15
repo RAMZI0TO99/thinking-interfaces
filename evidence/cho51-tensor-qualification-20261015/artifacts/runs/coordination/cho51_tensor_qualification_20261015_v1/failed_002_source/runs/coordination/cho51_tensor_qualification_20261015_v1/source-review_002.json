@@ -1,0 +1,13 @@
+{
+  "schema": "cho51_tensor_installed_runtime_hardlink_review_v1",
+  "reviewer": "/root/review_tensor_runtime",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "launcher_sha256": "6239adcef9752a90fa7465cfacd35b7c093a291337ddc7408fcebb6191155d3c",
+  "test_launcher_sha256": "7b83794c088b61df7e30fbd7ed72916a12e19f2bcb7d4ba601182117fe21e421",
+  "change": "Installed runtime binaries may have hardlinks; direct paths and independent SHA checks remain. Source and publication assets still require one link.",
+  "reason": "Observed installed Git executable linkcount2 with unchanged independently pinned bytes; first source and failed native receipt preserved before correction.",
+  "regression_cases_added": 3,
+  "resource_floors_or_caps_changed": false,
+  "scientific_admission": false
+}

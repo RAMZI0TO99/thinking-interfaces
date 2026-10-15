@@ -1,0 +1,29 @@
+{
+  "archive_created": false,
+  "cross_dev_ino_size_mtime_equal": true,
+  "descriptor_open_close_equal": true,
+  "error": "ValueError: artifact changed during read: pins.json",
+  "exit_code": 1,
+  "observed_utc": "2026-10-15T10:07:03.027360+00:00",
+  "original_utility_sha256": "1312b341ce6564367ab54efc26c7c69b129b71d2d80d10a19fb215ab8f4bb21d",
+  "path_before_after_equal": true,
+  "schema": "cho51_archive_first_utility_refusal_v1",
+  "scientific_admission": false,
+  "successor_source_sha256": "c3a989c0b51d6c90807c6e07aa5f5a89634424715f785c373b83931b55a9f1d0",
+  "test_results_unchanged": true,
+  "tests_replayed": false,
+  "windows_fstat_signature": [
+    8825988702501449263,
+    281474983059904,
+    69651,
+    1792058451025790000,
+    1792058451025790000
+  ],
+  "windows_stat_signature": [
+    8825988702501449263,
+    281474983059904,
+    69651,
+    1792058451025790000,
+    1792058451024789700
+  ]
+}

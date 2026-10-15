@@ -1,0 +1,150 @@
+{
+  "aborted_initial_full_partial_update_count": null,
+  "all_created_native_jobs": [
+    {
+      "accepted": true,
+      "closed_empty": true,
+      "directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T103532Z_4548f1bc1e",
+      "freshly_absent": true
+    },
+    {
+      "accepted": true,
+      "closed_empty": true,
+      "directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T103612Z_1182506cc9",
+      "freshly_absent": true
+    },
+    {
+      "accepted": true,
+      "closed_empty": true,
+      "directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T103653Z_c6def8678d",
+      "freshly_absent": true
+    },
+    {
+      "accepted": false,
+      "closed_empty": true,
+      "directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T103727Z_edf91030bf",
+      "freshly_absent": true
+    },
+    {
+      "accepted": true,
+      "closed_empty": true,
+      "directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T104219Z_ac3b37bb20",
+      "freshly_absent": true
+    }
+  ],
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "certified_completed_gradient_updates": 32,
+  "compact_artifacts_rechecked": 59,
+  "complete_1020_case_roster_verified": false,
+  "document_hashes": {
+    "AGENT_COORDINATION.md": "3c078d8430ac5cf76cfcd264e54db44d1fbd261411a486458d91d5428790c1af",
+    "CONTINUE_HERE.md": "cd3546e2e20f7d9ab400b5e38d1fcd9129363febaa0a091989ed634d68212a87",
+    "HANDOFF.md": "def9350c7acec0fb59e75b0b55f3a289f5f83719c01dc1b75333533c09bf11ee",
+    "PHASE2_START_HERE.md": "bdd95f2ce490d83a2b438ef4c82d565727354651685760bd3604228ad8a57f38",
+    "README.md": "1f8fc8d93477c65241d480efa0d3168300337345ceb8dd7b56913b2270c1ab59",
+    "WINDOWS_SETUP.md": "51e5113f8329d8f5b79d9eebf94864e839804166d440db60205435b544df9d69",
+    "docs/phase2/cho51_numerical_probes_20261015.md": "efae90645e5c0d8bfcb0f98703dc45c33866fb125183fb818ed27c5ccdca8073",
+    "evidence/cho51-numerical-full-successor-20261015/README.md": "faa029487a7f8c8a0cede09fb7fa27fab0159c3920ef07b57853895b578bea72",
+    "evidence/cho51-numerical-probes-20261015/README.md": "d37466738f04b4bf1540f999cc6c5179f16b478405077a2e80832a79af3466d3"
+  },
+  "full_selector_or_worker_resource_bound_established": false,
+  "models_or_tests_replayed": false,
+  "observed_pause_paths": {
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false
+  },
+  "observed_utc": "2026-10-15T10:47:34.247704+00:00",
+  "original_case_attempts_remaining": 0,
+  "original_source_pins_rechecked": 556,
+  "packet_manifests": {
+    "evidence/cho51-numerical-full-successor-20261015": "a74cade1d3d975010c9006a9716702b0f447ff177edbdad4525b8132d1c0c388",
+    "evidence/cho51-numerical-probes-20261015": "4287b5e607064bb67b49cf94b774fdbcc108a016ba4c724a455ee8521a4974b8"
+  },
+  "packet_summaries": {
+    "evidence/cho51-numerical-full-successor-20261015": "1dc36a42328e6b5e25ffc46caca8695ec6846359bd252fc195f2a964f63c122d",
+    "evidence/cho51-numerical-probes-20261015": "2bee69795135084b08276276ae81349e6a0928f3685dfef5aa1ea1511586edfb"
+  },
+  "passed": true,
+  "peer_release_or_host_quiet_inferred": false,
+  "post_import_observed_module_hash_union_rechecked": 4674,
+  "runtime_pins_rechecked": 5,
+  "schema": "cho51_numerical_final_metadata_review_v1",
+  "scientific_admission": false,
+  "successful_methods": [
+    {
+      "certified_gradient_updates": 8,
+      "method": "eegnet",
+      "observed_loaded_module_files": 4673,
+      "pins_sha256": "963c24bbcc2afc12b9daaea601eaefef3194bbc8f807575f1e95668e2183ccda",
+      "source_pins": 556
+    },
+    {
+      "certified_gradient_updates": 8,
+      "method": "labram_linear",
+      "observed_loaded_module_files": 4673,
+      "pins_sha256": "963c24bbcc2afc12b9daaea601eaefef3194bbc8f807575f1e95668e2183ccda",
+      "source_pins": 556
+    },
+    {
+      "certified_gradient_updates": 8,
+      "method": "labram_lora",
+      "observed_loaded_module_files": 4673,
+      "pins_sha256": "963c24bbcc2afc12b9daaea601eaefef3194bbc8f807575f1e95668e2183ccda",
+      "source_pins": 556
+    },
+    {
+      "certified_gradient_updates": 8,
+      "method": "labram_full",
+      "observed_loaded_module_files": 4673,
+      "pins_sha256": "0a1041b639dd3ef26e14d4c6d5fc00b0fde9fe41f821be9ca7f684608628f2e5",
+      "source_pins": 563
+    }
+  ],
+  "successful_state_bytes": 139806432,
+  "successful_state_files": [
+    {
+      "bytes": 12664,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_eegnet_001\\rate_01_fullstate.safetensors",
+      "sha256": "62ee6465cac6b2a42b80eaf50f27445fa5c09124772b840b8586fbafe449d85c"
+    },
+    {
+      "bytes": 12664,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_eegnet_001\\rate_02_fullstate.safetensors",
+      "sha256": "535b2c9ee460b036bba38f908aeccae408768de06d2725fcba608d2b2b7b038c"
+    },
+    {
+      "bytes": 23294624,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_labram_linear_001\\rate_01_fullstate.safetensors",
+      "sha256": "c194f1aa9b53e0795698a13ed81e462ef7551e98d3a0b30af8752ed09849643e"
+    },
+    {
+      "bytes": 23294624,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_labram_linear_001\\rate_02_fullstate.safetensors",
+      "sha256": "2b81da829cfc602465e7adeb5093c48614ece7f13619e1c83081e8263101f6e7"
+    },
+    {
+      "bytes": 23301304,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_labram_lora_001\\rate_01_fullstate.safetensors",
+      "sha256": "2b57768aaab12214d95d233f51bb7f26a277dd3bc6e9921c8b6de6b8132c10dd"
+    },
+    {
+      "bytes": 23301304,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_20261015_v1\\output_labram_lora_001\\rate_02_fullstate.safetensors",
+      "sha256": "869f5dbe6b4d8d2557cc1d368a9fb13a4cdbf318f79a750ba40413b8eb22ef4f"
+    },
+    {
+      "bytes": 23294624,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\output_labram_full_001\\rate_01_fullstate.safetensors",
+      "sha256": "b3474694028e138897af009f50315281e30bf264bead920d4ea08e9e4fa83fe9"
+    },
+    {
+      "bytes": 23294624,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_numerical_full_20261015_v2\\output_labram_full_001\\rate_02_fullstate.safetensors",
+      "sha256": "00d6ecd7c62e37bd9f0e925978d2f71b22148653c996ed6039c467ee1a7d4047"
+    }
+  ],
+  "successor_source_pins_rechecked": 563
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "runs/coordination/cho51_receipt_selector_20261015_v1/closeout_002.py": "e4d571f3d87ccde1d6e3e216035796ea7f9e0e000dbaa8d8c843a728daf6d952"
+  },
+  "observed_utc": "2026-10-15T10:08:39.465259+00:00",
+  "original_545_tested_pins_unchanged": true,
+  "qualified_collector_tests_cover_this_helper": false,
+  "reason": "Windows Python3.12 path stat ctime and handle fstat ctime use different semantics; retain each API full signatures and compare shared identity fields across APIs",
+  "remaining_actionable_findings": [],
+  "reviewer": "/root/review_receipt_roster",
+  "root_review_complete": true,
+  "schema": "cho51_archive_successor_source_review_v1",
+  "scientific_admission": false,
+  "source_only": true,
+  "test_suite_replayed": false
+}

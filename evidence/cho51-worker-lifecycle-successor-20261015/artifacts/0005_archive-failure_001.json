@@ -1,0 +1,262 @@
+{
+  "archive_only": true,
+  "cause_observed": "ordinary Path.resolve failed after extended-path copy at an archive path longer than MAX_PATH",
+  "exception_type": "FileNotFoundError",
+  "exit_code": 1,
+  "numerical_or_boundary_work_replayed": false,
+  "observed_utc": "2026-10-15T11:15:04.515264+00:00",
+  "original_closeout_sha256": "ced5052887db766317f7c2a61a7076ff6e8932c78716a4da63346d7bf29d5024",
+  "original_source_and_pins_preserved": true,
+  "partial_archive": "D:\\Aenv\\pro3\\evidence\\cho51-worker-lifecycle-20261015",
+  "partial_archive_has_manifest": false,
+  "partial_archive_has_summary": false,
+  "partial_artifact_bytes": 3187457,
+  "partial_artifact_count": 48,
+  "partial_artifacts": [
+    {
+      "bytes": 22660,
+      "path": "artifacts/docs/phase2/cho51_tensor_verification_v1/launcher.py",
+      "sha256": "ff9ab5dc5bef374c4a76f946a52cd412fd260d19ad88a6d9ea7828087d9b2f24"
+    },
+    {
+      "bytes": 25495,
+      "path": "artifacts/docs/phase2/cho51_worker_lifecycle_v1/lifecycle.py",
+      "sha256": "551f939f1babb5f04ad9adf47e363cddc9226fb89170c6c83edcc2d516777756"
+    },
+    {
+      "bytes": 3485,
+      "path": "artifacts/docs/phase2/cho51_worker_lifecycle_v1/README.md",
+      "sha256": "a82748e6cb437c7b13687cc9a7dc3f2a1cdc46d3b66b22d9f41b62efed779bb7"
+    },
+    {
+      "bytes": 20901,
+      "path": "artifacts/docs/phase2/cho51_worker_lifecycle_v1/test_lifecycle.py",
+      "sha256": "3c69b500ce3712af27637705a0ed5fad485a495bf9288c28f05ce0cc0c8daa70"
+    },
+    {
+      "bytes": 23500,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/child.py",
+      "sha256": "e7e22e3187f17cb9c5557817080c0419bdd59ed2831735562527ad8ce1094072"
+    },
+    {
+      "bytes": 35369,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/closeout.py",
+      "sha256": "ced5052887db766317f7c2a61a7076ff6e8932c78716a4da63346d7bf29d5024"
+    },
+    {
+      "bytes": 852,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/dispatch_001.json",
+      "sha256": "adab12fd785280b67963007a02508d0cb350c3edf3bf8da3274434279d5d5d96"
+    },
+    {
+      "bytes": 971,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/dispatch_result_001.json",
+      "sha256": "8cbdd997903ae18ab2c23a6909c119456c4e69a30f03604bd0c30ea5a40b9d88"
+    },
+    {
+      "bytes": 3614,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/launch.ps1",
+      "sha256": "78ac3e5cf36ea5cbd39a18e6063893f000004e2b3433ba025e95b082c8ccee61"
+    },
+    {
+      "bytes": 938,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/observation_001.json",
+      "sha256": "b6a33927ab59549a5c9f89219a8c0fdf6c1efe3167cfc5ea0a782bb9415e3c39"
+    },
+    {
+      "bytes": 2236,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/observe.py",
+      "sha256": "91d2932fd2c35a84dd1430d5010a91796a7bb3457debc17017732df33d055b8e"
+    },
+    {
+      "bytes": 31559,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/parent.py",
+      "sha256": "fd9f2dd32ea05e0b5199bb4d2f07005deb86bfb5687ebb2a1a8afef115fe14fc"
+    },
+    {
+      "bytes": 71652,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/pins.json",
+      "sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1"
+    },
+    {
+      "bytes": 6924,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/prepare.py",
+      "sha256": "5f9cbce3f6ea0084a0123973f52f90487545bdd0c6e086d307a4ed32cc937645"
+    },
+    {
+      "bytes": 1752,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/source-review.json",
+      "sha256": "155906bc880307590582f6ce63e70fec113bf6baadec90b2c565e9e7ebdad923"
+    },
+    {
+      "bytes": 742709,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/child_output/qualification.json",
+      "sha256": "8a6c8d01e738e37573d43dc78549e3d51bac1090e2e4980a827c134848b6944a"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/guard-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 169,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/guard-stdout.txt",
+      "sha256": "7ec53547844a1a309bc5f4554d76eac6f782de2b318df6abe110f950d980448d"
+    },
+    {
+      "bytes": 1061,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/native-dispatch.json",
+      "sha256": "ed2da49f9197da4fdfb6e21f84fb3ad6dd29be3c4f34bcdddf357dee5c7962ec"
+    },
+    {
+      "bytes": 1715,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/parent-attestation.json",
+      "sha256": "aefdeaa5ac896556ab135ff57dd907d21a718da15deeeb9efedba0676e186fae"
+    },
+    {
+      "bytes": 1692,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784/request.json",
+      "sha256": "e6bf331aa587a860a412c1f87d81f83f627214b4ee5b02625ba2cfcb7bb2e6ea"
+    },
+    {
+      "bytes": 723470,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/child_output/qualification.json",
+      "sha256": "8e85aad5e9403cab23d1b980e9f0d945dfa6aaae2efc1d16d3b0fff2038e1538"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/guard-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 164,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/guard-stdout.txt",
+      "sha256": "c1be113d3a88864d2f60efc0976ae369d7591f36d320d91fec61af8ffbb2f203"
+    },
+    {
+      "bytes": 1056,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/native-dispatch.json",
+      "sha256": "c31fa7acbd5b5cef1c73e180c155cd43ba5e8ce387ff59e8de946b9247e1c5e1"
+    },
+    {
+      "bytes": 1715,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/parent-attestation.json",
+      "sha256": "04aaa06c88a8de860e95e342b8caff10ae5a96f0cc3d52ce2eb9b3cc20d98136"
+    },
+    {
+      "bytes": 1687,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78/request.json",
+      "sha256": "d83c32a28975eacaf17f0c4b9edf7e1ea5c4922f01fc5671023e751bb7fb8b81"
+    },
+    {
+      "bytes": 722641,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/child_output/qualification.json",
+      "sha256": "80dc944edde1eb86496b1baca07ea71e5be493fc8a9fe40ab9812d713eb9d929"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/guard-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 171,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/guard-stdout.txt",
+      "sha256": "cf48accf1325a7d1cdd130482faecc46811eb01a1e4e0d0ba724c771e7494df4"
+    },
+    {
+      "bytes": 1063,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/native-dispatch.json",
+      "sha256": "85cc1e990f44ec87ccc161e4de57a0ba4831f1e3a1c47d29cdfbeba9f72b6617"
+    },
+    {
+      "bytes": 1715,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/parent-attestation.json",
+      "sha256": "cd806c26be1de47631d6e8dac1f0b38e06e038dc9dbfdd7918ecbf39cc9ae666"
+    },
+    {
+      "bytes": 1694,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141/request.json",
+      "sha256": "1759993c2ac7e32f65711fd23e3726b6ef9612e691eedebd52dcbfcdf3d9f2d2"
+    },
+    {
+      "bytes": 723316,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/child_output/qualification.json",
+      "sha256": "02a9ff2920e08f18e1302dfd82d2128be8d7d8f2246d8d7eb9702ec42e7d9f79"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/guard-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 169,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/guard-stdout.txt",
+      "sha256": "be124927888a299d93da986cea9fdcb2a45d2c2dd85426b05bdcbcfd91efadd4"
+    },
+    {
+      "bytes": 1061,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/native-dispatch.json",
+      "sha256": "34d3464873c9de941173424be92a04d3e28e36b5ef11059214b2d88d1c03bb1e"
+    },
+    {
+      "bytes": 1715,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/parent-attestation.json",
+      "sha256": "9da18dec4e83ae1ad8235322e40f6bfe22354547b3beeda05f1d4854b678ced6"
+    },
+    {
+      "bytes": 1692,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/cases/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957/request.json",
+      "sha256": "ad9e8a6df35c3af927f8773d41c8a1c33d420db363e4ce8ace9a7c83d91fa6b5"
+    },
+    {
+      "bytes": 648,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/claims/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.attempt1.claim.json",
+      "sha256": "7e57275b0daefc0abce7335827ee130b9a37762f88b55f5f7ce84faaca894474"
+    },
+    {
+      "bytes": 643,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/claims/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78.attempt1.claim.json",
+      "sha256": "1f708b9062c2a0d9393dfd49c4267bd65c779fc44762edd59936fdf525536235"
+    },
+    {
+      "bytes": 650,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/claims/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.attempt1.claim.json",
+      "sha256": "6e6d76f82c73c527501237260aa3c30e2c1b3f89092e44f29d319d25563d265a"
+    },
+    {
+      "bytes": 648,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/claims/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957.attempt1.claim.json",
+      "sha256": "2ac77d9103fb9ed2eb37e7d581a9a535dfbc8ccfcc89ef0f9107c25d2184b9f7"
+    },
+    {
+      "bytes": 459,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_intents/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.intent.json",
+      "sha256": "476f8572142d6a0844edb5ff8e148285bd023e69a4efa6052a370175ffceed00"
+    },
+    {
+      "bytes": 454,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_intents/9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78.intent.json",
+      "sha256": "e365f08ca4c9a98df91f4823d06120d38da6726b12d21758b5f5baf21ef840e6"
+    },
+    {
+      "bytes": 461,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_intents/9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.intent.json",
+      "sha256": "ffc56b3f962c9aa4af6beafa4c3a75a2785c3616fa68a69102e744587aba66b8"
+    },
+    {
+      "bytes": 459,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_intents/e851ceba6df16b677ef4437520841000d7844a3128b471f3cfd73f41c87f1957.intent.json",
+      "sha256": "5fe028b56c569417e685fdc69d373cc3649725205004eabee53221991ef1a9a2"
+    },
+    {
+      "bytes": 452,
+      "path": "artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_successes/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.success.json",
+      "sha256": "91a49599670884f39fff408a93def3847d7d210771561d59d262c57ed242f985"
+    }
+  ],
+  "schema": "cho51_worker_lifecycle_archive_failure_v1",
+  "scientific_admission": false,
+  "tested_pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\closeout.py\", line 560, in <module>\n    main()\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\closeout.py\", line 520, in main\n    copied_raw, copied_identity = inspect(target, compact=True)\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\closeout.py\", line 50, in inspect\n    path = direct(path)\n  File \"D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\closeout.py\", line 40, in direct\n    if not path.is_absolute() or path.resolve(strict=True) != path:\n  File \"C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1240, in resolve\n    s = self._flavour.realpath(self, strict=strict)\n  File \"<frozen ntpath>\", line 695, in realpath\nFileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\\\Aenv\\\\pro3\\\\evidence\\\\cho51-worker-lifecycle-20261015\\\\artifacts\\\\runs\\\\coordination\\\\cho51_worker_lifecycle_20261015_v1\\\\validation_001\\\\fixture\\\\runs\\\\phase2\\\\lifecycle\\\\engineering_successes\\\\3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.success.json'\n",
+  "windows_error": 3
+}

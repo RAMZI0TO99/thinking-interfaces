@@ -1,0 +1,142 @@
+{
+  "actual_public_restore_limits_bytes": [
+    1048576,
+    1048576
+  ],
+  "actual_safetensors_loads": 2,
+  "actual_strict_state_loads": 2,
+  "all_tensors_equal": true,
+  "archive_source_pairs_rechecked": 189,
+  "current_gradient_updates": 0,
+  "current_report_and_head_local_links_resolved": 15,
+  "documents": {
+    "AGENT_COORDINATION.md": "e5aff8b8056f15ef6245bc1604e884f43da913395482f87c6653723b14d9fa2f",
+    "CONTINUE_HERE.md": "7698d461f5e36b3ba6b8566ac88629e3b7a4ffd54cdb5f2b214354b380b66a42",
+    "HANDOFF.md": "e201082066612f1afa7e7c407f7a69b767e4202491a5a7b8194b97216dae63b2",
+    "PHASE2_START_HERE.md": "b8d305596ba458f6f892d9eddde26717723a0e4ee568ba8588d4360ef00197d7",
+    "README.md": "84b81844fc992adf53fec3b47eb0367966c4077a50643382bdc1d915fd5b674b",
+    "WINDOWS_SETUP.md": "3c3eaecbdc25cf7b75eedd8499f20a68db0f34c001b82692b898f4b8592e6d44",
+    "docs/phase2/cho51_staged_restore_qualification_20261015.md": "63c3a7d47c7492da8de1be59a3555f46dbcfc1e6453f9b54c7695a90b679211c"
+  },
+  "engineering_successes": 0,
+  "evidence": {
+    "dispatch": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/dispatch_001.json",
+      "sha256": "c7cbf6eecaa6c587d2e888528a35eccd05bd38272f8dc5ff48d40bf0c6f0f639"
+    },
+    "dispatch_result": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/dispatch_result_001.json",
+      "sha256": "22f98296f2fad45fc55beed2a97b7222cc6926b9f69db4b6169d06cdaec4b5d7"
+    },
+    "manifest": {
+      "path": "evidence/cho51-staged-eegnet-restore-20261015/manifest.json",
+      "sha256": "37183638171c59f4f3bcacf02421ddd1b0426c7d13a5dcf062657cc29a7858a5"
+    },
+    "native_admission": {
+      "path": "runs/migration/20261015T134051Z_91181dffde/admission.json",
+      "sha256": "2cb750062b603bfe46d469482f35fd09b34453c1f385ecdaed469d2f87da249b"
+    },
+    "native_receipt": {
+      "path": "runs/migration/20261015T134051Z_91181dffde/receipt.json",
+      "sha256": "5b7b6928b68b6a602355e9e0027101a066a2059ea153fa9ebe43a42f868f1c76"
+    },
+    "origin_final_review": {
+      "path": "runs/coordination/cho51_complete_eegnet_20261015_v4/packet/final-review.json",
+      "sha256": "e8e13870099a84e6de167f496a728227374ebd322cf5c6ff56ae5008648b4d45"
+    },
+    "pins": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/pins.json",
+      "sha256": "ebd67a1d9bc2807ada7bd73689e41b14fd393b4410f30b00c08af8b26c69332f"
+    },
+    "qualification": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/verification_001/qualification.json",
+      "sha256": "51663cc7205825064160ed902cae8008f3478f6146a7904beecff758bbb15c56"
+    },
+    "result": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/verification_001/detached-result.json",
+      "sha256": "d95a328ca15b774d7651ad02a4a48bb2ef450fc520b797bddb5b4cc22e08182e"
+    },
+    "source_review": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/source-review.json",
+      "sha256": "59862947a33550506902f8f584b2ee39875ce35b9e15e9db8b6721caa1c6d6c8"
+    },
+    "stage_contract": {
+      "path": "runs/coordination/cho51_staged_restore_20261015_v1/stage-contract.json",
+      "sha256": "0736f8f40446ea32c6727f9a8e6cd68e29457774b63ce8b9fc56d5fcb51b7b66"
+    },
+    "summary": {
+      "path": "evidence/cho51-staged-eegnet-restore-20261015/summary.json",
+      "sha256": "7abe328c7a2880e197e48e1d0fdcef539810dc7cd2377e3cc4060da984e6cf87"
+    }
+  },
+  "fresh_loaded_modules_rechecked": 3936,
+  "fresh_source_runtime_pins_rechecked": [
+    798,
+    5
+  ],
+  "historical_failed_case_unchanged": true,
+  "historical_source_gradient_updates": 5253,
+  "latest_document_heads_agree": true,
+  "measured_cells": 0,
+  "metadata_only": true,
+  "native_job_absence_checks": {
+    "pro3_migration_20261015T124552Z_4ab1a7c6a6": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T125205Z_c4bffd878a": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T125235Z_ad2d9d9c6f": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T130307Z_6a387bb981": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T130336Z_b7198c366e": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T130635Z_f5bb2b02b2": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T131826Z_7d29560b93": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T131859Z_0795c61e69": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T132158Z_6da3b33f16": {
+      "absent": true,
+      "windows_error": 2
+    },
+    "pro3_migration_20261015T134051Z_91181dffde": {
+      "absent": true,
+      "windows_error": 2
+    }
+  },
+  "origin_contract_artifacts_rechecked": 323,
+  "origin_input_bytes_rechecked": 734579463,
+  "origin_input_files_rechecked": 213,
+  "origin_loaded_modules_rechecked": 4719,
+  "origin_source_runtime_pins_rechecked": [
+    635,
+    5
+  ],
+  "original_case_attempts_remaining": 0,
+  "parent_transaction_qualified": false,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "review_execution": "Read-only standard-library metadata/hash checks and Windows Job absence queries; no repository imports, tests, model imports, numerical work or launch.",
+  "reviewed_utc": "2026-10-15T13:44:25.694659+00:00",
+  "schema": "cho51_staged_eegnet_restore_final_review_v1",
+  "scientific_admission": false,
+  "source_training_replayed": false,
+  "tensor_count": 21
+}

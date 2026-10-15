@@ -1,0 +1,22 @@
+{
+  "case_id": "9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78",
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\child.py",
+    "--request",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_worker_lifecycle_20261015_v1\\validation_001\\cases\\9d0b17621302211d3396cfa2a8cf6113a5887b3ca9ffbf439fddd5ffcf8c2b78\\request.json",
+    "--expect-request",
+    "d83c32a28975eacaf17f0c4b9edf7e1ea5c4922f01fc5671023e751bb7fb8b81"
+  ],
+  "claim_file_sha256": "1f708b9062c2a0d9393dfd49c4267bd65c779fc44762edd59936fdf525536235",
+  "guard_exit_code": 0,
+  "method": "eegnet",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T111031Z_a7efd07604",
+  "pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+  "request_sha256": "d83c32a28975eacaf17f0c4b9edf7e1ea5c4922f01fc5671023e751bb7fb8b81",
+  "schema": "cho51_worker_lifecycle_inner_dispatch_v1",
+  "scientific_admission": false
+}

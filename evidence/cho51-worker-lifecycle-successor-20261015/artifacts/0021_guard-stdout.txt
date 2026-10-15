@@ -1,0 +1,4 @@
+D:\Aenv\pro3\runs\migration\20261015T111222Z_a9b51a79c8
+PASS
+{"passed": true, "method": "labram_full", "actual_gradient_updates": 8, "scientific_admission": false}
+

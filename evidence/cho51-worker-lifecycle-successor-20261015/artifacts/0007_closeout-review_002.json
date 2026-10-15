@@ -1,0 +1,17 @@
+{
+  "archive_only": true,
+  "files": {
+    "runs/coordination/cho51_worker_lifecycle_20261015_v1/archive-failure_001.json": "7b955b950c4d212a5d13b0ff13abe7b40c41c22933be878e40b603baf7be5baf",
+    "runs/coordination/cho51_worker_lifecycle_20261015_v1/closeout_002.py": "731047bb137b50a4c039eb0d4e396efd31e8dd820edc298a31b2a7a05e83b6f3"
+  },
+  "finding_resolution": "short numbered destinations; original48 artifact and directory inventory checked with bounded hashes and extended paths; native/proof/recorder checks preserved",
+  "numerical_or_boundary_work_replayed": false,
+  "observed_utc": "2026-10-15T11:19:26.732804+00:00",
+  "remaining_actionable_findings": [],
+  "reviewer": "review_receipt_roster",
+  "schema": "cho51_worker_lifecycle_closeout_source_review_v2",
+  "scientific_admission": false,
+  "source_only": true,
+  "tested_closeout_sha256": "ced5052887db766317f7c2a61a7076ff6e8932c78716a4da63346d7bf29d5024",
+  "tested_pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1"
+}

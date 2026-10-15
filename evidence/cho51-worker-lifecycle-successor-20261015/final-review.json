@@ -1,0 +1,56 @@
+{
+  "artifact_bytes": 3686366,
+  "artifact_count": 82,
+  "boundary_tests": 69,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "child_observed_module_files": [
+    4674,
+    4674,
+    4674,
+    4674
+  ],
+  "document_sha256": {
+    "AGENT_COORDINATION.md": "eb42232919fe49ff680c2b968df3295b72f7e78a884c9894a73ec7b73054e214",
+    "CONTINUE_HERE.md": "270dd37b9c48994f217d6922a0adfbc5e2c1ef87e5f659e0760d6cd95e51886b",
+    "HANDOFF.md": "4743d845123d3449004b4942d9bff75668101b68e5c1345a00bcce3c261888e1",
+    "PHASE2_START_HERE.md": "cd95367302f8dd3c43ba987eafbfaed6d2a799c18ef544ef7c5007be51d0d440",
+    "README.md": "5cfd45a2a7960d658dd8714028e49bc627d9f6959cf4dabdfd4ac0014b813c5a",
+    "WINDOWS_SETUP.md": "c526f5e0a014c8ce05c77019418f9ecc1b8b49218d96064386de8f36ac5eb448",
+    "docs/phase2/cho51_worker_lifecycle_qualification_20261015.md": "5508481713d7c298ffe460a1ea255e1789200968c7a5c95431fb94c05dd1109a",
+    "evidence/cho51-worker-lifecycle-successor-20261015/README.md": "0293b796e1d34eea05c90232db7bca67e0b8de2fa5fc3b80a641f5aafcaf43ee"
+  },
+  "engineering_successes": 4,
+  "failures": 0,
+  "full_worker_verified": false,
+  "manifest_sha256": "fafab23a7ab5992c5b4900c3d0e6f1e475672128e9e67e7a56efec40111a0967",
+  "measured_cells": 0,
+  "models_or_tests_replayed": false,
+  "native_jobs_freshly_absent": [
+    "pro3_migration_20261015T111011Z_df33481f9f",
+    "pro3_migration_20261015T111031Z_a7efd07604",
+    "pro3_migration_20261015T111102Z_e6aa708a2f",
+    "pro3_migration_20261015T111151Z_d38d63bba4",
+    "pro3_migration_20261015T111222Z_a9b51a79c8"
+  ],
+  "observed_pause_paths": {
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false,
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json": false
+  },
+  "observed_utc": "2026-10-15T11:23:09.138712+00:00",
+  "original_case_attempts_remaining": 0,
+  "original_partial_files_rechecked": 48,
+  "parent_observed_module_files": 2351,
+  "passed": true,
+  "pins_sha256": "20a808c269e6de2c6fd7355749438c80f7198e48946753d0db63308a1a72d3a1",
+  "runtime_pins_rechecked": 5,
+  "saved_state_bytes": 139806432,
+  "saved_states_rechecked": 8,
+  "schema": "cho51_worker_lifecycle_final_metadata_review_v1",
+  "scientific_admission": false,
+  "source_context_pins_rechecked": 574,
+  "summary_sha256": "172ee030dab92bbc170164ac89242744b73f99576d687989a4d25ffcf240468d",
+  "unique_observed_module_files_rechecked": 4781
+}

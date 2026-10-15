@@ -1,0 +1,13 @@
+{
+  "schema": "cho51_tensor_blocked_import_probe_review_v1",
+  "reviewer": "/root/review_tensor_runtime",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "launcher_sha256": "13075e3a16fa949055d29ce5cddc68ceda0576c60d5398bce6d97e025e9ebfba",
+  "child_sha256": "09f3164bed1a57bd40d906b2b9020ec368219d1768a663482a62a3a10bb4d84b",
+  "pinned_urllib3_source_sha256": "2633bbdb69731e5ccb5cf4e4afd65605d86c7979cc5633126f50c92d5ad74a74",
+  "change": "One exact optional IPv6 import-probe socket construction from the pinned _has_ipv6 source remains blocked before OS creation and recorded; any other or repeated denial fails closed.",
+  "network_access_allowed": false,
+  "resource_floors_or_caps_changed": false,
+  "scientific_admission": false
+}

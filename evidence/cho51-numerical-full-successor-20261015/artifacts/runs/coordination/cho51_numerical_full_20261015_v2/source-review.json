@@ -1,0 +1,21 @@
+{
+  "canonical_guards_changed": false,
+  "files": {
+    "runs/coordination/cho51_numerical_full_20261015_v2/child.py": "628b722c60e86798e1fa414e6da459987dc38d72551301eab89e6519fe31ea08",
+    "runs/coordination/cho51_numerical_full_20261015_v2/closeout.py": "c702b475fea024ba276c600132b6fc4f0dfedf8247184452cb16c890d907b042",
+    "runs/coordination/cho51_numerical_full_20261015_v2/launch.ps1": "f3dc7cbc87c3c811f3e73063906fa85bb2c11746eb0cba74eeb2d9c227f9cd11",
+    "runs/coordination/cho51_numerical_full_20261015_v2/observe.py": "b32d0997c9bc38d29be49ff31677bea71f285e504232de5bf14de6500b5d443a",
+    "runs/coordination/cho51_numerical_full_20261015_v2/prepare.py": "0ffb220e0c7c87e78f827218b142a20acc8656941bd02582908af70189801262"
+  },
+  "initial_three_passes_and_full_refusal_preserved": true,
+  "numerical_workload_reduced": false,
+  "observed_utc": "2026-10-15T10:42:13.693556+00:00",
+  "remaining_actionable_findings": [],
+  "reviewer": "/root/review_receipt_roster",
+  "root_review_complete": true,
+  "schema": "cho51_full_numerical_successor_source_review_v1",
+  "scientific_admission": false,
+  "scope": "one full-only random-initialized synthetic successor at3072/4096MiB and unchanged300s/10startup4activeRAM/20disk/CPU1/1/hiddenGPU",
+  "source_only": true,
+  "unchanged_probe_sha256": "782fd51846e41c093ac2a3c5d5db6c78ecd5148a310dd4a275fd488b773e0847"
+}
