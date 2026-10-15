@@ -1,0 +1,19 @@
+.........................................................................
+73 passed in 16.51s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_recorder_20261015_v1\parent.py", line 165, in <module>
+    runtime.verify_pins()
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_recorder_20261015_v1\runtime.py", line 245, in verify_pins
+    if digest(ROOT / relative) != expected:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_recorder_20261015_v1\runtime.py", line 35, in digest
+    with Path(path).open('rb') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_recorder_20261015_v1\runtime.py", line 369, in audit
+    self.refuse('actual_study_array_or_unpinned_checkpoint_read', path)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_recorder_20261015_v1\runtime.py", line 260, in refuse
+    raise PermissionError('staged recorder parent denied: ' + event)
+PermissionError: staged recorder parent denied: actual_study_array_or_unpinned_checkpoint_read

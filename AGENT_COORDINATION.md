@@ -1,5 +1,107 @@
 # Project coordination
 
+<!-- cho51-linear-recorder-status:begin -->
+## Linear staged recorder accepted, 15 October, 18:28 UTC
+
+[The recorder qualification](docs/phase2/cho51_linear_recorder_qualification_20261015.md)
+records 73 passing tests and one real locked engineering transaction: backend
+once, verifier twice, durable request/attestation, one engineering success and
+zero measured cells. Current fitting, restoration and inference were zero;
+all 5,253 training updates and both detached restorations remain historical.
+The separately reviewed v2 Job accepted exit 0 in 412.501637 seconds and closed
+empty/freshly absent. The earlier v1 preclaim refusal remains frozen separately.
+
+The [37-artifact recorder packet](evidence/cho51-linear-recorder-20261015/README.md)
+preserves actual proofs and the complete evidence. All 213 input files and
+canonical 432 sources remain unchanged. Final closure requires the passed v2
+review binding this report and six resume heads; its exact document snapshots
+are preserved in the [recorder closeout export](evidence/cho51-linear-recorder-closeout-export-20261015/README.md).
+All 26 scoped native names are freshly absent; their acceptance statuses differ.
+
+The first docs/evidence push was `277d797`; the recorder captured that actual
+Git context separately from historical source commit `4491e2a` (both dirty=true).
+Future commits preserve these recorded identities. Never replay or reset used
+launchers, outputs, claims or receipts. Git exports metadata, not fixture arrays
+or selected weights.
+
+Next: synthetic linear target-support adaptation/query route, then worker-route
+qualification, starting with separately versioned contracts and source review.
+Unchanged single-root factories, full 1,020-cell worker, cohort/prior-training
+lineage, final owner freeze and scientific execution remain pending. Original
+case attempts remain zero; no new autonomous window or peer release is inferred.
+Earlier preparation and next-step entries below are historical checkpoints.
+<!-- cho51-linear-recorder-status:end -->
+
+<!-- cho51-linear-recorder-v2-repair:begin -->
+## Linear recorder v2 repair in preparation, 15 October 2026
+
+The [preserved v1 preclaim refusal](evidence/cho51-linear-recorder-preclaim-refusal-20261015/README.md)
+records 73 passing tests followed by a frozen-pin metadata read refusal. The
+native Job closed empty/freshly absent. No production fixture, claim, backend,
+verifier or engineering receipt was created. The first attempt remains frozen.
+
+The separately versioned operations in
+`runs/coordination/cho51_linear_recorder_20261015_v2` reuse the unchanged three-file
+core candidate. Permit only the exact 52 historical EEGNet manifest JSON paths
+and their frozen byte hashes under metadata verifiers; keep the ordinary 8 MiB
+bound and every signal-array/weight decoding prohibition. This exception must
+not grant general reads to paths containing data directories.
+
+After independent source review, maximum one new guarded 600-second metadata
+Job under unchanged 4,096/5,120 MiB process/Job, 10/4 GiB RAM, 20 GiB disk,
+threads 1/1, hidden GPUs and all four pause paths. Run 73 tests once in this new
+Job, then require backend once/verifier twice/one engineering success/zero
+measured cells and numerical work. Both versions preserve original attempts 0.
+No used path is reset, and no scientific execution or new autonomous window is
+admitted. The earlier one-Job v1 scope above is historical and exhausted.
+<!-- cho51-linear-recorder-v2-repair:end -->
+
+
+<!-- cho51-linear-recorder-preparation:begin -->
+## Linear staged recorder integration in preparation, 15 October 2026
+
+Documentation and the completed metadata checkpoints were pushed to origin/main
+as `277d7975ba400a9927bdd3e1495f6ade25ddea38`. The next finite phase owns new
+`docs/phase2/cho51_linear_recorder_v1` and
+`runs/coordination/cho51_linear_recorder_20261015_v1` sources. Root owns integration,
+independent review, admission, dispatch and closeout; delegated workers own the
+transaction/tests/README and the separate guarded operations/origin verifier.
+
+Maximum one fresh 600-second metadata-only native Job, with 4,096/5,120 MiB
+process/Job limits, 10/4 GiB startup/active RAM, 20 GiB disk, one native thread,
+hidden GPUs and all four genuine Pro2 pause paths. Run meaningful recorder
+boundary tests once under that Job. Require a real CaseRecorder lock/claim,
+backend once, verifier twice, fsynced request/attestation and exactly one
+engineering success with zero measured cells. Pinned NumPy/Torch imports required
+by unchanged recorder dependencies and environment metadata queries are allowed.
+No model construction, weight decoding, restoration, optimizer, backward, fitting
+or inference is admitted; numerical operation counters must remain zero. All 5,253
+training updates and both 64 MiB-bounded source restorations are historical.
+
+Authenticate the accepted final review and source/publication/restoration proof
+bytes without replay. The accepted Git/source triple remains historical at
+`4491e2a68126d6b7293261f4954b88c11c29049d`, dirty=true. The new control fixture must
+capture/recheck actual post-push provenance at `277d7975ba400a9927bdd3e1495f6ade25ddea38`;
+matching five-TOML fingerprints do not erase the distinct Git revisions. CasePlan
+identity derives from its plan tuple and can remain equal. Use a distinct
+engineering worker and isolated ledger, never reset an original attempt.
+
+Ordinary metadata remains 8 MiB. Only exact pinned complete-evidence copies may
+use 32 MiB; exact safe weights use 64 MiB streamed hash checks only, without
+header parsing or decoding. Preserve direct-path/single-link/stable-identity
+checks and all historical assets. Exact original-input byte hashing under the
+authenticated metadata verifier is allowed; decoding and computational input
+reads remain blocked. Repeat the full input hash audit after Job completion.
+Current document bindings advance separately
+from the committed historical snapshots. Recovery requires explicit external
+digests and independent revalidation and must not invoke the backend again.
+
+This phase does not qualify unchanged single-root factories, the full 1,020-cell
+worker, checkpoint cohort/prior-training lineage, owner final freeze or science.
+Original attempts remain zero. No new 30-hour window, peer release or watcher
+is inferred. Used directories and native receipts must never be reset/replayed.
+<!-- cho51-linear-recorder-preparation:end -->
+
 <!-- cho51-push-checkpoint-status:begin -->
 ## Repository publication checkpoint, 15 October 2026
 

@@ -1,0 +1,16 @@
+[variant]
+schema_version = 1
+dataset = "cho2017"
+name = "profile_b_60hz_v1"
+output_directory = "data/processed/cho2017/profile_b_60hz_v1"
+
+[preprocessing]
+bandpass_low_hz = 0.1
+bandpass_high_hz = 75.0
+notch_hz = 60.0
+resample_hz = 200.0
+reference = "original"
+epoch_duration_s = 4.0
+amplitude_unit_mv = 0.1
+patch_duration_s = 1.0
+maximum_patches = 256

@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_linear_recorder_dispatch_result_v1",
+  "observed_utc": "2026-10-15T18:08:34.4358687Z",
+  "pins_sha256": "9dcf2903b9fe49e0f0ba3abff27feaf29a20c78a1ed106b75a4eb2af546d2a06",
+  "origin_contract_file_sha256": "6cd400d6c24db1ca8de7576b97fa3925cb89ffa975c3ca03a95412ca600247b4",
+  "source_training_replayed": false,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261015T180810Z_e981bcd65c",
+  "guard_exit_code": 1,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_recorder_20261015_v1\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_recorder_20261015_v1\\pins.json",
+    "--expect-pins",
+    "9dcf2903b9fe49e0f0ba3abff27feaf29a20c78a1ed106b75a4eb2af546d2a06",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_recorder_20261015_v1\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_recorder_20261015_v1\\validation_001",
+  "scientific_admission": false
+}

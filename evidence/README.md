@@ -1,5 +1,16 @@
 # Portable historical evidence
 
+## Linear recorder checkpoint, 15 October, 18:28 UTC
+
+The [accepted recorder packet](cho51-linear-recorder-20261015/README.md)
+preserves 37 artifacts: 73 tests passed, backend once, verifier twice and one
+engineering success with zero measured cells or new numerical work. The
+[preclaim refusal packet](cho51-linear-recorder-preclaim-refusal-20261015/README.md)
+preserves the separate failed attempt. The
+[recorder closeout export](cho51-linear-recorder-closeout-export-20261015/README.md)
+preserves the final audit and its exact seven document snapshots. Arrays,
+selected weights, caches and live run trees remain outside this Git export.
+
 ## Latest metadata publication, 15 October 2026
 
 The [linear closeout export](cho51-linear-closeout-export-20261015/README.md)

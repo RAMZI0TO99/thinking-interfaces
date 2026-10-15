@@ -1,5 +1,37 @@
 # Phase II - Start Here
 
+<!-- cho51-linear-recorder-status:begin -->
+## Linear staged recorder accepted, 15 October, 18:28 UTC
+
+[The recorder qualification](docs/phase2/cho51_linear_recorder_qualification_20261015.md)
+records 73 passing tests and one real locked engineering transaction: backend
+once, verifier twice, durable request/attestation, one engineering success and
+zero measured cells. Current fitting, restoration and inference were zero;
+all 5,253 training updates and both detached restorations remain historical.
+The separately reviewed v2 Job accepted exit 0 in 412.501637 seconds and closed
+empty/freshly absent. The earlier v1 preclaim refusal remains frozen separately.
+
+The [37-artifact recorder packet](evidence/cho51-linear-recorder-20261015/README.md)
+preserves actual proofs and the complete evidence. All 213 input files and
+canonical 432 sources remain unchanged. Final closure requires the passed v2
+review binding this report and six resume heads; its exact document snapshots
+are preserved in the [recorder closeout export](evidence/cho51-linear-recorder-closeout-export-20261015/README.md).
+All 26 scoped native names are freshly absent; their acceptance statuses differ.
+
+The first docs/evidence push was `277d797`; the recorder captured that actual
+Git context separately from historical source commit `4491e2a` (both dirty=true).
+Future commits preserve these recorded identities. Never replay or reset used
+launchers, outputs, claims or receipts. Git exports metadata, not fixture arrays
+or selected weights.
+
+Next: synthetic linear target-support adaptation/query route, then worker-route
+qualification, starting with separately versioned contracts and source review.
+Unchanged single-root factories, full 1,020-cell worker, cohort/prior-training
+lineage, final owner freeze and scientific execution remain pending. Original
+case attempts remain zero; no new autonomous window or peer release is inferred.
+Earlier preparation and next-step entries below are historical checkpoints.
+<!-- cho51-linear-recorder-status:end -->
+
 <!-- cho51-push-checkpoint-status:begin -->
 ## Repository publication checkpoint, 15 October 2026
 
