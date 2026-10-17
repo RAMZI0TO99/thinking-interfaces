@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="56" skipped="0" tests="99" time="136.248" timestamp="2026-10-17T12:10:23.149482+03:00" hostname="Ala-Yanai-PC"><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_staged_success_holds_real_lock_preserves_origin_and_zero_measured" time="1.397"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_staged_success_holds_real_lock_preserves_origin_and_zero_measured(fixture):
+        f = fixture
+&gt;       done = run(f)
+               ^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:217: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_other_case_scope_refuses_before_claim[target_subject-subject_01]" time="1.223" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_other_case_scope_refuses_before_claim[method-eegnet]" time="1.195" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_other_case_scope_refuses_before_claim[model_seed-23]" time="1.196" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[current_gradient_updates-1]" time="1.289"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'current_gradient_updates', value = 1
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[historical_gradient_updates-8]" time="1.444"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_gradient_updates', value = 8
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[source_work_reused-False]" time="1.402"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'source_work_reused', value = False
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[current_gradient_updates-False]" time="1.300"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'current_gradient_updates', value = False
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[original_scientific_case_qualified-True]" time="1.289"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'original_scientific_case_qualified', value = True
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[restored_tensors-21]" time="1.271"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'restored_tensors', value = 21
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[restored_elements-5818139]" time="1.251"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'restored_elements', value = 5818139
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[head_parameters-401]" time="1.395"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'head_parameters', value = 401
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[current_restore_count-1]" time="1.320"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'current_restore_count', value = 1
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[historical_restore_count-1]" time="1.240"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_restore_count', value = 1
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[current_target_inference_calls-1]" time="1.218"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'current_target_inference_calls', value = 1
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_request_rejects_old_or_numerical_scope_and_bool_counts[unchanged_single_root_factory_verified-True]" time="1.235"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'unchanged_single_root_factory_verified', value = True
+
+    @pytest.mark.parametrize('field,value', [('current_gradient_updates', 1), ('historical_gradient_updates', 8),
+        ('source_work_reused', False), ('current_gradient_updates', False), ('original_scientific_case_qualified', True), ('restored_tensors', 21),
+        ('restored_elements', 5818139), ('head_parameters', 401), ('current_restore_count', 1),
+        ('historical_restore_count', 1), ('current_target_inference_calls', 1),
+        ('unchanged_single_root_factory_verified', True)])
+    def test_request_rejects_old_or_numerical_scope_and_bool_counts(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_malformed_or_unbound_origin_refuses_before_claim[summary]" time="1.300" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_malformed_or_unbound_origin_refuses_before_claim[contract_pin]" time="1.303" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_malformed_or_unbound_origin_refuses_before_claim[inside_output]" time="1.257" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_preacceptance_failure_is_one_linked_failure_without_replay[backend]" time="1.223"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'injected'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+stage = 'backend'
+
+    @pytest.mark.parametrize('stage', ['backend', 'verifier'])
+    def test_preacceptance_failure_is_one_linked_failure_without_replay(fixture, stage):
+        f = fixture
+        f.state.fail = stage
+&gt;       with pytest.raises(ValueError, match='injected'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'injected'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:274: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_preacceptance_failure_is_one_linked_failure_without_replay[verifier]" time="1.227"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'injected'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+stage = 'verifier'
+
+    @pytest.mark.parametrize('stage', ['backend', 'verifier'])
+    def test_preacceptance_failure_is_one_linked_failure_without_replay(fixture, stage):
+        f = fixture
+        f.state.fail = stage
+&gt;       with pytest.raises(ValueError, match='injected'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'injected'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:274: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_cross_request_or_origin_proof_refused[request_sha256]" time="1.659"><failure message="assert (0 == 1)&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'request_sha256'
+
+    @pytest.mark.parametrize('field', ['request_sha256', 'claim_file_sha256', 'origin_contract_file_sha256', 'selected_state_sha256'])
+    def test_cross_request_or_origin_proof_refused(fixture, field):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, **{field: sha('wrong-proof')})
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1 and not (f.recorder.output_root / 'engineering_intents').exists()
+E       assert (0 == 1)
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:293: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_cross_request_or_origin_proof_refused[claim_file_sha256]" time="1.266"><failure message="assert (0 == 1)&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'claim_file_sha256'
+
+    @pytest.mark.parametrize('field', ['request_sha256', 'claim_file_sha256', 'origin_contract_file_sha256', 'selected_state_sha256'])
+    def test_cross_request_or_origin_proof_refused(fixture, field):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, **{field: sha('wrong-proof')})
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1 and not (f.recorder.output_root / 'engineering_intents').exists()
+E       assert (0 == 1)
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:293: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_cross_request_or_origin_proof_refused[origin_contract_file_sha256]" time="1.272"><failure message="assert (0 == 1)&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'origin_contract_file_sha256'
+
+    @pytest.mark.parametrize('field', ['request_sha256', 'claim_file_sha256', 'origin_contract_file_sha256', 'selected_state_sha256'])
+    def test_cross_request_or_origin_proof_refused(fixture, field):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, **{field: sha('wrong-proof')})
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1 and not (f.recorder.output_root / 'engineering_intents').exists()
+E       assert (0 == 1)
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:293: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_cross_request_or_origin_proof_refused[selected_state_sha256]" time="1.522"><failure message="assert (0 == 1)&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'selected_state_sha256'
+
+    @pytest.mark.parametrize('field', ['request_sha256', 'claim_file_sha256', 'origin_contract_file_sha256', 'selected_state_sha256'])
+    def test_cross_request_or_origin_proof_refused(fixture, field):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, **{field: sha('wrong-proof')})
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1 and not (f.recorder.output_root / 'engineering_intents').exists()
+E       assert (0 == 1)
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:293: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_physical_drift_after_first_verifier_blocks_attestation[weights]" time="1.292"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+kind = 'weights'
+
+    @pytest.mark.parametrize('kind', ['weights', 'receipt', 'request', 'same_byte_replacement'])
+    def test_physical_drift_after_first_verifier_blocks_attestation(fixture, kind):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 2:
+                return
+            target = request.workspace / 'request.json' if kind == 'request' else f.receipt if kind == 'receipt' else f.weights
+            if kind == 'same_byte_replacement':
+                raw = target.read_bytes()
+                replacement = target.with_suffix('.replacement')
+                replacement.write_bytes(raw)
+                replacement.replace(target)
+            else:
+                target.write_bytes(target.read_bytes() + b' ')
+        f.state.verifier_change = changed
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:314: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_physical_drift_after_first_verifier_blocks_attestation[receipt]" time="1.282"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+kind = 'receipt'
+
+    @pytest.mark.parametrize('kind', ['weights', 'receipt', 'request', 'same_byte_replacement'])
+    def test_physical_drift_after_first_verifier_blocks_attestation(fixture, kind):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 2:
+                return
+            target = request.workspace / 'request.json' if kind == 'request' else f.receipt if kind == 'receipt' else f.weights
+            if kind == 'same_byte_replacement':
+                raw = target.read_bytes()
+                replacement = target.with_suffix('.replacement')
+                replacement.write_bytes(raw)
+                replacement.replace(target)
+            else:
+                target.write_bytes(target.read_bytes() + b' ')
+        f.state.verifier_change = changed
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:314: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_physical_drift_after_first_verifier_blocks_attestation[request]" time="1.256"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+kind = 'request'
+
+    @pytest.mark.parametrize('kind', ['weights', 'receipt', 'request', 'same_byte_replacement'])
+    def test_physical_drift_after_first_verifier_blocks_attestation(fixture, kind):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 2:
+                return
+            target = request.workspace / 'request.json' if kind == 'request' else f.receipt if kind == 'receipt' else f.weights
+            if kind == 'same_byte_replacement':
+                raw = target.read_bytes()
+                replacement = target.with_suffix('.replacement')
+                replacement.write_bytes(raw)
+                replacement.replace(target)
+            else:
+                target.write_bytes(target.read_bytes() + b' ')
+        f.state.verifier_change = changed
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:314: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_physical_drift_after_first_verifier_blocks_attestation[same_byte_replacement]" time="1.452"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+kind = 'same_byte_replacement'
+
+    @pytest.mark.parametrize('kind', ['weights', 'receipt', 'request', 'same_byte_replacement'])
+    def test_physical_drift_after_first_verifier_blocks_attestation(fixture, kind):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 2:
+                return
+            target = request.workspace / 'request.json' if kind == 'request' else f.receipt if kind == 'receipt' else f.weights
+            if kind == 'same_byte_replacement':
+                raw = target.read_bytes()
+                replacement = target.with_suffix('.replacement')
+                replacement.write_bytes(raw)
+                replacement.replace(target)
+            else:
+                target.write_bytes(target.read_bytes() + b' ')
+        f.state.verifier_change = changed
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:314: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_durable_acceptance_interruption_quarantines_without_failure[attestation]" time="1.215"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E1601432F0&gt;
+stage = 'attestation'
+
+    @pytest.mark.parametrize('stage', ['attestation', 'intent', 'success'])
+    def test_durable_acceptance_interruption_quarantines_without_failure(fixture, monkeypatch, stage):
+        f = fixture
+        if stage == 'attestation':
+            original = L._write_json_once
+            def interrupted(path, payload):
+                result = original(path, payload)
+                if path.name == 'parent-attestation.json':
+                    raise RuntimeError('interrupted durable attestation')
+                return result
+            monkeypatch.setattr(L, '_write_json_once', interrupted)
+        else:
+            original = f.recorder._write
+            selected = 'engineering_intents' if stage == 'intent' else 'engineering_successes'
+            def interrupted(directory, name, record):
+                result = original(directory, name, record)
+                if directory.name == selected:
+                    raise RuntimeError('interrupted durable recorder terminal')
+                return result
+            monkeypatch.setattr(f.recorder, '_write', interrupted)
+        with pytest.raises(T.RecoveryRequired):
+&gt;           run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:340: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_durable_acceptance_interruption_quarantines_without_failure[intent]" time="1.330"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E1620751F0&gt;
+stage = 'intent'
+
+    @pytest.mark.parametrize('stage', ['attestation', 'intent', 'success'])
+    def test_durable_acceptance_interruption_quarantines_without_failure(fixture, monkeypatch, stage):
+        f = fixture
+        if stage == 'attestation':
+            original = L._write_json_once
+            def interrupted(path, payload):
+                result = original(path, payload)
+                if path.name == 'parent-attestation.json':
+                    raise RuntimeError('interrupted durable attestation')
+                return result
+            monkeypatch.setattr(L, '_write_json_once', interrupted)
+        else:
+            original = f.recorder._write
+            selected = 'engineering_intents' if stage == 'intent' else 'engineering_successes'
+            def interrupted(directory, name, record):
+                result = original(directory, name, record)
+                if directory.name == selected:
+                    raise RuntimeError('interrupted durable recorder terminal')
+                return result
+            monkeypatch.setattr(f.recorder, '_write', interrupted)
+        with pytest.raises(T.RecoveryRequired):
+&gt;           run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:340: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_durable_acceptance_interruption_quarantines_without_failure[success]" time="1.205"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E161F2E810&gt;
+stage = 'success'
+
+    @pytest.mark.parametrize('stage', ['attestation', 'intent', 'success'])
+    def test_durable_acceptance_interruption_quarantines_without_failure(fixture, monkeypatch, stage):
+        f = fixture
+        if stage == 'attestation':
+            original = L._write_json_once
+            def interrupted(path, payload):
+                result = original(path, payload)
+                if path.name == 'parent-attestation.json':
+                    raise RuntimeError('interrupted durable attestation')
+                return result
+            monkeypatch.setattr(L, '_write_json_once', interrupted)
+        else:
+            original = f.recorder._write
+            selected = 'engineering_intents' if stage == 'intent' else 'engineering_successes'
+            def interrupted(directory, name, record):
+                result = original(directory, name, record)
+                if directory.name == selected:
+                    raise RuntimeError('interrupted durable recorder terminal')
+                return result
+            monkeypatch.setattr(f.recorder, '_write', interrupted)
+        with pytest.raises(T.RecoveryRequired):
+&gt;           run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:340: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_explicit_recovery_reverifies_origin_is_idempotent_and_no_backend" time="1.246"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E16164BBF0&gt;
+
+    def test_explicit_recovery_reverifies_origin_is_idempotent_and_no_backend(fixture, monkeypatch):
+        f = fixture
+        original = f.recorder._write
+        def interrupted(directory, name, record):
+            if directory.name == 'engineering_successes':
+                raise RuntimeError('receipt interrupted')
+            return original(directory, name, record)
+        monkeypatch.setattr(f.recorder, '_write', interrupted)
+        with pytest.raises(T.RecoveryRequired):
+&gt;           run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:354: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_wrong_external_recovery_digest_refused[expected_request_sha256]" time="1.336"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'expected_request_sha256'
+
+    @pytest.mark.parametrize('field', ['expected_request_sha256', 'expected_attestation_sha256'])
+    def test_wrong_external_recovery_digest_refused(fixture, field):
+        f = fixture
+&gt;       run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:370: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_wrong_external_recovery_digest_refused[expected_attestation_sha256]" time="1.218"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'expected_attestation_sha256'
+
+    @pytest.mark.parametrize('field', ['expected_request_sha256', 'expected_attestation_sha256'])
+    def test_wrong_external_recovery_digest_refused(fixture, field):
+        f = fixture
+&gt;       run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:370: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_second_verifier_cannot_rewrite_accepted_staged_proof" time="1.224"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'proof changed'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_second_verifier_cannot_rewrite_accepted_staged_proof(fixture):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, selected_state_sha256=sha('second-state')) if f.state.verifier_calls == 2 else proof
+&gt;       with pytest.raises(ValueError, match='proof changed'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'proof changed'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:381: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_resealed_claim_worker_cannot_mix_old_or_unrelated_scope[cho51_synthetic_numerical_engineering]" time="1.368"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'claim'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+worker = 'cho51_synthetic_numerical_engineering'
+
+    @pytest.mark.parametrize('worker', ['cho51_synthetic_numerical_engineering', 'different-staged-worker'])
+    def test_resealed_claim_worker_cannot_mix_old_or_unrelated_scope(fixture, worker):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 1:
+                return
+            claim = json.loads(request.claim_path.read_bytes())
+            claim['payload']['worker'] = worker
+            request.claim_path.write_bytes(L._encoded(L.recorder_module.envelope('engineering_smoke', claim['payload'])))
+        f.state.verifier_change = changed
+&gt;       with pytest.raises(ValueError, match='claim'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'claim'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:396: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_resealed_claim_worker_cannot_mix_old_or_unrelated_scope[different-staged-worker]" time="1.260"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'claim'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+worker = 'different-staged-worker'
+
+    @pytest.mark.parametrize('worker', ['cho51_synthetic_numerical_engineering', 'different-staged-worker'])
+    def test_resealed_claim_worker_cannot_mix_old_or_unrelated_scope(fixture, worker):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls != 1:
+                return
+            claim = json.loads(request.claim_path.read_bytes())
+            claim['payload']['worker'] = worker
+            request.claim_path.write_bytes(L._encoded(L.recorder_module.envelope('engineering_smoke', claim['payload'])))
+        f.state.verifier_change = changed
+&gt;       with pytest.raises(ValueError, match='claim'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'claim'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:396: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_current_execution_pins_drift_before_attestation_is_refused" time="1.335"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_current_execution_pins_drift_before_attestation_is_refused(fixture):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls == 2:
+                request.pins_path.write_bytes(request.pins_path.read_bytes() + b' ')
+        f.state.verifier_change = changed
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:410: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_proof_cannot_claim_current_training_or_qualified_scientific_case" time="1.274"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_proof_cannot_claim_current_training_or_qualified_scientific_case(fixture):
+        f = fixture
+        f.state.proof_change = lambda proof: unchecked(proof, current_gradient_updates=True,
+            original_scientific_case_qualified=True)
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:420: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_recovery_refuses_origin_drift_before_reverifier" time="1.364"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_recovery_refuses_origin_drift_before_reverifier(fixture):
+        f = fixture
+&gt;       run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:426: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_recovery_does_not_create_missing_engineering_intent" time="1.263"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E162026750&gt;
+
+    def test_recovery_does_not_create_missing_engineering_intent(fixture, monkeypatch):
+        f = fixture
+        original = L._write_json_once
+        def interrupted(path, payload):
+            result = original(path, payload)
+            if path.name == 'parent-attestation.json':
+                raise RuntimeError('before recorder intent')
+            return result
+        monkeypatch.setattr(L, '_write_json_once', interrupted)
+        with pytest.raises(T.RecoveryRequired):
+&gt;           run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:445: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_historical_source_and_live_claim_are_distinct_with_same_plan_identity" time="1.320"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_historical_source_and_live_claim_are_distinct_with_same_plan_identity(fixture):
+        f = fixture
+&gt;       done = run(f)
+               ^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:454: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[historical_git_commit-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb]" time="1.099"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_git_commit'
+value = 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[historical_git_dirty-False]" time="1.084"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_git_dirty', value = False
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[historical_source_sha256-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff]" time="1.063"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_source_sha256'
+value = 'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[historical_case_id-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff]" time="1.170"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'historical_case_id'
+value = 'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[fixture_git_commit-unversioned-workspace]" time="1.249"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'fixture_git_commit', value = 'unversioned-workspace'
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_serialized_request_does_not_rewrite_historical_or_untyped_current_source[fixture_git_dirty-1]" time="1.484"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'fixture_git_dirty', value = 1
+
+    @pytest.mark.parametrize('field,value', [
+        ('historical_git_commit', 'b' * 40), ('historical_git_dirty', False),
+        ('historical_source_sha256', 'f' * 64), ('historical_case_id', 'f' * 64),
+        ('fixture_git_commit', 'unversioned-workspace'), ('fixture_git_dirty', 1)])
+    def test_serialized_request_does_not_rewrite_historical_or_untyped_current_source(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_live_git_drift_refuses_while_historical_git_remains_accepted_history" time="1.902"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'live fixture source'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E1605EDD90&gt;
+
+    def test_live_git_drift_refuses_while_historical_git_remains_accepted_history(fixture, monkeypatch):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls == 2:
+                monkeypatch.setattr(L.recorder_module, 'capture_source', lambda path:
+                    SourceProvenance('b' * 40, request.fixture_source_sha256, True))
+        f.state.verifier_change = changed
+&gt;       with pytest.raises(ValueError, match='live fixture source'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'live fixture source'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:486: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[unknown_role]" time="1.810" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[missing_role]" time="1.719" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[wrong_selected_role]" time="1.766" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[historical_git]" time="1.715" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[historical_plan]" time="1.642" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_role_or_historical_contract_drift_refuses_before_claim[restore_size]" time="1.627" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_origin_reader_rejects_oversized_ordinary_metadata" time="0.029" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_data_or_weight_bytes_cannot_use_metadata_role[.npy]" time="0.008" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_data_or_weight_bytes_cannot_use_metadata_role[.npz]" time="0.008" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_data_or_weight_bytes_cannot_use_metadata_role[.safetensors]" time="0.008" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_data_or_weight_bytes_cannot_use_metadata_role[.bin]" time="0.007" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_digest_before_read[selected_weights]" time="1.832" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_digest_before_read[baseline_weights]" time="1.665" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_digest_before_read[complete_evidence]" time="1.612" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_size_before_hashing[selected_weights]" time="1.598" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_size_before_hashing[baseline_weights]" time="1.046" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_large_role_requires_exact_size_before_hashing[complete_evidence]" time="1.637" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_weight_reader_uses_streaming_hash_without_loading_or_parsing" time="1.559" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_production_role_exceptions_are_exact_known_artifacts" time="0.000" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_origin_reader_rejects_multiple_hardlinks[metadata]" time="1.592" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_origin_reader_rejects_multiple_hardlinks[selected_weights]" time="1.623" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_origin_reader_rejects_non_direct_parent_traversal" time="1.515" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_resealed_claim_cannot_substitute_historical_git_for_current_git" time="1.688"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'claim'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_resealed_claim_cannot_substitute_historical_git_for_current_git(fixture):
+        f = fixture
+        def changed(request, proof):
+            if f.state.verifier_calls == 1:
+                claim = json.loads(request.claim_path.read_bytes())
+                claim['payload']['source'] = dict(T.HISTORICAL_SOURCE)
+                request.claim_path.write_bytes(L._encoded(
+                    L.recorder_module.envelope('engineering_smoke', claim['payload'])))
+        f.state.verifier_change = changed
+&gt;       with pytest.raises(ValueError, match='claim'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'claim'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:601: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_actual_adopted_typed_route_and_order_are_required_before_claim[foreign]" time="1.763" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_actual_adopted_typed_route_and_order_are_required_before_claim[legacy_full]" time="1.650" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_actual_adopted_typed_route_and_order_are_required_before_claim[reordered]" time="1.801" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_actual_adopted_typed_route_and_order_are_required_before_claim[owner]" time="1.717" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_full_asset_map_cannot_be_substituted_even_when_target_contract_is_unchanged[profile_b_artifact_sha256]" time="1.837" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_full_asset_map_cannot_be_substituted_even_when_target_contract_is_unchanged[profile_b_manifest_sha256]" time="1.657" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_full_asset_map_cannot_be_substituted_even_when_target_contract_is_unchanged[variant_config_sha256]" time="1.623" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_full_asset_map_cannot_be_substituted_even_when_target_contract_is_unchanged[other_subject]" time="1.807" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_zero_of_two_target_result_cannot_be_upgraded[query_predictions-value0]" time="1.594" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_zero_of_two_target_result_cannot_be_upgraded[confusion_matrix-value1]" time="1.660" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_zero_of_two_target_result_cannot_be_upgraded[balanced_accuracy-value2]" time="1.645" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_zero_of_two_target_result_cannot_be_upgraded[scientific_predictive_performance_qualified-True]" time="1.807" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_prior_target_work_is_distinct_from_zero_current_numerics[prior_target_support_updates-0]" time="1.748"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'prior_target_support_updates', value = 0
+
+    @pytest.mark.parametrize('field,value', [('prior_target_support_updates', 0),
+        ('prior_target_restore_count', True), ('prior_target_inference_calls', 2),
+        ('prior_target_query_count', 3), ('current_support_updates', 1)])
+    def test_prior_target_work_is_distinct_from_zero_current_numerics(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_prior_target_work_is_distinct_from_zero_current_numerics[prior_target_restore_count-True]" time="1.768"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'prior_target_restore_count', value = True
+
+    @pytest.mark.parametrize('field,value', [('prior_target_support_updates', 0),
+        ('prior_target_restore_count', True), ('prior_target_inference_calls', 2),
+        ('prior_target_query_count', 3), ('current_support_updates', 1)])
+    def test_prior_target_work_is_distinct_from_zero_current_numerics(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_prior_target_work_is_distinct_from_zero_current_numerics[prior_target_inference_calls-2]" time="1.739"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'prior_target_inference_calls', value = 2
+
+    @pytest.mark.parametrize('field,value', [('prior_target_support_updates', 0),
+        ('prior_target_restore_count', True), ('prior_target_inference_calls', 2),
+        ('prior_target_query_count', 3), ('current_support_updates', 1)])
+    def test_prior_target_work_is_distinct_from_zero_current_numerics(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_prior_target_work_is_distinct_from_zero_current_numerics[prior_target_query_count-3]" time="1.831"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'prior_target_query_count', value = 3
+
+    @pytest.mark.parametrize('field,value', [('prior_target_support_updates', 0),
+        ('prior_target_restore_count', True), ('prior_target_inference_calls', 2),
+        ('prior_target_query_count', 3), ('current_support_updates', 1)])
+    def test_prior_target_work_is_distinct_from_zero_current_numerics(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_prior_target_work_is_distinct_from_zero_current_numerics[current_support_updates-1]" time="1.592"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'current_support_updates', value = 1
+
+    @pytest.mark.parametrize('field,value', [('prior_target_support_updates', 0),
+        ('prior_target_restore_count', True), ('prior_target_inference_calls', 2),
+        ('prior_target_query_count', 3), ('current_support_updates', 1)])
+    def test_prior_target_work_is_distinct_from_zero_current_numerics(fixture, field, value):
+&gt;       payload = run(fixture).request.payload()
+                  ^^^^^^^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_route_dispatch_is_executed_and_no_scientific_writer_is_used" time="1.634"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001E16208B3E0&gt;
+
+    def test_route_dispatch_is_executed_and_no_scientific_writer_is_used(fixture, monkeypatch):
+        f = fixture
+        original = T.Cho51WorkerRoute.inputs_for
+        calls = []
+        def dispatch(route, plan):
+            calls.append(plan)
+            return original(route, plan)
+        def forbidden(*args, **kwargs):
+            raise AssertionError('scientific cell publication is forbidden')
+        monkeypatch.setattr(T.Cho51WorkerRoute, 'inputs_for', dispatch)
+        monkeypatch.setattr(T.CaseRecorder, 'record_cell', forbidden)
+        monkeypatch.setattr(T.L.recorder_module.LockedCase, 'record_cell', forbidden)
+&gt;       done = run(f)
+               ^^^^^^
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:671: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_target_proof_replacement_is_detected_before_acceptance" time="1.563"><failure message="assert 0 == 1&#10; +  where 0 = len([])&#10; +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{&quot;historical_gradient_updates&quot;:5253,&quot;original_case_attempts_remaining&quot;:0}\n'))">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_target_proof_replacement_is_detected_before_acceptance(fixture):
+        f = fixture
+        def change(request, proof):
+            if f.state.verifier_calls == 1:
+                path = Path(f.contract['summary']['target_proof_paths']['target_witness_file_sha256'])
+                path.write_bytes(path.read_bytes() + b' ')
+        f.state.verifier_change = change
+        with pytest.raises(ValueError):
+            run(f)
+&gt;       assert len(failures(f)) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = failures(namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n'))
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:688: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_recovery_rechecks_actual_route_before_verifier" time="1.757"><failure message="ValueError: configuration root must be a mapping">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+
+    def test_recovery_rechecks_actual_route_before_verifier(fixture):
+        f = fixture
+&gt;       run(f)
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:694: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:193: in run
+    return T.run_worker_case(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:680: in run_worker_case
+    origin_contract, origin_identity = _origin_assets(preview)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in _origin_assets
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\worker_route.py:594: in &lt;genexpr&gt;
+    or any(L._encoded(witness.get(k)) != L._encoded(summary['target_metrics'][k])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\docs\phase2\cho51_worker_lifecycle_v1\lifecycle.py:239: in _encoded
+    return (canonical_config_json(value) + '\n').encode('utf-8')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\core\config.py:41: in canonical_config_json
+    snapshot = _json_snapshot(config)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = [[0.7, 1.4], [1.6, 0.5]]
+
+    def _json_snapshot(value: Mapping[str, Any]) -&gt; dict[str, JsonValue]:
+        """Return a detached JSON-compatible configuration snapshot."""
+    
+        try:
+            encoded = json.dumps(value, allow_nan=False, sort_keys=True)
+        except (TypeError, ValueError) as error:
+            raise ValueError("configuration must contain only finite JSON-compatible values") from error
+        decoded: object = json.loads(encoded)
+        if not isinstance(decoded, dict):
+&gt;           raise ValueError("configuration root must be a mapping")
+E           ValueError: configuration root must be a mapping
+
+..\..\..\..\core\config.py:25: ValueError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal[catalogs]" time="1.751"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'five declared'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'catalogs'
+
+    @pytest.mark.parametrize('field', ['catalogs', 'selections', 'method_config_sha256'])
+    def test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal(fixture, field):
+        f = fixture
+        if field == 'catalogs':
+            changed = tuple(reversed(f.route.contract.catalogs))
+        elif field == 'selections':
+            changed = dict(f.route.contract.selections)
+            changed['subject_02'] = changed['subject_03']
+        else:
+            changed = dict(f.route.contract.method_config_sha256,labram_linear=sha('foreign-method-settings'))
+        declared = replace(f.route.contract, **{field:changed})
+        route = replace(f.route,contract=declared)
+        assert route.inputs_for(f.plan) == f.route.inputs_for(f.plan)
+&gt;       with pytest.raises(ValueError,match='five declared'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'five declared'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:718: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal[selections]" time="1.699"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'five declared'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'selections'
+
+    @pytest.mark.parametrize('field', ['catalogs', 'selections', 'method_config_sha256'])
+    def test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal(fixture, field):
+        f = fixture
+        if field == 'catalogs':
+            changed = tuple(reversed(f.route.contract.catalogs))
+        elif field == 'selections':
+            changed = dict(f.route.contract.selections)
+            changed['subject_02'] = changed['subject_03']
+        else:
+            changed = dict(f.route.contract.method_config_sha256,labram_linear=sha('foreign-method-settings'))
+        declared = replace(f.route.contract, **{field:changed})
+        route = replace(f.route,contract=declared)
+        assert route.inputs_for(f.plan) == f.route.inputs_for(f.plan)
+&gt;       with pytest.raises(ValueError,match='five declared'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'five declared'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:718: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal[method_config_sha256]" time="1.180"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'five declared'&#10;  Actual message: 'configuration root must be a mapping'">fixture = namespace(parent=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_linear_worker_route_20261017_v2/validation_001/t/te...iginal-case-ledger.json'), ledger_bytes=b'{"historical_gradient_updates":5253,"original_case_attempts_remaining":0}\n')
+field = 'method_config_sha256'
+
+    @pytest.mark.parametrize('field', ['catalogs', 'selections', 'method_config_sha256'])
+    def test_declared_route_contract_cannot_drift_while_dispatch_inputs_stay_equal(fixture, field):
+        f = fixture
+        if field == 'catalogs':
+            changed = tuple(reversed(f.route.contract.catalogs))
+        elif field == 'selections':
+            changed = dict(f.route.contract.selections)
+            changed['subject_02'] = changed['subject_03']
+        else:
+            changed = dict(f.route.contract.method_config_sha256,labram_linear=sha('foreign-method-settings'))
+        declared = replace(f.route.contract, **{field:changed})
+        route = replace(f.route,contract=declared)
+        assert route.inputs_for(f.plan) == f.route.inputs_for(f.plan)
+&gt;       with pytest.raises(ValueError,match='five declared'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'five declared'
+E         Actual message: 'configuration root must be a mapping'
+
+..\..\..\..\docs\phase2\cho51_linear_worker_route_v2\test_worker_route.py:718: AssertionError</failure></testcase><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_metadata_ast_loader_refuses_changed_whole_source_before_selection[settings]" time="0.003" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_metadata_ast_loader_refuses_changed_whole_source_before_selection[target]" time="0.003" /><testcase classname="docs.phase2.cho51_linear_worker_route_v2.test_worker_route" name="test_metadata_ast_loader_exports_only_source_derived_metadata_and_no_model_imports" time="0.010" /></testsuite></testsuites>

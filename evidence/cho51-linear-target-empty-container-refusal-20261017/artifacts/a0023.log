@@ -1,0 +1,33 @@
+....................................................................
+68 passed in 2.48s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v2\parent.py", line 177, in <module>
+    witness=run_target_route(fixture_root=fixture,plan=plan,protocol_config=protocol,catalogs=catalogs,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_linear_target_route_v1\target_route.py", line 426, in run_target_route
+    outcome = adapter.predict_target(fixture_root, protocol_config, catalogs, selection_record,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_pilot.py", line 211, in predict_target
+    runner = LaBraMTuningManifestRunner(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\adaptation\labram_manifest.py", line 314, in __init__
+    configure_labram_tuning(owned, method="linear")  # Validate plain installed architecture.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\adaptation\labram_tuning.py", line 74, in configure_labram_tuning
+    count = configure_trainable_depth(model, depth)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\encoder\labram.py", line 149, in configure_trainable_depth
+    for block in blocks[len(blocks) - selected :]:
+                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\torch\nn\modules\container.py", line 384, in __getitem__
+    return self.__class__(list(self._modules.values())[idx])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\torch\nn\modules\container.py", line 362, in __init__
+    super().__init__()
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v2\runtime.py", line 362, in module_init
+    self.numerical_allowed('model_module_init',module)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v2\runtime.py", line 279, in numerical_allowed
+    self.refuse('unbound_model_constructor',name)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v2\runtime.py", line 192, in refuse
+    raise PermissionError('target route denied: '+event)
+PermissionError: target route denied: unbound_model_constructor

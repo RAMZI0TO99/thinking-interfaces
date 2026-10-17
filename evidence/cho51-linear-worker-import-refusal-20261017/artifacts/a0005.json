@@ -1,0 +1,22 @@
+{
+  "schema": "cho51_linear_worker_route_dispatch_v1",
+  "observed_utc": "2026-10-17T09:00:26.7064915Z",
+  "pins_sha256": "a14287becc958cc9bcf189bc5603c251e123b8d61dfc64ccb2963bc21db25899",
+  "origin_contract_file_sha256": "d6254cb14084105f67645242c48ebd05ae1ffb19673696e364404144225b6639",
+  "source_training_replayed": false,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_worker_route_20261017_v1\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_worker_route_20261017_v1\\pins.json",
+    "--expect-pins",
+    "a14287becc958cc9bcf189bc5603c251e123b8d61dfc64ccb2963bc21db25899",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_worker_route_20261017_v1\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_worker_route_20261017_v1\\validation_001",
+  "scientific_admission": false
+}

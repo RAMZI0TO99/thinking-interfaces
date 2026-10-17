@@ -1,0 +1,104 @@
+....................................................................
+68 passed in 1.55s
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v1\parent.py", line 177, in <module>
+    witness=run_target_route(fixture_root=fixture,plan=plan,protocol_config=protocol,catalogs=catalogs,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\docs\phase2\cho51_linear_target_route_v1\target_route.py", line 426, in run_target_route
+    outcome = adapter.predict_target(fixture_root, protocol_config, catalogs, selection_record,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\evaluation\phase2_pilot.py", line 211, in predict_target
+    runner = LaBraMTuningManifestRunner(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\adaptation\labram_manifest.py", line 313, in __init__
+    owned = copy.deepcopy(source_template)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aladdin-alyanai\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\copy.py", line 261, in _reconstruct
+    y.__setstate__(state)
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\einops\layers\__init__.py", line 55, in __setstate__
+    self.__init__(pattern=state["pattern"], **state["axes_lengths"])
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\einops\layers\__init__.py", line 20, in __init__
+    super().__init__()
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v1\runtime.py", line 283, in module_init
+    def module_init(module,*a,**k):self.numerical_allowed('model_module_init');return original_init(module,*a,**k)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v1\runtime.py", line 268, in numerical_allowed
+    self.refuse('unbound_model_constructor',name)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_target_route_20261017_v1\runtime.py", line 182, in refuse
+    raise PermissionError('target route denied: '+event)
+PermissionError: target route denied: unbound_model_constructor

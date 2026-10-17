@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_linear_target_route_dispatch_result_v2",
+  "observed_utc": "2026-10-17T08:20:39.0392976Z",
+  "pins_sha256": "5e459fead22b3c5d7ccb8a8740faa2029d555ee90c245424cef8154801843867",
+  "origin_contract_file_sha256": "f71547c96a7ed63a41c84d1f64ec093207b1c1f2a50f800a52d65aa4923d8dd5",
+  "source_training_replayed": false,
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261017T082008Z_1662de273b",
+  "guard_exit_code": 1,
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_target_route_20261017_v2\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_target_route_20261017_v2\\pins.json",
+    "--expect-pins",
+    "5e459fead22b3c5d7ccb8a8740faa2029d555ee90c245424cef8154801843867",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_target_route_20261017_v2\\validation_001"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_linear_target_route_20261017_v2\\validation_001",
+  "scientific_admission": false
+}

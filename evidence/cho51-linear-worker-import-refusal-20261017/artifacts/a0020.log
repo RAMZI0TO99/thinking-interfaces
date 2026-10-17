@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_worker_route_20261017_v1\parent.py", line 27, in <module>
+    from docs.phase2.cho51_linear_worker_route_v1.worker_route import WorkerContext,VerifiedWorkerProof,run_worker_case
+  File "D:\Aenv\pro3\docs\phase2\cho51_linear_worker_route_v1\worker_route.py", line 21, in <module>
+    from docs.phase2.cho51_linear_target_route_v1 import target_route as TARGET
+  File "D:\Aenv\pro3\docs\phase2\cho51_linear_target_route_v1\target_route.py", line 20, in <module>
+    from adaptation.labram_manifest import (
+  File "D:\Aenv\pro3\adaptation\labram_manifest.py", line 21, in <module>
+    from adaptation.labram_lora_support import (
+  File "D:\Aenv\pro3\adaptation\labram_lora_support.py", line 13, in <module>
+    from adaptation.labram_tuning import configure_labram_tuning
+  File "D:\Aenv\pro3\adaptation\labram_tuning.py", line 14, in <module>
+    from encoder.labram import LaBraMClassifier, configure_trainable_depth
+  File "D:\Aenv\pro3\encoder\labram.py", line 18, in <module>
+    from braindecode.models import Labram  # type: ignore[import-untyped]  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\__init__.py", line 1, in <module>
+    from .classifier import EEGClassifier
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\classifier.py", line 17, in <module>
+    from .eegneuralnet import _EEGNeuralNet
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\eegneuralnet.py", line 21, in <module>
+    from braindecode.datautil import infer_signal_properties
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\datautil\__init__.py", line 12, in <module>
+    from .util import infer_signal_properties
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\datautil\util.py", line 14, in <module>
+    from braindecode.models.util import SigArgName
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\models\__init__.py", line 3, in <module>
+    from .atcnet import ATCNet
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\models\atcnet.py", line 14, in <module>
+    from braindecode.modules import (
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\modules\__init__.py", line 27, in <module>
+    from .filter import FilterBankLayer, GeneralizedGaussianFilter
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\braindecode\modules\filter.py", line 14, in <module>
+    from torchaudio.functional import fftconvolve, filtfilt, lfilter
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\torchaudio\__init__.py", line 8, in <module>
+    from . import compliance, datasets, functional, models, pipelines, transforms, utils  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\torchaudio\compliance\__init__.py", line 1, in <module>
+    from . import kaldi
+  File "D:\Aenv\pro3\.venv\Lib\site-packages\torchaudio\compliance\kaldi.py", line 22, in <module>
+    EPSILON = torch.tensor(torch.finfo(torch.float).eps)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_worker_route_20261017_v1\runtime.py", line 291, in call
+    self.numerical_allowed(name)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_worker_route_20261017_v1\runtime.py", line 279, in numerical_allowed
+    self.refuse('parent_numerical_call', name)
+  File "D:\Aenv\pro3\runs\coordination\cho51_linear_worker_route_20261017_v1\runtime.py", line 192, in refuse
+    raise PermissionError('metadata worker denied: '+event)
+PermissionError: metadata worker denied: parent_numerical_call

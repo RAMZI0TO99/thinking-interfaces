@@ -1,5 +1,409 @@
 # Project coordination
 
+<!-- cho51-publication-20261017-status:begin -->
+## Publication checkpoint, 17 October 2026
+
+The [publication handoff](docs/phase2/cho51_push_checkpoint_20261017.md) records
+completed target-route (68 tests), metadata-worker (100 tests), and fresh
+numerical-worker (38 tests) validation, with exact evidence and snapshot exports.
+The fresh worker completed one restore, one head update and one two-trial query
+inside a real identity lock: one engineering success and zero measured cells.
+Fresh predictions were 0/2 correct; scientific performance remains unqualified.
+
+The numerical worker's independent final audit passed with zero findings.
+Its final review and seven exact document snapshots are preserved in the
+[numerical closeout export](evidence/cho51-linear-numerical-worker-closeout-export-20261017/README.md).
+Historical document bindings refer to those copies; these current resume heads
+now include this publication checkpoint. Frozen reports and proofs stay exact.
+
+The completed executions captured Git 3ef0c39, dirty=true. The commit carrying
+this checkpoint becomes a new current context. Future work must capture fresh
+Git/runtime/source provenance and use new contracts, pins and admission.
+Keep historical source 4491e2a and recorder 277d797 distinct. Do not replay
+used launchers or substitute an older Git identity.
+
+Next: provenance-aware source-restoration factory compatibility for the fresh
+worker. The unchanged canonical numerical worker, single-root factories, full
+1,020-cell execution, remaining methods, lineage, final owner freeze and
+scientific execution remain pending. Metadata in Git does not restore local
+fixture arrays or selected weights; another machine needs authenticated assets
+and fresh admission. No autonomous window or peer release is inferred.
+<!-- cho51-publication-20261017-status:end -->
+
+<!-- cho51-linear-numerical-worker-status:begin -->
+## Fresh numerical worker accepted, 17 October, 15:45 Riyadh
+
+[The numerical-worker qualification](docs/phase2/cho51_linear_numerical_worker_qualification_20261017.md)
+records 38 passing tests and one actual typed adopted-route / locked CaseRecorder
+transaction with fresh selected restoration1, head-only support/gradient update1,
+and query invocation1 over two trials. Backend once and verifier twice produced
+one engineering success, zero failures and zero measured cells. Current source
+fitting and original scientific attempts stay0. Historical source5,253 updates
+and prior target1 support/restore/query remain separate.
+
+The fresh predictions were [1,0] versus [0,1], both wrong (0/2 correct), with
+balanced accuracy0/1. Engineering acceptance has no accuracy threshold; predictive
+performance remains unqualified. The current raw-tensor state and metrics match
+the earlier deterministic episode, with freshness bound to a new claim/request
+and guarded observations. Canonical numerical settings/model/adapter classes
+were used; the historical private AST settings class remains metadata-only.
+
+Job20261017T123933Z_55987a07c7 accepted exit0 at12:45:20UTC /15:45:20Riyadh in
+346.913912seconds, then closed empty/freshly absent with no cleanup/sampling
+errors. Runtime observed one full constructor, two safe decodes/state loads,
+one optimizer/backward/SGD step, six target NPZ loads and684 live lock checks.
+Both verifiers were read-only. An initial below-floor preflight launched no Job;
+a fresh sufficient reading preceded the one launch. All bounds stayed unchanged.
+
+The [39-artifact packet](evidence/cho51-linear-numerical-worker-20261017-v1/README.md)
+preserves current request/claim/execution/restore/target/attestation/terminal and
+native proof. All213 original inputs and canonical432 sources match; 4,829
+loaded-module hashes were rechecked. The worker's frozen pending-native flag
+remains truthful; the external closeout independently records verified closure.
+Final review binds this report and six resume heads, preserved in the
+[numerical-worker closeout export](evidence/cho51-linear-numerical-worker-closeout-export-20261017/README.md).
+Current actual Git3ef0c39 dirty=true and historical source4491e2a /recorder277d797
+remain separate. Fresh execution sources and runtime have independent pins.
+
+Next: provenance-aware source-restoration factory compatibility for this worker,
+with historical/current identities preserved and no Git spoofing. Unchanged
+canonical numerical worker/measured-cell verifier, single-root factories, full
+1,020-cell execution, remaining methods, cohort/prior-training lineage, owner
+final freeze and scientific execution remain pending. No autonomous window or
+peer release is inferred. Earlier sections are historical checkpoints.
+<!-- cho51-linear-numerical-worker-status:end -->
+
+<!-- cho51-linear-numerical-worker-preparation:begin -->
+## Fresh numerical worker integration in preparation, 17 October 2026
+
+The user requested the next step after the accepted metadata worker bridge.
+The [finite numerical-worker plan](docs/phase2/cho51_linear_numerical_worker_plan_20261017.md)
+owns new three-file candidate `docs/phase2/cho51_linear_numerical_worker_v1`
+and seven-file operations
+`runs/coordination/cho51_linear_numerical_worker_20261017_v1`. Root owns
+admission, dispatch, independent review, closeout and documentation. All used
+sources, outputs, proofs and exports remain frozen; no replay or reset.
+
+The one adopted typed case uses a real CaseRecorder lock across fresh claim,
+durable request, backend once, verifier twice, current numerical proof,
+attestation and engineering terminal. New expected/observed restore1,
+support/gradient update1, query invocation1/trials2 are separate from the frozen
+historical zero-work binding and historical source5,253 / target1 work.
+Source updates, measured cells, record_cell and original scientific attempts
+stay0. Historical wrong0/2 predictions are not fresh results or an accuracy gate.
+Numerical failure must preserve incomplete/unknown counters; recovery never
+replays the backend. Current native closure is checked externally after Job exit.
+
+After exact settled-source review, fresh pins and immediate preflight, admit
+at most one new600-second Job for this version. Process/Job4,096/5,120MiB,
+RAM10/4GiB, disk20GiB, CPU/Torch1/1, hidden GPUs and all four genuine Pro2
+pause paths apply. Preserve the accepted target's exact numerical budgets and
+allow only output-isolated engineering recorder construction. Focused metadata
+tests run under the guard before the actual case; no numerical verifier replay.
+Recheck all213 original inputs and canonical432 sources before/after/closeout.
+Unchanged canonical scientific worker, full1,020-cell execution, single-root
+factories, lineage, final owner freeze and scientific execution remain pending.
+No new autonomous window or peer release is inferred.
+<!-- cho51-linear-numerical-worker-preparation:end -->
+
+<!-- cho51-linear-worker-status:begin -->
+## Linear metadata worker bridge accepted, 17 October, 09:29 UTC
+
+[The worker-route qualification](docs/phase2/cho51_linear_worker_route_qualification_20261017.md)
+records 100 passing tests and one actual typed adopted-route / locked CaseRecorder
+engineering transaction: backend once, verifier twice, one engineering success,
+zero failures and zero measured cells. All current fitting, restoration,
+adaptation, array/tensor decoding and inference were zero. Historical source-
+chain 5,253 updates and accepted target 1 support/restore/query invocation remain
+separate. The two prior synthetic predictions remain wrong (0/2 correct).
+
+V3 Job accepted exit0 in 406.747114 seconds and closed empty/freshly absent.
+The earlier import refusal and99-case failed test run remain frozen in separate
+packets; no used launcher/output was reset or replayed. A hash-authenticated
+positive AST allowlist derives pure metadata; its settings class has a private
+type identity and does not qualify whole numerical-module imports.
+
+The [35-artifact accepted packet](evidence/cho51-linear-worker-route-20261017-v3/README.md)
+preserves current request/claim/attestation/receipt and native proof. All 213
+original inputs and canonical 432 sources match; current numerical calls and
+audit denials were empty. Final closure requires the passed V3 review binding
+seven documents, preserved with exact snapshots in the
+[worker closeout export](evidence/cho51-linear-worker-closeout-export-20261017/README.md).
+Historical source/recorder/target Git contexts remain 4491e2a/277d797/3ef0c39;
+current actual 3ef0c39 dirty=true has independently pinned new worker code.
+
+Next: fresh selected restoration/support/query inside one engineering worker
+lifecycle, under separately versioned numerical counters, review and admission.
+Unchanged canonical numerical worker/verifier, full 1,020-cell execution,
+remaining method routes, single-root factories, cohort/prior-training lineage,
+owner final freeze and scientific execution remain pending. Original scientific
+attempts stay 0; no new autonomous window or peer release is inferred. Earlier
+status/preparation sections below are historical checkpoints.
+<!-- cho51-linear-worker-status:end -->
+
+<!-- cho51-linear-worker-v3-repair:begin -->
+## Worker JSON comparison repair in separate v3 scope, 17 October 2026
+
+V2 Job `20261017T091013Z_1c624adbe4` is exhausted and frozen. Its import
+isolation worked and all 99 tests ran: 43 passed and 56 failed (JUnit 136.248
+seconds). A shared comparison sent list/scalar metric values to the canonical
+mapping-only configuration encoder. This blocked the baseline transaction
+before claims. The actual worker backend/verifiers stayed zero; no actual
+fixture/case was created. Unexpected denials and numerical calls were zero.
+The Job exited 1 and closed empty/freshly absent with no cleanup/sampling
+errors. Preserve its sources, pins, full local test outputs and native proofs.
+
+The new three-file candidate in `docs/phase2/cho51_linear_worker_route_v3`
+wraps arbitrary JSON comparison values in a mapping, audits other encoder
+calls, and validates the fabricated baseline before negative test mutations.
+The new seven-file operations in
+`runs/coordination/cho51_linear_worker_route_20261017_v3` preserve and
+explicitly authenticate both prior refusals. Core wire schemas stay version1;
+operational version3 and fresh source pins distinguish this repair. The exact
+AST metadata isolation and all numerical prohibitions remain unchanged.
+
+After independent settled-source review, admit at most one new 600-second
+Job for 100 metadata boundary cases and one actual isolated locked engineering
+transaction. Fresh pins and immediate resource preflight are required. Keep
+process/Job 4,096/5,120 MiB, RAM 10/4 GiB, disk 20 GiB, CPU/Torch 1/1,
+hidden GPUs and all four genuine pause paths. Current fitting, restoration,
+array/tensor decoding, inference and measured cells stay zero. No used path
+is reset or replayed; no peer release, autonomous window, scientific worker
+qualification or owner final freeze is inferred.
+<!-- cho51-linear-worker-v3-repair:end -->
+
+<!-- cho51-linear-worker-v2-repair:begin -->
+## Worker metadata import isolation in separate v2 scope, 17 October 2026
+
+V1 Job `20261017T090027Z_9ce5db8d4b` is exhausted and frozen. It exited 1
+before test collection, fixture creation or case claim: importing the accepted
+target module pulled in torchaudio.compliance.kaldi's module-level EPSILON
+scalar tensor construction. The guard refused the call before execution.
+The native Job closed empty/absent with no cleanup or sampling errors. Preserve
+all V1 source, pins, dispatch, output and native proof bytes; no path is reset.
+
+New separately versioned candidate/operations in
+`docs/phase2/cho51_linear_worker_route_v2` and
+`runs/coordination/cho51_linear_worker_route_20261017_v2` isolate metadata with
+an exact source-hash and positive AST-node allowlist. Only the accepted target
+metadata functions/constants and the canonical pure settings dataclass are
+loaded with real canonical metadata types. Source import statements and model
+execution helpers are excluded. This derives metadata code; it does not
+qualify importing the whole numerical module or loosen any numerical guard.
+The core wire schemas remain version1 because the transaction contract is
+unchanged; source/operational versions, pins and attempt directories distinguish
+this repair.
+
+After independent settled-source review and fresh pins, admit at most one new
+600-second native Job under the same process/Job 4,096/5,120 MiB, RAM 10/4 GiB,
+disk 20 GiB, CPU/Torch 1/1, hidden GPUs and all four genuine pause paths. Recheck
+resources immediately before launch. Require all metadata boundary tests and
+one actual isolated locked transaction, backend once/verifier twice, one
+engineering success and zero measured cells. Current model construction,
+decoding, restoration, fitting and inference remain forbidden. Prior source
+5,253 updates and target1 support/restore/query invocation stay historical.
+No scientific worker, autonomous window, peer release or owner freeze follows.
+<!-- cho51-linear-worker-v2-repair:end -->
+
+<!-- cho51-linear-worker-preparation:begin -->
+## Linear worker-route engineering integration in preparation, 17 October 2026
+
+The user requested the next step after accepted synthetic target adaptation and
+query qualification. This finite phase owns new
+`docs/phase2/cho51_linear_worker_route_v1` and
+`runs/coordination/cho51_linear_worker_route_20261017_v1` sources. The bridge uses
+the actual adopted typed route and a fresh real CaseRecorder identity lock,
+claim, durable request, two independent proof checks, parent attestation and
+engineering terminal. The canonical scientific worker and measured-cell
+verifier remain unchanged and unqualified by this metadata-only integration.
+
+Authenticate accepted source, staged-recorder and target-route proofs using
+physical file identities, exact hashes and historical document snapshots.
+Reconstruct target contract and query metrics from authenticated metadata.
+Preserve the wrong synthetic predictions [1,0] versus [0,1], with 0/2 correct.
+Historical source-chain updates are 5,253; prior target support updates, restore
+and query invocation are one each and remain separate. Current fitting,
+restoration, array/tensor decoding and inference are zero; no old launcher or
+used attempt is replayed. All 213 original inputs and canonical 432 sources
+must stay unchanged. Preserve every old proof, ledger, weight and archive.
+
+After independent settled-source review and fresh pins, admit at most one new
+600-second native Windows Job: process/Job 4,096/5,120 MiB, startup/active RAM
+10/4 GiB, disk 20 GiB, CPU/Torch threads 1/1 and hidden GPUs. All four genuine
+Pro2 pause paths and a fresh immediate preflight apply. Model construction,
+checkpoint decoding, numerical tensor operations, optimizer/backward and
+scientific record_cell stay blocked. Run meaningful metadata boundary tests
+once, followed by the real isolated recorder transaction; verify accepted
+native closure with a separate standard-library closeout.
+
+Root owns admission, dispatch, independent source/final reviews and closeout.
+The core worker owns only the new three-file candidate; operations owns only
+new seven-file guarded sources. No new autonomous window, peer release,
+scientific budget, full 1,020-cell worker, single-root factory qualification,
+cohort/prior-training lineage or owner final freeze follows from this phase.
+<!-- cho51-linear-worker-preparation:end -->
+
+<!-- cho51-linear-target-status:begin -->
+## Synthetic linear target route accepted, 17 October, 08:29 UTC
+
+[The target-route qualification](docs/phase2/cho51_linear_target_route_qualification_20261017.md)
+records 68 passing tests and the real canonical adapter completing one 402-
+parameter head-only support update and two query predictions. Source updates,
+record_cell calls, measured cells and original scientific attempts stayed zero.
+All 223 source tensors and 221 non-head adapted tensors stayed exact; the two
+head tensors changed, with finite gradients and disjoint clone storage.
+The two synthetic query predictions were incorrect; scientific performance
+remains unqualified. Historical 5,253 source-chain updates were reused.
+
+V3 Job accepted exit 0 in 44.550671 seconds and closed empty/freshly absent.
+The earlier model-copy and empty-container refusals remain frozen in separate
+packets. One full constructor, four parameterless layout reinitializations,
+two masks outside baseline construction, two safe loads and six target NPZ
+loads were bounded. The
+[30-artifact packet](evidence/cho51-linear-target-route-20261017-v3/README.md)
+preserves actual witnesses; all 213 inputs and canonical 432 sources match.
+Final closure requires the passed v3 review binding seven documents, preserved
+with exact snapshots in the [target closeout export](evidence/cho51-linear-target-closeout-export-20261017/README.md).
+All 29 scoped native names are freshly absent, with mixed acceptance statuses.
+
+Historical source/recorder Git contexts remain 4491e2a / 277d797, while this
+route captured actual 3ef0c39, all dirty=true with the same five-TOML digest.
+Twenty-one observed Python binary replacements have explicit fresh pins and a
+transition record; both recorded short versions are 3.12.14. No old receipt,
+used launcher, output or source capture may be rewritten or replayed.
+
+Next: separately reviewed worker-route engineering integration. Unchanged
+single-root factories, full 1,020-cell worker, cohort/prior-training lineage,
+final owner freeze and scientific execution remain pending. No new autonomous
+window or peer release is inferred. Earlier preparation/status entries below
+are historical checkpoints.
+<!-- cho51-linear-target-status:end -->
+
+<!-- cho51-linear-target-v3-repair:begin -->
+## Empty-container guard repair in separate v3 scope, 17 October 2026
+
+V2 Job `20261017T082008Z_1662de273b` is exhausted and frozen. Its 68 tests
+passed (JUnit 2.485 seconds), selected restoration and first runner copy returned,
+then canonical zero-depth tuning formed an empty ModuleList by slicing the
+12-block backbone. The guard refused this structural initialization. No target,
+result or qualification JSON exists; trace/source order stops before support
+adaptation and query inference. The Job exited 1 after 30.058916 seconds and
+closed empty/freshly absent, with no cleanup/sampling errors. Preserve the
+[second refusal packet](evidence/cho51-linear-target-empty-container-refusal-20261017/README.md)
+and the earlier v1 packet; neither qualifies the full route.
+
+New operations in `runs/coordination/cho51_linear_target_route_20261017_v3`
+may allow exactly two additional empty ModuleList constructions outside the
+already admitted baseline constructor: one runner mask and one support mask.
+Require exact pinned Torch class/container implementation and canonical
+configure_trainable_depth selected=0, a tail slice of the actual 12-block source,
+empty init arguments, and zero resulting children/parameters/buffers. Count
+these separately from the one full constructor, four parameterless Rearrange
+clone reconstructions and canonical parameterless loss criterion. Review the
+complete remaining path and retain all other IO, numerical, source/storage,
+resource and scientific boundaries. The three-file candidate stays unchanged.
+
+After fresh independent source review and pins, admit at most one new v3
+600-second native Job under unchanged process/Job 4,096/5,120 MiB, RAM 10/4 GiB,
+disk 20 GiB, Torch 1/1, hidden GPUs and all four genuine pause paths. Recheck
+resources immediately before launch. Require 68 tests plus the actual selected
+restore, one support update and one two-query batch, with six target NPZ loads,
+unchanged original inputs/source/backbone and zero measured cells. Preserve all
+failed sources/outputs; no used path is reset or replayed. No source fit, full
+worker execution, scientific admission or new autonomous window is inferred.
+<!-- cho51-linear-target-v3-repair:end -->
+
+<!-- cho51-linear-target-v2-repair:begin -->
+## Separately reviewed target-route guard repair, 17 October 2026
+
+V1 native Job `20261017T081058Z_9432a219d7` is exhausted and remains frozen.
+All 68 tests passed and the selected-restoration component witness matched all
+223 tensors. The first canonical runner deepcopy then refused at parameterless
+einops Rearrange reinitialization. There is no result, qualification or target
+witness; the trace/source order stops before support adaptation or query inference.
+The Job exited 1 and closed empty/freshly absent with no cleanup/sampling errors.
+Preserve the [25-artifact refusal packet](evidence/cho51-linear-target-copy-refusal-20261017/README.md).
+
+The new operations in `runs/coordination/cho51_linear_target_route_20261017_v2`
+reuse all three unchanged core candidate files. Permit only the two pinned,
+parameterless Rearrange layouts reconstructed through the exact einops mixin,
+stdlib deepcopy and canonical runner/support-clone stacks. Require four such
+reinitializations total, two per clone, with exact patterns/axes and no extra
+parameters, buffers or children. These are separate from the one full model
+constructor. The canonical support helper may create its one parameterless
+CrossEntropyLoss criterion; no other out-of-constructor modules are admitted.
+Every other numerical, path, state and storage invariant remains.
+Correct closeout's metadata bound only for the exact accepted 23,087,023-byte
+complete-evidence hash under its explicit role; ordinary metadata stays 8 MiB.
+
+After independent settled-source review, admit at most one fresh v2 600-second
+Job under unchanged 4,096/5,120 MiB process/Job, RAM 10/4 GiB, disk 20 GiB,
+threads 1/1, hidden GPUs and all four pause paths. Recheck resources and pins;
+run the 68 boundary tests once in v2 and require the actual one selected restore,
+one support step, one two-query batch, six NPZ loads and zero measured cells.
+This is a separately versioned repair with a new finite admission, not replay
+or reset of the failed attempt. Historical source fitting is never repeated.
+Full worker, final freeze, lineage and science gates remain pending.
+<!-- cho51-linear-target-v2-repair:end -->
+
+<!-- cho51-linear-target-preparation:begin -->
+## Linear target adaptation/query preparation, 17 October 2026
+
+The user requested the next step after accepted staged recorder integration.
+The finite engineering phase owns new
+`docs/phase2/cho51_linear_target_route_v1` and
+`runs/coordination/cho51_linear_target_route_20261017_v1` sources. Root owns
+integration, independent review, fresh admission, dispatch and closeout;
+workers own the three-file candidate and separate guarded operations. Preserve
+canonical 432 sources, all old proofs, native receipts, ledgers, inputs and weights.
+
+Admit at most one fresh 600-second numerical Windows Job after independent
+source review: 4,096/5,120 MiB process/Job, 10/4 GiB startup/active RAM, 20 GiB
+disk, Torch threads 1/1, hidden GPUs and all four genuine Pro2 pause paths.
+A fresh preflight is required immediately before launch. No peer release or new
+30-hour window is inferred from old coordination records or this preparation.
+
+The exact synthetic plan is Cho2017 / subject_02 / labram_linear / five shots
+per class / seed 11 / repetition 1. Authenticate historical publication,
+restoration and recorder proofs without replaying their fitting. The accepted
+5,253 source-chain updates and two prior restorations remain historical. This
+new phase may perform one bounded selected-state restoration, one support SGD
+update restricted to the 402 head parameters, and one two-trial query batch.
+Allow only the reviewed canonical constructor's no-gradient patch-embedding
+shape probe plus actual support/query forwards; require numerical counters,
+finite gradients, unchanged backbone/buffers/source and strict partition/label
+boundaries. Query labels are evaluation-only. Run meaningful boundary tests
+inside the native guard, with test fabrications distinct from actual witnesses.
+
+Preserve historical source Git 4491e2a and recorder Git 277d797, dirty=true.
+Capture actual current Git 3ef0c39 separately; never spoof Git, rewrite source
+captures or replay frozen launchers. A separately versioned explicit two-root
+restore authenticates complete canonical evidence and exact selected-state bytes,
+derives architecture from canonical source and returns the real adapter. It
+does not qualify the unchanged canonical-store/single-root factory route.
+Metadata bounds remain 8 MiB, with 32 MiB only for exact complete-evidence copies
+and 64 MiB for exact safe weights. Numerical decoding is permitted only for
+this new explicitly scoped restoration (one baseline initialization decode/load
+and one selected-state decode/load) and target-subject synthetic profiles.
+Reconstruct 52 source catalogues from authenticated historical synthetic
+metadata without decoding source-subject arrays. Require exact selection and
+catalogue identity checks. Two independent canonical target bindings (prebind
+then actual adapter) permit exactly six NPZ loads: target A four, target B two.
+All other computational array reads remain denied. The independent transition
+receipt binds exactly 21 replaced bundled Python binaries and the unchanged,
+exact-hash Git executable with two hard links; ordinary proofs/weights stay
+single-link. Historical runtime hashes remain recorded, with fresh current
+runtime pins and qualification required.
+Retain single-link/direct-path/stable-identity checks, exact original-input
+hashes before/after, write confinement and empty/closed/absent native Job proof.
+
+No measured record_cell call, original scientific attempt, source refitting,
+selector replay or full worker execution is admitted. A failed attempt remains
+frozen and needs separately reviewed repair before any new scope. The full
+1,020-cell worker, unchanged single-root factories, cohort/prior-training lineage,
+final owner freeze and scientific execution remain pending.
+<!-- cho51-linear-target-preparation:end -->
+
 <!-- cho51-linear-recorder-status:begin -->
 ## Linear staged recorder accepted, 15 October, 18:28 UTC
 
