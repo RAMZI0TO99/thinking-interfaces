@@ -1,0 +1,40 @@
+{
+  "schema": "cho51_provenance_numerical_worker_dispatch_result_v1",
+  "phase": "tests",
+  "observed_utc": "2026-10-25T11:41:42.8398914Z",
+  "pins_sha256": "745015ad931bfc86f6708bc7e440215e8c41095b81adde167d276952b9eb9c33",
+  "origin_contract_file_sha256": "47b6f7e0ad6edca5492b1d1ba2316314faab95ea2b827aa4cc6009f603362a70",
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\pins.json",
+    "--expect-pins",
+    "745015ad931bfc86f6708bc7e440215e8c41095b81adde167d276952b9eb9c33",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\t1"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\t1",
+  "native_directory": "D:\\Aenv\\pro3\\runs\\migration\\20261025T113311Z_6ceec4eb3c",
+  "guard_exit_code": 0,
+  "expected_numerical_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "actual_current_counter_ledger": null,
+  "scientific_admission": false,
+  "admission_sha256": "06dbd973fcf91affc1e92748536601a2818808c5b600f9643e1a309d5135108e",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_009.json",
+  "peer_release_sha256": "85af17f754ceae3a2e4eeaaf496b683ad16da28afef4a3b525cf196bc8171f0e",
+  "window_start_utc": "2026-10-25T11:32:43Z",
+  "window_end_utc": "2026-10-25T11:52:43Z"
+}

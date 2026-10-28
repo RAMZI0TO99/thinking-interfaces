@@ -1,0 +1,232 @@
+{
+  "schema": "cho51_canonical_boundary_actual_review_v1",
+  "scope": "cho51_canonical_boundary_20261025_v5_a_tests",
+  "reviewer": "/root/readiness",
+  "reviewed_utc": "2026-10-25T19:42:32.5771912+00:00",
+  "accepted": true,
+  "source_only": false,
+  "executed_metadata_evidence_review": true,
+  "accepted_scope": "selected_complementary_metadata_batch_a_only",
+  "remaining_actionable_findings": [],
+  "batch_id": "a",
+  "batch_plan_sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f",
+  "source_review_sha256": "5bccfc99827e94e36cc40bf6305d25766ca8ba5a6008304bf6f84b558264c4e0",
+  "owner_resource_amendment_sha256": "1a56aef74526e6169dded3ae292a003266577c26fb9bd5cf9bb6d3a6473882ac",
+  "expected_tests": 36,
+  "expected_full_tests": 133,
+  "expected_stdlib_controls": 34,
+  "observed_utc": "2026-10-25T19:42:32.5771912+00:00",
+  "accepted_selected_metadata_only": true,
+  "tests": 36,
+  "full_collected": 133,
+  "deselected": 97,
+  "definitions_collected": 29,
+  "reports": 108,
+  "junit_unique": 36,
+  "junit_failures": 0,
+  "junit_errors": 0,
+  "junit_skips": 0,
+  "stdlib_controls": 34,
+  "observed_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "observer_zero_keys": 8,
+  "loaded_module_pin_joins": 4041,
+  "loaded_modules_rehashed_by_reviewer": false,
+  "entire_shared_runtime_inventory_rehashed_by_reviewer": false,
+  "prior_independent_full_pin_review_sha256": "c6c16feb437ebdc8da485906f66e9b27fd2823b642e2b87733bc4a6e925ed42d",
+  "full_root_preflight_files": 18909,
+  "full_root_preflight_bytes": 3338506142,
+  "current_code_rehashed": 22,
+  "current_code_bytes": 378736,
+  "runtime_pin_joins": 27,
+  "native_operation_joins": 24,
+  "native_selected_runtime_joins": 3,
+  "full_collection_sha256": "1ec0a4da3b3fe566d75ad21ce97b17f98c2458524df7671d38caa686620d6d86",
+  "pytest_seconds": 258,
+  "native_seconds": 402.125054,
+  "native_peak_process_bytes": 1240735744,
+  "native_peak_job_bytes": 1324544000,
+  "external_seconds": 108.6098296,
+  "released_utc": "2026-10-25T19:39:29.1561820+00:00",
+  "git_queries": 298,
+  "pytest_alias_refusals": 1,
+  "aliases_created": 0,
+  "runtime_import_resource_reads": 2,
+  "runtime_resource_hash_reads_before_result": 1,
+  "bytecode_reads_refused": 3710,
+  "optional_ipv6_probes_refused": 1,
+  "archive_pairs": 41,
+  "archive_payload_bytes": 4360099,
+  "archive_files": 45,
+  "physical_unique_files": 93,
+  "physical_bytes": 8840684,
+  "direct_items": 115,
+  "key_bindings": {
+    "pins": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\pins.json",
+      "bytes": 3264181,
+      "sha256": "82b820ab809370465c6589124b182106ad3467a2cf61e1d063003479b711b291"
+    },
+    "result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\t1\\result.json",
+      "bytes": 649588,
+      "sha256": "1c19079903e52895524855a240d5ba9e438f4146cce9b7329f4ac8441f6e558c"
+    },
+    "junit": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\t1\\junit.xml",
+      "bytes": 6088,
+      "sha256": "99df625b619e360ac95a61b3c27e3a5b9102b20447b19d779e6ae647bf080f21"
+    },
+    "closeout": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\closeout-result.json",
+      "bytes": 38118,
+      "sha256": "f2c06ae7bdc233ee06e310218aedff31a0a5e116a5ef3d693c4ae55ec7f3ae5f"
+    },
+    "supervision": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\closeout-supervision_001.json",
+      "bytes": 763,
+      "sha256": "8726b3e6144f6d3ac2e0a356400e9298a292b8102f45b50449d2c73481abb781"
+    },
+    "lease": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\lease-closeout_001.json",
+      "bytes": 1982,
+      "sha256": "367ea7c3c87e6e6dd7f0892383b4502d6635add27455d53bfd067ca939ffd330"
+    },
+    "receipt": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T192937Z_50af3df5b8\\receipt.json",
+      "bytes": 1684,
+      "sha256": "d2fc875fd0f25e30572b1829b38289f63eea824b2b59c0d54461fb14ab0c5f4e"
+    },
+    "native_admission": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T192937Z_50af3df5b8\\admission.json",
+      "bytes": 5145,
+      "sha256": "90880009d2704d7aa4ad90f4d5e98191f670c4491b5958de218422cffbd15e6a"
+    },
+    "native_deadline": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T192937Z_50af3df5b8\\deadline.json",
+      "bytes": 161,
+      "sha256": "230790a9dc285ab49eae3ed103b72a2f82ac658bca52724c3e3a677bd80c179f"
+    },
+    "root_admission": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\admission.json",
+      "bytes": 3218,
+      "sha256": "35f03b86aeb84a94c023d461354d57d6e552e62960ff8d21698b8cea17e1d992"
+    },
+    "preflight": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\preflight_001.json",
+      "bytes": 3293,
+      "sha256": "c08d6498b5738144c4213b5982fad1438f4f9dbac71b0d4a6db14f4456585f44"
+    },
+    "request": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\compute-request_001.json",
+      "bytes": 3909,
+      "sha256": "6befd92c2eb79bf1987f6309fa8423803fab71b29de20ebe6d0f8cbe88e4dd3c"
+    },
+    "dispatch": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\dispatch_001.json",
+      "bytes": 1189,
+      "sha256": "c0b118d533d5cb33cadce0e42f4d420717587611dcb946a9b27292e463638c64"
+    },
+    "dispatch_result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\dispatch-result_001.json",
+      "bytes": 260,
+      "sha256": "1747a8640677ac560a40f307d19ac4ebc6a5add6dd934f7d3a00e625969f6220"
+    },
+    "marker": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\guard-attempt_001.json",
+      "bytes": 502,
+      "sha256": "f4301ce114040e83a1964b78a6229b4115304567b933a6fd0ede8f921855c9f0"
+    },
+    "peer": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_017.json",
+      "bytes": 15906,
+      "sha256": "5413069cf87a4f251d0dd89e49f81ad66e572237e1dff874cfcff7604264722c"
+    },
+    "plan": {
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_batch_plan_20261025.json",
+      "bytes": 4480,
+      "sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f"
+    },
+    "scope": {
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_split_validation_20261025.md",
+      "bytes": 5281,
+      "sha256": "e792de74461fe54269714c0e3a175ee6ee357ed99943ac345a54c7b6f48bb55b"
+    },
+    "manifest": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_a\\manifest.json",
+      "bytes": 9048,
+      "sha256": "f7cda2e4118cca1b4d2ce0ff705ae97b8fc7e8e7b886e03b4678e55f69eddcdc"
+    },
+    "summary": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_a\\summary.json",
+      "bytes": 38118,
+      "sha256": "f2c06ae7bdc233ee06e310218aedff31a0a5e116a5ef3d693c4ae55ec7f3ae5f"
+    },
+    "readme": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_a\\README.md",
+      "bytes": 550,
+      "sha256": "d532ff97d36ad5a2d7512f54cde211c3f81655f5d0770880bec3caa5228b8965"
+    },
+    "attributes": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_a\\.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    }
+  },
+  "issues": [],
+  "exclusions": [],
+  "live_job_queries": 0,
+  "python_executed": false,
+  "tests_replayed": 0,
+  "scientific_admission": false,
+  "full133_suite_accepted": false,
+  "future_B_C_or_aggregate_admitted": false,
+  "actual_native_job_name": "pro3_migration_20261025T192937Z_50af3df5b8",
+  "native_limit_flags": 8960,
+  "native_attempt_seconds": 600,
+  "native_session_cleanup_seconds": 5,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "torch_threads": 1,
+  "gpu_hidden": true,
+  "all_five_pause_guards_retained": true,
+  "native_and_external_ownership_closed_before_explicit_release": true,
+  "child_native_status_retained": "pending_external_post_job",
+  "external_native_closeout_fulfilled": true,
+  "final_future_runtime_qualified": false,
+  "raw_input_verification_performed": false,
+  "weight_verification_performed": false,
+  "unchanged_canonical_worker_qualified": false,
+  "unchanged_canonical_parent_qualified": false,
+  "single_root_factory_qualified": false,
+  "experiment_freeze_signed": false,
+  "metadata_test_catalog_and_asset_fields_are_fabricated_unverified_fixtures": true,
+  "runtime_resource_is_library_fiducials_not_target_signal": true,
+  "pytest_alias_permission_added": false,
+  "git_argument_casefold_or_provenance_substitution_added": false,
+  "peer_results_accepted": false,
+  "whole_host_quiet_claimed": false,
+  "limitations": [
+    "This accepts only36 selected complementary metadata cases and34 controls. Genuine full133 collection and97 ordered deselections are not full133-suite execution or acceptance.",
+    "The final133 metadata-coverage aggregate still requires both other complementary accepted batches, exact shared frozen inventories, all three full custody releases and its separate explicit zero-Job supervision/coordination.",
+    "The93-file bounded physical audit authenticates the entire41-pair packet, control/native/closure records, all22 current code sources and all three pinned reviews/amendments. It does not repeat the complete3.3GB inventory or independently rehash all4,041 loaded module bodies.",
+    "Current runtime/loaded-source joins rely on the prior independent18,909-file physical audit, authenticated fresh Root preflight and the frozen child's/guard's/external closeout's full pin checks. This is explicitly not runtime qualification for a future attempt.",
+    "The exact260-byte MNE library resource observations bootstrap2/hash1 are separately bounded. They are not raw target-signal or model-weight verification.",
+    "Genuine NumPy/Torch/MNE bootstrap and API guards do not constitute a general untrusted-Python sandbox or observation of every native allocation.",
+    "The one expected pytest current-link attempt remained physically refused; no alias was created or broadly admitted.298 Git queries retained the genuine pinned executable and exact canonical readonly policy.",
+    "Native named-Job absence is authenticated from the native receipt and Root's timestamped full-release proof. The reviewer made no live Job query or whole-host-quiet assertion.",
+    "No restoration, numerical episode, source/support update, query, physical selector, claim, measured publication, recovery, canonical parent/worker/single-root qualification, future-runtime or scientific authority follows from this metadata batch."
+  ]
+}

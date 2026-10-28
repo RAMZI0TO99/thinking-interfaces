@@ -1,0 +1,37 @@
+{
+  "schema": "cho51_provenance_numerical_worker_owner_resource_amendment_v1",
+  "scope": "cho51_provenance_numerical_worker_20261025_v5",
+  "date": "2026-10-25",
+  "authority": "same direct owner reply for this engineering integration; separately admitted operations successor",
+  "owner_instruction_exact": "use the available ram now!",
+  "previous_startup_ram_gib": 10,
+  "startup_ram_gib": 4,
+  "startup_samples_required": 2,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "maximum_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "gpu_hidden": true,
+  "all_five_genuine_peer_pause_paths_required": true,
+  "fresh_explicit_peer_release_required": true,
+  "old_grants_or_allowances_reused": false,
+  "canonical_guard_modified": false,
+  "historical_receipts_requalified": false,
+  "historical_10gib_startup_pass_claimed": false,
+  "general_quality_training_or_scientific_release": false,
+  "scientific_admission": false,
+  "failed_predecessors_preserved": 4,
+  "validation_slots": [
+    "tests",
+    "integration"
+  ],
+  "each_slot_requires_distinct_maximum_one_job_release": true,
+  "no_phase_limit_extended": true,
+  "phase_outputs": {
+    "tests": "t1",
+    "integration": "i1"
+  },
+  "canonical_record_api_or_windows_registry_modified": false
+}

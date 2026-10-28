@@ -1,0 +1,29 @@
+{
+  "schema": "cho51_p3_bootstrap_peer_refusal_observation_v3",
+  "observed_utc": "2026-10-27T16:33:59.9156869+00:00",
+  "observer": "Pro3 Root ordinary bounded native metadata read/SHA256 of genuine directly communicated Pro2 decision",
+  "actual_peer_decision_path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\pro3_bootstrap003_source_review_001\\ROOT_PRO3_BOOTSTRAP_REQUEST003_EXPLICIT_REJECTED_DECISION_001.json",
+  "actual_peer_decision_bytes": 19180,
+  "actual_peer_decision_sha256": "e6395f747aef09687b9302e0f6157988c8871dfe544e20412d24d2e57e2658ec",
+  "actual_peer_schema": "pro2_pro3_bootstrap_observation_decision_v1",
+  "released": false,
+  "accepted": false,
+  "helper_invocations_granted": 0,
+  "controller_invocations_granted": 0,
+  "bounded_cleanup_after_pause_admitted": false,
+  "rejected_request_sha256": "968350ffc1003fd99891c223f247aaaaa64703c333bc2260869b0a3c2becb194",
+  "shared_blocking_findings_count": 1,
+  "blocking_findings": [
+    "S003_PAUSE_EXISTS_ERROR_FALSE_UNKNOWN: File.Exists can return false on permission/I/O/lookup uncertainty, so immediate helper effects and outer Clock did not distinguish known-clear absence from UNKNOWN. Shared root cause counted once."
+  ],
+  "positive_correction": "Attempted/unknown Start-custody transition repaired in003 static review; no actual Start test or leak measurement.",
+  "deferred_not_current_operation_blocker": "D01 full manifest/helper-attempt/schema/payload/coverage validation remains before actual observational acceptance, not a current additional helper-run blocker or native-ID requirement.",
+  "interpretation": "Static fail-open lookup refusal. No actual ACL/permission failure, pause event, runtime overrun, resource shortage or physical release was measured.",
+  "version003_preserved_unexecuted": true,
+  "version004_requires_new_different_source_review_exact_request_genuine_peer_decision_and_root_admission": true,
+  "bootstrap_executed": false,
+  "native_preparation_executed": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "cho51_p3_bootstrap_request_review_v3",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_003",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of request003 or the reviewed PowerShell/protocol sources",
+  "observed_utc": "2026-10-27T16:15:25.9212378Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "request_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-request_003.json",
+  "request_bytes": 10891,
+  "request_sha256": "968350ffc1003fd99891c223f247aaaaa64703c333bc2260869b0a3c2becb194",
+  "source_review_sha256": "5ceea3438032634c40adc60fab42976c1c3eebd3761f639096aff63392183d0b",
+  "strict_json_observation": {
+    "utf8_valid": true,
+    "duplicate_keys": 0,
+    "nonfinite_or_noninteger_numeric_values": 0,
+    "nodes": 150,
+    "maximum_depth_policy": 32,
+    "maximum_nodes_policy": 50000,
+    "maximum_bytes_policy": 1048576,
+    "exact_integer_policy_caps_checked": 25,
+    "exact_boolean_policy_flags_checked": 8,
+    "exact_zero_int64_budget_keys": 8,
+    "exact_ordered_create_once_outputs": 10
+  },
+  "actual_dependency_joins": {
+    "bootstrap_observation003_sha256": "82526d084ca78d30faba6aac4b10e0297f6e8962da7506b6a105842800e152d3",
+    "bootstrap_supervisor003_sha256": "0b41f26a67da78fce686feb02a1b3a1aaceec3f08f4470f581cb51442480eff7",
+    "bootstrap_protocol003_sha256": "2d00ed5d8c705bd9351f37ebdaddb4e38419952e472ec9515548751f62068998",
+    "actual_source011_scope_sha256": "c52dbbfc4a5202bc5476e6b41071d72a1163b339e8bcaad29acf2a6dae70a540",
+    "actual_source011_adoption_sha256": "6994cedd8c25318563d4aa398d6681c00e61e91f61bccd8d5ca67c75b554e378",
+    "actual_coordination_observation003_sha256": "c8433deb14507280eadaa1829bb77ce893681d6cefc638e443ea2c62502c453d",
+    "owner_resource_amendment_sha256": "733d6505fb24ee552ae0abd7e1bec46c14f6fc33e66a71d1adb3cf2f30c9fe75",
+    "actual_installed_pwsh_executable_sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+    "actual_installed_process_dll_sha256": "2b4871e02b366113c6ccf3b1436fadde5e69fc0a3e3ac421e2fa0f7af8c2bc3b",
+    "native_current_hash_mismatches": []
+  },
+  "corrected_request_findings": [
+    "The unsubmitted request initially stated that every failed output could never release, broader than the frozen Source's independently proven failed-custody closure path. Root corrected only the unsubmitted request's acceptance prose: unknown/missing/ambiguous custody never releases; failed/partial/late output never passes; proven closed failed custody may release with operation_succeeded=false and no result acceptance. Final exact bytes were independently rehashed and strictly parsed."
+  ],
+  "review_basis": [
+    "Full request metadata read and strict native JsonDocument duplicate/depth/node/Int64 inspection; exact policy cap/Boolean/zero-budget/ordered-output comparisons and physical native SHA checks of actual request/source/review/coordination/amendment/critical runtime files. No candidate source or operation was executed.",
+    "All three actual003 sources and their wholly different source review are exact. All ten ordered outputs and future Root admission descriptor point to003; genuine Source011 files remain under the actual peer bootstrap002_source_review_001 directory because those are their real adopted paths. The earlier001/002 request/refusal hashes remain correctly labeled preserved history rather than being mechanically promoted.",
+    "Actual Source011 scope/adoption establish3/2/5 caps and16:20–18:30UTC. Requested operation is16:20–17:30UTC; external pre-Begin entry+90 must be strictly before both ends-minus60. Earlier adoption and advance metadata decisions do not permit dispatch before either effective start. Current authoring before16:20 remains under unchanged Source009 only.",
+    "Actual created_utc is16:12:44UTC. Genuine later peer and Root observations must be at/after that request creation and no later than the common external entry. Future peer schema and Root admission path/schema are specified by the request and its frozen referenced protocol; no unknown future peer/admission/output SHA is embedded as an actual pin. Independent request SHA and later Root admission SHA remain runtime arguments after actual records exist.",
+    "Four ordered mode invocations retain actual Begin/Invoke/Complete/Release exits and post-Release native QPC/frequency/UTC upper bound, not internal publication time.90 seconds includes full caller startup/preflight/helper/EOF/reap/effects/return with15/65/80/85 internal milestones and strict60-second reserve. Start uncertainty, unknown prior custody and closed failure propagation preserve no-release semantics for unknown/missing/ambiguous custody.",
+    "Phase-only4/4GiB,20GiB disk,two startup samples,five exact pause paths,one owned helper,zero helper children/Python/C#/Jobs,closed eight-key exact numerical zeros,no retry and scientific admission false match frozen003. Cleanup-only authority does not permit observation continuation, floor lowering, other-process killing or result promotion.",
+    "The proposed runtime roster remains observational. Header-only helper consumption is explicitly not complete payload/coverage/native-identity acceptance; later actual full manifest, source/caller/receipt/count/byte/path/hash/coverage/startup/minima review and peer acceptance precede separately admitted native preparation/pin review/tests.117 candidate cases and34 controls remain unexecuted."
+  ],
+  "prior_refusal_lineage": {
+    "request001_sha256": "4d856d586904f34dd758ca36049e8471748b4849539d13216f36d9cc35710f46",
+    "peer_refusal001_sha256": "cb3c427f239b47c0e6070602c02a116eba57e0acf643c15157d485dcc4ce13bc",
+    "request002_sha256": "5f52f40e6bd320adffb1d2eb4dbd6b8f1f7f93291894f5aa9f90b5e0762dff03",
+    "peer_refusal002_sha256": "9d6a476f2309207a82d2d50b20b5496d08333e9de014794f0e4424a667478698",
+    "prior_refusals_are_not_operational_grants": true
+  },
+  "limitations": {
+    "peer_decision003_issued_or_accepted_by_this_review": false,
+    "root_admission003_issued_by_this_review": false,
+    "source_review_or_request_audit_confers_admission": false,
+    "bootstrap_helper_or_mode_executed": false,
+    "process_start_or_job_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "python_or_tests_executed": false,
+    "runtime_or_manifest_accepted": false,
+    "full_caller_timing_or_custody_pass_claimed": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0
+  },
+  "disposition": "Exact request003 is clean for genuine peer consideration only. Actual released=true peer decision and fresh Root admission, effective Source/operation windows and current runtime/resource/pause/custody evidence remain mandatory before any invocation; external actual post-Release audit and later full payload acceptance remain separate."
+}

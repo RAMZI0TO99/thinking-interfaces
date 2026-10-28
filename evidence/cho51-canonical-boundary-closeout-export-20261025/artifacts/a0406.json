@@ -1,0 +1,50 @@
+{
+  "schema": "cho51_canonical_boundary_aggregate_caller_completion_v1",
+  "observed_utc": "2026-10-25T21:11:33.0190725+00:00",
+  "scope": "cho51_canonical_boundary_20261025_v5_aggregate",
+  "before_dispatch_utc_lower_bound": "2026-10-25T21:09:50Z",
+  "terminal_completion_utc_upper_bound": "2026-10-25T21:10:03.000Z",
+  "conservative_dispatch_to_terminal_seconds": 13.0,
+  "tool_wall_seconds": 4.0118676,
+  "tool_completed_inline": true,
+  "tool_session_id": null,
+  "tool_exit_code": 0,
+  "tool_session_reaped": true,
+  "tool_output_streams_complete": true,
+  "internal_timer_alone_not_used": true,
+  "final_supervisor_evidence_write_included": true,
+  "caller_start_sha256": "f96ca0f14fa0dd28c688236bc033b6bcd90887d2b4dc59bd728b50065a10946e",
+  "supervision_sha256": "9168285fc69476943bcf37d78fa6190be64f67be8b7baf48afdf79d17120ef11",
+  "result_sha256": "e657df21c2bfc48b5aa907dce1a859f6c7fa3737798626bc421ad7d9ad1e60dc",
+  "admission_sha256": "64bb9e91bcdda0871bbb5a2934966f430e1a925efe026cb7357c4e8ec3c79279",
+  "peer_release_sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f",
+  "owned_generation_absence": [
+    {
+      "pid": 317284,
+      "expected_creation_filetime": "134374361929014994",
+      "owned_generation_absent": true,
+      "observed": "pid_absent"
+    },
+    {
+      "pid": 321636,
+      "expected_creation_filetime": "134374361929247040",
+      "owned_generation_absent": true,
+      "observed": "pid_absent"
+    },
+    {
+      "pid": 284992,
+      "expected_creation_filetime": "134374361929732049",
+      "owned_generation_absent": true,
+      "observed": "pid_absent"
+    },
+    {
+      "pid": 321084,
+      "expected_creation_filetime": "134374361908543949",
+      "owned_generation_absent": true,
+      "observed": "pid_absent"
+    }
+  ],
+  "job_created": false,
+  "maximum_interpreter_invocations": 1,
+  "scientific_admission": false
+}

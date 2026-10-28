@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_provenance_restore_unused_lease_closeout_v1",
+  "reported_to_peer_utc": "2026-10-25T07:07:44Z",
+  "release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_001.json",
+  "release_sha256": "de347ffe4bae64d89cd107910434174d557f5ebda7df7da8243ae049b4a0eb0a",
+  "consumed_jobs": 0,
+  "root_will_consume_this_release_later": false,
+  "peer_notified_of_no_entry_and_requested_cancellation": true,
+  "validation_job_started": false,
+  "tests_started": false,
+  "model_started": false,
+  "scientific_admission": false,
+  "new_pins_and_distinct_peer_release_required_for_successor": true
+}

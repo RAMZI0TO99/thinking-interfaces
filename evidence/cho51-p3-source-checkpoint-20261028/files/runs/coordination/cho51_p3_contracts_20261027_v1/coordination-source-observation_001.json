@@ -1,0 +1,30 @@
+{
+  "schema": "cho51_p3_contracts_peer_source_observation_v1",
+  "observed_utc": "2026-10-27T13:39:37Z",
+  "observer": "Pro3 Root native read/hash; not a direct peer reply",
+  "peer_thread_id": "01a171ad-1bad-7212-a419-d195a4a30955",
+  "source_scope": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\ROOT_CURRENT_I13_RETENTION_SOURCE_QUALIFICATION_SCOPE_008.json",
+    "bytes": 7324,
+    "sha256": "6b0562d5c5df10afb6cea07771a75da7b5df03632144e8b625f37ef5f747c515"
+  },
+  "source_adoption": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\ROOT_I13_SOURCE_SCOPE008_AND_RETENTION_PROTOCOL_SOURCE_ONLY_ADOPTION_001.json",
+    "bytes": 5920,
+    "sha256": "9b8e3e1d439a0f471028ad30107b95a4f6318394f9e3726de16cf88568a790ff"
+  },
+  "interval_start": "2026-10-27T13:10:56.767745+00:00",
+  "interval_end": "2026-10-27T15:10:56.767745+00:00",
+  "pro2_maximum_agents_including_root": 3,
+  "pro3_reserved_overlap_maximum": 2,
+  "shared_maximum": 5,
+  "direct_peer_ack_received": false,
+  "pro3_validation_release": false,
+  "compute_allocation": false,
+  "peer_scope_is_source_only": true,
+  "old_source006_reused": false,
+  "old_grants_reused": false,
+  "whole_host_quiet_claimed": false,
+  "scientific_admission": false,
+  "disposition": "Fresh peer Source information observed; exact nonnumerical validation still requires distinct genuine peer release, current resources, settled pins and native admission."
+}

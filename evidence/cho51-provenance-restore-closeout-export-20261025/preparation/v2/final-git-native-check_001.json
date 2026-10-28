@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_provenance_restore_final_git_native_check_v1",
+  "observer": "/root",
+  "observed_utc": "2026-10-25T07:43:27.0524100Z",
+  "path": "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+  "bytes": 46480,
+  "sha256": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+  "expected_runtime_pin_matched": true,
+  "reader": "native PowerShell Get-Item and Get-FileHash SHA256",
+  "purpose": "supplement independent reviewer's explicitly excluded external Git path with a distinct current Root observation",
+  "python_executed": false,
+  "model_executed": false,
+  "scientific_admission": false
+}

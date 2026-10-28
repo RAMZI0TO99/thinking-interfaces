@@ -1,0 +1,17 @@
+{
+  "schema": "cho51_provenance_numerical_worker_root_native_integrity_v1",
+  "phase": "integration",
+  "observed_utc": "2026-10-25T14:30:30.4322410+00:00",
+  "passed": true,
+  "git_binary_path": "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+  "git_binary_sha256": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+  "git_binary_bytes": 46480,
+  "canonical_files": 432,
+  "canonical_source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "canonical_manifest_sha256": "778386aa52d354614c689055d26a2bbc844f063f7f6cf267cc1f7ba9048bbe68",
+  "canonical_manifest_order_preserved": true,
+  "git_commit": "c177d002ab73c238a9e04a0ea21ce78f19b14c16",
+  "git_dirty": true,
+  "source_review_sha256": "7d1bf8d4091204b9ea06201447de86cec3a3e8640f2650884a9a68848ff914e8",
+  "python_tests_models_executed": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_canonical_boundary_external_failure_supervision_v1",
+  "started_utc": "2026-10-25T16:41:27.6444251+00:00",
+  "ended_utc": "2026-10-25T16:42:20.7163444+00:00",
+  "elapsed_seconds": 53.0704405,
+  "owned_pid": 280020,
+  "observed_owned_pids": [
+    280020,
+    95636,
+    299040
+  ],
+  "limit_seconds": 300,
+  "timed_out": false,
+  "stop_reason": null,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "stdout_eof": true,
+  "stderr_eof": true,
+  "auditor_sha256": "7e50c6b2d962e192573f30a090fe2adfa2ecb963d7a6d2d9f5c15e2ee15cd2b8",
+  "candidate_imported": false,
+  "validation_passed": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_provenance_restore_closeout_supervision_v1",
+  "started_utc": "2026-10-25T07:37:25.7123814Z",
+  "ended_utc": "2026-10-25T07:38:27.1180693Z",
+  "owned_pid": 286660,
+  "limit_seconds": 300,
+  "timed_out": false,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "scope": "reviewed standard-library-only external closeout",
+  "tests_executed": false,
+  "model_executed": false,
+  "scientific_admission": false
+}

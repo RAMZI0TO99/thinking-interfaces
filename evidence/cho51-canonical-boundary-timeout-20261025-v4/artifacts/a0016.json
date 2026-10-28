@@ -1,0 +1,31 @@
+{
+  "schema": "cho51_canonical_boundary_dispatch_v1",
+  "observed_utc": "2026-10-25T18:19:33.7090892+00:00",
+  "pins_sha256": "9d195ef2d32f7932788490a01395cbeac16a750cc9a33a2be516a352d4a35f95",
+  "root_admission_sha256": "b3f32fbc777380cda4d9290fc43ed628421748e24b6419bc7f77b74e9358ecaa",
+  "command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v4\\runner.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v4\\pins.json",
+    "--expect-pins",
+    "9d195ef2d32f7932788490a01395cbeac16a750cc9a33a2be516a352d4a35f95",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v4\\t1"
+  ],
+  "peer_release_sha256": "0d8b4a45933b487aeb45ca3d69ebeaf21d6368a2c90e51520a9f4818a949e5db",
+  "expected_numerical_budget": {
+    "source_updates": 0,
+    "restore_count": 0,
+    "support_updates": 0,
+    "gradient_updates": 0,
+    "target_inference_calls": 0,
+    "query_count": 0,
+    "model_constructions": 0,
+    "measured_cells": 0
+  },
+  "scientific_admission": false
+}

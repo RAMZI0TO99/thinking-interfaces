@@ -1,0 +1,18 @@
+{
+  "schema": "cho51_canonical_boundary_timeout_auditor_source_review_v1",
+  "reviewed_utc": "2026-10-25T18:32:52.4875114Z",
+  "reviewer": "/root/readiness",
+  "source_only": true,
+  "accepted": true,
+  "remaining_actionable_findings": [],
+  "file": "runs/coordination/cho51_canonical_boundary_20261025_v4/timeout_closeout_001.py",
+  "bytes": 4224,
+  "sha256": "be39223a025c80fbe957d2f0704a00f2326023ffd97c76bf5d214b3e83d1913a",
+  "physical_timeout_native_root_peer_marker_checked": true,
+  "cleanup_only_not_validation_pass": true,
+  "complete_runtime_counter_report_available": false,
+  "maximum_seconds": 300,
+  "latest_end_utc": "2026-10-25T18:38:00Z",
+  "python_tests_jobs_or_live_queries_performed": false,
+  "scientific_admission": false
+}

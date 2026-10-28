@@ -1,0 +1,83 @@
+{
+  "schema": "cho51_provenance_numerical_worker_failed_attempt_native_audit_v1",
+  "phase": "tests",
+  "observed_utc": "2026-10-25T10:17:06.6423323+00:00",
+  "failure_preserved": true,
+  "result_accepted": false,
+  "job_name": "pro3_migration_20261025T101329Z_8403e0175f",
+  "fresh_absence_error": 2,
+  "job_empty_closed_handles_closed": true,
+  "tests_collected": 63,
+  "tests_executed": 1,
+  "tests_failed": 1,
+  "tests_passed": 0,
+  "backend_calls": 0,
+  "verifier_calls": 0,
+  "original_fixture_source_capture_passed": true,
+  "production_numerical_work_reached": false,
+  "failure": "Windows MAX_PATH hard-link destination overflow in metadata fixture",
+  "measured_cells": 0,
+  "scientific_admission": false,
+  "exact_bindings": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\pins.json": {
+      "sha256": "df596855933c74864f92b087d65e43d59546f059c42daf094ee73ddf65ca54e8",
+      "bytes": 567770
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\source-review.json": {
+      "sha256": "8685bfff442fb3abcc54e9585eaf509270077dfd7b6072e177ca72a66df58318",
+      "bytes": 3106
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\origin-contract.json": {
+      "sha256": "4ed4944113cf3abd7dfc84e532925ba0a74b1aa33d1e86a1034f12276846fe6c",
+      "bytes": 784640
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\admission_tests.json": {
+      "sha256": "e3374ce15e201ea4360ecf38837ca4f4432f5e46aaef90e5b1c9b8b4527d1dd8",
+      "bytes": 1503
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\preflight_tests_001.json": {
+      "sha256": "b17ecafc8eb9026b247c21a7ae4068810cad5a81fc58eeb0797f1eb16ca44535",
+      "bytes": 2306
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\dispatch_tests_001.json": {
+      "sha256": "791bc405fe5d0794e06dc8c223a0da437b26ef0824e69379a3d077b2046a5b32",
+      "bytes": 1748
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\dispatch_result_tests_001.json": {
+      "sha256": "978a2f010b93a6ca1717912a3e1bd05a3a08c04966780876900fdbbd514b9004",
+      "bytes": 1867
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\validation_tests_001\\result.json": {
+      "sha256": "1509963c29a2617185031b4a4c964558ed2a6b80d1d9f564096dbbd9d4ece5c4",
+      "bytes": 1121
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\validation_tests_001\\junit.xml": {
+      "sha256": "7778aad33f9f40a19f774283f5663f2b04a36d2cf6ce5fc30ae1cd57107a833c",
+      "bytes": 18979
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\validation_tests_001\\pytest.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v4\\lease-closeout_tests_001.json": {
+      "sha256": "1ab45f23da2775a301cd87c0f40b0297c5063dd32e99cd9a729eef247b68674a",
+      "bytes": 971
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T101329Z_8403e0175f\\receipt.json": {
+      "sha256": "edf80a19e6b3c33cc8f67e7f6f10f313da2308c1af31e6a48f6700124ebf63f4",
+      "bytes": 1839
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T101329Z_8403e0175f\\admission.json": {
+      "sha256": "4ed27178624daade5f6f887b0d6ff382c82a16b8973bf753ebf13db05fbf518a",
+      "bytes": 6516
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T101329Z_8403e0175f\\deadline.json": {
+      "sha256": "fde314b1264b09a4fe583bfc4bedb00a40960ff9edde1d85030c6cd04e46ab63",
+      "bytes": 161
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T101329Z_8403e0175f\\command.log": {
+      "sha256": "29968ac01ba658ad27c31cfc720115ac555c47685d076335c99b9ff1815cfc77",
+      "bytes": 19420
+    }
+  }
+}

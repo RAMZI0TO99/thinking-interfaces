@@ -1,0 +1,920 @@
+{
+  "schema": "cho51_provenance_numerical_worker_closeout_export_v1",
+  "metadata_only": true,
+  "created_utc": "2026-10-25T14:45:49.7889986+00:00",
+  "final_review_sha256": "0773288c76842602f42ea8e79eb60e973ae5dee7d681c0bee18f23a764a91e18",
+  "all_copies_byte_identical_to_sources": true,
+  "all_seven_document_copies_match_review_bindings": true,
+  "copied_artifact_count": 128,
+  "copied_payload_bytes": 5930320,
+  "artifacts": [
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/final-review.json",
+      "path": "final-review.json",
+      "bytes": 11621,
+      "sha256": "0773288c76842602f42ea8e79eb60e973ae5dee7d681c0bee18f23a764a91e18"
+    },
+    {
+      "source": "HANDOFF.md",
+      "path": "snapshots/HANDOFF.md",
+      "bytes": 327950,
+      "sha256": "a21fd832cdc29b2d9163ca10d77d7a48815858e3abe28cc4ea434c7821009b3c"
+    },
+    {
+      "source": "AGENT_COORDINATION.md",
+      "path": "snapshots/AGENT_COORDINATION.md",
+      "bytes": 277555,
+      "sha256": "8d101e9e61d4825647e3ab1766219afacde7a0f8cf7b27d600140371ce5550cc"
+    },
+    {
+      "source": "CONTINUE_HERE.md",
+      "path": "snapshots/CONTINUE_HERE.md",
+      "bytes": 52877,
+      "sha256": "964196e6ceba5659b5ec9894d93ff18a971f36f661c6d47ccc90549e66e5645e"
+    },
+    {
+      "source": "PHASE2_START_HERE.md",
+      "path": "snapshots/PHASE2_START_HERE.md",
+      "bytes": 157285,
+      "sha256": "c0db71be916b52eb4172d8a2450c54426e8868ab5f2d4e2327d9a3934d67d6a6"
+    },
+    {
+      "source": "README.md",
+      "path": "snapshots/README.md",
+      "bytes": 113621,
+      "sha256": "b37b87187297da783e15929570aeee83051b262591307bb263939c01f54945c2"
+    },
+    {
+      "source": "WINDOWS_SETUP.md",
+      "path": "snapshots/WINDOWS_SETUP.md",
+      "bytes": 47361,
+      "sha256": "21ea96ef63eb4838a758b5d8d10463a366813d54f114030c24bdfe0c4aaa7144"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_qualification_20261025.md",
+      "path": "snapshots/docs/phase2/cho51_provenance_numerical_worker_qualification_20261025.md",
+      "bytes": 27711,
+      "sha256": "f6491639dde6ee77dde76e1185b91fb393f57c89776c8ae4a36dd8dd1c442c01"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_plan_20261025.md",
+      "path": "preparation/cho51_provenance_numerical_worker_plan_20261025.md",
+      "bytes": 8570,
+      "sha256": "37de853d2cd97337156ed87aa58848ff3697fa76881e1a16ee438051a1434f9a"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_split_validation_plan_20261025.md",
+      "path": "preparation/cho51_provenance_numerical_worker_split_validation_plan_20261025.md",
+      "bytes": 9320,
+      "sha256": "1f2abe8aa55c8fbf99c7707b77c6f0bf9c9a1ad26721f38ee8b20e4145add5bc"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_operations_successor_20261025.md",
+      "path": "preparation/cho51_provenance_numerical_worker_operations_successor_20261025.md",
+      "bytes": 11664,
+      "sha256": "93d8fce3e1e0f7cd719dd863313d195d1bb22fdd5ff32131c4a5053bf9304efb"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_audit_acceleration_plan_20261025.md",
+      "path": "preparation/cho51_provenance_numerical_worker_audit_acceleration_plan_20261025.md",
+      "bytes": 5339,
+      "sha256": "5364e55b6be964075d841bebc8e35f35ec1fea97956051578d2bf12d85cf8447"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_external_audit_plan_20261025.md",
+      "path": "preparation/cho51_provenance_numerical_worker_external_audit_plan_20261025.md",
+      "bytes": 5521,
+      "sha256": "6030f41df6d1cd37c9ede73ee13c80f780d29e04ed4a2c51e675674ab92b39f6"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/closeout.py",
+      "path": "predecessors/v1/closeout.py",
+      "bytes": 47772,
+      "sha256": "5e32434f7d5e77f0e022682a21d6a10737eb1149b77f7a9f68004a3001153e69"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/guard.py",
+      "path": "predecessors/v1/guard.py",
+      "bytes": 17644,
+      "sha256": "a438860c91e62efb0ed70a42e8163c9bede144338cca9e2113829a04f4c70304"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/launch.ps1",
+      "path": "predecessors/v1/launch.ps1",
+      "bytes": 9294,
+      "sha256": "56ac7d7a9a69cfd6861e44ffb6cff31b69fc4b2d404ea6f75d7e2258d448145d"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/native_pins.ps1",
+      "path": "predecessors/v1/native_pins.ps1",
+      "bytes": 3853,
+      "sha256": "061e675867b8cacf6ea287ac6b107cee8003b5efef4186283080dd2a07b8957c"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/origin.py",
+      "path": "predecessors/v1/origin.py",
+      "bytes": 11058,
+      "sha256": "70182c11c09b0cc2348f0956739c03c1b01dc4593340b7fbae66493a49900dac"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/parent.py",
+      "path": "predecessors/v1/parent.py",
+      "bytes": 17309,
+      "sha256": "ecb1d4b9966ac96b5b29557e290dec8174ba48e9ad759cf69591fe73861880a6"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/prepare.py",
+      "path": "predecessors/v1/prepare.py",
+      "bytes": 12822,
+      "sha256": "29d06863e92e63d8fdaec410b3276ae809d9739f891cb038e1b5254d3dda5e31"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/runtime.py",
+      "path": "predecessors/v1/runtime.py",
+      "bytes": 53920,
+      "sha256": "2ec265315e6028807a07edd7a3551e4ec4351a708548a4e5c07da1038fa40f51"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/pins.json",
+      "path": "predecessors/v1/pins.json",
+      "bytes": 550646,
+      "sha256": "45ba9bfe30762d5cde74475e53424e217e213bf2c523d7a61ced08b3930ed319"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/source-review.json",
+      "path": "predecessors/v1/source-review.json",
+      "bytes": 3437,
+      "sha256": "fe81f7c78f6bb7da8a9086e0a2656f813f360ab87638d7f6e2c2f943924b9aab"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/failed-attempt-native-audit_001.json",
+      "path": "predecessors/v1/failed-attempt-native-audit_001.json",
+      "bytes": 3540,
+      "sha256": "c3145c740680fe1e1b36b3af1dee1a91efa1cc7db50b83af3fba147940e61fd9"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v1/lease-closeout_001.json",
+      "path": "predecessors/v1/lease-closeout_001.json",
+      "bytes": 1149,
+      "sha256": "2e3f055793d2a1bbde58b3dd10f8c253fe4f162b0959670ab238156bd7bf166e"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/closeout.py",
+      "path": "predecessors/v2/closeout.py",
+      "bytes": 47773,
+      "sha256": "164fe245785539f6eb3845ee73a1ccbf10da7d9fda038d36afe91e854c782eff"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/guard.py",
+      "path": "predecessors/v2/guard.py",
+      "bytes": 17645,
+      "sha256": "c22d4673255cc2fb895b61d09775038465da52fcff51ee66c06014952c4027c1"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/launch.ps1",
+      "path": "predecessors/v2/launch.ps1",
+      "bytes": 9295,
+      "sha256": "90a4439bce06fdaf9a2d892e518ea7063875409aefc04b858abee99ec26e41a7"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/native_pins.ps1",
+      "path": "predecessors/v2/native_pins.ps1",
+      "bytes": 3854,
+      "sha256": "57374f6fedeb6b14bad5ca76b042770b72247ae715d9d922768efb64b174d318"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/origin.py",
+      "path": "predecessors/v2/origin.py",
+      "bytes": 12612,
+      "sha256": "90d1bb8b024f3376eced1883bfa6a1c0d770fb73864dfe03abe6a0e963423b59"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/parent.py",
+      "path": "predecessors/v2/parent.py",
+      "bytes": 17282,
+      "sha256": "50eeafb4ac12f30947f66f45d21fd309ea16c2cc0677f0ce5afe748953438754"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/prepare.py",
+      "path": "predecessors/v2/prepare.py",
+      "bytes": 13209,
+      "sha256": "c99b64bb02c040ca437de8cb4be5513cba995b956bac4532d10b0556f131cb94"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/runtime.py",
+      "path": "predecessors/v2/runtime.py",
+      "bytes": 53921,
+      "sha256": "a568b7be8051c9def201186926dabc8c32d99be0fa96998cd197615e08116140"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/pins.json",
+      "path": "predecessors/v2/pins.json",
+      "bytes": 554918,
+      "sha256": "9ffcec187273093bc8410f76e328f2e9697e56c75e31dfa3d449206afda18297"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/source-review.json",
+      "path": "predecessors/v2/source-review.json",
+      "bytes": 2925,
+      "sha256": "ed183de8466f64e97ec0531b7e1e79612721cccd9e0d1c720fa809a21298d31f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/failed-attempt-native-audit_001.json",
+      "path": "predecessors/v2/failed-attempt-native-audit_001.json",
+      "bytes": 4075,
+      "sha256": "ca1a34055c78576bddf5c2be5b5089987b04329d32ece5d8047c0b2e12c1c53c"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v2/lease-closeout_001.json",
+      "path": "predecessors/v2/lease-closeout_001.json",
+      "bytes": 1249,
+      "sha256": "ba9559c05c93b0fc9259d6e35f67ad80b9def3b93d85135dbd267c20fc771c40"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/closeout.py",
+      "path": "predecessors/v3/closeout.py",
+      "bytes": 47774,
+      "sha256": "a0ed36085ecc3f335d7d435b5135b1bd59a8c01d369f201a09c0e1269348f17a"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/guard.py",
+      "path": "predecessors/v3/guard.py",
+      "bytes": 17646,
+      "sha256": "04aaebd031e6e67db721bad2c8d369bdc585937776902c4eea83886dc29a026a"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/launch.ps1",
+      "path": "predecessors/v3/launch.ps1",
+      "bytes": 9296,
+      "sha256": "dd54da15efc6b1d8d0a3a2cf0a670a4d25b890b91cceff3761266c39a3b5e49e"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/native_pins.ps1",
+      "path": "predecessors/v3/native_pins.ps1",
+      "bytes": 3855,
+      "sha256": "77dce7d2d24b791e732a1b2030e04bf9369e3b7ce976bc718823119b82146475"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/origin.py",
+      "path": "predecessors/v3/origin.py",
+      "bytes": 14371,
+      "sha256": "7dea495b2e241493a207bacf7f4826250865ed3ad458856306e5334867f62e5b"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/parent.py",
+      "path": "predecessors/v3/parent.py",
+      "bytes": 17283,
+      "sha256": "f352cc672af1e4a5b4047b37dac8dbc6f1031252ccf4be06805f35feeb5af84f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/prepare.py",
+      "path": "predecessors/v3/prepare.py",
+      "bytes": 13210,
+      "sha256": "6ce661d3c9e0513133c1e293288890c45d3460a6d242ae3ea7ba9d438cc839a5"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/runtime.py",
+      "path": "predecessors/v3/runtime.py",
+      "bytes": 53922,
+      "sha256": "20cf7447f49af75092cd5651edba930e0a4a41aaa636dfe5939577e9d8c396cd"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/pins.json",
+      "path": "predecessors/v3/pins.json",
+      "bytes": 560845,
+      "sha256": "fbac25ba87bc80ed828403693200e3c85b42b10dd6356fb1cb7ca6e110706c4e"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/source-review.json",
+      "path": "predecessors/v3/source-review.json",
+      "bytes": 3144,
+      "sha256": "8a6f2e63773909dcb2dab73b4e7408be13240f5246776ebd5778eb198d18d489"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/failed-attempt-native-audit_001.json",
+      "path": "predecessors/v3/failed-attempt-native-audit_001.json",
+      "bytes": 6028,
+      "sha256": "0084f49e7cf40ff0eb9cab674bb17ed5bf7a9cc5a0307160ade051c85a1698a2"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v3/lease-closeout_001.json",
+      "path": "predecessors/v3/lease-closeout_001.json",
+      "bytes": 1616,
+      "sha256": "647faac1552792a676d86837d4f606533696334a3cd8c51076242ab489b9a2b1"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/closeout.py",
+      "path": "predecessors/v4/closeout.py",
+      "bytes": 56962,
+      "sha256": "4ddbaa149876da28f899ad91b0030e31edf257c5cf8f8d32ca07b95808a09983"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/guard.py",
+      "path": "predecessors/v4/guard.py",
+      "bytes": 18904,
+      "sha256": "696685f1f26bd03908d79bed944217a95ac87fefdace8b06100ec6e034df2058"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/launch.ps1",
+      "path": "predecessors/v4/launch.ps1",
+      "bytes": 10398,
+      "sha256": "7cc58cd1325a66d03d3502eea6e98c5667f2506a73e1af2f699eb1c03633a34e"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/native_pins.ps1",
+      "path": "predecessors/v4/native_pins.ps1",
+      "bytes": 3857,
+      "sha256": "3ae9cbf7bddae21a0d12f714f0b7c3b6146351b103d67ae49e4fe888bf3b0990"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/origin.py",
+      "path": "predecessors/v4/origin.py",
+      "bytes": 35631,
+      "sha256": "8de9e0271c0679ada5d99d4c8ea582fe6ab02ee60564b17a5bd85cf68977d9d7"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/parent.py",
+      "path": "predecessors/v4/parent.py",
+      "bytes": 19321,
+      "sha256": "dc3f11bee14b6ce5446e6726e5586500cf78a237746b7cb1cf35222f1d65a6c7"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/prepare.py",
+      "path": "predecessors/v4/prepare.py",
+      "bytes": 13702,
+      "sha256": "d98a462bbf663a760437cce5fdf850dcd9660a557a3be73d7e0c28cced5b2ae4"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/runtime.py",
+      "path": "predecessors/v4/runtime.py",
+      "bytes": 57303,
+      "sha256": "417f74cade1f3a2f0ff9b0dfacec89644a62ce92fdbadcb39b2fdcf7b58b5f3d"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/pins.json",
+      "path": "predecessors/v4/pins.json",
+      "bytes": 567770,
+      "sha256": "df596855933c74864f92b087d65e43d59546f059c42daf094ee73ddf65ca54e8"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/source-review.json",
+      "path": "predecessors/v4/source-review.json",
+      "bytes": 3106,
+      "sha256": "8685bfff442fb3abcc54e9585eaf509270077dfd7b6072e177ca72a66df58318"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/failed-attempt-native-audit_tests_001.json",
+      "path": "predecessors/v4/failed-attempt-native-audit_tests_001.json",
+      "bytes": 4122,
+      "sha256": "29b0e8a41b3acdf2c0abd8ef992c53fc5bbb56332928f64c0a3fc899dcc4b393"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/lease-closeout_tests_001.json",
+      "path": "predecessors/v4/lease-closeout_tests_001.json",
+      "bytes": 971,
+      "sha256": "1ab45f23da2775a301cd87c0f40b0297c5063dd32e99cd9a729eef247b68674a"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_v1/README.md",
+      "path": "predecessors/candidate-v1/README.md",
+      "bytes": 5349,
+      "sha256": "23b139b91bcb1c42ef17253ab4fc58afa0acea4397b65c06d76344c17610a5ce"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_v1/backend.py",
+      "path": "predecessors/candidate-v1/backend.py",
+      "bytes": 7736,
+      "sha256": "54ab5fa746a07a4bec05d542e4b9e14b5895298ed7f6a1576c426911987af596"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_v1/numerical_worker.py",
+      "path": "predecessors/candidate-v1/numerical_worker.py",
+      "bytes": 33447,
+      "sha256": "45792aefe40b60d66914ba4983091c9bd07ad89e00472a0957ea01463162f2a4"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_v1/pipeline.py",
+      "path": "predecessors/candidate-v1/pipeline.py",
+      "bytes": 1399,
+      "sha256": "ef8e2a4f230fc78d6c1259054e048f35a518529d20c0bb3925791cdbca14940b"
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_numerical_worker_v1/test_integration.py",
+      "path": "predecessors/candidate-v1/test_integration.py",
+      "bytes": 23342,
+      "sha256": "e6097097effa28a5d55db8589abea276055a3c62f3c354f468e97e8de46a6f82"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/closeout.py",
+      "path": "predecessors/v5/closeout.py",
+      "bytes": 56921,
+      "sha256": "1f466e3bbdba4329d94808b65ec78d86802923fa368a91c909d36c822cd3beb4"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/guard.py",
+      "path": "predecessors/v5/guard.py",
+      "bytes": 18918,
+      "sha256": "51e6a804eb3f23fc609f72b10d6b186a666a9a09537b6a0e77ec6b957535a209"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/launch.ps1",
+      "path": "predecessors/v5/launch.ps1",
+      "bytes": 10406,
+      "sha256": "b34ec3aaed0daed4cafb00dd7d68dd3ff7351232d0cac0181e91ea093791c740"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/native_pins.ps1",
+      "path": "predecessors/v5/native_pins.ps1",
+      "bytes": 3858,
+      "sha256": "b5f5d8d7958b2abb820b51641f50683e683bf2276075e8879bc67876eba54350"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/origin.py",
+      "path": "predecessors/v5/origin.py",
+      "bytes": 37505,
+      "sha256": "1dea03b51c1eb9dd5bbd847e3e6fd2263806e1854e681c030bc05e0652f2c43a"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/parent.py",
+      "path": "predecessors/v5/parent.py",
+      "bytes": 19322,
+      "sha256": "2a91594e9bee1ea202bf058a70afb23d0cc08a667f9be6214ec6fa995da62ac4"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/prepare.py",
+      "path": "predecessors/v5/prepare.py",
+      "bytes": 13947,
+      "sha256": "4185395492d2c74cdff892a5eda2266b2b3fa9680c34cbf4eaf0bc67d69097b1"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/runtime.py",
+      "path": "predecessors/v5/runtime.py",
+      "bytes": 57286,
+      "sha256": "551b0ac2c697bf7fecc0f41d871a219b2ea0c09a1cb6ba5e9021e066238116aa"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/pins.json",
+      "path": "predecessors/v5/pins.json",
+      "bytes": 572365,
+      "sha256": "bc7da9b7694202c42b0090d2e819ce302f638466d9ed9e1bcc1a79d71be59223"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/source-review.json",
+      "path": "predecessors/v5/source-review.json",
+      "bytes": 3168,
+      "sha256": "9fb1e5616b79d016a8b4e2cb68439dc1bb5bc1b0d4100534c3d539c13b10e5a3"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/failed-attempt-native-audit_integration_001.json",
+      "path": "predecessors/v5/failed-attempt-native-audit_integration_001.json",
+      "bytes": 6865,
+      "sha256": "e92080155a3025ee494821c0c85305f5f72e753318a6a6e2771e95c699919808"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/failed-attempt-native-audit_integration_002.json",
+      "path": "predecessors/v5/failed-attempt-native-audit_integration_002.json",
+      "bytes": 2220,
+      "sha256": "dce47e9e9a2334489fab9830befd306e10e69d4718d8a058c72f7de19ebcfd41"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/lease-closeout_integration_001.json",
+      "path": "predecessors/v5/lease-closeout_integration_001.json",
+      "bytes": 1195,
+      "sha256": "f5f59bef7eccd31c272fc4ffbdf7caa573402a662fbb597805b6cbc4933af870"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/closeout-tests-result.json",
+      "path": "predecessors/v5/closeout-tests-result.json",
+      "bytes": 8593,
+      "sha256": "de5e1bb8c1704bc4c200d68208066ac25ec2d1263a10a5560ef928c4f6ae64bf"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/tests-final-review.json",
+      "path": "predecessors/v5/tests-final-review.json",
+      "bytes": 3865,
+      "sha256": "43709f479724cfce9f88b257bc720450fdc1d6e94eb1bb2bdba94eb04b3dad8a"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/lease-closeout_tests_001.json",
+      "path": "predecessors/v5/lease-closeout_tests_001.json",
+      "bytes": 1232,
+      "sha256": "7e83878e995087c91ca398058e1a7be758c42a2f55b8c588a2491412ec57eefe"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/closeout.py",
+      "path": "predecessors/v6/closeout.py",
+      "bytes": 58400,
+      "sha256": "94498c37dd1d405db501fce2d4e7aba547a2d06a9707ad4e4b4f64e59778c547"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/guard.py",
+      "path": "predecessors/v6/guard.py",
+      "bytes": 18919,
+      "sha256": "249a3d23672c95e85b1455fae17f81c66608a63aa4889de9c13889c44f0c18fa"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/launch.ps1",
+      "path": "predecessors/v6/launch.ps1",
+      "bytes": 10407,
+      "sha256": "09af5d01726dfb234a7f0d7b9731f4213f341337d806a603eb25fee895cf0d1f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/native_pins.ps1",
+      "path": "predecessors/v6/native_pins.ps1",
+      "bytes": 3859,
+      "sha256": "79953a8333f646b488aa2c6b46204a1ecd9fb6c089549974dcf384c12c257a75"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/origin.py",
+      "path": "predecessors/v6/origin.py",
+      "bytes": 47706,
+      "sha256": "c6ecfae7fbb0d4fbbb70f08d16659c0d3765d22c88394bbddcd524a678556648"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/parent.py",
+      "path": "predecessors/v6/parent.py",
+      "bytes": 19323,
+      "sha256": "ee647916cecd38df32369ff5fcfb12c0d9187626d404a64742d2dc336c19ce68"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/prepare.py",
+      "path": "predecessors/v6/prepare.py",
+      "bytes": 18319,
+      "sha256": "e4a8af45ee1485b712477c4083f5e70fea34327fe1cf609d7d7eaed75299dc7f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/runtime.py",
+      "path": "predecessors/v6/runtime.py",
+      "bytes": 61235,
+      "sha256": "f5557425938823cddd60b03e265c0cdedd14a05032b46783a7cdc6c5cf2039d3"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/pins.json",
+      "path": "predecessors/v6/pins.json",
+      "bytes": 590559,
+      "sha256": "745015ad931bfc86f6708bc7e440215e8c41095b81adde167d276952b9eb9c33"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/source-review.json",
+      "path": "predecessors/v6/source-review.json",
+      "bytes": 3491,
+      "sha256": "62117d5f4d8fd567013ecba59a184e6cec2b0e48eb53dc2abb622d0a62bbe3fd"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/failed-attempt-native-audit_integration_001.json",
+      "path": "predecessors/v6/failed-attempt-native-audit_integration_001.json",
+      "bytes": 9495,
+      "sha256": "8ec182476ad16cc6cfa9aa2a586e8380cf122ee035ddeaf9e4de9eef83916174"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/lease-closeout_integration_001.json",
+      "path": "predecessors/v6/lease-closeout_integration_001.json",
+      "bytes": 1233,
+      "sha256": "689f7e282b0d60842079529492ee78761bfe277575485452c0d0d4f809536089"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/closeout-tests-result.json",
+      "path": "predecessors/v6/closeout-tests-result.json",
+      "bytes": 8593,
+      "sha256": "719192e959c6c3c8dfee73898202c313596b05b00a600340a4ffb51d4ec7d519"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/tests-final-review.json",
+      "path": "predecessors/v6/tests-final-review.json",
+      "bytes": 5060,
+      "sha256": "29043f329891eee6f31d003ccae7d9a3f151cbc817fdea9c7b07953975fc019b"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v6/lease-closeout_tests_001.json",
+      "path": "predecessors/v6/lease-closeout_tests_001.json",
+      "bytes": 1189,
+      "sha256": "b0aefa58840a7c40361968ca9cc8285cac8232ffb41d047b5127312a676fe902"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/admission_tests.json",
+      "path": "preparation/v7/admission_tests.json",
+      "bytes": 1503,
+      "sha256": "90fa79d44c73de9f68270fa36bfb27962a24c6ca5ea75e06875506bd185777fa"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/admission_integration.json",
+      "path": "preparation/v7/admission_integration.json",
+      "bytes": 2330,
+      "sha256": "f3749c13d390f512592167fc89549b78543a76b2f29222b651ef0e452d776c06"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-tests-result.json",
+      "path": "preparation/v7/closeout-tests-result.json",
+      "bytes": 9321,
+      "sha256": "1c1a2083174c6ed1aca9acb6ee1acd9644498d21bb2bc484770412aeb998f929"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-integration-result.json",
+      "path": "preparation/v7/closeout-integration-result.json",
+      "bytes": 18694,
+      "sha256": "c41a5cc1f7c976054f0380d9f4cc1057166fb1eef59dc711068c68773475eb54"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-tests-stderr_001.log",
+      "path": "preparation/v7/closeout-tests-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-tests-stdout_001.log",
+      "path": "preparation/v7/closeout-tests-stdout_001.log",
+      "bytes": 257,
+      "sha256": "85505cc4575ff647bf648d9f14013597dc9c0680b8815c2692098147b1bf9a22"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-tests-supervision_001.json",
+      "path": "preparation/v7/closeout-tests-supervision_001.json",
+      "bytes": 457,
+      "sha256": "980348fa271e5ce7aac85efce3efd219d7e8a150c27349e6ab160995b9bb6564"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-integration-stderr_001.log",
+      "path": "preparation/v7/closeout-integration-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-integration-stdout_001.log",
+      "path": "preparation/v7/closeout-integration-stdout_001.log",
+      "bytes": 382,
+      "sha256": "a374a33ae85303dac0f41c53f8d322690f326b0822fd82b79c4f30b92bb59d17"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/closeout-integration-supervision_001.json",
+      "path": "preparation/v7/closeout-integration-supervision_001.json",
+      "bytes": 463,
+      "sha256": "6162f7429e382c0858dfcc7eed462e2947f1981fc330fdd90e32a111fc33fcb4"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/compute-request_tests_001.json",
+      "path": "preparation/v7/compute-request_tests_001.json",
+      "bytes": 2347,
+      "sha256": "4cb347182efa1548c6ac61919ebe8dcb01d11d0de9cd40300ce553670b0d860c"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/compute-request_integration_001.json",
+      "path": "preparation/v7/compute-request_integration_001.json",
+      "bytes": 4192,
+      "sha256": "93febea403c13374fd25b3672c99e29965df2dce8f4ad5d5c6f9585449e8b5d8"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/dispatch_tests_001.json",
+      "path": "preparation/v7/dispatch_tests_001.json",
+      "bytes": 1712,
+      "sha256": "6acc909a4ce62c7fc809b4185069f49c90b007a256fa500fd4fd3e8e7677cabc"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/dispatch_integration_001.json",
+      "path": "preparation/v7/dispatch_integration_001.json",
+      "bytes": 1718,
+      "sha256": "f49b6ef764c9549b294da4b13cf21d55cb62b522c996c1d96ddc37339caf1627"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/dispatch_result_tests_001.json",
+      "path": "preparation/v7/dispatch_result_tests_001.json",
+      "bytes": 1831,
+      "sha256": "e1ffd0b0080c800dc3190c0f0afe28e74be4dc45e624feb53e16a9a4ca57e003"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/dispatch_result_integration_001.json",
+      "path": "preparation/v7/dispatch_result_integration_001.json",
+      "bytes": 1837,
+      "sha256": "efbf2de61d2910dda811c6dac90b025a5def553424369b209e610ea8d06bdc80"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/lease-closeout_tests_001.json",
+      "path": "preparation/v7/lease-closeout_tests_001.json",
+      "bytes": 1342,
+      "sha256": "5450c41203047664837e05c9404f2243402cfbb531453c05f6b027cac7007963"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/lease-closeout_integration_001.json",
+      "path": "preparation/v7/lease-closeout_integration_001.json",
+      "bytes": 1596,
+      "sha256": "8625c58542440b36f9d63dc08b16c8ab9409f82b0fc20139d7a9598d1077068b"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/native-utc-path-regression.json",
+      "path": "preparation/v7/native-utc-path-regression.json",
+      "bytes": 594,
+      "sha256": "455800daf67dbb3ae46735dcf359d61574c7a36a0cb05b2fad9b5081a40ddcad"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/owner-resource-amendment.json",
+      "path": "preparation/v7/owner-resource-amendment.json",
+      "bytes": 1443,
+      "sha256": "12fb1ed58dce9ca4e589ec09dbe52c469bc07d9cfde656550e7574bc835e994d"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/peer-release-authenticated_tests.json",
+      "path": "preparation/v7/peer-release-authenticated_tests.json",
+      "bytes": 8784,
+      "sha256": "e45e551040123626e88c371df11a8a884c8a16810886d7bdaa0de259beea90c0"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/peer-release-authenticated_integration.json",
+      "path": "preparation/v7/peer-release-authenticated_integration.json",
+      "bytes": 11292,
+      "sha256": "214ae5d6f8363f2aa28087f8b255d0dac30e2a3e8f8bd7645aec7c15d3f3e58f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/preflight_tests_001.json",
+      "path": "preparation/v7/preflight_tests_001.json",
+      "bytes": 2304,
+      "sha256": "6920c3582b68f4e86f653ceb6e122d18ea05fb11fa9a0c2abe4c241ef2f4f097"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/preflight_integration_001.json",
+      "path": "preparation/v7/preflight_integration_001.json",
+      "bytes": 2311,
+      "sha256": "d3c8d4cde70531939cc10540694e8792c985af468587410e86f72887e5ba4686"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/prepare-stderr_001.log",
+      "path": "preparation/v7/prepare-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/prepare-stdout_001.log",
+      "path": "preparation/v7/prepare-stdout_001.log",
+      "bytes": 161,
+      "sha256": "6d1c7bb514349380f75ea1a12d36b5d47f30eb5246a2bebe4ada1458e8d4ee5f"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/prepare-supervision_001.json",
+      "path": "preparation/v7/prepare-supervision_001.json",
+      "bytes": 449,
+      "sha256": "ba7359894e9f398414fd4a394bcf11f8b70dff6a48ff68ebd538a6eed9f22980"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/tests-final-review.json",
+      "path": "preparation/v7/tests-final-review.json",
+      "bytes": 5380,
+      "sha256": "41b1a3d9d2d6882ce21ed2c0a1886c1b3bdbb7147db16c3adb597cd785765995"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/tests-root-native-check_001.json",
+      "path": "preparation/v7/tests-root-native-check_001.json",
+      "bytes": 887,
+      "sha256": "42a7bef068a7751dfb756ce661831c7c5f588c15a2ca57de629bd987d729adf4"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/final-git-native-check_001.json",
+      "path": "preparation/v7/final-git-native-check_001.json",
+      "bytes": 893,
+      "sha256": "49fb099e89dd8b01b41176c427defba5e61a214737bcdd9a1533d40fa6346978"
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_numerical_worker_20261025_v7/export-closeout.ps1",
+      "path": "preparation/v7/export-closeout.ps1",
+      "bytes": 30479,
+      "sha256": "76cec34505b9ae6bae71bdbe872e7f0f332b4c6295f9bbbc6cff472327d9d6bb"
+    }
+  ],
+  "exact_inventory": [
+    ".gitattributes",
+    "final-review.json",
+    "manifest.json",
+    "predecessors/candidate-v1/backend.py",
+    "predecessors/candidate-v1/numerical_worker.py",
+    "predecessors/candidate-v1/pipeline.py",
+    "predecessors/candidate-v1/README.md",
+    "predecessors/candidate-v1/test_integration.py",
+    "predecessors/v1/closeout.py",
+    "predecessors/v1/failed-attempt-native-audit_001.json",
+    "predecessors/v1/guard.py",
+    "predecessors/v1/launch.ps1",
+    "predecessors/v1/lease-closeout_001.json",
+    "predecessors/v1/native_pins.ps1",
+    "predecessors/v1/origin.py",
+    "predecessors/v1/parent.py",
+    "predecessors/v1/pins.json",
+    "predecessors/v1/prepare.py",
+    "predecessors/v1/runtime.py",
+    "predecessors/v1/source-review.json",
+    "predecessors/v2/closeout.py",
+    "predecessors/v2/failed-attempt-native-audit_001.json",
+    "predecessors/v2/guard.py",
+    "predecessors/v2/launch.ps1",
+    "predecessors/v2/lease-closeout_001.json",
+    "predecessors/v2/native_pins.ps1",
+    "predecessors/v2/origin.py",
+    "predecessors/v2/parent.py",
+    "predecessors/v2/pins.json",
+    "predecessors/v2/prepare.py",
+    "predecessors/v2/runtime.py",
+    "predecessors/v2/source-review.json",
+    "predecessors/v3/closeout.py",
+    "predecessors/v3/failed-attempt-native-audit_001.json",
+    "predecessors/v3/guard.py",
+    "predecessors/v3/launch.ps1",
+    "predecessors/v3/lease-closeout_001.json",
+    "predecessors/v3/native_pins.ps1",
+    "predecessors/v3/origin.py",
+    "predecessors/v3/parent.py",
+    "predecessors/v3/pins.json",
+    "predecessors/v3/prepare.py",
+    "predecessors/v3/runtime.py",
+    "predecessors/v3/source-review.json",
+    "predecessors/v4/closeout.py",
+    "predecessors/v4/failed-attempt-native-audit_tests_001.json",
+    "predecessors/v4/guard.py",
+    "predecessors/v4/launch.ps1",
+    "predecessors/v4/lease-closeout_tests_001.json",
+    "predecessors/v4/native_pins.ps1",
+    "predecessors/v4/origin.py",
+    "predecessors/v4/parent.py",
+    "predecessors/v4/pins.json",
+    "predecessors/v4/prepare.py",
+    "predecessors/v4/runtime.py",
+    "predecessors/v4/source-review.json",
+    "predecessors/v5/closeout-tests-result.json",
+    "predecessors/v5/closeout.py",
+    "predecessors/v5/failed-attempt-native-audit_integration_001.json",
+    "predecessors/v5/failed-attempt-native-audit_integration_002.json",
+    "predecessors/v5/guard.py",
+    "predecessors/v5/launch.ps1",
+    "predecessors/v5/lease-closeout_integration_001.json",
+    "predecessors/v5/lease-closeout_tests_001.json",
+    "predecessors/v5/native_pins.ps1",
+    "predecessors/v5/origin.py",
+    "predecessors/v5/parent.py",
+    "predecessors/v5/pins.json",
+    "predecessors/v5/prepare.py",
+    "predecessors/v5/runtime.py",
+    "predecessors/v5/source-review.json",
+    "predecessors/v5/tests-final-review.json",
+    "predecessors/v6/closeout-tests-result.json",
+    "predecessors/v6/closeout.py",
+    "predecessors/v6/failed-attempt-native-audit_integration_001.json",
+    "predecessors/v6/guard.py",
+    "predecessors/v6/launch.ps1",
+    "predecessors/v6/lease-closeout_integration_001.json",
+    "predecessors/v6/lease-closeout_tests_001.json",
+    "predecessors/v6/native_pins.ps1",
+    "predecessors/v6/origin.py",
+    "predecessors/v6/parent.py",
+    "predecessors/v6/pins.json",
+    "predecessors/v6/prepare.py",
+    "predecessors/v6/runtime.py",
+    "predecessors/v6/source-review.json",
+    "predecessors/v6/tests-final-review.json",
+    "preparation/cho51_provenance_numerical_worker_audit_acceleration_plan_20261025.md",
+    "preparation/cho51_provenance_numerical_worker_external_audit_plan_20261025.md",
+    "preparation/cho51_provenance_numerical_worker_operations_successor_20261025.md",
+    "preparation/cho51_provenance_numerical_worker_plan_20261025.md",
+    "preparation/cho51_provenance_numerical_worker_split_validation_plan_20261025.md",
+    "preparation/v7/admission_integration.json",
+    "preparation/v7/admission_tests.json",
+    "preparation/v7/closeout-integration-result.json",
+    "preparation/v7/closeout-integration-stderr_001.log",
+    "preparation/v7/closeout-integration-stdout_001.log",
+    "preparation/v7/closeout-integration-supervision_001.json",
+    "preparation/v7/closeout-tests-result.json",
+    "preparation/v7/closeout-tests-stderr_001.log",
+    "preparation/v7/closeout-tests-stdout_001.log",
+    "preparation/v7/closeout-tests-supervision_001.json",
+    "preparation/v7/compute-request_integration_001.json",
+    "preparation/v7/compute-request_tests_001.json",
+    "preparation/v7/dispatch_integration_001.json",
+    "preparation/v7/dispatch_result_integration_001.json",
+    "preparation/v7/dispatch_result_tests_001.json",
+    "preparation/v7/dispatch_tests_001.json",
+    "preparation/v7/export-closeout.ps1",
+    "preparation/v7/final-git-native-check_001.json",
+    "preparation/v7/lease-closeout_integration_001.json",
+    "preparation/v7/lease-closeout_tests_001.json",
+    "preparation/v7/native-utc-path-regression.json",
+    "preparation/v7/owner-resource-amendment.json",
+    "preparation/v7/peer-release-authenticated_integration.json",
+    "preparation/v7/peer-release-authenticated_tests.json",
+    "preparation/v7/preflight_integration_001.json",
+    "preparation/v7/preflight_tests_001.json",
+    "preparation/v7/prepare-stderr_001.log",
+    "preparation/v7/prepare-stdout_001.log",
+    "preparation/v7/prepare-supervision_001.json",
+    "preparation/v7/tests-final-review.json",
+    "preparation/v7/tests-root-native-check_001.json",
+    "README.md",
+    "snapshots/AGENT_COORDINATION.md",
+    "snapshots/CONTINUE_HERE.md",
+    "snapshots/docs/phase2/cho51_provenance_numerical_worker_qualification_20261025.md",
+    "snapshots/HANDOFF.md",
+    "snapshots/PHASE2_START_HERE.md",
+    "snapshots/README.md",
+    "snapshots/WINDOWS_SETUP.md"
+  ],
+  "explanatory_readme_sha256": "62bb67a1c871564e45f2aa6ca0afc762812f326ec4505e1e9503986da28a2667",
+  "byte_attributes_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+  "arrays_weights_and_environment_excluded": true,
+  "scientific_admission": false,
+  "post_terminal_validation_status": "fulfilled_external_post_job",
+  "child_pending_flags_unchanged": true,
+  "future_head_binding": "Review hashes bind these snapshots, not later mutable resume heads."
+}

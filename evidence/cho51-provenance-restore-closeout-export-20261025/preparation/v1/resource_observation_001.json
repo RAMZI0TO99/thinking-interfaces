@@ -1,0 +1,18 @@
+{
+  "schema": "cho51_provenance_restore_native_observation_v1",
+  "observed_utc": "2026-10-25T06:17:23.5101142Z",
+  "available_ram_gib": 6.388,
+  "total_physical_ram_gib": 31.73,
+  "startup_floor_gib": 10,
+  "startup_floor_satisfied": false,
+  "peer_chat_observed_active": "01a171ad-1bad-7212-a419-d195a4a30955",
+  "peer_source_scope_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\ROOT_CURRENT_I11_SOURCE_CONTRACT_AND_PORTABILITY_SCOPE_001.json",
+  "peer_release_established": false,
+  "permission_to_message_peer_pending": true,
+  "source_review_settled": false,
+  "validation_job_created": false,
+  "tests_started": false,
+  "model_constructed": false,
+  "scientific_admission": false,
+  "action": "continue source preparation; no validation admission"
+}

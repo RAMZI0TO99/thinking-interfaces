@@ -1,0 +1,38 @@
+{
+  "schema": "cho51_provenance_restore_root_preflight_v1",
+  "accepted": true,
+  "observed_utc": "2026-10-25T07:30:13.7608436Z",
+  "pins_sha256": "4ba8504b7ff1f91f26cdfc721813de8f643c245ab738b04927ca1ee0be0c12dc",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_002.json",
+  "peer_release_sha256": "2a6e2803f1dd371e3e1822bfa5e23a87991cee4e99dce9a6f48f8e59ec7fc360",
+  "window_start_utc": "2026-10-25T07:29:19Z",
+  "window_end_utc": "2026-10-25T07:49:19Z",
+  "json_dates_preserved_as_strings": true,
+  "samples": [
+    {
+      "observed_utc": "2026-10-25T07:30:12.8660861Z",
+      "available_ram_bytes": 6997897216,
+      "free_disk_bytes": 84889739264,
+      "ram_gib": 6.517299652099609,
+      "disk_gib": 79.05973052978516
+    },
+    {
+      "observed_utc": "2026-10-25T07:30:13.5522665Z",
+      "available_ram_bytes": 7106387968,
+      "free_disk_bytes": 84889739264,
+      "ram_gib": 6.618339538574219,
+      "disk_gib": 79.05973052978516
+    }
+  ],
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "pause_paths_absent": [
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+  ],
+  "scientific_admission": false
+}

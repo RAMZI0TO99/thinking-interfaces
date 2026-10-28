@@ -1,0 +1,228 @@
+{
+  "schema": "cho51_provenance_restore_final_review_v1",
+  "reviewed_utc": "2026-10-25T07:47:10.7075076Z",
+  "independent_reviewer": "/root/readiness",
+  "record_custodian": "/root",
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "scope": "separately versioned provenance-aware linear source restoration and genuine adapter delivery; G04 engineering only",
+  "reviewer_python_tests_models_or_replay_executed": false,
+  "documents": {
+    "docs/phase2/cho51_provenance_restore_qualification_20261025.md": {
+      "sha256": "d8b02e4197fbf8b73f3f08907f6e280a4757cdea3de84759c078b4ec02710d6e",
+      "bytes": 12319
+    },
+    "HANDOFF.md": {
+      "sha256": "35949611ff82055323fb1e87ec75770fb8a8708a7f8a753350039400176ee98b",
+      "bytes": 316025
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "38a82c848407f4dcdcbfd7cacd9f3e43beedebbfabd9ef8593387dd57c29cbb1",
+      "bytes": 265630
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "bf44fbb46ea999a18485e5acd01650296e5b2cd52ea83fdf1fb0e6feb14f8e5e",
+      "bytes": 49539
+    },
+    "PHASE2_START_HERE.md": {
+      "sha256": "6fcd570a4fcc9508f9b00140ded102172fe6e6f27e9f6b87a4ce980128bcd4dd",
+      "bytes": 153947
+    },
+    "README.md": {
+      "sha256": "6ba636857efa5afe32536240fec88f9c6d3b411769c6e33519a3310434a704fa",
+      "bytes": 110283
+    },
+    "WINDOWS_SETUP.md": {
+      "sha256": "c51d86ccd6e49a9b7371f38040f115cd007c6435aa146cc75b0eacf526824f7b",
+      "bytes": 44023
+    }
+  },
+  "physical_bindings": {
+    "runs/coordination/cho51_provenance_restore_20261025_v2/pins.json": {
+      "bytes": 517097,
+      "sha256": "4ba8504b7ff1f91f26cdfc721813de8f643c245ab738b04927ca1ee0be0c12dc"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/source-review.json": {
+      "bytes": 2791,
+      "sha256": "5a83f441f807e6e1e9e8190d72744ffc8973a7cf668821eef5faa5afb5196e0b"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/origin-contract.json": {
+      "bytes": 707705,
+      "sha256": "8187a8f41144bf6c18c3030280bedd0a1cfd1fed96747f9001546d72af0f6e68"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/validation_001/result.json": {
+      "bytes": 19232,
+      "sha256": "da8df7e98e13c081e804094608fde90a5391f9460003b5c7f1df9c4faa3e8ae1"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/validation_001/qualification.json": {
+      "bytes": 659168,
+      "sha256": "71d1da9389fad55e54323395b60f4299c7cf931fd9ed1c9386c18f114802d64b"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/validation_001/junit.xml": {
+      "bytes": 11276,
+      "sha256": "70b03166a29dd0d807babe67facf29f19aa3c5b8a723748d88f3f4eeb3190f32"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/closeout-result.json": {
+      "bytes": 2645,
+      "sha256": "fba2008d47040f1d22c12dfc610689a11003e8969755c7b8f685df6884b75c1f"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/lease-closeout_001.json": {
+      "bytes": 1511,
+      "sha256": "24ee60dc3be41bc6a5f41922366eb16870ecbcc15236aabbf63231c3dce37a15"
+    },
+    "runs/coordination/cho51_provenance_restore_20261025_v2/final-git-native-check_001.json": {
+      "bytes": 648,
+      "sha256": "858873771f29706e173d25bec8aad106038d64f37d35061faf0a6db4348a4bae"
+    },
+    "runs/migration/20261025T073014Z_e44f1ff4e4/receipt.json": {
+      "bytes": 1684,
+      "sha256": "49dfb71c86daa7179179be72277ce2b5a1c388e96614b5b3bf4b6ed44742eadb"
+    },
+    "evidence/cho51-provenance-restore-20261025-v2/manifest.json": {
+      "bytes": 9899,
+      "sha256": "04276e91f8fd003303246b2cc8e643477e8dd04cebe63d11a22cb13a7259d712"
+    },
+    "evidence/cho51-provenance-restore-20261025-v2/summary.json": {
+      "bytes": 2645,
+      "sha256": "fba2008d47040f1d22c12dfc610689a11003e8969755c7b8f685df6884b75c1f"
+    }
+  },
+  "independent_native_integrity": {
+    "reviewer_unique_files": 6824,
+    "reviewer_bytes": 1295587624,
+    "reviewer_mismatches": 0,
+    "reviewer_conflicting_pins": 0,
+    "explicit_reviewer_exclusion": "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+    "root_supplement_path": "runs/coordination/cho51_provenance_restore_20261025_v2/final-git-native-check_001.json",
+    "root_supplement_unique_files": 1,
+    "root_supplement_bytes": 46480,
+    "combined_unique_files": 6825,
+    "combined_bytes": 1295634104,
+    "current_source_context_files": 2642,
+    "ancestor_files": 2632,
+    "loaded_module_files": 4040,
+    "canonical_sources": 432,
+    "original_inputs": 213,
+    "original_input_bytes": 734579463,
+    "runtime_inventory": 5,
+    "runtime_modules": 18,
+    "supporting_runtime_sources": 4,
+    "runtime_transitions_from_historical_pins": 21,
+    "all_current_hashes_match": true
+  },
+  "executed_checks": {
+    "focused_tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 130.276,
+    "actual_os_lock_and_claim_bindings": true,
+    "independent_producer_executor_admission": true,
+    "canonical_current_source_and_runtime_bindings": true,
+    "bounded_stable_direct_file_readers": true,
+    "durable_once_only_marker_and_replay_refusal": true,
+    "self_consistent_invalid_metadata_refusals": true,
+    "physical_request_claim_witness_attestation_bindings": true,
+    "canonical_claim_intent_success_checksums_recomputed": 3,
+    "exact_recorder_json_files": 3,
+    "scientific_outputs": 0,
+    "backend_calls": 1,
+    "verifier_calls": 2,
+    "model_constructions": 1,
+    "constructor_dummy_forward_calls": 1,
+    "component_module_initializations": 226,
+    "safe_decodes": 2,
+    "strict_state_loads": 2,
+    "genuine_adapter_deliveries": 1,
+    "live_lock_checks": 256,
+    "engineering_successes": 1,
+    "current_source_updates": 0,
+    "current_support_updates": 0,
+    "current_gradient_updates": 0,
+    "query_calls": 0,
+    "numpy_loads": 0,
+    "measured_cells": 0,
+    "complete_historical_selector_verified_without_execution": true,
+    "historical_source_updates": 5151,
+    "historical_inner_support_updates": 102,
+    "historical_selection_total_updates": 5253,
+    "current_original_case_attempts_remaining": 0,
+    "unexpected_audit_denials": 0,
+    "classified_optional_ipv6_import_probe_denials": 1,
+    "gpu_hidden": true,
+    "torch_threads": 1,
+    "torch_interop_threads": 1
+  },
+  "native": {
+    "directory": "runs/migration/20261025T073014Z_e44f1ff4e4",
+    "job_name": "pro3_migration_20261025T073014Z_e44f1ff4e4",
+    "accepted": true,
+    "exit_code": 0,
+    "reason": "normal",
+    "elapsed_seconds": 367.755321,
+    "maximum_seconds": 600,
+    "process_limit_bytes": 4294967296,
+    "aggregate_limit_bytes": 5368709120,
+    "peak_process_bytes": 1614745600,
+    "peak_job_bytes": 1645518848,
+    "atomic_membership_and_queried_limits_verified": true,
+    "empty_before_close": true,
+    "job_closed": true,
+    "process_thread_handles_closed": true,
+    "attribute_cleanup_confirmed": true,
+    "cleanup_errors": [],
+    "peak_sampling_errors": [],
+    "scoped_names_freshly_queried_absent": 34,
+    "all_absence_errors": 2,
+    "external_stdlib_closeout_exit_code": 0,
+    "external_stdlib_closeout_reaped": true,
+    "external_stdlib_closeout_limit_seconds": 300,
+    "child_pending_external_native_flag_preserved": true,
+    "external_summary_status": "verified_external_post_job"
+  },
+  "archive": {
+    "path": "evidence/cho51-provenance-restore-20261025-v2",
+    "artifacts": 44,
+    "payload_bytes": 2311802,
+    "exact_inventory_files": 48,
+    "all_source_copy_pairs_byte_exact": true,
+    "arrays_weights_and_environment_excluded": true
+  },
+  "admission_and_custody": {
+    "startup_ram_gib": 4,
+    "active_ram_gib": 4,
+    "disk_gib": 20,
+    "previous_startup_ram_gib": 10,
+    "historical_10gib_startup_pass_claimed": false,
+    "direct_owner_startup_amendment_verified": true,
+    "canonical_guard_unchanged": true,
+    "all_five_genuine_pause_paths_preserved": true,
+    "peer_grant_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_002.json",
+    "peer_grant_sha256": "2a6e2803f1dd371e3e1822bfa5e23a87991cee4e99dce9a6f48f8e59ec7fc360",
+    "window_start_utc": "2026-10-25T07:29:19Z",
+    "window_end_utc": "2026-10-25T07:49:19Z",
+    "jobs_consumed": 1,
+    "retry_permitted": false,
+    "full_compute_custody_explicitly_released": true,
+    "outstanding_owned_children": 0,
+    "v1_jobs_tests_models": 0,
+    "v1_grant_explicitly_cancelled_unused": true,
+    "whole_host_quiet_claimed": false,
+    "peer_result_acceptance_claimed": false
+  },
+  "accepted_boundary": {
+    "g04_separately_versioned_linear_engineering_factory": true,
+    "unchanged_canonical_single_root_factories_qualified": false,
+    "measured_cell_parent_composition_qualified": false,
+    "remaining_methods_qualified": false,
+    "full_1020_cell_study_executed": false,
+    "predictive_accuracy_qualified": false,
+    "checkpoint_cohort_overlap_lineage_established": false,
+    "final_owner_freeze_signed": false,
+    "scientific_admission": false,
+    "new_autonomous_window": false,
+    "original_target01_attempts_remaining": 0,
+    "future_targets": "subjects02-52",
+    "source_catalogs": 52
+  }
+}

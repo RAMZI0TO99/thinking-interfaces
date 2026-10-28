@@ -1,0 +1,59 @@
+{
+  "schema": "cho51_p3_bootstrap_source_review_v4",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_004",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of the three reviewed Root-authored sources or their PowerShell bases",
+  "observed_utc": "2026-10-27T16:34:29.1338619Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "source_sha256": "9e6869e4f8b4a5fe832382f4987313684e1d9064839ff32135555de06069e425",
+  "files": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-observation_004.ps1": "9e6869e4f8b4a5fe832382f4987313684e1d9064839ff32135555de06069e425",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_004.ps1": "689f91d080a1a335324e01156a3962d34e9855ed630042befa66e9d6a3aa5970",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_004.md": "c2bdf423e8616db01e1f862c5c7f9b65da3ac8cd3e3e8f7f0dffccbbe8028524"
+  },
+  "file_bytes": {
+    "bootstrap-observation_004.ps1": 16938,
+    "bootstrap-supervise_004.ps1": 39178,
+    "bootstrap-protocol_004.md": 16429
+  },
+  "source_parser": {
+    "bootstrap-observation_004.ps1": 0,
+    "bootstrap-supervise_004.ps1": 0
+  },
+  "corrected_source_findings": [
+    "Two diagnostic-only stale bootstrap003 labels in the unexecuted004 supervisor were corrected to004; actual scope, paths and receipt schema joins were already004/v4. Final corrected SHA and native AST were rechecked."
+  ],
+  "static_review_basis": [
+    "Whole-source read of all three files, not only a delta from003. Native SHA checks match the exact final source inventory; both scripts parse with zero PowerShell AST errors. Candidate/helper code was never invoked, imported, dot-sourced or compiled.",
+    "Every helper/outer presence decision now calls the same source-visible throwing Present predicate, with no File.Exists or Test-Path clear/absence branch. Successful GetAttributes means PRESENT including file/directory/reparse. Only exact FileNotFoundException low-HRESULT2 or DirectoryNotFoundException3 after<=4 recognized PowerShell/reflection wrapper unwraps can proceed toward absence.",
+    "Tentative missing state additionally requires a<=16-level parent walk to an accessible directory whose own attributes are direct/non-reparse. Denied/I/O/unrecognized errors, excessive wrappers/ancestry and absence of an accessible ancestor throw UNKNOWN. An unavailable/missing drive is not silently mapped to ABSENT. This is managed metadata observation, not native file-ID or atomic future absence proof.",
+    "Normal pause/lookup UNKNOWN stops observation/launch/effects; only explicitly granted bounded cleanup-only metadata can continue honestly with guard refusal and no operation pass. All five actual pause paths and4GiB startup/active,20GiB disk,two startup observations remain guarded. No pause-content parsing or new native-ID requirement is invented.",
+    "Exact actual request/peer/Root/source-review/resource/critical-runtime joins and current finite actual Source/adoption3/2/5 caps remain before launch. Decisions must follow actual request created_utc and predate external entry; Source/operation starts and strict end-minus60 reserve still independently apply. All004 filenames/v4 dispatch/supervision/failure/completion/release schemas and ten ordered outputs are consistent.",
+    "The common actual pre-Begin QPC/UTC clock includes all four sequential actual mode returns. Fresh external age<5,launch<15,outer work65/cleanup80/effects85/helper work45/effects50 and actual external post-Release return<90 remain distinct guards, with actual Begin/Invoke/Complete exits and matching frequency. Internal publications never certify future tool return.",
+    "Start attempted/unknown/custody-false is established before Start. Only a real Start plus original retained handle/generation establishes started. The exact pinned Process DLL private retained fields/DangerousAddRef avoid the SafeHandle getter or PID reopen. Unknown stays unreleased after best-effort cleanup; Complete/Release start unknown until prior authenticated closure evidence exists.",
+    "One hidden direct helper, no C#/native helper/Python/Job/additional children/retry, bounded1MiB pipes with64KiB .NET async tasks polled on one runspace, actual EOF/reap and<=64 CIM generation rows remain. CreateNew/flush/readback/time gates preserve used identities and partial failures. No unowned process kill is authorized.",
+    "The helper's bounded10000-entry/depth16/six-extension/2500-file/1GiB/1MiB output remains unqualified selected-runtime byte/size/last-write metadata. Complete payload/count/path/hash/coverage/startup/minima/caller/source evidence validation and separate actual acceptance remain deferred before any native preparation; all full-caller/manifest/native identity/full pins/scientific acceptance stays false in these sources."
+  ],
+  "coordination_at_review": {
+    "actual_current_source_scope": "Source011, effective16:20–18:30UTC27October with60-second reserve and3/2/shared5 caps",
+    "old_source009_extended": false,
+    "operational_admission_inferred": false
+  },
+  "limitations": {
+    "bootstrap_helper_or_mode_executed": false,
+    "process_start_or_kill_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "python_or_tests_executed": false,
+    "job_created": false,
+    "runtime_pause_error_or_presence_probe_test_pass_claimed": false,
+    "full_caller_timing_custody_or_runtime_coverage_established": false,
+    "observational_manifest_or_pins_accepted": false,
+    "request_or_peer_or_root_admission_issued": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0,
+    "synchronous_os_tool_interruptibility_established": false
+  },
+  "disposition": "Clean wholly different-author source review only. Preserve all prior001/002/003 sources/reviews/refusals unchanged. Exact new request, independent request review, genuine released=true peer decision, Root admission and actual live resources/pauses/custody/full caller return evidence remain mandatory; the Source-only interval and this receipt grant no invocation or result acceptance."
+}

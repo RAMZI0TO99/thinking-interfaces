@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_provenance_numerical_worker_native_utc_path_regression_v1",
+  "observed_utc": "2026-10-25T12:25:26.9719823+00:00",
+  "passed": true,
+  "powershell_version": "7.6.5",
+  "parser": "ConvertFrom-Json -DateKind String",
+  "utc_cases": [
+    {
+      "input": "2026-10-25T10:12:37Z",
+      "utc": "2026-10-25T10:12:37Z"
+    },
+    {
+      "input": "2026-10-25T13:12:37+03:00",
+      "utc": "2026-10-25T10:12:37Z"
+    }
+  ],
+  "maximum_record_path_characters": 246,
+  "powershell_parse_errors": 0,
+  "python_executed": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "cho51_p3_bootstrap_observation_request_v1",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_002",
+  "requestor": "Pro3 Root; this request is not a peer decision or Root admission",
+  "purpose": "One read-only, explicitly unqualified installed PowerShell code/config SHA/size observation under a separately reviewed PS-only external retained-process watchdog and exact executable caller/closure protocol. No C# compilation, native pin preparation, Python, tests, Jobs or science.",
+  "source_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-observation_002.ps1",
+  "source_sha256": "e4085b587e8b4e4904cd0de44b4406ed090126e32a6c0063360ce5d840dc9051",
+  "supervisor_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_002.ps1",
+  "supervisor_sha256": "8faabbd9084bf51f7b932ee79e795e62189b0e130cee8eac8b5a93bcdd9c6240",
+  "protocol_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_002.md",
+  "protocol_sha256": "7328551bbd9c1b268a3595407b1c7c42ca842bdfa7ccfea2ebfc33c4cef07775",
+  "source_review_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-source-review_002.json",
+  "source_review_sha256": "ed91bdbb0824891783851b7a622fe887671c90359367c89c2feb33f4b5ae562d",
+  "helper_source_review_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\helper-source-review_002.json",
+  "helper_source_review_sha256": "e1bebce0bd437ad1719535d25e2429c6961d267aa520ba3f2fb5f735fcef76f1",
+  "supervisor_source_review_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervisor-source-review_002.json",
+  "supervisor_source_review_sha256": "352c2b0c20d79728b7e9fa8ae87059405eec15c0cda90e138f622638315dc2c6",
+  "owner_resource_amendment_sha256": "733d6505fb24ee552ae0abd7e1bec46c14f6fc33e66a71d1adb3cf2f30c9fe75",
+  "source_scope_sha256": "b04507102cc00306e99ce9992cd0a526da03101e7d972e79eed6d20aab354739",
+  "source_adoption_sha256": "29dce6bd6b7767449b0bc28d8daeed1023581748d82be41d4eb82cabcf8804ab",
+  "window_start_utc": "2026-10-27T14:37:52.352515+00:00",
+  "window_end_utc": "2026-10-27T16:25:00+00:00",
+  "maximum_seconds": 90,
+  "publication_reserve_seconds": 60,
+  "helper_work_seconds": 45,
+  "helper_effect_seconds": 50,
+  "outer_start_before_seconds": 15,
+  "outer_work_stop_seconds": 65,
+  "outer_cleanup_end_seconds": 80,
+  "outer_effect_end_seconds": 85,
+  "maximum_controller_mode_invocations": 4,
+  "maximum_helper_invocations": 1,
+  "maximum_files": 2500,
+  "maximum_code_bytes": 1073741824,
+  "maximum_enumerated_entries": 10000,
+  "maximum_directory_depth": 16,
+  "maximum_manifest_bytes": 1048576,
+  "maximum_stdout_bytes": 1048576,
+  "maximum_stderr_bytes": 1048576,
+  "process_table_maximum_rows": 64,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "two_startup_samples_required": true,
+  "outer_child_processes": 1,
+  "helper_child_processes": 0,
+  "python_invocations": 0,
+  "jobs": 0,
+  "automatic_retry_permitted": false,
+  "native_helper_compilation_admitted": false,
+  "scientific_admission": false,
+  "bounded_cleanup_after_pause_admitted": true,
+  "bounded_cleanup_scope": "On genuine pause/resource refusal, stop observation work and terminate/reap only the retained Start-owned helper; bounded stream/failure/caller/release metadata only, with guard refusal retained and operation_succeeded=false. This does not lower work floors, extend clocks/windows, admit other process kills or permit retry.",
+  "expected_numerical_budget": {
+    "source_updates": 0,
+    "restore_count": 0,
+    "support_updates": 0,
+    "gradient_updates": 0,
+    "target_inference_calls": 0,
+    "query_count": 0,
+    "model_constructions": 0,
+    "measured_cells": 0
+  },
+  "runtime_root": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell",
+  "runtime_executable_sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+  "process_dll_sha256": "2b4871e02b366113c6ccf3b1436fadde5e69fc0a3e3ac421e2fa0f7af8c2bc3b",
+  "runtime_status": "Actual installed executing PowerShell root. Executable/critical retained-handle Process DLL byte observations and static IL branch inspection only, not independently accepted complete runtime coverage/native identity. Proposed helper roster is observational and requires later separate acceptance.",
+  "read_extensions": [
+    ".dll",
+    ".exe",
+    ".json",
+    ".ps1",
+    ".psm1",
+    ".psd1"
+  ],
+  "pause_paths": [
+    "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+    "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+  ],
+  "invocation": {
+    "executable": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "working_directory": "D:\\Aenv\\pro3",
+    "no_profile": true,
+    "noninteractive": true,
+    "login_shell": false,
+    "source_retention": "Caller retains readonly supervisor Source handle and independently checks its frozen SHA before literal-path invocation. Every mode rechecks exact pinned Sources and runtime bytes.",
+    "ordered_modes": [
+      {
+        "mode": "Begin",
+        "arguments": [
+          "-ExternalEntryQpc",
+          "<genuine native pre-Begin observation>",
+          "-ExternalEntryUtc",
+          "<its UTC>",
+          "-ExternalFrequency",
+          "<its QPC frequency>"
+        ]
+      },
+      {
+        "mode": "Invoke",
+        "arguments": [
+          "-BeginToolExitCode",
+          "<actual completed Begin exit; must be0>"
+        ]
+      },
+      {
+        "mode": "Complete",
+        "arguments": [
+          "-InvokeToolCallId",
+          "<actual completed Invoke execution chunk/session or tool identity>",
+          "-InvokeToolExitCode",
+          "<actual completed Invoke exit>"
+        ]
+      },
+      {
+        "mode": "Release",
+        "arguments": [
+          "-CompleteToolExitCode",
+          "<actual completed Complete exit>"
+        ]
+      }
+    ],
+    "common_arguments": [
+      "-Mode",
+      "<exact mode>",
+      "-RequestSha256",
+      "<actual independent SHA of this request>",
+      "-RootAdmissionSha256",
+      "<actual SHA of fresh Root bootstrap-admission_002.json>"
+    ],
+    "external_sequencing": "Exactly sequential actual tool completions. Shared QPC/UTC begins before Begin tool startup; first Complete entry is a post-Invoke actual-return upper bound. After actual Release tool return Root immediately records native QPC/UTC/frequency and actual exit. All real execution results are retained. No internal timestamp is actual tool return."
+  },
+  "output_root": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1",
+  "create_once_outputs": [
+    "bootstrap-dispatch_002.json",
+    "bootstrap-attempt_002.json",
+    "bootstrap-supervision_002.json",
+    "bootstrap-stdout_002.txt",
+    "bootstrap-stderr_002.txt",
+    "bootstrap-caller-completion_002.json",
+    "bootstrap-release_002.json",
+    "bootstrap-failure_002.json",
+    "bootstrap-helper-attempt_002.json",
+    "preparation-bootstrap-pins_002.json"
+  ],
+  "external_audit_retention": "Genuine post-Release native QPC/UTC/frequency and actual command results are retained as external metadata evidence alongside the closed source-defined outputs, without putting an unknown future audit digest into any earlier receipt.",
+  "acceptance": "No automatic pass/runtime acceptance. Full caller acceptance requires actual post-Release upper bound strictly<90s and before both window ends-minus60, all four real caller exits0, one reaped helper/zero exit, both stream EOFs, closed unambiguous process tables, intact joins, and every observed guard passing. Late, missing, failure, uncertainty or partial state remains unaccepted; no automatic retry. Manifest remains explicitly non-native-identity/unaccepted until separate actual review.",
+  "requested_peer_schema": "pro2_pro3_bootstrap_observation_decision_v1",
+  "requested_peer_contract": "released=true, observed_utc and actual request_sha256; copy exact common scope/source/runtime/review/amendment/coexistence hashes, caps/floors/windows, zero8 and bounded_cleanup_after_pause_admitted=true as checked by the exact controller. Grants only this observational bootstrap, not native preparation, tests/Jobs or later closeout.",
+  "root_admission_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-admission_002.json",
+  "root_admission_required": true,
+  "peer_decision_received": false,
+  "bootstrap_executed": false,
+  "preserved_rejected001_request_sha256": "4d856d586904f34dd758ca36049e8471748b4849539d13216f36d9cc35710f46",
+  "actual_rejected001_peer_decision_sha256": "cb3c427f239b47c0e6070602c02a116eba57e0acf643c15157d485dcc4ce13bc"
+}

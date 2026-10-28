@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_canonical_boundary_aggregate_caller_start_v1",
+  "observed_utc": "2026-10-25T21:09:51.1999918+00:00",
+  "caller_pid": 321084,
+  "caller_creation_filetime": "134374361908543949",
+  "supervisor_sha256": "16d2d5f86c16b42de9a07b4933f8a46c7967ed0a5a048bb39440f97e458d0124",
+  "admission_sha256": "64bb9e91bcdda0871bbb5a2934966f430e1a925efe026cb7357c4e8ec3c79279",
+  "proofs_sha256": "04bd68ea3358742aaa0dc6bd4166e8f94dd5c086a11b04a3e768725f86cc0577",
+  "peer_release_sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f",
+  "maximum_seconds": 300,
+  "maximum_jobs": 0,
+  "maximum_interpreter_invocations": 1,
+  "scientific_admission": false
+}

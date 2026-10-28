@@ -1,0 +1,47 @@
+{
+  "schema": "cho51_p3_diagnostics_source_coordination_observation_v1",
+  "scope": "cho51_p3_diagnostics_20261028_v1_source_only",
+  "observed_utc": "2026-10-28T09:01:33+00:00",
+  "source_scope_name": "Source014",
+  "source_scope": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261028-001\\Source014_coexistence_001\\ROOT_PRO3_NEW_FINITE_SOURCE_ONLY_COEXISTENCE_SCOPE_014_001.json",
+    "bytes": 10760,
+    "sha256": "4059a9d6b67f3ca73f86ed0eb609ffb2ed847ad1da26f07084998f163691ddf4"
+  },
+  "source_adoption": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261028-001\\Source014_coexistence_001\\ROOT_PRO3_SOURCE_ONLY_COEXISTENCE014_DIFFERENT_REVIEW_ADOPTION_001.json",
+    "bytes": 4989,
+    "sha256": "54949d3c7d989ba562caec668baa88bdd618eafe122984876c931b6cd3cd8350"
+  },
+  "different_metadata_review": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261028-001\\Source014_coexistence_001\\different_review_001\\INDEPENDENT_SOURCE014_NEW_FINITE_COEXISTENCE_METADATA_CAPSULE_001.json",
+    "bytes": 4544,
+    "sha256": "2b6bfd92be9ed92663ae4d5526432378bee1803a5fc3568dae48b7c920b5b3e4",
+    "checks_passed": 201,
+    "checks_failed": 0
+  },
+  "actual_adoption_created_utc": "2026-10-28T09:00:40.568951+00:00",
+  "declared_interval_start": "2026-10-28T08:04:01.558234+00:00",
+  "interval_end": "2026-10-28T09:30:00+00:00",
+  "publication_reserve_seconds": 60,
+  "governed_effects_must_finish_before_utc": "2026-10-28T09:29:00+00:00",
+  "no_reliance_before_actual_adoption": true,
+  "pro2_max_including_root": 3,
+  "pro3_max_including_root": 2,
+  "shared_max_including_roots_reviewers_children_overlap": 5,
+  "one_author_then_one_different_reviewer_serialized": true,
+  "source_only_coexistence_observed": true,
+  "operational_authority": false,
+  "source_phase_subject_functions_modes_helpers_controllers_invoked": 0,
+  "live_process_native_resource_pause_queries_admitted": false,
+  "native_compilation_loading_python_tests_jobs_admitted": false,
+  "operational_request_or_admission_created": false,
+  "native_preparation_request_advancement_permitted": false,
+  "failed004_custody_closed": false,
+  "failed004_operation_released": false,
+  "failed004_identity_consumed": true,
+  "predecessor_periods_or_permissions_extended": false,
+  "resource_pause_hostquiet_custody_measurement_or_acceptance_claimed": false,
+  "scientific_admission": false,
+  "meaning": "Actual strict source-byte/hash and read-only metadata observation of a newly adopted finite Source-only scope. No source/result acceptance or invocation follows; all future operations need separate current custody disposition,exact review,decision and unused admission."
+}

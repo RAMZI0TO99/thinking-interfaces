@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_provenance_restore_admission_v1",
+  "accepted": true,
+  "observed_utc": "2026-10-25T07:30:13.7877867Z",
+  "pins_sha256": "4ba8504b7ff1f91f26cdfc721813de8f643c245ab738b04927ca1ee0be0c12dc",
+  "source_review_sha256": "5a83f441f807e6e1e9e8190d72744ffc8973a7cf668821eef5faa5afb5196e0b",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_002.json",
+  "peer_release_sha256": "2a6e2803f1dd371e3e1822bfa5e23a87991cee4e99dce9a6f48f8e59ec7fc360",
+  "window_start_utc": "2026-10-25T07:29:19Z",
+  "window_end_utc": "2026-10-25T07:49:19Z",
+  "max_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "owner_resource_amendment_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_restore_20261025_v2\\owner-resource-amendment.json",
+  "owner_resource_amendment_sha256": "2278be18db419544bab3f718757f1fe9e388348eb2cbd1f2034b48951818c978",
+  "scientific_admission": false
+}

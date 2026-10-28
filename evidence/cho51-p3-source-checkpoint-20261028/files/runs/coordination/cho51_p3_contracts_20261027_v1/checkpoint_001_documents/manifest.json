@@ -1,0 +1,53 @@
+{
+  "schema": "cho51_p3_contracts_unexecuted_checkpoint_document_snapshots_v1",
+  "observed_utc": "2026-10-27T14:36:13.7060665+00:00",
+  "checkpoint_review_sha256": "140646d77743353bf956a0b3692240102fe664e3e51f86c53b55a45ef8ace230",
+  "document_count": 7,
+  "copies": [
+    {
+      "source": "D:\\Aenv\\pro3\\HANDOFF.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\HANDOFF.md",
+      "bytes": 349123,
+      "sha256": "00b67a0f4d6007f8495ecba311de74795477d29cac7cd3e57d15dcd19f0e5d28"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\AGENT_COORDINATION.md",
+      "bytes": 298841,
+      "sha256": "317babcfea10a67404c2922e4e8c9a020677af8f447614ee35668039ec90f03a"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_p3_contracts_implementation_20261027.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\docs\\phase2\\cho51_p3_contracts_implementation_20261027.md",
+      "bytes": 10412,
+      "sha256": "4d2df3bdadbe5c603c5d79f7fbf3724726eab11e3c5606b1871931a0f5066028"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\where are we\\README.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\docs\\where are we\\README.md",
+      "bytes": 5216,
+      "sha256": "61482ed450f5e868614034266b847c47623d8794403006d44b8c3e000d3aee47"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\where are we\\PROJECT_PLAN.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\docs\\where are we\\PROJECT_PLAN.md",
+      "bytes": 16280,
+      "sha256": "5263f43091a72b4f79ee81873e0648c4254ae2c2c91ec095ef69dd5d9ebf460b"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\where are we\\PROGRESS_REPORT.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\docs\\where are we\\PROGRESS_REPORT.md",
+      "bytes": 20239,
+      "sha256": "fefb572337a65f34bf3340002d9813181b55f598140d59ea22f7d1b7b0f7efd8"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\where are we\\EVIDENCE_INDEX.md",
+      "snapshot": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\checkpoint_001_documents\\docs\\where are we\\EVIDENCE_INDEX.md",
+      "bytes": 13587,
+      "sha256": "f104c2d64b11b1911e9af7964dc833be9ed7b0458bf66d608de5b7158e4c1c26"
+    }
+  ],
+  "python_executed": false,
+  "native_helper_compiled": false,
+  "claim_limit": "Exact historical seven-document copies retained before new owner resource authorization advances the heads. The old checkpoint review binds these bytes, not later advanced heads. Source-only custody; no runtime validation or science."
+}

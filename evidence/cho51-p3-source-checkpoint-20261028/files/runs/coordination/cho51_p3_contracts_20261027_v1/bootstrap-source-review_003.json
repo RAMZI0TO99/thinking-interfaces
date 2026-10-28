@@ -1,0 +1,64 @@
+{
+  "schema": "cho51_p3_bootstrap_source_review_v3",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_003",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of the three reviewed PowerShell/protocol sources or their PowerShell bases",
+  "observed_utc": "2026-10-27T16:11:01.4041250Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "source_sha256": "82526d084ca78d30faba6aac4b10e0297f6e8962da7506b6a105842800e152d3",
+  "files": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-observation_003.ps1": "82526d084ca78d30faba6aac4b10e0297f6e8962da7506b6a105842800e152d3",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_003.ps1": "0b41f26a67da78fce686feb02a1b3a1aaceec3f08f4470f581cb51442480eff7",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_003.md": "2d00ed5d8c705bd9351f37ebdaddb4e38419952e472ec9515548751f62068998"
+  },
+  "file_bytes": {
+    "bootstrap-observation_003.ps1": 15558,
+    "bootstrap-supervise_003.ps1": 37840,
+    "bootstrap-protocol_003.md": 14803
+  },
+  "source_parser": {
+    "bootstrap-observation_003.ps1": 0,
+    "bootstrap-supervise_003.ps1": 0
+  },
+  "corrected_source_findings": [
+    "Bootstrap helper and supervisor originally checked only the Pro2 coordination string prefix. Both now require lexical GetFullPath equality plus the fixed prefix for admitted Source/adoption references and actual peer-decision references, preventing dot-segment escape while preserving the explicitly observational identity limitation. Corrected bytes were independently rehashed and parsed."
+  ],
+  "source_clarifications_rechecked": [
+    "Root's effective-decision-time correction permits honest advance metadata decisions only at/after the actual request created_utc and no later than the common external entry. Operation/Source interval start and strict end-minus60 reserve are still independently enforced at actual dispatch; a future Source interval is not made effective by its earlier adoption.",
+    "Helper Effect-Clock directly checks all five genuine pause paths before and after every create/flush/readback effect, in addition to its own UTC/monotonic work45/effects50 limits and the parent's independently sampled resource/watchdog gates."
+  ],
+  "static_review_basis": [
+    "Read all three bootstrap003 sources in full, then rechecked every subsequent Source correction and actual final SHA/size. Both final scripts parse with zero native PowerShell AST errors. No candidate/helper source was invoked, dot-sourced, imported or compiled.",
+    "Exact independently pinned request, genuine peer decision and Root admission bind Source/helper/outer/protocol/review/runtime/Process-DLL/resource hashes, dynamic finite actual Source/adoption paths,3/2/5 concurrency, exact90-second scope, all numeric caps, zero8 budget and explicit cleanup-only authority. Acyclic ordering contains no unknown future output or self hashes.",
+    "The same pinned pure-PowerShell supervisor owns Begin/Invoke/Complete/Release under one actual external pre-Begin QPC/UTC domain. Fresh entry age<5 seconds, launch before common15, work65/cleanup80/effects85 and independent actual post-Release return<90 remain separate from internal publications; actual prior mode exits and conservative post-return QPC/UTC observations cannot become fabricated exact return instants.",
+    "Before Process.Start, attempted=true/outcome=unknown/custody=false. Only successful retained identity changes outcome to started. Exact pinned private Process handle fields plus DangerousAddRef retain only the original Start-owned SafeProcessHandle; no SafeHandle getter, PID reopening, Refresh/rebinding, arbitrary descendant kill or restart occurs. Unknown remains unreleased even after best-effort cleanup.",
+    "Complete and Release initialize unknown prior custody until genuine prior receipts are read. Closed failure/completion/release schemas propagate attempted/outcome and prevent absent prior evidence from becoming a known-no-child release. Ordinary failure, actual nonzero mode exits, late guards, ambiguous generation tables or missing EOF/reap leave acceptance false.",
+    "Two startup4GiB observations and active4GiB/disk20GiB/five-pause gates remain. One hidden direct observation helper uses no C#/native helper/Python/Job or additional child. Parent stream drains use bounded64KiB async .NET tasks polled on one PowerShell runspace, with1MiB per stream, actual EOF/reap and<=64 CIM generation rows/3-second local query timeouts.",
+    "The helper performs bounded10000-entry/depth16 enumeration and selected six-extension runtime hashing,<=2500 files/1GiB aggregate/1MiB manifest, explicit last-write/length/SHA observations and two startup samples. These are observational metadata only, not native same-handle identity, a complete loaded-runtime roster, full Pro3 pins or accepted actual output. Later acceptance must validate the complete roster/evidence/coverage graph, then separate native preparation and pin review remain mandatory.",
+    "All ten outputs are fresh CreateNew identities under the fixed owned run. Immediate pre/post clocks, flush and bounded readback apply. Partial bytes and used attempts remain preserved; no automatic retry is admitted. Every source/receipt retains scientific admission false and accepted real cases zero."
+  ],
+  "coordination_at_review": {
+    "current_source_authoring_authority": "Genuine adopted Source009, unchanged16:30UTC end and60-second reserve",
+    "new_source011_observation": "Actual observation003 is metadata already retained by Root; its16:20UTC start remains future at this review timestamp",
+    "source_only_review_confers_operational_admission": false,
+    "prior_bootstrap001_or002_executed_or_admitted": false
+  },
+  "limitations": {
+    "bootstrap_helper_executed": false,
+    "powershell_mode_or_process_start_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "python_or_tests_executed": false,
+    "job_created": false,
+    "runtime_compatibility_or_coverage_established": false,
+    "actual_timing_custody_or_kill_test_pass_claimed": false,
+    "pins_created_or_accepted": false,
+    "observational_manifest_accepted": false,
+    "operational_admission_granted": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0,
+    "synchronous_os_or_tool_host_interruptibility_established": false
+  },
+  "disposition": "Clean different-author source review of the exact three Source003 files only. The actual exact request, independent request audit, genuine separate peer decision and Root admission, effective finite coexistence interval, actual runtime/resource/pause/custody evidence and independent post-Release actual caller audit are still required. No source review or internal receipt authorizes the observational operation, native pin preparation, tests or science."
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "cho51_p3_bootstrap_request_review_v2",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_002",
+  "observed_utc": "2026-10-27T15:49:05.7631166+00:00",
+  "reviewer": "Independent Pro3 reviewer /root/p3_independent_review; different from request/composite author Pro3 Root",
+  "source_only": true,
+  "verdict": "clean_static_request_and_acyclic_component_joins_only",
+  "remaining_actionable_findings": [],
+  "request_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-request_002.json",
+  "request_bytes": 9212,
+  "request_sha256": "5f52f40e6bd320adffb1d2eb4dbd6b8f1f7f93291894f5aa9f90b5e0762dff03",
+  "request_strict_json_nodes": 143,
+  "source_review_sha256": "ed91bdbb0824891783851b7a622fe887671c90359367c89c2feb33f4b5ae562d",
+  "helper_source_review_sha256": "e1bebce0bd437ad1719535d25e2429c6961d267aa520ba3f2fb5f735fcef76f1",
+  "supervisor_source_review_sha256": "352c2b0c20d79728b7e9fa8ae87059405eec15c0cda90e138f622638315dc2c6",
+  "files": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-observation_002.ps1": "e4085b587e8b4e4904cd0de44b4406ed090126e32a6c0063360ce5d840dc9051",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_002.ps1": "8faabbd9084bf51f7b932ee79e795e62189b0e130cee8eac8b5a93bcdd9c6240",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_002.md": "7328551bbd9c1b268a3595407b1c7c42ca842bdfa7ccfea2ebfc33c4cef07775"
+  },
+  "owner_resource_amendment_sha256": "733d6505fb24ee552ae0abd7e1bec46c14f6fc33e66a71d1adb3cf2f30c9fe75",
+  "actual_source009_scope_bytes": 7516,
+  "actual_source009_scope_sha256": "b04507102cc00306e99ce9992cd0a526da03101e7d972e79eed6d20aab354739",
+  "actual_source009_adoption_bytes": 3543,
+  "actual_source009_adoption_sha256": "29dce6bd6b7767449b0bc28d8daeed1023581748d82be41d4eb82cabcf8804ab",
+  "actual_runtime_byte_observations": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe": {
+      "bytes": 301368,
+      "sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139"
+    },
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\System.Diagnostics.Process.dll": {
+      "bytes": 329512,
+      "sha256": "2b4871e02b366113c6ccf3b1436fadde5e69fc0a3e3ac421e2fa0f7af8c2bc3b"
+    }
+  },
+  "checked_controls": [
+    "Strict UTF8 JSON and exact scalar types,1MiB/depth32/50000-node bounds, no duplicate properties/nonfinite values; ConvertFrom-Json -DateKind String",
+    "Actual helper/outer/protocol and all three component/composite receipt bytes/SHA joins; helper reviewed by this reviewer, outer/protocol independently reviewed by Root, not self-approved",
+    "No self/future digest cycle: source receipts precede request; future genuine peer decision joins request; future Root admission joins request plus actual peer decision",
+    "Exact common scope/source/runtime/review/AMD/Source009 hashes, all executable-request required fields, exact signed integer caps and eight-key signed-integer-zero numerical budget",
+    "Actual separate Source009 adoption, Pro2<=3/Pro3<=2/shared<=5 and finite16:30UTC end; request16:25UTC end,90-second common whole caller plus strictly greater than60-second reserve",
+    "Startup4/active4GiB and20GiB disk, two timestamped samples, all five pause paths; exact separate cleanup-only permission cannot continue observation or sign a pass",
+    "Exactly one helper and four sequential controller modes; external entry precedes Begin tool startup, actual prior mode exits retained, Complete entry is a post-Invoke return upper bound, actual post-Release audit still required",
+    "Exact ordered ten create-once outputs, bounded streams, closed source-defined failure/completion/release evidence and preservation of partial/used identities",
+    "Source-only coexistence and this review are not operational grants; no accepted observational roster, native pins, tests, Jobs or scientific admission is inferred",
+    "Authentic rejected001 request/peer refusal retained unchanged; no retry or retrospective rewrite"
+  ],
+  "existing002_operational_output_paths_at_review": [],
+  "request_window_start_utc": "2026-10-27T14:37:52.352515+00:00",
+  "request_window_end_utc": "2026-10-27T16:25:00+00:00",
+  "source009_end_utc": "2026-10-27T16:30:00+00:00",
+  "review_limitations": [
+    "This is a request/component-binding audit, not a second independent review of this reviewer's own outer/protocol Source; the actual different-author Root receipt is retained and bound.",
+    "A fitting window at this static observation is not a future admission, resource reservation, genuine peer release or actual whole-caller runtime proof.",
+    "Real tool results, actual post-Release QPC/UTC bound, successful retained-helper reap/EOF/table closure and all guards must be observed later or fail closed.",
+    "Synchronous OS/tool-host stalls remain possible; no absolute interruptibility or native same-handle file identity/complete runtime coverage is established."
+  ],
+  "operational_admission_granted": false,
+  "bootstrap_or_controller_executed": false,
+  "native_preparation_or_csharp_executed": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "runtime_behavior_proven": false,
+  "expected_candidate_cases_static_only": 117,
+  "expected_guard_controls_static_only": 34,
+  "executed_candidate_cases": 0,
+  "executed_guard_controls": 0,
+  "accepted_real_cases": 0,
+  "scientific_admission": false
+}

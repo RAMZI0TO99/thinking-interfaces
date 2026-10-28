@@ -1,0 +1,27 @@
+{
+  "schema": "cho51_canonical_boundary_external_timeout_supervision_v1",
+  "started_utc": "2026-10-25T18:34:02.0453224+00:00",
+  "ended_utc": "2026-10-25T18:34:59.6401908+00:00",
+  "elapsed_seconds": 57.5942093,
+  "owned_pid": 314876,
+  "observed_owned_pids": [
+    290476,
+    312588,
+    314876
+  ],
+  "limit_seconds": 300,
+  "absolute_window_end_utc": "2026-10-25T18:38:00.0000000+00:00",
+  "stop_trigger_seconds": 218,
+  "timed_out": false,
+  "stop_reason": null,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "stdout_eof": true,
+  "stderr_eof": true,
+  "auditor_sha256": "be39223a025c80fbe957d2f0704a00f2326023ffd97c76bf5d214b3e83d1913a",
+  "candidate_imported": false,
+  "job_created": false,
+  "validation_passed": false,
+  "complete_runtime_counter_report_available": false,
+  "scientific_admission": false
+}

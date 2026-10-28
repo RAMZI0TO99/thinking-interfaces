@@ -1,0 +1,47 @@
+{
+  "schema": "cho51_provenance_numerical_worker_source_review_v1",
+  "reviewed_utc": "2026-10-25T10:23:26.7929909+00:00",
+  "reviewer": "/root/readiness",
+  "record_custodian": "/root",
+  "source_only": true,
+  "accepted": true,
+  "remaining_actionable_findings": [],
+  "tests_executed": false,
+  "model_executed": false,
+  "execution_admission": false,
+  "static_test_cases": 63,
+  "static_test_functions": 22,
+  "native_powershell_parse_errors": 0,
+  "native_utc_string_regression_passed": true,
+  "owner_resource_amendment_sha256": "da97a78b807359b7bc9db5fc781793b7e092ae77bc1a98970c08927a4f83fa4a",
+  "native_runtime_observation_sha256": "99cbf552267a19aa57e04abec4abdc3338506622b236b2b6281cd3c31802059b",
+  "runtime_changes_since_accepted_factory": 0,
+  "historical_runtime_changes_since_17_october": 21,
+  "reviewed_once_only_phases": [
+    "tests",
+    "integration"
+  ],
+  "fixed_phase_outputs": {
+    "integration": "i1",
+    "tests": "t1"
+  },
+  "maximum_reviewed_record_path_characters": 246,
+  "all_unit_join_archive_zero_and_historical_time_checks_preserved": true,
+  "four_failed_predecessors_preserved_as_failed": true,
+  "canonical_records_registry_candidate_or_provenance_modified": false,
+  "files": {
+    "docs/phase2/cho51_provenance_numerical_worker_v2/backend.py": "2e93e2b4cc300f04fe70f909e26a0c470b37fbf245606d709d309bd82b4bf76b",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/numerical_worker.py": "34de6ce42ca9bdc39a7f1b03fdaa8588c1fa3324197fc4ba339240081d2291a7",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/pipeline.py": "4ae4db7430f5f464ac604535ef98076c0db2eb643829a2ef7cabe11449ca4700",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/README.md": "03d9c5746028e7c14184d15516a38b2e9c1427db37ffefc7b1ca21fe91bec952",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/test_integration.py": "19a1d45895b796c3aa955fe714334cf5a4ec580341fc92d6135ed6fbc61d7494",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/closeout.py": "1f466e3bbdba4329d94808b65ec78d86802923fa368a91c909d36c822cd3beb4",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/guard.py": "51e6a804eb3f23fc609f72b10d6b186a666a9a09537b6a0e77ec6b957535a209",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/launch.ps1": "b34ec3aaed0daed4cafb00dd7d68dd3ff7351232d0cac0181e91ea093791c740",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/native_pins.ps1": "b5f5d8d7958b2abb820b51641f50683e683bf2276075e8879bc67876eba54350",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/origin.py": "1dea03b51c1eb9dd5bbd847e3e6fd2263806e1854e681c030bc05e0652f2c43a",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/parent.py": "2a91594e9bee1ea202bf058a70afb23d0cc08a667f9be6214ec6fa995da62ac4",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/prepare.py": "4185395492d2c74cdff892a5eda2266b2b3fa9680c34cbf4eaf0bc67d69097b1",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v5/runtime.py": "551b0ac2c697bf7fecc0f41d871a219b2ea0c09a1cb6ba5e9021e066238116aa"
+  }
+}

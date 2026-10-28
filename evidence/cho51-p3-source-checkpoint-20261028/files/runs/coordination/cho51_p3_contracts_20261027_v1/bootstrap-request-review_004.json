@@ -1,0 +1,69 @@
+{
+  "schema": "cho51_p3_bootstrap_request_review_v4",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_004",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of request004 or its frozen Root-authored PowerShell/protocol sources",
+  "observed_utc": "2026-10-27T16:39:31.6784375Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "request_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-request_004.json",
+  "request_bytes": 11889,
+  "request_sha256": "4cab7e95a2aa4d48f6b3b4c1946c910883cc88ab559c57394d3cdb8463cc0b79",
+  "source_review_sha256": "a6901c928517e475f28544544f18af2f922af1281a2b9a095a1bfad4b8f2dc34",
+  "strict_native_metadata_observation": {
+    "utf8_valid": true,
+    "duplicate_keys": 0,
+    "nonfinite_or_noninteger_numeric_values": 0,
+    "nodes": 153,
+    "maximum_depth_policy": 32,
+    "maximum_nodes_policy": 50000,
+    "maximum_bytes_policy": 1048576,
+    "exact_integer_policy_caps_checked": 25,
+    "exact_boolean_policy_flags_checked": 8,
+    "closed_exact_zero_int64_budget_keys": 8,
+    "exact_ordered_create_once_outputs": 10,
+    "matching_output_names_already_present_in_accessible_run_listing": [],
+    "absence_is_only_current_metadata_observation_not_future_or_native_identity_proof": true
+  },
+  "actual_physical_hash_joins": {
+    "bootstrap_helper004_sha256": "9e6869e4f8b4a5fe832382f4987313684e1d9064839ff32135555de06069e425",
+    "bootstrap_outer004_sha256": "689f91d080a1a335324e01156a3962d34e9855ed630042befa66e9d6a3aa5970",
+    "bootstrap_protocol004_sha256": "c2bdf423e8616db01e1f862c5c7f9b65da3ac8cd3e3e8f7f0dffccbbe8028524",
+    "source011_scope_sha256": "c52dbbfc4a5202bc5476e6b41071d72a1163b339e8bcaad29acf2a6dae70a540",
+    "source011_adoption_sha256": "6994cedd8c25318563d4aa398d6681c00e61e91f61bccd8d5ca67c75b554e378",
+    "unchanged_actual_observation003_sha256": "c8433deb14507280eadaa1829bb77ce893681d6cefc638e443ea2c62502c453d",
+    "owner_resource_amendment_sha256": "733d6505fb24ee552ae0abd7e1bec46c14f6fc33e66a71d1adb3cf2f30c9fe75",
+    "installed_pwsh_executable_sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+    "installed_process_dll_sha256": "2b4871e02b366113c6ccf3b1436fadde5e69fc0a3e3ac421e2fa0f7af8c2bc3b",
+    "actual_prior_refusal003_sha256": "e6395f747aef09687b9302e0f6157988c8871dfe544e20412d24d2e57e2658ec",
+    "mismatches": []
+  },
+  "corrected_request_findings": [
+    "An unsubmitted copied peer-contract clause suggested an advance decision before16:20 despite this request's actual16:37:06 creation. Root corrected only the unsubmitted request: decisions must follow actual creation and precede actual dispatch; the already-started16:20 window is no retroactive invocation grant. Final exact bytes were independently rehashed and strictly parsed."
+  ],
+  "review_basis": [
+    "Full request read; strict native JsonDocument duplicate/depth/node/Int64 inspection; exact25 cap,eight flag,eight zero-budget and ten output comparisons; native SHA checks of actual frozen004 sources/review,Source011/adoption/observation003,resource amendment,installed critical runtime files and actual prior peer refusal. No candidate/helper function or operation was run.",
+    "The wholly different source review matches exact three004 sources and absolute path map. All new helper/outer/protocol/review/admission/common-argument/output descriptors correctly point to004. Genuine Source011 paths correctly retain their actual peer bootstrap002_source_review_001 directory; actual Root observation remains003 and is not mechanically renamed004. Preserved001/002/003 request/refusal hashes remain historical, not operational grants.",
+    "Request scope is one unqualified observational bootstrap. Actual created_utc16:37:06 precedes this review. Genuine later peer/Root observations must be at/after creation and no later than actual external entry. Proposed operation16:20–17:45 remains bounded by genuinely effective Source01116:20–18:30 and strict greater-than60-second reserve. No previous invocation is retroactively admitted; old009's16:30 end is not extended.",
+    "Future peer schema and Root admission path/schema are established by request/frozen protocol; actual later request/Root admission SHA arguments remain placeholders until those records exist. No unknown future peer/admission/output hash or self hash is embedded as an actual pin. Exact request,actual peer,Root admission,dispatch,attempt,evidence,completion,release and external audit remain acyclic.",
+    "Strict presence policy exactly describes frozen004: throwing GetAttributes,PRESENT for any returned file/directory/reparse attributes,only exact missing exceptions with low-HRESULT2/3 after<=4 approved unwraps plus<=16 ancestry checks to accessible direct directory for ABSENT. Unknown ACL/I/O/drive/ancestor states stop normal work/effects; explicit bounded owned cleanup alone can continue honest failed closure. This is not a measured pause error or native-ID/content requirement.",
+    "Whole-caller90 seconds,actual pre-Begin QPC/UTC/frequency,all four ordered actual mode exits,launch<15,work65/cleanup80/effects85/helper45/50 and genuine post-Release actual-return upper bound remain. Internal timestamps do not certify tool return. Unknown/missing/ambiguous custody never releases; failed/partial/late output never passes; proven closed failed custody may release only with success=false/no result acceptance.",
+    "Phase-only4/4GiB,20GiB disk,two startup samples,five exact pause paths,one owned helper,zero helper children/Python/C#/Jobs,no automatic retry,closed zero8 numerical budget and scientific admission false match source004. Cleanup authority does not authorize observation continuation,floor lowering,other-process killing or a new attempt.",
+    "D01 actual full helper-attempt/manifest schema,payload/count/byte/path/hash/coverage/startup/minima/source/caller graph validation and separate actual review/peer acceptance remain deferred before native preparation. Header checks/source review/request audit are no operational or observational acceptance. Original117 candidate cases and34 controls remain unexecuted."
+  ],
+  "limitations": {
+    "source_or_request_review_confers_invocation": false,
+    "peer_decision004_issued_or_accepted_by_this_review": false,
+    "root_admission004_issued": false,
+    "bootstrap_helper_or_mode_executed": false,
+    "process_start_or_kill_or_job_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "python_tests_or_fixtures_executed": false,
+    "runtime_presence_probe_or_custody_test_pass_claimed": false,
+    "observational_manifest_or_fresh_pins_accepted": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0
+  },
+  "disposition": "Clean exact request004 metadata review for genuine separate peer consideration only. Fresh actual released=true peer decision and Root admission,current resources/pauses,effective windows and actual full caller/custody/return evidence remain mandatory. No invocation or later native preparation/tests/science is authorized by this receipt."
+}

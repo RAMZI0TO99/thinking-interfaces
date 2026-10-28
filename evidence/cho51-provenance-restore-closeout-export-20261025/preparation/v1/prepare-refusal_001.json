@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_provenance_restore_preparation_refusal_v1",
+  "observed_utc": "2026-10-25T06:55:50.1820755Z",
+  "attempt": 1,
+  "operation": "reviewed standard-library-only source, runtime and ancestor pin preparation",
+  "outer_seconds": 60,
+  "outcome": "outer deadline reached before pin publication",
+  "owned_process_tree_killed_and_parent_reaped": true,
+  "remaining_owned_preparation_python_processes": 0,
+  "stdout_path": "prepare-stdout_001.log",
+  "stderr_path": "prepare-stderr_001.log",
+  "pins_published": false,
+  "origin_contract_published": false,
+  "validation_output_created": false,
+  "validation_job_created": false,
+  "tests_executed": false,
+  "model_executed": false,
+  "scientific_admission": false,
+  "next_scope": "a fresh at-most-180-second metadata-only preparation command with distinct logs; same reviewed sources; no model/test retry or changed validation limit"
+}

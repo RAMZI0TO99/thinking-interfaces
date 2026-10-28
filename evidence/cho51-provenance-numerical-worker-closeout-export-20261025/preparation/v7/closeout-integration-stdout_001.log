@@ -1,0 +1,1 @@
+{"passed": true, "archive": "D:\\Aenv\\pro3\\evidence\\cho51-provenance-numerical-worker-20261025-v7", "artifacts": 100, "current_counter_ledger": {"source_updates": 0, "restore_count": 1, "support_updates": 1, "gradient_updates": 1, "target_inference_calls": 1, "query_count": 2, "model_constructions": 1, "measured_cells": 0}, "measured_cells": 0, "scientific_admission": false}

@@ -1,0 +1,63 @@
+{
+  "schema": "cho51_canonical_boundary_source_review_v1",
+  "scope": "cho51_canonical_boundary_20261025_v1_tests",
+  "reviewer": "/root/readiness",
+  "reviewed_utc": "2026-10-25T16:06:43.9594564Z",
+  "source_only": true,
+  "accepted_for_fresh_pinning_only": true,
+  "remaining_actionable_findings": [],
+  "expected_tests": 133,
+  "test_definitions": 29,
+  "parametrized_definitions": 18,
+  "parametrized_instances": 122,
+  "single_cases": 11,
+  "authority_flags": 23,
+  "expected_stdlib_controls": 21,
+  "reviewed_source_bytes": 153139,
+  "files": {
+    "docs/phase2/cho51_canonical_boundary_v1/boundary.py": "6101f5b722958f2d08c87f6d8d305f27c473253a8015cc4c1d79e4d3b0d212cf",
+    "docs/phase2/cho51_canonical_boundary_v1/test_boundary.py": "9b308be2b8765a813eeb2647228bdc7430152900c06a8f260a0774c658477252",
+    "docs/phase2/cho51_canonical_boundary_v1/README.md": "40b6dbaeaf93768260870c101196ee581f7a169768c3e45ba281642aa17c3521",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/metadata_common.py": "90442c2d3fba5d1a4f52c324f9c960b20718be3f33793f7670eb5fa1e69fd71c",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/guard.py": "25e1f5bac9c8b813713841025f9b058a00bd0418b47b0a69c6064474f937b78a",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/runner.py": "2ea6f12a9d127336d3358aeeaf6e8b0c22662d21cad118fc67776b601f855412",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/closeout.py": "882bead9136393928a07ab82077305127437d1f68d0116a458bf200fa63dedd2",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/prepare.ps1": "433c7005929cbbd7b88e421c2b646ae9b0391528b749c778fb740b0a1757cfc2",
+    "runs/coordination/cho51_canonical_boundary_20261025_v1/launch.ps1": "26b2b11cb5c22f7cb8622f3e7d5dc294fc3d62372c2bae5a7fed3e2ab2c3b01e"
+  },
+  "checks": {
+    "exact_genuine_canonical_classes_and_current_helper_epoch": true,
+    "bounded_exact_typed_graph_snapshot_before_callbacks_or_comparisons": true,
+    "mapping_proxy_exact_dict_backing_without_mapping_callbacks": true,
+    "independent_metadata_reconstruction_and_role_separation": true,
+    "strict_finite_metadata_and_exact_false_authority": true,
+    "windows_path_and_descriptor_identity_checks": true,
+    "once_only_marker_and_peer_window_reserve": true,
+    "normalized_owned_mutations_and_sensitive_read_confinement": true,
+    "separate_pinned_runtime_resource_import_and_integrity_reads": true,
+    "exact_junit_report_and_archive_validation": true,
+    "powershell_parser_errors": 0,
+    "git_diff_check_errors": 0
+  },
+  "canonical_static_observation": {
+    "observed_utc": "2026-10-25T15:58:28.2907460+00:00",
+    "files": 432,
+    "sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+    "fresh_file_set_exact": true,
+    "accepted_previous_v7_sources_exact": 13,
+    "git_commit": "c177d002ab73c238a9e04a0ea21ce78f19b14c16",
+    "git_dirty": true
+  },
+  "python_executed": false,
+  "pytest_collected": false,
+  "tests_executed": 0,
+  "jobs_launched": 0,
+  "runtime_qualified": false,
+  "scientific_admission": false,
+  "limitations": [
+    "Counts are independently source-enumerated, not collected or passing evidence.",
+    "Fresh runtime/source pins, exact peer release, immediate resource admission and unused attempt remain required.",
+    "Startup8GiB, active4GiB and all other unchanged guards remain effective.",
+    "Read-only compatibility supplies no execution, raw/weight verification, canonical parent/worker qualification or scientific authority."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "cho51_canonical_boundary_batch_plan_v1",
+  "family": "cho51_canonical_boundary_20261025_v5",
+  "scope": "same_P1_P2_engineering_metadata_validation_only",
+  "candidate_files": {
+    "docs/phase2/cho51_canonical_boundary_v1/boundary.py": "6101f5b722958f2d08c87f6d8d305f27c473253a8015cc4c1d79e4d3b0d212cf",
+    "docs/phase2/cho51_canonical_boundary_v1/test_boundary.py": "9b308be2b8765a813eeb2647228bdc7430152900c06a8f260a0774c658477252",
+    "docs/phase2/cho51_canonical_boundary_v1/README.md": "40b6dbaeaf93768260870c101196ee581f7a169768c3e45ba281642aa17c3521"
+  },
+  "canonical_sources": 432,
+  "canonical_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "expected_full_tests": 133,
+  "expected_definitions": 29,
+  "expected_stdlib_controls_per_batch": 34,
+  "batch_order": ["a", "b", "c"],
+  "batches": {
+    "a": {
+      "scope": "cho51_canonical_boundary_20261025_v5_a_tests",
+      "expected_tests": 36,
+      "function_counts": {
+        "test_genuine_current_source_and_complete_typed_routes": 1,
+        "test_stale_helper_contract_refused_and_fresh_epoch_accepted": 1,
+        "test_copied_method_shadow_contract_refused_before_accessors": 2,
+        "test_request_and_report_are_immutable_defensive_finite_metadata": 1,
+        "test_swapped_role_sources_refused_after_valid_baseline": 3,
+        "test_role_runtime_identity_cannot_be_flattened": 3,
+        "test_owner_package_and_origin_anchors_cannot_be_replaced": 6,
+        "test_frozen_configuration_bytes_cannot_be_redefined": 7,
+        "test_full_and_adopted_identity_inventory_refused": 8,
+        "test_incomplete_catalog_asset_selection_episode_inventory": 4
+      }
+    },
+    "b": {
+      "scope": "cho51_canonical_boundary_20261025_v5_b_tests",
+      "expected_tests": 44,
+      "function_counts": {
+        "test_wrong_actual_canonical_type_refused": 4,
+        "test_boolean_and_changed_budget_counts_refused": 4,
+        "test_malformed_nonfinite_duplicate_and_nonobject_request": 6,
+        "test_unknown_fields_and_inferred_runtime_authority_refused": 4,
+        "test_non_direct_metadata_paths_refused": 7,
+        "test_canonical_pin_strict_read_precedes_genuine_loader": 7,
+        "test_external_metadata_is_reconstructed_not_a_verified_manifest_witness": 7,
+        "test_same_byte_replacement_after_open_is_refused": 1,
+        "test_hardlink_metadata_refused": 1,
+        "test_controlled_reparse_flags_fail_closed": 2,
+        "test_oversized_truncated_and_changed_file_hashes_refused": 1
+      }
+    },
+    "c": {
+      "scope": "cho51_canonical_boundary_20261025_v5_c_tests",
+      "expected_tests": 53,
+      "function_counts": {
+        "test_callback_mapping_is_refused_without_invocation": 1,
+        "test_nested_callback_types_refused_before_any_callback": 23,
+        "test_mapping_proxy_backing_refused_without_callbacks": 2,
+        "test_report_callback_text_refused_without_encode": 1,
+        "test_report_flags_cannot_be_turned_into_admission": 1,
+        "test_assessment_never_calls_execution_or_creates_output": 1,
+        "test_report_authority_requires_exact_false_after_valid_baseline": 23,
+        "test_windows_path_and_descriptor_ctime_are_independently_stable": 1
+      }
+    }
+  },
+  "limits_per_batch": {
+    "maximum_jobs": 1,
+    "seconds": 600,
+    "process_mib": 4096,
+    "job_mib": 5120,
+    "startup_ram_gib": 4,
+    "active_ram_gib": 4,
+    "disk_gib": 20,
+    "threads": 1,
+    "torch_threads": 1,
+    "gpu_hidden": true,
+    "external_stdlib_closeout_maximum_seconds": 300
+  },
+  "expected_numerical_budget": {
+    "source_updates": 0,
+    "restore_count": 0,
+    "support_updates": 0,
+    "gradient_updates": 0,
+    "target_inference_calls": 0,
+    "query_count": 0,
+    "model_constructions": 0,
+    "measured_cells": 0
+  },
+  "fresh_full_collection_required_each_batch": true,
+  "exact_function_projection_only": true,
+  "selected_three_phase_and_junit_pass_required": true,
+  "identical_full_collections_required_for_aggregate": true,
+  "selected_union_must_equal_full_collection": true,
+  "selected_intersections_must_be_empty": true,
+  "distinct_grant_admission_and_attempt_each_batch": true,
+  "freeze_complete_family_sources_before_first_batch": true,
+  "final_aggregate_requires_separate_explicit_coordination": true,
+  "automatic_retry_permitted": false,
+  "timeout_progress_accepted_as_test_evidence": false,
+  "numerical_or_scientific_execution_permitted": false,
+  "scientific_admission": false
+}

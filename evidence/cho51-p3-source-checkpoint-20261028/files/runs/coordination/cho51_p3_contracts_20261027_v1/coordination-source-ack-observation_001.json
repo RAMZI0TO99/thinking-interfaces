@@ -1,0 +1,30 @@
+{
+  "schema": "cho51_p3_contracts_peer_source_ack_observation_v1",
+  "observed_utc": "2026-10-27T14:17:01.7875209+00:00",
+  "peer_thread_id": "01a171ad-1bad-7212-a419-d195a4a30955",
+  "direct_peer_message_received": true,
+  "source_only_coexistence_acknowledged": true,
+  "acknowledgement": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\ROOT_PRO3_SOURCE008_LIGHTWEIGHT_SOURCE_COEXISTENCE_ACK_001.json",
+    "bytes": 5741,
+    "sha256": "b7ce5ba6f303158878e5ad109a71c2f5213111741df04495cf6fecb85560dcd1"
+  },
+  "independent_peer_ack_review": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\Source008_ack_different_review_001\\INDEPENDENT_SOURCE008_PRO3_SOURCE_COEXISTENCE_ACK_CAPSULE_001.json",
+    "bytes": 3971,
+    "sha256": "d1c6e7fe758fcad9df45b48840be2338dd884f2af804ee8f79225331ca768623"
+  },
+  "interval_start": "2026-10-27T13:10:56.767745+00:00",
+  "interval_end": "2026-10-27T15:10:56.767745+00:00",
+  "publication_reserve_seconds": 60,
+  "maximum_pro2_agents_including_root": 3,
+  "maximum_pro3_agents_including_root": 2,
+  "maximum_shared_agents": 5,
+  "native_pin_preparation_admitted": false,
+  "python_tests_or_jobs_admitted": false,
+  "compute_allocation": false,
+  "physical_custody_release": false,
+  "whole_host_quiet": false,
+  "scientific_admission": false,
+  "disposition": "Direct genuine peer ACK permits lightweight Source coexistence only. Bounded PS/C# native pin preparation is outside this ACK and requires a separate exact Source/review/runtime/invocation/output/timing/resource/custody request and explicit decision. Later test Job and external closeout need distinct fresh pins/pin review/grant/Root admission. No inference from idle state or old Source006."
+}

@@ -1,0 +1,3 @@
+....................................
+36 passed, 97 deselected in 172.78s (0:02:52)
+{"passed": true, "tests": 36, "loaded_module_files": 4041, "current_counter_ledger": {"source_updates": 0, "restore_count": 0, "support_updates": 0, "gradient_updates": 0, "target_inference_calls": 0, "query_count": 0, "model_constructions": 0, "measured_cells": 0}, "scientific_admission": false}

@@ -1,0 +1,73 @@
+{
+  "schema": "cho51_publication_verification_record_v1",
+  "date": "2026-10-28",
+  "scope": "Owner-requested documentation and existing engineering evidence publication; no new runtime validation",
+  "recorded_by": "Pro3 Root",
+  "independent_publication_reviewer": "/root/publication_review",
+  "reviewed_staged_tree": "393117bf9b65fccf01fc8fcc241810173caa64b6",
+  "reviewed_tree_excludes_this_record": true,
+  "prepublication_head": "c177d002ab73c238a9e04a0ea21ce78f19b14c16",
+  "blocking_findings": [],
+  "reviewed_scope": {
+    "paths": 1457,
+    "existing_files": 1454,
+    "preexisting_document_deletions": 3,
+    "physical_bytes": 107969814,
+    "all_index_blobs_match_working_bytes": true
+  },
+  "canonical_source": {
+    "files": 432,
+    "mismatches": 0,
+    "ordered_digest_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529"
+  },
+  "preserved_p3_predecessors": {
+    "files": 75,
+    "mismatches": 0
+  },
+  "existing_25_october_packets": {
+    "packets": 16,
+    "files": 1284,
+    "bytes": 103116326,
+    "manifest_rows": 1218,
+    "manifest_mismatches": 0
+  },
+  "p3_archive": {
+    "path": "evidence/cho51-p3-source-checkpoint-20261028",
+    "payload_files": 108,
+    "payload_bytes": 3024281,
+    "metadata_files": 3,
+    "manifest_mismatches": 0,
+    "qualification_sha256_measured_for_publication": "2ffe0b3969a13c7243d4573b9ce64ae4cfd08fb9395e6faeca605d77146c5b14"
+  },
+  "checks": {
+    "bounded_utf8_and_credential_pattern_screening_findings": 0,
+    "new_publication_link_targets": 7,
+    "missing_link_targets": 0,
+    "publication_documentation_whitespace": "passed",
+    "whole_diff_whitespace": "reports preserved historical CRLF and formatting; no whole-diff clean claim",
+    "unmanifested_partial_and_legacy_trees": "excluded; preserved locally",
+    "persistent_hooks_path": ".githooks",
+    "commit_hook_handling": "Per-command empty hooks directory; hook files and persistent configuration unchanged"
+  },
+  "limits": {
+    "runtime_validation": false,
+    "project_python_invocations": 0,
+    "new_tests": 0,
+    "new_native_preparation": 0,
+    "new_jobs": 0,
+    "new_scientific_execution": 0,
+    "bootstrap004": "FAILED_UNRELEASED_CONSUMED",
+    "diagnostics005": "STATIC_ONLY_DELIBERATE_PRELAUNCH_HOLD",
+    "candidate_tests_unexecuted": 117,
+    "guard_controls_unexecuted": 34,
+    "scientific_cells": "0/1020",
+    "freeze_signed": false,
+    "source014": "expired",
+    "source015": "peer-reported closed unadopted; not independently accepted here"
+  },
+  "notes": [
+    "This record summarizes actual publication checks and the separate review; it is not an execution grant.",
+    "The reviewed tree predates adding this record. Historical source and receipt hashes are preserved, not rebound to the publication commit.",
+    "Pattern screening is not a guarantee of detecting every possible credential format."
+  ]
+}

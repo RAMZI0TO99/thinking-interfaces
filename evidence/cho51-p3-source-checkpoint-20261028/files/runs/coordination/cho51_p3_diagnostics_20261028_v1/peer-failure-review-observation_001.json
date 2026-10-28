@@ -1,0 +1,92 @@
+{
+  "schema": "cho51_p3_diagnostics_peer_failure_review_observation_v1",
+  "observed_utc": "2026-10-28T09:07:46.6420247+00:00",
+  "actual_peer_records": [
+    {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261028-001\\ROOT_BOOTSTRAP004_ACTUAL_FAILURE_REVIEW_ADOPTION_AND_NATIVE_REQUEST_HOLD_001.json",
+      "bytes": 20136,
+      "sha256": "4ddb9ea4195f134d516f38be4d2e239066ffea5d0c3a7b8d38f0e21751c99fea"
+    },
+    {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261028-001\\ROOT_CURRENT_BOOTSTRAP004_FAILURE_AND_NATIVE_REQUEST_HELD_HANDOFF_001.json",
+      "bytes": 6029,
+      "sha256": "ec62f98f6417110455ff1bc0e5435597e28cf195b1379b70c3327e80005dcc50"
+    }
+  ],
+  "failed_evidence_review_adopted": true,
+  "actual_disposition": "FAILED_UNRELEASED_CONSUMED",
+  "accepted": false,
+  "released": false,
+  "actual_result_blockers": [
+    {
+      "evidence": "Actual Invoke exit1; Unexpected descendant; no authority to kill it.",
+      "id": "ACTUAL_INVOKE_FAILED"
+    },
+    {
+      "evidence": "Actual saved child_reaped=false/custody_closed=false; later PID-based report is not original retained-handle reap.",
+      "id": "ORIGINAL_CUSTODY_UNCLOSED"
+    },
+    {
+      "evidence": "Complete and Release metadata exits0 but operation_succeeded=false and operation_released=false.",
+      "id": "ACTUAL_OPERATION_UNRELEASED"
+    },
+    {
+      "evidence": "No saved success supervision/helper-attempt/manifest available in retained Root listing; full payload/runtime coverage unaccepted.",
+      "id": "SUCCESS_PAYLOAD_D01_NOT_REACHED"
+    }
+  ],
+  "unestablished_actual_facts": [
+    {
+      "id": "U01_REJECTED_PROCESS_ROW_IDENTITY",
+      "no_consolehost_or_other_harmless_identity_inferred": true,
+      "reason": "No failed table row snapshot retained; error text is common to multiple predicate violations.",
+      "unestablished": [
+        "which of the two parent queries",
+        "row ProcessId/ParentProcessId",
+        "name/executable/commandline/creation identity",
+        "row count and sequence",
+        "benign or harmful role"
+      ]
+    },
+    {
+      "id": "U02_PRIMARY_GUARD_CALL_ORDINAL",
+      "reason": "Final caller trace exposes440 rethrow; the first table-call ordinal is not saved.",
+      "unestablished": [
+        "initial322 versus periodic328 versus post-drain335"
+      ]
+    },
+    {
+      "id": "U03_SECONDARY_CLEANUP_STAGE",
+      "reason": "Secondary catch416 retains custodyFalse but suppresses stage/exception; do not infer from EOFTrue.",
+      "unestablished": [
+        "whether cleanup identity passed",
+        "whether Kill was reached/succeeded",
+        "which wait/drain/table step threw or returned incomplete",
+        "specific reason child_reapedFalse"
+      ]
+    },
+    {
+      "id": "U04_TIMELY_OR_CURRENT_PHYSICAL_CUSTODY",
+      "reason": "Saved custody/releaseFalse. A later narrow PID sample is not an original handle or earlier-descendant identity witness.",
+      "unestablished": [
+        "confirmed original retained-handle reap",
+        "timely closure of unexpected process family",
+        "current whole-host/process/handle absence"
+      ]
+    },
+    {
+      "id": "U05_OBSERVATIONAL_PAYLOAD",
+      "reason": "No success artifact retained; no synthetic reconstruction, rerun or native request advancement.",
+      "unestablished": [
+        "helper-attempt body",
+        "full runtime manifest",
+        "D01 complete roster/count/path/evidence acceptance"
+      ]
+    }
+  ],
+  "next_step_recommendation_only": "Separately version and independently review bounded refused-row/controller/helper-generation and cleanup-stage/exception diagnostics, with existing guards/caps unchanged. No presumed harmless process/descendant whitelist or guessed PID kill. Source authoring needs separate fresh Source scheduling; any future operation needs distinct unused identity, actual custody disposition and genuinely reviewed exact peer/Root admission. No rerun004.",
+  "subject_invocations": 0,
+  "live_queries": 0,
+  "native_request_advanced": false,
+  "meaning": "Read-only exact saved-file metadata observation. Adopts no runtime result or physical custody; Source014 is separately required and observation of this failure authorizes no operation."
+}

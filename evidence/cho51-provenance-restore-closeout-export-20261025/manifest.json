@@ -1,0 +1,429 @@
+{
+  "schema": "cho51_provenance_restore_closeout_export_v1",
+  "metadata_only": true,
+  "created_utc": "2026-10-25T07:48:58.3425587Z",
+  "final_review_sha256": "72b6f232d39b5b73e39ee8d56e77c0cba958a03a51854ae73e6863223e9ce627",
+  "all_copies_byte_identical_to_sources": true,
+  "all_seven_document_copies_match_review_bindings": true,
+  "copied_artifact_count": 45,
+  "copied_payload_bytes": 2358764,
+  "artifacts": [
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/final-review.json",
+      "path": "final-review.json",
+      "bytes": 9174,
+      "sha256": "72b6f232d39b5b73e39ee8d56e77c0cba958a03a51854ae73e6863223e9ce627",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_restore_qualification_20261025.md",
+      "path": "snapshots/cho51_provenance_restore_qualification_20261025.md",
+      "bytes": 12319,
+      "sha256": "d8b02e4197fbf8b73f3f08907f6e280a4757cdea3de84759c078b4ec02710d6e",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "HANDOFF.md",
+      "path": "snapshots/HANDOFF.md",
+      "bytes": 316025,
+      "sha256": "35949611ff82055323fb1e87ec75770fb8a8708a7f8a753350039400176ee98b",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "AGENT_COORDINATION.md",
+      "path": "snapshots/AGENT_COORDINATION.md",
+      "bytes": 265630,
+      "sha256": "38a82c848407f4dcdcbfd7cacd9f3e43beedebbfabd9ef8593387dd57c29cbb1",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "CONTINUE_HERE.md",
+      "path": "snapshots/CONTINUE_HERE.md",
+      "bytes": 49539,
+      "sha256": "bf44fbb46ea999a18485e5acd01650296e5b2cd52ea83fdf1fb0e6feb14f8e5e",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "PHASE2_START_HERE.md",
+      "path": "snapshots/PHASE2_START_HERE.md",
+      "bytes": 153947,
+      "sha256": "6fcd570a4fcc9508f9b00140ded102172fe6e6f27e9f6b87a4ce980128bcd4dd",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "README.md",
+      "path": "snapshots/README.md",
+      "bytes": 110283,
+      "sha256": "6ba636857efa5afe32536240fec88f9c6d3b411769c6e33519a3310434a704fa",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "WINDOWS_SETUP.md",
+      "path": "snapshots/WINDOWS_SETUP.md",
+      "bytes": 44023,
+      "sha256": "c51d86ccd6e49a9b7371f38040f115cd007c6435aa146cc75b0eacf526824f7b",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": true
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_restore_plan_20261025.md",
+      "path": "preparation/cho51_provenance_restore_plan_20261025.md",
+      "bytes": 6578,
+      "sha256": "4574c960ab41c6aaeeacd531e230b6618453bdb7b04fd0b3dd655d22a8d9a923",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "docs/phase2/cho51_provenance_restore_operations_successor_20261025.md",
+      "path": "preparation/cho51_provenance_restore_operations_successor_20261025.md",
+      "bytes": 2359,
+      "sha256": "88bf17a5dda0d90b64f7b8d19979fbcf5a8ff44e9c52e4e204f29f32415ec343",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/closeout.py",
+      "path": "preparation/v1/closeout.py",
+      "bytes": 30276,
+      "sha256": "36f92087a8f3a48d0102b8979364e242739339a1d6accc86d8adf01cf05fa634",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/compute-request_001.json",
+      "path": "preparation/v1/compute-request_001.json",
+      "bytes": 1381,
+      "sha256": "524d4f4e4ab5c559d5f127148ee5b6fe965af324da5b6ae129b91b97708c7ae7",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/coordination_ack_001.json",
+      "path": "preparation/v1/coordination_ack_001.json",
+      "bytes": 992,
+      "sha256": "213e250387d097adaf74e4008cdef7ee0d41bbb17a27bb0c034e577c7614d348",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/coordination_request_001.json",
+      "path": "preparation/v1/coordination_request_001.json",
+      "bytes": 842,
+      "sha256": "5bb155accace673b1cf8d6fc329b1989feaa763a1d1beff242b7fe54bdce365d",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/guard.py",
+      "path": "preparation/v1/guard.py",
+      "bytes": 16867,
+      "sha256": "8ba404cadfbdb358a58ea86e44ccf9a7895da529c036766d3c1e5f7724551b0e",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/launch-refusal_001.json",
+      "path": "preparation/v1/launch-refusal_001.json",
+      "bytes": 1346,
+      "sha256": "a7a792c7b04ec1354bc3aabad04434d6ad333b08e635561008591b562c36e494",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/launch.ps1",
+      "path": "preparation/v1/launch.ps1",
+      "bytes": 8795,
+      "sha256": "a9824111aaabd0df507f4f9e1f6db1e6f30bcc9c67e07aee1ce1601c27a0bcd2",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/lease-closeout_001.json",
+      "path": "preparation/v1/lease-closeout_001.json",
+      "bytes": 652,
+      "sha256": "9ba9c63390cc9f54406498b53cafe423f7b1649f9da96019d579643f9f710c06",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/native_pins.ps1",
+      "path": "preparation/v1/native_pins.ps1",
+      "bytes": 3650,
+      "sha256": "61c67686bfd476a3a2156cdd2b20c28abf2365bb66fd327511b82d738ab3d7a7",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/native-runtime.json",
+      "path": "preparation/v1/native-runtime.json",
+      "bytes": 17330,
+      "sha256": "2e4b5f370b233eb90119d5e506e746accbf75a8758abe1b1000540f1d9f0acf6",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/origin-contract.json",
+      "path": "preparation/v1/origin-contract.json",
+      "bytes": 707705,
+      "sha256": "8187a8f41144bf6c18c3030280bedd0a1cfd1fed96747f9001546d72af0f6e68",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/origin.py",
+      "path": "preparation/v1/origin.py",
+      "bytes": 9218,
+      "sha256": "97d82f386d963a00d8ac233c1db856290f78de959a24ac04aa2e3c759067206e",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/owner-resource-amendment.json",
+      "path": "preparation/v1/owner-resource-amendment.json",
+      "bytes": 1085,
+      "sha256": "7d1df94987535728d811f237e5451b9f226a6a48903eee41aaf1165686e129f5",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/parent.py",
+      "path": "preparation/v1/parent.py",
+      "bytes": 15799,
+      "sha256": "e188cdbdac70f519acb2dcfad684d070202040bf4187837aa957ef68541420e3",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/pins.json",
+      "path": "preparation/v1/pins.json",
+      "bytes": 517097,
+      "sha256": "31cc6eb29fcec674dd593ce2c2389a424afa7a42004a66d1744d871f9219b398",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare-refusal_001.json",
+      "path": "preparation/v1/prepare-refusal_001.json",
+      "bytes": 901,
+      "sha256": "9da5c6f3d56d37bf49b574c52f1ddc820c9cdba44522f254f49654dec8e8a166",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare-stderr_001.log",
+      "path": "preparation/v1/prepare-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare-stderr_002.log",
+      "path": "preparation/v1/prepare-stderr_002.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare-stdout_001.log",
+      "path": "preparation/v1/prepare-stdout_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare-stdout_002.log",
+      "path": "preparation/v1/prepare-stdout_002.log",
+      "bytes": 161,
+      "sha256": "91edbf351d2f73a4ee05cb3615f5ede259d5ae75318916f9a06c66d08dcc6838",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/prepare.py",
+      "path": "preparation/v1/prepare.py",
+      "bytes": 12404,
+      "sha256": "fc8d5eb6c37a87667b7b75b23c92da9ce4fae45597559601572bbf832d62bbe9",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/resource_observation_001.json",
+      "path": "preparation/v1/resource_observation_001.json",
+      "bytes": 761,
+      "sha256": "acf58db24e0b8bfb51358f8e272b4ee2413e20a9d4a899062f185a8524296151",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/runtime.py",
+      "path": "preparation/v1/runtime.py",
+      "bytes": 32417,
+      "sha256": "dd31b8d1789e7de020d6e472c6e6c341a94391fa2964bd096be709dee80ed396",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v1/source-review.json",
+      "path": "preparation/v1/source-review.json",
+      "bytes": 2720,
+      "sha256": "f0b36c7173401dd5febf3f1fc76e978563954cce72cf56afde6ded747fbc7c8b",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/native-utc-regression.json",
+      "path": "preparation/v2/native-utc-regression.json",
+      "bytes": 582,
+      "sha256": "84502f3b3169daced20e735b52831d052a641a19760bf0233cdb5539f45da458",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/compute-request_001.json",
+      "path": "preparation/v2/compute-request_001.json",
+      "bytes": 1443,
+      "sha256": "d5d11fd97510e24769ca1fc5b556f21504066980cd2683e15d58204ec7717c2f",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/prepare-supervision_001.json",
+      "path": "preparation/v2/prepare-supervision_001.json",
+      "bytes": 447,
+      "sha256": "ded06286f809206f3cdd4ec992946f8d5d07266222c06daeafa92bea5e5de77b",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/prepare-stdout_001.log",
+      "path": "preparation/v2/prepare-stdout_001.log",
+      "bytes": 161,
+      "sha256": "b16788f7fb083ffdba232c4ceb2fc4a3590caf5cbdfc42d4e4aae990b763a63b",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/prepare-stderr_001.log",
+      "path": "preparation/v2/prepare-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/closeout-supervision_001.json",
+      "path": "preparation/v2/closeout-supervision_001.json",
+      "bytes": 441,
+      "sha256": "a0ed395bd88bb40548b056caf616d8b87ca93186b0e9cd25f86e159e7320b96f",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/closeout-stdout_001.log",
+      "path": "preparation/v2/closeout-stdout_001.log",
+      "bytes": 241,
+      "sha256": "5bbaecc874292ff0a9d7c6995f0ccaa3268beab63b56f1787ffdb91b391e5adf",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/closeout-stderr_001.log",
+      "path": "preparation/v2/closeout-stderr_001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/lease-closeout_001.json",
+      "path": "preparation/v2/lease-closeout_001.json",
+      "bytes": 1511,
+      "sha256": "24ee60dc3be41bc6a5f41922366eb16870ecbcc15236aabbf63231c3dce37a15",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "runs/coordination/cho51_provenance_restore_20261025_v2/final-git-native-check_001.json",
+      "path": "preparation/v2/final-git-native-check_001.json",
+      "bytes": 648,
+      "sha256": "858873771f29706e173d25bec8aad106038d64f37d35061faf0a6db4348a4bae",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    },
+    {
+      "source": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_001_CANCELLATION_001.json",
+      "path": "preparation/peer-v1-cancellation.json",
+      "bytes": 1014,
+      "sha256": "e6e79fc0f8e0a099a077cb5c6f50b3cd1213dfab24e5c2b84bd07df2fb2acc3d",
+      "copy_matches_source": true,
+      "document_binding_recorded_in_review": false
+    }
+  ],
+  "exact_inventory": [
+    ".gitattributes",
+    "final-review.json",
+    "manifest.json",
+    "preparation/cho51_provenance_restore_operations_successor_20261025.md",
+    "preparation/cho51_provenance_restore_plan_20261025.md",
+    "preparation/peer-v1-cancellation.json",
+    "preparation/v1/closeout.py",
+    "preparation/v1/compute-request_001.json",
+    "preparation/v1/coordination_ack_001.json",
+    "preparation/v1/coordination_request_001.json",
+    "preparation/v1/guard.py",
+    "preparation/v1/launch-refusal_001.json",
+    "preparation/v1/launch.ps1",
+    "preparation/v1/lease-closeout_001.json",
+    "preparation/v1/native_pins.ps1",
+    "preparation/v1/native-runtime.json",
+    "preparation/v1/origin-contract.json",
+    "preparation/v1/origin.py",
+    "preparation/v1/owner-resource-amendment.json",
+    "preparation/v1/parent.py",
+    "preparation/v1/pins.json",
+    "preparation/v1/prepare-refusal_001.json",
+    "preparation/v1/prepare-stderr_001.log",
+    "preparation/v1/prepare-stderr_002.log",
+    "preparation/v1/prepare-stdout_001.log",
+    "preparation/v1/prepare-stdout_002.log",
+    "preparation/v1/prepare.py",
+    "preparation/v1/resource_observation_001.json",
+    "preparation/v1/runtime.py",
+    "preparation/v1/source-review.json",
+    "preparation/v2/closeout-stderr_001.log",
+    "preparation/v2/closeout-stdout_001.log",
+    "preparation/v2/closeout-supervision_001.json",
+    "preparation/v2/compute-request_001.json",
+    "preparation/v2/final-git-native-check_001.json",
+    "preparation/v2/lease-closeout_001.json",
+    "preparation/v2/native-utc-regression.json",
+    "preparation/v2/prepare-stderr_001.log",
+    "preparation/v2/prepare-stdout_001.log",
+    "preparation/v2/prepare-supervision_001.json",
+    "README.md",
+    "snapshots/AGENT_COORDINATION.md",
+    "snapshots/cho51_provenance_restore_qualification_20261025.md",
+    "snapshots/CONTINUE_HERE.md",
+    "snapshots/HANDOFF.md",
+    "snapshots/PHASE2_START_HERE.md",
+    "snapshots/README.md",
+    "snapshots/WINDOWS_SETUP.md"
+  ],
+  "explanatory_readme": {
+    "path": "README.md",
+    "bytes": 2299,
+    "sha256": "6d3388f95a98fb04588760cfc2e50a94303776b9378b90a7e2edac28dce7dfe6"
+  },
+  "arrays_weights_and_environment_excluded": true,
+  "future_head_binding": null
+}

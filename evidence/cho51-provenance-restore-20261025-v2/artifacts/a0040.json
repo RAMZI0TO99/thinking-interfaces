@@ -1,0 +1,82 @@
+{
+  "active_disk_gib": 20,
+  "active_ram_gib": 4,
+  "authority": "direct owner startup-only 4 GiB amendment for bounded G04; no training or scientific admission",
+  "command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_restore_20261025_v2\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_restore_20261025_v2\\pins.json",
+    "--expect-pins",
+    "4ba8504b7ff1f91f26cdfc721813de8f643c245ab738b04927ca1ee0be0c12dc",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_restore_20261025_v2\\validation_001"
+  ],
+  "deadline_utc": "2026-10-25T07:40:14.817383+00:00",
+  "guard_policy_schema": "cho51_provenance_restore_guard_v1",
+  "historical_10gib_startup_pass_claimed": false,
+  "job_mib": 5120,
+  "native_threads": 1,
+  "operation_pins": {
+    "evaluation/phase2_supervision_primitives.py": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/closeout.py": "387b2365c0922e30562bc2e5ed91e8f0c7882869fd3005e6329798a963cbdc34",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/guard.py": "5899cab06162a5e8d1d969667cd0e054b971baf15dc8295d8f7eebde2571bee0",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/launch.ps1": "453c15bfcae4b85aeebd2cd482dafae9a11ddd4932d72ede88002742fa1066ca",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/native_pins.ps1": "b492f1059f7dad11b678798fa5b5c4381e855bd5193c23103af4971645f45bea",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/origin.py": "97d82f386d963a00d8ac233c1db856290f78de959a24ac04aa2e3c759067206e",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/parent.py": "e188cdbdac70f519acb2dcfad684d070202040bf4187837aa957ef68541420e3",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/prepare.py": "51335a1519004483ce6da59a06e272480b2e52c918bc322a7dcc36826b2e0dcd",
+    "runs/coordination/cho51_provenance_restore_20261025_v2/runtime.py": "10db6ff384e2f84e89bb96b232172755a206e6cd2d5f6793fa22c8cda0f99aae",
+    "tools/migration/activate.ps1": "7b997d79928ed35906d67a25255f97d9534bc43045156742109333551881935f",
+    "tools/migration/assets.json": "d8b5d7d981ff6c83dd3429b2d0e6c086a77e206cd190b6962868190bbc5f461f",
+    "tools/migration/bootstrap.ps1": "c21a127909d5eeb4390bf7c8f04a40946af250713a004c2777657fe3888263f7",
+    "tools/migration/caches.json": "14e3a1658cbdb59b22f620bbf0326516d636fe1a9cdaed5152cd3afcdb8043af",
+    "tools/migration/common.py": "fe2790bc2703af17b930dffe109d8c750fb8d0abfa205fbd40245aec178936d5",
+    "tools/migration/dependency-resolution.json": "611d5f4380f1ddd273cf8139cf6d85d7990e97de3f2b80b5cb70093082557b2e",
+    "tools/migration/doctor.py": "dc17b38ca5ebe1a3807719d62ac6008252b0c412eafc8096bb842910f96fb5bd",
+    "tools/migration/export.py": "bc89d09974f5f27515bfb3c29aab6f2c253ca63720e434adb410ed496fe288a9",
+    "tools/migration/github.py": "64a33dddd32a18ef839a37e04118d21d40e300b4187deddc58613321dd42928e",
+    "tools/migration/guard.py": "1150228137873b783ba5800b89ded0e7598448f05da3b87a7ac0a62e6079f157",
+    "tools/migration/job_adapter.py": "a6902fabf675b329440b39404cdc4306e562fda4b47efefb19982c6c2502ae8b",
+    "tools/migration/pin_dependencies.py": "dc95a4e11fdf288f897ae79c070e3b3b0b1a438c3b3bd5f1017d9d8350fdc695",
+    "tools/migration/quality.ps1": "2f600b3e55694653f22ad6b0567117dfc90398ee3aef951a42eae53e124941a0",
+    "tools/migration/rebuild.ps1": "fe16adbb4bc440ac1f5e81b3d61d90c5facc3f08d06fb081cd0d56481addccbb",
+    "tools/migration/rebuild.py": "0f6e2635cf8629753c4cb229856444993175d958e091ed0b7d8a52d05eedb00e",
+    "tools/migration/rebuild_worker.py": "3b0b075bbfa7038dd6d9854f7e6e8e15c07a667113bd9ed41e77681b4c61de96",
+    "tools/migration/requirements-windows-core.lock": "c7d38a600c3936063aa70065fab8bc2852c87112b2bbd0fa53ec2aff6599c957",
+    "tools/migration/requirements-windows-full.lock": "3038e83e512b605afdfdce9bcac0701c357c3d35bafd5c29a8f3bf9b0aae1b90",
+    "tools/migration/restore.py": "b64f0b51ec1ac861d1658134800b10b20cdaf0cfbae20c7e3e45c93ef0b2ba3a",
+    "tools/migration/source-files.json": "778386aa52d354614c689055d26a2bbc844f063f7f6cf267cc1f7ba9048bbe68",
+    "tools/migration/state.json": "3418957221bb16970ce9d22469ad941cebccf1604dcfc43ee1cbf9b1053e822f",
+    "tools/migration/task.py": "8ffb5d42cfe7107d57b8bb7d69d07909cd1dd14bc32a5e645b1d675e0c3e8a70",
+    "tools/migration/test_migration.py": "5d7011c62a04847aa4440e10abfaf50a1caff07d4c08f6d479b91473e76580b1"
+  },
+  "owner_resource_amendment_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_restore_20261025_v2\\owner-resource-amendment.json",
+  "owner_resource_amendment_sha256": "2278be18db419544bab3f718757f1fe9e388348eb2cbd1f2034b48951818c978",
+  "peer_pause_file": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+  "previous_startup_ram_gib": 10,
+  "process_mib": 4096,
+  "purpose": "one provenance-aware historical selected-source factory restore and genuine adapter delivery inside fresh real CaseRecorder lock; no training, query or study cells",
+  "schema": "migration_admission_v1",
+  "selected_runtime_pins": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll": "67bdf2c2ee177edf2cac76c7b2586206899918f7604c953810ac6a4e6d3f1646",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll": "e39aa2da5ea2d310d89994f71bf913a0a137ebaf9f692a565b8c896081512f28",
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe": "560b9ef7d856608ab8da02ded2dc8a1951ad1f424c382c0ec6a698874165a18e"
+  },
+  "source_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "started_utc": "2026-10-25T07:30:14.817383+00:00",
+  "startup_ram_gib": 4,
+  "startup_samples": [
+    {
+      "available_ram_bytes": 7179927552,
+      "free_disk_bytes": 84889726976
+    },
+    {
+      "available_ram_bytes": 7211958272,
+      "free_disk_bytes": 84889726976
+    }
+  ]
+}

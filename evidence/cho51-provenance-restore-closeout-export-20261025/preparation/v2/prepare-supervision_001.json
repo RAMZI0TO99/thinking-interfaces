@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_provenance_restore_preparation_supervision_v1",
+  "started_utc": "2026-10-25T07:15:04.1541683Z",
+  "ended_utc": "2026-10-25T07:16:29.4835957Z",
+  "owned_pid": 291468,
+  "limit_seconds": 180,
+  "timed_out": false,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "scope": "reviewed standard-library-only metadata preparation",
+  "tests_executed": false,
+  "model_executed": false,
+  "scientific_admission": false
+}

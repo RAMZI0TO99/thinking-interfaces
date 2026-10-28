@@ -1,0 +1,251 @@
+{
+  "schema": "cho51_canonical_boundary_actual_review_v1",
+  "scope": "cho51_canonical_boundary_20261025_v5_b_tests",
+  "reviewer": "/root/readiness",
+  "reviewed_utc": "2026-10-25T20:01:30.2772675+00:00",
+  "accepted": true,
+  "source_only": false,
+  "executed_metadata_evidence_review": true,
+  "accepted_scope": "selected_complementary_metadata_batch_b_only",
+  "remaining_actionable_findings": [],
+  "batch_id": "b",
+  "batch_plan_sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f",
+  "source_review_sha256": "e1d8a53b4463b982daf54f30ef2889b7f6d7ad23b0f711bada8cef834cb15f29",
+  "owner_resource_amendment_sha256": "6b3be4809c1dd3b54861d62f6d6a96ed2722f16c902908d6bf3ba9c4521b9619",
+  "expected_tests": 44,
+  "expected_full_tests": 133,
+  "expected_stdlib_controls": 34,
+  "observed_utc": "2026-10-25T20:01:30.2772675+00:00",
+  "accepted_selected_metadata_only": true,
+  "tests": 44,
+  "full_collected": 133,
+  "deselected": 89,
+  "definitions_collected": 29,
+  "reports": 132,
+  "junit_unique": 44,
+  "junit_failures": 0,
+  "junit_errors": 0,
+  "junit_skips": 0,
+  "stdlib_controls": 34,
+  "observed_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "observer_zero_keys": 8,
+  "loaded_module_pin_joins": 4041,
+  "loaded_modules_rehashed_by_reviewer": false,
+  "entire_shared_runtime_inventory_rehashed_by_reviewer": false,
+  "prior_independent_full_pin_review_sha256": "5783de185bbf6318cb9bf2d4fb6f5d2db9446da10631a6198b2792af1f1aeeb4",
+  "full_root_preflight_files": 18909,
+  "full_root_preflight_bytes": 3338506142,
+  "current_code_rehashed": 22,
+  "current_code_bytes": 378736,
+  "runtime_pin_joins": 27,
+  "native_operation_joins": 24,
+  "native_selected_runtime_joins": 3,
+  "full_collection_sha256": "1ec0a4da3b3fe566d75ad21ce97b17f98c2458524df7671d38caa686620d6d86",
+  "pytest_seconds": 256.655999999959,
+  "native_seconds": 405.132166,
+  "native_peak_process_bytes": 1242128384,
+  "native_peak_job_bytes": 1325219840,
+  "external_seconds": 115.1406791,
+  "released_utc": "2026-10-25T20:00:33.4322051+00:00",
+  "git_queries": 296,
+  "pytest_alias_refusals": 20,
+  "aliases_created": 0,
+  "runtime_import_resource_reads": 2,
+  "runtime_resource_hash_reads_before_result": 1,
+  "bytecode_reads_refused": 3710,
+  "optional_ipv6_probes_refused": 1,
+  "archive_pairs": 41,
+  "archive_payload_bytes": 4366075,
+  "archive_files": 45,
+  "physical_unique_files": 96,
+  "physical_bytes": 9515386,
+  "direct_items": 119,
+  "key_bindings": {
+    "pins": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\pins.json",
+      "bytes": 3264186,
+      "sha256": "f12300fc7c929fd6c70b1b026218c4324b0cc0c56044ecab23b12dadaf9f5dea"
+    },
+    "result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\t1\\result.json",
+      "bytes": 653874,
+      "sha256": "738510b1916dbce571778a89920aa8915cd3d196ec09e853e04b69b3f38f955d"
+    },
+    "junit": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\t1\\junit.xml",
+      "bytes": 7491,
+      "sha256": "1a2c9836652808a3d06b2befd0512b8111b6f0a05e65fc129ddec7c7c4e1d412"
+    },
+    "closeout": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\closeout-result.json",
+      "bytes": 38111,
+      "sha256": "d310963f2b371cb234d349039188702eef5a466bbbda50e2123e7d26ad1ca81a"
+    },
+    "supervision": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\closeout-supervision_001.json",
+      "bytes": 763,
+      "sha256": "9eb070b97626c24cbb17aa6e56e3e4fb7ca382585b2f30c2a028881e0cbf70df"
+    },
+    "lease": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\lease-closeout_001.json",
+      "bytes": 1982,
+      "sha256": "5471f375996e39f195cfaee69e1b3e753e29c188d932be5c13ecaa94a80a9715"
+    },
+    "receipt": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T195031Z_e77e26f032\\receipt.json",
+      "bytes": 1684,
+      "sha256": "8c0207899d81927aae3f322a503c08c35ae469eff2aafa80f3720f949302abcd"
+    },
+    "native_admission": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T195031Z_e77e26f032\\admission.json",
+      "bytes": 5145,
+      "sha256": "718b916f4942b1a8c339a0edce9df609330dd78afea0dd40e33ceb856218136a"
+    },
+    "native_deadline": {
+      "path": "D:\\Aenv\\pro3\\runs\\migration\\20261025T195031Z_e77e26f032\\deadline.json",
+      "bytes": 161,
+      "sha256": "38e1f03ab847e05421641d64c3f2c0097957f5f30cc5fe1a1ee384a7879a2893"
+    },
+    "root_admission": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\admission.json",
+      "bytes": 3223,
+      "sha256": "3fbacade663e11b0ebd0e03597ae5f8a8cf40fa2381c344d53805404dcd4942b"
+    },
+    "preflight": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\preflight_001.json",
+      "bytes": 3296,
+      "sha256": "67cc8855c202f02006416355cb96524d129b660c24494c662a8a48a72d3559cc"
+    },
+    "request": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\compute-request_001.json",
+      "bytes": 3914,
+      "sha256": "02a61dbc759a864ded3e4b27fb454c4a4d98627015aa20490b89a35947c89bc7"
+    },
+    "dispatch": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\dispatch_001.json",
+      "bytes": 1189,
+      "sha256": "af207f91616b5f7e8c93a95e1511b3c64933941fa5809bdd4850fbce95c764d9"
+    },
+    "dispatch_result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\dispatch-result_001.json",
+      "bytes": 260,
+      "sha256": "512b901aa2a14e31f6750294605f833db5d87c4f69d831bbdb1d7e6f9e7212c6"
+    },
+    "marker": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\guard-attempt_001.json",
+      "bytes": 502,
+      "sha256": "48c0a4a2f740322eb60b090af0d649f35843b864f9e9620e4ac0112197b6a3a7"
+    },
+    "peer": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_018.json",
+      "bytes": 16164,
+      "sha256": "3b821335cc4daf2ee41148be863f126f3934e59e73432223957b5618e9409345"
+    },
+    "plan": {
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_batch_plan_20261025.json",
+      "bytes": 4480,
+      "sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f"
+    },
+    "scope": {
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_split_validation_20261025.md",
+      "bytes": 5281,
+      "sha256": "e792de74461fe54269714c0e3a175ee6ee357ed99943ac345a54c7b6f48bb55b"
+    },
+    "manifest": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_b\\manifest.json",
+      "bytes": 9048,
+      "sha256": "83c845273eb1a0f1e21be6d8e4be58b6ce65bbd10a31dbe42307ed1008f175d8"
+    },
+    "summary": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_b\\summary.json",
+      "bytes": 38111,
+      "sha256": "d310963f2b371cb234d349039188702eef5a466bbbda50e2123e7d26ad1ca81a"
+    },
+    "readme": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_b\\README.md",
+      "bytes": 550,
+      "sha256": "d532ff97d36ad5a2d7512f54cde211c3f81655f5d0770880bec3caa5228b8965"
+    },
+    "attributes": {
+      "path": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-20261025-v5_b\\.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    "previous_a_review": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\actual-review.json",
+      "bytes": 11197,
+      "sha256": "ebb9745e6cd4cfabf221150ca54362ca66f554bbd66fdca8bc12ad0ca6d7e80f"
+    },
+    "previous_a_result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\t1\\result.json",
+      "bytes": 649588,
+      "sha256": "1c19079903e52895524855a240d5ba9e438f4146cce9b7329f4ac8441f6e558c"
+    },
+    "previous_a_lease": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\lease-closeout_001.json",
+      "bytes": 1982,
+      "sha256": "367ea7c3c87e6e6dd7f0892383b4502d6635add27455d53bfd067ca939ffd330"
+    }
+  },
+  "issues": [],
+  "exclusions": [],
+  "live_job_queries": 0,
+  "python_executed": false,
+  "tests_replayed": 0,
+  "scientific_admission": false,
+  "full133_suite_accepted": false,
+  "actual_native_job_name": "pro3_migration_20261025T195031Z_e77e26f032",
+  "native_limit_flags": 8960,
+  "native_attempt_seconds": 600,
+  "native_session_cleanup_seconds": 5,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "torch_threads": 1,
+  "gpu_hidden": true,
+  "all_five_pause_guards_retained": true,
+  "native_and_external_ownership_closed_before_explicit_release": true,
+  "child_native_status_retained": "pending_external_post_job",
+  "external_native_closeout_fulfilled": true,
+  "final_future_runtime_qualified": false,
+  "raw_input_verification_performed": false,
+  "weight_verification_performed": false,
+  "unchanged_canonical_worker_qualified": false,
+  "unchanged_canonical_parent_qualified": false,
+  "single_root_factory_qualified": false,
+  "experiment_freeze_signed": false,
+  "metadata_test_catalog_and_asset_fields_are_fabricated_unverified_fixtures": true,
+  "runtime_resource_is_library_fiducials_not_target_signal": true,
+  "pytest_alias_permission_added": false,
+  "git_argument_casefold_or_provenance_substitution_added": false,
+  "peer_results_accepted": false,
+  "whole_host_quiet_claimed": false,
+  "limitations": [
+    "This accepts only44 selected complementary metadata cases and34 controls. Genuine full133 collection and89 ordered deselections are not full133-suite execution or acceptance.",
+    "The accepted A and B packets have exactly identical ordered full133 collections and disjoint selected sets with union80. This does not accept the remaining53 cases or admit C or the final aggregate.",
+    "The final133 metadata-coverage aggregate still requires the remaining complementary accepted batch, exact shared frozen inventories, all three full custody releases and its separate explicit zero-Job supervision/coordination.",
+    "The96-file bounded physical audit authenticates the entire41-pair B packet, control/native/closure records, all22 current code sources, all three pinned reviews/amendments and the accepted A result/review/release bindings. It does not repeat the complete3.3GB inventory or independently rehash all4,041 loaded module bodies.",
+    "Current runtime/loaded-source joins rely on the prior independent18,909-file physical audit, authenticated fresh Root preflight and the frozen child's/guard's/external closeout's full pin checks. This is explicitly not runtime qualification for a future attempt.",
+    "The exact260-byte MNE library resource observations bootstrap2/hash1 are separately bounded. They are not raw target-signal or model-weight verification.",
+    "Genuine NumPy/Torch/MNE bootstrap and API guards do not constitute a general untrusted-Python sandbox or observation of every native allocation.",
+    "All20 expected pytest current-link attempts remained physically refused; no alias was created or broadly admitted.296 Git queries retained the genuine pinned executable and exact canonical readonly policy.",
+    "Native named-Job absence is authenticated from the native receipt and Root's timestamped full-release proof. The reviewer made no live Job query or whole-host-quiet assertion.",
+    "No restoration, numerical episode, source/support update, query, physical selector, claim, measured publication, recovery, canonical parent/worker/single-root qualification, future-runtime or scientific authority follows from this metadata batch."
+  ],
+  "a_b_ordered_full_collection_equal": true,
+  "a_b_selected_overlap": 0,
+  "a_b_selected_union": 80,
+  "future_C_or_aggregate_admitted": false
+}

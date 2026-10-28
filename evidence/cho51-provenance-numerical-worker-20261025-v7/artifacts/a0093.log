@@ -1,0 +1,3 @@
+...............................................................
+63 passed in 358.03s (0:05:58)
+{"passed": true, "phase": "tests", "tests": 63, "current_counter_ledger": {"source_updates": 0, "restore_count": 0, "support_updates": 0, "gradient_updates": 0, "target_inference_calls": 0, "query_count": 0, "model_constructions": 0, "measured_cells": 0}}

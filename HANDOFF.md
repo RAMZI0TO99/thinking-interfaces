@@ -1,5 +1,899 @@
 # Project handoff
 
+## Publication checkpoint and next step, 28 October 2026
+
+The completed restoration factory, parent/worker integration, metadata boundary,
+P3 designs, contract sources and literature review are collected in the
+[publication checkpoint](docs/phase2/cho51_push_checkpoint_20261028.md).
+The [P3 evidence archive](evidence/cho51-p3-source-checkpoint-20261028/README.md)
+preserves exact source, failed-attempt and static-review records with a manifest.
+
+**Next: custody-resolution design, then a separately reviewed successor.**
+Bootstrap004 remains FAILED_UNRELEASED_CONSUMED. Diagnostics005 is independently
+statically reviewed but deliberately blocked before launch; an ordinary grant
+does not make it runnable. The 117 candidate tests and 34 controls remain
+unexecuted. Accepted bootstrap observations, native preparation/pin review and
+fresh test/closeout admissions are subsequent engineering gates.
+
+This is a documentation/evidence publication, not new implementation or runtime
+validation. Source014 is expired; Pro2 reports Source015 closed unadopted, with
+no authority inferred here. Historical receipts and source remain unchanged;
+earlier dated sections below retain their original meanings. Scientific cells
+remain 0/1020 and the final freeze unsigned. Publication creates a new Git
+context: future execution needs fresh provenance, coordination and admission.
+
+## Diagnostics005 implemented and statically reviewed; launch held,28 October
+
+Three separately versioned005 Sources are complete. Different whole-source
+review7529B SHA141cd7a922caecda4d0221ed19f1d99a0a50a178a08edd85d69e590070434d58
+has zero remaining findings after four corrections: required stage/partition
+witnesses,original Invoke/helper joins,actual adoption timing/interval joins and
+truthful stream preservation. Two PS ASTs parse cleanly; all75 preservation
+baseline files,including original14/all004,match exact bytes/hashes. Review is
+STATIC ONLY. Root record:
+`runs/coordination/cho51_p3_diagnostics_20261028_v1/source-qualification_001.json`.
+Design/status:`docs/phase2/cho51_p3_custody_diagnostics_20261028.md`.
+
+005 captures bounded row/call-ordinal/controller/helper and cleanup-stage/error
+metadata in Source,but deliberately refuses prelaunch against unchanged004
+failed custody. It is NOT launch-ready even with an ordinary new grant. Next is
+separately coordinated/reviewed custody-resolution design and a distinct successor,
+not a readiness Boolean,004 rerun or retroactive release. All004 unknowns remain.
+No005 function/mode/helper/controller/live query,C#/native load,Python/test/Job,
+operative request/admission,native advancement or science ran.117+34 unexecuted;
+science0/1020/freeze unsigned. Source01409:30end/strict09:29cutoff unchanged;
+no015authority is relied on in this qualification. Preserve all historical bytes.
+
+## Fresh Source014; bounded005 diagnostics authoring only,28 October09:01UTC
+
+Direct human next-step steering selects the bounded custody diagnostics step,
+not a rerun or acceptance of failed004. Genuine new Source014/adoption/different
+review are authenticated in
+`runs/coordination/cho51_p3_diagnostics_20261028_v1/source-coordination-observation_001.json`
+(2633B/b8606a7d8b6d336b3d71b277f979b3aee691e23871a988cf70d88a5490ce076d).
+Reliance follows actual09:00:40UTC adoption. End09:30UTC/12:30Riyadh,strict60s
+reserve; all governed effects before09:29UTC. Pro3Root+one serialized author OR
+different reviewer<=2,Pro2<=3/shared<=5. Old011/012 stay expired unchanged.
+
+Only new005 supervisor/helper/protocol Source is assigned to the author. Root
+owns new phase metadata/docs; no frozen Source or receipt ownership changes.
+The75-file read-only baseline SHA9f816fb870d9d1f1f9a5962ed55109b9735cc1a10849f8f0daacc36cb1cc8007
+records original14 and all existing operation files. Plan/design:
+`docs/phase2/cho51_p3_custody_diagnostics_20261028.md`.
+No Source/function/mode/helper/controller invocation,live process/resource/pause
+query,C#/native load,Python/test/Job,operative request/admission or science is
+admitted.004 remains FAILED_UNRELEASED_CONSUMED and native prerequisite unmet;
+117 candidate cases/34 controls remain unexecuted. Static review is pending.
+
+## Different actual004 review complete; failure disposition retained,27 October17:17UTC
+
+`bootstrap-actual-review_004.json`8841B SHA
+`df900ab63aaf0f4ef0febbe11c3db7fa23ff9a178f5d8f65f6233ff35948e098`
+completes the genuinely different saved-evidence/source review. All15 input
+hashes,seven actual output pins and original14 source hashes agree. Actual
+disposition is FAILED_UNRELEASED_CONSUMED,not a pass. Root adopts that failure
+record only in `bootstrap-disposition_004.json`; no custody/result acceptance or
+additional operation follows. Reviewer stopped without operations/live queries.
+
+The exact refused row and cleanup-stage exception remain UNKNOWN. Future source-
+only diagnostics should retain bounded query/controller/helper generation and
+refused-row metadata plus separate cleanup stage/type/HResult/bounded message.
+Never retrofit proof,guess a harmless descendant or whitelist it. No rerun004,
+new native request/preparation,C#,Python/test/Job or science follows this turn.
+All117 candidate cases/34 controls remain unexecuted. The actual failure audit,
+all sources/receipts/partial outputs and historical reviews remain unchanged.
+Pro2 independently reviews the failed packet; its conditional native step stays
+held. All earlier pending-review statements below are dated history.
+
+## Actual bootstrap004 failed/unreleased; identity consumed,27 October17:05UTC
+
+The genuine adopted Pro2 once-only decision20086B SHA
+`ade2a8b93fa9cf22f0a80352b52f4e7c7161efe8fa34d23bc2684f9e64de4128`
+and Root admission3299B SHA
+`9f31613ac04efe340dd892a44627261903e4d501a948a5a547e2f4a4cdda8c04`
+preceded the actual004 attempt. Actual modes Begin/Invoke/Complete/Release exited
+0/1/0/0. Invoke refused "Unexpected descendant; no authority to kill it".
+The saved refusal does not identify the unexpected process-table row; do not
+invent its identity or whitelist a presumed console host. No arbitrary kill or
+successful cleanup is inferred. Reported child302124 was started,not reaped;
+both pipes reached EOF with zero bytes,but custody_closed=false. Completion and
+Release honestly retain operation_succeeded=false/custody_closed=false and
+operation_released=false. Metadata mode exits0 do not release the operation.
+
+`bootstrap-external-audit_004.json`4925B SHA
+`365153e07d2f925d36168f0218404ae37c18962d0bbabb0598a284ff6740b75d`
+retains genuine actual tool results/exits,pre/post native QPC/UTC/frequency and
+seven output pins. Pre17:04:57.1375077UTC QPC10208996807711; actual post-Release
+return upper bound17:05:08.2987118 QPC10209108413806,frequency10000000,
+11.1606095s. This meets a timing bound only,NOT a passing caller or result.
+No supervision/helper-attempt/runtime manifest/full pins exists in the observed
+packet. A later read-only CIM query returned no PID302124/parent302124 rows;
+that limited sample cannot establish original-handle reap or retroactive release.
+
+Preserve every004 byte and used identity; NO automatic retry. Different saved-
+evidence/custody/source review is underway. Pro2 was notified and will not advance
+the conditional native request on failed evidence. No native preparation/C#,
+Python/tests/Job ran;117 candidate cases/34 controls remain unexecuted. Science
+stays0/1020/freeze unsigned. Current Source011 scheduling and phase4/4GiB remain
+unchanged,not a new operation grant. The newly authored PS-only closeout002
+source/protocol are unreviewed/unadmitted and cannot bypass this failure.
+
+## Fresh direct owner clarification; exact admission still required,27 October2026
+
+The human answered the explicit P3-only engineering-admission question:
+"do both of you as you see fit. i gave you all the permtions you need."
+New `owner-peer-admission-clarification_001.json`2303B SHA
+`baa89f793503b162ab6c780562226a817ab620a2365abcbb33ec2e27ad731519`
+retains exact question/answer and narrow contextual interpretation: Pro2 may
+consider separate P3 bootstrap/native preparation/nonnumerical test/closeout
+admissions; capture/training/numerical/scientific execution stays held, guards
+unchanged, no experiment freeze or new30h authority. The prior cross-project
+human-hold interpretation is clarified, not a Source defect or runtime fault.
+
+Root sent this direct evidence for Pro2's independent verification. It is NOT
+the genuine exact peer decision or Root admission: Source004/request004 remain
+frozen, unexecuted and unadmitted until those actual gates complete. Preserve
+any previously sealed held metadata; do not overwrite history or auto-dispatch.
+Phase4/4GiB,all5pauses/disk20/caps/once/actual return/custody and finite Source011
+remain mandatory.117 candidate cases/34 controls and native preparation unrun.
+
+## Source004 clean; operational human hold clarified,27 October2026
+
+Whole different-author bootstrap004 Source audit is clean:
+`bootstrap-source-review_004.json`6242B SHA
+`a6901c928517e475f28544544f18af2f922af1281a2b9a095a1bfad4b8f2dc34`.
+Exact request11889B SHA`4cab7e95a2aa4d48f6b3b4c1946c910883cc88ab559c57394d3cdb8463cc0b79`
+has separate audit7193B SHA
+`8ca23f56e0b2585908775b1410543ec1889bb1ad9bf466bbaf328fa725bbed69`.
+Both have been submitted for genuine separate peer decision. Native successor
+Source review003 SHA`63c86be3283998b778378316dd4ff963ec7f0bd305d665b9c0ab519ce7dc3a5b`
+is also clean and unexecuted. Four scripts parse with zero errors; predecessor
+inventories remain exact. Static review is not runtime validation/admission.
+
+At16:43UTC Pro2 reported a standing direct-human hold on capture/all execution
+gates, stating no operational permission can issue even if004 is Source-clean.
+Root requested its exact authority/scope and asked the human whether Pro2 may
+consider ONLY separate P3 engineering admissions while capture/training/numerical/
+scientific work stays held. No answer or waiver is assumed. Do not create Root
+admission, invoke a mode, compile, run Python/tests or infer release from review.
+No helper/C#/Python/test/Job/fullpins ran;117 candidate/34 controls are unexecuted.
+At16:39:26UTC RAM8,722,190,336B/disk75,954,749,440B were observed, not reserved;
+phase-only4/4GiB stands, with no additional RAM question. Source011 remains
+Source-only through18:30UTC/21:30Riyadh with60sreserve and3/2/shared5 caps.
+
+## Bootstrap003 refused;004 fail-closed lookup Source review,27 October2026
+
+Actual19180-byte Pro2 decision SHA
+`e6395f747aef09687b9302e0f6157988c8871dfe544e20412d24d2e57e2658ec`
+rejects003/released=false/zero controller and helper invocations. Actual path/hash
+are retained in `bootstrap-refusal-observation_003.json`. The shared blocker is
+File.Exists conflating absent with lookup errors in pause gates; no actual ACL,
+pause event, leak or runtime overrun was observed. The003 uncertain-Start repair
+passed static review. Preserve003 and all earlier sources/receipts unexecuted.
+
+Root authors separate bootstrap004 and preparation003/prepare004 successors.
+Their throwing PRESENT/ABSENT/UNKNOWN predicate requires explicit missing-path
+error2/3 plus accessible direct ancestry before absence; uncertainty stops work,
+not a pass. A different agent reviews all6 Sources before any exact request.
+No Source004 operation, native compile/preparation, Python/test, Job or full pins
+exists.117 candidate cases/34 controls remain unexecuted. Source009 expired
+unchanged; only new Source01116:20–18:30UTC/21:30Riyadh with60sreserve and
+3/2/shared5 now governs SOURCE-only work, not operation/resource/custody grants.
+
+## Source003/request settled; exact new decision pending,27 October2026
+
+The wholly different reviewer closed all3 Root bootstrap003 sources and its
+exact request. Source review7011B SHA
+`5ceea3438032634c40adc60fab42976c1c3eebd3761f639096aff63392183d0b`;
+request10891B SHA`968350ffc1003fd99891c223f247aaaaa64703c333bc2260869b0a3c2becb194`;
+request review6951B SHA`555a03eec2801e42ff8c510d6a4bcafd251c34316c59c6e3e1c8b9ebfe26c928`.
+This exact packet has been sent for genuine separate Pro2 decision. No003
+Root admission, caller mode, helper, native preparation, C#/Python/test or Job
+has executed.117 candidate cases/34 controls remain unexecuted, not failed or passed.
+
+Request003 binds actual new Source011/adoption, operation16:20–17:30UTC, external
+whole90s and strict>60s reserve. It cannot start before16:20. Source011 ends
+18:30UTC/21:30Riyadh;009/008 remain unchanged. Unknown Start custody can never
+release; independently proven closed failed custody may release only with
+success=false. Actual command exits, EOF/reap/table closure and post-Release
+return/QPC audit are indispensable. Header checks are not payload acceptance:
+full actual manifest/coverage review and separate acceptance still precede
+native preparation; that Source-clean step has no operational grant either.
+
+## Bootstrap002 refused;003 Source and new finite011 scheduling,27 October2026
+
+The actual separate Pro2 request002 decision rejects it:15707B SHA
+`9d6a476f2309207a82d2d50b20b5496d08333e9de014794f0e4424a667478698`,
+`released=false`, zero helper/controller invocations. It is authenticated in
+`bootstrap-refusal-observation_002.json`. A possible exception after Start could
+have been mislabeled no-child/closed; this is static uncertainty, not a measured
+leak. All002 bytes remain frozen/unexecuted; do not admit or dispatch002.
+Separate003 Source now preserves attempted/unknown/started outcomes and never
+releases unknown custody. A wholly different reviewer is reviewing all3 Root
+successor sources; no review/request/operational grant is assumed in advance.
+
+New native preparation sources have clean whole-source independent review
+`preparation-source-review_002.json`4984B SHA
+`a94ff3772c87eb60fd6e01d6d7bc8e45cd0b3f542320867ac249e9f7237fe651`.
+They remain unexecuted and need accepted actual observations and separate grants.
+Original14 files/117 candidate cases/34 controls remain unchanged/unexecuted.
+
+Genuine Source011/adoption/different capsule are authenticated in
+`coordination-source-observation_003.json`,2460B SHA
+`c8433deb14507280eadaa1829bb77ce893681d6cefc638e443ea2c62502c453d`.
+Its NEW interval16:20–18:30UTC (19:20–21:30Riyadh),60s reserve,3/2/shared5
+is effective ONLY at/after16:20; before that Source009 alone governs Source
+authoring. Neither009 nor008 is extended. No bootstrap/native/C#/Python/test/Job
+or compute/physical release/result acceptance follows from011 scheduling.
+
+## Bootstrap002 Source settled; distinct decision pending,27 October2026
+
+The separately versioned helper, PS-only outer and exact executable caller/
+evidence protocol now have different-author static reviews, consolidated in
+`bootstrap-source-review_002.json`,SHA`ed91bdbb0824891783851b7a622fe887671c90359367c89c2feb33f4b5ae562d`.
+The exact9212-byte request002 SHA`5f52f40e6bd320adffb1d2eb4dbd6b8f1f7f93291894f5aa9f90b5e0762dff03`
+has a clean separate request audit SHA`9a537f3c288a668938b501459b882e4159df609ec5d95a69b1c53e0ed7320a57`.
+It is sent for genuine Pro2 review/decision, not admitted by dispatch or ACK.
+
+Its four pinned-source modes share an external pre-Begin QPC/UTC clock; only one
+Start-owned retained-handle helper may run. Actual prior-mode exits, bounded
+pipe EOF/reap/table closure and genuine post-Release actual-return upper bound
+strictly<90s remain required. Strict>60s publication reserve,4/4GiB,20GiB disk,
+all5pauses and zero numerical budget stand. No mode/helper/C#/Python/test/Job or
+fresh full pins has run;117 candidate cases/34 controls remain unexecuted.
+Native preparation successors are Source-only work, with separate later
+admission; a requested new finite coexistence interval is not yet adopted.
+
+## Bootstrap001 explicitly refused; corrective Source002 only,27 October2026
+
+The actual Pro2 decision `cb3c427f239b47c0e6070602c02a116eba57e0acf643c15157d485dcc4ce13bc`
+rejects bootstrap-request001 with `released=false` and zero helper invocations.
+`runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-refusal-observation_001.json`
+authenticates its actual path, bytes and three static control/evidence blockers.
+No measured overrun or capacity failure occurred. All001 sources/reviews/request
+remain unchanged and unexecuted; their earlier clean static reviews did not
+establish whole-caller operational acceptance. Do not admit or dispatch001.
+
+Root+one now author separately versioned002 helper, PS-only retained-process
+outer watchdog/caller and closed evidence protocol. These require fresh
+different-author reviews, exact request, genuine peer decision and Root admission.
+The original14 implementation files remain frozen;117 candidate cases/34 guard
+controls remain unexecuted. No C# compile,Python,Job or fresh full pins exists.
+Phase-only startup4/active4GiB remains authorized; do not ask again. Source009
+ends16:30UTC/19:30Riyadh with60s reserve, not extended by this correction.
+
+<!-- cho51-p3-contracts-20261027-source009:begin -->
+## Source009 adopted; bootstrap decision pending,27 October2026
+
+The genuine new Pro2 Source-only coexistence009/adoption is authenticated in
+`coordination-source-observation_002.json`: end16:30UTC (19:30Riyadh),60s reserve,
+Pro2<=3/Pro3<=2/shared<=5. This new interval does not extend Source008 and grants
+no native preparation or test execution. Startup4GiB is directly owner-adopted
+for this phase; active4GiB and every other guard remain unchanged.
+
+The prerequisite read-only PowerShell observation source has clean different
+review `bootstrap-source-review_001.json` (SHA`b1b4b013b4941e7042b67fb9b43be03d447ef1967e4576e8bfa7747dd58f5ab2`).
+Its exact90s request SHA`4d856d586904f34dd758ca36049e8471748b4849539d13216f36d9cc35710f46`
+is pending genuine peer review/decision,not approved by acknowledgment. Separately,
+the three new native-preparation sources have clean different-author review
+`preparation-source-review_001.json` (SHA`a1f8213d3b81ce8efc8a534e73292c6a00c744089a154663fc5e8c183446456c`).
+New `prepare_002.ps1` binds actual Source009/supplemental review while preserving
+the original14 sources and old Source008 helper/observations/receipts unchanged.
+
+No bootstrap/helper/C# compile/Python/test/Job or fresh full pins has run.
+The117 candidate cases/34 controls remain unexecuted. Next actual step is only
+the separately admitted90s observational bootstrap; acceptance of that output,
+fresh native preparation/pin review and distinct unit/external grants follow.
+Do not infer dispatch from Source coexistence,old grants or available RAM.
+<!-- cho51-p3-contracts-20261027-source009:end -->
+
+<!-- cho51-p3-contracts-20261027-resource-resume:begin -->
+## P3 nonnumerical validation resource resume,27 October2026
+
+The owner directly answered the new phase's explicit4GiB-startup question:
+"work with what you ahve!!!!". Root adopts the question's phase-only startup4GiB
+proposal,not a fabricated literal4GiB answer; active4GiB,disk20GiB and all other
+guards remain unchanged. Exact question,answer,interpretation and exclusions are
+retained in `runs/coordination/cho51_p3_contracts_20261027_v1/owner-resource-amendment.json`.
+This does not grant native preparation,Python/tests,Jobs or science. At14:33:54UTC
+available RAM was6,584,127,488B (~6.13GiB),not the earlier3.53GiB hold reading.
+Do not ask again for this same startup amendment; enforce active4GiB throughout.
+
+The14-source implementation remains unchanged and independently source-reviewed;
+117 candidate cases/34 controls are still unexecuted. A separate bounded native
+pin-preparation supervisor/protocol is being authored and independently reviewed
+before an exact peer/Root admission request. Source008's original15:10:56UTC end
+and60s reserve remain finite; a new coexistence request does not extend it.
+The preceding seven-document checkpoint hashes bind exact archived copies in
+`runs/coordination/cho51_p3_contracts_20261027_v1/checkpoint_001_documents`,not
+these intentionally advanced heads. Old holds remain truthful dated history.
+<!-- cho51-p3-contracts-20261027-resource-resume:end -->
+
+<!-- cho51-p3-contracts-20261027-source:begin -->
+## P3 contract source reviewed; validation held,27 October2026
+
+The owner authorized engineering-only metadata/profile mapping and supplied
+telemetry contracts. The [implementation scope](docs/phase2/cho51_p3_contracts_implementation_20261027.md)
+and new `docs/phase2/cho51_p3_adapter_v1` package are implemented. Mapping invokes the
+genuine accepted metadata boundary and independently joins the fixed synthetic
+profile and provenance domains; telemetry checks immutable prefix/tail metadata
+without a real clock, observer or runnable P3 controller.
+
+The serialized implementation worker stopped; a different reviewer closed the
+14-source static audit with zero remaining findings in
+`runs/coordination/cho51_p3_contracts_20261027_v1/source-review.json`
+(SHA`ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a`).
+Static source counts are39 mapping+78 telemetry cases, not passing or collected results. Root performed
+native PowerShell static parsing only (four files,zero parse errors). No Python,
+test, fixture execution, profiling, numerical work or Job ran in this phase.
+No fresh pins/admission/compute release exists yet. Default startup10GiB remains
+unless a fresh applicable owner answer is recorded; old RAM amendments do not
+transfer. The pending user RAM question is not assumed answered.
+
+Fresh peer Source008/adoption information reserves Root+one<=2 through its finite
+13:10:56.767745–15:10:56.767745UTC interval (60s reserve),not a Pro3 compute lease.
+Pro2 directly acknowledged lightweight Source coexistence only in its5,741-byte
+record SHA`b7ce5ba6f303158878e5ad109a71c2f5213111741df04495cf6fecb85560dcd1`,
+with independent metadata capsule SHA`d1c6e7fe758fcad9df45b48840be2338dd884f2af804ee8f79225331ca768623`.
+Exact references are retained in new `coordination-source-ack-observation_001.json`.
+It explicitly does NOT admit PS/C# native pin preparation,Python/tests or Jobs.
+At14:17:01UTC available RAM3,786,866,688B (~3.53GiB) was below the unchanged4GiB
+active floor; `validation-hold_001.json` retains this refusal-to-start state and
+matching14 source hashes. No old grant or RAM allowance transfers.
+Next: resolve resources,obtain the separate exact native-preparation protocol/
+review/peer decision/Root admission,prepare/review fresh pins,then genuine exact
+unit/external-closeout peer/root admission and the bounded nonnumerical Job and
+separately supervised external closeout. No automatic retry or increased caps.
+Targets02–52/source52,original target01 retries0,Gate A scope,unsigned freeze
+and scientific cells0/1020 remain unchanged. Earlier blocks are dated history.
+<!-- cho51-p3-contracts-20261027-source:end -->
+
+<!-- cho51-p3-adapter-20261027-design:begin -->
+## P3 adapter design statically reviewed; execution held,27 October2026
+
+The owner requested engineering-only P3 adapter design. The new
+[adapter design](docs/phase2/cho51_p3_adapter_design_20261027.md),
+[bounded telemetry design](docs/phase2/cho51_p3_telemetry_design_20261027.md) and
+[static review](docs/phase2/cho51_p3_adapter_review_20261027.md) complete that
+documentation/source-only scope. Independent subagent review found three design
+issues; all were corrected and rechecked with zero remaining actionable findings.
+No P3 package, Python/import, fixture, test, profiling, Job, numerical work,
+launcher, admission or new scientific result was created.
+
+Selected architecture: a new terminal-owning P3 controller, one honest unchanged
+v2 numerical-worker claim and a new outer adapter attestation binding canonical
+metadata/profile joins and genuine numerical proof. No nested accepted parent,
+sidecar-only terminal binding, worker-identity spoofing or measured-cell promotion.
+Metadata cohort,213 synthetic inputs and separate weights, canonical executor,
+isolated recorder and historical producer remain distinct proof domains.
+
+The next proposed scope is separately authorized metadata/profile and telemetry
+contract implementation, not a runnable P3 transaction. Diagnostic admission and
+the proposed30s timing margin need separate decisions; no old4GiB amendment or
+Source006 interval carries forward. A fresh Pro2 documentation-only coordination
+request is pending as recorded in the review; no compute allocation is requested
+or inferred. Root+one<=2 and all resource/pause/attempt guards remain unchanged.
+
+Targets02–52/source52, original target01 retries0, narrow Gate A acceptance and
+unsigned scientific freeze are unchanged; accepted final scientific cells remain
+0/1020. The previous seven-document hashes bind their archived25October copies,
+not these intentionally advanced handoff/coordination heads. All frozen code,
+raw data, weights, receipts and accepted exports remain unchanged. Earlier
+blocks retain their exact dated meanings; no autonomous window is restarted.
+<!-- cho51-p3-adapter-20261027-design:end -->
+
+<!-- cho51-canonical-boundary-20261025-qualified:begin -->
+## Metadata boundary qualified; execution remains held,25 October2026 UTC
+
+The [qualification](docs/phase2/cho51_canonical_boundary_qualification_20261025.md)
+records133 complementary metadata cases across three unchanged600-second Jobs
+(36/44/53),399 passing phase reports with exact JUnit agreement,and34 distinct
+controls/102 instances.
+A separately admitted zero-Job stdlib aggregate passed196 metadata reads/
+25,648,747bytes; its independent actual review accepts the complete disjoint
+coverage. Observed numerical ledger entries are all0; raw/weight verification,
+canonical execution,measured publication,future runtime and science stay held.
+Full020 custody released21:11:33UTC,103.0436767s from dispatch within300/window;
+the distinct full caller completion bound is13s,not merely the internal timer.
+
+The [final review](runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json)
+binds seven current documents. The exact metadata
+[closeout export](evidence/cho51-canonical-boundary-closeout-export-20261025/README.md)
+preserves all historical failures,unadmitted source-refusal history and old
+document snapshots; old hashes bind their archived copies,not advanced heads.
+All launchers/grants/attempts are inert. Next is separately reviewed P3 adapter
+design only,with fresh scope,pins,resources and coordination before validation.
+No original target01 retry,other method chain,study execution,scientific freeze
+signature or new autonomous window is admitted; targets02–52/source52 and narrow
+Gate A remain unchanged. Earlier sections retain dated meanings.
+<!-- cho51-canonical-boundary-20261025-qualified:end -->
+
+
+<!-- cho51-canonical-boundary-20261025-batch-c:begin -->
+## Three complementary batches accepted; aggregate pending,25 October2026
+
+The [independent C audit](runs/coordination/cho51_canonical_boundary_20261025_v5_c/actual-review.json)
+accepts53 selected metadata cases/34 controls,full133 collection/80 deselections,
+and159 passing phase reports with exact JUnit agreement. Native normal0 took
+523.660386s;external normal0 took109.6719977s,reaped/drained. Full019 custody
+released20:19:39UTC (leaseSHA`f11c79f0`). A/B/C ordered full collections match;
+selections are pairwise disjoint with union133. This is not final acceptance:
+the separately coordinated zero-Job stdlib aggregate remains unadmitted.
+Its36-ref proofs and supplemental native supervisor are under independent
+source/input review. Frozen family maps,all resource guards and scientific holds
+remain unchanged; no numerical or future-runtime authority is granted.
+<!-- cho51-canonical-boundary-20261025-batch-c:end -->
+
+
+<!-- cho51-canonical-boundary-20261025-batch-b:begin -->
+## A/B accepted;80 complementary cases covered,25 October2026
+
+The [independent B audit](runs/coordination/cho51_canonical_boundary_20261025_v5_b/actual-review.json)
+accepts44 selected metadata cases/34 controls,full133 collection/89 deselections,
+and132 passing phase reports with exact JUnit agreement. Native normal0 took
+405.132166s;external normal0 took115.1406791s,reaped/drained. Full018 custody
+released20:00:33UTC (leaseSHA`5471f375`). Actual A/B full collections are identical;
+selected sets have overlap0/union80,not full133 acceptance. C's distinct request
+follows B's sealed audit; C and the separate aggregate still need fresh grants.
+All family sources/shared maps,resource limits and scientific holds are unchanged.
+<!-- cho51-canonical-boundary-20261025-batch-b:end -->
+
+<!-- cho51-canonical-boundary-20261025-batch-a:begin -->
+## Complementary batch A accepted; B/C still pending,25 October2026
+
+The [independent A audit](runs/coordination/cho51_canonical_boundary_20261025_v5_a/actual-review.json)
+accepts36 selected metadata cases/34 controls,with genuine full133 collection
+and97 complementary deselections. Native normal0 completed in402.125054s;
+external stdlib normal0 in108.6098296s,owned tree reaped/streams drained.
+Full017 custody released19:39:29UTC (leaseSHA`367ea7c3`). Observed zero8,
+forbidden calls`{}` and unexpected denials`[]` are complete for this batch;
+library bootstrap resource reads remain separately labeled. Exact41-copy
+[A archive](evidence/cho51-canonical-boundary-20261025-v5_a/summary.json) is verified.
+All22 family sources/shared18,909-file maps remain frozen. B's distinct request
+is queued after A's actual audit; B/C/aggregate have no admission yet. This is
+not full133 coverage,numerical execution,future-runtime or scientific acceptance.
+<!-- cho51-canonical-boundary-20261025-batch-a:end -->
+
+<!-- cho51-canonical-boundary-20261025-split-validation:begin -->
+## Metadata suite exceeded cap; complementary batches planned,25 October2026
+
+The v4 Job hit its unchanged600-second deadline with no complete result/JUnit
+or observed runtime ledger. Its114 progress dots are not accepted test receipts;
+no133/34 pass exists. Native owned termination/closed-empty/handles and caps
+were confirmed. Reviewed stdlib cleanup ran0 in57.5942093s,reaped/drained its
+tree and verified all pins/fresh named absence. Full016 custody released
+18:35:17UTC (leaseSHA`d40723de`) before18:38. Usedv4 remains frozen.
+The [split validation design](docs/phase2/cho51_canonical_boundary_split_validation_20261025.md)
+partitions unchanged133 cases into36/44/53,with genuine full collection and34
+controls per batch. Each needs its own exact grant/admission/once-only Job and
+all unchanged limits; a separately coordinated aggregate must prove full union,
+zero overlap and all closures before acceptance. Source-only preparation is not
+a retry,larger cap,passing evidence or numerical/scientific admission.
+<!-- cho51-canonical-boundary-20261025-split-validation:end -->
+
+<!-- cho51-canonical-boundary-20261025-windows-command-successor:begin -->
+## Metadata fixture refused; full015 custody closed,25 October2026
+
+V3's one native Job exited1 after the first fixture's genuine Git query was
+refused because Windows returned pinned`git.EXE` rather than string`git.exe`.
+Pytest's best-effort current symlink was also correctly prevented but recorded
+as unexpected. JUnit has1 setup error; no133-case pass exists. Reviewed stdlib
+cleanup executed0 in53.3542346s<300,reaped/drained its owned tree and verified
+all pins plus fresh named absence/closed-empty/handles. Full015 custody released
+17:50:33UTC (leaseSHA`bd0b31af`). Usedv3 and all earlier evidence stay frozen.
+The [new Windows operations successor](docs/phase2/cho51_canonical_boundary_windows_command_successor_20261025.md)
+prepares exact executable spelling and separately counted,still-refused pytest
+housekeeping. Candidate3 remains exact. V4 needs fresh review,pins,distinct grant
+and admission;4/4/20 and every other limit/zero numerical/scientific hold remain.
+<!-- cho51-canonical-boundary-20261025-windows-command-successor:end -->
+
+<!-- cho51-canonical-boundary-20261025-available-ram-successor:begin -->
+## Metadata startup refused; new available-RAM successor,25 October2026
+
+Grant014's attempt was consumed,but the guard refused at17:05:06UTC after RAM
+fell from Root8.43/8.44GiB to6.38GiB. No Job/child/admission/deadline/t1 existed;
+all native creation flags remain false. Reviewed stdlib refusal cleanup ran0
+in55.4155619s<300,reaped/drained its owned tree,and verified fresh named absence.
+Full014 custody was released17:16:56UTC (leaseSHA`5f5e945d`). No133-case pass exists.
+The owner answered the explicit8-vs4 question **"use what you have . i have freed
+the ram you have more now!"**. Root transparently takes the available-RAM option
+as a new metadata-phase startup4/active4 floor,not a fabricated literal4GiB answer
+or old waiver reuse. The [new bounded successor](docs/phase2/cho51_canonical_boundary_available_ram_successor_20261025.md)
+records exact question/answer/interpretation. Candidate3 and usedv1/v2 sources
+stay frozen. V3 needs fresh independent review,pins,distinct grant and admission;
+all other caps/pauses/zero numerical/scientific holds remain unchanged.
+<!-- cho51-canonical-boundary-20261025-available-ram-successor:end -->
+
+<!-- cho51-canonical-boundary-20261025-logging-successor:begin -->
+## First metadata Job refused; custody closed,25 October2026
+
+Grant013 was consumed once. Native Job`20261025T163106Z_e0e0f64c37` exited1
+normally at16:32:22UTC because pytest's default`\\.\nul` logging write was
+correctly refused outside owned output during configuration. No133-case pass
+exists. All used sources/pins/outputs remain frozen. Reviewed stdlib-only failure
+cleanup executed0 in53.0704405s<300,reaped/drained its owned tree,verified native
+empty/closed/handles closed/fresh absence,and did not promote failed validation.
+Full013 custody was explicitly released16:43:07UTC (lease SHA`d9373103`).
+The [separate operations successor](docs/phase2/cho51_canonical_boundary_operations_successor_20261025.md)
+routes pytest logging to owned`t1/pytest.log`,without a device exception or guard
+weakening. Candidate3 stays exact; v2 needs fresh review/pins/distinct grant.
+Source-only preparation continues;8/4/20 and all other guards/scientific holds stay.
+<!-- cho51-canonical-boundary-20261025-logging-successor:end -->
+
+<!-- cho51-canonical-boundary-20261025-validation-resumption:begin -->
+## Metadata validation resuming after owner frees RAM,25 October2026
+
+The owner directly answered **"i hvae freed some ram use it."**. Fresh native
+16:24:11UTC resources show9.978GiB available/72.446GiB free disk. Startup8/active4/
+disk20 and every other guard remain unchanged; no floor is lowered. The old
+below-floor hold and exact source-checkpoint snapshots retain their dated meaning.
+Root refreshes physical pins and requests one distinct133-case/21-control
+metadata-only grant for pinsb4f12a1b after Pro2 explicitly releases its reserved
+diagnostic custody. No peer release, admission, Job or science is inferred from
+the owner resource reply. Root+one<=2/Pro2<=3/shared5 and all five pauses hold.
+<!-- cho51-canonical-boundary-20261025-validation-resumption:end -->
+
+<!-- cho51-canonical-boundary-20261025-source-checkpoint:begin -->
+## Metadata boundary implemented; validation pending,25 October2026
+
+The [source checkpoint](docs/phase2/cho51_canonical_boundary_source_checkpoint_20261025.md)
+records nine independently reviewed sources,133 source-enumerated candidate
+cases plus21 stdlib controls,and fresh18872-file/27-runtime byte pins. No Python,
+collection,test or Job has run; no new grant/admission/attempt exists. Startup8GiB
+is required by the owner's new-phase answer; the latest6.797GiB reading holds
+admission. Active4GiB and all other guards remain unchanged. Retain Pro2's next
+diagnostic reservation and establish a fresh exact window before validation.
+This is read-only compatibility,not executable canonical integration or science.
+Earlier preparation blocks and prior accepted evidence retain dated meanings.
+<!-- cho51-canonical-boundary-20261025-source-checkpoint:end -->
+
+<!-- cho51-canonical-boundary-20261025-implementation:begin -->
+## Metadata boundary implementation in preparation,25 October 2026
+
+The owner requested P1/P2 implementation and guarded validation from the
+[reviewed plan](docs/phase2/cho51_canonical_boundary_plan_20261025.md).
+The [new scope record](docs/phase2/cho51_canonical_boundary_implementation_20261025.md)
+limits this work to a separately versioned read-only metadata boundary:
+`docs/phase2/cho51_canonical_boundary_v1`. It checks genuine canonical pins/types,
+independently reconstructs original1040/adopted1020 and52catalog/asset metadata,
+and preserves separate producer/executor/recorder roles. Compatibility is not
+execution admission or fresh raw/weight/runtime qualification. No production
+call-through, numerical episode, claim, measured cell or recovery is admitted.
+
+Root owns six new operations sources at
+`runs/coordination/cho51_canonical_boundary_20261025_v1`, controls/docs and
+coordination; one serialized implementation/review child owns its assigned
+package or read-only review. Pro2 freshly confirmed compatible Source-only
+allocation, Root+one<=2/Pro2<=3/shared5, and retains its next diagnostic slot.
+Independent review is in progress; sources/pins are not settled and no new
+test/Job/grant has launched. Source-enumerated tests are not passing evidence.
+
+For this new metadata-only phase the owner answered exactly
+**"work with the 8 GiB"**. Startup8GiB is recorded, not4GiB or a reused old
+amendment. Active4GiB/disk20GiB,600s,4096+5120MiB process/Job, CPU/Torch1/1,
+hidden GPUs, two startup samples and all five genuine pauses stay unchanged.
+Below8GiB prohibits admission. Fresh settled review, physical runtime/source
+pins, exact distinct peer grant and unused attempt are mandatory before tests.
+Genuine canonical imports require NumPy/Torch; guarded dependency bootstrap
+and metadata assessment effects are explicit, never numerical execution claims.
+
+All accepted sources/receipts/raw data/weights and historical snapshots remain
+frozen. Current heads advance; old review hashes refer to their exact archived
+copies. The metadata-only phase signs no scientific decision, admits no
+target01 retry, other method chain or full1,020-cell study, and creates no new
+autonomous window. Original target01 attempts0, adopted targets02–52/source52,
+narrow Gate A and unsigned final freeze remain unchanged.
+<!-- cho51-canonical-boundary-20261025-implementation:end -->
+
+
+<!-- cho51-canonical-boundary-20261025-plan:begin -->
+## Canonical-facing boundary audit and proposed plan,25 October 2026
+
+The owner authorized an interface audit and bounded implementation plan only.
+The [static call-map audit](docs/phase2/cho51_canonical_pipeline_interface_audit_20261025.md)
+finds that canonical production execution performs source selection and its
+staging/parent path publishes measured cells. Its single-root restore/selector/
+publication checks also cannot represent historical producer4491 and current
+executorc177 as independent roles. Those are deliberate boundaries, not safe
+places to install noop publication or spoof provenance. Canonical engineering
+measured records do not themselves mean scientific authorization; current
+measured0/sourcefit0 scope nevertheless excludes these execution entry points.
+
+The [proposed first implementation](docs/phase2/cho51_canonical_boundary_plan_20261025.md)
+is a separately versioned metadata-only preflight/schema boundary, not a
+production call-through wrapper. It would check canonical pins/config/typed
+route metadata and explicit provenance roles while reporting execution,
+publication, raw/weight verification and unchanged-canonical qualification as
+not admitted/not performed. No candidate or launcher exists for this proposal.
+Public route builders read NPZs and the manifest-file verifier streams weights;
+they must not be mislabeled metadata-only preflight operations.
+
+This phase performs source/metadata review and document checks only: no Python
+imports, tests, arrays/weights, model, numerical episode, Job, claim or measured
+cell. Root owns the new docs/current handoff; one serialized child handles
+mapping/review. Pro2 freshly confirmed Source-only allocation Root+one<=2,
+Pro2<=3/shared5; no new compute grant. Existing five pause paths remain effective.
+No old4GiB startup amendment or consumed011/012 grant automatically carries to
+a new validation phase; establish fresh scope/pins/admission/resources first.
+
+The previous accepted actual590.082323s/600s pass leaves only9.917677s observed
+margin, not proven performance headroom. New instrumentation/diagnostics require
+a separate reviewed successor and fresh admission; no mandatory audit/hash/
+live-lock/verifier obligation is weakened here. Full study, other method chains,
+cohort/overlap lineage and final scientific freeze remain pending. Original
+target01 attempts0, adopted targets02–52/source52 and narrow Gate A are unchanged.
+
+Accepted sources/receipts/raw data/weights and prior exact exports stay frozen.
+The previous final review0773288c authenticates its seven archived snapshots,
+not these newly advanced current heads. No runtime qualification follows from
+this audit/plan; earlier checkpoints retain their dated meaning.
+<!-- cho51-canonical-boundary-20261025-plan:end -->
+
+
+<!-- cho51-provenance-numerical-20261025-status:begin -->
+## Provenance-aware parent/worker integration, 25 October 2026
+
+The [integration qualification](docs/phase2/cho51_provenance_numerical_worker_qualification_20261025.md)
+records candidatev2 plus operationsv7:63 freshly passing zero-numerical unit
+cases,27 stdlib guard regressions and one genuine synthetic engineering episode.
+One real identity lock spans the reusable parent, one backend, accepted factory,
+two full read-only verifiers, durable attestation and one engineering terminal.
+Aggregate restoration1/support-gradient update1/query invocation1/two query
+trials/full model constructor1; source fitting and measured scientific cells0.
+Factory-local support/query counts remain0. Predictions[1,0] versus targets[0,1]
+are honestly0/2 correct; predictive performance is not qualified.
+
+Distinct011 unit and012 integration grants were consumed once and closed.
+Unit native normal0 took531.109877s; actual normal0 took590.082323s, completing
+14:28:33.636432UTC. Both Jobs closed empty/handles closed/freshly absent, within
+600s and4096/5120MiB caps. Mandatory external actual stdlib closeout passed and
+was reaped14:29:42UTC; full compute custody was explicitly released14:30:05UTC.
+Only duplicate post-terminal parent sweeps moved outside the Job. Both genuine
+backend input audits and both full origin verifiers stayed inside; external
+full-origin/213-input verification independently fulfilled that deferred policy
+and joined both actual observations. Child pending-native flags remain unchanged.
+
+Current pins are `fbb97f49`, source review `7d1bf8d4`, unit review `41b1a3d9`
+and actual closeout `c41a5cc1`. Historical producer4491e2a remains distinct from
+current executor/recorderc177d00/dirtytrue; canonical432 digest3114ec4 and all213
+original inputs/734,579,463bytes remain exact. The
+[unit packet](evidence/cho51-provenance-numerical-worker-tests-20261025-v7/README.md)
+has32 artifacts; the [actual packet](evidence/cho51-provenance-numerical-worker-20261025-v7/README.md)
+has100 metadata artifacts/6,742,678payload bytes/104files. No arrays, weights or
+environment dump is exported. Final independent review binds seven exact
+documents; authenticate historical document bindings against snapshot copies,
+not these later resume heads. Every used source, failed receipt and old packet
+is preserved, including v5/v6's unaccepted hard600 partial physical terminals.
+
+The owner's exact available-RAM amendment is bounded to this engineering phase:
+startup/active4/4GiB, disk20GiB, CPU/Torch1/1, hidden GPUs and all five pause paths.
+No old launcher, release estimate, absent pause, passing receipt or archive
+admits replay, a second Job or another device/runtime. Fresh coordination,
+source/runtime pins and admission are mandatory for future work.
+
+This qualifies only the separately versioned linear engineering composition.
+Canonical measured-cell parent/single-root factories, other method chains,
+full1,020-cell execution, cohort/overlap lineage and final owner freeze remain
+pending. Future targets02–52/source catalogs52, exhausted original target01
+attempts and narrow Gate A acceptance remain unchanged. No scientific decision
+or new autonomous window is signed. Earlier sections retain dated meanings.
+<!-- cho51-provenance-numerical-20261025-status:end -->
+
+
+<!-- cho51-provenance-numerical-20261025-v7-preparation:begin -->
+## External-audit successor in preparation, 25 October12:12UTC
+
+Update14:12UTC: operationsv7's freshly admitted unit phase is independently
+accepted:63 unique cases, zero failures/errors/skips and27 stdlib regressions.
+Native normal0 completed13:59:16.561934UTC in531.109877s; external stdlib closeout
+completed and full011 custody released14:02:48UTC. Independent physical/semantic
+review and fresh43-Job absence probes pass with zero findings. Unit policy is
+not_applicable_tests, with no deferral or actual input observations. Pins remain
+`fbb97f49`; exact unit review is `41b1a3d9`. A distinct integration request now
+waits for Pro2's next slot and a fresh grant. No actualv7 episode is admitted or
+accepted; no availability or peer release is inferred.
+
+V6's63-case unit phase passed independent closeout/review, but its actual
+integration failed at hard600seconds on12:07:11.927978UTC. Physical canonical
+intent/success and other proofs stay quarantined; no accepted result/qualification,
+aggregate counts remain null/unknown. All native handles closed/fresh absence2,
+owned children0 and full compute custody released;010 is consumed/closed.
+
+Root owns the [new external-audit plan](docs/phase2/cho51_provenance_numerical_worker_external_audit_plan_20261025.md)
+and docs/control metadata; operations owns only eight newv7 sources. Candidatev2
+and all usedv1–v6 sources/receipts remain frozen. Only duplicate post-terminal
+parent audits may move to the mandatory full-origin/213-input external closeout;
+actual backend before/after audits, both full verifiers, live-lock/fixture/contract
+checks, Runtime.finish/loaded modules and hard600/caps remain. No hash caching or
+scientific authority follows. V7 needs fresh review/pins/regressions/63 zero-work
+unit cases, independent closeout/release/review and then a distinct integration
+grant binding its three unit proofs. At this section's opening no v7 Python,
+test, model or Job had launched; the later source-only preparation is noted above.
+The same scope-bound4/4/20GiB allowance and every peer/pause/resource guard hold;
+Root plus one/shared five remains the limit. Earlier blocks retain dated meaning.
+<!-- cho51-provenance-numerical-20261025-v7-preparation:end -->
+
+
+<!-- cho51-provenance-numerical-20261025-v6-preparation:begin -->
+## Audit-classification successor in preparation, 25 October 2026
+
+Root owns the [new audit-acceleration plan](docs/phase2/cho51_provenance_numerical_worker_audit_acceleration_plan_20261025.md)
+and control-plane/docs; operations owns only eight new sources at
+`runs/coordination/cho51_provenance_numerical_worker_20261025_v6`.
+Candidatev2 and all used v1–v5 sources/receipts remain byte-frozen. V5's unit
+phase stays independently accepted; its actual hard600 deadline remains failed,
+including quarantined physical intent/success, with null/unknown aggregate counts.
+
+V6 may cache only canonical code/path classification under current physical
+identity checks, never SHA results, provenance, live-lock/frame authorization
+or budgets. All complete source/input/unit-join/verifier checks and600s/resource
+limits remain unchanged. Fresh independent source review/pins,63 fresh zero-work
+unit cases and their independent closeout/review/release precede a separately
+admitted integration. Distinct max-one peer grants are mandatory for both slots.
+No v6 Python/test/model/Job has launched. The same owner's bounded startup4GiB
+amendment retains active4GiB/disk20GiB and every other guard; no scientific or
+autonomous admission follows. Root plus one/shared five remains the agent limit.
+<!-- cho51-provenance-numerical-20261025-v6-preparation:end -->
+
+
+<!-- cho51-provenance-numerical-20261025-v5-deadline:begin -->
+## Integration deadline checkpoint, 25 October11:00UTC
+
+The separately admitted v5 unit phase passed63 cases, native/external closeout
+and independent evidence review. Its distinct integration Job then failed at
+the enforced600-second deadline, not accepted normal0. Partial numerical proofs
+and an outer attestation do not qualify the episode; post-entry counters remain
+null/incomplete_unknown. The native Job closed empty with handles closed and
+fresh absence; Root/launcher were reaped and full compute custody released.
+Grant008 is consumed/closed, without retry or successful external closeout.
+All used sources and outputs remain frozen. Source-only performance review
+precedes any separately versioned/reviewed/pinned/admitted successor, retaining
+the same600s/resource/pause/peer rules. See the
+[successor record](docs/phase2/cho51_provenance_numerical_worker_operations_successor_20261025.md).
+No integrated episode or scientific execution is accepted. Earlier checkpoints
+below retain their historical meaning.
+<!-- cho51-provenance-numerical-20261025-v5-deadline:end -->
+
+
+<!-- cho51-provenance-numerical-20261025-successors:begin -->
+## Integration successors in preparation, 25 October 2026
+
+Current separately versioned work is candidate
+`docs/phase2/cho51_provenance_numerical_worker_v2` and operations
+`runs/coordination/cho51_provenance_numerical_worker_20261025_v5`.
+The [successor record](docs/phase2/cho51_provenance_numerical_worker_operations_successor_20261025.md)
+preserves v1's pre-test ancestor-mode refusal and v2's first fabricated-metadata
+fixture failure, plus v3's63 passing cases followed by a Git audit-hook refusal
+before any restoration/NPZ/model. V4 then passed genuine Git capture but hit a
+Windows MAX_PATH metadata hard-link refusal; fixed v5 outputs are `t1`/`i1`,
+without changing the canonical writer or registry. All four Jobs closed; grants003/004/005/006 are
+consumed and all compute custody was released. V3's post-backend-entry ledger
+stays null/incomplete_unknown, not a successful observer. No integrated episode
+is qualified. The [explicit split plan](docs/phase2/cho51_provenance_numerical_worker_split_validation_plan_20261025.md)
+requires a new accepted zero-numerical test Job and then a distinct fresh
+integration Job binding that exact independently closed/reviewed test receipt.
+Each retains600seconds and every other limit. Preserve all used sources;
+fresh source review, pins and phase-specific admission/grant precede either slot.
+The same owner-adopted startup4GiB/active4GiB allowance and every other bounded
+engineering-only rule remain unchanged; no scientific execution is admitted.
+<!-- cho51-provenance-numerical-20261025-successors:end -->
+
+<!-- cho51-provenance-numerical-20261025-preparation:begin -->
+## Parent/worker/factory integration in preparation, 25 October 2026
+
+The owner authorized the [bounded engineering integration](docs/phase2/cho51_provenance_numerical_worker_plan_20261025.md).
+New candidate ownership is
+`docs/phase2/cho51_provenance_numerical_worker_v1`; fresh operations are
+`runs/coordination/cho51_provenance_numerical_worker_20261025_v1`.
+Accepted factory, prior numerical worker, canonical432, receipts and used
+launchers remain frozen. Source-only architecture review identified the live
+lock-capability and restoration-witness bridges; static readiness is not an
+executed qualification.
+
+The intended single engineering parent dispatch uses the adopted typed route,
+one real lock/claim, a separate bound factory subrequest and outer request,
+restore1, support/gradient1, query invocation1 over two preserved synthetic
+trials, backend once, verifier twice and one engineering terminal. Source
+fitting and measured cells stay0. Local factory support/query0 remain distinct
+from aggregate support/query1; no accuracy threshold or scientific execution
+is admitted. Read-only externally pinned recovery may replay an existing outer
+intent only, never the backend or factory.
+
+The previous4GiB allowance was factory-only. After Root retained10GiB and asked
+freshly, the owner explicitly directed "use the available ram now!" for this
+new phase. The new startup-only4GiB amendment retains active4GiB, disk20GiB,
+600seconds,4096/5120MiB process/Job, threads1/1, hidden GPUs and all five genuine
+pause paths. It is no general release or historical10GiB pass. Pro2 confirmed
+source/metadata work only, max3 agents including Root, with Pro3 max2/shared5;
+that is not an execution grant. Prior grant002 remains consumed/closed.
+New settled-source review, native runtime pins, exact peer release and immediate
+resource preflights precede any test/model/Job. None has launched in this new
+phase. Earlier qualified checkpoints below retain their historical meaning.
+<!-- cho51-provenance-numerical-20261025-preparation:end -->
+
+<!-- cho51-provenance-restore-20261025-status:begin -->
+## Fresh provenance-aware restoration executed, 25 October 2026
+
+The [factory qualification](docs/phase2/cho51_provenance_restore_qualification_20261025.md)
+records **65 passing focused tests**, one genuine canonical selected-source
+restoration and adapter delivery under a real identity lock, backend once,
+read-only verifier twice and one engineering success. Current source/support/
+gradient updates, query calls, array decodes and measured cells are all zero.
+This is the separately versioned linear engineering factory, not study accuracy.
+
+Historical producer4491e2a and actual current executor/recorderc177d00 remain
+distinct; no Git identity or provenance capture was substituted. All432
+canonical sources remain exact. Fresh native pins account for21 runtime-byte
+changes since17 October; equal version strings were not treated as equal bytes.
+The actual recorder fixture was freshly captured under the current Git context.
+
+Native Job20261025T073014Z_e44f1ff4e4 accepted exit0/normal at07:36:22UTC in
+367.755seconds, closed empty with handles closed and freshly absent. Independent
+stdlib-only external closeout passed/reaped07:38:27UTC, rechecking213 original
+inputs,2,632 ancestor artifacts and34 scoped native Job names. One explicit fresh
+Pro2 grant was consumed once; full compute custody is released, with no retry
+or outstanding owned children. V1's timezone preflight refusal and cancelled
+unused grant remain preserved; no v1 test/model/Job executed.
+
+The owner-adopted startup-only4GiB allowance remains confined to this milestone.
+Active4GiB, disk20GiB,600seconds,4096/5120MiB process/Job, threads1/1, hidden GPUs
+and all five genuine pause paths remained enforced. Canonical guards and
+historical10GiB receipts are unchanged; this is no general compute release.
+
+Final closure requires the passed independent review binding this report and
+all six resume heads. The [44-artifact execution packet](evidence/cho51-provenance-restore-20261025-v2/README.md)
+and [final closeout export](evidence/cho51-provenance-restore-closeout-export-20261025/README.md)
+preserve exact proofs, source copies and seven document snapshots. They contain
+no arrays/weights/environment and grant no future admission or launcher replay.
+
+Next is separately admitted parent/worker composition for measured execution,
+not the full study. Unchanged canonical single-root factories, remaining method
+chains,1,020-cell execution, checkpoint-cohort/overlap lineage and final owner
+freeze remain pending. Original target01 attempts remain exhausted; future
+targets stay02–52 with52 source catalogs. Narrow Gate A acceptance and adopted
+51-target scope remain intact. No scientific admission or autonomous window is
+inferred. Earlier sections below retain their dated historical meaning.
+<!-- cho51-provenance-restore-20261025-status:end -->
+
+<!-- cho51-provenance-restore-20261025-preparation:begin -->
+## Provenance-aware restoration factory in preparation, 25 October 2026
+
+Current operations are the [fresh v2 successor](docs/phase2/cho51_provenance_restore_operations_successor_20261025.md).
+V1 completed metadata-only pin preparation but native Root preflight exposed a
+PowerShell UTC parsing defect before any admission/dispatch/Job/test/model.
+Its sources, pins and unused peer grant remain preserved and will not be
+consumed. V2 needs fresh review/pins/runtime observation and a distinct release;
+the four-file factory API remains version1. No G04 numerical qualification yet.
+
+The owner requested implementation and validation of G04. The
+[fresh bounded plan](docs/phase2/cho51_provenance_restore_plan_20261025.md)
+assigns a separately versioned factory and explicit-producer metadata verifier
+to `docs/phase2/cho51_provenance_restore_v1`, with fresh operations in
+`runs/coordination/cho51_provenance_restore_20261025_v1`. Historical accepted
+sources, receipts, launchers, inputs and weights remain frozen.
+
+The planned transaction strictly restores the selected source and delivers its
+canonical adapter under a real identity lock, with zero source/support/query
+work and zero measured cells. Historical producer provenance and current
+executor/source/runtime/request identities remain distinct. This preparation
+does not qualify the new factory or admit scientific execution.
+
+Native review found all432 canonical files and112 checked packet artifacts
+matching their recorded hashes. The current base Python executable and two
+DLLs differ from17 October runtime pins despite equal version strings; fresh
+pins and qualification are required. At06:17:23UTC available RAM was6.388GiB,
+below the unchanged10GiB startup floor. No validation Job, test or model has
+launched. Fresh peer coordination is pending; no old release is consumed.
+Subsequently, the owner explicitly directed working with the available4GiB.
+The phase plan adopts startup4GiB for this bounded factory scope only, preserving
+active4GiB and all other bounds. A new versioned guard and fresh independent
+review/pins/release are required. The initial observation and canonical guard
+retain their historical10GiB meaning; no general execution authority follows.
+The original exhausted case, adopted51-target scope and pending final freeze
+retain their existing meaning. Earlier sections below are accepted historical
+checkpoints.
+<!-- cho51-provenance-restore-20261025-preparation:end -->
+
 <!-- cho51-publication-20261017-status:begin -->
 ## Publication checkpoint, 17 October 2026
 

@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_provenance_restore_coordination_request_v1",
+  "sent_utc": "2026-10-25T06:23:53Z",
+  "peer_thread_id": "01a171ad-1bad-7212-a419-d195a4a30955",
+  "owner_authorized_peer_messaging": true,
+  "request": "acknowledge current ownership and pause/release protocol; do not start a compute window before settled-source request",
+  "phase_plan": "docs/phase2/cho51_provenance_restore_plan_20261025.md",
+  "maximum_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "startup_ram_gib": 10,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "threads": 1,
+  "gpu_hidden": true,
+  "planned_selected_restores": 1,
+  "planned_source_support_query_updates": 0,
+  "planned_measured_cells": 0,
+  "scientific_admission": false,
+  "peer_release_established": false,
+  "compute_window_started": false,
+  "validation_job_launched": false
+}

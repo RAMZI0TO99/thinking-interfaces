@@ -1,0 +1,61 @@
+{
+  "schema": "cho51_p3_contracts_preparation_source_review_v1",
+  "scope": "cho51_p3_contracts_native_preparation_001",
+  "reviewer": "Pro3 Root independent review; different from subagent /root/p3_independent_review who authored all three preparation sources",
+  "reviewed_utc": "2026-10-27T15:00:58.2546214+00:00",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "original_source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "files": {
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-supervise_001.ps1": "c372e0bbe7ac1adf4fb796eda2570ed917a345fa491c0c9f1b8a1bc462827f7e",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-protocol_001.md": "74af132c35e946f679a76704833ff8c7d6a0566d1bf8df72885b74d62c2ac543",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/prepare_002.ps1": "f82f28e06bec570f4a30a9b3776c98f25b4d4eb581b8deb7d68d2b16edaa7883"
+  },
+  "file_bytes": {
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-supervise_001.ps1": 27096,
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-protocol_001.md": 14100,
+    "runs/coordination/cho51_p3_contracts_20261027_v1/prepare_002.ps1": 13574
+  },
+  "source_parser": [
+    {
+      "file": "preparation-supervise_001.ps1",
+      "errors": 0
+    },
+    {
+      "file": "prepare_002.ps1",
+      "errors": 0
+    }
+  ],
+  "original14_source_mismatches": [],
+  "static_review_basis": [
+    "Full wrapper/protocol source read, focused final corrections recheck and original prepare.ps1 versus new prepare_002.ps1 source diff; no target/helper execution.",
+    "New prepare_002 preserves original canonical432/current runtime27/per-read native pin inventory/25k files/4GiB aggregate/2GiB each/source caps; substitutions are new Source009/adoption/observation002 and three-source supplemental review/pins. Original prepare and14-source map remain unchanged.",
+    "Exact Root/peer/source-review/amendment/window request joins before helper loading, Source009 original caps3/2/5/end16:30-60, once marker before resource entry, two startup4/active4/disk20 samples and all five genuine pauses.",
+    "Retained readonly bootstrap byte streams followed by same-handle normalized path/ancestor/link native repinning; runtime data bodies streamed rather than retained as1GiB arrays. Zero-length runtime files allowed; metadata/source remains nonempty.",
+    "One hidden owned PowerShell prepare_002 child; no Python/test/Job command. Exact PID/parent/creation/lifetime owned-tree checks and cleanup use reviewed native helper unchangedf885.",
+    "UTC and monotonic225s work stop/270cleanup/285final evidence reserve/300actual full caller plus release; actual source checks do not equate internal end stamp with caller completion.",
+    "Bounded1MiB stdout/stderr drains,128 temporary files/32MiB, per-input metadata bounds and global100000 JSON-value nodes/depth32/container30000, strict duplicate/Int64/UTC checks."
+  ],
+  "corrected_source_findings": [
+    "The initial unexecuted prepare_002 authoring replacement expansion was identified and regenerated literally; final PS AST and focused original/successor diff are clean.",
+    "Original Source008-bound preparation remains inert; separately versioned prepare_002 and supplemental three-source graph bind genuinely new Source009, not a silently extended observation/period.",
+    "Runtime roster supports actual observational inventory up to2500 files/1GiB without retaining all bodies; exact complete roster still requires independent observation/request acceptance.",
+    "Added aggregate per-parse JSON node limit and documented controls1MiB/overall8MiB/depth32/container30000; final root source recheck clean."
+  ],
+  "limits": {
+    "native_preparation_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "powershell_runtime_compatibility_established": false,
+    "python_executed": false,
+    "candidate_tests_executed": false,
+    "source_review_confers_native_or_compute_admission": false,
+    "actual_caller_return_and_release_separate": true,
+    "synchronous_compilation_and_os_io_hard_bound_not_proven_by_static_review": true,
+    "ambient_os_runtime_qualification_claimed": false,
+    "scientific_admission": false,
+    "real_cases_accepted": 0
+  },
+  "disposition": "Accepted only for exact separately reviewed preparation request and genuine peer/Root admission. Bootstrap observation acceptance/runtime roster review and actual resource/pause/custody conditions remain mandatory; no dispatch from this source review."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "cho51_canonical_boundary_aggregate_root_preflight_v1",
+  "observed_utc": "2026-10-25T21:09:46.0384463+00:00",
+  "passed": true,
+  "source_only": true,
+  "proofs_sha256": "04bd68ea3358742aaa0dc6bd4166e8f94dd5c086a11b04a3e768725f86cc0577",
+  "proofs_checked": 36,
+  "metadata_proof_bytes": 12007052,
+  "retained_direct_same_handle_reopened_paths_and_ancestors_verified": true,
+  "selected_runtime_files_checked": 3,
+  "current_full_runtime_physical_reverification_performed": false,
+  "startup_samples": [
+    {
+      "ordinal": 1,
+      "observed_utc": "2026-10-25T21:09:45.7625200+00:00",
+      "available_ram_bytes": 10241826816,
+      "free_disk_bytes": 77226602496
+    },
+    {
+      "ordinal": 2,
+      "observed_utc": "2026-10-25T21:09:46.0272874+00:00",
+      "available_ram_bytes": 10233692160,
+      "free_disk_bytes": 77226602496
+    }
+  ],
+  "all_five_pauses_clear": true,
+  "unused_attempt": true,
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_020.json",
+  "peer_release_sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f",
+  "supervisor_sha256": "16d2d5f86c16b42de9a07b4933f8a46c7967ed0a5a048bb39440f97e458d0124",
+  "supervisor_review_sha256": "be3411357ae676671dbd15385e7cdac8a5ac06fb560dacd7f8fb3ff748173ea1",
+  "input_review_sha256": "14b69453543689260baf4cf4888f65bbca022b5a148dbc0738cd75e2bbfbf019",
+  "window_start_utc": "2026-10-25T21:08:31Z",
+  "window_end_utc": "2026-10-25T21:18:31Z",
+  "scientific_admission": false
+}

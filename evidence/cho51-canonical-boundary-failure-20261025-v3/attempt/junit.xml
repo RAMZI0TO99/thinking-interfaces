@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.581" timestamp="2026-10-25T20:44:24.809567+03:00" hostname="Ala-Yanai-PC"><testcase classname="docs.phase2.cho51_canonical_boundary_v1.test_boundary" name="test_genuine_current_source_and_complete_typed_routes" time="0.165"><error message="failed on setup with &quot;ValueError: genuine current project Git identity required&quot;">tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('D:/Aenv/pro3/runs/coordination/cho51_canonical_boundary_20261025_v3/t1/t'...:/Aenv/pro3/runs/coordination/cho51_canonical_boundary_20261025_v3/t1/t'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def fixture(tmp_path_factory):
+        directory = tmp_path_factory.mktemp("canonical-boundary")
+        if not directory.is_relative_to(ROOT):
+            raise ValueError("guarded pytest --basetemp must be a fresh directory inside the actual project")
+        configurations = {
+            name: {"path": relative, "sha256": digest((ROOT / relative).read_bytes())}
+            for name, relative in Boundary.CONFIG_PATHS.items()
+        }
+        protocol = tomllib.loads((ROOT / Boundary.CONFIG_PATHS["protocol"]).read_text("utf-8"))
+        threshold = tomllib.loads((ROOT / Boundary.CONFIG_PATHS["threshold"]).read_text("utf-8"))
+        preprocessing = config_digest({
+            "profile_identity": protocol["preparation"]["profile_identity"],
+            "threshold_config_sha256": configurations["threshold"]["sha256"],
+            "dataset": "cho2017",
+            "threshold": threshold["datasets"]["cho2017"]["artifact_threshold_volts"],
+        })
+        catalogs = tuple(TrialCatalog(
+            "cho2017", subject,
+            tuple(f"unverified-metadata-trial-{index}" for index in range(42)),
+            tuple("left_hand" if index &lt; 21 else "right_hand" for index in range(42)),
+            Boundary.CLASSES,
+            digest(("fabricated-unverified-profile-a:" + subject).encode()), preprocessing,
+        ) for subject in Boundary.SUBJECTS)
+        assets = MappingProxyType({subject: ChoProfileAssets60Hz(
+            digest(("fabricated-unverified-profile-b:" + subject).encode()),
+            digest(("fabricated-unverified-manifest:" + subject).encode()),
+            configurations["variant"]["sha256"],
+        ) for subject in Boundary.SUBJECTS})
+        metadata = {
+            "schema": "cho51_canonical_route_metadata_v1",
+            "scope": "fabricated_catalog_asset_metadata_unverified",
+            "raw_input_bytes_verified": False,
+            "weight_bytes_verified": False,
+            "catalogs": [asdict(catalog) for catalog in catalogs],
+            "assets": {subject: asdict(asset) for subject, asset in assets.items()},
+        }
+        metadata_pin = save_json(directory / "route-metadata.json", metadata)
+        configurations["cohort"] = save_json(directory / "cohort-origin.json", {
+            "schema": "cho51_canonical_metadata_cohort_origin_v1",
+            "metadata_sha256": metadata_pin["sha256"],
+            "available_subjects": list(Boundary.SUBJECTS),
+            "raw_input_bytes_verified": False,
+        })
+        input_pins = ChoCaseInputPins(
+            configurations["protocol"]["sha256"], configurations["threshold"]["sha256"],
+            configurations["cohort"]["sha256"], configurations["variant"]["sha256"],
+        )
+        candidates = json.loads((ROOT / configurations["candidates"]["path"]).read_bytes())
+        method_pins = {row["method"]: config_digest(row) for row in candidates["methods"]}
+        source = asdict(capture_source(ROOT))
+        if source["git_commit"] == "unversioned-workspace" or type(source["git_dirty"]) is not bool:
+&gt;           raise ValueError("genuine current project Git identity required")
+E           ValueError: genuine current project Git identity required
+
+..\..\..\..\docs\phase2\cho51_canonical_boundary_v1\test_boundary.py:101: ValueError</error></testcase></testsuite></testsuites>

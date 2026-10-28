@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_provenance_numerical_worker_stdlib_supervision_v1",
+  "started_utc": "2026-10-25T12:26:23.0248225+00:00",
+  "ended_utc": "2026-10-25T12:28:28.9771319+00:00",
+  "owned_pid": 297860,
+  "limit_seconds": 300,
+  "timed_out": false,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "scope": "reviewed standard-library-only prepare",
+  "tests_executed": false,
+  "model_executed": false,
+  "scientific_admission": false
+}

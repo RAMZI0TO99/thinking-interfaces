@@ -1,0 +1,39 @@
+{
+  "schema": "cho51_p3_contracts_peer_source_observation_v1",
+  "observed_utc": "2026-10-27T14:48:50.2714021+00:00",
+  "observer": "Pro3 Root native metadata read/hash of directly communicated genuine new Source009, independent capsule and separate Root adoption; no peer record authored by Pro3.",
+  "peer_thread_id": "01a171ad-1bad-7212-a419-d195a4a30955",
+  "source_scope": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\ROOT_PRO3_NEW_FINITE_SOURCE_ONLY_COEXISTENCE_SCOPE_009_001.json",
+    "bytes": 7516,
+    "sha256": "b04507102cc00306e99ce9992cd0a526da03101e7d972e79eed6d20aab354739"
+  },
+  "source_metadata_review": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\Source009_different_review_001\\INDEPENDENT_SOURCE009_FINITE_COEXISTENCE_METADATA_CAPSULE_001.json",
+    "bytes": 4147,
+    "sha256": "64a71585a72e53ea84978c07bf5e53bd73915ae5acde05be95edb746678c4cef"
+  },
+  "source_adoption": {
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\ROOT_PRO3_SOURCE_ONLY_COEXISTENCE009_DIFFERENT_REVIEW_ADOPTION_001.json",
+    "bytes": 3543,
+    "sha256": "29dce6bd6b7767449b0bc28d8daeed1023581748d82be41d4eb82cabcf8804ab"
+  },
+  "interval_start": "2026-10-27T14:37:52.352515+00:00",
+  "interval_end": "2026-10-27T16:30:00+00:00",
+  "publication_reserve_seconds": 60,
+  "pro2_maximum_agents_including_root": 3,
+  "pro3_reserved_overlap_maximum": 2,
+  "shared_maximum": 5,
+  "direct_peer_ack_received": true,
+  "pro3_validation_release": false,
+  "native_pin_preparation_admitted": false,
+  "bootstrap_observation_admitted": false,
+  "compute_allocation": false,
+  "peer_scope_is_source_only": true,
+  "old_source008_extended": false,
+  "old_source006_reused": false,
+  "old_grants_reused": false,
+  "whole_host_quiet_claimed": false,
+  "scientific_admission": false,
+  "disposition": "New finite Source-only coexistence, not an extension of Source008 and not any native/compute/test/stdlib closeout admission. Exact new bootstrap/preparation/test requests require distinct genuine decisions and Root admission."
+}

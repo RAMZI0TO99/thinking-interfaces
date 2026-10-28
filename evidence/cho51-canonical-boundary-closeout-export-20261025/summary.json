@@ -1,0 +1,62 @@
+{
+  "schema": "cho51_canonical_boundary_closeout_export_summary_v2",
+  "created_utc": "2026-10-25T21:38:44.3650027+00:00",
+  "status": "native_copy_complete_independent_export_review_pending",
+  "artifact_rows": 497,
+  "payload_bytes": 46065760,
+  "generated_base_files": 8,
+  "expected_total_files": 505,
+  "native_copy_attempt": 2,
+  "preserved_first_copy_snapshot": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025-copy-failure-001",
+  "additional_custody_base_files": [
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-amendment_002.json",
+      "path": "copy-amendment.json",
+      "bytes": 3363,
+      "sha256": "0039f4fccb5612217983063545c450ed2bb1a80c5377ea389a7068613ac58891"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-amendment-review_002.json",
+      "path": "copy-amendment-review.json",
+      "bytes": 203805,
+      "sha256": "607195202f0b2aea5b257408a6cc92991d46935437c90dddd8338e0855617358"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-admission_002.json",
+      "path": "copy-admission.json",
+      "bytes": 3100,
+      "sha256": "725d5c280a9887cebbe4e9a8f9ef1976b36f10471b7c6d0cc373670918fa27e7"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-failure_001.json",
+      "path": "copy-failure.json",
+      "bytes": 5636,
+      "sha256": "840cb1df507fce66509f8ad85999c7dadd00b6e00e6b940fbb96c8bf3b6d1311"
+    }
+  ],
+  "maximum_total_files": 512,
+  "maximum_payload_bytes": 67108864,
+  "maximum_file_bytes": 8388608,
+  "historical_packet_files": 340,
+  "source_and_copy_hashes_verified": true,
+  "exact_inventory_verified_at_writer": true,
+  "independent_copy_review_pending": true,
+  "historical_metadata_cases": 133,
+  "phase_reports": 399,
+  "distinct_stdlib_controls": 34,
+  "stdlib_control_instances": 102,
+  "aggregate_metadata_proof_reads": 196,
+  "aggregate_metadata_proof_bytes": 25648747,
+  "aggregate_result_sha256": "e657df21c2bfc48b5aa907dce1a859f6c7fa3737798626bc421ad7d9ad1e60dc",
+  "aggregate_actual_review_sha256": "1a44c4af38dcf3a9ae5b3a7f54dbb176b3d5cf240990df79a14473bd438e535b",
+  "seven_document_final_review_sha256": "92a10fb1414910c82760481e9329cfc06f9d6f624d121bc1775b24e238f07def",
+  "manifest_sha256": "4f66a231434b47455bebedbaa64b3ec29fd79bfae2e6df94518a695743ccfb00",
+  "readme_sha256": "70834e599eeb58f12473ab8b760183e1fc649f490ab3af85345e47d42856d046",
+  "attributes_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+  "raw_weights_runtime_binaries_or_temporary_trees_included": false,
+  "python_invocations": 0,
+  "jobs_created": 0,
+  "scientific_admission": false,
+  "experiment_freeze_signed": false,
+  "future_runtime_qualified": false
+}

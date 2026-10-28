@@ -1,0 +1,153 @@
+{
+  "schema": "cho51_canonical_boundary_export_copy_failure_v1",
+  "observed_utc": "2026-10-25T21:34:11.3836475+00:00",
+  "validation_qualification_unchanged": true,
+  "selection_sha256": "87000e9c8b014f4f7c848d08b83194762266907428589662ce11f6623372034e",
+  "selection_review_sha256": "f01e3b8ab15bf11cbed8b9f82699fda83e676e2dc185484adb2369908c327605",
+  "original_export_admission_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-admission_001.json",
+  "original_export_admission_sha256": "882c76edadbe5e8aaec418331a200a8dbd40fa1ec25fb8a89b58f01e54af1724",
+  "original_owned_destination": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025",
+  "preserved_partial_snapshot": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025-copy-failure-001",
+  "verified_move_within_named_workspace": true,
+  "error": "Copy operation rejected .gitattributes as a source extension although selection expressly permits that metadata basename. No bytes were changed; an immutable owned partial snapshot is retained. Planned fix maps this basename to .txt for artifact filenames only.",
+  "native_command_exit_code": 1,
+  "partial_files": 26,
+  "partial_payload_bytes": 647741.0,
+  "partial_artifacts": [
+    {
+      "path": "artifacts/a0001.json",
+      "bytes": 15906,
+      "sha256": "5413069cf87a4f251d0dd89e49f81ad66e572237e1dff874cfcff7604264722c"
+    },
+    {
+      "path": "artifacts/a0002.json",
+      "bytes": 16164,
+      "sha256": "3b821335cc4daf2ee41148be863f126f3934e59e73432223957b5618e9409345"
+    },
+    {
+      "path": "artifacts/a0003.json",
+      "bytes": 15889,
+      "sha256": "6af12adbbee640615cc923030c6249cdadc0062486429a733180878fc19cb1eb"
+    },
+    {
+      "path": "artifacts/a0004.json",
+      "bytes": 25562,
+      "sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f"
+    },
+    {
+      "path": "artifacts/a0005.json",
+      "bytes": 4129,
+      "sha256": "9083d9c66fdab7e3ac0236263eca0e35925995bd25968fa7d0b0357e9f6db56f"
+    },
+    {
+      "path": "artifacts/a0006.json",
+      "bytes": 22671,
+      "sha256": "ee7ab088b26972f0631f8943b7211746a0a9943ac987041ccef1a04d22b67fd1"
+    },
+    {
+      "path": "artifacts/a0007.json",
+      "bytes": 16106,
+      "sha256": "c7a71689a619737a15b141e1494f5c26f72ba308198b14b34edeac6890bc827a"
+    },
+    {
+      "path": "artifacts/a0008.json",
+      "bytes": 17107,
+      "sha256": "9196eaca8c1988c357abfa72881b3e505317ce7faff50dc352b700407848d821"
+    },
+    {
+      "path": "artifacts/a0009.json",
+      "bytes": 7343,
+      "sha256": "1d5a2ae29d552fb6d04b3a34600cb75a9d324ae0e1135f3223739f0ba176dfa6"
+    },
+    {
+      "path": "artifacts/a0010.json",
+      "bytes": 2324,
+      "sha256": "e139f7ade01ea2c005f70eb7e4befff7be06e9fcdfc9e7706b45c2b8878cfea8"
+    },
+    {
+      "path": "artifacts/a0011.json",
+      "bytes": 9306,
+      "sha256": "65ad46a9618d368d732f6d15cc7e894c7cc1ee6a41c8d50314de2617398636c7"
+    },
+    {
+      "path": "artifacts/a0012.md",
+      "bytes": 293819,
+      "sha256": "87d9e2a22e4c064c0c349110e6c87c48a69ea3eb7c9a14c02a433f023944eda7"
+    },
+    {
+      "path": "artifacts/a0013.md",
+      "bytes": 55517,
+      "sha256": "f5689131ceb40ffed80e89301a48523ed9973cab63b9304f06b56e022714c787"
+    },
+    {
+      "path": "artifacts/a0014.md",
+      "bytes": 3291,
+      "sha256": "bacc605f21effc21d5d2b86998a53e1cba1a41ffed6ae57433e27f14b214f6ab"
+    },
+    {
+      "path": "artifacts/a0015.json",
+      "bytes": 4480,
+      "sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f"
+    },
+    {
+      "path": "artifacts/a0016.md",
+      "bytes": 7093,
+      "sha256": "bb983662f82c994a1f10f852c4405969336935098f56182381585435838824ce"
+    },
+    {
+      "path": "artifacts/a0017.md",
+      "bytes": 2861,
+      "sha256": "ee7be530bf47805316451b2a74431a2e8ae88598c7a4e79c726f0bca01e60a0a"
+    },
+    {
+      "path": "artifacts/a0018.md",
+      "bytes": 10598,
+      "sha256": "e507001d694fe90a7e8155f006f0c6bff3d486293b222cbad3cab4c15b14e4d7"
+    },
+    {
+      "path": "artifacts/a0019.md",
+      "bytes": 10964,
+      "sha256": "36f3ad234022e5b8bedcee2c910fdad797a6279fd94417095c79a7005448e976"
+    },
+    {
+      "path": "artifacts/a0020.md",
+      "bytes": 5254,
+      "sha256": "be776b87769ca6aec044ac1b11d6c617bcb849a7985622da93189f025628dbc9"
+    },
+    {
+      "path": "artifacts/a0021.md",
+      "bytes": 5281,
+      "sha256": "e792de74461fe54269714c0e3a175ee6ee357ed99943ac345a54c7b6f48bb55b"
+    },
+    {
+      "path": "artifacts/a0022.py",
+      "bytes": 37279,
+      "sha256": "6101f5b722958f2d08c87f6d8d305f27c473253a8015cc4c1d79e4d3b0d212cf"
+    },
+    {
+      "path": "artifacts/a0023.md",
+      "bytes": 8461,
+      "sha256": "40b6dbaeaf93768260870c101196ee581f7a169768c3e45ba281642aa17c3521"
+    },
+    {
+      "path": "artifacts/a0024.py",
+      "bytes": 35072,
+      "sha256": "9b308be2b8765a813eeb2647228bdc7430152900c06a8f260a0774c658477252"
+    },
+    {
+      "path": "artifacts/a0025.md",
+      "bytes": 4366,
+      "sha256": "3acff6ef88824ebf763c62c04dee44ef69db0eb08fb15f033404a86d09814cf9"
+    },
+    {
+      "path": "artifacts/a0026.md",
+      "bytes": 10898,
+      "sha256": "a255f809168b9b33f1cdafa3d9fffa80a7536b722db2f9f0411d899835abd45d"
+    }
+  ],
+  "python_invocations": 0,
+  "jobs_created": 0,
+  "aggregate_or_test_reruns": 0,
+  "scientific_admission": false,
+  "fresh_native_copy_admission_and_review_required": true
+}

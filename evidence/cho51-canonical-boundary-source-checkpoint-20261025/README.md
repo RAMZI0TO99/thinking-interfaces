@@ -1,0 +1,3 @@
+# Canonical metadata boundary source checkpoint
+
+Exact metadata-only source and resume snapshots, not runtime qualification. Nine sources pass independent static review; fresh byte pins pass independent native audit. The133 candidate cases and21 stdlib controls are source-enumerated only: no Python imports, collection, tests or Job executed. Startup8GiB remains required; this dated checkpoint records a below-floor admission hold, not a compute grant or future resource guarantee. No raw arrays, selected model weights or environment dump is exported. Old launchers/grants and this archive provide no replay, execution or scientific authority. Authenticate these dated document bindings against these exact snapshots, not later heads.

@@ -1,0 +1,27 @@
+{
+  "schema": "cho51_p3_bootstrap_peer_refusal_observation_v2",
+  "observed_utc": "2026-10-27T16:09:05.4961696+00:00",
+  "observer": "Pro3 Root ordinary bounded native metadata read/SHA256 of genuine directly communicated Pro2 decision",
+  "actual_peer_decision_path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\pro3_bootstrap002_source_review_001\\ROOT_PRO3_BOOTSTRAP_REQUEST002_EXPLICIT_REJECTED_DECISION_001.json",
+  "actual_peer_decision_bytes": 15707,
+  "actual_peer_decision_sha256": "9d6a476f2309207a82d2d50b20b5496d08333e9de014794f0e4424a667478698",
+  "actual_peer_schema": "pro2_pro3_bootstrap_observation_decision_v1",
+  "released": false,
+  "accepted": false,
+  "helper_invocations_granted": 0,
+  "controller_invocations_granted": 0,
+  "bounded_cleanup_after_pause_admitted": false,
+  "rejected_request_sha256": "5f52f40e6bd320adffb1d2eb4dbd6b8f1f7f93291894f5aa9f90b5e0762dff03",
+  "blocking_findings": [
+    "S002_CUSTODY_START_ATTEMPT_UNKNOWN: Process.Start exception/uncertain outcome after possible creation could leave child_started=false/custody_closed=true, skip cleanup and permit a false no-child release. No supplied static proof ruled out post-creation Start exception."
+  ],
+  "deferred_not_current_operation_blocker": "D01 full helper manifest/roster validation remains UNRESOLVED_BEFORE_OBSERVATIONAL_ACCEPTANCE; header-only consumer checks are not payload acceptance or a native-ID claim.",
+  "interpretation": "Static uncertainty/custody refusal, not a measured Start exception, process leak, runtime overrun, resource shortage or physical release.",
+  "version002_preserved_unexecuted": true,
+  "version003_requires_new_different_source_review_exact_request_genuine_peer_decision_and_root_admission": true,
+  "bootstrap_executed": false,
+  "native_preparation_executed": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "scientific_admission": false
+}

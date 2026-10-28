@@ -1,0 +1,43 @@
+{
+  "schema": "cho51_provenance_numerical_worker_source_review_v1",
+  "reviewed_utc": "2026-10-25T10:02:43.3149658+00:00",
+  "reviewer": "/root/readiness",
+  "record_custodian": "/root",
+  "source_only": true,
+  "accepted": true,
+  "remaining_actionable_findings": [],
+  "tests_executed": false,
+  "model_executed": false,
+  "execution_admission": false,
+  "static_test_cases": 63,
+  "static_test_functions": 22,
+  "native_powershell_parse_errors": 0,
+  "native_utc_string_regression_passed": true,
+  "owner_resource_amendment_sha256": "6f69dc63a9802af4fd708c4a289e750e59af58cdf0a8addb09db044d3de6b44a",
+  "native_runtime_observation_sha256": "6ddaf1b0365ff993f94e2086bb5c2bf8646f06e1557a27029ea584be2fb2a637",
+  "runtime_changes_since_accepted_factory": 0,
+  "historical_runtime_changes_since_17_october": 21,
+  "reviewed_once_only_phases": [
+    "tests",
+    "integration"
+  ],
+  "phase_join_native_historical_window_archive_and_strict_zero_checks_reviewed": true,
+  "all_reused_api_exports_and_signatures_statically_checked": true,
+  "three_failed_predecessors_preserved_as_failed_not_accepted": true,
+  "whole_contract_comparison_retained": true,
+  "files": {
+    "docs/phase2/cho51_provenance_numerical_worker_v2/backend.py": "2e93e2b4cc300f04fe70f909e26a0c470b37fbf245606d709d309bd82b4bf76b",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/numerical_worker.py": "34de6ce42ca9bdc39a7f1b03fdaa8588c1fa3324197fc4ba339240081d2291a7",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/pipeline.py": "4ae4db7430f5f464ac604535ef98076c0db2eb643829a2ef7cabe11449ca4700",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/README.md": "03d9c5746028e7c14184d15516a38b2e9c1427db37ffefc7b1ca21fe91bec952",
+    "docs/phase2/cho51_provenance_numerical_worker_v2/test_integration.py": "19a1d45895b796c3aa955fe714334cf5a4ec580341fc92d6135ed6fbc61d7494",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/closeout.py": "4ddbaa149876da28f899ad91b0030e31edf257c5cf8f8d32ca07b95808a09983",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/guard.py": "696685f1f26bd03908d79bed944217a95ac87fefdace8b06100ec6e034df2058",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/launch.ps1": "7cc58cd1325a66d03d3502eea6e98c5667f2506a73e1af2f699eb1c03633a34e",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/native_pins.ps1": "3ae9cbf7bddae21a0d12f714f0b7c3b6146351b103d67ae49e4fe888bf3b0990",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/origin.py": "8de9e0271c0679ada5d99d4c8ea582fe6ab02ee60564b17a5bd85cf68977d9d7",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/parent.py": "dc3f11bee14b6ce5446e6726e5586500cf78a237746b7cb1cf35222f1d65a6c7",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/prepare.py": "d98a462bbf663a760437cce5fdf850dcd9660a557a3be73d7e0c28cced5b2ae4",
+    "runs/coordination/cho51_provenance_numerical_worker_20261025_v4/runtime.py": "417f74cade1f3a2f0ff9b0dfacec89644a62ce92fdbadcb39b2fdcf7b58b5f3d"
+  }
+}

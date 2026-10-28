@@ -1,5 +1,162 @@
 # Continue on another Windows device
 
+## Publication checkpoint and next step, 28 October 2026
+
+The completed restoration factory, parent/worker integration, metadata boundary,
+P3 designs, contract sources and literature review are collected in the
+[publication checkpoint](docs/phase2/cho51_push_checkpoint_20261028.md).
+The [P3 evidence archive](evidence/cho51-p3-source-checkpoint-20261028/README.md)
+preserves exact source, failed-attempt and static-review records with a manifest.
+
+**Next: custody-resolution design, then a separately reviewed successor.**
+Bootstrap004 remains FAILED_UNRELEASED_CONSUMED. Diagnostics005 is independently
+statically reviewed but deliberately blocked before launch; an ordinary grant
+does not make it runnable. The 117 candidate tests and 34 controls remain
+unexecuted. Accepted bootstrap observations, native preparation/pin review and
+fresh test/closeout admissions are subsequent engineering gates.
+
+This is a documentation/evidence publication, not new implementation or runtime
+validation. Source014 is expired; Pro2 reports Source015 closed unadopted, with
+no authority inferred here. Historical receipts and source remain unchanged;
+earlier dated sections below retain their original meanings. Scientific cells
+remain 0/1020 and the final freeze unsigned. Publication creates a new Git
+context: future execution needs fresh provenance, coordination and admission.
+
+<!-- cho51-canonical-boundary-20261025-qualified:begin -->
+## Metadata boundary qualified; execution remains held,25 October2026 UTC
+
+The [qualification](docs/phase2/cho51_canonical_boundary_qualification_20261025.md)
+records133 complementary metadata cases across three unchanged600-second Jobs
+(36/44/53),399 passing phase reports with exact JUnit agreement,and34 distinct
+controls/102 instances.
+A separately admitted zero-Job stdlib aggregate passed196 metadata reads/
+25,648,747bytes; its independent actual review accepts the complete disjoint
+coverage. Observed numerical ledger entries are all0; raw/weight verification,
+canonical execution,measured publication,future runtime and science stay held.
+Full020 custody released21:11:33UTC,103.0436767s from dispatch within300/window;
+the distinct full caller completion bound is13s,not merely the internal timer.
+
+The [final review](runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json)
+binds seven current documents. The exact metadata
+[closeout export](evidence/cho51-canonical-boundary-closeout-export-20261025/README.md)
+preserves all historical failures,unadmitted source-refusal history and old
+document snapshots; old hashes bind their archived copies,not advanced heads.
+All launchers/grants/attempts are inert. Next is separately reviewed P3 adapter
+design only,with fresh scope,pins,resources and coordination before validation.
+No original target01 retry,other method chain,study execution,scientific freeze
+signature or new autonomous window is admitted; targets02–52/source52 and narrow
+Gate A remain unchanged. Earlier sections retain dated meanings.
+<!-- cho51-canonical-boundary-20261025-qualified:end -->
+
+
+<!-- cho51-canonical-boundary-20261025-source-checkpoint:begin -->
+## Metadata boundary implemented; validation pending,25 October2026
+
+The [source checkpoint](docs/phase2/cho51_canonical_boundary_source_checkpoint_20261025.md)
+records nine independently reviewed sources,133 source-enumerated candidate
+cases plus21 stdlib controls,and fresh18872-file/27-runtime byte pins. No Python,
+collection,test or Job has run; no new grant/admission/attempt exists. Startup8GiB
+is required by the owner's new-phase answer; the latest6.797GiB reading holds
+admission. Active4GiB and all other guards remain unchanged. Retain Pro2's next
+diagnostic reservation and establish a fresh exact window before validation.
+This is read-only compatibility,not executable canonical integration or science.
+Earlier preparation blocks and prior accepted evidence retain dated meanings.
+<!-- cho51-canonical-boundary-20261025-source-checkpoint:end -->
+
+<!-- cho51-provenance-numerical-20261025-status:begin -->
+## Provenance-aware parent/worker integration, 25 October 2026
+
+The [integration qualification](docs/phase2/cho51_provenance_numerical_worker_qualification_20261025.md)
+records candidatev2 plus operationsv7:63 freshly passing zero-numerical unit
+cases,27 stdlib guard regressions and one genuine synthetic engineering episode.
+One real identity lock spans the reusable parent, one backend, accepted factory,
+two full read-only verifiers, durable attestation and one engineering terminal.
+Aggregate restoration1/support-gradient update1/query invocation1/two query
+trials/full model constructor1; source fitting and measured scientific cells0.
+Factory-local support/query counts remain0. Predictions[1,0] versus targets[0,1]
+are honestly0/2 correct; predictive performance is not qualified.
+
+Distinct011 unit and012 integration grants were consumed once and closed.
+Unit native normal0 took531.109877s; actual normal0 took590.082323s, completing
+14:28:33.636432UTC. Both Jobs closed empty/handles closed/freshly absent, within
+600s and4096/5120MiB caps. Mandatory external actual stdlib closeout passed and
+was reaped14:29:42UTC; full compute custody was explicitly released14:30:05UTC.
+Only duplicate post-terminal parent sweeps moved outside the Job. Both genuine
+backend input audits and both full origin verifiers stayed inside; external
+full-origin/213-input verification independently fulfilled that deferred policy
+and joined both actual observations. Child pending-native flags remain unchanged.
+
+Current pins are `fbb97f49`, source review `7d1bf8d4`, unit review `41b1a3d9`
+and actual closeout `c41a5cc1`. Historical producer4491e2a remains distinct from
+current executor/recorderc177d00/dirtytrue; canonical432 digest3114ec4 and all213
+original inputs/734,579,463bytes remain exact. The
+[unit packet](evidence/cho51-provenance-numerical-worker-tests-20261025-v7/README.md)
+has32 artifacts; the [actual packet](evidence/cho51-provenance-numerical-worker-20261025-v7/README.md)
+has100 metadata artifacts/6,742,678payload bytes/104files. No arrays, weights or
+environment dump is exported. Final independent review binds seven exact
+documents; authenticate historical document bindings against snapshot copies,
+not these later resume heads. Every used source, failed receipt and old packet
+is preserved, including v5/v6's unaccepted hard600 partial physical terminals.
+
+The owner's exact available-RAM amendment is bounded to this engineering phase:
+startup/active4/4GiB, disk20GiB, CPU/Torch1/1, hidden GPUs and all five pause paths.
+No old launcher, release estimate, absent pause, passing receipt or archive
+admits replay, a second Job or another device/runtime. Fresh coordination,
+source/runtime pins and admission are mandatory for future work.
+
+This qualifies only the separately versioned linear engineering composition.
+Canonical measured-cell parent/single-root factories, other method chains,
+full1,020-cell execution, cohort/overlap lineage and final owner freeze remain
+pending. Future targets02–52/source catalogs52, exhausted original target01
+attempts and narrow Gate A acceptance remain unchanged. No scientific decision
+or new autonomous window is signed. Earlier sections retain dated meanings.
+<!-- cho51-provenance-numerical-20261025-status:end -->
+
+
+<!-- cho51-provenance-restore-20261025-status:begin -->
+## Fresh provenance-aware restoration executed, 25 October 2026
+
+The [factory qualification](docs/phase2/cho51_provenance_restore_qualification_20261025.md)
+records **65 passing focused tests**, one genuine canonical selected-source
+restoration and adapter delivery under a real identity lock, backend once,
+read-only verifier twice and one engineering success. Current source/support/
+gradient updates, query calls, array decodes and measured cells are all zero.
+This is the separately versioned linear engineering factory, not study accuracy.
+
+Historical producer4491e2a and actual current executor/recorderc177d00 remain
+distinct; no Git identity or provenance capture was substituted. All432
+canonical sources remain exact. Fresh native pins account for21 runtime-byte
+changes since17 October; equal version strings were not treated as equal bytes.
+The actual recorder fixture was freshly captured under the current Git context.
+
+Native Job20261025T073014Z_e44f1ff4e4 accepted exit0/normal at07:36:22UTC in
+367.755seconds, closed empty with handles closed and freshly absent. Independent
+stdlib-only external closeout passed/reaped07:38:27UTC, rechecking213 original
+inputs,2,632 ancestor artifacts and34 scoped native Job names. One explicit fresh
+Pro2 grant was consumed once; full compute custody is released, with no retry
+or outstanding owned children. V1's timezone preflight refusal and cancelled
+unused grant remain preserved; no v1 test/model/Job executed.
+
+The owner-adopted startup-only4GiB allowance remains confined to this milestone.
+Active4GiB, disk20GiB,600seconds,4096/5120MiB process/Job, threads1/1, hidden GPUs
+and all five genuine pause paths remained enforced. Canonical guards and
+historical10GiB receipts are unchanged; this is no general compute release.
+
+Final closure requires the passed independent review binding this report and
+all six resume heads. The [44-artifact execution packet](evidence/cho51-provenance-restore-20261025-v2/README.md)
+and [final closeout export](evidence/cho51-provenance-restore-closeout-export-20261025/README.md)
+preserve exact proofs, source copies and seven document snapshots. They contain
+no arrays/weights/environment and grant no future admission or launcher replay.
+
+Next is separately admitted parent/worker composition for measured execution,
+not the full study. Unchanged canonical single-root factories, remaining method
+chains,1,020-cell execution, checkpoint-cohort/overlap lineage and final owner
+freeze remain pending. Original target01 attempts remain exhausted; future
+targets stay02–52 with52 source catalogs. Narrow Gate A acceptance and adopted
+51-target scope remain intact. No scientific admission or autonomous window is
+inferred. Earlier sections below retain their dated historical meaning.
+<!-- cho51-provenance-restore-20261025-status:end -->
+
 <!-- cho51-publication-20261017-status:begin -->
 ## Publication checkpoint, 17 October 2026
 

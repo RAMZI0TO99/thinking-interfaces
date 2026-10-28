@@ -1,0 +1,150 @@
+{
+  "schema": "cho51_canonical_boundary_source_archive_v1",
+  "source_only": true,
+  "artifacts": [
+    {
+      "source": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+      "path": "artifacts/a0001.md",
+      "bytes": 283773,
+      "sha256": "3bd5fd74c0608c40378496e813175ee0e34d5b2e6cb3a3bb7770cc56aecb9f73"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+      "path": "artifacts/a0002.md",
+      "bytes": 53806,
+      "sha256": "a3f3df0e2fb7a61aa72bc488546c2dd4b59b8abb95544530beec4894765a1fee"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_implementation_20261025.md",
+      "path": "artifacts/a0003.md",
+      "bytes": 7093,
+      "sha256": "bb983662f82c994a1f10f852c4405969336935098f56182381585435838824ce"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_plan_20261025.md",
+      "path": "artifacts/a0004.md",
+      "bytes": 10598,
+      "sha256": "e507001d694fe90a7e8155f006f0c6bff3d486293b222cbad3cab4c15b14e4d7"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_source_checkpoint_20261025.md",
+      "path": "artifacts/a0005.md",
+      "bytes": 5254,
+      "sha256": "be776b87769ca6aec044ac1b11d6c617bcb849a7985622da93189f025628dbc9"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\boundary.py",
+      "path": "artifacts/a0006.py",
+      "bytes": 37279,
+      "sha256": "6101f5b722958f2d08c87f6d8d305f27c473253a8015cc4c1d79e4d3b0d212cf"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\README.md",
+      "path": "artifacts/a0007.md",
+      "bytes": 8461,
+      "sha256": "40b6dbaeaf93768260870c101196ee581f7a169768c3e45ba281642aa17c3521"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\test_boundary.py",
+      "path": "artifacts/a0008.py",
+      "bytes": 35072,
+      "sha256": "9b308be2b8765a813eeb2647228bdc7430152900c06a8f260a0774c658477252"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_pipeline_interface_audit_20261025.md",
+      "path": "artifacts/a0009.md",
+      "bytes": 10898,
+      "sha256": "a255f809168b9b33f1cdafa3d9fffa80a7536b722db2f9f0411d899835abd45d"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\HANDOFF.md",
+      "path": "artifacts/a0010.md",
+      "bytes": 334168,
+      "sha256": "f1a5098689f8357301a680dae2b72e10be836c05dae21a79a6fa1303a2b78c14"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+      "path": "artifacts/a0011.md",
+      "bytes": 158214,
+      "sha256": "e63680642aef1d94845919991ff754a678051f5afc3cb91e6faf6da119af1b6e"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\README.md",
+      "path": "artifacts/a0012.md",
+      "bytes": 114550,
+      "sha256": "61879a0d99ce776e04f497bf0ba1e96837e02752b08c96896a68b9e7a9a6a7a7"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\admission-hold.json",
+      "path": "artifacts/a0013.json",
+      "bytes": 1312,
+      "sha256": "d90985510c92340db9b74f572cf0dc1594ced710541e1477446c877a89fd6a2a"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\closeout.py",
+      "path": "artifacts/a0014.py",
+      "bytes": 18613,
+      "sha256": "882bead9136393928a07ab82077305127437d1f68d0116a458bf200fa63dedd2"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\guard.py",
+      "path": "artifacts/a0015.py",
+      "bytes": 11299,
+      "sha256": "25e1f5bac9c8b813713841025f9b058a00bd0418b47b0a69c6064474f937b78a"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\launch.ps1",
+      "path": "artifacts/a0016.ps1",
+      "bytes": 3249,
+      "sha256": "26b2b11cb5c22f7cb8622f3e7d5dc294fc3d62372c2bae5a7fed3e2ab2c3b01e"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\metadata_common.py",
+      "path": "artifacts/a0017.py",
+      "bytes": 10389,
+      "sha256": "90442c2d3fba5d1a4f52c324f9c960b20718be3f33793f7670eb5fa1e69fd71c"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\owner-resource-amendment.json",
+      "path": "artifacts/a0018.json",
+      "bytes": 737,
+      "sha256": "0468348060d4f5f35dc98c1e8737050be9ae8ad9c1f692829efb0504830e8f9b"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\pin-review.json",
+      "path": "artifacts/a0019.json",
+      "bytes": 2056,
+      "sha256": "f92bf0192e90b2364ed2de13e75c3c24405d45b50c0e1b4d7371bd2ede96c43b"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\pins.json",
+      "path": "artifacts/a0020.json",
+      "bytes": 3254500,
+      "sha256": "b4f12a1b2e4f3f10676932a0a7e0ec6051ed0d0e019ade899dfa0f0381599d19"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\prepare.ps1",
+      "path": "artifacts/a0021.ps1",
+      "bytes": 6518,
+      "sha256": "433c7005929cbbd7b88e421c2b646ae9b0391528b749c778fb740b0a1757cfc2"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\runner.py",
+      "path": "artifacts/a0022.py",
+      "bytes": 22259,
+      "sha256": "2ea6f12a9d127336d3358aeeaf6e8b0c22662d21cad118fc67776b601f855412"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v1\\source-review.json",
+      "path": "artifacts/a0023.json",
+      "bytes": 3518,
+      "sha256": "364ab57dd4b01ed3a86fc43c6bfe66d84e6f2e97469ea1d48b7136824aa85531"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+      "path": "artifacts/a0024.md",
+      "bytes": 48290,
+      "sha256": "a8f02f3870fd61e633788b7e1372825a47c2007909469aa6a1bed27b895ce3ea"
+    }
+  ]
+}

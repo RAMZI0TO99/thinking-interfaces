@@ -1,0 +1,53 @@
+{
+  "schema": "cho51_p3_bootstrap_source_review_v2",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_002",
+  "observed_utc": "2026-10-27T15:46:34+00:00",
+  "source_only": true,
+  "consolidator": "Pro3 Root; independent component receipts retained; consolidation is not self-approval",
+  "remaining_actionable_findings": [],
+  "source_sha256": "e4085b587e8b4e4904cd0de44b4406ed090126e32a6c0063360ce5d840dc9051",
+  "files": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-observation_002.ps1": "e4085b587e8b4e4904cd0de44b4406ed090126e32a6c0063360ce5d840dc9051",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_002.ps1": "8faabbd9084bf51f7b932ee79e795e62189b0e130cee8eac8b5a93bcdd9c6240",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_002.md": "7328551bbd9c1b268a3595407b1c7c42ca842bdfa7ccfea2ebfc33c4cef07775"
+  },
+  "helper_source_review_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\helper-source-review_002.json",
+  "helper_source_review_sha256": "e1bebce0bd437ad1719535d25e2429c6961d267aa520ba3f2fb5f735fcef76f1",
+  "supervisor_source_review_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervisor-source-review_002.json",
+  "supervisor_source_review_sha256": "352c2b0c20d79728b7e9fa8ae87059405eec15c0cda90e138f622638315dc2c6",
+  "authorship_and_different_review": [
+    {
+      "sources": [
+        "bootstrap-observation_002.ps1"
+      ],
+      "author": "Pro3 Root",
+      "reviewer": "/root/p3_independent_review"
+    },
+    {
+      "sources": [
+        "bootstrap-supervise_002.ps1",
+        "bootstrap-protocol_002.md"
+      ],
+      "author": "/root/p3_independent_review",
+      "reviewer": "Pro3 Root"
+    }
+  ],
+  "prior_rejected_request_sha256": "4d856d586904f34dd758ca36049e8471748b4849539d13216f36d9cc35710f46",
+  "actual_prior_peer_rejection_sha256": "cb3c427f239b47c0e6070602c02a116eba57e0acf643c15157d485dcc4ce13bc",
+  "original14_source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "original14_verified_utc": "2026-10-27T15:38:29.0623701+00:00",
+  "original14_files": 14,
+  "original14_bytes": 221599,
+  "original14_changed": [],
+  "bootstrap_executed": false,
+  "native_preparation_executed": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "operational_admission_granted": false,
+  "scientific_admission": false,
+  "limitations": [
+    "Source only. No exact request or genuine operational admission is replaced by these reviews.",
+    "Synchronous OS/tool-host stalls can still exceed a budget; actual external post-return audit is mandatory and fails closed.",
+    "No unqualified observation is accepted as native identity, complete runtime coverage or full Pro3 physical pins."
+  ]
+}

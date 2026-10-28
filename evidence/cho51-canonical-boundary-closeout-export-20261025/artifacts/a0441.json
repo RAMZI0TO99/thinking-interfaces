@@ -1,0 +1,163 @@
+{
+  "schema": "cho51_canonical_boundary_pin_review_v1",
+  "scope": "cho51_canonical_boundary_20261025_v5_b_tests",
+  "reviewer": "/root/readiness",
+  "reviewed_utc": "2026-10-25T19:16:54.1476171+00:00",
+  "source_only": true,
+  "accepted": true,
+  "accepted_for_fresh_admission_preparation_only": true,
+  "remaining_actionable_findings": [],
+  "batch_id": "b",
+  "batch_plan_sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f",
+  "scope_document_sha256": "e792de74461fe54269714c0e3a175ee6ee357ed99943ac345a54c7b6f48bb55b",
+  "pins_sha256": "f12300fc7c929fd6c70b1b026218c4324b0cc0c56044ecab23b12dadaf9f5dea",
+  "pins_bytes": 3264186,
+  "source_review_sha256": "e1d8a53b4463b982daf54f30ef2889b7f6d7ad23b0f711bada8cef834cb15f29",
+  "source_review_bytes": 14333,
+  "owner_resource_amendment_sha256": "6b3be4809c1dd3b54861d62f6d6a96ed2722f16c902908d6bf3ba9c4521b9619",
+  "owner_resource_amendment_bytes": 1747,
+  "shared_physical_audit_utc": "2026-10-25T19:15:52.0696264Z",
+  "shared_inventory_and_header_audit_utc": "2026-10-25T19:16:54.1476171+00:00",
+  "shared_files_map_exactly_identical_across_all_three": true,
+  "shared_reviewed_files_map_exactly_identical_across_all_three": true,
+  "shared_runtime_files_map_exactly_identical_across_all_three": true,
+  "shared_complete_per_batch_bindings": {
+    "a": {
+      "pins": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\pins.json",
+        "bytes": 3264181,
+        "sha256": "82b820ab809370465c6589124b182106ad3467a2cf61e1d063003479b711b291"
+      },
+      "review": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\source-review.json",
+        "bytes": 14330,
+        "sha256": "5bccfc99827e94e36cc40bf6305d25766ca8ba5a6008304bf6f84b558264c4e0"
+      },
+      "amendment": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\owner-resource-amendment.json",
+        "bytes": 1747,
+        "sha256": "1a56aef74526e6169dded3ae292a003266577c26fb9bd5cf9bb6d3a6473882ac"
+      },
+      "expected_tests": 36,
+      "expected_full_tests": 133,
+      "expected_controls": 34,
+      "files": 18909,
+      "runtime": 27,
+      "sources": 22
+    },
+    "b": {
+      "pins": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\pins.json",
+        "bytes": 3264186,
+        "sha256": "f12300fc7c929fd6c70b1b026218c4324b0cc0c56044ecab23b12dadaf9f5dea"
+      },
+      "review": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\source-review.json",
+        "bytes": 14333,
+        "sha256": "e1d8a53b4463b982daf54f30ef2889b7f6d7ad23b0f711bada8cef834cb15f29"
+      },
+      "amendment": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\owner-resource-amendment.json",
+        "bytes": 1747,
+        "sha256": "6b3be4809c1dd3b54861d62f6d6a96ed2722f16c902908d6bf3ba9c4521b9619"
+      },
+      "expected_tests": 44,
+      "expected_full_tests": 133,
+      "expected_controls": 34,
+      "files": 18909,
+      "runtime": 27,
+      "sources": 22
+    },
+    "c": {
+      "pins": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\pins.json",
+        "bytes": 3263919,
+        "sha256": "9ebd30b36f820912881821fd9bf6d5d5c535de195fe00bb32d4a8692c5ac14f5"
+      },
+      "review": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\source-review.json",
+        "bytes": 14072,
+        "sha256": "f5fbdccf353b5b4e3599f87e0b61e2b36295f3c9fccf20027460514c74e94849"
+      },
+      "amendment": {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\owner-resource-amendment.json",
+        "bytes": 1747,
+        "sha256": "94ca277172ee680ead2dae34a0eb91d94731c36b0714084be88837fe88ba7023"
+      },
+      "expected_tests": 53,
+      "expected_full_tests": 133,
+      "expected_controls": 34,
+      "files": 18909,
+      "runtime": 27,
+      "sources": 22
+    }
+  },
+  "physical_files": 18909,
+  "physical_bytes": 3338506142,
+  "direct_items_checked": 21067,
+  "physical_aggregate_pins_property_order_lf_no_final_lf": "8eac842772e8a3c7423161d4acc4fa73b3cb89fce88bee6e6385532424a50b38",
+  "aggregate_row_encoding": "UTF-8 absolute Windows path:sha256, A pins.files property order, LF separators, no final LF",
+  "actual_hashes_equal_all_pins": true,
+  "stable_native_handle_before_after_and_reopened_path_identity": true,
+  "path_lengths_creation_write_times_attributes_stable": true,
+  "checked_non_reparse_direct_paths_and_ancestors": true,
+  "regular_files_and_single_links_except_exact_git": true,
+  "exact_git_exception": {
+    "path": "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+    "links": 2,
+    "permitted_exact_git_exception": true
+  },
+  "git_exception_bytes": 46480,
+  "git_exception_sha256": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+  "exclusions": [],
+  "conflicting_pins": [],
+  "issues": [],
+  "positive_allowed_inventory": 18909,
+  "positive_allowed_inventory_exactly_equals_shared_pin_map": true,
+  "literal_historical_metadata_inventory": 28,
+  "canonical_fresh_exact_inventory": 432,
+  "canonical_ordered_aggregate": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "canonical_manifest_sha256": "778386aa52d354614c689055d26a2bbc844f063f7f6cf267cc1f7ba9048bbe68",
+  "runtime_files": 27,
+  "runtime_current_hash_changes_from_old_inventory": [],
+  "reviewed_source_files": 22,
+  "reviewed_source_bytes": 378736,
+  "source_fingerprint_unchanged": true,
+  "metadata_binding_reads_separately_deduplicated": 13,
+  "metadata_binding_read_bytes_separately_deduplicated": 10604743,
+  "metadata_binding_counts_are_not_added_to_primary_pin_count": true,
+  "expected_tests": 44,
+  "expected_full_tests": 133,
+  "expected_stdlib_controls": 34,
+  "test_definitions": 29,
+  "source_enumerated_only": true,
+  "all_three_accepted_reviews_and_scoped_amendments_physically_pinned": true,
+  "shared_family_plan_and_scope_document_physically_pinned": true,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "maximum_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "torch_threads": 1,
+  "gpu_hidden": true,
+  "exact_owner_answer_and_transparent_available_ram_interpretation_preserved": true,
+  "raw_arrays_or_model_weights_or_environment_dumps_in_allowed_pin_inventory": false,
+  "exact_mne_library_resource_bytes": 260,
+  "exact_mne_library_resource_sha256": "0043895fd3167871a947a43019228ee30060c0335967df63f571c0e71bf344a3",
+  "admission_dispatch_attempt_and_t1_absent_all_three": true,
+  "python_executed_by_reviewer": false,
+  "tests_executed_by_reviewer": 0,
+  "jobs_launched_by_reviewer": 0,
+  "live_job_queries_by_reviewer": 0,
+  "current_runtime_execution_qualified": false,
+  "scientific_admission": false,
+  "limitations": [
+    "This is native physical source/runtime/metadata integrity and header readiness only, not executed collection, tests or runtime qualification.",
+    "The shared18,909-file map was physically hashed once; all three independently authenticated complete pin maps are exactly identical. The separate13 metadata-binding reads overlap the primary map and are not a summed physical audit count.",
+    "Fresh distinct exact grants, immediate resource and five-pause checks, Root/native admission, unused once-only attempts and bounded independent external closeout remain mandatory for each complementary batch.",
+    "Neither the historical016 timeout dots/expected budgets nor its successful cleanup establish a passing suite or observed runtime ledger.",
+    "Canonical parent/worker/single-root restoration, raw/weight verification, numerical work, measured publication, final freeze and scientific execution remain unqualified."
+  ]
+}

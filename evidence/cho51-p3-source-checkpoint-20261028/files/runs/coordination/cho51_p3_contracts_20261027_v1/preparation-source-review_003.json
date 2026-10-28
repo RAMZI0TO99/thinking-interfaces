@@ -1,0 +1,67 @@
+{
+  "schema": "cho51_p3_contracts_preparation_source_review_v3",
+  "scope": "cho51_p3_contracts_20261027_v1_native_preparation_003",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of the three reviewed Root-authored preparation sources or their PowerShell bases",
+  "observed_utc": "2026-10-27T16:36:30.7957872Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "original_source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "files": {
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-supervise_003.ps1": "42ed6246478341a35ed0544bfdc0692be4e7607ad4a4b443a3a332102e223141",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-protocol_003.md": "144a7b2a566600c58b05b1d55306740082304213d01ce45578741050e4fdfc21",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/prepare_004.ps1": "a6865d2efc115927e95d3987d72cad0cc7a352cb2cbb71cab65c7d61d92116ab"
+  },
+  "file_bytes": {
+    "preparation-supervise_003.ps1": 47836,
+    "preparation-protocol_003.md": 20524,
+    "prepare_004.ps1": 19535
+  },
+  "source_parser": {
+    "preparation-supervise_003.ps1": 0,
+    "prepare_004.ps1": 0
+  },
+  "frozen_source_native_hash_checks": {
+    "original14": {"files": 14, "mismatches": []},
+    "bootstrap003_review_map": {"files": 3, "mismatches": []},
+    "preparation002_review_map": {"files": 3, "mismatches": []}
+  },
+  "corrected_source_findings": [
+    "An overbroad unexecuted successor version replacement incorrectly changed the immutable historical restore20261025_v2 and synthetic-lineage20261015_v2 metadata paths to v3. Root restored both historical v2 paths. A native source comparison against frozen prepare003 now shows only the intended new preparation review filename/schema and exact three-source successor inventory changes, plus removal of one empty line.",
+    "The new parent actual peer_decision_path prefix check now also requires lexical GetFullPath equality, matching its Source/adoption direct-path boundary and bootstrap004.",
+    "The parent catch originally initialized partial_outputs_preserved using OR with default start_attempted=false, which could falsely label unknown prior Complete/Release state preserved. It now requires AND with known_not_started; unknown earlier custody has no fabricated preservation fact.",
+    "Protocol successor title, helper004 digest role and actual Root-authored/different-reviewer whole-source authorship descriptions were corrected. Two stale preparation002 diagnostic labels now correctly identify003."
+  ],
+  "static_review_basis": [
+    "Read parent003, child004 and protocol003 in full, including retained-handle cleanup, accepted-runtime inventory and complete caller/failure/release branches; rechecked every final correction and physical SHA. Both scripts parse with zero native PowerShell AST errors. No candidate/helper source was evaluated or compiled.",
+    "Parent uses the source-visible strict managed Present predicate for every existence/pause/output/receipt branch. GetAttributes success means PRESENT. Only exact missing file/path exceptions with low-HRESULT2/3 after<=4 approved wrapper unwraps, followed by<=16 ancestry checks to an accessible direct non-reparse directory, establish ABSENT. All unknown/ACL/I/O/drive/ancestry errors throw; no File.Exists/Test-Path branch remains in the parent.",
+    "The unchanged frozen native helper remains the child's post-compile pause primitive and throws unrecognized Win32 lookup errors. No edit or new native-ID/pause-content qualification is imputed to that original14 source. Parent precompile/runtime controls and child native checks retain their separately stated domains.",
+    "Actual independently reviewed request/peer/Root preparation_v3 grants, exact original14 and ancillary3 reviews, actual source observation003/dynamic Source references, adopted3/2/5 caps, resource amendment and accepted observational manifest/roster remain mandatory before one direct hidden prepare004 child. No Source coexistence or older grant is operational authority.",
+    "Parent loads no C# helper. Before child's only admitted native-helper load, parent Invoke streams, hashes and retains every accepted combined PowerShell code/support file:<=2500 entries,1GiB aggregate,64MiB each,zero-length runtime entries allowed. Later child physical pinning uses exact accepted SHA/size and keeps global25000-file/4GiB/2GiB ceilings,canonical432,original27 runtime names,exact260-byte MNE resource and fixed14 reviewed_files. Supporting .ps1xml/.cdxml/.xml/.config/.resources remain separately accepted optional metadata, not invented future hashes.",
+    "The child's preserved historical metadata domains are restore_v2 and synthetic-lineage_v2; original source review, actual source observation003 and original native helper are unchanged. Preparation review003 and child004 names/v3 schemas are the only successor changes in the child relative to frozen prepare003. All nine ordered outputs remain CreateNew, including fresh pins.json for the unchanged later runner.",
+    "Common actual external pre-Begin UTC/QPC includes all sequential Begin/Invoke/Complete/Release returns, preflight/runtime reads,child/EOF/reap/effects and independent post-Release actual-return audit.300s whole-caller,work240/cleanup270/effects285,child-start<60,two startup4GiB samples,active4GiB/disk20GiB,five pause paths and strict greater-than60-second finite Source/operation reserve remain unchanged.",
+    "Start attempted/unknown/custody-false precedes Start; successful original retained identity alone changes outcome to started. Exact pinned private Process handle fields and DangerousAddRef avoid SafeHandle getter/PID reopen. Unknown or absent earlier Complete/Release closure remains unreleased after best-effort cleanup. Bounded64KiB async drains/1MiB streams,actual EOF/reap and<=64 CIM generation tables remain separate from any kernel Job guarantee.",
+    "Closed v3 dispatch/supervision/failure/completion/release schemas bind actual prior mode exits and preserve false full-caller/native-pins/scientific acceptance. Cleanup-only metadata cannot promote resource/pause refusal,unknown custody,failed/partial/late output or an internal timestamp into acceptance. Independent pin review and later test/closeout admissions are still distinct."
+  ],
+  "coordination_at_review": {
+    "actual_current_source_scope": "Source011, effective16:20–18:30UTC27October with60-second reserve and3/2/shared5 caps",
+    "observation003_replaced_or_rewritten": false,
+    "old_source009_extended": false,
+    "operational_admission_inferred": false
+  },
+  "limitations": {
+    "native_preparation_or_parent_mode_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "process_start_or_kill_executed": false,
+    "python_or_tests_or_fixture_executed": false,
+    "job_created": false,
+    "runtime_or_pause_probe_test_pass_claimed": false,
+    "actual_caller_timing_or_custody_established": false,
+    "fresh_pins_created_or_accepted": false,
+    "request_or_peer_or_root_admission_issued": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0
+  },
+  "disposition": "Clean different-author whole-source review only. Preserve frozen original14,bootstrap001/002/003 and preparation predecessors/receipts unchanged. Actual accepted observations, exact independent request review,genuine peer and Root operation grants,current resources/pauses/full caller evidence and subsequent independent physical pin acceptance remain required. No operation or later117-case/34-control test unit is admitted by this receipt."
+}

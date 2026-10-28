@@ -1,0 +1,250 @@
+{
+  "schema": "cho51_provenance_numerical_worker_final_review_v1",
+  "reviewed_utc": "2026-10-25T14:43:29.9514092Z",
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "independent_reviewer": "/root/readiness",
+  "record_custodian": "/root",
+  "scope": "Separately versioned provenance-aware linear engineering parent/worker/factory only. No canonical measured-cell, scientific accuracy, final freeze, autonomous window or future execution admission.",
+  "scientific_admission": false,
+  "experiment_freeze_signed": false,
+  "pins_sha256": "fbb97f491e52deb7f7d2c600fd647fe3f4f4099dd5135916fddcfc27f8040ce7",
+  "source_review_sha256": "7d1bf8d4091204b9ea06201447de86cec3a3e8640f2650884a9a68848ff914e8",
+  "integration_closeout_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\closeout-integration-result.json",
+  "integration_closeout_sha256": "c41a5cc1f7c976054f0380d9f4cc1057166fb1eef59dc711068c68773475eb54",
+  "tests_closeout_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\closeout-tests-result.json",
+  "tests_closeout_sha256": "1c1a2083174c6ed1aca9acb6ee1acd9644498d21bb2bc484770412aeb998f929",
+  "integration_lease_closeout_path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\lease-closeout_integration_001.json",
+  "integration_lease_closeout_sha256": "8625c58542440b36f9d63dc08b16c8ab9409f82b0fc20139d7a9598d1077068b",
+  "tests_final_review_sha256": "41b1a3d9d2d6882ce21ed2c0a1886c1b3bdbb7147db16c3adb597cd785765995",
+  "independent_physical_sweep": {
+    "observed_utc": "2026-10-25T14:38:14.0380304Z",
+    "unique_files": 8262,
+    "unique_bytes": 1354803885,
+    "conflicting_pins": 0,
+    "mismatches": 0,
+    "read_errors": 0,
+    "unstable_reads": 0,
+    "reparse_paths": 0,
+    "exclusions": [],
+    "git_binary_directly_included": true,
+    "reviewed_sources": 13,
+    "runtime_files": 27,
+    "current_context": 3104,
+    "ancestor_context": 3099,
+    "actual_loaded_modules": 4731,
+    "unit_loaded_modules": 4001,
+    "accepted_unit_proof_bindings": 71,
+    "canonical_sources": 432,
+    "canonical_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+    "original_inputs": 213,
+    "original_bytes": 734579463,
+    "actual_archive_artifacts": 100,
+    "actual_archive_payload_bytes": 6742678,
+    "actual_archive_exact_files": 104,
+    "unit_archive_artifacts": 32,
+    "unit_archive_payload_bytes": 2540751,
+    "unit_archive_exact_files": 36
+  },
+  "fresh_native_absence": {
+    "observed_utc": "2026-10-25T14:42:47.0543808Z",
+    "scoped_jobs": 44,
+    "all_absent": true,
+    "all_open_errors": 2,
+    "pause_paths_absent": 5,
+    "owned_pids_absent": [
+      285684,
+      278396,
+      295780,
+      200496,
+      297860
+    ],
+    "scoped_guard_launcher_query_results": 0,
+    "scoped_guard_launcher_query_error": null,
+    "whole_host_quiet_claimed": false
+  },
+  "unit_evidence": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "stdlib_regressions": 27,
+    "stdlib_classifier_cases": 11,
+    "stdlib_actual_audit_join_cases": 16,
+    "all_production_numerical_counters_zero": true,
+    "post_terminal_validation_status": "not_applicable_tests",
+    "post_terminal_validation_deferred": false,
+    "backend_input_audit_observation_count": 0,
+    "backend_input_audit_observations": [],
+    "native_normal_exit": 0,
+    "native_elapsed_seconds": 531.109877,
+    "custody_released": true
+  },
+  "actual_engineering_evidence": {
+    "current_tests": 0,
+    "prior_accepted_tests": 63,
+    "identity_locks": 1,
+    "backend_calls": 1,
+    "factory_restores": 1,
+    "full_model_constructions": 1,
+    "constructor_layout_probes": 1,
+    "safe_decodes": 2,
+    "strict_state_loads": 2,
+    "support_trials": 10,
+    "support_updates": 1,
+    "gradient_updates": 1,
+    "head_learning_rate": 0.001,
+    "query_invocations": 1,
+    "query_trials": 2,
+    "profile_a_npz_decodes": 4,
+    "profile_b_npz_decodes": 2,
+    "model_clones": 2,
+    "parameterless_reinitializations": 4,
+    "empty_containers": 2,
+    "full_origin_verifier_callbacks": 2,
+    "engineering_successes": 1,
+    "source_updates": 0,
+    "measured_cells": 0,
+    "complete_state_tensors": 223,
+    "unchanged_non_head_tensors": 221,
+    "head_parameters": 402,
+    "both_head_tensors_changed": true,
+    "finite_gradients_loss_logits": true,
+    "factory_local_source_support_query_zero": true,
+    "query_predictions": [
+      1,
+      0
+    ],
+    "query_targets": [
+      0,
+      1
+    ],
+    "correct_queries": 0,
+    "accuracy_threshold": null,
+    "scientific_predictive_performance_qualified": false,
+    "native_job_name": "pro3_migration_20261025T141843Z_07aac7fdcd",
+    "native_normal_exit": 0,
+    "native_elapsed_seconds": 590.082323,
+    "native_receipt_sha256": "9ccce420bbd8d1af25aadb0805231740cb8043c99e7003ea2e82786a844915ca",
+    "closed_empty_handles_closed_freshly_absent": true,
+    "process_peak_bytes": 1627484160,
+    "job_peak_bytes": 1661386752,
+    "process_cap_mib": 4096,
+    "job_cap_mib": 5120,
+    "max_job_seconds": 600,
+    "session_cleanup_allowance_seconds": 5,
+    "startup_ram_gib": 4,
+    "active_ram_gib": 4,
+    "disk_gib": 20,
+    "threads": 1,
+    "gpu_hidden": true,
+    "peer_grant": "012",
+    "peer_grant_sha256": "214ae5d6f8363f2aa28087f8b255d0dac30e2a3e8f8bd7645aec7c15d3f3e58f",
+    "peer_window_start_utc": "2026-10-25T14:18:08Z",
+    "peer_window_end_utc": "2026-10-25T14:38:08Z",
+    "external_stdlib_closeout_seconds": 62.7637089,
+    "external_stdlib_closeout_limit_seconds": 300,
+    "external_stdlib_exit_code": 0,
+    "external_stdlib_reaped": true,
+    "full_compute_custody_released": true,
+    "outstanding_owned_children": 0,
+    "no_retry_or_second_job": true
+  },
+  "post_terminal_validation": {
+    "actual_backend_input_audits_inside_job": 2,
+    "full_origin_verifiers_inside_job": 2,
+    "real_defensive_input_observations": 2,
+    "initial_and_physical_execution_pre_post_inventory_join_verified": true,
+    "input_inventory_exact_four_fields": true,
+    "child_status_unchanged": "pending_external_post_job",
+    "external_status": "fulfilled_external_post_job",
+    "deferred": true,
+    "final_contract_fixture_runtime_module_checks_inside_job": true,
+    "no_content_hash_or_authorization_decision_cache": true
+  },
+  "historical_boundaries": {
+    "v5_v6_actual_deadline_failures_preserved": true,
+    "v5_v6_physical_terminals_quarantined": true,
+    "v5_v6_aggregate_counts_remain_null_unknown": true,
+    "original_target01_attempts_exhausted": true,
+    "future_targets": "subjects02-52",
+    "available_source_catalogs": 52,
+    "narrow_gate_a_acceptance_unchanged": true,
+    "final_scientific_freeze_unsigned": true
+  },
+  "root_native_supplement_separately_verified": true,
+  "root_native_supplement_sha256": "49fb099e89dd8b01b41176c427defba5e61a214737bcdd9a1533d40fa6346978",
+  "document_reviewed_utc": "2026-10-25T14:43:29.9514092Z",
+  "document_bindings": {
+    "D:\\Aenv\\pro3\\HANDOFF.md": "a21fd832cdc29b2d9163ca10d77d7a48815858e3abe28cc4ea434c7821009b3c",
+    "D:\\Aenv\\pro3\\AGENT_COORDINATION.md": "8d101e9e61d4825647e3ab1766219afacde7a0f8cf7b27d600140371ce5550cc",
+    "D:\\Aenv\\pro3\\CONTINUE_HERE.md": "964196e6ceba5659b5ec9894d93ff18a971f36f661c6d47ccc90549e66e5645e",
+    "D:\\Aenv\\pro3\\PHASE2_START_HERE.md": "c0db71be916b52eb4172d8a2450c54426e8868ab5f2d4e2327d9a3934d67d6a6",
+    "D:\\Aenv\\pro3\\README.md": "b37b87187297da783e15929570aeee83051b262591307bb263939c01f54945c2",
+    "D:\\Aenv\\pro3\\WINDOWS_SETUP.md": "21ea96ef63eb4838a758b5d8d10463a366813d54f114030c24bdfe0c4aaa7144",
+    "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_qualification_20261025.md": "f6491639dde6ee77dde76e1185b91fb393f57c89776c8ae4a36dd8dd1c442c01"
+  },
+  "physical_binding_records": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\pins.json": {
+      "bytes": 609270,
+      "sha256": "fbb97f491e52deb7f7d2c600fd647fe3f4f4099dd5135916fddcfc27f8040ce7"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\source-review.json": {
+      "bytes": 3760,
+      "sha256": "7d1bf8d4091204b9ea06201447de86cec3a3e8640f2650884a9a68848ff914e8"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\origin-contract.json": {
+      "bytes": 848923,
+      "sha256": "f1318c2f05dbf55a1808e621f05f4574ee695ff5ec15187b5ce2932650eaa781"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\closeout-tests-result.json": {
+      "bytes": 9321,
+      "sha256": "1c1a2083174c6ed1aca9acb6ee1acd9644498d21bb2bc484770412aeb998f929"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\tests-final-review.json": {
+      "bytes": 5380,
+      "sha256": "41b1a3d9d2d6882ce21ed2c0a1886c1b3bdbb7147db16c3adb597cd785765995"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\lease-closeout_tests_001.json": {
+      "bytes": 1342,
+      "sha256": "5450c41203047664837e05c9404f2243402cfbb531453c05f6b027cac7007963"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\closeout-integration-result.json": {
+      "bytes": 18694,
+      "sha256": "c41a5cc1f7c976054f0380d9f4cc1057166fb1eef59dc711068c68773475eb54"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\lease-closeout_integration_001.json": {
+      "bytes": 1596,
+      "sha256": "8625c58542440b36f9d63dc08b16c8ab9409f82b0fc20139d7a9598d1077068b"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\closeout-integration-supervision_001.json": {
+      "bytes": 463,
+      "sha256": "6162f7429e382c0858dfcc7eed462e2947f1981fc330fdd90e32a111fc33fcb4"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\final-git-native-check_001.json": {
+      "bytes": 893,
+      "sha256": "49fb099e89dd8b01b41176c427defba5e61a214737bcdd9a1533d40fa6346978"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\i1\\result.json": {
+      "bytes": 175144,
+      "sha256": "8b2dead0aebe9b492609cadd2f67bfca5a94ae3148945470ce4ec04776060488"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\i1\\qualification.json": {
+      "bytes": 923170,
+      "sha256": "f1489e16042f030e9fb43e10d4b95c8ae1a4bee0313873c70320223825234c28"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v7\\export-closeout.ps1": {
+      "bytes": 30479,
+      "sha256": "76cec34505b9ae6bae71bdbe872e7f0f332b4c6295f9bbbc6cff472327d9d6bb"
+    },
+    "D:\\Aenv\\pro3\\evidence\\cho51-provenance-numerical-worker-20261025-v7\\manifest.json": {
+      "bytes": 22279,
+      "sha256": "3c20effedf50eb952e0ed50497f7eb4b901be66b3ae4d54d9593af7debf3d9a5"
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T141843Z_07aac7fdcd\\receipt.json": {
+      "bytes": 1684,
+      "sha256": "9ccce420bbd8d1af25aadb0805231740cb8043c99e7003ea2e82786a844915ca"
+    }
+  },
+  "review_method": "Independent read-only native PowerShell hashing, stable direct physical inventories, typed JSON and proof joins, C# scoped Job probes and native process queries. No Python/helper/test/model/numerical replay during review. Seven document hashes bind current frozen bytes; archived historical bindings use exact snapshots, not advanced heads."
+}

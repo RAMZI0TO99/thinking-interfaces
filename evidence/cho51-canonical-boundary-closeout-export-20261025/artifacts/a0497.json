@@ -1,0 +1,31 @@
+{
+  "schema": "cho51_canonical_boundary_export_admission_v1",
+  "accepted": true,
+  "observed_utc": "2026-10-25T21:32:19.3789240+00:00",
+  "scope": "native_metadata_copy_custody_only",
+  "selection_sha256": "87000e9c8b014f4f7c848d08b83194762266907428589662ce11f6623372034e",
+  "selection_review_sha256": "f01e3b8ab15bf11cbed8b9f82699fda83e676e2dc185484adb2369908c327605",
+  "destination": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025",
+  "source_rows": 494,
+  "closing_custody_control_paths": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-selection_001.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-selection-review_001.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-admission_001.json"
+  ],
+  "expected_artifact_rows": 497,
+  "expected_total_files": 501,
+  "maximum_payload_bytes": 67108864,
+  "maximum_file_bytes": 8388608,
+  "maximum_closing_control_bytes": 1048576,
+  "source006_scope_sha256": "9196eaca8c1988c357abfa72881b3e505317ce7faff50dc352b700407848d821",
+  "source006_adoption_sha256": "e139f7ade01ea2c005f70eb7e4befff7be06e9fcdfc9e7706b45c2b8878cfea8",
+  "source006_end_utc": "2026-10-25T21:55:00Z",
+  "python_invocations": 0,
+  "jobs_created": 0,
+  "process_or_job_discovery_helper_invoked": false,
+  "physical_helper_calls": "Pin/Recheck/Dispose plus native resource/file-existence queries only",
+  "copy_verification_required": true,
+  "independent_export_copy_review_required": true,
+  "scientific_admission": false,
+  "runtime_for_future_execution_qualified": false
+}

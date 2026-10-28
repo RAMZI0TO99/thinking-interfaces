@@ -1,0 +1,52 @@
+{
+  "schema": "cho51_p3_contracts_preparation_source_review_v2",
+  "scope": "cho51_p3_contracts_20261027_v1_native_preparation_002",
+  "reviewer": "Independent subagent /root/p3_mapping_finish; author of none of the three reviewed preparation sources",
+  "observed_utc": "2026-10-27T16:07:58.5184451Z",
+  "source_only": true,
+  "independent_review": true,
+  "passed": true,
+  "remaining_actionable_findings": [],
+  "original_source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "files": {
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-supervise_002.ps1": "fe1c66bff77c83038f0bb60e98d0df8285028f9b0cbbca3725283f450129e907",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-protocol_002.md": "596e86d51de2087b70bdc5e2651f431b5d592f6e8eb01964b24cf165d5bb23d8",
+    "runs/coordination/cho51_p3_contracts_20261027_v1/prepare_003.ps1": "eedacc69aa0722f3afb8ee84d9ab6b87d3e38342f6bc6ece38ab7f82731e23d1"
+  },
+  "file_bytes": {
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-supervise_002.ps1": 46386,
+    "runs/coordination/cho51_p3_contracts_20261027_v1/preparation-protocol_002.md": 19395,
+    "runs/coordination/cho51_p3_contracts_20261027_v1/prepare_003.ps1": 19536
+  },
+  "source_parser": {
+    "preparation-supervise_002.ps1": 0,
+    "prepare_003.ps1": 0
+  },
+  "original14_current_native_hash_mismatches": [],
+  "corrected_source_findings": [
+    "prepare_003 Read-Json returns the unchanged native Json-Value Dictionary[string,object]; optional supporting_bootstrap_files lookup now uses its public ContainsKey API. OrderedDictionary roster/file Contains calls remain valid. Corrected source was independently rehashed and reparsed without execution."
+  ],
+  "static_review_basis": [
+    "Read all three sources, current project instructions/handoff/coordination and referenced native pin/JSON implementation. Native hash checks matched all reviewed bytes and all frozen14 source entries; PowerShell AST parsed both scripts with zero errors.",
+    "The pure-PowerShell parent loads no C# helper and owns one direct hidden prepare_003 child. Genuine independent request/peer/Root grants, original14 review, exact ancillary3 review, resource amendment, actual observation003 and dynamic finite Source references precede launch. Source coexistence is not operational admission.",
+    "Start uncertainty is recorded before Process.Start. Original private _haveProcessHandle/_processHandle fields of the exact pinned Process implementation recover only an actually retained Start-owned handle for cleanup; no SafeHandle getter/PID reopening is used. Unknown Start and missing prior closure receipts remain custody false/unreleased even after best-effort cleanup.",
+    "Common actual external pre-Begin QPC/UTC bounds all modes to300 seconds with normal240/cleanup270/effects285 milestones, strict greater-than60-second Source/operation reserve, real prior mode exit joins and required independent post-Release actual-return audit. Synchronous OS/tool stalls are explicitly not established as interruptible by static review.",
+    "Two startup4GiB samples, active4GiB/disk20GiB and all five genuine pause paths remain guarded. Bounded cleanup-only metadata cannot promote a refused operation. Async64KiB stream tasks are polled on the same runspace, with1MiB each/EOF/reap/bounded CIM generation tables and no PowerShell background callback.",
+    "The accepted observational runtime remains separate from native identity/full pins. Parent rehashes and retains the accepted code/support roster before child C# loading; child physically pins the combined2500-file/1GiB/64MiB roster after compilation while retaining global25000-file/4GiB inventory limits, canonical432, runtime27, exact260-byte MNE resource and unchanged original14 reviewed_files. Native.Pin permits zero-length runtime inputs.",
+    "CreateNew dispatch/attempt/evidence/fresh pins preserve once identities and partial failures. Closed failure/completion/release schemas propagate Start outcome, actual caller exits and false full-caller/native-pin/scientific acceptance. Evidence graph does not require unknown future hashes."
+  ],
+  "limitations": {
+    "native_preparation_executed": false,
+    "native_helper_loaded_or_compiled": false,
+    "python_or_tests_executed": false,
+    "candidate_fixture_executed": false,
+    "child_or_job_started": false,
+    "runtime_compatibility_established": false,
+    "full_caller_timing_or_custody_established": false,
+    "pins_created_or_accepted": false,
+    "operational_admission_granted": false,
+    "scientific_admission": false,
+    "accepted_real_cases": 0
+  },
+  "disposition": "Clean different-author source review only. Fresh actual observational acceptance, exact independently reviewed request, genuine peer and Root admission, applicable finite Source interval and actual runtime/resource/custody evidence remain mandatory; no operation is admitted by this receipt."
+}

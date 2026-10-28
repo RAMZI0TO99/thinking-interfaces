@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_provenance_restore_native_utc_regression_v1",
+  "observed_utc": "2026-10-25T07:13:35.4915521Z",
+  "powershell_version": "7.6.5",
+  "passed": true,
+  "tests": [
+    {
+      "input": "2026-10-25T07:01:08Z",
+      "parsed_utc": "2026-10-25T07:01:08.0000000+00:00",
+      "preserved_string": true
+    },
+    {
+      "input": "2026-10-25T10:01:08+03:00",
+      "parsed_utc": "2026-10-25T07:01:08.0000000+00:00",
+      "preserved_string": true
+    }
+  ],
+  "powershell_parse_errors": 0,
+  "python_executed": false,
+  "validation_executed": false
+}

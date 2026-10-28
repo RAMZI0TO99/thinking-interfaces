@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_canonical_boundary_external_closeout_supervision_v1",
+  "started_utc": "2026-10-25T20:17:45.5318173+00:00",
+  "ended_utc": "2026-10-25T20:19:35.2056571+00:00",
+  "elapsed_seconds": 109.6719977,
+  "owned_pid": 320932,
+  "observed_owned_pids": [
+    313048,
+    313824,
+    320932
+  ],
+  "limit_seconds": 300,
+  "absolute_window_end_utc": "2026-10-25T20:26:23.0000000+00:00",
+  "stop_trigger_seconds": 285,
+  "timed_out": false,
+  "stop_reason": null,
+  "exit_code": 0,
+  "owned_tree_reaped": true,
+  "stdout_eof": true,
+  "stderr_eof": true,
+  "auditor_sha256": "e40401a4099734e0b8876f493a88d1ead7d3844ff791ae8ac953f7e9ffc00bcd",
+  "candidate_imported": false,
+  "job_created": false,
+  "scientific_admission": false
+}

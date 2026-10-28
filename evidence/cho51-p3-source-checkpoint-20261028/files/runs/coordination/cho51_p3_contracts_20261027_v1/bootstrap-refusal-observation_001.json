@@ -1,0 +1,26 @@
+{
+  "schema": "cho51_p3_bootstrap_peer_refusal_observation_v1",
+  "observed_utc": "2026-10-27T15:31:29.3655394+00:00",
+  "observer": "Pro3 Root; ordinary native PowerShell metadata read and SHA256 only",
+  "actual_peer_decision_path": "D:\\Aenv\\pro2\\WORK\\resume-20261027-002\\coordination\\pro3_bootstrap_review_001\\ROOT_PRO3_BOOTSTRAP_REQUEST001_EXPLICIT_REJECTED_DECISION_001.json",
+  "actual_peer_decision_bytes": 16953,
+  "actual_peer_decision_sha256": "cb3c427f239b47c0e6070602c02a116eba57e0acf643c15157d485dcc4ce13bc",
+  "actual_peer_schema": "pro2_pro3_bootstrap_observation_decision_v1",
+  "released": false,
+  "accepted": false,
+  "helper_invocations_granted": 0,
+  "rejected_request_sha256": "4d856d586904f34dd758ca36049e8471748b4849539d13216f36d9cc35710f46",
+  "blocking_findings": [
+    "B01: cooperative helper checks do not establish the complete90-second caller/control/release bound; no exact bounded outer control Source was supplied.",
+    "B02: missing immediate pre/post output effect deadline/window/strictly-greater-than60-second reserve/readback gates.",
+    "B03: missing exact external-caller Source, closed failure/completion/release schemas, stream/EOF/partial-output/once-entry closure and acyclic evidence order."
+  ],
+  "interpretation": "Static control/evidence refusal, not an observed overrun or measured resource shortage. Native same-handle identity was not required of this explicitly unqualified observation.",
+  "version001_preserved_unexecuted": true,
+  "version002_requires_separate_source_review_request_peer_decision_and_root_admission": true,
+  "bootstrap_executed": false,
+  "native_preparation_executed": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "cho51_p3_bootstrap_supervisor_source_review_v2",
+  "scope": "cho51_p3_contracts_20261027_v1_bootstrap_observation_002",
+  "observed_utc": "2026-10-27T15:46:34+00:00",
+  "reviewer": "Pro3 Root; different from outer/protocol author /root/p3_independent_review",
+  "source_author": "/root/p3_independent_review",
+  "source_only": true,
+  "remaining_actionable_findings": [],
+  "files": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-supervise_002.ps1": "8faabbd9084bf51f7b932ee79e795e62189b0e130cee8eac8b5a93bcdd9c6240",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_contracts_20261027_v1\\bootstrap-protocol_002.md": "7328551bbd9c1b268a3595407b1c7c42ca842bdfa7ccfea2ebfc33c4cef07775"
+  },
+  "file_bytes": {
+    "bootstrap-supervise_002.ps1": 36789,
+    "bootstrap-protocol_002.md": 18701
+  },
+  "powershell_ast_errors": 0,
+  "review_method": "Root bounded source/PowerShell AST review, request/evidence graph inspection and native metadata hashes; no invocation.",
+  "corrected_findings": [
+    "Write function collided with the real built-in Write-Output alias; replaced with unique Write-New throughout before freeze.",
+    "All started-child outcomes now attempt retained-handle-only cleanup, bounded reap/EOF drain and final child-table closure, including nonzero exit and early identity/stream setup failure.",
+    "Partial stream preservation is factual, not a fabricated unconditional true; ambiguous descendants/EOF/table state prohibit custody closure.",
+    "All successful mode effects require fresh active4GiB/disk20GiB/pause observations; explicitly admitted bounded failure/closure metadata can proceed after a refusal without observation continuation or success.",
+    "Actual Begin/Invoke/Complete exit codes are separately supplied from genuine tool results; prior internal publication cannot launder a later nonzero actual caller exit.",
+    "Actual completed command chunk/session identity is permitted as a truthful tool identity; no invented call ID or internally fabricated return timestamp."
+  ],
+  "checked_controls": [
+    "Separate002 namespace/scope; no001 or original14 mutation; exact CreateNew once outputs and no retry.",
+    "Exact request/Root/actual peer and resource/Source009 joins; individual different-author receipts and consolidated three-source map.",
+    "External pre-Begin QPC/UTC/frequency, fresh age<5s; one shared clock for all modes; strict90s whole scope and >60s operation/Source reserve.",
+    "Helper launch before15s, work stop65s, cleanup/drain/reap80s, effects85s, genuine Root post-Release actual-return upper bound<90s required separately.",
+    "Exactly one fixed hidden PowerShell helper launched without shell expansion; no parent C# or native helper, Python or Job.",
+    "Original Process and SafeHandle retained with DangerousAddRef and exact generation checks; only that retained root may be killed. Source-pinned Process DLL retained-handle IL observation attributed to its independent inspector; no PID-only kill, Refresh or rebinding.",
+    "Fixed64KiB asynchronous pipe reads polled on the same runspace, <=1MiB per pipe, bounded CIM process tables/queries, EOF and actual reap required.",
+    "Strict1MiB metadata/depth32/50000 nodes, duplicate/nonfinite refusal and timestamp strings; flush and pre/post clock/window/readback checks.",
+    "Closed dispatch/supervision/failure/completion fields and acyclic evidence order; exact eight signed-integer-zero numerical budget and false science.",
+    "Root external sequencing, all actual command exits and post-Release QPC/UTC are necessary facts, not internally proven future events."
+  ],
+  "limitations": [
+    "Static review only, not a runtime pass, operational admission, full host/runtime identity proof or an absolute interruptibility guarantee for synchronous OS/tool-host operations.",
+    "An actual late/stalled outer or tool host fails full-caller acceptance; source checks cannot retroactively certify90 seconds.",
+    "Unexpected/transient descendants are conservatively bounded by sampled tables plus the reviewed no-spawn helper graph, not a kernel Job guarantee.",
+    "Fresh genuine peer decision and Root admission must precede any mode; later actual-output acceptance/native preparation/unit/closeout admissions remain separate."
+  ],
+  "controller_executed": false,
+  "helper_executed": false,
+  "native_helper_compiled": false,
+  "python_or_tests_executed": false,
+  "job_created": false,
+  "accepted_real_cases": 0,
+  "scientific_admission": false
+}

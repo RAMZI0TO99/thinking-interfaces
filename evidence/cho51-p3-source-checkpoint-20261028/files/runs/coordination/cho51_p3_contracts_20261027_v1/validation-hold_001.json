@@ -1,0 +1,64 @@
+{
+  "schema": "cho51_p3_contracts_validation_hold_v1",
+  "scope": "cho51_p3_contracts_20261027_v1_tests",
+  "observed_utc": "2026-10-27T14:17:01.7875209+00:00",
+  "status": "implemented_and_statically_reviewed_not_executed",
+  "source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "expected_candidate_tests": 117,
+  "expected_stdlib_controls": 34,
+  "source_observation": {
+    "observed_utc": "2026-10-27T14:17:01.7875209+00:00",
+    "available_ram_bytes": 3786866688,
+    "free_disk_bytes": 76755062784,
+    "source_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+    "reviewed_source_count": 14,
+    "source_hash_mismatches": [],
+    "pause_paths": [
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+        "present": false
+      },
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+        "present": false
+      },
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+        "present": false
+      },
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+        "present": false
+      },
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+        "present": false
+      }
+    ],
+    "python_executed": false,
+    "native_helper_compiled": false
+  },
+  "default_startup_ram_gib": 10,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "fresh_owner_resource_answer_received": false,
+  "old_ram_allowances_reused": false,
+  "root_admission_issued": false,
+  "peer_native_preparation_grant_received": false,
+  "peer_test_job_grant_received": false,
+  "native_preparation_executed": false,
+  "python_executed": false,
+  "native_helper_compiled": false,
+  "test_job_created": false,
+  "passing_test_count": null,
+  "pins_created": false,
+  "blocked_prerequisites": [
+    "Fresh owner RAM decision or availability meeting the unchanged 10 GiB startup requirement; active 4 GiB floor never waived.",
+    "Separate exact native pin-preparation protocol/request and genuine peer decision, source/runtime/custody review, fresh resources and Root admission.",
+    "Fresh physical pins and different-reviewer pin acceptance, then distinct exact nonnumerical Job/external-closeout grant and Root admission."
+  ],
+  "numerical_activity_performed": false,
+  "scientific_admission": false,
+  "accepted_final_scientific_cells": 0,
+  "disposition": "Do not execute prepare.ps1 from Source-only ACK. No Python/test/C# compile/Job started; no validation passing result is fabricated. Preserve settled source and this unexecuted checkpoint."
+}

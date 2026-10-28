@@ -1,0 +1,44 @@
+{
+  "schema": "cho51_canonical_boundary_root_preflight_v1",
+  "observed_utc": "2026-10-25T18:19:25.4577197+00:00",
+  "passed": true,
+  "source_only": true,
+  "pins_sha256": "9d195ef2d32f7932788490a01395cbeac16a750cc9a33a2be516a352d4a35f95",
+  "source_review_sha256": "2f6bfc5949515c3b2508021e080f93ba752635b205b42000425f58fd3493b5b3",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_016.json",
+  "peer_release_sha256": "0d8b4a45933b487aeb45ca3d69ebeaf21d6368a2c90e51520a9f4818a949e5db",
+  "peer_own_explicit_release_sha256": "83352d5d9c86844a97378f7bdb0a0b23270d6a0b2d6d13204c9f453706fe9227",
+  "owner_resource_amendment_sha256": "d9e5cee94fef526a862cdec0abe18c56f1dcfe130030c7c78041f895b71f311e",
+  "physical_files_checked": 18886,
+  "physical_bytes_checked": 3338234257,
+  "physical_same_handle_and_reopened_path_verified": true,
+  "reviewed_sources": 9,
+  "runtime_files": 27,
+  "independent_fresh_set_check_utc": "2026-10-25T18:19:24.3243186+00:00",
+  "canonical_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "expected_metadata_tests": 133,
+  "expected_stdlib_controls": 34,
+  "external_stdlib_closeout_maximum_seconds": 300,
+  "startup_samples": [
+    {
+      "ordinal": 1,
+      "observed_utc": "2026-10-25T18:19:24.7897519+00:00",
+      "available_ram_bytes": 7102930944,
+      "free_disk_bytes": 77615697920
+    },
+    {
+      "ordinal": 2,
+      "observed_utc": "2026-10-25T18:19:25.4572698+00:00",
+      "available_ram_bytes": 7089590272,
+      "free_disk_bytes": 77615697920
+    }
+  ],
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "all_five_pauses_clear": true,
+  "unused_attempt": true,
+  "window_start_utc": "2026-10-25T18:18:00Z",
+  "window_end_utc": "2026-10-25T18:38:00Z",
+  "scientific_admission": false
+}

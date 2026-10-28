@@ -1,0 +1,9 @@
+{
+  "schema": "cho51_canonical_boundary_native_custody_preparation_error_v1",
+  "observed_utc": "2026-10-25T21:11:33.0526347+00:00",
+  "error": "Initial native caller/lease preparation command had a PowerShell catch-clause parser error before executing any statement or creating any files. Corrected custody-only command followed; no Python or supervisor was rerun.",
+  "initial_tool_exit_code": 1,
+  "new_interpreter_invocations": 0,
+  "new_jobs": 0,
+  "scientific_admission": false
+}

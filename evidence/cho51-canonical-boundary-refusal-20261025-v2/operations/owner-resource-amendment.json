@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_canonical_boundary_owner_resource_amendment_v1",
+  "scope": "cho51_canonical_boundary_20261025_v2_tests",
+  "owner_instruction_exact": "work with the 8 GiB",
+  "owner_resumption_instruction_exact": "i hvae freed some ram use it.",
+  "previous_startup_ram_gib": 10,
+  "startup_ram_gib": 8,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "maximum_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "gpu_hidden": true,
+  "canonical_guard_modified": false,
+  "historical_receipts_requalified": false,
+  "prior_4gib_amendment_reused": false,
+  "scientific_admission": false,
+  "scope_interpretation": "Same bounded P1/P2 metadata-only validation and same direct owner8GiB authority, continued in a fresh operational successor after the preserved failed pytest logging attempt. No floor lowering, numerical work, scientific admission, old grant reuse or automatic retry. A distinct settled-source review, fresh byte pins and new exact peer grant remain required."
+}

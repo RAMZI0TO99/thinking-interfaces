@@ -1,0 +1,285 @@
+{
+  "schema": "cho51_provenance_numerical_worker_native_runtime_v1",
+  "observed_utc": "2026-10-25T11:24:07.8531316Z",
+  "historical_pins_sha256": "4ba8504b7ff1f91f26cdfc721813de8f643c245ab738b04927ca1ee0be0c12dc",
+  "runtime": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "7a4102b91959bb234507850ea584e1d31d300a6831b171e4aadc59ff592f0234",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll": "67bdf2c2ee177edf2cac76c7b2586206899918f7604c953810ac6a4e6d3f1646",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll": "e39aa2da5ea2d310d89994f71bf913a0a137ebaf9f692a565b8c896081512f28",
+    "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe": "560b9ef7d856608ab8da02ded2dc8a1951ad1f424c382c0ec6a698874165a18e"
+  },
+  "runtime_modules": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_asyncio.pyd": "1774c3242c9ad14729d4a9f006368b4f26753bca2831453a455f96d8beacdb40",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_bz2.pyd": "d3830698b0ad3ab1512d42c4dabf07ac4809bf7761fcd3e22518563d32e0b350",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_ctypes.pyd": "441655d1c076bda8b250c0f1360a83fae18ad9cf7901f589d9faf1ae6afb379c",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_decimal.pyd": "1a72e5616729b03ecd0190b2fda0e39807efbccf0598b8db3501c4ed9a98057f",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_elementtree.pyd": "56aa8f0071aac810dd19a46337b71c91234162126832705cb541c9a2e08e0bb0",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_hashlib.pyd": "24aa07ac5b77bac70dc9bc8a171e65c529f42ba200f740c9eb0d3256be7ae80c",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_lzma.pyd": "fddfc76d9697476cd226d3c9b2f0f5a97f4b8b0fcb7cca9025534acb1131d86a",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_multiprocessing.pyd": "c91e57c0e3dcb9b6edad2b5d9c0428d72f86033464928b9d0f680b1b7add8efb",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_overlapped.pyd": "b0dfdf90205bcad6b09505da14369c3354a4c6e74311bdbceaabc862dd0eae38",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_queue.pyd": "65b250e9b2ddced8472ffcc5e8323e8d72136680c19fc3948e83815b126926e9",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_socket.pyd": "2e121ae5def1a4e83caa53c8e461767b43ede8bfcf343242f75a12209c0069e5",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_ssl.pyd": "e44e04cf71ede1c1644adc6dab8dd9c89e0194436aec76302b2fdbfe4fdfcec2",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_uuid.pyd": "942f759559552216c15cc368c5d87e7161cb6d1203f02753aad31028dda55dbc",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_wmi.pyd": "f6999adaf91df470253a96d735f88773c88736025f160b47e4bc5f02ee3bc8ad",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_zoneinfo.pyd": "1cbcc17b1693003c7892c14b1902d41d4b8f4209e3394caf26ecb5dfe10327af",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\pyexpat.pyd": "236914334bdaf6986cae2c9b2395231cb1cf9fc12baaa3beb0503005737f0175",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\select.pyd": "7618630e4c33ea24e757363e54a3c4edd2e0ce8da036b34a50aabb2b0bdf150f",
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\unicodedata.pyd": "db4a648eae21677607f3db4b60549a51054f5ba60ba4144f86dc6afcb70bd97e"
+  },
+  "supporting_runtime_sources": {
+    "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\copy.py": "cbd25547933176fcf6bb05c2adc9f4796d15ac20b9b82dcf890daea7203daeab",
+    "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\einops\\layers\\__init__.py": "8e28f0118d3b62bdeb071f0de73c19fb9a9f6e5f8a5f605c4432bc3491436960",
+    "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\einops\\layers\\torch.py": "055f8fce3a228c653d44679ad47085b88331e3271c89ccfbebb3348c90c81fa5",
+    "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\container.py": "d8c2b56bfa2204e8c2dc2466549a7b2299a14324c03a1d563e2b32072ced9a0b"
+  },
+  "transitions": [
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "group": "runtime",
+      "historical_sha256": "7a4102b91959bb234507850ea584e1d31d300a6831b171e4aadc59ff592f0234",
+      "current_sha256": "7a4102b91959bb234507850ea584e1d31d300a6831b171e4aadc59ff592f0234",
+      "changed": false,
+      "bytes": 107312,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python3.dll",
+      "group": "runtime",
+      "historical_sha256": "67bdf2c2ee177edf2cac76c7b2586206899918f7604c953810ac6a4e6d3f1646",
+      "current_sha256": "67bdf2c2ee177edf2cac76c7b2586206899918f7604c953810ac6a4e6d3f1646",
+      "changed": false,
+      "bytes": 71984,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.dll",
+      "group": "runtime",
+      "historical_sha256": "e39aa2da5ea2d310d89994f71bf913a0a137ebaf9f692a565b8c896081512f28",
+      "current_sha256": "e39aa2da5ea2d310d89994f71bf913a0a137ebaf9f692a565b8c896081512f28",
+      "changed": false,
+      "bytes": 6985520,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+      "group": "runtime",
+      "historical_sha256": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+      "current_sha256": "da240fe9bc24895b3e04150a4990b8a6ff329ecabcd8f19684c2cc310da5ef3f",
+      "changed": false,
+      "bytes": 46480,
+      "product_version": "2.53.0.windows.1"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+      "group": "runtime",
+      "historical_sha256": "560b9ef7d856608ab8da02ded2dc8a1951ad1f424c382c0ec6a698874165a18e",
+      "current_sha256": "560b9ef7d856608ab8da02ded2dc8a1951ad1f424c382c0ec6a698874165a18e",
+      "changed": false,
+      "bytes": 262144,
+      "product_version": "3.12.13"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_asyncio.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "1774c3242c9ad14729d4a9f006368b4f26753bca2831453a455f96d8beacdb40",
+      "current_sha256": "1774c3242c9ad14729d4a9f006368b4f26753bca2831453a455f96d8beacdb40",
+      "changed": false,
+      "bytes": 75056,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_bz2.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "d3830698b0ad3ab1512d42c4dabf07ac4809bf7761fcd3e22518563d32e0b350",
+      "current_sha256": "d3830698b0ad3ab1512d42c4dabf07ac4809bf7761fcd3e22518563d32e0b350",
+      "changed": false,
+      "bytes": 88880,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_ctypes.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "441655d1c076bda8b250c0f1360a83fae18ad9cf7901f589d9faf1ae6afb379c",
+      "current_sha256": "441655d1c076bda8b250c0f1360a83fae18ad9cf7901f589d9faf1ae6afb379c",
+      "changed": false,
+      "bytes": 131888,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_decimal.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "1a72e5616729b03ecd0190b2fda0e39807efbccf0598b8db3501c4ed9a98057f",
+      "current_sha256": "1a72e5616729b03ecd0190b2fda0e39807efbccf0598b8db3501c4ed9a98057f",
+      "changed": false,
+      "bytes": 263984,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_elementtree.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "56aa8f0071aac810dd19a46337b71c91234162126832705cb541c9a2e08e0bb0",
+      "current_sha256": "56aa8f0071aac810dd19a46337b71c91234162126832705cb541c9a2e08e0bb0",
+      "changed": false,
+      "bytes": 137520,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_hashlib.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "24aa07ac5b77bac70dc9bc8a171e65c529f42ba200f740c9eb0d3256be7ae80c",
+      "current_sha256": "24aa07ac5b77bac70dc9bc8a171e65c529f42ba200f740c9eb0d3256be7ae80c",
+      "changed": false,
+      "bytes": 70448,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_lzma.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "fddfc76d9697476cd226d3c9b2f0f5a97f4b8b0fcb7cca9025534acb1131d86a",
+      "current_sha256": "fddfc76d9697476cd226d3c9b2f0f5a97f4b8b0fcb7cca9025534acb1131d86a",
+      "changed": false,
+      "bytes": 168240,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_multiprocessing.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "c91e57c0e3dcb9b6edad2b5d9c0428d72f86033464928b9d0f680b1b7add8efb",
+      "current_sha256": "c91e57c0e3dcb9b6edad2b5d9c0428d72f86033464928b9d0f680b1b7add8efb",
+      "changed": false,
+      "bytes": 39728,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_overlapped.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "b0dfdf90205bcad6b09505da14369c3354a4c6e74311bdbceaabc862dd0eae38",
+      "current_sha256": "b0dfdf90205bcad6b09505da14369c3354a4c6e74311bdbceaabc862dd0eae38",
+      "changed": false,
+      "bytes": 59696,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_queue.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "65b250e9b2ddced8472ffcc5e8323e8d72136680c19fc3948e83815b126926e9",
+      "current_sha256": "65b250e9b2ddced8472ffcc5e8323e8d72136680c19fc3948e83815b126926e9",
+      "changed": false,
+      "bytes": 36144,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_socket.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "2e121ae5def1a4e83caa53c8e461767b43ede8bfcf343242f75a12209c0069e5",
+      "current_sha256": "2e121ae5def1a4e83caa53c8e461767b43ede8bfcf343242f75a12209c0069e5",
+      "changed": false,
+      "bytes": 87344,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_ssl.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "e44e04cf71ede1c1644adc6dab8dd9c89e0194436aec76302b2fdbfe4fdfcec2",
+      "current_sha256": "e44e04cf71ede1c1644adc6dab8dd9c89e0194436aec76302b2fdbfe4fdfcec2",
+      "changed": false,
+      "bytes": 180528,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_uuid.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "942f759559552216c15cc368c5d87e7161cb6d1203f02753aad31028dda55dbc",
+      "current_sha256": "942f759559552216c15cc368c5d87e7161cb6d1203f02753aad31028dda55dbc",
+      "changed": false,
+      "bytes": 29488,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_wmi.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "f6999adaf91df470253a96d735f88773c88736025f160b47e4bc5f02ee3bc8ad",
+      "current_sha256": "f6999adaf91df470253a96d735f88773c88736025f160b47e4bc5f02ee3bc8ad",
+      "changed": false,
+      "bytes": 41264,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\_zoneinfo.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "1cbcc17b1693003c7892c14b1902d41d4b8f4209e3394caf26ecb5dfe10327af",
+      "current_sha256": "1cbcc17b1693003c7892c14b1902d41d4b8f4209e3394caf26ecb5dfe10327af",
+      "changed": false,
+      "bytes": 52016,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\pyexpat.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "236914334bdaf6986cae2c9b2395231cb1cf9fc12baaa3beb0503005737f0175",
+      "current_sha256": "236914334bdaf6986cae2c9b2395231cb1cf9fc12baaa3beb0503005737f0175",
+      "changed": false,
+      "bytes": 226096,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\select.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "7618630e4c33ea24e757363e54a3c4edd2e0ce8da036b34a50aabb2b0bdf150f",
+      "current_sha256": "7618630e4c33ea24e757363e54a3c4edd2e0ce8da036b34a50aabb2b0bdf150f",
+      "changed": false,
+      "bytes": 34608,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs\\unicodedata.pyd",
+      "group": "runtime_modules",
+      "historical_sha256": "db4a648eae21677607f3db4b60549a51054f5ba60ba4144f86dc6afcb70bd97e",
+      "current_sha256": "db4a648eae21677607f3db4b60549a51054f5ba60ba4144f86dc6afcb70bd97e",
+      "changed": false,
+      "bytes": 1143600,
+      "product_version": "3.12.14"
+    },
+    {
+      "path": "C:\\Users\\aladdin-alyanai\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\copy.py",
+      "group": "supporting_runtime_sources",
+      "historical_sha256": "cbd25547933176fcf6bb05c2adc9f4796d15ac20b9b82dcf890daea7203daeab",
+      "current_sha256": "cbd25547933176fcf6bb05c2adc9f4796d15ac20b9b82dcf890daea7203daeab",
+      "changed": false,
+      "bytes": 8412,
+      "product_version": null
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\einops\\layers\\__init__.py",
+      "group": "supporting_runtime_sources",
+      "historical_sha256": "8e28f0118d3b62bdeb071f0de73c19fb9a9f6e5f8a5f605c4432bc3491436960",
+      "current_sha256": "8e28f0118d3b62bdeb071f0de73c19fb9a9f6e5f8a5f605c4432bc3491436960",
+      "changed": false,
+      "bytes": 3705,
+      "product_version": null
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\einops\\layers\\torch.py",
+      "group": "supporting_runtime_sources",
+      "historical_sha256": "055f8fce3a228c653d44679ad47085b88331e3271c89ccfbebb3348c90c81fa5",
+      "current_sha256": "055f8fce3a228c653d44679ad47085b88331e3271c89ccfbebb3348c90c81fa5",
+      "changed": false,
+      "bytes": 2405,
+      "product_version": null
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\container.py",
+      "group": "supporting_runtime_sources",
+      "historical_sha256": "d8c2b56bfa2204e8c2dc2466549a7b2299a14324c03a1d563e2b32072ced9a0b",
+      "current_sha256": "d8c2b56bfa2204e8c2dc2466549a7b2299a14324c03a1d563e2b32072ced9a0b",
+      "changed": false,
+      "bytes": 38432,
+      "product_version": null
+    }
+  ],
+  "python_executed": false,
+  "scientific_admission": false
+}

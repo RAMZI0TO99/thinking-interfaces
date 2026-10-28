@@ -1,0 +1,57 @@
+{
+  "schema": "cho51_canonical_boundary_export_admission_v2",
+  "accepted": true,
+  "observed_utc": "2026-10-25T21:38:38.7373785+00:00",
+  "scope": "native_metadata_copy_custody_only",
+  "selection_sha256": "87000e9c8b014f4f7c848d08b83194762266907428589662ce11f6623372034e",
+  "selection_review_sha256": "f01e3b8ab15bf11cbed8b9f82699fda83e676e2dc185484adb2369908c327605",
+  "destination": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025",
+  "source_rows": 494,
+  "closing_custody_control_paths": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-selection_001.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-selection-review_001.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-admission_001.json"
+  ],
+  "expected_artifact_rows": 497,
+  "expected_total_files": 505,
+  "maximum_payload_bytes": 67108864,
+  "maximum_file_bytes": 8388608,
+  "maximum_closing_control_bytes": 1048576,
+  "source006_scope_sha256": "9196eaca8c1988c357abfa72881b3e505317ce7faff50dc352b700407848d821",
+  "source006_adoption_sha256": "e139f7ade01ea2c005f70eb7e4befff7be06e9fcdfc9e7706b45c2b8878cfea8",
+  "source006_end_utc": "2026-10-25T21:55:00Z",
+  "python_invocations": 0,
+  "jobs_created": 0,
+  "process_or_job_discovery_helper_invoked": false,
+  "physical_helper_calls": "Pin/Recheck/Dispose plus native resource/file-existence queries only",
+  "copy_verification_required": true,
+  "independent_export_copy_review_required": true,
+  "scientific_admission": false,
+  "runtime_for_future_execution_qualified": false,
+  "expected_generated_base_files": 8,
+  "native_copy_attempt": 2,
+  "prior_export_admission_sha256": "882c76edadbe5e8aaec418331a200a8dbd40fa1ec25fb8a89b58f01e54af1724",
+  "copy_amendment_sha256": "0039f4fccb5612217983063545c450ed2bb1a80c5377ea389a7068613ac58891",
+  "copy_amendment_review_sha256": "607195202f0b2aea5b257408a6cc92991d46935437c90dddd8338e0855617358",
+  "copy_failure_record_sha256": "840cb1df507fce66509f8ad85999c7dadd00b6e00e6b940fbb96c8bf3b6d1311",
+  "same_selected_sources_and_three_original_closing_controls": true,
+  "four_additional_custody_base_files": [
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-amendment_002.json",
+      "path": "copy-amendment.json"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-amendment-review_002.json",
+      "path": "copy-amendment-review.json"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-admission_002.json",
+      "path": "copy-admission.json"
+    },
+    {
+      "source": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\export-copy-failure_001.json",
+      "path": "copy-failure.json"
+    }
+  ],
+  "no_validation_or_aggregate_retry": true
+}

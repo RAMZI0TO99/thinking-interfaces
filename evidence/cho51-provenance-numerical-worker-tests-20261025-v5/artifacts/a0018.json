@@ -1,0 +1,172 @@
+{
+  "Pro2_actual_family_Native8_Parser_runtime_or_science_admission": false,
+  "Pro2_pure_suite_saved_result_adoption": {
+    "bytes": 5791,
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-002\\receipt_caller_integration_015\\ROOT_I12_ONCE001_DIFFERENT_SAVED_RESULTS_ADOPTION_001.json",
+    "sha256": "12b5abed92c77671c27eb6fa5dc8b1695757a67a89412850d87ab7eb9e07bce2"
+  },
+  "Pro2_static_preparation_and_metadata_work_may_continue": true,
+  "Pro2_will_not_launch_target_memory_test_until_peer_reported_full_custody_release": true,
+  "Source_review": {
+    "bytes": 3168,
+    "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\source-review.json",
+    "sha256": "9fb1e5616b79d016a8b4e2cb68439dc1bb5bc1b0d4100534c3d539c13b10e5a3"
+  },
+  "active_ram_gib": 4,
+  "agent_allocation": {
+    "Pro2_max_including_Root": 3,
+    "Pro3_max_including_Root": 2,
+    "shared_max": 5
+  },
+  "all_eight_numerical_budget_fields_exact_zero": true,
+  "all_five_peer_pause_paths_remain_effective": true,
+  "allowed_action": "TESTS ONLY: exactly63 focused fabricated metadata cases, genuine original fixture Source metadata captures and independent ZERO numerical observer. No production backend/claim/workspace/factory/model/NPZ/support/gradient/query. After this ONE Job, separately reviewed stdlib tests closeout<=300s and explicit full custody release. No second Job/retry. Integration requires a distinct later exact grant after accepted tests closure and independent review.",
+  "disk_gib": 20,
+  "exact_pins": {
+    "bytes": 572365,
+    "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\pins.json",
+    "sha256": "bc7da9b7694202c42b0090d2e819ce302f638466d9ed9e1bcc1a79d71be59223"
+  },
+  "existing_pro2_pause_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json",
+  "expected_numerical_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "fixed_output": "t1",
+  "future_integration_admitted": false,
+  "global_host_or_process_quiet_claimed": false,
+  "gpu_hidden": true,
+  "issued_utc": "2026-10-25T10:27:13.972571+00:00",
+  "issuer": "/root Pro2",
+  "job_mib": 5120,
+  "last_resource_observation": {
+    "available_RAM_bytes": 10703712256,
+    "disk_free_bytes": 79926861824,
+    "observed_utc": "2026-10-25T10:27:13.972571+00:00"
+  },
+  "max_job_seconds": 600,
+  "maximum_jobs": 1,
+  "maximum_reviewed_unit_record_path_characters": 246,
+  "no_automatic_retry_or_second_job": true,
+  "old_leases_extended_or_reused": false,
+  "own_I12_once_suite_consumed_and_custody_closed": {
+    "bytes": 2819,
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-002\\receipt_caller_integration_015\\ROOT_I12_ONCE001_ACTUAL_TOOL_EXIT_AND_CUSTODY_CLOSEOUT_001.json",
+    "sha256": "7e6e9b6ccf610c91c3d775c0635c46d99bbb34fcb12b62528d759f1b50783d95"
+  },
+  "owner_coordination_authorization_verified_in_peer_chat": true,
+  "owner_message_evidence": {
+    "answer_exact": "use the available ram now!",
+    "scope_interpretation": "Same directly authorized engineering integration, short-output v5 tests-only successor with all eight numerical budgets zero. This grant does not admit the later integration phase and does not reuse001-006.",
+    "thread": "01a171ac-fe4f-71c0-b078-f9c56c579f08",
+    "user_message_id": "01a17213-e2aa-7991-b3c9-aa406c483474"
+  },
+  "owner_resource_amendment": {
+    "bytes": 1278,
+    "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\owner-resource-amendment.json",
+    "sha256": "da97a78b807359b7bc9db5fc781793b7e092ae77bc1a98970c08927a4f83fa4a"
+  },
+  "owner_resource_amendment_sha256": "da97a78b807359b7bc9db5fc781793b7e092ae77bc1a98970c08927a4f83fa4a",
+  "peer_results_accepted": false,
+  "phase": "tests",
+  "physical_handle_absence_claimed": false,
+  "pins_sha256": "bc7da9b7694202c42b0090d2e819ce302f638466d9ed9e1bcc1a79d71be59223",
+  "prior006_full_custody_release_report": {
+    "bytes": 2070,
+    "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-002\\coordination\\ROOT_PRO3_RELEASE006_FULL_CUSTODY_RELEASE_REPORT_001.json",
+    "sha256": "56077ececafd9426fe5cc82b54562c1c2dd224abe5ee5dfa6ea837c3c3e48127"
+  },
+  "prior_failures_preserved": true,
+  "prior_grants001_through006_consumed_closed_not_reused": true,
+  "prior_grants003_004_005_consumed_closed_not_reused": true,
+  "process_mib": 4096,
+  "released": true,
+  "request": {
+    "bytes": 2000,
+    "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\compute-request_tests_001.json",
+    "sha256": "5de37fcbad1941caa23ef17196f6b2e77c360821e36067026fbfa9e3d68fb4d1"
+  },
+  "requires_fresh_peer_root_admission_and_prelaunch_resource_checks": true,
+  "schema": "pro2_pro3_compute_release_v1",
+  "scientific_admission": false,
+  "scope": "cho51_provenance_numerical_worker_20261025_v5_tests",
+  "scope_specific_owner_startup_4GiB_reply_verified_in_peer_chat": true,
+  "source_review_sha256": "9fb1e5616b79d016a8b4e2cb68439dc1bb5bc1b0d4100534c3d539c13b10e5a3",
+  "startup_ram_gib": 4,
+  "threads": 1,
+  "verified_13_reviewed_file_pins": [
+    {
+      "bytes": 7766,
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_v2\\backend.py",
+      "sha256": "2e93e2b4cc300f04fe70f909e26a0c470b37fbf245606d709d309bd82b4bf76b"
+    },
+    {
+      "bytes": 33447,
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_v2\\numerical_worker.py",
+      "sha256": "34de6ce42ca9bdc39a7f1b03fdaa8588c1fa3324197fc4ba339240081d2291a7"
+    },
+    {
+      "bytes": 1399,
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_v2\\pipeline.py",
+      "sha256": "4ae4db7430f5f464ac604535ef98076c0db2eb643829a2ef7cabe11449ca4700"
+    },
+    {
+      "bytes": 5857,
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_v2\\README.md",
+      "sha256": "03d9c5746028e7c14184d15516a38b2e9c1427db37ffefc7b1ca21fe91bec952"
+    },
+    {
+      "bytes": 23379,
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_v2\\test_integration.py",
+      "sha256": "19a1d45895b796c3aa955fe714334cf5a4ec580341fc92d6135ed6fbc61d7494"
+    },
+    {
+      "bytes": 56921,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\closeout.py",
+      "sha256": "1f466e3bbdba4329d94808b65ec78d86802923fa368a91c909d36c822cd3beb4"
+    },
+    {
+      "bytes": 18918,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\guard.py",
+      "sha256": "51e6a804eb3f23fc609f72b10d6b186a666a9a09537b6a0e77ec6b957535a209"
+    },
+    {
+      "bytes": 10406,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\launch.ps1",
+      "sha256": "b34ec3aaed0daed4cafb00dd7d68dd3ff7351232d0cac0181e91ea093791c740"
+    },
+    {
+      "bytes": 3858,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\native_pins.ps1",
+      "sha256": "b5f5d8d7958b2abb820b51641f50683e683bf2276075e8879bc67876eba54350"
+    },
+    {
+      "bytes": 37505,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\origin.py",
+      "sha256": "1dea03b51c1eb9dd5bbd847e3e6fd2263806e1854e681c030bc05e0652f2c43a"
+    },
+    {
+      "bytes": 19322,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\parent.py",
+      "sha256": "2a91594e9bee1ea202bf058a70afb23d0cc08a667f9be6214ec6fa995da62ac4"
+    },
+    {
+      "bytes": 13947,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\prepare.py",
+      "sha256": "4185395492d2c74cdff892a5eda2266b2b3fa9680c34cbf4eaf0bc67d69097b1"
+    },
+    {
+      "bytes": 57286,
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\runtime.py",
+      "sha256": "551b0ac2c697bf7fecc0f41d871a219b2ea0c09a1cb6ba5e9021e066238116aa"
+    }
+  ],
+  "window_end_utc": "2026-10-25T10:47:13Z",
+  "window_start_utc": "2026-10-25T10:27:13Z"
+}

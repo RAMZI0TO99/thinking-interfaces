@@ -1,0 +1,3 @@
+# Incomplete metadata validation timeout
+
+Exact bounded metadata preservation of consumed grant016 and its unchanged600-second timeout. No complete result/JUnit/runtime counter report;114 progress dots are not accepted test receipts. Expected zero budgets are not observed verified zeros. Normal failed native deadline termination, owned closed-empty Job/handles and reviewed stdlib cleanup0/57.5942093s/reaped streams/full release before18:38 are historical custody evidence only. No133/34 pass, retry, cap extension, runtime or scientific qualification. All archived launchers/grants are inert. Dates and source references bind these exact copied artifacts; advanced heads are not substituted. No raw data, weights or runtime binaries copied.

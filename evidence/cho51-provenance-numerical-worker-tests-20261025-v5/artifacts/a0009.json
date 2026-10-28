@@ -1,0 +1,38 @@
+{
+  "schema": "cho51_provenance_numerical_worker_dispatch_v1",
+  "phase": "tests",
+  "observed_utc": "2026-10-25T10:27:43.9895526Z",
+  "pins_sha256": "bc7da9b7694202c42b0090d2e819ce302f638466d9ed9e1bcc1a79d71be59223",
+  "origin_contract_file_sha256": "0debc9d7f7adf05e8a482d9c223482bab245232caf51606d03a3596be500442f",
+  "child_command": [
+    "D:\\Aenv\\pro3\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\parent.py",
+    "--pins",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\pins.json",
+    "--expect-pins",
+    "bc7da9b7694202c42b0090d2e819ce302f638466d9ed9e1bcc1a79d71be59223",
+    "--output",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\t1"
+  ],
+  "expected_output": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\t1",
+  "expected_numerical_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "actual_current_counter_ledger": null,
+  "scientific_admission": false,
+  "admission_sha256": "5528bdb475f668338492188568791325d73080def0868da89ebf531972750ece",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-002\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_007.json",
+  "peer_release_sha256": "059b8547c1406bb6be2d4f22a5a6a2ee7f6f6e0764db9443d3e1b8b3b3272793",
+  "window_start_utc": "2026-10-25T10:27:13Z",
+  "window_end_utc": "2026-10-25T10:47:13Z"
+}

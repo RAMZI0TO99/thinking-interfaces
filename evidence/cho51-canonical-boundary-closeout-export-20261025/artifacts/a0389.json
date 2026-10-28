@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_canonical_boundary_owner_resource_amendment_v1",
+  "scope": "cho51_canonical_boundary_20261025_v5_a_tests",
+  "owner_instruction_exact": "use what you have . i have freed the ram you have more now!",
+  "question_exact": "RAM fell from 8.44 GiB at preflight to 6.38 GiB at the guard, which refused before creating a Job. For this metadata-only validation, should I keep the 8 GiB startup floor and wait, or use a 4 GiB startup floor while retaining the 4 GiB active floor and every other limit?",
+  "scope_interpretation": "Direct answer selects using available RAM rather than waiting at8GiB. Root transparently stated a phase-specific4GiB startup/active floor for this metadata-only validation; this records that interpretation without fabricating a verbatim4GiB answer. Fresh resources must still meet4GiB; every other guard remains unchanged.",
+  "previous_startup_ram_gib": 8,
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "maximum_job_seconds": 600,
+  "process_mib": 4096,
+  "job_mib": 5120,
+  "threads": 1,
+  "gpu_hidden": true,
+  "canonical_guard_modified": false,
+  "historical_receipts_requalified": false,
+  "prior_4gib_amendment_reused": false,
+  "scientific_admission": false,
+  "scope_limit": "Same bounded P1/P2 metadata-only validation, complementary batch a after preserved016 whole-suite timeout. This carries the exact existing owner answer and transparent4GiB interpretation into a new once-only batch scope; it is not a new waiver or phase. Full133 collection, only the exact planned complementary functions,34 controls, a distinct grant, fresh admission and unchanged limits are required. No114-dot acceptance, automatic retry, numerical work or scientific/future-phase authority."
+}

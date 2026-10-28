@@ -1,0 +1,33 @@
+{
+  "schema": "cho51_provenance_numerical_worker_failed_attempt_native_audit_supplement_v1",
+  "phase": "integration",
+  "observed_utc": "2026-10-25T11:03:58.6051557+00:00",
+  "prior_audit_sha256": "e92080155a3025ee494821c0c85305f5f72e753318a6a6e2771e95c699919808",
+  "correction": "Physical canonical claim, engineering intent and engineering success files exist. The timeout occurred during post-pipeline verification/finalization, not before terminal publication. These files remain quarantined as partial evidence of a FAILED hard600 Job, not an accepted numerical integration.",
+  "physical_engineering_intent_present": true,
+  "physical_engineering_terminal_present": true,
+  "integration_result_exists": false,
+  "integration_qualification_exists": false,
+  "native_job_accepted": false,
+  "actual_current_counter_ledger": null,
+  "counter_status": "incomplete_unknown_after_backend_entry",
+  "backend_or_recovery_replay_permitted": false,
+  "scientific_admission": false,
+  "exact_bindings": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\i1\\fixture\\runs\\phase2\\lifecycle\\claims\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.attempt1.claim.json": {
+      "sha256": "00710973ef144e8c5ff318975df7b7a3ffff0aff4f6898c6d136c2564890f3fb",
+      "bytes": 661,
+      "last_write_utc": "2026-10-25T10:52:07.3115010Z"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\i1\\fixture\\runs\\phase2\\lifecycle\\engineering_intents\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.intent.json": {
+      "sha256": "ec705b428b91f055e11f570edc791bb2497baefa08b811231f3a23fcbad70475",
+      "bytes": 461,
+      "last_write_utc": "2026-10-25T10:59:35.4520756Z"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v5\\i1\\fixture\\runs\\phase2\\lifecycle\\engineering_successes\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.success.json": {
+      "sha256": "6a3d2b821a3278ec3adf1e0dfe7dc5d2d0b6dbfc66d6190b708b4326868b0082",
+      "bytes": 454,
+      "last_write_utc": "2026-10-25T10:59:35.4677682Z"
+    }
+  }
+}

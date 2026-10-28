@@ -1,0 +1,64 @@
+{
+  "schema": "cho51_provenance_numerical_worker_root_preflight_v1",
+  "phase": "tests",
+  "observed_utc": "2026-10-25T13:50:24.4366507+00:00",
+  "accepted": true,
+  "pins_sha256": "fbb97f491e52deb7f7d2c600fd647fe3f4f4099dd5135916fddcfc27f8040ce7",
+  "source_review_sha256": "7d1bf8d4091204b9ea06201447de86cec3a3e8640f2650884a9a68848ff914e8",
+  "reviewed_source_files": 13,
+  "verified_runtime_files": 27,
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_011.json",
+  "peer_release_sha256": "e45e551040123626e88c371df11a8a884c8a16810886d7bdaa0de259beea90c0",
+  "peer_release_bytes": 8784,
+  "window_start_utc": "2026-10-25T13:48:47Z",
+  "window_end_utc": "2026-10-25T14:08:47Z",
+  "owner_resource_amendment_sha256": "12fb1ed58dce9ca4e589ec09dbe52c469bc07d9cfde656550e7574bc835e994d",
+  "expected_numerical_budget": {
+    "gradient_updates": 0,
+    "measured_cells": 0,
+    "model_constructions": 0,
+    "query_count": 0,
+    "restore_count": 0,
+    "source_updates": 0,
+    "support_updates": 0,
+    "target_inference_calls": 0
+  },
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "startup_samples": [
+    {
+      "free_disk_bytes": 78259503104,
+      "observed_utc": "2026-10-25T13:50:23.6379007+00:00",
+      "available_ram_bytes": 9357279232
+    },
+    {
+      "free_disk_bytes": 78259503104,
+      "observed_utc": "2026-10-25T13:50:24.2221232+00:00",
+      "available_ram_bytes": 9348616192
+    }
+  ],
+  "pause_checks": [
+    {
+      "exists": false,
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261007-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+    },
+    {
+      "exists": false,
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261012-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+    },
+    {
+      "exists": false,
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261013-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+    },
+    {
+      "exists": false,
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261015-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+    },
+    {
+      "exists": false,
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-001\\coordination\\PRO2_REQUEST_PRO3_PAUSE.json"
+    }
+  ],
+  "scientific_admission": false
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "cho51_canonical_boundary_root_preflight_v1",
+  "observed_utc": "2026-10-25T20:07:12.0318595+00:00",
+  "passed": true,
+  "source_only": true,
+  "pins_sha256": "9ebd30b36f820912881821fd9bf6d5d5c535de195fe00bb32d4a8692c5ac14f5",
+  "source_review_sha256": "f5fbdccf353b5b4e3599f87e0b61e2b36295f3c9fccf20027460514c74e94849",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_019.json",
+  "peer_release_sha256": "6af12adbbee640615cc923030c6249cdadc0062486429a733180878fc19cb1eb",
+  "owner_resource_amendment_sha256": "94ca277172ee680ead2dae34a0eb91d94731c36b0714084be88837fe88ba7023",
+  "physical_files_checked": 18909,
+  "physical_bytes_checked": 3338506142,
+  "physical_same_handle_and_reopened_path_verified": true,
+  "reviewed_sources": 22,
+  "runtime_files": 27,
+  "independent_fresh_set_check_utc": "2026-10-25T20:07:10.9522290+00:00",
+  "canonical_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "expected_metadata_tests": 53,
+  "expected_stdlib_controls": 34,
+  "external_stdlib_closeout_maximum_seconds": 300,
+  "startup_samples": [
+    {
+      "ordinal": 1,
+      "observed_utc": "2026-10-25T20:07:11.3032879+00:00",
+      "available_ram_bytes": 8795123712,
+      "free_disk_bytes": 77309960192
+    },
+    {
+      "ordinal": 2,
+      "observed_utc": "2026-10-25T20:07:12.0313952+00:00",
+      "available_ram_bytes": 8779366400,
+      "free_disk_bytes": 77309960192
+    }
+  ],
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "all_five_pauses_clear": true,
+  "unused_attempt": true,
+  "window_start_utc": "2026-10-25T20:06:23Z",
+  "window_end_utc": "2026-10-25T20:26:23Z",
+  "scientific_admission": false,
+  "batch_id": "c",
+  "batch_plan_sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f",
+  "expected_full_tests": 133,
+  "batch_functions": [
+    "test_callback_mapping_is_refused_without_invocation",
+    "test_nested_callback_types_refused_before_any_callback",
+    "test_mapping_proxy_backing_refused_without_callbacks",
+    "test_report_callback_text_refused_without_encode",
+    "test_report_flags_cannot_be_turned_into_admission",
+    "test_assessment_never_calls_execution_or_creates_output",
+    "test_report_authority_requires_exact_false_after_valid_baseline",
+    "test_windows_path_and_descriptor_ctime_are_independently_stable"
+  ],
+  "batch_function_counts": {
+    "test_callback_mapping_is_refused_without_invocation": 1,
+    "test_nested_callback_types_refused_before_any_callback": 23,
+    "test_mapping_proxy_backing_refused_without_callbacks": 2,
+    "test_report_callback_text_refused_without_encode": 1,
+    "test_report_flags_cannot_be_turned_into_admission": 1,
+    "test_assessment_never_calls_execution_or_creates_output": 1,
+    "test_report_authority_requires_exact_false_after_valid_baseline": 23,
+    "test_windows_path_and_descriptor_ctime_are_independently_stable": 1
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "cho51_provenance_numerical_worker_failed_attempt_native_audit_v1",
+  "observed_utc": "2026-10-25T09:07:09.5781654+00:00",
+  "failure_preserved": true,
+  "result_accepted": false,
+  "job_name": "pro3_migration_20261025T090357Z_55109ccb5d",
+  "fresh_named_job_open_handle": 0,
+  "fresh_absence_error": 2,
+  "job_empty_closed_handles_closed": true,
+  "cleanup_errors": [],
+  "sampling_errors": [],
+  "tests_collected": 63,
+  "tests_executed": 1,
+  "tests_failed": 1,
+  "tests_passed": 0,
+  "backend_calls": 0,
+  "verifier_calls": 0,
+  "model_constructions": 0,
+  "current_source_support_gradient_query_work": 0,
+  "measured_cells": 0,
+  "scientific_admission": false,
+  "automatic_retry_permitted": false,
+  "exact_bindings": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\pins.json": {
+      "sha256": "9ffcec187273093bc8410f76e328f2e9697e56c75e31dfa3d449206afda18297",
+      "bytes": 554918
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\source-review.json": {
+      "sha256": "ed183de8466f64e97ec0531b7e1e79612721cccd9e0d1c720fa809a21298d31f",
+      "bytes": 2925
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\origin-contract.json": {
+      "sha256": "bd125520613e39b0041c06be2d4c3348d4fd000bd6e2e7e2b4862c6f89ea2942",
+      "bytes": 766826
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\admission.json": {
+      "sha256": "aee126ff7fffb41d089b73069292a6732bc8701a067a600af63ef3b54f4ad388",
+      "bytes": 1222
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\preflight_001.json": {
+      "sha256": "d06467db143912456e5a202e9f5e46c56c04ceede214a67caaeecd2b7801de2e",
+      "bytes": 2137
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\dispatch_001.json": {
+      "sha256": "355d96cf368e9b3261ccad34a16926b2bcc61a5181a2244aeb059761d17d0339",
+      "bytes": 1715
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\dispatch_result_001.json": {
+      "sha256": "1276dc22fa795ca93db07e90148905d5813be434efff1dac9738ea4e119d398b",
+      "bytes": 1834
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\validation_001\\result.json": {
+      "sha256": "b4e6d20e68a9eaeebf85cd6c98979fabc26ec929fc125ee8d6068d0621733d45",
+      "bytes": 921
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\validation_001\\junit.xml": {
+      "sha256": "3a4b267390d730bff62c983b5bbf333a7435c5ca818cfc080cc5cbecdab882bd",
+      "bytes": 3867
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\validation_001\\pytest.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v2\\lease-closeout_001.json": {
+      "sha256": "ba9559c05c93b0fc9259d6e35f67ad80b9def3b93d85135dbd267c20fc771c40",
+      "bytes": 1249
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T090357Z_55109ccb5d\\receipt.json": {
+      "sha256": "571bcb522f23bf22541148c9285101b4ff377d367dd0cacbfc403b63b0b64da8",
+      "bytes": 1837
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T090357Z_55109ccb5d\\admission.json": {
+      "sha256": "d181fbac7f537995c7c8a22d8c4031a17d101df3397e4d3a1253e6f9553527e1",
+      "bytes": 6293
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T090357Z_55109ccb5d\\deadline.json": {
+      "sha256": "f75ad04b2c199b6ddd5f38b5c4615dfd5c9445ac408094f6503df1f079adeea8",
+      "bytes": 161
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T090357Z_55109ccb5d\\command.log": {
+      "sha256": "dbf975f5dbef16038f214779b9ab364188f36fde21da1dc10844bea22fdf8739",
+      "bytes": 4417
+    }
+  }
+}

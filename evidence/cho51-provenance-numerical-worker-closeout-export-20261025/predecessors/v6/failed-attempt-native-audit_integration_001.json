@@ -1,0 +1,158 @@
+{
+  "schema": "cho51_provenance_numerical_worker_failed_attempt_native_audit_v1",
+  "phase": "integration",
+  "observed_utc": "2026-10-25T12:08:57.0623895+00:00",
+  "failure_preserved": true,
+  "result_accepted": false,
+  "job_name": "pro3_migration_20261025T115711Z_16b5a6328c",
+  "fresh_absence_error": 2,
+  "job_empty_closed_handles_closed": true,
+  "guard_and_launcher_reaped": true,
+  "outstanding_owned_children": 0,
+  "reason": "attempt_deadline",
+  "completed_utc": "2026-10-25T12:07:11.927978+00:00",
+  "current_tests_executed": 0,
+  "prior_accepted_tests": 63,
+  "production_numerical_work_reached": true,
+  "actual_current_counter_ledger": null,
+  "counter_status": "incomplete_unknown_after_backend_entry",
+  "physical_engineering_intent_present": true,
+  "physical_engineering_terminal_present": true,
+  "proofs_and_physical_terminal_are_unaccepted_quarantined_metadata": true,
+  "successful_external_closeout_invoked": false,
+  "integration_result_exists": false,
+  "integration_qualification_exists": false,
+  "scientific_admission": false,
+  "exact_bindings": {
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\pins.json": {
+      "last_write_utc": "2026-10-25T11:26:54.4347228Z",
+      "bytes": 590559,
+      "sha256": "745015ad931bfc86f6708bc7e440215e8c41095b81adde167d276952b9eb9c33"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\source-review.json": {
+      "last_write_utc": "2026-10-25T11:24:24.5426373Z",
+      "bytes": 3491,
+      "sha256": "62117d5f4d8fd567013ecba59a184e6cec2b0e48eb53dc2abb622d0a62bbe3fd"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\origin-contract.json": {
+      "last_write_utc": "2026-10-25T11:26:54.4259424Z",
+      "bytes": 820272,
+      "sha256": "47b6f7e0ad6edca5492b1d1ba2316314faab95ea2b827aa4cc6009f603362a70"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\admission_integration.json": {
+      "last_write_utc": "2026-10-25T11:57:06.9764740Z",
+      "bytes": 2353,
+      "sha256": "1aaf92d57bd148df04c5fa5bbd4df281d7ec4d0fb1b1147015ffecc70154a17d"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\preflight_integration_001.json": {
+      "last_write_utc": "2026-10-25T11:57:06.6822828Z",
+      "bytes": 2313,
+      "sha256": "7e725a5c1ddd8462c300ae35adb6b24313bf58b20b43c5695fe3a880e82eed15"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\dispatch_integration_001.json": {
+      "last_write_utc": "2026-10-25T11:57:07.1335608Z",
+      "bytes": 1718,
+      "sha256": "f34e40871cd57a94203b9f58ba4d635e48dc9a02e7fd549f6d1873a84b914f54"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\dispatch_result_integration_001.json": {
+      "last_write_utc": "2026-10-25T12:07:12.0060736Z",
+      "bytes": 1837,
+      "sha256": "7a7a7a79559223b3e65ab584206e93b2ae29efcece80adaf94f8d0c6478fd4fd"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\tests-final-review.json": {
+      "last_write_utc": "2026-10-25T11:54:33.3770739Z",
+      "bytes": 5060,
+      "sha256": "29043f329891eee6f31d003ccae7d9a3f151cbc817fdea9c7b07953975fc019b"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\closeout-tests-result.json": {
+      "last_write_utc": "2026-10-25T11:44:11.2564143Z",
+      "bytes": 8593,
+      "sha256": "719192e959c6c3c8dfee73898202c313596b05b00a600340a4ffb51d4ec7d519"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\lease-closeout_tests_001.json": {
+      "last_write_utc": "2026-10-25T11:45:48.3524483Z",
+      "bytes": 1189,
+      "sha256": "b0aefa58840a7c40361968ca9cc8285cac8232ffb41d047b5127312a676fe902"
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T115711Z_16b5a6328c\\admission.json": {
+      "last_write_utc": "2026-10-25T11:57:12.2908173Z",
+      "bytes": 6558,
+      "sha256": "9d3931042e67d846e726050f5c75b61b2a67fdc9606edd33bcc7204ad81b52cd"
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T115711Z_16b5a6328c\\command.log": {
+      "last_write_utc": "2026-10-25T11:57:12.4794278Z",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T115711Z_16b5a6328c\\deadline.json": {
+      "last_write_utc": "2026-10-25T11:57:12.2918290Z",
+      "bytes": 161,
+      "sha256": "113fdfd091987cf4b9826d9d3e3307b49fbb5185326387181fb1509eb1e3730d"
+    },
+    "D:\\Aenv\\pro3\\runs\\migration\\20261025T115711Z_16b5a6328c\\receipt.json": {
+      "last_write_utc": "2026-10-25T12:07:11.9299691Z",
+      "bytes": 1859,
+      "sha256": "2866724139a0059ef352bbc83ddebd1c20a2cdb4a865c892fe773a71f250f91e"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\backend-attempt.json": {
+      "last_write_utc": "2026-10-25T12:00:16.3422217Z",
+      "bytes": 624,
+      "sha256": "9982f9176e0d26e8034ef80741858d5cdc020a84feaa5e01940f291e1f2f9f6d"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\current-execution.json": {
+      "last_write_utc": "2026-10-25T12:02:58.8930464Z",
+      "bytes": 83990,
+      "sha256": "3c782d86a1fe0732c82a6385bf6c015406f13086a18ad8d444e4032d4c9c65be"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\parent-attestation.json": {
+      "last_write_utc": "2026-10-25T12:06:06.9662682Z",
+      "bytes": 2894,
+      "sha256": "1632ccea3071120892757c533b12da97d2311001550b2e16683530887e6e0a48"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\parent-binding.json": {
+      "last_write_utc": "2026-10-25T12:01:24.7883932Z",
+      "bytes": 2092,
+      "sha256": "80c22e437721b36a5d4291cadffddd0c186eea49066a099b573b2c173fe66593"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\request.json": {
+      "last_write_utc": "2026-10-25T11:58:56.4277796Z",
+      "bytes": 162743,
+      "sha256": "8ddc7b718c74d59bb729318af761eaa18409c5b6aeb829f6a9a62d99881c71b8"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\restore-witness.json": {
+      "last_write_utc": "2026-10-25T12:02:26.7942050Z",
+      "bytes": 3399,
+      "sha256": "46fa61e699e1fbf0b52a6af11034d26f3b257ff5dbd19913b556433e6da437c9"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\target-witness.json": {
+      "last_write_utc": "2026-10-25T12:02:52.5274152Z",
+      "bytes": 77339,
+      "sha256": "1c8593b1b24fb8c79f79f7f8cc1860cf82142cc3c3f9d2bbaaebcbf8e553e8e9"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\factory\\request.json": {
+      "last_write_utc": "2026-10-25T11:58:56.4221613Z",
+      "bytes": 157689,
+      "sha256": "08b2991d09e1d9e763112a938da749a3f9f95c3f2e7e73e358c7d5d35cf2b287"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\cases\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141\\factory\\restore-attempt.json": {
+      "last_write_utc": "2026-10-25T12:01:28.8920126Z",
+      "bytes": 325,
+      "sha256": "ea438717b38d1c76e6ac13ca36d41445dc73b326d128cf4ca72cea7a07a50df4"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\fixture\\runs\\phase2\\lifecycle\\claims\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.attempt1.claim.json": {
+      "last_write_utc": "2026-10-25T11:58:50.0221546Z",
+      "bytes": 661,
+      "sha256": "00710973ef144e8c5ff318975df7b7a3ffff0aff4f6898c6d136c2564890f3fb"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\fixture\\runs\\phase2\\lifecycle\\engineering_intents\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.intent.json": {
+      "last_write_utc": "2026-10-25T12:06:27.4115679Z",
+      "bytes": 461,
+      "sha256": "ca3b75e24c5d1b6ecb0f281ea5f3673d6dc82bb955b217ecf0cdc349a2adc2ce"
+    },
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_provenance_numerical_worker_20261025_v6\\i1\\fixture\\runs\\phase2\\lifecycle\\engineering_successes\\9d3596b5e7653e1708eb208d6b150b86cae02227e6cd73a25e4358e675afc141.success.json": {
+      "last_write_utc": "2026-10-25T12:06:27.4258833Z",
+      "bytes": 454,
+      "sha256": "b620217c827b80a8a8ff1c40015409d2a20f6a84bcadae96af69d07a3eb891a6"
+    }
+  }
+}

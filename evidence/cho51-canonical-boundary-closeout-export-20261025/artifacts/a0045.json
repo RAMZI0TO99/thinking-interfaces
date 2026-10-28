@@ -1,0 +1,70 @@
+{
+  "schema": "cho51_canonical_boundary_root_preflight_v1",
+  "observed_utc": "2026-10-25T19:28:42.4337231+00:00",
+  "passed": true,
+  "source_only": true,
+  "pins_sha256": "82b820ab809370465c6589124b182106ad3467a2cf61e1d063003479b711b291",
+  "source_review_sha256": "5bccfc99827e94e36cc40bf6305d25766ca8ba5a6008304bf6f84b558264c4e0",
+  "peer_release_path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_017.json",
+  "peer_release_sha256": "5413069cf87a4f251d0dd89e49f81ad66e572237e1dff874cfcff7604264722c",
+  "owner_resource_amendment_sha256": "1a56aef74526e6169dded3ae292a003266577c26fb9bd5cf9bb6d3a6473882ac",
+  "physical_files_checked": 18909,
+  "physical_bytes_checked": 3338506142,
+  "physical_same_handle_and_reopened_path_verified": true,
+  "reviewed_sources": 22,
+  "runtime_files": 27,
+  "independent_fresh_set_check_utc": "2026-10-25T19:28:41.3044136+00:00",
+  "canonical_sha256": "3114ec43a97b1afdcda26149587381cb12105e7064af16e2c3dd64b51f554529",
+  "expected_metadata_tests": 36,
+  "expected_stdlib_controls": 34,
+  "external_stdlib_closeout_maximum_seconds": 300,
+  "startup_samples": [
+    {
+      "ordinal": 1,
+      "observed_utc": "2026-10-25T19:28:41.7886694+00:00",
+      "available_ram_bytes": 10007355392,
+      "free_disk_bytes": 77599850496
+    },
+    {
+      "ordinal": 2,
+      "observed_utc": "2026-10-25T19:28:42.4333267+00:00",
+      "available_ram_bytes": 10005614592,
+      "free_disk_bytes": 77599850496
+    }
+  ],
+  "startup_ram_gib": 4,
+  "active_ram_gib": 4,
+  "disk_gib": 20,
+  "all_five_pauses_clear": true,
+  "unused_attempt": true,
+  "window_start_utc": "2026-10-25T19:27:36Z",
+  "window_end_utc": "2026-10-25T19:47:36Z",
+  "scientific_admission": false,
+  "batch_id": "a",
+  "batch_plan_sha256": "d1467ae85739115f2f65ab1ca23a8f6624b1a09d1a6b40384f64c07eab62497f",
+  "expected_full_tests": 133,
+  "batch_functions": [
+    "test_genuine_current_source_and_complete_typed_routes",
+    "test_stale_helper_contract_refused_and_fresh_epoch_accepted",
+    "test_copied_method_shadow_contract_refused_before_accessors",
+    "test_request_and_report_are_immutable_defensive_finite_metadata",
+    "test_swapped_role_sources_refused_after_valid_baseline",
+    "test_role_runtime_identity_cannot_be_flattened",
+    "test_owner_package_and_origin_anchors_cannot_be_replaced",
+    "test_frozen_configuration_bytes_cannot_be_redefined",
+    "test_full_and_adopted_identity_inventory_refused",
+    "test_incomplete_catalog_asset_selection_episode_inventory"
+  ],
+  "batch_function_counts": {
+    "test_genuine_current_source_and_complete_typed_routes": 1,
+    "test_stale_helper_contract_refused_and_fresh_epoch_accepted": 1,
+    "test_copied_method_shadow_contract_refused_before_accessors": 2,
+    "test_request_and_report_are_immutable_defensive_finite_metadata": 1,
+    "test_swapped_role_sources_refused_after_valid_baseline": 3,
+    "test_role_runtime_identity_cannot_be_flattened": 3,
+    "test_owner_package_and_origin_anchors_cannot_be_replaced": 6,
+    "test_frozen_configuration_bytes_cannot_be_redefined": 7,
+    "test_full_and_adopted_identity_inventory_refused": 8,
+    "test_incomplete_catalog_asset_selection_episode_inventory": 4
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "schema": "cho51_canonical_boundary_final_review_v1",
+  "observed_utc": "2026-10-25T21:25:40.0228514+00:00",
+  "accepted": true,
+  "passed": true,
+  "source_only": true,
+  "review_type": "seven_document_semantic_and_saved_evidence_binding_audit",
+  "remaining_actionable_findings": [],
+  "independentExportCopyAuditPending": true,
+  "independent_export_copy_audit_status": "pending_separate_native_source_copy_inventory_review_after_export_creation",
+  "scope": "Accepted separately versioned P1/P2 read-only metadata-boundary engineering validation and saved-results documentation only.",
+  "document_bindings": [
+    {
+      "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+      "bytes": 10964,
+      "sha256": "36f3ad234022e5b8bedcee2c910fdad797a6279fd94417095c79a7005448e976"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\README.md",
+      "bytes": 116261,
+      "sha256": "c4e1d4a8cca814f286787d26005bd3597d1b3b85558d13715fc3f67212c40d78"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+      "bytes": 55517,
+      "sha256": "f5689131ceb40ffed80e89301a48523ed9973cab63b9304f06b56e022714c787"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+      "bytes": 50001,
+      "sha256": "52c7f954cc6b7a82dd319654ce3cda9da2d82c7440b308551aed5aacf0b2327b"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+      "bytes": 159925,
+      "sha256": "35a18130761d6715cd4f89f4a2ecce01e9312e213e589981f36f74fe0d7c02c4"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\HANDOFF.md",
+      "bytes": 344214,
+      "sha256": "a61929ecd95fb8e244b35e5b0bf3d34d0c20de09aff28131abc32113ed454bd5"
+    },
+    {
+      "path": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+      "bytes": 293819,
+      "sha256": "87d9e2a22e4c064c0c349110e6c87c48a69ea3eb7c9a14c02a433f023944eda7"
+    }
+  ],
+  "actual_review": {
+    "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\actual-review.json",
+    "bytes": 108431,
+    "sha256": "1a44c4af38dcf3a9ae5b3a7f54dbb176b3d5cf240990df79a14473bd438e535b"
+  },
+  "proof_bindings": {
+    "source": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\aggregate.py",
+      "bytes": 39159,
+      "sha256": "eb85e2bb7b682a4215c373ee080bda9a4638708e54190bda3170474c09c3fab8"
+    },
+    "supervisor": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervise_v2.ps1",
+      "bytes": 39054,
+      "sha256": "16d2d5f86c16b42de9a07b4933f8a46c7967ed0a5a048bb39440f97e458d0124"
+    },
+    "supervisor_review": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-review_v2.json",
+      "bytes": 8003,
+      "sha256": "be3411357ae676671dbd15385e7cdac8a5ac06fb560dacd7f8fb3ff748173ea1"
+    },
+    "proofs": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\proofs.json",
+      "bytes": 8491,
+      "sha256": "04bd68ea3358742aaa0dc6bd4166e8f94dd5c086a11b04a3e768725f86cc0577"
+    },
+    "input_review": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\input-review_v2.json",
+      "bytes": 23798,
+      "sha256": "14b69453543689260baf4cf4888f65bbca022b5a148dbc0738cd75e2bbfbf019"
+    },
+    "request": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\compute-request_002.json",
+      "bytes": 3506,
+      "sha256": "c5f903573b1da8a594e6d14f5628eccec3d008769c75e7b8a6d345313da9f58b"
+    },
+    "preflight": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\preflight_001.json",
+      "bytes": 1585,
+      "sha256": "76f2b6a112d70cd43af8eb2af0ba3664b9160dcf51f8e554f58f5a4dc5de5798"
+    },
+    "admission": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\admission.json",
+      "bytes": 1831,
+      "sha256": "64bb9e91bcdda0871bbb5a2934966f430e1a925efe026cb7357c4e8ec3c79279"
+    },
+    "supervisor_attempt": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-attempt_001.json",
+      "bytes": 670,
+      "sha256": "a33811f89f6b417be1f3d3202d2c9359a08b106fe6e346c1849482f798d17596"
+    },
+    "aggregate_attempt": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\attempt_001.json",
+      "bytes": 481,
+      "sha256": "5bf99639596c760ab06872052b23131087a6c84d8f2bd097050ee361bfc3081b"
+    },
+    "result": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\result.json",
+      "bytes": 19673,
+      "sha256": "e657df21c2bfc48b5aa907dce1a859f6c7fa3737798626bc421ad7d9ad1e60dc"
+    },
+    "supervision": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervision_001.json",
+      "bytes": 1925,
+      "sha256": "9168285fc69476943bcf37d78fa6190be64f67be8b7baf48afdf79d17120ef11"
+    },
+    "stdout": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stdout_001.json",
+      "bytes": 180,
+      "sha256": "5322da975aa1d2cd88d17c1c9d52a0b4105b590e5c2fa041e87cd61f1b2f7737"
+    },
+    "stderr": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stderr_001.json",
+      "bytes": 63,
+      "sha256": "c41275a9054bb7e8c88d035b27576013bf694935693270006d2b19c163abb511"
+    },
+    "caller_start": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-start_001.json",
+      "bytes": 694,
+      "sha256": "f96ca0f14fa0dd28c688236bc033b6bcd90887d2b4dc59bd728b50065a10946e"
+    },
+    "caller_completion": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-completion_001.json",
+      "bytes": 1939,
+      "sha256": "87064f0206f5f34990b27561b2b39056e301e7451c011e9055947cf217517587"
+    },
+    "lease": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\lease-closeout_001.json",
+      "bytes": 2655,
+      "sha256": "1521f9dd906bfc9944e583f7d0c7bb0b701aca302f1abc13f33d7ef14d425cbf"
+    },
+    "custody_preparation_error": {
+      "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-closeout-preparation-error_001.json",
+      "bytes": 494,
+      "sha256": "afba4671d8f84d23d5f727fd962ce049d151253519d91f2f9932bff822a1ffa4"
+    },
+    "peer": {
+      "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_020.json",
+      "bytes": 25562,
+      "sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f"
+    }
+  },
+  "semantic_checks": {
+    "exactly_seven_current_documents_bound": true,
+    "six_latest_resume_blocks_identical": true,
+    "original_historical_sections_retained_with_dated_meaning": true,
+    "source_checkpoint_old_document_hashes_bind_archived_snapshots_not_advanced_heads": true,
+    "candidate133_cases_29_functions_complementary_36_44_53_not_single_job": true,
+    "identical_ordered_full133_collection_each_and_disjoint_union133": true,
+    "exact399_passing_setup_call_teardown_reports_and133_junit_cases": true,
+    "distinct34_stdlib_controls_102_instances_not102_distinct": true,
+    "batch_a_native_seconds": 402.125054,
+    "batch_b_native_seconds": 405.132166,
+    "batch_c_native_seconds": 523.660386,
+    "all_batches_source22_runtime27_loaded4041_membership_joins_and_native_limits_preserved": true,
+    "exact_observed_zero8_separate_from_future_proposed_episode_vector": true,
+    "exact260_byte_dependency_resource_bootstrap_not_target_signal_or_weight_verification": true,
+    "producer_executor_recorder_roles_distinct": true,
+    "aggregate_one_interpreter_invocation_zero_jobs_zero_new_tests": true,
+    "aggregate_checked_reads": 196,
+    "aggregate_checked_bytes": 25648747,
+    "aggregate_internal_seconds": 3.3573324,
+    "actual_tool_wall_seconds": 4.0118676,
+    "conservative_complete_caller_terminal_seconds": 13,
+    "conservative_dispatch_to_full_release_seconds": 103.0436767,
+    "full_release_utc": "2026-10-25T21:11:33.0436767+00:00",
+    "complete_custody_within300_and_peer_window": true,
+    "internal_timer_not_sole_complete_caller_bound": true,
+    "recorded_owned_process_generations_not_unproven_descendant_executable_images": true,
+    "immutable_child_and_lease_pending_snapshot_states_resolved_by_separate_actual_review": true,
+    "used_sources_failed_receipts_unadmitted_supervisor_request001_and_peer_source_refusal_preserved": true,
+    "custody_only_powershell_parse_error_not_python_or_supervisor_retry": true,
+    "no_accepted_real_data_case_or_new_numerical_episode_claim": true,
+    "no_raw_or_weight_current_physical_verification_or_future_runtime_qualification_claim": true,
+    "canonical_parent_worker_and_single_root_factory_remain_unqualified": true,
+    "metadata_phase_available_ram4_4_interpretation_not_literal_owner4_quote_or_p3_authority": true,
+    "next_step_p3_separately_reviewed_engineering_adapter_design_not_automatic_implementation_or_execution": true,
+    "fresh_scope_ownership_pins_resource_authority_peer_allocation_admission_required": true,
+    "original_target01_retry_budget_zero_targets02_to52_available_sources52_preserved": true,
+    "exact_narrow_gate_a_and_51_target_owner_amendment_preserved_stronger_gate_a_unestablished": true,
+    "final_experiment_freeze_unsigned_engineering_does_not_sign_science": true,
+    "no_old_grant_launcher_attempt_reuse_or_new_autonomous_window": true,
+    "export_creation_and_independent_copy_review_not_yet_certified": true
+  },
+  "resolved_review_findings": [
+    {
+      "finding": "Descendant executable images were not recorded in ownership evidence, so the qualification must not label all three owned generations as Python processes.",
+      "resolution": "Qualification now says recorded owned process generations, preserving one interpreter invocation and the authenticated PID/parent/creation and caller-absence scope.",
+      "corrected_document_sha256": "36f3ad234022e5b8bedcee2c910fdad797a6279fd94417095c79a7005448e976"
+    }
+  ],
+  "link_audit": {
+    "scope": "Full new qualification and six latest qualified blocks; historical link repair is outside this review.",
+    "link_occurrences": 27,
+    "resolved_existing_occurrences": 13,
+    "intentional_pending_occurrences": 14,
+    "intentional_pending_unique_targets": 2,
+    "pending_targets": [
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+      "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md"
+    ],
+    "pending_is_not_export_acceptance": true,
+    "unexpected_missing_links": [],
+    "links": [
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "cho51_canonical_boundary_v1/README.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\README.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "cho51_provenance_numerical_worker_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_a/actual-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\actual-review.json",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_b/actual-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\actual-review.json",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_c/actual-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\actual-review.json",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/proofs.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\proofs.json",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/actual-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\actual-review.json",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "link": "../../evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\README.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\README.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\README.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\HANDOFF.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\HANDOFF.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\HANDOFF.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+        "link": "docs/phase2/cho51_canonical_boundary_qualification_20261025.md",
+        "target": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "exists": true,
+        "planned_pending": false
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+        "link": "runs/coordination/cho51_canonical_boundary_20261025_v5_aggregate/final-review.json",
+        "target": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\final-review.json",
+        "exists": false,
+        "planned_pending": true
+      },
+      {
+        "document": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+        "link": "evidence/cho51-canonical-boundary-closeout-export-20261025/README.md",
+        "target": "D:\\Aenv\\pro3\\evidence\\cho51-canonical-boundary-closeout-export-20261025\\README.md",
+        "exists": false,
+        "planned_pending": true
+      }
+    ]
+  },
+  "physical_audit": {
+    "method": "Established bounded native metadata reader with retained/opened/reopened file identity, regular single-link files, all direct ancestors non-reparse, exact byte length and SHA256 joins.",
+    "observed_utc": "2026-10-25T21:25:40.0228514+00:00",
+    "physical_unique_files": 32,
+    "physical_bytes": 1391477,
+    "direct_items": 48,
+    "conflicting_pins": 0,
+    "physical_errors": 0,
+    "exclusions": [],
+    "full_runtime_or_raw_weight_rehash_performed": false,
+    "physical_bindings": [
+      {
+        "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+        "bytes": 10964,
+        "sha256": "36f3ad234022e5b8bedcee2c910fdad797a6279fd94417095c79a7005448e976"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\README.md",
+        "bytes": 8461,
+        "sha256": "40b6dbaeaf93768260870c101196ee581f7a169768c3e45ba281642aa17c3521"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_qualification_20261025.md",
+        "bytes": 27711,
+        "sha256": "f6491639dde6ee77dde76e1185b91fb393f57c89776c8ae4a36dd8dd1c442c01"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\actual-review.json",
+        "bytes": 11197,
+        "sha256": "ebb9745e6cd4cfabf221150ca54362ca66f554bbd66fdca8bc12ad0ca6d7e80f"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\actual-review.json",
+        "bytes": 12320,
+        "sha256": "4d2b479fce626b61cf7b7efd25ddc425f0bd41ef8f16ba81c2eef090c65129b6"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\actual-review.json",
+        "bytes": 12893,
+        "sha256": "5b87e137f9a6d879fafd444c6a3aeb121e8d217399934c5928a28f1c3f10b3bb"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\proofs.json",
+        "bytes": 8491,
+        "sha256": "04bd68ea3358742aaa0dc6bd4166e8f94dd5c086a11b04a3e768725f86cc0577"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\actual-review.json",
+        "bytes": 108431,
+        "sha256": "1a44c4af38dcf3a9ae5b3a7f54dbb176b3d5cf240990df79a14473bd438e535b"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\README.md",
+        "bytes": 116261,
+        "sha256": "c4e1d4a8cca814f286787d26005bd3597d1b3b85558d13715fc3f67212c40d78"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+        "bytes": 55517,
+        "sha256": "f5689131ceb40ffed80e89301a48523ed9973cab63b9304f06b56e022714c787"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+        "bytes": 50001,
+        "sha256": "52c7f954cc6b7a82dd319654ce3cda9da2d82c7440b308551aed5aacf0b2327b"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+        "bytes": 159925,
+        "sha256": "35a18130761d6715cd4f89f4a2ecce01e9312e213e589981f36f74fe0d7c02c4"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\HANDOFF.md",
+        "bytes": 344214,
+        "sha256": "a61929ecd95fb8e244b35e5b0bf3d34d0c20de09aff28131abc32113ed454bd5"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+        "bytes": 293819,
+        "sha256": "87d9e2a22e4c064c0c349110e6c87c48a69ea3eb7c9a14c02a433f023944eda7"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\aggregate.py",
+        "bytes": 39159,
+        "sha256": "eb85e2bb7b682a4215c373ee080bda9a4638708e54190bda3170474c09c3fab8"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervise_v2.ps1",
+        "bytes": 39054,
+        "sha256": "16d2d5f86c16b42de9a07b4933f8a46c7967ed0a5a048bb39440f97e458d0124"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-review_v2.json",
+        "bytes": 8003,
+        "sha256": "be3411357ae676671dbd15385e7cdac8a5ac06fb560dacd7f8fb3ff748173ea1"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\input-review_v2.json",
+        "bytes": 23798,
+        "sha256": "14b69453543689260baf4cf4888f65bbca022b5a148dbc0738cd75e2bbfbf019"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\compute-request_002.json",
+        "bytes": 3506,
+        "sha256": "c5f903573b1da8a594e6d14f5628eccec3d008769c75e7b8a6d345313da9f58b"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\preflight_001.json",
+        "bytes": 1585,
+        "sha256": "76f2b6a112d70cd43af8eb2af0ba3664b9160dcf51f8e554f58f5a4dc5de5798"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\admission.json",
+        "bytes": 1831,
+        "sha256": "64bb9e91bcdda0871bbb5a2934966f430e1a925efe026cb7357c4e8ec3c79279"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-attempt_001.json",
+        "bytes": 670,
+        "sha256": "a33811f89f6b417be1f3d3202d2c9359a08b106fe6e346c1849482f798d17596"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\attempt_001.json",
+        "bytes": 481,
+        "sha256": "5bf99639596c760ab06872052b23131087a6c84d8f2bd097050ee361bfc3081b"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\result.json",
+        "bytes": 19673,
+        "sha256": "e657df21c2bfc48b5aa907dce1a859f6c7fa3737798626bc421ad7d9ad1e60dc"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervision_001.json",
+        "bytes": 1925,
+        "sha256": "9168285fc69476943bcf37d78fa6190be64f67be8b7baf48afdf79d17120ef11"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stdout_001.json",
+        "bytes": 180,
+        "sha256": "5322da975aa1d2cd88d17c1c9d52a0b4105b590e5c2fa041e87cd61f1b2f7737"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stderr_001.json",
+        "bytes": 63,
+        "sha256": "c41275a9054bb7e8c88d035b27576013bf694935693270006d2b19c163abb511"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-start_001.json",
+        "bytes": 694,
+        "sha256": "f96ca0f14fa0dd28c688236bc033b6bcd90887d2b4dc59bd728b50065a10946e"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-completion_001.json",
+        "bytes": 1939,
+        "sha256": "87064f0206f5f34990b27561b2b39056e301e7451c011e9055947cf217517587"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\lease-closeout_001.json",
+        "bytes": 2655,
+        "sha256": "1521f9dd906bfc9944e583f7d0c7bb0b701aca302f1abc13f33d7ef14d425cbf"
+      },
+      {
+        "path": "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-closeout-preparation-error_001.json",
+        "bytes": 494,
+        "sha256": "afba4671d8f84d23d5f727fd962ce049d151253519d91f2f9932bff822a1ffa4"
+      },
+      {
+        "path": "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_020.json",
+        "bytes": 25562,
+        "sha256": "beaaa42788a3a172704093b77ca938f61261e57520f34e4afbc2db15a5b92c1f"
+      }
+    ],
+    "direct_item_paths": [
+      "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_qualification_20261025.md",
+      "D:\\Aenv\\pro3\\docs\\phase2",
+      "D:\\Aenv\\pro3\\docs",
+      "D:\\Aenv\\pro3",
+      "D:\\Aenv",
+      "D:\\",
+      "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1\\README.md",
+      "D:\\Aenv\\pro3\\docs\\phase2\\cho51_canonical_boundary_v1",
+      "D:\\Aenv\\pro3\\docs\\phase2\\cho51_provenance_numerical_worker_qualification_20261025.md",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a\\actual-review.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_a",
+      "D:\\Aenv\\pro3\\runs\\coordination",
+      "D:\\Aenv\\pro3\\runs",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b\\actual-review.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_b",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c\\actual-review.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_c",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\proofs.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\actual-review.json",
+      "D:\\Aenv\\pro3\\README.md",
+      "D:\\Aenv\\pro3\\CONTINUE_HERE.md",
+      "D:\\Aenv\\pro3\\WINDOWS_SETUP.md",
+      "D:\\Aenv\\pro3\\PHASE2_START_HERE.md",
+      "D:\\Aenv\\pro3\\HANDOFF.md",
+      "D:\\Aenv\\pro3\\AGENT_COORDINATION.md",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\aggregate.py",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervise_v2.ps1",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-review_v2.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\input-review_v2.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\compute-request_002.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\preflight_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\admission.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervisor-attempt_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\attempt_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\result.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\supervision_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stdout_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\stderr_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-start_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-completion_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\lease-closeout_001.json",
+      "D:\\Aenv\\pro3\\runs\\coordination\\cho51_canonical_boundary_20261025_v5_aggregate\\caller-closeout-preparation-error_001.json",
+      "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination\\PRO2_PRO3_COMPUTE_RELEASE_20261025_020.json",
+      "D:\\Aenv\\pro2\\WORK\\resume-20261025-003\\coordination",
+      "D:\\Aenv\\pro2\\WORK\\resume-20261025-003",
+      "D:\\Aenv\\pro2\\WORK",
+      "D:\\Aenv\\pro2"
+    ]
+  },
+  "authority": {
+    "execution_admitted": false,
+    "measured_publication_allowed": false,
+    "raw_input_verification_performed": false,
+    "weight_verification_performed": false,
+    "unchanged_canonical_worker_qualified": false,
+    "unchanged_canonical_parent_qualified": false,
+    "single_root_factory_qualified": false,
+    "runtime_for_future_execution_qualified": false,
+    "scientific_admission": false,
+    "experiment_freeze_signed": false
+  },
+  "limitations": [
+    "This record binds seven immutable current document snapshots and accepted saved engineering evidence; it is not another test, numerical episode or live runtime admission.",
+    "Final-review self-hash and export/copy-review hashes are deliberately not embedded to avoid cycles; the separate future export copy audit must bind this record and all source/copy pairs.",
+    "The current metadata binding recheck does not repeat the earlier full runtime/canonical/raw-data audits or refresh operating-system process/Job observations.",
+    "Historical dated document blocks and prior archived snapshot hashes retain their original meanings and are not promoted to current validation or resource authority."
+  ],
+  "reviewer_actions": {
+    "python_executed": false,
+    "candidate_or_helpers_replayed": false,
+    "tests_replayed": 0,
+    "numerical_execution": false,
+    "live_process_or_job_queries": 0,
+    "bulk_runtime_rehash": false,
+    "existing_files_modified": false
+  }
+}
