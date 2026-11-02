@@ -1,0 +1,28 @@
+{
+  "retry_allowed": false,
+  "historical_custody_closed": false,
+  "boundary_qualified": false,
+  "restart_qualified": false,
+  "historical_operation_released": false,
+  "launch_authorized": false,
+  "no_child_existed_proven": false,
+  "status": "FAILED_CONSUMED_CUSTODY_UNKNOWN",
+  "created_utc": "2026-10-29T09:15:33.3206062Z",
+  "successor": "Separate static repair/design may proceed; execution needs independently reviewed treatment of uncertain Q1 custody and fresh admission.",
+  "complete_dependency_closure": false,
+  "schema": "cho51_q_root_failure_disposition_v1",
+  "operation_id": "c59cc58a-64bb-48cc-856c-42b21dad0a14",
+  "author": "project_root",
+  "source_and_attempt_frozen": true,
+  "cause": "UNKNOWN",
+  "scientific_admission": false,
+  "fault_controls_executed_proven": 0,
+  "historical_retry_allowed": false,
+  "actual_review": {
+    "sha256": "aaf367c72e92d0d4ab26237a203ef79167df934325233063229ca8113a00519e",
+    "path": "actual-review.json",
+    "bytes": 8809
+  },
+  "tests_executed_proven": 0,
+  "caller_cleanup_proven": false
+}

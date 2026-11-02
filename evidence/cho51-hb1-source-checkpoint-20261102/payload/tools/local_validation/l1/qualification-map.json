@@ -1,0 +1,401 @@
+{
+  "schema": "cho51_l1_source_qualification_map_v1",
+  "status": "SOURCE_MAPPING_ALL_UNEXECUTED",
+  "method_prefix": "tools.local_validation.",
+  "claims": {
+    "accepted_40_scenarios": false,
+    "candidate_tests_executed": 0,
+    "successor_controls_executed": 0,
+    "scientific_admission": false
+  },
+  "cases": [
+    {
+      "id": "LQ01",
+      "methods": [
+        "lhost1.test_authority.AuthorityTests.test_old_p_missing_new_source",
+        "lhost1.test_authority.AuthorityTests.test_chain_exact_roles",
+        "lhost1.test_authority.AuthorityTests.test_chain_cannot_reuse_l_operation",
+        "lhost1.test_authority.AuthorityTests.test_chain_self_source_review_refused",
+        "lhost1.test_authority.AuthorityTests.test_chain_qualifications_not_interchangeable",
+        "lhost1.test_authority.AuthorityTests.test_changed_manifest_cannot_borrow_source_review",
+        "lhost1.test_authority.AuthorityTests.test_unreviewed_runtime_manifest",
+        "lhost1.test_authority.AuthorityTests.test_stale_q_does_not_qualify_changed_l_sources",
+        "lhost1.test_authority.AuthorityTests.test_exact_predecessor_review_set",
+        "lhost1.test_authority.AuthorityTests.test_q_and_p_must_join_same_qualification",
+        "lhost1.test_authority.AuthorityTests.test_actual_review_separate_role_and_positive_lifecycle",
+        "lhost1.test_authority.AuthorityTests.test_p_final_verification_and_result_join",
+        "lhost1.test_authority.AuthorityTests.test_review_and_adoption_order",
+        "lhost1.test_authority.AuthorityTests.test_independent_complete_plan_review_positive",
+        "lhost1.test_authority.AuthorityTests.test_complete_plan_review_wrong_role_and_self_review",
+        "lhost1.test_authority.AuthorityTests.test_complete_plan_review_exact_plan_and_derivation",
+        "lhost1.test_authority.AuthorityTests.test_complete_plan_review_before_acceptance",
+        "lhost1.test_authority.AuthorityTests.test_complete_plan_cannot_hide_refusals_or_execution",
+        "lhost1.test_authority.AuthorityTests.test_complete_plan_closed_review"
+      ],
+      "remaining": "Supplied exact source/design/runtime/Q/P/plan review joins and refusal controls only; actual retained records and L source acceptance remain separately required."
+    },
+    {
+      "id": "LQ02",
+      "methods": [
+        "lhost1.test_authority.AuthorityTests.test_current_identity_enrichment",
+        "lhost1.test_authority.AuthorityTests.test_p_pin_drift",
+        "lhost1.test_authority.AuthorityTests.test_p_native_identity_drift",
+        "lhost1.test_authority.AuthorityTests.test_enriched_preparation_recipe_and_both_roster_reads",
+        "lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_changed_native_identity",
+        "lhost1.test_authority.AuthorityTests.test_plain_control_read_keeps_exact_pin",
+        "lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_incomplete_custody_shape"
+      ],
+      "remaining": "Real refreshed P census and controls, plus recipe membership fault fixtures."
+    },
+    {
+      "id": "LQ03",
+      "methods": [],
+      "remaining": "Owned host existing/alias/unknown attempt and once-only failure fixtures. Atomic absent/mkdir implementation is unexecuted."
+    },
+    {
+      "id": "LQ04",
+      "methods": [
+        "l1.test_protocol.ProtocolTests.test_duplicate_json",
+        "l1.test_protocol.ProtocolTests.test_nonfinite_json",
+        "l1.test_protocol.ProtocolTests.test_bool_integer",
+        "l1.test_protocol.ProtocolTests.test_unicode_limits",
+        "l1.test_protocol.ProtocolTests.test_json_depth",
+        "l1.test_protocol.ProtocolTests.test_frame_unknown_keys"
+      ],
+      "remaining": "Full record role/UUID/self/future-ref permutations beyond these parser mechanisms."
+    },
+    {
+      "id": "LQ05",
+      "methods": [],
+      "remaining": "Original L300/work240/cleanup5 interval injection including late genuine external return; existing Q time controls do not certify L."
+    },
+    {
+      "id": "LQ06",
+      "methods": [],
+      "remaining": "Host stop/low-RAM/disk/private/Job/stale-sample injection; two actual startup samples and independent guards need admitted observation."
+    },
+    {
+      "id": "LQ07",
+      "methods": [
+        "l1.test_imports.ImportTests.test_swapped_source_before_exec",
+        "l1.test_imports.ImportTests.test_import_gate_phase_before_read",
+        "lhost1.test_authority.AuthorityTests.test_fixed_command_positive",
+        "lhost1.test_authority.AuthorityTests.test_fixed_command_rejects_each_executable_mode_and_argument_change",
+        "lhost1.test_authority.AuthorityTests.test_fixed_command_extra_code_and_missing_argument",
+        "lhost1.test_authority.AuthorityTests.test_fixed_command_roots_cwd_attempt_and_cache",
+        "lhost1.test_authority.AuthorityTests.test_command_executable_must_match_reviewed_runtime"
+      ],
+      "remaining": "Exact command/bootstrap/root/runtime refusal fixtures use supplied records; actual pre-dispatch retained source/runtime and native bootstrap behavior remain unexecuted."
+    },
+    {
+      "id": "LQ08",
+      "methods": [
+        "l1.test_imports.ImportTests.test_pyc_source_refused"
+      ],
+      "remaining": "Finder sys.path/meta/path-hook/sys.modules/zip/pth adversarial fixture coverage."
+    },
+    {
+      "id": "LQ09",
+      "methods": [],
+      "remaining": "Namespace order, aliases, suffix and loader substitution fixtures; source contains checks, not executed evidence."
+    },
+    {
+      "id": "LQ10",
+      "methods": [
+        "l1.test_imports.ImportTests.test_retained_source_only",
+        "l1.test_imports.ImportTests.test_swapped_source_before_exec"
+      ],
+      "remaining": "Actual retained native-handle fixture joins in the admitted Q host."
+    },
+    {
+      "id": "LQ11",
+      "methods": [
+        "l1.test_guards.GuardTests.test_loader_signature_facade",
+        "lhost1.test_authority.AuthorityTests.test_environment_allowlist",
+        "lhost1.test_authority.AuthorityTests.test_environment_ambient_override",
+        "lhost1.test_authority.AuthorityTests.test_environment_unknown_variable",
+        "lhost1.test_authority.AuthorityTests.test_environment_case_alias",
+        "lhost1.test_authority.AuthorityTests.test_environment_missing_windows_variable",
+        "lhost1.test_authority.AuthorityTests.test_environment_thread_cap",
+        "lhost1.test_authority.AuthorityTests.test_environment_nul_before_native"
+      ],
+      "remaining": "Full finite search directory/flag/basename permutations; actual environment construction/restoration needs admitted host observation."
+    },
+    {
+      "id": "LQ12",
+      "methods": [
+        "l1.test_guards.GuardTests.test_torch_fallback_pre_effect",
+        "l1.test_guards.GuardTests.test_loader_signature_facade"
+      ],
+      "remaining": "Installed Torch branch remains unimported; these use dummy callable effects only."
+    },
+    {
+      "id": "LQ13",
+      "methods": [
+        "l1.test_native.NativePureTests.test_bootstrap_cut_retains_later_suffix",
+        "l1.test_native.NativePureTests.test_bootstrap_race_retries_without_event_loss",
+        "l1.test_native.NativePureTests.test_bootstrap_continuous_callback_refused"
+      ],
+      "native_cases": [
+        "l1.native_cases.transient_case"
+      ],
+      "remaining": "Actual native registration/startup races, unavailable-API/registration-failure injections. Pure boundary schedules and updated native ledger integration are unexecuted."
+    },
+    {
+      "id": "LQ14",
+      "methods": [
+        "l1.test_observation.ObservationTests.test_native_transient_replay",
+        "l1.test_observation.ObservationTests.test_bootstrap_load_already_in_snapshot",
+        "l1.test_observation.ObservationTests.test_bootstrap_unload_already_absent",
+        "l1.test_observation.ObservationTests.test_bootstrap_transient_preserved",
+        "l1.test_observation.ObservationTests.test_bootstrap_base_reuse_preserved"
+      ],
+      "native_cases": [
+        "l1.native_cases.transient_case"
+      ],
+      "remaining": "Actual reviewed helper/owned target load/unload in fresh Q; no concurrent native registration-boundary event race has been executed."
+    },
+    {
+      "id": "LQ15",
+      "native_cases": [
+        "l1.native_cases.injection_case:badutf16",
+        "l1.native_cases.injection_case:pathbound"
+      ],
+      "remaining": "Independent generated object/disassembly/import review establishing callback has no external calls; source alone is insufficient."
+    },
+    {
+      "id": "LQ16",
+      "methods": [
+        "l1.test_native.NativePureTests.test_utf16_surrogate",
+        "l1.test_native.NativePureTests.test_overlong_copy",
+        "l1.test_observation.ObservationTests.test_native_sequence_gap"
+      ],
+      "native_cases": [
+        "l1.native_cases.injection_case:overflow",
+        "l1.native_cases.injection_case:badreason",
+        "l1.native_cases.injection_case:badutf16",
+        "l1.native_cases.injection_case:pathbound"
+      ],
+      "remaining": "Actual injected native faults and sticky fault/shutdown observation."
+    },
+    {
+      "id": "LQ17",
+      "methods": [
+        "lhost1.test_authority.AuthorityTests.test_p_native_identity_drift",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_retained_loader_before_effect",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_wrong_loader_mechanism_pre_effect",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_path_substitution_pre_effect",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_identity_failure_pre_effect",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_unknown_flags_pre_effect",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_platform_basename_resolution_refused",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_reviewed_platform_choice",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_refusal_remains_sticky",
+        "lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_keyword_refusal_remains_sticky"
+      ],
+      "remaining": "Actual installed native importer/search/platform-image observations and full image path/hash/source substitutions remain unexecuted; these controls use dummy callables and retained fixture descriptors."
+    },
+    {
+      "id": "LQ18",
+      "methods": [
+        "l1.test_observation.ObservationTests.test_native_unstable_snapshot",
+        "l1.test_observation.ObservationTests.test_bootstrap_prefix_gap_refused",
+        "l1.test_observation.ObservationTests.test_bootstrap_reverse_mismatch_refused",
+        "l1.test_observation.ObservationTests.test_bootstrap_duplicate_snapshot_refused",
+        "l1.test_observation.ObservationTests.test_bootstrap_wrong_generation_refused",
+        "l1.test_native.NativePureTests.test_bootstrap_continuous_callback_refused"
+      ],
+      "remaining": "Oversized/partial snapshot/handle-reference ownership injections and actual native concurrent startup scheduling."
+    },
+    {
+      "id": "LQ19",
+      "native_cases": [
+        "l1.native_cases.transient_case",
+        "l1.native_cases.injection_case:overflow"
+      ],
+      "remaining": "Actual unregister/active callback/drain/reference-release and unknown shutdown fixtures."
+    },
+    {
+      "id": "LQ20",
+      "methods": [
+        "l1.test_guards.GuardTests.test_resource_exact_read",
+        "l1.test_guards.GuardTests.test_native_unmediated_refuses"
+      ],
+      "remaining": "Full read alias/resource API/native mediation/call-site coverage for actual package plan."
+    },
+    {
+      "id": "LQ21",
+      "methods": [],
+      "remaining": "Exact write/output/config/basetemp/alias/hardlink/symlink fault fixtures; no package write is currently granted by host."
+    },
+    {
+      "id": "LQ22",
+      "methods": [
+        "l1.test_guards.GuardTests.test_network_process_pre_effect"
+      ],
+      "remaining": "Complete subprocess/Git/network/diagnostic API and saved-alias denial census."
+    },
+    {
+      "id": "LQ23",
+      "methods": [
+        "l1.test_native.NativePureTests.test_layout",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_matches_production_observation",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_wrong_getter_result",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_missing_observation",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_extra_observation",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_bool_is_not_integer_result",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_unknown_record_field",
+        "lhost1.test_transport.ABISafeQueryTests.test_safe_query_nested_boolean_is_not_integer"
+      ],
+      "remaining": "Bounded PE export/forwarder/metadata fault fixtures and actual selected extension ABI checks. Safe getter controls are supplied module functions, not installed native getters."
+    },
+    {
+      "id": "LQ24",
+      "methods": [],
+      "remaining": "Version-only/CUDA-only/general ABI overclaim tests; no installed compatibility observed."
+    },
+    {
+      "id": "LQ25",
+      "methods": [
+        "l1.test_guards.GuardTests.test_missing_required_symbol",
+        "l1.test_guards.GuardTests.test_descriptor_not_evaluated"
+      ],
+      "remaining": "All model/state/backward/optimizer symbols and complete initialization-order fixtures."
+    },
+    {
+      "id": "LQ26",
+      "methods": [
+        "l1.test_guards.GuardTests.test_alias_stale",
+        "l1.test_guards.GuardTests.test_alias_bound_blocker"
+      ],
+      "remaining": "One dummy load alias is tested; the actual four safetensors APIs and all consumers remain unimported/unobserved."
+    },
+    {
+      "id": "LQ27",
+      "methods": [
+        "l1.test_protocol.ProtocolTests.test_phase_sticky",
+        "l1.test_guards.GuardTests.test_dynamic_compile_digest",
+        "lplan1.test_compiler.CompilerTests.test_aliased_import_include_refused",
+        "lplan1.test_compiler.CompilerTests.test_getattr_import_include_refused",
+        "lplan1.test_compiler.CompilerTests.test_aliased_native_include_refused",
+        "lplan1.test_compiler.CompilerTests.test_container_effect_include_refused",
+        "lplan1.test_compiler.CompilerTests.test_wrapper_returning_import_refused",
+        "lplan1.test_compiler.CompilerTests.test_unknown_target_cannot_borrow_guard",
+        "lplan1.test_compiler.CompilerTests.test_dynamic_import_nonliteral_target_refused",
+        "lplan1.test_compiler.CompilerTests.test_shadowed_import_builtin_refused"
+      ],
+      "remaining": "Complete constructor epoch, candidate-before-guard and reviewed metadata compile branch fixtures. Compiler conservatively refuses unresolved active call targets; no package alias analysis is claimed."
+    },
+    {
+      "id": "LQ28",
+      "methods": [
+        "l1.test_guards.GuardTests.test_sentinel_before_effect",
+        "l1.test_guards.GuardTests.test_unexpected_denial_sticky",
+        "l1.test_protocol.ProtocolTests.test_counters_exact_zero"
+      ],
+      "remaining": "Actual L sentinel rows must remain separate from candidate/control execution."
+    },
+    {
+      "id": "LQ29",
+      "methods": [
+        "l1.test_collection.CollectionTests.test_exact_arguments",
+        "l1.test_collection.CollectionTests.test_unknown_plugin_before_registration",
+        "l1.test_collection.CollectionTests.test_hookwrapper_before_registration",
+        "l1.test_collection.CollectionTests.test_pinned_wrapper_allowed"
+      ],
+      "remaining": "Real pinned pytest manager/core object/full plugin hook/config behavior remains unexecuted."
+    },
+    {
+      "id": "LQ30",
+      "methods": [
+        "l1.test_observation.ObservationTests.test_exact_collection_117",
+        "l1.test_observation.ObservationTests.test_duplicate_item",
+        "l1.test_observation.ObservationTests.test_incomplete_roster"
+      ],
+      "remaining": "Synthetic rows only; no actual candidate collection."
+    },
+    {
+      "id": "LQ31",
+      "methods": [
+        "l1.test_observation.ObservationTests.test_foreign_original_function",
+        "l1.test_observation.ObservationTests.test_parameter_identity",
+        "l1.test_observation.ObservationTests.test_wrong_candidate_pin",
+        "l1.test_observation.ObservationTests.test_reordered_v_roster"
+      ],
+      "remaining": "Actual source/function/escaping/order rows must come from separately admitted L."
+    },
+    {
+      "id": "LQ32",
+      "methods": [
+        "l1.test_protocol.ProtocolTests.test_digest_encoding_vector",
+        "lhost1.test_transport.ReceiverTests.test_parent_independent_collection_digest"
+      ],
+      "remaining": "Actual authenticated pipe roster digest not yet observed."
+    },
+    {
+      "id": "LQ33",
+      "methods": [
+        "l1.test_collection.CollectionTests.test_fixture_test_phase_pre_effect",
+        "l1.test_collection.CollectionTests.test_collection_skip_denied",
+        "l1.test_observation.ObservationTests.test_collection_nonzero_execution"
+      ],
+      "remaining": "Fake hooks only, no pytest or candidates executed."
+    },
+    {
+      "id": "LQ34",
+      "methods": [
+        "lhost1.test_transport.TransportCompositionTests.test_composed_creation_three_writers_and_unicode",
+        "lhost1.test_transport.TransportCompositionTests.test_composed_attribute_failure_prevents_creation",
+        "lhost1.test_transport.TransportCompositionTests.test_composed_report_writer_substitution_pre_effect",
+        "lhost1.test_transport.TransportCompositionTests.test_composed_extra_creation_flags_pre_effect"
+      ],
+      "remaining": "Production wrappers composed over faithful ctypes/native seams only; actual Windows atomic creation, membership/resume failures and owned closure require separately admitted host controls."
+    },
+    {
+      "id": "LQ35",
+      "methods": [
+        "l1.test_protocol.ProtocolTests.test_frame_oversize_before_body",
+        "l1.test_protocol.ProtocolTests.test_frame_truncation",
+        "l1.test_protocol.ProtocolTests.test_no_terminal_eof"
+      ],
+      "remaining": "Actual owned pipes/backpressure/stdout/stderr/duplicate/order/after-terminal and memory observations."
+    },
+    {
+      "id": "LQ36",
+      "methods": [],
+      "remaining": "Host create-new/original writer output and native identity substitutions; actual publication closure not exercised."
+    },
+    {
+      "id": "LQ37",
+      "methods": [
+        "lhost1.test_authority.AuthorityTests.test_p_pin_drift",
+        "lhost1.test_authority.AuthorityTests.test_p_native_identity_drift"
+      ],
+      "remaining": "Real full final census/absence/byte verification before release and its fault cases."
+    },
+    {
+      "id": "LQ38",
+      "methods": [
+        "lhost1.test_transport.TransportCompositionTests.test_composed_process_failure_closes_owned_pipes",
+        "lhost1.test_transport.TransportCompositionTests.test_composed_inherit_failure_closes_partial_pipes",
+        "lhost1.test_transport.TransportCompositionTests.test_composed_second_pipe_failure_closes_first"
+      ],
+      "remaining": "Supplied-seam adapter cleanup only; owned L child stop/crash/stall, cancellation/backpressure and genuine outer return closure controls remain unexecuted. Actual L is not admitted."
+    },
+    {
+      "id": "LQ39",
+      "methods": [
+        "lhost1.test_transport.ReceiverTests.test_no_success_by_exit_zero",
+        "lhost1.test_transport.ReceiverTests.test_parent_terminal_hash_drift",
+        "lhost1.test_transport.ReceiverTests.test_parent_unexpected_denial"
+      ],
+      "remaining": "Complete result/custody/resource observed-vs-declared overclaim permutations."
+    },
+    {
+      "id": "LQ40",
+      "methods": [
+        "l1.test_observation.ObservationTests.test_workload_drift"
+      ],
+      "remaining": "No V/C grant or execution; full workload stage-binding and authority fixtures remain."
+    }
+  ]
+}

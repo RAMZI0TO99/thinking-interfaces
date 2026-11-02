@@ -1,0 +1,102 @@
+{
+  "files": [
+    {
+      "pin": {
+        "bytes": 5669,
+        "sha256": "030e4a2ac978eecc2b5f68e8238ef8b6d69c3a7d255c197f798d516e9690dd9c"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/AGENTS.md",
+      "original": "AGENTS.md"
+    },
+    {
+      "pin": {
+        "bytes": 13997,
+        "sha256": "bb2bf0e5349bfeaf33ad059c04f196d7bf2b91f9e233cf66aa1f5028a9a06934"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/HANDOFF.md",
+      "original": "HANDOFF.md"
+    },
+    {
+      "pin": {
+        "bytes": 5254,
+        "sha256": "8a6ba539bcc906fa20504f89dc56ce76d8f4418efbc00ddde8e1e8e7813d02aa"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/AGENT_COORDINATION.md",
+      "original": "AGENT_COORDINATION.md"
+    },
+    {
+      "pin": {
+        "bytes": 5415,
+        "sha256": "b203e1de2556687614784db8c39226d30830018463f45803036c661922688300"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/CONTINUE_HERE.md",
+      "original": "CONTINUE_HERE.md"
+    },
+    {
+      "pin": {
+        "bytes": 5091,
+        "sha256": "345b51fa1aca877bb569f18a064bcc9c380c6ac91da917b01f4d03b02472b9c6"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/PHASE2_START_HERE.md",
+      "original": "PHASE2_START_HERE.md"
+    },
+    {
+      "pin": {
+        "bytes": 6082,
+        "sha256": "d34c0bb17206c0737067bae8a74767324806675f7e76e7ea01af10d6fe51e225"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/README.md",
+      "original": "README.md"
+    },
+    {
+      "pin": {
+        "bytes": 9687,
+        "sha256": "c87a4852eae78f104b112e50c678f0efc57bded8d2d8379608a0dd5be02a56a5"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/WINDOWS_SETUP.md",
+      "original": "WINDOWS_SETUP.md"
+    },
+    {
+      "pin": {
+        "bytes": 9357,
+        "sha256": "7cb46d994a2e350b7546b3e20c0398cc815056c37f95f902d3be2e62956f3442"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/docs/phase2/README.md",
+      "original": "docs/phase2/README.md"
+    },
+    {
+      "pin": {
+        "bytes": 9831,
+        "sha256": "dca6fa0f0271e45f055e1b79c6a90576d1397e5236a42d5db397e35b3a828647"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/docs/where are we/README.md",
+      "original": "docs/where are we/README.md"
+    },
+    {
+      "pin": {
+        "bytes": 20839,
+        "sha256": "7f5bc26962631f6d24d429242b16cf4068b713c6dcdb9cf2c1fe12b63460cd72"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/docs/where are we/PROJECT_PLAN.md",
+      "original": "docs/where are we/PROJECT_PLAN.md"
+    },
+    {
+      "pin": {
+        "bytes": 28706,
+        "sha256": "8bb73c51083e7303cf1a013063429c6d28805d745b1e2463536b26f9843c3a03"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/docs/where are we/PROGRESS_REPORT.md",
+      "original": "docs/where are we/PROGRESS_REPORT.md"
+    },
+    {
+      "pin": {
+        "bytes": 34551,
+        "sha256": "faa1c511c239685a34e60a5fe35fbd179b22888336d6d64f325a5eed6e2c32fa"
+      },
+      "archive": "docs/history/reconstruction_design_20261101/docs/where are we/EVIDENCE_INDEX.md",
+      "original": "docs/where are we/EVIDENCE_INDEX.md"
+    }
+  ],
+  "schema": "cho51_reconstruction_document_archive_v1",
+  "created_utc": "2026-11-01T11:09:36.8469568Z"
+}

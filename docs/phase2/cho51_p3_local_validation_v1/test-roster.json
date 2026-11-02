@@ -1,0 +1,167 @@
+{
+  "status": "STATIC_EXPECTATION_NOT_COLLECTED",
+  "origin_review_path": "runs/coordination/cho51_p3_contracts_20261027_v1/source-review.json",
+  "executed": false,
+  "function_count": 25,
+  "expected_total": 117,
+  "functions": [
+    {
+      "expected_cases": 2,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_boundary_path_refusal_precedes_adapter_reads"
+    },
+    {
+      "expected_cases": 2,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_callback_objects_refused_without_access"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_changed_pinned_metadata_refused"
+    },
+    {
+      "expected_cases": 4,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_changed_role_domain_refused"
+    },
+    {
+      "expected_cases": 3,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_duplicate_or_nonfinite_json_refused"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_fabricated_scope_refused_after_genuine_boundary"
+    },
+    {
+      "expected_cases": 6,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_finite_graph_and_encoded_byte_limits_refuse_before_serialization"
+    },
+    {
+      "expected_cases": 9,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_fixed_intent_scope_refused"
+    },
+    {
+      "expected_cases": 2,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_future_execution_obligations_cannot_be_prepared"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_genuine_historical_profile_and_complete_routes"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_intent_and_report_are_immutable_defensive_values"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_public_policy_views_cannot_mutate_authority"
+    },
+    {
+      "expected_cases": 5,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_report_cannot_promote_authority_or_numerical_counts"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_stale_expected_boundary_assessment_refused"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_assessment_is_output_only_and_cannot_be_deserialized"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_complete_nested_metadata_and_defensive_views"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_equal_monotonic_ticks_are_not_a_missing_duration"
+    },
+    {
+      "expected_cases": 1,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_explicit_qpc_domain_is_metadata_only"
+    },
+    {
+      "expected_cases": 4,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_external_pins_and_exact_types_are_required"
+    },
+    {
+      "expected_cases": 4,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_false_completion_or_abort_status_is_refused"
+    },
+    {
+      "expected_cases": 19,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_join_rejects_cross_domain_and_order_errors"
+    },
+    {
+      "expected_cases": 4,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_partial_timing_never_fabricates_missing_duration"
+    },
+    {
+      "expected_cases": 34,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_segment_rejects_malformed_contract"
+    },
+    {
+      "expected_cases": 5,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_segment_requires_exact_bounded_json_bytes"
+    },
+    {
+      "expected_cases": 4,
+      "module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_whole_trace_limits_are_not_reset_at_prefix_cut"
+    }
+  ],
+  "collection_required": true,
+  "expected_telemetry": 78,
+  "schema": "cho51_p3_local_validation_test_roster_v1",
+  "expected_mapping": 39,
+  "origin_review_sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a",
+  "candidate_source_pins": {
+    "docs/phase2/cho51_p3_adapter_v1/mapping.py": {
+      "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122",
+      "bytes": 12945
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py": {
+      "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee",
+      "bytes": 17511
+    },
+    "docs/phase2/cho51_p3_adapter_v1/contracts.py": {
+      "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429",
+      "bytes": 14415
+    },
+    "docs/phase2/cho51_p3_adapter_v1/README.md": {
+      "sha256": "c054f27971b99537f59a6f87aa9d697e52f91bb968913625c6f82e814a9aa76b",
+      "bytes": 4893
+    },
+    "docs/phase2/cho51_p3_adapter_v1/telemetry.py": {
+      "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c",
+      "bytes": 16973
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_mapping.py": {
+      "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384",
+      "bytes": 20488
+    }
+  },
+  "launch_authorized": false,
+  "scientific_admission": false
+}

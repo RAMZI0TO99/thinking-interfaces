@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-10-29T12:41:43.7307581Z",
+  "actual_review": {
+    "sha256": "d0514c210eb63926fea524b9d0bed60d4ac62e6a61a808c61fa1c307b7a104f1",
+    "bytes": 4695,
+    "path": "runs/coordination/cho51_p3_git_materialization_20261029_r1/actual-review.json"
+  },
+  "operation_id": "49b1f44d-46ef-446e-a8fd-85a3ddb7ce36",
+  "status": "QUALIFIED_R1_MATERIALIZATION_ONLY",
+  "complete_dependency_closure": false,
+  "scientific_admission": false,
+  "fresh_P_native_validation_required": true,
+  "destination_root": "D:/Aenv/pro3/runs/local_runtimes/git_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36_0414odrw.2lf",
+  "total_bytes": 189434327,
+  "parent_directory_handle_retained": false,
+  "schema": "cho51_r1_root_qualification_v1",
+  "git_execution_qualified": false,
+  "abi_qualified": false,
+  "copy_manifest": {
+    "sha256": "8f4708713cee5afe3f8ed47ca9efa268a830e0a795a41cf2fc7078413151cf90",
+    "bytes": 70533,
+    "path": "runs/coordination/cho51_p3_git_materialization_20261029_r1/copy-manifest.json"
+  },
+  "source_review": {
+    "sha256": "74c64c5fb7526cf68d51e86b6f5b76c121c1d8f8ed6399c21e2bea3a1ca56822",
+    "bytes": 3124,
+    "path": "runs/coordination/cho51_p3_git_materialization_20261029_r1/source-review.json"
+  },
+  "files": 243,
+  "author": "project_root",
+  "launch_authorized": false,
+  "historical_custody_closed": false,
+  "new_owned_lifecycle_closed": true,
+  "seal": {
+    "bytes": 85500,
+    "sha256": "475a4e652a97f2cb79eb47c7e06766a4ac65510c23bc76f02998795b25a8d234",
+    "path": "runs/coordination/cho51_p3_git_materialization_20261029_r1/seal_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36.json"
+  }
+}

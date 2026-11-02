@@ -1,0 +1,167 @@
+{
+  "schema": "cho51_p3_local_validation_acceptance_matrix_v1",
+  "status": "DESIGN_ONLY_ALL_UNEXECUTED",
+  "cases": [
+    {
+      "id": "LV01",
+      "name": "authority_join",
+      "required_behavior": "Reject missing or wrong design/implementation review/adoption before any effect.",
+      "executed": false
+    },
+    {
+      "id": "LV02",
+      "name": "unused_attempt",
+      "required_behavior": "Refuse occupied, unreadable or alias attempt; never delete/retry its claim.",
+      "executed": false
+    },
+    {
+      "id": "LV03",
+      "name": "retained_pin_drift",
+      "required_behavior": "Refuse source/runtime/asset content or identity change before/during/after use.",
+      "executed": false
+    },
+    {
+      "id": "LV04",
+      "name": "source_enumeration",
+      "required_behavior": "Refuse added/missing files and bounded census overflow; directory handles are not a membership freeze.",
+      "executed": false
+    },
+    {
+      "id": "LV05",
+      "name": "path_and_writer",
+      "required_behavior": "Reject hardlinks, reparse/alias/outside paths and incompatible existing writers; protect outputs from writers/deletion.",
+      "executed": false
+    },
+    {
+      "id": "LV06",
+      "name": "manifest_bounds",
+      "required_behavior": "Reject per-file,total,count,depth or report limits without partial acceptance.",
+      "executed": false
+    },
+    {
+      "id": "LV07",
+      "name": "bootstrap_same_bytes",
+      "required_behavior": "Execute only externally bound, verified bootstrap bytes; fail changed helper after verification.",
+      "executed": false
+    },
+    {
+      "id": "LV08",
+      "name": "runtime_abi",
+      "required_behavior": "Refuse stale .venv, incompatible ABI, missing declared extension/DLL/resource or package metadata.",
+      "executed": false
+    },
+    {
+      "id": "LV09",
+      "name": "import_origin",
+      "required_behavior": "Refuse unlisted source, pyc/zip/.pth/site/startup/plugin/conftest paths and ambient environment injection.",
+      "executed": false
+    },
+    {
+      "id": "LV10",
+      "name": "native_loader",
+      "required_behavior": "Refuse unknown DLL search directories/images; independently qualify platform trust exceptions.",
+      "executed": false
+    },
+    {
+      "id": "LV11",
+      "name": "preimport_phase",
+      "required_behavior": "Confinement applies before package initialization; forbid unreviewed model/file/network/process effects.",
+      "executed": false
+    },
+    {
+      "id": "LV12",
+      "name": "safetensors_alias",
+      "required_behavior": "Block load/save before by-value project binding and test every retained alias before candidates.",
+      "executed": false
+    },
+    {
+      "id": "LV13",
+      "name": "required_guards",
+      "required_behavior": "Missing required symbol or unguarded equivalent operation fails; no hasattr-and-skip.",
+      "executed": false
+    },
+    {
+      "id": "LV14",
+      "name": "candidate_zero_budget",
+      "required_behavior": "Any forbidden candidate action or nonzero/bool scientific counter fails even when pytest catches exception.",
+      "executed": false
+    },
+    {
+      "id": "LV15",
+      "name": "control_names",
+      "required_behavior": "Require exactly34 successor controls, all exact Boolean true; identify two changed local-window semantics.",
+      "executed": false
+    },
+    {
+      "id": "LV16",
+      "name": "collection_roster",
+      "required_behavior": "Require117 unique full IDs and25 exact counts, identical L/V roster; reject duplicate/missing/extra/deselected.",
+      "executed": false
+    },
+    {
+      "id": "LV17",
+      "name": "phase_and_junit",
+      "required_behavior": "Require351 complete successful reports and matching physical117-case JUnit; reject skip/xfail/xpass/class/count mismatches.",
+      "executed": false
+    },
+    {
+      "id": "LV18",
+      "name": "fixture_scope",
+      "required_behavior": "Restrict mutation/restore to owned JSON fixture paths; guard failure/crash cannot modify historical inputs.",
+      "executed": false
+    },
+    {
+      "id": "LV19",
+      "name": "git_confinement",
+      "required_behavior": "Reject alternate executable,args,env,cwd; enforce per-call and whole-budget limits and owned Job membership.",
+      "executed": false
+    },
+    {
+      "id": "LV20",
+      "name": "atomic_job_start",
+      "required_behavior": "Inject create/assignment/resume failures; never run uncontained; start uncertainty remains sticky.",
+      "executed": false
+    },
+    {
+      "id": "LV21",
+      "name": "ownership_cleanup",
+      "required_behavior": "Verify original handles, exits, empty/closed Job and stream EOF where applicable; no PID-only ownership.",
+      "executed": false
+    },
+    {
+      "id": "LV22",
+      "name": "resources_stop_time",
+      "required_behavior": "Exercise stop PRESENT/UNKNOWN, RAM/disk/cap/clock/deadline/work-reserve refusal; no deadline extension.",
+      "executed": false
+    },
+    {
+      "id": "LV23",
+      "name": "result_handoff",
+      "required_behavior": "Prove child-result ownership/closure and parent create-new/readback; reject replacement/partial/missing output.",
+      "executed": false
+    },
+    {
+      "id": "LV24",
+      "name": "caller_return",
+      "required_behavior": "A passing child or internal timestamp cannot substitute for genuine complete bounded external return.",
+      "executed": false
+    },
+    {
+      "id": "LV25",
+      "name": "failure_preservation",
+      "required_behavior": "Preserve first failure, partial bytes and consumed UUID; cleanup cannot upgrade failed work.",
+      "executed": false
+    },
+    {
+      "id": "LV26",
+      "name": "closeout_completeness",
+      "required_behavior": "Export only complete accepted local chain under64-file32MiB cap; metadata archive is not tests/runtime proof.",
+      "executed": false
+    }
+  ],
+  "count": 26,
+  "separate_from_117_candidates_and_34_controls": true,
+  "launch_authorized": false,
+  "scientific_admission": false
+}
+

@@ -1,0 +1,19 @@
+{
+  "schema": "cho51_p3_provider_plan_v4",
+  "historical_pid": 302124,
+  "old_entry_utc": "2026-10-27T17:04:57.1375077Z",
+  "old_return_utc": "2026-10-27T17:05:08.2987118Z",
+  "families": [
+    {"key": "boot", "provider": "Microsoft-Windows-Kernel-Boot", "channel": "System", "event_ids": [27]},
+    {"key": "clock_lifecycle", "provider": "Microsoft-Windows-Kernel-General", "channel": "System", "event_ids": [1, 12, 13]},
+    {"key": "power", "provider": "Microsoft-Windows-Kernel-Power", "channel": "System", "event_ids": [41, 42, 107]},
+    {"key": "resume", "provider": "Microsoft-Windows-Power-Troubleshooter", "channel": "System", "event_ids": [1]},
+    {"key": "eventlog_service", "provider": "EventLog", "channel": "System", "event_ids": [6005, 6006, 6008]},
+    {"key": "log_clear", "provider": "Microsoft-Windows-Eventlog", "channel": "System", "event_ids": [104]},
+    {"key": "historical_creation", "provider": "Microsoft-Windows-Security-Auditing", "channel": "Security", "event_ids": [4688], "pid_hex_values": ["0x49c2c", "0x49C2C", "0X49C2C"]}
+  ],
+  "boundary_qualified": false,
+  "host_association_authenticated": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

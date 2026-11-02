@@ -1,0 +1,386 @@
+{
+  "schema": "cho51_p3_dependency_recipe_v2",
+  "status": "PROPOSED_STATIC_SELECTORS_REQUIRES_INDEPENDENT_COVERAGE_REVIEW",
+  "project_root": "D:/Aenv/pro3",
+  "site_root": "D:/Aenv/pro3/.venv/Lib/site-packages",
+  "runtime_root": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python",
+  "git_root": "D:/Aenv/pro3/runs/local_runtimes/git_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36_0414odrw.2lf",
+  "limits": {
+    "depth": 32,
+    "file_bytes": 2147483648,
+    "hash_chunk_bytes": 65536,
+    "total_bytes": 4294967296,
+    "files": 25000
+  },
+  "selection_semantics": {
+    "resolution": "Resolve every named requirement before complete=true; selectors alone are not physical pins",
+    "directories": "Enumerate initial/final memberships and ancestry under native retention; missing required roots refuse; optional absent paths get retained absence observations",
+    "caps": "No truncation, partial accepted closure or automatic cap increase",
+    "union": "Canonical case-insensitive full-path union; retain all matching roles; aliases/hardlinks/reparse/nonlocal paths refuse",
+    "execution": "No imports, AST, compilation, package execution or Git execution in P"
+  },
+  "selectors": [
+    {
+      "id": "project-census",
+      "exclude_trees": [
+        "data/raw",
+        "data/processed",
+        "data/interim"
+      ],
+      "trees": [
+        "core",
+        "encoder",
+        "adaptation",
+        "data",
+        "realtime",
+        "evaluation",
+        "scripts",
+        "tests",
+        "configs"
+      ],
+      "recursive_extensions": [
+        ".py",
+        ".toml",
+        ".ps1"
+      ],
+      "root": "project_root",
+      "role": "capture_source live census and project module initializers",
+      "exclude_basename": [
+        "local.toml"
+      ]
+    },
+    {
+      "role": "capture_source root metadata",
+      "optional_nonrecursive_trees": [
+        ".githooks"
+      ],
+      "id": "project-root-metadata",
+      "root": "project_root",
+      "exact": [
+        "pyproject.toml",
+        "requirements.lock",
+        "requirements-core.lock",
+        "requirements-data.lock",
+        "requirements-ml.lock",
+        ".python-version",
+        ".gitattributes"
+      ]
+    },
+    {
+      "id": "reviewed-project-inputs",
+      "role": "observer, candidates, dynamically compiled planner, bridge PINS, rules and design",
+      "trees": [
+        "tools/local_validation/p1",
+        "tools/local_validation/p1q",
+        "tools/local_validation/p2r2",
+        "docs/phase2/cho51_p3_adapter_v1",
+        "docs/phase2/cho51_route_candidate_v1",
+        "docs/phase2/cho51_canonical_boundary_v1",
+        "docs/phase2/cho51_worker_bridge_v1",
+        "docs/phase2/cho51_p3_local_validation_v1",
+        "tools/local_validation/q4",
+        "tools/local_validation/v1",
+        "tools/local_validation/p2q2"
+      ],
+      "exact_lists_from": [
+        "docs/phase2/cho51_p3_local_validation_v1/dependency-plan.json:project_seed_paths",
+        "docs/phase2/cho51_p3_local_validation_v1/dependency-plan.json:metadata_asset_paths"
+      ],
+      "exact": [
+        "docs/PROJECT_EXECUTION_POLICY.md",
+        "docs/phase2/cho51_p3_local_validation_contract_20261029.md"
+      ],
+      "root": "project_root",
+      "recursive_extensions": [
+        ".py",
+        ".ps1",
+        ".json",
+        ".md",
+        ".toml",
+        ".cs"
+      ]
+    },
+    {
+      "id": "runtime",
+      "role": "fresh base Python executable DLLs stdlib extensions; prior inventory is discovery only",
+      "recursive_extensions": [
+        ".py",
+        ".pyi",
+        ".pyd",
+        ".dll",
+        ".exe"
+      ],
+      "exact": [
+        "LICENSE.txt"
+      ],
+      "root": "runtime_root",
+      "exclude_components": [
+        "__pycache__",
+        "site-packages"
+      ]
+    },
+    {
+      "exclude_components": [
+        "__pycache__"
+      ],
+      "role": "conservative all-installed-package code/native superset; no permission to import optional packages",
+      "recursive_extensions": [
+        ".py",
+        ".pyi",
+        ".pyd",
+        ".dll"
+      ],
+      "id": "site-code",
+      "root": "site_root"
+    },
+    {
+      "immediate_directory_suffix": ".dist-info",
+      "role": "all installed distribution metadata including queried braindecode scikit-learn safetensors and entry-point bytes; autoload stays disabled",
+      "id": "distribution-metadata",
+      "root": "site_root",
+      "recursive_all_files": true
+    },
+    {
+      "recursive_all_files_trees": [
+        "matplotlib/mpl-data",
+        "tzdata/zoneinfo"
+      ],
+      "role": "explicit bounded import/configuration resource supersets, not EEG or checkpoints",
+      "id": "import-resources",
+      "root": "site_root",
+      "exact": [
+        "mne/data/fsaverage/fsaverage-fiducials.fif",
+        "certifi/cacert.pem",
+        "torch/_dynamo/graph_break_registry.json",
+        "torch/_export/serde/schema.yaml",
+        "torch/_export/serde/export_schema.thrift"
+      ],
+      "exclude_trees": [
+        "matplotlib/mpl-data/sample_data"
+      ]
+    },
+    {
+      "role": "Git wrapper, actual Git and conservative native dependency candidates",
+      "recursive_extensions": [
+        ".exe",
+        ".dll"
+      ],
+      "id": "git-native",
+      "root": "git_root",
+      "trees": [
+        "cmd",
+        "mingw64/bin",
+        "mingw64/libexec/git-core"
+      ]
+    },
+    {
+      "id": "git-repository",
+      "role": "repository identity/config/index/refs/objects; no Git invocation or object expansion in P",
+      "exclude_components": [
+        "logs",
+        "hooks"
+      ],
+      "root": "project_root",
+      "tree": ".git",
+      "recursive_all_files": true
+    },
+    {
+      "id": "git-install-configuration",
+      "root": "git_root",
+      "exact": [
+        "etc/gitconfig",
+        "etc/gitattributes"
+      ],
+      "optional_exact": [
+        "mingw64/etc/gitconfig",
+        "mingw64/etc/gitattributes"
+      ],
+      "role": "effective installed Git system config and system attributes plus alternate path absences"
+    },
+    {
+      "id": "git-user-configuration",
+      "root": "git_user_root",
+      "exact": [
+        ".gitconfig"
+      ],
+      "optional_exact": [
+        ".config/git/config",
+        ".config/git/ignore",
+        ".config/git/attributes"
+      ],
+      "role": "controlled HOME and XDG default Git configuration; retain privately, never print contents"
+    },
+    {
+      "id": "git-programdata-configuration",
+      "root": "git_programdata_root",
+      "optional_exact": [
+        "config"
+      ],
+      "optional_root": true,
+      "role": "Windows ProgramData Git system configuration absence"
+    },
+    {
+      "id": "git-worktree-attributes",
+      "root": "project_root",
+      "recursive_basenames": [
+        ".gitignore",
+        ".gitattributes",
+        ".gitmodules"
+      ],
+      "exclude_trees": [
+        "data/raw",
+        "data/processed",
+        "data/interim",
+        ".venv",
+        ".git",
+        "runs",
+        "artifacts",
+        "tmp",
+        "checkpoints",
+        ".cache",
+        "__pycache__",
+        ".pytest_cache",
+        ".ruff_cache",
+        ".mypy_cache"
+      ],
+      "role": "all nonprotected worktree ignore/attribute/submodule metadata; protected metadata reads refuse",
+      "exclude_components": [
+        "__pycache__",
+        ".cache",
+        ".pytest_cache",
+        ".ruff_cache",
+        ".mypy_cache"
+      ]
+    },
+    {
+      "optional_root": true,
+      "root": "runtime_library_root",
+      "role": "explicit controlled Torch native search candidate; retained presence/census or actual absence",
+      "recursive_extensions": [
+        ".dll"
+      ],
+      "id": "native-search-runtime_library_root"
+    },
+    {
+      "optional_root": true,
+      "root": "runtime_bin_root",
+      "role": "explicit controlled Torch native search candidate; retained presence/census or actual absence",
+      "recursive_extensions": [
+        ".dll"
+      ],
+      "id": "native-search-runtime_bin_root"
+    },
+    {
+      "optional_root": true,
+      "root": "user_library_root",
+      "role": "explicit controlled Torch native search candidate; retained presence/census or actual absence",
+      "recursive_extensions": [
+        ".dll"
+      ],
+      "id": "native-search-user_library_root"
+    },
+    {
+      "optional_root": true,
+      "root": "nvtools_root",
+      "role": "explicit controlled Torch native search candidate; retained presence/census or actual absence",
+      "recursive_extensions": [
+        ".dll"
+      ],
+      "id": "native-search-nvtools_root"
+    },
+    {
+      "optional_root": true,
+      "root": "cuda_root",
+      "role": "explicit controlled Torch native search candidate; retained presence/census or actual absence",
+      "recursive_extensions": [
+        ".dll"
+      ],
+      "id": "native-search-cuda_root"
+    },
+    {
+      "recursive_all_files_trees": [
+        "setuptools/_vendor/autocommand-2.2.2.dist-info",
+        "setuptools/_vendor/backports.tarfile-1.2.0.dist-info",
+        "setuptools/_vendor/importlib_metadata-8.0.0.dist-info",
+        "setuptools/_vendor/inflect-7.3.1.dist-info",
+        "setuptools/_vendor/jaraco.collections-5.1.0.dist-info",
+        "setuptools/_vendor/jaraco.context-5.3.0.dist-info",
+        "setuptools/_vendor/jaraco.functools-4.0.1.dist-info",
+        "setuptools/_vendor/jaraco.text-3.12.1.dist-info",
+        "setuptools/_vendor/more_itertools-10.3.0.dist-info",
+        "setuptools/_vendor/packaging-24.2.dist-info",
+        "setuptools/_vendor/platformdirs-4.2.2.dist-info",
+        "setuptools/_vendor/tomli-2.0.1.dist-info",
+        "setuptools/_vendor/typeguard-4.3.0.dist-info",
+        "setuptools/_vendor/typing_extensions-4.12.2.dist-info",
+        "setuptools/_vendor/wheel-0.45.1.dist-info",
+        "setuptools/_vendor/zipp-3.19.2.dist-info"
+      ],
+      "id": "vendored-distribution-metadata",
+      "role": "nested installed distribution metadata exposed by setuptools vendor sys.path; all observed nested dist-info directories",
+      "root": "site_root"
+    }
+  ],
+  "required_supplements": [
+    "Root supplies exact current observer/control/Q qualification/native binary references before pin-index sealing; admission and pin-index self-references are separate control inputs, never physical-map self hashes.",
+    "Native PE import/delay tables are read under original handles in P; every nonplatform basename must have selected physical candidates. Any missing candidate refuses. Per-importer search order and ambiguous candidates require L source/loader review; no loaded-image or ABI claim follows from P.",
+    "Closed loader environment and resource allowlist above are the proposed L scope; an unexpected resource, external font scan, plugin or native path refuses and requires a reviewed successor recipe.",
+    "Git config/include/indirection/attributes must match the source-reviewed controls; unexpected includes, helper/filter/fsmonitor or protected content requirement refuses. No Git command runs in P."
+  ],
+  "exclusions": [
+    "data/raw",
+    "data/processed",
+    "data/interim",
+    "candidate scientific assets and checkpoints",
+    "site .pyc and __pycache__",
+    "executable .pth startup",
+    "ambient plugin discovery",
+    "unselected package datasets/resources",
+    "user configuration not explicitly pinned"
+  ],
+  "assertions": {
+    "historical_custody_repaired": false,
+    "loader_abi_qualified": false,
+    "launch_authorized": false,
+    "physical_closure_established": false,
+    "scientific_admission": false
+  },
+  "git_user_root": "C:/Users/aladdin-alyanai",
+  "git_programdata_root": "C:/ProgramData/Git",
+  "controlled_environment": {
+    "HOME": "C:/Users/aladdin-alyanai",
+    "USERPROFILE": "C:/Users/aladdin-alyanai",
+    "XDG_CONFIG_HOME": "C:/Users/aladdin-alyanai/.config",
+    "MATPLOTLIBRC": "D:/Aenv/pro3/.venv/Lib/site-packages/matplotlib/mpl-data/matplotlibrc",
+    "MPLCONFIGDIR": "<fresh-attempt>/library-config/matplotlib",
+    "_MNE_FAKE_HOME_DIR": "<fresh-attempt>/library-config/mne-home",
+    "MNE_LOGGING_LEVEL": "INFO",
+    "git_environment": "Closed allowlist: inherited GIT_* absent; HOME/USERPROFILE/XDG controlled above; PATH exact selected Git cmd and approved native roots. No GIT_CONFIG_NOSYSTEM or config overrides. Isolated Git runtime exactsealedroot; LC_ALL and LANG fixed C, no optional locale lookup. No template/init/clone/network/helper operations.",
+    "attempt_config": "Root must create fresh empty ordinary fixture dirs before package initialization; no preexisting user styles/font cache/MNE config; allowed writes only bounded attempt fixture reports. No arbitrary external font scan or font tool subprocess.",
+    "APPDATA": "C:/Users/aladdin-alyanai/AppData/Roaming",
+    "ProgramFiles": "C:/Program Files",
+    "NVTOOLSEXT_PATH": "absent",
+    "CUDA_PATH_V13_0": "absent",
+    "PATH": "Exact reviewed Git cmd plus selected native roots; no ambient directories; L must bind per-importer resolution before initialization.",
+    "LC_ALL": "C",
+    "LANG": "C"
+  },
+  "git_static_findings": {
+    "observed_date": "2026-10-29",
+    "read_method": "File text only; values not echoed except nonsecret core settings",
+    "include_sections": "None in selected installed system, user or repository configs; refuse any future include/includeIf unless separately expanded/reviewed",
+    "core_config": "repositoryformatversion0;barefalse;ignorecasetrue;filemodefalse;symlinksfalse;hookspath.githooks;systemautocrlftrue;fscachetrue",
+    "external_filters": "System has filter.lfs and diff.astextplain definitions; no nonprotected project attributes with filter/diff/working-tree-encoding found. System attributes assign astextplain to office/pdf/rtf types. Exact status/rev-parse must never invoke diff/textconv/filter; any attempted helper refuses.",
+    "repository": "ordinary .git directory; commondir/config.worktree/objects-info-alternates absent by text/file observation; no shallow/info-grafts",
+    "absences": "ProgramData config;mingw64/etc/gitconfig;mingw64/etc/gitattributes;user.config/git/config;user.config/git/ignore;user.config/git/attributes",
+    "native_future": "All these observations require future native identity/absence retention; present added includes or worktree indirection refuse rather than follow arbitrary roots"
+  },
+  "required_absent_project_paths": [
+    "matplotlibrc"
+  ],
+  "runtime_library_root": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Library/bin",
+  "runtime_bin_root": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/bin",
+  "user_library_root": "C:/Users/aladdin-alyanai/AppData/Roaming/Python/Library/bin",
+  "nvtools_root": "C:/Program Files/NVIDIA Corporation/NvToolsExt/bin/x64",
+  "cuda_root": "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.0/bin"
+}

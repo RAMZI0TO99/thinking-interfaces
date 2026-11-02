@@ -1,0 +1,58 @@
+{
+  "worker_ownership": "sc1 publisher module/backend/tests/README only",
+  "root_ownership": [
+    "successor cloning",
+    "lp19/lq19/lplan16 source changes and tests",
+    "implementation contract",
+    "metadata review transcription and docs"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "admission": false,
+  "reviewer_ownership": "none: read-only messages, Root sole metadata publisher",
+  "p_enabled": false,
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "namespace-map.json",
+    "implementation-map.json",
+    "source-candidate-v1.json",
+    "source-review-v1.json",
+    "source-candidate-v2.json",
+    "source-review-v2.json",
+    "source-candidate-v3.json",
+    "source-review-v3.json",
+    "source-candidate-v4.json",
+    "source-review-v4.json",
+    "root-source-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "runtime_operations": 0,
+  "created_utc": "2026-11-02T09:00:25.7526921Z",
+  "contract": "docs/phase2/cho51_p3_sc1_implementation_contract_20261102.md",
+  "max_active_peers": 1,
+  "author": "project_root",
+  "schema": "cho51_sc1_source_only_coordination_v1",
+  "conditional_snapshots": "draft-v1/v2/v3 exact changed source copies plus manifest before correction; no historical operation metadata reused",
+  "source_dirs": [
+    "tools/local_validation/lp19",
+    "tools/local_validation/lq19",
+    "tools/local_validation/lplan16",
+    "tools/local_validation/sc1"
+  ],
+  "milestone": "docs/phase2/cho51_p3_sc1_implementation_20261102.md",
+  "scope": "source-only implementation and independent review"
+}

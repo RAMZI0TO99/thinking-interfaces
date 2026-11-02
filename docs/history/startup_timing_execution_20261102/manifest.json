@@ -1,0 +1,102 @@
+{
+  "files": [
+    {
+      "original": "AGENTS.md",
+      "pin": {
+        "bytes": 6441,
+        "sha256": "9d4b1c374b1ded33478863e0bfc5ba7bce7c0f363435bc74e92a9315095aa233"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/AGENTS.md"
+    },
+    {
+      "original": "HANDOFF.md",
+      "pin": {
+        "bytes": 16301,
+        "sha256": "5dae2ae62278f234f7eb12a3bc086d2533ec35d84f1c3406c75e70dfbb218754"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/HANDOFF.md"
+    },
+    {
+      "original": "AGENT_COORDINATION.md",
+      "pin": {
+        "bytes": 6026,
+        "sha256": "ec50a8adf8b78a81310a596bc358d9eb88ebb1652d8008d4653c4755e31736f3"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/AGENT_COORDINATION.md"
+    },
+    {
+      "original": "CONTINUE_HERE.md",
+      "pin": {
+        "bytes": 6187,
+        "sha256": "b847a22ce02533ba98adc3595c4a4fe106ecc98a340efeb45063866c74287d6e"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/CONTINUE_HERE.md"
+    },
+    {
+      "original": "PHASE2_START_HERE.md",
+      "pin": {
+        "bytes": 5863,
+        "sha256": "5e0dfa89923cba36e3f3161fcceffbb8398adc549e11afe521a1564f1b528e12"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/PHASE2_START_HERE.md"
+    },
+    {
+      "original": "README.md",
+      "pin": {
+        "bytes": 6854,
+        "sha256": "c3e8daefeb8b511d94a125997e2ea81dffe0bbc745304de3a29ede9f36148d27"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/README.md"
+    },
+    {
+      "original": "WINDOWS_SETUP.md",
+      "pin": {
+        "bytes": 10459,
+        "sha256": "bb8d34cd6f6a7afba1db66e78f7e74d51d9230881909f9c1254c4e223f5fb0ba"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/WINDOWS_SETUP.md"
+    },
+    {
+      "original": "docs/phase2/README.md",
+      "pin": {
+        "bytes": 10961,
+        "sha256": "28c637fcc7ad0dae2f9e4d40fad9bbe1f96a309b94c7b191cb6feb5dbe9268a7"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/docs/phase2/README.md"
+    },
+    {
+      "original": "docs/where are we/README.md",
+      "pin": {
+        "bytes": 11499,
+        "sha256": "e1f7630f02d3702346d27fe297280a14132160edf4e22eb2e6edf2c48b97c454"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/docs/where are we/README.md"
+    },
+    {
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "bytes": 23139,
+        "sha256": "36bd856ff9f9ac7d37d7e6a08523e147742dcbc48d00f661a613072a674bbdbc"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/docs/where are we/PROJECT_PLAN.md"
+    },
+    {
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "bytes": 30111,
+        "sha256": "e020a16aab15de7141fcbc0588d958ed5903a0649344bc2faaea0a8e2b5aa9dc"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/docs/where are we/PROGRESS_REPORT.md"
+    },
+    {
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "bytes": 39182,
+        "sha256": "a83c1ab55f7d534298572bc698575f847940f932ba547d7212c341d530d97fd6"
+      },
+      "archive": "docs/history/startup_timing_execution_20261102/docs/where are we/EVIDENCE_INDEX.md"
+    }
+  ],
+  "schema": "cho51_qd_execution_document_archive_v1",
+  "created_utc": "2026-11-02T05:24:53.8045775Z"
+}

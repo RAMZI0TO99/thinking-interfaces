@@ -1,0 +1,185 @@
+{
+  "physical_map_accepted": false,
+  "schema": "cho51_p6_static_missing_native_v1",
+  "source": "Saved P6 retained PE pages and proposal name census; current file presence metadata only",
+  "created_utc": "2026-10-29T14:46:51.3133346Z",
+  "native_loader_qualified": false,
+  "scientific_admission": false,
+  "missing": [
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-datetime-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-debug-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-errorhandling-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-file-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-interlocked-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-libraryloader-l1-2-0.dll",
+      "downlevel_present": false,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-localization-l1-2-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-processenvironment-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-processthreads-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-processthreads-l1-1-1.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-synch-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/hf_xet/hf_xet.pyd",
+        "D:/Aenv/pro3/.venv/Lib/site-packages/pydantic_core/_pydantic_core.cp312-win_amd64.pyd",
+        "D:/Aenv/pro3/.venv/Lib/site-packages/safetensors/_safetensors_rust.pyd",
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-synch-l1-2-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": false,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib/cudart64_13.dll"
+      ],
+      "name": "api-ms-win-core-sysinfo-l1-1-0.dll",
+      "downlevel_present": true,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": true,
+      "api_exact_hosts": null,
+      "importers": [
+        "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/DLLs/_msi.pyd"
+      ],
+      "name": "cabinet.dll",
+      "downlevel_present": false,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": true,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/runs/local_runtimes/git_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36_0414odrw.2lf/mingw64/bin/libSkiaSharp.dll",
+        "D:/Aenv/pro3/runs/local_runtimes/git_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36_0414odrw.2lf/mingw64/libexec/git-core/libSkiaSharp.dll"
+      ],
+      "name": "fontsub.dll",
+      "downlevel_present": false,
+      "api_exact_entry": false
+    },
+    {
+      "system32_present": true,
+      "api_exact_hosts": null,
+      "importers": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/pylsl/lib/lsl.dll"
+      ],
+      "name": "mswsock.dll",
+      "downlevel_present": false,
+      "api_exact_entry": false
+    }
+  ],
+  "images": 888
+}

@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-10-31T19:05:45.9594007Z",
+  "schema": "cho51_frontier_document_archive_v1",
+  "files": [
+    {
+      "archive": "docs/history/frontier_design_20261031/AGENTS.md",
+      "original": "AGENTS.md",
+      "pin": {
+        "sha256": "c07988c7181e1c177c3a102d92c68bf925fb0c35801df85e6db6642519aeb5e1",
+        "bytes": 5565
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/HANDOFF.md",
+      "original": "HANDOFF.md",
+      "pin": {
+        "sha256": "be5b232100497b24772377d09359b87d45b5da36ca297eff1bb23813b16a54e9",
+        "bytes": 13615
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/AGENT_COORDINATION.md",
+      "original": "AGENT_COORDINATION.md",
+      "pin": {
+        "sha256": "57176e7b3cd85c34474d4163fe693593a6c407fc6ac6fab459e5226f2463dc69",
+        "bytes": 5150
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/CONTINUE_HERE.md",
+      "original": "CONTINUE_HERE.md",
+      "pin": {
+        "sha256": "e04864edc474cf566de1332df2c0b4d6e07320a9da265d4496328b7ca322424e",
+        "bytes": 5311
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/PHASE2_START_HERE.md",
+      "original": "PHASE2_START_HERE.md",
+      "pin": {
+        "sha256": "2270514d406f5df32d73b4a2ac5f87ab1636c0b1a91bbf28bbf013c05035c590",
+        "bytes": 4987
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/README.md",
+      "original": "README.md",
+      "pin": {
+        "sha256": "42675e742af6ceaed62b7ad0b50fd644ced23857b33e05d315e167fd726e7b98",
+        "bytes": 5978
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/WINDOWS_SETUP.md",
+      "original": "WINDOWS_SETUP.md",
+      "pin": {
+        "sha256": "e365bb460b650f20fb9fa0ece10de70ae804388c0a588d6273e141bd0b5c9cdb",
+        "bytes": 9583
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/docs/phase2/README.md",
+      "original": "docs/phase2/README.md",
+      "pin": {
+        "sha256": "d8df4e7d77555cc1fe9d25129042906c29aa2aee0ba5bf410a6328e61efc471e",
+        "bytes": 9075
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/docs/where are we/README.md",
+      "original": "docs/where are we/README.md",
+      "pin": {
+        "sha256": "52f463dfdbca84e83c9d406e5a3a06672e69313c5cd585ae30b6df3cc8bfb7c5",
+        "bytes": 9488
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/docs/where are we/PROJECT_PLAN.md",
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "sha256": "3b0bc1a7b7132b39b34cee074f2cd56599559c86fcfefe2a580c13a74785bcec",
+        "bytes": 20459
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/docs/where are we/PROGRESS_REPORT.md",
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "sha256": "741f3b515eab5c5fece7189b7c5dacc840e1b55345cc2b2ef60b02036619893b",
+        "bytes": 28464
+      }
+    },
+    {
+      "archive": "docs/history/frontier_design_20261031/docs/where are we/EVIDENCE_INDEX.md",
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "sha256": "86a4423323d741eb93cadb69cdc6d54486ac626479be392fe51e327a98c616b3",
+        "bytes": 33866
+      }
+    }
+  ]
+}

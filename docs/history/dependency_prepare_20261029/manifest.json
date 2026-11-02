@@ -1,0 +1,107 @@
+{
+  "schema": "cho51_document_archive_v1",
+  "created_utc": "2026-10-29T13:12:30.0063978Z",
+  "scope": "Twenty exact pre-task document/evidence/source snapshots; original locations retained in relative paths",
+  "files": [
+    {
+      "original_path": "AGENT_COORDINATION.md",
+      "bytes": 3843,
+      "sha256": "b3f9af05859438b73975777c55a55bc37b3755d005274564f60c1f9863e1b1d2"
+    },
+    {
+      "original_path": "AGENTS.md",
+      "bytes": 4258,
+      "sha256": "9e0d5eb4bcbfd79bfb4a24d7f77eee2e30c1e8b2fb04a3ca839206d87d41715f"
+    },
+    {
+      "original_path": "CONTINUE_HERE.md",
+      "bytes": 4003,
+      "sha256": "0d8cc515886fee0703e8fcad27b5786245f90977d668e4d8cf2d08d1adad9b41"
+    },
+    {
+      "original_path": "HANDOFF.md",
+      "bytes": 8608,
+      "sha256": "e6604efef7da82e9d22f40bae72eeb3e6238c5388e245a36f22013c7b1cfe14b"
+    },
+    {
+      "original_path": "PHASE2_START_HERE.md",
+      "bytes": 3679,
+      "sha256": "060163f95ad47906cbee1138c717c370bbbd4e29f3b17d7bfe71b036da12de10"
+    },
+    {
+      "original_path": "README.md",
+      "bytes": 4671,
+      "sha256": "d2c7b3317fccfcba50653623a0339314cf304024fefcbeb4e2f08364ddc0c392"
+    },
+    {
+      "original_path": "WINDOWS_SETUP.md",
+      "bytes": 8276,
+      "sha256": "5437a4805fe9fa6b3d640794c5e9ff5f19415eb00d2bd0ca4e79ca1ac806ebac"
+    },
+    {
+      "original_path": "docs/history/preparation_engine_20261029/ARCHIVE_INDEX.md",
+      "bytes": 371,
+      "sha256": "927a8879e87f8b41a12c75c25f96d88f25c4a35e447640c56d1a1176c77e8326"
+    },
+    {
+      "original_path": "docs/history/preparation_engine_20261029/manifest.json",
+      "bytes": 1962,
+      "sha256": "76f8f22db94db41c75da4747aeb95b053f03fc99c40f24f7fc7d9fdfe83ac71f"
+    },
+    {
+      "original_path": "docs/phase2/cho51_p3_p1_preparation_contract_20261029.md",
+      "bytes": 4879,
+      "sha256": "6f0fc352020539fa13db8f63a45c7ba1c99d32a459cc230f7384dc86c2d43139"
+    },
+    {
+      "original_path": "docs/phase2/README.md",
+      "bytes": 6058,
+      "sha256": "3c2725d47153bd390d515c691dad16e684cd86b7437370262d06ce8bbffb8f8e"
+    },
+    {
+      "original_path": "docs/where are we/EVIDENCE_INDEX.md",
+      "bytes": 20531,
+      "sha256": "15f77bd3bb2e5f316dad6486b4780cafbc21885f72e7394378d3f733335b7f88"
+    },
+    {
+      "original_path": "docs/where are we/PROGRESS_REPORT.md",
+      "bytes": 26192,
+      "sha256": "7fc7775381243b173c13545e8a0d1e6a31fb6f7fd80700e5bcbdfe149a9d5376"
+    },
+    {
+      "original_path": "docs/where are we/PROJECT_PLAN.md",
+      "bytes": 16356,
+      "sha256": "440e91d280bccab75703071ca58c73c6378bfe00f1012b191b9b17691ecc1b02"
+    },
+    {
+      "original_path": "docs/where are we/README.md",
+      "bytes": 7160,
+      "sha256": "79a1e7774b1b32f0384b55f047e263d1f512a9f0455ceb4198ec8a62f1143a2a"
+    },
+    {
+      "original_path": "runs/coordination/cho51_p3_preparation_engine_20261029_p1q/actual-review.json",
+      "bytes": 47319,
+      "sha256": "24958c1287b708dba7010940304b819c8e1a9ed797c0e4f9639a52396aecfca1"
+    },
+    {
+      "original_path": "runs/coordination/cho51_p3_preparation_engine_20261029_p1q/final-static-checks.json",
+      "bytes": 644,
+      "sha256": "ed7928870e6564e6d7eab4b86c41e6c7ac8fe2378f37870d5c0229cb4ed5f2eb"
+    },
+    {
+      "original_path": "runs/coordination/cho51_p3_preparation_engine_20261029_p1q/root-qualification.json",
+      "bytes": 4336,
+      "sha256": "4f2cfb8b3d774e217728ff980d5bbadb755ede91df432a5eab5ad1aef1d9e6fe"
+    },
+    {
+      "original_path": "tools/local_validation/p1/README.md",
+      "bytes": 3333,
+      "sha256": "bf9b1b1eae2203586b5c09e2f2ea8ce69a497c6682b517082993857301fb486c"
+    },
+    {
+      "original_path": "tools/local_validation/p1q/README.md",
+      "bytes": 3479,
+      "sha256": "5ddb44c7032375d4f636c86703db82e5f48b7db32f61ea31b11e8c5deabaa523"
+    }
+  ]
+}

@@ -1,81 +1,32 @@
 # Project plan — Thinking Interfaces
 
-## Publication checkpoint, 28 October 2026
+Updated **2 November 2026 (Asia/Riyadh)**. This roadmap uses the adopted research
+decisions and retained engineering evidence. Execution ownership, independent
+review and admission are local to this project under the
+[project execution policy](../PROJECT_EXECUTION_POLICY.md).
 
-The [publication record](../phase2/cho51_push_checkpoint_20261028.md) collects
-the completed engineering work and this project overview. Exact P3 sources,
-failed bootstrap records and static reviews are preserved in the
-[P3 archive](../../evidence/cho51-p3-source-checkpoint-20261028/README.md).
+The [local validation contract](../phase2/cho51_p3_local_validation_contract_20261029.md)
+has independent design acceptance. It binds 117 candidate cases, 34 successor
+controls and 26 qualification scenarios to separate qualification, preparation,
+loader/collection, validation and closeout stages. The two retired shared-window
+controls are explicitly replaced by local-window controls.
 
-The immediate next step is **custody-resolution design and independent review,
-followed by a distinct successor implementation**. Bootstrap004 remains failed
-and unreleased; diagnostics005 remains static-only and deliberately launch-held.
-The 117 candidate tests and 34 controls are still unexecuted. Source014 expired;
-Pro2 reports Source015 closed unadopted. No runtime or scientific validation is
-added by publication; scientific cells remain 0/1020 and the freeze unsigned.
+The [P2 dependency map and file-only caller](../phase2/cho51_p3_dependency_preparation_20261029.md) have accepted Q10 qualification (198 methods, eight UTC controls, two native fault controls and three sharing checks) and accepted P10 physical preparation: 20,406 files, 888 native images and 4,843 dependency edges. The 105.32-second run completed full final input verification and owned cleanup. Earlier failures and unknown cleanup remain frozen; physical preparation does not qualify loader/ABI behavior.
 
-Earlier dated sections below preserve the history of their own checkpoints.
+The [native-memory bootstrap and refreshed preparation](../phase2/cho51_p3_native_memory_bootstrap_20261031.md) are implemented and source-reviewed. Fresh native-bootstrap Q2 accepted 368 methods and all required controls, including two actual P-bootstrap cases. Separately admitted P2 returned successfully in 116.96 seconds, reporting 21,115 files, 893 native images and 4,847 dependency edges, full final verification and owned cleanup. P physical preparation is independently accepted for this operation.
 
-**28 October milestone:** diagnostics005 source and independent static review are
-complete; actual exercise remains deliberately held. Next: separately coordinate
-and review custody-resolution design plus a distinct successor. No ordinary005
-grant can resolve unknown004custody; no rerun,Boolean shortcut,native request or
-scientific execution follows. [Current bounds/status](../phase2/cho51_p3_custody_diagnostics_20261028.md).
+The [HB1 verifier/refusal/collection implementation](../phase2/cho51_p3_hb1_implementation_20261102.md) is independently accepted for source only. Its13-file package checks supplied frames, complete parent accounting and exact collection reports; the production host always refuses. All120 new methods remain unexecuted. The literal roster preserves580 existing plus120 new=700 identities across28 modules; the proposed verifier selection is184. Two pre-freeze review observations were resolved. No actual provider, durable claim, native custody, loaded-code witness, complete attributed census, asynchronous review lifecycle, capture bound or runtime feasibility is established. Next is design/review of the finite component-model runner and exact loading/collection/capture/accounting prerequisites. No admission follows; P stays disabled.
 
-**Latest next action,27 October17:17UTC:** the independent review of the actual
-failed/unreleased bootstrap004 packet is complete. Plan bounded refused-row and
-cleanup-stage diagnostics in separate sources. Preserve its consumed
-identity; no automatic retry or conditional native request. The refused process
-row was not saved,so its identity must not be guessed or whitelisted. Tests remain
-unexecuted. Any future corrective source/protocol and exact operation would need
-new review,coordination and admission; current evidence is not runtime acceptance.
+The [bounded resolver](../phase2/cho51_p3_bounded_resolver_20261031.md) and [supplied-data codec](../phase2/cho51_p3_lossless_codec_implementation_20261101.md) retain their accepted scoped evidence. The [fixed probe](../phase2/cho51_p3_probe_implementation_20261101.md) remains source-reviewed but fresh Q is NOT ACCEPTED: six consumed attempts, latest32 method and three sharing passes followed by a later control deadline and incomplete final verification. Latest owned cleanup is established;8bf386d1 final caller,6f9c898c final caller/outer/bootstrap and131bc595 outer/bootstrap custody remain UNKNOWN. Historical [QD a1f12701](../phase2/cho51_p3_qd_execution_20261102.md) retains59/42 timing records,37.7609334s prefix,45.4523028s external return, final verification and owned closure, but overall INCOMPLETE_REFUSED for17/16 closeout accounting. No repair, retry or second QD is inferred. [SC1](../phase2/cho51_p3_sc1_implementation_20261102.md) and the [HB1 design](../phase2/cho51_p3_host_binding_design_20261102.md) remain frozen source/design predecessors;54 SC1 and10 QD methods,24 HB/40 SC/36 diagnostic scenarios remain unqualified. Complete-Q timing/output feasibility is NOT_ESTABLISHED.
 
-**Current next gates,27 October16:57UTC:** obtain the genuine exact004 bootstrap
-decision and fresh Root admission; execute its once-only guarded observation,
-review the complete actual manifest and accept only observational coverage.
-Then separately admit native preparation003/pin review,the117-case nonnumerical
-unit and bounded external closeout. None has run. Current Source011 is only
-scheduling through21:30Riyadh,not execution authority. The owner clarified the
-P3-only engineering admission question; science,capture,training and numerical
-execution remain held. Preserve original14 sources and all refusal history.
+Full Q probe32/100/384 and every control remain held; all guards remain. No original-package-path custody, continuation or debt discharge is established. All18,793 resolver rows,13,406 inventory occurrences,724 queues,1,782 frontiers,1,786 binding loads and3,972 effects remain open. Complete continuation is INFEASIBLE_UNDER_CURRENT_GUARDS: at least31,002 rows against24,000; conditional node/raw-byte findings retain scope. G2 is INCOMPLETE_REFUSED; candidate117/V34 and science remain unexecuted. Old failures stay consumed; documentation does not refresh P custody or census.
 
-**Subsequent next action:** repair the explicitly refused bootstrap control chain
-in separate002 sources, review them independently, then seek a new exact genuine
-peer/Root decision. Do not dispatch001. Runtime observation acceptance, native
-preparation/pin review and unit/external grants remain later separate gates.
-
-**Latest next action:** the phase-only startup4GiB choice is now owner-adopted;
-do not ask again. Source009 coexistence is fresh,not native/test admission.
-Independently reviewed bootstrap/preparation sources await the distinct exact
-observational decision,then accepted runtime observations/native preparation/
-pin review and unit/external grants. All117 candidate cases remain unexecuted.
-
-**Later27 October milestone:** the metadata/profile and supplied-telemetry
-contract source unit is implemented and independently statically reviewed:
-[status and holds](../phase2/cho51_p3_contracts_implementation_20261027.md).
-Next is its separately coordinated/admitted117-case nonnumerical validation and
-bounded external closeout,not a runnable P3 bridge. Actual timing diagnostics,
-observer/custody qualification and terminal-controller integration remain later
-separate engineering phases. No proposed timing margin or scientific gate is
-adopted by this source checkpoint.
-
-Before that next validation: resolve the fresh owner RAM question or meet the
-unchanged default floors,and independently review/admit the exact native
-pin-preparation protocol. Pro2's actual ACK covers lightweight Source only;
-neither it nor the clean source review authorizes preparation/tests. Current
-14:17UTC RAM observation (~3.53GiB) is below even active4GiB. No start occurred.
-
-**27 October design checkpoint:** P3-D is now documented and independently
-statically reviewed in the [adapter design](../phase2/cho51_p3_adapter_design_20261027.md)
-and [telemetry design](../phase2/cho51_p3_telemetry_design_20261027.md).
-This closes design only, not P3-T implementation/diagnostics or P3-I execution.
-The [review](../phase2/cho51_p3_adapter_review_20261027.md) records the exact
-boundaries and proposed separately authorized metadata/telemetry next unit.
-
-Prepared **27 October 2026 (Asia/Riyadh)** from the local project evidence through
-25 October. This is a consolidated roadmap and recommendation, not a replacement
-for the adopted decisions or a new execution authorization. Source documents are
-listed in [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md).
+The [accepted v8 inventory](../phase2/cho51_p3_inventory_observation_20261029.md)
+remains a 742-file current-byte observation with 19 passing tests. The 117
+candidate tests and 34 successor controls remain unexecuted. Bootstrap004 stays
+consumed, diagnostics005 held, custody UNRESOLVED and006 unadmitted. Scientific
+cells remain 0/1020. The new scoped policy replacement takes effect only through
+implementation-specific adoption; the full-restart claim remains unchanged.
 
 ## 1. Purpose and research question
 
@@ -182,30 +133,58 @@ that is not the current four-method commitment.
 The existing platform implements many of these pieces. The full current
 production composition and its scientific admission are not yet established.
 
-## 4. Recommended next work, in dependency order
+## 4. Work in dependency order
 
-These are proposed work packages. Preparing this folder does not start them.
-
-| Package | Work and dependencies | Required completion evidence |
+| Package | Work and dependencies | Completion evidence |
 | --- | --- | --- |
-| P3-D: adapter design | Specify a separately versioned bridge between the accepted metadata preflight and provenance-aware **linear engineering** composition. Name exact modules, lifecycle, authority boundaries and recovery semantics. | Reviewed design with no conversion of a compatibility report into an execution token or an engineering terminal into a measured cell |
-| P3-T: timing design | Design bounded, nested monotonic telemetry for admission/import/pins/origin/inputs/restore/support/query/verifiers/terminal/closeout. Resolve timing interpretation before adding executable overhead. | Reviewed inclusive/exclusive timing semantics and a separately admitted diagnostic plan; no inferred hotspots from file timestamps |
-| P3-I: bounded engineering integration | Only after separate authorization, implement the new adapter with fresh source/runtime pins and resource/peer admission. Keep real recorder locks, strict physical proofs and separate producer/executor/recorder roles. | Focused tests, one explicitly scoped engineering transaction if admitted, honest counters, complete native/external closure and independent evidence review |
-| M: remaining method chains | Complete fresh current restore/target/parent integration for EEGNet; complete missing selection/publication/restoration and target/parent stages for LoRA and full tuning. | Method-specific executed evidence, including actual intended parameter changes, query-state invariance, provenance, failures and resource bounds |
-| R: operating feasibility | Measure representative current workloads under a separately approved scope, including preparation, complete selection, persistence, audits and recovery—not just forward inference. | A measured cost model, storage/RAM envelope, attempt/recovery policy and viable complete-roster plan; no unapproved scientific pilot by proxy |
-| S: scientific eligibility and freeze | Reconcile authenticated checkpoint-specific training coverage with evaluation recordings, permitted claims, complete method versions, protocol, analysis and feasible operating plan. Can progress alongside engineering. | Completed cohort/overlap review or an explicit scientifically defensible treatment of unresolved exposure, followed by the separate final owner freeze decision |
-| X: admitted study | Only after all relevant engineering, scientific and operational gates, execute the exact retained roster without resetting excluded/exhausted history. | All 1,020 required cells accounted for with authenticated measured records; no imputation or fabricated replacements |
-| A: analysis and release | Apply the adopted paired analysis, regenerate tables/figures, review limitations and prepare a reproducible results bundle. | Traceable results, independent review, appropriately scoped claims and separate publication/release authorization |
+| Custody-resolution specification | Completed design and three local schemas;48 acceptance scenarios specified | Independent design review accepted; later implementation evidence is scoped separately; no actual boundary qualified |
+| Historical custody evidence | Existing negative intake remains UNRESOLVED;16 v7 tests passed but all six Sysmon reads denied | Historical host, restart and cleanup remain unqualified |
+| Present-byte inventory | Adopted scoped v8 contract;19 tests and separate742-file observation accepted | Declared current bytes only;572 predecessors preserved |
+| Local validation contract | Design independently accepted;117 cases,34 successor controls,26 qualification scenarios and Q/P/L/V/C stages specified | Static acceptance only; implementation-specific adoption and separate admissions remain required |
+| Preparation and qualification implementation | Completed scoped Q10/P10 acceptance: 198 methods, eight timestamp controls, two faults, three sharing checks and an accepted 20,406-file physical map | P10 final retained verification and owned closure accepted; fresh successor preparation must cover new L executable dependencies |
+| L observer and collection | Source-reviewed; native-bootstrap Q2 accepted 368 methods and required controls | Resolve 7,873 plan findings and Lhost compatibility, complete remaining qualification and fresh applicable P before L; V 117/34 and C remain later gates |
+| Startup diagnostic and P bootstrap | Diagnostic accepted; LP4/LQ4 implemented/source-reviewed; fresh Q2 accepted, full coverage reviewed, P2 returned successfully with 21,115 files and owned cleanup | Physical preparation accepted; finite L plan and Lhost compatibility remain; original failures preserved |
+| Finite L plan and Lhost successor design | Eight inert design/data files independently accepted; refusal accounting and candidate/host successor contracts | Candidate-v2/inventory qualified; provisional accounting built; transitive G2 closure, host capabilities and final acceptance remain |
+| Candidate-v2 migration and bounded inventory | LP8/LQ8/lplan5 source-reviewed; Q4 accepted 384 methods; P4 returned 21,425 files, exact migration and 13,406 AST occurrences with zero syntax diagnostics | P physical, migration and bounded inventory scope accepted; five-source accounting built; bounded resolver built; transitive G2 closure and matching host capabilities remain |
+| Provisional source decision accounting | Independently reviewed package assigns all 13,406 occurrences; 46 imports, 79 definitions, 36 seeds and 11 pending capability groups | Bounded resolver built; G2 continuation and host capabilities remain |
+| Bounded lexical/import/effect resolver | LP10/LQ10/lplan7 source reviewed; Q2 accepted 384+40 methods/all controls; P2 returned 21,777 files and 74 resolver pages | P actual scope accepted; G2 continuation, phase propagation and host capabilities remain |
+| Bounded continuation and phase-context kernel | Four-file design accepted; LP11/LQ11/lplan8 source reviewed; fresh Q384+72 accepted with all controls | Supplied-state mechanisms only; real-source reconstruction/reconciliation and matching P producer remain before G2/host/L |
+| Real-source reconstruction and reconciliation design | Five-file design independently accepted; 127 historical pages checked; static capacity obstruction established | Obligations and refusal rules preserved; lossless design now completes the capacity decision |
+| Lossless state representation and capacity feasibility | Five-file design independently accepted; exact payload/full-frame transport preserves accounting; full real continuation infeasible under current guards | Complete continuation remains refused; bounded observation scope does not change its guards |
+| Supplied-data lossless codec and replay/accounting verifier | LP13/LQ13/lplan10 independently reviewed; fresh Q384+100 accepted, 484 distinct methods and all cohort controls | P disabled; real producer, complete reconciliation, native publication and real-case feasibility remain separate |
+| Real-source scope and bounded observation | Five-file design independently accepted; fixed 494-byte source/38-row selection and unchanged obligations | Complete continuation still infeasible; P disabled |
+| Fixed supplied-byte probe and refusal path | LP17/LQ17/lplan14 source-reviewed; latest32 methods and exact provisional observation passed | Fresh Q NOT ACCEPTED; later control deadline and incomplete final verification |
+| Bounded startup-timing diagnostic | One fresh QD run:59/42 timing records, prefix37.76s, external45.45s; final verification and owned closure reviewed | INCOMPLETE_REFUSED for17/16 closeout reservations; no Q acceptance or retry; P disabled |
+| SC1 hash/RAM and fixed-slot publisher | Design and LP19/LQ19/lplan16 implementation independently source-reviewed; two implementation findings resolved;54 new methods unexecuted | HB1 design accepted; operational provider binding and native qualification remain open |
+| Trusted-host binding and bounded qualification design | Seven-file HB1 design independently accepted;580 source identities and24 new scenarios; two findings resolved | Real provider/lifecycle/capture prerequisites remain; P disabled |
+| HB1 frame/parent-join/refusal/collection checks | Independently source-reviewed13-file package;120 new methods unexecuted; exact700-method/28-module roster | Finite component-model runner design/review and exact runtime/capture prerequisites; no admission |
+| P3 adapter integration | Compose accepted metadata/profile mapping, telemetry and the provenance-aware linear backend without creating scientific authority from metadata | Focused tests and a separately scoped engineering transaction, honest counters and complete closeout |
+| Remaining method chains | Complete current EEGNet, LoRA and full-tuning selection/restoration/target/parent composition where missing | Method-specific parameter-change, query-state, provenance, failure and resource evidence |
+| Operating feasibility | Measure representative complete workloads, including preparation, selection, persistence, audits and recovery | Measured cost/storage/RAM envelope and a viable complete-roster attempt/recovery plan |
+| Scientific eligibility and freeze | Resolve checkpoint-specific cohort/overlap treatment, method versions, protocol, analysis and feasible operating plan | Defensible permitted claims and the separate final owner freeze decision |
+| Admitted study | Execute the exact retained roster after all applicable engineering and scientific gates | All 1,020 required cells accounted for with authentic measured records |
+| Analysis and release | Apply the adopted paired analysis, regenerate tables/figures and review limitations | Traceable results, independent review and appropriately scoped publication claims |
 
-### Timing is a real next-step risk
+P3 adapter and telemetry design were completed on 27 October. Metadata/profile
+mapping and supplied-telemetry contracts were then implemented and statically
+reviewed. Diagnostics005 added bounded failure metadata and passed static
+review on 28 October. These milestones do not establish runtime qualification.
 
-The latest accepted numerical engineering composition took **590.082323 seconds**
-inside its 600-second native Job: only **9.917677 seconds** of arithmetic headroom
-in one observed run. This is neither a production reliability distribution nor
-the cost of a complete real-data case. Earlier hard-cap failures remain failures.
-Do not remove mandatory audits, cache authorization decisions or enlarge caps
-merely to make an integration pass. See the
-[interface audit](../phase2/cho51_canonical_pipeline_interface_audit_20261025.md).
+The successor must replace old launcher policy bindings with the current local
+protocol. Do not remove a guard from a frozen script or reuse a consumed attempt
+to make it run. Preserve the actual004 failure, incomplete custody and unknown
+refused-row/cleanup facts. Documentation policy supersession alone cannot
+establish successful historical cleanup.
+
+### Timing and operating feasibility
+
+The accepted numerical engineering composition took **590.082323 seconds**
+inside a 600-second native Job: **9.917677 seconds** of arithmetic headroom in
+one observed run. This is not a production reliability distribution or a
+complete real-data case budget. Preserve mandatory verifiers and resource
+limits; evaluate timing changes in a separately reviewed engineering successor.
+The [interface audit](../phase2/cho51_canonical_pipeline_interface_audit_20261025.md)
+records the original compatibility and timing findings.
 
 ## 5. Analysis contract to preserve
 
@@ -235,53 +214,63 @@ not an older planning paragraph:
 A negative or inconclusive result is a valid possible study outcome. Passing
 engineering checks never guarantees that LoRA will outperform the linear probe.
 
-## 6. Operational and scientific gates
+## 6. Project execution and scientific gates
 
-Before any future validation, diagnostic or training phase, read the current
-[handoff](../../HANDOFF.md) and [coordination rules](../../AGENT_COORDINATION.md).
-Establish fresh scope, ownership, independent review, exact settled source and
-runtime pins, an unused attempt/output root, peer coordination and admission.
-Old grants, receipts, estimated peer releases and absent pause files are not
-permission to run.
+Use the current [handoff](../../HANDOFF.md),
+[execution policy](../PROJECT_EXECUTION_POLICY.md) and
+[agent coordination rules](../../AGENT_COORDINATION.md). The project lead owns
+the bounded plan and admission; a different project reviewer checks source and
+actual results. Source authoring and result acceptance remain distinct roles.
 
-The completed metadata phase's available-RAM amendment does **not** automatically
-carry to P3. Default startup RAM is 10 GiB unless a fresh directly applicable
-amendment is recorded; active RAM remains 4 GiB and free disk 20 GiB under the
-current documented guard. Preserve phase-specific native time/memory limits,
-thread/GPU policy, all five peer pause paths and complete external closeout.
-No shared-process termination or cache clearing is proposed.
+Before execution, establish a settled source version, current source/runtime
+pins, available resources, an unused attempt/output directory, a bounded
+operation and complete owned-process cleanup. Retain directly applicable
+phase-specific resource amendments and all remaining time, memory, thread/GPU,
+disk and custody protections. Availability is checked locally; old observations
+do not establish current resources.
 
-Gate A's narrow retrospective acceptance does not sign checkpoint independence
-or the final scientific freeze. The former 30-hour autonomous session has ended;
-this roadmap creates no new autonomous window.
+The current scope is engineering-only. Gate A's narrow retrospective acceptance
+does not establish checkpoint independence or sign the final experiment freeze.
+No former autonomous window, old launcher or saved receipt admits a new run.
 
 ## 7. Schedule and definition of completion
 
-There is **no defensible calendar completion date yet**. The older 45-working-day
-schedule is a planning horizon, not a newly activated timetable or measured cost
-estimate. First settle P3 design and measure current representative workloads;
-then estimate expected and conservative totals, reviewer capacity, storage
-growth, restart cost and recovery buffer.
+There is no defensible calendar completion date yet. The older 45-working-day
+schedule is a historical planning horizon. Resolve the current custody and
+contract-validation blockers, then measure representative current workloads
+before estimating complete-study time, storage growth and recovery allowance.
 
-The immediate milestone is a reviewed P3 design, not a promise to launch 1,020
-cases. The first-tranche scientific milestone requires complete authentic
-results, adopted analysis and scoped conclusions. Wider E1/E3/E4 completion and
-useful live brain control remain separately assessed deliverables.
+The immediate engineering milestone is a reviewed and validated successor with
+complete ownership/cleanup evidence and the pending nonnumerical tests resolved.
+The first-tranche scientific milestone requires the full authentic roster,
+adopted analysis and scoped conclusions. Wider E1/E3/E4 work and useful live
+brain control remain separate deliverables.
 
-## 8. Owner inputs that will matter later
+## 8. MLflow evaluation
 
-No answer is required to finish this documentation. Before the relevant later
-phase, the owner will need to resolve or confirm:
+Requested by the owner on 31 October 2026. Evaluate MLflow after the current
+L implementation's fresh Q qualification and P preparation, before larger
+experiment runs. Its tracking interface can compare parameters, metrics and
+artifacts; local operation is supported by the
+[official tracking documentation](https://mlflow.org/docs/latest/tracking/).
 
-1. Whether a new authenticated checkpoint-provenance reply or recording manifest
-   has arrived outside the reviewed local records. Existing documentation is not
-   a fresh check of correspondence or a public issue.
-2. The exact bounded P3 design/implementation scope and any phase-specific
-   resource amendment; neither is assumed from earlier RAM replies.
-3. The final named scientific experiment and its acknowledged provenance limits,
-   once engineering feasibility and the cohort review are ready.
-4. Any wider-program additions, institutional access, hardware, compute budget
-   or external reviewer not currently established by local evidence.
+Start with a separately reviewed exporter of accepted project records into a
+local tracking store. Preserve original operation IDs, source/runtime hashes,
+acceptance status and artifact references. Project evidence and admission
+records remain authoritative. Review dependency, storage and resource costs
+before installation or execution; no MLflow runtime or autologging is admitted
+by this planning entry. It adds no scientific cells or retrospective acceptance.
 
-See [PROGRESS_REPORT.md](PROGRESS_REPORT.md) for completed milestones and
-[LITERATURE_REVIEW.md](LITERATURE_REVIEW.md) for the studies behind these choices.
+## 9. Owner decisions needed later
+
+No further answer is needed for this documentation update. Later decisions may
+concern authenticated checkpoint provenance, a scientifically defensible
+treatment of unresolved exposure, the final named experiment freeze, or wider
+datasets/methods/hardware and operating budgets. Existing project authorization
+and applicable resource choices are retained; this roadmap does not reopen
+questions that the owner has already answered.
+
+See [PROGRESS_REPORT.md](PROGRESS_REPORT.md) for completed work and
+[LITERATURE_REVIEW.md](LITERATURE_REVIEW.md) for the studies behind the design.
+Historical documentation is retained in the
+[history manifest](../history/project_focus_20261028/manifest.json).

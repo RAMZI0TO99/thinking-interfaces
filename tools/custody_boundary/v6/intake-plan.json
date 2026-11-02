@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "historical_disposition": {
+      "sha256": "1faf198894e0f210e5bb8692a8c0c4b35f10963a1e2c8c928d545eb808c335ec",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-disposition_004.json",
+      "bytes": 2695
+    },
+    "historical_audit": {
+      "sha256": "365153e07d2f925d36168f0218404ae37c18962d0bbabb0598a284ff6740b75d",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-external-audit_004.json",
+      "bytes": 4925
+    },
+    "historical_review": {
+      "sha256": "df900ab63aaf0f4ef0febbe11c3db7fa23ff9a178f5d8f65f6233ff35948e098",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-actual-review_004.json",
+      "bytes": 8841
+    },
+    "provider_capture": {
+      "sha256": "7df7f2a813f32588a08cfaa3c1100e905d935f283c28292e9bad62e9371ab906",
+      "path": "runs/coordination/cho51_p3_provider_qualification_20261028_v4/attempts/076a41b3-fcc1-4553-aa56-a75a7bfcfef1/payload.json",
+      "bytes": 53785
+    },
+    "decoded_capture": {
+      "sha256": "671ce8aaf64a1d8c77703e04e79f2c293dd1a3f5964a896d8c936024833b6820",
+      "path": "runs/coordination/cho51_p3_provider_qualification_20261028_v5/attempts/44283658-a348-4972-b16a-0e17af4aafc4/payload.json",
+      "bytes": 14910
+    },
+    "provider_actual_review": {
+      "sha256": "59a5a6154c28896c2541676cafa32dbc828323b3320465492effb5ce60457162",
+      "path": "runs/coordination/cho51_p3_provider_qualification_20261028_v5/actual-review.json",
+      "bytes": 10629
+    },
+    "provider_root_qualification": {
+      "sha256": "4ef0b2fb80219ad284813319f432cc6d703df1274f058fdc96f7a74fcb945e70",
+      "path": "runs/coordination/cho51_p3_provider_qualification_20261028_v5/root-qualification.json",
+      "bytes": 1127
+    },
+    "policy": {
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829",
+      "path": "docs/PROJECT_EXECUTION_POLICY.md",
+      "bytes": 5619
+    },
+    "disposition_schema": {
+      "sha256": "1078e7fc3ed1984b01a62f557a5b6691f2185b196dfcbfee0832949872f93e83",
+      "path": "docs/phase2/cho51_p3_local_custody_v1/disposition.schema.json",
+      "bytes": 6922
+    }
+  },
+  "launch_authorized": false,
+  "schema": "cho51_p3_custody_intake_plan_v6",
+  "scientific_admission": false
+}

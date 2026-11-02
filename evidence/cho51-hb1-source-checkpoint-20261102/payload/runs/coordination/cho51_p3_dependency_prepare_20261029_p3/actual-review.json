@@ -1,0 +1,59 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_DEADLINE_CLOSURE_UNPROVED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T13:37:02.8253149Z",
+  "operation_id": "f8ed9509-0bd6-40f0-a66e-ab4ec6fa7b02",
+  "actual_tool_exit_code": 1,
+  "new_operation_owned_lifecycle_closed": false,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "source_review_sha256": "260fca0b83822d81d8a802201d1300a78e8300701454f7ee2548e4dff654aab0",
+  "findings": [
+    "Consumed P operation reached original240second work deadline. Bootstrap caller_error reports Poll original work deadline at2026-10-29T13:34:49.3963452Z; independent guard_fault reports independent caller work deadline at13:34:49.4284898Z. Tool return is exit1 with empty output.",
+    "39partial files totaling21869796bytes are retained, including a physical-index for20239file rows/3455030410payloadbytes and37referenced pages. Its actual_result_accepted,coverage_review_established,ABI/loader and launch/science flags are false. No result.json, caller-return or native PE closure pages are present.",
+    "No actual external lifecycle/cleanup return proves original process reaping, Job empty/closed, input/output handle closure, pipe EOF/join or guard closure. Do not infer any from tool completion, later PID absence or partial artifacts."
+  ],
+  "checks": [
+    "Independently inspected tool-return, bootstrap, source acceptance, admission, underlying physical index and all37page byte/hash references. All partial page refs match current saved bytes.",
+    "Rechecked25source,732runtime and1663preserved file byte/hash pins with no drift, plus admission source/coverage/adoption/qualification/helper/index references. Source reviewer is p2_successor_review, distinct from this actual reviewer and implementation authors.",
+    "Original callerPID19772 creationFILETIME134377542490412557 and origin2026-10-29T13:30:49.3326745Z retained in bootstrap. Authority/native load and supervisor dispatch precede deadline faults; no final acceptance or closeout marker follows."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "partial_outputs": 39,
+  "partial_output_bytes": 21869796,
+  "partial_index_files": 20239,
+  "partial_index_bytes": 3455030410,
+  "partial_pages_hash_verified": 37,
+  "limitations": [
+    "File/text/JSON/hash/metadata inspection only; no Git, Python/import, AST, compilation, tests or runner invoked. Current partial file hashes are artifact consistency checks, not original retained identity or successful closure attestation.",
+    "Preserve this consumed attempt and all partials. No accepted map, PE closure, loader/ABI, L/V/C or scientific result. Historical unresolved custody, failures and review deviation remain unchanged."
+  ],
+  "successor_advice": [
+    "A separately versioned independently reviewed performance successor is appropriate within unchanged240work/300whole/5cleanup and existing memory/disk limits. Keep original deadlines anchored to original caller origin.",
+    "Optimize redundant observation only when equivalent guards are demonstrated: retain original file/directory handles and identities, initial/final exact census, pin hashes and post-read identity verification, output create-new/readback, bounded native PE traversal, independent stop/resources and original owned closeout. Do not replace required final verification with an earlier snapshot.",
+    "Keep cheap deadline/stop checks per chunk; independent watchdog maintains sampling. Any sampled/cached resource checkpoint redesign needs explicit interval/staleness/fault behavior review and qualification rather than silently removing checks.",
+    "Retain only necessary full passes by combining hash/serialization/verification under original retained handles, and index incremental bounded output hashes rather than repeatedly rehashing all prior pages if equivalence is proven. Avoid claiming probable bottlenecks measured without timing evidence.",
+    "Require fresh source/Q qualification, complete proposed physical pin/coverage review and new unused P admission after Root adopts this failure; new success cannot repair unproved cleanup of this operation."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

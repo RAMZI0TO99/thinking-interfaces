@@ -1,0 +1,37 @@
+{
+  "schema": "cho51_q_static_import_review_v1",
+  "status": "CONFIRMED_SOURCE_DEFECT_CAUSE_UNPROVEN",
+  "reviewer": "l_source_review",
+  "authors": [
+    "project_root",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T12:49:54.0704840Z",
+  "failure_review": {
+    "sha256": "e0a51da49c03e42e8885febede4b31dd5eff472fcb018026e8cd8350fd4531",
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/failure_1a07add9-5fac-40b2-8ff2-18d55e70c385/actual-review.json",
+    "bytes": 22742
+  },
+  "findings": [
+    {
+      "line": 13,
+      "rationale": "The fixed suite loads this module from verified bytes in child_entry.py:121 after installing the isolated import restriction. Its relative import requests tools.local_validation.lp2.native_reader, but namespaces() in supervisor.py:59-65 creates no lp2 parent and child_entry preloads lp3 and lp1 only. The empty synthetic tools.local_validation package search path and isolated runtime path cannot discover the project lp2 package. The module therefore fails at import before a suite report can be produced under this fixed loader configuration.",
+      "expected_fix": "Create versioned LP4/LQ4 successor sources and replace the stale test import with the corresponding explicitly preloaded LP4 production reader; preserve the separate LQ4 cooperative reader and exact identity/sharing tests. Update fixed source pin and ordered roster namespaces and independently review the resulting loader and all import edges. Do not edit or replay frozen LQ3/LP3.",
+      "source_sha256": "600bd66e912f707ba36f2e5f1c68a4896902719dfe8f338618d8b9c3db5e0d16",
+      "file": "tools/local_validation/lq3/test_native_reader.py",
+      "severity": "blocking",
+      "id": "IMPORT-1"
+    }
+  ],
+  "checks": [
+    "Read accepted failed actual review: original suite frame missing/truncated, zero retained method results and owned lifecycle closed; no cause established.",
+    "Traced synthetic namespace setup, isolated sys.path restriction, fixed suite load order and LP1/LP3 preloads by source text.",
+    "Searched relative and qualified LP2/LQ2 imports across fixed LQ3/LP3 and inherited L1/Lhost1/Lplan1/P1/V1 suite modules; no other direct LP2 or LQ2 import appeared.",
+    "LP2 and LP3 native_reader source hashes currently match; this supports a minimal namespace correction but does not qualify changed successor bytes."
+  ],
+  "limitations": [
+    "File, text and hash inspection only; no Python, AST, imports, compiler, tests, native probes, processes or Git.",
+    "The deterministic source defect is not proof that it caused the historical missing frame; no recovered child traceback or method execution is invented.",
+    "Roster completeness and all runtime outcomes remain subject to fresh source review and separately admitted qualification."
+  ]
+}

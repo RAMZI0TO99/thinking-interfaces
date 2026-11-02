@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_hb1_independent_publication_review_v1",
+  "created_utc": "2026-11-02T11:56:56.1522316Z",
+  "status": "ACCEPTED_PUBLICATION_ONLY",
+  "findings": [],
+  "reviewer": "push_plan_review",
+  "publisher": "project_root",
+  "publication_kind": "verbatim independent peer message transcription",
+  "review_text": "Independent publication review: ACCEPTED_PUBLICATION_ONLY; findings []. Reviewed the frozen selected HB1 checkpoint packet, new publication milestone, scoped attributes, prior-page archive and staged Git scope. Manifest SHA256 f2cd02f23993c4993599848e2922b6d7986410c3b0447151562bfcccbc2d36ba and publication-checks.json (152,722 bytes, SHA256 19b9394cae2b8985058253beecb5d70af1431a4a592d463602e24ba356d216af) match. Independently verified all323 originals and323 copies, totaling12,033,473 payload bytes; every one of the288 HB1 candidate inputs is included and unchanged. All12 prepublication page copies match the accepted HB1 document pins; only HANDOFF.md, CONTINUE_HERE.md and PROGRESS_REPORT.md have the declared publication-status text changes from those archived bytes. Current staged scope is exactly the2,269 predeclared paths plus publication-checks.json:2,270 paths. Independently computed Git blob identities match2,258 raw files and12 intentional LF-normalized active pages, all regular stage0/100644 files. No tracked source deletion/change or excluded live data/run/weight/runtime root is staged; tracked modifications are the12 active pages and root attributes. Staged files are allowed source/document text types, strict UTF8 without NUL and at most10MiB each. Recognizable private-key/GitHub/Slack/OpenAI/AWS credential-form scan found no matching paths; this is a bounded pattern check, not an exhaustive secrecy guarantee. Scoped -text attributes preserve new validation/custody sources, history and packet payloads; existing phase2 byte rules remain. Persistent hooksPath is .githooks and the per-command empty publication hook directory is empty, consistent with the documented publication precedent; no project quality-suite pass is claimed. The packet truthfully declares a selected inert snapshot, not a full runtime/transitive evidence archive or restored custody. Source-only HB1,120 unexecuted methods,700 source identities/28 modules, proposed184 VFY, unexecuted117/V34, P disabled, QD17/16 refusal, UNKNOWN custody, open obligations and science0/1020 remain unchanged. This review permits publication of this staged checkpoint plus the sole predeclared publication-review.json transcription; it does not certify push success, runtime, qualification or scientific acceptance. Review was read-only file/text/hash/Git inspection: no source execution, imports, AST, compiler, native helper, tests, Git mutation or file writes. Root owns publication; reviewer push_plan_review authored no changes.",
+  "review_text_sha256": "5b41e1ae7e81fafffbedeb7257aeb19a7fa5fcef08670e05463b99650c4be1ed",
+  "checks": {
+    "sha256": "19b9394cae2b8985058253beecb5d70af1431a4a592d463602e24ba356d216af",
+    "path": "evidence/cho51-hb1-source-checkpoint-20261102/publication-checks.json",
+    "bytes": 152722
+  },
+  "final_staged_paths_with_this_record": 2271,
+  "exact_byte_confirmation": "Peer confirmation retained in original conversation; no sidecar",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "push_success_claimed_by_this_review": false
+}

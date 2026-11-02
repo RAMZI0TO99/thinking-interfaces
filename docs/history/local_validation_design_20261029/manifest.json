@@ -1,0 +1,55 @@
+{
+  "schema": "cho51_p3_document_snapshot_v1",
+  "created_utc": "2026-10-29T05:59:50.1655812Z",
+  "scope": "Exact current documents before local-validation design/foundation update",
+  "files": {
+    "HANDOFF.md": {
+      "bytes": 7324,
+      "sha256": "c2d4c882b5d1b08330627635ba24648f263d67fbe0da22d8e48b8fafab281387"
+    },
+    "AGENTS.md": {
+      "bytes": 3817,
+      "sha256": "2bf2d19ae638bcc1a64038961204ce713fb5a3604a8c95e4c6a6b3b0a5345f71"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 3402,
+      "sha256": "2066a8aa0a2ddb5d18fade72dbb035e00ba491e13add32e005d2e854e492902c"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 3562,
+      "sha256": "f33b2a653b10a95247c7d18ca8d7eaffc8abdda53581e0170558616be5f55ba9"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 3238,
+      "sha256": "063008c7e3a54a89c078ff5fb7b0e4adad16d9f418bf3eb08b079238e86c2e3a"
+    },
+    "README.md": {
+      "bytes": 4230,
+      "sha256": "98c864465a8c177ac7a66497e5dd6126b34c8477397599490ac98c0f6ba27c5f"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 7835,
+      "sha256": "f95e326804a722cfd3e389bc12aef48d01c178bced51aa35351c937b9353888b"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 4907,
+      "sha256": "3a84399869eef0175eee8e8ccce32a9bfea14dd83e65129c2c94453bd0081597"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 6053,
+      "sha256": "9612f37914edc6afdfbc7bd403a90810aac8736e012490748966c79f459fd29b"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 15591,
+      "sha256": "8ac9137e269da241f0e0154bd5386b93c2a7e305a7a49f2ea3bd220a35ee799d"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 24786,
+      "sha256": "0b21e60ef61d5b4ae588d0ba075744d3e99ed0acff045537f6057a39e219c9e1"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 17760,
+      "sha256": "25fa0251cc01dae9bff164b8893386294cac7d00b252229c1cc1c689895f5b7f"
+    }
+  }
+}

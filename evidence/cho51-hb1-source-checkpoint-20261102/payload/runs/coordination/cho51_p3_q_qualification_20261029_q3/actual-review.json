@@ -1,0 +1,961 @@
+{
+  "schema": "cho51_q_actual_failure_review_v3",
+  "status": "ACCEPTED_FAILED_CONSUMED_SUITE_ERRORS_SCOPED_OWNED_CLOSEOUT",
+  "reviewer": "q3_actual_review",
+  "source_authors": [
+    "project_root",
+    "q_native_reader_impl"
+  ],
+  "source_reviewer": "q3_source_review",
+  "operation_id": "5406df40-61dc-4a83-9e36-6501a1887688",
+  "scope": "Independent static file, text, JSON and SHA256 review of saved Q3 external call, exact test identities, owned lifecycle and source/runtime/preservation joins. No import, AST, compilation, test, native workload or native process query executed by this reviewer.",
+  "reviewed_utc": "2026-10-29T10:14:56.0005066Z",
+  "artifact_pins": {
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/admission_5406df40-61dc-4a83-9e36-6501a1887688.json": {
+      "bytes": 227864,
+      "sha256": "992d67ad66b6f2cf8cd71f3ec3b7a1f2b10a5acc55e4dad08335d9e5d682092f"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/bootstrap_5406df40-61dc-4a83-9e36-6501a1887688.jsonl": {
+      "bytes": 6093,
+      "sha256": "3253f17960186c92dd1c2adbb32736a4394a6985dd5f13b6f656e99673aeb591"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/caller-return_5406df40-61dc-4a83-9e36-6501a1887688.json": {
+      "bytes": 4084,
+      "sha256": "e196226961ec2cb438fa62a5faa161ea043b021f44d1759316fd63acae9d30fe"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/claim_5406df40-61dc-4a83-9e36-6501a1887688.json": {
+      "bytes": 271,
+      "sha256": "1dc58997aa92fcb6af6e0a3e2d9a8d8b08858278e25cd4ebe977ec0f949f91a5"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/contract-adoption.json": {
+      "bytes": 819,
+      "sha256": "411fd67633f9f01059738f91e34aa40333436ed94a666cb14ab2856c4b129593"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/external-audit.json": {
+      "bytes": 6619,
+      "sha256": "6f52252bd1a9bc94caebd745ba8d0e0c64bada0cbfb88cfc10b6721ef2ab6169"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/origin_5406df40-61dc-4a83-9e36-6501a1887688.json": {
+      "bytes": 766,
+      "sha256": "1fd34a4cda10f8abf3ca6a08dd0112b5a59e0b41e0de29709125cf5e0b4837ce"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/preflight.json": {
+      "bytes": 517,
+      "sha256": "262c9b8d77cd9b15a07a8e1f08a98a6bd85a8cc868a0f07807df8ccdf916c98d"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/preservation-baseline.json": {
+      "bytes": 166814,
+      "sha256": "b27242283966cc63f9b1f2c912fc3d3766e85d844b66539db5c4c01c7634763a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/root-schedule.json": {
+      "bytes": 2872,
+      "sha256": "3cb2ad004e958a39b518e859f0dc829891c5797a4ab4199703c9576f6325a019"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/runtime-inventory.json": {
+      "bytes": 207761,
+      "sha256": "5187dc943a68952743fd34b1c2b7d1914686949a74053d749623b2f7b9e9f683"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/source-freeze.json": {
+      "bytes": 4633,
+      "sha256": "b2516ea6ef4e3313b9642392f5759d8d77f1bcc336296b47f450ccdd0e37b4f6"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/source-review.json": {
+      "bytes": 7091,
+      "sha256": "d04154316652ea742013ce95ee8930025a023d3b28d8924f0b888011ed263230"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/test-roster.json": {
+      "bytes": 8477,
+      "sha256": "16d4a6023aa3654f1198e4fb3c89995a899d3beaa0fd40f76db36ebbe95d256b"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/timestamp-controls_5406df40-61dc-4a83-9e36-6501a1887688.json": {
+      "bytes": 950,
+      "sha256": "d267df4e7f66f3d461782016c5442f23a78514b24f0f6cd26d8a5b338f3e2bbd"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/claim.json": {
+      "bytes": 260,
+      "sha256": "84e6f2a893e42c4e718d9d5c69da8ef0e29b812d2d5c8a333327b3cc75d79f82"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/deadline_suite.json": {
+      "bytes": 161,
+      "sha256": "232b71f3db3a382de36c933529000f02718cd58b8e1eb039acc94fd9e50e1f82"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/dispatch_suite.json": {
+      "bytes": 919,
+      "sha256": "a40707073651a2cb323bf4b1513e591ff135ccc579173e1960536c4d66326d95"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/receipt.json": {
+      "bytes": 1918,
+      "sha256": "5caab46cffa2f798b0e154c26cb08371d7bc0acc391a58a10e0b8498e8c386dd"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/test-report.json": {
+      "bytes": 24201,
+      "sha256": "fdf01824a622679ba4a6aef4ed6b980d280cd0c3a83e88e0eac3e8a1126a3d7a"
+    }
+  },
+  "fixture_pins": {
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_close_failure_attempts_every_original_handle/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_enumeration_limits_and_recipe_validation/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_flush_failure_closes_original_output/failed.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_hash_drift_refuses_original_output/result.json": {
+      "bytes": 15,
+      "sha256": "39d160e97e2bea07b0cf1c647259ffa4f0bd07069dba4e6c19a22d38b408510f"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_identity_alias_registration_refused/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_native_reparse_file_and_directory_refusal/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_output_caps_and_bad_names/first.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_output_caps_and_bad_names/second.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_stop_after_native_read_closes_original_file/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_tiny_chunks_use_real_native_reads_and_writes/input.json": {
+      "bytes": 114,
+      "sha256": "0ac3ed3495c4e0ee079e2fda912354763745e0ef4fff166a452fada43622e273"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_instrumented_tiny_chunks_use_real_native_reads_and_writes/result.json": {
+      "bytes": 114,
+      "sha256": "0ac3ed3495c4e0ee079e2fda912354763745e0ef4fff166a452fada43622e273"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_bounded_tree_snapshot_and_added_file_refusal/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_bounded_tree_snapshot_and_added_file_refusal/nested/nested.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_close_releases_input_and_repeated_close_is_safe/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_existing_writer_refuses_retention/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_file_and_aggregate_caps_before_reads/one.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_file_and_aggregate_caps_before_reads/three.json": {
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_file_and_aggregate_caps_before_reads/two.json": {
+      "bytes": 3,
+      "sha256": "f223e84f7ea456ba7472aea4c56e9f658053cf12c504eb03a51f0e80c905c55c"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_file_count_cap_and_small_read_cap/one.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_file_count_cap_and_small_read_cap/two.json": {
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_hardlink_refusal_with_proved_fixture/hardlink.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_hardlink_refusal_with_proved_fixture/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_output_create_new_readback_and_exclusion/result.json": {
+      "bytes": 15,
+      "sha256": "39d160e97e2bea07b0cf1c647259ffa4f0bd07069dba4e6c19a22d38b408510f"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_output_existing_collision_unchanged/result.json": {
+      "bytes": 17,
+      "sha256": "93cae45afa79c581e03c46fee03a0bb80e1b1542d4fc7366db53231772f57394"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_path_case_alias_refused/MixedCase.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_retained_ancestor_blocks_rename/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_retained_input_blocks_writer_delete_and_rename/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_retained_read_identity_and_defensive_descriptors/input.json": {
+      "bytes": 11,
+      "sha256": "48208f9428d64634bd8e28ff345bf0eab60d53c18fa2fbdb0b9bc1e84df2b5f6"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_same_path_duplicate_pin_conflict/input.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_tree_added_empty_directory_refusal/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_tree_missing_excluded_directory_refusal/input.json": {
+      "bytes": 16,
+      "sha256": "ffbc2dfc402782325da71132100e74ff511d1585dd80e4ea196ed4bcace3fef2"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/attempts/5406df40-61dc-4a83-9e36-6501a1887688/fixtures/test_real_wrong_pin_closes_failed_file_handle/input.json": {
+      "bytes": 16,
+      "sha256": "d72e0a115ba5ab34246fa9dd2964361026787371c498cc91bd14c8c2cbf5837d"
+    }
+  },
+  "source_pins": {
+    "tools/local_validation/q3/native_reader.py": {
+      "bytes": 21424,
+      "sha256": "88cff6e8de10012216c052b59995383e1cc22b18ddc040c32e67a565b4149328"
+    },
+    "tools/local_validation/q3/test_native_reader.py": {
+      "bytes": 17065,
+      "sha256": "9a56f307b42df3db05922c435f62f1c9b82b185d4075fcc8ea56259b3208d737"
+    },
+    "tools/local_validation/q3/job_adapter.py": {
+      "bytes": 17041,
+      "sha256": "2c7daf028d83c29d0653a8db0a4f39b9b5457f344d0844cb0d5ca90a7a8ee9c2"
+    },
+    "tools/local_validation/q3/protocol.py": {
+      "bytes": 9670,
+      "sha256": "164ec3748aa2210b893f0ff2ede4bcf9553676bec00dd6af6da22a36e3b5b3a5"
+    },
+    "tools/local_validation/q3/test_protocol.py": {
+      "bytes": 7051,
+      "sha256": "c15419b3a1d9ecc915c4764d5ac5a752903d62ac09b0c41d091eb8af712f6cdd"
+    },
+    "tools/local_validation/q3/child_entry.py": {
+      "bytes": 6220,
+      "sha256": "8e0f3ffb19a4c9f27956b99cd9d9654878ed18fd992e848e2a88b653a62570b7"
+    },
+    "tools/local_validation/q3/supervisor.py": {
+      "bytes": 22179,
+      "sha256": "4cefb16d5d8282b32a7dd1d4847123eb99ef600f1b62b852fc44a8c92272b313"
+    },
+    "tools/local_validation/q3/invoke_q.ps1": {
+      "bytes": 35646,
+      "sha256": "273a4016ad73b2002ee1335d0347447ea22561d3c1c8d8f2ed67f5f7d9c3e9a8"
+    },
+    "tools/local_validation/q3/caller_native.cs": {
+      "bytes": 25333,
+      "sha256": "9bf9f06a9cdc0fcbc8f998b0ca80f98807b6c114f825d00d6bff2e061a337ae7"
+    },
+    "tools/local_validation/q3/README.md": {
+      "bytes": 18939,
+      "sha256": "acd3299a55391281aed7ff70e430d8c9c19587990583d042da1c64a4763b5b7b"
+    },
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "tools/local_validation/v1/README.md": {
+      "bytes": 5187,
+      "sha256": "a4368f731a5d26f722dfc058ff0d3e10f9ceca69b26edfab7ab19a69c9ee3135"
+    },
+    "evaluation/phase2_supervision_primitives.py": {
+      "bytes": 46498,
+      "sha256": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/design-review.json": {
+      "bytes": 5065,
+      "sha256": "65526bad7ee6599c403411502ff0e0296b69c3a688daf66a5bb2aa402f017e4b"
+    },
+    "docs/phase2/cho51_p3_q3_utc_contract_20261029.md": {
+      "bytes": 3115,
+      "sha256": "7c6ee3a6b5be1a18febdeedae408de7f2e39f851e36dc5520fb01755462f2bf4"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/actual-review.json": {
+      "bytes": 8809,
+      "sha256": "aaf367c72e92d0d4ab26237a203ef79167df934325233063229ca8113a00519e"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/root-disposition.json": {
+      "bytes": 1082,
+      "sha256": "887c4cc3b7d4d0fb0cf94bbcd85c8e31a342a55f4d2032c7b4bdc0a42989bed8"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/actual-review.json": {
+      "bytes": 16813,
+      "sha256": "201d23ba407ea9e0fc8c829ded08b36011d7e7f8c2f49f99813dc9f85617fb4c"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/root-disposition.json": {
+      "bytes": 1335,
+      "sha256": "1d88e03ddf0189a77de6ed4dac413b2ef44ddfa2019d27963956f74f487a08ba"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/timestamp-metadata-analysis.json": {
+      "bytes": 641,
+      "sha256": "a70f3019352f8bbeea445f28d6d4731cae69f95081da424a0a0120524d2ca3cc"
+    },
+    "docs/phase2/cho51_p3_q2_bootstrap_contract_20261029.md": {
+      "bytes": 4874,
+      "sha256": "c1c1593055af237e770d60a998275cea54488fb5f78282402346d0904f972790"
+    }
+  },
+  "checks": {
+    "sources_checked": 25,
+    "runtime_files_checked": 732,
+    "runtime_bytes": 37294833,
+    "preserved_files_checked": 717,
+    "pin_mismatches": [],
+    "source_freeze_review_and_admission_maps_match": true,
+    "runtime_inventory_and_admission_maps_match": true,
+    "runtime_recipe_root_and_platform_trust_match": true,
+    "source_review_sha256": "d04154316652ea742013ce95ee8930025a023d3b28d8924f0b888011ed263230",
+    "admission_sha256": "992d67ad66b6f2cf8cd71f3ec3b7a1f2b10a5acc55e4dad08335d9e5d682092f",
+    "contract_adoption_sha256": "411fd67633f9f01059738f91e34aa40333436ed94a666cb14ab2856c4b129593",
+    "review_adoption_supplement_contract_design_and_predecessor_join_match": true,
+    "adoption_schema": "cho51_q_contract_adoption_v2",
+    "authority_flags_all_false": true,
+    "caller_runtime_pin_matches": true,
+    "caller_runtime_declared": {
+      "sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+      "version": "7.6.5",
+      "path": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe",
+      "bytes": 301368
+    },
+    "admission_created_utc_literal": "2026-10-29T10:09:24.2267595Z",
+    "admission_expires_utc_literal": "2026-10-29T10:14:24.2267595Z",
+    "preflight": [
+      {
+        "qpc": 719830042436,
+        "available_ram_bytes": 11303149568,
+        "utc": "2026-10-29T10:09:22.9784861Z",
+        "free_disk_bytes": 79304810496
+      },
+      {
+        "qpc": 719842445851,
+        "available_ram_bytes": 11303677952,
+        "utc": "2026-10-29T10:09:24.2194819Z",
+        "free_disk_bytes": 79304810496
+      }
+    ],
+    "limits": {
+      "process_mib": 512,
+      "frame_bytes": 1048576,
+      "disk_gib": 20,
+      "threads": 1,
+      "stream_bytes": 1048576,
+      "cleanup_seconds": 5,
+      "gpu_visible": false,
+      "startup_ram_gib": 4,
+      "work_seconds": 60,
+      "active_ram_gib": 4,
+      "job_mib": 768,
+      "whole_seconds": 90,
+      "parent_mib": 512
+    },
+    "original_claim_origin_admission_joins_match": true,
+    "tool_chunk": "59115c",
+    "tool_exit_code": 1,
+    "wall_seconds": 9.4392493,
+    "before_boundary_utc": "2026-10-29T10:09:24.5761905Z",
+    "before_qpc": 719846032817,
+    "after_boundary_utc": "2026-10-29T10:09:33.7697152Z",
+    "after_qpc": 719937944575,
+    "frequency": 10000000,
+    "after_boundary_elapsed_seconds": 9.1911776,
+    "qpc_boundary_delta_seconds": 9.1911758,
+    "caller_pre_guard_close_elapsed_seconds": 8.998393,
+    "caller_final_elapsed_seconds": 9.1269687,
+    "supervisor_final_elapsed_seconds": 8.9409382,
+    "original_caller_pid": 29996,
+    "original_caller_creation_filetime": 134377421643533020,
+    "independent_clock_before": "2026-10-29 10:09:24 UTC",
+    "independent_clock_after": "2026-10-29 10:09:33 UTC",
+    "complete_external_return_and_after_boundary_emitted": true,
+    "accepted_by_caller": false,
+    "accepted_by_supervisor": false,
+    "caller_error": "RuntimeException: supervisor exit refused",
+    "supervisor_error": "Refusal: complete exact test roster",
+    "journal_records": 17,
+    "journal_bytes": 6093,
+    "journal_sequence_operation_generation_qpc_and_pending_join_match": true,
+    "journal_events": [
+      "caller_entry",
+      "runspace_create",
+      "runspace_begin",
+      "guard_enter",
+      "assembly_loaded",
+      "counter_created",
+      "counter_read_begin",
+      "first_sample",
+      "guard_ready",
+      "startup_ready",
+      "window_operands",
+      "authority_verified",
+      "compiler_begin",
+      "compiler_return",
+      "supervisor_dispatch",
+      "caller_error",
+      "caller_ready_to_close"
+    ],
+    "journal_closed": true,
+    "original_file_handles_closed": true,
+    "timestamp_controls": {
+      "exact_90_second_window": true,
+      "json_utc_literal_exact": true,
+      "non_utc_refused": true,
+      "short_89_second_window_refused": true,
+      "datetime_object_refused": true,
+      "changed_culture_utc_exact": true,
+      "future_creation_refused": true,
+      "expired_window_refused": true
+    },
+    "timestamp_control_count": 8,
+    "timestamp_controls_all_true": true,
+    "culture_exercised": "ar-SA",
+    "actual_window_operands": {
+      "expires_utc": "2026-10-29T10:14:24.2267595Z",
+      "created_literal": "2026-10-29T10:09:24.2267595Z",
+      "original_utc": "2026-10-29T10:09:24.6411496Z",
+      "created_utc": "2026-10-29T10:09:24.2267595Z",
+      "original_deadline_utc": "2026-10-29T10:10:54.6411496Z",
+      "expires_literal": "2026-10-29T10:14:24.2267595Z"
+    },
+    "guard": {
+      "stop_requested": true,
+      "last_qpc": 719936761033,
+      "ready": true,
+      "minimum_ram": 11232002048,
+      "completion_wait_closed": true,
+      "first_sample": {
+        "utc": "2026-10-29T10:09:27.1907332Z",
+        "qpc": 719872156969,
+        "free_disk_bytes": 79304577024,
+        "elapsed_seconds": 2.5494267,
+        "available_ram_bytes": 11293335552,
+        "sensor": "local_PDH_Available_Bytes_raw_NumberOfItems64",
+        "caller_private_bytes": 66502656
+      },
+      "stage": "active",
+      "shutdown_elapsed_seconds": 0.1074323,
+      "done": true,
+      "error": null,
+      "peak_caller_private": 130949120,
+      "joined": true,
+      "closed": true,
+      "minimum_disk": 79304515584,
+      "second_sample": {
+        "utc": "2026-10-29T10:09:27.4631536Z",
+        "qpc": 719874881096,
+        "free_disk_bytes": 79304577024,
+        "elapsed_seconds": 2.8218394,
+        "available_ram_bytes": 11292733440,
+        "sensor": "local_PDH_Available_Bytes_raw_NumberOfItems64",
+        "caller_private_bytes": 66797568
+      },
+      "samples": 59
+    },
+    "outer_custody": {
+      "owned_nul_closed": true,
+      "resumed": true,
+      "stdout_writer_closed": true,
+      "fault": null,
+      "reaped": true,
+      "stderr_observed_bytes": 0,
+      "stderr_reader_thread_handle_closed": true,
+      "stdout_observed_bytes": 711,
+      "stdout_cancel_attempted": false,
+      "stdout_error": null,
+      "stderr_cancel_attempted": false,
+      "stderr_reader_joined": true,
+      "minimum_disk": 79304519680,
+      "pid": 8280,
+      "creation_attempted": true,
+      "peak_job": 81883136,
+      "process_closed": true,
+      "limits_verified": true,
+      "stderr_retained_bytes": 0,
+      "peak_process": 40534016,
+      "minimum_ram": 11232002048,
+      "stdout_eof": true,
+      "watchdog_joined": true,
+      "stderr_error": null,
+      "stdout_retained_bytes": 711,
+      "stdout_reader_thread_handle_closed": true,
+      "creation_filetime": 134377421686012826,
+      "cleanup_error": null,
+      "samples": 2743,
+      "stdout_overflow": false,
+      "stdout_reader_joined": true,
+      "thread_closed": true,
+      "stderr_overflow": false,
+      "job_empty": true,
+      "atomic_membership": true,
+      "stderr_writer_closed": true,
+      "stderr_reader_closed": true,
+      "stderr_eof": true,
+      "stdout_reader_closed": true,
+      "job_closed": true,
+      "peak_caller_private": 130949120
+    },
+    "inner_operations": [
+      {
+        "failure": null,
+        "mode": "suite",
+        "result": {
+          "exit_code": 0,
+          "peak_job_memory_bytes": 46682112,
+          "peak_process_memory_bytes": 40534016,
+          "pid": 10516,
+          "reason": "normal"
+        },
+        "state": {
+          "active_before_cleanup": 0,
+          "aggregate_limit_bytes": 805306368,
+          "assigned": true,
+          "assignment_step_seen": true,
+          "atomic_job_assignment_requested": true,
+          "atomic_job_assignment_verified": true,
+          "attribute_cleanup_confirmed": true,
+          "child_handle_inheritance": "sole_result_writer",
+          "cleanup_errors": [],
+          "created_suspended": true,
+          "creation_flags": 134742020,
+          "frame_protocol_complete": true,
+          "frame_reader_finished": true,
+          "inherited_handle_count": 1,
+          "job_closed": true,
+          "job_created": true,
+          "job_empty_before_close": true,
+          "job_named": null,
+          "limit_flags": 8968,
+          "limits_query_verified": true,
+          "limits_set": true,
+          "membership_verified": true,
+          "owned_job_termination_called": false,
+          "peak_job_commit_bytes": 46682112,
+          "peak_process_commit_bytes": 40534016,
+          "peak_samples": 26,
+          "peak_sampling_errors": [],
+          "process_creation_filetime": 134377421727481299,
+          "process_handle_closed": true,
+          "process_limit_bytes": 536870912,
+          "result_reader_closed": true,
+          "result_writer_closed": true,
+          "resumed": true,
+          "root_exit_after_job_close": true,
+          "root_pid": 10516,
+          "thread_handle_closed": true
+        }
+      }
+    ],
+    "supervisor_handle_closure": {
+      "outputs": true,
+      "inputs": true
+    },
+    "supervisor_resources": {
+      "sample_count": 15385,
+      "minimum_available_ram_bytes": 11232002048,
+      "minimum_free_disk_bytes": 79304527872,
+      "peak_parent_private_bytes": 30171136,
+      "elapsed_seconds": 8.9409382,
+      "guard_fault": null
+    },
+    "admission_static_started_and_text_rosters_match_exact_order": true,
+    "unique_started_test_ids": 72,
+    "tests_run": 72,
+    "ok": 69,
+    "failures": 0,
+    "errors": 3,
+    "skipped": 0,
+    "expected_failures": 0,
+    "unexpected_successes": 0,
+    "successful": false,
+    "passing_method_groups": {
+      "foundation": 31,
+      "protocol": 12,
+      "native_reader": 26
+    },
+    "error_ids": [
+      "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_bounded_tree_snapshot_and_added_file_refusal",
+      "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_tree_added_empty_directory_refusal",
+      "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_tree_missing_excluded_directory_refusal"
+    ],
+    "method_outcomes": [
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_checkpoint_exact_true_and_before_create",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_close_failure_attempts_every_original_handle",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_directory_handle_bound_refuses",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_enumeration_limits_and_recipe_validation",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_flush_failure_closes_original_output",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_hash_drift_refuses_original_output",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_identity_alias_registration_refused",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_native_reparse_file_and_directory_refusal",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_output_caps_and_bad_names",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_stop_after_native_read_closes_original_file",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_instrumented_tiny_chunks_use_real_native_reads_and_writes",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_bounded_tree_snapshot_and_added_file_refusal",
+        "outcome": "ERROR"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_close_releases_input_and_repeated_close_is_safe",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_existing_writer_refuses_retention",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_file_and_aggregate_caps_before_reads",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_file_count_cap_and_small_read_cap",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_hardlink_refusal_with_proved_fixture",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_lexical_aliases_and_depth_refused_before_effect",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_missing_file_is_actual_open_error",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_output_create_new_readback_and_exclusion",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_output_existing_collision_unchanged",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_path_case_alias_refused",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_retained_ancestor_blocks_rename",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_retained_input_blocks_writer_delete_and_rename",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_retained_read_identity_and_defensive_descriptors",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_same_path_duplicate_pin_conflict",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_tree_added_empty_directory_refusal",
+        "outcome": "ERROR"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_tree_missing_excluded_directory_refusal",
+        "outcome": "ERROR"
+      },
+      {
+        "id": "tools.local_validation.q3.test_native_reader.NativeReaderTests.test_real_wrong_pin_closes_failed_file_handle",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_closed_admission_and_wrong_stage",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_complete_window",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_duplicate_roster_and_changed_reference",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_independent_review_exact_source_and_adoption_joins",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_limits_exact_types_and_no_relaxation",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_nonfinite_duplicate_and_unknown_json_refuse",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_original_origin_not_reset_at_dispatch",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_report_omissions_failures_and_false_authority",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_runtime_executable_modes_and_effects",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_runtime_path_alias_outside_recipe",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_source_roster_missing_extra_or_boolean_pin",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.q3.test_protocol.ProtocolTests.test_verified_bytes_exact_content_size_types",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_census_added_missing_content_identity_and_directory_drift",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_cross_snapshot_aliases_and_aggregate_limits",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_equal_census_order_is_not_membership",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_has_no_positive_authority_and_is_defensive",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_refuses_missing_roles_snapshots_and_empty_roles",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_required_inputs_missing_changed_duplicate_extra_and_bool",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_child_scheduling_is_bounded_before_queue_growth",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_duplicate_keys_including_escaped_equivalence",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_encoded_graph_limit",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_exact_graph_types_cycles_and_nonfinite",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_finite_round_trip_and_defensive_copy",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_nonfinite_and_float_overflow",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_predecode_depth_and_node_bounds",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_signed_integer_boundaries_and_overflow",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.JsonCases.test_strings_bytes_encoding_and_syntax",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_ambiguous_windows_spellings",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_canonical_relative_absolute_and_drive_root",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_closed_file_descriptor_and_exact_types",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_native_identity_closed_and_supported",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_case_native_alias_and_volume_drift",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_requires_complete_ordinary_ancestry",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_total_file_and_depth_limits",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.RosterCases.test_control_missing_extra_false_bool_equivalent_and_old_names",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_34_control_values_do_not_prove_execution",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_function_module_tallies_and_order_digest",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.RosterCases.test_order_and_parameter_identity_drift_against_baseline",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.RosterCases.test_roster_duplicate_missing_extra_prefix_and_count_only_swap",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.StreamCases.test_checkpoint_before_and_after_read_and_exact_true",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.StreamCases.test_chunked_digest_and_eof_probe",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.StreamCases.test_empty_short_long_and_exact_streams",
+        "outcome": "ok"
+      },
+      {
+        "id": "tools.local_validation.v1.test_foundation.StreamCases.test_stream_contract_types_and_oversized_reads",
+        "outcome": "ok"
+      }
+    ],
+    "fixture_file_entries": 32,
+    "fixture_logical_bytes": 567,
+    "declared_modes": [
+      "suite",
+      "badframe",
+      "stall"
+    ],
+    "dispatched_modes": [
+      "suite"
+    ],
+    "separate_fault_controls_run": 0,
+    "payload_present": false,
+    "disabled_bytecode_file_count": 0
+  },
+  "finding": {
+    "result": "Q3 failed and its identity is consumed. Accept the saved failed aggregate, 69 individually passing exact method outcomes, eight timestamp controls and scoped owned closeout; do not accept Q qualification as passed.",
+    "tests": "All 72 distinct reviewed test IDs started in exact roster order. The text has 69 ok and three ERROR lines, no failures, skips, expected failures or unexpected successes. Passing outcomes comprise all 31 supplied-data foundation methods, all 12 protocol methods and 26 of 29 reader methods, scoped to these exact bytes, fixtures and runtime. They do not establish the omitted later stages or full Q aggregate.",
+    "cause": "All three errors arise on the initial ordinary-tree observation at native_reader.py:262: _enumerate obtains entry.stat(follow_symlinks=False) at line 259 and requires a nondirectory st_nlink equal to 1. The saved traceback establishes the enumerated hardlink refused predicate failure on ordinary fixtures created by these tests. The actual numeric st_nlink operands were not retained, so this review does not invent them. This supports a link-count metadata source incompatibility as the repair target; exact deeper runtime behavior needs a reviewed successor regression. The later added/missing drift assertions in these three methods were not reached.",
+    "aggregate": "The suite child returned a complete failed-result frame and exit 0, which indicates report production rather than suite success. protocol.validate_report refuses successful=false at its complete exact test roster predicate; the roster itself matches exactly. The supervisor returned exit 1 and the caller/tool refused. Source order, sole suite dispatch and one recorded operation establish that badframe and stall were not dispatched; neither control is passed or failed by this attempt.",
+    "timestamps": "All eight bounded timestamp controls are explicitly true, including UTC literal/fraction preservation, exact 90 seconds, 89-second refusal, non-UTC and DateTime refusals, ar-SA exact parsing, expired and future-created refusals. Actual original UTC and literal/parsed creation/expiry operands are retained before authority_verified. The 300-second admission interval begins before origin and covers the original 90-second deadline. Compiler begin/return and supervisor dispatch follow authority verification. This exercises Q3 UTC handling in this operation without retrospectively proving Q2 runtime operands.",
+    "custody": "Under the exact reviewed source and stated Windows/.NET/PowerShell platform trust, the saved original-handle records support closure of Q3 owned work: outer atomic Job membership and verified limits, supervisor PID/generation, reaped original process, empty/closed Job, process/thread closure, owned NUL closure, joined/closed watchdog and strict stdout/stderr EOF with readers/writers/reader-thread handles joined/closed and no capture/cleanup fault or overflow. The sole suite child was created suspended into the atomic inner Job with only the result writer inherited, verified membership/limits, complete frame, root exit, empty Job and original process/thread/result-reader/result-writer/Job closure without cleanup errors. Supervisor stdout separately resolves receipt input/output closure pending flags. Final external return resolves caller record guard-shutdown/tool-return pending flags: guard stop/done/join/close/completion-wait close, original files and 17-record journal close, then complete external after-boundary and actual exit-1 tool return. Frozen pending flags remain unchanged. This is Q3 owned lifecycle evidence, not a machine-wide quiescence or independent kernel attestation.",
+    "resources": "Recorded preflight and live minima exceed 4 GiB available RAM and 20 GiB disk; final caller guard peak private bytes 130949120 is below 512 MiB. Outer peak process 40534016 and Job 81883136 and inner peak process 40534016 and Job 46682112 are below the 512/768 MiB caps. Startup second sample is at 2.8218394 seconds and guard_ready journal follows before 5 seconds; shutdown 0.1074323 seconds is below one second. Caller final 9.1269687 seconds, external boundary 9.1911776 seconds and actual tool wall 9.4392493 seconds are below original 60/65/90-second work/hard/whole limits. No guard fault is recorded. These are bounded sampled operation observations and verified configured limits, not stressed cap enforcement, every sample interval, sustained workload qualification or exercised stall/forced-termination cleanup.",
+    "preservation": "Fresh static SHA256 and size checks found zero mismatches across 25 reviewed inputs, 732 runtime files and 717 preserved predecessors. Review/freeze/admission source maps and runtime inventory/admission maps match; caller executable pin matches. This is current-byte verification under recorded platform trust, not full dependency closure or loaded-code attestation.",
+    "predecessors": "Q1 remains FAILED_CONSUMED_CUSTODY_UNKNOWN with cause and cleanup unproved. Q2 remains failed/consumed with accepted preclaim/precompiler/prechild bootstrap refusal and scoped bootstrap closure, and no native Job or test qualification. Q3 does not release, replay, reclassify, prove termination of or repair either predecessor."
+  },
+  "stage_resolution": {
+    "source_review": "Completed independently by q3_source_review for exact 25 inputs.",
+    "adoption": "Exact Q-only v2 adoption joins verified.",
+    "admission": "Fresh operation-specific source/runtime/preflight/admission and original UTC window evidence joined.",
+    "actual_operation": "Completed as failed external operation; identity consumed without retry.",
+    "independent_actual_review": "Completed by distinct q3_actual_review for saved failure, scoped passing method/timestamp outcomes and owned closeout.",
+    "root_adoption": "Pending separate Root disposition; no existing evidence rewritten."
+  },
+  "successor_requirements": [
+    "Freeze and preserve every Q1/Q2/Q3 source, admission, fixture and result byte. Any Q4 must use a distinct namespace and unused operation/output identity.",
+    "Repair the reader link-count metadata source in new successor bytes while retaining hardlink, reparse, identity, census, clock, resource, process ownership and cleanup guards. Add an explicit ordinary-tree and proved-hardlink enumeration regression. The saved three errors alone do not justify weakening a guard.",
+    "Obtain independent review of exact successor source/design, scoped Root adoption, fresh source/runtime/preservation and resource/stop checks, new admission, actual bounded execution and a different actual reviewer. This review authorizes no Q4 run.",
+    "A full Q pass still requires every exact successor suite method successful with no omissions plus both separately identified malformed-frame and stall controls and complete owned lifecycle/caller/tool closeout. No stale failed attempt may be replayed."
+  ],
+  "limitations": [
+    "Acceptance is restricted to saved exact Q3 outcomes and owned lifecycle under reviewed platform trust; no native query, process sweep, PID reopen, runtime repair or new workload was performed by this reviewer.",
+    "The 117 candidate cases and 34 successor controls remain unexecuted. Full 26 qualification scenarios and original 48 custody cases remain incomplete. Passing protocol/foundation tests about rosters do not execute those separate cases.",
+    "Bootstrap004 remains FAILED_UNRELEASED_CONSUMED; diagnostics005 held; 006 unadmitted; historical custody UNRESOLVED. The accepted v8 inventory remains unchanged.",
+    "Scientific cells remain 0/1020 and final freeze unsigned; no scientific eligibility, historical release/retry, restart/boundary, future launch, full dependency closure, commit or push authority is granted."
+  ],
+  "actual_tool_return_observed": true,
+  "successful_tool_return": false,
+  "qualification_passed": false,
+  "automatic_retry": false,
+  "operation_consumed": true,
+  "scoped_passing_method_results_accepted": true,
+  "scoped_timestamp_controls_accepted": true,
+  "scoped_owned_lifecycle_closeout_accepted": true,
+  "independent_actual_review_pending": false,
+  "root_adoption_pending": true,
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

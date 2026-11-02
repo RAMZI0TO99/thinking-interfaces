@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "archive": "docs/history/real_scope_design_20261101/AGENTS.md",
+      "original": "AGENTS.md",
+      "pin": {
+        "sha256": "1ae9f6b8727224718224e7846015723d7e17d2d28f2b9fdfe99457b364bbea54",
+        "bytes": 6148
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/HANDOFF.md",
+      "original": "HANDOFF.md",
+      "pin": {
+        "sha256": "b8728deffe96fc1cb16f2a2472ac667a2abf88219625ec4d6a0440d55e383b8e",
+        "bytes": 15327
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/AGENT_COORDINATION.md",
+      "original": "AGENT_COORDINATION.md",
+      "pin": {
+        "sha256": "affab8db32be538a075a4c278f19eea33efaa190db108f5c339d6c17abed422f",
+        "bytes": 5733
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/CONTINUE_HERE.md",
+      "original": "CONTINUE_HERE.md",
+      "pin": {
+        "sha256": "bc5d6b5fea764df29fa62c3290a46b04fad163b9a7bb9bb3f41e1ad211d1e37c",
+        "bytes": 5894
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/PHASE2_START_HERE.md",
+      "original": "PHASE2_START_HERE.md",
+      "pin": {
+        "sha256": "8055c6cfd9dd8f0bc35eae7adb6ef6be87655180c172a46156ab17ea6620b11e",
+        "bytes": 5570
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/README.md",
+      "original": "README.md",
+      "pin": {
+        "sha256": "2cf70106d1a1822602c7809ba112bf68d1e9cf0c2a875656bc6274b7246edd80",
+        "bytes": 6561
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/WINDOWS_SETUP.md",
+      "original": "WINDOWS_SETUP.md",
+      "pin": {
+        "sha256": "0061b1c832ed25ae2f4f83a8fd154b8cdb4e47d07d77eab8b8fbf06e9fd46c24",
+        "bytes": 10166
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/docs/phase2/README.md",
+      "original": "docs/phase2/README.md",
+      "pin": {
+        "sha256": "d07a1ff6fe3b8b151c72d15832caf436e3cf9a4c466863f517d6a2341512a24b",
+        "bytes": 10209
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/docs/where are we/README.md",
+      "original": "docs/where are we/README.md",
+      "pin": {
+        "sha256": "a0c951363ccb3687d4270d0479a6d8424c36255acf438e0044f57234bd5deb2c",
+        "bytes": 10786
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/docs/where are we/PROJECT_PLAN.md",
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "sha256": "7fd500fbf3a8209aeb4173a143c906bca8086fad26a767b6e1c60363d44c21e1",
+        "bytes": 22167
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/docs/where are we/PROGRESS_REPORT.md",
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "sha256": "c624993f1139ee1d8795cda346539a7927439d5873d0e26ff83d44e01002befb",
+        "bytes": 29422
+      }
+    },
+    {
+      "archive": "docs/history/real_scope_design_20261101/docs/where are we/EVIDENCE_INDEX.md",
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "sha256": "777554288fb35cee059f6af0d677b383ef4bec8373cc1bb432b05d836d4d3ea2",
+        "bytes": 36597
+      }
+    }
+  ],
+  "schema": "cho51_real_scope_document_archive_v1",
+  "prior_document_candidate": {
+    "path": "runs/coordination/cho51_p3_lossless_20261101_q2/closeout-candidate-v1.json",
+    "pin": {
+      "sha256": "af1bb40324a03301b4210cdc0c0f34e3de3c89b6c6e09e0502d340b9c7ba58e1",
+      "bytes": 6868
+    }
+  },
+  "created_utc": "2026-11-01T15:06:27.3745808Z"
+}

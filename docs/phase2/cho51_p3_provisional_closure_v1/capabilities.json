@@ -1,0 +1,226 @@
+{
+  "schema": "cho51_provisional_capabilities_v1",
+  "status": "ALL_PENDING",
+  "rows": [
+    {
+      "id": "CAP01",
+      "name": "lexical_import_fixed_point",
+      "gate": "G2",
+      "required": "Exact lexical scope/definitions/uses/rebindings; origins and parent packages, from-import exports, namespace/builtin/frozen/extension choices, SCCs and bounded transitive fixed point.",
+      "qualification_obligations": [
+        "FQ04",
+        "FQ06",
+        "FQ07",
+        "FQ11",
+        "FQ29"
+      ],
+      "prerequisites": [],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP02",
+      "name": "finite_effect_certificates",
+      "gate": "G2",
+      "required": "Exact callable/receiver/code identity and finite input domains; explicit and implicit protocol effects, exceptions, callbacks, resources and dependencies.",
+      "qualification_obligations": [
+        "FQ04",
+        "FQ05",
+        "FQ08",
+        "FQ09",
+        "FQ25"
+      ],
+      "prerequisites": [
+        "CAP01"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP03",
+      "name": "deferred_entry_barriers",
+      "gate": "G3",
+      "required": "Pre-entry deny for every listed fixture/test/helper/body through aliases, descriptors, callbacks and generators; eager headers cannot be hidden.",
+      "qualification_obligations": [
+        "FQ05",
+        "FQ27",
+        "FQ28"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP04",
+      "name": "guard_epoch_order",
+      "gate": "G3",
+      "required": "All 55 canonical blocker seeds plus discovered aliases/equivalents; four safetensors data APIs guarded before canonical aliases, exact sentinels.",
+      "qualification_obligations": [
+        "FQ27",
+        "FQ31"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP05",
+      "name": "native_requester_and_abi",
+      "gate": "G3",
+      "required": "Exact pre-effect requester/image joins including shared images, PE identities/exports/tags/init effects and safe finite ABI queries; unused/GPU/numerical paths remain unqualified.",
+      "qualification_obligations": [
+        "FQ08",
+        "FQ24",
+        "FQ30"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP06",
+      "name": "resource_mediation",
+      "gate": "G3",
+      "required": "Exact retained read-only resources and bounds plus native-origin mediation or fixed reviewed platform trust; owned observer outputs only, no cache/process/network permission.",
+      "qualification_obligations": [
+        "FQ09",
+        "FQ25",
+        "FQ26",
+        "FQ31"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP07",
+      "name": "pytest_registration_and_collection",
+      "gate": "G3",
+      "required": "Pinned 28 builtin registrations, exact hooks/module/Config/session instances and pre-effect plugin gate; no fixture/test execution; actual117 IDs only under L.",
+      "qualification_obligations": [
+        "FQ10",
+        "FQ28",
+        "FQ31",
+        "FQ32"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02",
+        "CAP03",
+        "CAP04"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP08",
+      "name": "l_native_bootstrap_and_lifecycle",
+      "gate": "G3",
+      "required": "L-specific authority/bootstrap and production helper; original clocks/resources, two-process Job containment and stop/partial-failure/cleanup evidence.",
+      "qualification_obligations": [
+        "FQ14",
+        "FQ15",
+        "FQ16",
+        "FQ17",
+        "FQ18"
+      ],
+      "prerequisites": [
+        "CAP09"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP09",
+      "name": "current_p_authority_adapter",
+      "gate": "G3",
+      "required": "Explicit successor for cho51_candidate_inventory_p_root_qualification_v1; exact Q/P reviewer/handoff/descriptor joins, no LP4 fallback or manufactured identities.",
+      "qualification_obligations": [
+        "FQ19",
+        "FQ20",
+        "FQ21"
+      ],
+      "prerequisites": [],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP10",
+      "name": "retained_streaming",
+      "gate": "G3",
+      "required": "Same-handle bounded verification/read_code/read_range, cache/range/PE limits and large-image native fixtures.",
+      "qualification_obligations": [
+        "FQ22",
+        "FQ23"
+      ],
+      "prerequisites": [
+        "CAP09"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    },
+    {
+      "id": "CAP11",
+      "name": "fresh_census_release_and_complete_gate",
+      "gate": "G4",
+      "required": "Current pins/absence/census and all capability joins, original output limits, final verification and owned closeout; semantic acceptance before separate L.",
+      "qualification_obligations": [
+        "FQ12",
+        "FQ13",
+        "FQ21",
+        "FQ29",
+        "FQ33",
+        "FQ34"
+      ],
+      "prerequisites": [
+        "CAP01",
+        "CAP02",
+        "CAP03",
+        "CAP04",
+        "CAP05",
+        "CAP06",
+        "CAP07",
+        "CAP08",
+        "CAP09",
+        "CAP10"
+      ],
+      "status": "PENDING_NOT_DISCHARGED",
+      "owner": "project Root assigns successor implementation",
+      "implemented_qualified_join": null,
+      "launch_authorized": false
+    }
+  ]
+}

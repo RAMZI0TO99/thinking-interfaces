@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-11-01T12:17:26.8213533Z",
+  "schema": "cho51_lossless_document_archive_v1",
+  "files": [
+    {
+      "pin": {
+        "bytes": 5924,
+        "sha256": "2175687e18536114a91b63df082c5800cd0d9d8d95a7781ec825767b9d0fa4c7"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/AGENTS.md",
+      "original": "AGENTS.md"
+    },
+    {
+      "pin": {
+        "bytes": 14545,
+        "sha256": "9cf8c7dd88102eb880e28f68c458c51959bff51b9e850068dfca22f84e3bb6c4"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/HANDOFF.md",
+      "original": "HANDOFF.md"
+    },
+    {
+      "pin": {
+        "bytes": 5509,
+        "sha256": "213e252f38090391b9454ca9671f9367de42a76092887b32c25a00055448e2cf"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/AGENT_COORDINATION.md",
+      "original": "AGENT_COORDINATION.md"
+    },
+    {
+      "pin": {
+        "bytes": 5670,
+        "sha256": "ad00095d702dbe183039eab8a54bdc2cabb96c29aee11e1559a3ab2fec7c066d"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/CONTINUE_HERE.md",
+      "original": "CONTINUE_HERE.md"
+    },
+    {
+      "pin": {
+        "bytes": 5346,
+        "sha256": "a79595bf2f4f8a0e01354d75cb0d0c802e312a3f66c5a342e4e17c7a4dc0ed6f"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/PHASE2_START_HERE.md",
+      "original": "PHASE2_START_HERE.md"
+    },
+    {
+      "pin": {
+        "bytes": 6337,
+        "sha256": "9c347c989bf26ff570c240acd209cd5a31aacb5745eed02f60cd9c8776604338"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/README.md",
+      "original": "README.md"
+    },
+    {
+      "pin": {
+        "bytes": 9942,
+        "sha256": "e2fd4c6ecac815f8aa188a8039e64968c928a3c3a9af5ef761f99a06e268b20f"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/WINDOWS_SETUP.md",
+      "original": "WINDOWS_SETUP.md"
+    },
+    {
+      "pin": {
+        "bytes": 9756,
+        "sha256": "7f68577f0fd41c6fbba249853398b315e2821f2df542af8c1a81b22577cbc73d"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/docs/phase2/README.md",
+      "original": "docs/phase2/README.md"
+    },
+    {
+      "pin": {
+        "bytes": 10487,
+        "sha256": "bfdf3d8354502314e3f6d995f1d627d5cc5f07d17a3df919b5d7d1cc613c4910"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/docs/where are we/README.md",
+      "original": "docs/where are we/README.md"
+    },
+    {
+      "pin": {
+        "bytes": 21385,
+        "sha256": "e361fec733110dfae18377ed57c33c01dc81366647da6c1b9556f3a31d390949"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/docs/where are we/PROJECT_PLAN.md",
+      "original": "docs/where are we/PROJECT_PLAN.md"
+    },
+    {
+      "pin": {
+        "bytes": 29036,
+        "sha256": "245402f00c89ae0439fb8807ea1a044040fd28057c0165f73e84cf9eb11cb324"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/docs/where are we/PROGRESS_REPORT.md",
+      "original": "docs/where are we/PROGRESS_REPORT.md"
+    },
+    {
+      "pin": {
+        "bytes": 35267,
+        "sha256": "6bd17532080899aa427126b55f5427052a918ffb2b06de4f52740185a979dae3"
+      },
+      "archive": "docs/history/lossless_state_design_20261101/docs/where are we/EVIDENCE_INDEX.md",
+      "original": "docs/where are we/EVIDENCE_INDEX.md"
+    }
+  ]
+}

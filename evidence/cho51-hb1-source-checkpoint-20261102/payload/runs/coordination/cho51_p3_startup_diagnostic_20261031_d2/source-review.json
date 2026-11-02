@@ -1,0 +1,81 @@
+{
+  "schema": "cho51_startup_source_review_v1",
+  "status": "ACCEPTED_SOURCE_STARTUP2",
+  "reviewer": "l_source_review",
+  "authors": [
+    "project_root",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T10:45:19.0555938Z",
+  "sources": {
+    "D:/Aenv/pro3/tools/local_validation/startup2/malformed_probe.ps1": {
+      "sha256": "edf98ce2591c9698155518ea6cfedf1309ae8eb6f7816ad89bedc07de836a7d5",
+      "bytes": 877
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/README.md": {
+      "sha256": "909c9be1c3053ea1c07dd5dd96b264d1a5c1a745211fb901d8d6a4a415224a0f",
+      "bytes": 17632
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/empty_probe.ps1": {
+      "sha256": "570eefa7ffdf143a7ad228b8f6db9ad0bfac1367a089e97ae863f411687d3ec5",
+      "bytes": 465
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/reordered_probe.ps1": {
+      "sha256": "86ca363eb1aae01c441a93b68af8646d07eb1ba23555e1a05d4c862dd8a476bf",
+      "bytes": 900
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/__init__.py": {
+      "sha256": "ec9d93ef3bdbb0ca7366bf5630948fc6b9778c25ab8f4f79f6719b28ec20fd47",
+      "bytes": 78
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/partial_probe.ps1": {
+      "sha256": "110bbfbddae5dd5025a839c7ada991f4f41feb52ffa02405a26cb5cc9f7ff598",
+      "bytes": 823
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/contract.py": {
+      "sha256": "f26c0b526233f3c3c575d8d4034b4dff1eb426a1c4b103f46fb587aa7ec792f5",
+      "bytes": 16236
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/stall_probe.ps1": {
+      "sha256": "506aa8b617807afdcc37394fca913b655752df926ba13320aa69afd36406ce58",
+      "bytes": 880
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/test_diagnostic.py": {
+      "sha256": "d5bb4e40e17b69a99bb3746a6adb7e1595734c32fa3f5856e9b2f568be686717",
+      "bytes": 13956
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/diagnostic.ps1": {
+      "sha256": "83b387dbeafaf46ac482d365c5ed25d324b4613c7626d562f95f916c2e56629b",
+      "bytes": 44573
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/fast_probe.ps1": {
+      "sha256": "e14b379c5a2a3cf19d9ef03c06cff44caecf31ee288eea221333af711c69a667",
+      "bytes": 870
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/pdh_probe.ps1": {
+      "sha256": "284282d0922843c7661bac8016bf5fab8dd95d31ababc7da05cdcda178961047",
+      "bytes": 1843
+    }
+  },
+  "design": {
+    "bytes": 12247,
+    "sha256": "8bc99ed2ac435bff506c044723c7e275b23ce1a5bc3cf5eab2aea2064a5d9551",
+    "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_startup_diagnostic_design_20261031.md"
+  },
+  "design_acceptance": {
+    "bytes": 1080,
+    "sha256": "874ebd19c7e87e4ba7c0e847ae9579241680391ef164422fa002dfc1ff7ef242",
+    "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_loader_implementation_20261031_p2/root-startup-design-acceptance.json"
+  },
+  "findings": [],
+  "checks": [
+    "Verified twelve source pins, candidate hash and 48 proposed supplied-record test definitions.",
+    "Inspected the exact profile environment declaration, four create-new ordinary directories, bounded recursive output census and retained five-output identities.",
+    "Inspected role/authority joins and preserved original deadlines, resource guard and Dispose/registration cleanup boundaries."
+  ],
+  "limitations": [
+    "Static source review only; no runtime, Python, AST execution, compilation, tests, native calls or Git.",
+    "The runtime-specific setting and actual empty layout are not attested; fresh SQ execution and separate actual review are required before D admission.",
+    "No P, L, scientific or historical custody claim is established."
+  ]
+}

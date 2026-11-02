@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P3 separate one-operation local bootstrap admission v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "operation_id",
+    "scope",
+    "created_utc",
+    "window_start_utc",
+    "window_end_utc",
+    "author",
+    "accepted",
+    "policy_sha256",
+    "request",
+    "custody_disposition",
+    "source_review",
+    "sources",
+    "runtime_pins",
+    "expected_host_identity_sha256",
+    "expected_boot_generation_sha256",
+    "attempt_directory",
+    "local_stop_path",
+    "limits",
+    "automatic_retry_permitted",
+    "historical_retry_allowed",
+    "scientific_admission"
+  ],
+  "properties": {
+    "schema": {
+      "const": "cho51_p3_local_bootstrap_admission_v1"
+    },
+    "operation_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "scope": {
+      "const": "cho51_p3_local_bootstrap_006"
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,7})?Z$",
+      "maxLength": 36
+    },
+    "window_start_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,7})?Z$",
+      "maxLength": 36
+    },
+    "window_end_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,7})?Z$",
+      "maxLength": 36
+    },
+    "author": {
+      "const": "project_root"
+    },
+    "accepted": {
+      "const": true
+    },
+    "policy_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "request": {
+      "$ref": "#/$defs/artifact"
+    },
+    "custody_disposition": {
+      "$ref": "#/$defs/artifact"
+    },
+    "source_review": {
+      "$ref": "#/$defs/artifact"
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "controller",
+        "helper",
+        "protocol",
+        "boundary_verifier"
+      ],
+      "properties": {
+        "controller": {
+          "$ref": "#/$defs/artifact"
+        },
+        "helper": {
+          "$ref": "#/$defs/artifact"
+        },
+        "protocol": {
+          "$ref": "#/$defs/artifact"
+        },
+        "boundary_verifier": {
+          "$ref": "#/$defs/artifact"
+        }
+      }
+    },
+    "runtime_pins": {
+      "$ref": "#/$defs/artifact"
+    },
+    "expected_host_identity_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "expected_boot_generation_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "attempt_directory": {
+      "type": "string",
+      "pattern": "^runs/coordination/cho51_p3_local_bootstrap_006/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "maxLength": 160
+    },
+    "local_stop_path": {
+      "const": "runs/coordination/PROJECT_STOP.json"
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "whole_caller_seconds",
+        "helper_seconds",
+        "outer_start_seconds",
+        "outer_work_seconds",
+        "outer_cleanup_seconds",
+        "outer_effect_seconds",
+        "output_bytes",
+        "process_mib",
+        "job_mib",
+        "startup_ram_gib",
+        "active_ram_gib",
+        "free_disk_gib",
+        "helpers",
+        "threads",
+        "gpu_hidden"
+      ],
+      "properties": {
+        "whole_caller_seconds": {
+          "const": 90
+        },
+        "helper_seconds": {
+          "const": 45
+        },
+        "outer_start_seconds": {
+          "const": 15
+        },
+        "outer_work_seconds": {
+          "const": 65
+        },
+        "outer_cleanup_seconds": {
+          "const": 80
+        },
+        "outer_effect_seconds": {
+          "const": 85
+        },
+        "output_bytes": {
+          "const": 1048576
+        },
+        "process_mib": {
+          "const": 4096
+        },
+        "job_mib": {
+          "const": 5120
+        },
+        "startup_ram_gib": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 1024
+        },
+        "active_ram_gib": {
+          "const": 4
+        },
+        "free_disk_gib": {
+          "const": 20
+        },
+        "helpers": {
+          "const": 1
+        },
+        "threads": {
+          "const": 1
+        },
+        "gpu_hidden": {
+          "const": true
+        }
+      }
+    },
+    "automatic_retry_permitted": {
+      "const": false
+    },
+    "historical_retry_allowed": {
+      "const": false
+    },
+    "scientific_admission": {
+      "const": false
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 384,
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9_./-]+$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16777216
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "historical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "disposition",
+        "actual_audit",
+        "failed_review",
+        "status",
+        "custody_closed",
+        "operation_released",
+        "retry_allowed"
+      ],
+      "properties": {
+        "disposition": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/artifact"
+            },
+            {
+              "properties": {
+                "sha256": {
+                  "const": "1faf198894e0f210e5bb8692a8c0c4b35f10963a1e2c8c928d545eb808c335ec"
+                }
+              }
+            }
+          ]
+        },
+        "actual_audit": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/artifact"
+            },
+            {
+              "properties": {
+                "sha256": {
+                  "const": "365153e07d2f925d36168f0218404ae37c18962d0bbabb0598a284ff6740b75d"
+                }
+              }
+            }
+          ]
+        },
+        "failed_review": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/artifact"
+            },
+            {
+              "properties": {
+                "sha256": {
+                  "const": "df900ab63aaf0f4ef0febbe11c3db7fa23ff9a178f5d8f65f6233ff35948e098"
+                }
+              }
+            }
+          ]
+        },
+        "status": {
+          "const": "FAILED_UNRELEASED_CONSUMED"
+        },
+        "custody_closed": {
+          "const": false
+        },
+        "operation_released": {
+          "const": false
+        },
+        "retry_allowed": {
+          "const": false
+        }
+      }
+    }
+  }
+}

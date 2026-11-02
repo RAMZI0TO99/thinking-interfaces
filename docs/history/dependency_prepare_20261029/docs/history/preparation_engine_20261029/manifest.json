@@ -1,0 +1,55 @@
+{
+  "schema": "cho51_active_document_archive_v1",
+  "created_utc": "2026-10-29T10:46:10.2969186Z",
+  "reason": "Preserve accepted Q4 active document versions before P engine work",
+  "files": {
+    "HANDOFF.md": {
+      "bytes": 8223,
+      "sha256": "9f4cac7622dc0076e83adb5897f4ffbd4515c8ba28cc526d089a6b00424f83a4"
+    },
+    "AGENTS.md": {
+      "bytes": 4126,
+      "sha256": "d713463d85a6083868dac9af93f41b4e44d5b9648dc768e05af4f329718d388f"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 3711,
+      "sha256": "30f646b9da037eaf9374a24a1460c1bd9eef4789dc55e5b9783e86384eae977b"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 3871,
+      "sha256": "af5a80851c6d441578657eade6ff5c495c7d87c63336be1bd07b27ee92ccb0b8"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 3547,
+      "sha256": "023ec4f9bbcced35b6b6caaf0286d38e18e0347fa311af099e9d189c3dbd0f1e"
+    },
+    "README.md": {
+      "bytes": 4539,
+      "sha256": "0247afd29c7ba44d0e26dae57a3cedf2be1de2b8fdc15f6ddb98a7ff76d83f06"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 8144,
+      "sha256": "b4666c2726ae044ca78e77c66f89641227060062378a5487452ea35a6e8c5417"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 5716,
+      "sha256": "986ce29b33fc8bfed65ff2d321bca90fe3e4e9d8153a2254bbe7537f059c5b16"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 6731,
+      "sha256": "142c1e4be7bcc79d37be56ee1fb56dc0049876500fb5046a6b631656a31a19f0"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 16163,
+      "sha256": "83b7d027b15a14f6aa0c02819a78da280ce5d63f3983232cbd29b745561d3cd6"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 25801,
+      "sha256": "52a1b6694b063c2c979ffd66327a96235ccf9dd63c970e5b0899f592a24212d4"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 19765,
+      "sha256": "1fd568176222e87ccc4b5f7edd019d7590888f8214ac1f1dadd0b2d87f320044"
+    }
+  }
+}

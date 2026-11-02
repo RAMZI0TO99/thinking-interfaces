@@ -1,0 +1,329 @@
+{
+  "schema": "cho51_finite_l_design_source_trace_v1",
+  "sources": {
+    "docs/phase2/cho51_p3_adapter_v1/contracts.py": {
+      "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429",
+      "bytes": 14415,
+      "path": "docs/phase2/cho51_p3_adapter_v1/contracts.py"
+    },
+    "docs/phase2/cho51_p3_adapter_v1/mapping.py": {
+      "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122",
+      "bytes": 12945,
+      "path": "docs/phase2/cho51_p3_adapter_v1/mapping.py"
+    },
+    "docs/phase2/cho51_p3_adapter_v1/README.md": {
+      "sha256": "c054f27971b99537f59a6f87aa9d697e52f91bb968913625c6f82e814a9aa76b",
+      "bytes": 4893,
+      "path": "docs/phase2/cho51_p3_adapter_v1/README.md"
+    },
+    "docs/phase2/cho51_p3_adapter_v1/telemetry.py": {
+      "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c",
+      "bytes": 16973,
+      "path": "docs/phase2/cho51_p3_adapter_v1/telemetry.py"
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_mapping.py": {
+      "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384",
+      "bytes": 20488,
+      "path": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py"
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py": {
+      "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee",
+      "bytes": 17511,
+      "path": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py"
+    },
+    "docs/phase2/cho51_p3_l_implementation_contract_20261029.md": {
+      "sha256": "db7b258dbca24fe30b02027e5990b77ec69b44bae249b97cdab47b236b8fb700",
+      "bytes": 11743,
+      "path": "docs/phase2/cho51_p3_l_implementation_contract_20261029.md"
+    },
+    "docs/phase2/cho51_p3_loader_design_20261029.md": {
+      "sha256": "85b5f22a99c19f9bcffbf7ba38f79d4108ec51e5ddbbe0d4437c9e137adba415",
+      "bytes": 22883,
+      "path": "docs/phase2/cho51_p3_loader_design_20261029.md"
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/acceptance-cases.json": {
+      "sha256": "13abd87a491880b2e33e6d9f966123e551cdd6199c63cba6f63a5945535085ec",
+      "bytes": 13884,
+      "path": "docs/phase2/cho51_p3_loader_design_v1/acceptance-cases.json"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f",
+      "bytes": 21107,
+      "path": "docs/phase2/cho51_p3_local_validation_contract_20261029.md"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/control-roster.json": {
+      "sha256": "cb51607b77782f556aca3ef4a2119cdff913818107aad250ebb11ad159a32113",
+      "bytes": 11390,
+      "path": "docs/phase2/cho51_p3_local_validation_v1/control-roster.json"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/test-roster.json": {
+      "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3",
+      "bytes": 7470,
+      "path": "docs/phase2/cho51_p3_local_validation_v1/test-roster.json"
+    },
+    "docs/phase2/cho51_p3_native_memory_bootstrap_20261031.md": {
+      "sha256": "a4d77eca956c6b95bc047d37b6c889304b8a9af1559078f9161260a0088c6f26",
+      "bytes": 7268,
+      "path": "docs/phase2/cho51_p3_native_memory_bootstrap_20261031.md"
+    },
+    "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/actual-review.json": {
+      "sha256": "e16a395eaae57f6cc0c7641fa112dd2d735225a0e577653051dedaa2738b97a1",
+      "bytes": 19529,
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/actual-review.json"
+    },
+    "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/plan-spec.json": {
+      "sha256": "0e199a2b9f4a81984bdd68906740a6f064db8d8c779c73bb800463d160e90385",
+      "bytes": 55308,
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/plan-spec.json"
+    },
+    "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/root-qualification.json": {
+      "sha256": "e96c494942744a819775489bc9df50a49c6c030c2c95f2001536df9fd1ae9610",
+      "bytes": 7678,
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/root-qualification.json"
+    },
+    "runs/coordination/cho51_p3_native_bootstrap_20261031_q2/root-qualification.json": {
+      "sha256": "a7856ad2e688807e79f2d59d1881b25c50df88da36ce5a46fb56c3dfa4ef4588",
+      "bytes": 4612,
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q2/root-qualification.json"
+    },
+    "tools/local_validation/l1/__init__.py": {
+      "sha256": "1ddfc88848a9a08f38d2c87a3a4b5ec859667501d3a5f1c4fda67fdea2b20afc",
+      "bytes": 86,
+      "path": "tools/local_validation/l1/__init__.py"
+    },
+    "tools/local_validation/l1/child_entry.py": {
+      "sha256": "97ec691e01ecb5b81714da5bafa24ed82585280e8a1416e50202f1ef4f3b56a9",
+      "bytes": 9363,
+      "path": "tools/local_validation/l1/child_entry.py"
+    },
+    "tools/local_validation/l1/collection.py": {
+      "sha256": "d8b76e57622f6d7b19610f3638d43737bc12693b774b09cbb3b6053ca14d9b93",
+      "bytes": 6529,
+      "path": "tools/local_validation/l1/collection.py"
+    },
+    "tools/local_validation/l1/guards.py": {
+      "sha256": "687716d5584bf8e39ac786405397b3682e70c660e65fef8626ba888c7374c5e0",
+      "bytes": 14262,
+      "path": "tools/local_validation/l1/guards.py"
+    },
+    "tools/local_validation/l1/imports.py": {
+      "sha256": "9ad17f8075238ddcc93c39aead1534e03bfa245bbd57f495717f2600ede2a247",
+      "bytes": 7184,
+      "path": "tools/local_validation/l1/imports.py"
+    },
+    "tools/local_validation/l1/native_bridge.py": {
+      "sha256": "f4ee11a1dbac808c4dac62edb1043e38cd04d7cf260feaf80a6278c11f1a52db",
+      "bytes": 7604,
+      "path": "tools/local_validation/l1/native_bridge.py"
+    },
+    "tools/local_validation/l1/native_cases.py": {
+      "sha256": "381a5f9cddcc5db237f7ae821fe9a09c3e0c05f25092d7a9c5339b9315a304ba",
+      "bytes": 6446,
+      "path": "tools/local_validation/l1/native_cases.py"
+    },
+    "tools/local_validation/l1/native_fixture.c": {
+      "sha256": "044038b08dc834e658e79542300af133a630906e1d1fef813ac822f7891d82d5",
+      "bytes": 326,
+      "path": "tools/local_validation/l1/native_fixture.c"
+    },
+    "tools/local_validation/l1/native_observer.c": {
+      "sha256": "8ef86b464c7c803c66575d2940b648d84cbe12aace0351c1def4ec1243315833",
+      "bytes": 8314,
+      "path": "tools/local_validation/l1/native_observer.c"
+    },
+    "tools/local_validation/l1/native_observer.h": {
+      "sha256": "3ca0573c748c948d0b3b9a5100881e647edc7bbaad5d4ee6348c9501efd9fa8e",
+      "bytes": 2760,
+      "path": "tools/local_validation/l1/native_observer.h"
+    },
+    "tools/local_validation/l1/observation.py": {
+      "sha256": "2cdd2af97fffd2e40098504f11b59b0b63d66e08ce8ecb6293246954c2ad2219",
+      "bytes": 13041,
+      "path": "tools/local_validation/l1/observation.py"
+    },
+    "tools/local_validation/l1/plan.py": {
+      "sha256": "e4c96f6e7372f9ab4b6f48c03b096d2bc78da962b538344722352705b3dc0cbf",
+      "bytes": 7387,
+      "path": "tools/local_validation/l1/plan.py"
+    },
+    "tools/local_validation/l1/protocol.py": {
+      "sha256": "3c1f605ee3134496139494efb788663bddb1f3dea8b34d18b71f5c1d6668bd6e",
+      "bytes": 14621,
+      "path": "tools/local_validation/l1/protocol.py"
+    },
+    "tools/local_validation/l1/qualification-map.json": {
+      "sha256": "c46c2b793065ce07d0b1ba48e2a5af69bebdb795551ea9d47f18e0d29ed9f849",
+      "bytes": 20380,
+      "path": "tools/local_validation/l1/qualification-map.json"
+    },
+    "tools/local_validation/l1/README.md": {
+      "sha256": "6bd70c9316205b8c77c42600c754a79aaba835266cf37f0d379026a0abc621cb",
+      "bytes": 3464,
+      "path": "tools/local_validation/l1/README.md"
+    },
+    "tools/local_validation/l1/test_collection.py": {
+      "sha256": "61f5285956a4b72dad3bdfe4fed5521c07cfeaa9d10e87d3de8962411a1ef19c",
+      "bytes": 3228,
+      "path": "tools/local_validation/l1/test_collection.py"
+    },
+    "tools/local_validation/l1/test_guards.py": {
+      "sha256": "acc3b0ec3e17b8ae14cd6bd71708f95770c8b6a4e865f2041035f3d5b1649809",
+      "bytes": 4436,
+      "path": "tools/local_validation/l1/test_guards.py"
+    },
+    "tools/local_validation/l1/test_imports.py": {
+      "sha256": "d70c1ea990fe7d7c4caf8e9d262622773878e22d889961575bd23ea5ad043ea9",
+      "bytes": 1814,
+      "path": "tools/local_validation/l1/test_imports.py"
+    },
+    "tools/local_validation/l1/test_native.py": {
+      "sha256": "e96d47cd76572b206f966697e26bd3c79eb0b9846e613349c4805bd628144c6d",
+      "bytes": 2898,
+      "path": "tools/local_validation/l1/test_native.py"
+    },
+    "tools/local_validation/l1/test_observation.py": {
+      "sha256": "b3361500a99efdee7d258799e36a0e840d2dfc0b36dbe673c844aa8ccf3cb542",
+      "bytes": 6302,
+      "path": "tools/local_validation/l1/test_observation.py"
+    },
+    "tools/local_validation/l1/test_protocol.py": {
+      "sha256": "9d713273e8c2c4c7ce362472ab398311582b21dd85397425544f135e3f5c1632",
+      "bytes": 2376,
+      "path": "tools/local_validation/l1/test_protocol.py"
+    },
+    "tools/local_validation/l1/test_support.py": {
+      "sha256": "5f88ad490fe3613c6c8f40f0f6af25f7fa96084591b08c11703ad9ee07af30f4",
+      "bytes": 2137,
+      "path": "tools/local_validation/l1/test_support.py"
+    },
+    "tools/local_validation/lhost1/__init__.py": {
+      "sha256": "2f9aef6a84e029f48a1cc94efd162a79cdc4dae8e5504cf40cff15253a982a8b",
+      "bytes": 70,
+      "path": "tools/local_validation/lhost1/__init__.py"
+    },
+    "tools/local_validation/lhost1/abi.py": {
+      "sha256": "e11e5b33802038ac46c724567a2fe06c4560e7cd32a628200b5876d8e02653c2",
+      "bytes": 5453,
+      "path": "tools/local_validation/lhost1/abi.py"
+    },
+    "tools/local_validation/lhost1/authority.py": {
+      "sha256": "49a31e2068a83cd46d10a9ab597f5bcc2787b7fee2aa823eff3691dcf14eb43b",
+      "bytes": 18618,
+      "path": "tools/local_validation/lhost1/authority.py"
+    },
+    "tools/local_validation/lhost1/bootstrap.py": {
+      "sha256": "f9a69c3b056771aa1a11753f4d30172677d821847e62fcc3d36c4f825137633b",
+      "bytes": 5483,
+      "path": "tools/local_validation/lhost1/bootstrap.py"
+    },
+    "tools/local_validation/lhost1/caller_native.cs": {
+      "sha256": "fb05f96748c72228fabae229d4dbf2aeae9765a436ec62a7b8ab9731aadd65c0",
+      "bytes": 25960,
+      "path": "tools/local_validation/lhost1/caller_native.cs"
+    },
+    "tools/local_validation/lhost1/invoke_l.ps1": {
+      "sha256": "f18d838727e8d929b3ac34af1934d46aa860deb67d07bf5ca5ace40781fa71a1",
+      "bytes": 26568,
+      "path": "tools/local_validation/lhost1/invoke_l.ps1"
+    },
+    "tools/local_validation/lhost1/job_adapter.py": {
+      "sha256": "ce7a72b3761ba3d710c90ed8096d45f6fc92d7179a1f42b06a7182afc173f1ff",
+      "bytes": 17713,
+      "path": "tools/local_validation/lhost1/job_adapter.py"
+    },
+    "tools/local_validation/lhost1/README.md": {
+      "sha256": "5788b1a4fa632d0d431c370987e23534cb56c51132acd6dfaedb53d794af1437",
+      "bytes": 5599,
+      "path": "tools/local_validation/lhost1/README.md"
+    },
+    "tools/local_validation/lhost1/runtime.py": {
+      "sha256": "e6bf1917668c64acd512ea232fc847ce82c64f5637979d027bdf5566670612e2",
+      "bytes": 13571,
+      "path": "tools/local_validation/lhost1/runtime.py"
+    },
+    "tools/local_validation/lhost1/supervisor.py": {
+      "sha256": "8c4e8169d6c0ece27d598c79c9d44426477493a70b08ee0bec8ce173870e0877",
+      "bytes": 16601,
+      "path": "tools/local_validation/lhost1/supervisor.py"
+    },
+    "tools/local_validation/lhost1/test_authority.py": {
+      "sha256": "540e3fe7aa34385648e8fc670b5d6e12c95428471e9c8f30c0ae750bea4d4123",
+      "bytes": 20600,
+      "path": "tools/local_validation/lhost1/test_authority.py"
+    },
+    "tools/local_validation/lhost1/test_transport.py": {
+      "sha256": "f3dc0f9c68840f9b3d78ede215698a574fb2166ed6f9c49e8a691492a3bbb8b1",
+      "bytes": 18557,
+      "path": "tools/local_validation/lhost1/test_transport.py"
+    },
+    "tools/local_validation/lhost1/transport.py": {
+      "sha256": "61d0361771036b438d26ffb50f4a52f071a3d4fdd335b558d144eb2a9ab2007e",
+      "bytes": 11658,
+      "path": "tools/local_validation/lhost1/transport.py"
+    },
+    "tools/local_validation/lp4/bootstrap_loader.ps1": {
+      "sha256": "ed4d0f421be51dc36b0fb36d7d814bfbeb8a19476711e35b7b581752844b7a04",
+      "bytes": 5015,
+      "path": "tools/local_validation/lp4/bootstrap_loader.ps1"
+    },
+    "tools/local_validation/lp4/caller_native.cs": {
+      "sha256": "5d4067f5a8344019bac61926c0d2e307dec62d1d23ed14f32d98b12cb9893800",
+      "bytes": 26774,
+      "path": "tools/local_validation/lp4/caller_native.cs"
+    },
+    "tools/local_validation/lp4/native_bootstrap.ps1": {
+      "sha256": "af64b5f5927d476d8f52853153e668a7e66be67484fe79fbb6d8a20b148aae0d",
+      "bytes": 14335,
+      "path": "tools/local_validation/lp4/native_bootstrap.ps1"
+    },
+    "tools/local_validation/lp4/native_reader.py": {
+      "sha256": "50c079115c9db5ad3491826f5ed8c4ef75b323f658c22fffaecdf49edc6a6b8a",
+      "bytes": 22152,
+      "path": "tools/local_validation/lp4/native_reader.py"
+    },
+    "tools/local_validation/lp4/pe.py": {
+      "sha256": "be38cc7c20e26321db65094e48ef55647cd52da2c927e0ea7a9a44fa65d4b2cf",
+      "bytes": 10733,
+      "path": "tools/local_validation/lp4/pe.py"
+    },
+    "tools/local_validation/lp4/protocol.py": {
+      "sha256": "dd26ca1d68d79f814c8fea06b284aaccca5cf1269c6510ab91cd72d754d2911d",
+      "bytes": 32510,
+      "path": "tools/local_validation/lp4/protocol.py"
+    },
+    "tools/local_validation/lplan1/__init__.py": {
+      "sha256": "33ecfb92bc541f408f8cc0143e5ee0e13204648aac1ef11bc513199cfb6e23d0",
+      "bytes": 77,
+      "path": "tools/local_validation/lplan1/__init__.py"
+    },
+    "tools/local_validation/lplan1/compiler.py": {
+      "sha256": "7a719e0d88403fca46aea653b2b0b197324f48ffc5029a29bb0999ebf5543099",
+      "bytes": 18152,
+      "path": "tools/local_validation/lplan1/compiler.py"
+    },
+    "tools/local_validation/lplan1/pytest.ini": {
+      "sha256": "f02ab80e9cb9f2e6f9ed1b330da2fdb8c23525dc22b7623f1ecde86d1fa353d9",
+      "bytes": 68,
+      "path": "tools/local_validation/lplan1/pytest.ini"
+    },
+    "tools/local_validation/lplan1/README.md": {
+      "sha256": "a4d2aae430d06879b7673589bf728553c800ce90a1291eb0436cda001c46d5fd",
+      "bytes": 2670,
+      "path": "tools/local_validation/lplan1/README.md"
+    },
+    "tools/local_validation/lplan1/seed-spec.json": {
+      "sha256": "a8f2efee54e96bdd2c0f7a432c8707e0a24dc84c74c47d0b1dc7002991ab925a",
+      "bytes": 34378,
+      "path": "tools/local_validation/lplan1/seed-spec.json"
+    },
+    "tools/local_validation/lplan1/test_compiler.py": {
+      "sha256": "cddde7efb1b674b16c5ff857bed4f05c3261a8ef8595ca8fd6b7e46f01d9dedf",
+      "bytes": 9300,
+      "path": "tools/local_validation/lplan1/test_compiler.py"
+    }
+  },
+  "count": 64,
+  "design_runtime_executed": false,
+  "scientific_admission": false,
+  "method": "File text, JSON, hashes and retained evidence only; no parser/runtime execution"
+}

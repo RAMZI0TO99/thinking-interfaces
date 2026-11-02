@@ -1,0 +1,56 @@
+{
+  "schema": "cho51_hb1_root_source_acceptance_v1",
+  "created_utc": "2026-11-02T11:32:47.0879566Z",
+  "author": "project_root",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-candidate-v1.json",
+    "bytes": 51971,
+    "sha256": "3b0aa0fa5aa1200d5bac456c1d7cfb021dc3abeb889a816fa11bbd54c40bc1a8"
+  },
+  "review": {
+    "path": "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-review-v1.json",
+    "bytes": 4784,
+    "sha256": "c427ab7f15c96340fea7a3da15cb2b55932e970363d7754c775a31cf5dbbed6e"
+  },
+  "implementation_map": {
+    "path": "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/implementation-map.json",
+    "bytes": 90695,
+    "sha256": "5b54c02d8b148721bf46233c301ded1986440bba6378aee82e749128dc76e18c"
+  },
+  "contract": {
+    "path": "docs/phase2/cho51_p3_hb1_implementation_contract_20261102.md",
+    "bytes": 10634,
+    "sha256": "935b5ff6b1e0b39f3799cbebb57450bfeab4e4ad148013f358d77f27b319e927"
+  },
+  "source_count": 288,
+  "package_files": 13,
+  "new_textual_methods": 120,
+  "all_textual_methods": 700,
+  "modules": 28,
+  "verifier_selection": 184,
+  "findings": [],
+  "peer_confirmation": {
+    "message_utf8_sha256": "de97caf2479262b7bde191ce5efe27478c3c9bf73a4ad2bc2a05dab15a3bd054",
+    "reviewer": "qd_source_review",
+    "message": "Confirmed exact publication of `source-review-v1.json`: 4,784 bytes, SHA256 `c427ab7f15c96340fea7a3da15cb2b55932e970363d7754c775a31cf5dbbed6e`; review-text SHA256 `51d948e4279cbb7f741dca9c92e047a3dd64346fd6d510e6ad569c0f288bf7a4`.\n\nSaved text matches my review, candidate pin, `ACCEPTED_SOURCE_ONLY` status, empty findings, resolved observations, authorship and all limitations. Root transcription is disclosed. No runtime, qualification or admission acceptance is implied.\n\nReview ownership released. No files or sidecars written."
+  },
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "executed_collection": false,
+  "runtime_admission": false,
+  "qualification_accepted": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "second_qd_admitted": false,
+  "production_host": "UNAVAILABLE",
+  "full_q_feasibility": "NOT_ESTABLISHED",
+  "obligations_discharged": 0,
+  "historical_qd_disposition": "a1f12701 INCOMPLETE_REFUSED17/16 unchanged",
+  "next": "Design/review finite component-model runner, exact source/runtime collection/loading and complete capture/accounting prerequisites; no automatic admission",
+  "preservation_baseline_count": 8768,
+  "root_baseline_check_utc": "2026-11-02T11:30:00.4226253Z",
+  "preservation_mismatches": [],
+  "source_review_kind": "independent file/text/JSON/hash only; no execution",
+  "closeout_review_kind": "separate metadata/documentation reviewer; no runtime result exists"
+}

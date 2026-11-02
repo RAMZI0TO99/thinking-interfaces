@@ -1,0 +1,53 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T14:46:55.3542640Z",
+  "operation_id": "4e339349-0eca-4611-8e85-c697ba7b4aae",
+  "actual_tool_exit_code": 1,
+  "elapsed_seconds": 76.137839,
+  "new_operation_owned_lifecycle_closed": true,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "observed_refusal": "Refusal: unresolved native physical dependency: cabinet.dll from _msi.pyd; api-ms-win-core-synch-l1-2-0.dll from hf_xet.pyd; api-ms-win-core-synch-l1-2-0.dll from _pydantic_core.cp312-win_amd64.pyd; mswsock.dll from lsl.dll",
+  "final_full_input_verification_completed_before_release": false,
+  "source_review_sha256": "078b21cc131da9061ee90ea6dea7fcf6cc7bf989c788bb6bd73858aef5c0e38d",
+  "findings": [
+    "P6 failed consumed on unresolved native physical dependencies after provisional PE-page production. Supervisor reports cabinet.dll from _msi.pyd, api-ms-win-core-synch-l1-2-0.dll from hf_xet.pyd and _pydantic_core.cp312-win_amd64.pyd, mswsock.dll from lsl.dll. This retained message is not an exhaustive unresolved inventory.",
+    "46provisionaloutputs23186346bytes include sevenPEpages; no final full input verification,acceptedmap or outputhandoff. All saved output byte/hash descriptors match current artifacts;46nativeIDs distinct."
+  ],
+  "checks": [
+    "Independent read-only file/text/JSON/hash/metadata inspected actual tool-return,underlying caller/supervisor stdout,bootstrap,source/coverage/adoption/admission and provisionaloutputs. NoGit/Python/import/AST/compile/tests/runtime invoked.",
+    "Rechecked33source732runtime2512preserved byte/hash pins without drift; admission source/coverage/adoption/qualification/nativehelper/index references match savedfiles. Reviewer differs from authors/source reviewer.",
+    "Underlying supervisor statusP_FAILED_CONSUMED,input/output/guardthreadjoined true,cleanup_errorsempty,guardfaultnull. Observed/accepted/coverage/ABIloader/fullverification/inputidentity/outputidentity flagsfalse preserved.",
+    "OriginalouterPID44928 creationFILETIME134377586436453115 reaped/process/threadclosed,atomicmembership/queriedlimits verified,Jobemptyclosed,bothoriginalpipesEOF/readersjoinedclosed,writers/threadhandlesclosed,NULclosed/watchdogjoined,nooverflow/stream/cleanupfaults.",
+    "Actual external exit1/76.137839seconds resolves pendingfiles/journal/guardclosure:originalfilehandlesclosed,16record5777bytejournalclosed,guarddonejoinedclosedcompletionwaitclosed,noerror,0.0827103secondshutdown. Calleracceptancefalse.",
+    "240work300whole5cleanup245hard5startup4096MiBprocessparent5120MiBJob4GiBRAM20GiBdisk retained. SupervisorminRAM10457849856/disk75767279616/peakprivate129384448;outerpeakprocess133468160/Job139632640/caller97910784bytes."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "limitations": [
+    "Provisional PE pages and observed refusal do not establish accepted OSAPI namespace/physicaldependencyclosure/loadersearch/ABI. Complete unresolved inventory requires separate saved-page analysis; no missing-edge bypass inferred.",
+    "NoPmapacceptance,L/V/C,Gitexecution or scienceclaim. Ownedclosure applies solely to this attempt; allpriorstartup/deadlineunknownclosures and historicalworkflow/custodyfailures unchanged.",
+    "117candidates34controls unexecuted,custodyUNRESOLVED,scientificcells0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,72 @@
+{
+  "second_qd_admitted": false,
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "executed_collection": false,
+  "diagnostic_scenarios_unqualified": 36,
+  "speedup_established": false,
+  "historical_qd_disposition": "a1f12701 INCOMPLETE_REFUSED17/16 unchanged",
+  "open_source_findings": [],
+  "next": "Design/review bounded concrete trusted-host binding, exact discovery/capture/output contracts and qualification/measurement approach; no implicit runtime admission",
+  "design_input_count": 6,
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v2.json",
+    "bytes": 50116,
+    "sha256": "a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60"
+  },
+  "created_utc": "2026-11-02T09:34:17.3719648Z",
+  "implementation_map": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/implementation-map.json",
+    "bytes": 150950,
+    "sha256": "435d744a9877021404ef10a4700b55233fa14673633581b51591dade0431c8a0"
+  },
+  "runtime_operations": 0,
+  "p_admitted": false,
+  "trusted_host_binding": "NOT_IMPLEMENTED",
+  "findings_resolved": [
+    "SC-I1",
+    "SC-I2"
+  ],
+  "author": "project_root",
+  "textual_held_and_new_methods": 580,
+  "source_count": 263,
+  "tests_executed": 0,
+  "preserved_draft_manifest": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/draft-v1/manifest.json",
+    "bytes": 2031,
+    "sha256": "03afaac30d3a41a3edfdd54355637aa46530fb4773f3f844ea91aca409acfdab"
+  },
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "sc_scenarios_unqualified": 40,
+  "runtime_admission": false,
+  "new_methods_unexecuted": 54,
+  "earlier_review": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-review-v1.json",
+    "bytes": 3617,
+    "sha256": "dae36015c9751e46b1fee721a67ec88efb5dc89063db264e5214114eda313217"
+  },
+  "obligations_discharged": 0,
+  "full_q_output_feasibility": "NOT_ESTABLISHED",
+  "schema": "cho51_sc1_root_source_acceptance_v1",
+  "peer_confirmations": [
+    {
+      "reviewer": "qd_source_review",
+      "message": "Confirmed source-review-v1.json exactly transcribes my bounded implementation review, with project_root disclosed as publisher, qd_source_review reviewer and authors project_root/sc1_publisher. Verified 3,617 bytes, SHA256 dae36015c9751e46b1fee721a67ec88efb5dc89063db264e5214114eda313217; review_text UTF8 SHA256 5dd7300cbdce7661c3e7c5f614e3c4cbe2056e9fc8ce1d72e575d1a615777cd8. Candidate49,517B/c36d571afc4ee4889f23209b8e7fbf8171b6c7322542b7aff00bb8edd90623bf and CHANGES_REQUIRED with SC-I1[P1]/SC-I2[P2] match. No files written or runtime executed. Source review complete and ownership released for preservation/fixes; embed this confirmation in the predeclared Root record, no sidecar.",
+      "message_utf8_sha256": "41a97d2ef20f8ca2c150fd715fa20afff265e847464fb693682d71bd17ac0511",
+      "revision": 1
+    },
+    {
+      "reviewer": "qd_source_review",
+      "message": "I confirm source-review-v2.json exactly transcribes my independent acceptance message and limits. Verified 2,938 bytes, SHA256 1fcb0a65c34eaf58361182a6696910fb7f5e52e559cae3bdfc5ce0d41dd50b8f; review_text UTF8 SHA256 897c17212c2de4ac5a10b788e0c9d4cb8e2e453e09df846ff6f993d0a277eef3. Candidate50,116B/a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60, ACCEPTED_SOURCE_ONLY/findings[], resolved SC-I1/SC-I2, authors project_root/sc1_publisher, reviewer qd_source_review and Root transcription are correct. Runtime/qualification/P/science remain false; unexecuted methods/scenarios, missing host/runner/feasibility gates and historical refusal are retained. No files written or runtime executed. Source review complete; ownership released. Embed this confirmation in root-source-acceptance, no sidecar.",
+      "message_utf8_sha256": "d9cbb85d1c4c51afbc9496dd3e1e49ff4bd20555ec64ec768e16c5483342ad40",
+      "revision": 2
+    }
+  ],
+  "scientific_admission": false,
+  "independent_review": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-review-v2.json",
+    "bytes": 2938,
+    "sha256": "1fcb0a65c34eaf58361182a6696910fb7f5e52e559cae3bdfc5ce0d41dd50b8f"
+  },
+  "qualification_accepted": false,
+  "complete_discovery_and_qualification_runner": "NOT_IMPLEMENTED"
+}

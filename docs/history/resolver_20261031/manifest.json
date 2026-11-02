@@ -1,0 +1,102 @@
+{
+  "schema": "cho51_resolver_document_archive_v1",
+  "created_utc": "2026-10-31T17:09:24.1514601Z",
+  "files": [
+    {
+      "archive": "docs/history/resolver_20261031/AGENTS.md",
+      "original": "AGENTS.md",
+      "pin": {
+        "bytes": 5520,
+        "sha256": "b16ee5292446a037947e9741b42ad92ed2959983e475efffaed14091e1b50251"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/HANDOFF.md",
+      "original": "HANDOFF.md",
+      "pin": {
+        "bytes": 13174,
+        "sha256": "ca888f27d6ff971490e0643c1f8ac3c4df52c40dae9c0ef0bcffa589d6e1aa3c"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/AGENT_COORDINATION.md",
+      "original": "AGENT_COORDINATION.md",
+      "pin": {
+        "bytes": 5105,
+        "sha256": "46951864e98dabc5d126ce43bca1ff80c53357439b93bc8a395a4baa4f480abf"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/CONTINUE_HERE.md",
+      "original": "CONTINUE_HERE.md",
+      "pin": {
+        "bytes": 5265,
+        "sha256": "1f39afb49ee74aada931a4a98e78954ba3fd108f6152900c79874e2bbe4a0efe"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/PHASE2_START_HERE.md",
+      "original": "PHASE2_START_HERE.md",
+      "pin": {
+        "bytes": 4941,
+        "sha256": "b0ab45305fb61d2727bfa41739d71b6ef418bf69cd6edb94574675cf37d94560"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/README.md",
+      "original": "README.md",
+      "pin": {
+        "bytes": 5933,
+        "sha256": "2258d923bf2f384cab402eb907b7bfea9bab041f9e241670fb1da18fffb66ebb"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/WINDOWS_SETUP.md",
+      "original": "WINDOWS_SETUP.md",
+      "pin": {
+        "bytes": 9538,
+        "sha256": "3c5fc6ed90e007c263f893004a0f3b19ffe1b1ee71b987cdb437619f8f0fc738"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/docs/phase2/README.md",
+      "original": "docs/phase2/README.md",
+      "pin": {
+        "bytes": 9018,
+        "sha256": "8cbfd33275bd70c50d037838f6972b589bf1db14a81ca6e39281acff6b668dd8"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/docs/where are we/README.md",
+      "original": "docs/where are we/README.md",
+      "pin": {
+        "bytes": 9533,
+        "sha256": "f40260b2eaaddc3d49f69e2de4fc102fa94f3cf4e93ea14a10eaa8003e6843bc"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/docs/where are we/PROJECT_PLAN.md",
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "bytes": 19884,
+        "sha256": "13ed2125b221fc4acde64cf7abe3216a5c96d590428ddbee69fcbb855eb13221"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/docs/where are we/PROGRESS_REPORT.md",
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "bytes": 28416,
+        "sha256": "46a6460c8a54a486effadc1b6f06493a7f6d5a317624b618e315988701781c75"
+      }
+    },
+    {
+      "archive": "docs/history/resolver_20261031/docs/where are we/EVIDENCE_INDEX.md",
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "bytes": 33174,
+        "sha256": "1c476ec5001faa154bdc5abd03a1178a47aa14f2048009fbdfedeed57fc04ae2"
+      }
+    }
+  ]
+}

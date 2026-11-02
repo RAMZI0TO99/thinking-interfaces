@@ -1,0 +1,77 @@
+{
+  "schema": "cho51_document_archive_v1",
+  "scope": "Fourteen exact pre-native-memory-bootstrap current document snapshots",
+  "created_utc": "2026-10-31T12:14:38.6527463Z",
+  "files": [
+    {
+      "sha256": "f8bb2625849fc57dd443783ae663150aba4ca56696670b907d75580e4be2790b",
+      "original_path": "AGENTS.md",
+      "bytes": 5302
+    },
+    {
+      "sha256": "00e409210f0f384331e773b9ac62c3537c184ad24c8c5a280d6cc00dd0107550",
+      "original_path": "HANDOFF.md",
+      "bytes": 11684
+    },
+    {
+      "sha256": "ba5212e0f21b8dd526d0417fef622cb2a8e6ad81d5426022a76db632ef5ca5ac",
+      "original_path": "AGENT_COORDINATION.md",
+      "bytes": 4887
+    },
+    {
+      "sha256": "61c5e6b15e886a15db90c5c63cc8af5bc161cda2722644f134b2fe47920b7e0a",
+      "original_path": "CONTINUE_HERE.md",
+      "bytes": 5047
+    },
+    {
+      "sha256": "cb4630f1dcdac9e93c9f248922f5c59398e77fc2b28f153265df1eb49c887d2e",
+      "original_path": "PHASE2_START_HERE.md",
+      "bytes": 4723
+    },
+    {
+      "sha256": "ad28d4256edbdfd9024c2575e081daf9ed07d87fed97cb040b4d4548bf95ab8d",
+      "original_path": "README.md",
+      "bytes": 5715
+    },
+    {
+      "sha256": "88c1a2820fc655581f4e75785f3dc16b976c53539ada8602d8b35579e22f6cb8",
+      "original_path": "WINDOWS_SETUP.md",
+      "bytes": 9320
+    },
+    {
+      "sha256": "09c34807cce25d1a221a9601d2c36ae2f51de812bfd299d554a77f450055b7a9",
+      "original_path": "docs/phase2/README.md",
+      "bytes": 8196
+    },
+    {
+      "sha256": "9765de732eac5edfd9df392a86085a8abc36cfa6e9d83d32d68eb44741981a9a",
+      "original_path": "docs/where are we/README.md",
+      "bytes": 9032
+    },
+    {
+      "sha256": "2b1af23b7c741fb4395a091e11b3e6f263f126c399847f1da9eca17e805c8846",
+      "original_path": "docs/where are we/PROJECT_PLAN.md",
+      "bytes": 18824
+    },
+    {
+      "sha256": "b532a868756c0564c9bd00222a72be1a2a72e73b069c2fe0fba9c5fd6c4b0ba1",
+      "original_path": "docs/where are we/PROGRESS_REPORT.md",
+      "bytes": 28104
+    },
+    {
+      "sha256": "50e053018021b3c55da5fd7d150b36721442c63518882ac6bfec447cbc996b03",
+      "original_path": "docs/where are we/EVIDENCE_INDEX.md",
+      "bytes": 27728
+    },
+    {
+      "sha256": "324dce7a665eb58cb69f45060c880b3516a361be896d68ffb3c9aff35bc82fa2",
+      "original_path": "docs/phase2/cho51_p3_startup_diagnostic_implementation_20261031.md",
+      "bytes": 10008
+    },
+    {
+      "sha256": "615b91c16cf6da56976ec02076dab5866d906d9b2f6e9eb6e3c861c037cd680f",
+      "original_path": "docs/history/startup_diagnostic_20261031/ARCHIVE_INDEX.md",
+      "bytes": 598
+    }
+  ]
+}

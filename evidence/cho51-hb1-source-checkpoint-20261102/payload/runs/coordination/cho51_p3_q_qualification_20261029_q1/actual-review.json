@@ -1,0 +1,170 @@
+{
+  "schema": "cho51_q_actual_failure_review_v1",
+  "status": "ACCEPTED_FAILED_CONSUMED_WITH_CUSTODY_UNKNOWN",
+  "reviewer": "provider_actual_review",
+  "source_authors": [
+    "project_root",
+    "q_native_reader_impl"
+  ],
+  "source_reviewer": "provider_source_review",
+  "operation_id": "c59cc58a-64bb-48cc-856c-42b21dad0a14",
+  "scope": "Independent text, JSON and SHA256 review of saved Q1 failed external call; no source execution, compilation, tests, native process queries or runtime execution.",
+  "artifact_pins": {
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/admission_c59cc58a-64bb-48cc-856c-42b21dad0a14.json": {
+      "bytes": 226506,
+      "sha256": "a82759a618f1901e8c9e31d98bda05c6814fc02a904eb428fc5d56102195714e"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/contract-adoption.json": {
+      "bytes": 727,
+      "sha256": "ef4b9e6c826f5042abc5a3522003a8b91ab07ced55a154bc3d872c396538e1ac"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/external-audit.json": {
+      "bytes": 3343,
+      "sha256": "0fa6bd24cd144dbf0ebf3a6e5c44856b2d9d066b18a7168c345619c040036c15"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/preflight.json": {
+      "bytes": 517,
+      "sha256": "f6f7047ade112788dfde9107500c0545f64c4b487969840b702a78cf253eb105"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/preservation-baseline.json": {
+      "bytes": 158019,
+      "sha256": "59b95732007508ebcaf140ca17e65f47e33812f0405fc8d0df2296cd23c4b53c"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/root-schedule.json": {
+      "bytes": 2649,
+      "sha256": "6871fbc934fed7206708bc05d201b2f0ce629b9283ce17df16bc67f2f5440017"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/runtime-inventory.json": {
+      "bytes": 207761,
+      "sha256": "be5af2641825da21ef5183f14b56e21333841b806cbd8689887376797387f6d8"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/source-freeze.json": {
+      "bytes": 3271,
+      "sha256": "35009474b3dcfac409491a70cff2dada3f46831b6f541005d826c9348b6bc29f"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/source-review.json": {
+      "bytes": 5447,
+      "sha256": "56c38821d5fc98529fc1ed4f24e38194313aa331151afac20d83f308e3f8d858"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/test-roster.json": {
+      "bytes": 8482,
+      "sha256": "0bcce9efc10b863562e48250360f240ac5fd62147a524df4f42e52429dd14636"
+    },
+    "tools/local_validation/q1/native_reader.py": {
+      "bytes": 21424,
+      "sha256": "549eca12f0010b4490fd9ab986511333779aa53abd3af7a6ce6afc02af1288e7"
+    },
+    "tools/local_validation/q1/test_native_reader.py": {
+      "bytes": 17065,
+      "sha256": "2b1b17ea3d92c4fcf0abdfd4e1acd17b0b5144b7c9736c543e9962f871bc82f7"
+    },
+    "tools/local_validation/q1/job_adapter.py": {
+      "bytes": 17041,
+      "sha256": "2c7daf028d83c29d0653a8db0a4f39b9b5457f344d0844cb0d5ca90a7a8ee9c2"
+    },
+    "tools/local_validation/q1/protocol.py": {
+      "bytes": 8998,
+      "sha256": "49c4062c1056965afb79bc3a7c203e29fa4f2484aab1b35d074347d83b2f9a75"
+    },
+    "tools/local_validation/q1/test_protocol.py": {
+      "bytes": 6986,
+      "sha256": "83ead6f76499f570e5c32699d42661ade846869afeb648d7c0f5091c662e5fbb"
+    },
+    "tools/local_validation/q1/child_entry.py": {
+      "bytes": 6220,
+      "sha256": "e39b088a0c7d76875fb799fd8c242e3f94a1004f1b46178bb818d3606cbbc36d"
+    },
+    "tools/local_validation/q1/supervisor.py": {
+      "bytes": 22179,
+      "sha256": "796f59ca61a1a15d913f12a7fe812f5a25a681c20bc731789a1bf6890eab1ef4"
+    },
+    "tools/local_validation/q1/invoke_q.ps1": {
+      "bytes": 24124,
+      "sha256": "cbb1abda7508a6a2d277dc8570ba6cd8cec21070a4f860032e49dc91a7ac9546"
+    },
+    "tools/local_validation/q1/caller_native.cs": {
+      "bytes": 25333,
+      "sha256": "9bf9f06a9cdc0fcbc8f998b0ca80f98807b6c114f825d00d6bff2e061a337ae7"
+    },
+    "tools/local_validation/q1/README.md": {
+      "bytes": 16359,
+      "sha256": "4c52f07f9fd0ca37dd44092fdc3949b4b5794c673cfc8388c0f4bfffe954906f"
+    },
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "tools/local_validation/v1/README.md": {
+      "bytes": 5187,
+      "sha256": "a4368f731a5d26f722dfc058ff0d3e10f9ceca69b26edfab7ab19a69c9ee3135"
+    },
+    "evaluation/phase2_supervision_primitives.py": {
+      "bytes": 46498,
+      "sha256": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/design-review.json": {
+      "bytes": 5065,
+      "sha256": "65526bad7ee6599c403411502ff0e0296b69c3a688daf66a5bb2aa402f017e4b"
+    },
+    "runs/coordination/cho51_p3_validation_foundation_20261029_v1/final-closeout.json": {
+      "bytes": 2440,
+      "sha256": "95b067fbe4c14c506e7104345170fed3443e3498fe952a2caead9d75c33590e2"
+    }
+  },
+  "checks": {
+    "source_review_sha256": "56c38821d5fc98529fc1ed4f24e38194313aa331151afac20d83f308e3f8d858",
+    "admission_sha256": "a82759a618f1901e8c9e31d98bda05c6814fc02a904eb428fc5d56102195714e",
+    "contract_adoption_sha256": "ef4b9e6c826f5042abc5a3522003a8b91ab07ced55a154bc3d872c396538e1ac",
+    "sources_checked": 18,
+    "runtime_files_checked": 732,
+    "preserved_files_checked": 670,
+    "pin_mismatches": 0,
+    "source_freeze_and_admission_maps_match": true,
+    "runtime_admission_map_matches": true,
+    "review_adoption_predecessor_join_match": true,
+    "caller_runtime_pin": {
+      "bytes": 301368,
+      "sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139"
+    },
+    "tool_chunk": "8c31e5",
+    "tool_exit_code": -1,
+    "wall_seconds": 5.1901252,
+    "before_boundary_utc": "2026-10-29T09:09:29.0779796Z",
+    "before_qpc": 683891629603,
+    "frequency": 10000000,
+    "independent_clock_before": "2026-10-29 09:09:28 UTC",
+    "independent_clock_after": "2026-10-29 09:09:34 UTC",
+    "after_boundary_emitted": false,
+    "claim_origin_caller_return_attempt_and_test_report_present": false,
+    "attempts_and_disabled_bytecode_namespaces_empty_at_review": true
+  },
+  "finding": {
+    "result": "Q1 failed; identity consumed. No test success, accepted Job closure or completed qualification is established.",
+    "cause": "Unknown: no saved reason. Guard startup refusal, guard fault or other early termination are possibilities only; the elapsed time and exit -1 do not establish the cause.",
+    "control_flow": "Reviewed caller starts a dedicated guard and requires readiness before admission pinning; claim is created before helper compilation and owned child creation. Missing claim and output records are consistent with pre-claim failure but cannot prove the actual program counter or that no child was ever created.",
+    "custody": "The external tool returned failure and no after boundary or original caller-return/custody evidence exists. Physical caller/Job/child cleanup and release are not established; do not infer them from absent outputs or current PID absence.",
+    "next": "Any Q2 must be distinct, separately reviewed and freshly admitted with explicit resolution of or an independently reviewed contract treatment for Q1 uncertain custody. This review records the failure; it does not itself admit Q2 or permit Q1 replay."
+  },
+  "limits": [
+    "No 72-test result or two fault-operation outcomes were saved; all remain unqualified.",
+    "Bootstrap004 remains FAILED_UNRELEASED_CONSUMED; diagnostics005 remains held, 006 unadmitted, historical boundary UNRESOLVED.",
+    "117 candidate cases and 34 successor controls remain unexecuted; original 48-case matrix incomplete; scientific cells 0/1020 and final freeze unsigned.",
+    "Static byte checks do not authenticate actors, process state or prove historical cleanup. No process sweep or unrelated termination was performed."
+  ]
+}

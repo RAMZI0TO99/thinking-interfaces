@@ -1,0 +1,740 @@
+{
+  "schema": "cho51_provisional_manual_observations_v1",
+  "status": "PROVISIONAL_BLOCKED",
+  "candidate_annotations": [
+    {
+      "id": "A01",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        36,
+        38
+      ],
+      "title": "eager policy constructors",
+      "observation": "Finite literal tables feed MappingProxyType and dict/fromkeys; imported/builtin identity and effects remain uncertified.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A02",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        66,
+        66
+      ],
+      "title": "eager default expression",
+      "observation": "2**63-1 is a definition-time default; exact operand semantics need a finite certificate.",
+      "capability_obligations": [
+        "CAP02"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A03",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        86,
+        150
+      ],
+      "title": "nested graph callbacks",
+      "observation": "consume/visit close over counters, nonlocal state and recursion; supplied-data bounds are not L entry proof.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A04",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        164,
+        191
+      ],
+      "title": "JSON callbacks",
+      "observation": "pairs/constant reach the JSON decoder; callback identity, effects and entry barrier remain pending.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A05",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        203,
+        244
+      ],
+      "title": "AdapterIntent creation",
+      "observation": "Dataclass decoration is eager; generated methods/annotations/property construction need pinned semantics; post_init/payload bodies are separate entries.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A06",
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "lines": [
+        247,
+        300
+      ],
+      "title": "AdapterCompatibility creation",
+      "observation": "Dataclass and property construction are eager; deferred validation and defensive copies are not exclusions.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A07",
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "lines": [
+        24,
+        188
+      ],
+      "title": "boundary and reader closure",
+      "observation": "Boundary assessment, nested bounded metadata reader and deferred canonical imports need binding/effects/entry controls; 12-file/16MiB limits grant no reads.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A08",
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "lines": [
+        105,
+        108
+      ],
+      "title": "deferred canonical imports",
+      "observation": "Four imports are inside assess_adapter_intent; nesting does not prove guarded unreachability.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A09",
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "lines": [
+        38,
+        140
+      ],
+      "title": "trace validation",
+      "observation": "Supplied-data field/stack/segment checks include protocols and errors; exact argument domains remain pending.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A10",
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "lines": [
+        143,
+        177
+      ],
+      "title": "telemetry dataclasses",
+      "observation": "Eager decorators and property construction; init=False/refusing init does not certify generated allocation/descriptor effects.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A11",
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "lines": [
+        180,
+        306
+      ],
+      "title": "interval and trace helpers",
+      "observation": "Deferred sorting, interval operations and validation; no actual measurement or numerical qualification.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A12",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        25,
+        25
+      ],
+      "title": "eager root resolution",
+      "observation": "Path(__file__).resolve().parents[3] needs exact filename/root, metadata read and receiver/index semantics.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP06"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A13",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        32,
+        39
+      ],
+      "title": "writer helper",
+      "observation": "Path containment, JSON encoding/size checks, write_bytes and relative path calculation must be unreachable in L; directory creation is separate in A15. V needs separate file capabilities.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A14",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        62,
+        62
+      ],
+      "title": "fixture registration",
+      "observation": "Eager pytest.fixture(scope=module) has unresolved registration/hook effects.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A15",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        63,
+        159
+      ],
+      "title": "fixture effects",
+      "observation": "Creates/writes metadata, reads configs/origin/manifest, builds catalogs/routes and calls source/environment/dynamic planner helpers; no L entry allowed.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03",
+        "CAP06",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A16",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        194,
+        194
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A17",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        202,
+        202
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A18",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        218,
+        218
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A19",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        231,
+        231
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A20",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        242,
+        242
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A21",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        248,
+        248
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A22",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        273,
+        279
+      ],
+      "title": "monkeypatch callback",
+      "observation": "Deferred forbidden_serialization replaces json.dumps in a context manager; callback/rebinding/entry proof pending.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A23",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        289,
+        297
+      ],
+      "title": "temporary metadata mutation",
+      "observation": "Read/write/finally restoration is neither a collection permission nor actual restoration evidence.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A24",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        326,
+        326
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A25",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        334,
+        339
+      ],
+      "title": "adapter-read callback",
+      "observation": "Deferred monkeypatch and nested forbidden callback; negative assertions do not prove runtime unreachability.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A26",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        342,
+        342
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A27",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "lines": [
+        346,
+        363
+      ],
+      "title": "protocol callback probe",
+      "observation": "Nested class __getattribute__/__eq__ and construction require enclosing test entry; entry barrier still pending.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A28",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        12,
+        81
+      ],
+      "title": "trace helpers",
+      "observation": "Deferred construction of supplied telemetry records; no helper or test entry is authorized during L.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A29",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        107,
+        114
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A30",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        153,
+        157
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A31",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        183,
+        183
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A32",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        198,
+        198
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A33",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        212,
+        212
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A34",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        239,
+        239
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    },
+    {
+      "id": "A35",
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "lines": [
+        299,
+        299
+      ],
+      "title": "eager parameter registration",
+      "observation": "Finite literal arguments in a pytest parameter decorator; descriptor/callable identity and hook effects remain unresolved.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP07"
+      ],
+      "status": "MANUAL_PROVISIONAL_REFUSAL",
+      "author": "/root",
+      "execution_authorized": false
+    }
+  ],
+  "frontier_annotations": [
+    {
+      "id": "X01",
+      "path": "docs/phase2/cho51_worker_bridge_v1/worker_bridge.py",
+      "lines": [
+        19,
+        33
+      ],
+      "observation": "_context reads planner, creates module, mutates sys.modules and compiles/executes pinned bytes; deferred dynamic-code/reads need exact target proof and blocked entry.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X02",
+      "path": "core/provenance.py",
+      "lines": [
+        52,
+        105
+      ],
+      "observation": "capture_source reaches source scanning/fingerprinting and up to two bounded Git subprocess calls; source possibilities, not executed effects.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X03",
+      "path": "evaluation/phase2_profile_binding.py",
+      "lines": [
+        19,
+        20
+      ],
+      "observation": "Imports NumPy; transitive package/native closure unresolved.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP05"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X04",
+      "path": "evaluation/phase2_runner.py",
+      "lines": [
+        30,
+        31
+      ],
+      "observation": "Imports NumPy and torch; physical coverage does not certify initialization/ABI effects.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02",
+        "CAP05"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X05",
+      "path": "evaluation/phase2_runner.py",
+      "lines": [
+        55,
+        68
+      ],
+      "observation": "environment_digest queries runtime/package/thread/determinism state if entered; not a fresh runtime observation.",
+      "capability_obligations": [
+        "CAP02",
+        "CAP03",
+        "CAP06"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X06",
+      "path": "evaluation/phase2_protocol.py",
+      "lines": [
+        40,
+        41
+      ],
+      "observation": "Eager dataclass adds constructor effects outside the five-source AST inventory.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X07",
+      "path": "docs/phase2/cho51_canonical_boundary_v1/boundary.py",
+      "lines": [
+        314,
+        315
+      ],
+      "observation": "Eager canonical dataclass needs a transitive effect certificate.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    },
+    {
+      "id": "X08",
+      "path": "docs/phase2/cho51_canonical_boundary_v1/boundary.py",
+      "lines": [
+        349,
+        350
+      ],
+      "observation": "Second eager canonical dataclass needs a transitive effect certificate.",
+      "capability_obligations": [
+        "CAP01",
+        "CAP02"
+      ],
+      "status": "TEXT_OBSERVATION_OUTSIDE_ACCEPTED_AST_INVENTORY",
+      "author": "/root"
+    }
+  ]
+}

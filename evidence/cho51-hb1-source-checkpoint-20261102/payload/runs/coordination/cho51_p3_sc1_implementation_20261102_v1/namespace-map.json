@@ -1,0 +1,486 @@
+{
+  "files": {
+    "tools/local_validation/lp19/api_mapping.py": {
+      "predecessor_pin": {
+        "bytes": 9112,
+        "sha256": "80a9e8b4dfe3580ab50d0c668b2bee9c9def3d1978ec7e2ed5004950aa08c2b8"
+      },
+      "initial_successor_pin": {
+        "bytes": 9116,
+        "sha256": "e0c60d7c6f29de711cd4cb37333b77288497e5a9d6a635779dc02585ad573b5c"
+      },
+      "predecessor": "tools/local_validation/lp18/api_mapping.py"
+    },
+    "tools/local_validation/lp19/api_query_plan.json": {
+      "predecessor_pin": {
+        "bytes": 2709,
+        "sha256": "b71d84f5861cb27e2e982698b152554d59438549b4f2fae7b7277ab308fade6a"
+      },
+      "initial_successor_pin": {
+        "bytes": 2709,
+        "sha256": "b71d84f5861cb27e2e982698b152554d59438549b4f2fae7b7277ab308fade6a"
+      },
+      "predecessor": "tools/local_validation/lp18/api_query_plan.json"
+    },
+    "tools/local_validation/lp19/bootstrap_contract.py": {
+      "predecessor_pin": {
+        "bytes": 2085,
+        "sha256": "b6bd5ca72895708ee665102e507f348da211366ac5421487e1bb9d8098f77d01"
+      },
+      "initial_successor_pin": {
+        "bytes": 2085,
+        "sha256": "b6bd5ca72895708ee665102e507f348da211366ac5421487e1bb9d8098f77d01"
+      },
+      "predecessor": "tools/local_validation/lp18/bootstrap_contract.py"
+    },
+    "tools/local_validation/lp19/bootstrap_loader.ps1": {
+      "predecessor_pin": {
+        "bytes": 8773,
+        "sha256": "273348c86a21392bacc76dee5b242b733497cb486895da897dbfa3209b781f36"
+      },
+      "initial_successor_pin": {
+        "bytes": 8762,
+        "sha256": "ee97e5fb13549a38a225a9a87fcb555055784aebc3650b735b296506f6ead286"
+      },
+      "predecessor": "tools/local_validation/lp18/bootstrap_loader.ps1"
+    },
+    "tools/local_validation/lp19/build_native.ps1": {
+      "predecessor_pin": {
+        "bytes": 3155,
+        "sha256": "debcc4b15d86866c91311dd2754f2557236715d59924c2c7a4ee2e8dacf19595"
+      },
+      "initial_successor_pin": {
+        "bytes": 3155,
+        "sha256": "debcc4b15d86866c91311dd2754f2557236715d59924c2c7a4ee2e8dacf19595"
+      },
+      "predecessor": "tools/local_validation/lp18/build_native.ps1"
+    },
+    "tools/local_validation/lp19/caller_native.cs": {
+      "predecessor_pin": {
+        "bytes": 26774,
+        "sha256": "5d4067f5a8344019bac61926c0d2e307dec62d1d23ed14f32d98b12cb9893800"
+      },
+      "initial_successor_pin": {
+        "bytes": 26774,
+        "sha256": "5d4067f5a8344019bac61926c0d2e307dec62d1d23ed14f32d98b12cb9893800"
+      },
+      "predecessor": "tools/local_validation/lp18/caller_native.cs"
+    },
+    "tools/local_validation/lp19/dependency_coverage.md": {
+      "predecessor_pin": {
+        "bytes": 15256,
+        "sha256": "33f13bfb98fb350a15c44f3d9fa6920c40a0f8982583f2125094952debc696f5"
+      },
+      "initial_successor_pin": {
+        "bytes": 15256,
+        "sha256": "33f13bfb98fb350a15c44f3d9fa6920c40a0f8982583f2125094952debc696f5"
+      },
+      "predecessor": "tools/local_validation/lp18/dependency_coverage.md"
+    },
+    "tools/local_validation/lp19/dependency_recipe.json": {
+      "predecessor_pin": {
+        "bytes": 21068,
+        "sha256": "852b2eafc4c93806526447ffffc1834f22e6bdc068baa94305fdb3b557efcad6"
+      },
+      "initial_successor_pin": {
+        "bytes": 21072,
+        "sha256": "6a47bfef707e0aba52f9ccff3271a7e37caab447c83a039e8f44e1db866efd5e"
+      },
+      "predecessor": "tools/local_validation/lp18/dependency_recipe.json"
+    },
+    "tools/local_validation/lp19/invoke_p.ps1": {
+      "predecessor_pin": {
+        "bytes": 49134,
+        "sha256": "f7aa2b0607b41babaf76c39b9790d19b4bd8888777233d396811ebae4e2673ed"
+      },
+      "initial_successor_pin": {
+        "bytes": 49116,
+        "sha256": "cb89901124271de66061003c492abce180f1922586dee53d982d6869f2dce058"
+      },
+      "predecessor": "tools/local_validation/lp18/invoke_p.ps1"
+    },
+    "tools/local_validation/lp19/manifest.py": {
+      "predecessor_pin": {
+        "bytes": 18398,
+        "sha256": "590fb265acd91e9ff6b7854f40a7657aab3d996b5d8962d8a74aec20ae71cf01"
+      },
+      "initial_successor_pin": {
+        "bytes": 18398,
+        "sha256": "590fb265acd91e9ff6b7854f40a7657aab3d996b5d8962d8a74aec20ae71cf01"
+      },
+      "predecessor": "tools/local_validation/lp18/manifest.py"
+    },
+    "tools/local_validation/lp19/native_bootstrap.ps1": {
+      "predecessor_pin": {
+        "bytes": 14334,
+        "sha256": "bafbbbe531f3d6679e84e394a9453ad5180e179eb0392c8818b620d23d8b31fb"
+      },
+      "initial_successor_pin": {
+        "bytes": 14334,
+        "sha256": "bafbbbe531f3d6679e84e394a9453ad5180e179eb0392c8818b620d23d8b31fb"
+      },
+      "predecessor": "tools/local_validation/lp18/native_bootstrap.ps1"
+    },
+    "tools/local_validation/lp19/native_policy.json": {
+      "predecessor_pin": {
+        "bytes": 165713,
+        "sha256": "36a370008ba689ace3ab3c9fbd2521ec7d247de147e75ceb4286ab91ae372109"
+      },
+      "initial_successor_pin": {
+        "bytes": 165713,
+        "sha256": "36a370008ba689ace3ab3c9fbd2521ec7d247de147e75ceb4286ab91ae372109"
+      },
+      "predecessor": "tools/local_validation/lp18/native_policy.json"
+    },
+    "tools/local_validation/lp19/native_reader.py": {
+      "predecessor_pin": {
+        "bytes": 22152,
+        "sha256": "50c079115c9db5ad3491826f5ed8c4ef75b323f658c22fffaecdf49edc6a6b8a"
+      },
+      "initial_successor_pin": {
+        "bytes": 22152,
+        "sha256": "50c079115c9db5ad3491826f5ed8c4ef75b323f658c22fffaecdf49edc6a6b8a"
+      },
+      "predecessor": "tools/local_validation/lp18/native_reader.py"
+    },
+    "tools/local_validation/lp19/pe.py": {
+      "predecessor_pin": {
+        "bytes": 10733,
+        "sha256": "be38cc7c20e26321db65094e48ef55647cd52da2c927e0ea7a9a44fa65d4b2cf"
+      },
+      "initial_successor_pin": {
+        "bytes": 10733,
+        "sha256": "be38cc7c20e26321db65094e48ef55647cd52da2c927e0ea7a9a44fa65d4b2cf"
+      },
+      "predecessor": "tools/local_validation/lp18/pe.py"
+    },
+    "tools/local_validation/lp19/protocol.py": {
+      "predecessor_pin": {
+        "bytes": 43211,
+        "sha256": "41b4066ca10e16249f1b79212d96dcbd395194566dd59597b11849ba1645840e"
+      },
+      "initial_successor_pin": {
+        "bytes": 43208,
+        "sha256": "27c0ae7782e353edf6925e5c8a9736a8174b9caf98fe4e80254b81bb7ba2af17"
+      },
+      "predecessor": "tools/local_validation/lp18/protocol.py"
+    },
+    "tools/local_validation/lp19/README.md": {
+      "predecessor_pin": {
+        "bytes": 649,
+        "sha256": "8073127cb3293ca14611012fdb8cc351f3ac112c7f54a83ae16b160644c39660"
+      },
+      "initial_successor_pin": {
+        "bytes": 649,
+        "sha256": "2e3c1ff0b5698e6710eba179c3043107b63129138f86f06c31d2446e446c4105"
+      },
+      "predecessor": "tools/local_validation/lp18/README.md"
+    },
+    "tools/local_validation/lp19/supervisor.py": {
+      "predecessor_pin": {
+        "bytes": 55558,
+        "sha256": "4957a634c9e67c4511aa9766d01bc80b33fc4cd9b8ed4cfe60c59515f4f55639"
+      },
+      "initial_successor_pin": {
+        "bytes": 55555,
+        "sha256": "f9212c9ae669c842403789238d0a6a74bba8e456ef53a6515cf9bd87acf7af31"
+      },
+      "predecessor": "tools/local_validation/lp18/supervisor.py"
+    },
+    "tools/local_validation/lp19/test_bootstrap_contract.py": {
+      "predecessor_pin": {
+        "bytes": 5133,
+        "sha256": "1d0d6ec6b2fef9518ab342b5bc2285b69795ab84aabbaeb3f2eb798f8b49190d"
+      },
+      "initial_successor_pin": {
+        "bytes": 5133,
+        "sha256": "1d0d6ec6b2fef9518ab342b5bc2285b69795ab84aabbaeb3f2eb798f8b49190d"
+      },
+      "predecessor": "tools/local_validation/lp18/test_bootstrap_contract.py"
+    },
+    "tools/local_validation/lp19/test_long_paths.py": {
+      "predecessor_pin": {
+        "bytes": 4512,
+        "sha256": "71440c8dabd91ffc1c6d79e5cdb25ae720bd6aa719401d9f167422e7439eb027"
+      },
+      "initial_successor_pin": {
+        "bytes": 4512,
+        "sha256": "71440c8dabd91ffc1c6d79e5cdb25ae720bd6aa719401d9f167422e7439eb027"
+      },
+      "predecessor": "tools/local_validation/lp18/test_long_paths.py"
+    },
+    "tools/local_validation/lp19/test_manifest.py": {
+      "predecessor_pin": {
+        "bytes": 8400,
+        "sha256": "89620c8baf234f4d231e94d681cbb5a30115a591782c39191532043a834d7d0d"
+      },
+      "initial_successor_pin": {
+        "bytes": 8400,
+        "sha256": "89620c8baf234f4d231e94d681cbb5a30115a591782c39191532043a834d7d0d"
+      },
+      "predecessor": "tools/local_validation/lp18/test_manifest.py"
+    },
+    "tools/local_validation/lp19/test_pe.py": {
+      "predecessor_pin": {
+        "bytes": 10129,
+        "sha256": "a69232bd9a41bee59d1873f2705019d368b659808fc0141a868589c40207103e"
+      },
+      "initial_successor_pin": {
+        "bytes": 10129,
+        "sha256": "a69232bd9a41bee59d1873f2705019d368b659808fc0141a868589c40207103e"
+      },
+      "predecessor": "tools/local_validation/lp18/test_pe.py"
+    },
+    "tools/local_validation/lp19/test_performance.py": {
+      "predecessor_pin": {
+        "bytes": 9401,
+        "sha256": "3d14cbabbba5da62d055431cd049250689c17896b62476f9a73b9b9bb30f1ff9"
+      },
+      "initial_successor_pin": {
+        "bytes": 9401,
+        "sha256": "3d14cbabbba5da62d055431cd049250689c17896b62476f9a73b9b9bb30f1ff9"
+      },
+      "predecessor": "tools/local_validation/lp18/test_performance.py"
+    },
+    "tools/local_validation/lp19/test_protocol.py": {
+      "predecessor_pin": {
+        "bytes": 29641,
+        "sha256": "fb10bfa1038156427bf4c3e2c3a4fe7b990ca92217f16f065f025a9b9f415c1b"
+      },
+      "initial_successor_pin": {
+        "bytes": 29641,
+        "sha256": "6628e3cac074be4c76007534fffb752caf42b2462bbf577a25595eaea1897b57"
+      },
+      "predecessor": "tools/local_validation/lp18/test_protocol.py"
+    },
+    "tools/local_validation/lq19/bootstrap_controls.ps1": {
+      "predecessor_pin": {
+        "bytes": 7643,
+        "sha256": "54e767b5722158ccbc1269530e72e14655737798f1209fc8994c1a9c4a1f0ce6"
+      },
+      "initial_successor_pin": {
+        "bytes": 7643,
+        "sha256": "e44348b3186365bc62cf3b5695e10edbb0619f42434acdeabdf239e5c221b602"
+      },
+      "predecessor": "tools/local_validation/lq18/bootstrap_controls.ps1"
+    },
+    "tools/local_validation/lq19/bootstrap_probe.ps1": {
+      "predecessor_pin": {
+        "bytes": 30576,
+        "sha256": "4a25bcc106339f2ba2ae9b03dc6e82af6161bbf20b8a14465d2dc8f91783a84f"
+      },
+      "initial_successor_pin": {
+        "bytes": 30569,
+        "sha256": "09f9cf390ba6620ae2a714894eb85b59a6c8dbe01428a9be2253343656b6fa1c"
+      },
+      "predecessor": "tools/local_validation/lq18/bootstrap_probe.ps1"
+    },
+    "tools/local_validation/lq19/build_l_native.ps1": {
+      "predecessor_pin": {
+        "bytes": 13210,
+        "sha256": "857c918682de7ca50c5ec558c425a919d576905909ceda14d09310fa6942a37a"
+      },
+      "initial_successor_pin": {
+        "bytes": 13210,
+        "sha256": "857c918682de7ca50c5ec558c425a919d576905909ceda14d09310fa6942a37a"
+      },
+      "predecessor": "tools/local_validation/lq18/build_l_native.ps1"
+    },
+    "tools/local_validation/lq19/caller_native.cs": {
+      "predecessor_pin": {
+        "bytes": 47482,
+        "sha256": "7e26c41a1ce680d3769d0cc643659b39d8545066d556b2ae4f664a5f418872e5"
+      },
+      "initial_successor_pin": {
+        "bytes": 47486,
+        "sha256": "91f660c73dd99f1d3a159a5e6b5c32b25ae211a7752971ba713c82838ec08b5a"
+      },
+      "predecessor": "tools/local_validation/lq18/caller_native.cs"
+    },
+    "tools/local_validation/lq19/child_entry.py": {
+      "predecessor_pin": {
+        "bytes": 19439,
+        "sha256": "2186d2f1a3ebe735ca2b8cc7500e6a6e41d90e92cea45bccb738c81031acc890"
+      },
+      "initial_successor_pin": {
+        "bytes": 19439,
+        "sha256": "2f749d4271d561012de5f11e666b7a456d8b8687a3abe25cb4117bfc23b7ce98"
+      },
+      "predecessor": "tools/local_validation/lq18/child_entry.py"
+    },
+    "tools/local_validation/lq19/invoke_q.ps1": {
+      "predecessor_pin": {
+        "bytes": 84952,
+        "sha256": "085b916892fa1022e8ee95025bc8ba9adc90ef87cf84e37206eeff4c0c18d41e"
+      },
+      "initial_successor_pin": {
+        "bytes": 84961,
+        "sha256": "cfda7481dbed068702395e34fd42b5cc09b5838fa2363df2a79cbeac2898c68d"
+      },
+      "predecessor": "tools/local_validation/lq18/invoke_q.ps1"
+    },
+    "tools/local_validation/lq19/job_adapter.py": {
+      "predecessor_pin": {
+        "bytes": 17059,
+        "sha256": "37052fa3c799cdb976b5e449c6a5ff32acce3d3a90afd4aed631ced32f0d64e9"
+      },
+      "initial_successor_pin": {
+        "bytes": 17059,
+        "sha256": "37052fa3c799cdb976b5e449c6a5ff32acce3d3a90afd4aed631ced32f0d64e9"
+      },
+      "predecessor": "tools/local_validation/lq18/job_adapter.py"
+    },
+    "tools/local_validation/lq19/l_native.py": {
+      "predecessor_pin": {
+        "bytes": 8172,
+        "sha256": "8e58941690efb83ed8804f0b299aab4ee8e9c6ef035a47bdc0740ff2e7de5b3d"
+      },
+      "initial_successor_pin": {
+        "bytes": 8172,
+        "sha256": "8e58941690efb83ed8804f0b299aab4ee8e9c6ef035a47bdc0740ff2e7de5b3d"
+      },
+      "predecessor": "tools/local_validation/lq18/l_native.py"
+    },
+    "tools/local_validation/lq19/native_reader.py": {
+      "predecessor_pin": {
+        "bytes": 31126,
+        "sha256": "8ee04b85f00b82b42567c1fcaee88d1a811f9429703884ddcf33994047dc5955"
+      },
+      "initial_successor_pin": {
+        "bytes": 31126,
+        "sha256": "8ee04b85f00b82b42567c1fcaee88d1a811f9429703884ddcf33994047dc5955"
+      },
+      "predecessor": "tools/local_validation/lq18/native_reader.py"
+    },
+    "tools/local_validation/lq19/protocol.py": {
+      "predecessor_pin": {
+        "bytes": 48601,
+        "sha256": "1014a1a68ea1dc92f13b9ba9929c67a89a9d33b6bf2b358692bd76ac106863fd"
+      },
+      "initial_successor_pin": {
+        "bytes": 48609,
+        "sha256": "323bf281e02c60e90e96e59e266524fe45314a5826f71e7f7e92478762ea7d26"
+      },
+      "predecessor": "tools/local_validation/lq18/protocol.py"
+    },
+    "tools/local_validation/lq19/README.md": {
+      "predecessor_pin": {
+        "bytes": 1064,
+        "sha256": "96f31d4510fe9f4f81be0d62e12bc597044644108828adb2482374d6c58f5cbd"
+      },
+      "initial_successor_pin": {
+        "bytes": 1064,
+        "sha256": "26b01a71a0d40fe2724fdc7752573f2bad021c16e034c12480267acb58133afb"
+      },
+      "predecessor": "tools/local_validation/lq18/README.md"
+    },
+    "tools/local_validation/lq19/supervisor.py": {
+      "predecessor_pin": {
+        "bytes": 38665,
+        "sha256": "78999c2f9f1525e49fd8f5e7debbe2f3d60837c898bb175ef72065c6d61a0374"
+      },
+      "initial_successor_pin": {
+        "bytes": 38669,
+        "sha256": "daeb77cf004148e0a0ff474584f7e31192eec5202a30b3f0f38dfa4cb5b6c9c1"
+      },
+      "predecessor": "tools/local_validation/lq18/supervisor.py"
+    },
+    "tools/local_validation/lq19/test_l_native.py": {
+      "predecessor_pin": {
+        "bytes": 6378,
+        "sha256": "f8203dc9675c23a29897f42b4c8ad5e508d60f6d5d17b9324d7d0415d57080c7"
+      },
+      "initial_successor_pin": {
+        "bytes": 6378,
+        "sha256": "f8203dc9675c23a29897f42b4c8ad5e508d60f6d5d17b9324d7d0415d57080c7"
+      },
+      "predecessor": "tools/local_validation/lq18/test_l_native.py"
+    },
+    "tools/local_validation/lq19/test_native_reader.py": {
+      "predecessor_pin": {
+        "bytes": 21795,
+        "sha256": "483fa03bf23906b369b321211e6fdf0f51d111aac63ea864eb432faa951ce2b9"
+      },
+      "initial_successor_pin": {
+        "bytes": 21795,
+        "sha256": "3b753b538c8330cfe34693c28846a6438d1073d0932518a75712d67765211176"
+      },
+      "predecessor": "tools/local_validation/lq18/test_native_reader.py"
+    },
+    "tools/local_validation/lq19/test_protocol.py": {
+      "predecessor_pin": {
+        "bytes": 21158,
+        "sha256": "7f6fa7cdd31c93643c2783174c10c81a30cad972f1124c43d12f85ff0951b484"
+      },
+      "initial_successor_pin": {
+        "bytes": 21158,
+        "sha256": "78e4b529b9ccfb5803236764fea5c0cd2cbd44b060b95f4f7ad4b789c31a81f0"
+      },
+      "predecessor": "tools/local_validation/lq18/test_protocol.py"
+    },
+    "tools/local_validation/lplan16/__init__.py": {
+      "predecessor_pin": {
+        "bytes": 69,
+        "sha256": "b2630f6a0f29da494573c8f529371f19c26fa1da665a078e7037e24c9c3c656a"
+      },
+      "initial_successor_pin": {
+        "bytes": 69,
+        "sha256": "b2630f6a0f29da494573c8f529371f19c26fa1da665a078e7037e24c9c3c656a"
+      },
+      "predecessor": "tools/local_validation/lplan15/__init__.py"
+    },
+    "tools/local_validation/lplan16/compiler.py": {
+      "predecessor_pin": {
+        "bytes": 150810,
+        "sha256": "ea593abd2688e69b7d5ccb3c3406002576fa70a132b0cfd9b23ee1e856bf0e60"
+      },
+      "initial_successor_pin": {
+        "bytes": 150810,
+        "sha256": "ea593abd2688e69b7d5ccb3c3406002576fa70a132b0cfd9b23ee1e856bf0e60"
+      },
+      "predecessor": "tools/local_validation/lplan15/compiler.py"
+    },
+    "tools/local_validation/lplan16/migration.py": {
+      "predecessor_pin": {
+        "bytes": 7399,
+        "sha256": "cfe711d507332d36deb35d55ef287a6a31d45376aebaf85540c20e531c85ae44"
+      },
+      "initial_successor_pin": {
+        "bytes": 7399,
+        "sha256": "cfe711d507332d36deb35d55ef287a6a31d45376aebaf85540c20e531c85ae44"
+      },
+      "predecessor": "tools/local_validation/lplan15/migration.py"
+    },
+    "tools/local_validation/lplan16/README.md": {
+      "predecessor_pin": {
+        "bytes": 29077,
+        "sha256": "c6f36e922baece0240e76bcc3d45a3672182ea58e59d49f3cf4c739ae5570712"
+      },
+      "initial_successor_pin": {
+        "bytes": 29077,
+        "sha256": "8f03c426a452c5d4aa6a9005b74f2e2bc7d34a243d8b156dad0592fd5174bac7"
+      },
+      "predecessor": "tools/local_validation/lplan15/README.md"
+    },
+    "tools/local_validation/lplan16/test_compiler.py": {
+      "predecessor_pin": {
+        "bytes": 551346,
+        "sha256": "4e999e04817b863e239c56b04b0b7cf761353edaa2ed30e186b6cb5f825c54b0"
+      },
+      "initial_successor_pin": {
+        "bytes": 551346,
+        "sha256": "a3c07134f091ee3806b1033a4680fbf7069c8a4b174741788dd423536dcb561b"
+      },
+      "predecessor": "tools/local_validation/lplan15/test_compiler.py"
+    }
+  },
+  "runtime_operations": 0,
+  "substitutions": [
+    "lp18/LP18 to lp19/LP19",
+    "lq18/LQ18 to lq19/LQ19",
+    "lplan15 to lplan16",
+    "old QD phase to held SC1 qualification phase",
+    "old disabled P phase to new disabled P phase"
+  ],
+  "schema": "cho51_sc1_namespace_copy_v1"
+}

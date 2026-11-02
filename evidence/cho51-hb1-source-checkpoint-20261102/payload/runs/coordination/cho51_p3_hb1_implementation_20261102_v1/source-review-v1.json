@@ -1,0 +1,30 @@
+{
+  "schema": "cho51_hb1_independent_source_review_v1",
+  "created_utc": "2026-11-02T11:31:50.2831998Z",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "findings": [],
+  "resolved_pre_freeze_observations": [
+    "nonzero_native_identity",
+    "explicit_expected_failure_xfail"
+  ],
+  "publisher": "project_root",
+  "reviewer": "qd_source_review",
+  "authors": [
+    "project_root",
+    "hb_frames_worker"
+  ],
+  "publication_kind": "verbatim independent peer message transcription",
+  "candidate": {
+    "sha256": "3b0aa0fa5aa1200d5bac456c1d7cfb021dc3abeb889a816fa11bbd54c40bc1a8",
+    "path": "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-candidate-v1.json",
+    "bytes": 51971
+  },
+  "review_text": "Status: ACCEPTED_SOURCE_ONLY\nFindings: []\nReviewer: qd_source_review. Implementation authors: project_root and hb_frames_worker. Root is the sole publisher of this review; the reviewer authored no implementation or metadata files.\n\nCandidate: runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-candidate-v1.json, 51,971 bytes, SHA256 3b0aa0fa5aa1200d5bac456c1d7cfb021dc3abeb889a816fa11bbd54c40bc1a8. File/hash inspection verified all288 candidate pins, all263 inherited pins unchanged from the accepted SC1 candidate, and all8,768 preservation-baseline inputs unchanged. The13-file HB1 package, implementation contract and implementation-map pin were reviewed; the seven accepted HB1 design inputs remain unchanged.\n\nSource reasoning: frames.py bounds the complete8-byte-prefix frame before slicing or decoding, checks strict header/body syntax, checksum, exact joins and supplied deadline/domain, and retains original peer bytes. common.py rejects duplicate keys, nonfinite/floating values, invalid Unicode, nonexact/overflow integers and excessive depth/container/nodes; encoding checks descendants during bounded traversal so callback-time mutation cannot bypass those checks. Hash updates remain bounded. Parsed OK claim/census bodies stay provider-schema UNAVAILABLE and every result remains unauthenticated. refusal.py always refuses the production-shaped interface; its separate model consumes failed/ambiguous transitions, prevents replay/rearm and never turns supplied replies or symbolic confirmation into durable provider evidence.\n\njoins.py charges every reservation at its full cap, including absent/failed/partial entries; checks exact main16 and optional distinct native-fixture16 correspondence, auxiliary limits, parent partitions, path/case/ancestor and physical aliases, present/absence facts and complete supplied census before deriving disjoint views. It cannot authenticate an actual producer domain, custody seal or native completeness. collection.py checks complete ordered identities, module pins, source/class/method membership, standard-loader/no-hook/full-module declarations and exact-false skip/deselection/expected-failure/xfail flags against frozen literals; it performs no discovery.\n\nTwo preliminary observations were corrected before freeze and are resolved: zero native volume/file identities now refuse with negative subcases; expected_failure and xfail are now required exact false with negative subcases. Inspection of all120 new test method bodies found no outstanding source/control-flow or expected-result defect. Literal text checks independently matched all580 original identities and32/100/384/10/19/35 memberships,120 new declarations across13 common/38 frame/30 refusal/25 join/14 collection methods, all28 module pins and the700-ID union digest c199fbab6803774c43d00a78f70a515771260cfd9d5ba359c0dd79c971bb51ec. The proposed VFY selection is184 identities. These are source/text observations, not executed collection or passing tests.\n\nLimits: read-only file/text/JSON/hash review only; no project execution, import, AST, compiler, native operation, tests, Git or file writes occurred. No production provider/adapter, original authentication, durable cross-session claim, native transport/cancellation/closure, actual loaded-code binding, complete attributed census, asynchronous review lifecycle, capture bound, finite runner or complete-Q feasibility is established. All120 methods and24 HB/40 SC/36 diagnostic scenarios remain unqualified; all original guards, controls and obligations remain. No admission, Q/P/scientific acceptance, speedup or second QD is granted. P stays disabled. The old a1f12701 QD operation remains INCOMPLETE_REFUSED17/16. Acceptance is limited to these exact source bytes.",
+  "review_text_sha256": "51d948e4279cbb7f741dca9c92e047a3dd64346fd6d510e6ad569c0f288bf7a4",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "qualification_accepted": false
+}

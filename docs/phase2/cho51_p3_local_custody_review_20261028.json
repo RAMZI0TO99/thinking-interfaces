@@ -1,0 +1,161 @@
+{
+  "schema": "cho51_p3_local_custody_design_source_review_v1",
+  "created_utc": "2026-10-28T15:13:43.5874645Z",
+  "reviewer": {
+    "agent": "custody_contract_review",
+    "role": "independent_design_and_contract_source_reviewer",
+    "source_author": "project_root",
+    "different_from_source_author": true
+  },
+  "status": "ACCEPTED_DESIGN_CONTRACT_SOURCES_ONLY",
+  "scope": "Independent static review of the custody-resolution design, README, three JSON Schemas and unexecuted acceptance matrix. No executable collector, verifier or controller is included or certified.",
+  "source_freeze": "Root explicitly declared the six design/contract sources frozen before sealing this review.",
+  "sources": {
+    "docs/phase2/cho51_p3_local_custody_design_20261028.md": {
+      "bytes": 14284,
+      "sha256": "057f2bbcec5af1dc18ea4050b4f1d46d419808fbd77c87bb9835d606aa05b2bd"
+    },
+    "docs/phase2/cho51_p3_local_custody_v1/README.md": {
+      "bytes": 1349,
+      "sha256": "847ac6bdd8f7980f598ff6c4e226a78d21a0ecf9724a6fdf77aebff416384cc0"
+    },
+    "docs/phase2/cho51_p3_local_custody_v1/boundary-evidence.schema.json": {
+      "bytes": 5498,
+      "sha256": "01f58b20d05a19b8acf451ec8f591990c70be9491eb3ee7230923f7787a7ce2a"
+    },
+    "docs/phase2/cho51_p3_local_custody_v1/disposition.schema.json": {
+      "bytes": 6922,
+      "sha256": "1078e7fc3ed1984b01a62f557a5b6691f2185b196dfcbfee0832949872f93e83"
+    },
+    "docs/phase2/cho51_p3_local_custody_v1/local-admission.schema.json": {
+      "bytes": 7014,
+      "sha256": "21340d93976cff09b1eb43270d31ec7335d1ebe15cbb9c08b0733c93d77fbdb5"
+    },
+    "docs/phase2/cho51_p3_local_custody_v1/acceptance-cases.json": {
+      "bytes": 8587,
+      "sha256": "784c71cc830c279091ebbdf51538eb282b44e5756ad67ab46bba7b715e65318b"
+    }
+  },
+  "source_review_accepted": true,
+  "unresolved_design_findings": [],
+  "resolved_findings": [
+    {
+      "id": "R1",
+      "issue": "Availability floors did not specify process/Job memory caps; bootstrap startup floor scope needed clarification.",
+      "resolution": "Admission requires process_mib=4096 and job_mib=5120. Design lines180-190 identifies these as proposed bootstrap limits, explains the 10GiB default startup floor and preserves the separately scoped 4GiB amendment. Actual native enforcement remains an implementation prerequisite."
+    },
+    {
+      "id": "R2",
+      "issue": "QPC start/end fields were unbounded integers despite the bounded-record claim.",
+      "resolution": "Boundary schema limits both to 0..9007199254740991. Mandatory verifier joins require finite/lossless parsing, explicit encoded-size/depth/node/string limits and calendar-valid UTC dates."
+    },
+    {
+      "id": "R3",
+      "issue": "Attempt directory accepted malformed UUID layouts and minimum semantic joins were not explicit.",
+      "resolution": "Admission directory now uses the same UUID layout as operation_id. Mandatory verifier joins require exact final-segment equality, create-once consumption, independent review/hash bindings, temporal ordering/windows, QPC/host/boot consistency, normalized contained paths, fresh capture, resource and local-stop checks."
+    }
+  ],
+  "static_assessment": {
+    "historical_failure_retained": "Bootstrap004 remains FAILED_UNRELEASED_CONSUMED. Fixed disposition/audit/failure-review hashes remain pinned and custody_closed, operation_released and retry_allowed remain false.",
+    "unavailable_positive_proof": "Original host/boot association is absent from the old packet and must be established independently with actual evidence. PID absence, a copied workspace, ordinary wall-clock boot time or acknowledgement alone cannot establish it.",
+    "provider_boundary": "The complete-OS-restart path is a proposed semantic boundary only. Authoritative Windows-provider guarantees and actual runtime qualification remain prerequisites; insufficient evidence stays UNRESOLVED and the positive operational path stays disabled.",
+    "no_restart_claim": "The design does not observe, request or authorize an automatic restart and does not claim a restart is currently necessary.",
+    "structural_contract": "Schema records and nested objects are closed; required artifact references have finite path/byte/hash constraints. The disposition conditional requires a complete nonnull boundary and empty reasons for ELIGIBLE, otherwise null boundary and nonempty reasons. Structural conformity supplies no factual authentication or launch authority.",
+    "admission_trust_boundary": "Disposition and boundary evidence have launch_authorized=false. A later Root one-operation admission is distinct and requires exact current joins, fresh entry checks, local stop, unused identity and independent review; accepted=true is not sufficient proof.",
+    "successor_invariants": "Retained original handle and generation, unknown-Start state, sticky refusal, owned cleanup, bounded diagnostics, actual caller return, both EOFs, reap, closure and payload checks remain required. A successful metadata exit cannot release failed custody.",
+    "no_circular_bootstrap": "Minimal observer/runtime dependencies require prior independent source review and finite local observation admission. Actual observation review must precede use by a different bootstrap operation.",
+    "limits": "Explicit future-bootstrap time/output/memory/resource/thread/GPU limits are design requirements only; no current resource reading or enforced runtime limit is claimed.",
+    "completion_boundary": "This accepted milestone is design and machine-readable contract sources only. Collector/verifier/controller implementation, independent implementation review, actual bounded validation and accepted operational disposition remain future work."
+  },
+  "file_checks": {
+    "strict_json": [
+      {
+        "path": "docs/phase2/cho51_p3_local_custody_v1/boundary-evidence.schema.json",
+        "strict_json_parse": true,
+        "duplicate_properties": 0
+      },
+      {
+        "path": "docs/phase2/cho51_p3_local_custody_v1/disposition.schema.json",
+        "strict_json_parse": true,
+        "duplicate_properties": 0
+      },
+      {
+        "path": "docs/phase2/cho51_p3_local_custody_v1/local-admission.schema.json",
+        "strict_json_parse": true,
+        "duplicate_properties": 0
+      },
+      {
+        "path": "docs/phase2/cho51_p3_local_custody_v1/acceptance-cases.json",
+        "strict_json_parse": true,
+        "duplicate_properties": 0
+      }
+    ],
+    "acceptance_matrix": {
+      "declared": 48,
+      "actual": 48,
+      "distinct_ids": 48,
+      "tests_executed": 0,
+      "executed_rows": 0
+    },
+    "local_links": [
+      {
+        "from": "docs/phase2/cho51_p3_local_custody_design_20261028.md",
+        "target": "../PROJECT_EXECUTION_POLICY.md",
+        "exists": true
+      },
+      {
+        "from": "docs/phase2/cho51_p3_local_custody_design_20261028.md",
+        "target": "cho51_p3_local_custody_v1/README.md",
+        "exists": true
+      },
+      {
+        "from": "docs/phase2/cho51_p3_local_custody_design_20261028.md",
+        "target": "cho51_p3_local_custody_v1/acceptance-cases.json",
+        "exists": true
+      },
+      {
+        "from": "docs/phase2/cho51_p3_local_custody_v1/README.md",
+        "target": "../cho51_p3_local_custody_design_20261028.md",
+        "exists": true
+      },
+      {
+        "from": "docs/phase2/cho51_p3_local_custody_v1/README.md",
+        "target": "../../PROJECT_EXECUTION_POLICY.md",
+        "exists": true
+      }
+    ],
+    "preservation": {
+      "baseline_path": "runs/coordination/cho51_p3_local_custody_20261028_v1/preservation-baseline_001.json",
+      "baseline_sha256": "d63735c921f3d5a8d3fe6aef389723c13c011c2626bcd8bc40c72c658cbbf7b8",
+      "declared_count": 80,
+      "checked": 80,
+      "mismatches": []
+    },
+    "method": "Native file/text inspection, strict JSON parse with duplicate-property enumeration, local link existence, file lengths and SHA256. No JSON Schema validator, executable helper, project test, fixture test, Python or native/live process/provider query was run."
+  },
+  "retained_state": {
+    "bootstrap004": "FAILED_UNRELEASED_CONSUMED",
+    "diagnostics005": "STATIC_SOURCE_IMPLEMENTED_REVIEWED_HELD_PRELAUNCH",
+    "candidate_tests_unexecuted": 117,
+    "guard_controls_unexecuted": 34,
+    "acceptance_cases_unexecuted": 48,
+    "accepted_final_scientific_cells": 0,
+    "final_scientific_cells_denominator": 1020,
+    "final_freeze_signed": false
+  },
+  "execution_claims": {
+    "executable_implementation_certified": false,
+    "schema_validation_executed": false,
+    "project_or_acceptance_tests_executed": false,
+    "machine_boundary_observed": false,
+    "event_to_host_binding_established": false,
+    "positive_operational_path_qualified": false,
+    "custody_disposition_issued": false,
+    "local_run_admission_issued": false,
+    "native_preparation_executed": false,
+    "bootstrap006_executed": false,
+    "scientific_work_executed": false,
+    "historical_cleanup_repaired": false,
+    "launch_authorized": false
+  }
+}

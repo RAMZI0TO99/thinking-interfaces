@@ -1,0 +1,36 @@
+{
+  "reviewer": "qd_source_review",
+  "authors": [
+    "project_root"
+  ],
+  "publisher": "project_root",
+  "runtime_admission": false,
+  "tests_executed": 0,
+  "qualification_accepted": false,
+  "scientific_admission": false,
+  "review_text_sha256": "506afc6f90275a0c8971852ce109e2a3ad1a645c818bb1deeee566ac4dfa2dd0",
+  "created_utc": "2026-11-02T10:18:02.1550541Z",
+  "candidate": {
+    "bytes": 7706,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v1.json",
+    "sha256": "dbc1d2333da30a67397b3bb2d406921f63b481057e91cbae4c3e0cfa736579ff"
+  },
+  "p_admitted": false,
+  "review_text": "HB1 candidate-v1 independent design review: CHANGES_REQUIRED. Candidate is 7,706 bytes, SHA256 dbc1d2333da30a67397b3bb2d406921f63b481057e91cbae4c3e0cfa736579ff. All 7 design files and 30 input pins match; all 23 roster-module sources match the accepted SC1 source manifest. Two findings remain. HB-D1[P2], binding.md:192–203 and qualification.md:112–117 require the parent join for the proposed inner native publisher fixture, but its reservations assign publisher roles/metadata UUID only to closeout and force every fixture to parent UUID/null role. This does not explicitly represent the inner 16-role publisher transaction or permit a conservation-checked inner view. Add a typed bounded COMPONENT_NATIVE-only fixture-publication mapping with a distinct once-only UUID, exact scenario and 16 role/path/cap correspondence; keep all inner and auxiliary charges in fixtures and the complete parent census, without filtering, production-view promotion or double counting. HB-D2[P2], binding.md:72–87 and readiness.maximum_response_frame_bytes specify a length-delimited header without its exact delimiter width/encoding, while the 135,168-byte frame maximum counts only 4,096+131,072. Specify the exact prefix and include every framing byte within the fixed frame cap; require prefix/header length agreement, bounded allocation, exact full-frame length, checksum, and truncation/extra-tail refusal. The proposed 8-byte lengths/4,088-byte effective header correction is acceptable in principle subject to exact revision review. Scope otherwise checked: disjoint 32/100/384/10/19/35 partitions total 580, exact ordered-union digest matches, VFY existing set is 64, and 24 HB scenarios remain separate from 40 SC/36 diagnostic obligations. The proposed 32-file fixture sum is exactly 4,194,304 bytes; the 6,291,456-byte escaped-control counterexample is correct. Provider provenance/durable consumption/complete domain, original-channel cancellation, loaded-code binding, asynchronous review lifecycle, complete capture and finite whole-operation budgets remain honest prerequisites, not established capabilities. Standalone parsing remains unauthenticated and cannot mint production projections. Provider availability stays NOT_ESTABLISHED and runtime readiness REFUSED_PENDING_PREREQUISITES; full-Q order/controls/one clock and all original caps/cleanup remain, with no second QD, P, science or old-operation recertification. No files were written and no project runtime/import/AST/compiler/native/tests/Git executed.",
+  "publication_kind": "verbatim independent peer message transcription",
+  "findings": [
+    {
+      "priority": 2,
+      "id": "HB-D1",
+      "summary": "Missing typed inner fixture publisher transaction"
+    },
+    {
+      "priority": 2,
+      "id": "HB-D2",
+      "summary": "Unspecified delimiter excluded from full frame cap"
+    }
+  ],
+  "schema": "cho51_hb1_independent_design_review_v1",
+  "runtime_operations": 0,
+  "status": "CHANGES_REQUIRED"
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "cho51_hb1_final_static_checks_v1",
+  "created_utc": "2026-11-02T11:36:23.6985327Z",
+  "author": "project_root",
+  "scope": "SOURCE_ONLY file/text/JSON/hash/link checks",
+  "candidate": {
+    "bytes": 51971,
+    "sha256": "3b0aa0fa5aa1200d5bac456c1d7cfb021dc3abeb889a816fa11bbd54c40bc1a8"
+  },
+  "source_pins_checked": 288,
+  "source_pin_mismatches": [],
+  "inherited_pins": 263,
+  "baseline_files": 8768,
+  "baseline_check_utc": "2026-11-02T11:30:00.4226253Z",
+  "baseline_mismatches": [],
+  "independent_baseline_verification": "source-review-v1.json confirms all8768",
+  "archive": {
+    "bytes": 1915,
+    "sha256": "e1d4e5c86bb5f176d5a3fd4e665c46cb98db1ef94a202a02af56eab159164b5d"
+  },
+  "archived_docs_checked": 12,
+  "archive_mismatches": [],
+  "document_pins": {
+    "AGENTS.md": {
+      "bytes": 7210,
+      "sha256": "c9367666112a55339446c291d845449cc64021a1177e6df344f9951fd3b713c4"
+    },
+    "HANDOFF.md": {
+      "bytes": 17849,
+      "sha256": "e6fc61c3948cb512c6a27c47ecaf22168d43d7ff805b5b4a5424466ecac5bbf5"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 6795,
+      "sha256": "8990d9a18aaadc0bcb2d895d30fd3e3bd41f45d44d3bebad19eae710305ecc3d"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 6956,
+      "sha256": "229e41fff4bb660b8836f4851568da386f52e1c1cfff5e200183d2a8c67fd14f"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6632,
+      "sha256": "6ccfadb8e5cdd8851cb32b825990a3dbd47c76bbe5b1890d278645540800d7a3"
+    },
+    "README.md": {
+      "bytes": 7623,
+      "sha256": "763a7e495f0bb288a111ef7cd85c2d854041095a6ad7899ba984dc62f5b050a8"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11228,
+      "sha256": "7f8120999198e61f2a96727375e9ea5693b26aa71641ac7d07fd2b23ac1c4487"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 12065,
+      "sha256": "71862ce8ab4a7ca23543e327118eab2ea7258a79eb96c804323e640cc6937986"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 12705,
+      "sha256": "8b5ef0c53e661f223e0f0ecf4b2a58e69fe120ff5d77a5515eff810eea89d336"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 24681,
+      "sha256": "f24dd2343dc8ae6c0e19b0e0c81f4012d1a94255939eb606a9dc9e7ac521b4ba"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 31267,
+      "sha256": "5746feaa0440a6e8b0197b9b53ee42038db606d70d25b71755f115f2d2c7e100"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 42684,
+      "sha256": "8c268645094709dbc3611ad938b06ff62ebac1d767481d53a05ada92362907b2"
+    },
+    "docs/phase2/cho51_p3_hb1_implementation_20261102.md": {
+      "bytes": 6052,
+      "sha256": "a50965b619d99fce2c9530ea989c3f58dec8a668cc652f99679d3196cc5bb8c4"
+    },
+    "docs/phase2/cho51_p3_hb1_implementation_contract_20261102.md": {
+      "bytes": 10634,
+      "sha256": "935b5ff6b1e0b39f3799cbebb57450bfeab4e4ad148013f358d77f27b319e927"
+    },
+    "tools/local_validation/hb1/README.md": {
+      "bytes": 1343,
+      "sha256": "10932c8fd8744ad411179c148e7fba402ff9640304b21b2ff048e9e87d911f27"
+    }
+  },
+  "local_links_checked": 490,
+  "broken_local_links": [],
+  "declared_closeout_links_pending_publication": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_hb1_implementation_20261102_v1\\final-static-checks.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_hb1_implementation_20261102_v1\\closeout-review.json"
+  ],
+  "new_method_text_count": 120,
+  "literal_total_id_count": 700,
+  "literal_module_pins_checked": 28,
+  "ordered_union_sha256": "c199fbab6803774c43d00a78f70a515771260cfd9d5ba359c0dd79c971bb51ec",
+  "proposed_verifier_selection": 184,
+  "all_current_phase_files_predeclared": true,
+  "phase_files_before_this_record": [
+    "coordination.json",
+    "implementation-map.json",
+    "preservation-baseline.json",
+    "root-source-acceptance.json",
+    "source-candidate-v1.json",
+    "source-review-v1.json"
+  ],
+  "remaining_publisher_file": "closeout-review.json",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "executed_collection": false,
+  "python_import_ast_compiler_native_git_executed": false,
+  "p_enabled": false,
+  "guards_preserved": true,
+  "obligations_discharged": 0
+}

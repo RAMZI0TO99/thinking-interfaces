@@ -1,0 +1,30 @@
+{
+  "files": {
+    "docs/phase2/cho51_p3_host_binding_v1/scenarios.json": {
+      "snapshot": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/draft-v1/scenarios.json",
+      "sha256": "b37de6750a9f953b82771c4d9c5e41484d773c80639e1412c2b0db02829eab1d",
+      "bytes": 10334
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/binding.md": {
+      "snapshot": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/draft-v1/binding.md",
+      "sha256": "8970e16475fbb9fe2ce0677f19136cea2c3aba2c003534bd7306314dec37f493",
+      "bytes": 17531
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/qualification.md": {
+      "snapshot": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/draft-v1/qualification.md",
+      "sha256": "b64d4474211a22e7b0eee1297f8dd6e6770dde02e332940cd7e938f2b61f37e8",
+      "bytes": 11590
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/readiness.json": {
+      "snapshot": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/draft-v1/readiness.json",
+      "sha256": "893a5f327ae05df881ddd213a26162c9cad418b532bb213a44161344c15f2cfb",
+      "bytes": 5031
+    }
+  },
+  "review": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/design-review-v1.json",
+  "created_utc": "2026-11-02T10:19:34.0240925Z",
+  "schema": "cho51_hb1_rejected_draft_v1",
+  "reason": "Preserve exact affected design bytes before HB-D1/HB-D2 corrections",
+  "runtime_operations": 0,
+  "candidate": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v1.json"
+}

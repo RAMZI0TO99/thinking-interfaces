@@ -1,0 +1,186 @@
+{
+  "schema": "cho51_startup_timing_event_design_v1",
+  "design_only": true,
+  "implemented": false,
+  "encoding": "ASCII JSON Lines; one object and LF per record; no BOM",
+  "closed_objects": true,
+  "limits": {
+    "records_per_role": 128,
+    "record_bytes_including_lf": 512,
+    "journal_bytes": 65536,
+    "initial_buffer_records": 16,
+    "initial_buffer_bytes": 8192,
+    "total_early_buffer_records": 32,
+    "total_early_buffer_bytes": 16384,
+    "initial_buffer_until": "S03 end",
+    "total_early_buffer_until": "S09 publishes the early prefix",
+    "buffers_share_final_sequence": true,
+    "free_text_fields": 0,
+    "normal_record_capacity": 122,
+    "reserved_final_capacity": 6,
+    "capacity_is_not_sequence_range": true
+  },
+  "integer_representation": {
+    "version": "JSON integer exactly1",
+    "all_other_integers": "ASCII decimal strings:0 or a nonzero digit followed by digits; no sign,fraction,exponent,leading zero; parse with checked exact integer arithmetic",
+    "qpc_and_utc_ticks": "positive signed-int64; UTC ticks use .NET UTC DateTime ticks from0001-01-01; successor must specify exact Python conversion without float",
+    "frequency": "positive signed-int64; exact caller QPC frequency",
+    "pid": "positive uint32; generation identity comes from original native caller/outer custody,not PID alone",
+    "counters": "nonnegative signed-int64; null only when explicitly unavailable at that stage"
+  },
+  "header": {
+    "exact_keys": [
+      "v",
+      "k",
+      "op",
+      "r",
+      "n",
+      "oq",
+      "fq",
+      "ou",
+      "pp",
+      "ah"
+    ],
+    "v": 1,
+    "k": "H",
+    "op": "canonical lowercase UUID of this one operation",
+    "r": [
+      "C",
+      "S"
+    ],
+    "n": "0",
+    "oq": "original caller QPC origin",
+    "fq": "original caller QPC frequency",
+    "ou": "original caller UTC ticks",
+    "pp": "producer PID,joined to original native process creation FILETIME in external custody records",
+    "ah": "64 lowercase hex digits of exact admission SHA256",
+    "required_count_per_journal": 1,
+    "header_does_not_prove": [
+      "caller authority",
+      "producer generation custody",
+      "file closure",
+      "Q acceptance"
+    ]
+  },
+  "stage_record": {
+    "exact_keys": [
+      "v",
+      "k",
+      "n",
+      "s",
+      "e",
+      "q",
+      "u",
+      "a",
+      "c",
+      "nf",
+      "nb",
+      "gs"
+    ],
+    "v": 1,
+    "k": "E",
+    "n": "next exact sequence1..127,never reset",
+    "s": "one stage ID in stages.json for this role",
+    "e": [
+      "begin",
+      "end",
+      "fail",
+      "mark"
+    ],
+    "q": "absolute event QPC,not elapsed floating seconds",
+    "u": "absolute event UTC ticks",
+    "a": [
+      "pending",
+      "verified"
+    ],
+    "c": [
+      "ok",
+      "prefix_stop",
+      "input",
+      "authority",
+      "clock",
+      "resource",
+      "stop",
+      "capacity",
+      "io",
+      "identity",
+      "custody",
+      "deadline",
+      "unknown"
+    ],
+    "nf": "completed file count for this stage or null",
+    "nb": "completed byte count for this stage or null",
+    "gs": "snapshot of existing owner guard sample count or null",
+    "counter_semantics": "Stage-local completed work only; begin uses0 if known; count at successful existing loop update,never move a validation earlier or skip one. No per-file events or invented completion from length-only metadata."
+  },
+  "terminal_record": {
+    "exact_keys": [
+      "v",
+      "k",
+      "n",
+      "q",
+      "u",
+      "c",
+      "lv"
+    ],
+    "v": 1,
+    "k": "T",
+    "n": "Next contiguous actual sequence1..127; consumes final capacity regardless of its absolute index",
+    "q": "absolute QPC",
+    "u": "absolute UTC ticks",
+    "c": [
+      "ready_for_original_close",
+      "incomplete",
+      "journal_fault"
+    ],
+    "lv": [
+      "complete",
+      "incomplete",
+      "unknown"
+    ],
+    "lv_scope": "owner-local final input/output verification only; never original handle closure or the other role's verification",
+    "cannot_self_certify_close": true
+  },
+  "validation": [
+    "Require exact key/type/token sets and record caps before append and on readback.",
+    "Header0 occurs exactly once first; later sequences are contiguous and all records belong to that role/op/domain.",
+    "QPC and UTC never precede caller origin or move backwards within the role; cross-role overlap is allowed and must not be summed as exclusive duration.",
+    "An end matches a live begin for the same fixed stage; only declared build subspans may nest. No repeated completed stages. Marks have no invented duration.",
+    "Only the normal successful authority check permits pending->verified; it never flips back. Source-stage map defines that transition.",
+    "After first failure or normal-capacity exhaustion,only the declared final-capacity suffix is eligible; no normal record resumes and the substantive failure stays latched.",
+    "No record follows a terminal; malformed/torn/extra bytes are retained but refuse diagnostic acceptance.",
+    "Counters are nondecreasing within their span,never compared as a global total across overlapping stages. A null is unavailable,not0.",
+    "External original process generation/native file descriptors bind raw journals; JSON consistency and PID alone are insufficient.",
+    "Only independent actual review may adopt OBSERVED_PREFIX_ONLY; every result remains qualification_accepted=false."
+  ],
+  "derived_timing": "After exact subtraction in integer domain,store numerator ticks and denominator frequency; a displayed decimal is a convenience only. Do not route native timestamps through binary-floating JSON numbers.",
+  "prohibited": [
+    "source text",
+    "paths",
+    "arbitrary exceptions",
+    "stack traces",
+    "environment values",
+    "per-file names",
+    "child telemetry",
+    "stdout journal lines",
+    "renewed origin",
+    "Q authority flags"
+  ],
+  "capacity_classification": {
+    "transition": "First final record permanently ends normal pool; no padding or unused-capacity borrowing",
+    "normal": "Header and ordinary paired/prefix-stop records",
+    "success": {
+      "supervisor": {
+        "terminal_sequence": 41,
+        "normal": 40,
+        "final": 2
+      },
+      "caller": {
+        "terminal_sequence": 58,
+        "normal": 57,
+        "final": 2
+      }
+    },
+    "final": "First failure marker,at most one secondary journal-fault marker,role ready-to-close mark C29/S21,and terminal"
+  }
+}

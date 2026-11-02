@@ -1,0 +1,180 @@
+"""Fresh guard predicates and deferred final verification; Q4 fixtures only."""
+import hashlib
+from pathlib import Path
+from types import SimpleNamespace
+import unittest
+
+from . import supervisor as s
+from . import manifest as m
+from . import native_reader as nr
+from .test_manifest import recipe
+from ..v1.records import Refusal
+
+FIXTURE_ROOT = None
+RAW = b'{"fixture":1}'
+
+
+class FreshAbsenceTests(unittest.TestCase):
+    def test_ast_scope_requires_exact_retained_bytes_and_filename(self):
+        raw=b'raise RuntimeError("must never execute")\n';path='D:/fixture/inert.py'
+        pins={path:{'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}}
+        self.assertTrue(s.matches_ast_input(raw,path,pins))
+        for source,name,scope in ((raw+b'pass\n',path,pins),(raw,'D:/other.py',pins),(raw.decode(),path,pins),(raw,path,{})):
+            self.assertFalse(s.matches_ast_input(source,name,scope))
+        self.assertFalse(s.matches_ast_input(raw, '<string>', pins))
+        modules = {'ast': s.ast, 'tokenize': s.tokenize}
+        runtime = {str(Path(module.__file__).absolute()): {} for module in modules.values()}
+        self.assertTrue(s.inventory_bootstrap_ready(runtime, modules))
+        for name in modules:
+            missing = dict(modules); missing.pop(name)
+            replaced = dict(modules); replaced[name] = SimpleNamespace(__file__=modules[name].__file__)
+            for state in (missing, replaced):
+                with self.assertRaises(ValueError):
+                    s.inventory_bootstrap_ready(runtime, state)
+            unpinned = dict(runtime); unpinned.pop(str(Path(modules[name].__file__).absolute()))
+            with self.assertRaises(ValueError):
+                s.inventory_bootstrap_ready(unpinned, modules)
+        hooks = []
+        allow = s.install_audit({'sources': {}, 'runtime': {'files': runtime}},
+            Path('D:/fixture/admission.json'), Path('D:/fixture/cache'),
+            Path('D:/fixture/output'), register=hooks.append)
+        self.assertEqual(len(hooks), 1)
+        audit = hooks[0]
+        allow.ast_inputs = pins
+        audit('compile', (raw, path))
+        for source, filename in ((raw+b'pass\n', path), (raw, '<string>')):
+            with self.assertRaises(PermissionError):
+                audit('compile', (source, filename))
+        for filename in (path, '<string>'):
+            with self.assertRaises(PermissionError):
+                audit('exec', (SimpleNamespace(co_filename=filename),))
+        allow.ast_inputs = {}
+        with self.assertRaises(PermissionError):
+            audit('compile', (raw, path))
+
+    def test_attribute_predicate_resamples_and_rejects_ancestor_errors_and_flags(self):
+        leaf=str(Path('D:/fixture/stop.json'));calls=[]
+        state={'ancestor':(0x10,0),'leaf':(None,2)}
+        def query(path):
+            calls.append(path);return state['leaf' if path==leaf else 'ancestor']
+        s.absent_attributes(leaf,query);s.absent_attributes(leaf,query)
+        expected=(*s.lexical_ancestors(leaf),leaf)
+        self.assertEqual(tuple(calls),expected+expected)
+        for value in ((None,2),(None,3),(None,5),(None,32),(0x410,0),(0x50,0),(0,0)):
+            with self.subTest(ancestor=value):
+                state['ancestor']=value
+                with self.assertRaises((OSError,ValueError)):s.absent_attributes(leaf,query)
+
+    def test_attribute_leaf_missing_only_and_unknown_or_present_refusal(self):
+        leaf=str(Path('D:/fixture/stop.json'));state={'leaf':(None,2)}
+        def query(path):return state['leaf'] if path==leaf else (0x10,0)
+        for error in (2,3):
+            state['leaf']=(None,error);s.absent_attributes(leaf,query)
+        for value in ((None,0),(None,5),(None,32),(0,0),(0x400,0),(0x10,0),(True,0),(0x10,5)):
+            with self.subTest(leaf=value):
+                state['leaf']=value
+                with self.assertRaises((OSError,ValueError)):s.absent_attributes(leaf,query)
+    def fake(self):
+        leaf = str(Path("D:/fixture/stop.json"))
+        state = {"leaf": "absent", "ancestor": 0x10, "calls": []}
+        def query(path, *, follow_symlinks):
+            self.assertIs(follow_symlinks, False)
+            state["calls"].append(path)
+            if path == leaf:
+                if state["leaf"] == "absent":
+                    raise FileNotFoundError(path)
+                if state["leaf"] == "unknown":
+                    raise PermissionError(path)
+                return SimpleNamespace(st_file_attributes=0)
+            return SimpleNamespace(st_file_attributes=state["ancestor"])
+        return leaf, state, query
+
+    def test_cached_lexical_tuple_still_resamples_every_ancestor_and_leaf(self):
+        leaf, state, query = self.fake()
+        expected = (*s.lexical_ancestors(leaf), leaf)
+        s.absent(leaf, query)
+        s.absent(leaf, query)
+        self.assertEqual(tuple(state["calls"]), expected + expected)
+
+    def test_changed_ancestor_reparse_or_nondirectory_refuses_after_cache_hit(self):
+        leaf, state, query = self.fake()
+        s.absent(leaf, query)
+        for attributes in (0x410, 0, 0x50):
+            with self.subTest(attributes=attributes):
+                state["ancestor"] = attributes
+                with self.assertRaises(ValueError):
+                    s.absent(leaf, query)
+
+    def test_unknown_leaf_never_becomes_cached_absence(self):
+        leaf, state, query = self.fake()
+        s.absent(leaf, query)
+        state["leaf"] = "unknown"
+        with self.assertRaises(PermissionError):
+            s.absent(leaf, query)
+
+    def test_present_leaf_refuses_after_previous_true_absence(self):
+        leaf, state, query = self.fake()
+        s.absent(leaf, query)
+        state["leaf"] = "present"
+        with self.assertRaisesRegex(ValueError, "required absent path exists"):
+            s.absent(leaf, query)
+
+
+class ProvisionalPreparationTests(unittest.TestCase):
+    def setUp(self):
+        self.assertIsNotNone(FIXTURE_ROOT)
+        self.root = Path(FIXTURE_ROOT) / self._testMethodName
+        self.root.mkdir()
+        (self.root / "input").mkdir()
+        (self.root / "outputs").mkdir()
+        self.path = self.root / "input" / "a.json"
+        self.path.write_bytes(RAW)
+        self.value = recipe(self.root.as_posix())
+        self.reader = nr.RetainedReader(lambda: True)
+        self.addCleanup(self.reader.close)
+        self.outputs = nr.RetainedOutputs(self.reader, (self.root / "outputs").as_posix())
+        self.addCleanup(self.outputs.close)
+        self.pins = {self.path.as_posix(): {"bytes": len(RAW), "sha256": hashlib.sha256(RAW).hexdigest()}}
+
+    def prepared(self):
+        prepared = m.prepare(self.reader, self.value, self.pins, self.outputs)
+        self.assertFalse(prepared.index["final_input_verification_established"])
+        self.assertFalse(prepared.index["launch_authorized"])
+        return prepared
+
+    def test_native_attribute_guard_missing_then_present_leaf_and_missing_ancestor(self):
+        query=s.NativeAttributeQuery()
+        leaf=self.root/'guard-leaf.json'
+        s.absent_attributes(leaf,query)
+        leaf.write_bytes(RAW)
+        with self.assertRaisesRegex(ValueError,'required absent path exists'):s.absent_attributes(leaf,query)
+        with self.assertRaises(OSError):s.absent_attributes(self.root/'missing-parent'/'leaf.json',query)
+
+    def test_added_selected_member_after_provisional_publication_refuses_final_verify(self):
+        prepared = self.prepared()
+        (self.root / "input" / "b.json").write_bytes(RAW)
+        with self.assertRaises(Refusal):
+            prepared.verify()
+        self.assertFalse(prepared.index["final_input_verification_established"])
+
+    def test_added_unselected_member_after_provisional_publication_refuses_final_verify(self):
+        self.value["selectors"][0].pop("recursive_extensions")
+        self.value["selectors"][0]["recursive_basenames"] = ["a.json"]
+        prepared = self.prepared()
+        (self.root / "input" / "unselected.json").write_bytes(RAW)
+        with self.assertRaises(Refusal):
+            prepared.verify()
+
+    def test_optional_absence_changed_after_provisional_publication_refuses_final_verify(self):
+        self.value["selectors"][0]["optional_exact"] = ["optional.json"]
+        prepared = self.prepared()
+        (self.root / "optional.json").write_bytes(RAW)
+        with self.assertRaises(Refusal):
+            prepared.verify()
+
+
+
+
+
+
+

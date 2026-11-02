@@ -1,0 +1,443 @@
+{
+  "schema": "cho51_startup2_actual_review_v1",
+  "status": "ACCEPTED_STARTUP2_TESTED_SCOPE",
+  "operation_id": "b91d4965-594c-4bc2-951c-26ddf7de9e61",
+  "reviewer": "l_actual_review",
+  "authors": [
+    "project_root",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T11:02:23.9728616Z",
+  "source_review_sha256": "d3bed7da0b8c167b550df3fb0cfbfdf03d0e3524bbb0139c05f82e7f9e5a6b05",
+  "startup_source_review_sha256": "c526849fd6deaeff1b28d08ad98ccdedee5ec2c1902d30cd83c83be9dd13a5c3",
+  "accepted_controller_sources": {
+    "D:/Aenv/pro3/tools/local_validation/startup2/malformed_probe.ps1": {
+      "sha256": "edf98ce2591c9698155518ea6cfedf1309ae8eb6f7816ad89bedc07de836a7d5",
+      "bytes": 877
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/README.md": {
+      "sha256": "909c9be1c3053ea1c07dd5dd96b264d1a5c1a745211fb901d8d6a4a415224a0f",
+      "bytes": 17632
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/empty_probe.ps1": {
+      "sha256": "570eefa7ffdf143a7ad228b8f6db9ad0bfac1367a089e97ae863f411687d3ec5",
+      "bytes": 465
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/reordered_probe.ps1": {
+      "sha256": "86ca363eb1aae01c441a93b68af8646d07eb1ba23555e1a05d4c862dd8a476bf",
+      "bytes": 900
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/__init__.py": {
+      "sha256": "ec9d93ef3bdbb0ca7366bf5630948fc6b9778c25ab8f4f79f6719b28ec20fd47",
+      "bytes": 78
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/partial_probe.ps1": {
+      "sha256": "110bbfbddae5dd5025a839c7ada991f4f41feb52ffa02405a26cb5cc9f7ff598",
+      "bytes": 823
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/contract.py": {
+      "sha256": "f26c0b526233f3c3c575d8d4034b4dff1eb426a1c4b103f46fb587aa7ec792f5",
+      "bytes": 16236
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/stall_probe.ps1": {
+      "sha256": "506aa8b617807afdcc37394fca913b655752df926ba13320aa69afd36406ce58",
+      "bytes": 880
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/test_diagnostic.py": {
+      "sha256": "d5bb4e40e17b69a99bb3746a6adb7e1595734c32fa3f5856e9b2f568be686717",
+      "bytes": 13956
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/diagnostic.ps1": {
+      "sha256": "83b387dbeafaf46ac482d365c5ed25d324b4613c7626d562f95f916c2e56629b",
+      "bytes": 44573
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/fast_probe.ps1": {
+      "sha256": "e14b379c5a2a3cf19d9ef03c06cff44caecf31ee288eea221333af711c69a667",
+      "bytes": 870
+    },
+    "D:/Aenv/pro3/tools/local_validation/startup2/pdh_probe.ps1": {
+      "sha256": "284282d0922843c7661bac8016bf5fab8dd95d31ababc7da05cdcda178961047",
+      "bytes": 1843
+    }
+  },
+  "controls": [
+    "fast",
+    "stall"
+  ],
+  "controller_control_names": [
+    "fast",
+    "stall",
+    "empty",
+    "malformed",
+    "reordered",
+    "partial",
+    "review_findings",
+    "review_identity"
+  ],
+  "controller_control_outcomes": [
+    {
+      "name": "fast",
+      "operation_id": "5eac4310-2c06-43b5-930b-0a533b6aa3c5",
+      "expectation": "observed",
+      "actual_controller_exit_code": 0,
+      "status": "observed_diagnostic_only",
+      "failure": null,
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 2,
+      "marker_error": null,
+      "observation": {
+        "bytes": 53445,
+        "native_identity": "7a7c35f67c35ae2f:1e5b5f00000002000000000000000000",
+        "sha256": "bc46a908cd5a75e2da0d812710392e9a0f1d4a06d1df7d71563745bc144e2464",
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/5eac4310-2c06-43b5-930b-0a533b6aa3c5/observation.json"
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "stall",
+      "operation_id": "01fe88ef-9a0a-4fc6-8da3-8dba1f92f55f",
+      "expectation": "observed",
+      "actual_controller_exit_code": 0,
+      "status": "observed_diagnostic_only",
+      "failure": null,
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 1,
+      "marker_error": null,
+      "observation": {
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/01fe88ef-9a0a-4fc6-8da3-8dba1f92f55f/observation.json",
+        "sha256": "fc2a24bbeb4df9d6efb12c338336b70335ef2f0a7860ebe266dd6864400f2bdf",
+        "bytes": 53658,
+        "native_identity": "7a7c35f67c35ae2f:2d5b5f00000002000000000000000000"
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "empty",
+      "operation_id": "a488bd4d-7a62-44a2-a902-8c1506ce910f",
+      "expectation": "marker_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "marker evidence refused: nonempty marker evidence required",
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 0,
+      "marker_error": "nonempty marker evidence required",
+      "observation": {
+        "sha256": "32b9502eab4ca5874b69984933d12a9efafa9ffad85d6a06bdd6fc014350a2f7",
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/a488bd4d-7a62-44a2-a902-8c1506ce910f/observation.json",
+        "bytes": 53409,
+        "native_identity": "7a7c35f67c35ae2f:3a5b5f00000002000000000000000000"
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "malformed",
+      "operation_id": "0cb926de-b0e3-430f-b8b3-2d19460dbf87",
+      "expectation": "marker_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "marker evidence refused: Exception calling \"Parse\" with \"2\" argument(s): \"Expected depth to be zero at the end of the JSON payload. There is an open JSON object or array that should be closed. LineNumber: 0 | BytePositionInLine: 10.\"",
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 1,
+      "marker_error": "Exception calling \"Parse\" with \"2\" argument(s): \"Expected depth to be zero at the end of the JSON payload. There is an open JSON object or array that should be closed. LineNumber: 0 | BytePositionInLine: 10.\"",
+      "observation": {
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/0cb926de-b0e3-430f-b8b3-2d19460dbf87/observation.json",
+        "sha256": "01179a3d64e22487631ad1b2b9fdb0014e744f6bd9395a3be8ee0b8a637fa66b",
+        "bytes": 53862,
+        "native_identity": "7a7c35f67c35ae2f:485b5f00000002000000000000000000"
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "reordered",
+      "operation_id": "48a2e286-623d-40af-9e48-4f22a8dd0605",
+      "expectation": "marker_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "marker evidence refused: ordered marker prefix",
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 0,
+      "marker_error": "ordered marker prefix",
+      "observation": {
+        "sha256": "374f1c8cb3792575da53f59507f9389f9b118bb9149cbaaa63333a4836e640c6",
+        "native_identity": "7a7c35f67c35ae2f:555b5f00000002000000000000000000",
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/48a2e286-623d-40af-9e48-4f22a8dd0605/observation.json",
+        "bytes": 53403
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "partial",
+      "operation_id": "0a6db512-0b99-4722-8f6a-e362bf229919",
+      "expectation": "marker_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "marker evidence refused: complete fast markers required",
+      "authority_verified": true,
+      "inner_owned_lifecycle": "CLOSED",
+      "final_input_verification": true,
+      "final_output_verification": true,
+      "original_streams_closed": true,
+      "marker_count": 1,
+      "marker_error": "complete fast markers required",
+      "observation": {
+        "bytes": 53684,
+        "sha256": "c713014acf61ffb2063cc6db16d63f4f8c71dcd11f1d7d04e7c10081016200eb",
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-attempts/0a6db512-0b99-4722-8f6a-e362bf229919/observation.json",
+        "native_identity": "7a7c35f67c35ae2f:635b5f00000002000000000000000000"
+      },
+      "output_layout": "EXACT_FIVE_FILES_FOUR_PLAIN_DIRECTORIES_EMPTY_PROFILE_LEAF",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "review_findings",
+      "operation_id": "1eee02ae-69fa-486f-97c6-309cfa232e23",
+      "expectation": "review_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "RuntimeException: unresolved startup source review findings",
+      "authority_verified": false,
+      "inner_owned_lifecycle": "NOT_CREATED_PRE_AUTHORITY",
+      "final_input_verification": false,
+      "final_output_verification": false,
+      "original_streams_closed": true,
+      "marker_count": 0,
+      "marker_error": null,
+      "observation": null,
+      "output_layout": "ABSENT",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    },
+    {
+      "name": "review_identity",
+      "operation_id": "7420a8a5-fe79-4ccc-a865-eaf01b12fb84",
+      "expectation": "review_refused",
+      "actual_controller_exit_code": 1,
+      "status": "refused",
+      "failure": "RuntimeException: startup source review reviewer identity",
+      "authority_verified": false,
+      "inner_owned_lifecycle": "NOT_CREATED_PRE_AUTHORITY",
+      "final_input_verification": false,
+      "final_output_verification": false,
+      "original_streams_closed": true,
+      "marker_count": 0,
+      "marker_error": null,
+      "observation": null,
+      "output_layout": "ABSENT",
+      "probe_exit_code": null,
+      "termination_cause": "unobserved"
+    }
+  ],
+  "actual_tool_exit_code": 0,
+  "external_caller_elapsed_seconds": 57.591645,
+  "owned_lifecycle_closed": true,
+  "new_operation_owned_lifecycle_closed": true,
+  "tests_run": 124,
+  "tests_successful": true,
+  "test_errors": 0,
+  "test_failures": 0,
+  "test_skips": 0,
+  "test_expected_failures": 0,
+  "test_unexpected_successes": 0,
+  "timestamp_controls_passed": 8,
+  "native_fault_controls_passed": 2,
+  "syntax_checks_passed": 8,
+  "controller_controls_passed": 8,
+  "final_input_verification": true,
+  "findings": [],
+  "pin_checks": {
+    "Q_sources": 59,
+    "accepted_controller_sources": 12,
+    "python_runtime_files": 732,
+    "managed_compiler_files": 169,
+    "diagnostic_host_files": 307,
+    "preserved_predecessor_files": 3967,
+    "byte_hash_drift": 0,
+    "active_saved_reference_pins_checked": 363,
+    "reference_mismatches": 0,
+    "ordered_124_unique_method_roster_matches_admission": true,
+    "root_scope_source_review_admission_maps_match": true,
+    "exact_D2_sources_covered_by_Q3_review": true,
+    "eight_capsules_bound_to_Q3_admission": true,
+    "source_reviews_precede_admission": true
+  },
+  "evidence": [
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/source-review.json",
+      "bytes": 12596,
+      "sha256": "d3bed7da0b8c167b550df3fb0cfbfdf03d0e3524bbb0139c05f82e7f9e5a6b05"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/runtime-refresh.json",
+      "bytes": 345164,
+      "sha256": "a45784f7fe4a7466764053b5ece78171054ea873b0f9057f66780a7b89290a58"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/preservation-baseline.json",
+      "bytes": 981462,
+      "sha256": "30d052deb734c93d66d51cb4315dead1a1075ed374d55dad8da97782ed9f08de"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/root-scope_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 16038,
+      "sha256": "ff5174c3dabdae65ed5d7eeb321eeb98cff067ec4eb6c5151944b31942bea67b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/admission_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 285711,
+      "sha256": "6dbb457bd1180873ab56c77c6c0fddca7de063195f81837b40e53704f28bb8d1"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/control-index_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 3504,
+      "sha256": "1a1c4f46e224103a2b36b1968afb91a663c0642a6deab8e4f2c09cb9797e8529"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/preflight_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 856,
+      "sha256": "48a315d1b53ba38b0d4fb26f1be5c51c4511d681b84203d8f757d3d79aefdfc2"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/bootstrap_b91d4965-594c-4bc2-951c-26ddf7de9e61.jsonl",
+      "bytes": 5761,
+      "sha256": "b4a1c12e84cc7f0e266d94372e8d6d109b04253b2b4521fabb09d71b048fa873"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/caller-return_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 397028,
+      "sha256": "3ec4765a3b9b83fbd931cc396d692e446abb52fd41514f77a234632ad3831beb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/tool-return_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 415982,
+      "sha256": "1fc0a862a93fec2c620f63e041550d41765b7f7c69224308044f970042a76c36"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/timestamp-controls_b91d4965-594c-4bc2-951c-26ddf7de9e61.json",
+      "bytes": 950,
+      "sha256": "07fc1fece812ff36cf3c0603b55442a8c7a0e91e681af0a34e2861dff0f07aa0"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/attempts/b91d4965-594c-4bc2-951c-26ddf7de9e61/test-report.json",
+      "bytes": 33774,
+      "sha256": "3c5a3984fa99d1a75f39251a45fc442493a5f0bf647a43e01fb27e5cedaf7a0a"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/attempts/b91d4965-594c-4bc2-951c-26ddf7de9e61/payload.json",
+      "bytes": 4191,
+      "sha256": "521666cd052462c10af52004a946d2bf738d2e524041a761c3edaf6e7a727be4"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_startup_diagnostic_20261031_q3/attempts/b91d4965-594c-4bc2-951c-26ddf7de9e61/receipt.json",
+      "bytes": 4109,
+      "sha256": "5ee247da4867a558c92ab77822edf67a1558bee6e1b123d35151f3ba001a8d02"
+    },
+    {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_startup_diagnostic_20261031_d2/source-review.json",
+      "bytes": 3755,
+      "sha256": "c526849fd6deaeff1b28d08ad98ccdedee5ec2c1902d30cd83c83be9dd13a5c3"
+    }
+  ],
+  "closure": {
+    "nine_outer_original_Job_process_pipe_lifecycles_closed": true,
+    "six_probe_original_Job_process_pipe_lifecycles_closed": true,
+    "three_Python_child_lifecycles_closed": true,
+    "two_pre_authority_inner_lifecycles": "NOT_CREATED",
+    "thirty_declared_artifact_native_identity_joins_and_hashes_match": true,
+    "thirty_native_ids_unique": true,
+    "six_controller_final_input_output_checks_passed": true,
+    "two_pre_authority_outputs_absent": true,
+    "Python_retained_inputs_outputs_closed": true,
+    "unused_sampler_empty_Job_and_watchdog_closed": true,
+    "sampler_process_creation_attempted": false,
+    "Q_original_file_handles_closed": true,
+    "Q_journal_closed": true,
+    "journal_bytes": 5761,
+    "journal_records": 16,
+    "Q_guard_done_joined_closed_completion_wait_closed": true,
+    "Q_guard_error": null,
+    "Q_guard_shutdown_seconds": 0.1006194,
+    "final_original_input_verification": true,
+    "interpretation": "Positive closure covers only created original owned lifecycles. The two deliberate pre-authority refusals retain inner owned_lifecycle_closed false, custody null, guard zero/false state, no observation/output, and original_streams_closed true. Their original outer controller processes are reaped and closed; no inner closure or final verification is fabricated."
+  },
+  "clocks_and_resources": {
+    "Q_external_elapsed_seconds": 57.591645,
+    "Q_bootstrap_second_sample_elapsed_seconds": 0.7023546,
+    "Q_guard_shutdown_seconds": 0.1006194,
+    "outer_minimum_available_ram_bytes": 10301054976,
+    "outer_minimum_free_disk_bytes": 88359014400,
+    "Q_guard_minimum_available_ram_bytes": 10305507328,
+    "Q_guard_minimum_free_disk_bytes": 88358617088,
+    "Q_guard_peak_private_bytes": 157433856,
+    "maximum_outer_process_bytes": 91222016,
+    "maximum_outer_Job_bytes": 132636672,
+    "maximum_Python_child_process_bytes": 39931904,
+    "maximum_Python_child_Job_bytes": 46080000,
+    "maximum_controller_elapsed_seconds": 5.6356811,
+    "six_Dispose_targets_exactly_five_original_seconds": true,
+    "six_cancel_observation_delays_within_quarter_second": true,
+    "sequential_controller_then_Python_order": true,
+    "interpretation": "Original Q90/60/5 and5/65 bootstrap bounds,512/768 MiB process/Job caps,4 GiB startup/active RAM and20 GiB disk floors remain unchanged and satisfied in the recorded scope. Six diagnostic callbacks join around their five-second targets, within original10-second cleanup/15-second return bounds. Probe exits/termination branches remain unavailable."
+  },
+  "checks": [
+    "Independent source/result roles: l_actual_review differs from l_source_review and authors project_root/l_author_finish. This review used saved text/JSON/file/hash inspection only; no Python, AST, compiler, tests, native/process probes or Git execution. Applicable project rules and startup implementation/cache/scalar successor contracts were read.",
+    "Rehashed59 Q sources, exact12 absolute D2 source pins,732 Python runtime,169 compiler,307 host and3967 preservation pins: zero drift.363 active saved references match lengths/hashes; Q source/admission/root maps, exact D2 source coverage, predecessor/helper references and eight capsule/index/enclosing-admission joins match. Individual inventories remain in referenced manifests.",
+    "Verified124 exact ordered unique admitted method IDs and successful true, with zero errors/failures/skips/expected failures/unexpected successes. Eight UTC and eight zero-error syntax controls passed. Python actual badframe and stall children refused extra frame bytes/session deadline with owned termination and complete process/Job/result-pipe closure; payload and receipt operation states match.",
+    "Nine original outer operations are in exact order: six probe controllers, two pre-authority controls, then Python. All original queried Jobs, processes/threads/NUL, pipe readers/writers/thread handles close; strict EOF, reader/watchdog joins, reaping and empty Jobs are true with no cleanup/stream faults or overflow. The three Python children also close; original supervisor retained input/output closure is true.",
+    "Six actual controller reports have authority/native IDs, joined Dispose callback, owned closure, original stream closure and final input/output verification true. Thirty recorded file native identities are unique and join claim/stdout/stderr/observation manifests, lengths and hashes. No new native identity probe was performed by this reviewer.",
+    "Read six retained observation/journal/raw stdout sets. Fast has two ordered origin-bound markers; stall has one. Empty refuses absent evidence; malformed retains one valid prefix and refuses an incomplete JSON suffix; reordered retains no accepted prefix and refuses order; partial retains one prefix and refuses incomplete fast markers. Refusal reasons and original clocks match the fixed probes.",
+    "Every six-probe output tree has exactly five original declared files plus four plain non-reparse nested directories; the profile leaf is empty and no extra profile file exists. The profile setting declaration is DOTNET_MultiCoreJitNoProfileGather=1 scoped to the probe environment. This is finite observed layout evidence, not loaded-runtime attestation or a portable guarantee.",
+    "The two synthetic reviewed negative fixtures contain respectively one unresolved finding and an array-valued reviewer identity. Each refuses with its exact expected reason before helper/guard/Job/probe/output effects: authority false, native IDs false, zero guard samples, custody/observation null, output list empty and output root absent. Their original input streams and outer lifecycles close. They do not provide production authority.",
+    "Saved tool chunks retain session89354 and final exit0 with complete external accepted return, no caller error,57.591645 seconds, final original input verification true,5761-byte/16-record journal closure, original file closure and final guard done/joined/closed/completion_wait_closed true. The unused sampler has no process creation and closes its empty Job/watchdog. Original provisional/pending fields remain unchanged.",
+    "The typed singleton expected-event branch is exercised by the actual successful stall control, and remaining controls/Python complete under the original shared clock. Earlier SQ2 Count diagnosis remains historical static inference; this successful successor does not rewrite that failed attempt."
+  ],
+  "limitations": [
+    "Accepted scope is exact STARTUP2 source bytes and pinned runtime under this complete SQ3 engineering qualification:124 methods,8UTC,2Python fault,8syntax and8real-controller controls. The positive controls field names fast/stall for the later D2 qualification consumer; the separate full eight-outcome list records refusal coverage.",
+    "Root must separately issue the closed STARTUP2 mechanism qualification and fresh exact D2 admission after this review. This record is neither a standalone D observation nor permission for P, L, V/C or scientific execution.",
+    "All six probe exit codes remain null/unavailable_original_handle_closed_by_dispose and termination causes unobserved. Marker completion, cancellation registration join and owned closure do not identify the native termination branch or invent a probe exit code.",
+    "Two pre-authority controls correctly have no inner lifecycle/output; their false inner/final-verification fields remain preserved. Six observation files remain provisional and their actual-tool-return/review-pending flags are resolved only through separate exact records, not rewritten.",
+    "Host file/census and exact profile environment/layout establish only scoped byte/platform trust and observed behavior. They do not attest loaded runtime code, guarantee cache suppression on other versions or establish the old extra file producer/native identity.",
+    "Earlier SQ1/SQ2 failures and their consumed UUIDs, source bytes and receipts remain frozen. The69040-byte old unexpected cache is preserved. Earlier Q2/P2 PDH startup failures retain UNPROVEN caller/guard/journal cleanup; historical custody/restart claims are unchanged.",
+    "No full original48-case,26-scenario or40-scenario completion, P physical preparation, complete L plan, L collection,117 candidate tests,34 successor controls or scientific study follows. Scientific cells remain0/1020 and final freeze unsigned."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "candidate_tests_executed": 0,
+  "successor_controls_executed": 0
+}

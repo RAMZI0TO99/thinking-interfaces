@@ -1,0 +1,112 @@
+{
+  "schema": "cho51_q_root_qualification_v1",
+  "status": "QUALIFIED_Q4_TESTED_SCOPE",
+  "created_utc": "2026-10-29T10:29:59.9530765Z",
+  "author": "project_root",
+  "operation_id": "601d386f-b376-4d35-85fb-617d01579fd9",
+  "source_reviewer": "q4_source_review",
+  "actual_reviewer": "q4_actual_review",
+  "references": {
+    "actual-review.json": {
+      "bytes": 36833,
+      "sha256": "186932a8cdd0c9b9b3e89c1ca7853816b864b91e02ea6c929cb1b7cd454ed2f7"
+    },
+    "source-review.json": {
+      "bytes": 7870,
+      "sha256": "f1d3b88c10f92cc8e3f716c6a50f14dcb246779796699af4ce79c1d572bf951e"
+    },
+    "source-freeze.json": {
+      "bytes": 5209,
+      "sha256": "4dc9d426d63421f81c2b9fac7348955056535eb8ff2ca287b694827abdac0956"
+    },
+    "contract-adoption.json": {
+      "bytes": 819,
+      "sha256": "e7a60292a865648b57e9b73038b26ab9087485abcda980a932c2fc7b6713e585"
+    },
+    "runtime-inventory.json": {
+      "bytes": 207761,
+      "sha256": "5f62d8b9db0b1d55becf46d7604289c109cb6d74c16a0f6a093a7e934e879e15"
+    },
+    "preservation-baseline.json": {
+      "bytes": 182846,
+      "sha256": "58ddb01cb2967bf6b132c418cae07d5a0c30b4d9c943cba82d972a34dd6b608e"
+    },
+    "external-audit.json": {
+      "bytes": 6654,
+      "sha256": "9c67839164dc9cb2aea7b0a01313aa963a3fbcebc00edd2cccd5eff25da2e086"
+    },
+    "admission_601d386f-b376-4d35-85fb-617d01579fd9.json": {
+      "bytes": 228567,
+      "sha256": "0fb01e839932670fd64801e49cf00dc7b3da451d5d4953db4b9ce3b652242f6a"
+    },
+    "caller-return_601d386f-b376-4d35-85fb-617d01579fd9.json": {
+      "bytes": 4007,
+      "sha256": "e1da3aa4885ae41b989a5bb51ae61654d5602308ac47771b553ed1189b23c112"
+    },
+    "timestamp-controls_601d386f-b376-4d35-85fb-617d01579fd9.json": {
+      "bytes": 950,
+      "sha256": "9b35b49f8e08ab054454f170703061922d01a1f468d7f85344371268946d316c"
+    },
+    "attempts/601d386f-b376-4d35-85fb-617d01579fd9/test-report.json": {
+      "bytes": 20749,
+      "sha256": "5a15eb8752b825da096b6a90a404e575bc104b99e74f2c816b0b3680488fb619"
+    },
+    "attempts/601d386f-b376-4d35-85fb-617d01579fd9/payload.json": {
+      "bytes": 4184,
+      "sha256": "1f9e90639b3c25dbcea0ddbbb28547612b7b79b2678cd90022cb97d41accca70"
+    },
+    "attempts/601d386f-b376-4d35-85fb-617d01579fd9/receipt.json": {
+      "bytes": 4105,
+      "sha256": "be5e91c7bacbe7160238dfd4f2b346e940028da8056b70afecf7a8c1f67c7956"
+    }
+  },
+  "accepted_scope": "Exact Q4 tested reader, supervisor and preparation-foundation scope on the admitted local runtime. The independent actual review is adopted; historical custody and later stages are not qualified.",
+  "suite": {
+    "run": 73,
+    "passed": 73,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "foundation": 31,
+    "native_reader": 30,
+    "protocol": 12
+  },
+  "timestamp_controls_passed": 8,
+  "native_fault_controls_passed": 2,
+  "native_fault_controls": [
+    "badframe: trailing bytes refused",
+    "stall: frame deadline and owned Job termination"
+  ],
+  "new_operation_owned_lifecycle_closed": true,
+  "actual_tool_exit_code": 0,
+  "tool_boundary_elapsed_seconds": 12.8052561,
+  "source_input_count": 28,
+  "runtime_file_count": 732,
+  "preserved_file_count": 782,
+  "source_and_attempt_frozen": true,
+  "replay_allowed": false,
+  "pending_flags_resolution": "The immutable receipt and external audit retain their original pending-review flags. This record adopts the exact later independent actual review without rewriting those records.",
+  "predecessors": {
+    "q1": "FAILED_CONSUMED_CUSTODY_UNKNOWN",
+    "q2": "FAILED_CONSUMED_PRECOMPILER_BOOTSTRAP_CLOSED",
+    "q3": "FAILED_CONSUMED_SUITE_ERRORS_OWNED_LIFECYCLE_CLOSED"
+  },
+  "next_step": "Implement and independently review P dependency-closure preparation; separate implementation-specific adoption, fresh admission and actual review precede P/L/V/C. The 117 candidates and 34 successor controls remain unexecuted.",
+  "limitations": [
+    "Real reparse fixture is not qualified; instrumented attribute refusals have narrower coverage.",
+    "Full 26 qualification scenarios and original 48-case custody matrix remain incomplete.",
+    "Trusted local PowerShell/.NET/PDH platform exception is not complete loaded-image attestation.",
+    "Q1 cause and cleanup remain unproved; Q4 owned closure does not close historical custody."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "accepted_scientific_cells": 0,
+  "scientific_total": 1020,
+  "final_freeze_signed": false
+}

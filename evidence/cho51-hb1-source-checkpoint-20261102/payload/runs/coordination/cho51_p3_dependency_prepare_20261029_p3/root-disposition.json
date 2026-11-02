@@ -1,0 +1,18 @@
+{
+  "author": "project_root",
+  "retry_same_attempt_allowed": false,
+  "scientific_admission": false,
+  "new_operation_owned_lifecycle_closed": false,
+  "physical_map_accepted": false,
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_p3/actual-review.json",
+    "bytes": 4679,
+    "sha256": "c2c875443d2ac2cebf9dd76ae0bd51d1c83d10ea3da29ef96a55ee22cc71739c"
+  },
+  "native_PE_closure_accepted": false,
+  "status": "FAILED_P2_P_CONSUMED_DEADLINE_CLOSURE_UNPROVED",
+  "schema": "cho51_p_root_disposition_v1",
+  "operation_id": "f8ed9509-0bd6-40f0-a66e-ab4ec6fa7b02",
+  "created_utc": "2026-10-29T13:38:54.9411578Z",
+  "next": "Separately reviewed performance successor preserving every original limit, fresh absence/ancestry predicates and initial/final native byte/census checks"
+}

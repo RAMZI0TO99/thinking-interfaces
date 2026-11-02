@@ -1,0 +1,30 @@
+{
+  "schema": "cho51_p1q_final_static_checks_v1",
+  "created_utc": "2026-10-29T10:58:17.4950610Z",
+  "method": "Static file/text/JSON/hash/local-link inspection only; no new runtime validation",
+  "pin_checks": [
+    {
+      "label": "source",
+      "count": 37,
+      "issues": []
+    },
+    {
+      "label": "runtime",
+      "count": 732,
+      "issues": []
+    },
+    {
+      "label": "preserved",
+      "count": 874,
+      "issues": []
+    },
+    {
+      "label": "active_document_archive",
+      "count": 12,
+      "issues": []
+    }
+  ],
+  "local_links_checked": 294,
+  "link_issues": [],
+  "passed": true
+}

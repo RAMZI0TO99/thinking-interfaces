@@ -1,0 +1,96 @@
+{
+  "runtime_operations": 0,
+  "scientific_admission": false,
+  "historical_qd_disposition": "a1f12701 INCOMPLETE_REFUSED17/16 unchanged",
+  "earlier_review": {
+    "bytes": 3639,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/design-review-v1.json",
+    "sha256": "50b67eb4cbff97d60a8736cca75cb53f57ac5312138287301e1e5e4de07f5ade"
+  },
+  "created_utc": "2026-11-02T10:24:22.2991377Z",
+  "author": "project_root",
+  "provider_availability": "NOT_ESTABLISHED",
+  "p_admitted": false,
+  "modules": 23,
+  "next": "Source-only bounded supplied-frame/parent-join verifier, consumed refusal state machine and exact discovery-partition implementation/review; no positive production binding or runtime admission",
+  "tests_executed": 0,
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "full_q_output_feasibility": "NOT_ESTABLISHED",
+  "existing_textual_methods": 580,
+  "runtime_readiness": "REFUSED_PENDING_PREREQUISITES",
+  "obligations_discharged": 0,
+  "second_qd_admitted": false,
+  "preserved_sc_scenarios": 40,
+  "qualification_accepted": false,
+  "runtime_admission": false,
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "input_count": 30,
+  "implementation_accepted": false,
+  "schema": "cho51_hb1_root_design_acceptance_v1",
+  "files": {
+    "docs/phase2/cho51_p3_host_binding_v1/source-map.json": {
+      "bytes": 7893,
+      "sha256": "e10b6490a33b22211b58f3cc711798faea644d215e5881037587e0922d3fa20d"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/qualification.md": {
+      "bytes": 11903,
+      "sha256": "d728fc49a675e814ee9c98064b5c76f4d65e5ba1618c4571abcf7d4c520ea5bb"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/scenarios.json": {
+      "bytes": 10741,
+      "sha256": "3157f7e0316bee6c141fac04d9794ebdf2550888d04de06d92423d0e7aa733a4"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/readiness.json": {
+      "bytes": 5549,
+      "sha256": "4ef91547f2cf6927455652a2b6081bb64481ac56c2d53d25545fecef46bdf60d"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/roster.json": {
+      "bytes": 127664,
+      "sha256": "8bef7f6cb6d274eb8d8b4acacdfaaf0269ecb4327bde24bc3a3ce598839a4548"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/README.md": {
+      "bytes": 3183,
+      "sha256": "69acfc7b69059d15379ed5e5fac8b9fe9ed8af942e8b32f432d9e9d5ad4e0d9c"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/binding.md": {
+      "bytes": 20316,
+      "sha256": "9a0cc75d4aae85ffe4bc94d744afdf35f620f2313650a9ae225f7e73f34c259f"
+    }
+  },
+  "preserved_draft_manifest": {
+    "bytes": 1545,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/draft-v1/manifest.json",
+    "sha256": "2c0e3d6a3c0c2b516585c6616b4ccae2a42bb2b74561a289989ca81515a3359a"
+  },
+  "peer_confirmations": [
+    {
+      "reviewer": "qd_source_review",
+      "message_utf8_sha256": "eb0d481b6693322a79ec282ad69df3e6e76b6a3eb719e2c4e7a6abf4794e251f",
+      "revision": 1,
+      "message": "I confirm HB design-review-v1.json exactly transcribes my independent bounded review and limits. Verified 3,639 bytes; SHA256 50b67eb4cbff97d60a8736cca75cb53f57ac5312138287301e1e5e4de07f5ade; review_text UTF8 SHA256 506afc6f90275a0c8971852ce109e2a3ad1a645c818bb1deeee566ac4dfa2dd0. Candidate7,706B/dbc1d2333da30a67397b3bb2d406921f63b481057e91cbae4c3e0cfa736579ff, CHANGES_REQUIRED/HB-D1[P2]/HB-D2[P2], author/publisher project_root and reviewer qd_source_review are correct. No files written or runtime executed. Review complete; ownership released for preservation/revision. Embed this confirmation in the predeclared Root record, no sidecar."
+    },
+    {
+      "reviewer": "qd_source_review",
+      "message_utf8_sha256": "b9c1d45d6ef187b289ade162899f6e0c7a39d9e9d3251d5c94cd7317e126855e",
+      "revision": 2,
+      "message": "I confirm HB design-review-v2.json exactly transcribes my independent acceptance message and limits. Verified 3,145 bytes; SHA256 a4aad7797fcc7161fa92742f7fef2d128bc3add69870b69ffee6f9fa55b9ea52; review_text UTF8 SHA256 a2b8d4fa507c2c4228ecf58cf8e2e487ffaa7a374f04a92396900b49a803e001. Candidate8,400B/672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b, ACCEPTED_DESIGN_ONLY/findings[], resolved HB-D1/HB-D2, author/publisher project_root and reviewer qd_source_review match. Implementation/runtime/qualification/P/science remain false; unavailable-provider/refused-readiness and all preserved gates are correct. No files written or runtime executed. Review complete; ownership released. Embed confirmation in root-design-acceptance, no sidecar."
+    }
+  ],
+  "preserved_diagnostic_scenarios": 36,
+  "findings_resolved": [
+    "HB-D1",
+    "HB-D2"
+  ],
+  "new_hb_scenarios": 24,
+  "independent_review": {
+    "bytes": 3145,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/design-review-v2.json",
+    "sha256": "a4aad7797fcc7161fa92742f7fef2d128bc3add69870b69ffee6f9fa55b9ea52"
+  },
+  "open_design_findings": [],
+  "candidate": {
+    "bytes": 8400,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v2.json",
+    "sha256": "672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b"
+  }
+}

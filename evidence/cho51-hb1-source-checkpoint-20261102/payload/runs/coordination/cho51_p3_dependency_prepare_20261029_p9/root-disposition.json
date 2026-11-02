@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_p2_root_disposition_v1",
+  "status": "FAILED_P2_P_CONSUMED_DEADLINE_CLOSURE_UNPROVED",
+  "author": "project_root",
+  "created_utc": "2026-10-29T17:09:14.3714953Z",
+  "operation_id": "1d498286-518e-47e4-9cb5-be8f595dfb33",
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_p9/actual-review.json",
+    "sha256": "1a380089594cc3b7eb61518ffa5af2f62157d6701b20b431514bba3b07c52327",
+    "bytes": 4582
+  },
+  "actual_tool_exit_code": 1,
+  "physical_map_accepted": false,
+  "final_full_input_verification_accepted": false,
+  "new_operation_owned_lifecycle_closed": false,
+  "retry_same_attempt": false,
+  "unchanged_reissue_allowed": false,
+  "next": "Review a performance successor retaining every fresh predicate and complete final verification, then fresh Q/P admission",
+  "scientific_admission": false
+}

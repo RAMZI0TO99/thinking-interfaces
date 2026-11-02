@@ -1,0 +1,103 @@
+{
+  "schema": "cho51_document_archive_v1",
+  "status": "EXACT_PRE_STEP_SNAPSHOTS",
+  "count": 12,
+  "files": [
+    {
+      "original": "AGENTS.md",
+      "archive": "docs/history/provisional_closure_20261031/AGENTS.md",
+      "pin": {
+        "bytes": 5651,
+        "sha256": "15a3aaa5553d7040acfe877ce864f0489d43eb5d1929e4a1a06e7429e4fe90a8"
+      }
+    },
+    {
+      "original": "HANDOFF.md",
+      "archive": "docs/history/provisional_closure_20261031/HANDOFF.md",
+      "pin": {
+        "bytes": 13032,
+        "sha256": "b2bd96db7a87c0c8fa97c7a160279806bebd5b6c1d1c67cea82fb8e103301ad9"
+      }
+    },
+    {
+      "original": "AGENT_COORDINATION.md",
+      "archive": "docs/history/provisional_closure_20261031/AGENT_COORDINATION.md",
+      "pin": {
+        "bytes": 5236,
+        "sha256": "8619a6dfd4c8538926329ad6bb32972b8c5b7f61c86fdba63a1935b6c00bed9d"
+      }
+    },
+    {
+      "original": "CONTINUE_HERE.md",
+      "archive": "docs/history/provisional_closure_20261031/CONTINUE_HERE.md",
+      "pin": {
+        "bytes": 5396,
+        "sha256": "9b600391abc17a2faec803d8f3434c0be7efddb9be1eb266141be04e3420b20a"
+      }
+    },
+    {
+      "original": "PHASE2_START_HERE.md",
+      "archive": "docs/history/provisional_closure_20261031/PHASE2_START_HERE.md",
+      "pin": {
+        "bytes": 5072,
+        "sha256": "afd020e417230b698467fb2bdc479f6a9f038c60f2b9b37d12d93c1e70c7133d"
+      }
+    },
+    {
+      "original": "README.md",
+      "archive": "docs/history/provisional_closure_20261031/README.md",
+      "pin": {
+        "bytes": 6064,
+        "sha256": "b8b8f6b19a3a6e6de0da0aec2f11c44c64c3a3be78ba69419f3270c209755a51"
+      }
+    },
+    {
+      "original": "WINDOWS_SETUP.md",
+      "archive": "docs/history/provisional_closure_20261031/WINDOWS_SETUP.md",
+      "pin": {
+        "bytes": 9669,
+        "sha256": "4ac6ff9b8be2f3fb9db9a18b7499dec7c13dd4db7cfdd3bfd4178aebfd965f67"
+      }
+    },
+    {
+      "original": "docs/phase2/README.md",
+      "archive": "docs/history/provisional_closure_20261031/docs/phase2/README.md",
+      "pin": {
+        "bytes": 9161,
+        "sha256": "552d751b23aef4e209be4622547c22e1c3c3305f9f24dccadd2b6e84b4b94ed0"
+      }
+    },
+    {
+      "original": "docs/where are we/README.md",
+      "archive": "docs/history/provisional_closure_20261031/docs/where are we/README.md",
+      "pin": {
+        "bytes": 9542,
+        "sha256": "d4a2a8209dc700e973c95de1dc3a725d5e7ec4ec7509c08e40de1d4591c6a82c"
+      }
+    },
+    {
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "archive": "docs/history/provisional_closure_20261031/docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "bytes": 19755,
+        "sha256": "a76b4222b061e25b2afbe9be9f42ac577fbb2fd09bfa86d645ca22246dae84db"
+      }
+    },
+    {
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "archive": "docs/history/provisional_closure_20261031/docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "bytes": 28509,
+        "sha256": "07394de6c92dc37aae61037f618360c48835314ae10500fb889aaa34451ea5de"
+      }
+    },
+    {
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "archive": "docs/history/provisional_closure_20261031/docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "bytes": 32349,
+        "sha256": "9b4309f5e6b25b9c856bdb34449d988329af3dff98ca4552ea4fcb9d3c878225"
+      }
+    }
+  ]
+}

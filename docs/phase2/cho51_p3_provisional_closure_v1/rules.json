@@ -1,0 +1,229 @@
+{
+  "schema": "cho51_provisional_accounting_rules_v1",
+  "status": "INERT_DOCUMENT_TAXONOMY",
+  "rows": [
+    {
+      "id": "R01",
+      "category": "import",
+      "kinds": [
+        "Import",
+        "ImportFrom"
+      ],
+      "disposition": "refuse",
+      "reason": "Origin, parent initialization, export/member binding and transitive effects are unresolved.",
+      "capability_obligations": [
+        "CAP01"
+      ]
+    },
+    {
+      "id": "R02",
+      "category": "call",
+      "kinds": [
+        "Call"
+      ],
+      "disposition": "refuse",
+      "reason": "Exact callable/receiver/alias binding, finite arguments, callbacks, exceptions and effect certificate are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R03",
+      "category": "attribute_or_index",
+      "kinds": [
+        "Attribute",
+        "Subscript",
+        "Slice"
+      ],
+      "disposition": "refuse",
+      "reason": "Receiver type, descriptor/index protocol, rebinding and implicit callbacks are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R04",
+      "category": "name_or_binding",
+      "kinds": [
+        "Name",
+        "alias",
+        "arg",
+        "Nonlocal"
+      ],
+      "disposition": "refuse",
+      "reason": "Lexical definition/use, builtin/import identity, closure and rebinding proof are absent.",
+      "capability_obligations": [
+        "CAP01"
+      ]
+    },
+    {
+      "id": "R05",
+      "category": "definition",
+      "kinds": [
+        "FunctionDef",
+        "ClassDef"
+      ],
+      "disposition": "refuse",
+      "reason": "Definition headers may execute; body entry and aliases are not guarded. Defaults/decorators/annotations/bases/class effects need separate proof.",
+      "capability_obligations": [
+        "CAP03"
+      ]
+    },
+    {
+      "id": "R06",
+      "category": "iteration",
+      "kinds": [
+        "For",
+        "ListComp",
+        "SetComp",
+        "DictComp",
+        "GeneratorExp",
+        "comprehension",
+        "Starred"
+      ],
+      "disposition": "refuse",
+      "reason": "Iterable identity, iterator/truth/callback effects, finite domain and deferred generator entry are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R07",
+      "category": "control_or_operator",
+      "kinds": [
+        "If",
+        "IfExp",
+        "Compare",
+        "BoolOp",
+        "BinOp",
+        "UnaryOp",
+        "Assert"
+      ],
+      "disposition": "refuse",
+      "reason": "Operand types, truth/comparison/operator callbacks, branch dependencies and exception effects are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R08",
+      "category": "assignment",
+      "kinds": [
+        "Assign",
+        "AnnAssign",
+        "AugAssign"
+      ],
+      "disposition": "refuse",
+      "reason": "Assignment/rebinding/target protocols and annotation semantics require binding and effect analysis.",
+      "capability_obligations": [
+        "CAP01"
+      ]
+    },
+    {
+      "id": "R09",
+      "category": "context_or_exception",
+      "kinds": [
+        "With",
+        "withitem",
+        "Try",
+        "ExceptHandler",
+        "Raise"
+      ],
+      "disposition": "refuse",
+      "reason": "Context entry/exit, exception construction/matching, cleanup and callback effects are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R10",
+      "category": "container_or_format",
+      "kinds": [
+        "Dict",
+        "List",
+        "Set",
+        "Tuple",
+        "JoinedStr",
+        "FormattedValue"
+      ],
+      "disposition": "refuse",
+      "reason": "Element evaluation plus hashing/iteration/format conversion and consumer effects are unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R11",
+      "category": "literal",
+      "kinds": [
+        "Constant"
+      ],
+      "disposition": "refuse",
+      "reason": "Literal occurrence is known; contextual evaluation, consumer binding and enclosing effects are not approved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R12",
+      "category": "flow_or_expression",
+      "kinds": [
+        "Expr",
+        "Return",
+        "Continue"
+      ],
+      "disposition": "refuse",
+      "reason": "Enclosing reachability, returned identities and enclosing effect dependencies remain unresolved.",
+      "capability_obligations": [
+        "CAP02"
+      ]
+    },
+    {
+      "id": "R13",
+      "category": "module",
+      "kinds": [
+        "Module"
+      ],
+      "disposition": "refuse",
+      "reason": "Module initialization requires closed import/header/effect obligations; no transitive fixed point exists.",
+      "capability_obligations": [
+        "CAP01"
+      ]
+    },
+    {
+      "id": "R14",
+      "category": "structural",
+      "kinds": [
+        "Load",
+        "Store",
+        "Add",
+        "And",
+        "BitOr",
+        "Div",
+        "Eq",
+        "FloorDiv",
+        "Gt",
+        "GtE",
+        "In",
+        "Is",
+        "IsNot",
+        "Lt",
+        "LtE",
+        "Mod",
+        "Mult",
+        "Not",
+        "NotEq",
+        "NotIn",
+        "Or",
+        "Pow",
+        "Sub",
+        "USub",
+        "arguments",
+        "keyword"
+      ],
+      "disposition": null,
+      "reason": "Structural marker delegates to its nearest semantic owner; no exclusion or independent permission is inferred.",
+      "capability_obligations": []
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "reason": "before startup cost / complete Q feasibility / fixed metadata ownership design",
+  "schema": "project_document_archive_v1",
+  "files": {
+    "AGENTS.md": {
+      "bytes": 6965,
+      "sha256": "016046740c501d00522cf91274b1417be78e17e18eb63c46fd3631ac9ac861c5"
+    },
+    "HANDOFF.md": {
+      "bytes": 16834,
+      "sha256": "10918751de5987376494b7a9ecbb637f114f9664593f039a6e457725e1cb3d6b"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 6550,
+      "sha256": "3a356a5d124fdef01e7ad4327d2ce8ee6cfdd2865f5b8ecf89ceb626804845a5"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 6711,
+      "sha256": "0bed78304f1ee0d831d39392cb0284d1b9af17fdd9711137ee40baee2f57ba97"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6387,
+      "sha256": "28685ea5cdbe208fdd7ab29f50c5c69c3cb93273d9fdac2abd819ae057407402"
+    },
+    "README.md": {
+      "bytes": 7378,
+      "sha256": "3192768f5568bc6180ca30cfda936f8718c197cbdd97a87a8d4a129a83749ad4"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 10983,
+      "sha256": "9c16d0c9a48dcb7308a5efdda2cfd78b0062900a1cf001dc4a2595da850c206f"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 11546,
+      "sha256": "bd8f0176a5aa20c7649287be9cc9f85ca496c00f7fa61a0a8b58c873c80f341a"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 12106,
+      "sha256": "1c2177b25d891ae0b5203c471533c17222b83f6f4fa915fd355c4468beb7c3b8"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 23672,
+      "sha256": "32a9b878e18201a00b611cdd591d0742f8bb89d941701348f95e430789e6d6f2"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 30734,
+      "sha256": "f6c1fc510104628c172a386e4456639476572c5282f805bf9ed786afe56dabf5"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 39869,
+      "sha256": "b8df2b61cdcb65dacb0dc4d0379c7cd9b0474771e4bd4d3099b3c2aee7ee051c"
+    }
+  },
+  "created_utc": "2026-11-02T06:00:26.6933401Z"
+}

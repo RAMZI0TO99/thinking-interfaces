@@ -1,0 +1,85 @@
+{
+  "files": [
+    {
+      "sha256": "98ee1f2e9020268b3d7cdfb3c2c2b6ce594b4c3259cbbb54f7d5437b0e60acca",
+      "bytes": 5198,
+      "original": "AGENTS.md",
+      "archive": "docs/history/finite_l_design_20261031/AGENTS.md"
+    },
+    {
+      "sha256": "4e96ddc639fb2680a54f0e7d3187a3a7b21b750526096443d5a5bbf04bf8bbee",
+      "bytes": 11834,
+      "original": "HANDOFF.md",
+      "archive": "docs/history/finite_l_design_20261031/HANDOFF.md"
+    },
+    {
+      "sha256": "f4d9dc31767a7a0e3b46b15bbb8cc65c7acee9091dfb69579e59b17a016fe672",
+      "bytes": 4783,
+      "original": "AGENT_COORDINATION.md",
+      "archive": "docs/history/finite_l_design_20261031/AGENT_COORDINATION.md"
+    },
+    {
+      "sha256": "57db02a318f0064f8243a765132e0626e39b5883827691c5f02726886b19a942",
+      "bytes": 4943,
+      "original": "CONTINUE_HERE.md",
+      "archive": "docs/history/finite_l_design_20261031/CONTINUE_HERE.md"
+    },
+    {
+      "sha256": "fcbb5db434195175bf776e5c00a097ae0e71680c6e29e2d6991b25432d9667b6",
+      "bytes": 4619,
+      "original": "PHASE2_START_HERE.md",
+      "archive": "docs/history/finite_l_design_20261031/PHASE2_START_HERE.md"
+    },
+    {
+      "sha256": "cfea212a0c1d77d72223e9d34d5ade57a2babdf8f2a2b2181b7f315fa13c9487",
+      "bytes": 5611,
+      "original": "README.md",
+      "archive": "docs/history/finite_l_design_20261031/README.md"
+    },
+    {
+      "sha256": "7a32eaab254188abc030605f61e97fb63a012734979187927c781d3a7e051c7d",
+      "bytes": 9216,
+      "original": "WINDOWS_SETUP.md",
+      "archive": "docs/history/finite_l_design_20261031/WINDOWS_SETUP.md"
+    },
+    {
+      "sha256": "ec87443e9edd44635409a01919fedc8ccffe1623fa6c77e069f53a90ccb0b414",
+      "bytes": 8425,
+      "original": "docs/phase2/README.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/phase2/README.md"
+    },
+    {
+      "sha256": "abd1c524bb964db86a0ba2ad1f78adbcc0ef0a37f41583c34deab0ed26efe467",
+      "bytes": 9016,
+      "original": "docs/where are we/README.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/where are we/README.md"
+    },
+    {
+      "sha256": "36b549632647aff691db49e33dca68af4ffff4d94d96ff9ed615475828ef6455",
+      "bytes": 18653,
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/where are we/PROJECT_PLAN.md"
+    },
+    {
+      "sha256": "ae02931fa10619b792dc9c98cda9039bb623ccea2342e8d36517e60cfdc547bd",
+      "bytes": 27920,
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/where are we/PROGRESS_REPORT.md"
+    },
+    {
+      "sha256": "595ebc7cd32a76d4a6713362330820beb0ef80e29d3bae0e5b7a6ab27d9bc116",
+      "bytes": 30097,
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/where are we/EVIDENCE_INDEX.md"
+    },
+    {
+      "sha256": "a4d77eca956c6b95bc047d37b6c889304b8a9af1559078f9161260a0088c6f26",
+      "bytes": 7268,
+      "original": "docs/phase2/cho51_p3_native_memory_bootstrap_20261031.md",
+      "archive": "docs/history/finite_l_design_20261031/docs/phase2/cho51_p3_native_memory_bootstrap_20261031.md"
+    }
+  ],
+  "count": 13,
+  "created_utc": "2026-10-31T14:06:27.0942112Z",
+  "schema": "cho51_finite_l_document_archive_v1"
+}

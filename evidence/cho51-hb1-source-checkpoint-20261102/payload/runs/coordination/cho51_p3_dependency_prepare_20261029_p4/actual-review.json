@@ -1,0 +1,54 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T14:00:06.3912396Z",
+  "operation_id": "ad3cee21-4d81-42f9-9f7e-52410462bdda",
+  "actual_tool_exit_code": 1,
+  "elapsed_seconds": 73.1316639,
+  "new_operation_owned_lifecycle_closed": true,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "observed_refusal": "Refusal: API host basename",
+  "final_full_input_verification_completed_before_release": false,
+  "source_review_sha256": "0d05d21c5c337f9103ea7833f5a5b18cf8fb99c5ddb4df248b6ffda49f27dc0b",
+  "findings": [
+    "P failed consumed at API host basename grammar refusal. Source pe.py restricts derived host basenames to .dll and supervisor also restricts host suffix .dll. This establishes the narrow refusal location, not successful complete OS API namespace parsing or trust.",
+    "39provisional physical files totaling21874940bytes retained; no accepted map, nativePE pages, final full input verification or output handoff. Closing original handles does not make provisional observation accepted."
+  ],
+  "checks": [
+    "Independently inspected operation-specific raw tool-return_ad3cee21-4d81-42f9-9f7e-52410462bdda.json, underlying caller/supervisor stdout and16record bootstrap. Root tool-return.json remains prior startup failure and was not substituted.",
+    "Rechecked27source,732runtime and1922preserved byte/hash pins with no drift. All39output descriptor byte/hash pins match current files and39native output IDs are distinct. Prior bec3890a failure review hash033c70e1dc1fdac297f84f58147ed253eed139c80cc7dba3ea588a7ae14ed040 unchanged.",
+    "Underlying supervisor P_FAILED_CONSUMED reports inputs/outputs/guard_thread_joined true with cleanup_errors empty; observed/accepted, final full input verification and input/output identity handoff verification false. No success claim inferred.",
+    "Original outerPID14660 creationFILETIME134377557251075575 reaped/process/thread closed, atomic membership and queried limits verified, Job empty/closed, both original pipes EOF with readers joined/closed, writers and reader-thread handles closed, NUL closed/watchdog joined, no overflow/stream/cleanup faults.",
+    "Actual tool exit1/elapsed73.1316639seconds external-return resolves pending original_file_handles_closed,16record5777byte journal closed and caller guard done/joined/closed/completion_wait_closed true, no error and0.115226second shutdown.",
+    "Admitted240work300whole5cleanup245hard5startup,4096MiBprocess/parent5120MiBJob4GiBRAM20GiBdisk limits retained. Supervisor minimumRAM8552030208,disk75855454208,peakprivate135303168bytes; outerpeakprocess135360512,Job141524992,caller99524608bytes."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "limitations": [
+    "File/text/JSON/hash inspection only; no Git, Python/import, AST, compilation, tests or runtime runner invoked. Exact tool output is Root-retained evidence checked against underlying caller/bootstrap/partial outputs.",
+    "A separately reviewed narrow host-basename grammar successor may address permitted retained policy .sys/.drv names while preserving basename/path rejection, exact namespace derivation/map equality, used-host presence and all existing guards. Static policy list is not actual successful namespace or PE closure evidence. Fresh Q and P admission remain required.",
+    "No acceptedPmap,complete dependencyclosure,ABI/loader/Gitexecution,L/V/C or science acceptance. Prior P4startup/P3deadline/Q3startup unproved closures and earlier workflow-deviation/historical custody remain unchanged.",
+    "117candidates34controls remain unexecuted,custodyUNRESOLVED,scientificcells0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

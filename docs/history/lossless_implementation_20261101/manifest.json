@@ -1,0 +1,102 @@
+{
+  "schema": "cho51_lossless_implementation_archive_v1",
+  "files": [
+    {
+      "original": "AGENTS.md",
+      "archive": "docs/history/lossless_implementation_20261101/AGENTS.md",
+      "pin": {
+        "bytes": 6019,
+        "sha256": "7b8a54a60914ead7981549033af14382c102041a5e86e77c9e568199f58d66ed"
+      }
+    },
+    {
+      "original": "HANDOFF.md",
+      "archive": "docs/history/lossless_implementation_20261101/HANDOFF.md",
+      "pin": {
+        "bytes": 14949,
+        "sha256": "4df8a978d6cf1b9ebd63272bc976b1a76cf57f587a3045408304068ad1c7be4d"
+      }
+    },
+    {
+      "original": "AGENT_COORDINATION.md",
+      "archive": "docs/history/lossless_implementation_20261101/AGENT_COORDINATION.md",
+      "pin": {
+        "bytes": 5604,
+        "sha256": "f396b01d0b6f7023c73095ae987777f51f3213868fd5bfb52d0b37fd3a40b53a"
+      }
+    },
+    {
+      "original": "CONTINUE_HERE.md",
+      "archive": "docs/history/lossless_implementation_20261101/CONTINUE_HERE.md",
+      "pin": {
+        "bytes": 5765,
+        "sha256": "98b0c222f714d7fcd0247dea0ce5d07f6451ee73e680c1432813fb786e15f3b7"
+      }
+    },
+    {
+      "original": "PHASE2_START_HERE.md",
+      "archive": "docs/history/lossless_implementation_20261101/PHASE2_START_HERE.md",
+      "pin": {
+        "bytes": 5441,
+        "sha256": "046c0c245eb88c19e7f79ac2940014a976f6c22eaa55db92ae62362e370e71c5"
+      }
+    },
+    {
+      "original": "README.md",
+      "archive": "docs/history/lossless_implementation_20261101/README.md",
+      "pin": {
+        "bytes": 6432,
+        "sha256": "a970f2a3cf78d58885909585c2eb203d983bb0d9743d8cf2f5a74080023fd284"
+      }
+    },
+    {
+      "original": "WINDOWS_SETUP.md",
+      "archive": "docs/history/lossless_implementation_20261101/WINDOWS_SETUP.md",
+      "pin": {
+        "bytes": 10037,
+        "sha256": "8aa14915051c39485e0ae2b4c5303b3cbdc9c7f727c55c3f1fbf0e96593ec0c2"
+      }
+    },
+    {
+      "original": "docs/phase2/README.md",
+      "archive": "docs/history/lossless_implementation_20261101/docs/phase2/README.md",
+      "pin": {
+        "bytes": 9962,
+        "sha256": "614f521af2c967c1767378e10eb4c26dacf163217c960de2d5e07886916e83ab"
+      }
+    },
+    {
+      "original": "docs/where are we/README.md",
+      "archive": "docs/history/lossless_implementation_20261101/docs/where are we/README.md",
+      "pin": {
+        "bytes": 10712,
+        "sha256": "c07a376b0feebe8ec5008623e3bf3192d6978f72f526723ebb7b500c4a311b72"
+      }
+    },
+    {
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "archive": "docs/history/lossless_implementation_20261101/docs/where are we/PROJECT_PLAN.md",
+      "pin": {
+        "bytes": 21789,
+        "sha256": "3d5630d476ceb9aef83faeb034a2c606afa5d5c34fc14977269c904de6af0e32"
+      }
+    },
+    {
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "archive": "docs/history/lossless_implementation_20261101/docs/where are we/PROGRESS_REPORT.md",
+      "pin": {
+        "bytes": 29254,
+        "sha256": "22fda565d95afe181d60ec7368b70f5a9f8638726a7025813421dda1863a49d9"
+      }
+    },
+    {
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "archive": "docs/history/lossless_implementation_20261101/docs/where are we/EVIDENCE_INDEX.md",
+      "pin": {
+        "bytes": 36024,
+        "sha256": "4bbd4dc5c6315b14d5d0fc7ce36ff5267154715cca55e44151f7597b61af3bac"
+      }
+    }
+  ],
+  "created_utc": "2026-11-01T12:36:59.1974003Z"
+}

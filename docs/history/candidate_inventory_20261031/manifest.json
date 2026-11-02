@@ -1,0 +1,83 @@
+{
+  "schema": "cho51_document_archive_v1",
+  "files": [
+    {
+      "original": "AGENTS.md",
+      "archive": "docs/history/candidate_inventory_20261031/AGENTS.md",
+      "bytes": 5465,
+      "sha256": "460f5e5595a84b87c4c163ed34b79733c24aa0d52b1e39d916da8148e6ca066a"
+    },
+    {
+      "original": "HANDOFF.md",
+      "archive": "docs/history/candidate_inventory_20261031/HANDOFF.md",
+      "bytes": 12482,
+      "sha256": "512fd1dcb781e3cfc5a10d2f97a13b3b7f36065ccb00849a12bf1dafee4d53bf"
+    },
+    {
+      "original": "AGENT_COORDINATION.md",
+      "archive": "docs/history/candidate_inventory_20261031/AGENT_COORDINATION.md",
+      "bytes": 5050,
+      "sha256": "d86b57681880b4641dfec22abb49bb8c60b2a52e3ff4d34630e3307d8c4391b8"
+    },
+    {
+      "original": "CONTINUE_HERE.md",
+      "archive": "docs/history/candidate_inventory_20261031/CONTINUE_HERE.md",
+      "bytes": 5210,
+      "sha256": "2de8c4f4200b5e6d456164a205ca67066ece3e1a9b3a7b11de99c079eda59e09"
+    },
+    {
+      "original": "PHASE2_START_HERE.md",
+      "archive": "docs/history/candidate_inventory_20261031/PHASE2_START_HERE.md",
+      "bytes": 4886,
+      "sha256": "6b02c3099b1d4f0a023496ea9e9fbfd336f363f237552626743fd58eb240a9f7"
+    },
+    {
+      "original": "README.md",
+      "archive": "docs/history/candidate_inventory_20261031/README.md",
+      "bytes": 5878,
+      "sha256": "4d8cc529428e6ec1a523ea5377f24098a745be40301c8535fcd0d30647d6c937"
+    },
+    {
+      "original": "WINDOWS_SETUP.md",
+      "archive": "docs/history/candidate_inventory_20261031/WINDOWS_SETUP.md",
+      "bytes": 9483,
+      "sha256": "02de4245c0039baf9d79dce66ce2a116f27fbfd3c1119c83b07ddc453ce28358"
+    },
+    {
+      "original": "docs/phase2/README.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/phase2/README.md",
+      "bytes": 8975,
+      "sha256": "ab9c6136929557fa295480a72455dc23c1602477cef82cdf14b5c03885650d78"
+    },
+    {
+      "original": "docs/where are we/README.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/where are we/README.md",
+      "bytes": 9541,
+      "sha256": "18b41f0b4c276d52eb7432d392623483ae0d4a78f64f0beafc4bcce9887b6a1a"
+    },
+    {
+      "original": "docs/where are we/PROJECT_PLAN.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/where are we/PROJECT_PLAN.md",
+      "bytes": 19243,
+      "sha256": "b062a6fceedf7d4f705f97aafab210622fc919f2e59d43a057216123715769e7"
+    },
+    {
+      "original": "docs/where are we/PROGRESS_REPORT.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/where are we/PROGRESS_REPORT.md",
+      "bytes": 28342,
+      "sha256": "cd7a95612bc1dc92667aa55f8bd32d5882f354fb37f968f7d254dca61d482cd1"
+    },
+    {
+      "original": "docs/where are we/EVIDENCE_INDEX.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/where are we/EVIDENCE_INDEX.md",
+      "bytes": 31306,
+      "sha256": "656ef0a31b861579301e3214ceab5ac902404c72108b015562a416e735cf67e3"
+    },
+    {
+      "original": "docs/phase2/cho51_p3_finite_l_design_20261031.md",
+      "archive": "docs/history/candidate_inventory_20261031/docs/phase2/cho51_p3_finite_l_design_20261031.md",
+      "bytes": 4975,
+      "sha256": "068c46357447478971727ab66791150240c53c342b9836d49b7c20df5e14de5f"
+    }
+  ]
+}

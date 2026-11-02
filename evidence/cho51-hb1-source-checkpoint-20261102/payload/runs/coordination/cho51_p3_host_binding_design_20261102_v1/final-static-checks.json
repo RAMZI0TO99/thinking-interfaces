@@ -1,0 +1,154 @@
+{
+  "review_text_hashes_checked": 2,
+  "provider_availability": "NOT_ESTABLISHED",
+  "full_q_output_feasibility": "NOT_ESTABLISHED",
+  "unplanned_metadata": [],
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v2.json",
+    "pin": {
+      "sha256": "672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b",
+      "bytes": 8400
+    }
+  },
+  "runtime_readiness": "REFUSED_PENDING_PREREQUISITES",
+  "sc_scenarios_unqualified": 40,
+  "author": "project_root",
+  "diagnostic_scenarios_unqualified": 36,
+  "existing_vfy_methods": 64,
+  "qualification_accepted": false,
+  "stale_current_status": [],
+  "obligations_discharged": 0,
+  "existing_method_union": 580,
+  "schema": "cho51_hb1_final_static_checks_v1",
+  "document_count": 20,
+  "root_acceptance": {
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/root-design-acceptance.json",
+    "pin": {
+      "sha256": "41dddc76948f9a1f235b17fd445ff983163a1b9c2734d200e4664997b8297d53",
+      "bytes": 5197
+    }
+  },
+  "closeout_slot": "closeout-review.json: sole Root transcription of separate reviewer, no sidecar",
+  "documents": {
+    "docs/phase2/cho51_p3_host_binding_design_20261102.md": {
+      "sha256": "532ea40357099f45a4b78cb50acff083c298272884c9b4d800db58f8663156cc",
+      "bytes": 8888
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "sha256": "249d50f02a4d4f527420fe71a925e072ad1c15986522d3d67fa93bc703088809",
+      "bytes": 25048
+    },
+    "WINDOWS_SETUP.md": {
+      "sha256": "14ce275dee25bc716a8136402dc30bfaf9e3b6fbe80ff3dc5bfe8cd336e1ecdb",
+      "bytes": 11798
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/source-map.json": {
+      "sha256": "e10b6490a33b22211b58f3cc711798faea644d215e5881037587e0922d3fa20d",
+      "bytes": 7893
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/scenarios.json": {
+      "sha256": "3157f7e0316bee6c141fac04d9794ebdf2550888d04de06d92423d0e7aa733a4",
+      "bytes": 10741
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "sha256": "5371bcb9b9ede1919c8f2eb3c9c19d2aee4f9c7c455dbc538e698045c1203649",
+      "bytes": 42019
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/README.md": {
+      "sha256": "69acfc7b69059d15379ed5e5fac8b9fe9ed8af942e8b32f432d9e9d5ad4e0d9c",
+      "bytes": 3183
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/binding.md": {
+      "sha256": "9a0cc75d4aae85ffe4bc94d744afdf35f620f2313650a9ae225f7e73f34c259f",
+      "bytes": 20316
+    },
+    "docs/where are we/README.md": {
+      "sha256": "aa0d1f2a3a7ed52cbaa1a1b126a8815a07efed0187ad7ed3c01a9c42f18b7473",
+      "bytes": 13277
+    },
+    "README.md": {
+      "sha256": "e449d2e40ca90fb776e96c3de29959aa2d6df03c27f13843dddeaf9086800f15",
+      "bytes": 8193
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "16b7068df8ddab64467c9eef2a7594d4b170e2d751cf59fc1d641f46397cff13",
+      "bytes": 7365
+    },
+    "PHASE2_START_HERE.md": {
+      "sha256": "ccb48fbb30290255074bd7d53e722a20bf4b697bad1eab24907498fe00dffc2c",
+      "bytes": 7202
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/readiness.json": {
+      "sha256": "4ef91547f2cf6927455652a2b6081bb64481ac56c2d53d25545fecef46bdf60d",
+      "bytes": 5549
+    },
+    "HANDOFF.md": {
+      "sha256": "afdc0f1ce26f7de80b36b24bbe6c4b24b18723c81ed50e670c3331ffba54df1b",
+      "bytes": 18214
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/qualification.md": {
+      "sha256": "d728fc49a675e814ee9c98064b5c76f4d65e5ba1618c4571abcf7d4c520ea5bb",
+      "bytes": 11903
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "sha256": "81b027fac09038e04a61c792ddb16211b8b4fa49d02d916d555f52ac7b55803e",
+      "bytes": 31698
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "e7a2e53c0334875a91c5e0f9d45568c2915728a25f2be698fe02ff7f7d452d0d",
+      "bytes": 7526
+    },
+    "docs/phase2/README.md": {
+      "sha256": "cee6034b6c5ed28381bde18ad28466fb5ce37f48807a46a9acbe5d6e46088452",
+      "bytes": 12506
+    },
+    "AGENTS.md": {
+      "sha256": "4b50fc04eeb16062596a73935dc5747bc31e318f2bec01ed1984f36d959b2151",
+      "bytes": 7780
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/roster.json": {
+      "sha256": "8bef7f6cb6d274eb8d8b4acacdfaaf0269ecb4327bde24bc3a3ce598839a4548",
+      "bytes": 127664
+    }
+  },
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "bounds": {
+    "response_complete_frame": 135168,
+    "fixture_reserved_bytes": 4194304,
+    "capture_counterexample_payload": 6291456,
+    "request_complete_frame": 8192
+  },
+  "scientific_admission": false,
+  "input_pins_checked": 30,
+  "created_utc": "2026-11-02T10:25:44.6040153Z",
+  "root_records_before_this_record": [
+    "candidate-v1.json",
+    "candidate-v2.json",
+    "coordination.json",
+    "design-review-v1.json",
+    "design-review-v2.json",
+    "preservation-baseline.json",
+    "root-design-acceptance.json"
+  ],
+  "preserved_draft_files_checked": 4,
+  "peer_confirmation_hashes_checked": 2,
+  "runtime_operations": 0,
+  "preservation": {
+    "method": "all baseline file sizes and SHA256; later edits restricted to new design/current docs",
+    "checked_utc": "2026-11-02T10:11:20.5099357Z",
+    "mismatches": 0,
+    "files": 8733
+  },
+  "runtime_admission": false,
+  "scope": "file/text/JSON/hash/link inspection only",
+  "hb_scenarios": 24,
+  "tests_executed": 0,
+  "design_files_checked": 7,
+  "archived_active_pages_checked": 12,
+  "local_link_occurrences_checked": 479,
+  "implementation_accepted": false,
+  "roster_module_source_pins_checked": 23,
+  "p_admitted": false,
+  "broken_links": [],
+  "draft": "draft-v1: four exact affected files and manifest"
+}

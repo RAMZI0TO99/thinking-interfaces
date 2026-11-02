@@ -1,0 +1,1009 @@
+{
+  "pages": [
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "6a4d82b8a2d78e0daaf8aabd9723c079d6729dc2715b7d71affa203c1532737b",
+        "bytes": 30460,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-0.json"
+      },
+      "index": 0
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "ff4935e0f4ca8c6f434e9134c73dcf1800f6b81de51a7ca6c91dd6a6c65e2d5f",
+        "bytes": 30609,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-1.json"
+      },
+      "index": 1
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "a289a68481e67d9368408636f88f7f57eac08f04b1f10fa723ac5cf2a7c79a4b",
+        "bytes": 30678,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-2.json"
+      },
+      "index": 2
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "f395161dc67b1dd3091d6eb944570b62f9497ee272342008ebdd6147ba280863",
+        "bytes": 30752,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-3.json"
+      },
+      "index": 3
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "676994d9e714e6dc35a8cdc78b4fd7e9225a13034ad327dc39855fc9b97e6a7a",
+        "bytes": 32709,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-4.json"
+      },
+      "index": 4
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "b98495892b65d2656750efc86c45b0e1410d52cfe60711e7e2b1297f62041f26",
+        "bytes": 33207,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-5.json"
+      },
+      "index": 5
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "6932c9f93c3b16cee9013da37cf4a9e221dfda780385544e860c0aebb3b7d13c",
+        "bytes": 35474,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-6.json"
+      },
+      "index": 6
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "f42562e6755680a3bc2f85e22085cff5657fbe171ffdc6ee6c8e1679ad8cf619",
+        "bytes": 35453,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-7.json"
+      },
+      "index": 7
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "41744e9da1d25293d78a9e7e3a84a5c0d0234ad7d31e6043e16370ee6816aeb7",
+        "bytes": 36353,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-8.json"
+      },
+      "index": 8
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "444f86b021d534684ba43eb1877615e0422e938a341a469f836d9169c729f0b5",
+        "bytes": 37683,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-9.json"
+      },
+      "index": 9
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "26446e11e5161a2f1f37e6d49e04919c1c64ce1cd589ab95e92c7e1c060edb56",
+        "bytes": 37411,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-10.json"
+      },
+      "index": 10
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "5b8af0875aec7afd80e8838020a93f6139d39ea6a98df175570375e0cb7bc485",
+        "bytes": 37181,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-11.json"
+      },
+      "index": 11
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "2cb237259d39a1c122e8839e845f3b6ab83fd6b0f14d71603d4011ad7f7c1b59",
+        "bytes": 37261,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-12.json"
+      },
+      "index": 12
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "86a599bc23c3ef39efa2bf6ebe873e7cd5126c6103a4c0c7762142602044b592",
+        "bytes": 35614,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-13.json"
+      },
+      "index": 13
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "231025858b878e28ed6ab9babdb123e4465c5152c7b5a41c2cf43375f1f1e888",
+        "bytes": 35546,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-14.json"
+      },
+      "index": 14
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "3be4a9c451344c546368238c325f34050248d900aeeedd826ef26dfd44735e47",
+        "bytes": 36316,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-15.json"
+      },
+      "index": 15
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "55909fb3058cd8856d6feff6e6c882341e2fe2fed33697a28e20e157bb00f256",
+        "bytes": 38448,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-16.json"
+      },
+      "index": 16
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "7345a9cdf1db8aa8a5b2e9c8813d83faed7b2acec7e1790cd7eb3e67b8467034",
+        "bytes": 39759,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-17.json"
+      },
+      "index": 17
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "376dd1e944d622d344a8cd487051b53c4e2c8bbb8ed5245be2ee7b53ac4ac928",
+        "bytes": 39908,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-18.json"
+      },
+      "index": 18
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "25f18a020f10ab28c5e9d0a1bf04d5c161943664871b41c84974be1a157758c1",
+        "bytes": 39263,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-19.json"
+      },
+      "index": 19
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "63f7c0d578cb20ee09be2fa3e57f0fb1839034be96725d37fb6bfc287395da7f",
+        "bytes": 39303,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-20.json"
+      },
+      "index": 20
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "d3128dfe11e2db29a2c0af7a2aafb32e46265575c687492e63fee29f72d9ea19",
+        "bytes": 40042,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-21.json"
+      },
+      "index": 21
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "50bb393a0a9247e37123aa81bf3aeda4510deab4e9a8e0ea2febeefe25bed2a0",
+        "bytes": 40539,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-22.json"
+      },
+      "index": 22
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "261f3fbc76700405ba16ac5a04ed5159dbc250ed0ee9b67784200bd95082b3f1",
+        "bytes": 38393,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-23.json"
+      },
+      "index": 23
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "a9aa46284ec1c3e298a2854d644dc8034c47eac4493394784fe8d4a2c7f5f9cb",
+        "bytes": 41524,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-24.json"
+      },
+      "index": 24
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "8e40a17936b1f45765144f3bd887ba7e519a6f6eb283f67e4c1653e0a8a78436",
+        "bytes": 41564,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-25.json"
+      },
+      "index": 25
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "990e6289680380894526d7b035ddd731ab97c683e963c6a6f246086114fe3565",
+        "bytes": 39765,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-26.json"
+      },
+      "index": 26
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "955a53137f738327b01b3f7fcaf5139f5e4bb782624c4b2ba89642a05a9c933d",
+        "bytes": 37360,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-27.json"
+      },
+      "index": 27
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "7bae6bc4a8f0b011f3d6dfed2ca09d5b2b1bf7e7b75c58905972933baee0f850",
+        "bytes": 39386,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-28.json"
+      },
+      "index": 28
+    },
+    {
+      "rows": 256,
+      "ref": {
+        "sha256": "ecd8b69c0508d13a97d03b0876214ded2c97a8f6aa2e76e9d98f5f7d3715ec8f",
+        "bytes": 39782,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-29.json"
+      },
+      "index": 29
+    },
+    {
+      "rows": 193,
+      "ref": {
+        "sha256": "11dce5f7de23512a97b19bab4528cbb860606f33f319e2ac4d5b5ee112f5903e",
+        "bytes": 30512,
+        "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-refusals-30.json"
+      },
+      "index": 30
+    }
+  ],
+  "origin_plan": {
+    "sha256": "499af60b0728dad798cc08abd071877de40a483a76048e310856389f81f610c0",
+    "bytes": 48154,
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-static-plan.json"
+  },
+  "observed_coverage": {
+    "modules": 36,
+    "edges": 0,
+    "source_bytes": 710542,
+    "ast_nodes": 91231,
+    "definitions": 662
+  },
+  "candidate_execution": false,
+  "scientific_admission": false,
+  "status": "REVIEWED_ACCOUNTING_ONLY_NO_DECISIONS_APPROVED",
+  "seed_bootstrap_modules": 0,
+  "seed_guard_rows": 55,
+  "seed_decisions": 0,
+  "origin_spec": {
+    "sha256": "0e199a2b9f4a81984bdd68906740a6f064db8d8c779c73bb800463d160e90385",
+    "bytes": 55308,
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/plan-spec.json"
+  },
+  "origin_actual": {
+    "sha256": "e16a395eaae57f6cc0c7641fa112dd2d735225a0e577653051dedaa2738b97a1",
+    "bytes": 19529,
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/actual-review.json"
+  },
+  "seed_abi_rows": 0,
+  "seed_resource_rows": 0,
+  "modules": [
+    {
+      "by_kind": {
+        "from": 89
+      },
+      "refusals": 89,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "ee37885c9583f843390684dfb496907f87a0905128e7a3cf4ad227f49ff34c2d",
+        "bytes": 5644,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/pytest/__init__.py"
+      },
+      "module": "pytest",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 41,
+        "call": 74,
+        "from": 29,
+        "import": 21,
+        "native-load": 1
+      },
+      "refusals": 166,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4",
+        "bytes": 26470,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/numpy/__init__.py"
+      },
+      "module": "numpy",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 182,
+        "call": 530,
+        "dynamic-code": 1,
+        "dynamic-import": 1,
+        "from": 76,
+        "import": 31,
+        "native-load": 8,
+        "resource": 1
+      },
+      "refusals": 830,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "767496b63c899ec3d1106a4c1eeac664a9b3947a9b2f9eefa7a901cdfe8a0288",
+        "bytes": 114928,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/torch/__init__.py"
+      },
+      "module": "torch",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "from": 1
+      },
+      "refusals": 1,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "3bc1e524ebaba28b4de3b3ebad1edfc623190a1d4fc34e76b900fa34e0c37bbd",
+        "bytes": 221,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/safetensors/__init__.py"
+      },
+      "module": "safetensors",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 38,
+        "call": 128,
+        "from": 3,
+        "import": 5
+      },
+      "refusals": 174,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "81f477f2ab5e05e99308fc55ed26028eb2bf36334404e9c5558e4730184483f0",
+        "bytes": 20902,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/safetensors/torch.py"
+      },
+      "module": "safetensors.torch",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "from": 3
+      },
+      "refusals": 3,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "01cdcb104c881d6158fdf161dde018d46654a97714c55489c0e4940b01840ef4",
+        "bytes": 182,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/braindecode/__init__.py"
+      },
+      "module": "braindecode",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 3,
+        "call": 13,
+        "from": 4,
+        "import": 5
+      },
+      "refusals": 25,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "ee90855901358fefed403675a8e71a0976a8d5c980fa88323e86c0cda99a8968",
+        "bytes": 4671,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/sklearn/__init__.py"
+      },
+      "module": "sklearn",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 1,
+        "call": 4,
+        "from": 2,
+        "import": 1
+      },
+      "refusals": 8,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "c5524005797cfcd69463c08d5bd2eec21e9449f30edef3c82b654b87fae40e37",
+        "bytes": 867,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/mne/__init__.py"
+      },
+      "module": "mne",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 7,
+        "call": 18,
+        "from": 7,
+        "import": 4,
+        "native-load": 1
+      },
+      "refusals": 37,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "a11ad8a1eaf423d32a0d3dd6c9be6c7be86068321f043dacd2d555a49418b92f",
+        "bytes": 4659,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/scipy/__init__.py"
+      },
+      "module": "scipy",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {},
+      "refusals": 0,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "6e758cdd0028b2cad74c739b9adc9c9f06f054932306280b878bfe59d39219b5",
+        "bytes": 494,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/packaging/__init__.py"
+      },
+      "module": "packaging",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "from": 14
+      },
+      "refusals": 14,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "0fa769d609840e3b43a7c840c1073eaab81aba59cbe2296daea90b0ddfa0f6d8",
+        "bytes": 811,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/pluggy/__init__.py"
+      },
+      "module": "pluggy",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 8,
+        "call": 20,
+        "from": 10,
+        "import": 1,
+        "resource": 2
+      },
+      "refusals": 41,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "5cbe5ea94623e26b2400ea2b6798df4408a726f2734c8f9f271a4fe317d7b5ac",
+        "bytes": 7497,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/iniconfig/__init__.py"
+      },
+      "module": "iniconfig",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "from": 3
+      },
+      "refusals": 3,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "c1e3d0038536d2d2a060047248b102d38eee70d5fe83ca512e9601ba21e52dbf",
+        "bytes": 266,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/colorama/__init__.py"
+      },
+      "module": "colorama",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 1,
+        "call": 2,
+        "from": 5,
+        "import": 2
+      },
+      "refusals": 10,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "fb25996556e5580d3a1d0e1c512f2c46c69266e82a69cab0d00eef4042f18d81",
+        "bytes": 8082,
+        "path": "D:/Aenv/pro3/.venv/Lib/site-packages/torchaudio/__init__.py"
+      },
+      "module": "torchaudio",
+      "group": "dependencies",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L2"
+    },
+    {
+      "by_kind": {
+        "branch": 161,
+        "call": 618,
+        "from": 12,
+        "import": 12,
+        "resource": 1
+      },
+      "refusals": 804,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "ed57009e13e6040e86c22b10d98aeb71815ee19212313b63d2576be813a4d428",
+        "bytes": 56443,
+        "path": "D:/Aenv/pro3/evaluation/phase2_runner.py"
+      },
+      "module": "evaluation.phase2_runner",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 9,
+        "call": 68,
+        "from": 13,
+        "import": 1
+      },
+      "refusals": 91,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "b9b3c9a0e5bd23ceb1b63f023a1c41d0a72b975e4d2e4da37adc2faaa1957637",
+        "bytes": 7979,
+        "path": "D:/Aenv/pro3/evaluation/phase2_cho_case_inputs.py"
+      },
+      "module": "evaluation.phase2_cho_case_inputs",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 49,
+        "call": 341,
+        "from": 11,
+        "import": 4
+      },
+      "refusals": 405,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "f3e13c704755a6f3c2f95ef273b1eff2914a22898b3245bde0788667da9778d4",
+        "bytes": 36455,
+        "path": "D:/Aenv/pro3/evaluation/phase2_profile_binding.py"
+      },
+      "module": "evaluation.phase2_profile_binding",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 94,
+        "call": 540,
+        "from": 37,
+        "import": 12,
+        "native-load": 1
+      },
+      "refusals": 684,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "d7d594489bb2c228d2998653bab9d99f9ec437f84c0946dc94d38b54feeeaf86",
+        "bytes": 55925,
+        "path": "D:/Aenv/pro3/evaluation/phase2_cho_execution.py"
+      },
+      "module": "evaluation.phase2_cho_execution",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 62,
+        "call": 255,
+        "dynamic-import": 1,
+        "from": 29,
+        "import": 6
+      },
+      "refusals": 353,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "10c9bc324579fff90a65749c7c39213105aca2fc727046947281ff463b50aed8",
+        "bytes": 38925,
+        "path": "D:/Aenv/pro3/evaluation/phase2_pilot.py"
+      },
+      "module": "evaluation.phase2_pilot",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 59,
+        "call": 239,
+        "from": 38,
+        "import": 6
+      },
+      "refusals": 342,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "21e7f4138aeebeec06bda9d5f735fbe99896dbaf21f4f72e24b7b104186b5d7d",
+        "bytes": 36869,
+        "path": "D:/Aenv/pro3/evaluation/phase2_cho_sweep.py"
+      },
+      "module": "evaluation.phase2_cho_sweep",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 59,
+        "call": 297,
+        "from": 30,
+        "import": 7
+      },
+      "refusals": 393,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "78adfbb75704dfa5dda6a2853bb68b33e2b187cd69a14f844f00e9c0219bad78",
+        "bytes": 30628,
+        "path": "D:/Aenv/pro3/evaluation/phase2_cho_source_restore.py"
+      },
+      "module": "evaluation.phase2_cho_source_restore",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 39,
+        "call": 184,
+        "from": 11,
+        "import": 2
+      },
+      "refusals": 236,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "73cfdf8a08e72470f64c6cf2fbb8ceefc2800e0628ae78a149fc564483b5123e",
+        "bytes": 17007,
+        "path": "D:/Aenv/pro3/evaluation/phase2_cho_selected_manifest_bridge.py"
+      },
+      "module": "evaluation.phase2_cho_selected_manifest_bridge",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 125,
+        "call": 600,
+        "from": 15,
+        "import": 15,
+        "resource": 1
+      },
+      "refusals": 756,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "a5fe67558d20450100c1630dec4c2cbe6a09fa28a46e4501f2e2f69f675b7d38",
+        "bytes": 45975,
+        "path": "D:/Aenv/pro3/evaluation/phase2_selected_source_store.py"
+      },
+      "module": "evaluation.phase2_selected_source_store",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 80,
+        "call": 450,
+        "from": 13,
+        "import": 2
+      },
+      "refusals": 545,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "837159ca939e65fb6eec28820336ff583401cf8ce3c519dd788b937351145696",
+        "bytes": 35098,
+        "path": "D:/Aenv/pro3/evaluation/phase2_selection_evidence_binding.py"
+      },
+      "module": "evaluation.phase2_selection_evidence_binding",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 6,
+        "call": 41,
+        "dynamic-code": 2,
+        "from": 6,
+        "import": 5
+      },
+      "refusals": 60,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "dc16336c5edccc9d9568e8a957cc02e0016eafcf62c8123736f0356f6134a977",
+        "bytes": 4289,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_worker_bridge_v1/worker_bridge.py"
+      },
+      "module": "docs.phase2.cho51_worker_bridge_v1.worker_bridge",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 3,
+        "call": 15,
+        "from": 5,
+        "import": 3
+      },
+      "refusals": 26,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "1b55c368098a138396f9cd9bfbf1d9d196c2b1e74c718b74d569778c69e52e79",
+        "bytes": 1849,
+        "path": "D:/Aenv/pro3/core/config.py"
+      },
+      "module": "core.config",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 7,
+        "call": 36,
+        "from": 3,
+        "import": 3
+      },
+      "refusals": 49,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "14ac6a25bdb950d4853efd7533c323d20759c3ca57a0a8676e547e4d45155758",
+        "bytes": 3426,
+        "path": "D:/Aenv/pro3/core/provenance.py"
+      },
+      "module": "core.provenance",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 98,
+        "call": 405,
+        "from": 18,
+        "import": 9
+      },
+      "refusals": 530,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "6101f5b722958f2d08c87f6d8d305f27c473253a8015cc4c1d79e4d3b0d212cf",
+        "bytes": 37279,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_canonical_boundary_v1/boundary.py"
+      },
+      "module": "docs.phase2.cho51_canonical_boundary_v1.boundary",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 21,
+        "call": 108,
+        "dynamic-code": 4,
+        "from": 4,
+        "import": 5
+      },
+      "refusals": 142,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "9c168cdb19ad882759d1b73ec23b821b1a2c7045bf7807cee3b9682a01d9a1e3",
+        "bytes": 10427,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_route_candidate_v1/route_contract.py"
+      },
+      "module": "docs.phase2.cho51_route_candidate_v1.route_contract",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 23,
+        "call": 138,
+        "from": 6,
+        "import": 1
+      },
+      "refusals": 168,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "4547de8f2606aa40f5c901a0c06db473c8eead0a27ac2930581485e4a86eab9f",
+        "bytes": 9356,
+        "path": "D:/Aenv/pro3/evaluation/phase2_protocol.py"
+      },
+      "module": "evaluation.phase2_protocol",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 16,
+        "call": 49,
+        "from": 8,
+        "import": 3
+      },
+      "refusals": 76,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "045794e06171b861a3b244be65162d1d80a39f0129333fbbd9598e097cc1834c",
+        "bytes": 4586,
+        "path": "D:/Aenv/pro3/evaluation/phase2_records.py"
+      },
+      "module": "evaluation.phase2_records",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 42,
+        "call": 165,
+        "from": 4,
+        "import": 4
+      },
+      "refusals": 215,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429",
+        "bytes": 14415,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/contracts.py"
+      },
+      "module": "docs.phase2.cho51_p3_adapter_v1.contracts",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 21,
+        "call": 120,
+        "from": 10,
+        "import": 1
+      },
+      "refusals": 152,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122",
+        "bytes": 12945,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/mapping.py"
+      },
+      "module": "docs.phase2.cho51_p3_adapter_v1.mapping",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 55,
+        "call": 147,
+        "from": 4,
+        "import": 1
+      },
+      "refusals": 207,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c",
+        "bytes": 16973,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/telemetry.py"
+      },
+      "module": "docs.phase2.cho51_p3_adapter_v1.telemetry",
+      "group": "canonical",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L3"
+    },
+    {
+      "by_kind": {
+        "branch": 36,
+        "call": 184,
+        "from": 15,
+        "import": 2
+      },
+      "refusals": 237,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384",
+        "bytes": 20488,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_mapping.py"
+      },
+      "module": "docs.phase2.cho51_p3_adapter_v1.test_mapping",
+      "group": "collection",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L4"
+    },
+    {
+      "by_kind": {
+        "syntax": 1
+      },
+      "refusals": 1,
+      "disposition": "UNRESOLVED_FOR_EXECUTION",
+      "source": {
+        "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee",
+        "bytes": 17511,
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_telemetry.py"
+      },
+      "module": "docs.phase2.cho51_p3_adapter_v1.test_telemetry",
+      "group": "collection",
+      "required_review": "Exact source-spanned decisions and finite transitive closure; no wildcard include/exclude",
+      "phase": "L4"
+    }
+  ],
+  "refusal_count": 7873,
+  "origin_index": {
+    "sha256": "5c8ee5d40185b4d03485e7ae1d682ce45570c24a232667157e846accf3ce8e13",
+    "bytes": 18363,
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_p2/attempts/e0014cf3-271a-472a-9070-cf9873d98e8c/l-plan-derivation-index.json"
+  },
+  "schema": "cho51_finite_l_refusal_inventory_v1",
+  "seed_native_rows": 0,
+  "by_kind": {
+    "call": 5789,
+    "branch": 1346,
+    "from": 538,
+    "import": 174,
+    "native-load": 11,
+    "dynamic-code": 7,
+    "resource": 5,
+    "dynamic-import": 2,
+    "syntax": 1
+  },
+  "seed_count": 36
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "cho51_document_archive_v1",
+  "created_utc": "2026-10-29T17:56:40.5178293Z",
+  "scope": "Twelve exact pre-L-design active-document snapshots; original relative paths retained",
+  "files": [
+    {
+      "original_path": "HANDOFF.md",
+      "bytes": 8682,
+      "sha256": "70a742e7dbb8f59aae5fa46690d424611b00be26dc8598f73628f72c4456a1e1"
+    },
+    {
+      "original_path": "AGENTS.md",
+      "bytes": 4127,
+      "sha256": "51aab7b5d1d4e98308055d6fafa4e40900028ea23ebf67cc121e46ec3b377cbe"
+    },
+    {
+      "original_path": "AGENT_COORDINATION.md",
+      "bytes": 3712,
+      "sha256": "497ecee80759232b1d8a282776865f1682dd7694d680b66abc674c799fb95dd9"
+    },
+    {
+      "original_path": "CONTINUE_HERE.md",
+      "bytes": 3872,
+      "sha256": "0e4f55c804d96f5b69143c6c59c5428f8538d743273fb119acdd9ab16df0b7d7"
+    },
+    {
+      "original_path": "PHASE2_START_HERE.md",
+      "bytes": 3548,
+      "sha256": "1b9e3d40348c9dbc52218170e2f46de5c39c7fbb67056235062eb419c3489549"
+    },
+    {
+      "original_path": "README.md",
+      "bytes": 4540,
+      "sha256": "49047b7453d0ba21b464f6f25de4fdcbd02ecd6892d3146d66a178a1e5bbfc4a"
+    },
+    {
+      "original_path": "WINDOWS_SETUP.md",
+      "bytes": 8145,
+      "sha256": "c62f0ca14bec0b114a0c3c573003a5a8678d5906fb97e7552003e4a6ee750203"
+    },
+    {
+      "original_path": "docs/phase2/README.md",
+      "bytes": 6198,
+      "sha256": "756d370db3992e955ae4d5f42af5c1e1056fc09a2b0afdf0362df69a47f4a957"
+    },
+    {
+      "original_path": "docs/where are we/README.md",
+      "bytes": 7227,
+      "sha256": "1b39f3ac9bd8c1c6ff9fbb0aab30f5858bc08218adbe0a6a2ed22331486af346"
+    },
+    {
+      "original_path": "docs/where are we/PROJECT_PLAN.md",
+      "bytes": 16182,
+      "sha256": "9f8724631ed0991d84621ab048fcdffd4d14178d4129da033ff87c0db8b668cf"
+    },
+    {
+      "original_path": "docs/where are we/PROGRESS_REPORT.md",
+      "bytes": 26244,
+      "sha256": "b0c05e4f8473fe6810dbdf1170c321c81dd3d18f5260bbbeb1180036f65f9b08"
+    },
+    {
+      "original_path": "docs/where are we/EVIDENCE_INDEX.md",
+      "bytes": 23524,
+      "sha256": "9aace7962f4806a2fcb8d2eede1ed73d327f3f43549b3edeb45be9d5a81f3c98"
+    }
+  ]
+}

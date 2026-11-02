@@ -1,0 +1,30 @@
+{
+  "tests_executed": 0,
+  "reviewer": "qd_source_review",
+  "p_admitted": false,
+  "findings": [],
+  "created_utc": "2026-11-02T09:33:17.1890916Z",
+  "review_text_sha256": "897c17212c2de4ac5a10b788e0c9d4cb8e2e453e09df846ff6f993d0a277eef3",
+  "publication_kind": "verbatim independent peer message transcription",
+  "scientific_admission": false,
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "runtime_admission": false,
+  "runtime_operations": 0,
+  "authors": [
+    "project_root",
+    "sc1_publisher"
+  ],
+  "schema": "cho51_sc1_independent_source_review_v1",
+  "publisher": "project_root",
+  "qualification_accepted": false,
+  "candidate": {
+    "bytes": 50116,
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v2.json",
+    "sha256": "a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60"
+  },
+  "resolved_findings": [
+    "SC-I1",
+    "SC-I2"
+  ],
+  "review_text": "SC1 implementation candidate-v2 independent review: ACCEPTED_SOURCE_ONLY; findings []. Candidate is 50,116 bytes, SHA256 a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60. All 263 source pins, 6 accepted design inputs and 3 support pins match; all 5 preserved draft-v1 files match their original candidate pins. Exactly 4 source files changed. SC-I1 is resolved by retaining the pre-close census and adding a fresh live-guard host census after successful backend closure before CLOSED; the new supplied test injects an off-directory artifact during input verification, publication verification and close and requires consumed refusal. SC-I2 is resolved by freshly verifying and retaining both persisted source_review and contract_adoption pins/native identities before admission metadata publication; the new supplied test changes each reference's bytes or identity and requires refusal without creating admission. No other guard or host/runtime boundary changed. The prior full source review covers invocation-local hash scratch, fresh typed RAM samples, namespace preservation, all 5 publisher component files, native prewrite facts, bounded writes, original readback/closure, immutable reservations, confirmation attribution and encoded capture limits. Coverage remains source reasoning only: 19 hash/memory and 35 publisher/backend methods (54 new) are unexecuted, including 4 simulated backend methods. The textual 526+54=580 map is not executed collection; all 40 SC and 36 diagnostic scenarios remain unqualified. Concrete authenticated host/atomic claim/global census/loaded-code binding, bounded qualification/discovery runner and complete-Q timing/output feasibility remain unintegrated or unestablished. Entry points still refuse; no runtime, Q, second QD, P or science admission follows. Historical a1f12701 remains INCOMPLETE_REFUSED17/16 and all open obligations remain. No files were written and no project runtime/import/AST/compiler/native/tests/Git executed."
+}

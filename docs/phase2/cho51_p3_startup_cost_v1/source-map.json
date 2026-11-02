@@ -1,0 +1,259 @@
+{
+  "design_only": true,
+  "sites": [
+    {
+      "end_line": 208,
+      "line": 188,
+      "finding": "Per-read buffer and c_uint32 allocation; all guarded reads and fresh passes remain",
+      "path": "tools/local_validation/lq18/native_reader.py",
+      "operation": "_hash",
+      "id": "SC-H-Q",
+      "selection": "invocation-local scratch only"
+    },
+    {
+      "end_line": 212,
+      "line": 192,
+      "finding": "Counterpart same loop",
+      "path": "tools/local_validation/lp18/native_reader.py",
+      "operation": "_hash",
+      "id": "SC-H-P",
+      "selection": "same source change in disabled P counterpart; no P execution"
+    },
+    {
+      "end_line": 171,
+      "line": 152,
+      "finding": "64-byte raw storage plus ctypes views per sample",
+      "path": "tools/local_validation/lq18/supervisor.py",
+      "operation": "Guard.sample",
+      "id": "SC-M",
+      "selection": "declared layout, fresh instance; every native/live sample retained"
+    },
+    {
+      "end_line": 467,
+      "line": 462,
+      "finding": "Independent retained hash of every runtime file",
+      "path": "tools/local_validation/lq18/supervisor.py",
+      "operation": "runtime retention",
+      "id": "S06",
+      "selection": "no removed reads"
+    },
+    {
+      "end_line": 77,
+      "line": 52,
+      "finding": "Bundle/four artifacts/three PE exports plus whole-reader verify",
+      "path": "tools/local_validation/lq18/l_native.py",
+      "operation": "load_bundle",
+      "id": "S14",
+      "selection": "all preserved; not isolated PE timing"
+    },
+    {
+      "line": 541,
+      "finding": "Separate final original retained verification",
+      "path": "tools/local_validation/lq18/supervisor.py",
+      "operation": "reader.verify",
+      "id": "S17",
+      "selection": "preserved"
+    },
+    {
+      "end_line": 347,
+      "line": 336,
+      "finding": "Fresh directory/file facts, whole hashes, recipes and copied descriptors",
+      "path": "tools/local_validation/lq18/native_reader.py",
+      "operation": "verify",
+      "id": "V",
+      "selection": "preserved"
+    },
+    {
+      "end_line": 279,
+      "line": 270,
+      "finding": "Initial retain hash plus fresh collect hash and post facts",
+      "path": "tools/local_validation/lq18/native_reader.py",
+      "operation": "read_small",
+      "id": "RS",
+      "selection": "both preserved"
+    },
+    {
+      "end_line": 172,
+      "line": 157,
+      "finding": "Hard inherited384 gate would not account for ten new TimingFormatTests",
+      "path": "tools/local_validation/lq17/child_entry.py",
+      "operation": "discovery partition",
+      "id": "ROSTER",
+      "selection": "explicit additional disjoint obligations; no runnable roster adopted"
+    }
+  ],
+  "read_only_explorer": "startup_source_map",
+  "guard_equivalence_qualified": false,
+  "runtime_operations": 0,
+  "inputs": {
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829",
+      "path": "docs/PROJECT_EXECUTION_POLICY.md",
+      "bytes": 5619
+    },
+    "docs/phase2/cho51_p3_qd_contract_20261101.md": {
+      "sha256": "b116166656bc968ae5752421ee658e55c2d53c9e0346eee80051e9b0df8fe297",
+      "path": "docs/phase2/cho51_p3_qd_contract_20261101.md",
+      "bytes": 9926
+    },
+    "docs/phase2/cho51_p3_qd_execution_20261102.md": {
+      "sha256": "fbefe74e8029884da9962419e0737a8ba23a3f6c941df8025cd81974cf6e1400",
+      "path": "docs/phase2/cho51_p3_qd_execution_20261102.md",
+      "bytes": 8662
+    },
+    "docs/phase2/cho51_p3_probe_implementation_20261101.md": {
+      "sha256": "a13da22bbbe149703b6161046f9827222d384de62e1d4ea8c050a02acc92360f",
+      "path": "docs/phase2/cho51_p3_probe_implementation_20261101.md",
+      "bytes": 10209
+    },
+    "docs/phase2/cho51_p3_lossless_codec_implementation_20261101.md": {
+      "sha256": "e54f160516cd849d1e25c2e76540db8edafac42a3412dbf290c59101f2d23d3f",
+      "path": "docs/phase2/cho51_p3_lossless_codec_implementation_20261101.md",
+      "bytes": 10958
+    },
+    "docs/phase2/cho51_p3_startup_timing_v1/contract.md": {
+      "sha256": "948eb50a0bc4176f9f07adc70e033304131ab3311f59487b9d84ce78425a7d68",
+      "path": "docs/phase2/cho51_p3_startup_timing_v1/contract.md",
+      "bytes": 19396
+    },
+    "docs/phase2/cho51_p3_startup_timing_v1/qualification.md": {
+      "sha256": "0b3f722f14190a4adbb2c5ef082b4fde9bfc0a58fbd83d0c148595a79e1069a4",
+      "path": "docs/phase2/cho51_p3_startup_timing_v1/qualification.md",
+      "bytes": 7547
+    },
+    "docs/phase2/cho51_p3_startup_timing_v1/stages.json": {
+      "sha256": "ac449ef41d3c3537a4ebd3265262199d093be2f40454618525c9050651e38c38",
+      "path": "docs/phase2/cho51_p3_startup_timing_v1/stages.json",
+      "bytes": 11393
+    },
+    "tools/local_validation/lq18/native_reader.py": {
+      "sha256": "8ee04b85f00b82b42567c1fcaee88d1a811f9429703884ddcf33994047dc5955",
+      "path": "tools/local_validation/lq18/native_reader.py",
+      "bytes": 31126
+    },
+    "tools/local_validation/lp18/native_reader.py": {
+      "sha256": "50c079115c9db5ad3491826f5ed8c4ef75b323f658c22fffaecdf49edc6a6b8a",
+      "path": "tools/local_validation/lp18/native_reader.py",
+      "bytes": 22152
+    },
+    "tools/local_validation/lq18/supervisor.py": {
+      "sha256": "78999c2f9f1525e49fd8f5e7debbe2f3d60837c898bb175ef72065c6d61a0374",
+      "path": "tools/local_validation/lq18/supervisor.py",
+      "bytes": 38665
+    },
+    "tools/local_validation/lq18/l_native.py": {
+      "sha256": "8e58941690efb83ed8804f0b299aab4ee8e9c6ef035a47bdc0740ff2e7de5b3d",
+      "path": "tools/local_validation/lq18/l_native.py",
+      "bytes": 8172
+    },
+    "tools/local_validation/lq18/test_protocol.py": {
+      "sha256": "7f6fa7cdd31c93643c2783174c10c81a30cad972f1124c43d12f85ff0951b484",
+      "path": "tools/local_validation/lq18/test_protocol.py",
+      "bytes": 21158
+    },
+    "tools/local_validation/lq17/supervisor.py": {
+      "sha256": "336a05b39bc7ad595397ba4af1df2928de43df8a6446a68c91e142f0f3c98b44",
+      "path": "tools/local_validation/lq17/supervisor.py",
+      "bytes": 32612
+    },
+    "tools/local_validation/lq17/child_entry.py": {
+      "sha256": "5ba4120020939a51a1490cfc5b6c0acd8e806f9c1c3559849bb2e0f5c52c6512",
+      "path": "tools/local_validation/lq17/child_entry.py",
+      "bytes": 19346
+    },
+    "tools/local_validation/lq17/protocol.py": {
+      "sha256": "2119d7369bb964e69cb88b6ac118596578e5caaa5b4d5e6f782b9070ae8b954c",
+      "path": "tools/local_validation/lq17/protocol.py",
+      "bytes": 36907
+    },
+    "tools/local_validation/lq17/invoke_q.ps1": {
+      "sha256": "f87f23f01f9ffd815b3f94e77c4d504a6fc0ed0e2fb7337b3ed89bd319c361d2",
+      "path": "tools/local_validation/lq17/invoke_q.ps1",
+      "bytes": 68628
+    },
+    "runs/coordination/cho51_p3_probe_20261101_q4/expected-roster.json": {
+      "sha256": "fa24231a78055d64fa017c822e1c56993236475f38ba1a57632638e605595305",
+      "path": "runs/coordination/cho51_p3_probe_20261101_q4/expected-roster.json",
+      "bytes": 64368
+    },
+    "runs/coordination/cho51_p3_lossless_20261101_q2/qualification-aggregate.json": {
+      "sha256": "b5fc34ac5211bc7a21f6b98163e1707a8ce59df4c2bc1de8ebfdeb10cfd66ed7",
+      "path": "runs/coordination/cho51_p3_lossless_20261101_q2/qualification-aggregate.json",
+      "bytes": 2071
+    },
+    "runs/coordination/cho51_p3_lossless_20261101_q2/actual-review.json": {
+      "sha256": "ee4f917d70a7a9442483bc17b0b2e227ed702bffe9eac92ee0d1c72b5ed9d556",
+      "path": "runs/coordination/cho51_p3_lossless_20261101_q2/actual-review.json",
+      "bytes": 117172
+    },
+    "runs/coordination/cho51_p3_lossless_20261101_q2/lossless-actual-review.json": {
+      "sha256": "6da24e951a9bc3964848cea50583d51355143d01156b40af34d76fccfdd0966f",
+      "path": "runs/coordination/cho51_p3_lossless_20261101_q2/lossless-actual-review.json",
+      "bytes": 73924
+    },
+    "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/qd-metadata-v2.ps1": {
+      "sha256": "b5946a6dba8ee5f22952ed83edd80645bdaa0f27e298e02ef9c6223cc12bbc24",
+      "path": "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/qd-metadata-v2.ps1",
+      "bytes": 5264
+    },
+    "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/capture-qd-v2.mjs": {
+      "sha256": "99432a1c5c1045f2470d15b4e732c0cc69fb03387be2e61386537eb9a8978dbb",
+      "path": "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/capture-qd-v2.mjs",
+      "bytes": 3466
+    },
+    "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/capture-transport-review.json": {
+      "sha256": "071c010690454b5a44549d00973cdce598a51ea265bd18d8789775de64f83436",
+      "path": "runs/coordination/cho51_p3_startup_timing_execution_20261101_v1/capture-transport-review.json",
+      "bytes": 3948
+    },
+    "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-actual-review_a1f12701-02a9-4987-9dec-a1297b52b046.json": {
+      "sha256": "e2e1f85803c6e6c798342fcbc835cceec6b1235b3662f3c80af90e36a88235b9",
+      "path": "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-actual-review_a1f12701-02a9-4987-9dec-a1297b52b046.json",
+      "bytes": 10976
+    },
+    "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-root-disposition_a1f12701-02a9-4987-9dec-a1297b52b046.json": {
+      "sha256": "36733404dc8aef93076a6a1cee97584517ae4a544466e35c0b668d8d7bcf5fb0",
+      "path": "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-root-disposition_a1f12701-02a9-4987-9dec-a1297b52b046.json",
+      "bytes": 5469
+    },
+    "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-closeout_a1f12701-02a9-4987-9dec-a1297b52b046.json": {
+      "sha256": "7f48d8e9c286ef1ab50c40147d52d1bdc293592fb0f7eb4e55663922d7ad7b43",
+      "path": "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-closeout_a1f12701-02a9-4987-9dec-a1297b52b046.json",
+      "bytes": 19561
+    },
+    "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-allocation_a1f12701-02a9-4987-9dec-a1297b52b046.json": {
+      "sha256": "7ccdcbba12153cda4fb39788633dc7858f5ec16c45fc01b4587b72e28ba536e5",
+      "path": "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-allocation_a1f12701-02a9-4987-9dec-a1297b52b046.json",
+      "bytes": 3825
+    }
+  },
+  "rejected_or_deferred": [
+    "No per-file WinDLL setup exists to remove",
+    "No sensor cache or guard coalescing",
+    "No ancestry or repeated hash elimination",
+    "No S14/S17 merge",
+    "No old census or artifact cache",
+    "Facts scratch reuse deferred",
+    "No preclock work or parallel processes"
+  ],
+  "reader_limits": {
+    "general_total_bytes": 4294967296,
+    "read_small_bytes": 8388608,
+    "bundle_artifact_bytes": 1048576,
+    "general_file_bytes": 2147483648,
+    "general_files": 25000,
+    "actual_supervisor_files": 2000,
+    "actual_supervisor_file_bytes": 16777216,
+    "path_characters": 4096,
+    "path_components": 32,
+    "enumeration_entries": 50000,
+    "actual_supervisor_total_bytes": 67108864,
+    "general_directories": 25000,
+    "hash_chunk_bytes": 65536,
+    "path_segment_characters": 255
+  },
+  "author": "project_root",
+  "p_admitted": false,
+  "speedup_established": false,
+  "schema": "cho51_startup_cost_source_map_v1"
+}

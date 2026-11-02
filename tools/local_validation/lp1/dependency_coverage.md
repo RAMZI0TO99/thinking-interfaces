@@ -1,0 +1,82 @@
+# LP1 current scope
+
+This new successor refreshes physical coverage for the L observer, host,
+collection runner and file-only execution-plan compiler. The exact change is
+specified in [the L implementation contract](../../../docs/phase2/cho51_p3_l_implementation_contract_20261029.md).
+All new .py/.ps1/.json/.md/.cs/.c/.h sources are selected. Fresh Q-generated
+observer/injection/target/disassembly inputs and the reviewed plan specification
+are exact extra paths. The toolchain remains a Q build dependency.
+
+Physical preparation can succeed while execution-plan derivation reports
+INCOMPLETE_REFUSED. That status does not authorize L or broaden the installed
+code superset into an import allowlist. The following inherited trace describes
+physical selector rationale and historical observations only.
+# P2 revision3 current binding
+
+This successor uses the R1-sealed ordinary Git copy at the exact git_root in the
+recipe. Installed Git and frozen P2 remain unchanged. Sixteen explicit nested
+setuptools vendor dist-info directories supply the104 metadata files formerly
+bound as an extra-path supplement. Fresh P pins and native observation remain
+required. The following source trace is inherited rationale, not a repeated
+execution claim. Future Git LANG/LC_ALL are C; only exact rev-parse/status are
+considered, with network, templates, optional locale, filters and helpers denied.
+# Proposed P2 physical dependency coverage
+
+29 October 2026. Author: dependency implementation agent. Independent source and coverage review pending. This is a selector specification, not an executed builder, accepted closure or L admission. The recipe was developed using file/text/metadata inspection only. Its later Q qualification and P observation require separate admission and records.
+
+`dependency_recipe.json` defines a canonical union. Root's reviewed P caller must expand it into retained physical file identities and bounded paged manifests. A requirement in `required_supplements` is mandatory: it cannot be reported as satisfied merely because this document mentions it. The P2 caller and Q-only helper builder are supplied as new sources; neither has been admitted or run at source-review time. Current paths are discovery locations and must be checked freshly; the old venv executable is not selected. The retained base is Python 3.12.14 according to accepted P1Q context; fresh bytes and later ABI qualification remain required.
+
+## Why the source selection is conservative
+
+`evaluation.phase2_pilot` reaches `adaptation.anchor_manifest` and scikit-learn; `encoder.labram` reaches `braindecode.models`. Braindecode eagerly exposes its model modules, reaching Torch, torchaudio, MNE, scipy, sklearn, pandas, einops, linear_attention_transformer, rotary_embedding_torch, h5py and attention helper packages. Torch also reaches filelock, typing_extensions, setuptools, sympy/mpmath, networkx, jinja2/markupsafe and fsspec. MNE reaches decorator, lazy_loader, matplotlib, pooch, tqdm and requests; sklearn reaches joblib, narwhals and threadpoolctl. Pytest reaches _pytest, pygments, iniconfig, packaging, pluggy and colorama. These names explain why the original seeds are insufficient; they are not a claimed exhaustive graph.
+
+Instead of an incomplete manually expanded graph, select every installed `.py`, `.pyi`, `.pyd` and `.dll` outside __pycache__ directories, including test modules as a physical code superset. This physically covers ordinary Python import targets and native package libraries irrespective of transitive package name, including top-level single-file modules and namespace packages. `.pyi` matters because lazy_loader reads stub files. All dist-info trees cover importlib.metadata queries, versions, metadata-driven decisions and entry-point declarations. Retaining entry-point bytes does not enable entry-point loading. The loader must refuse unlisted origins and plugins; the code superset is not an execution allowlist. Test-package code is retained conservatively; it is not permission to execute package test suites. Do not silently discover more code during L.
+
+File metadata enumeration observed 15,100 selected code/native files totalling 3,159,517,293 bytes. Git repository metadata currently has 1,773 files / 42,224,410 bytes before log/hook exclusions; Git mingw64/bin has 159 files / 98,679,753 bytes before extension filtering. Matplotlib mpl-data has 204 files / 9,648,626 bytes. These are planning observations, not retained pins, final union totals or resource acceptance. The final union includes runtime, metadata, project and supplements and must still refuse above 25,000 files, 4 GiB total, 2 GiB per file or depth 32. No aggregate claim is made from estimates.
+
+## Project and configuration coverage
+
+The source census duplicates `core.provenance.source_files` selection: nine roots, `.py/.toml/.ps1`, exclusions for three protected data roots and every `local.toml`, seven exact root metadata files, and all immediate ordinary files in `.githooks`. This is a live initial/final census, not 432 or 742 assumed files. The additional selected docs trees retain actual dynamically compiled planner/bridge/boundary bytes and module/package initializers. The dependency-plan exact seed/assets arrays supply the frozen metadata files and synthetic identity JSON. Route planner PINS are three owner/proposal/roster JSONs plus core/config.py, evaluation/phase2_protocol.py and evaluation/phase2_runner.py; those are selected independently of import discovery. The recipe includes the exact observer/bootstrap source trees. Current admission/review, pin-index/pages and Q artifact references are retained separately as control inputs, avoiding self-hash cycles; the P admission binds any extra physical inputs explicitly.
+
+JSON/TOML references to raw assets and weights remain digest strings. They are never expanded into assets. The only selected FIF is `mne/data/fsaverage/fsaverage-fiducials.fif`. No FIF/data wildcard exists. Matplotlib mpl-data excludes its sample_data tree (which contains EEG/example arrays); the remaining configuration/fonts/styles and tzdata zoneinfo are finite installed resources; certifi has one exact certificate bundle. Other package resource reads are not assumed covered: text-reviewed initialization must identify any additional exact resource before complete closure acceptance, and L must deny unexpected reads. Optional dormant modules in the code superset do not demand all their datasets/resources.
+
+## Native closure and search
+
+`torch/__init__.py` Windows `_load_dll_libraries` enumerates every torch/lib DLL, adds exec-prefix Library/bin, userbase Library/bin and exec-prefix bin, possibly distinct base-prefix Library/bin, then optional NVToolsExt/CUDA paths. It first uses LoadLibraryExW flags 0x1100 and can fall back to LoadLibraryW after patching PATH. Thus pinning torch/lib and the Python DLL alone is insufficient. The exact controlled environment must resolve every candidate; retain both existing directory membership and missing-path observations. Any existing selected search directory contributes its exact non-system DLL candidates. Do not silently suppress present paths or treat hidden GPUs as preventing CUDA DLL initialization.
+
+Every selected PE extension/executable/DLL needs bounded static import and delay-import table resolution without loading it. Resolve dependency names under the reviewed Windows search configuration, account for duplicate basenames and refuse unresolved non-system targets; retain every physical alternative for an ambiguous basename and require a later per-importer loader-choice review. A PE import table does not enumerate all runtime GetProcAddress/LoadLibrary decisions; reviewed initialization code, selected search-directory census and later loaded-image/origin enforcement are all necessary. API sets, KnownDLLs and explicitly reviewed OS image identities are a separate stated Windows platform trust base. The recipe does not cryptographically authenticate loaded code or establish compatibility between stale venv package bytes, Torch 2.13+cu130, torchaudio 2.11 and retained Python 3.12.14. Such mismatches are a material L risk, not an excuse to execute discovery in P.
+
+## Git closure
+
+Select the exact cmd/git.exe wrapper and conservative Git exe/DLL runtime directories. Retain repository identity/index/refs/objects as physical bytes without invoking Git or expanding object contents. Full repository metadata is a conservative superset for HEAD verification and status; unused objects are not run. Reject unsupported .git indirection/alternates unless resolved into exact reviewed roots first. Root's caller must determine effective system/global/XDG/config includes, global ignore/attributes, repository info files and nested ignore/attribute paths under the controlled environment, retain exact values privately, and detect changes. No config dumps or credentials belong in console output. Git status observes untracked directory/path metadata; it does not authorize reading protected data contents. External fsmonitor, filters, helpers or configuration requiring unbounded/outside reads must refuse. Only the contract's two exact Git vectors are later permitted in L/V, inside the owned Job.
+
+## Outstanding acceptance conditions
+
+The declarative selection is concrete and bounded, but physical closure is deliberately false until Root supplies current observer/review refs, expands the mandatory native-search supplements, pins every selected path, checks aggregate bounds and gets independent coverage acceptance. The config/resource addendum below supplies the concrete Git/config/resource policy. Static PE resolution and initializer resource review remain explicit gates; this author has not claimed them executed. Root should preserve that distinction in source/result reports. P's physical identity result does not authorize L; L must qualify origins, native paths, resources, configuration and exact candidate collection under its own reviewed admission. Scientific cells remain 0/1020, custody UNRESOLVED and historical attempts unchanged.
+
+
+## Git/config/resource resolution addendum
+
+The second text-only pass resolved concrete configuration selectors. Installed system Git reads `Git/etc/gitconfig` and `Git/etc/gitattributes`; user `.gitconfig` exists. `ProgramData/Git/config`, `Git/mingw64/etc/gitconfig`, `Git/mingw64/etc/gitattributes` and user `.config/git/{config,ignore,attributes}` were absent by ordinary file observation. No include/includeIf sections appear in the existing system/user/repository configs. Recipe additions pin the existing files and require retained absence for optional paths. These observations are not native P retention. Retain config bytes privately: user/remote/credential values were not printed or copied into the recipe. The future environment fixes HOME, USERPROFILE and XDG_CONFIG_HOME to these reviewed locations and rejects inherited GIT_* overrides; it does not disable system config or add command-line config overrides.
+
+The repository is an ordinary `.git` directory. Its config has repositoryformatversion=0, bare=false, filemode=false, symlinks=false, ignorecase=true and hooksPath=.githooks. Current commondir, config.worktree, object alternates, shallow and grafts paths are absent. The conservative repository selector pins index, HEAD, refs, packed refs and all object bytes needed by status/HEAD resolution. Neither Git nor object decoding was executed. `.git` log/hooks exclusions remain because these two read-only vectors neither consult reflogs nor execute hooks. A new include, alternates path or worktree indirection must refuse pending a new bounded exact selector, not follow unrelated directories.
+
+All nonprotected project `.gitignore`, `.gitattributes` and `.gitmodules` files are selected recursively, independently of the source census. No filter/diff/working-tree-encoding attribute was found in the enumerated project attribute files. The installed system config defines LFS and astextplain helpers, and system attributes select astextplain for document types. Their definitions are retained as metadata, not authorized as subprocesses. The two permitted vectors perform no diff/textconv; any attempt to launch those helpers fails confinement. If Git needs protected data contents or unselected nested metadata it must fail. Untracked path enumeration is not permission to read file contents.
+
+MNE `__init__.py:30` calls lazy_loader.attach_stub; `lazy_loader/__init__.py:331-337` opens the adjacent `.pyi`, covered by the all-code selector. MNE's logging initialization consults MNE_LOGGING_LEVEL; it is fixed to INFO. `mne/utils/config.py:479-504` first honors `_MNE_FAKE_HOME_DIR`, otherwise checks APPDATA/USERPROFILE and reads personal `.mne/mne-python.json`. A personal config does exist here and is deliberately avoided: the proposed closed launch environment fixes `_MNE_FAKE_HOME_DIR` to a fresh empty attempt-owned directory. Root must create and guard that fixture before package import. No personal MNE config bytes need be selected under that launch contract.
+
+Matplotlib `__init__.py:646-675,989-999` reads the distributed matplotlibrc and searches cwd, MATPLOTLIBRC and MPLCONFIGDIR. The recipe fixes MATPLOTLIBRC to the selected distributed file, MPLCONFIGDIR to another fresh attempt-owned empty directory, and separately requires retained absence of a project-cwd matplotlibrc before L. Its style initializer reads distributed mpl-data/stylelib and MPLCONFIGDIR/stylelib; the distributed styles/fonts/config are all selected and the attempt directory initially has no personal styles. The code superset retains font_manager, but it can scan OS/user fonts and invoke font discovery if used. Such external font/cache/tool access is not authorized: L must deny it or first accept a new finite font/cache recipe. The present recipe must not be called sufficient for a path requiring those reads.
+
+Torch's graph-break helper has an explicit `_dynamo/graph_break_registry.json` reader (`torch/_dynamo/exc.py:635-652`). Export schema helper `update_schema` reads `schema.yaml` and `export_schema.thrift` (`torch/_export/serde/schema_check.py:781-803`). All three exact nonnumerical metadata files are now selected conservatively even where the helper is dormant. Braindecode/version, Torch/torch_version, safetensors, NumPy/scipy/sklearn initializers and their distributor-init files were inspected as text; no additional direct initializer resource file read was found there. This is a bounded static observation, not a guarantee about every lazy path in every retained code module. Additional initialization resource access outside the finite allowlist refuses; no unrestricted package-data discovery is allowed.
+
+Superseding the earlier generic Git/resource supplement wording, these concrete selectors and controlled paths close the proposed config/resource recipe for the stated finite loader policy. Root still supplies native PE/search resolution, current implementation/review references, and the actual retained expansion plus aggregate/refusal evidence. An independent reviewer must assess both this narrowed permitted resource policy and the later loader's ability to enforce it before adoption.
+
+
+
+
+
+
+
+
+
+

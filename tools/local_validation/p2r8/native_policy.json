@@ -1,0 +1,4785 @@
+{
+  "schema": "cho51_p2_native_policy_v1",
+  "created_utc": "2026-10-29T11:33:26.142137Z",
+  "platform_images": [
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "advapi32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/advapi32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "avrt.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/avrt.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "bcrypt.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/bcrypt.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "bcryptprimitives.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/bcryptprimitives.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "cfgmgr32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/cfgmgr32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "clbcatq.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/clbcatq.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "combase.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/combase.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "comctl32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/comctl32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "comdlg32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/comdlg32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "coml2.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/coml2.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "concrt140.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/concrt140.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "crypt32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/crypt32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "cryptbase.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/cryptbase.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "cryptsp.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/cryptsp.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "d2d1.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/d2d1.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "d3d11.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/d3d11.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "d3d12.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/d3d12.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "d3d9.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/d3d9.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dbgcore.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dbgcore.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dbghelp.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dbghelp.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "difxapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/difxapi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dnsapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dnsapi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dwmapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dwmapi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dwrite.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dwrite.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "dxgi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/dxgi.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "gdi32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/gdi32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "gdiplus.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/gdiplus.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "glu32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/glu32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "hid.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/hid.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "imagehlp.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/imagehlp.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "imm32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/imm32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "iphlpapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/iphlpapi.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "kernel32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/kernel32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "kernelbase.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/kernelbase.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "mpr.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/mpr.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "mscoree.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/mscoree.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "msctf.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msctf.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "msvcp140_1.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcp140_1.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "msvcp140_2.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcp140_2.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "msvcp140_atomic_wait.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcp140_atomic_wait.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "msvcp140_codecvt_ids.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcp140_codecvt_ids.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "msvcp140.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcp140.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "msvcrt.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/msvcrt.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "ncrypt.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ncrypt.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "ncryptsslp.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ncryptsslp.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "netapi32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/netapi32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "normaliz.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/normaliz.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "nsi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/nsi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "ntdll.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ntdll.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "nvcuda.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/nvcuda.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "nvml.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/nvml.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "ole32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ole32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "oleacc.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/oleacc.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "oleaut32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/oleaut32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "opengl32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/opengl32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "pdh.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/pdh.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "powrprof.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/powrprof.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "propsys.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/propsys.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "psapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/psapi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "rasapi32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/rasapi32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "rasman.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/rasman.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "rpcrt4.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/rpcrt4.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "sechost.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/sechost.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "secur32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/secur32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "setupapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/setupapi.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "shcore.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/shcore.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "shell32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/shell32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "shfolder.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/shfolder.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "shlwapi.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/shlwapi.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "sspicli.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/sspicli.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "ucrtbase.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ucrtbase.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "user32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/user32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "userenv.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/userenv.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "uxtheme.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/uxtheme.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "vcruntime140_1.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/vcruntime140_1.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "vcruntime140.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/vcruntime140.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "version.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/version.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "win32u.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/win32u.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "winhttp.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/winhttp.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "wininet.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wininet.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "winmm.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/winmm.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "winspool.drv",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/winspool.drv"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "wintrust.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wintrust.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "winusb.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/winusb.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wldap32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wldap32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wow64.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wow64.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wow64base.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wow64base.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wow64con.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wow64con.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wow64cpu.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wow64cpu.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wow64win.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wow64win.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "wowarmhw.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/wowarmhw.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "ws2_32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/ws2_32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "wsock32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wsock32.dll"
+    },
+    {
+      "basis": "Explicit Windows/VC-runtime/graphics platform exception; actual presence must be checked for a used edge",
+      "name": "wtsapi32.dll",
+      "present_at_static_inventory": true,
+      "path": "C:/Windows/System32/wtsapi32.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "xtajit.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/xtajit.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "xtajit64.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/xtajit64.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "xtajit64se.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/xtajit64se.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "xtajitf.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/xtajitf.dll"
+    },
+    {
+      "basis": "KnownDLL registry name under declared local Windows trust",
+      "name": "xtajitse.dll",
+      "present_at_static_inventory": false,
+      "path": "C:/Windows/System32/xtajitse.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/printrenderapihost.dll",
+      "name": "printrenderapihost.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/kernel.appcore.dll",
+      "name": "kernel.appcore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rmclient.dll",
+      "name": "rmclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.media.devices.dll",
+      "name": "windows.media.devices.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dwmredir.dll",
+      "name": "dwmredir.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/udwm.dll",
+      "name": "udwm.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cmclient.dll",
+      "name": "cmclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/bi.dll",
+      "name": "bi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/twinapi.appcore.dll",
+      "name": "twinapi.appcore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/appsruprov.dll",
+      "name": "appsruprov.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/reguwpapi.dll",
+      "name": "reguwpapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/clipc.dll",
+      "name": "clipc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/textinputframework.dll",
+      "name": "textinputframework.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wintypes.dll",
+      "name": "wintypes.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ntmarta.dll",
+      "name": "ntmarta.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tdh.dll",
+      "name": "tdh.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gamemode.dll",
+      "name": "gamemode.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gamingtcui.dll",
+      "name": "gamingtcui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gdi32full.dll",
+      "name": "gdi32full.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winmmbase.dll",
+      "name": "winmmbase.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/firewallapi.dll",
+      "name": "firewallapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ondemandconnroutehelper.dll",
+      "name": "ondemandconnroutehelper.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ngckeyenum.dll",
+      "name": "ngckeyenum.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/coreprivacysettingsstore.dll",
+      "name": "coreprivacysettingsstore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/licenseprotection.dll",
+      "name": "licenseprotection.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.storage.dll",
+      "name": "windows.storage.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/storageusage.dll",
+      "name": "storageusage.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.storage.search.dll",
+      "name": "windows.storage.search.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wslapi.dll",
+      "name": "wslapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/eapsimextdesktop.dll",
+      "name": "eapsimextdesktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/vpnsohdesktop.dll",
+      "name": "vpnsohdesktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/appxdeploymentclient.dll",
+      "name": "appxdeploymentclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.staterepositoryclient.dll",
+      "name": "windows.staterepositoryclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.staterepositorycore.dll",
+      "name": "windows.staterepositorycore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tdlmigration.dll",
+      "name": "tdlmigration.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dcomp.dll",
+      "name": "dcomp.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/hlink.dll",
+      "name": "hlink.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/hnetcfgclient.dll",
+      "name": "hnetcfgclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ipnathlpclient.dll",
+      "name": "ipnathlpclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ddcclaimsapi.dll",
+      "name": "ddcclaimsapi.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winaccel.sys",
+      "name": "winaccel.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/activeds.dll",
+      "name": "activeds.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/aeinv.dll",
+      "name": "aeinv.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/aepic.dll",
+      "name": "aepic.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/apphelp.dll",
+      "name": "apphelp.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/pcacli.dll",
+      "name": "pcacli.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/activationmanager.dll",
+      "name": "activationmanager.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/apisethost.appexecutionalias.dll",
+      "name": "apisethost.appexecutionalias.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/daxexec.dll",
+      "name": "daxexec.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/opcservices.dll",
+      "name": "opcservices.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/appxdeploymentextensions.desktop.dll",
+      "name": "appxdeploymentextensions.desktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/coreaudiopolicymanagerext.dll",
+      "name": "coreaudiopolicymanagerext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/authz.dll",
+      "name": "authz.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/logoncli.dll",
+      "name": "logoncli.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rstrtmgr.dll",
+      "name": "rstrtmgr.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winbio.dll",
+      "name": "winbio.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winbioext.dll",
+      "name": "winbioext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/bluetoothapis.dll",
+      "name": "bluetoothapis.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winbrand.dll",
+      "name": "winbrand.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/capabilityaccessmanager.desktop.identity.dll",
+      "name": "capabilityaccessmanager.desktop.identity.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/capabilityaccessmanager.desktop.storage.dll",
+      "name": "capabilityaccessmanager.desktop.storage.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/miracastreceiverext.dll",
+      "name": "miracastreceiverext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/castingshellext.dll",
+      "name": "castingshellext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/manageci.dll",
+      "name": "manageci.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/clusapi.dll",
+      "name": "clusapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/resutils.dll",
+      "name": "resutils.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cmdext.dll",
+      "name": "cmdext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dwmghost.dll",
+      "name": "dwmghost.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dwminit.dll",
+      "name": "dwminit.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ism.dll",
+      "name": "ism.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/connectionattributionapi.dll",
+      "name": "connectionattributionapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gamestreamingext.dll",
+      "name": "gamestreamingext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/urlmon.dll",
+      "name": "urlmon.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/pkeyhelper.dll",
+      "name": "pkeyhelper.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/bisrv.dll",
+      "name": "bisrv.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/psmserviceexthost.dll",
+      "name": "psmserviceexthost.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/resourcepolicyclient.dll",
+      "name": "resourcepolicyclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/resourcepolicyserver.dll",
+      "name": "resourcepolicyserver.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/licensemanagerapi.dll",
+      "name": "licensemanagerapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tdhres.dll",
+      "name": "tdhres.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/win32kbase.sys",
+      "name": "win32kbase.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/win32kfull.sys",
+      "name": "win32kfull.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dxgkrnl.sys",
+      "name": "dxgkrnl.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/win32k.sys",
+      "name": "win32k.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winsrvext.dll",
+      "name": "winsrvext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/navshutdown.dll",
+      "name": "navshutdown.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/productenumerator.dll",
+      "name": "productenumerator.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dmapisetextimpldesktop.dll",
+      "name": "dmapisetextimpldesktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/policymanager.dll",
+      "name": "policymanager.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/direct2ddesktop.dll",
+      "name": "direct2ddesktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/netjoin.dll",
+      "name": "netjoin.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dot3gpclnt.dll",
+      "name": "dot3gpclnt.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/drvsetup.dll",
+      "name": "drvsetup.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/newdev.dll",
+      "name": "newdev.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dxcore.dll",
+      "name": "dxcore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ddraw.dll",
+      "name": "ddraw.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dinput8.dll",
+      "name": "dinput8.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/directxdatabasehelper.dll",
+      "name": "directxdatabasehelper.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/edputil.dll",
+      "name": "edputil.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/elscore.dll",
+      "name": "elscore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/etwrundown.dll",
+      "name": "etwrundown.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wdi.dll",
+      "name": "wdi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/familysafetyext.dll",
+      "name": "familysafetyext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/feclient.dll",
+      "name": "feclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/fontgroupsoverride.dll",
+      "name": "fontgroupsoverride.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/muifontsetup.dll",
+      "name": "muifontsetup.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/clfs.sys",
+      "name": "clfs.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cscapi.dll",
+      "name": "cscapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/vssapi.dll",
+      "name": "vssapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/fsutilext.dll",
+      "name": "fsutilext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/fveapi.dll",
+      "name": "fveapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gamechatoverlayext.dll",
+      "name": "gamechatoverlayext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/xblgamesaveext.dll",
+      "name": "xblgamesaveext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/xinputuap.dll",
+      "name": "xinputuap.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/globinputhost.dll",
+      "name": "globinputhost.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gpapi.dll",
+      "name": "gpapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/gpsvc.dll",
+      "name": "gpsvc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/dui70.dll",
+      "name": "dui70.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ieui.dll",
+      "name": "ieui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/uxinit.dll",
+      "name": "uxinit.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/vmhgs.dll",
+      "name": "vmhgs.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winhvemulation.dll",
+      "name": "winhvemulation.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winhvplatform.dll",
+      "name": "winhvplatform.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/faultrep.dll",
+      "name": "faultrep.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/laps.dll",
+      "name": "laps.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/lamparray.dll",
+      "name": "lamparray.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mapistub.dll",
+      "name": "mapistub.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/avifil32.dll",
+      "name": "avifil32.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mfvfw.dll",
+      "name": "mfvfw.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/inputhost.dll",
+      "name": "inputhost.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/msacm32.dll",
+      "name": "msacm32.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mf.dll",
+      "name": "mf.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wmvcore.dll",
+      "name": "wmvcore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mprext.dll",
+      "name": "mprext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mrmcorer.dll",
+      "name": "mrmcorer.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/msauserext.dll",
+      "name": "msauserext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/msi.dll",
+      "name": "msi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/msiltcfg.dll",
+      "name": "msiltcfg.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/msimg32.dll",
+      "name": "msimg32.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cmintegrator.dll",
+      "name": "cmintegrator.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/httpprxc.dll",
+      "name": "httpprxc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/netbios.dll",
+      "name": "netbios.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/netshell.dll",
+      "name": "netshell.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ndfapi.dll",
+      "name": "ndfapi.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/netio.sys",
+      "name": "netio.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/netprovfw.dll",
+      "name": "netprovfw.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.devices.radios.dll",
+      "name": "windows.devices.radios.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.networking.connectivity.dll",
+      "name": "windows.networking.connectivity.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wcmapi.dll",
+      "name": "wcmapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winipsec.dll",
+      "name": "winipsec.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wlanapi.dll",
+      "name": "wlanapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/semgrsvc.dll",
+      "name": "semgrsvc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ntdsapi.dll",
+      "name": "ntdsapi.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/clipsp.sys",
+      "name": "clipsp.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/globmerger.sys",
+      "name": "globmerger.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cmimcext.sys",
+      "name": "cmimcext.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tm.sys",
+      "name": "tm.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ntosext.sys",
+      "name": "ntosext.sys"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/werkernel.sys",
+      "name": "werkernel.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/odbc32.dll",
+      "name": "odbc32.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wpcapi.dll",
+      "name": "wpcapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/pinenrollmenthelper.dll",
+      "name": "pinenrollmenthelper.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/prntvpt.dll",
+      "name": "prntvpt.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/profsvcext.dll",
+      "name": "profsvcext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/profext.dll",
+      "name": "profext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/provplatformdesktop.dll",
+      "name": "provplatformdesktop.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rasdlg.dll",
+      "name": "rasdlg.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tapi32.dll",
+      "name": "tapi32.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/raschapext.dll",
+      "name": "raschapext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rastlsext.dll",
+      "name": "rastlsext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/davhlpr.dll",
+      "name": "davhlpr.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/reinfo.dll",
+      "name": "reinfo.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mrmdeploy.dll",
+      "name": "mrmdeploy.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/languageoverlayutil.dll",
+      "name": "languageoverlayutil.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rometadata.dll",
+      "name": "rometadata.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/rpcrtremote.dll",
+      "name": "rpcrtremote.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/samsrv.dll",
+      "name": "samsrv.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/scesrv.dll",
+      "name": "scesrv.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/searchfolder.dll",
+      "name": "searchfolder.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/mssrch.dll",
+      "name": "mssrch.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/appinfoext.dll",
+      "name": "appinfoext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/authbrokerui.dll",
+      "name": "authbrokerui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/capauthz.dll",
+      "name": "capauthz.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cryptcatsvc.dll",
+      "name": "cryptcatsvc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/certpoleng.dll",
+      "name": "certpoleng.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cflapi.dll",
+      "name": "cflapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wincredui.dll",
+      "name": "wincredui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/credui.dll",
+      "name": "credui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/cryptui.dll",
+      "name": "cryptui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/efsext.dll",
+      "name": "efsext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/efswrt.dll",
+      "name": "efswrt.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/kerberos.dll",
+      "name": "kerberos.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/lsaadt.dll",
+      "name": "lsaadt.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ngclocal.dll",
+      "name": "ngclocal.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/shutdownext.dll",
+      "name": "shutdownext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/slc.dll",
+      "name": "slc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/srpapi.dll",
+      "name": "srpapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/tokenbrokerui.dll",
+      "name": "tokenbrokerui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/vaultcds.dll",
+      "name": "vaultcds.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/vaultcli.dll",
+      "name": "vaultcli.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winscard.dll",
+      "name": "winscard.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/sensorsnativeapi.dll",
+      "name": "sensorsnativeapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/sensorsutilsv2.dll",
+      "name": "sensorsutilsv2.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/servicinguapi.dll",
+      "name": "servicinguapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/camext.dll",
+      "name": "camext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/userinitext.dll",
+      "name": "userinitext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/usermgrcli.dll",
+      "name": "usermgrcli.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wininitext.dll",
+      "name": "wininitext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winlogonext.dll",
+      "name": "winlogonext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/winsta.dll",
+      "name": "winsta.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/aclui.dll",
+      "name": "aclui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/efsadu.dll",
+      "name": "efsadu.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/embeddedmodesvcapi.dll",
+      "name": "embeddedmodesvcapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.fileexplorer.common.dll",
+      "name": "windows.fileexplorer.common.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ntshrui.dll",
+      "name": "ntshrui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/shdocvw.dll",
+      "name": "shdocvw.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/browser.dll",
+      "name": "browser.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/browcli.dll",
+      "name": "browcli.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/sscoreext.dll",
+      "name": "sscoreext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/spinf.dll",
+      "name": "spinf.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/hbaapi.dll",
+      "name": "hbaapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/iscsidsc.dll",
+      "name": "iscsidsc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/sxs.dll",
+      "name": "sxs.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/pfclient.dll",
+      "name": "pfclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/eapteapext.dll",
+      "name": "eapteapext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/input.dll",
+      "name": "input.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/ttlsext.dll",
+      "name": "ttlsext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/uiautomationcore.dll",
+      "name": "uiautomationcore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/umpoext.dll",
+      "name": "umpoext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/uwfservicingapi.dll",
+      "name": "uwfservicingapi.dll"
+    },
+    {
+      "present_at_static_inventory": false,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/hvsocket.sys",
+      "name": "hvsocket.sys"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wer.dll",
+      "name": "wer.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/werui.dll",
+      "name": "werui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wevtapi.dll",
+      "name": "wevtapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.ui.dll",
+      "name": "windows.ui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/deviceaccess.dll",
+      "name": "deviceaccess.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.storage.onecore.dll",
+      "name": "windows.storage.onecore.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wlgpclnt.dll",
+      "name": "wlgpclnt.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/onexui.dll",
+      "name": "onexui.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wpcwebfilter.dll",
+      "name": "wpcwebfilter.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/sfc.dll",
+      "name": "sfc.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wsclient.dll",
+      "name": "wsclient.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wwaext.dll",
+      "name": "wwaext.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/wwapi.dll",
+      "name": "wwapi.dll"
+    },
+    {
+      "present_at_static_inventory": true,
+      "basis": "Explicit host named by the reviewed Windows API-set namespace; actual used image presence required",
+      "path": "C:/Windows/System32/windows.ui.xaml.phone.dll",
+      "name": "windows.ui.xaml.phone.dll"
+    },
+    {
+      "basis": "Explicit P6 observed System32 image; R7 source review and fresh used-image presence required",
+      "present_at_static_inventory": true,
+      "name": "cabinet.dll",
+      "path": "C:/Windows/System32/cabinet.dll"
+    },
+    {
+      "basis": "Explicit P6 observed System32 image; R7 source review and fresh used-image presence required",
+      "present_at_static_inventory": true,
+      "name": "fontsub.dll",
+      "path": "C:/Windows/System32/fontsub.dll"
+    },
+    {
+      "basis": "Explicit P6 observed System32 image; R7 source review and fresh used-image presence required",
+      "present_at_static_inventory": true,
+      "name": "mswsock.dll",
+      "path": "C:/Windows/System32/mswsock.dll"
+    }
+  ],
+  "scope": "Explicit platform trust base, not file hash authentication or loaded-code attestation; only actually used existing paths may resolve an edge.",
+  "native_search_qualified": false,
+  "abi_qualified": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "api_sets": {
+    "api-ms-onecoreuap-print-render-l1-1-0.dll": [
+      "printrenderapihost.dll"
+    ],
+    "api-ms-win-appmodel-advertisingid-l1-1-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-identity-l1-2-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-lifecyclepolicy-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "api-ms-win-appmodel-runtime-internal-l1-1-11.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-runtime-l1-1-7.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-state-l1-2-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-state-l1-1-2.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-appmodel-unlock-l1-1-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "api-ms-win-audiocore-spatial-config-l1-1-0.dll": [
+      "windows.media.devices.dll"
+    ],
+    "api-ms-win-base-bootconfig-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-base-util-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-composition-redirection-l1-1-0.dll": [
+      "dwmredir.dll"
+    ],
+    "api-ms-win-composition-windowmanager-l1-1-0.dll": [
+      "udwm.dll"
+    ],
+    "api-ms-win-containers-cmclient-l1-5-3.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmclient-l1-4-0.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmclient-l1-3-0.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmclient-l1-2-0.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmclient-l1-1-1.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmdiagclient-l1-1-2.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmservicingclient-l1-2-2.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-containers-cmservicingclient-l1-1-1.dll": [
+      "cmclient.dll"
+    ],
+    "api-ms-win-core-apiquery-l1-1-2.dll": [
+      "ntdll.dll"
+    ],
+    "api-ms-win-core-apiquery-l2-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-appcompat-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-appinit-l1-1-0.dll": [
+      "kernel32.dll",
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-atoms-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-backgroundtask-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-bicltapi-l1-1-6.dll": [
+      "bi.dll"
+    ],
+    "api-ms-win-core-biplmapi-l1-2-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-biplmapi-l1-1-5.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-biptcltapi-l1-1-7.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-calendar-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-com-l1-1-3.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-com-l2-1-1.dll": [
+      "coml2.dll"
+    ],
+    "api-ms-win-core-com-midlproxystub-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-com-private-l1-3-1.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-com-private-l1-2-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-com-private-l1-1-1.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-comm-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-commandlinetoargv-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-ansi-l2-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-console-internal-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l1-2-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l2-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l2-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l3-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-console-l3-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-crt-l1-1-0.dll": [
+      "ntdll.dll"
+    ],
+    "api-ms-win-core-crt-l2-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-datetime-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-debug-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-debug-minidump-l1-1-0.dll": [
+      "dbgcore.dll"
+    ],
+    "api-ms-win-core-delayload-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-enclave-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-errorhandling-l1-1-3.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-featurestaging-l1-1-1.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-core-featuretoggles-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-fibers-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-fibers-l2-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-file-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-file-ansi-l2-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-file-fromapp-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-file-l1-2-5.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-file-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-file-l2-1-4.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-firmware-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-guard-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-handle-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-heap-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-heap-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-heap-l2-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-heap-obsolete-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-interlocked-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-interlocked-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-io-l1-1-1.dll": [
+      "kernel32.dll",
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-ioring-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-job-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-job-l2-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-kernel32-legacy-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-kernel32-legacy-l1-1-6.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-kernel32-private-l1-2-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-kernel32-private-l1-1-2.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-largeinteger-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-libraryloader-l1-2-3.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-libraryloader-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-libraryloader-l2-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-libraryloader-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-localization-l1-2-4.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-l2-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-obsolete-l1-3-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-obsolete-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-obsolete-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localization-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-localregistry-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-marshal-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-memory-l1-1-9.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-misc-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-multipleproviderrouter-l1-1-0.dll": [
+      "mpr.dll"
+    ],
+    "api-ms-win-core-namedpipe-ansi-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-namedpipe-l1-2-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-namedpipe-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-namespace-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-namespace-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-normalization-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-path-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-pcw-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-perfcounters-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-perfcounters-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-privateprofile-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-processenvironment-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-processenvironment-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processenvironment-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processsecurity-l1-1-0.dll": [
+      "kernel32.dll",
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processsnapshot-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processthreads-l1-1-8.dll": [
+      "kernel32.dll",
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processtopology-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processtopology-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-processtopology-obsolete-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-processtopology-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-profile-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psapi-ansi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psapi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psapi-obsolete-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psapiansi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psm-app-l1-1-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-appnotify-l1-1-1.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-info-l1-1-1.dll": [
+      "appsruprov.dll"
+    ],
+    "api-ms-win-core-psm-key-l1-1-3.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-psm-plm-l1-3-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-plm-l1-2-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-plm-l1-1-3.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-rtimer-l1-1-1.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-psm-tc-l1-1-1.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "api-ms-win-core-quirks-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-realtime-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-registry-fromapp-l1-1-0.dll": [
+      "reguwpapi.dll"
+    ],
+    "api-ms-win-core-registry-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-registry-l2-3-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-registry-l2-2-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-registry-l2-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-registry-private-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-registryuserspecific-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-rtlsupport-l1-2-2.dll": [
+      "ntdll.dll"
+    ],
+    "api-ms-win-core-rtlsupport-l1-1-1.dll": [
+      "ntdll.dll"
+    ],
+    "api-ms-win-core-shlwapi-legacy-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-shlwapi-obsolete-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-shlwapi-obsolete-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-shutdown-ansi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-shutdown-l1-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-sidebyside-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-sidebyside-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-slapi-l1-1-0.dll": [
+      "clipc.dll"
+    ],
+    "api-ms-win-core-state-helpers-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-string-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-string-l2-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-string-obsolete-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-stringansi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-stringloader-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-synch-ansi-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-synch-l1-2-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-synch-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-sysinfo-l1-2-8.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-sysinfo-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-sysinfo-l2-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-core-systemtopology-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-textinput-client-l1-2-0.dll": [
+      "textinputframework.dll"
+    ],
+    "api-ms-win-core-textinput-client-l1-1-1.dll": [
+      "textinputframework.dll"
+    ],
+    "api-ms-win-core-threadpool-l1-2-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-threadpool-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-threadpool-legacy-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-threadpool-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-timezone-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-timezone-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-toolhelp-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-ums-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-core-url-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-util-l1-1-1.dll": [
+      "kernel32.dll",
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-version-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-version-private-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-versionansi-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-windowsceip-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-windowserrorreporting-l1-1-3.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-winrt-error-l1-1-1.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-winrt-errorprivate-l1-1-1.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-winrt-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-winrt-propertysetprivate-l1-1-1.dll": [
+      "wintypes.dll"
+    ],
+    "api-ms-win-core-winrt-registration-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-winrt-robuffer-l1-1-0.dll": [
+      "wintypes.dll"
+    ],
+    "api-ms-win-core-winrt-roparameterizediid-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-winrt-string-l1-1-1.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-core-wow64-l1-1-3.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-core-xstate-l1-1-3.dll": [
+      "ntdll.dll"
+    ],
+    "api-ms-win-core-xstate-l2-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-coremessaging-host-l1-1-0.dll": [],
+    "api-ms-win-coreui-secruntime-l1-1-0.dll": [],
+    "api-ms-win-crt-conio-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-convert-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-environment-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-filesystem-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-heap-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-locale-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-math-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-multibyte-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-private-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-process-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-runtime-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-stdio-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-string-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-time-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-crt-utility-l1-1-0.dll": [
+      "ucrtbase.dll"
+    ],
+    "api-ms-win-deprecated-apis-advapi-l1-1-0.dll": [],
+    "api-ms-win-deprecated-apis-legacy-l1-2-0.dll": [],
+    "api-ms-win-deprecated-apis-legacy-l1-1-0.dll": [],
+    "api-ms-win-deprecated-apis-obsolete-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-devices-config-l1-1-2.dll": [
+      "cfgmgr32.dll"
+    ],
+    "api-ms-win-devices-query-l1-1-1.dll": [
+      "cfgmgr32.dll"
+    ],
+    "api-ms-win-devices-swdevice-l1-1-1.dll": [
+      "cfgmgr32.dll"
+    ],
+    "api-ms-win-downlevel-advapi32-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-downlevel-advapi32-l2-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-downlevel-advapi32-l3-1-0.dll": [
+      "ntmarta.dll"
+    ],
+    "api-ms-win-downlevel-advapi32-l4-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-downlevel-kernel32-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-downlevel-kernel32-l2-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-downlevel-normaliz-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-downlevel-ole32-l1-1-0.dll": [
+      "combase.dll"
+    ],
+    "api-ms-win-downlevel-shell32-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-downlevel-shlwapi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-downlevel-shlwapi-l2-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-downlevel-user32-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-downlevel-version-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-dwmapi-l1-1-0.dll": [
+      "dwmapi.dll"
+    ],
+    "api-ms-win-dx-d3dkmt-l1-1-9.dll": [
+      "gdi32.dll"
+    ],
+    "api-ms-win-eventing-classicprovider-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-eventing-consumer-l1-1-2.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-eventing-controller-l1-1-1.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-eventing-legacy-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-eventing-obsolete-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-eventing-provider-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-eventing-tdh-l1-1-2.dll": [
+      "tdh.dll"
+    ],
+    "api-ms-win-eventlog-legacy-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-gaming-deviceinformation-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-gaming-expandedresources-l1-1-0.dll": [
+      "gamemode.dll"
+    ],
+    "api-ms-win-gaming-experience-l1-1-0.dll": [
+      "gamemode.dll"
+    ],
+    "api-ms-win-gaming-tcui-l1-1-4.dll": [
+      "gamingtcui.dll"
+    ],
+    "api-ms-win-gdi-dpiinfo-l1-1-0.dll": [
+      "gdi32.dll"
+    ],
+    "api-ms-win-gdi-internal-uap-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "api-ms-win-ham-apphistory-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "api-ms-win-ham-hamplm-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "api-ms-win-http-time-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-input-ie-interactioncontext-l1-1-0.dll": [],
+    "api-ms-win-legacy-shlwapi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-mm-joystick-l1-1-0.dll": [
+      "winmm.dll"
+    ],
+    "api-ms-win-mm-mci-l1-1-0.dll": [
+      "winmm.dll"
+    ],
+    "api-ms-win-mm-misc-l1-1-1.dll": [
+      "winmmbase.dll"
+    ],
+    "api-ms-win-mm-misc-l2-1-0.dll": [
+      "winmm.dll"
+    ],
+    "api-ms-win-mm-mme-l1-1-0.dll": [
+      "winmmbase.dll"
+    ],
+    "api-ms-win-mm-playsound-l1-1-0.dll": [
+      "winmm.dll"
+    ],
+    "api-ms-win-mm-time-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-net-isolation-l1-1-1.dll": [
+      "firewallapi.dll"
+    ],
+    "api-ms-win-networking-interfacecontexts-l1-1-0.dll": [
+      "ondemandconnroutehelper.dll"
+    ],
+    "api-ms-win-ngc-serialization-l1-1-1.dll": [
+      "ngckeyenum.dll"
+    ],
+    "api-ms-win-ntuser-ie-message-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-ntuser-ie-window-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-ntuser-ie-wmpointer-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-ntuser-rectangle-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-ntuser-sysparams-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-obsolete-localization-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-obsolete-psapi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-obsolete-shlwapi-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-ole32-ie-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "api-ms-win-oobe-notification-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "api-ms-win-perf-legacy-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-power-base-l1-1-0.dll": [
+      "powrprof.dll"
+    ],
+    "api-ms-win-power-limitsmanagement-l1-1-0.dll": [
+      "powrprof.dll"
+    ],
+    "api-ms-win-power-setting-l1-1-1.dll": [
+      "powrprof.dll"
+    ],
+    "api-ms-win-privacy-coreprivacysettingsstore-l1-1-0.dll": [
+      "coreprivacysettingsstore.dll"
+    ],
+    "api-ms-win-ro-typeresolution-l1-1-1.dll": [
+      "wintypes.dll"
+    ],
+    "api-ms-win-rtcore-minuser-private-l1-1-1.dll": [],
+    "api-ms-win-rtcore-navigation-l1-1-0.dll": [],
+    "api-ms-win-rtcore-ntuser-clipboard-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-draw-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-powermanagement-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-private-l1-1-11.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-shell-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-synch-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-window-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-winevent-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-wmpointer-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ntuser-wmpointer-l1-1-3.dll": [
+      "user32.dll"
+    ],
+    "api-ms-win-rtcore-ole32-clipboard-l1-1-1.dll": [
+      "ole32.dll"
+    ],
+    "api-ms-win-rtcore-session-l1-1-0.dll": [],
+    "api-ms-win-security-accesshlpr-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-activedirectoryclient-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-appcontainer-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-audit-l1-1-1.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-base-ansi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-base-l1-2-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-base-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-base-private-l1-1-2.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-capability-l1-1-1.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-cpwl-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-credentials-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-credentials-l2-1-1.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-cryptoapi-l1-1-0.dll": [
+      "cryptsp.dll"
+    ],
+    "api-ms-win-security-grouppolicy-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-security-isolatedcontainer-l1-1-1.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-security-isolationapi-l1-2-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-isolationapi-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-isolationpolicy-l1-2-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-isolationpolicy-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-licenseprotection-l1-1-0.dll": [
+      "licenseprotection.dll"
+    ],
+    "api-ms-win-security-logon-l1-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-lsalookup-ansi-l2-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-lsalookup-l1-1-2.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-lsalookup-l2-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-lsapolicy-l1-1-2.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-provider-ansi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-provider-l1-1-0.dll": [
+      "ntmarta.dll"
+    ],
+    "api-ms-win-security-sddl-ansi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-sddl-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-sddl-private-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-sddlparsecond-l1-1-1.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-security-systemfunctions-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-security-trustee-l1-1-2.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-service-core-ansi-l1-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-service-core-l1-1-5.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-legacy-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "api-ms-win-service-management-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-management-l2-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-private-l1-2-2.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-private-l1-1-5.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-winsvc-l1-2-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-service-winsvc-l1-1-0.dll": [
+      "sechost.dll"
+    ],
+    "api-ms-win-shcore-comhelpers-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-obsolete-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-path-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-registry-l1-1-1.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-scaling-l1-1-2.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-stream-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-stream-winrt-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-sysinfo-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-taskpool-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-thread-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shcore-unicodeansi-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shell-associations-l1-1-3.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-shell-changenotify-l1-1-1.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-shell-dataobject-l1-1-1.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-shell-namespace-l1-1-1.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-shell-shdirectory-l1-1-0.dll": [
+      "shcore.dll"
+    ],
+    "api-ms-win-shell-shell32legacy-shdirectory-l1-1-0.dll": [],
+    "api-ms-win-shell-shellcom-l1-1-0.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-shell-shellfolders-l1-1-1.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-shlwapi-ie-l1-1-0.dll": [
+      "shlwapi.dll"
+    ],
+    "api-ms-win-shlwapi-winrt-storage-l1-1-1.dll": [
+      "shlwapi.dll"
+    ],
+    "api-ms-win-stateseparation-helpers-l1-1-1.dll": [
+      "kernelbase.dll"
+    ],
+    "api-ms-win-storage-exports-external-l1-1-2.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-storage-exports-internal-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "api-ms-win-storage-reserve-l1-1-0.dll": [
+      "storageusage.dll"
+    ],
+    "api-ms-win-winrt-search-folder-l1-1-1.dll": [
+      "windows.storage.search.dll"
+    ],
+    "api-ms-win-wsl-api-l1-1-0.dll": [
+      "wslapi.dll"
+    ],
+    "ext-ms-mf-pal-l2-1-1.dll": [],
+    "ext-ms-net-eap-sim-l1-1-0.dll": [
+      "eapsimextdesktop.dll"
+    ],
+    "ext-ms-net-vpn-soh-l1-1-0.dll": [
+      "vpnsohdesktop.dll"
+    ],
+    "ext-ms-onecore-appchromeapi-l1-1-0.dll": [],
+    "ext-ms-onecore-appdefaults-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-onecore-appmodel-deployment-internal-l1-1-2.dll": [
+      "appxdeploymentclient.dll"
+    ],
+    "ext-ms-onecore-appmodel-emclient-l1-1-0.dll": [],
+    "ext-ms-onecore-appmodel-emsvcs-l1-1-0.dll": [],
+    "ext-ms-onecore-appmodel-pacmanclient-l1-1-0.dll": [],
+    "ext-ms-onecore-appmodel-staterepository-appextension-l1-1-0.dll": [
+      "windows.staterepositoryclient.dll"
+    ],
+    "ext-ms-onecore-appmodel-staterepository-cache-l1-1-6.dll": [
+      "windows.staterepositorycore.dll"
+    ],
+    "ext-ms-onecore-appmodel-staterepository-internal-l1-1-7.dll": [
+      "windows.staterepositoryclient.dll"
+    ],
+    "ext-ms-onecore-appmodel-staterepository-pkgextension-l1-1-0.dll": [
+      "windows.staterepositoryclient.dll"
+    ],
+    "ext-ms-onecore-appmodel-tdlmigration-l1-1-1.dll": [
+      "tdlmigration.dll"
+    ],
+    "ext-ms-onecore-comp-dwmmonitor-l1-1-0.dll": [],
+    "ext-ms-onecore-dcomp-l1-1-0.dll": [
+      "dcomp.dll"
+    ],
+    "ext-ms-onecore-defaultdiscovery-l1-1-0.dll": [],
+    "ext-ms-onecore-hcap-svf-l1-1-0.dll": [],
+    "ext-ms-onecore-hlink-l1-1-0.dll": [
+      "hlink.dll"
+    ],
+    "ext-ms-onecore-hnetcfg-l1-1-0.dll": [
+      "hnetcfgclient.dll"
+    ],
+    "ext-ms-onecore-ipnathlp-l1-1-0.dll": [
+      "ipnathlpclient.dll"
+    ],
+    "ext-ms-onecore-mpc-input-l1-1-0.dll": [],
+    "ext-ms-onecore-orientation-l1-1-0.dll": [],
+    "ext-ms-onecore-service-devicedirectory-claims-l1-1-0.dll": [
+      "ddcclaimsapi.dll"
+    ],
+    "ext-ms-onecore-shellchromeapi-l1-1-2.dll": [],
+    "ext-ms-onecore-shellremindersapi-l1-1-0.dll": [],
+    "ext-ms-onecore-shlwapi-l1-1-1.dll": [
+      "shlwapi.dll"
+    ],
+    "ext-ms-onecore-spectrumsyncclient-l1-1-0.dll": [],
+    "ext-ms-win-accel-api-km-l1-1-0.dll": [
+      "winaccel.sys"
+    ],
+    "ext-ms-win-adsi-activeds-l1-1-0.dll": [
+      "activeds.dll"
+    ],
+    "ext-ms-win-advapi32-auth-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-encryptedfile-l1-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-eventlog-ansi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-eventlog-l1-1-2.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-hwprof-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-idletask-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-lsa-l1-1-4.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-msi-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-npusername-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-ntmarta-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-psm-app-l1-1-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "ext-ms-win-advapi32-registry-l1-1-1.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-safer-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-advapi32-shutdown-l1-1-0.dll": [
+      "advapi32.dll"
+    ],
+    "ext-ms-win-appcompat-aeinv-l1-1-1.dll": [
+      "aeinv.dll"
+    ],
+    "ext-ms-win-appcompat-aepic-l1-1-0.dll": [
+      "aepic.dll"
+    ],
+    "ext-ms-win-appcompat-apphelp-l1-1-2.dll": [
+      "apphelp.dll"
+    ],
+    "ext-ms-win-appcompat-pcacli-l1-1-0.dll": [
+      "pcacli.dll"
+    ],
+    "ext-ms-win-appmodel-activation-l1-1-2.dll": [
+      "activationmanager.dll"
+    ],
+    "ext-ms-win-appmodel-appcontainerpath-l1-1-0.dll": [],
+    "ext-ms-win-appmodel-appexecutionalias-l1-1-5.dll": [
+      "apisethost.appexecutionalias.dll"
+    ],
+    "ext-ms-win-appmodel-datasharingservice-extensions-l1-1-0.dll": [],
+    "ext-ms-win-appmodel-daxcore-l1-1-3.dll": [
+      "daxexec.dll"
+    ],
+    "ext-ms-win-appmodel-deployment-l1-1-1.dll": [],
+    "ext-ms-win-appmodel-deploymentvolumes-l1-1-1.dll": [],
+    "ext-ms-win-appmodel-opc-l1-1-0.dll": [
+      "opcservices.dll"
+    ],
+    "ext-ms-win-appmodel-registrycompatibility-l1-1-0.dll": [
+      "appxdeploymentextensions.desktop.dll"
+    ],
+    "ext-ms-win-appmodel-restrictedappcontainer-internal-l1-1-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-appmodel-shellexecute-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-appmodel-state-ext-l1-2-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-appmodel-state-ext-l1-1-2.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-appmodel-usercontext-l1-1-0.dll": [],
+    "ext-ms-win-appmodel-viewscalefactor-l1-1-0.dll": [],
+    "ext-ms-win-appxdeploymentclient-appxdeploy-l1-1-1.dll": [
+      "appxdeploymentclient.dll"
+    ],
+    "ext-ms-win-appxdeploymentclient-appxdeployonecore-l1-1-1.dll": [
+      "appxdeploymentclient.dll"
+    ],
+    "ext-ms-win-audio-spatial-systemsound-l1-1-0.dll": [],
+    "ext-ms-win-audiocore-coreaudiopolicymanager-l1-1-0.dll": [
+      "coreaudiopolicymanagerext.dll"
+    ],
+    "ext-ms-win-audiocore-pal-l1-2-0.dll": [],
+    "ext-ms-win-audiocore-policymanager-l1-1-1.dll": [],
+    "ext-ms-win-audiocore-spatial-l1-1-0.dll": [],
+    "ext-ms-win-authz-claimpolicies-l1-1-0.dll": [
+      "authz.dll"
+    ],
+    "ext-ms-win-authz-context-l1-1-0.dll": [
+      "authz.dll"
+    ],
+    "ext-ms-win-authz-remote-l1-1-0.dll": [
+      "logoncli.dll"
+    ],
+    "ext-ms-win-base-psapi-l1-1-0.dll": [
+      "psapi.dll"
+    ],
+    "ext-ms-win-base-rstrtmgr-l1-1-0.dll": [
+      "rstrtmgr.dll"
+    ],
+    "ext-ms-win-biometrics-winbio-core-l1-1-7.dll": [
+      "winbio.dll"
+    ],
+    "ext-ms-win-biometrics-winbio-l1-3-0.dll": [
+      "winbioext.dll"
+    ],
+    "ext-ms-win-biometrics-winbio-l1-2-0.dll": [
+      "winbioext.dll"
+    ],
+    "ext-ms-win-biometrics-winbio-l1-1-0.dll": [
+      "winbioext.dll"
+    ],
+    "ext-ms-win-bluetooth-apis-internal-l1-1-0.dll": [
+      "bluetoothapis.dll"
+    ],
+    "ext-ms-win-bluetooth-apis-l1-1-0.dll": [
+      "bluetoothapis.dll"
+    ],
+    "ext-ms-win-bluetooth-apis-private-l1-1-0.dll": [
+      "bluetoothapis.dll"
+    ],
+    "ext-ms-win-branding-winbrand-l1-2-0.dll": [
+      "winbrand.dll"
+    ],
+    "ext-ms-win-branding-winbrand-l1-1-2.dll": [
+      "winbrand.dll"
+    ],
+    "ext-ms-win-capabilityaccessmanager-identity-l1-1-0.dll": [
+      "capabilityaccessmanager.desktop.identity.dll"
+    ],
+    "ext-ms-win-capabilityaccessmanager-storage-l1-1-0.dll": [
+      "capabilityaccessmanager.desktop.storage.dll"
+    ],
+    "ext-ms-win-casting-device-l1-1-0.dll": [],
+    "ext-ms-win-casting-lockscreen-l1-1-0.dll": [
+      "miracastreceiverext.dll"
+    ],
+    "ext-ms-win-casting-receiver-l1-1-1.dll": [],
+    "ext-ms-win-casting-shell-l1-1-0.dll": [
+      "castingshellext.dll"
+    ],
+    "ext-ms-win-ci-management-l1-2-0.dll": [
+      "manageci.dll"
+    ],
+    "ext-ms-win-ci-management-l1-1-3.dll": [
+      "manageci.dll"
+    ],
+    "ext-ms-win-ci-xbox-l1-1-0.dll": [],
+    "ext-ms-win-cloudap-tbal-l1-1-0.dll": [],
+    "ext-ms-win-clouddomainjoin-usermanagement-l1-1-0.dll": [],
+    "ext-ms-win-cluster-clusapi-l1-1-6.dll": [
+      "clusapi.dll"
+    ],
+    "ext-ms-win-cluster-resutils-l1-1-3.dll": [
+      "resutils.dll"
+    ],
+    "ext-ms-win-cmd-util-l1-1-0.dll": [
+      "cmdext.dll"
+    ],
+    "ext-ms-win-cng-rng-l1-1-1.dll": [
+      "bcryptprimitives.dll"
+    ],
+    "ext-ms-win-com-apartmentrestriction-l1-1-0.dll": [],
+    "ext-ms-win-com-clbcatq-l1-1-0.dll": [
+      "clbcatq.dll"
+    ],
+    "ext-ms-win-com-coml2-l1-1-1.dll": [
+      "coml2.dll"
+    ],
+    "ext-ms-win-com-ole32-l1-4-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-com-ole32-l1-3-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-com-ole32-l1-2-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-com-ole32-l1-1-5.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-com-psmregister-l1-3-1.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-com-psmregister-l1-2-2.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-com-psmregister-l1-1-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-com-sta-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-com-suspendresiliency-l1-1-0.dll": [],
+    "ext-ms-win-composition-ghost-l1-1-0.dll": [
+      "dwmghost.dll"
+    ],
+    "ext-ms-win-composition-holographic-l1-1-0.dll": [],
+    "ext-ms-win-composition-init-l1-1-0.dll": [
+      "dwminit.dll"
+    ],
+    "ext-ms-win-compositor-hosting-l1-3-0.dll": [
+      "ism.dll"
+    ],
+    "ext-ms-win-compositor-hosting-l1-2-1.dll": [
+      "ism.dll"
+    ],
+    "ext-ms-win-compositor-hosting-l1-1-1.dll": [
+      "ism.dll"
+    ],
+    "ext-ms-win-connectionattribution-api-l1-1-0.dll": [
+      "connectionattributionapi.dll"
+    ],
+    "ext-ms-win-containers-policymanagercli-l1-1-1.dll": [],
+    "ext-ms-win-core-app-package-registration-l1-1-1.dll": [],
+    "ext-ms-win-core-app-package-volume-l1-1-0.dll": [],
+    "ext-ms-win-core-container-init-l1-1-0.dll": [],
+    "ext-ms-win-core-dhcp6client-l1-1-0.dll": [],
+    "ext-ms-win-core-game-streaming-l1-1-0.dll": [
+      "gamestreamingext.dll"
+    ],
+    "ext-ms-win-core-iuri-l1-1-0.dll": [
+      "urlmon.dll"
+    ],
+    "ext-ms-win-core-licensemanager-l1-1-2.dll": [],
+    "ext-ms-win-core-marshal-l2-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-core-pkeyhelper-l1-1-0.dll": [
+      "pkeyhelper.dll"
+    ],
+    "ext-ms-win-core-psm-bi-l1-2-0.dll": [
+      "bisrv.dll"
+    ],
+    "ext-ms-win-core-psm-bi-l1-1-0.dll": [
+      "bisrv.dll"
+    ],
+    "ext-ms-win-core-psm-extendedresourcemode-l1-1-0.dll": [],
+    "ext-ms-win-core-psm-service-l1-1-6.dll": [
+      "psmserviceexthost.dll"
+    ],
+    "ext-ms-win-core-resourcemanager-l1-2-1.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-core-resourcemanager-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-core-resourcepolicy-l1-1-2.dll": [
+      "resourcepolicyclient.dll"
+    ],
+    "ext-ms-win-core-resourcepolicyserver-l1-1-1.dll": [
+      "resourcepolicyserver.dll"
+    ],
+    "ext-ms-win-core-stateseparationext-l1-1-0.dll": [],
+    "ext-ms-win-core-storelicensing-l1-2-1.dll": [
+      "licensemanagerapi.dll"
+    ],
+    "ext-ms-win-core-storelicensing-l1-1-0.dll": [
+      "licensemanagerapi.dll"
+    ],
+    "ext-ms-win-core-symbolicnames-l1-1-0.dll": [
+      "tdhres.dll"
+    ],
+    "ext-ms-win-core-win32k-base-export-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-baseinit-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-common-export-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-common-input-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-common-inputrim-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-common-user-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-dcomp-l1-1-3.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-ddccigdi-l1-1-1.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-dxgdi-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-dxgk-internal-l1-1-0.dll": [
+      "dxgkrnl.sys"
+    ],
+    "ext-ms-win-core-win32k-dxgk-l1-1-0.dll": [
+      "dxgkrnl.sys"
+    ],
+    "ext-ms-win-core-win32k-flipmgr-l1-1-1.dll": [
+      "dxgkrnl.sys"
+    ],
+    "ext-ms-win-core-win32k-full-export-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-full-float-export-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-full-floatobj-export-l1-1-0.dll": [],
+    "ext-ms-win-core-win32k-fulldcompbase-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-fulldwm-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-fullgdi-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-fulluser-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-fulluser64-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-core-win32k-fulluserbase-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-gdi-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-input-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-inputmit-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-inputrim-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-mindwm-l1-1-0.dll": [],
+    "ext-ms-win-core-win32k-mininput-l1-1-0.dll": [],
+    "ext-ms-win-core-win32k-mininputmit-l1-1-0.dll": [],
+    "ext-ms-win-core-win32k-mininputmitbase-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-minuser-l1-1-0.dll": [],
+    "ext-ms-win-core-win32k-opmgdi-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-surfmgr-l1-1-1.dll": [
+      "dxgkrnl.sys"
+    ],
+    "ext-ms-win-core-win32k-tokenmgr-l1-1-0.dll": [
+      "dxgkrnl.sys"
+    ],
+    "ext-ms-win-core-win32k-user-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-userdisplay-l1-1-0.dll": [
+      "win32kbase.sys"
+    ],
+    "ext-ms-win-core-win32k-userinit-l1-1-0.dll": [
+      "win32k.sys"
+    ],
+    "ext-ms-win-core-winrt-remote-l1-1-0.dll": [],
+    "ext-ms-win-core-winsrv-l1-1-0.dll": [
+      "winsrvext.dll"
+    ],
+    "ext-ms-win-core-winsrv-min-l1-1-0.dll": [],
+    "ext-ms-win-core-xbrm-l1-1-1.dll": [],
+    "ext-ms-win-coreui-l1-1-0.dll": [],
+    "ext-ms-win-coreui-navshutdown-l1-1-0.dll": [
+      "navshutdown.dll"
+    ],
+    "ext-ms-win-crypto-xbox-l1-1-0.dll": [],
+    "ext-ms-win-deployment-productenumerator-l1-1-0.dll": [
+      "productenumerator.dll"
+    ],
+    "ext-ms-win-desktopappx-l1-2-2.dll": [
+      "daxexec.dll"
+    ],
+    "ext-ms-win-desktopappx-l1-1-7.dll": [
+      "daxexec.dll"
+    ],
+    "ext-ms-win-devmgmt-dm-l1-1-3.dll": [
+      "dmapisetextimpldesktop.dll"
+    ],
+    "ext-ms-win-devmgmt-policy-l1-1-3.dll": [
+      "policymanager.dll"
+    ],
+    "ext-ms-win-direct2d-desktop-l1-1-0.dll": [
+      "direct2ddesktop.dll"
+    ],
+    "ext-ms-win-domainjoin-netjoin-l1-1-0.dll": [
+      "netjoin.dll"
+    ],
+    "ext-ms-win-dot3-grouppolicy-l1-1-0.dll": [
+      "dot3gpclnt.dll"
+    ],
+    "ext-ms-win-driver-recovery-l1-1-0.dll": [
+      "drvsetup.dll"
+    ],
+    "ext-ms-win-driver-setup-l1-1-0.dll": [
+      "drvsetup.dll"
+    ],
+    "ext-ms-win-driver-setup-wu-l1-1-2.dll": [
+      "drvsetup.dll"
+    ],
+    "ext-ms-win-drvinst-desktop-l1-1-0.dll": [
+      "newdev.dll"
+    ],
+    "ext-ms-win-dwmapi-ext-l1-1-2.dll": [
+      "dwmapi.dll"
+    ],
+    "ext-ms-win-dwmapidxgi-ext-l1-1-1.dll": [
+      "dwmapi.dll"
+    ],
+    "ext-ms-win-dx-d3d9-l1-1-0.dll": [
+      "d3d9.dll"
+    ],
+    "ext-ms-win-dx-d3dkmt-dxcore-l1-1-6.dll": [
+      "dxcore.dll"
+    ],
+    "ext-ms-win-dx-d3dkmt-gdi-l1-1-0.dll": [
+      "gdi32.dll"
+    ],
+    "ext-ms-win-dx-ddraw-l1-1-0.dll": [
+      "ddraw.dll"
+    ],
+    "ext-ms-win-dx-dinput8-l1-1-0.dll": [
+      "dinput8.dll"
+    ],
+    "ext-ms-win-dx-dxdbhelper-l1-1-4.dll": [
+      "directxdatabasehelper.dll"
+    ],
+    "ext-ms-win-dxcore-internal-l1-1-0.dll": [
+      "dxcore.dll"
+    ],
+    "ext-ms-win-dxcore-l1-1-0.dll": [
+      "dxcore.dll"
+    ],
+    "ext-ms-win-edputil-policy-l1-1-2.dll": [
+      "edputil.dll"
+    ],
+    "ext-ms-win-els-elscore-l1-1-0.dll": [
+      "elscore.dll"
+    ],
+    "ext-ms-win-eventing-pdh-l1-1-3.dll": [
+      "pdh.dll"
+    ],
+    "ext-ms-win-eventing-rundown-l1-1-0.dll": [
+      "etwrundown.dll"
+    ],
+    "ext-ms-win-eventing-tdh-ext-l1-1-0.dll": [
+      "tdh.dll"
+    ],
+    "ext-ms-win-eventing-tdh-priv-l1-1-0.dll": [
+      "tdh.dll"
+    ],
+    "ext-ms-win-eventing-wdi-l1-1-0.dll": [
+      "wdi.dll"
+    ],
+    "ext-ms-win-familysafety-childaccount-l1-1-0.dll": [
+      "familysafetyext.dll"
+    ],
+    "ext-ms-win-feclient-encryptedfile-l1-1-3.dll": [
+      "feclient.dll"
+    ],
+    "ext-ms-win-firewallapi-webproxy-l1-1-1.dll": [
+      "firewallapi.dll"
+    ],
+    "ext-ms-win-font-fontgroups-l1-1-0.dll": [
+      "fontgroupsoverride.dll"
+    ],
+    "ext-ms-win-font-setup-l1-1-0.dll": [
+      "muifontsetup.dll"
+    ],
+    "ext-ms-win-fs-clfs-l1-1-0.dll": [
+      "clfs.sys"
+    ],
+    "ext-ms-win-fs-cscapi-l1-1-1.dll": [
+      "cscapi.dll"
+    ],
+    "ext-ms-win-fs-vssapi-l1-1-0.dll": [
+      "vssapi.dll"
+    ],
+    "ext-ms-win-fsutilext-ifsutil-l1-1-0.dll": [
+      "fsutilext.dll"
+    ],
+    "ext-ms-win-fsutilext-ulib-l1-1-0.dll": [
+      "fsutilext.dll"
+    ],
+    "ext-ms-win-fveapi-query-l1-1-0.dll": [
+      "fveapi.dll"
+    ],
+    "ext-ms-win-gaming-devicefamily-l1-1-0.dll": [],
+    "ext-ms-win-gaming-gamechatoverlay-l1-1-0.dll": [
+      "gamechatoverlayext.dll"
+    ],
+    "ext-ms-win-gaming-xblgamesave-l1-1-0.dll": [
+      "xblgamesaveext.dll"
+    ],
+    "ext-ms-win-gaming-xinput-l1-1-0.dll": [
+      "xinputuap.dll"
+    ],
+    "ext-ms-win-gdi-clipping-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-dc-create-l1-1-2.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-dc-l1-2-1.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-devcaps-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-draw-l1-1-3.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-edgegdi-l1-1-0.dll": [],
+    "ext-ms-win-gdi-font-l1-1-3.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-gdiplus-l1-1-0.dll": [
+      "gdiplus.dll"
+    ],
+    "ext-ms-win-gdi-internal-desktop-l1-1-6.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-internal-uap-init-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-metafile-l1-1-2.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-path-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-print-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-private-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-render-l1-1-0.dll": [
+      "gdi32.dll"
+    ],
+    "ext-ms-win-gdi-rgn-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-gdi-wcs-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-globalization-input-l1-1-3.dll": [
+      "globinputhost.dll"
+    ],
+    "ext-ms-win-gpapi-grouppolicy-l1-1-0.dll": [
+      "gpapi.dll"
+    ],
+    "ext-ms-win-gpsvc-grouppolicy-l1-1-0.dll": [
+      "gpsvc.dll"
+    ],
+    "ext-ms-win-gui-dui70-l1-1-0.dll": [
+      "dui70.dll"
+    ],
+    "ext-ms-win-gui-ieui-l1-1-0.dll": [
+      "ieui.dll"
+    ],
+    "ext-ms-win-gui-uxinit-l1-1-1.dll": [
+      "uxinit.dll"
+    ],
+    "ext-ms-win-hcihealth-utils-l1-1-0.dll": [],
+    "ext-ms-win-hostactivitymanager-bi-ham-ext-l1-1-0.dll": [
+      "psmserviceexthost.dll"
+    ],
+    "ext-ms-win-hostactivitymanager-ham-private-ext-l1-1-0.dll": [
+      "psmserviceexthost.dll"
+    ],
+    "ext-ms-win-hostactivitymanager-hostidstore-l1-1-1.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-hyperv-compute-l1-2-5.dll": [],
+    "ext-ms-win-hyperv-compute-l1-1-1.dll": [],
+    "ext-ms-win-hyperv-compute-legacy-l1-1-0.dll": [],
+    "ext-ms-win-hyperv-computenetwork-l1-1-1.dll": [],
+    "ext-ms-win-hyperv-computestorage-l1-1-2.dll": [],
+    "ext-ms-win-hyperv-devicevirtualization-l1-2-2.dll": [],
+    "ext-ms-win-hyperv-devicevirtualization-l1-1-1.dll": [],
+    "ext-ms-win-hyperv-hgs-l1-1-0.dll": [
+      "vmhgs.dll"
+    ],
+    "ext-ms-win-hyperv-hvemulation-l1-1-0.dll": [
+      "winhvemulation.dll"
+    ],
+    "ext-ms-win-hyperv-hvplatform-l1-1-5.dll": [
+      "winhvplatform.dll"
+    ],
+    "ext-ms-win-ie-textinput-l1-1-0.dll": [],
+    "ext-ms-win-imm-l1-1-3.dll": [
+      "imm32.dll"
+    ],
+    "ext-ms-win-kernel32-appcompat-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-datetime-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-elevation-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-errorhandling-l1-1-0.dll": [
+      "faultrep.dll",
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-file-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-localization-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-package-current-l1-1-0.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-kernel32-package-l1-1-2.dll": [
+      "kernel.appcore.dll"
+    ],
+    "ext-ms-win-kernel32-process-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-quirks-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-registry-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-sidebyside-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-transacted-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-updateresource-l1-1-0.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernel32-windowserrorreporting-l1-1-1.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernelbase-processthread-l1-2-1.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kernelbase-processthread-l1-1-3.dll": [
+      "kernel32.dll"
+    ],
+    "ext-ms-win-kioskmode-config-l1-1-0.dll": [],
+    "ext-ms-win-laps-l1-1-1.dll": [
+      "laps.dll"
+    ],
+    "ext-ms-win-lighting-lamparray-l1-1-1.dll": [
+      "lamparray.dll"
+    ],
+    "ext-ms-win-mapi-mapi32-l1-1-0.dll": [
+      "mapistub.dll"
+    ],
+    "ext-ms-win-media-avi-l1-1-0.dll": [
+      "avifil32.dll"
+    ],
+    "ext-ms-win-media-codecpack-mounting-l1-1-0.dll": [],
+    "ext-ms-win-mf-devicespecific-l1-1-0.dll": [],
+    "ext-ms-win-mf-vfw-l1-1-0.dll": [
+      "mfvfw.dll"
+    ],
+    "ext-ms-win-mininput-cursorhost-l1-1-0.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-mininput-extensions-l1-1-0.dll": [],
+    "ext-ms-win-mininput-inputhost-l1-4-0.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-mininput-inputhost-l1-3-0.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-mininput-inputhost-l1-2-1.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-mininput-inputhost-l1-1-1.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-mininput-systeminputhost-l1-2-0.dll": [
+      "ism.dll"
+    ],
+    "ext-ms-win-mininput-systeminputhost-l1-1-0.dll": [
+      "ism.dll"
+    ],
+    "ext-ms-win-mm-io-l1-1-0.dll": [
+      "winmmbase.dll"
+    ],
+    "ext-ms-win-mm-msacm-l1-1-0.dll": [
+      "msacm32.dll"
+    ],
+    "ext-ms-win-mm-pehelper-l1-1-0.dll": [
+      "mf.dll"
+    ],
+    "ext-ms-win-mm-wmvcore-l1-1-0.dll": [
+      "wmvcore.dll"
+    ],
+    "ext-ms-win-moderncore-win32k-base-ntgdi-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-moderncore-win32k-base-ntuser-l1-1-0.dll": [
+      "win32kfull.sys"
+    ],
+    "ext-ms-win-moderncore-win32k-base-sysentry-l1-1-0.dll": [
+      "win32k.sys"
+    ],
+    "ext-ms-win-mpr-multipleproviderrouter-l1-1-0.dll": [
+      "mprext.dll"
+    ],
+    "ext-ms-win-mrmcorer-resmanager-l1-1-0.dll": [
+      "mrmcorer.dll"
+    ],
+    "ext-ms-win-msa-device-l1-1-0.dll": [],
+    "ext-ms-win-msa-ui-l1-1-0.dll": [
+      "msauserext.dll"
+    ],
+    "ext-ms-win-msa-user-l1-1-1.dll": [
+      "msauserext.dll"
+    ],
+    "ext-ms-win-msi-misc-l1-1-0.dll": [
+      "msi.dll"
+    ],
+    "ext-ms-win-msiltcfg-msi-l1-1-0.dll": [
+      "msiltcfg.dll"
+    ],
+    "ext-ms-win-msimg-draw-l1-1-0.dll": [
+      "msimg32.dll"
+    ],
+    "ext-ms-win-net-cmvpn-l1-1-0.dll": [
+      "cmintegrator.dll"
+    ],
+    "ext-ms-win-net-httpproxyext-l1-1-0.dll": [
+      "httpprxc.dll"
+    ],
+    "ext-ms-win-net-isoext-l1-1-0.dll": [
+      "firewallapi.dll"
+    ],
+    "ext-ms-win-net-netbios-l1-1-0.dll": [
+      "netbios.dll"
+    ],
+    "ext-ms-win-net-netshell-l1-1-0.dll": [
+      "netshell.dll"
+    ],
+    "ext-ms-win-net-nfdapi-l1-1-1.dll": [
+      "ndfapi.dll"
+    ],
+    "ext-ms-win-net-vpn-l1-1-0.dll": [],
+    "ext-ms-win-netio-l1-1-0.dll": [
+      "netio.sys"
+    ],
+    "ext-ms-win-netprovision-netprovfw-l1-1-0.dll": [
+      "netprovfw.dll"
+    ],
+    "ext-ms-win-networking-iphlpsvc-l1-1-0.dll": [],
+    "ext-ms-win-networking-mpssvc-l1-1-0.dll": [],
+    "ext-ms-win-networking-ncsiuserprobe-l1-1-0.dll": [],
+    "ext-ms-win-networking-radiomonitor-l1-1-0.dll": [
+      "windows.devices.radios.dll"
+    ],
+    "ext-ms-win-networking-teredo-l1-1-0.dll": [
+      "windows.networking.connectivity.dll"
+    ],
+    "ext-ms-win-networking-wcmapi-l1-1-1.dll": [
+      "wcmapi.dll"
+    ],
+    "ext-ms-win-networking-winipsec-l1-1-0.dll": [
+      "winipsec.dll"
+    ],
+    "ext-ms-win-networking-wlanapi-l1-1-0.dll": [
+      "wlanapi.dll"
+    ],
+    "ext-ms-win-networking-wlanstorage-l1-1-0.dll": [],
+    "ext-ms-win-networking-xblconnectivity-l1-1-0.dll": [],
+    "ext-ms-win-newdev-config-l1-1-2.dll": [
+      "newdev.dll"
+    ],
+    "ext-ms-win-nfc-semgr-l1-1-0.dll": [
+      "semgrsvc.dll"
+    ],
+    "ext-ms-win-ntdsa-activedirectoryasyncthreadqueue-l1-1-0.dll": [],
+    "ext-ms-win-ntdsa-activedirectoryserver-l1-1-2.dll": [],
+    "ext-ms-win-ntdsapi-activedirectoryclient-l1-1-1.dll": [
+      "ntdsapi.dll"
+    ],
+    "ext-ms-win-ntos-clipsp-l1-1-0.dll": [
+      "clipsp.sys"
+    ],
+    "ext-ms-win-ntos-dg-l1-1-0.dll": [],
+    "ext-ms-win-ntos-globmerger-l1-1-0.dll": [
+      "globmerger.sys"
+    ],
+    "ext-ms-win-ntos-kcminitcfg-l1-1-0.dll": [
+      "cmimcext.sys"
+    ],
+    "ext-ms-win-ntos-ksecurity-l1-1-1.dll": [],
+    "ext-ms-win-ntos-ksr-l1-1-5.dll": [],
+    "ext-ms-win-ntos-processparameters-l1-1-0.dll": [],
+    "ext-ms-win-ntos-runlevels-l1-1-0.dll": [],
+    "ext-ms-win-ntos-stateseparation-l1-1-0.dll": [],
+    "ext-ms-win-ntos-tm-l1-1-0.dll": [
+      "tm.sys"
+    ],
+    "ext-ms-win-ntos-trace-l1-1-0.dll": [],
+    "ext-ms-win-ntos-ucode-l1-1-0.dll": [
+      "ntosext.sys"
+    ],
+    "ext-ms-win-ntos-vail-l1-1-0.dll": [],
+    "ext-ms-win-ntos-vmsvc-l1-1-0.dll": [],
+    "ext-ms-win-ntos-werkernel-l1-1-1.dll": [
+      "werkernel.sys"
+    ],
+    "ext-ms-win-ntos-win32k-l1-1-0.dll": [
+      "win32k.sys"
+    ],
+    "ext-ms-win-ntuser-caret-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-chartranslation-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-dc-access-ext-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-dde-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-dialogbox-l1-1-3.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-draw-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-gui-l1-3-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-gui-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-gui-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-keyboard-ansi-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-keyboard-l1-3-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-keyboard-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-keyboard-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-menu-l1-1-3.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-message-l1-1-3.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-7-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-6-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-5-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-3-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-misc-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-mit-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-mouse-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-powermanagement-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-6-3.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-5-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-4-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-3-3.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-private-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rawinput-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rawinput-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rectangle-ext-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rim-l1-2-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rim-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-rotationmanager-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-server-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-string-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-synch-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-sysparams-ext-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-touch-hittest-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-uicontext-ext-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-window-l1-1-6.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-windowclass-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-windowstation-ansi-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-ntuser-windowstation-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-odbc-odbc32-l1-1-0.dll": [
+      "odbc32.dll"
+    ],
+    "ext-ms-win-ole32-bindctx-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-ole32-ie-ext-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-ole32-oleautomation-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-oleacc-l1-1-2.dll": [
+      "oleacc.dll"
+    ],
+    "ext-ms-win-onecore-shutdown-l1-1-0.dll": [
+      "twinapi.appcore.dll"
+    ],
+    "ext-ms-win-oobe-query-l1-1-0.dll": [],
+    "ext-ms-win-packagevirtualizationcontext-l1-1-0.dll": [
+      "daxexec.dll"
+    ],
+    "ext-ms-win-parentalcontrols-setup-l1-1-0.dll": [
+      "wpcapi.dll"
+    ],
+    "ext-ms-win-perception-device-l1-1-1.dll": [],
+    "ext-ms-win-pinenrollment-enrollment-l1-1-2.dll": [
+      "pinenrollmenthelper.dll"
+    ],
+    "ext-ms-win-printer-prntvpt-l1-1-2.dll": [
+      "prntvpt.dll"
+    ],
+    "ext-ms-win-printer-winspool-core-l1-1-0.dll": [
+      "winspool.drv"
+    ],
+    "ext-ms-win-printer-winspool-l1-2-0.dll": [
+      "winspool.drv"
+    ],
+    "ext-ms-win-printer-winspool-l1-1-4.dll": [
+      "winspool.drv"
+    ],
+    "ext-ms-win-profile-extender-l1-1-0.dll": [
+      "userenv.dll"
+    ],
+    "ext-ms-win-profile-load-l1-1-0.dll": [],
+    "ext-ms-win-profile-profsvc-l1-1-0.dll": [
+      "profsvcext.dll"
+    ],
+    "ext-ms-win-profile-userenv-l1-1-1.dll": [
+      "profext.dll"
+    ],
+    "ext-ms-win-provisioning-options-l1-1-0.dll": [],
+    "ext-ms-win-provisioning-platform-l1-1-2.dll": [
+      "provplatformdesktop.dll"
+    ],
+    "ext-ms-win-ras-rasapi32-l1-1-2.dll": [
+      "rasapi32.dll"
+    ],
+    "ext-ms-win-ras-rasdlg-l1-1-0.dll": [
+      "rasdlg.dll"
+    ],
+    "ext-ms-win-ras-rasman-l1-1-0.dll": [
+      "rasman.dll"
+    ],
+    "ext-ms-win-ras-tapi32-l1-1-1.dll": [
+      "tapi32.dll"
+    ],
+    "ext-ms-win-raschapext-eap-l1-1-0.dll": [
+      "raschapext.dll"
+    ],
+    "ext-ms-win-rastlsext-eap-l1-1-0.dll": [
+      "rastlsext.dll"
+    ],
+    "ext-ms-win-rdr-davhlpr-l1-1-0.dll": [
+      "davhlpr.dll"
+    ],
+    "ext-ms-win-reinfo-query-l1-1-1.dll": [
+      "reinfo.dll"
+    ],
+    "ext-ms-win-remotewipe-platform-l1-1-0.dll": [],
+    "ext-ms-win-resourcemanager-activitycoordinator-l1-1-1.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resourcemanager-crm-l1-2-0.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resourcemanager-crm-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resourcemanager-crm-private-ext-l1-1-0.dll": [
+      "psmserviceexthost.dll"
+    ],
+    "ext-ms-win-resourcemanager-gamemode-l1-2-1.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resourcemanager-gamemode-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resourcemanager-limits-l1-1-0.dll": [
+      "rmclient.dll"
+    ],
+    "ext-ms-win-resources-deployment-l1-1-0.dll": [
+      "mrmdeploy.dll"
+    ],
+    "ext-ms-win-resources-languageoverlay-l1-1-7.dll": [
+      "languageoverlayutil.dll"
+    ],
+    "ext-ms-win-ro-typeresolution-l1-1-1.dll": [
+      "wintypes.dll"
+    ],
+    "ext-ms-win-rometadata-dispenser-l1-1-0.dll": [
+      "rometadata.dll"
+    ],
+    "ext-ms-win-rpc-firewallportuse-l1-1-0.dll": [
+      "rpcrtremote.dll"
+    ],
+    "ext-ms-win-rpc-ssl-l1-1-0.dll": [
+      "rpcrtremote.dll"
+    ],
+    "ext-ms-win-rtcore-gdi-devcaps-l1-1-1.dll": [
+      "gdi32.dll"
+    ],
+    "ext-ms-win-rtcore-gdi-object-l1-1-0.dll": [
+      "gdi32.dll"
+    ],
+    "ext-ms-win-rtcore-gdi-rgn-l1-1-1.dll": [
+      "gdi32.dll"
+    ],
+    "ext-ms-win-rtcore-minuser-display-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-minuser-host-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-minuser-input-l1-1-4.dll": [],
+    "ext-ms-win-rtcore-minuser-internal-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-minuser-private-ext-l1-1-3.dll": [],
+    "ext-ms-win-rtcore-ntuser-controllernavigation-l1-1-2.dll": [
+      "inputhost.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-cursor-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-dc-access-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-dialogbox-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-dpi-l1-2-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-dpi-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-draw-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-gui-l1-1-1.dll": [],
+    "ext-ms-win-rtcore-ntuser-iam-l1-1-2.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-inputintercept-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-integration-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-keyboard-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-message-ansi-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-message-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-mininit-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-misc-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-mouse-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-powermanagement-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-private-l1-1-1.dll": [],
+    "ext-ms-win-rtcore-ntuser-rawinput-l1-2-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-rawinput-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-synch-ext-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-syscolors-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-sysparams-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-usersecurity-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-window-ansi-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-window-ext-l1-1-1.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-window-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-winevent-ext-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-winstamin-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ntuser-wmpointer-l1-1-0.dll": [
+      "user32.dll"
+    ],
+    "ext-ms-win-rtcore-ntuser-wmpointermin-l1-1-0.dll": [],
+    "ext-ms-win-rtcore-ole32-dragdrop-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-rtcore-ole32-misc-l1-1-0.dll": [
+      "ole32.dll"
+    ],
+    "ext-ms-win-rtcore-webview-l1-1-0.dll": [],
+    "ext-ms-win-samsrv-accountstore-l1-1-1.dll": [
+      "samsrv.dll"
+    ],
+    "ext-ms-win-scesrv-server-l1-1-0.dll": [
+      "scesrv.dll"
+    ],
+    "ext-ms-win-search-folder-l1-1-1.dll": [
+      "searchfolder.dll"
+    ],
+    "ext-ms-win-search-lifetimemanager-l1-1-0.dll": [
+      "mssrch.dll"
+    ],
+    "ext-ms-win-secur32-translatename-l1-1-0.dll": [
+      "secur32.dll"
+    ],
+    "ext-ms-win-security-appinfoext-l1-1-0.dll": [
+      "appinfoext.dll"
+    ],
+    "ext-ms-win-security-authbrokerui-l1-1-0.dll": [
+      "authbrokerui.dll"
+    ],
+    "ext-ms-win-security-authz-helper-l1-1-0.dll": [],
+    "ext-ms-win-security-capauthz-l1-1-1.dll": [
+      "capauthz.dll"
+    ],
+    "ext-ms-win-security-catalog-database-l1-1-0.dll": [
+      "cryptcatsvc.dll"
+    ],
+    "ext-ms-win-security-certpoleng-l1-1-0.dll": [
+      "certpoleng.dll"
+    ],
+    "ext-ms-win-security-cfl-l1-1-2.dll": [
+      "cflapi.dll"
+    ],
+    "ext-ms-win-security-chambers-l1-1-1.dll": [],
+    "ext-ms-win-security-credui-internal-l1-1-1.dll": [
+      "wincredui.dll"
+    ],
+    "ext-ms-win-security-credui-l1-1-1.dll": [
+      "credui.dll"
+    ],
+    "ext-ms-win-security-crosscontainerauthhelper-l1-1-0.dll": [],
+    "ext-ms-win-security-cryptui-l1-1-1.dll": [
+      "cryptui.dll"
+    ],
+    "ext-ms-win-security-developerunlock-l1-1-0.dll": [],
+    "ext-ms-win-security-deviceid-l1-1-0.dll": [],
+    "ext-ms-win-security-efs-l1-1-1.dll": [
+      "efsext.dll"
+    ],
+    "ext-ms-win-security-efswrt-l1-1-4.dll": [
+      "efswrt.dll"
+    ],
+    "ext-ms-win-security-kerberos-l1-1-0.dll": [
+      "kerberos.dll"
+    ],
+    "ext-ms-win-security-lsaadt-l1-1-0.dll": [
+      "lsaadt.dll"
+    ],
+    "ext-ms-win-security-lsaadtpriv-l1-1-0.dll": [
+      "lsaadt.dll"
+    ],
+    "ext-ms-win-security-lsaauditrpc-l1-1-0.dll": [
+      "lsaadt.dll"
+    ],
+    "ext-ms-win-security-ngc-local-l1-1-0.dll": [
+      "ngclocal.dll"
+    ],
+    "ext-ms-win-security-shutdownext-l1-1-0.dll": [
+      "shutdownext.dll"
+    ],
+    "ext-ms-win-security-slc-l1-1-0.dll": [
+      "slc.dll"
+    ],
+    "ext-ms-win-security-srp-l1-1-1.dll": [
+      "srpapi.dll"
+    ],
+    "ext-ms-win-security-tokenbrokerui-l1-1-0.dll": [
+      "tokenbrokerui.dll"
+    ],
+    "ext-ms-win-security-vaultcds-l1-2-0.dll": [
+      "vaultcds.dll"
+    ],
+    "ext-ms-win-security-vaultcds-l1-1-0.dll": [
+      "vaultcds.dll"
+    ],
+    "ext-ms-win-security-vaultcli-l1-1-1.dll": [
+      "vaultcli.dll"
+    ],
+    "ext-ms-win-security-winscard-l1-1-1.dll": [
+      "winscard.dll"
+    ],
+    "ext-ms-win-sensors-core-private-l1-1-8.dll": [
+      "sensorsnativeapi.dll"
+    ],
+    "ext-ms-win-sensors-utilities-private-l1-1-5.dll": [
+      "sensorsutilsv2.dll"
+    ],
+    "ext-ms-win-servicing-uapi-l1-1-2.dll": [
+      "servicinguapi.dll"
+    ],
+    "ext-ms-win-session-candidateaccountmgr-l1-1-0.dll": [
+      "camext.dll"
+    ],
+    "ext-ms-win-session-userinit-l1-1-0.dll": [
+      "userinitext.dll"
+    ],
+    "ext-ms-win-session-usermgr-l1-2-1.dll": [
+      "usermgrcli.dll"
+    ],
+    "ext-ms-win-session-usermgr-l1-1-0.dll": [
+      "usermgrcli.dll"
+    ],
+    "ext-ms-win-session-usertoken-l1-1-0.dll": [
+      "wtsapi32.dll"
+    ],
+    "ext-ms-win-session-wininit-l1-2-0.dll": [
+      "wininitext.dll"
+    ],
+    "ext-ms-win-session-wininit-l1-1-1.dll": [
+      "wininitext.dll"
+    ],
+    "ext-ms-win-session-winlogon-l1-1-2.dll": [
+      "winlogonext.dll"
+    ],
+    "ext-ms-win-session-winlogon-notify-l1-1-0.dll": [],
+    "ext-ms-win-session-winsta-l1-1-6.dll": [
+      "winsta.dll"
+    ],
+    "ext-ms-win-session-wtsapi32-l1-1-2.dll": [
+      "wtsapi32.dll"
+    ],
+    "ext-ms-win-setupapi-classinstallers-l1-1-2.dll": [
+      "setupapi.dll"
+    ],
+    "ext-ms-win-setupapi-devobj-l1-1-0.dll": [],
+    "ext-ms-win-setupapi-inf-l1-1-1.dll": [
+      "setupapi.dll"
+    ],
+    "ext-ms-win-setupapi-logging-l1-1-0.dll": [
+      "setupapi.dll"
+    ],
+    "ext-ms-win-shell-aclui-l1-1-0.dll": [
+      "aclui.dll"
+    ],
+    "ext-ms-win-shell-browsersettingsync-l1-1-0.dll": [],
+    "ext-ms-win-shell-comctl32-da-l1-1-0.dll": [
+      "comctl32.dll"
+    ],
+    "ext-ms-win-shell-comctl32-init-l1-1-1.dll": [
+      "comctl32.dll"
+    ],
+    "ext-ms-win-shell-comctl32-l1-1-0.dll": [
+      "comctl32.dll"
+    ],
+    "ext-ms-win-shell-comctl32-window-l1-1-0.dll": [
+      "comctl32.dll"
+    ],
+    "ext-ms-win-shell-comdlg32-l1-1-1.dll": [
+      "comdlg32.dll"
+    ],
+    "ext-ms-win-shell-directory-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-shell-efsadu-l1-1-0.dll": [
+      "efsadu.dll"
+    ],
+    "ext-ms-win-shell-embeddedmode-l1-1-0.dll": [
+      "embeddedmodesvcapi.dll"
+    ],
+    "ext-ms-win-shell-exports-internal-l1-1-2.dll": [
+      "shell32.dll"
+    ],
+    "ext-ms-win-shell-fileplaceholder-l1-1-0.dll": [
+      "windows.fileexplorer.common.dll"
+    ],
+    "ext-ms-win-shell-ntshrui-l1-1-1.dll": [
+      "ntshrui.dll"
+    ],
+    "ext-ms-win-shell-propsys-l1-1-1.dll": [
+      "propsys.dll"
+    ],
+    "ext-ms-win-shell-shdocvw-l1-1-0.dll": [
+      "shdocvw.dll"
+    ],
+    "ext-ms-win-shell-shell32-l1-5-0.dll": [
+      "shell32.dll"
+    ],
+    "ext-ms-win-shell-shell32-l1-4-0.dll": [
+      "shell32.dll"
+    ],
+    "ext-ms-win-shell-shell32-l1-3-0.dll": [
+      "shell32.dll"
+    ],
+    "ext-ms-win-shell-shell32-l1-2-3.dll": [
+      "shell32.dll"
+    ],
+    "ext-ms-win-shell-shlwapi-l1-2-1.dll": [
+      "shlwapi.dll"
+    ],
+    "ext-ms-win-shell-shlwapi-l1-1-2.dll": [
+      "shlwapi.dll"
+    ],
+    "ext-ms-win-shell32-shellcom-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-shell32-shellfolders-l1-2-1.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-shell32-shellfolders-l1-1-1.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-smbshare-browser-l1-1-0.dll": [
+      "browser.dll"
+    ],
+    "ext-ms-win-smbshare-browserclient-l1-1-0.dll": [
+      "browcli.dll"
+    ],
+    "ext-ms-win-smbshare-sscore-l1-1-0.dll": [
+      "sscoreext.dll"
+    ],
+    "ext-ms-win-spinf-inf-l1-1-0.dll": [
+      "spinf.dll"
+    ],
+    "ext-ms-win-storage-hbaapi-l1-1-1.dll": [
+      "hbaapi.dll"
+    ],
+    "ext-ms-win-storage-iscsidsc-l1-1-0.dll": [
+      "iscsidsc.dll"
+    ],
+    "ext-ms-win-storage-sense-l1-2-5.dll": [
+      "storageusage.dll"
+    ],
+    "ext-ms-win-storage-sense-l1-1-0.dll": [
+      "storageusage.dll"
+    ],
+    "ext-ms-win-sxs-oleautomation-l1-1-0.dll": [
+      "sxs.dll"
+    ],
+    "ext-ms-win-sysmain-pfapi-l1-1-1.dll": [
+      "pfclient.dll"
+    ],
+    "ext-ms-win-sysmain-pfsapi-l1-1-0.dll": [
+      "pfclient.dll"
+    ],
+    "ext-ms-win-sysmain-plmapi-l1-1-1.dll": [
+      "pfclient.dll"
+    ],
+    "ext-ms-win-sysmain-sfltapi-l1-1-1.dll": [],
+    "ext-ms-win-system-metrics-override-l1-1-1.dll": [],
+    "ext-ms-win-teapext-eap-l1-1-0.dll": [
+      "eapteapext.dll"
+    ],
+    "ext-ms-win-test-sys1-l1-1-0.dll": [],
+    "ext-ms-win-test-sys2-l1-1-0.dll": [],
+    "ext-ms-win-tsf-inputsetting-l1-1-0.dll": [
+      "input.dll"
+    ],
+    "ext-ms-win-tsf-msctf-l1-1-4.dll": [
+      "msctf.dll"
+    ],
+    "ext-ms-win-ttlsext-eap-l1-1-0.dll": [
+      "ttlsext.dll"
+    ],
+    "ext-ms-win-ui-viewmanagement-l1-1-0.dll": [],
+    "ext-ms-win-uiacore-l1-1-3.dll": [
+      "uiautomationcore.dll"
+    ],
+    "ext-ms-win-umpoext-umpo-l1-1-0.dll": [
+      "umpoext.dll"
+    ],
+    "ext-ms-win-usp10-l1-1-0.dll": [
+      "gdi32full.dll"
+    ],
+    "ext-ms-win-uwf-servicing-apis-l1-1-1.dll": [
+      "uwfservicingapi.dll"
+    ],
+    "ext-ms-win-uxtheme-themes-l1-1-3.dll": [
+      "uxtheme.dll"
+    ],
+    "ext-ms-win-vmbus-hvsocket-l1-1-0.dll": [
+      "hvsocket.sys"
+    ],
+    "ext-ms-win-webtokenrequest-win32-l1-1-0.dll": [],
+    "ext-ms-win-wer-reporting-l1-1-3.dll": [
+      "wer.dll"
+    ],
+    "ext-ms-win-wer-ui-l1-1-1.dll": [
+      "werui.dll"
+    ],
+    "ext-ms-win-wer-wct-l1-1-0.dll": [
+      "wer.dll"
+    ],
+    "ext-ms-win-wer-xbox-l1-2-1.dll": [],
+    "ext-ms-win-wer-xbox-l1-1-3.dll": [],
+    "ext-ms-win-wevtapi-eventlog-l1-1-3.dll": [
+      "wevtapi.dll"
+    ],
+    "ext-ms-win-windowing-external-l1-1-0.dll": [
+      "windows.ui.dll"
+    ],
+    "ext-ms-win-windowing-internal-l1-1-0.dll": [],
+    "ext-ms-win-winlogon-mincreds-l1-1-0.dll": [],
+    "ext-ms-win-winrt-device-access-l1-1-0.dll": [
+      "deviceaccess.dll"
+    ],
+    "ext-ms-win-winrt-storage-l1-2-3.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-winrt-storage-l1-1-0.dll": [
+      "windows.storage.dll"
+    ],
+    "ext-ms-win-winrt-storage-win32broker-l1-1-0.dll": [
+      "windows.storage.onecore.dll"
+    ],
+    "ext-ms-win-wlan-grouppolicy-l1-1-0.dll": [
+      "wlgpclnt.dll"
+    ],
+    "ext-ms-win-wlan-onexui-l1-1-0.dll": [
+      "onexui.dll"
+    ],
+    "ext-ms-win-wlan-scard-l1-1-0.dll": [
+      "winscard.dll"
+    ],
+    "ext-ms-win-wpc-webfilter-l1-1-0.dll": [
+      "wpcwebfilter.dll"
+    ],
+    "ext-ms-win-wpn-phoneext-l1-1-0.dll": [],
+    "ext-ms-win-wrp-sfc-l1-1-0.dll": [
+      "sfc.dll"
+    ],
+    "ext-ms-win-wsclient-devlicense-l1-1-1.dll": [
+      "wsclient.dll"
+    ],
+    "ext-ms-win-wwaext-misc-l1-1-0.dll": [
+      "wwaext.dll"
+    ],
+    "ext-ms-win-wwaext-module-l1-1-0.dll": [
+      "wwaext.dll"
+    ],
+    "ext-ms-win-wwan-wwapi-l1-1-3.dll": [
+      "wwapi.dll"
+    ],
+    "ext-ms-win-xaml-controls-l1-1-0.dll": [
+      "windows.ui.xaml.phone.dll"
+    ],
+    "ext-ms-win-xaml-pal-l1-1-0.dll": [],
+    "ext-ms-win-xaudio-platform-l1-1-0.dll": [],
+    "ext-ms-win-xblauth-console-l1-1-0.dll": [],
+    "ext-ms-win-xboxlive-xboxnetapisvc-l1-1-0.dll": [],
+    "ext-ms-win32-subsystem-query-l1-1-0.dll": [],
+    "ext-ms-windowscore-deviceinfo-l1-1-0.dll": []
+  },
+  "api_set_source": {
+    "path": "C:/Windows/System32/apisetschema.dll",
+    "bytes": 194048,
+    "sha256": "e485e3cf63919cd5dc5ec8624e94c3645e8bf3c4445ae937fba045bea3d88bb8",
+    "schema_version": 6,
+    "method": "Static bounded read of PE .apiset metadata; no image load/execution; source-reviewed platform trust catalogue"
+  }
+}
+

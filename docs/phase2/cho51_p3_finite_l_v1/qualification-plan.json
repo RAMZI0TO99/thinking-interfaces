@@ -1,0 +1,479 @@
+{
+  "schema": "cho51_finite_l_qualification_design_v1",
+  "status": "DESIGN_ONLY_ALL_UNEXECUTED",
+  "count": 34,
+  "inherited_matrix": {
+    "path": "docs/phase2/cho51_p3_loader_design_v1/acceptance-cases.json",
+    "bytes": 13884,
+    "sha256": "13abd87a491880b2e33e6d9f966123e551cdd6199c63cba6f63a5945535085ec",
+    "count": 40,
+    "status": "FULL_MATRIX_NOT_YET_QUALIFIED"
+  },
+  "scope": "Targeted successor scenarios augment rather than replace the existing40 L obligations, original26 qualification scenarios,117 candidates or34 V controls.",
+  "levels": {
+    "Q_supplied": "Pure supplied-data/fixture mechanism cases under fresh reviewed Q; no candidate or third-party imports.",
+    "Q_owned_fixture": "Actual bounded project-owned nonnumerical fixtures under fresh reviewed Q, including native construction/loading only when explicitly scoped; no installed package or candidate imports.",
+    "P_file_only": "Actual fresh preparation under its own admission; source parsing and metadata only, no candidate or third-party execution.",
+    "L_actual": "Actual installed-loader/ABI/guard/plugin/collection observations under separate fresh L admission; not executable in Q/P."
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "step": "Independent design review and Root design acceptance",
+      "claim": "Inert design only; no launch or successor byte adoption"
+    },
+    {
+      "id": "G1",
+      "step": "Implement reviewed lplan2 diagnostic/inventory subset and exact candidate-v2 migration; independent source/comparison review and implementation-specific Root adoption, fresh Q then separate P parser audit",
+      "claim": "Qualified fixture mechanisms and actual file-only syntax/identity evidence; no imported candidates"
+    },
+    {
+      "id": "G2",
+      "step": "Build finite source-level binding/effect decisions and transitive closure through reviewed file-only preparation; review provisional pages and explicitly retain pending implementation/capability obligations.",
+      "claim": "Provisional source-level closure only, not COMPLETE or execution-ready; new modules may add findings and pending capabilities remain blocked."
+    },
+    {
+      "id": "G3",
+      "step": "Implement/review lhost2, matching l2, retained streaming interface and L-specific native bootstrap; qualify actual owned-fixture lifecycle and remaining mechanisms under fresh Q",
+      "claim": "Current implementation Q evidence, not real package compatibility"
+    },
+    {
+      "id": "G4",
+      "step": "Freeze complete sources/runtime/decisions; verify all joins to implemented qualified capabilities, refresh invalidated Q, aggregate current coverage and P preparation, establish zero unresolved/stale/unbound/conflicting obligations; obtain independent complete-plan semantic/actual reviews and Root complete-plan acceptance.",
+      "claim": "Complete plan only after implemented capability joins and exact current Q plus physical P; no reuse of stale census and no L admission inferred."
+    },
+    {
+      "id": "G5",
+      "step": "Fresh separately admitted L only after all prerequisite obligations pass; independently accept loader/ABI/117-successor collection evidence",
+      "claim": "L collection only; V117/34 and C remain separately admitted"
+    }
+  ],
+  "constraints": [
+    "All34 new scenarios are unexecuted; cases require concrete reviewed implementations before admission.",
+    "Original40 obligations remain mandatory with an explicit implementation-specific method/evidence map; narrow tests cannot silently discharge them.",
+    "No source, resource, time, memory, process, output or stop guard is raised by this design.",
+    "Q retains90s whole/60s work/5s cleanup and512/768MiB process/Job caps. If a complete suite cannot fit, a separately reviewed bounded cohort/aggregate design is required before admission; no quiet omission or timer extension.",
+    "P and L retain300s whole/240s work/5s cleanup and4096/5120MiB caps,4GiB startup/active and20GiB disk. All roles use original intervals and applicable remaining controls.",
+    "Implement only supported finite analysis; unknown constructs/refused effects remain blocked. No promise that installed dependencies can be admitted within existing caps.",
+    "Real package/resource/ABI/plugin/collection behavior requires L evidence, never fixture substitution."
+  ],
+  "cases": [
+    {
+      "id": "FQ01",
+      "name": "bounded_syntax_diagnostics",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ04"
+      ],
+      "required_behavior": "Two malformed decorator fixtures produce separately useful bounded coordinates/messages; nullable positions and non-SyntaxError failures remain typed refusals; no source/locals leak.",
+      "executed": false
+    },
+    {
+      "id": "FQ02",
+      "name": "candidate_exact_delta",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ10",
+        "LQ31"
+      ],
+      "required_behavior": "Accept only two colon deletions and two exact import-prefix changes with byte offsets; refuse any production-byte, parameter, formatting or extra-file change.",
+      "executed": false
+    },
+    {
+      "id": "FQ03",
+      "name": "candidate_identity_map",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ30",
+        "LQ31",
+        "LQ32"
+      ],
+      "required_behavior": "Require one-to-one 25-function mapping with 39/78 totals and 117 expectations; reject old/new mixed origins and fabricated full node IDs.",
+      "executed": false
+    },
+    {
+      "id": "FQ04",
+      "name": "lexical_binding",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ08",
+        "LQ10"
+      ],
+      "required_behavior": "Distinguish lexical scopes, closure/global/nonlocal/import aliases and rebindings; unresolved alias or descriptor access cannot receive allow_bound_call.",
+      "executed": false
+    },
+    {
+      "id": "FQ05",
+      "name": "eager_and_deferred_effects",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ25",
+        "LQ27",
+        "LQ33"
+      ],
+      "required_behavior": "Decorators/defaults/evaluated annotations/class bodies/bases/metaclasses remain eager; dormant body exclusion needs blocked-entry proof including callbacks/generators.",
+      "executed": false
+    },
+    {
+      "id": "FQ06",
+      "name": "implicit_protocol_effects",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ08",
+        "LQ20",
+        "LQ27"
+      ],
+      "required_behavior": "Inventory operator/truth/iteration/comprehension/context-manager and descriptor effects; unsupported implicit callbacks refuse.",
+      "executed": false
+    },
+    {
+      "id": "FQ07",
+      "name": "exclusion_witness",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ08",
+        "LQ27"
+      ],
+      "required_behavior": "Reject unsupported branch pruning, stale environment facts and missing invalidation dependencies; true witnesses do not hide eager children.",
+      "executed": false
+    },
+    {
+      "id": "FQ08",
+      "name": "finite_imports",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ08",
+        "LQ09"
+      ],
+      "required_behavior": "Literal dynamic targets and fully proved star exports are finite; dynamic __all__, undeclared targets, namespace roots and alternate tagged extensions refuse.",
+      "executed": false
+    },
+    {
+      "id": "FQ09",
+      "name": "transitive_fixed_point",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ08",
+        "LQ27"
+      ],
+      "required_behavior": "A newly discovered module adds all obligations; cyclic groups need reviewed order/guard proof; repeated closure has identical complete digest.",
+      "executed": false
+    },
+    {
+      "id": "FQ10",
+      "name": "effect_certificate",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ20",
+        "LQ24",
+        "LQ27"
+      ],
+      "required_behavior": "Resolve exact callable, finite argument types/domains and transitive effects; generic include, unbound effects and unknown native callbacks refuse.",
+      "executed": false
+    },
+    {
+      "id": "FQ11",
+      "name": "decision_integrity",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ04",
+        "LQ08"
+      ],
+      "required_behavior": "Reject duplicated/conflicting/stale/unbound/unused decisions and changed source spans, node hashes or dependencies; no review-rule wildcard grants.",
+      "executed": false
+    },
+    {
+      "id": "FQ12",
+      "name": "artifact_caps",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ04",
+        "LQ35"
+      ],
+      "required_behavior": "Node/page/output/byte/depth limits include all pages and physical outputs; overflow produces no complete index and preserves bounded refusal evidence.",
+      "executed": false
+    },
+    {
+      "id": "FQ13",
+      "name": "complete_plan_authority",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ01",
+        "LQ02",
+        "LQ39"
+      ],
+      "required_behavior": "Zero listed refusals alone cannot pass without complete digests, closed effects and independent review; exact current source/runtime/P identities are required.",
+      "executed": false
+    },
+    {
+      "id": "FQ14",
+      "name": "native_helper_role",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ07",
+        "LQ13",
+        "LQ34"
+      ],
+      "required_behavior": "Exact PNative3 production type/signature is required; old sensor cannot Start; reject stale namespace/assembly/helper bytes before production creation.",
+      "executed": false
+    },
+    {
+      "id": "FQ15",
+      "name": "l_bootstrap_authority",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ01",
+        "LQ07"
+      ],
+      "required_behavior": "L-specific closed request validates fresh Q/admission/source/runtime chain before dispatch; refuse Q/P schema substitution or stale bootstrap dependency.",
+      "executed": false
+    },
+    {
+      "id": "FQ16",
+      "name": "bootstrap_clock_resources",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ05",
+        "LQ06"
+      ],
+      "required_behavior": "Actual benign bootstrap respects original clocks, five-second boundary, two samples/spacing/freshness and independent memory/disk/stop guards; no restart of deadlines.",
+      "executed": false
+    },
+    {
+      "id": "FQ17",
+      "name": "two_process_lifecycle",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ34",
+        "LQ38"
+      ],
+      "required_behavior": "Exercise real owned parent plus one child under nested Job, no third process; verify limit, atomic start, stop, return, streams and full closure.",
+      "executed": false
+    },
+    {
+      "id": "FQ18",
+      "name": "host_partial_failures",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ34",
+        "LQ35",
+        "LQ36",
+        "LQ38"
+      ],
+      "required_behavior": "Refused launch, missing frame, premature EOF, child failure, timeout and cleanup failure remain sticky; retain partial evidence and never promote unknown custody.",
+      "executed": false
+    },
+    {
+      "id": "FQ19",
+      "name": "p_record_adapter",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ01",
+        "LQ02"
+      ],
+      "required_behavior": "Accept only declared LP4 schema/status and accepted_physical_index chain; reject accepted_index fallback, mismatched Q, provisional-only result or wrong reviewer relations.",
+      "executed": false
+    },
+    {
+      "id": "FQ20",
+      "name": "physical_identity_required",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ02",
+        "LQ36",
+        "LQ37"
+      ],
+      "required_behavior": "Compare content-only Root/actual refs exactly, join unique authenticated caller-return output descriptors to those refs and current retained identities; reject missing/duplicate/malformed/identity-less/mismatched descriptors, wrong handoff/operation or rounded integers. Require final verification-before-release.",
+      "executed": false
+    },
+    {
+      "id": "FQ21",
+      "name": "module_manifest_coverage",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ01",
+        "LQ07",
+        "LQ10"
+      ],
+      "required_behavior": "Reject stale lp1/l1/lhost1 import routes, incomplete active dependency manifest and authority/source/runtime budget overflow; historical preservation is not active authority.",
+      "executed": false
+    },
+    {
+      "id": "FQ22",
+      "name": "retained_large_pe",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ07",
+        "LQ23",
+        "LQ37"
+      ],
+      "required_behavior": "Use owned synthetic image over64MiB to prove bounded same-handle stream hashing/range parsing and final verification without loading it or buffering whole image.",
+      "executed": false
+    },
+    {
+      "id": "FQ23",
+      "name": "range_parser_adversaries",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ04",
+        "LQ23"
+      ],
+      "required_behavior": "Negative/bool/overflow/truncated offsets, invalid RVAs, huge tables/forwarders, cache/read-budget excess and changed handles refuse with bounded allocations.",
+      "executed": false
+    },
+    {
+      "id": "FQ24",
+      "name": "shared_native_edges",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ11",
+        "LQ17",
+        "LQ18"
+      ],
+      "required_behavior": "One image may satisfy several declared importer observations; missing/ambiguous pre-effect choice refuses and notification never invents a requester.",
+      "executed": false
+    },
+    {
+      "id": "FQ25",
+      "name": "frame_and_capability_identity",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ10",
+        "LQ20"
+      ],
+      "required_behavior": "Frame attribution uses exact code roles, not path prefixes; unimplemented native/resource mediator or unknown caller refuses during materialization and preflight.",
+      "executed": false
+    },
+    {
+      "id": "FQ26",
+      "name": "write_native_resource_denial",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ20",
+        "LQ21",
+        "LQ22"
+      ],
+      "required_behavior": "Benign fixture verifies owned-output-only writes, denied native resource/process/network branches and no shared cache fallback under declared trust contract.",
+      "executed": false
+    },
+    {
+      "id": "FQ27",
+      "name": "guard_epoch_aliases",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ25",
+        "LQ26",
+        "LQ27",
+        "LQ28"
+      ],
+      "required_behavior": "Safetensors four APIs and all canonical blockers precede alias capture; missing guards, early aliases, constructor epoch escape and absent sentinels refuse.",
+      "executed": false
+    },
+    {
+      "id": "FQ28",
+      "name": "plugin_pre_effect_gate",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ29",
+        "LQ33"
+      ],
+      "required_behavior": "Project pytest-like fixture proves exact module/instance hook wrapping before registration and denial before undesired plugin effects; no real pytest import in Q.",
+      "executed": false
+    },
+    {
+      "id": "FQ29",
+      "name": "fresh_file_preparation",
+      "evidence_level": "P_file_only",
+      "parent_obligations": [
+        "LQ02",
+        "LQ37"
+      ],
+      "required_behavior": "Under reviewed caller, parse corrected candidates and materialize current transitive decision inputs without imports/execution; cover all new source/runtime/design artifacts and full final census.",
+      "executed": false
+    },
+    {
+      "id": "FQ30",
+      "name": "real_bootstrap_native_abi",
+      "evidence_level": "L_actual",
+      "parent_obligations": [
+        "LQ07",
+        "LQ08",
+        "LQ09",
+        "LQ10",
+        "LQ11",
+        "LQ12",
+        "LQ13",
+        "LQ14",
+        "LQ15",
+        "LQ16",
+        "LQ17",
+        "LQ18",
+        "LQ19",
+        "LQ23",
+        "LQ24"
+      ],
+      "required_behavior": "Fresh admitted L observes exact real module/native initialization, finite safe ABI queries and complete native drain/snapshot joins; no numerical ABI or unused path qualification.",
+      "executed": false
+    },
+    {
+      "id": "FQ31",
+      "name": "real_guards_resources_plugins",
+      "evidence_level": "L_actual",
+      "parent_obligations": [
+        "LQ20",
+        "LQ21",
+        "LQ22",
+        "LQ25",
+        "LQ26",
+        "LQ27",
+        "LQ28",
+        "LQ29"
+      ],
+      "required_behavior": "Fresh admitted L verifies real resource observations, ordered guard sentinels and pinned pytest registration/config identities under complete finite plan.",
+      "executed": false
+    },
+    {
+      "id": "FQ32",
+      "name": "real_collection_identity",
+      "evidence_level": "L_actual",
+      "parent_obligations": [
+        "LQ30",
+        "LQ31",
+        "LQ32",
+        "LQ33",
+        "LQ39",
+        "LQ40"
+      ],
+      "required_behavior": "Collect exactly117 unique successor IDs and25 function multiplicities with zero test phases; emit exact roster digest for separate V and no old117 execution claim.",
+      "executed": false
+    },
+    {
+      "id": "FQ33",
+      "name": "fresh_census_and_closure",
+      "evidence_level": "Q_owned_fixture",
+      "parent_obligations": [
+        "LQ02",
+        "LQ03",
+        "LQ36",
+        "LQ37",
+        "LQ38"
+      ],
+      "required_behavior": "Fixture document addition/removal/change, absent-root change and consumed attempt refuse; final retained output/Job/pipe/guard/caller closure is demonstrated separately.",
+      "executed": false
+    },
+    {
+      "id": "FQ34",
+      "name": "stage_claim_separation",
+      "evidence_level": "Q_supplied",
+      "parent_obligations": [
+        "LQ01",
+        "LQ39",
+        "LQ40"
+      ],
+      "required_behavior": "Design/static/supplied/Q/P/L/V/C evidence are distinct; old368 methods,40 scenario rows or117 expectations cannot mark new real obligations executed.",
+      "executed": false
+    }
+  ],
+  "launch_authorized": false,
+  "scientific_admission": false
+}

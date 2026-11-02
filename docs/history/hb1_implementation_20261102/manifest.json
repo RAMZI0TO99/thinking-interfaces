@@ -1,0 +1,55 @@
+{
+  "author": "project_root",
+  "created_utc": "2026-11-02T11:07:50.2817683Z",
+  "files": {
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "sha256": "5371bcb9b9ede1919c8f2eb3c9c19d2aee4f9c7c455dbc538e698045c1203649",
+      "bytes": 42019
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "sha256": "81b027fac09038e04a61c792ddb16211b8b4fa49d02d916d555f52ac7b55803e",
+      "bytes": 31698
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "16b7068df8ddab64467c9eef2a7594d4b170e2d751cf59fc1d641f46397cff13",
+      "bytes": 7365
+    },
+    "docs/phase2/README.md": {
+      "sha256": "cee6034b6c5ed28381bde18ad28466fb5ce37f48807a46a9acbe5d6e46088452",
+      "bytes": 12506
+    },
+    "docs/where are we/README.md": {
+      "sha256": "aa0d1f2a3a7ed52cbaa1a1b126a8815a07efed0187ad7ed3c01a9c42f18b7473",
+      "bytes": 13277
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "e7a2e53c0334875a91c5e0f9d45568c2915728a25f2be698fe02ff7f7d452d0d",
+      "bytes": 7526
+    },
+    "HANDOFF.md": {
+      "sha256": "afdc0f1ce26f7de80b36b24bbe6c4b24b18723c81ed50e670c3331ffba54df1b",
+      "bytes": 18214
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "sha256": "249d50f02a4d4f527420fe71a925e072ad1c15986522d3d67fa93bc703088809",
+      "bytes": 25048
+    },
+    "AGENTS.md": {
+      "sha256": "4b50fc04eeb16062596a73935dc5747bc31e318f2bec01ed1984f36d959b2151",
+      "bytes": 7780
+    },
+    "WINDOWS_SETUP.md": {
+      "sha256": "14ce275dee25bc716a8136402dc30bfaf9e3b6fbe80ff3dc5bfe8cd336e1ecdb",
+      "bytes": 11798
+    },
+    "README.md": {
+      "sha256": "e449d2e40ca90fb776e96c3de29959aa2d6df03c27f13843dddeaf9086800f15",
+      "bytes": 8193
+    },
+    "PHASE2_START_HERE.md": {
+      "sha256": "ccb48fbb30290255074bd7d53e722a20bf4b697bad1eab24907498fe00dffc2c",
+      "bytes": 7202
+    }
+  },
+  "schema": "cho51_pre_hb1_implementation_docs_v1"
+}

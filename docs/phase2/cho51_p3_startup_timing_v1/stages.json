@@ -1,0 +1,452 @@
+{
+  "schema": "cho51_startup_timing_stages_design_v1",
+  "design_only": true,
+  "baseline": "LP17/LQ17/lplan14; exact input file pins are in reference-context.json",
+  "references_are_source_locations_not_new_execution": true,
+  "source_root": "tools/local_validation/",
+  "caller": [
+    {
+      "id": "C01",
+      "name": "bootstrap_authorize_load",
+      "file": "lq17/invoke_q.ps1",
+      "line": 357,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "C02",
+      "name": "guard_readiness",
+      "file": "lq17/invoke_q.ps1",
+      "line": 358,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "C03",
+      "name": "admission_cohort_window",
+      "file": "lq17/invoke_q.ps1",
+      "line": 375,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "C04",
+      "name": "caller_and_source_pins",
+      "file": "lq17/invoke_q.ps1",
+      "line": 401,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "C05",
+      "name": "review_adoption",
+      "file": "lq17/invoke_q.ps1",
+      "line": 406,
+      "form": "pair",
+      "authority": "pending_to_verified_on_end"
+    },
+    {
+      "id": "C06",
+      "name": "utc_controls",
+      "file": "lq17/invoke_q.ps1",
+      "line": 428,
+      "form": "pair"
+    },
+    {
+      "id": "C07",
+      "name": "managed_compiler_pins",
+      "file": "lq17/invoke_q.ps1",
+      "line": 435,
+      "form": "pair"
+    },
+    {
+      "id": "C08",
+      "name": "managed_owner_compile",
+      "file": "lq17/invoke_q.ps1",
+      "line": 443,
+      "form": "pair"
+    },
+    {
+      "id": "C09",
+      "name": "native_helper_and_empty_job_controls",
+      "file": "lq17/invoke_q.ps1",
+      "line": 447,
+      "form": "pair"
+    },
+    {
+      "id": "C10",
+      "name": "platform_pins_and_resident_query",
+      "file": "lq17/invoke_q.ps1",
+      "line": 481,
+      "form": "pair"
+    },
+    {
+      "id": "C11",
+      "name": "platform_recheck_mapping_publication",
+      "file": "lq17/invoke_q.ps1",
+      "line": 513,
+      "form": "pair"
+    },
+    {
+      "id": "C12",
+      "name": "l_native_build",
+      "file": "lq17/invoke_q.ps1",
+      "line": 525,
+      "form": "pair",
+      "children": [
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21"
+      ]
+    },
+    {
+      "id": "C13",
+      "name": "native_toolchain_census_pins",
+      "file": "lq17/build_l_native.ps1",
+      "line": 104,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C14",
+      "name": "observer_compile",
+      "file": "lq17/build_l_native.ps1",
+      "line": 123,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C15",
+      "name": "observer_link",
+      "file": "lq17/build_l_native.ps1",
+      "line": 126,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C16",
+      "name": "observer_disassembly",
+      "file": "lq17/build_l_native.ps1",
+      "line": 130,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C17",
+      "name": "injection_compile",
+      "file": "lq17/build_l_native.ps1",
+      "line": 123,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C18",
+      "name": "injection_link",
+      "file": "lq17/build_l_native.ps1",
+      "line": 126,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C19",
+      "name": "target_compile",
+      "file": "lq17/build_l_native.ps1",
+      "line": 123,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C20",
+      "name": "target_link",
+      "file": "lq17/build_l_native.ps1",
+      "line": 126,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C21",
+      "name": "native_tool_artifact_verify_bundle",
+      "file": "lq17/build_l_native.ps1",
+      "line": 139,
+      "form": "pair",
+      "parent": "C12"
+    },
+    {
+      "id": "C22",
+      "name": "bootstrap_controls",
+      "file": "lq17/invoke_q.ps1",
+      "line": 530,
+      "form": "pair"
+    },
+    {
+      "id": "C23",
+      "name": "runtime_pins_configuration",
+      "file": "lq17/invoke_q.ps1",
+      "line": 539,
+      "form": "pair"
+    },
+    {
+      "id": "C24",
+      "name": "supervisor_command",
+      "file": "lq17/invoke_q.ps1",
+      "line": 548,
+      "form": "pair"
+    },
+    {
+      "id": "C25",
+      "name": "supervisor_launch_return",
+      "file": "lq17/invoke_q.ps1",
+      "line": 564,
+      "form": "pair"
+    },
+    {
+      "id": "C26",
+      "name": "caller_final_inputs",
+      "file": "lq17/invoke_q.ps1",
+      "line": 583,
+      "form": "pair"
+    },
+    {
+      "id": "C27",
+      "name": "caller_final_artifacts_tools",
+      "file": "lq17/invoke_q.ps1",
+      "line": 595,
+      "form": "pair"
+    },
+    {
+      "id": "C28",
+      "name": "caller_original_streams_ancestry_close",
+      "file": "lq17/invoke_q.ps1",
+      "line": 604,
+      "form": "pair",
+      "excludes": "new timing journal and its separately owned ancestry"
+    },
+    {
+      "id": "C29",
+      "name": "timing_ready_to_close",
+      "file": "lq17/invoke_q.ps1",
+      "line": 614,
+      "form": "mark_then_terminal",
+      "location_note": "New seal before timing handle close; existing bootstrap journal close/order remains intact."
+    }
+  ],
+  "supervisor": [
+    {
+      "id": "S01",
+      "name": "entry_admission_read_hash",
+      "file": "lq17/supervisor.py",
+      "line": 296,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S02",
+      "name": "preliminary_decode_guard",
+      "file": "lq17/supervisor.py",
+      "line": 306,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S03",
+      "name": "bootstrap_modules_admission_native_reader",
+      "file": "lq17/supervisor.py",
+      "line": 309,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S04",
+      "name": "startup_samples_configuration",
+      "file": "lq17/supervisor.py",
+      "line": 330,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S05",
+      "name": "source_retention",
+      "file": "lq17/supervisor.py",
+      "line": 339,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S06",
+      "name": "runtime_retention",
+      "file": "lq17/supervisor.py",
+      "line": 341,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S07",
+      "name": "runtime_census",
+      "file": "lq17/supervisor.py",
+      "line": 343,
+      "form": "pair",
+      "authority": "pending"
+    },
+    {
+      "id": "S08",
+      "name": "review_adoption_chain",
+      "file": "lq17/supervisor.py",
+      "line": 345,
+      "form": "pair",
+      "authority": "pending_to_verified_on_end"
+    },
+    {
+      "id": "S09",
+      "name": "timing_journal_create_publish_buffer",
+      "file": "lq17/supervisor.py",
+      "line": 348,
+      "form": "pair",
+      "location_note": "New controlled output after chain347; pending events are published with their original timestamps."
+    },
+    {
+      "id": "S10",
+      "name": "mapping_handoff",
+      "file": "lq17/supervisor.py",
+      "line": 348,
+      "form": "pair"
+    },
+    {
+      "id": "S11",
+      "name": "diagnostic_handoff",
+      "file": "lq17/supervisor.py",
+      "line": 358,
+      "form": "pair"
+    },
+    {
+      "id": "S12",
+      "name": "helper_policy_predecessor",
+      "file": "lq17/supervisor.py",
+      "line": 366,
+      "form": "pair"
+    },
+    {
+      "id": "S13",
+      "name": "attempt_namespace",
+      "file": "lq17/supervisor.py",
+      "line": 374,
+      "form": "pair"
+    },
+    {
+      "id": "S14",
+      "name": "native_bundle",
+      "file": "lq17/supervisor.py",
+      "line": 378,
+      "form": "pair"
+    },
+    {
+      "id": "S15",
+      "name": "restriction_outputs_claim_environment",
+      "file": "lq17/supervisor.py",
+      "line": 379,
+      "form": "pair"
+    },
+    {
+      "id": "S16",
+      "name": "prefix_stop",
+      "file": "lq17/supervisor.py",
+      "line": 391,
+      "form": "mark",
+      "required_code": "prefix_stop",
+      "stop_before_original_line": true
+    },
+    {
+      "id": "S17",
+      "name": "final_retained_inputs",
+      "file": "lq17/supervisor.py",
+      "line": 479,
+      "form": "pair"
+    },
+    {
+      "id": "S18",
+      "name": "final_runtime_census",
+      "file": "lq17/supervisor.py",
+      "line": 480,
+      "form": "pair"
+    },
+    {
+      "id": "S19",
+      "name": "outputs_receipt_verification_close",
+      "file": "lq17/supervisor.py",
+      "line": 483,
+      "form": "pair",
+      "excludes": "new timing journal"
+    },
+    {
+      "id": "S20",
+      "name": "original_input_handle_close",
+      "file": "lq17/supervisor.py",
+      "line": 514,
+      "form": "pair",
+      "excludes": "new timing journal and separately owned ancestry"
+    },
+    {
+      "id": "S21",
+      "name": "timing_ready_to_close",
+      "file": "lq17/supervisor.py",
+      "line": 517,
+      "form": "mark_then_terminal",
+      "location_note": "New timing seal/close before existing watchdog shutdown and typed external return."
+    }
+  ],
+  "external_witnesses": [
+    {
+      "role": "C",
+      "name": "timing_file_ancestry_closed",
+      "source": "successor external return original-handle closure fields",
+      "not_a_journal_event": true
+    },
+    {
+      "role": "S",
+      "name": "timing_file_ancestry_closed",
+      "source": "successor supervisor return plus caller original outer custody",
+      "not_a_journal_event": true
+    },
+    {
+      "role": "C",
+      "name": "guard_shutdown_external_return_hard_disarm",
+      "file": "lq17/invoke_q.ps1",
+      "line": 615,
+      "not_a_journal_event": true
+    },
+    {
+      "role": "S",
+      "name": "watchdog_shutdown_return",
+      "file": "lq17/supervisor.py",
+      "line": 517,
+      "not_a_journal_event": true
+    }
+  ],
+  "normal_record_maxima": {
+    "caller": 57,
+    "supervisor": 40,
+    "including_all_six_final_reservations": {
+      "supervisor": 46,
+      "caller": 63
+    },
+    "method": "Normal=header1+paired stages2 each+prefix-stop mark if present. Ready-to-close mark and terminal consume final capacity at contiguous sequence positions; no padding. No repeated per-file events.",
+    "complete_trace_with_ready_mark_and_terminal": {
+      "supervisor": 42,
+      "caller": 59
+    }
+  },
+  "unmeasured_by_v1": [
+    "before caller journal instrumentation",
+    "lost unpublished supervisor buffer",
+    "child preload/discovery/suite/sharing/probe/encoding",
+    "each child native/fault control",
+    "unwitnessed external close or return",
+    "interpreter and bootstrap activity before supervisor main entry"
+  ],
+  "full_q_instrumentation": "Deferred; no runtime mode flag enables it in this successor. Later reviewed full-Q runner must preserve all original modes and cohort/control obligations."
+}

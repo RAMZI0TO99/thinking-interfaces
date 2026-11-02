@@ -1,0 +1,2265 @@
+{
+  "runtime_operations": 0,
+  "new_methods": [
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h01_empty_requires_eof_and_original_guard_order",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h02_chunk_and_actual_supervisor_file_boundaries",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h03_short_positive_reads_keep_every_guard",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h04_short_and_growing_streams_refuse",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h05_native_failure_and_oversized_count_refuse",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h06_pre_and_post_read_checkpoint_fail_closed",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h07_counter_reset_and_poisoned_tail",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h08_returned_chunks_never_alias_reused_scratch",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h09_nested_readers_and_calls_have_distinct_scratch",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h11_repeated_hash_passes_rewind_and_read_fresh",
+    "tools.local_validation.lq19.test_sc1.HashScratchTests.test_h12_scratch_allocation_failure_follows_guard_and_no_read",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m01_exact_layout_and_field_widths",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m02_samples_get_new_zeroed_storage_and_fresh_values",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m03_resource_boundaries_are_unchanged",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m04_each_sensor_failure_remains_a_failure",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m05_nested_samples_never_share_mutable_storage",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m06_sample_keeps_sensor_order_and_every_invocation",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m07_guard_checkpoints_still_call_live_sample",
+    "tools.local_validation.lq19.test_sc1.FreshMemoryTests.test_m08_layout_mismatch_refuses_before_native_use",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o01_whole_ledger_and_all_absences_precede_allocation",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o01_bootstrap_faults_consume_full_charge_and_preserve_partial",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o01_every_later_role_verifies_immutable_ledger",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o01_uuid_claim_is_one_use_across_instances",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o02_missing_host_capability_refuses_before_create",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o02_exact_authority_peer_message_is_required",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o02_author_cannot_review_and_actual_peer_is_distinct",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o03_confirmations_persist_only_in_designated_slots",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o03_missing_mismatched_and_oversize_confirmation_consumes",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o03_admission_rechecks_persisted_confirmation_and_review",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o03_negative_confirmation_is_preserved_without_adoption",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o04_unknown_sidecar_and_off_directory_file_refuse",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o04_late_sidecar_refuses_close",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o04_artifact_during_final_verification_or_closure_refuses",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o05_occupied_slot_refuses_before_any_create",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o05_postcreate_fact_refusal_prevents_payload_write",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o06_escaping_and_complete_envelopes_are_charged_before_create",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o06_independently_reviewed_capture_bound_can_be_tighter",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o06_bounded_encoder_exact_boundary_and_invalid_values",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o07_role_faults_preserve_partial_and_unknown_cleanup",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o07_second_capture_failure_preserves_first_capture",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o08_invalid_public_mutations_poison_active_transaction",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o08_seventeenth_accounting_unit_refuses_with_spare_bytes",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o09_transport_refusal_precedes_claim_or_create",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o10_correction_cannot_replace_published_review",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o10_consumed_confirmation_destination_has_no_fallback",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o11_raw_chunks_and_large_native_integers_remain_exact_text",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o11_returned_pin_cannot_mutate_retained_native_authority",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_o12_refused_actual_review_is_separate_from_root_disposition",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_guard_failure_consumes_and_cannot_publish",
+    "tools.local_validation.sc1.test_publisher.PublisherContractTests.test_closed_publisher_cannot_restart",
+    "tools.local_validation.sc1.test_publisher.NativeBackendOrderingTests.test_native_model_original_facts_precede_write_readback_precedes_close",
+    "tools.local_validation.sc1.test_publisher.NativeBackendOrderingTests.test_native_model_postcreate_failure_never_writes_and_closes_once",
+    "tools.local_validation.sc1.test_publisher.NativeBackendOrderingTests.test_native_model_faults_refuse_without_retry_or_unknown_close_success",
+    "tools.local_validation.sc1.test_publisher.NativeBackendOrderingTests.test_native_model_constructor_failure_has_no_invented_original_handle"
+  ],
+  "sc_scenarios_preserved": 40,
+  "added_files": [
+    "tools/local_validation/lq19/test_sc1.py",
+    "tools/local_validation/sc1/__init__.py",
+    "tools/local_validation/sc1/publisher.py",
+    "tools/local_validation/sc1/native_backend.py",
+    "tools/local_validation/sc1/test_publisher.py",
+    "tools/local_validation/sc1/README.md",
+    "docs/phase2/cho51_p3_sc1_implementation_contract_20261102.md"
+  ],
+  "counterpart_count": 43,
+  "namespace_only_count": 35,
+  "legacy_rosters": {
+    "inherited384": [
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_collection_skip_denied",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_collection_skip_denied"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_exact_arguments",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_exact_arguments"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_fixture_test_phase_pre_effect",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_fixture_test_phase_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_hookwrapper_before_registration",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_hookwrapper_before_registration"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_pinned_wrapper_allowed",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_pinned_wrapper_allowed"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_collection.CollectionTests.test_unknown_plugin_before_registration",
+        "predecessor": "tools.local_validation.l1.test_collection.CollectionTests.test_unknown_plugin_before_registration"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_alias_bound_blocker",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_alias_bound_blocker"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_alias_stale",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_alias_stale"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_descriptor_not_evaluated",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_descriptor_not_evaluated"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_dynamic_compile_digest",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_dynamic_compile_digest"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_loader_signature_facade",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_loader_signature_facade"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_missing_required_symbol",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_missing_required_symbol"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_native_unmediated_refuses",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_native_unmediated_refuses"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_network_process_pre_effect",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_network_process_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_resource_exact_read",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_resource_exact_read"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_sentinel_before_effect",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_sentinel_before_effect"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_torch_fallback_pre_effect",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_torch_fallback_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_guards.GuardTests.test_unexpected_denial_sticky",
+        "predecessor": "tools.local_validation.l1.test_guards.GuardTests.test_unexpected_denial_sticky"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_imports.ImportTests.test_import_gate_phase_before_read",
+        "predecessor": "tools.local_validation.l1.test_imports.ImportTests.test_import_gate_phase_before_read"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_imports.ImportTests.test_pyc_source_refused",
+        "predecessor": "tools.local_validation.l1.test_imports.ImportTests.test_pyc_source_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_imports.ImportTests.test_retained_source_only",
+        "predecessor": "tools.local_validation.l1.test_imports.ImportTests.test_retained_source_only"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_imports.ImportTests.test_swapped_source_before_exec",
+        "predecessor": "tools.local_validation.l1.test_imports.ImportTests.test_swapped_source_before_exec"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_continuous_callback_refused",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_continuous_callback_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_cut_retains_later_suffix",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_cut_retains_later_suffix"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_race_retries_without_event_loss",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_bootstrap_race_retries_without_event_loss"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_layout",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_layout"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_overlong_copy",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_overlong_copy"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_utf16_copy",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_utf16_copy"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_native.NativePureTests.test_utf16_surrogate",
+        "predecessor": "tools.local_validation.l1.test_native.NativePureTests.test_utf16_surrogate"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_base_reuse_preserved",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_base_reuse_preserved"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_duplicate_snapshot_refused",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_duplicate_snapshot_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_load_already_in_snapshot",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_load_already_in_snapshot"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_prefix_gap_refused",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_prefix_gap_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_reverse_mismatch_refused",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_reverse_mismatch_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_transient_preserved",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_transient_preserved"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_unload_already_absent",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_unload_already_absent"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_wrong_generation_refused",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_bootstrap_wrong_generation_refused"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_collection_nonzero_execution",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_collection_nonzero_execution"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_duplicate_item",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_duplicate_item"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_exact_collection_117",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_exact_collection_117"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_foreign_original_function",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_foreign_original_function"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_incomplete_roster",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_incomplete_roster"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_sequence_gap",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_sequence_gap"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_transient_replay",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_transient_replay"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_unstable_snapshot",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_native_unstable_snapshot"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_parameter_identity",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_parameter_identity"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_reordered_v_roster",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_reordered_v_roster"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_workload_drift",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_workload_drift"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_observation.ObservationTests.test_wrong_candidate_pin",
+        "predecessor": "tools.local_validation.l1.test_observation.ObservationTests.test_wrong_candidate_pin"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_bool_integer",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_bool_integer"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_counters_exact_zero",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_counters_exact_zero"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_digest_encoding_vector",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_digest_encoding_vector"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_duplicate_json",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_duplicate_json"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_oversize_before_body",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_oversize_before_body"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_truncation",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_truncation"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_unknown_keys",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_frame_unknown_keys"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_json_depth",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_json_depth"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_no_terminal_eof",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_no_terminal_eof"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_nonfinite_json",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_nonfinite_json"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_phase_sticky",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_phase_sticky"
+      },
+      {
+        "successor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_unicode_limits",
+        "predecessor": "tools.local_validation.l1.test_protocol.ProtocolTests.test_unicode_limits"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_actual_review_separate_role_and_positive_lifecycle",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_actual_review_separate_role_and_positive_lifecycle"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_cannot_reuse_l_operation",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_cannot_reuse_l_operation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_exact_roles",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_exact_roles"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_qualifications_not_interchangeable",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_qualifications_not_interchangeable"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_self_source_review_refused",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_chain_self_source_review_refused"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_changed_design_or_wrong_acceptance_status",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_changed_design_or_wrong_acceptance_status"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_changed_manifest_cannot_borrow_source_review",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_changed_manifest_cannot_borrow_source_review"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_command_executable_must_match_reviewed_runtime",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_command_executable_must_match_reviewed_runtime"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_cannot_hide_refusals_or_execution",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_cannot_hide_refusals_or_execution"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_closed_review",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_closed_review"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_before_acceptance",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_before_acceptance"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_exact_plan_and_derivation",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_exact_plan_and_derivation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_wrong_role_and_self_review",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_complete_plan_review_wrong_role_and_self_review"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_current_identity_enrichment",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_current_identity_enrichment"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_changed_native_identity",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_changed_native_identity"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_incomplete_custody_shape",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_plan_read_rejects_incomplete_custody_shape"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_preparation_recipe_and_both_roster_reads",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_enriched_preparation_recipe_and_both_roster_reads"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_allowlist",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_allowlist"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_ambient_override",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_ambient_override"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_case_alias",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_case_alias"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_missing_windows_variable",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_missing_windows_variable"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_nul_before_native",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_nul_before_native"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_thread_cap",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_thread_cap"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_unknown_variable",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_environment_unknown_variable"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_exact_predecessor_review_set",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_exact_predecessor_review_set"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_finite_chain_loading_and_conflicting_pins",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_finite_chain_loading_and_conflicting_pins"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_extra_code_and_missing_argument",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_extra_code_and_missing_argument"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_positive",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_positive"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_rejects_each_executable_mode_and_argument_change",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_rejects_each_executable_mode_and_argument_change"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_roots_cwd_attempt_and_cache",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_fixed_command_roots_cwd_attempt_and_cache"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_independent_complete_plan_review_positive",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_independent_complete_plan_review_positive"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_old_p_missing_new_source",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_old_p_missing_new_source"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_final_verification_and_result_join",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_final_verification_and_result_join"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_native_identity_drift",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_native_identity_drift"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_pin_drift",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_p_pin_drift"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_plain_control_read_keeps_exact_pin",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_plain_control_read_keeps_exact_pin"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_q_and_p_must_join_same_qualification",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_q_and_p_must_join_same_qualification"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_review_and_adoption_order",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_review_and_adoption_order"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_stale_q_does_not_qualify_changed_l_sources",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_stale_q_does_not_qualify_changed_l_sources"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_unreviewed_runtime_manifest",
+        "predecessor": "tools.local_validation.lhost1.test_authority.AuthorityTests.test_unreviewed_runtime_manifest"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_bool_is_not_integer_result",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_bool_is_not_integer_result"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_extra_observation",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_extra_observation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_matches_production_observation",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_matches_production_observation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_missing_observation",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_missing_observation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_nested_boolean_is_not_integer",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_nested_boolean_is_not_integer"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_unknown_record_field",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_unknown_record_field"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_wrong_getter_result",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ABISafeQueryTests.test_safe_query_wrong_getter_result"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_retained_loader_before_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_retained_loader_before_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_reviewed_platform_choice",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_exact_reviewed_platform_choice"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_keyword_refusal_remains_sticky",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_keyword_refusal_remains_sticky"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_refusal_remains_sticky",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_loader_refusal_remains_sticky"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_platform_basename_resolution_refused",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_platform_basename_resolution_refused"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_identity_failure_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_identity_failure_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_path_substitution_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_retained_path_substitution_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_unknown_flags_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_unknown_flags_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_wrong_loader_mechanism_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.NativeLoaderPreEffectTests.test_wrong_loader_mechanism_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_no_success_by_exit_zero",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_no_success_by_exit_zero"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_independent_collection_digest",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_independent_collection_digest"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_terminal_hash_drift",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_terminal_hash_drift"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_unexpected_denial",
+        "predecessor": "tools.local_validation.lhost1.test_transport.ReceiverTests.test_parent_unexpected_denial"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_attribute_failure_prevents_creation",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_attribute_failure_prevents_creation"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_creation_three_writers_and_unicode",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_creation_three_writers_and_unicode"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_extra_creation_flags_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_extra_creation_flags_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_inherit_failure_closes_partial_pipes",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_inherit_failure_closes_partial_pipes"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_process_failure_closes_owned_pipes",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_process_failure_closes_owned_pipes"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_report_writer_substitution_pre_effect",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_report_writer_substitution_pre_effect"
+      },
+      {
+        "successor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_second_pipe_failure_closes_first",
+        "predecessor": "tools.local_validation.lhost1.test_transport.TransportCompositionTests.test_composed_second_pipe_failure_closes_first"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_actual_review_cannot_omit_or_change_controls",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_actual_review_cannot_omit_or_change_controls"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_adoption_requires_exact_bootstrap_pin",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_adoption_requires_exact_bootstrap_pin"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_controls_reject_omission_order_duplicates_and_types",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_controls_reject_omission_order_duplicates_and_types"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_p_request_cannot_choose_a_control",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_p_request_cannot_choose_a_control"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_q_request_requires_both_controls",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_q_request_requires_both_controls"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_reference_has_closed_fields",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_reference_has_closed_fields"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_reference_must_be_in_source_map",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_reference_must_be_in_source_map"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_reference_pin_must_equal_source_pin",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_reference_pin_must_equal_source_pin"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_reference_rejects_invalid_size_and_digest",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_reference_rejects_invalid_size_and_digest"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_reference_rejects_wrong_or_absolute_path",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_reference_rejects_wrong_or_absolute_path"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_root_qualification_requires_complete_controls",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_root_qualification_requires_complete_controls"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_bootstrap_contract.BootstrapContractTests.test_unknown_stage_refuses",
+        "predecessor": "tools.local_validation.lp17.test_bootstrap_contract.BootstrapContractTests.test_unknown_stage_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_census_detects_added_unselected_json",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_census_detects_added_unselected_json"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_directory_enumeration_and_original_retention",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_directory_enumeration_and_original_retention"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_exact_reader_refuses_prefixed_caller_spelling",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_exact_reader_refuses_prefixed_caller_spelling"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_leaf_retains_canonical_descriptor",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_leaf_retains_canonical_descriptor"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_optional_absence_is_resampled",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_optional_absence_is_resampled"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.NativeLongPathTests.test_long_output_keeps_original_canonical_identity",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.NativeLongPathTests.test_long_output_keeps_original_canonical_identity"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.TransportTests.test_transport_preserves_canonical_spelling",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.TransportTests.test_transport_preserves_canonical_spelling"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_long_paths.TransportTests.test_transport_rejects_device_unc_and_aliases",
+        "predecessor": "tools.local_validation.lp17.test_long_paths.TransportTests.test_transport_rejects_device_unc_and_aliases"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_added_unselected_file_detected",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_added_unselected_file_detected"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_changed_pin",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_changed_pin"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_excluded_directory_entry_detected",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_excluded_directory_entry_detected"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_extra_selected_before_prepare",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_extra_selected_before_prepare"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_missing_pin_member",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_missing_pin_member"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_optional_absence_added_detected",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_optional_absence_added_detected"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_overlapping_selectors_merge_roles",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_overlapping_selectors_merge_roles"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_prepare_pages_and_false_authority",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_prepare_pages_and_false_authority"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.NativeTests.test_real_required_absence_refuses",
+        "predecessor": "tools.local_validation.lp17.test_manifest.NativeTests.test_real_required_absence_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_authority_false_exact",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_authority_false_exact"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_case_alias_selector_list",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_case_alias_selector_list"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_defensive_recipe_copy",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_defensive_recipe_copy"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_descriptor_sharding_boundary_without_disk_files",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_descriptor_sharding_boundary_without_disk_files"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_drive_wide_root",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_drive_wide_root"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_duplicate_selector_id",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_duplicate_selector_id"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_exact_list_field_whitelist",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_exact_list_field_whitelist"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_executable_startup_and_weights",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_executable_startup_and_weights"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_limit_bool_not_int",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_limit_bool_not_int"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_limit_cannot_increase",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_limit_cannot_increase"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_optional_alias_fields_refused",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_optional_alias_fields_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_optional_boolean_exact",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_optional_boolean_exact"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_pagination_scalar_and_size_limits",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_pagination_scalar_and_size_limits"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_pin_alias",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_pin_alias"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_pin_bytes_boolean",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_pin_bytes_boolean"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_pin_global_bytes",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_pin_global_bytes"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_protected_data",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_protected_data"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_relative_parent_alias",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_relative_parent_alias"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_schema",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_schema"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_selector_root_known",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_selector_root_known"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_unknown_selector_field",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_unknown_selector_field"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_manifest.ValidationTests.test_unknown_top_field",
+        "predecessor": "tools.local_validation.lp17.test_manifest.ValidationTests.test_unknown_top_field"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_api_host_closed_suffix_grammar_and_no_implicit_driver_trust",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_api_host_closed_suffix_grammar_and_no_implicit_driver_trust"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_api_namespace_derives_exact_names_and_hosts",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_api_namespace_derives_exact_names_and_hosts"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_api_namespace_version_ranges_and_host_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_api_namespace_version_ranges_and_host_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_boolean_size_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_boolean_size_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_delay_rva_descriptor",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_delay_rva_descriptor"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_delay_virtual_address_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_delay_virtual_address_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_explicit_platform_and_api_set",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_explicit_platform_and_api_set"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_header_offset_bound",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_header_offset_bound"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_missing_import_refuses_completion",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_missing_import_refuses_completion"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_path_import_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_path_import_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_physical_candidates_not_search_qualification",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_physical_candidates_not_search_qualification"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_real_layout_synthetic_import",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_real_layout_synthetic_import"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_section_bounds",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_section_bounds"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_short_range_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_short_range_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_signature_refusal",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_signature_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_unbacked_name_rva",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_unbacked_name_rva"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_unknown_api_prefix_and_missing_host_refused",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_unknown_api_prefix_and_missing_host_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_pe.PEControls.test_unterminated_directory",
+        "predecessor": "tools.local_validation.lp17.test_pe.PEControls.test_unterminated_directory"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_ast_scope_requires_exact_retained_bytes_and_filename",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_ast_scope_requires_exact_retained_bytes_and_filename"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_attribute_leaf_missing_only_and_unknown_or_present_refusal",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_attribute_leaf_missing_only_and_unknown_or_present_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_attribute_predicate_resamples_and_rejects_ancestor_errors_and_flags",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_attribute_predicate_resamples_and_rejects_ancestor_errors_and_flags"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_cached_lexical_tuple_still_resamples_every_ancestor_and_leaf",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_cached_lexical_tuple_still_resamples_every_ancestor_and_leaf"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_changed_ancestor_reparse_or_nondirectory_refuses_after_cache_hit",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_changed_ancestor_reparse_or_nondirectory_refuses_after_cache_hit"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_present_leaf_refuses_after_previous_true_absence",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_present_leaf_refuses_after_previous_true_absence"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.FreshAbsenceTests.test_unknown_leaf_never_becomes_cached_absence",
+        "predecessor": "tools.local_validation.lp17.test_performance.FreshAbsenceTests.test_unknown_leaf_never_becomes_cached_absence"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.ProvisionalPreparationTests.test_added_selected_member_after_provisional_publication_refuses_final_verify",
+        "predecessor": "tools.local_validation.lp17.test_performance.ProvisionalPreparationTests.test_added_selected_member_after_provisional_publication_refuses_final_verify"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.ProvisionalPreparationTests.test_added_unselected_member_after_provisional_publication_refuses_final_verify",
+        "predecessor": "tools.local_validation.lp17.test_performance.ProvisionalPreparationTests.test_added_unselected_member_after_provisional_publication_refuses_final_verify"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.ProvisionalPreparationTests.test_native_attribute_guard_missing_then_present_leaf_and_missing_ancestor",
+        "predecessor": "tools.local_validation.lp17.test_performance.ProvisionalPreparationTests.test_native_attribute_guard_missing_then_present_leaf_and_missing_ancestor"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_performance.ProvisionalPreparationTests.test_optional_absence_changed_after_provisional_publication_refuses_final_verify",
+        "predecessor": "tools.local_validation.lp17.test_performance.ProvisionalPreparationTests.test_optional_absence_changed_after_provisional_publication_refuses_final_verify"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_299_second_window_refused",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_299_second_window_refused"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_adoption_all_pin_joins",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_adoption_all_pin_joins"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_adoption_authority_flags_exact_false",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_adoption_authority_flags_exact_false"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_adoption_order_and_closed_record",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_adoption_order_and_closed_record"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_chain_string_authors_and_extra_fields",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_chain_string_authors_and_extra_fields"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_coverage_acceptance_cannot_grant_execution",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_coverage_acceptance_cannot_grant_execution"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_coverage_index_and_recipe_binding",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_coverage_index_and_recipe_binding"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_exact_300_second_origin_window_and_defensive_copy",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_exact_300_second_origin_window_and_defensive_copy"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_exact_reference_namespace_and_qualified_binary",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_exact_reference_namespace_and_qualified_binary"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_extra_paths_closed_type_spelling_and_duplicates",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_extra_paths_closed_type_spelling_and_duplicates"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_independent_source_review_and_exact_sources",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_independent_source_review_and_exact_sources"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_limits_and_forbidden_effects_exact",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_limits_and_forbidden_effects_exact"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_new_l_native_bundle_and_actual_cases_must_join",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_new_l_native_bundle_and_actual_cases_must_join"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_original_origin_cannot_restart_clock",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_original_origin_cannot_restart_clock"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_phase_utc_and_false_authority",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_phase_utc_and_false_authority"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_plan_and_native_bundle_control_paths_are_closed",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_plan_and_native_bundle_control_paths_are_closed"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_plan_spec_and_native_bundle_adoption_are_exact",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_plan_spec_and_native_bundle_adoption_are_exact"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_q_exact_counts_lifecycle_and_native_controls",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_q_exact_counts_lifecycle_and_native_controls"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_q_operation_time_and_independent_actual_review",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_q_operation_time_and_independent_actual_review"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_q_review_refs_source_coverage_and_hash_joins",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_q_review_refs_source_coverage_and_hash_joins"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_qualified_binary_identity_exact",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_qualified_binary_identity_exact"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_runtime_and_extra_windows_case_aliases",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_runtime_and_extra_windows_case_aliases"
+      },
+      {
+        "successor": "tools.local_validation.lp19.test_protocol.AdmissionTests.test_sources_exact_set_and_pin_shape",
+        "predecessor": "tools.local_validation.lp17.test_protocol.AdmissionTests.test_sources_exact_set_and_pin_shape"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_aliased_import_include_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_aliased_import_include_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_aliased_native_include_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_aliased_native_include_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_ambiguous_origin_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_ambiguous_origin_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_container_effect_include_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_container_effect_include_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_dynamic_import_nonliteral_target_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_dynamic_import_nonliteral_target_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_dynamic_import_unknown",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_dynamic_import_unknown"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_exact_import_graph",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_exact_import_graph"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_foreign_import_target_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_foreign_import_target_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_getattr_import_include_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_getattr_import_include_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_missing_import_decision",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_missing_import_decision"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_owned_source_complete",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_owned_source_complete"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_published_full_descriptor_consumed_by_l_plan_gate",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_published_full_descriptor_consumed_by_l_plan_gate"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_shadowed_import_builtin_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_shadowed_import_builtin_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_source_changed_decision_stale",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_source_changed_decision_stale"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_unbound_native_mediator_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_unbound_native_mediator_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_unknown_target_cannot_borrow_guard",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_unknown_target_cannot_borrow_guard"
+      },
+      {
+        "successor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_wrapper_returning_import_refused",
+        "predecessor": "tools.local_validation.lplan1.test_compiler.CompilerTests.test_wrapper_returning_import_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.AdditionalRefusalTests.test_checkpoint_requires_literal_true",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.AdditionalRefusalTests.test_checkpoint_requires_literal_true"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.AdditionalRefusalTests.test_migration_roster_and_types",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.AdditionalRefusalTests.test_migration_roster_and_types"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ConsumerBindingTests.test_exact_five_and_trusted_roster_join",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ConsumerBindingTests.test_exact_five_and_trusted_roster_join"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ConsumerBindingTests.test_physical_and_retained_refusals",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ConsumerBindingTests.test_physical_and_retained_refusals"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ConsumerBindingTests.test_scope_and_trusted_pin_refusals",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ConsumerBindingTests.test_scope_and_trusted_pin_refusals"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_bom_spans_and_shapes",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_bom_spans_and_shapes"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_bounds_and_closed_schema",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_bounds_and_closed_schema"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_encoding_refuses",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_encoding_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_limits_refuse_without_index",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_limits_refuse_without_index"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_pages_and_no_authority",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_pages_and_no_authority"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_pin_and_retained_integrity",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_pin_and_retained_integrity"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_scope_and_epochs",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_scope_and_epochs"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.InventoryTests.test_syntax_diagnostic_columns_no_source",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.InventoryTests.test_syntax_diagnostic_columns_no_source"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.MigrationTests.test_map_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.MigrationTests.test_map_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.MigrationTests.test_patch_and_pin_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.MigrationTests.test_patch_and_pin_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.MigrationTests.test_valid_fixture",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.MigrationTests.test_valid_fixture"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_bundle_enriches_typed_retained_identity_and_refuses_rebinding",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_bundle_enriches_typed_retained_identity_and_refuses_rebinding"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_exact_production_and_injection_exports",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_exact_production_and_injection_exports"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_forwarders_ordinals_and_duplicate_names_refuse",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_forwarders_ordinals_and_duplicate_names_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_malformed_headers_and_truncated_image_refuse",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_malformed_headers_and_truncated_image_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_native_fault_report_requires_unregister",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_native_fault_report_requires_unregister"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_native_report_disallows_remaining_refs_or_scientific_claim",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_native_report_disallows_remaining_refs_or_scientific_claim"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_separate_tool_size_role_preserves_source_cap",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_separate_tool_size_role_preserves_source_cap"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_tool_scope_extras_and_missing_required_refuse",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_tool_scope_extras_and_missing_required_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_l_native.NativeTransportTests.test_x86_and_tls_callbacks_refuse",
+        "predecessor": "tools.local_validation.lq17.test_l_native.NativeTransportTests.test_x86_and_tls_callbacks_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.HandoffSharingTests.test_capability_rejects_path_role_hash_and_native_identity_mismatch",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.HandoffSharingTests.test_capability_rejects_path_role_hash_and_native_identity_mismatch"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.HandoffSharingTests.test_cooperative_read_preserves_unrelated_writer_delete_and_rename_denial",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.HandoffSharingTests.test_cooperative_read_preserves_unrelated_writer_delete_and_rename_denial"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.HandoffSharingTests.test_ordinary_readers_remain_incompatible_with_live_writer",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.HandoffSharingTests.test_ordinary_readers_remain_incompatible_with_live_writer"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_checkpoint_exact_true_and_before_create",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_checkpoint_exact_true_and_before_create"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_close_failure_attempts_every_original_handle",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_close_failure_attempts_every_original_handle"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_directory_handle_bound_refuses",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_directory_handle_bound_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_enumeration_limits_and_recipe_validation",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_enumeration_limits_and_recipe_validation"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_flush_failure_closes_original_output",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_flush_failure_closes_original_output"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_hash_drift_refuses_original_output",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_hash_drift_refuses_original_output"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_identity_alias_registration_refused",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_identity_alias_registration_refused"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_native_reparse_file_and_directory_refusal",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_native_reparse_file_and_directory_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_output_caps_and_bad_names",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_output_caps_and_bad_names"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_stop_after_native_read_closes_original_file",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_stop_after_native_read_closes_original_file"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_instrumented_tiny_chunks_use_real_native_reads_and_writes",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_instrumented_tiny_chunks_use_real_native_reads_and_writes"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_bounded_tree_snapshot_and_added_file_refusal",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_bounded_tree_snapshot_and_added_file_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_close_releases_input_and_repeated_close_is_safe",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_close_releases_input_and_repeated_close_is_safe"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_existing_writer_refuses_retention",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_existing_writer_refuses_retention"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_file_and_aggregate_caps_before_reads",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_file_and_aggregate_caps_before_reads"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_file_count_cap_and_small_read_cap",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_file_count_cap_and_small_read_cap"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_hardlink_refusal_with_proved_fixture",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_hardlink_refusal_with_proved_fixture"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_lexical_aliases_and_depth_refused_before_effect",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_lexical_aliases_and_depth_refused_before_effect"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_missing_file_is_actual_open_error",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_missing_file_is_actual_open_error"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_output_create_new_readback_and_exclusion",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_output_create_new_readback_and_exclusion"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_output_existing_collision_unchanged",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_output_existing_collision_unchanged"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_path_case_alias_refused",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_path_case_alias_refused"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_retained_ancestor_blocks_rename",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_retained_ancestor_blocks_rename"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_retained_input_blocks_writer_delete_and_rename",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_retained_input_blocks_writer_delete_and_rename"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_retained_read_identity_and_defensive_descriptors",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_retained_read_identity_and_defensive_descriptors"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_same_path_duplicate_pin_conflict",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_same_path_duplicate_pin_conflict"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_tree_added_empty_directory_refusal",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_tree_added_empty_directory_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_tree_hardlink_refusal_outside_selected_suffix",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_tree_hardlink_refusal_outside_selected_suffix"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_tree_missing_excluded_directory_refusal",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_tree_missing_excluded_directory_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_native_reader.NativeReaderTests.test_real_wrong_pin_closes_failed_file_handle",
+        "predecessor": "tools.local_validation.lq17.test_native_reader.NativeReaderTests.test_real_wrong_pin_closes_failed_file_handle"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_closed_admission_and_wrong_stage",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_closed_admission_and_wrong_stage"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_complete_window",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_complete_window"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_duplicate_roster_and_changed_reference",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_duplicate_roster_and_changed_reference"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_independent_review_exact_source_and_adoption_joins",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_independent_review_exact_source_and_adoption_joins"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_limits_exact_types_and_no_relaxation",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_limits_exact_types_and_no_relaxation"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_nonfinite_duplicate_and_unknown_json_refuse",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_nonfinite_duplicate_and_unknown_json_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_original_origin_not_reset_at_dispatch",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_original_origin_not_reset_at_dispatch"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_report_omissions_failures_and_false_authority",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_report_omissions_failures_and_false_authority"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_runtime_executable_modes_and_effects",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_runtime_executable_modes_and_effects"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_runtime_path_alias_outside_recipe",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_runtime_path_alias_outside_recipe"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_source_roster_missing_extra_or_boolean_pin",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_source_roster_missing_extra_or_boolean_pin"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.ProtocolTests.test_verified_bytes_exact_content_size_types",
+        "predecessor": "tools.local_validation.lq17.test_protocol.ProtocolTests.test_verified_bytes_exact_content_size_types"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_failed_observation_cannot_be_retried",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_failed_observation_cannot_be_retried"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_injected_reparse_predicate_before_bytes",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_injected_reparse_predicate_before_bytes"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_added_member_after_initial_census",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_added_member_after_initial_census"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_added_unselected_directory_member",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_added_unselected_directory_member"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_all_roles_retained_no_authority",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_all_roles_retained_no_authority"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_changed_pin",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_changed_pin"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_exact_metadata_file_and_closed_session",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_exact_metadata_file_and_closed_session"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_extra_selected_input_before_observation",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_extra_selected_input_before_observation"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_hardlink_refused",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_hardlink_refused"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_input_writer_and_delete_denied",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_input_writer_and_delete_denied"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_missing_expected_input",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_missing_expected_input"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_missing_unselected_directory_member",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_missing_unselected_directory_member"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_refused_checkpoint",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_real_refused_checkpoint"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_recipe_and_report_defensive_views",
+        "predecessor": "tools.local_validation.p1.test_preparation.NativePreparationTests.test_recipe_and_report_defensive_views"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_aggregate_byte_limit",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_aggregate_byte_limit"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_alias_path",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_alias_path"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_boolean_size",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_boolean_size"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_closed_recipe_roundtrip_and_defensive_copy",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_closed_recipe_roundtrip_and_defensive_copy"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_drive_scope",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_drive_scope"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_duplicate_and_nonfinite_json",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_duplicate_and_nonfinite_json"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_empty_suffix",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_empty_suffix"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_exact_file_no_expansion",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_exact_file_no_expansion"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_exact_file_recipe",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_exact_file_recipe"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_excluded_expected_member",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_excluded_expected_member"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_file_byte_limit",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_file_byte_limit"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_json_depth_and_report_bounds",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_json_depth_and_report_bounds"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_missing_role",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_missing_role"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_no_caller_review_text",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_no_caller_review_text"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_no_caller_success_flag",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_no_caller_success_flag"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_outside_scope",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_outside_scope"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_overlapping_groups",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_overlapping_groups"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_schema_version",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_schema_version"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_scope_case_alias",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_scope_case_alias"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_unpinned_seed",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_unpinned_seed"
+      },
+      {
+        "successor": "tools.local_validation.p1.test_preparation.RecipeTests.test_wildcard_suffix",
+        "predecessor": "tools.local_validation.p1.test_preparation.RecipeTests.test_wildcard_suffix"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_census_added_missing_content_identity_and_directory_drift",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_census_added_missing_content_identity_and_directory_drift"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_cross_snapshot_aliases_and_aggregate_limits",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_cross_snapshot_aliases_and_aggregate_limits"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_equal_census_order_is_not_membership",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_equal_census_order_is_not_membership"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_has_no_positive_authority_and_is_defensive",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_has_no_positive_authority_and_is_defensive"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_refuses_missing_roles_snapshots_and_empty_roles",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_proposal_refuses_missing_roles_snapshots_and_empty_roles"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_required_inputs_missing_changed_duplicate_extra_and_bool",
+        "predecessor": "tools.local_validation.v1.test_foundation.CensusAndProposalCases.test_required_inputs_missing_changed_duplicate_extra_and_bool"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_child_scheduling_is_bounded_before_queue_growth",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_child_scheduling_is_bounded_before_queue_growth"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_duplicate_keys_including_escaped_equivalence",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_duplicate_keys_including_escaped_equivalence"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_encoded_graph_limit",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_encoded_graph_limit"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_exact_graph_types_cycles_and_nonfinite",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_exact_graph_types_cycles_and_nonfinite"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_finite_round_trip_and_defensive_copy",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_finite_round_trip_and_defensive_copy"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_nonfinite_and_float_overflow",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_nonfinite_and_float_overflow"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_predecode_depth_and_node_bounds",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_predecode_depth_and_node_bounds"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_signed_integer_boundaries_and_overflow",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_signed_integer_boundaries_and_overflow"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.JsonCases.test_strings_bytes_encoding_and_syntax",
+        "predecessor": "tools.local_validation.v1.test_foundation.JsonCases.test_strings_bytes_encoding_and_syntax"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_ambiguous_windows_spellings",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_ambiguous_windows_spellings"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_canonical_relative_absolute_and_drive_root",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_canonical_relative_absolute_and_drive_root"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_closed_file_descriptor_and_exact_types",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_closed_file_descriptor_and_exact_types"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_native_identity_closed_and_supported",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_native_identity_closed_and_supported"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_case_native_alias_and_volume_drift",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_case_native_alias_and_volume_drift"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_requires_complete_ordinary_ancestry",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_requires_complete_ordinary_ancestry"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_total_file_and_depth_limits",
+        "predecessor": "tools.local_validation.v1.test_foundation.PathAndSnapshotCases.test_snapshot_total_file_and_depth_limits"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.RosterCases.test_control_missing_extra_false_bool_equivalent_and_old_names",
+        "predecessor": "tools.local_validation.v1.test_foundation.RosterCases.test_control_missing_extra_false_bool_equivalent_and_old_names"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_34_control_values_do_not_prove_execution",
+        "predecessor": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_34_control_values_do_not_prove_execution"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_function_module_tallies_and_order_digest",
+        "predecessor": "tools.local_validation.v1.test_foundation.RosterCases.test_exact_function_module_tallies_and_order_digest"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.RosterCases.test_order_and_parameter_identity_drift_against_baseline",
+        "predecessor": "tools.local_validation.v1.test_foundation.RosterCases.test_order_and_parameter_identity_drift_against_baseline"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.RosterCases.test_roster_duplicate_missing_extra_prefix_and_count_only_swap",
+        "predecessor": "tools.local_validation.v1.test_foundation.RosterCases.test_roster_duplicate_missing_extra_prefix_and_count_only_swap"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.StreamCases.test_checkpoint_before_and_after_read_and_exact_true",
+        "predecessor": "tools.local_validation.v1.test_foundation.StreamCases.test_checkpoint_before_and_after_read_and_exact_true"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.StreamCases.test_chunked_digest_and_eof_probe",
+        "predecessor": "tools.local_validation.v1.test_foundation.StreamCases.test_chunked_digest_and_eof_probe"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.StreamCases.test_empty_short_long_and_exact_streams",
+        "predecessor": "tools.local_validation.v1.test_foundation.StreamCases.test_empty_short_long_and_exact_streams"
+      },
+      {
+        "successor": "tools.local_validation.v1.test_foundation.StreamCases.test_stream_contract_types_and_oversized_reads",
+        "predecessor": "tools.local_validation.v1.test_foundation.StreamCases.test_stream_contract_types_and_oversized_reads"
+      }
+    ],
+    "probe32": [
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs01_fixed_supplied_case",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs01_fixed_supplied_case"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs02_closed_schema_and_types",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs02_closed_schema_and_types"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs03_fixed_selection",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs03_fixed_selection"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs04_raw_pin_before_parse",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs04_raw_pin_before_parse"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs05_historical_descriptor",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs05_historical_descriptor"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs06_full_page_and_index",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs06_full_page_and_index"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs07_strict_json",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs07_strict_json"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs08_origin_is_not_custody",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs08_origin_is_not_custody"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs09_full_field_traversal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs09_full_field_traversal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs10_parent_identity",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs10_parent_identity"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs11_bom_crlf_null_spans",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs11_bom_crlf_null_spans"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs12_extra_node_changes_count",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs12_extra_node_changes_count"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs13_comparison_has_six_fields",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs13_comparison_has_six_fields"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs14_distinct_observation_identities",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs14_distinct_observation_identities"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs15_semantics_stay_unresolved",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs15_semantics_stay_unresolved"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs16_conservation",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs16_conservation"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs17_forbidden_products",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs17_forbidden_products"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs18_report_schema_is_not_state",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs18_report_schema_is_not_state"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs19_safe_parser_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs19_safe_parser_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs20_source_and_node_bounds",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs20_source_and_node_bounds"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs21_encoder_bound",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs21_encoder_bound"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs22_report_is_bounded",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs22_report_is_bounded"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs23_raw_assets_counted",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs23_raw_assets_counted"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs24_guard_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs24_guard_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs25_deterministic_immutable",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs25_deterministic_immutable"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs26_self_certified_pin_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs26_self_certified_pin_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs27_refusal_has_no_report",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs27_refusal_has_no_report"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs28_no_custody_grant",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs28_no_custody_grant"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs29_no_progress_state",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs29_no_progress_state"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs30_exact_probe_roster",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs30_exact_probe_roster"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs31_original_kernel_limit",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs31_original_kernel_limit"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.SourceProbeTests.test_rs32_all_authority_false",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.SourceProbeTests.test_rs32_all_authority_false"
+      }
+    ],
+    "mechanisms100": [
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc01_closed_schemas",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc01_closed_schemas"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc02_exact_types_and_identifiers",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc02_exact_types_and_identifiers"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc03_duplicate_and_case_collisions",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc03_duplicate_and_case_collisions"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc04_ids_and_reference_replay",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc04_ids_and_reference_replay"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc05_external_binding_and_digest",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc05_external_binding_and_digest"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc06_seed_prefix_requester",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc06_seed_prefix_requester"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc07_late_phase_reaches_descendants",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc07_late_phase_reaches_descendants"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc08_same_phase_distinct_requesters",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc08_same_phase_distinct_requesters"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc09_diamond_preserves_links",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc09_diamond_preserves_links"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc10_cycle_is_finite_and_propagates",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc10_cycle_is_finite_and_propagates"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc11_deferred_conditional_may_reach",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc11_deferred_conditional_may_reach"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc12_missing_origin_blocks",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc12_missing_origin_blocks"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc13_all_debt_kinds_preserved",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc13_all_debt_kinds_preserved"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc14_saturation_is_not_authority",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc14_saturation_is_not_authority"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc15_chunked_and_single_run_equivalence",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc15_chunked_and_single_run_equivalence"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc16_each_boundary_conserves_payloads",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc16_each_boundary_conserves_payloads"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc17_atomic_cap_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc17_atomic_cap_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc18_complete_row_accounting",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc18_complete_row_accounting"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc19_module_source_node_depth_limits",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc19_module_source_node_depth_limits"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc20_edge_page_and_serialized_caps",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc20_edge_page_and_serialized_caps"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc21_chain_count_and_byte_caps",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc21_chain_count_and_byte_caps"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc22_forged_cursor_and_completed_state",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc22_forged_cursor_and_completed_state"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc23_exact_pending_work_order",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc23_exact_pending_work_order"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc24_sequence_predecessor_and_graph_drift",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc24_sequence_predecessor_and_graph_drift"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc25_live_guard_and_supplied_refusal",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc25_live_guard_and_supplied_refusal"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc26_deterministic_canonical_output",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc26_deterministic_canonical_output"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc27_payloads_are_inert",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc27_payloads_are_inert"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc28_no_input_or_output_aliasing",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc28_no_input_or_output_aliasing"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc29_complete_history_and_debt_content",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc29_complete_history_and_debt_content"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc30_oversized_atomic_fanout_refuses",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc30_oversized_atomic_fanout_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc31_zero_edge_once_and_blocked_fairness",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc31_zero_edge_once_and_blocked_fairness"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.FrontierTests.test_fc32_authority_injection_refuses",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.FrontierTests.test_fc32_authority_injection_refuses"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls01_closed_schemas",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls01_closed_schemas"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls02_types_duplicate_keys",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls02_types_duplicate_keys"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls03_roundtrip_exact",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls03_roundtrip_exact"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls04_kind_separation",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls04_kind_separation"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls05_assets_and_families",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls05_assets_and_families"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls06_partition_and_chunks",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls06_partition_and_chunks"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls07_descriptor_count",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls07_descriptor_count"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls08_binding_and_manifest_pin",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls08_binding_and_manifest_pin"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls09_expected_family",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls09_expected_family"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls10_payload_preservation",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls10_payload_preservation"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls11_prefix_history",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls11_prefix_history"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls12_expanded_accounting",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls12_expanded_accounting"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls13_capacity_controls",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls13_capacity_controls"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls14_history_bytes",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls14_history_bytes"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls15_structural_payload",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls15_structural_payload"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls16_history_identity",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls16_history_identity"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls17_intermediate_capacity",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls17_intermediate_capacity"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls18_cycles_debts_blocked",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls18_cycles_debts_blocked"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls19_no_mutation",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls19_no_mutation"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls20_source_limits",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls20_source_limits"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls21_live_guard",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls21_live_guard"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls22_no_authority",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls22_no_authority"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls23_lower_bound_arithmetic",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls23_lower_bound_arithmetic"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls24_allocation",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls24_allocation"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls25_refusal_result",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls25_refusal_result"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls26_path_is_inert",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls26_path_is_inert"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls27_supplied_result_schema",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls27_supplied_result_schema"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.LosslessTests.test_ls28_no_execution_authority",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.LosslessTests.test_ls28_no_execution_authority"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_alias_cycle_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_alias_cycle_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_alias_to_unknown_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_alias_to_unknown_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_annotation_without_future_eager",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_annotation_without_future_eager"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_attribute_call_dynamic_unknown",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_attribute_call_dynamic_unknown"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_call_before_definition_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_call_before_definition_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_class_base_in_enclosing_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_class_base_in_enclosing_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_class_body_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_class_body_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_comprehension_first_iterator_outer",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_comprehension_first_iterator_outer"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_comprehension_no_module_leak",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_comprehension_no_module_leak"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_comprehension_target_inner",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_comprehension_target_inner"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_conditional_definition_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_conditional_definition_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_decorator_in_enclosing_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_decorator_in_enclosing_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_default_in_enclosing_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_default_in_enclosing_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_deferred_external_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_deferred_external_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_delete_invalidates_binding",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_delete_invalidates_binding"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_dynamic_builtins_are_possible_only",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_dynamic_builtins_are_possible_only"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_exception_target_is_conditional",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_exception_target_is_conditional"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_from_import_candidate",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_from_import_candidate"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_function_parameter_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_function_parameter_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_future_annotation_not_eager_grant",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_future_annotation_not_eager_grant"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_global_declaration",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_global_declaration"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_capacity_and_checkpoint",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_capacity_and_checkpoint"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_from_and_star_proof",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_from_and_star_proof"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_parent_shadow_and_precedence",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_parent_shadow_and_precedence"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_relative_import_and_cycle",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_relative_import_and_cycle"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_source_and_literal_closure",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_source_and_literal_closure"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_graph_unresolved_dynamic",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_graph_unresolved_dynamic"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_import_alias_candidate",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_import_alias_candidate"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_import_rebinding_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_import_rebinding_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_lambda_default_outer",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_lambda_default_outer"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_lambda_parameter_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_lambda_parameter_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_match_target_is_conditional",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_match_target_is_conditional"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_method_body_deferred",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_method_body_deferred"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_method_skips_class_scope",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_method_skips_class_scope"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_module_definition_call_candidate",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_module_definition_call_candidate"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_multiple_bindings_refused",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_multiple_bindings_refused"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_nonlocal_declaration",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_nonlocal_declaration"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_parameter_is_not_module_binding",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_parameter_is_not_module_binding"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_protocol_effects",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_protocol_effects"
+      },
+      {
+        "successor": "tools.local_validation.lplan16.test_compiler.ResolverTests.test_simple_alias_chain",
+        "predecessor": "tools.local_validation.lplan14.test_compiler.ResolverTests.test_simple_alias_chain"
+      }
+    ],
+    "new_qd10": [
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_decimal_exact_and_rejections",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_decimal_exact_and_rejections"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_watermarks_use_original_exact_clock_and_refuse_equality",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_watermarks_use_original_exact_clock_and_refuse_equality"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_initial_buffer_counts_header_within_sixteen",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_initial_buffer_counts_header_within_sixteen"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_complete_supervisor_trace",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_complete_supervisor_trace"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_complete_caller_trace_and_nested_build",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_complete_caller_trace_and_nested_build"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_gap_unknown_field_clock_and_order_refuse",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_gap_unknown_field_clock_and_order_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_header_identity_and_record_size_refuse",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_header_identity_and_record_size_refuse"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_failure_tail_cannot_resume_or_repeat_ready",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_failure_tail_cannot_resume_or_repeat_ready"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_illegal_terminal_and_torn_line",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_illegal_terminal_and_torn_line"
+      },
+      {
+        "successor": "tools.local_validation.lq19.test_protocol.TimingFormatTests.test_qd_admission_is_closed_and_keeps_held_roster",
+        "predecessor": "tools.local_validation.lq18.test_protocol.TimingFormatTests.test_qd_admission_is_closed_and_keeps_held_roster"
+      }
+    ]
+  },
+  "textual_union_count": 580,
+  "roster_check": "PowerShell line/text enumeration only; not Python collection or execution",
+  "historical_qd": "a1f12701 remains INCOMPLETE_REFUSED17/16",
+  "schema": "cho51_sc1_implementation_map_v1",
+  "p_admitted": false,
+  "all_methods_unexecuted_for_successor": true,
+  "obligations_discharged": 0,
+  "full_q_output_feasibility": "NOT_ESTABLISHED",
+  "diagnostic_scenarios_preserved": 36,
+  "changes": {
+    "publisher": "closed16-slot state machine, native original-handle backend, fail-closed supplied trusted-host boundary",
+    "algorithm": "lplan16 algorithm sources namespace-only",
+    "hash": "LP19/LQ19 _hash local buffer/counter per invocation, immutable validated byte copy; every checkpoint/read/hash pass retained",
+    "memory": "LQ19 static64-byte type/ABI validation; fresh zeroed per-sample instance and unchanged live queries/thresholds",
+    "entrypoints": "LP19 remains refused; LQ19 caller/supervisor/child explicitly refuse dispatch"
+  },
+  "legacy_distinct": 516,
+  "namespace_map": {
+    "sha256": "a6f7427acccf308993a1d5fb6040537fc2c09df06e456b5c46ab56e76ac7cd50",
+    "bytes": 19001
+  },
+  "guards": "All original90/60/5/65/child55, QD45/53/55, startup5/two samples200ms/250ms freshness,512/768MiB,4GiB RAM,20GiB disk,one CPU/library thread,hidden GPU,stop,ownership/finalverification/cleanup/output partitions retained",
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "author": "project_root",
+  "unintegrated_host_capabilities": [
+    "atomic durable cross-session one-use claim without extra operation file",
+    "authenticated independent peer provenance and Root delegation",
+    "complete operation artifact census including off-directory copies",
+    "actual loaded code/runtime/import identity and live guard binding",
+    "complete actual transport/failure capture bound proof"
+  ],
+  "tests_executed": 0,
+  "new_method_count": 54,
+  "additional_qd": 10,
+  "source_coverage_limits": [
+    "H01-H09/H11-H12 have11 injected-call methods; H10 native cap/sharing still held",
+    "M01-M08 have8 supplied-sensor methods; M05 nested storage is not real foreground/watchdog concurrency; M07 tests live checkpoint calls, not actual native startup/bootstrap samples",
+    "O01-O12 have31 controller methods plus4 simulated backend algorithm methods; no native or authenticated host result",
+    "F01 mapped textual identities only; complete executable discovery partition and F02-F07 qualification/budget/feasibility remain unimplemented; F08 no execution enabled",
+    "All40 SC scenarios and36 diagnostic scenarios remain unqualified; source contribution is not scenario discharge"
+  ],
+  "substantive_counterparts": {
+    "tools/local_validation/lq19/invoke_q.ps1": {
+      "sha256": "489c4f4fde2935bae0476cb50d485a268491e3db9dfd97aa99ff266f2dec5680",
+      "bytes": 85044
+    },
+    "tools/local_validation/lq19/supervisor.py": {
+      "sha256": "f9ded4e1c82f8706a485c9c3923a2753ababb60588e3c12ef4aaaf4059ef1d0f",
+      "bytes": 40004
+    },
+    "tools/local_validation/lp19/README.md": {
+      "sha256": "574c35d47a5e827c5e146dc5aa4278ab1529a3c2046d10beee51092f1698f8c6",
+      "bytes": 720
+    },
+    "tools/local_validation/lplan16/README.md": {
+      "sha256": "2b115208445c38c45afb29f3127e647afcc389cd2c5847e2c82d205d52ed4668",
+      "bytes": 1035
+    },
+    "tools/local_validation/lq19/child_entry.py": {
+      "sha256": "8854d97669fd820c33f4de24641d9ffd2259da1b7895c603d21936c52f83174d",
+      "bytes": 19802
+    },
+    "tools/local_validation/lp19/native_reader.py": {
+      "sha256": "0c870f61f47d40de54fddc4a10ce87f47c28dec93df547c21a3c1d4a80549fe2",
+      "bytes": 22920
+    },
+    "tools/local_validation/lq19/native_reader.py": {
+      "sha256": "8fc3aa5b81fc1effd65e82f4d3ccb0ef1e17ff1ddca3b285b1b38fd924296d0a",
+      "bytes": 32054
+    },
+    "tools/local_validation/lq19/README.md": {
+      "sha256": "41318ec81b1eee42d951be66a8838bb415b515a4e9c09127b6ec3eb73fc795d9",
+      "bytes": 1540
+    }
+  },
+  "status": "SOURCE_ONLY_UNREVIEWED",
+  "review_corrections": {
+    "SC_I2": "Fresh pin/native-identity verification and retention of both source_review and contract_adoption before admission metadata; new fault source covers changed bytes/identities",
+    "SC_I1": "Fresh guarded complete census after successful native backend closure, before CLOSED; new fault source covers additions during verify_inputs/verify_publication/close"
+  }
+}

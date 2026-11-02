@@ -1,0 +1,9 @@
+{
+  "author": "project_root",
+  "execution_performed": false,
+  "reason": "Required fresh Q qualification was not established. Preserve LP1 sources/reviews; LP2 will bind a separately reviewed fresh Q2 result.",
+  "schema": "cho51_lp1_root_hold_v1",
+  "created_utc": "2026-10-31T06:29:03.3782460Z",
+  "scientific_admission": false,
+  "status": "UNADMITTED_DRAFT_SUPERSEDED_AFTER_Q_FAILURE"
+}

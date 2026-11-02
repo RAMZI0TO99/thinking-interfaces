@@ -1,0 +1,10 @@
+{
+  "schema": "owner_project_focus_direction_v1",
+  "date": "2026-10-28",
+  "timezone": "Asia/Riyadh",
+  "source": "Direct owner message in this project chat",
+  "verbatim": "note that i have paused pro 2 and i want you to only foucs now on this project and forget about pro2. \npro2 only will come back after we finish this proejct. \ni want you to update you docs so that there is no sign of pro2 so that we can foucs on this here! ",
+  "implementation": "Replace active workflow and status pages with project-local ownership, scheduling, review and admission. Retire outside chat acknowledgements, shared leases, external decisions and outside pause-file requirements. Do not contact other project chats unless the owner changes this direction.",
+  "preserved": "Exact historical document snapshots, all frozen source/receipts, original failures and scientific decisions remain unchanged.",
+  "scope_limits": "Documentation and policy update only; no source execution, test, native preparation, run admission, scientific execution, commit or push performed by this update."
+}

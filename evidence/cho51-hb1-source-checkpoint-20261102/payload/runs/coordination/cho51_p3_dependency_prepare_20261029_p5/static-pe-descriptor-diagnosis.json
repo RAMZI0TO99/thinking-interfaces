@@ -1,0 +1,62 @@
+{
+  "selected_pe_paths": 888,
+  "schema": "cho51_p5_static_pe_descriptor_diagnosis_v1",
+  "method": "Bounded FileStream PE metadata range reads only; no image loading or project/runtime execution",
+  "physical_map_accepted": false,
+  "repeated_descriptor_images": 2,
+  "launch_authorized": false,
+  "source_pins_are_saved_P5_pins_not_fresh_whole_file_hashes": true,
+  "runtime_executed": false,
+  "created_utc": "2026-10-29T14:25:03.6192789Z",
+  "scientific_admission": false,
+  "repeated_descriptors": [
+    {
+      "kind": "imports",
+      "descriptors": 25,
+      "repeated": [
+        {
+          "name": "kernel32.dll",
+          "occurrences": 2,
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "source_pin": {
+        "sha256": "ea8f5ddb1ae42adf5e4d376ec27b7f1ea1fe843e15f5d7a9e45fe1298ca4fd4c",
+        "bytes": 9499136
+      },
+      "path": "D:/Aenv/pro3/.venv/Lib/site-packages/hf_xet/hf_xet.pyd",
+      "observed_current_pin": {
+        "bytes": 9499136,
+        "sha256": "ea8f5ddb1ae42adf5e4d376ec27b7f1ea1fe843e15f5d7a9e45fe1298ca4fd4c"
+      }
+    },
+    {
+      "kind": "imports",
+      "descriptors": 10,
+      "repeated": [
+        {
+          "name": "kernel32.dll",
+          "occurrences": 2,
+          "indices": [
+            1,
+            4
+          ]
+        }
+      ],
+      "source_pin": {
+        "sha256": "80a2b3f7658854ade855c5fb6192ee38fe2c7fbfd38d1c7c1f4d2c44f67125e4",
+        "bytes": 734720
+      },
+      "path": "D:/Aenv/pro3/.venv/Lib/site-packages/safetensors/_safetensors_rust.pyd",
+      "observed_current_pin": {
+        "bytes": 734720,
+        "sha256": "80a2b3f7658854ade855c5fb6192ee38fe2c7fbfd38d1c7c1f4d2c44f67125e4"
+      }
+    }
+  ],
+  "adjacent_metadata_refusals": [],
+  "repeated_images_fresh_pin_match": true
+}

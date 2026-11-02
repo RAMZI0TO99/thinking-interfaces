@@ -1,0 +1,146 @@
+{
+  "qualification_accepted": false,
+  "runtime_operations": 0,
+  "source_mismatches": 0,
+  "scope": "file/text/JSON/hash/link inspection only; not executed test collection or runtime validation",
+  "schema": "cho51_sc1_final_static_checks_v1",
+  "closeout_slot": "closeout-review.json: Root publication of separate reviewer message; no sidecar",
+  "speedup_established": false,
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "scientific_admission": false,
+  "preserved_draft_files_checked": 5,
+  "preservation": {
+    "checked_utc": "2026-11-02T09:22:29.2953822Z",
+    "mismatches": 0,
+    "method": "size and SHA256 of every preservation-baseline file; later edits restricted to new sources and archived current docs",
+    "files": 8652
+  },
+  "unplanned_root_metadata": [],
+  "obligations_discharged": 0,
+  "tests_executed": 0,
+  "support_pins_checked": 3,
+  "mapped_textual_method_union": 580,
+  "archived_active_pages_checked": 12,
+  "local_link_occurrences_checked": 462,
+  "root_acceptance": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/root-source-acceptance.json",
+    "pin": {
+      "bytes": 4327,
+      "sha256": "a9a4a263856fa2f0899a70872e76db1a0fdbd059a59816f29ed3c2297e52d8c6"
+    }
+  },
+  "author": "project_root",
+  "root_metadata_names_before_this_record": [
+    "coordination.json",
+    "implementation-map.json",
+    "namespace-map.json",
+    "preservation-baseline.json",
+    "root-source-acceptance.json",
+    "source-candidate-v1.json",
+    "source-candidate-v2.json",
+    "source-review-v1.json",
+    "source-review-v2.json"
+  ],
+  "review_text_hashes_checked": 2,
+  "full_q_output_feasibility": "NOT_ESTABLISHED",
+  "documents": {
+    "tools/local_validation/lplan16/README.md": {
+      "bytes": 1035,
+      "sha256": "2b115208445c38c45afb29f3127e647afcc389cd2c5847e2c82d205d52ed4668"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 24502,
+      "sha256": "02c43633cf82b4866eaa46f40bdedb58ce4b2ec40fc9af0ac86fc22c7aa8e93a"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 12988,
+      "sha256": "813a349c09915841eaf36d75b88be3f09d095c322451462293e48e1de3d3bd7e"
+    },
+    "AGENTS.md": {
+      "bytes": 7489,
+      "sha256": "6cf09464cdb7e295ac2dfbf59ad8e6f88adf559fa3388ae8e7cac9dcc6089f4d"
+    },
+    "docs/phase2/cho51_p3_sc1_implementation_20261102.md": {
+      "bytes": 7711,
+      "sha256": "31d29e2bab4eaee78e0e572b4d7c8c04c3e2c30cd458f5f470141d704da00935"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7235,
+      "sha256": "983004f2215482303deca58239282f0f89ef46bc5bcddcea29e53eb299617bd8"
+    },
+    "docs/phase2/cho51_p3_sc1_implementation_contract_20261102.md": {
+      "bytes": 7832,
+      "sha256": "1c887bc467a21438a7a38d83802fd576cf3bd07a74b29e1dc89757da10e4492f"
+    },
+    "tools/local_validation/lp19/README.md": {
+      "bytes": 720,
+      "sha256": "574c35d47a5e827c5e146dc5aa4278ab1529a3c2046d10beee51092f1698f8c6"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6911,
+      "sha256": "dff5c39bdcce0a3b2eb60f13ca2b7ef765194dd75c6acc5d6dd0ba41576957f1"
+    },
+    "tools/local_validation/lq19/README.md": {
+      "bytes": 1540,
+      "sha256": "41318ec81b1eee42d951be66a8838bb415b515a4e9c09127b6ec3eb73fc795d9"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11507,
+      "sha256": "0a9557a0286807a820ded6120da2b7035af5e51f74e20362c21ae1001ae4ccdd"
+    },
+    "tools/local_validation/sc1/README.md": {
+      "bytes": 11702,
+      "sha256": "e37fd76fba1612d5e120d577daecb74183a2103fbec5dc3129430519817a679f"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 31387,
+      "sha256": "5342324ad5c212ef1a099f59d5c28d1df91a8514cdead09ec55f69d6f7e35543"
+    },
+    "HANDOFF.md": {
+      "bytes": 17666,
+      "sha256": "c40844e6701a69666ba4c2b18155c5092f9b72add932df4b86556514faa8295a"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 41411,
+      "sha256": "624bf1cab735221ca6697f91d14caf4078b600ce9aa34638ced042472f72bf71"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 12171,
+      "sha256": "7588ec17e4d206f55d668e98cba2bbc729d88514b2077678481a7cf760cbeb7b"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7074,
+      "sha256": "75ff84d8b556b90e69634d35f8d9904b777e07318aff84e062af06d27548642d"
+    },
+    "README.md": {
+      "bytes": 7902,
+      "sha256": "1d3446f805e52ec8b37e9dad6b362b3719b6156830239370b64dffc3e3f2575a"
+    }
+  },
+  "peer_confirmation_hashes_checked": 2,
+  "source_pins_checked": 263,
+  "design_pins_checked": 6,
+  "created_utc": "2026-11-02T09:36:41.0002297Z",
+  "draft_directory": "draft-v1: five exact affected files and manifest only",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v2.json",
+    "pin": {
+      "bytes": 50116,
+      "sha256": "a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60"
+    }
+  },
+  "new_methods": {
+    "simulated_backend": 4,
+    "total": 54,
+    "publisher_controller": 31,
+    "hash_and_ram": 19
+  },
+  "broken_links": [],
+  "p_admitted": false,
+  "runtime_admission": false,
+  "scenarios_unqualified": {
+    "sc": 40,
+    "diagnostic": 36
+  },
+  "document_count": 18
+}

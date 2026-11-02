@@ -1,0 +1,38 @@
+{
+  "launch_authorized": false,
+  "artifacts": [
+    {
+      "bytes": 27351,
+      "sha256": "d113654e7d5a9f372fed885deaac7b01f1912054a2824c6415ab1c58e89497cb",
+      "path": "tools/custody_boundary/v1/verifier.py"
+    },
+    {
+      "bytes": 2695,
+      "sha256": "1faf198894e0f210e5bb8692a8c0c4b35f10963a1e2c8c928d545eb808c335ec",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-disposition_004.json"
+    },
+    {
+      "bytes": 4925,
+      "sha256": "365153e07d2f925d36168f0218404ae37c18962d0bbabb0598a284ff6740b75d",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-external-audit_004.json"
+    },
+    {
+      "bytes": 8841,
+      "sha256": "df900ab63aaf0f4ef0febbe11c3db7fa23ff9a178f5d8f65f6233ff35948e098",
+      "path": "runs/coordination/cho51_p3_contracts_20261027_v1/bootstrap-actual-review_004.json"
+    },
+    {
+      "bytes": 3951,
+      "sha256": "a8d9ca258cab0183b720efa4495913174ad99e6b078f0d8a15048786a046dad6",
+      "path": "runs/coordination/cho51_p3_boundary_impl_20261028_v1/attempts/c1fdd56a-7fb2-4fc1-96aa-99164bf489e5/payload.json"
+    },
+    {
+      "bytes": 32618,
+      "sha256": "742ccbeb26d83dd4d028d8419297c49eb6d35ffa48d12b77dcab4016d7453838",
+      "path": "runs/coordination/cho51_p3_boundary_impl_20261028_v1/attempts/e9ad5105-478e-4d96-9aac-56915a3b8d0f/payload.json"
+    }
+  ],
+  "scientific_admission": false,
+  "scope": "Current local bytes only; no historical origin, host, cleanup or provider truth",
+  "schema": "cho51_p3_retained_read_smoke_plan_v3"
+}

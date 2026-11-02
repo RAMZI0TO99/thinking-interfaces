@@ -1,0 +1,212 @@
+{
+  "state_machine": [
+    "RESERVED: immutable whole ledger precedes non-allocation create; allocation bootstrap uses complete reviewed in-memory template; full charge remains forever",
+    "READY: root has complete bounded role payload, exact schema/path/source/ledger authority and attributed peer message where required",
+    "CREATE_ATTEMPTED: exclusive original handle then immediate original disk-type/link/final-path/identity checks BEFORE payload write; no alternate path/retry on failure",
+    "PUBLISHED: full original readback/hash/identity and retained ancestry verified, owned handle closed; bytes immutable",
+    "FAILED_CONSUMED: close owned handles, preserve partial or empty artifact and all reservations; no overwrite, repair, delete, release or reassignment"
+  ],
+  "publishers_can_self_certify_reviews": false,
+  "file_cap": 16,
+  "design_only": true,
+  "reserved_bytes": 3293184,
+  "independent_confirmation_required": true,
+  "changes_old_ledger": false,
+  "byte_cap": 4194304,
+  "slots": {
+    "admission": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 1048576,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/admission_<canonical-operation-uuid>.json"
+    },
+    "scope": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/scope_<canonical-operation-uuid>.json"
+    },
+    "external_return": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/external_return_<canonical-operation-uuid>.json"
+    },
+    "raw_tool_return": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 1048576,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/raw_tool_return_<canonical-operation-uuid>.json"
+    },
+    "journal_analysis": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 131072,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/journal_analysis_<canonical-operation-uuid>.json"
+    },
+    "actual_review": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 131072,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/actual_review_<canonical-operation-uuid>.json"
+    },
+    "root_disposition": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 131072,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/root_disposition_<canonical-operation-uuid>.json"
+    },
+    "source_recheck": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/source_recheck_<canonical-operation-uuid>.json"
+    },
+    "runtime_recheck": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/runtime_recheck_<canonical-operation-uuid>.json"
+    },
+    "output_census": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 131072,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/output_census_<canonical-operation-uuid>.json"
+    },
+    "cleanup_assessment": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/cleanup_assessment_<canonical-operation-uuid>.json"
+    },
+    "timing_join": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/timing_join_<canonical-operation-uuid>.json"
+    },
+    "allocation": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/allocation_<canonical-operation-uuid>.json"
+    },
+    "source_review": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 131072,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/source_review_<canonical-operation-uuid>.json"
+    },
+    "contract_adoption": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 16384,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/contract_adoption_<canonical-operation-uuid>.json"
+    },
+    "closeout": {
+      "failed_charge_retained": true,
+      "reserved_bytes": 65536,
+      "publisher": "project_root",
+      "max_creates": 1,
+      "path_template": "<reviewed-fixed-phase>/closeout_<canonical-operation-uuid>.json"
+    }
+  },
+  "raw_evidence": "Original tool chunk output strings exact; native JSON parsed only with exact integers; capture is metadata not native custody",
+  "review_roles": {
+    "root_disposition": "Root stores full bounded actual-review peer confirmation of exact published bytes before adopting result; distinct from peer judgment",
+    "closeout": "final pins/census/link/refusal facts; no source/runtime launch authority",
+    "actual_review": "one final independent actual review; may accept refusal with facts separately",
+    "source_review": "one final source/transport review; prelaunch, or bounded refusal if missing; not live source mutation authority",
+    "contract_adoption": "Root stores full bounded source-review peer confirmation of exact published bytes before runtime admission; independent approval cannot be self-certified"
+  },
+  "fallback_policy": "No sidecars, temp files, generic shell redirection, apply_patch, append, retry-to-another-name or postlaunch unreviewed transport",
+  "runtime_admission": false,
+  "p_admitted": false,
+  "historical_reference": {
+    "sha256": "7ccdcbba12153cda4fb39788633dc7858f5ec16c45fc01b4587b72e28ba536e5",
+    "path": "runs/coordination/cho51_p3_startup_timing_20261101_qd1/qd-allocation_a1f12701-02a9-4987-9dec-a1297b52b046.json",
+    "bytes": 3825
+  },
+  "capture_bounds": "Complete encoded capture bytes plus envelope/chunks/stderr/failure paths must fit1048576; external complete derivative65536. No truncation, optimistic stream-size assumption or extra file. Static unknown refuses admission.",
+  "schema": "cho51_fixed_slot_ownership_design_v1",
+  "delegation": {
+    "actual_reviewer": "different from source reviewer/authors; read-only bounded message; confirm published text/hash",
+    "root": "sole publisher via exact source-reviewed typed writer",
+    "no_peer_files": true,
+    "source_reviewer": "read-only; bounded message only; confirm published text/hash"
+  },
+  "extra_file_result": "INCOMPLETE_REFUSED even when whole byte/file envelope has spare capacity",
+  "writer_guards": [
+    "before create: all exact paths unused and checked individually; closed schema/full encoded byte size/exact charge",
+    "before create: canonical path and retained ordinary ancestry",
+    "allocation-only bootstrap: pin reviewed writer/design/source and closed full in-memory ledger template before first create; no self-hash",
+    "before non-allocation create: require successfully verified/closed immutable allocation pin",
+    "CreateNew/exclusive original handle; no overwrite or fallback",
+    "immediately after create for ALL roles, before payload write: original-handle ordinary disk file, one link, canonical final path and native identity",
+    "bounded write/flush; original full readback identity length SHA256; retained ancestry recheck and close",
+    "postcreate validation failure closes owned handle, preserves artifact and full reservation",
+    "all failed and unused reservations retained; count off-directory operation artifacts too"
+  ],
+  "reserved_files": 16,
+  "allocation_bootstrap": {
+    "first_create": "exclusive allocation only",
+    "successful_result": "original-handle identity length full-byte readback hash and successful closure yield immutable allocation pin",
+    "authority": "exact independently reviewed writer/design/source pins and closed in-memory16-role template; not a nonexistent ledger hash",
+    "other_roles_require_result": true,
+    "self_hash_authority": false,
+    "role": "allocation",
+    "failure": "metadata UUID and16 charges consumed; preserve partial ledger; prohibit other creates and runtime; bounded failure only in original chat/tool trace, no sidecar",
+    "before_create": [
+      "verify every source/template pin",
+      "bind all16 canonical new paths/caps",
+      "check all paths absent individually",
+      "charge all16 full reservations in memory"
+    ],
+    "after_create_before_write": [
+      "ordinary disk file from original handle",
+      "one link from original handle",
+      "exact canonical final path from original handle",
+      "native identity from original handle"
+    ]
+  },
+  "confirmation_destinations": {
+    "unavailable_or_consumed_destination": "no other file or slot reassignment; refusal remains in original chat/tool trace",
+    "missing_or_mismatch_or_overflow": "refuse adoption; preserve negative evidence",
+    "whole_role_cap_includes_confirmation": true,
+    "source_review": {
+      "destination": "contract_adoption",
+      "role_total_cap": 16384,
+      "before": "runtime admission",
+      "max_encoded_envelope_bytes": 8192
+    },
+    "actual_review": {
+      "destination": "root_disposition",
+      "role_total_cap": 131072,
+      "before": "result adoption",
+      "max_encoded_envelope_bytes": 8192
+    },
+    "required_fields": [
+      "peer/delegation identity",
+      "published review path bytes SHA256",
+      "review-text SHA256",
+      "full bounded peer confirmation message"
+    ],
+    "post_closeout_comment": "read-only message; no mutation of immutable records or extra file"
+  }
+}

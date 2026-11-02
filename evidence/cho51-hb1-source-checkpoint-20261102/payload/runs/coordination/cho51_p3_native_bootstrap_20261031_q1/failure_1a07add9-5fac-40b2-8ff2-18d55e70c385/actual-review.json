@@ -1,0 +1,404 @@
+{
+  "schema": "cho51_native_bootstrap_q_failed_actual_review_v1",
+  "status": "ACCEPTED_NATIVE_BOOTSTRAP_Q_FAILURE_DISPOSITION",
+  "disposition": "FAILED_CONSUMED_MISSING_SUITE_FRAME_OWNED_SCOPE_CLOSED",
+  "reviewer": "l_actual_review",
+  "authors": [
+    "project_root",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T12:48:39.7790327Z",
+  "operation_id": "1a07add9-5fac-40b2-8ff2-18d55e70c385",
+  "source_review_sha256": "d36516c07c15dc384590d1db0e03305da40f07a12a9aec4dfe614e580a41d3bb",
+  "actual_tool_exit_code": 1,
+  "caller_elapsed_seconds": 31.5510563,
+  "caller_error": "RuntimeException: supervisor exit refused",
+  "supervisor_exit_code": 1,
+  "supervisor_error": "ValueError: suite failed: SupervisionError: result frame missing or truncated header",
+  "qualified": false,
+  "new_operation_owned_lifecycle_closed": true,
+  "expected_methods": 368,
+  "retained_method_execution_count": null,
+  "retained_method_pass_fail_skip_counts": null,
+  "accepted_method_results": 0,
+  "sharing_control_outcomes": null,
+  "timestamp_controls_passed": 8,
+  "native_fault_controls_dispatched": 0,
+  "native_observer_cases_dispatched": 0,
+  "bootstrap_harness_controls_dispatched": 0,
+  "bootstrap_controls": [],
+  "final_input_verification": false,
+  "evidence": [
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/source-review.json",
+      "bytes": 42208,
+      "sha256": "d36516c07c15dc384590d1db0e03305da40f07a12a9aec4dfe614e580a41d3bb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/source-candidate.json",
+      "bytes": 81475,
+      "sha256": "17dd86f70fb7f8c84d8eb630ff56255abc8f6ee73244bff081d8dc3f12012bf1"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/expected-roster.json",
+      "bytes": 39563,
+      "sha256": "e87608f4f6c1f93e4185c2599e454df78d767cd159dd1fe95bd1c8579618726f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/runtime-refresh.json",
+      "bytes": 367473,
+      "sha256": "04207a45753fc50eefec0571cf0ce3a243acacc0cc24a5e7511dd731143be350"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/preservation-baseline.json",
+      "bytes": 1017872,
+      "sha256": "683623d3ed73b7c6f30e878679003bf84084e59611723ec1a2692f74bdb39229"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/admission_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 368667,
+      "sha256": "75d5f69be6fdc0005e2da1ad628e8c248cc75c79c2a807dfd16f7761ef063e1b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/admission-scope_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 2992,
+      "sha256": "e270ce89f8765b80bb07f279a0551a5c93aa19936907c004378555d0a2b9c10a"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/preflight_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 936,
+      "sha256": "3aefb704f4aa043c8e4999477b20df09bea10f9dfb27ebe3150d26d3bf9c0231"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/bootstrap_1a07add9-5fac-40b2-8ff2-18d55e70c385.jsonl",
+      "bytes": 6491,
+      "sha256": "3a2d495e94983496e92935b65902e5e4b53b35d8f1454ef24403640c538bcb03"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/caller-return_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 16752,
+      "sha256": "9ebcefbc64560dfb39c015ca212e849ce906e3dba2e5c023b45cdd0a9c6b0444"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/tool-return_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 16023,
+      "sha256": "d488a7aa2d3d1dce5c1b6354cb61a23a3c6d0987cd42315387b9551c93c24530"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/external-return-lossless_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 14130,
+      "sha256": "139dd73fd31c816c796d57438219c95fd8eabf30c75053adb8c783f79df1e07e"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/timestamp-controls_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 950,
+      "sha256": "821c701b263ff0a6d3c827f3ea6e32f0e6e3a7d7f9e98b3fa2e4691d89231cd0"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-build_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 39416,
+      "sha256": "c7c978c5f3fbcd240abbfad9d8234356bdfcab0958c245b732b8d2633d09f875"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-helper_1a07add9-5fac-40b2-8ff2-18d55e70c385.dll",
+      "bytes": 21504,
+      "sha256": "3316c09bbdda08eba91eb9018b98294147141270fb2d82c5111818947aef8962"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-diagnostic_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 9965,
+      "sha256": "f984d71f434cb88b124f426f4f87d2a1feeed93646d1e992bc65fa67dd997a04"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/api-mapping_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 10283,
+      "sha256": "0549ed34b1403a3b29342137c47fe9650f6d4dce4c5e6f9fcfe44369241bd7e2"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-bundle_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "bytes": 10273,
+      "sha256": "91a5a365fb9708258eb1910ad9c50c31137f5ecb63c03bbf16c2904a2acc62eb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-callback_1a07add9-5fac-40b2-8ff2-18d55e70c385.txt",
+      "bytes": 5139,
+      "sha256": "389954090609a77838169afacdce3b0c94647fa0db61bf37f1f25f7786ececf5"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-observer-object_1a07add9-5fac-40b2-8ff2-18d55e70c385.obj",
+      "bytes": 4251,
+      "sha256": "c4dfe4a57aece77f8bd76963d9b7be6834a88d33ef7f044ac37e0a70ba2ce2da"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-injection-object_1a07add9-5fac-40b2-8ff2-18d55e70c385.obj",
+      "bytes": 4427,
+      "sha256": "4c9433eae6ee296611dadc613cdcdfa43e3e6c706e9b3e10c1d6b7a59e00d82e"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-target-object_1a07add9-5fac-40b2-8ff2-18d55e70c385.obj",
+      "bytes": 630,
+      "sha256": "d33c0d96d0070bdb75e89c64f4cb6ed37e745efa54947522f713c34feeef679b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/attempts/1a07add9-5fac-40b2-8ff2-18d55e70c385/receipt.json",
+      "bytes": 1912,
+      "sha256": "42b492e5aa0d05f8abf3fc2f939ff6d46c0d767efed53f74b34b48534065b2e5"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/attempts/1a07add9-5fac-40b2-8ff2-18d55e70c385/dispatch_suite.json",
+      "bytes": 1178,
+      "sha256": "cb1d319522249105633ccb2567d8b1553d392f4d79bbe0240b0de7233d2843dc"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/attempts/1a07add9-5fac-40b2-8ff2-18d55e70c385/deadline_suite.json",
+      "bytes": 161,
+      "sha256": "6624d928b363ac0f1a525ba8fa16eb1f0ac4cb7eb4f546cdce46746250b7e956"
+    }
+  ],
+  "pin_checks": {
+    "sources": 232,
+    "python_runtime_files": 732,
+    "managed_compiler_files": 169,
+    "native_compiler_files": 112,
+    "host_runtime_files": 307,
+    "preserved_predecessor_files": 4119,
+    "byte_hash_drift": 0,
+    "control_and_artifact_reference_pins_checked": 19,
+    "control_and_artifact_reference_mismatches": 0,
+    "source_review_admission_maps_match": true,
+    "ordered_368_distinct_proposed_roster_matches_admission": true,
+    "bootstrap_qualification_adoption_join": true,
+    "lossless_external_return_matches_original_stdout": true,
+    "source_review_precedes_admission": true
+  },
+  "suite_child": {
+    "mode": "suite",
+    "dispatched": true,
+    "pid_decimal": "56096",
+    "creation_filetime_decimal": "134379241881893389",
+    "result": null,
+    "failure": "SupervisionError: result frame missing or truncated header",
+    "frame_protocol_complete": false,
+    "frame_reader_finished": true,
+    "actual_child_exit_code": null,
+    "child_exit_status": "NOT_RETAINED_NO_OBSERVED_RESULT",
+    "owned_Job_termination_called": true,
+    "active_before_cleanup": 0,
+    "owned_lifecycle_closed": true,
+    "interpretation": "The suite process was created and resumed, but no complete result frame or test report was retained. Its executed-method count, pass/fail outcomes, sharing outcomes and exit code are unknown. Cleanup termination is recorded but is not proof of the initial failure cause."
+  },
+  "partial_build_evidence": {
+    "managed_helper": {
+      "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-helper_1a07add9-5fac-40b2-8ff2-18d55e70c385.dll",
+      "sha256": "3316c09bbdda08eba91eb9018b98294147141270fb2d82c5111818947aef8962",
+      "bytes": 21504
+    },
+    "managed_helper_namespace_from_reviewed_source": "PNative3",
+    "managed_builder_controls": {
+      "p_limits_query_verified": true,
+      "l_two_process_limits_query_verified": true,
+      "original_output_identity_retained": true,
+      "helper_identity": "7a7c35f67c35ae2f:0f615f00000002000000000000000000",
+      "l_empty_job_closed": true,
+      "empty_job_closed": true,
+      "l_invalid_process_count_refused": true,
+      "loaded_same_pe_bytes": true,
+      "emitted_pe_verified": true
+    },
+    "compiler_child_count": 7,
+    "compiler_child_identities": [
+      {
+        "purpose": "compile-observer",
+        "pid_decimal": "51780",
+        "creation_filetime_decimal": "134379241665392513",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "link-observer",
+        "pid_decimal": "54916",
+        "creation_filetime_decimal": "134379241669271087",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "inspect-callback",
+        "pid_decimal": "60272",
+        "creation_filetime_decimal": "134379241671614356",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "compile-injection",
+        "pid_decimal": "57376",
+        "creation_filetime_decimal": "134379241673036023",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "link-injection",
+        "pid_decimal": "54912",
+        "creation_filetime_decimal": "134379241676359988",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "compile-target",
+        "pid_decimal": "52616",
+        "creation_filetime_decimal": "134379241678794079",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      },
+      {
+        "purpose": "link-target",
+        "pid_decimal": "60760",
+        "creation_filetime_decimal": "134379241681922518",
+        "exit_code": 0,
+        "owned_lifecycle_closed": true
+      }
+    ],
+    "native_tool_inputs": 112,
+    "native_build_final_original_recheck": true,
+    "native_bundle_reference": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_native_bootstrap_20261031_q1/l-bundle_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+      "sha256": "91a5a365fb9708258eb1910ad9c50c31137f5ecb63c03bbf16c2904a2acc62eb",
+      "bytes": 10273,
+      "role": "l-native-bundle"
+    },
+    "native_bundle_identity": "7a7c35f67c35ae2f:1f615f00000002000000000000000000",
+    "caller_artifact_handoff": {
+      "final_original_recheck": true,
+      "original_writers_held_through_consumers": true,
+      "artifacts": [
+        {
+          "reference": {
+            "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-helper_1a07add9-5fac-40b2-8ff2-18d55e70c385.dll",
+            "sha256": "3316c09bbdda08eba91eb9018b98294147141270fb2d82c5111818947aef8962",
+            "bytes": 21504
+          },
+          "writer_share": 1,
+          "role": "helper",
+          "native_identity": "7a7c35f67c35ae2f:0f615f00000002000000000000000000"
+        },
+        {
+          "reference": {
+            "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/native-diagnostic_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+            "sha256": "f984d71f434cb88b124f426f4f87d2a1feeed93646d1e992bc65fa67dd997a04",
+            "bytes": 9965
+          },
+          "writer_share": 1,
+          "role": "diagnostic",
+          "native_identity": "7a7c35f67c35ae2f:12615f00000002000000000000000000"
+        },
+        {
+          "reference": {
+            "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/api-mapping_1a07add9-5fac-40b2-8ff2-18d55e70c385.json",
+            "sha256": "0549ed34b1403a3b29342137c47fe9650f6d4dce4c5e6f9fcfe44369241bd7e2",
+            "bytes": 10283
+          },
+          "writer_share": 1,
+          "role": "mapping",
+          "native_identity": "7a7c35f67c35ae2f:13615f00000002000000000000000000"
+        }
+      ],
+      "consumers_reaped": true
+    },
+    "diagnostic_acquired_references": 17,
+    "diagnostic_released_references": 17,
+    "diagnostic_all_owned_references_released": true,
+    "scope": "Actual partial emission/transport/limit-query/reference-balance/owned-cleanup evidence only. Neither fresh helper nor generated observer behavior receives Q qualification from this failed suite."
+  },
+  "closure": {
+    "outer_pid_decimal": "58812",
+    "outer_creation_filetime_decimal": "134379241713199121",
+    "outer_original_process_reaped_Job_empty_closed": true,
+    "outer_process_thread_NUL_pipe_readers_writers_thread_handles_closed": true,
+    "outer_strict_stdout_stderr_EOF_readers_watchdog_joined": true,
+    "outer_cleanup_and_stream_faults": null,
+    "outer_stream_overflow": false,
+    "seven_compiler_original_lifecycles_closed": true,
+    "suite_original_Job_process_thread_result_pipe_lifecycle_closed": true,
+    "suite_cleanup_errors": [],
+    "suite_peak_sampling_errors": [],
+    "bootstrap_sampler_process_creation_attempted": false,
+    "bootstrap_sampler_empty_Job_closed_watchdog_joined": true,
+    "caller_original_files_closed": true,
+    "caller_input_handle_count": 1278,
+    "caller_journal_closed": true,
+    "journal_bytes": 6491,
+    "journal_records": 18,
+    "caller_guard_done_joined_closed_completion_wait_closed": true,
+    "caller_guard_error": null,
+    "guard_shutdown_seconds": 0.0290107,
+    "supervisor_retained_inputs_outputs_closed": true,
+    "original_caller_artifact_final_recheck": true,
+    "L_tool_and_artifact_final_original_recheck": true,
+    "complete_final_input_verification": false,
+    "interpretation": "Known created original ownership closes in this UUID. Unused sampler PID0/process/pipe false fields remain not applicable. Complete final input verification is separately false; narrower managed/artifact/L final rechecks do not change it."
+  },
+  "scope_not_executed": {
+    "test_report_json": "ABSENT",
+    "payload_json": "ABSENT",
+    "five_native_case_outputs": "ABSENT_NOT_DISPATCHED_AFTER_SUITE_FAILURE",
+    "two_transport_timeout_control_outputs": "ABSENT_NOT_DISPATCHED_AFTER_SUITE_FAILURE",
+    "bootstrap_accepted_bad_identity_harness": "NOT_REACHED",
+    "scientific_candidates_and_successor_controls": "NOT_ADMITTED_NOT_EXECUTED",
+    "interpretation": "No retained suite roster/outcome report exists. Do not replace unknown method execution with a zero-executed or passing368 claim."
+  },
+  "resources": {
+    "bootstrap_first_sample_elapsed_seconds": 0.7736814,
+    "bootstrap_second_sample_elapsed_seconds": 1.0205497,
+    "caller_elapsed_seconds": 31.5510563,
+    "guard_shutdown_seconds": 0.0290107,
+    "guard_minimum_available_ram_bytes": 7682252800,
+    "guard_minimum_free_disk_bytes": 86323109888,
+    "guard_peak_caller_private_bytes": 150134784,
+    "outer_peak_process_bytes": 39215104,
+    "outer_peak_Job_bytes": 84570112,
+    "suite_peak_process_bytes": 39215104,
+    "suite_peak_Job_bytes": 45395968,
+    "native_compiler_maximum_process_bytes": 11825152,
+    "native_compiler_maximum_Job_bytes": 17874944,
+    "interpretation": "Recorded scope stays within original Q90/60/5 and5/65 bootstrap clocks,512/768 MiB caps,4 GiB RAM/20 GiB disk floors. No resource violation or child-exit/termination cause is inferred from a missing frame."
+  },
+  "cause_and_next_step": {
+    "cause": "UNESTABLISHED_FROM_RETAINED_MISSING_FRAME_EVIDENCE",
+    "recommended_disposition": "CONSUMED_FAILURE_NO_QUALIFICATION",
+    "unchanged_retry_endorsed": false,
+    "recommendation": "Root should retain this failure and finish separate static diagnosis. Any executed-source defect requires a new versioned independently reviewed successor. An unchanged retry needs separate independent justification plus fresh pins, unused UUID, resources and admission; the missing header alone does not justify it.",
+    "execution_or_P_grant": false
+  },
+  "findings": [
+    "The actual suite frame is missing/truncated. No report proves a completed method count, suite outcome or child exit code; all new Q qualification remains unestablished despite partial builds and cleanup.",
+    "The failed UUID is consumed. Narrow final artifact rechecks and full known owned closure are established; complete final input verification remains false."
+  ],
+  "checks": [
+    "Independent source/result roles: l_actual_review differs from l_source_review and authors project_root/l_author_finish. Read applicable project/native-bootstrap contracts. Used only saved file/text/JSON/hash inspection; no Python, AST, compiler, tests, native/process probes or Git.",
+    "Rehashed232 source,732 Python runtime,169 managed compiler,112 native toolchain,307 host and4119 preservation-baseline pins without drift. Reviewed source/admission joins,368 distinct proposed roster, accepted bootstrap-qualification/adoption join and referenced control/artifact hashes match. Individual inventories remain in referenced manifests.",
+    "Lossless external-return text matches original tool stdout. Exact FILETIME identities were parsed with PowerShell Int64 and are recorded as decimal strings here. Tool exit1/caller rejection and supervisor exit1/error agree; the original receipt preserves one suite operation with result:null and missing/truncated header.",
+    "Inspected receipt/source stage ordering: supervisor writes test-report only after a complete observed frame and dispatches later native/fault cases only after suite acceptance. Only claim/deadline_suite/dispatch_suite/receipt exist as root attempt files; no test-report or payload is fabricated.",
+    "Shared native bootstrap became ready on original samples0.7736814/1.0205497 seconds. Its sensor Job remained unused and empty, then closed with watchdog joined. Final caller native guard, original files and18-record/6491-byte journal close without fault.",
+    "Fresh managed PE is21504 bytes SHA2563316c09bbdda08eba91eb9018b98294147141270fb2d82c5111818947aef8962. Saved builder controls report same-byte load, original output identity, queried one/two-process limits, empty Jobs and invalid-third-option refusal.17 diagnostic references are acquired/released, all-owned-references-released true and five diagnostic controls true. These are partial actual facts.",
+    "Seven sequential Clang/lld/objdump children have exit0 and complete original Job/process/thread/NUL/pipe/EOF/reader/watchdog cleanup with no overflow/fault. Their operation records match the generated bundle. Read actual callback disassembly: named l1_notification has no external call or unknown relocation, with bounded1023-unit path scan/copy and8192-entry ring; no native observer case was dispatched.",
+    "Original supervisor and suite child have queried atomic Job membership, reaping/exit-after-Job-close, empty closed Jobs, original process/thread/result-pipe closure and no cleanup/peak-sampling errors. Caller retains strict outer EOF and all pipe joins/closure. Managed helper/mapping/diagnostic capability joins and final original-writer handoff rechecks pass after the consumer is reaped.",
+    "Eight UTC controls pass. Required bootstrap harness list remains accepted,bad_identity in admission but actual bootstrap_controls is empty; five native cases/two fault controls were not dispatched. Sharing control outcomes cannot be accepted without the missing suite report."
+  ],
+  "limitations": [
+    "Accepted failure record only: no ACCEPTED_LQ1_TESTED_SCOPE, new mechanism qualification, P preparation, L/V/C admission or scientific claim. The368 proposed methods are not passing results; actual method count and suite child exit remain unreported.",
+    "Root may establish a source-specific diagnosis separately. Missing/truncated header and cleanup facts alone do not establish exception location, tested-method progress, initial termination reason or an actual child exit code.",
+    "Native build/callback/static instruction and managed-helper controls are narrow partial evidence. Generated artifacts retain their original provisional qualification flags. They do not qualify loaded observer behavior, fresh helper compatibility with frozen Lhost1 or the incomplete40-scenario L matrix.",
+    "Caller complete final_input_verification false and provisional/pending fields remain unchanged; final managed/L artifact checks true do not substitute for it. No old failed receipt or unknown closure is rewritten.",
+    "Earlier SQ/D/loader records and spent attempts, frozen sources, cache bytes and integer-fidelity corrections remain preserved. Earlier PDH startup caller/guard/journal closure remains UNPROVEN; bootstrap004 consumed, diagnostics005 held,006 unadmitted and historical custody UNRESOLVED.",
+    "No complete L plan, full48-case/26-scenario/40-scenario completion,117 candidate tests,34 successor controls or scientific study follows. Scientific cells remain0/1020 and final freeze unsigned; no commit or push."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "candidate_tests_executed": 0,
+  "successor_controls_executed": 0
+}

@@ -1,1 +1,6 @@
 /.githooks/* text eol=lf
+
+# Preserve exact reviewed source and archived document bytes across platforms.
+/tools/local_validation/** -text
+/tools/custody_boundary/** -text
+/docs/history/** -text

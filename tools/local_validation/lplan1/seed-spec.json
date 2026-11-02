@@ -1,0 +1,1220 @@
+{
+  "frozen_modules": [],
+  "schema": "cho51_l_plan_compiler_spec_v1",
+  "roots": [
+    {
+      "role": "runtime",
+      "path": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib",
+      "prefix": ""
+    },
+    {
+      "role": "dependency",
+      "path": "D:/Aenv/pro3/.venv/Lib/site-packages",
+      "prefix": ""
+    },
+    {
+      "role": "project",
+      "path": "D:/Aenv/pro3",
+      "prefix": ""
+    }
+  ],
+  "limits": {
+    "modules": 25000,
+    "source_bytes": 4294967296,
+    "depth": 128,
+    "ast_nodes": 2000000,
+    "edges": 200000
+  },
+  "builtin_modules": [],
+  "seeds": [
+    "pytest",
+    "numpy",
+    "torch",
+    "safetensors",
+    "safetensors.torch",
+    "braindecode",
+    "sklearn",
+    "mne",
+    "scipy",
+    "packaging",
+    "pluggy",
+    "iniconfig",
+    "colorama",
+    "torchaudio",
+    "evaluation.phase2_runner",
+    "evaluation.phase2_cho_case_inputs",
+    "evaluation.phase2_profile_binding",
+    "evaluation.phase2_cho_execution",
+    "evaluation.phase2_pilot",
+    "evaluation.phase2_cho_sweep",
+    "evaluation.phase2_cho_source_restore",
+    "evaluation.phase2_cho_selected_manifest_bridge",
+    "evaluation.phase2_selected_source_store",
+    "evaluation.phase2_selection_evidence_binding",
+    "docs.phase2.cho51_worker_bridge_v1.worker_bridge",
+    "core.config",
+    "core.provenance",
+    "docs.phase2.cho51_canonical_boundary_v1.boundary",
+    "docs.phase2.cho51_route_candidate_v1.route_contract",
+    "evaluation.phase2_protocol",
+    "evaluation.phase2_records",
+    "docs.phase2.cho51_p3_adapter_v1.contracts",
+    "docs.phase2.cho51_p3_adapter_v1.mapping",
+    "docs.phase2.cho51_p3_adapter_v1.telemetry",
+    "docs.phase2.cho51_p3_adapter_v1.test_mapping",
+    "docs.phase2.cho51_p3_adapter_v1.test_telemetry"
+  ],
+  "guard_policy": {
+    "early_aliases": [],
+    "rows": [
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "load",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "numpy.load",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "save",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "numpy.save",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "savez",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "numpy.savez",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "nn.Module.__init__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.nn.Module.__init__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "nn.Module.load_state_dict",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.nn.Module.load_state_dict",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "load",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.load",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "save",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.save",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "Tensor.backward",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.Tensor.backward",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "autograd.backward",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.autograd.backward",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "optim.Optimizer.__init__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "torch.optim.Optimizer.__init__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "CaseRecorder.__init__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "CaseRecorder.__init__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "CaseRecorder.case_session",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "CaseRecorder.case_session",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "LockedCase.__enter__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "LockedCase.__enter__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "LockedCase.record_cell",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "LockedCase.record_cell",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "LockedCase.record_engineering_success",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "LockedCase.record_engineering_success",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "LockedCase.recover_cell",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "LockedCase.recover_cell",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_runner",
+        "symbol": "LockedCase.recover_engineering_success",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "LockedCase.recover_engineering_success",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_pilot",
+        "symbol": "TargetCaseExecutor.__init__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "TargetCaseExecutor.__init__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_pilot",
+        "symbol": "TargetCaseExecutor.run_case",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "TargetCaseExecutor.run_case",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_sweep",
+        "symbol": "ProductionChoCaseRunner.__init__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "ProductionChoCaseRunner.__init__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_sweep",
+        "symbol": "ProductionChoCaseRunner.__call__",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "ProductionChoCaseRunner.__call__",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_case_inputs",
+        "symbol": "prepare_cho_first_tranche",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_case_inputs.prepare_cho_first_tranche",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_execution",
+        "symbol": "execute_engineering_cases",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_execution.execute_engineering_cases",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_execution",
+        "symbol": "run_cho_execution_child",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_execution.run_cho_execution_child",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_execution",
+        "symbol": "verify_staged_proposal",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_execution.verify_staged_proposal",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_source_restore",
+        "symbol": "prepare_cho_source_restore",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_source_restore.prepare_cho_source_restore",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_source_restore",
+        "symbol": "restore_cho_selected_source",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_source_restore.restore_cho_selected_source",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_source_restore",
+        "symbol": "_new_model",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_source_restore._new_model",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_cho_selected_manifest_bridge",
+        "symbol": "verify_cho_selected_manifest_files",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_cho_selected_manifest_bridge.verify_cho_selected_manifest_files",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "evaluation.phase2_selection_evidence_binding",
+        "symbol": "verify_complete_cho_selection_evidence",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "evaluation.phase2_selection_evidence_binding.verify_complete_cho_selection_evidence",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "docs.phase2.cho51_worker_bridge_v1.worker_bridge",
+        "symbol": "prepare_cho51_worker_route",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "docs.phase2.cho51_worker_bridge_v1.worker_bridge.prepare_cho51_worker_route",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "array",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.array",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "asarray",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.asarray",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "zeros",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.zeros",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "ones",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.ones",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "empty",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.empty",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "full",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.full",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "arange",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.arange",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "linspace",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.linspace",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "frombuffer",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.frombuffer",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "numpy",
+        "symbol": "fromfile",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "numpy.fromfile",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "tensor",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.tensor",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "as_tensor",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.as_tensor",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "from_numpy",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.from_numpy",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "zeros",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.zeros",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "ones",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.ones",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "empty",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.empty",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "full",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.full",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "arange",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.arange",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "rand",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.rand",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "torch",
+        "symbol": "randn",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L3",
+        "guard_id": "torch.randn",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "safetensors.torch",
+        "symbol": "load_file",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "safetensors.torch.load_file",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "safetensors.torch",
+        "symbol": "save_file",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "safetensors.torch.save_file",
+        "bound_aliases": []
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "safetensors.torch",
+        "symbol": "load",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "safetensors.torch.load",
+        "bound_aliases": [
+          {
+            "module": "evaluation.phase2_selected_source_store",
+            "symbol": "load"
+          },
+          {
+            "module": "adaptation.source_checkpoint",
+            "symbol": "load"
+          },
+          {
+            "module": "evaluation.tcpl_publication",
+            "symbol": "load"
+          }
+        ]
+      },
+      {
+        "refusal_event": "denial",
+        "defining_module": "safetensors.torch",
+        "symbol": "save",
+        "equivalents": [],
+        "sentinel": {
+          "args": [],
+          "kwargs": {}
+        },
+        "phase_installed": "L2",
+        "guard_id": "safetensors.torch.save",
+        "bound_aliases": [
+          {
+            "module": "evaluation.phase2_selected_source_store",
+            "symbol": "save"
+          },
+          {
+            "module": "adaptation.source_checkpoint",
+            "symbol": "save"
+          },
+          {
+            "module": "evaluation.tcpl_publication",
+            "symbol": "save"
+          }
+        ]
+      }
+    ],
+    "effect_aliases": [],
+    "constructor_epoch": "L2-only-exact-groups"
+  },
+  "module_choices": {
+    "docs.phase2.cho51_canonical_boundary_v1": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs/phase2/cho51_canonical_boundary_v1"
+      ]
+    },
+    "docs.phase2": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs/phase2"
+      ]
+    },
+    "docs": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs"
+      ]
+    },
+    "docs.phase2.cho51_p3_adapter_v1": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1"
+      ]
+    },
+    "docs.phase2.cho51_route_candidate_v1": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs/phase2/cho51_route_candidate_v1"
+      ]
+    },
+    "docs.phase2.cho51_worker_bridge_v1": {
+      "kind": "namespace",
+      "path": null,
+      "namespace_paths": [
+        "D:/Aenv/pro3/docs/phase2/cho51_worker_bridge_v1"
+      ]
+    }
+  },
+  "pytest_policy": {
+    "reviewed_hook_wrappers": [],
+    "id_limits": {
+      "nodeid_bytes": 2048,
+      "parameter_id_bytes": 1024
+    },
+    "ordered_arguments": [
+      "--collect-only",
+      "--import-mode=importlib",
+      "--noconftest",
+      "--assert=plain",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "no:stepwise",
+      "-c",
+      "D:/Aenv/pro3/tools/local_validation/lplan1/pytest.ini",
+      "--rootdir=",
+      "D:/Aenv/pro3",
+      "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_telemetry.py"
+    ],
+    "custom_plugin_refs": [
+      {
+        "sha256": "d8b76e57622f6d7b19610f3638d43737bc12693b774b09cbb3b6053ca14d9b93",
+        "path": "D:/Aenv/pro3/tools/local_validation/l1/collection.py",
+        "role": "custom_plugin_source",
+        "bytes": 6529
+      }
+    ],
+    "candidate_paths": [
+      "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_telemetry.py"
+    ],
+    "no_fixture_or_test_execution": true,
+    "candidate_modules": [
+      "docs.phase2.cho51_p3_adapter_v1.test_mapping",
+      "docs.phase2.cho51_p3_adapter_v1.test_telemetry"
+    ],
+    "hooks": [
+      "pytest_fixture_setup",
+      "pytest_runtest_protocol",
+      "pytest_runtest_logreport",
+      "pytest_runtest_makereport"
+    ],
+    "builtin_plugins": {
+      "capture": "_pytest.capture",
+      "terminal": "_pytest.terminal",
+      "warnings": "_pytest.warnings",
+      "fixtures": "_pytest.fixtures",
+      "pastebin": "_pytest.pastebin",
+      "assertion": "_pytest.assertion",
+      "runner": "_pytest.runner",
+      "mark": "_pytest.mark",
+      "doctest": "_pytest.doctest",
+      "reports": "_pytest.reports",
+      "python": "_pytest.python",
+      "threadexception": "_pytest.threadexception",
+      "setuponly": "_pytest.setuponly",
+      "recwarn": "_pytest.recwarn",
+      "unraisableexception": "_pytest.unraisableexception",
+      "main": "_pytest.main",
+      "monkeypatch": "_pytest.monkeypatch",
+      "debugging": "_pytest.debugging",
+      "faulthandler": "_pytest.faulthandler",
+      "setupplan": "_pytest.setupplan",
+      "logging": "_pytest.logging",
+      "subtests": "_pytest.subtests",
+      "legacypath": "_pytest.legacypath",
+      "skipping": "_pytest.skipping",
+      "helpconfig": "_pytest.helpconfig",
+      "unittest": "_pytest.unittest",
+      "junitxml": "_pytest.junitxml",
+      "tmpdir": "_pytest.tmpdir"
+    },
+    "version": "9.1.1",
+    "root": "D:/Aenv/pro3",
+    "static_roster": {
+      "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3",
+      "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_local_validation_v1/test-roster.json",
+      "role": "static_roster",
+      "bytes": 7470
+    },
+    "blocked_plugins": [
+      "cacheprovider",
+      "stepwise"
+    ],
+    "config_ref": {
+      "sha256": "f02ab80e9cb9f2e6f9ed1b330da2fdb8c23525dc22b7623f1ecde86d1fa353d9",
+      "path": "D:/Aenv/pro3/tools/local_validation/lplan1/pytest.ini",
+      "role": "pytest_config_template",
+      "bytes": 68
+    },
+    "ambient_addopts": [],
+    "autoload_disabled": true
+  },
+  "abi_policy": {
+    "rows": []
+  },
+  "resource_policy": {
+    "rows": [],
+    "platform_trust": [],
+    "native_branches": []
+  },
+  "decisions": [],
+  "phase_groups": {
+    "braindecode": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "colorama": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "docs.phase2.cho51_p3_adapter_v1": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_p3_adapter_v1.test_telemetry": {
+      "group_id": "collection",
+      "phase": "L4"
+    },
+    "docs.phase2.cho51_canonical_boundary_v1.boundary": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_cho_case_inputs": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_route_candidate_v1": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "numpy": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "mne": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "iniconfig": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "evaluation.phase2_cho_source_restore": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_p3_adapter_v1.mapping": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "sklearn": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "evaluation.phase2_selected_source_store": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_runner": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_cho_execution": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "core": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_pilot": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_worker_bridge_v1": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_p3_adapter_v1.contracts": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_records": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "core.config": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_selection_evidence_binding": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "core.provenance": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_cho_sweep": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_cho_selected_manifest_bridge": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "scipy": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "docs.phase2.cho51_route_candidate_v1.route_contract": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs.phase2.cho51_canonical_boundary_v1": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "pytest": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "safetensors.torch": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "docs.phase2.cho51_worker_bridge_v1.worker_bridge": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "safetensors": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "pluggy": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "evaluation.phase2_profile_binding": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "docs": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "evaluation.phase2_protocol": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "packaging": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "torchaudio": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "docs.phase2.cho51_p3_adapter_v1.telemetry": {
+      "group_id": "canonical",
+      "phase": "L3"
+    },
+    "torch": {
+      "group_id": "dependencies",
+      "phase": "L2"
+    },
+    "docs.phase2.cho51_p3_adapter_v1.test_mapping": {
+      "group_id": "collection",
+      "phase": "L4"
+    },
+    "docs.phase2": {
+      "group_id": "canonical",
+      "phase": "L3"
+    }
+  },
+  "bindings": {
+    "bootstrap_modules": [],
+    "initialization_groups": [
+      {
+        "postcondition_ids": [
+          "native_and_import_reconcile"
+        ],
+        "modules": [],
+        "group_id": "dependencies",
+        "predecessor_groups": [],
+        "phase": "L2",
+        "allowed_effect_ids": [],
+        "ordinal": 0
+      },
+      {
+        "postcondition_ids": [
+          "required_guard_and_alias_census"
+        ],
+        "modules": [],
+        "group_id": "canonical",
+        "predecessor_groups": [
+          "dependencies"
+        ],
+        "phase": "L3",
+        "allowed_effect_ids": [],
+        "ordinal": 1
+      }
+    ],
+    "host": {
+      "static_roster": {
+        "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3",
+        "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_local_validation_v1/test-roster.json",
+        "role": "static_roster",
+        "bytes": 7470
+      },
+      "candidate_refs": {
+        "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py": {
+          "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee",
+          "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+          "role": "candidate_source",
+          "bytes": 17511
+        },
+        "docs/phase2/cho51_p3_adapter_v1/test_mapping.py": {
+          "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384",
+          "path": "D:/Aenv/pro3/docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+          "role": "candidate_source",
+          "bytes": 20488
+        }
+      },
+      "bootstrap_modules": [],
+      "platform_images": [],
+      "dll_directories": [
+        "D:/Aenv/pro3/.venv/Lib/site-packages/torch/lib"
+      ],
+      "kernel_symbols": [
+        "GetLastError",
+        "SetErrorMode"
+      ],
+      "preparation_extra_paths": [],
+      "metadata_refs": {},
+      "interpreter_identity": {
+        "architecture": "AMD64",
+        "scope": "declared_until_observed",
+        "python_tag": "cp312"
+      }
+    },
+    "ordered_sys_path": [
+      "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib",
+      "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/DLLs",
+      "D:/Aenv/pro3/.venv/Lib/site-packages",
+      "D:/Aenv/pro3"
+    ]
+  },
+  "native_policy": {
+    "rows": [],
+    "environment_snapshot": {},
+    "search_policy": "restricted-process-local-no-PATH-fallback"
+  }
+}

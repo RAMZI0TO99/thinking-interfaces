@@ -1,0 +1,82 @@
+{
+  "schema": "project_focus_document_history_v1",
+  "captured_utc": "2026-10-28T13:14:06.4157003+00:00",
+  "base_commit": "c0cf8504b60e7cabc22dc6a16c3cb535bbbb57f5",
+  "scope": "Exact historical document snapshots before replacing active workflow with project-local governance",
+  "file_count": 12,
+  "payload_bytes": 1256232,
+  "artifacts": [
+    {
+      "source": "AGENTS.md",
+      "path": "before/AGENTS.md",
+      "bytes": 2677,
+      "sha256": "e7cfe204f10170f6ed6a2526d63fa09dcfbf0f7d5955aa50ab7c08b12ab1e7dc"
+    },
+    {
+      "source": "AGENT_COORDINATION.md",
+      "path": "before/AGENT_COORDINATION.md",
+      "bytes": 314650,
+      "sha256": "8146fc32a903edc46c04ecd766dd80477afd7a46ec1926be0c6e257a5504d1db"
+    },
+    {
+      "source": "HANDOFF.md",
+      "path": "before/HANDOFF.md",
+      "bytes": 369186,
+      "sha256": "a944cdd54fe077d00eb26f6984667039455fac64379487add4e38875baa4527e"
+    },
+    {
+      "source": "README.md",
+      "path": "before/README.md",
+      "bytes": 117632,
+      "sha256": "f2bdfbb8e1b0ee25903f977f2cceadff35f0535c4ff960bb1723c448f64bd5e8"
+    },
+    {
+      "source": "CONTINUE_HERE.md",
+      "path": "before/CONTINUE_HERE.md",
+      "bytes": 56888,
+      "sha256": "678991bcb49b9fe1bba1550af60b9ec34b0631fd3308e6399ac9ce66143ddcc2"
+    },
+    {
+      "source": "WINDOWS_SETUP.md",
+      "path": "before/WINDOWS_SETUP.md",
+      "bytes": 51372,
+      "sha256": "f8e8b89e5be5a89446d6c75ce20b19be22e8de71bb52612959f031ed4ddd7be3"
+    },
+    {
+      "source": "PHASE2_START_HERE.md",
+      "path": "before/PHASE2_START_HERE.md",
+      "bytes": 161296,
+      "sha256": "a39c528206ef365f8e63f28028c452efd22b81d143f2d15a7e46ffa346c55fa4"
+    },
+    {
+      "source": "docs/phase2/README.md",
+      "path": "before/docs/phase2/README.md",
+      "bytes": 112004,
+      "sha256": "c06d16483ead870656fcb6f20f9a9bb501f85a3637f87cb4999e5b465c98fd90"
+    },
+    {
+      "source": "docs/where are we/README.md",
+      "path": "before/docs/where are we/README.md",
+      "bytes": 8761,
+      "sha256": "3e67c272c7672ab640c552efe0b6d8ebdea64fdae766b681af586689cd882b21"
+    },
+    {
+      "source": "docs/where are we/PROJECT_PLAN.md",
+      "path": "before/docs/where are we/PROJECT_PLAN.md",
+      "bytes": 19503,
+      "sha256": "e66c073fe2dd235e4f9d55c513f657884d96862bba5a75e14e2633c99ca02a6f"
+    },
+    {
+      "source": "docs/where are we/PROGRESS_REPORT.md",
+      "path": "before/docs/where are we/PROGRESS_REPORT.md",
+      "bytes": 24286,
+      "sha256": "94267bfa3993f326284fd9307aad778ee541f317890946f011d317e77361b0ed"
+    },
+    {
+      "source": "docs/where are we/EVIDENCE_INDEX.md",
+      "path": "before/docs/where are we/EVIDENCE_INDEX.md",
+      "bytes": 17977,
+      "sha256": "eab3cbabdc044b810cd97a05afe2012c6075558072340ff4b00c42c9b6aed383"
+    }
+  ]
+}

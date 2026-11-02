@@ -1,0 +1,402 @@
+{
+  "schema": "cho51_l_design_qualification_matrix_v1",
+  "status": "DESIGN_ONLY_ALL_UNEXECUTED",
+  "count": 40,
+  "scope": "New L mechanism qualification scenarios, distinct from original26,117candidates and34Vcontrols",
+  "qualification_constraints": [
+    "fresh implementation-specific Q admission for actual fixtures",
+    "no candidate or third-party imports in Q",
+    "native fixture construction/loading only inside reviewed admitted Q scope",
+    "injected parser/loader/pytest fixtures do not claim real package compatibility"
+  ],
+  "cases": [
+    {
+      "required_behavior": "Reject absent or swapped design/source/adoption/Q/P reviews and wrong predecessor operation before child creation.",
+      "executed": false,
+      "parent_obligations": [
+        "LV01"
+      ],
+      "id": "LQ01",
+      "name": "authority_chain"
+    },
+    {
+      "required_behavior": "Reject using P10 alone for new L files, changed recipe members, added/missing files or changed control input identities.",
+      "executed": false,
+      "parent_obligations": [
+        "LV03",
+        "LV04"
+      ],
+      "id": "LQ02",
+      "name": "fresh_preparation"
+    },
+    {
+      "required_behavior": "Existing, alias or unknown attempt refuses; preserve failed UUID and partial bytes without retry or cleanup promotion.",
+      "executed": false,
+      "parent_obligations": [
+        "LV02",
+        "LV25"
+      ],
+      "id": "LQ03",
+      "name": "unused_attempt"
+    },
+    {
+      "required_behavior": "Reject unknown/duplicate keys, nonfinite values, bool integers, bad UUID/roles/refs, excessive JSON and self/future hashes.",
+      "executed": false,
+      "parent_obligations": [
+        "LV06"
+      ],
+      "id": "LQ04",
+      "name": "record_parser"
+    },
+    {
+      "required_behavior": "Reject late/short admission, UTC rollback, QPC mismatch, clock restart and late actual return using original L300/work240/cleanup5 bounds.",
+      "executed": false,
+      "parent_obligations": [
+        "LV22",
+        "LV24"
+      ],
+      "id": "LQ05",
+      "name": "original_interval"
+    },
+    {
+      "required_behavior": "Two startup samples and active monitoring refuse low RAM/disk, caller/Job excess, stop PRESENT/UNKNOWN and stale samples.",
+      "executed": false,
+      "parent_obligations": [
+        "LV22"
+      ],
+      "id": "LQ06",
+      "name": "resource_and_stop"
+    },
+    {
+      "required_behavior": "Reject changed helper/entry bytes, wrong runtime, unexpected bootstrap module or phase dispatch before confinement.",
+      "executed": false,
+      "parent_obligations": [
+        "LV07"
+      ],
+      "id": "LQ07",
+      "name": "bootstrap_same_bytes"
+    },
+    {
+      "required_behavior": "Injected loader fixtures reject foreign source, pyc/zip/pth/site startup, changed syspath/meta/path hooks and unknown sys.modules.",
+      "executed": false,
+      "parent_obligations": [
+        "LV09"
+      ],
+      "id": "LQ08",
+      "name": "import_policy"
+    },
+    {
+      "required_behavior": "Reject reordered/additional namespace paths, aliases, wrong suffix/loader and source identity mismatch.",
+      "executed": false,
+      "parent_obligations": [
+        "LV09"
+      ],
+      "id": "LQ09",
+      "name": "namespace_origins"
+    },
+    {
+      "required_behavior": "Verify ordinary fixture source executes only externally bound retained bytes; no candidate or third-party import in Q.",
+      "executed": false,
+      "parent_obligations": [
+        "LV03",
+        "LV07"
+      ],
+      "id": "LQ10",
+      "name": "source_exec_identity"
+    },
+    {
+      "required_behavior": "Synthetic search policies reject unexpected directory, flags, environment mutation or competing basename before selected load.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10"
+      ],
+      "id": "LQ11",
+      "name": "native_search"
+    },
+    {
+      "required_behavior": "Loader facade fixtures reject PATH mutation and legacy LoadLibraryW fallback before effect while preserving permitted signature assignment behavior.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10",
+        "LV11"
+      ],
+      "id": "LQ12",
+      "name": "torch_fallback"
+    },
+    {
+      "required_behavior": "Owned native fixture establishes baseline and registration before permitted fixture loads; missing API/registration refuses without polling fallback.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10"
+      ],
+      "id": "LQ13",
+      "name": "native_bootstrap"
+    },
+    {
+      "required_behavior": "Owned reviewed fixture DLL load/unload events remain observable even absent in final snapshot; no unrelated process or package probes.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10"
+      ],
+      "id": "LQ14",
+      "name": "native_transient"
+    },
+    {
+      "required_behavior": "Static helper review and owned fixtures cover callback copy bounds, no cross-module callback calls and generated dependency inspection.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10",
+        "LV13"
+      ],
+      "id": "LQ15",
+      "name": "callback_constraints"
+    },
+    {
+      "required_behavior": "Injected/owned fixture events cover overflow, invalid reason, malformed UTF16, path truncation, sequence gaps and sticky faults.",
+      "executed": false,
+      "parent_obligations": [
+        "LV06",
+        "LV10"
+      ],
+      "id": "LQ16",
+      "name": "native_overflow"
+    },
+    {
+      "required_behavior": "Reject unknown image/system role, wrong native ID/hash/path, duplicate basename substitution or unapproved per-importer choice.",
+      "executed": false,
+      "parent_obligations": [
+        "LV03",
+        "LV10"
+      ],
+      "id": "LQ17",
+      "name": "native_join"
+    },
+    {
+      "required_behavior": "Injected unstable/partial/oversized snapshots refuse after at most three bounded attempts; no snapshot handle CloseHandle or invented reference release.",
+      "executed": false,
+      "parent_obligations": [
+        "LV10"
+      ],
+      "id": "LQ18",
+      "name": "snapshot_reconcile"
+    },
+    {
+      "required_behavior": "Owned fixture verifies unregister, callback drain and reference release; unknown shutdown never becomes accepted cleanup.",
+      "executed": false,
+      "parent_obligations": [
+        "LV21"
+      ],
+      "id": "LQ19",
+      "name": "native_shutdown"
+    },
+    {
+      "required_behavior": "Owned benign resources prove permitted exact reads and refusal of undeclared reads, aliases, native-only uncovered path and broad resource wildcard before effects.",
+      "executed": false,
+      "parent_obligations": [
+        "LV05",
+        "LV11"
+      ],
+      "id": "LQ20",
+      "name": "resource_mediation"
+    },
+    {
+      "required_behavior": "Owned JSON fixture tests reject outside writes, preexisting basetemp, symlink/hardlink/alias paths and source/Git/cache modification.",
+      "executed": false,
+      "parent_obligations": [
+        "LV05",
+        "LV18"
+      ],
+      "id": "LQ21",
+      "name": "write_confinement"
+    },
+    {
+      "required_behavior": "Injected calls to process/Git/network/diagnostic capture are denied before effects throughout L; no real external operation needed.",
+      "executed": false,
+      "parent_obligations": [
+        "LV11",
+        "LV19"
+      ],
+      "id": "LQ22",
+      "name": "process_network_denial"
+    },
+    {
+      "required_behavior": "Synthetic PE/metadata rows reject wrong machine/Python tag/initializer, missing export/forwarder or mismatched safe-query result without compute probes.",
+      "executed": false,
+      "parent_obligations": [
+        "LV08"
+      ],
+      "id": "LQ23",
+      "name": "abi_metadata"
+    },
+    {
+      "required_behavior": "Reject version-only or CUDA-only general ABI success, omitted dormant paths and unknown delay-import coverage; retain narrow observed scope.",
+      "executed": false,
+      "parent_obligations": [
+        "LV08"
+      ],
+      "id": "LQ24",
+      "name": "abi_scope"
+    },
+    {
+      "required_behavior": "Dummy defining modules verify file/model/state/backward/optimizer guards precede canonical bindings; missing required symbol fails.",
+      "executed": false,
+      "parent_obligations": [
+        "LV11",
+        "LV13"
+      ],
+      "id": "LQ25",
+      "name": "guard_install_order"
+    },
+    {
+      "required_behavior": "Dummy modules bind load/save/load_file/save_file aliases by value; each must bind blocker before consumer import, with stale aliases refused.",
+      "executed": false,
+      "parent_obligations": [
+        "LV12",
+        "LV13"
+      ],
+      "id": "LQ26",
+      "name": "safetensors_aliases"
+    },
+    {
+      "required_behavior": "Injected state transitions refuse broad numerical exemptions, candidate-before-guards, unreviewed initialization and out-of-phase dynamic compilation.",
+      "executed": false,
+      "parent_obligations": [
+        "LV11",
+        "LV14"
+      ],
+      "id": "LQ27",
+      "name": "initialization_epoch"
+    },
+    {
+      "required_behavior": "Sentinel denial must precede underlying dummy effect; missing, swallowed unexpected denial or nonzero/bool counter remains sticky failure.",
+      "executed": false,
+      "parent_obligations": [
+        "LV13",
+        "LV14"
+      ],
+      "id": "LQ28",
+      "name": "guard_sentinels"
+    },
+    {
+      "required_behavior": "Fake plugin manager/arguments reject conftest, autoload, alternate root/config, unknown plugin/hooks/options and k/m/deselection injection.",
+      "executed": false,
+      "parent_obligations": [
+        "LV09",
+        "LV16"
+      ],
+      "id": "LQ29",
+      "name": "pytest_configuration"
+    },
+    {
+      "required_behavior": "Supplied synthetic item records enforce 117 unique IDs, exact25 function counts and39/78 modules, rejecting empty, missing, extra and duplicate rows.",
+      "executed": false,
+      "parent_obligations": [
+        "LV16"
+      ],
+      "id": "LQ30",
+      "name": "collection_exact_counts"
+    },
+    {
+      "required_behavior": "Supplied rows reject wrong source/originalname, parameter escaping changes, bad ordinals, invalid Unicode and reordered L/V roster; no sorting repair.",
+      "executed": false,
+      "parent_obligations": [
+        "LV16"
+      ],
+      "id": "LQ31",
+      "name": "collection_identity_order"
+    },
+    {
+      "required_behavior": "Known UTF8 JSON fixture vectors cover canonical encoding, separators/no-newline, collision suffixes and independent parent digest recomputation.",
+      "executed": false,
+      "parent_obligations": [
+        "LV16"
+      ],
+      "id": "LQ32",
+      "name": "roster_digest"
+    },
+    {
+      "required_behavior": "Fake hooks refuse fixture setup, runtest protocol, setup/call/teardown report and skipped/error collection; no actual candidate/pytest import in Q.",
+      "executed": false,
+      "parent_obligations": [
+        "LV16",
+        "LV18"
+      ],
+      "id": "LQ33",
+      "name": "collect_only_boundary"
+    },
+    {
+      "required_behavior": "Owned minimal native/stdlib child fixtures cover create/assign/verify/resume failures; no child runs outside intended Job.",
+      "executed": false,
+      "parent_obligations": [
+        "LV20",
+        "LV21"
+      ],
+      "id": "LQ34",
+      "name": "atomic_job_start"
+    },
+    {
+      "required_behavior": "Owned pipe fixtures cover oversized/truncated/duplicate/out-of-order/after-terminal frames, absent EOF, backpressure and bounded caller memory.",
+      "executed": false,
+      "parent_obligations": [
+        "LV06",
+        "LV23"
+      ],
+      "id": "LQ35",
+      "name": "bounded_stream"
+    },
+    {
+      "required_behavior": "Owned parent create-new outputs retain original writers, flush/readback and native identity; substituted child path/hash is refused.",
+      "executed": false,
+      "parent_obligations": [
+        "LV05",
+        "LV23"
+      ],
+      "id": "LQ36",
+      "name": "publication_custody"
+    },
+    {
+      "required_behavior": "Owned fixtures refuse final byte/identity/census/absence drift; missing final verification cannot be replaced with progress timings.",
+      "executed": false,
+      "parent_obligations": [
+        "LV03",
+        "LV04",
+        "LV21"
+      ],
+      "id": "LQ37",
+      "name": "final_verify"
+    },
+    {
+      "required_behavior": "Owned child stop/crash/stall cases require original exits, empty Job, EOF/handles and genuine timely outer return; preserve unknown custody.",
+      "executed": false,
+      "parent_obligations": [
+        "LV21",
+        "LV24"
+      ],
+      "id": "LQ38",
+      "name": "cleanup_caller"
+    },
+    {
+      "required_behavior": "Reject success-by-exit0, fabricated observed coverage, future parent custody in child terminal or rewrite of provisional results.",
+      "executed": false,
+      "parent_obligations": [
+        "LV14",
+        "LV25"
+      ],
+      "id": "LQ39",
+      "name": "phase_result_semantics"
+    },
+    {
+      "required_behavior": "Pure join fixtures reject changed common workload/roster/native/resource pins or implicit V/C grant; engineering/scientific/history scope stays separate.",
+      "executed": false,
+      "parent_obligations": [
+        "LV01",
+        "LV16",
+        "LV26"
+      ],
+      "id": "LQ40",
+      "name": "v_transition"
+    }
+  ],
+  "launch_authorized": false,
+  "scientific_admission": false
+}

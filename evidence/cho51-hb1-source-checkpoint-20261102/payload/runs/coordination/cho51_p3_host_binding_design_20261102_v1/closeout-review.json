@@ -1,0 +1,46 @@
+{
+  "static_checks": {
+    "bytes": 5736,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/final-static-checks.json",
+    "sha256": "80e466b8550d570193225f698680f5fb8c53d5e73e7af69e3340686f8ce4d9df"
+  },
+  "runtime_operations": 0,
+  "review_text": "HB1 independent metadata/documentation closeout review: ACCEPTED_METADATA_CLOSEOUT_ONLY; findings []. The final-static-checks, root-design-acceptance, candidate-v2 and design-review-v2 lengths and SHA-256 pins match. Root adoption embeds distinct qd_source_review's confirmations of both published reviews; both review-text and confirmation UTF-8 hashes match. Review v1 identified HB-D1 and HB-D2; v2 accepts their typed COMPONENT_NATIVE fixture transaction and exact 8-byte framing corrections with no open findings. Independently rehashed all 20 current document/design files, 7 design pins, 30 input pins, 23 roster module source pins, 8,733 preservation files, all 4 preserved draft-v1 files against candidate-v1, and 12 archived prior pages: zero mismatches. The phase has 8 currently created predeclared root records and only the conditional draft-v1 directory with its four exact files and manifest; closeout-review.json remains the predeclared future publication. All 479 decoded local link occurrences resolve. The roster contains 580 distinct textual identities across 23 modules, partitioned 32/100/384/10/19/35; VFY names 64 existing QD/SC models. The 24 HB scenarios are distinct from 40 SC and 36 diagnostic obligations. These are not executed tests or collection. Documentation correctly keeps provider availability NOT_ESTABLISHED, runtime readiness REFUSED_PENDING_PREREQUISITES, production provider/bridge/runner and lifecycle/capture/complete-Q timing/output feasibility open. Frozen SC1 and historical a1f12701 INCOMPLETE_REFUSED 17/16, earlier failures/custody, open obligations, P disabled and science 0/1020 remain unchanged. Next is separately reviewed source-only supplied-frame/parent-join and discovery work, with no new admission. This accepts metadata/documentation closeout only, not implementation, actual Q, custody or science. Review used read-only file/text/JSON/hash/link inspection; no files written and no project imports/AST/compiler/native/runtime/tests/Git.",
+  "schema": "cho51_hb1_metadata_closeout_review_v1",
+  "created_utc": "2026-11-02T10:27:33.2060927Z",
+  "design_review": {
+    "bytes": 3145,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/design-review-v2.json",
+    "sha256": "a4aad7797fcc7161fa92742f7fef2d128bc3add69870b69ffee6f9fa55b9ea52"
+  },
+  "p_admitted": false,
+  "publication_kind": "verbatim independent peer message transcription",
+  "full_q_feasibility": "NOT_ESTABLISHED",
+  "runtime_readiness": "REFUSED_PENDING_PREREQUISITES",
+  "authors": [
+    "project_root"
+  ],
+  "status": "ACCEPTED_METADATA_CLOSEOUT_ONLY",
+  "provider_availability": "NOT_ESTABLISHED",
+  "design_reviewer": "qd_source_review",
+  "tests_executed": 0,
+  "qualification_accepted": false,
+  "obligations_discharged": 0,
+  "candidate": {
+    "bytes": 8400,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v2.json",
+    "sha256": "672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b"
+  },
+  "runtime_admission": false,
+  "publisher": "project_root",
+  "review_text_sha256": "1d8db9ad001bc1c07205ab86b087dcad370ebd37f608e948e3d77999442ad8fc",
+  "reviewer": "qd_closeout_review",
+  "scientific_admission": false,
+  "implementation_accepted": false,
+  "root_acceptance": {
+    "bytes": 5197,
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/root-design-acceptance.json",
+    "sha256": "41dddc76948f9a1f235b17fd445ff983163a1b9c2734d200e4664997b8297d53"
+  },
+  "findings": []
+}

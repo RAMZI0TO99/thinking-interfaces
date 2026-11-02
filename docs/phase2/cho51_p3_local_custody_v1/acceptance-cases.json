@@ -1,0 +1,296 @@
+{
+  "schema": "cho51_p3_local_custody_acceptance_matrix_v1",
+  "scope": "Required future implementation tests and actual-evidence cases; not executed",
+  "case_count": 48,
+  "tests_executed": 0,
+  "cases": [
+    {
+      "id": "missing_history",
+      "condition": "Missing predecessor receipt",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "changed_history",
+      "condition": "Any predecessor hash differs",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "upgraded_history",
+      "condition": "Historical custody or release set true",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "missing_host_binding",
+      "condition": "Only a workspace path identifies failed-operation host",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "pid_absence_only",
+      "condition": "Old PID is absent without restart proof",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "elapsed_time_only",
+      "condition": "Elapsed deadline or wall time offered as cleanup proof",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "wall_boot_time_only",
+      "condition": "Only an OS boot timestamp is provided",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "resume_only",
+      "condition": "Sleep or hibernation resume claimed as complete restart",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "restart_kind_unknown",
+      "condition": "Kernel/session restoration semantics unestablished",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "clock_disagreement",
+      "condition": "Wall and monotonic observations cannot establish ordering",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "persistent_guest",
+      "condition": "Relevant guest or external process domain persistence unresolved",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "unreviewed_provider",
+      "condition": "Collector provider guarantees lack independent qualification",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "raw_records_missing",
+      "condition": "Positive claim without complete raw observations",
+      "expected": "UNRESOLVED",
+      "executed": false
+    },
+    {
+      "id": "review_stale",
+      "condition": "Review hashes bind different evidence or runtime",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "review_rejected",
+      "condition": "Independent actual review rejects boundary",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "qualified_boundary",
+      "condition": "Qualified complete-restart evidence and exact independent review; all semantic joins valid",
+      "expected": "ELIGIBLE_FOR_LOCAL_ADMISSION_REVIEW",
+      "executed": false
+    },
+    {
+      "id": "eligible_not_authority",
+      "condition": "Eligible disposition used directly as launch permission",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "new_admission",
+      "condition": "Fresh exact local admission on same current host/boot; original failure remains false",
+      "expected": "NEW_OPERATION_ENTRY_ONLY",
+      "executed": false
+    },
+    {
+      "id": "generation_changed",
+      "condition": "Host or boot generation changes before entry",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "used_attempt",
+      "condition": "Attempt directory or operation identity already consumed",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "stop_present",
+      "condition": "Project stop file is present",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "stop_unknown",
+      "condition": "Project stop file state cannot be established",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "partial_source_pins",
+      "condition": "One controller/helper/protocol/verifier source missing from exact pins",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "runtime_drift",
+      "condition": "Runtime identity differs after admission",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "out_of_window",
+      "condition": "Start/work/cleanup/effect phase exceeds its bound",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "resource_floor",
+      "condition": "A startup or active resource floor fails",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "uncertain_start",
+      "condition": "Start attempted but original retained identity not established",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "unowned_row",
+      "condition": "Unexpected process identity cannot be owned",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "diagnostic_overflow",
+      "condition": "Required diagnostic evidence lost or exceeds its bound",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "stream_mismatch",
+      "condition": "Saved stream size/digest cannot be verified",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "missing_eof",
+      "condition": "One stream EOF missing",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "missing_reap",
+      "condition": "Retained-handle reap not established",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "metadata_exit_zero",
+      "condition": "Complete/Release exits0 with failed custody",
+      "expected": "FAILED_UNRELEASED",
+      "executed": false
+    },
+    {
+      "id": "successful_new_operation",
+      "condition": "All new-operation ownership/payload/caller/closure evidence accepted",
+      "expected": "NEW_OPERATION_ACCEPTED_ONLY",
+      "executed": false
+    },
+    {
+      "id": "duplicate_json_key",
+      "condition": "Input JSON has a duplicate property name",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "nonfinite_json",
+      "condition": "Input contains nonfinite numeric data",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "oversize_metadata",
+      "condition": "Encoded input, depth, nodes or file bounds exceeded",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "unknown_fields",
+      "condition": "Closed record contains extra fields",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "wrong_types",
+      "condition": "Boolean, integer, string or null type substituted",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "impossible_dates",
+      "condition": "Syntactically shaped but invalid timestamps",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "reference_escape",
+      "condition": "Relative reference escapes approved root or resolves through reparse alias",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "forced_stop_cleanup",
+      "condition": "Local stop arrives during operation",
+      "expected": "STOP_NEW_WORK_AND_OWNED_BOUNDED_CLEANUP",
+      "executed": false
+    },
+    {
+      "id": "qpc_loss",
+      "condition": "QPC exceeds safe integer bound or is rounded during parse",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "qpc_order",
+      "condition": "Same-generation QPC end precedes start or frequency differs",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "attempt_uuid_mismatch",
+      "condition": "Attempt directory has a different UUID from operation_id",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "capture_stale",
+      "condition": "Current-boundary capture is older than300seconds at admission",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "self_review",
+      "condition": "Implementation author supplies the independent source or actual review",
+      "expected": "REFUSED",
+      "executed": false
+    },
+    {
+      "id": "memory_caps_missing",
+      "condition": "Admission or containment omits process/Job memory caps",
+      "expected": "REFUSED",
+      "executed": false
+    }
+  ]
+}

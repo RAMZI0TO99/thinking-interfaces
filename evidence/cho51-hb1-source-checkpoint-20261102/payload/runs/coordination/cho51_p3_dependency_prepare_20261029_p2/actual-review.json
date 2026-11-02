@@ -1,0 +1,66 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T13:09:25.1750964Z",
+  "operation_id": "2cc07db6-c210-4e9e-bed9-788d5abb8a0c",
+  "actual_tool_exit_code": 1,
+  "elapsed_seconds": 23.5935923,
+  "new_operation_owned_lifecycle_closed": true,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "observed_error": "FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:/Aenv/pro3/evidence/cho51-worker-lifecycle-20261015/artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_successes/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.success.json'",
+  "source_review_sha256": "896bced9c9c9ab15eef4439afba702865a33e81393aecef2ecd13bf6761e5f08",
+  "coverage_review_sha256": "83b98a99dc1764e483c4d496ca6420d460b24b5a21ddaf8b71673f099aff6010",
+  "admission_sha256": "26e19157ca2fe2050d907427054d73e5c6ba3f7b5bba48607c1f931923fb0178",
+  "findings": [
+    "Second P operation failed and is consumed. Supervisor reported FileNotFoundError WinError 3 for the explicitly retained long historical evidence success.json path; actual caller refused supervisor exit, no output handoff and tool exit 1. This establishes the observed filesystem refusal, not a proven root cause such as path-length policy or actual file absence.",
+    "Only the original 552-byte claim.json exists in this attempt; its saved bytes/hash match supervisor output descriptor. No accepted map, observed dependency closure or successful preparation is claimed."
+  ],
+  "evidence": [
+    "Reviewed independent p2_successor_review source and proposed-coverage records, adoption, admission, preflight, underlying original caller return and decoded supervisor stdout, actual tool output, origin/claim and 16-record bootstrap journal. Reviewer differs from authors and source reviewer.",
+    "Rechecked 22 frozen P source pins, 732 Python runtime pins, all ten pin-page hashes and admission review/coverage/adoption/qualification/native-helper/index references with no drift. Rechecked applicable Q2 1271-file preservation baseline with no drift. Proposed 20237-file/3455000440-byte coverage is not an actual accepted map.",
+    "Both consumed internal and external claims bind exact admission hash. Original origin UTC 2026-10-29T13:02:32.3798339Z and QPC 823722373971 at 10000000 Hz remain unchanged; journal orders ready guard and authority before native load and supervisor dispatch, then records caller error and close readiness.",
+    "Underlying supervisor returned P_FAILED_CONSUMED, observed_by_supervisor false, accepted_by_supervisor false, identity verification before release false and no guard fault. handle_closure inputs/outputs/guard_thread_joined are true with cleanup_errors empty.",
+    "Original outer PID 33704 creation FILETIME 134377525563380905 reaped and process/thread closed; original Job atomic membership and queried limits true, empty and closed; both original owned streams EOF, readers joined/closed, writers and reader-thread handles closed; owned NUL and watchdog closed/joined, no cleanup fault or stream error/overflow.",
+    "Actual tool-return is exit 1 and external-return elapsed 23.5935923 seconds. Its stdout resolves saved pre-return pending guard fields: original_file_handles_closed, bootstrap_journal_closed, guard done/joined/closed/completion_wait_closed all true; shutdown 0.0532334 seconds, error null. Closure is accepted separately from preparation failure."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "resource_evidence": {
+    "minimum_free_disk_bytes": 78444490752,
+    "peak_caller_private_bytes": 105828352,
+    "peak_outer_job_bytes": 68419584,
+    "peak_outer_process_bytes": 62255104,
+    "minimum_available_ram_bytes": 8566390784,
+    "hard_deadline_seconds": 245,
+    "peak_supervisor_private_bytes": 60076032
+  },
+  "limitations": [
+    "File/text/JSON/hash/metadata review only; no Git, Python/import, AST, compilation, tests or runtime runner invoked. Actual tool output is Root-retained evidence; closure assessment also inspects underlying caller/supervisor/bootstrap records.",
+    "Exact WinError 3 path is retained in observed_error. Root-cause diagnosis remains separate; no deletion, mutation, relocation or retry is authorized by this review.",
+    "Owned lifecycle closure is limited to this new failed operation. Earlier review Git-process custody remains unproved, as do historical Q1/bootstrap004 cleanup and custody.",
+    "No passing P map, complete dependency closure, ABI/loader/Git execution, L/V/C or scientific acceptance. 117 candidates and 34 successor controls remain unexecuted, diagnostics005 held, bootstrap004 consumed, custody UNRESOLVED and scientific cells 0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "historical_custody_closed": false,
+  "historical_retry_allowed": false
+}

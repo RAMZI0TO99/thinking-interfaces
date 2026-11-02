@@ -1,0 +1,43 @@
+{
+  "publication_kind": "verbatim independent peer message transcription",
+  "static_checks": {
+    "sha256": "5bb4ba0ea5c75a36a7c34d15054fb080c087f1eccb99dca9e21c2d9bd1dc6e18",
+    "bytes": 5299,
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/final-static-checks.json"
+  },
+  "scientific_admission": false,
+  "runtime_admission": false,
+  "reviewer": "qd_closeout_review",
+  "p_admitted": false,
+  "obligations_discharged": 0,
+  "source_review": {
+    "sha256": "1fcb0a65c34eaf58361182a6696910fb7f5e52e559cae3bdfc5ce0d41dd50b8f",
+    "bytes": 2938,
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-review-v2.json"
+  },
+  "schema": "cho51_sc1_metadata_closeout_review_v1",
+  "review_text_sha256": "7d71ddca38a45c3dc5ca803a2a272c653047110d4a4ce387d39142cd9deb468d",
+  "status": "ACCEPTED_METADATA_CLOSEOUT_ONLY",
+  "source_reviewer": "qd_source_review",
+  "authors": [
+    "project_root"
+  ],
+  "root_acceptance": {
+    "sha256": "a9a4a263856fa2f0899a70872e76db1a0fdbd059a59816f29ed3c2297e52d8c6",
+    "bytes": 4327,
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/root-source-acceptance.json"
+  },
+  "qualification_accepted": false,
+  "findings": [],
+  "created_utc": "2026-11-02T09:40:18.8835784Z",
+  "full_q_feasibility": "NOT_ESTABLISHED",
+  "publisher": "project_root",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "review_text": "SC1 implementation independent metadata/documentation closeout review: ACCEPTED_METADATA_CLOSEOUT_ONLY; findings []. The final-static-checks, root-source-acceptance, source-candidate-v2 and source-review-v2 lengths and SHA-256 pins match. Root adoption retains distinct qd_source_review's confirmations for both published reviews; both review-text and confirmation UTF-8 hashes match. Review v1 identified SC-I1 and SC-I2; review v2 accepts their source-only corrections with no open findings. Independently rehashed all 18 current documents, 263 source pins, 6 design inputs, 3 support pins, 8,652 preservation files, all 5 preserved draft-v1 files against candidate-v1, and 12 archived prior pages: zero mismatches. The phase has 10 currently created predeclared root records and only the conditional draft-v1 directory with its five exact files and manifest; closeout-review.json remains the predeclared future publication. All 462 decoded local link occurrences resolve. Text inspection confirms 19 hash/RAM and 35 publisher/backend method declarations and a distinct mapped union of 516 held + 10 QD + 54 new = 580; this is not executed collection or qualification. Documentation retains 40 SC and 36 diagnostic scenarios unqualified, concrete trusted-host binding and complete discovery/bounded qualification/capture/timing gates open, complete-Q timing/output feasibility NOT_ESTABLISHED, P disabled and no second QD/full Q admission. Historical a1f12701 remains INCOMPLETE_REFUSED for 17/16, earlier failures/custody and open obligations remain unchanged, science remains 0/1020 and the freeze unsigned. This phase did not execute the new publisher; its predeclared metadata layout is distinct from the old QD ledger. Acceptance covers metadata/documentation closeout only, not implementation qualification, runtime, custody or science. Review used read-only file/text/JSON/hash/link inspection; no files written and no project imports/AST/compiler/native/runtime/tests/Git.",
+  "candidate": {
+    "sha256": "a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60",
+    "bytes": 50116,
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v2.json"
+  }
+}

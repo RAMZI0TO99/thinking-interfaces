@@ -1,0 +1,849 @@
+{
+  "schema": "cho51_provisional_import_proposals_v1",
+  "status": "MANUAL_UNRESOLVED",
+  "rows": [
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 3,
+      "literal_module": "__future__",
+      "relative_level": 0,
+      "proposed_base_module": "__future__",
+      "member_bindings": [
+        {
+          "member": "annotations",
+          "local": "annotations"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 5,
+      "literal_module": "hashlib",
+      "relative_level": 0,
+      "proposed_base_module": "hashlib",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 6,
+      "literal_module": "json",
+      "relative_level": 0,
+      "proposed_base_module": "json",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 7,
+      "literal_module": "math",
+      "relative_level": 0,
+      "proposed_base_module": "math",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 8,
+      "literal_module": "re",
+      "relative_level": 0,
+      "proposed_base_module": "re",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 9,
+      "literal_module": "dataclasses",
+      "relative_level": 0,
+      "proposed_base_module": "dataclasses",
+      "member_bindings": [
+        {
+          "member": "dataclass",
+          "local": "dataclass"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 10,
+      "literal_module": "types",
+      "relative_level": 0,
+      "proposed_base_module": "types",
+      "member_bindings": [
+        {
+          "member": "MappingProxyType",
+          "local": "MappingProxyType"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "line": 11,
+      "literal_module": "typing",
+      "relative_level": 0,
+      "proposed_base_module": "typing",
+      "member_bindings": [
+        {
+          "member": "Any",
+          "local": "Any"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 3,
+      "literal_module": "__future__",
+      "relative_level": 0,
+      "proposed_base_module": "__future__",
+      "member_bindings": [
+        {
+          "member": "annotations",
+          "local": "annotations"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 5,
+      "literal_module": "tomllib",
+      "relative_level": 0,
+      "proposed_base_module": "tomllib",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 6,
+      "literal_module": "dataclasses",
+      "relative_level": 0,
+      "proposed_base_module": "dataclasses",
+      "member_bindings": [
+        {
+          "member": "asdict",
+          "local": "asdict"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 7,
+      "literal_module": "pathlib",
+      "relative_level": 0,
+      "proposed_base_module": "pathlib",
+      "member_bindings": [
+        {
+          "member": "Path",
+          "local": "Path"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 8,
+      "literal_module": "typing",
+      "relative_level": 0,
+      "proposed_base_module": "typing",
+      "member_bindings": [
+        {
+          "member": "Any",
+          "local": "Any"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 10,
+      "literal_module": "docs.phase2.cho51_canonical_boundary_v1",
+      "relative_level": 0,
+      "proposed_base_module": "docs.phase2.cho51_canonical_boundary_v1",
+      "member_bindings": [
+        {
+          "member": "boundary",
+          "local": "Boundary"
+        }
+      ],
+      "proposed_member_modules": [
+        "docs.phase2.cho51_canonical_boundary_v1.boundary"
+      ],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 11,
+      "literal_module": ".contracts",
+      "relative_level": 1,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "member_bindings": [
+        {
+          "member": "AUTHORITY",
+          "local": "AUTHORITY"
+        },
+        {
+          "member": "LEDGER",
+          "local": "LEDGER"
+        },
+        {
+          "member": "OBLIGATIONS",
+          "local": "OBLIGATIONS"
+        },
+        {
+          "member": "PLAN",
+          "local": "PLAN"
+        },
+        {
+          "member": "PROFILE",
+          "local": "PROFILE"
+        },
+        {
+          "member": "AdapterCompatibility",
+          "local": "AdapterCompatibility"
+        },
+        {
+          "member": "AdapterIntent",
+          "local": "AdapterIntent"
+        },
+        {
+          "member": "canonical_json",
+          "local": "canonical_json"
+        },
+        {
+          "member": "decode_json",
+          "local": "decode_json"
+        },
+        {
+          "member": "exact_fields",
+          "local": "exact_fields"
+        },
+        {
+          "member": "exact_int",
+          "local": "exact_int"
+        },
+        {
+          "member": "relative_path",
+          "local": "relative_path"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 105,
+      "literal_module": "core.config",
+      "relative_level": 0,
+      "proposed_base_module": "core.config",
+      "member_bindings": [
+        {
+          "member": "canonical_config_json",
+          "local": "canonical_config_json"
+        },
+        {
+          "member": "config_digest",
+          "local": "config_digest"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 106,
+      "literal_module": "evaluation.phase2_protocol",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_protocol",
+      "member_bindings": [
+        {
+          "member": "TrialCatalog",
+          "local": "TrialCatalog"
+        },
+        {
+          "member": "nested_episode",
+          "local": "nested_episode"
+        },
+        {
+          "member": "source_selection",
+          "local": "source_selection"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 107,
+      "literal_module": "evaluation.phase2_records",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_records",
+      "member_bindings": [
+        {
+          "member": "envelope",
+          "local": "envelope"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.mapping",
+      "line": 108,
+      "literal_module": "evaluation.phase2_runner",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_runner",
+      "member_bindings": [
+        {
+          "member": "CasePlan",
+          "local": "CasePlan"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "line": 3,
+      "literal_module": "__future__",
+      "relative_level": 0,
+      "proposed_base_module": "__future__",
+      "member_bindings": [
+        {
+          "member": "annotations",
+          "local": "annotations"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "line": 5,
+      "literal_module": "re",
+      "relative_level": 0,
+      "proposed_base_module": "re",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "line": 6,
+      "literal_module": "dataclasses",
+      "relative_level": 0,
+      "proposed_base_module": "dataclasses",
+      "member_bindings": [
+        {
+          "member": "dataclass",
+          "local": "dataclass"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "line": 7,
+      "literal_module": "typing",
+      "relative_level": 0,
+      "proposed_base_module": "typing",
+      "member_bindings": [
+        {
+          "member": "Any",
+          "local": "Any"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "line": 9,
+      "literal_module": ".contracts",
+      "relative_level": 1,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "member_bindings": [
+        {
+          "member": "CONTROLLER",
+          "local": "CONTROLLER"
+        },
+        {
+          "member": "PROFILE",
+          "local": "PROFILE"
+        },
+        {
+          "member": "canonical_json",
+          "local": "canonical_json"
+        },
+        {
+          "member": "decode_json",
+          "local": "decode_json"
+        },
+        {
+          "member": "digest_text",
+          "local": "digest_text"
+        },
+        {
+          "member": "exact_fields",
+          "local": "exact_fields"
+        },
+        {
+          "member": "exact_int",
+          "local": "exact_int"
+        },
+        {
+          "member": "relative_path",
+          "local": "relative_path"
+        },
+        {
+          "member": "sha256",
+          "local": "sha256"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 3,
+      "literal_module": "__future__",
+      "relative_level": 0,
+      "proposed_base_module": "__future__",
+      "member_bindings": [
+        {
+          "member": "annotations",
+          "local": "annotations"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 5,
+      "literal_module": "tomllib",
+      "relative_level": 0,
+      "proposed_base_module": "tomllib",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 6,
+      "literal_module": "dataclasses",
+      "relative_level": 0,
+      "proposed_base_module": "dataclasses",
+      "member_bindings": [
+        {
+          "member": "FrozenInstanceError",
+          "local": "FrozenInstanceError"
+        },
+        {
+          "member": "asdict",
+          "local": "asdict"
+        },
+        {
+          "member": "replace",
+          "local": "replace"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 7,
+      "literal_module": "pathlib",
+      "relative_level": 0,
+      "proposed_base_module": "pathlib",
+      "member_bindings": [
+        {
+          "member": "Path",
+          "local": "Path"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 8,
+      "literal_module": "types",
+      "relative_level": 0,
+      "proposed_base_module": "types",
+      "member_bindings": [
+        {
+          "member": "MappingProxyType",
+          "local": "MappingProxyType"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 10,
+      "literal_module": "pytest",
+      "relative_level": 0,
+      "proposed_base_module": "pytest",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 12,
+      "literal_module": "core.config",
+      "relative_level": 0,
+      "proposed_base_module": "core.config",
+      "member_bindings": [
+        {
+          "member": "canonical_config_json",
+          "local": "canonical_config_json"
+        },
+        {
+          "member": "config_digest",
+          "local": "config_digest"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 13,
+      "literal_module": "core.provenance",
+      "relative_level": 0,
+      "proposed_base_module": "core.provenance",
+      "member_bindings": [
+        {
+          "member": "capture_source",
+          "local": "capture_source"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 14,
+      "literal_module": "docs.phase2.cho51_canonical_boundary_v1",
+      "relative_level": 0,
+      "proposed_base_module": "docs.phase2.cho51_canonical_boundary_v1",
+      "member_bindings": [
+        {
+          "member": "boundary",
+          "local": "Boundary"
+        }
+      ],
+      "proposed_member_modules": [
+        "docs.phase2.cho51_canonical_boundary_v1.boundary"
+      ],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 15,
+      "literal_module": "docs.phase2.cho51_p3_adapter_v2",
+      "relative_level": 0,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2",
+      "member_bindings": [
+        {
+          "member": "contracts",
+          "local": "Contracts"
+        }
+      ],
+      "proposed_member_modules": [
+        "docs.phase2.cho51_p3_adapter_v2.contracts"
+      ],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 16,
+      "literal_module": "docs.phase2.cho51_p3_adapter_v2",
+      "relative_level": 0,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2",
+      "member_bindings": [
+        {
+          "member": "mapping",
+          "local": "Mapping"
+        }
+      ],
+      "proposed_member_modules": [
+        "docs.phase2.cho51_p3_adapter_v2.mapping"
+      ],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 17,
+      "literal_module": "docs.phase2.cho51_worker_bridge_v1.worker_bridge",
+      "relative_level": 0,
+      "proposed_base_module": "docs.phase2.cho51_worker_bridge_v1.worker_bridge",
+      "member_bindings": [
+        {
+          "member": "Cho51WorkerRoute",
+          "local": "Cho51WorkerRoute"
+        },
+        {
+          "member": "from_verified_full_route",
+          "local": "from_verified_full_route"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 18,
+      "literal_module": "evaluation.phase2_cho_case_inputs",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_cho_case_inputs",
+      "member_bindings": [
+        {
+          "member": "ChoCaseInputPins",
+          "local": "ChoCaseInputPins"
+        },
+        {
+          "member": "ChoFirstTrancheRoute",
+          "local": "ChoFirstTrancheRoute"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 19,
+      "literal_module": "evaluation.phase2_profile_binding",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_profile_binding",
+      "member_bindings": [
+        {
+          "member": "ChoProfileAssets60Hz",
+          "local": "ChoProfileAssets60Hz"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 20,
+      "literal_module": "evaluation.phase2_protocol",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_protocol",
+      "member_bindings": [
+        {
+          "member": "TrialCatalog",
+          "local": "TrialCatalog"
+        },
+        {
+          "member": "nested_episode",
+          "local": "nested_episode"
+        },
+        {
+          "member": "source_selection",
+          "local": "source_selection"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 21,
+      "literal_module": "evaluation.phase2_records",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_records",
+      "member_bindings": [
+        {
+          "member": "envelope",
+          "local": "envelope"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_mapping",
+      "line": 22,
+      "literal_module": "evaluation.phase2_runner",
+      "relative_level": 0,
+      "proposed_base_module": "evaluation.phase2_runner",
+      "member_bindings": [
+        {
+          "member": "CasePlan",
+          "local": "CasePlan"
+        },
+        {
+          "member": "environment_digest",
+          "local": "environment_digest"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "line": 3,
+      "literal_module": "copy",
+      "relative_level": 0,
+      "proposed_base_module": "copy",
+      "member_bindings": [
+        {
+          "member": "deepcopy",
+          "local": "deepcopy"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "line": 4,
+      "literal_module": "dataclasses",
+      "relative_level": 0,
+      "proposed_base_module": "dataclasses",
+      "member_bindings": [
+        {
+          "member": "FrozenInstanceError",
+          "local": "FrozenInstanceError"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "line": 6,
+      "literal_module": "pytest",
+      "relative_level": 0,
+      "proposed_base_module": "pytest",
+      "member_bindings": [],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "line": 8,
+      "literal_module": ".contracts",
+      "relative_level": 1,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2.contracts",
+      "member_bindings": [
+        {
+          "member": "CONTROLLER",
+          "local": "CONTROLLER"
+        },
+        {
+          "member": "PROFILE",
+          "local": "PROFILE"
+        },
+        {
+          "member": "canonical_json",
+          "local": "canonical_json"
+        },
+        {
+          "member": "sha256",
+          "local": "sha256"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    },
+    {
+      "module": "docs.phase2.cho51_p3_adapter_v2.test_telemetry",
+      "line": 9,
+      "literal_module": ".telemetry",
+      "relative_level": 1,
+      "proposed_base_module": "docs.phase2.cho51_p3_adapter_v2.telemetry",
+      "member_bindings": [
+        {
+          "member": "PHASES",
+          "local": "PHASES"
+        },
+        {
+          "member": "TimingAssessment",
+          "local": "TimingAssessment"
+        },
+        {
+          "member": "TimingSegment",
+          "local": "TimingSegment"
+        },
+        {
+          "member": "assess_timing_trace",
+          "local": "assess_timing_trace"
+        }
+      ],
+      "proposed_member_modules": [],
+      "origin_resolution": "UNRESOLVED",
+      "runtime_authorized": false
+    }
+  ]
+}

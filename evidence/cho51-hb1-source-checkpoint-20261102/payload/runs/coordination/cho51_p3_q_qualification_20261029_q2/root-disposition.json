@@ -1,0 +1,28 @@
+{
+  "restart_qualified": false,
+  "created_utc": "2026-10-29T09:59:59.1540629Z",
+  "successor": "Distinct Q3 UTC string handling and targeted controls with source review/adoption/fresh admission/actual review",
+  "scientific_admission": false,
+  "source_and_attempt_frozen": true,
+  "actual_review": {
+    "sha256": "201d23ba407ea9e0fc8c829ded08b36011d7e7f8c2f49f99813dc9f85617fb4c",
+    "path": "actual-review.json",
+    "bytes": 16813
+  },
+  "scope": "Preclaim/precompiler/prechild refusal with original caller/guard/journal/file closure under reviewed platform trust; native Job mechanisms unexercised",
+  "author": "project_root",
+  "tests_passed": 0,
+  "historical_custody_closed": false,
+  "launch_authorized": false,
+  "boundary_qualified": false,
+  "retry_allowed": false,
+  "schema": "cho51_q_root_failure_disposition_v1",
+  "operation_id": "d08269a8-5052-4c2a-910a-d3f1e3307286",
+  "historical_retry_allowed": false,
+  "fault_controls_passed": 0,
+  "timestamp_mechanism": "Later metadata strongly supports implicit JSON date coercion plus timezone reinterpretation; contemporaneous operands not captured",
+  "status": "FAILED_CONSUMED_PRECOMPILER_BOOTSTRAP_CLOSED",
+  "historical_operation_released": false,
+  "complete_dependency_closure": false,
+  "q1_status": "FAILED_CONSUMED_CUSTODY_UNKNOWN"
+}

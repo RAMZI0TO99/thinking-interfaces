@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_host_binding_design_coordination_v1",
+  "admission": false,
+  "design_directory": "docs/phase2/cho51_p3_host_binding_v1",
+  "scope": "source-only trusted-host binding and bounded qualification design/review",
+  "runtime_operations": 0,
+  "max_active_peers": 1,
+  "conditional_snapshots": "draft-v1/v2/v3: exact changed design files plus manifest before corrections",
+  "p_enabled": false,
+  "author": "project_root",
+  "outside_chat_contact": false,
+  "peer_ownership": "read-only audit/review; messages only; no files",
+  "created_utc": "2026-11-02T09:53:52.3882178Z",
+  "design_files": [
+    "README.md",
+    "binding.md",
+    "qualification.md",
+    "roster.json",
+    "readiness.json",
+    "source-map.json",
+    "scenarios.json"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "design-review-v1.json",
+    "candidate-v2.json",
+    "design-review-v2.json",
+    "candidate-v3.json",
+    "design-review-v3.json",
+    "candidate-v4.json",
+    "design-review-v4.json",
+    "root-design-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "tests_executed": 0,
+  "root_ownership": [
+    "seven design files",
+    "phase metadata transcription",
+    "archive",
+    "current docs and milestone"
+  ],
+  "milestone": "docs/phase2/cho51_p3_host_binding_design_20261102.md"
+}

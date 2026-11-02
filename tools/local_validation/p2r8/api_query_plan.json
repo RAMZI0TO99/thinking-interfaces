@@ -1,0 +1,71 @@
+{
+  "os_version": "10.0.26200",
+  "negative_query": "api-ms-win-codex-absent-l999-999-999.dll",
+  "exact_query_names": [
+    "api-ms-win-core-datetime-l1-1-0.dll",
+    "api-ms-win-core-debug-l1-1-0.dll",
+    "api-ms-win-core-errorhandling-l1-1-0.dll",
+    "api-ms-win-core-file-l1-1-0.dll",
+    "api-ms-win-core-interlocked-l1-1-0.dll",
+    "api-ms-win-core-libraryloader-l1-2-0.dll",
+    "api-ms-win-core-localization-l1-2-0.dll",
+    "api-ms-win-core-processenvironment-l1-1-0.dll",
+    "api-ms-win-core-processthreads-l1-1-0.dll",
+    "api-ms-win-core-processthreads-l1-1-1.dll",
+    "api-ms-win-core-rtlsupport-l1-1-0.dll",
+    "api-ms-win-core-synch-l1-1-0.dll",
+    "api-ms-win-core-synch-l1-2-0.dll",
+    "api-ms-win-core-sysinfo-l1-1-0.dll"
+  ],
+  "files": [
+    {
+      "path": "C:/Windows/System32/apisetschema.dll",
+      "file_version": "10.0.26100.8972 (WinBuild.160101.0800)",
+      "sha256": "e485e3cf63919cd5dc5ec8624e94c3645e8bf3c4445ae937fba045bea3d88bb8",
+      "bytes": 194048
+    },
+    {
+      "path": "C:/Windows/System32/kernelbase.dll",
+      "file_version": "10.0.26100.8972 (WinBuild.160101.0800)",
+      "sha256": "9d26852459745322b704e2a49e448922839c584d06e208cf9abcd0d857c4b7cd",
+      "bytes": 4199672
+    },
+    {
+      "path": "C:/Windows/System32/cabinet.dll",
+      "file_version": "5.00 (WinBuild.160101.0800)",
+      "sha256": "074504cad602a2a69fceb0a4e62ba233525ad3114017948d2b7fa22b640046d5",
+      "bytes": 175024
+    },
+    {
+      "path": "C:/Windows/System32/fontsub.dll",
+      "file_version": "10.0.26100.8972 (WinBuild.160101.0800)",
+      "sha256": "f5606407b1c3501f98e616092859c15daf70673e1a17b5237a22a94a8467f4da",
+      "bytes": 151552
+    },
+    {
+      "path": "C:/Windows/System32/mswsock.dll",
+      "file_version": "10.0.26100.1 (WinBuild.160101.0800)",
+      "sha256": "46ddbb115b2d6fbf9216f31c2b7c213018709fecaa56e3df835d40a1f629f5b2",
+      "bytes": 451904
+    },
+    {
+      "path": "C:/Windows/System32/kernel32.dll",
+      "file_version": "10.0.26100.8972 (WinBuild.160101.0800)",
+      "bytes": 836208,
+      "sha256": "0ab61f2e0d412a585233f1b308c120cba74f800c1030bffe0aabd20df8c6d907"
+    },
+    {
+      "path": "C:/Windows/System32/ntdll.dll",
+      "file_version": "10.0.26100.8972 (WinBuild.160101.0800)",
+      "bytes": 2517928,
+      "sha256": "b9775b65c47564c2571fb9175e07ec14ce2a771613230afb2c284a0501a369a7"
+    }
+  ],
+  "schema": "cho51_p8_resident_reference_plan_v1",
+  "target_host_loading_authorized": false,
+  "baseline_modules": [
+    "C:/Windows/System32/kernelbase.dll",
+    "C:/Windows/System32/kernel32.dll",
+    "C:/Windows/System32/ntdll.dll"
+  ]
+}

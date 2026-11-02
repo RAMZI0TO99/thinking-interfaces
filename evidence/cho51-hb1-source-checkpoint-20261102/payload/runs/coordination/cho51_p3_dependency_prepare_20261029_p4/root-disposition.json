@@ -1,0 +1,19 @@
+{
+  "physical_map_accepted": false,
+  "scientific_admission": false,
+  "author": "project_root",
+  "operation_id": "ad3cee21-4d81-42f9-9f7e-52410462bdda",
+  "actual_review": {
+    "bytes": 4212,
+    "sha256": "92033fc515e1ef75ebb1d302c57fb93647be1997732e69d4d422b1d7f5a2b0d8",
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_p4/actual-review.json"
+  },
+  "schema": "cho51_p_root_disposition_v1",
+  "retry_same_attempt": false,
+  "actual_tool_exit_code": 1,
+  "final_full_input_verification_established": false,
+  "created_utc": "2026-10-29T14:00:48.0354912Z",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "new_operation_owned_lifecycle_closed": true,
+  "next": "New reviewed API host metadata grammar successor, preserving exact namespace and declared trust checks"
+}

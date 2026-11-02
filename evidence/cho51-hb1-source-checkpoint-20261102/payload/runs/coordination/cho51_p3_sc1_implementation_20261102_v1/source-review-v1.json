@@ -1,0 +1,37 @@
+{
+  "scientific_admission": false,
+  "created_utc": "2026-11-02T09:29:25.2051237Z",
+  "schema": "cho51_sc1_independent_source_review_v1",
+  "status": "CHANGES_REQUIRED",
+  "publication_kind": "verbatim independent peer message transcription",
+  "review_text": "SC1 implementation candidate-v1 independent source review: CHANGES_REQUIRED. Candidate is 49,517 bytes, SHA256 c36d571afc4ee4889f23209b8e7fbf8171b6c7322542b7aff00bb8edd90623bf. All 263 source pins, 6 accepted design inputs, 3 support pins and 43 predecessor pins match. The 43 normalized counterparts have exactly 8 substantive changes. Findings: SC-I1[P1], tools/local_validation/sc1/publisher.py:511–522 checks complete census before final input/publication verification and backend closure, then marks CLOSED without a fresh census. An artifact created during verification/close can therefore escape the final closed-allocation decision. Require a trusted-host census after successful backend close and before CLOSED under the live checkpoint; mismatch must consume/refuse. Add an injected late artifact during verification/close, rather than only before close. SC-I2[P2], publisher.py:407–408 uses cached _source_confirmed for admission metadata without freshly verifying the persisted contract_adoption pin/native identity. The new confirmation file is not yet retained by NativeBackend.reader, and _create verifies only allocation, so same-path confirmation-content mutation can pass census and permit this transition. Freshly verify both persisted source_review and contract_adoption references before admission; changed bytes/identity must consume/refuse, with supplied-backend controls. Scope: reviewed all 5 sc1 component files, new implementation contract, 19 hash/memory test sources and 33 publisher/backend test sources; both hash implementations are identical and preserve reads/checkpoints/sentinels/fresh full passes, while fresh typed RAM storage retains live query order/thresholds/watchdog behavior. Native publication prewrite facts, bounded writes, original readback and failure closure are present; tests remain unexecuted supplied models. Trusted cross-session claim, authenticated peer/global census, loaded-code/runtime binding, complete discovery/runner and complete-Q timing/output feasibility remain unintegrated or unestablished, not certified by source review. The textual 526+52=578 map is not executed collection; all 40 SC and 36 diagnostic scenarios remain unqualified. Entry points refuse; P, Q, second QD and science remain unadmitted; historical a1f12701 remains INCOMPLETE_REFUSED17/16 and all obligations stay open. No files were written and no project runtime/import/AST/compiler/native/tests/Git executed.",
+  "candidate": {
+    "sha256": "c36d571afc4ee4889f23209b8e7fbf8171b6c7322542b7aff00bb8edd90623bf",
+    "path": "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v1.json",
+    "bytes": 49517
+  },
+  "runtime_operations": 0,
+  "publisher": "project_root",
+  "reviewer": "qd_source_review",
+  "p_admitted": false,
+  "tests_executed": 0,
+  "qualification_accepted": false,
+  "runtime_admission": false,
+  "review_text_sha256": "5dd7300cbdce7661c3e7c5f614e3c4cbe2056e9fc8ce1d72e575d1a615777cd8",
+  "authors": [
+    "project_root",
+    "sc1_publisher"
+  ],
+  "findings": [
+    {
+      "summary": "Missing post-close operation census",
+      "id": "SC-I1",
+      "priority": 1
+    },
+    {
+      "summary": "Admission uses cached source confirmation without persisted-reference reverification",
+      "id": "SC-I2",
+      "priority": 2
+    }
+  ]
+}
