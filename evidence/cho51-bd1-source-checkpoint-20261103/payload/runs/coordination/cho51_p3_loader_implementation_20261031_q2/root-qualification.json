@@ -1,0 +1,111 @@
+{
+  "l_native_cases": [
+    "transient",
+    "overflow",
+    "badreason",
+    "badutf16",
+    "pathbound"
+  ],
+  "api_mapping_native_identity": "7a7c35f67c35ae2f:70565f00000002000000000000000000",
+  "l_native_bundle": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-bundle_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 10318,
+    "sha256": "1c74b9f40495c83a6333068a0bd5401476b928c5dd62794b9b7a5643bfa562b3"
+  },
+  "author": "project_root",
+  "boundary_qualified": false,
+  "native_helper": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-helper_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+    "bytes": 21504,
+    "sha256": "4308e2243171f0670f5e25fa6594aab87b22b23f77e8d2f820d6c2489e5d8f84"
+  },
+  "historical_operation_released": false,
+  "test_count": 356,
+  "api_mapping": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/api-mapping_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 10293,
+    "sha256": "67a89be17c1bbfe070d3c1be9053b77b41b82fca318166a027615908493b10dd"
+  },
+  "actual_review": {
+    "sha256": "0d01c70c7ca1f39cc58da1617dbdf6b0b3cb5cb6353434ccf5a7bae348e8dd17",
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/actual-review.json",
+    "bytes": 37603
+  },
+  "source_review": {
+    "sha256": "e588362a37076022bbc0d6662845e0f76aa43a6753773b4cb06f8ac403596887",
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/source-review.json",
+    "bytes": 32315
+  },
+  "native_builder_controls": {
+    "empty_job_closed": true,
+    "emitted_pe_verified": true,
+    "l_empty_job_closed": true,
+    "loaded_same_pe_bytes": true,
+    "l_invalid_process_count_refused": true,
+    "helper_identity": "7a7c35f67c35ae2f:6d565f00000002000000000000000000",
+    "original_output_identity_retained": true,
+    "l_two_process_limits_query_verified": true,
+    "p_limits_query_verified": true
+  },
+  "native_diagnostic_native_identity": "7a7c35f67c35ae2f:6f565f00000002000000000000000000",
+  "artifact_handoff": {
+    "original_writers_held_through_consumers": true,
+    "consumers_reaped": true,
+    "final_original_recheck": true,
+    "artifacts": [
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-helper_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+          "bytes": 21504,
+          "sha256": "4308e2243171f0670f5e25fa6594aab87b22b23f77e8d2f820d6c2489e5d8f84"
+        },
+        "writer_share": 1,
+        "role": "helper",
+        "native_identity": "7a7c35f67c35ae2f:6d565f00000002000000000000000000"
+      },
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-diagnostic_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+          "bytes": 9970,
+          "sha256": "9529119edcd7bfe53e952e90420fde4b57230446d4a6233a8329f9daaa11781e"
+        },
+        "writer_share": 1,
+        "role": "diagnostic",
+        "native_identity": "7a7c35f67c35ae2f:6f565f00000002000000000000000000"
+      },
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/api-mapping_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+          "bytes": 10293,
+          "sha256": "67a89be17c1bbfe070d3c1be9053b77b41b82fca318166a027615908493b10dd"
+        },
+        "writer_share": 1,
+        "role": "mapping",
+        "native_identity": "7a7c35f67c35ae2f:70565f00000002000000000000000000"
+      }
+    ]
+  },
+  "l_native_bundle_identity": "7a7c35f67c35ae2f:7c565f00000002000000000000000000",
+  "created_utc": "2026-10-31T06:40:45.8360238Z",
+  "timestamp_controls": 8,
+  "restart_qualified": false,
+  "schema": "cho51_p2q_root_qualification_v1",
+  "historical_retry_allowed": false,
+  "status": "QUALIFIED_LQ1_MECHANISMS_ONLY",
+  "sharing_controls": {
+    "capability_authentication": true,
+    "cooperative_read_protected": true,
+    "ordinary_reader_strict": true
+  },
+  "native_fault_controls": 2,
+  "operation_id": "611baed2-cdb9-4ac5-aa67-091058962ec3",
+  "scientific_admission": false,
+  "launch_authorized": false,
+  "complete_dependency_closure": false,
+  "native_diagnostic": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-diagnostic_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 9970,
+    "sha256": "9529119edcd7bfe53e952e90420fde4b57230446d4a6233a8329f9daaa11781e"
+  },
+  "historical_custody_closed": false
+}

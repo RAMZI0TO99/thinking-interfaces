@@ -1,0 +1,14 @@
+{
+  "schema": "cho51_p2_static_path_diagnosis_v1",
+  "created_utc": "2026-10-29T13:10:38.3106388Z",
+  "method": "File/metadata read only; no Python or runtime replay",
+  "observed_runtime_error": "FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:/Aenv/pro3/evidence/cho51-worker-lifecycle-20261015/artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_successes/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.success.json'",
+  "path": "D:/Aenv/pro3/evidence/cho51-worker-lifecycle-20261015/artifacts/runs/coordination/cho51_worker_lifecycle_20261015_v1/validation_001/fixture/runs/phase2/lifecycle/engineering_successes/3a437a05ebb8d55d0157ba0fc1bea7d08d8822dfd9c457dc09a52d5574ed0784.success.json",
+  "path_characters": 261,
+  "dotnet_file_exists": true,
+  "file_bytes": 452,
+  "windows_LongPathsEnabled": 0,
+  "inference": "Legacy unprefixed Python/Win32 stat cannot address this261-character path under current Windows configuration. The saved error proves the refused path, not a complete causal trace. New version will use extended API transport only after canonical validation.",
+  "settings_changed": false,
+  "runtime_executed": false
+}

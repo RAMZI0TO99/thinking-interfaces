@@ -1,0 +1,228 @@
+{
+  "schema": "cho51_static_api_host_diagnosis_v1",
+  "actual_operation": "ad3cee21-4d81-42f9-9f7e-52410462bdda",
+  "inference": "Parser and supervisor DLL-only host predicate cannot represent this exact pinned Windows namespace. No host or API name is added to policy by this diagnosis; no executable image is loaded.",
+  "distinct_non_dll_hosts": [
+    "clfs.sys",
+    "clipsp.sys",
+    "cmimcext.sys",
+    "dxgkrnl.sys",
+    "globmerger.sys",
+    "hvsocket.sys",
+    "netio.sys",
+    "ntosext.sys",
+    "tm.sys",
+    "werkernel.sys",
+    "win32k.sys",
+    "win32kbase.sys",
+    "win32kfull.sys",
+    "winaccel.sys",
+    "winspool.drv"
+  ],
+  "source_policy": {
+    "bytes": 164960,
+    "sha256": "53f8ae9e94aafa9f4137988b46cea049af48d503d16f06df4e27b3feed94a0e4",
+    "path": "tools/local_validation/p2r4/native_policy.json"
+  },
+  "actual_error": "Refusal: API host basename",
+  "scientific_admission": false,
+  "created_utc": "2026-10-29T13:59:49.7134681Z",
+  "method": "File-only review of already pinned API namespace and source predicate",
+  "namespace_entries": 984,
+  "non_dll_host_entries": 48,
+  "runtime_executed": false,
+  "rows": [
+    {
+      "api": "ext-ms-win-accel-api-km-l1-1-0.dll",
+      "host": "winaccel.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-base-export-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-baseinit-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-common-export-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-common-input-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-common-inputrim-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-common-user-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-dcomp-l1-1-3.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-ddccigdi-l1-1-1.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-dxgdi-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-dxgk-internal-l1-1-0.dll",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-dxgk-l1-1-0.dll",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-flipmgr-l1-1-1.dll",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-full-export-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-full-float-export-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fulldcompbase-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fulldwm-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fullgdi-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fulluser-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fulluser64-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-fulluserbase-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-gdi-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-input-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-inputmit-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-inputrim-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-mininputmitbase-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-opmgdi-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-surfmgr-l1-1-1.dll",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-tokenmgr-l1-1-0.dll",
+      "host": "dxgkrnl.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-user-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-userdisplay-l1-1-0.dll",
+      "host": "win32kbase.sys"
+    },
+    {
+      "api": "ext-ms-win-core-win32k-userinit-l1-1-0.dll",
+      "host": "win32k.sys"
+    },
+    {
+      "api": "ext-ms-win-fs-clfs-l1-1-0.dll",
+      "host": "clfs.sys"
+    },
+    {
+      "api": "ext-ms-win-moderncore-win32k-base-ntgdi-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-moderncore-win32k-base-ntuser-l1-1-0.dll",
+      "host": "win32kfull.sys"
+    },
+    {
+      "api": "ext-ms-win-moderncore-win32k-base-sysentry-l1-1-0.dll",
+      "host": "win32k.sys"
+    },
+    {
+      "api": "ext-ms-win-netio-l1-1-0.dll",
+      "host": "netio.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-clipsp-l1-1-0.dll",
+      "host": "clipsp.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-globmerger-l1-1-0.dll",
+      "host": "globmerger.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-kcminitcfg-l1-1-0.dll",
+      "host": "cmimcext.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-tm-l1-1-0.dll",
+      "host": "tm.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-ucode-l1-1-0.dll",
+      "host": "ntosext.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-werkernel-l1-1-1.dll",
+      "host": "werkernel.sys"
+    },
+    {
+      "api": "ext-ms-win-ntos-win32k-l1-1-0.dll",
+      "host": "win32k.sys"
+    },
+    {
+      "api": "ext-ms-win-printer-winspool-core-l1-1-0.dll",
+      "host": "winspool.drv"
+    },
+    {
+      "api": "ext-ms-win-printer-winspool-l1-2-0.dll",
+      "host": "winspool.drv"
+    },
+    {
+      "api": "ext-ms-win-printer-winspool-l1-1-4.dll",
+      "host": "winspool.drv"
+    },
+    {
+      "api": "ext-ms-win-vmbus-hvsocket-l1-1-0.dll",
+      "host": "hvsocket.sys"
+    }
+  ]
+}

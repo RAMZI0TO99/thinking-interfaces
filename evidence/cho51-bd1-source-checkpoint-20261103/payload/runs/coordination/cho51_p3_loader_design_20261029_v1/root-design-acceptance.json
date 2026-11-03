@@ -1,0 +1,59 @@
+{
+  "schema": "cho51_l_root_design_acceptance_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "author": "project_root",
+  "created_utc": "2026-10-29T18:12:18.6200388Z",
+  "review": {
+    "path": "runs/coordination/cho51_p3_loader_design_20261029_v1/design-review-revision1.json",
+    "bytes": 21190,
+    "sha256": "c816cea771db0f1095ac0c824d798b1783c0d4434e226f3f9b9f112f240c626d"
+  },
+  "design_files": {
+    "docs/phase2/cho51_p3_loader_design_20261029.md": {
+      "sha256": "85b5f22a99c19f9bcffbf7ba38f79d4108ec51e5ddbbe0d4437c9e137adba415",
+      "bytes": 22883
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/README.md": {
+      "sha256": "87a8807e72676d5fac89757d711fed3bb40f70e7caceacce52098695e242bb33",
+      "bytes": 817
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/record-contract.md": {
+      "sha256": "9e310115271e96926925828aa9b74fe8fcfbe07d40e0658792bf6b6f380fd4bd",
+      "bytes": 13299
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/source-trace.md": {
+      "sha256": "7626d538c5669724a17bd4006a9798f493381dad21bd8c1f8f90bba10b17980f",
+      "bytes": 5136
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/acceptance-cases.json": {
+      "sha256": "13abd87a491880b2e33e6d9f966123e551cdd6199c63cba6f63a5945535085ec",
+      "bytes": 13884
+    }
+  },
+  "historical_context_archive": {
+    "path": "docs/history/loader_design_20261029/manifest.json",
+    "bytes": 2261,
+    "sha256": "426f47107363f0a7ea7995124dc13b896180d43ec95f43f43ece63ab3ffa2465",
+    "snapshot_count": 12,
+    "all_snapshot_bytes_and_hashes_match": true,
+    "interpretation": "The active context paths in the input index identify their exact pre-step bytes observed during this review. Twelve byte-identical archived snapshots preserve that historical context. This review does not freeze future active handoff/coordination documentation; later documentation maintenance must preserve these snapshots and distinguish the later state."
+  },
+  "qualification_scenarios": 40,
+  "qualification_scenarios_executed": 0,
+  "static_candidate_functions": 25,
+  "static_expected_candidates": 117,
+  "candidate_tests_executed": 0,
+  "successor_controls_executed": 0,
+  "preservation_files": 3322,
+  "scope": "Design only; not implementation-specific contract adoption, source acceptance, operational admission or execution",
+  "next_step": "Implement the new L observer, guarded bootstrap and collection runner with finite plans; independently review, qualify under fresh Q, prepare fresh P including new dependencies, then separately admit L",
+  "runtime_execution_performed": false,
+  "operational_admission_created": false,
+  "launch_authorized": false,
+  "loader_qualified": false,
+  "abi_qualified": false,
+  "historical_custody_closed": false,
+  "scientific_admission": false,
+  "accepted_scientific_cells": 0,
+  "final_freeze_signed": false
+}

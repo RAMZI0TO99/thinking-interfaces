@@ -1,0 +1,59 @@
+{
+  "schema": "cho51_bd_readiness_v1",
+  "status": "DESIGN_ONLY",
+  "sources": {
+    "docs/phase2/cho51_p3_b0b1_v1/README.md": {
+      "bytes": 2220,
+      "sha256": "ef1c771a49e75a819bf48d85598fda4c72aa8cc5ad1dd426a1a8213145485169"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/provider.md": {
+      "bytes": 9209,
+      "sha256": "2ed0e5f6f6a7615af81d0e597a1938ff9013d60a2c362505ceb947a0a3a645d0"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/driver.md": {
+      "bytes": 7306,
+      "sha256": "9fa25927f15b7cf3d82098b1b9e236d4272948e453e1cf5b47bd9e15336294ba"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/retention.md": {
+      "bytes": 9037,
+      "sha256": "517a03d50771a9f8bcd5bea4d9fc5a7bfd7320b6e933bd92e956b1809db6d74d"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/packing.json": {
+      "bytes": 32171,
+      "sha256": "474440cfcf00ee730327c92f218aa785e55490cccbac578eec4ccd07b224257f"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/qualification.json": {
+      "bytes": 16475,
+      "sha256": "292facb5b3f551670613c17e4c325917a4c645d7d19ec87657fedcb318ef8e69"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/cohort-debt.json": {
+      "bytes": 746942,
+      "sha256": "53f712ef373553fb142e63f6ff445d40a3cc87b910d8f3afffd9c9d5d26c1c97"
+    }
+  },
+  "new_design_files": 8,
+  "implementation_files": 0,
+  "new_methods": 0,
+  "full_count": 1125,
+  "modules": 51,
+  "q_count": 360,
+  "s_count": 140,
+  "held": 765,
+  "representation_fit": "CONDITIONAL_E1_ONLY",
+  "complete_capture_closure_packing": "NOT_ESTABLISHED",
+  "whole_operation_feasibility": "NOT_ESTABLISHED",
+  "entry": "REFUSED_UNADMITTED",
+  "blocking_gates": [
+    "Actual independently adopted H0 trust/access/native capability and retained observation boundary",
+    "Source/build/runtime/ABI/dependency/effect closure and exact finite implementation",
+    "Complete normal/failure/control/transport populations and closed wrappers",
+    "Whole process/Job allocation peak and all per-stage costs/F/M",
+    "Original final M witness delivery/retention within roles and clock",
+    "Independent native qualification and complete actual result acceptance"
+  ],
+  "next": "Source-only versioned native G0/S0 skeleton and fixed wire/record codecs with explicit unavailable-H0 refusal; enumerate finite effects/tags/transitions and update held-test accounting. No compile/run. Actual H0 adoption/build/qualification separate.",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

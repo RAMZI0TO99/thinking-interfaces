@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_p_root_disposition_v1",
+  "author": "project_root",
+  "created_utc": "2026-10-29T13:10:38.3106388Z",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "operation_id": "2cc07db6-c210-4e9e-bed9-788d5abb8a0c",
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_p2/actual-review.json",
+    "bytes": 5422,
+    "sha256": "272edc67dbfcfb250d67cb40bd2a140f7dcfa366e3c62a981f8ae014c0719137"
+  },
+  "actual_tool_exit_code": 1,
+  "new_operation_owned_lifecycle_closed": true,
+  "physical_map_accepted": false,
+  "retry_of_this_attempt_allowed": false,
+  "next": "New reviewed Q3/P3 source versions for strict long-path API transport; no change to Windows settings or guard limits",
+  "historical_custody_closed": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

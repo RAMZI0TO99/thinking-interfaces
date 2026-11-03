@@ -1,0 +1,63 @@
+{
+  "schema": "cho51_pc_design_adoption_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "design_author": "project_root",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_provider_contract_design_20261103_v1/candidate-v2.json",
+    "pin": {
+      "bytes": 87673,
+      "sha256": "9ccdf49b2434c44f0ee81945a856e9709c3608def49947295919e0862f1b5b8b"
+    }
+  },
+  "review": {
+    "path": "runs/coordination/cho51_p3_provider_contract_design_20261103_v1/design-review-v2.json",
+    "pin": {
+      "bytes": 3731,
+      "sha256": "f8a8f02ef4717effe902fa24baf6e5e428dd21a57c3b9ba0cc97fe3e057d77e4"
+    }
+  },
+  "saved_review_confirmation": "Confirmed PC1 design-review-v2.json exact3731 bytes SHA256f8a8f02ef4717effe902fa24baf6e5e428dd21a57c3b9ba0cc97fe3e057d77e4; UTF8 review_text SHA25654b1b977a530f3ffff0627201e595e495e494066b327ba5abceba93a36326cb3. Saved text exactly matches revised review; candidate9ccdf49b…2f1b5b8b/87673bytes, ACCEPTED_DESIGN_ONLY/findings=[], resolved PC-D01/D02, reviewer cm4_design_review_sol/publisher project_root and design-only/no-authority/no-runtime limits are correct.9693 preservation carryforward and472 current rechecks are correctly separated from a repeated full scan. Review ownership released for distinct metadata closeout; no writes/extra record.",
+  "findings": [],
+  "resolved_findings": [
+    "PC-D01",
+    "PC-D02"
+  ],
+  "adoption": "PC1 independent B0/B1 obligations, closed supplied projections/cross-join/refusal and conditional summary reservations only",
+  "source_pins": 468,
+  "new_files": 8,
+  "external_reference_only_pins": 4,
+  "preserved_inputs": 9693,
+  "preservation_basis": "Completed independent v1 bulk-native audit of9693 preserved files; corrected v2 only four new design files, current472 unique source/reference rechecks and exact archive confirmed; no repeated full preservation scan and no evidence from interrupted first scan",
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "baseline_held": 516,
+  "new_test_unqualified": 186,
+  "new_methods": 0,
+  "cm6s_outside_both": 46,
+  "supplied_projections": 3,
+  "conditional_summary_regions": 2,
+  "report_files": 33,
+  "report_bytes": 18890752,
+  "closeout_roles": 16,
+  "closeout_reserved_bytes": 3293184,
+  "new_scenarios": 32,
+  "qualified_scenarios": 0,
+  "original_b0_b1": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+  "full_population_capture_packing": "NOT_ESTABLISHED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "implementation_changed": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "next": "Source-only implementation/review of supplied PC1 projection parsers, independent expected binding/cross-join and refusal classification with exact test roster/budget updates",
+  "limits": "No original provider/driver authority, full ledger/capture/closure packing, actual resource feasibility, new code/method, runtime/admission/qualification, debt discharge or scientific acceptance; all guards and obligations retained"
+}

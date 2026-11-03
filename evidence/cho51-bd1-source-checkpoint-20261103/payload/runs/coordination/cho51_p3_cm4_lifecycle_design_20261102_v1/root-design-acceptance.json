@@ -1,0 +1,37 @@
+{
+  "schema": "cho51_cm4_design_root_adoption_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "design_reviewer": "cm4_design_review_sol",
+  "reviewer_role": "cm4_design_review",
+  "peer_substitution": "Planned Terra peer failed at model capacity before work; independent Sol peer filled same role",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "bytes": 67195,
+    "sha256": "e426883eb291249391e456718090cc1faf7b9454e614e755abb95b78ba819d60"
+  },
+  "review": {
+    "bytes": 2627,
+    "sha256": "96aee83fbdf4b642a7086f86c81b4f1fdc11df43d9fc3f910c782fe6540fb748"
+  },
+  "saved_review_confirmation": "Confirmed design-review-v2.json exact2627 bytes SHA25696aee83fbdf4b642a7086f86c81b4f1fdc11df43d9fc3f910c782fe6540fb748; UTF8 review_text SHA256003a658792d329dd66522023b4beba4df6325824161d5173c9f8a33443c2d85a. Saved review_text matches my exact revised message. Candidate e426883e…819d60, ACCEPTED_DESIGN_ONLY/findings=[], resolved CM4-D01, reviewer cm4_design_review_sol/role cm4_design_review, publisher project_root and design-only/no-runtime limits are correct. Review ownership released; no writes or extra record.",
+  "findings": [],
+  "resolved_findings": [
+    "CM4-D01"
+  ],
+  "adoption": "Exact seven-file candidate-v2; pending-review text inside frozen candidate/readiness superseded by this separate adoption without rewriting bytes",
+  "source_pins": 355,
+  "external_reference_only_pins": 4,
+  "preservation_inputs": 9336,
+  "full_identities": 796,
+  "modules": 34,
+  "selected": 280,
+  "new_methods": 0,
+  "design_scenarios": 28,
+  "contracts_implemented": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "next": "Source-only supplied collection/lifecycle/table/terminal/raw-join implementation and independent review, with new-test roster/pin/effect/budget successor",
+  "limits": "All original guards, obligations and execution holds preserved. No qualification/custody/complete feasibility/science claim or Git operation."
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_cm5_implementation_source_review_v1",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate": {
+    "bytes": 75819,
+    "sha256": "34da4b857ee08fd6530e920f2bba02f93fde480e6f302f61691f9044b65a2b28"
+  },
+  "findings": [],
+  "resolved_findings": [
+    "CM5-S01",
+    "CM5-S02"
+  ],
+  "review_text": "ACCEPTED_SOURCE_ONLY; findings=[]. Candidate candidate-v2.json:75819 bytes, SHA25634da4b857ee08fd6530e920f2bba02f93fde480e6f302f61691f9044b65a2b28. Independently reverified all387 source pins, nine new-file pins and four external reference-only pins without byte/hash mismatch. Verified all six draft-v1 archive pins, all five archived original files against v1 source pins, manifest attribution and unchanged prior candidate/review hashes. Only producer.py, test_refusal.py, registry.py, roster successor and source index changed. CM5-S01 is resolved: common footer-entry accounting now runs for apply and modeled nested entry before reentry rejection; FINISH/REENTER_POST source example checks exact1606 attempts/1606 settlements/first-refusal1606/one late attempt through independent terminal parsing. CM5-S02 is resolved: _reject constructs the intended fixed exception, catches every BaseException from refusal recording as incomplete, and raises the intended exception outside that catch; prior sticky state no longer masks helper failure. Reviewed partial-mutation/preexisting-sticky apply and active-seal helper-Refusal examples, settlement/busy ownership, overflow and unchanged grammar/commit/seal behavior for regressions. No additional finding identified. Independently rechecked360 indexed method start lines/source pins,77 declaration and21 import source rows, literal test-module pins,40 unchanged method identities with zero subTest contexts, and ordered876/360 roster digests. Full digestf6a3081e3becb650c5485cd70121a644ebdcebde278499fe85a385764b317739; selection digest321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08. The previous independent9436-file preservation audit remains applicable, supplemented by Root's reported fresh full scan; this revision did not repeat that audit. Preservation-baseline SHA256702d5fbc05de9ffe151058b672301478d422e17fd5834f65bd7c993e9bbb1d21. Acceptance covers six CM5 package files and three source/accounting documents only. Expanded source876/38/360 with516 exclusions remains separate from frozen producer836/36/320; actual conditional2368events/1212416bytes/2367attempts remains distinct from hypothetical expanded2568/1314816/2567. All40 new tests remain unexecuted and all32 scenarios unqualified. Supplied primitive commands, fault injection, immutable serial state/snapshots and false authority do not qualify executable syntax, test success, real concurrency, original dispatcher/observer/cutoff/capture/custody, complete recursive failure/allocation/timing/memory feasibility or runtime admission. Original guards, P-disabled, consumed failures, UNKNOWN custody, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed.",
+  "review_text_sha256": "5d3bd187a3f9fa0343738f2cb038e6ca9919f993da90c99fc744cb09e88bf093",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

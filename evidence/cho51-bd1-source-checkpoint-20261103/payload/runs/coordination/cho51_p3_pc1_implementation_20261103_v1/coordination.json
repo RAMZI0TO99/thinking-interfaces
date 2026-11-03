@@ -1,0 +1,57 @@
+{
+  "schema": "cho51_pc1_implementation_coordination_v1",
+  "scope": "Implement and independently source-review supplied PC1 parsers, binding checks and refusal handling with exact roster/debt/coverage/budget updates",
+  "publisher": "project_root only",
+  "implementation_author": "pc1_impl_author",
+  "implementation_ownership": [
+    "tools/local_validation/pc1/** including registry/tests/README; no frozen source edits"
+  ],
+  "root_ownership": [
+    "docs/phase2/cho51_p3_pc1_roster_20261103.json",
+    "docs/phase2/cho51_p3_pc1_debt_20261103.json",
+    "docs/phase2/cho51_p3_pc1_coverage_20261103.json",
+    "docs/phase2/cho51_p3_pc1_budget_20261103.json",
+    "docs/phase2/cho51_p3_pc1_contract_20261103.md",
+    "all phase records/archives/milestone/current docs"
+  ],
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "preserved_files": 9729,
+  "prior_design_candidate": {
+    "bytes": 87673,
+    "sha256": "9ccdf49b2434c44f0ee81945a856e9709c3608def49947295919e0862f1b5b8b"
+  },
+  "prior_design_adoption": {
+    "bytes": 3354,
+    "sha256": "1ab7a948c183c4627f4324ec1e1de1249e5f76af39bbe5b767d5f7a6ad9dc834"
+  },
+  "prior_full_identities": 1062,
+  "prior_modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "prior_held": 702,
+  "new_methods": "Exact source-text roster before freeze; all NEW_TEST_UNQUALIFIED, outside Q/S",
+  "allowed": "Source edits and file/text/JSON/hash/link/arithmetic inspection",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime",
+  "frozen_correction": "Save exact independent review, obtain saved-byte confirmation, archive affected frozen candidate bytes and manifest before changes",
+  "publication": "Root CreateNew records; independent saved-review confirmation; final closeout confirmation conversation-only",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

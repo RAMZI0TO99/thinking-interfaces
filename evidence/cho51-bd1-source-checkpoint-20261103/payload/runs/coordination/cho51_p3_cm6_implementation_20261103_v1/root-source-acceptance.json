@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_cm6_implementation_root_adoption_v1",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "publisher": "project_root",
+  "authors": [
+    "cm6_contract_author",
+    "project_root"
+  ],
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "bytes": 78876,
+    "sha256": "7bf79ae5236a01998eec84b01156050249a39942bab75a60e1a5db95f23ac8da"
+  },
+  "review": {
+    "bytes": 3372,
+    "sha256": "8a60625ea203cf88b57b6628751f173a3e514df887d09b52b3d518f23ce297df"
+  },
+  "saved_review_confirmation": "Confirmed CM6 source-review-v2.json exact3372 bytes SHA2568a60625ea203cf88b57b6628751f173a3e514df887d09b52b3d518f23ce297df; UTF8 review_text SHA256d1dd20b4c5a6680f1c7f663d7fb78c7a37529660435716ef4249045adf68214d. Saved text exactly matches revised review; candidate7bf79ae5…f23ac8da/78876bytes, ACCEPTED_SOURCE_ONLY/findings=[], resolved CM6-S01, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Source review ownership released; no writes/extra record.",
+  "findings": [],
+  "resolved_findings": [
+    "CM6-S01"
+  ],
+  "adoption": "Exact candidate-v2 supplied context/collection/pair contracts, registry, roster, source index and source-lineage debt ledger; frozen pending markers superseded externally",
+  "scope_condition": "Pair helper compares supplied additive transitions only. Current and prior evidence selection, original manifest dependency/provenance checks, actual source completeness and independent successor adoption remain required; no debt discharge. No original prior CM6 runtime D/C exists, and none was fabricated.",
+  "source_pins": 408,
+  "new_files": 13,
+  "package_files": 9,
+  "external_reference_only_pins": 4,
+  "preserved_inputs": 9503,
+  "full_identities": 936,
+  "modules": 41,
+  "qualification_anchor": 360,
+  "prior_held": 516,
+  "new_held": 60,
+  "held": 576,
+  "source_index_rows": 420,
+  "new_methods": 60,
+  "new_methods_executed": 0,
+  "new_normal_subtests": 0,
+  "normal_subtests": 254,
+  "design_scenarios": 32,
+  "qualified_scenarios": 0,
+  "conditional_cm6_events": 2568,
+  "conditional_cm6_bytes": 1314816,
+  "conditional_cm6_attempts": 2567,
+  "frozen_cm5_events": 2368,
+  "current_raw_input_cap_bytes": 2162688,
+  "pair_raw_input_cap_bytes": 4259840,
+  "supplemental_cohort_adopted": false,
+  "original_collector_dispatcher_observer_implemented": false,
+  "cm6_producer_verifier_terminal_implemented": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "metadata_corrections": "Candidate assembly helper R alias collision before writes recorded in candidate-v1. Initial docs-update orchestration had a JavaScript quoting parse error before shell dispatch or writes; corrected command uses char10. Neither was project execution.",
+  "next": "Source-only CM6 producer/verifier/terminal integration and independent review, preserving Q and held debt plus CM5-S01/S02",
+  "limits": "All original guards, execution holds, consumed failures, UNKNOWN custody and open obligations remain. No executable syntax/test result, actual source/custody, complete effects/capture/allocation/timing/memory or scientific acceptance."
+}

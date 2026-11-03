@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_lq1_static_failure_diagnosis_v1",
+  "author": "project_root",
+  "created_utc": "2026-10-31T06:27:56.7508144Z",
+  "operation_id": "c6ca0ec3-8f89-48d1-a863-4c874207b273",
+  "method": "PowerShell file metadata/JSON and scalar-array expression inspection only; no runner/compiler/AST/native/test replay",
+  "observed_failure": "RuntimeException: native toolchain exact files",
+  "source": "tools/local_validation/lq1/build_l_native.ps1:107",
+  "admitted_file_count": 112,
+  "observed_sibling_dll_count": 108,
+  "original_tail_array_count": 1,
+  "explicit_parenthesized_tail_count": 4,
+  "explicit_census_count": 112,
+  "explicit_missing_admitted_paths": [],
+  "cause": "PowerShell addition/comma grouping concatenated four tool/import-library paths into one string. The exact census guard correctly refused 109 items against112.",
+  "required_repair": "Separately reviewed successor uses individually parenthesized path expressions, preserves exact finite census and every resource/custody/cleanup predicate",
+  "old_attempt_consumed": true,
+  "old_source_mutation_allowed": false,
+  "scientific_admission": false
+}

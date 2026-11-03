@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_pc_coordination_v1",
+  "scope": "Design independent B0/B1 basis and original provider/ingress/capture evidence projections and fixed-slot feasibility; source-only",
+  "publisher": "project_root only",
+  "design_author": "project_root",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "analysis_scope": "Read-only source/interface/capacity analysis; complete, released before independent review",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "root_ownership": [
+    "docs/phase2/cho51_p3_provider_contract_v1/README.md",
+    "docs/phase2/cho51_p3_provider_contract_v1/basis.md",
+    "docs/phase2/cho51_p3_provider_contract_v1/ingress.md",
+    "docs/phase2/cho51_p3_provider_contract_v1/capture.md",
+    "docs/phase2/cho51_p3_provider_contract_v1/packing.json",
+    "docs/phase2/cho51_p3_provider_contract_v1/qualification.json",
+    "docs/phase2/cho51_p3_provider_contract_v1/cohort-debt.json",
+    "docs/phase2/cho51_p3_provider_contract_v1/readiness.json",
+    "all phase records/archives/milestone/current docs"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "preserved_files": 9693,
+  "prior_candidate": {
+    "bytes": 86181,
+    "sha256": "58828a704831299181208eb89b7e783b3f2dde820822cd41ed871038ad728421"
+  },
+  "prior_adoption": {
+    "bytes": 3440,
+    "sha256": "b3f905cf008703f9152645be405f87140c1cabf183cab411d84ede15384053cc"
+  },
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "new_methods": 0,
+  "implementation_edits": false,
+  "allowed": "File/text/JSON/hash/link/arithmetic and design documents",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime or implementation edits",
+  "frozen_correction": "Save exact review and obtain byte confirmation; archive exact affected frozen candidate bytes before edits",
+  "publication": "Root CreateNew records; exact reviewer saved-byte confirmation; final closeout confirmation conversation-only",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

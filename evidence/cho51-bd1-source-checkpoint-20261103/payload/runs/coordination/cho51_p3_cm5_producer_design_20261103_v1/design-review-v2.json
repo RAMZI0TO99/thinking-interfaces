@@ -1,0 +1,16 @@
+{
+  "schema": "cho51_cm5_design_review_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "transcription": "Exact independent reviewer message",
+  "candidate_sha256": "ca4c0637ff12e639dc6f1452ad5f899cfda655e86dda8b3722556d96cf40325e",
+  "findings": [],
+  "resolved_findings": [
+    "CM5-D01"
+  ],
+  "review_text": "ACCEPTED_DESIGN_ONLY; findings=[]. Candidate candidate-v2.json:71499 bytes, SHA256ca4c0637ff12e639dc6f1452ad5f899cfda655e86dda8b3722556d96cf40325e. Independently reverified all378 source pins, eight new-file pins and four external reference-only pins without byte/hash mismatch. The only design-file delta is effect-map.json:420530 bytes, SHA25658a2f0ab462a458a2cf3dcf462e05d1c29f39fb176ae9b80ae01ee9e2ec3beab. CM5-D01 is resolved by exact non-null in-range allocation.md78 capture-limit anchor; F07 now anchors the concrete trace-group and exact owner/affected-set checks. Audited every boundary anchor for valid range, exact nonblank text and matching byte/hash pin. Only F07/F13 boundary rows changed; all320 method obligations remain unchanged. Verified both draft-v1 archive pins and manifest attribution, archived original map against the v1 pin, and unchanged prior candidate/review hashes. The completed independent9403-file preservation audit remains applicable and was not repeated for this revision; preservation-baseline SHA256b3f7a05c2e10ddbafe1a683471936bc2cb56d6d40efadea56f48d828e2cb3a8f. Acceptance covers eight source-only CM5 design files: finite primitive-command/fault model, counted entry and exact settlement, first-observed sticky refusal, busy ownership, overflow/incomplete accounting, whole-group immutable output commit, FINISH post-check before seal, secondary-failure limits, original dispatcher mapping/refusal obligations and supplied seal versus future native revocation/drain/cutoff/publication/outer closure. The16 boundary categories and320 pinned method obligations do not establish complete recursive effect closure. Unchanged836/36/320 roster,516 exclusions,254 conditional subcases,2368events/1212416bytes,2367 normal model attempts,65535 attempt ceiling, two modeled in-flight attempts and66048-byte group scratch remain scoped bounds;33-file/18890752-byte allocation is report-only. All32 scenarios (14 model/8 dispatcher/6 terminal/4 effect) remain unimplemented/unexecuted and zero qualified. Future new tests require explicit roster/pin/effect/budget adoption. No implementation, original dispatcher/observer/cutoff/custody, complete recursive failure/capture/allocation/timing/memory feasibility, runtime admission, P enablement or scientific acceptance is established. Original guards, holds, consumed failures, UNKNOWN custody and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed.",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

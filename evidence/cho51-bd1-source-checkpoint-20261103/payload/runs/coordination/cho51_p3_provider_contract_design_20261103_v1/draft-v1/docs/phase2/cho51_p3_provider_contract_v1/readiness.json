@@ -1,0 +1,112 @@
+{
+  "schema": "cho51_pc_readiness_v1",
+  "status": "SOURCE_ONLY_DESIGN_FOR_REVIEW",
+  "design_sources": {
+    "docs/phase2/cho51_p3_provider_contract_v1/README.md": {
+      "bytes": 2131,
+      "sha256": "78233c552c155f7e0edc972b9387de6b7936cb68bbcfbd410bf530eb42327fee"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/basis.md": {
+      "bytes": 9380,
+      "sha256": "a706b0031a55209f996e7d6e79162349f8d8cc15470940ef3eb71051f9ba8f07"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/ingress.md": {
+      "bytes": 6803,
+      "sha256": "dc80829d5897fa5157a70a7b9c8fe424c01528a6afc26d377f00acd92369d122"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/capture.md": {
+      "bytes": 7818,
+      "sha256": "99e252d116a52884ce9811e6cef62e195522e29dded2ac46ffbd7b2259ec1493"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/packing.json": {
+      "bytes": 22266,
+      "sha256": "46a9dbdc7dc3ec7d837c73b745ef3cebd91f97806a32e98ce126a58e74cd2cc2"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/qualification.json": {
+      "bytes": 9663,
+      "sha256": "3b3358ad489820abfbc8fc484e25a525bdb89e6750cdfde0917602784612c09e"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/cohort-debt.json": {
+      "bytes": 630692,
+      "sha256": "8ba1d252b95076bf9aafd25382792fe6d8dd6ebfe107c7840cf1b7ea2682ec0a"
+    }
+  },
+  "prior_adoption": {
+    "path": "runs/coordination/cho51_p3_whole_operation_design_20261103_v1/root-design-acceptance.json",
+    "pin": {
+      "bytes": 3440,
+      "sha256": "b3f905cf008703f9152645be405f87140c1cabf183cab411d84ede15384053cc"
+    }
+  },
+  "whole_operation_gates": [
+    {
+      "id": "WO-G01",
+      "requirement": "Exact operation/control membership and authoritative source/runtime/dependency adoption",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G02",
+      "requirement": "Complete recursive normal/failure/type/formatter/import/fixture/effect domains",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G03",
+      "requirement": "Original provider/lifecycle/host/parent/ingress/cutoff/observer/custody mapping",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G04",
+      "requirement": "All allocations, simultaneous lifetimes and complete process/Job peak memory",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G05",
+      "requirement": "Every write, report/failure/capture/framing/EOF/tool witness and finite noncircular closeout packing",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G06",
+      "requirement": "Every stage/case/control worst-case cost, failed cleanup and F/M under original clocks",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G07",
+      "requirement": "Implemented original successors, exact wrapper/capability/control qualification and independently accepted actual results",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    }
+  ],
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "baseline_held": 516,
+  "new_test_unqualified": 186,
+  "cm6s_outside_both": 46,
+  "new_methods": 0,
+  "implementation_changed": false,
+  "projections": 3,
+  "new_scenarios": 32,
+  "qualified_scenarios": 0,
+  "report_roles": 33,
+  "closeout_roles": 16,
+  "summary_fit": "CONDITIONAL_TWO_SINGLE_ESCAPE_REGIONS_ONLY",
+  "full_original_packing": "NOT_ESTABLISHED",
+  "original_b0_b1_basis": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+  "full_operation_feasibility": "NOT_ESTABLISHED",
+  "publication_endpoint": "OPEN_UNIMPLEMENTED",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "next": "Implement and independently source-review supplied PC1 projection parsers, expected binding/join/refusal checks and exact test roster/budget updates; no native authority, runtime or P",
+  "remaining": "Original B0/B1 implementation/adoption, full population/packing/final closure,46-method separate qualification, exact control membership and complete effect/resource gates remain",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_cm1_independent_design_review_v1",
+  "created_utc": "2026-11-02T12:43:53.1819859Z",
+  "status": "CHANGES_REQUIRED",
+  "reviewer": "qd_source_review",
+  "publisher": "project_root",
+  "author": "project_root",
+  "read_only_trace_contributor": "vfy_design_trace",
+  "publication_kind": "verbatim independent message transcription",
+  "candidate": {
+    "bytes": 2363,
+    "sha256": "e53cc09a015b2b6b95e02122e662b4e5f3285e8801f84c5ce3150ad1201e03a2",
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/candidate-v1.json"
+  },
+  "findings": [
+    "CM-D1"
+  ],
+  "review_text": "Status: CHANGES_REQUIRED\nReviewer: qd_source_review. Design author and sole publisher: project_root; vfy_design_trace supplied read-only source tracing. The reviewer authored no design or metadata files.\n\nCandidate: runs/coordination/cho51_p3_component_model_design_20261102_v1/candidate-v1.json, 2,363 bytes, SHA256 e53cc09a015b2b6b95e02122e662b4e5f3285e8801f84c5ce3150ad1201e03a2.\n\nBlocking finding CM-D1 — Specify the complete event acceptance state machine and trace-group conservation. In docs/phase2/cho51_p3_component_model_v1/capture-accounting.md:23–37 and62–72, the contract names mandatory transitions but does not define primary outcome cardinality or require PASS before a successful CASE_END. A HEADER followed by216 CASE_START/CASE_END(count=0) pairs and a FOOTER can satisfy the explicit start/end, sequence and no-negative-outcome checks while containing no PASS callbacks. qualification.md's all-started/completed/no-negative acceptance clauses do not close that gap. Define a successful case as exactly one primary PASS after its complete lifecycle, followed by one CASE_END, with no sticky negative case/subcase/fixture outcome; reject missing/duplicate or reordered primary outcomes and additional starts after failfast. Explicitly conserve multiple error/cleanup callbacks and failed-fixture/not-started cases without inventing completion. Also, count is null on failures and TRACE under the current table, so the verifier has no declared required TRACE cardinality: an omitted frame cannot be detected structurally. Bind each failure to a bounded exact frame count/group, require all corresponding ordered TRACE records and correct owner/ordinals, and specify zero-frame/nonexception routes. Add the negative transcript cases to the planned protocol contract tests and synchronize readiness/qualification semantics. This is one event-contract finding; no implementation or runtime defect is asserted.\n\nOther review checks: all eight design pins,94 repository references, four reference-only external stdlib pins and9,134 preservation inputs match. Current700 IDs and all original partition memberships remain; planned32 distinct methods give732 IDs/30 modules and216 selected identities. The three roster digests match their declared ordered newline representations. Independent JSON data arithmetic reproduces the372-byte event overestimate and343177-byte fixed collection envelope; reservation arithmetic reproduces caller8/9,764,864, supervisor6/4,653,056 and closeout16/3,293,184, totaling30/17,711,104. These are envelope/lower-bound observations, not complete event-count, capture or runtime-allocation proofs. The eight shared patch surfaces support the explicit requirement for independent live enforcement and private prebound bindings; before/after restoration alone is correctly insufficient. Complete732 conservation before exact700 projection, actual class/function/code/loader/package identity checks, unselected fixture separation and default operational refusal are preserved.\n\nScope and limits: read-only file/text/JSON/hash review, including data arithmetic only; no files, project execution/import/AST/compiler/native/tests/Git or agents were created or run. CM1 is an unimplemented design with32 planned tests, not a runner or admission. Complete method/subcase/effect and runtime closure, independent native guards/custody, event/trace-count sufficiency, all raw failure/tool capture, producer attribution/durable authority, asynchronous publication lifecycle, stage costs and complete allocation remain prerequisites. No feasibility, provider, qualification, Q/P/scientific acceptance, speedup, second QD or obligation discharge is established. All guards remain, P is disabled, and a1f12701 remains INCOMPLETE_REFUSED17/16. Revise the frozen design before acceptance; Root should preserve affected v1 bytes.",
+  "review_text_sha256": "38d757e9e458b159d6953980506091052a4566e06b276f9297c2be58034ac818",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "scientific_admission": false
+}

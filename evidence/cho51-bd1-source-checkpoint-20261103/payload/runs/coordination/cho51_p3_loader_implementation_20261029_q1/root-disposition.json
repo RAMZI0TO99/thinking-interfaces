@@ -1,0 +1,33 @@
+{
+  "status": "FAILED_CLOSED_BEFORE_NATIVE_COMPILATION_CONSUMED",
+  "source_frozen": true,
+  "retry_same_attempt_allowed": false,
+  "qualified": false,
+  "managed_empty_jobs_closed": true,
+  "author": "project_root",
+  "external_guard_and_file_handles_closed": true,
+  "tool_return": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/tool-return.json",
+    "sha256": "704eb7c6df86761964fc1d8f77eafbdde655b9d547875047b5887ba2b38bdda5",
+    "bytes": 4163
+  },
+  "created_utc": "2026-10-31T06:29:03.3406465Z",
+  "diagnosis": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/static-array-diagnosis.json",
+    "sha256": "944f4464d9318c0d95b068ed903a32d8fe4a198014852758714d290b857a5441",
+    "bytes": 1153
+  },
+  "supervisor_children_created": 0,
+  "successor_scope": "Root authorizes drafting/review of separate LQ2/LP2 census correction under existing user task; new execution still requires fresh independent review and admission",
+  "operation_id": "c6ca0ec3-8f89-48d1-a863-4c874207b273",
+  "scientific_admission": false,
+  "native_compiler_children_created": 0,
+  "schema": "cho51_lq1_root_failure_disposition_v1",
+  "l_native_cases_run": 0,
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/actual-review.json",
+    "sha256": "279b321afce96fb7e5c863aede7062e09290d629e60294d6beac93c082c27710",
+    "bytes": 12966
+  },
+  "tests_run": 0
+}

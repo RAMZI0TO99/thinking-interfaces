@@ -1,0 +1,133 @@
+{
+  "schema": "cho51_cm2_implementation_static_closeout_v1",
+  "publisher": "project_root",
+  "scope": "File/text/JSON/hash/link checks and data arithmetic only",
+  "source_acceptance": "ACCEPTED_SOURCE_ONLY",
+  "source_pins_verified": 327,
+  "preservation_files_verified": 9233,
+  "archive_files_verified": 12,
+  "draft_files_verified": 8,
+  "draft_manifest_pin": {
+    "bytes": 2191,
+    "sha256": "1a07fdfc9af3c7ebcaca49fd08194bfe42a9dbfa1ec23ef47e0a7f13c910065f"
+  },
+  "archive_manifest_pin": {
+    "bytes": 1835,
+    "sha256": "cd629f786b3e7a9200cb252d04e19f04fee855addd344edb8d0224005a8cb497"
+  },
+  "full_identities": 764,
+  "modules": 32,
+  "selected_identities": 248,
+  "new_methods_textually_verified": 32,
+  "normal_subtests": 254,
+  "conditional_events": 1000,
+  "conditional_event_bytes": 512000,
+  "resolved_findings": [
+    "CM2-I1",
+    "CM2-I2"
+  ],
+  "documentation_pins": {
+    "AGENTS.md": {
+      "bytes": 7851,
+      "sha256": "8db4da24084e30f07d7c4ac6ed6f937d3876704b835e290f6ed9e30864a65f7b"
+    },
+    "HANDOFF.md": {
+      "bytes": 19644,
+      "sha256": "8f397ddb672ea9cbfb5d7210a94aac6cdb0442f563e1c65cef6a3ee733660f81"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7436,
+      "sha256": "abfde9fa1d8503291e32c03668aef62b623d0b11c83a39b167dd04d5ae07a526"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7824,
+      "sha256": "9e66b46e43380012448379f43f296496c03fa223356ea5f2b8100219f2721f04"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7273,
+      "sha256": "9dce4b6333fdffcca54c7e449237a3ad81e6f2a8491eb37e3de3747cd174259c"
+    },
+    "README.md": {
+      "bytes": 8264,
+      "sha256": "e92f6f6d4b9c1215cd6460effb2e0041727c9ee90e0e60cd37b1f887b9c05085"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11869,
+      "sha256": "6ad6b3dcaf19f74a57d56c3cddeeb97a11e4691d6bc86033c6582b3644092fc8"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 13020,
+      "sha256": "4b3e0b0ab5bd1e53bea1c5daf626545866b958230e9f7289f842500b19c05089"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13340,
+      "sha256": "3e4cb7fcfbb0b931555a507d525835c02072ed7e322d48fea6051da3c8a3452b"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 26224,
+      "sha256": "c6d712702e0663fb0c4aa8ae9e83ba52fdbfe4b1f38117eed7e331ab16ebe9c4"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32412,
+      "sha256": "ff6a571e75175eccd5168f9dadb890de1efe304b2f404df8460bc472f46234ff"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 45765,
+      "sha256": "d29c8741244a82a72ad39f7d435fed2d47f2abfa098875fc61d5822f3369add9"
+    },
+    "docs/phase2/cho51_p3_cm2_implementation_20261102.md": {
+      "bytes": 5054,
+      "sha256": "0cb981cfe632d5ca8116ffd78c4db28310a00c045182edfc9f7a10f1fada1fbd"
+    },
+    "docs/phase2/cho51_p3_cm2_implementation_contract_20261102.md": {
+      "bytes": 7565,
+      "sha256": "79e0df6d60739d0fb66ee756992ed59496b5a32bb55c7eac678b48268a96b73f"
+    },
+    "tools/local_validation/cm2/README.md": {
+      "bytes": 2845,
+      "sha256": "d0b376d56c2be950d3e49eca047734a76182d6206ead708a395a8225b3c23717"
+    }
+  },
+  "review_record_pins": {
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/coordination.json": {
+      "bytes": 1706,
+      "sha256": "8318e24c90c7be605540c4ae0c5e1fa22099ddd767fe23cd284ea4ca5f138e9d"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/preservation-baseline.json": {
+      "bytes": 2208860,
+      "sha256": "4acb5719ed19f977c003891c0ea594455142cea6fd5ab53878b5df7c53ec4cd6"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/candidate-v1.json": {
+      "bytes": 59394,
+      "sha256": "61a9229c89c7cf5f3a609c91be5282e664db6d25d8303bb5da5f3de85a6716d9"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/source-review-v1.json": {
+      "bytes": 4924,
+      "sha256": "baabb344a1e91aaa38fa1c818ef7af6945b4039755eff25af2fb3579f2598f58"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/candidate-v2.json": {
+      "bytes": 60125,
+      "sha256": "8e99bb969a09b2d2007900cf8b590053615d98407ad97b6b801594affa1f83cb"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/source-review-v2.json": {
+      "bytes": 4054,
+      "sha256": "fc3148ef0d709e1b4cbc2f876b6e4eddb2b99c5065e4243d6c4fdcfb1310b7c7"
+    },
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/root-source-acceptance.json": {
+      "bytes": 2635,
+      "sha256": "9cc24d4a0d47cfd19e27114634b88a55f7fde7096c06bd614f7afe2b9f1a2c48"
+    }
+  },
+  "existing_local_links_verified": 537,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/closeout-review.json",
+    "runs/coordination/cho51_p3_cm2_implementation_20261102_v1/final-static-checks.json"
+  ],
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "complete_recursive_effect_closure": false,
+  "complete_failure_capture_feasibility": false,
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "static_check_note": "Initial file-only check stopped before publication because new_module_pins is an array, not a path-keyed map; iteration corrected. No runtime operation or record was created by that failed check."
+}

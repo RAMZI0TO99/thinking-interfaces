@@ -1,0 +1,33 @@
+{
+  "schema": "cho51_wo_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 85577,
+    "sha256": "0bcd6afa50b4c236e24e677c3acb233334cdc1495fdd694854792f50f5e19867"
+  },
+  "review_pin": {
+    "bytes": 4496,
+    "sha256": "a9c3135d32f44be78887b199888640f55a1062600cee55cfa2c3900dbf6ef1dd"
+  },
+  "saved_review_confirmation": "Confirmed whole-operation design-review-v1.json exact4496 bytes SHA256a9c3135d32f44be78887b199888640f55a1062600cee55cfa2c3900dbf6ef1dd; UTF8 review_text SHA256d43dd9fef392f5f4be6e357a627c69738a74dc32f049c253c336ce0ca773f88b. Saved text exactly matches review; candidate0bcd6afa…f5e19867/85577bytes, CHANGES_REQUESTED_DESIGN_ONLY, WO-D01/P2, reviewer cm4_design_review_sol/publisher project_root and design-only/no-runtime limits are correct. Review ownership temporarily released for Root exact four-file archival and bootstrap-path correction; proposed scope addresses finding, subject to exact re-review. No writes/extra record; all owned scans closed.",
+  "finding": "WO-D01",
+  "files": {
+    "docs/phase2/cho51_p3_whole_operation_v1/operation.md": {
+      "bytes": 12734,
+      "sha256": "67e5e8aba0f61760e5e321675036d6172381612c324e3592bfcbb2e437f87ff4"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/feasibility.md": {
+      "bytes": 8096,
+      "sha256": "e020a4c98560263a9e408e8a53c774922522fcc2e89aebfab75f5e5d01fb4a20"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/qualification.json": {
+      "bytes": 12148,
+      "sha256": "ed25d2ceab0db84d77f14ffbf21e843088d26251238ca5c1e3616a6c919353fd"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/readiness.json": {
+      "bytes": 4409,
+      "sha256": "0b85ac7392c28c99ef40e97d7af41104f7cce9f9468213ed68d7b3c2d6dfd5b8"
+    }
+  },
+  "scope": "Exact four affected frozen sources archived before correction"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_cm5_design_review_v1",
+  "status": "CHANGES_REQUESTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "transcription": "Exact independent reviewer message",
+  "candidate_sha256": "e606ca389dfe6a4330380b28ad2522874c8f376ff8af05fc18747c12476bb6c3",
+  "findings": [
+    {
+      "file": "docs/phase2/cho51_p3_component_producer_v1/effect-map.json",
+      "priority": "P2",
+      "id": "CM5-D01",
+      "issue": "CM5-F13 anchor line88 is out of range and text null",
+      "required_change": "Use exact relevant in-range non-null anchor and audit all anchors"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_DESIGN_ONLY. Candidate candidate-v1.json:70639 bytes, SHA256e606ca389dfe6a4330380b28ad2522874c8f376ff8af05fc18747c12476bb6c3. Independently verified all378 source pins, eight new-file pins, four external reference-only pins and all9403 preservation files without byte/hash mismatch. Preservation-baseline SHA256b3f7a05c2e10ddbafe1a683471936bc2cb56d6d40efadea56f48d828e2cb3a8f. Reviewed all eight CM5 files, model API/command mapping/fault enums, first-observed sticky refusal and exact settlement/overflow, busy ownership, FINISH post-check before seal, complete immutable output-group commit, secondary failure limits, original dispatcher mapping and supplied-versus-native terminal boundaries. Findings=[{id:CM5-D01,priority:P2,file:docs/phase2/cho51_p3_component_producer_v1/effect-map.json,issue:CM5-F13 anchors allocation.md line88 with text=null, but the pinned file has only85 lines, so the claimed source anchor is nonexistent.,required_change:Replace with an in-range exact non-null source line directly supporting original capture/tool-envelope obligations, preserving exact source pin; audit anchor ranges and text before refreezing.}]. All other boundary anchor lines and all anchor byte/hash pins check. CM5-F07 currently cites broad count/checkpoint guards; recommend precise events.py113-114 trace-membership and tables.py57-59 owner/affected-set anchors for stronger direct relevance. Independently conserved all320 method IDs/paths/start/end lines/source pins/direct textual call candidates/subcase counts against the CM4 index;16 boundary categories are explicitly obligations, not complete recursive closure. Links and arithmetic agree: unchanged836/36/320 roster with516 exclusions,254 conditional subcases,2368 events/1212416 bytes,2367 normal attempts,65535 attempt ceiling, two modeled in-flight attempts and66048-byte group scratch; unchanged33-file/18890752-byte report-only proposal and4325376-byte raw-input ceilings. All32 scenarios (14 model/8 dispatcher/6 terminal/4 effect) remain unimplemented/unexecuted and zero qualified. No model, real dispatcher, trusted observer, original cutoff/custody, complete recursive failure/capture/allocation/timing/memory feasibility or runtime acceptance is established. New implementation tests require explicit roster/pin/effect/budget extension. Original guards, execution holds, P-disabled, consumed failures, UNKNOWN custody and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending review archival.",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

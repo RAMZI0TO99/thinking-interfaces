@@ -1,0 +1,322 @@
+{
+  "schema": "cho51_candidate_inventory_p_failed_actual_review_v1",
+  "status": "ACCEPTED_P3_FAILURE_DISPOSITION",
+  "disposition": "FAILED_CONSUMED_PLAN_DERIVE_COMPILE_AUDIT_REFUSAL_OWNED_SCOPE_CLOSED",
+  "reviewer": "l_actual_review",
+  "authors": [
+    "project_root",
+    "inventory_impl"
+  ],
+  "created_utc": "2026-10-31T15:42:46.3825701Z",
+  "operation_id": "b8a63867-4de2-42a0-9176-d13c9b60d37a",
+  "source_review_sha256": "d322e754d429dcae2ebee6affeb8acb3d6ffa25af6df0af5c4c7873b18b6c348",
+  "coverage_review_sha256": "7037cbb606f10e78e5132fb5c85dc9cb91c867f0249792e66035d2d12871048f",
+  "admission_sha256": "6fec30a3160c8723c85cb17b49524e99198b486c1e1c4892ae36647949fe7904",
+  "qualification_sha256": "c5e891b78f5fb735fa856da76e187247fe5d7b03e8f1a29233c8a9736f544d1c",
+  "actual_tool_exit_code": 1,
+  "supervisor_exit_code": 1,
+  "caller_elapsed_seconds": 67.2801927,
+  "external_elapsed_seconds": 67.4316046,
+  "supervisor_elapsed_seconds": 67.1960431,
+  "caller_error": "RuntimeException: supervisor exit refused",
+  "supervisor_error": "PermissionError: P compile outside verified observer/bootstrap",
+  "failed_importer": null,
+  "accepted_by_caller": false,
+  "accepted_by_supervisor": false,
+  "physical_preparation_accepted": false,
+  "qualified": false,
+  "new_operation_owned_lifecycle_closed": true,
+  "final_input_verification": false,
+  "final_full_input_verification_completed_before_release": false,
+  "input_identity_verified_before_release": false,
+  "output_identity_verified_before_release": false,
+  "evidence": {
+    "original_tool_return": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/tool-return_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 4933,
+      "sha256": "00adda9b997d6568a7b3ce5949c2e9ddb8926352df6b016d7e4791aadd6574b9"
+    },
+    "lossless_external_return": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/external-return-lossless_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 3582,
+      "sha256": "4bf9d48705a3b4e0b27916ec908a0b1c8f98e79017c88713545e71adb74cefab"
+    },
+    "original_caller_return_with_supervisor_stdout": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/caller-return_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 42932,
+      "sha256": "6eb61ebc3c3ec1dee69153b37d658db0198c75065ff556fd54086076d33ba111"
+    },
+    "admission": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/admission_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 283088,
+      "sha256": "6fec30a3160c8723c85cb17b49524e99198b486c1e1c4892ae36647949fe7904"
+    },
+    "original_root_scope": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/admission-scope_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 3593,
+      "sha256": "9a4c60b6bebf91b156270c9ff504464885d405de3fc9cf3309f79aa438559c53"
+    },
+    "source_review": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/source-review.json",
+      "bytes": 47231,
+      "sha256": "d322e754d429dcae2ebee6affeb8acb3d6ffa25af6df0af5c4c7873b18b6c348"
+    },
+    "coverage_review": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/coverage-review.json",
+      "bytes": 1769,
+      "sha256": "7037cbb606f10e78e5132fb5c85dc9cb91c867f0249792e66035d2d12871048f"
+    },
+    "adoption": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/contract-adoption.json",
+      "bytes": 1496,
+      "sha256": "a0d7c6584f13296bae6cd99ae92c4b1fa6f3638a2d3d1016ad7000f20d88e346"
+    },
+    "q_qualification": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_q3/root-qualification.json",
+      "bytes": 4639,
+      "sha256": "c5e891b78f5fb735fa856da76e187247fe5d7b03e8f1a29233c8a9736f544d1c"
+    },
+    "original_origin": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/origin_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 829,
+      "sha256": "2c81f2ae812de69335ac0d601c89bb3983f4604472afe93d17786a99f2fe882a"
+    },
+    "original_caller_claim": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/claim_b8a63867-4de2-42a0-9176-d13c9b60d37a.json",
+      "bytes": 272,
+      "sha256": "1fcda70510f11fe384f790bc5e97969bbdc170124daa7e8c65749e2ff43218fe"
+    },
+    "original_supervisor_claim": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/attempts/b8a63867-4de2-42a0-9176-d13c9b60d37a/claim.json",
+      "bytes": 553,
+      "sha256": "2382b1d0b96fd507761a5bcec4abcfcfafa9fe0686ae5457d450984385ecabef"
+    },
+    "original_journal": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/bootstrap_b8a63867-4de2-42a0-9176-d13c9b60d37a.jsonl",
+      "bytes": 5845,
+      "sha256": "83fdc60fac000affda7e39afcccc054e68f3338c74c6388ffaa52c78345fdf06"
+    },
+    "input_pin_index": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/pin-index.json",
+      "bytes": 22920,
+      "sha256": "43586a9933796c00558f756359760104614e51c2e391e62cb295a407c35f4718"
+    },
+    "provisional_physical_index": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/attempts/b8a63867-4de2-42a0-9176-d13c9b60d37a/physical-index.json",
+      "bytes": 12059,
+      "sha256": "b2775425146d794926b44a8733506879a17e1f3b2fa9d56f348ab573dc06ebae"
+    },
+    "last_published_stage_start": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_p3/attempts/b8a63867-4de2-42a0-9176-d13c9b60d37a/timing-plan-derive-start.json",
+      "bytes": 424,
+      "sha256": "d94d787194a2475c63156cc3505db50f3b1921f4330b4bb0970f22292db70117"
+    },
+    "preserved_baseline": {
+      "path": "D:/Aenv/pro3/runs/coordination/cho51_p3_candidate_inventory_20261031_q3/preservation-baseline.json",
+      "bytes": 1231419,
+      "sha256": "9e1940a09c1a228047e65ca8cfad5b87d1ac20842bd9f1a40e9316dadb408bb4"
+    },
+    "original_supervisor_source": {
+      "path": "D:/Aenv/pro3/tools/local_validation/lp7/supervisor.py",
+      "bytes": 50282,
+      "sha256": "9afa862293e9fbd244413363f6a8b2876b39dc5b564bd51f5ffe2155d7a58068"
+    },
+    "original_compiler_source": {
+      "path": "D:/Aenv/pro3/tools/local_validation/lplan4/compiler.py",
+      "bytes": 11358,
+      "sha256": "d9dee5c33fe65367ac34c02cb93d3677f80fe375817386fd063d2084c0fc7e16"
+    },
+    "pinned_runtime_ast": {
+      "path": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/ast.py",
+      "bytes": 64452,
+      "sha256": "b515c23dbbc459329d3b802a3aac742cc456d7472e66f7ed6e9dc97e40596d7d"
+    },
+    "pinned_runtime_tokenize": {
+      "path": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/tokenize.py",
+      "bytes": 21570,
+      "sha256": "026f566ac63e60d69c8185a3880831b657accc5eac984fadf271fc99a5e5825d"
+    },
+    "pinned_runtime_collections": {
+      "path": "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/collections/__init__.py",
+      "bytes": 52378,
+      "sha256": "7fdb04dd248ab37909f46d2085bfee56b32d7e91e49ad3a2fad99c453295659b"
+    }
+  },
+  "actual_evidence_fidelity": {
+    "original_caller_schema": "cho51_p_caller_return_v1",
+    "original_caller_receipt_intact": true,
+    "supervisor_receipt_location": "Original caller-return stdout JSON, not an invented attempt receipt",
+    "original_tool_chunks": 5,
+    "actual_final_tool_exit": 1,
+    "raw_tool_external_line_matches_lossless": true,
+    "integer_handling": "PowerShell Int64/text; process FILETIME summarized as exact decimal string"
+  },
+  "admission_assessment": {
+    "scope_allowed_arguments_match_fresh_LP7_entry_admission_and_hash": true,
+    "scope_admission_reference_matches": true,
+    "original_caller_and_supervisor_claims_match_exact_UUID_and_admission": true,
+    "source_runtime_review_adoption_and_Q_qualification_pins_match": true,
+    "prior_Q3_scope_metadata_issue_not_repeated_here": true,
+    "raw_tool_chunks_contain_output_not_invocation_argv": true
+  },
+  "partial_observation": {
+    "output_descriptors": 64,
+    "current_attempt_files": 64,
+    "output_bytes": 25487571,
+    "current_output_hash_mismatches": 0,
+    "unexpected_attempt_files": 0,
+    "physical_index_status": "PROVISIONAL_PHYSICAL_MAP_REQUIRES_FINAL_VERIFICATION",
+    "physical_files": 21378,
+    "physical_bytes": 3464811980,
+    "physical_pages": 39,
+    "file_pages": 11,
+    "census_pages": 27,
+    "absence_pages": 1,
+    "census_rows": 53452,
+    "absence_rows": 12,
+    "physical_rows_match_ordered_admitted_pin_pages": true,
+    "native_PE_images": 893,
+    "native_edges": 4847,
+    "native_PE_pages": 7,
+    "native_edge_pages": 10,
+    "native_platform_pages": 1,
+    "native_platform_images": 50,
+    "native_edge_kinds": {
+      "selected_physical_candidates": 891,
+      "reviewed_api_set_namespace": 1949,
+      "accepted_q_resident_reference_observation": 17,
+      "declared_platform_trust": 1990
+    },
+    "result_json_exists": false,
+    "candidate_migration_observation_exists": false,
+    "inventory_output_files": 0,
+    "final_verification_timing_files": 0,
+    "attempt_receipt_json_exists": false,
+    "positive_receiver_handoff_established": false,
+    "external_output_handoff": null,
+    "acceptance_limit": "Original64 descriptors preserve partially published bytes and native identities. Their current hash match and closed handles do not establish final original input/output verification, complete inventory or accepted physical preparation."
+  },
+  "stage_timing": {
+    "prepare_start_seconds": 6.0535714,
+    "prepare_complete_seconds": 60.3110159,
+    "native_start_seconds": 60.3297837,
+    "native_complete_seconds": 66.9060672,
+    "plan_derive_start_seconds": 66.9146086,
+    "plan_derive_complete_published": false,
+    "final_verify_started": false,
+    "all_five_stage_records_same_original_origin": true
+  },
+  "owned_closure": {
+    "original_outer_python_pid": 68824,
+    "original_outer_python_creation_filetime": "134379346226747292",
+    "original_outer_atomic_membership": true,
+    "original_outer_process_reaped": true,
+    "outer_Job_empty_closed": true,
+    "original_process_thread_pipe_nul_reader_thread_handles_closed": true,
+    "both_streams_eof": true,
+    "outer_readers_and_watchdog_joined": true,
+    "outer_cleanup_error": null,
+    "original_supervisor_inputs_closed": true,
+    "original_supervisor_outputs_closed": true,
+    "supervisor_guard_thread_joined": true,
+    "supervisor_cleanup_errors": [],
+    "caller_original_files_closed": true,
+    "original_journal_closed": true,
+    "original_guard_joined_done_closed": true,
+    "original_guard_completion_wait_closed": true,
+    "bootstrap_sampler_creation_attempted": false,
+    "bootstrap_empty_sampler_Job_closed": true,
+    "bootstrap_sampler_watchdog_joined": true,
+    "unused_sampler_child_fields": "N/A: no child creation attempted",
+    "source_compilation_or_native_tool_children_spawned_in_P": 0,
+    "owned_python_supervisor_children": 1
+  },
+  "pin_audit": {
+    "source_pins": 256,
+    "python_runtime_pins": 732,
+    "preserved_file_pins": 4998,
+    "current_pin_mismatches": 0,
+    "partial_output_descriptor_hashes_checked": 64,
+    "partial_output_pin_mismatches": 0,
+    "physical_row_and_admitted_pin_comparisons": 21378,
+    "entire_selected_input_bytes_rehashed_by_this_failure_review": false
+  },
+  "resources": {
+    "whole_seconds_cap": 300,
+    "work_seconds_cap": 240,
+    "hard_seconds_cap": 245,
+    "cleanup_seconds_cap": 5,
+    "startup_seconds_cap": 5,
+    "process_mib_cap": 4096,
+    "job_mib_cap": 5120,
+    "parent_mib_cap": 4096,
+    "startup_active_ram_gib_floor": 4,
+    "disk_gib_floor": 20,
+    "threads": 1,
+    "gpu_visible": false,
+    "startup_second_sample_seconds": 0.8217289,
+    "external_guard_shutdown_seconds": 0.1121477,
+    "minimum_supervisor_available_ram_bytes": 9025191936,
+    "minimum_observed_disk_bytes": 85524566016,
+    "peak_supervisor_parent_private_bytes": 133505024,
+    "peak_outer_process_private_bytes": 138555392,
+    "peak_outer_Job_bytes": 144719872,
+    "peak_caller_private_bytes": 98873344,
+    "guard_fault": null
+  },
+  "static_corroboration": {
+    "classification": "Supported source/runtime inference, not retained runtime call-stack proof",
+    "facts": [
+      "LP7 installs the closed audit before plan-derive and later loads lplan4.compiler. The compiler imports ast and tokenize; neither is explicitly top-level-preloaded by LP7 supervisor.",
+      "The pinned tokenize.py defines TokenInfo via collections.namedtuple at line47. The pinned collections namedtuple implementation uses eval(code, namespace) at line441, which can require dynamic compile/exec events.",
+      "The active compile policy refuses filenames outside verified observer/runtime source paths unless matching exact active AST-input pins. The generic PermissionError matches that policy. Compiler loading precedes migration observation and inventory publication."
+    ],
+    "blocked_filename_observed": false,
+    "blocked_filename": null,
+    "exact_import_stack_observed": false,
+    "specific_string_filename_causation_proven": false
+  },
+  "findings": [
+    {
+      "id": "PLAN_DERIVE_COMPILE_AUDIT_REFUSAL",
+      "classification": "Observed execution failure",
+      "detail": "Original supervisor reports compile outside verified observer/bootstrap during plan-derive, after physical/native publication but before any migration/inventory/result or final verification output. The policy refused as designed. Exact blocked filename and import call stack were not retained."
+    }
+  ],
+  "checks": [
+    "Read project handoff, execution policy and coordination rules. Actual reviewer l_actual_review did not author source and is distinct from l_source_review and authors project_root/inventory_impl. File/text/JSON/hash inspection only; no tests, Python, AST, compiler, native/process probes, Git or retry.",
+    "Verified exact fresh admission/source/coverage/adoption/Q qualification reference hashes. Scope command fields independently match the current LP7 entry, new admission path and6fec... hash; original caller and supervisor claims bind the same UUID/hash. No synthetic command-array match or retrospective grant is used.",
+    "Rehashed256 source pins against accepted source review,732 admitted Python-runtime pins and4998 frozen baseline files, all unchanged. Original caller receipt is intact; five original tool chunks end in exit1 and their external JSON line matches the separate lossless derivative.",
+    "Checked all64 partial output descriptor sizes/hashes against current files, exact file membership and published physical page row counts. All21378 physical rows match ordered admitted pin pages. Counted53452 census rows,12 absences,893 PE rows and4847 edge rows. This review does not rehash all3.46GiB selected input bytes or accept final physical closure.",
+    "Verified original outer reaping/Job/process/thread/stdio/NUL/reader/watchdog closure, supervisor input/output and guard-thread closure, final caller guard/files/journal closure and empty sampler Job/watchdog closure. All final input/output identity and full-verification flags stay false; no positive receiver handoff is invented.",
+    "Checked five same-origin timing records through plan-derive start and absent migration/inventory/result/final-verify files. PermissionError and failed_importer null are retained verbatim; no absent attempt receipt, compile filename, traceback, migration result or final acceptance is reconstructed.",
+    "Inspected pinned LP7/lplan4 and runtime ast/tokenize/collections text. The import/namedtuple/eval path corroborates the proposed standard-library initialization explanation, but the saved receipt does not identify the exact compile event. No runtime causal proof is claimed."
+  ],
+  "recommendation": {
+    "consume_original_uuid": true,
+    "unchanged_source_retry_justified": false,
+    "separately_versioned_reviewed_successor_justified": true,
+    "source_successor_certified": false,
+    "proposed_change": "Preload the exact necessary standard-library compiler dependencies (including ast/tokenize and their bounded runtime initialization) before installing the closed P audit, under the existing isolated/pinned runtime authority. Keep candidate/third-party bytes inert and retain the audit compile/exec/file/native/effect allowlists.",
+    "regression_required": "Fresh Q regression should exercise the real P-audit/compiler-load boundary with production preload order and confirm that intended observer/runtime initialization succeeds while unexpected dynamic compile/exec and changed source inputs still refuse.",
+    "required_future_gates": "Independent source review, fresh Q qualification, refreshed finite coverage, new unused UUID and separately admitted P. Preserve this failed source/evidence; no caps increase, clock reset, broad string-filename exception or audit weakening.",
+    "Root_disposition_and_admission_separate": true
+  },
+  "limitations": [
+    "Failure disposition and applicable owned cleanup only. No accepted P preparation, candidate migration observation, bounded inventory, complete finite plan, Lhost compatibility, L collection or scientific result follows. Prior accepted Q3 qualification remains a separate scoped record.",
+    "Partial physical/native output and current hash matches cannot substitute for final original input/output verification. All original false/pending flags and absence of result/inventory/migration/final-verify artifacts remain unchanged.",
+    "The suspected tokenize/namedtuple dynamic compilation path is a static inference; exact filename/call stack is absent. The proposed preload successor is not source-certified or admitted by this review.",
+    "Original/corrected117 candidates,34 V controls and remaining40-scenario qualification remain unexecuted. Historical failures, lost receipt/unknown custody and stronger restart claims are unchanged; scientific0/1020 and unsigned freeze remain."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "abi_loader_qualified": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "candidate_tests_executed": 0,
+  "successor_controls_executed": 0
+}

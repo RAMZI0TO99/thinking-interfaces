@@ -1,0 +1,133 @@
+{
+  "resolved_findings": [
+    "CM2-D1",
+    "CM2-D2"
+  ],
+  "preservation_files_verified": 9200,
+  "normal_subtests": 210,
+  "package_parents": 14,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm2_design_20261102_v1/final-static-checks.json",
+    "runs/coordination/cho51_p3_cm2_design_20261102_v1/closeout-review.json"
+  ],
+  "design_acceptance": "ACCEPTED_DESIGN_ONLY",
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "draft_files_verified": 1,
+  "runtime_admitted": false,
+  "external_reference_only_pins_verified": 4,
+  "direct_method_count": 216,
+  "documentation_pins": {
+    "AGENTS.md": {
+      "sha256": "0667250f4ce551e16ffa0ff0c5601bc9bfb5c2e52c78f3eb439dbe96682bd270",
+      "bytes": 7853
+    },
+    "HANDOFF.md": {
+      "sha256": "32a610cfd501ce2bb8863e8f61f4540d7b9b34977ff48d0c7252eea685d17c6c",
+      "bytes": 19422
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "8a7306346845b5c73ffa3b3057bb8b13483614f8e29b24772e82f56df8f1481b",
+      "bytes": 7438
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "4311f6f8ead23f5aef3edfeaa8cc5a45ba4939ae4df4488cfd6274e4481c6fa7",
+      "bytes": 7811
+    },
+    "PHASE2_START_HERE.md": {
+      "sha256": "cea316d6125622dc99948a7c2003497d5d2de4870ab640fc0cfec4f1ed7c9c71",
+      "bytes": 7275
+    },
+    "README.md": {
+      "sha256": "07e186704579928ff11432beb2045c124c3b8207d87f3b6ba327a4f60c21ad16",
+      "bytes": 8266
+    },
+    "WINDOWS_SETUP.md": {
+      "sha256": "fcefc32e8253376c25ce8181d32506c458a9cb50bad44c8bf317b45911c5c299",
+      "bytes": 11871
+    },
+    "docs/phase2/README.md": {
+      "sha256": "695c15b6b9112de367256d320b0777a813c825c354c7aafd513f44332e6b4739",
+      "bytes": 12923
+    },
+    "docs/where are we/README.md": {
+      "sha256": "d7cf8cd81f244f7499ff94b539364fb543080bb4e511bb305ca28f6c1dabe9d9",
+      "bytes": 13342
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "sha256": "2a7c94421b25ba0f62e62e5e6601e0bd05c522ec269760ba1c141f48b1f539b0",
+      "bytes": 26017
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "sha256": "6937296c114f766e479f847131b275008e156ab1d686c99fe8e0eee65bc37dc3",
+      "bytes": 32300
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "sha256": "48f64065ba55a003b08d016d917ee3befbd9ca343686b4f2fee014a995c3cbb0",
+      "bytes": 44960
+    },
+    "docs/phase2/cho51_p3_cm2_design_20261102.md": {
+      "sha256": "9b62d4ceeda7ec033e8cf1e891f569a8fd9af31ad7bacd7d0819e1c687682bb0",
+      "bytes": 4204
+    },
+    "docs/phase2/cho51_p3_component_runtime_v2/feasibility.md": {
+      "sha256": "2a94f0dd4acb2c6ef2f7f812a71a343287cc3169e770af8b25ba93301405ed95",
+      "bytes": 5198
+    },
+    "docs/phase2/cho51_p3_component_runtime_v2/loader.md": {
+      "sha256": "8e713395d3854ec5b6b65a2afd341c1c42da509a0f024bb296b0254b4a393e45",
+      "bytes": 7033
+    },
+    "docs/phase2/cho51_p3_component_runtime_v2/README.md": {
+      "sha256": "e34f0028e8c159c28f15546c224dea0abc748ef2b0b51fbffe761e9eeabc46e2",
+      "bytes": 2048
+    },
+    "docs/phase2/cho51_p3_component_runtime_v2/results.md": {
+      "sha256": "37d88fd6d01d54bbbd848c4971e3469808273be0ef4be5c8f619a855bab83562",
+      "bytes": 6485
+    }
+  },
+  "review_record_pins": {
+    "coordination.json": {
+      "sha256": "dd644e37f2cd3de7c87ca756e5ae97e8f6c7b4943ced840fb8de496eec6fdf90",
+      "bytes": 1803
+    },
+    "preservation-baseline.json": {
+      "sha256": "cef96b30b0d1000e85c42bfd4eaa1bc65f670f7a57a4665da9bc3f143fd64b38",
+      "bytes": 2202730
+    },
+    "candidate-v1.json": {
+      "sha256": "a8c3e291fbb861bdc6b40185cd7330398bbc5071c480c08493e12b35f1970879",
+      "bytes": 58123
+    },
+    "design-review-v1.json": {
+      "sha256": "ef6cdc29f59748428602a29df4eea17312ed8d737c47208f7a83825917fb983b",
+      "bytes": 4529
+    },
+    "candidate-v2.json": {
+      "sha256": "0baa6b1e7e23a6139d6656869a78c8aecfad135238baaf9af3fbdf5265ea0cfe",
+      "bytes": 58845
+    },
+    "design-review-v2.json": {
+      "sha256": "14b5bb5354cabaf69f8d5b965429e7873bb5cedab126b700fef4c06a65b2f7c4",
+      "bytes": 4089
+    },
+    "root-design-acceptance.json": {
+      "sha256": "bd5849e8db661becd762a9e2c7eff05f2a381a60b347244b6ef50cbf131976ce",
+      "bytes": 2427
+    }
+  },
+  "design_files_verified": 8,
+  "publisher": "project_root",
+  "tests_executed": 0,
+  "p_enabled": false,
+  "schema": "cho51_cm2_final_static_checks_v1",
+  "project_modules": 72,
+  "conditional_event_bytes": 440320,
+  "complete_recursive_effect_closure": false,
+  "existing_local_links_verified": 536,
+  "archive_files_verified": 12,
+  "repository_reference_pins_verified": 307,
+  "textual_import_entries": 417,
+  "conditional_events": 860,
+  "scope": "Read-only file/text/JSON/hash/link/data arithmetic, no project execution/import/Python/AST/compiler/native/tests/Git"
+}

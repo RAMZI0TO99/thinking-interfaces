@@ -1,0 +1,62 @@
+{
+  "reason": "Preserve exact affected source/contract/pins before CM2-I1 and CM2-I2 fixes",
+  "files": {
+    "retained.py": {
+      "original_path": "tools/local_validation/cm2/retained.py",
+      "pin": {
+        "sha256": "12536b2e211dc6da1dcf83864159cd2e0355793bda5033d54baad1831bbf339e",
+        "bytes": 9344
+      }
+    },
+    "callbacks.py": {
+      "original_path": "tools/local_validation/cm2/callbacks.py",
+      "pin": {
+        "sha256": "f3dc0e34a901ff595e6a42d3318c831e94d9cb2e30ae401db8dddbd22b3647c6",
+        "bytes": 12547
+      }
+    },
+    "test_retained.py": {
+      "original_path": "tools/local_validation/cm2/test_retained.py",
+      "pin": {
+        "sha256": "f38720552220e28c87356c8a8cf193c209b40fb8ed542c5b4886b1ccee557a89",
+        "bytes": 9337
+      }
+    },
+    "test_callbacks.py": {
+      "original_path": "tools/local_validation/cm2/test_callbacks.py",
+      "pin": {
+        "sha256": "08441c2f94f9acc1a37eb10b1a84013776977fa9c07e6f5b64c7987790a4f898",
+        "bytes": 10541
+      }
+    },
+    "registry.py": {
+      "original_path": "tools/local_validation/cm2/registry.py",
+      "pin": {
+        "sha256": "f48148e4dfce8611c8b90d57a6b30b48755b270a5bebc6e3e9a57afb18e7b271",
+        "bytes": 4513
+      }
+    },
+    "cho51_p3_cm2_implementation_contract_20261102.md": {
+      "original_path": "docs/phase2/cho51_p3_cm2_implementation_contract_20261102.md",
+      "pin": {
+        "sha256": "73585d2d190aa7826cacb8c5b65661e6be5b2de29f396694f2848a2bfca06bdd",
+        "bytes": 7385
+      }
+    },
+    "cho51_p3_cm2_roster_successor_20261102.json": {
+      "original_path": "docs/phase2/cho51_p3_cm2_roster_successor_20261102.json",
+      "pin": {
+        "sha256": "1daa3bc8cad9e3b56265cbe68e8f4a23d5913d921c6bee9302962719505168c4",
+        "bytes": 214689
+      }
+    },
+    "cho51_p3_cm2_adapter_effects_20261102.json": {
+      "original_path": "docs/phase2/cho51_p3_cm2_adapter_effects_20261102.json",
+      "pin": {
+        "sha256": "7f3f410981d78763cc3e11ea438948f63a1bd0424ec570eda9a1ea16764b4d18",
+        "bytes": 560605
+      }
+    }
+  },
+  "schema": "cho51_cm2_adapter_draft_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "candidate": {
+    "bytes": 58123,
+    "sha256": "a8c3e291fbb861bdc6b40185cd7330398bbc5071c480c08493e12b35f1970879"
+  },
+  "schema": "cho51_cm2_preserved_draft_v1",
+  "files": {
+    "method-effects.json": {
+      "original_path": "docs/phase2/cho51_p3_component_runtime_v2/method-effects.json",
+      "pin": {
+        "bytes": 509057,
+        "sha256": "535a6bc40cb0e7036d6f86c8471bd4c35893153298a1c693bd5a8d97fda7dc87"
+      }
+    }
+  },
+  "reason": "CM2-D1/CM2-D2 source-trace precision corrections"
+}

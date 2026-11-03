@@ -1,0 +1,129 @@
+{
+  "schema": "cho51_wo_readiness_v1",
+  "status": "SOURCE_ONLY_DESIGN_FOR_REVIEW",
+  "design_sources": {
+    "docs/phase2/cho51_p3_whole_operation_v1/README.md": {
+      "bytes": 2014,
+      "sha256": "25b161dace6dbca0e31a2912dc4fe6d963d8a34b9446e0722f626b12ed5acb2b"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/operation.md": {
+      "bytes": 16509,
+      "sha256": "f97012bf266f932b49b10e17ecd26e7e6528895a569593c67565bcb88da01b84"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/effects.json": {
+      "bytes": 1039541,
+      "sha256": "d2b7cccc7d3ddeafc7085b1eee5bf1cf16458f0e8a89d77c45cca64d65b200ba"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/allocations.json": {
+      "bytes": 18191,
+      "sha256": "e243b27b844a91d75fea75efd9d912fd1d8185ce51cd482e1e8f5bf1c51032aa"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/feasibility.md": {
+      "bytes": 8943,
+      "sha256": "93a7137620986f9305cd8da22e97f146c08805453278dc9e15f4944a590d3813"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/cohort-debt.json": {
+      "bytes": 630450,
+      "sha256": "7d2f6dbfef9478e1a3c9ada69b2bee0df77c328fee1c2d12fa2aaf70556ce987"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/qualification.json": {
+      "bytes": 12565,
+      "sha256": "a741f2ef9d8b6f731fe5c820e250229947d3b2b02c048dc8a9df760a9d5b290a"
+    }
+  },
+  "prior_candidate": {
+    "path": "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/candidate-v2.json",
+    "pin": {
+      "bytes": 86587,
+      "sha256": "4fdb9e6fe41596fac3558f0af8c69629fde2eb57e18f35aa818c58f94acf7874"
+    }
+  },
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "new_methods": 0,
+  "implementation_changed": false,
+  "indexed_bodies": 546,
+  "unindexed_other_held": 516,
+  "inherited_effect_boundaries": 16,
+  "stage_count": 10,
+  "memory_families": 10,
+  "report_files": 33,
+  "report_bytes": 18890752,
+  "new_scenarios": 32,
+  "new_qualified": 0,
+  "prior_cm6_scenarios": 32,
+  "prior_supplement_scenarios": 24,
+  "prior_qualified": 0,
+  "gates": [
+    {
+      "id": "WO-G01",
+      "requirement": "Exact operation/control membership and authoritative source/runtime/dependency adoption",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G02",
+      "requirement": "Complete recursive normal/failure/type/formatter/import/fixture/effect domains",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G03",
+      "requirement": "Original provider/lifecycle/host/parent/ingress/cutoff/observer/custody mapping",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G04",
+      "requirement": "All allocations, simultaneous lifetimes and complete process/Job peak memory",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G05",
+      "requirement": "Every write, report/failure/capture/framing/EOF/tool witness and finite noncircular closeout packing",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G06",
+      "requirement": "Every stage/case/control worst-case cost, failed cleanup and F/M under original clocks",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G07",
+      "requirement": "Implemented original successors, exact wrapper/capability/control qualification and independently accepted actual results",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    }
+  ],
+  "admission_predicate": "Full-profile only: all seven gates ESTABLISHED plus unchanged current source/runtime/resource/custody predicates and unused attempt; prerequisite experiments require distinct acyclic independently admitted B0/B1 basis",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "capture_inline_universal_fit": "INFEASIBLE_FOR_CONTROL_BYTE_COUNTEREXAMPLE_ONLY",
+  "operational_writer_or_runner_added": false,
+  "next": "Source-only independent B0/B1 basis plus original provider/ingress/capture witness contract and fixed-slot packing; complete operation/effect/allocation closure remains mandatory",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "prerequisite_bootstrap": {
+    "dependency_path": [
+      "B0 original independently established trust/guard/observation root",
+      "B1 bounded prerequisite driver",
+      "B2 scoped prerequisite targets using only earlier accepted dependencies",
+      "B3 complete profile W0"
+    ],
+    "B0": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+    "B1": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+    "existing_driver_inferred": false,
+    "candidate_self_certification": false,
+    "circular_admission_allowed": false,
+    "qualification_admitted": false,
+    "only_permitted_unknown": "Scoped functional target outcome inside independently bounded and guarded effects; never guard/custody/resource/failure domains"
+  }
+}

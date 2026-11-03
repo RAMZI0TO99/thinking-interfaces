@@ -1,0 +1,106 @@
+{
+  "schema": "cho51_p1q_root_qualification_v1",
+  "status": "QUALIFIED_P1_ENGINE_Q_TESTED_SCOPE",
+  "created_utc": "2026-10-29T10:55:41.2372163Z",
+  "author": "project_root",
+  "operation_id": "1888ddc4-cce7-49f4-9b61-255683a8d0ab",
+  "source_reviewer": "p1_source_review",
+  "actual_reviewer": "p1_actual_review",
+  "references": {
+    "actual-review.json": {
+      "bytes": 47319,
+      "sha256": "24958c1287b708dba7010940304b819c8e1a9ed797c0e4f9639a52396aecfca1"
+    },
+    "source-review.json": {
+      "bytes": 8308,
+      "sha256": "8925507f8e27c1cc86932b1bef93d728de4fa08d5003c75fda29934a09970aa3"
+    },
+    "source-freeze.json": {
+      "bytes": 6899,
+      "sha256": "e6b7756eccd91362be077822c4e7995abacb66064ec9dba0dcdbd40fef04079c"
+    },
+    "contract-adoption.json": {
+      "bytes": 821,
+      "sha256": "81a1d3110273367c87e376c109e34cab68442f9bd4df1fbc3fc9eeb9cd0ad6da"
+    },
+    "runtime-inventory.json": {
+      "bytes": 207757,
+      "sha256": "85d9e65dbaa8d01dcc2eb6b3157f2141b96f9d6a8d1298bc32e10a1dc67f29f9"
+    },
+    "preservation-baseline.json": {
+      "bytes": 204662,
+      "sha256": "6de869c608596603c06bc52ddc60bd81f571589191c8dde67b3651eca1f17280"
+    },
+    "external-audit.json": {
+      "bytes": 6660,
+      "sha256": "969b7b6d4316ed333f1abfd01787a9f3ccc1542a7f9f3431321fbeb8f081b776"
+    },
+    "admission_1888ddc4-cce7-49f4-9b61-255683a8d0ab.json": {
+      "bytes": 233690,
+      "sha256": "90044ddb8de6e38225fc0cefc2e4a9792c0a5abfe6480c713b548479412f3b12"
+    },
+    "caller-return_1888ddc4-cce7-49f4-9b61-255683a8d0ab.json": {
+      "bytes": 4007,
+      "sha256": "99d463025cdfa565cf9fa442de10f857155e4a61804a91a5fbd3c51a699dab8a"
+    },
+    "timestamp-controls_1888ddc4-cce7-49f4-9b61-255683a8d0ab.json": {
+      "bytes": 950,
+      "sha256": "d5f9d4eb55e57ce1f8fb42ebfefa6f50090b49521debdb2fc2d84c05c8e855c4"
+    },
+    "attempts/1888ddc4-cce7-49f4-9b61-255683a8d0ab/test-report.json": {
+      "bytes": 28609,
+      "sha256": "57d0199161778094c486d9902ab172e1217b7ecd38b06f666ed3fbeed20d75d1"
+    },
+    "attempts/1888ddc4-cce7-49f4-9b61-255683a8d0ab/payload.json": {
+      "bytes": 4185,
+      "sha256": "d5e7fd6219815270676e4f2d3c6d8194c83e5ee948a3bc9ec5327d5b84d0ee6c"
+    },
+    "attempts/1888ddc4-cce7-49f4-9b61-255683a8d0ab/receipt.json": {
+      "bytes": 4106,
+      "sha256": "20a9fbf699281a52678caac3fe70abcbec2c3d30f9dabfeaf2d11b7d82e7df32"
+    }
+  },
+  "accepted_scope": "P1 recipe and retained observation engine under Q-only synthetic fixture qualification; no actual P closure",
+  "suite": {
+    "run": 108,
+    "passed": 108,
+    "foundation": 31,
+    "native_reader": 30,
+    "protocol": 12,
+    "preparation_engine": 35,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "timestamp_controls_passed": 8,
+  "native_fault_controls_passed": 2,
+  "actual_tool_exit_code": 0,
+  "tool_boundary_elapsed_seconds": 13.4948485,
+  "new_operation_owned_lifecycle_closed": true,
+  "source_input_count": 37,
+  "runtime_file_count": 732,
+  "preserved_file_count": 874,
+  "fixture_files": 93,
+  "fixture_bytes": 1355,
+  "source_and_attempt_frozen": true,
+  "replay_allowed": false,
+  "pending_flags_resolution": "Exact later independent actual review and this Root adoption resolve immutable prior pending flags; no original receipt was rewritten.",
+  "next_step": "Concrete complete physical dependency recipe and independently reviewed file-only P caller, then fresh actual P admission and pin/coverage/result review; L/V/C remain separate.",
+  "limitations": [
+    "Role-labelled tiny JSON fixtures are not actual third-party package closure.",
+    "Real reparse fixture and full26/original48 matrices remain unqualified.",
+    "No ABI/native-loader qualification or actualP/L/V/C/117/34 execution.",
+    "Q1 cause and cleanup remain unknown; Q4 and all predecessor evidence remain unchanged."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "accepted_scientific_cells": 0,
+  "scientific_total": 1020,
+  "final_freeze_signed": false
+}

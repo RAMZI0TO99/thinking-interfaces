@@ -1,0 +1,36 @@
+{
+  "schema": "cho51_p2q_failed_actual_review_v1",
+  "status": "FAILED_P2Q_CONSUMED_OWNED_CLOSED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T16:39:04.6802436Z",
+  "operation_id": "7c2de01e-6143-4421-a750-b686b69dc2d4",
+  "actual_tool_exit_code": 1,
+  "elapsed_seconds": 14.5710028,
+  "new_operation_owned_lifecycle_closed": true,
+  "qualified": false,
+  "tests_run": 0,
+  "findings": [
+    "The native probe succeeded, but Q failed before suite dispatch with PermissionError WinError 32 while opening a retained handle. No Q qualification follows from the probe alone.",
+    "Source evidence supports a sharing mismatch: caller NewOutput retains ReadWrite handles with FileShare.Read, while the supervisor native reader requests GENERIC_READ with read sharing only. Its new handle does not share the existing write access. Mapping read occurs before RetainedOutputs construction, explaining outputs:false without an unclosed supervisor output handle."
+  ],
+  "checks": [
+    "Independently inspected exact initial/completion tool return, underlying caller and supervisor stdout, native diagnostic, mapping, source and native-reader text. Rechecked 79 source, 732 runtime, 169 compiler and 2665 preserved byte/hash pins with no drift. No API, runtime, Git, Python, imports, AST, compilation or tests were invoked.",
+    "Diagnostic and mapping hashes and byte lengths match actual external references: diagnostic 9883 bytes f040ca098ca8d96e3b6dba0091aecc2ae842d8430cc7ed027efae9d6b60b025e; mapping 10203 bytes f9b2f2029317f78a024c8a2f68a42cb436f141c68b4c0421875cfd256874d6f4.",
+    "Diagnostic observation reports success, 14 exact contract rows and 18 reference records including a negative lookup. Exactly 17 records acquired and 17 released; all_owned_references_released true and five controls true. This is actual retained reference-balance evidence, unlike the prior thrown Q7 query.",
+    "Supervisor inputs:true and outputs:false are preserved. Mapping read and validation precede output object construction; no method-suite child or supervisor output object was established. Original supervisor process is reaped by the owned outer Job lifecycle.",
+    "Actual external return closes original caller files, 18-record 6422-byte journal and caller guard: done, joined, closed and completion wait closed true, no guard error, shutdown 0.1126032 seconds. Outer PID 10704 creation FILETIME 134377654505205085 reaped, process/thread closed, Job empty/closed, both pipes EOF with readers joined/closed, writers/thread handles/NUL closed and watchdog joined; no cleanup or stream faults.",
+    "Observed elapsed 14.5710028 seconds, supervisor minimum RAM 5581332480 bytes and disk 75438895104 bytes, outer peak process 34410496, Job 40591360 and caller 151920640 bytes satisfy admitted bounds."
+  ],
+  "limitations": [
+    "Native probe evidence is scoped to exact diagnostic rows, acquired references and controls. It does not establish Q method success, full physical closure, loader or ABI qualification, P acceptance or scientific results.",
+    "No unchanged reissue is supported. A changed, independently reviewed successor must transfer artifacts through a compatible read-only custody handoff while preserving original identity, byte verification and writer exclusion. Do not broadly permit write sharing in the strict reader.",
+    "Earlier Q8 startup closure remains unproved, as do prior startup/deadline and historical custody claims. This new lifecycle closure does not repair them. 117 candidates and 34 controls remain unexecuted, custody UNRESOLVED and scientific cells 0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_wo_design_review_v2",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 86181,
+    "sha256": "58828a704831299181208eb89b7e783b3f2dde820822cd41ed871038ad728421"
+  },
+  "findings": [],
+  "resolved_findings": [
+    "WO-D01"
+  ],
+  "review_text": "ACCEPTED_DESIGN_ONLY; findings=[]. Candidate candidate-v2.json:86181 bytes, SHA25658828a704831299181208eb89b7e783b3f2dde820822cd41ed871038ad728421. Independently reverified all460 source pins, eight new-file pins and four external reference-only pins without byte/hash mismatch. Only operation.md, feasibility.md, qualification.json and readiness.json changed. WO-D01 is resolved: full-profile W0 is distinct from prerequisite qualification admission; the explicit acyclic B0 original independent trust/guard/observation root -> B1 bounded driver -> B2 scoped targets -> B3 complete profile path requires accepted earlier bases, separate finite admissions and independent original evidence. B0/B1 are expressly unimplemented/unqualified/not established; no historical receipt, supplied token, current tool session or existing driver supplies them by inference. Unknown guard/custody/resource/effect/failure domains refuse; only scoped functional target outcome inside an independently bounded guarded domain may be unknown. Candidate self-certification, later-node dependence and circular W0 borrowing are forbidden, with WO31/32 and readiness coverage. No new worker, role, clock or cap is introduced. Verified all four exact archived originals against v1 pins,1873-byte manifest/SHA2561b8e55a37be7f30bfabe9c69cb74efd8708036fb566d81a63bc96db742db987c, saved-review confirmation and unchanged prior candidate/review hashes. Prior full eight-file semantic/source/arithmetic review and completed independent9657-file preservation audit carry forward; this revision did not repeat preservation hashing. Baseline SHA256a5d94d62bce77bb83a48e9c6a94640b04d52871164678d538d1f2bf655278576. Acceptance covers the whole-operation obligation/feasibility design only, not an available qualification root or feasible original runner. Unchanged1062/49 census, disjoint Q360/S140,702 held rows,546 indexed bodies,16 inherited boundary classes, ten stages/ten memory families and33report slots/18890752 bytes retain prior checks. Valid join4Scollections/8rawCparses/10baseDparses and conditional2162688candidate/4391424concat-payload bounds remain scoped source arithmetic, not simultaneous-tree/heap/time fit. Universal inline escaping is refused for its control-byte counterexample strategy only; retained-raw capture is not implemented or qualified. All32 new scenarios and all prior obligations remain unqualified. Complete original manifests/adoption, recursive normal/failure effects, provider/ingress/cutoff/observer/custody, capture/file packing, allocations/lifetimes, finite publication/census/owned closeout and worst-case time/memory/F/M reserves remain OPEN/NOT_ESTABLISHED. No method, code, driver, runtime qualification/admission or scientific acceptance is added. Original guards, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed.",
+  "review_text_sha256": "241fafeab53729cad6f585651a30ae88e49131c293fca12426153ab6640bd680",
+  "implementation_changed": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

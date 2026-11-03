@@ -1,0 +1,46 @@
+{
+  "schema": "cho51_cm6s_implementation_coordination_v1",
+  "scope": "Implement and independently review separate S140 supplied profile and raw verification; SOURCE ONLY",
+  "publisher": "project_root only",
+  "author": "cm6s_author",
+  "author_ownership": "New tools/local_validation/cm6s except registry.py",
+  "root_ownership": "Registry, metadata, archives, phase records, source integration and current docs",
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "preserved_files": 9613,
+  "design_candidate": {
+    "bytes": 82765,
+    "sha256": "bd14af0558bc9895ac0804f3ab1d2b02def8c3b060a50fc8e2e0020f8dc04c22"
+  },
+  "design_adoption": {
+    "bytes": 3186,
+    "sha256": "b2ca78b94338bedd07bc3e24b8abf06d764dfb06938a67db0f0bc3e2b5d8515f"
+  },
+  "allowed": "Source edits, file/text/JSON/hash/link/arithmetic inspection",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime",
+  "freeze_correction": "Save exact review and obtain byte confirmation, archive exact affected candidate files and manifest before editing",
+  "publication": "Root CreateNew records; reviewer confirms exact saved bytes; final closeout confirmation conversation-only",
+  "q_anchor": 360,
+  "supplement": 140,
+  "prior_held": 656,
+  "new_tests": "All held NEW_TEST_UNQUALIFIED outside both fixed Q360/S140",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

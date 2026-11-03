@@ -1,0 +1,80 @@
+{
+  "schema": "cho51_pc1_implementation_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate": {
+    "bytes": 91039,
+    "sha256": "15e5605172bb9777d305539ba9c2197c54c562f41a1db3da4aa0f027e16e6e95"
+  },
+  "review": {
+    "bytes": 4265,
+    "sha256": "659bbd996b8c80014a29eb008ed1f1fd7a67ac7145e63fdf0d088fed4952f769"
+  },
+  "saved_review_confirmation": "Confirmed PC1 source-review-v1.json exact4265 bytes SHA256659bbd996b8c80014a29eb008ed1f1fd7a67ac7145e63fdf0d088fed4952f769; UTF8 review_text SHA256ae82166e4add53efdf095205040bbd31807efd45465a34275cecb4dc7d4e087a. Saved text exactly matches review; candidate15e56051…e16e6e95/91039bytes, CHANGES_REQUESTED_SOURCE_ONLY, PC-S01/P2, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Completed9748-unique-file/9729-preserved audit with zero mismatches is accurately recorded; all owned scans closed. Review ownership temporarily released for exact15-new-file archival and correction; no writes/extra record.",
+  "files": {
+    "tools/local_validation/pc1/__init__.py": {
+      "bytes": 75,
+      "sha256": "dad966501d8570f43de974a941429f4cc548bd0d4feef1dbbedd8090f622be20"
+    },
+    "tools/local_validation/pc1/common.py": {
+      "bytes": 4109,
+      "sha256": "5396ce9bae6b61772eb49c576c228c3734c7755c4135a10c90b36752bef6bd1a"
+    },
+    "tools/local_validation/pc1/fixtures.py": {
+      "bytes": 1409,
+      "sha256": "ab962acc0dd2072a94b774d73b15689d37b40a6b4aa28dcf5b46f00586dc4362"
+    },
+    "tools/local_validation/pc1/joins.py": {
+      "bytes": 1311,
+      "sha256": "4237f46b93c724a32aaeafc491bcad253323b47c19cd62d8b4ecfa848f0a44dc"
+    },
+    "tools/local_validation/pc1/parsers.py": {
+      "bytes": 3367,
+      "sha256": "9e3e61ae5a24d24f1dc27860f7666aa8eaa7031561ca7a992118542cea13add7"
+    },
+    "tools/local_validation/pc1/README.md": {
+      "bytes": 1726,
+      "sha256": "caae275eb1afed9556208c2e4510f7385b1e85d9320a8fb360b8a407f3e424bd"
+    },
+    "tools/local_validation/pc1/refusal.py": {
+      "bytes": 1146,
+      "sha256": "e2cd7a55bcd373268f5e69d165ccc4f3daa68d8c50bb1b2cfab3f91aa42ad496"
+    },
+    "tools/local_validation/pc1/registry.py": {
+      "bytes": 6048,
+      "sha256": "3fd64589813df24e7e9e67120445ae810df12c84884ffefa4c1bc244efc0fb31"
+    },
+    "tools/local_validation/pc1/test_join.py": {
+      "bytes": 5395,
+      "sha256": "09713609d95feb5fc1f0cb783780cb76a3b33fbb937b60d1ead4127818c56325"
+    },
+    "tools/local_validation/pc1/test_projections.py": {
+      "bytes": 4021,
+      "sha256": "c98d2a722815e498b3db681936f802be0f5a0c4d87927e58bcb25b6c0b8bb9b1"
+    },
+    "docs/phase2/cho51_p3_pc1_roster_20261103.json": {
+      "bytes": 258591,
+      "sha256": "0c256ccb2b213478ef340c8dc9a77d2597ff1ccdfd4eb2099b923dd78d3026ed"
+    },
+    "docs/phase2/cho51_p3_pc1_debt_20261103.json": {
+      "bytes": 580324,
+      "sha256": "7dedc0f2175657a6b1e64247d73e95a09928f08bedac288148bc8dcaa4e8935a"
+    },
+    "docs/phase2/cho51_p3_pc1_coverage_20261103.json": {
+      "bytes": 1073144,
+      "sha256": "16092bac166b371c052aceee4f65ce456c18f36c7a5477012b84f252084383be"
+    },
+    "docs/phase2/cho51_p3_pc1_budget_20261103.json": {
+      "bytes": 25855,
+      "sha256": "c2a4e9cf18c9c5f431ea3e1d1f372a86a79b68c1b07aa2c19b45bb4bb35ea90a"
+    },
+    "docs/phase2/cho51_p3_pc1_contract_20261103.md": {
+      "bytes": 5488,
+      "sha256": "1fc44dbd2e4677e85ec68053c8e84abd8756fa8a6bf2d86f695d86732244e38a"
+    }
+  },
+  "file_count": 15,
+  "resolved_findings_planned": [
+    "PC-S01"
+  ],
+  "archive_before_edit": true
+}

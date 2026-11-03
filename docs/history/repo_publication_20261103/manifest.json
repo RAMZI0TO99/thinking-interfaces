@@ -1,0 +1,64 @@
+{
+  "schema": "cho51_bd1_prepublication_doc_archive_v1",
+  "publisher": "project_root",
+  "scope": "Exact accepted BD1 active pages before owner-authorized publication status/documentation refresh",
+  "files": {
+    "docs/history/repo_publication_20261103/AGENTS.md": {
+      "bytes": 7579,
+      "sha256": "132f80980c5ad9775944c20a9de679ab7e2fda425c826bf99f5836d64fe27c2d"
+    },
+    "docs/history/repo_publication_20261103/HANDOFF.md": {
+      "bytes": 24038,
+      "sha256": "b78c1bd1785c9504ee20a074ea45678b5aec52fe7cce30eb4ae35b5ab678ef75"
+    },
+    "docs/history/repo_publication_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7164,
+      "sha256": "9797e20d615834ce2c7256e12951d0c49efe1e4976b4c794cb8c53d51ceba555"
+    },
+    "docs/history/repo_publication_20261103/CONTINUE_HERE.md": {
+      "bytes": 7660,
+      "sha256": "1000282754bcd7b4ddbd7417a4b626b38903a7b2a5c31043282ab67b9e75fe5b"
+    },
+    "docs/history/repo_publication_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7001,
+      "sha256": "2903887172f6adf0f0610cd8f6cdd3baf5abe50d1c60ffbc3300c4667fd9e932"
+    },
+    "docs/history/repo_publication_20261103/README.md": {
+      "bytes": 7992,
+      "sha256": "3fe211a1a65681bf2f89993dd3039b822bff4f4dcf0dcfa043a36d6d9a183041"
+    },
+    "docs/history/repo_publication_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11597,
+      "sha256": "5252ba751d0fb23055ff67d0cd430e638d13e1cb5e0326d587dd49a6dedbf124"
+    },
+    "docs/history/repo_publication_20261103/docs/phase2/README.md": {
+      "bytes": 16189,
+      "sha256": "598ec06631266e39ff88a9952c81d8423e2ce583667dd968fa96b973e68682a0"
+    },
+    "docs/history/repo_publication_20261103/docs/where are we/README.md": {
+      "bytes": 13070,
+      "sha256": "6ddb4f4c883a60c2e4b7ae1103defc41af120992e00cf3e6ba28bcccf5f6a9e0"
+    },
+    "docs/history/repo_publication_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 30389,
+      "sha256": "10f696c6f48e9df273fb526179c69296a19eed36e642d65d8b1b906159da7f07"
+    },
+    "docs/history/repo_publication_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 35660,
+      "sha256": "2f89e01c02abdd2e14db9ac506b7dab2d933ab042ad530f39b67586c6b0ddf26"
+    },
+    "docs/history/repo_publication_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 60021,
+      "sha256": "aa42f7cbcd7345f212b75bab9787385acc8be618ed78827417e401d39808a18d"
+    }
+  },
+  "count": 12,
+  "source_final_static": {
+    "pin": {
+      "bytes": 8841,
+      "sha256": "53ca4892620d465770eb503d4f15ababd39be583f2b0a9a04dc784f43a242bf7"
+    },
+    "path": "runs/coordination/cho51_p3_b0b1_design_20261103_v1/final-static-checks.json"
+  },
+  "original_records_unchanged": true
+}

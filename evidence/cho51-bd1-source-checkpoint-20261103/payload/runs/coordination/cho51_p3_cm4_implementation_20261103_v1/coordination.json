@@ -1,0 +1,61 @@
+{
+  "schema": "cho51_cm4_implementation_coordination_v1",
+  "scope": "Source-only supplied collection/lifecycle/table/terminal/raw join plus current roster/effect/budget successor",
+  "publisher": "project_root only",
+  "worker": {
+    "name": "cm4_events_author",
+    "files": [
+      "tools/local_validation/cm4/events.py",
+      "tools/local_validation/cm4/test_events.py"
+    ]
+  },
+  "root_ownership": [
+    "cm4 collection.py tables.py terminal.py join.py registry.py __init__.py test_contracts.py README.md",
+    "implementation contract, roster/effect/budget data",
+    "phase records, archives and current docs"
+  ],
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "source-review-v1.json",
+    "candidate-v2.json",
+    "source-review-v2.json",
+    "candidate-v3.json",
+    "source-review-v3.json",
+    "candidate-v4.json",
+    "source-review-v4.json",
+    "root-source-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "conditional_drafts": "Preserve exact affected candidate files and manifest before any review correction",
+  "publication": "Message-only reviewers; Root saves exact text and obtains saved-byte confirmation; final closeout confirmation stays conversation-only",
+  "planned_new_tests": 40,
+  "planned_full": 836,
+  "planned_modules": 36,
+  "planned_selected": 320,
+  "planned_new_normal_subtests": 0,
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_pc_design_review_v1",
+  "status": "CHANGES_REQUESTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "reviewer": "cm4_design_review_sol",
+  "candidate": {
+    "bytes": 87101,
+    "sha256": "f5d52309d6553d2b39e105dcd81326a19c1b1f50f5e020c6693146cadab2b0fa"
+  },
+  "review_text": "CHANGES_REQUESTED_DESIGN_ONLY. Candidate candidate-v1.json:87101 bytes, SHA256f5d52309d6553d2b39e105dcd81326a19c1b1f50f5e020c6693146cadab2b0fa. Completed independent bulk-native current-byte audit of9705 unique files covering all468 source pins, eight new-file pins, four external reference-only pins and9693 preservation inputs; mismatches=[]. Preservation-baseline SHA256d1e42e1275d5d664ec4ca18714d1029ee0d8066751bd7b343e6689931c6fb45f. Reviewed all eight PC1 design files against whole-operation/frozen source contracts. Findings=[{id:PC-D01,priority:P2,file:docs/phase2/cho51_p3_provider_contract_v1/packing.json,field:I.invariants,issue:BOUND permits entered=committed=1 with refused=pending=late=cutoff=event_records=events.bytes=0, satisfying the listed algebra despite the original state contract enabling entry only after BOUND->OPEN.,required_change:Require BOUND zero entered/committed/refused/pending and zero event records/bytes, retaining existing cutoff/late zero rules; allow a binding-stage fault category without inventing activity. Add malformed BOUND activity coverage. Preserve the independently defined cutoff/map domain rather than assuming cutoff equals a counter.},{id:PC-D02,priority:P2,file:docs/phase2/cho51_p3_provider_contract_v1/packing.json,field:B/I/C supplied join,issue:I/C binding fields have binding_pin types but no explicit invariant requires them to equal the exact canonical B raw-byte pin under one independently expected operation/binding context. Per-projection shape/algebra checks alone leave cross-binding substitution unspecified for the proposed supplied checker.,required_change:Specify mandatory independently expected O/B field checks and common operation equality, compute the exact whole canonical B raw pin, and require both I.binding and C.binding to equal it. Reject swapped B values or cross-operation projections even when all scalar domains/algebra fit; add source-level qualification cases while keeping native authority false and full ledgers/provenance open.}]. No additional design correctness finding identified. Independently compared full1062/49/Q360/S140 identity sets and all702 debt rows exactly with predecessor,33 inherited report reservations/totals exactly, and all original guard fields exactly.32 scenarios are four groups of eight, all unimplemented/unqualified. Conditional one-extra-escape regions check:2*8192*6+32768=131072 and8192*6+16384=65536, subject to exact future wrapper/remainder fit; they do not pack full actor/sample/ingress/capture populations or original returns. Confirmations, HB1 request/response caps and universal inline control-byte/positive-envelope counterexamples retain distinct scopes. B0/B1 remain unimplemented/unqualified; foundational OS trust is an explicit independent adoption assumption, not candidate self-certification or a current tool-session authority. Native acquisition precedes bootstrap, invocation-to-model mapping is independently required, late is distinct from entered/model counters, and final publisher/census/observer endpoint remains explicitly open. Complete original trust/provider/ingress/lifecycle/capture/EOF/tool/closure, population/wrapper packing, recursive effects/allocation/time/peak/F/M feasibility remain NOT_ESTABLISHED. The useful next supplied parser/refusal work must implement the strengthened exact invariants and return unconditional false native/execution/debt authority without dispatch. No method, code, run, qualification, P preparation or scientific acceptance is added. All702 debt rows,46 methods outside Q/S, frozen receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. The initial stalled direct-file scan was interrupted/closed without an audit claim; the completed bulk-native fallback is the audit evidence, and no owned scan remains. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "4e9b079f437a7504d56426938d8835de5aa7b2c71116cbc92e0d1008cec08250",
+  "findings": [
+    "PC-D01",
+    "PC-D02"
+  ],
+  "completed_preservation_audit": 9693,
+  "unique_current_files_audited": 9705,
+  "preservation_mismatches": 0,
+  "interrupted_scan_evidence": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_cm6_source_review_v1",
+  "status": "CHANGES_REQUESTED_SOURCE_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 78126,
+    "sha256": "1502d571aa73789fc23aee9bb7d6ca4c1a71f68a0f402bba148a85f93e3be96a"
+  },
+  "findings": [
+    {
+      "id": "CM6-S01",
+      "priority": "P2",
+      "file": "docs/phase2/cho51_p3_cm6_source_coverage_20261103.json",
+      "scenario": "CM6-08",
+      "required_change": "Explicit partial context/source coverage; actual manifest dependency-set/cycle/expectation-provenance checks remain open"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_SOURCE_ONLY. Candidate candidate-v1.json:78126 bytes, SHA2561502d571aa73789fc23aee9bb7d6ca4c1a71f68a0f402bba148a85f93e3be96a. Independently verified all408 source pins,13 new-file pins, four external reference-only pins and all9503 preservation files without byte/hash mismatch; preservation-baseline SHA256ec242de79b4f9b0845741fb12cab47587b099f6391c026cc6f9f720f59842467. Reviewed all nine CM6 package files, all60 test bodies and four implementation/accounting documents against accepted CM6 design. Findings=[{id:CM6-S01,priority:P2,file:docs/phase2/cho51_p3_cm6_source_coverage_20261103.json,scenario:CM6-08,issue:SUPPLIED_SOURCE_EXAMPLE_ONLY groups this obligation with implemented identity checks despite checking only manifest-reference hash shapes and local acyclic K construction. The API never receives actual source/runtime/producer manifest dependency sets, so cannot verify their no-self/forward/output-pin requirement.,required_change:Explicitly label CM6-08 partial source/context coverage and state actual manifest dependency-set/cycle/expectation-provenance verification remains outside this implementation and open for independent adoption/original evidence. Preserve qualified=false and original_boundary_implemented=false.}]. No code correctness finding identified. Static reasoning supports exact raw/pin/canonical/type/name bounds, fixed Q360, full supplied current C and fixed876/38 baseline conservation before Q/H views, independent frozen historical parsing, immutable false-authority facts, additive-only raw predecessor/current helper and refusal on prior row/pin/debt drift or same-prior-module additions. Supplied pair reconciliation does not choose authentic predecessor/current evidence, prove source completeness or discharge adoption obligations. Separately checked actual static lineage ledger:936 identities/41 modules,Q360 unchanged,576 held=516 preserved plus60 new unqualified; prior876 IDs and prior38 module pins conserved, no invented runtime predecessor. Independently checked all420 indexed method start lines/source pins (360 anchor plus60 held, not420 selected),110 declaration and36 import rows, three literal test-module pins,60 textual methods with zero new subTest contexts, links and all576 debt digests/module pins. Current full digest65e9157ccaff54f6f059478bfbce0c94f4cea4c70ab2501621c317a790009f68; Q digest321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08. Current Q conditional2568events/1314816bytes/2567attempts remains design-only; frozen H2368 remains separate. Current-context input ceilings2162688 bytes and pair ceilings4259840 bytes are not peak-memory proof. All60 new tests remain held/unexecuted and all32 scenarios unqualified. No executable syntax/test success, current producer/events/terminal/join, original collector/dispatcher/observer/cutoff/capture/custody, complete recursive effects/allocation/finite closeout/timing/memory feasibility or runtime/scientific acceptance is established. Original guards, frozen sources/receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "84448f85dfdbdb1ea72c7d6a8ec04af8d434ea93f9d13e13f7643e62882ed4e5",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

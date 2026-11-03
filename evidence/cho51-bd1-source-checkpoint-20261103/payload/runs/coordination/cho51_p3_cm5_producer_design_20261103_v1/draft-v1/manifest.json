@@ -1,0 +1,13 @@
+{
+  "schema": "cho51_cm5_rejected_draft_archive_v1",
+  "candidate_sha256": "e606ca389dfe6a4330380b28ad2522874c8f376ff8af05fc18747c12476bb6c3",
+  "finding": "CM5-D01",
+  "files": {
+    "effect-map.json": {
+      "bytes": 420419,
+      "original_path": "docs/phase2/cho51_p3_component_producer_v1/effect-map.json",
+      "sha256": "f4d05cff4e5616932460c24b413af4c0be352052e09d8eecd198046c92191c17"
+    }
+  },
+  "saved_review_confirmation": "Confirmed saved CM5 design-review-v1.json exact3382 bytes SHA256f908834fe21124e713864b8412399818dba3085f256d94fab4a91a494cb9c795; UTF8 review_text SHA2561cb097ee381ac978da6844d02189d2d5ede1eda8925c5ddd97428d23cbc352b8. Saved review_text matches my exact message; candidate e606ca38…6bb6c3, CHANGES_REQUESTED_DESIGN_ONLY, CM5-D01/P2, reviewer cm4_design_review_sol, publisher project_root and source-only limits are correct. Review ownership temporarily released for Root's exact effect-map archival and correction including stronger F07 anchors; no writes/extra file."
+}

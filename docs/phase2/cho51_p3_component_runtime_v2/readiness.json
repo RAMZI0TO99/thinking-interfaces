@@ -1,0 +1,123 @@
+{
+  "schema": "cho51_cm2_design_readiness_v1",
+  "status": "DESIGN_ONLY_COMPLETE_OPERATION_REFUSED",
+  "source_methods": 732,
+  "test_modules": 30,
+  "selected_methods": 216,
+  "new_test_identities": 0,
+  "normal_success": {
+    "direct_bodies_reviewed": 216,
+    "subtest_callbacks": 210,
+    "records": 860,
+    "cap_records": 4096,
+    "bytes_at_record_cap": 440320,
+    "cap_bytes": 2097152,
+    "conditional": true,
+    "runtime_observed": false
+  },
+  "source_graph": {
+    "project_modules": 72,
+    "package_parents": 14,
+    "direct_textual_imports": 417,
+    "complete_recursive_runtime_closure": false
+  },
+  "boundaries": {
+    "inherited_sources_changed": false,
+    "cm1_changed": false,
+    "collection_before_selection": true,
+    "source_review_is_execution": false,
+    "operational_dispatch": "REFUSED_UNADMITTED",
+    "p_enabled": false
+  },
+  "gates": [
+    {
+      "id": "R1",
+      "status": "SOURCE_ONLY_ESTABLISHED",
+      "scope": "216 direct bodies/local helpers, normal loop/subtest arithmetic and8/40 patch reconciliation"
+    },
+    {
+      "id": "R2",
+      "status": "DESIGNED_NOT_IMPLEMENTED",
+      "scope": "Retained bytes/code table, loader/object/constructor checks and complete collector"
+    },
+    {
+      "id": "R3",
+      "status": "DESIGNED_NOT_IMPLEMENTED",
+      "scope": "Nonformatting case/suite adapter, sticky callback/fixture state and external aggregator"
+    },
+    {
+      "id": "R4",
+      "status": "OPEN",
+      "scope": "Full732 discovery import/constructor and216 recursive effects; exact runtime/std/native/bootstrap closure"
+    },
+    {
+      "id": "R5",
+      "status": "OPEN",
+      "scope": "Every failure/cleanup/skip/assert/mock/helper formatting and128-frame/4096-location sufficiency"
+    },
+    {
+      "id": "R6",
+      "status": "OPEN_COUNTEREXAMPLE_PRESERVED",
+      "scope": "Exact eligible raw stream/tool/envelope domain; unrestricted1MiB control characters do not fit escaped slot"
+    },
+    {
+      "id": "R7",
+      "status": "UNAVAILABLE",
+      "scope": "Native live guards/custody/atomic claim/parent attribution and asynchronous lifecycle"
+    },
+    {
+      "id": "R8",
+      "status": "OPEN",
+      "scope": "Complete named allocation and timing/memory/final-verification reserves"
+    },
+    {
+      "id": "R9",
+      "status": "NOT_ADMITTED",
+      "scope": "Fresh exact source/runtime pins, unused attempt, all guards/controls and separate actual review"
+    }
+  ],
+  "tests_executed": 0,
+  "runtime_operations": 0,
+  "runtime_admitted": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "obligations_discharged": 0,
+  "limits": {
+    "whole_seconds": 90,
+    "work_seconds": 60,
+    "cleanup_seconds": 5,
+    "hard_seconds": 65,
+    "child_absolute_seconds": 55,
+    "suite_seconds": 40,
+    "native_seconds": 12,
+    "fault_seconds": 2,
+    "startup_seconds": 5,
+    "sample_gap_ms": 200,
+    "freshness_ms": 250,
+    "process_mib": 512,
+    "job_mib": 768,
+    "available_ram_gib": 4,
+    "free_disk_gib": 20,
+    "cpu_library_threads": 1,
+    "gpus_hidden": true,
+    "original_stop_and_ownership": true
+  },
+  "allocation": {
+    "global_files": 256,
+    "global_bytes": 67108864,
+    "fixtures_files": 160,
+    "fixtures_bytes": 33554432,
+    "supervisor_files": 40,
+    "supervisor_bytes": 8388608,
+    "caller_files": 40,
+    "caller_bytes": 20971520,
+    "closeout_files": 16,
+    "closeout_bytes": 4194304,
+    "closeout_reserved_bytes": 3293184,
+    "per_file_bytes": 8388608,
+    "minimum_reports_only_files": 30,
+    "minimum_reports_only_bytes": 17711104,
+    "complete_runtime_allocation": false
+  },
+  "next": "Source-only supplied retained-byte/code-table reconciliation and callback/suite state adapter implementation/review, with explicit roster successor for any new methods. No actual imports/discovery/producer integration until remaining gates close."
+}

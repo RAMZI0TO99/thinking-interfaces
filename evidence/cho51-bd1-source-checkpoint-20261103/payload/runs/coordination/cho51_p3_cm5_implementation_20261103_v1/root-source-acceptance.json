@@ -1,0 +1,51 @@
+{
+  "schema": "cho51_cm5_implementation_root_adoption_v1",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "publisher": "project_root",
+  "authors": [
+    "cm5_model_author",
+    "project_root"
+  ],
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "bytes": 75819,
+    "sha256": "34da4b857ee08fd6530e920f2bba02f93fde480e6f302f61691f9044b65a2b28"
+  },
+  "review": {
+    "bytes": 3406,
+    "sha256": "b655167e066e40787013a92db5b58e85e76666caf61ce29bb67af3bdd914541b"
+  },
+  "saved_review_confirmation": "Confirmed source-review-v2.json exact3406 bytes SHA256b655167e066e40787013a92db5b58e85e76666caf61ce29bb67af3bdd914541b; UTF8 review_text SHA2565d3bd187a3f9fa0343738f2cb038e6ca9919f993da90c99fc744cb09e88bf093. Saved text matches my exact revised review; candidate34da4b85…65a2b28/75819bytes, ACCEPTED_SOURCE_ONLY/findings=[], resolved CM5-S01/S02, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Review ownership released; no writes or extra file.",
+  "findings": [],
+  "resolved_findings": [
+    "CM5-S01",
+    "CM5-S02"
+  ],
+  "adoption": "Exact six-file CM5 package and three source/accounting documents in candidate-v2; acceptance external to frozen pending markers",
+  "source_pins": 387,
+  "new_files": 9,
+  "external_reference_only_pins": 4,
+  "preserved_inputs": 9436,
+  "full_identities": 876,
+  "modules": 38,
+  "selected": 360,
+  "outside_execution": 516,
+  "new_methods": 40,
+  "new_subtests": 0,
+  "normal_subtests": 254,
+  "design_scenarios": 32,
+  "qualified_scenarios": 0,
+  "producer_target": "Frozen CM4 836/36/320; conditional2368events1212416bytes2367attempts",
+  "current_source_mapping": "Hypothetical2568events1314816bytes2567attempts; expanded collector/producer/verifier not implemented",
+  "supplied_producer_implemented": true,
+  "original_dispatcher_implemented": false,
+  "trusted_observer_implemented": false,
+  "complete_recursive_effect_closure": "NOT_ESTABLISHED",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "next": "Source-only design/review of a stable qualification cohort and current-roster collection/producer/verifier integration, retaining original dispatcher/observer gates",
+  "limits": "Source acceptance only; no executable syntax/test success, original execution/custody/capture/complete allocation/timing/memory/science acceptance. All original guards, holds and open obligations remain."
+}

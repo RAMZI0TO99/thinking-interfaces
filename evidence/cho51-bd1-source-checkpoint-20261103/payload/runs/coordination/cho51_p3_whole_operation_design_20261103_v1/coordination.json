@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_wo_coordination_v1",
+  "scope": "Design and independent review of whole-operation effects, allocation liveness and feasibility; source-only",
+  "publisher": "project_root only",
+  "design_author": "project_root",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "analysis_scope": "Read-only source call-path/liveness analysis, no acceptance authority",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "root_ownership": [
+    "docs/phase2/cho51_p3_whole_operation_v1/README.md",
+    "docs/phase2/cho51_p3_whole_operation_v1/operation.md",
+    "docs/phase2/cho51_p3_whole_operation_v1/effects.json",
+    "docs/phase2/cho51_p3_whole_operation_v1/allocations.json",
+    "docs/phase2/cho51_p3_whole_operation_v1/feasibility.md",
+    "docs/phase2/cho51_p3_whole_operation_v1/cohort-debt.json",
+    "docs/phase2/cho51_p3_whole_operation_v1/qualification.json",
+    "docs/phase2/cho51_p3_whole_operation_v1/readiness.json",
+    "all phase records/archives/milestone/current docs"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "preserved_files": 9657,
+  "prior_candidate": {
+    "bytes": 86587,
+    "sha256": "4fdb9e6fe41596fac3558f0af8c69629fde2eb57e18f35aa818c58f94acf7874"
+  },
+  "prior_adoption": {
+    "bytes": 3047,
+    "sha256": "4cfc823ec407b1a6eaa44927c93be6cb96886e67fb4a761e9f0ec4fd88314462"
+  },
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "new_methods": 0,
+  "implementation_edits": false,
+  "allowed": "File/text/JSON/hash/link/arithmetic and design documents",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime or implementation edits",
+  "frozen_correction": "Save exact review and obtain byte confirmation, archive affected candidate bytes and manifest before edits",
+  "publication": "Root CreateNew records; exact reviewer saved-byte confirmation; final closeout confirmation conversation-only",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

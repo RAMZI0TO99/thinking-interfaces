@@ -1,0 +1,20 @@
+{
+  "schema": "cho51_cm6_source_review_v2",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 78876,
+    "sha256": "7bf79ae5236a01998eec84b01156050249a39942bab75a60e1a5db95f23ac8da"
+  },
+  "findings": [],
+  "resolved_findings": [
+    "CM6-S01"
+  ],
+  "review_text": "ACCEPTED_SOURCE_ONLY; findings=[]. Candidate candidate-v2.json:78876 bytes, SHA2567bf79ae5236a01998eec84b01156050249a39942bab75a60e1a5db95f23ac8da. Independently reverified all408 source pins,13 new-file pins and four external reference-only pins without byte/hash mismatch. Only source_coverage changed:843022 bytes, SHA2562063d83c15fa1da24dc94234739021ed43cedee41c81f268ef9627ffd3612c71. Compared parsed index content against exact archived v1: only CM6-08 changed, now PARTIAL_CONTEXT_SOURCE_ONLY with explicit missing actual manifest dependency-set/cycle/no-self-forward-output-pin/expectation-provenance verification; qualified=false and original_boundary_implemented=false remain. CM6-S01 is resolved. Verified exact archived842666-byte old index/SHA2561a38469b9ef142b0d77a2a9d68c3e50eafbfcd0a320b1afd5f3d84cfad097427 against v1 pins,1252-byte manifest/SHA2567309062445c1722cf53cd63e364170c90e67377f01781d6c3867134248feebe7, review confirmation and unchanged prior candidate/review hashes. No code, roster, debt ledger or test body changed. Prior full semantic review of nine package files/all60 test bodies/four documents and independent9503-file preservation audit carry forward, supplemented by Root's reported fresh full scan; this revision did not repeat the preservation audit. Preservation-baseline SHA256ec242de79b4f9b0845741fb12cab47587b099f6391c026cc6f9f720f59842467. Source acceptance covers supplied expected-context/full-collection and conservative additive raw-pair reconciliation only. Fixed Q360, full current936/41 census,576 held=516 preserved+60 new, exact baseline/history projections, immutable false-authority facts and separate actual static lineage remain appropriately scoped.420 indexed bodies are360 anchor plus60 held, not420 selected;110 declaration/36 import rows and60 tests with zero new subTest contexts retain prior checks. Pair comparison cannot select authentic predecessor evidence, prove actual source completeness or discharge adoption/debt obligations; CM6-08 actual manifest dependency/provenance checks remain open. Q2568events/1314816bytes/2567attempts remains conditional design accounting; frozen H2368 remains separate. All60 new methods remain held/unexecuted and all32 scenarios unqualified. No executable syntax/test success, producer/events/terminal/join implementation, original collector/dispatcher/observer/cutoff/capture/custody, complete recursive effects/allocation/finite closeout/timing/memory feasibility or runtime/scientific acceptance is established. Original guards, frozen sources/receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed.",
+  "review_text_sha256": "d1dd20b4c5a6680f1c7f663d7fb78c7a37529660435716ef4249045adf68214d",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

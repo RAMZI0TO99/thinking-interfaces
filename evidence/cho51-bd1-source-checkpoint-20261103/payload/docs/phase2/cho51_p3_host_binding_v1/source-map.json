@@ -1,0 +1,201 @@
+{
+  "read_only_auditor": "host_boundary_audit",
+  "input_count": 30,
+  "schema": "cho51_hb1_source_map_v1",
+  "inputs": {
+    "tools/local_validation/sc1/publisher.py": {
+      "bytes": 27970,
+      "sha256": "f5eb5e6ad9f9c38ed14cffed1076c2ce3004c4bdb80468d74eed6a553fd808af"
+    },
+    "tools/local_validation/lq19/supervisor.py": {
+      "bytes": 40004,
+      "sha256": "f9ded4e1c82f8706a485c9c3923a2753ababb60588e3c12ef4aaaf4059ef1d0f"
+    },
+    "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-candidate-v2.json": {
+      "bytes": 50116,
+      "sha256": "a2b0853d7d502764ca0cb2227fd182e9a11182b4d092f0d86a3be26b00809f60"
+    },
+    "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/source-review-v2.json": {
+      "bytes": 2938,
+      "sha256": "1fcb0a65c34eaf58361182a6696910fb7f5e52e559cae3bdfc5ce0d41dd50b8f"
+    },
+    "docs/phase2/cho51_p3_sc1_implementation_20261102.md": {
+      "bytes": 7711,
+      "sha256": "31d29e2bab4eaee78e0e572b4d7c8c04c3e2c30cd458f5f470141d704da00935"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/contract.md": {
+      "bytes": 16068,
+      "sha256": "6841fddd613234b55f715568b43a7a024da85a3830d2ce2abc100aad00f4e682"
+    },
+    "tools/local_validation/lq19/child_entry.py": {
+      "bytes": 19802,
+      "sha256": "8854d97669fd820c33f4de24641d9ffd2259da1b7895c603d21936c52f83174d"
+    },
+    "docs/history/host_binding_design_20261102/AGENTS.md": {
+      "bytes": 7489,
+      "sha256": "6cf09464cdb7e295ac2dfbf59ad8e6f88adf559fa3388ae8e7cac9dcc6089f4d"
+    },
+    "tools/local_validation/lp19/native_reader.py": {
+      "bytes": 22920,
+      "sha256": "0c870f61f47d40de54fddc4a10ce87f47c28dec93df547c21a3c1d4a80549fe2"
+    },
+    "docs/history/host_binding_design_20261102/HANDOFF.md": {
+      "bytes": 17666,
+      "sha256": "c40844e6701a69666ba4c2b18155c5092f9b72add932df4b86556514faa8295a"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/metadata-ownership.json": {
+      "bytes": 10340,
+      "sha256": "2513b8cbb5d054da230cd05e5f055aae04c4f7ebd043d2ecb0fca0639c67b236"
+    },
+    "tools/local_validation/lhost1/invoke_l.ps1": {
+      "bytes": 26568,
+      "sha256": "f18d838727e8d929b3ac34af1934d46aa860deb67d07bf5ca5ace40781fa71a1"
+    },
+    "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/closeout-review.json": {
+      "bytes": 3667,
+      "sha256": "a8bab197f3e442ad7164a0efe43c82514746b9464e2785583490bd8f82797fa0"
+    },
+    "tools/local_validation/sc1/native_backend.py": {
+      "bytes": 7857,
+      "sha256": "59d3da6fae5e78742058de4b85d41f60e6977768329a8db773512e05fc4c9155"
+    },
+    "tools/local_validation/sc1/__init__.py": {
+      "bytes": 75,
+      "sha256": "1c15b166a2c1c3b8dc8de4a4b804e6b8bbd4f54b9be4e227b969f83afe721cd8"
+    },
+    "tools/local_validation/lq19/invoke_q.ps1": {
+      "bytes": 85044,
+      "sha256": "489c4f4fde2935bae0476cb50d485a268491e3db9dfd97aa99ff266f2dec5680"
+    },
+    "tools/local_validation/sc1/test_publisher.py": {
+      "bytes": 34451,
+      "sha256": "997b3401b87371fdc7ec8ca6a67a56373f718aafb2d44a20f01a5c34ea5ce4a1"
+    },
+    "tools/local_validation/lq19/native_reader.py": {
+      "bytes": 32054,
+      "sha256": "8fc3aa5b81fc1effd65e82f4d3ccb0ef1e17ff1ddca3b285b1b38fd924296d0a"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "tools/local_validation/lp19/invoke_p.ps1": {
+      "bytes": 49116,
+      "sha256": "cb89901124271de66061003c492abce180f1922586dee53d982d6869f2dce058"
+    },
+    "tools/local_validation/sc1/README.md": {
+      "bytes": 11702,
+      "sha256": "e37fd76fba1612d5e120d577daecb74183a2103fbec5dc3129430519817a679f"
+    },
+    "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/implementation-map.json": {
+      "bytes": 150950,
+      "sha256": "435d744a9877021404ef10a4700b55233fa14673633581b51591dade0431c8a0"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/qualification.md": {
+      "bytes": 6293,
+      "sha256": "e6a446e9c5e70e0335f53a08e20442522f181475490b7fafd0bc5fb1775332fb"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/feasibility.json": {
+      "bytes": 60322,
+      "sha256": "f33e49b13efb4efdb23950e2fe89b6effce0e1cee981cae76d0d6192955692f5"
+    },
+    "tools/local_validation/lq19/protocol.py": {
+      "bytes": 48609,
+      "sha256": "323bf281e02c60e90e96e59e266524fe45314a5826f71e7f7e92478762ea7d26"
+    },
+    "runs/coordination/cho51_p3_sc1_implementation_20261102_v1/root-source-acceptance.json": {
+      "bytes": 4327,
+      "sha256": "a9a4a263856fa2f0899a70872e76db1a0fdbd059a59816f29ed3c2297e52d8c6"
+    },
+    "tools/local_validation/lq19/test_sc1.py": {
+      "bytes": 14453,
+      "sha256": "d50f2467dcebe5e63d3ba24608da22c5544cb25eb5af73f606cc230e71b5493e"
+    },
+    "docs/phase2/cho51_p3_sc1_implementation_contract_20261102.md": {
+      "bytes": 7832,
+      "sha256": "1c887bc467a21438a7a38d83802fd576cf3bd07a74b29e1dc89757da10e4492f"
+    },
+    "docs/history/host_binding_design_20261102/AGENT_COORDINATION.md": {
+      "bytes": 7074,
+      "sha256": "75ff84d8b556b90e69634d35f8d9904b777e07318aff84e062af06d27548642d"
+    }
+  },
+  "old_launcher_reuse": false,
+  "anchors": [
+    {
+      "line": 254,
+      "fact": "atomic claim projection; initialization precedes peer/native allocation",
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "line": 263,
+      "fact": "complete paths census projection",
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "line": 277,
+      "fact": "bounded original peer bytes lookup",
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "line": 289,
+      "fact": "failure can request consumption after work refusal",
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "line": 515,
+      "fact": "pre-verification and post-backend-close census",
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "line": 103,
+      "fact": "FakeHost is a test model only",
+      "path": "tools/local_validation/sc1/test_publisher.py"
+    },
+    {
+      "line": 148,
+      "fact": "old exact discovery partition incompatible with additions",
+      "path": "tools/local_validation/lq19/child_entry.py"
+    },
+    {
+      "line": 35,
+      "fact": "only three legacy cohorts",
+      "path": "tools/local_validation/lq19/protocol.py"
+    },
+    {
+      "line": 48,
+      "fact": "exact bytes module loader pattern, not execution authority",
+      "path": "tools/local_validation/lq19/supervisor.py"
+    },
+    {
+      "line": 546,
+      "fact": "separate create-new claim file cannot substitute for SC1 host",
+      "path": "tools/local_validation/lq19/invoke_q.ps1"
+    },
+    {
+      "line": 288,
+      "fact": "scoped local trust model; ordinary writer guards remain",
+      "path": "docs/phase2/cho51_p3_local_validation_contract_20261029.md"
+    },
+    {
+      "fact": "closed single-operation authority has no parent/partition mapping",
+      "line": 199,
+      "path": "tools/local_validation/sc1/publisher.py"
+    },
+    {
+      "fact": "full256-file operation retains four output partitions",
+      "line": 51,
+      "path": "tools/local_validation/lq19/protocol.py"
+    }
+  ],
+  "tests_executed": 0,
+  "runtime_operations": 0,
+  "design_only": true,
+  "author": "project_root",
+  "actual_adapter_found": false,
+  "followup_audit": "SC1 complete16-path census has no parent-partition join; filtered views need explicit successor design/adoption"
+}

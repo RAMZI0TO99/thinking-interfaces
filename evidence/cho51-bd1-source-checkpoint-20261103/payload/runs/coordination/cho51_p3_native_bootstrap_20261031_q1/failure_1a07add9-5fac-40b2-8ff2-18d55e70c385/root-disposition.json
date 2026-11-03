@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_native_bootstrap_failed_disposition_v1",
+  "created_utc": "2026-10-31T12:49:42.8570437Z",
+  "root": "project_root",
+  "operation_id": "1a07add9-5fac-40b2-8ff2-18d55e70c385",
+  "status": "FAILED_CONSUMED_KNOWN_OWNED_CLEANUP",
+  "actual_review": {
+    "bytes": 22742,
+    "sha256": "e0a51da49c03e42e8885febede4b31dd5eff472fcb018026e8cd835f4ff270ea",
+    "path": "runs/coordination/cho51_p3_native_bootstrap_20261031_q1/failure_1a07add9-5fac-40b2-8ff2-18d55e70c385/actual-review.json"
+  },
+  "facts": [
+    "Native bootstrap ready within original five seconds",
+    "Seven native build children and outer/suite owned processes closed",
+    "No suite result frame or test report; test method outcomes unreported",
+    "Full final input verification false; scoped final artifact checks passed",
+    "Two bootstrap controls, five native observer cases and two native faults not dispatched"
+  ],
+  "historical_failure_cause": "UNESTABLISHED",
+  "source_defect_review": "pending separate static import review",
+  "qualification_accepted": false,
+  "p_admission": false,
+  "unchanged_retry_admitted": false,
+  "scientific_admission": false
+}

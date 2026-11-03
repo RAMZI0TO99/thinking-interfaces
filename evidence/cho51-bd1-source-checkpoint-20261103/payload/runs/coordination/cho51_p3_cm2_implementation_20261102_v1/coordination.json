@@ -1,0 +1,59 @@
+{
+  "commit_push": false,
+  "runtime_admitted": false,
+  "closeout_reviewer": "qd_closeout_review",
+  "root_ownership": [
+    "retained.py",
+    "registry.py",
+    "collection.py",
+    "test_retained.py",
+    "__init__.py",
+    "README.md",
+    "implementation contract and roster/effect inventory",
+    "phase metadata and active docs"
+  ],
+  "source_reviewer": "qd_source_review",
+  "schema": "cho51_cm2_implementation_coordination_v1",
+  "conditional_drafts": "draft-v1/v2/v3 affected frozen files and manifest before corrections",
+  "worker": {
+    "name": "cm2_callbacks_author",
+    "files": [
+      "callbacks.py",
+      "test_callbacks.py"
+    ]
+  },
+  "tests_executed": 0,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "source-review-v1.json",
+    "candidate-v2.json",
+    "source-review-v2.json",
+    "candidate-v3.json",
+    "source-review-v3.json",
+    "candidate-v4.json",
+    "source-review-v4.json",
+    "root-source-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "scope": "Source-only supplied retained-byte/code-table and callback/suite adapters; no runtime, tests or Git",
+  "publisher": "project_root only",
+  "p_enabled": false,
+  "max_active_peers": 1
+}

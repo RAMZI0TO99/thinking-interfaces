@@ -1,0 +1,257 @@
+{
+  "schema": "cho51_cm6_design_final_static_v1",
+  "status": "STATIC_CHECKS_PASS_DESIGN_ONLY",
+  "publisher": "project_root",
+  "allowed": "File/text/JSON/hash/link/arithmetic only; no project parser/import/AST/compiler/native/tests/Git/runtime",
+  "preservation": {
+    "baseline_pin": {
+      "bytes": 2254580,
+      "sha256": "cdc3d6c14a201f06368226683be355a50b9cc486c8b648e2190b9fc8f8385838"
+    },
+    "files_checked": 9474,
+    "changed": 0,
+    "complete_rehash": true
+  },
+  "candidate_pin": {
+    "bytes": 74460,
+    "sha256": "95b10c0edd0412b39ff7667ecd28b30044f9a9b11124dea8271801802f1f82fe"
+  },
+  "adoption_pin": {
+    "bytes": 2887,
+    "sha256": "2b9ecdd745c56380d1e50832a82a36c1a3a5d7886a8a526fcb81865813cc232b"
+  },
+  "source_pins_checked": 395,
+  "new_file_pins_checked": 8,
+  "external_reference_only_pins_checked": 4,
+  "identity": {
+    "current_count": 876,
+    "current_modules": 38,
+    "Q": 360,
+    "held": 516,
+    "H_full": 836,
+    "H_selected": 320,
+    "new_methods": 0,
+    "cohort_pin": {
+      "bytes": 36161,
+      "sha256": "e654b35a3c8a969d60d8f602f75f967bdf0711b4fb71491d0d0094673ac40dde"
+    },
+    "Q_digest": "321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08",
+    "C_digest": "f6a3081e3becb650c5485cd70121a644ebdcebde278499fe85a385764b317739",
+    "exact_prior_Q_order": true,
+    "canonical_Q": true,
+    "successor_debt_conservation": "External adoption reconciliation required; not supplied current-D transition certification"
+  },
+  "scenario_partition": {
+    "identity": 8,
+    "collection": 8,
+    "integration": 8,
+    "gates": 8
+  },
+  "scenarios": 32,
+  "qualified": 0,
+  "event_widths": {
+    "HEADER": 283,
+    "SUITE_OPEN": 288,
+    "SUITE_CLOSE": 289,
+    "RESTORED": 286,
+    "INPUTS_VERIFIED": 293,
+    "CASE_START": 287,
+    "CLEANUP_DONE": 289,
+    "PASS": 281,
+    "SUB_ENTER": 286,
+    "SUBPASS": 284,
+    "SUB_EXIT": 285,
+    "CASE_END": 285,
+    "DURATION": 300,
+    "FAIL": 294,
+    "ERROR": 295,
+    "XFAIL": 295,
+    "SUBFAIL": 297,
+    "SKIP": 278,
+    "XPASS": 279,
+    "FIXTURE_ERROR": 304,
+    "TRACE_CASE_SUB": 302,
+    "TRACE_FIXTURE": 303,
+    "FOOTER": 346
+  },
+  "max_terminal_bytes": 888,
+  "max_join_bytes": 792,
+  "arithmetic": {
+    "conditional_Q_events": 2568,
+    "conditional_Q_bytes": 1314816,
+    "conditional_Q_attempts": 2567,
+    "seven_raw_input_caps": 5439488,
+    "group_scratch": 66048
+  },
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7702,
+      "sha256": "ada9b1a0346bda9a995015d872dea731fac54ab90c32c04a56dca7c704183a40"
+    },
+    "HANDOFF.md": {
+      "bytes": 21485,
+      "sha256": "0ae27499d872f40064bd7bfd17fca702a06b22cce04ede46d2f25696d1c9a778"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7287,
+      "sha256": "2e4a7d61fc56c18b70799242c5381f95ee095a4809d61f5cc78e40b589f4e492"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7768,
+      "sha256": "bfff5586d34b4fbb11eeceef56d3fcaea183b315555c54086aca3e090b80d2dd"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7124,
+      "sha256": "bfe646bb7e5ef8c17146ba2c76d50b02bb9841b9f4c47cdef97253403e41f39c"
+    },
+    "README.md": {
+      "bytes": 8115,
+      "sha256": "65d4dc1dba43d918d4d0e2d50575ec4694a70d7505262002fa63d2a62c197839"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11720,
+      "sha256": "6ce0af003f4dbbc93d6ca82ee05f24d0d0dd8fdea1c147b81050504e3062b432"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 13903,
+      "sha256": "9f29a196238de95ec6f1dc6d25e041579f52a946315f07b86d0235902503bb05"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13195,
+      "sha256": "02602f3a23af7a9c8e73312756a7f2e364c7e53af365d632c2219a556930580b"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 27976,
+      "sha256": "7e49abaa6bf617ea3b2e2add38d19801a473f4b4cd49a110f2d3b926d1155f3d"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 33368,
+      "sha256": "bbbcf0b3f59a7ce77355c4c5c4b35eb69f722f6ff4b172592b70f44cd87e10c5"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 51704,
+      "sha256": "e1d4e49530c530155ffef79bf8b2af00c009ecb23d17e127e7474e8f9c8f0a5d"
+    },
+    "docs/phase2/cho51_p3_cm6_cohort_design_20261103.md": {
+      "bytes": 5221,
+      "sha256": "44e0747342755b9d032923cd88e7b882771578fd52448c16bc58ee006249098f"
+    },
+    "docs/phase2/cho51_p3_cohort_integration_v1/budgets.md": {
+      "bytes": 6617,
+      "sha256": "abba4c7b3e450e8851ae07f12a018c0a443a55432eff33d0435a208b3a64e441"
+    },
+    "docs/phase2/cho51_p3_cohort_integration_v1/collection.md": {
+      "bytes": 4036,
+      "sha256": "e6304c1e00aba36b6412274181bf18896b022eb9932e88c50df156938ede580d"
+    },
+    "docs/phase2/cho51_p3_cohort_integration_v1/identity.md": {
+      "bytes": 6085,
+      "sha256": "d623022069946364bf5a772d75606f3e48e17e229a1914d340c31fd1aab05ef8"
+    },
+    "docs/phase2/cho51_p3_cohort_integration_v1/integration.md": {
+      "bytes": 6952,
+      "sha256": "e77085558df54a9037c9417473cdd41ca45ad0324ebbe52dceef85a174494e16"
+    },
+    "docs/phase2/cho51_p3_cohort_integration_v1/README.md": {
+      "bytes": 3479,
+      "sha256": "dd22aab51197378932d886bee29c6b221729f6217770c0986bd1e18ed2a78e6d"
+    }
+  },
+  "archive_pins": {
+    "docs/history/cm6_cohort_design_20261103/AGENTS.md": {
+      "bytes": 7603,
+      "sha256": "0e24ac0a6d414877ade29f9968bae95491cc14df5f6490e16b2beb99633ecda3"
+    },
+    "docs/history/cm6_cohort_design_20261103/HANDOFF.md": {
+      "bytes": 21050,
+      "sha256": "3d8b701cefd2e1cfe5f78b331a95f62ca1db8935925f091afa5de174fa37d3b4"
+    },
+    "docs/history/cm6_cohort_design_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7188,
+      "sha256": "24e2ce28fff7b3113d537fbd64ba3335145d6016a6323c106e63bdba3d9453e9"
+    },
+    "docs/history/cm6_cohort_design_20261103/CONTINUE_HERE.md": {
+      "bytes": 7657,
+      "sha256": "4891cdacb9204050279cf881734a76c34b951de0e27e6394d49eab00d9c91770"
+    },
+    "docs/history/cm6_cohort_design_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7025,
+      "sha256": "304f8ea377c16abb9be01321b90dd8f543e30a4871a1639137efe071cb54cbfe"
+    },
+    "docs/history/cm6_cohort_design_20261103/README.md": {
+      "bytes": 8016,
+      "sha256": "d0b7fc5d395a5cebf8206d92d09a75de207820e6e7952e917502976b776c53bb"
+    },
+    "docs/history/cm6_cohort_design_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11621,
+      "sha256": "2ef41621830edc5347de6361f5bcdc9a3dc920b0a4bc2b28b4eae7bdda2839d9"
+    },
+    "docs/history/cm6_cohort_design_20261103/docs/phase2/README.md": {
+      "bytes": 13640,
+      "sha256": "68c59368b6f146abc31411e8259fa05bdc14c56b1ab91b640c4a1ac087af3072"
+    },
+    "docs/history/cm6_cohort_design_20261103/docs/where are we/README.md": {
+      "bytes": 13096,
+      "sha256": "243b99dc9961df92197eec4a5f86773e065687316c2541f0d77eccdf9114a8b8"
+    },
+    "docs/history/cm6_cohort_design_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 27553,
+      "sha256": "d1643d15bf8f4d3eecc91ad409b668f8dcff41c6cff4035340e7ce5cb3ac4cd3"
+    },
+    "docs/history/cm6_cohort_design_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 33093,
+      "sha256": "c5b138fcee9cbfcf0f1975556953ea006382b0a150f7060e782210857dc2288e"
+    },
+    "docs/history/cm6_cohort_design_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 50783,
+      "sha256": "01093dadf6d80ee3a816b24b1ac1287984364f5bbc8c5761792177aa1cba3a69"
+    },
+    "docs/history/cm6_cohort_design_20261103/manifest.json": {
+      "bytes": 1827,
+      "sha256": "d747b8cdc387d2643216bb725ec74cd42045e6a41aec116ca7f5747ec53687c2"
+    }
+  },
+  "local_links_checked": 541,
+  "predeclared_forward_links": [
+    {
+      "target": "../../runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/final-static-checks.json",
+      "document": "docs/phase2/cho51_p3_cm6_cohort_design_20261103.md"
+    },
+    {
+      "target": "../../runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/closeout-review.json",
+      "document": "docs/phase2/cho51_p3_cm6_cohort_design_20261103.md"
+    }
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/candidate-v1.json": {
+      "bytes": 74460,
+      "sha256": "95b10c0edd0412b39ff7667ecd28b30044f9a9b11124dea8271801802f1f82fe"
+    },
+    "runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/coordination.json": {
+      "bytes": 2001,
+      "sha256": "ea6dc8b6be4e4b15e77372d4b0456b5b7282ca1397708213af565eaae72a1e80"
+    },
+    "runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/design-review-v1.json": {
+      "bytes": 4014,
+      "sha256": "c815128b842faeb0e40358cd7d0e73f6629e63d5c48d00a01552612a160ce064"
+    },
+    "runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/preservation-baseline.json": {
+      "bytes": 2254580,
+      "sha256": "cdc3d6c14a201f06368226683be355a50b9cc486c8b648e2190b9fc8f8385838"
+    },
+    "runs/coordination/cho51_p3_cm6_cohort_design_20261103_v1/root-design-acceptance.json": {
+      "bytes": 2887,
+      "sha256": "2b9ecdd745c56380d1e50832a82a36c1a3a5d7886a8a526fcb81865813cc232b"
+    }
+  },
+  "phase_root_records_after_this": 6,
+  "phase_root_records_after_closeout": 7,
+  "draft_files": 0,
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "limits": "Design/metadata only. All original guards, consumed failures, UNKNOWN custody and obligations remain; no implementation or original effects/capture/custody/allocation/timing/memory/scientific acceptance."
+}

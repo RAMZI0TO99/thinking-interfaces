@@ -1,0 +1,22 @@
+{
+  "schema": "cho51_cm4_design_review_v1",
+  "status": "CHANGES_REQUESTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "reviewer_role": "cm4_design_review",
+  "publisher": "project_root",
+  "transcription": "Exact reviewer message; planned Terra peer failed at model capacity before work; independent Sol peer filled the role",
+  "candidate_sha256": "3ffd5eab6a5e73db16921f10f4f2b257f2db938b57b1a2c6495c15252e56279e",
+  "findings": [
+    {
+      "id": "CM4-D01",
+      "required_change": "Close region to matching outcome/trace/exit and add design scenario coverage",
+      "priority": "P2",
+      "issue": "Active subcase region does not exclude interposed parent outcomes",
+      "file": "docs/phase2/cho51_p3_component_lifecycle_v1/events.md"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_DESIGN_ONLY. Candidate candidate-v1.json: 66167 bytes, SHA256 3ffd5eab6a5e73db16921f10f4f2b257f2db938b57b1a2c6495c15252e56279e. Verified all 355 source pins, seven new-file pins, four external reference-only pins and all 9336 preservation-baseline files with no byte/hash mismatches. Preservation-baseline SHA256 f9ab694aae3c847783ed4713d5325e1b38f3df46f10b23f1e6393ac7eb7521cf. Reviewed seven CM4 design files against frozen CM2 callback/collection and CM3 parser/table/join/registry source and evidence design using file/text/JSON/hash/link/arithmetic inspection only. Findings: [{id:CM4-D01,priority:P2,file:docs/phase2/cho51_p3_component_lifecycle_v1/events.md,issue:The active SUB_ENTER..SUB_EXIT region is not explicitly closed against parent outcomes. SUB_ENTER,SUBPASS,FAIL+TRACE,SUB_EXIT can satisfy the inherited primary rules and stated exit condition, leaving the intended flat triplet grammar ambiguous.,required_change:Specify that while a subcase is active only its matching SUBPASS/SUBFAIL, immediate required TRACE group and matching SUB_EXIT are permitted; forbid parent outcomes and lifecycle/fixture/entry events until exit, or explicitly enumerate any intended alternative and its conservation rules. Add a design qualification obligation for such interposition.}]. Other reviewed boundaries are appropriately scoped: deliberate duration-required subset; late terminal refusal remains distinct without authenticating cutoff; full current796/34/280 conservation precedes separately pinned764/732/700 projections; future test-roster/pin/effect/budget extension is explicit; pin dependencies are acyclic. Arithmetic agrees: conditional2168 events/1110016 bytes, report-only minimum33 files/18890752 bytes, raw-input ceilings4325376 bytes,28 design scenarios split19 supplied/2 source/7 real and zero qualified. No source implementation, execution, runtime qualification/admission, custody repair, cap widening, P enablement or scientific acceptance is established. No writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending review archival.",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

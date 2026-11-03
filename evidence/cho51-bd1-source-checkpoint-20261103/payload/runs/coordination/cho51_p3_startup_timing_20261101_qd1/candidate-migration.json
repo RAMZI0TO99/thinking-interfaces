@@ -1,0 +1,298 @@
+{
+  "schema": "cho51_candidate_migration_v1",
+  "original_roster_ref": {
+    "path": "docs/phase2/cho51_p3_local_validation_v1/test-roster.json",
+    "bytes": 7470,
+    "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3"
+  },
+  "original_source_refs": [
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/contracts.py",
+      "bytes": 14415,
+      "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/mapping.py",
+      "bytes": 12945,
+      "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/telemetry.py",
+      "bytes": 16973,
+      "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "bytes": 20488,
+      "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "bytes": 17511,
+      "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v1/README.md",
+      "bytes": 4893,
+      "sha256": "c054f27971b99537f59a6f87aa9d697e52f91bb968913625c6f82e814a9aa76b"
+    }
+  ],
+  "successor_source_refs": [
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/contracts.py",
+      "bytes": 14415,
+      "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/mapping.py",
+      "bytes": 12945,
+      "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/telemetry.py",
+      "bytes": 16973,
+      "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "bytes": 20488,
+      "sha256": "80e4c546285e0d68d35982971bee921f0c2b5bcbababb93833aa8e9d5aa29d86"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "bytes": 17509,
+      "sha256": "f4a5cb99b4ba240cce370aa0d08c555987c87070908fc53cdd32205f139aed4d"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_adapter_v2/README.md",
+      "bytes": 856,
+      "sha256": "4c65cdf8c524dd07db62b460de65c8118513de50014728054bb1810d366d909f"
+    }
+  ],
+  "allowed_edits": [
+    {
+      "original_path": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "successor_path": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "original_offset": 449,
+      "successor_offset": 449,
+      "removed_hex": "646f63732e7068617365322e63686f35315f70335f616461707465725f7631",
+      "inserted_hex": "646f63732e7068617365322e63686f35315f70335f616461707465725f7632"
+    },
+    {
+      "original_path": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "successor_path": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "original_offset": 516,
+      "successor_offset": 516,
+      "removed_hex": "646f63732e7068617365322e63686f35315f70335f616461707465725f7631",
+      "inserted_hex": "646f63732e7068617365322e63686f35315f70335f616461707465725f7632"
+    },
+    {
+      "original_path": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "successor_path": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "original_offset": 5519,
+      "successor_offset": 5519,
+      "removed_hex": "3a",
+      "inserted_hex": ""
+    },
+    {
+      "original_path": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "successor_path": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "original_offset": 8237,
+      "successor_offset": 8236,
+      "removed_hex": "3a",
+      "inserted_hex": ""
+    }
+  ],
+  "function_map": [
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_boundary_path_refusal_precedes_adapter_reads",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_boundary_path_refusal_precedes_adapter_reads",
+      "expected_cases": 2
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_callback_objects_refused_without_access",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_callback_objects_refused_without_access",
+      "expected_cases": 2
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_changed_pinned_metadata_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_changed_pinned_metadata_refused",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_changed_role_domain_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_changed_role_domain_refused",
+      "expected_cases": 4
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_duplicate_or_nonfinite_json_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_duplicate_or_nonfinite_json_refused",
+      "expected_cases": 3
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_fabricated_scope_refused_after_genuine_boundary",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_fabricated_scope_refused_after_genuine_boundary",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_finite_graph_and_encoded_byte_limits_refuse_before_serialization",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_finite_graph_and_encoded_byte_limits_refuse_before_serialization",
+      "expected_cases": 6
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_fixed_intent_scope_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_fixed_intent_scope_refused",
+      "expected_cases": 9
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_future_execution_obligations_cannot_be_prepared",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_future_execution_obligations_cannot_be_prepared",
+      "expected_cases": 2
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_genuine_historical_profile_and_complete_routes",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_genuine_historical_profile_and_complete_routes",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_intent_and_report_are_immutable_defensive_values",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_intent_and_report_are_immutable_defensive_values",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_public_policy_views_cannot_mutate_authority",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_public_policy_views_cannot_mutate_authority",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_report_cannot_promote_authority_or_numerical_counts",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_report_cannot_promote_authority_or_numerical_counts",
+      "expected_cases": 5
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_mapping.py::test_stale_expected_boundary_assessment_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_mapping.py::test_stale_expected_boundary_assessment_refused",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_assessment_is_output_only_and_cannot_be_deserialized",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_assessment_is_output_only_and_cannot_be_deserialized",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_complete_nested_metadata_and_defensive_views",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_complete_nested_metadata_and_defensive_views",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_equal_monotonic_ticks_are_not_a_missing_duration",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_equal_monotonic_ticks_are_not_a_missing_duration",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_explicit_qpc_domain_is_metadata_only",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_explicit_qpc_domain_is_metadata_only",
+      "expected_cases": 1
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_external_pins_and_exact_types_are_required",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_external_pins_and_exact_types_are_required",
+      "expected_cases": 4
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_false_completion_or_abort_status_is_refused",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_false_completion_or_abort_status_is_refused",
+      "expected_cases": 4
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_join_rejects_cross_domain_and_order_errors",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_join_rejects_cross_domain_and_order_errors",
+      "expected_cases": 19
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_partial_timing_never_fabricates_missing_duration",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_partial_timing_never_fabricates_missing_duration",
+      "expected_cases": 4
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_segment_rejects_malformed_contract",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_segment_rejects_malformed_contract",
+      "expected_cases": 34
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_segment_requires_exact_bounded_json_bytes",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_segment_requires_exact_bounded_json_bytes",
+      "expected_cases": 5
+    },
+    {
+      "original_module": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py",
+      "original_node_prefix": "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py::test_whole_trace_limits_are_not_reset_at_prefix_cut",
+      "successor_module": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py",
+      "successor_node_prefix": "docs/phase2/cho51_p3_adapter_v2/test_telemetry.py::test_whole_trace_limits_are_not_reset_at_prefix_cut",
+      "expected_cases": 4
+    }
+  ],
+  "control_roster_ref": {
+    "path": "docs/phase2/cho51_p3_local_validation_v1/control-roster.json",
+    "bytes": 11390,
+    "sha256": "cb51607b77782f556aca3ef4a2119cdff913818107aad250ebb11ad159a32113"
+  },
+  "independent_review": {
+    "required": true,
+    "binding": "external_source_review_and_root_adoption"
+  },
+  "safety": {
+    "launch_authorized": false,
+    "scientific_admission": false,
+    "original_executed": false,
+    "successor_executed": false
+  }
+}

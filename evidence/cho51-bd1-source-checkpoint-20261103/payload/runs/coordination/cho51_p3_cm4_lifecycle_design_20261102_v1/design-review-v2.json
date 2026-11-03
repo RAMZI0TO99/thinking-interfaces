@@ -1,0 +1,17 @@
+{
+  "schema": "cho51_cm4_design_review_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "reviewer_role": "cm4_design_review",
+  "publisher": "project_root",
+  "transcription": "Exact independent reviewer message",
+  "candidate_sha256": "e426883eb291249391e456718090cc1faf7b9454e614e755abb95b78ba819d60",
+  "findings": [],
+  "resolved_findings": [
+    "CM4-D01"
+  ],
+  "review_text": "ACCEPTED_DESIGN_ONLY; findings=[]. Candidate candidate-v2.json: 67195 bytes, SHA256 e426883eb291249391e456718090cc1faf7b9454e614e755abb95b78ba819d60. Independently rechecked all355 source pins, seven new-file pins and four external reference-only pins with no byte/hash mismatch. Delta from v1 is confined to events.md and qualification.json. CM4-D01 is resolved: the active subcase interval permits only matching outcome, required immediate trace group and immediate matching exit; interposed parent/lifecycle/fixture/new-entry/unrelated-trace activity and duplicate outcomes refuse, with explicit CM4-08 coverage. Verified all three draft-v1 archive pins, both archived originals against v1 candidate pins, archive manifest attribution and unchanged prior candidate/review hashes. The completed independent9336-file preservation audit remains applicable; it was not repeated in this revision. Preservation-baseline SHA256 f9ab694aae3c847783ed4713d5325e1b38f3df46f10b23f1e6393ac7eb7521cf. Acceptance covers seven source-only CM4 design files and the corrected contract against frozen CM2/CM3 predecessors. Deliberate duration-required subset, terminal late-refusal distinction without real cutoff authority, full current796/34/280 collection before separate764/732/700 projections, unchanged historical pins, exact types/caps, acyclic dependencies, report-only allocations and explicit future new-test roster/pin/effect/budget extension remain appropriately scoped. Conditional arithmetic remains2168 events/1110016 bytes,33 report-minimum files/18890752 bytes and4325376 raw-input ceiling bytes. All28 scenarios (19 supplied/2 source/7 real) remain unimplemented/unexecuted and zero qualified. This is design acceptance only, not implementation acceptance, runtime qualification/admission, authenticated lifecycle/cutoff/custody, capture/allocation/timing/memory feasibility, P enablement or scientific acceptance. All original guards and execution holds remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed.",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

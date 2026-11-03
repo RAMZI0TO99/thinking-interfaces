@@ -1,0 +1,202 @@
+{
+  "schema": "cho51_cm3_evidence_design_scenarios_v1",
+  "scope": "Design requirements only; no new method identity or executed scenario",
+  "count": 32,
+  "scenarios": [
+    {
+      "id": "CM3-E01",
+      "name": "Canonical normal transcript",
+      "required": "A frozen CM2 746-record supplied fixture may be protocol-consistent; do not infer the actual normal 1,000-record population or runtime success.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E02",
+      "name": "Complete collection before projection",
+      "required": "Omitted/duplicate/reordered successor row, changed module pin/flag or false completeness refuses even if both predecessor projections match.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E03",
+      "name": "Operation and raw-byte substitution",
+      "required": "Different event operation, descriptor byte length/hash, count-equivalent collection or table substitution refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E04",
+      "name": "Canonical syntax and exact types",
+      "required": "Duplicate/unknown keys, bool ordinals/counts, floats/NaN, non-ASCII/noncanonical escapes, CR, missing LF and trailing data refuse.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E05",
+      "name": "Ordered primary lifecycle",
+      "required": "Missing/repeated/out-of-order start, wrong owner, PASS without start, duplicate primary or END without outcome refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E06",
+      "name": "Flat subcase conservation",
+      "required": "Require next per-case sub ordinal and exact CASE_END subcount; SUBFAIL sets negative without synthesizing a parent failure.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E07",
+      "name": "Failfast",
+      "required": "After a negative no new start/subcase; an existing case may finish permitted cleanup callbacks and END.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E08",
+      "name": "Skip then mixed cleanup",
+      "required": "SKIP followed by repeated FAIL/ERROR trace groups is retained as negative; a second special primary refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E09",
+      "name": "Expected outcomes",
+      "required": "XFAIL needs complete exception group; XPASS is NONE/zero; late FAIL/ERROR after either refuses under the frozen CM2 subset.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E10",
+      "name": "Fixture ownership and repeated cleanup",
+      "required": "Distinct declared slots may share exact owner/phase; repeated slot, arbitrary owner prefix, incorrect affected selection or missing slot refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E11",
+      "name": "Fixture phase and late failure",
+      "required": "Setup after an affected start refuses; premature teardown without prior negative refuses; fixture failure after all PASS/END makes transcript negative.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E12",
+      "name": "Trace ownership and ordinal",
+      "required": "Missing/extra/interleaved TRACE, changed owner/kind, bool location/count, duplicate frame ordinal or unknown code/line refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E13",
+      "name": "Trace limit and unsupported",
+      "required": "128 declared frames can fit subject to record caps; 129 or UNSUPPORTED refuses. Do not fabricate a completed group for a producer refusal.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E14",
+      "name": "Trace order limit",
+      "required": "Reordered actual frames that remain valid supplied memberships cannot be authenticated by this parser; document missing original traceback witness.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E15",
+      "name": "Prefix and whole digest",
+      "required": "Wrong footer count/hash, altered earlier byte, repeated/trailing footer or missing footer refuses; whole and nonfooter prefix digests remain distinct.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E16",
+      "name": "Record and byte ceiling",
+      "required": "Check 512-byte line, 4,095 nonfooter/4,096 total and 2-MiB ceilings including reserved footer; over-limit or mid-group prefix never yields success.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E17",
+      "name": "Two-MiB hash path",
+      "required": "Exercise bounded event hashing above 1 MiB without calling/widening frozen one-MiB common.digest; checkpoint failure refuses.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E18",
+      "name": "Hidden cleanup and suite closure",
+      "required": "No raw result asserts cleanup_done, duration order or suite closure merely from PASS/END/footer.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E19",
+      "name": "Late refusal indistinguishability",
+      "required": "Identical bytes with producer refusal after footer yield identical observable parser facts; external final latch remains unavailable.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E20",
+      "name": "Tables and aggregate limits",
+      "required": "Sorted exact table schema, unique pairs/slots, exact affected owner sets, 4,096 row ceilings and one-MiB/depth/node limits all apply before views.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E21",
+      "name": "Defensive repeated joins",
+      "required": "Caller-built Facts/cached hash/mutable replacement cannot bypass fresh raw parsing; repeated invocations return immutable supplied facts.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E22",
+      "name": "Frozen target versus current roster",
+      "required": "Additional verifier methods require explicit successor adoption; frozen CM2 parsing must not claim complete collection of the enlarged current source universe.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-E23",
+      "name": "No authority escalation",
+      "required": "Native-looking strings, successful counts, supplied lifecycle declarations and exit0 cannot set authenticated/execution_accepted or enable dispatch.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-F01",
+      "name": "Poison formatting",
+      "required": "Future real boundary must cover SkipTest.__str__, assertion operand repr/diffs, mock/helper formatting that allocates, raises or reenters; no execution in this design phase.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-F02",
+      "name": "Case and suite equivalence",
+      "required": "Future qualification covers setup omission, decorated/body skip, LIFO and multiple cleanup errors, duration, stop finally, nested unwind and failfast.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-F03",
+      "name": "Underlying module cleanup failures",
+      "required": "Preserve distinction between all underlying failures and the reference's first emitted exception; do not invent additional callbacks or claim completeness.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-F04",
+      "name": "Original negative witnesses",
+      "required": "Later producer refusal, restoration drift or missing lifecycle/source witness blocks acceptance despite all-PASS bytes.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-C01",
+      "name": "Raw capture fidelity",
+      "required": "Missing/duplicated/reordered observer chunks, offset/hash mismatch, text normalization or uncertain cross-stream write order cannot establish original complete capture.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-C02",
+      "name": "EOF and cancellation",
+      "required": "Quiet output, child exit or footer does not prove EOF/pipe/tool closure; late stderr, capture error or cancellation retains prefix and refused disposition.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-C03",
+      "name": "Escaping and envelopes",
+      "required": "Control-byte expansion and nested/tool framing must fit original return slots; small success descriptor does not prove failure fit.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-C04",
+      "name": "Complete allocation",
+      "required": "Unnamed join/lifecycle/chunk metadata or temporary/copy file, borrowed closeout slot, omitted failed/unused charge refuses before effects.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    },
+    {
+      "id": "CM3-C05",
+      "name": "Original clocks and custody",
+      "required": "No new origin/retry/UUID, external precompilation or supplied guard permits runtime; complete owned closure and separate actual review remain obligatory.",
+      "status": "UNIMPLEMENTED_UNEXECUTED"
+    }
+  ],
+  "tests_executed": 0,
+  "p_enabled": false,
+  "runtime_admitted": false
+}

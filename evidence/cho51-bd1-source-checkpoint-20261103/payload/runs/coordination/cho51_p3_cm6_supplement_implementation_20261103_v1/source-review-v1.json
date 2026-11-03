@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_cm6s_implementation_source_review_v1",
+  "status": "CHANGES_REQUESTED_SOURCE_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 86117,
+    "sha256": "70df33d788669f738bdcbbb1ae3fa807fe455a645ce7fdd23780f4bc41ea87b0"
+  },
+  "findings": [
+    {
+      "resolution_required": "Reconstruct exact45 predecessor module rows; preserve existing debt semantics",
+      "priority": "P2",
+      "field": "prior_modules",
+      "path": "docs/phase2/cho51_p3_cm6_supplement_debt_20261103.json",
+      "id": "CM6S-S01"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_SOURCE_ONLY. Candidate candidate-v1.json:86117 bytes, SHA25670df33d788669f738bdcbbb1ae3fa807fe455a645ce7fdd23780f4bc41ea87b0. Independently verified all452 source pins,19 new-file pins, four external reference-only pins and all9613 preservation files without byte/hash mismatch; preservation-baseline SHA256faf4d57579d98ecf5a729c30a9f9ccb3de9324b92c2c958278e860ef0f078360. Reviewed all15 cm6s files, all46 test bodies and four contract/roster/debt/coverage documents against accepted S140 design and frozen predecessor contracts. Findings=[{id:CM6S-S01,priority:P2,file:docs/phase2/cho51_p3_cm6_supplement_debt_20261103.json,field:prior_modules,issue:The claimed predecessor module map has44 keys, containing41 actual inherited module keys plus bogus null module/bytes/sha256 properties, while omitting the four cm6i predecessor modules. It is not the required exact45-module predecessor inventory.,required_change:Reconstruct prior_modules from the actual prior roster's four new-module rows plus all41 inherited modules, using exact module names/path/byte/hash pins; independently compare the complete45-key map against predecessor roster and source files, preserving all existing debt rows and semantics.}]. No source-code correctness finding identified. Static reasoning supports fixed disjoint Q360/S140, independent expected Q/S/D/E raw pins and manifest-reference consistency, newer full1062/49 identity/module conservation floor, fullC then Q/H/S views from observed rows, exact S fixture sets/indices, independently parsed lifecycle events, CM5-S01/S02 accounting/refusal protections, immutable serial output/lifecycle commit, six retained terminal-input pins and eight-pin nine-input raw joins. Reviewed independent pass/negative wire examples, valid-footer cross-profile mutations, repinned successor-floor failures, post-footer/refusal cases and valid table substitution; none was executed. False authentication/execution/debt authority and runtime refusal remain intact. Independently checked546 indexed method start lines/source pins,140 declaration/73 import source rows,46 textual methods with zero new subTest contexts and all702 held semantic debt digest/module pins. Prior656 debt rows retain kind/token/module pins;702 held=516 BASELINE_HELD+186 NEW_TEST_UNQUALIFIED, including46 new methods outside fixed Q and S. Source1062/49 full digest152e32504d149469115e6c2cc3751c8b4bc837dfea85755352a753f7fec31cd3; unchanged Q digest321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08 and S digest746927e2bd26c698ab6a52f232db1c15c7bfb3a40e685b64ec0064c1b2f5b39c match. Supplied references do not establish actual manifest dependency/provenance or authentic predecessor/source adoption. Conditional S706events/361472bytes/705attempts, Q2568/1314816/2567, nine raw ceilings5570560 and report-only33files/18890752 retain scope; cumulative inner work does not prove elapsed-time/peak-memory/guard violation. All46 new tests remain held/unexecuted;24 supplemental and32 prior scenarios remain unqualified. No executable syntax/test success, original collector/dispatcher/observer/cutoff/capture/custody, complete recursive failure effects/allocation/finite closeout/timing/memory feasibility, runtime or scientific acceptance is established. Original guards, frozen sources/receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "4ed0287c74d24be0062caff6548c55fdf1b42e3badf4f62fa36c329b69acc031",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

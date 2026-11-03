@@ -1,0 +1,19 @@
+{
+  "physical_map_accepted": false,
+  "scientific_admission": false,
+  "author": "project_root",
+  "operation_id": "a5578f8d-53d5-47bf-8c75-c360e886c4c0",
+  "actual_review": {
+    "bytes": 3834,
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_p5/actual-review.json",
+    "sha256": "96cd387567556acffab2f9924ced2846a315b24dac3735ee9b753bc86b980a09"
+  },
+  "schema": "cho51_p_root_disposition_v1",
+  "retry_same_attempt": false,
+  "actual_tool_exit_code": 1,
+  "final_full_input_verification_established": false,
+  "created_utc": "2026-10-29T14:23:12.7603718Z",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "new_operation_owned_lifecycle_closed": true,
+  "next": "A separately reviewed bounded PE descriptor observation successor; no replay, cap or trust expansion"
+}

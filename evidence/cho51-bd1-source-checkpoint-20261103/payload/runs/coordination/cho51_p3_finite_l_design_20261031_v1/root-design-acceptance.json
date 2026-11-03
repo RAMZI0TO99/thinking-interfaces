@@ -1,0 +1,88 @@
+{
+  "schema": "cho51_finite_l_root_design_acceptance_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "accepted_utc": "2026-10-31T14:25:04.5125425Z",
+  "root": "project_root",
+  "design_candidate": {
+    "path": "runs/coordination/cho51_p3_finite_l_design_20261031_v1/design-candidate-revision1.json",
+    "bytes": 3355,
+    "sha256": "9308d439b3f80361978ebc93985c789661f13256f2f598cb3c8ee3b4fc55a4ec"
+  },
+  "independent_review": {
+    "path": "runs/coordination/cho51_p3_finite_l_design_20261031_v1/design-review-revision1.json",
+    "bytes": 4210,
+    "sha256": "2ae770476620a0a00b8867559e5704cfa9cdb1a87dc0f96bfea4d967bdafc799"
+  },
+  "design_files": [
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/candidate-amendment.md",
+      "bytes": 3360,
+      "sha256": "792399e45089543609c3644c2b16345c709828a423360a21ddf009be0dd9c1e5"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/lhost-compatibility.md",
+      "bytes": 11364,
+      "sha256": "5a02c64c41450534f957bc4ec5268fa1737d10df9c382e6f6cd8061eec939e34"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/plan-contract.md",
+      "bytes": 12846,
+      "sha256": "b10d46b9f82baa1243fcf92e08f708c4cb990a8f96ab28a07b9a5bc6f7036086"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/qualification-plan.json",
+      "bytes": 19139,
+      "sha256": "e3d967729b922abf23c3a3edf9d63759314f1367922b566d8c52a87ee9848226"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/README.md",
+      "bytes": 1802,
+      "sha256": "8232aed32168b6a8a8c5e02abf6d95e73f8c57604e8e8cb3c96eb37c06dd192f"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/refusal-inventory.json",
+      "bytes": 35268,
+      "sha256": "9128ad4d03dcf12fef69e11570e65b40f1b59cfcf03c913f6d3e2577f3416bd0"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/refusal-review.md",
+      "bytes": 4866,
+      "sha256": "0612aada4f2df3e48d236cc8d7e8e81b7833bbfe2d149468d34e4623072dd26d"
+    },
+    {
+      "path": "docs/phase2/cho51_p3_finite_l_v1/source-trace.json",
+      "bytes": 15298,
+      "sha256": "b6ccabeb2236e2c7c2f0f899d17c2eb3292b8554d3aef3a4c5f932022f6d08ac"
+    }
+  ],
+  "preservation": {
+    "path": "runs/coordination/cho51_p3_finite_l_design_20261031_v1/preservation-baseline.json",
+    "bytes": 1132736,
+    "sha256": "899e02bf5fb156f9a7f5e299642b1f4030f42d63dbd1f4131f3de1a91ba3f564"
+  },
+  "initial_file_checks": {
+    "path": "runs/coordination/cho51_p3_finite_l_design_20261031_v1/initial-file-checks.json",
+    "bytes": 303,
+    "sha256": "71ccfd7d593101b37ac01b14b1730d024f6511c865dbdc5a63cc7f6e9f6b00c5"
+  },
+  "resolved_findings": [
+    "FLD-01: exact authenticated output-descriptor bridge, no schema mutation",
+    "FLD-02: provisional G2; implemented-capability joins and full acceptance at G4"
+  ],
+  "scope": "Eight inert design/data files; refusal accounting and static syntax review; no materialized complete plan or executable amendment",
+  "unresolved_for_execution": 7873,
+  "inspected_seed_modules": 36,
+  "original_reported_syntax_rows": 1,
+  "static_candidate_syntax_defects": 2,
+  "targeted_qualification_scenarios": 34,
+  "targeted_scenarios_executed": 0,
+  "full_original40_qualified": false,
+  "candidate117_executed": false,
+  "control34_executed": false,
+  "implementation_adopted": false,
+  "launch_authorized": false,
+  "scientific_admission": false,
+  "scientific_cells": "0/1020",
+  "historical_custody": "UNRESOLVED",
+  "next": "Implement/review bounded diagnostic/inventory subset and exact candidate-v2 migration; fresh Q and separately admitted P file-only audit; keep host implementation and final complete-plan acceptance explicit later gates."
+}

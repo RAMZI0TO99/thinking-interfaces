@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_pc_design_review_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "reviewer": "cm4_design_review_sol",
+  "candidate": {
+    "bytes": 87673,
+    "sha256": "9ccdf49b2434c44f0ee81945a856e9709c3608def49947295919e0862f1b5b8b"
+  },
+  "review_text": "ACCEPTED_DESIGN_ONLY; findings=[]. Candidate candidate-v2.json:87673 bytes, SHA2569ccdf49b2434c44f0ee81945a856e9709c3608def49947295919e0862f1b5b8b. Independently reverified472 unique current files covering all468 source pins/eight new-file pins/four external reference-only pins; mismatches=[]. Only ingress.md, packing.json, qualification.json and readiness.json changed. PC-D01 is resolved: BOUND requires zero entered/committed/refused/pending/event records/event bytes plus cutoff/late zero, while allowing a binding-stage fault; cutoff remains an independently defined ordinal without invented model/count equality. PC-D02 is resolved: mandatory supplied_join parses exact canonical B/I/C under independent expected O/all B fields, requires common operation equality and both I/C bindings equal the whole canonical B raw pin including LF, and rejects alternate-B/cross-operation/swapped pins. The contract explicitly states this join does not consume or verify raw events/streams/ledgers/actor-map/native handles. PC-10/13 coverage and readiness reflect both corrections;32 scenarios remain unchanged in count and unqualified. Verified all four archived originals against v1 pins,1910-byte manifest/SHA256be0980321fe210b86014e127e69f4c930874c8325fe047af031ed20148db9b32, exact saved-review confirmation and unchanged prior candidate/review hashes. Prior full eight-file semantic/arithmetic review and completed independent9693-input preservation audit carry forward; no full preservation scan was repeated. Baseline SHA256d1e42e1275d5d664ec4ca18714d1029ee0d8066751bd7b343e6689931c6fb45f. Acceptance covers PC1 closed supplied projections/join/refusal and conditional summary-reservation design only. Unchanged1062/49/Q360/S140 identities,702 debt rows,33 report roles/totals and original guards retain prior exact comparison. Conditional single-extra-escape B/I region131072 and C region65536 require complete future wrapper/remainder fit; no full actor/sample/ingress/capture/transport population or original return packing follows. B0/B1 trust/driver, original authority/provenance, invocation-to-model mapping, cutoff/drain/suite truth, complete capture/EOF/cancel/tool return, last writer/census/publication closure and whole-operation allocation/time/peak/F/M feasibility remain unimplemented/unqualified or NOT_ESTABLISHED as scoped. No existing trusted driver or current tool-session authority is inferred. The next supplied parser can proceed under these exact non-authoritative contracts with explicit test roster/budget updates, while dispatch stays refused. No method, code, runtime qualification/admission, P preparation, debt discharge or scientific acceptance is added. All702 debt rows,46 methods outside Q/S, frozen receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. All owned review scans are complete/closed.",
+  "review_text_sha256": "54b1b977a530f3ffff0627201e595e495e494066b327ba5abceba93a36326cb3",
+  "findings": [],
+  "resolved_findings": [
+    "PC-D01",
+    "PC-D02"
+  ],
+  "completed_preservation_audit_carried_forward": 9693,
+  "reverified_unique_current_files": 472,
+  "repeated_full_preservation_scan": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

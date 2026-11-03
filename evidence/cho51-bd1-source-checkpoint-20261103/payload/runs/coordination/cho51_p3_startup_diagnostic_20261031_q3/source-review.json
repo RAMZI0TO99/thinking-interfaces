@@ -1,0 +1,261 @@
+{
+  "schema": "cho51_startup_q_source_review_v1",
+  "status": "ACCEPTED_SOURCE_SQ3",
+  "reviewer": "l_source_review",
+  "authors": [
+    "project_root",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T10:53:25.4328405Z",
+  "sources": {
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/timestamp-metadata-analysis.json": {
+      "bytes": 641,
+      "sha256": "a70f3019352f8bbeea445f28d6d4731cae69f95081da424a0a0120524d2ca3cc"
+    },
+    "tools/local_validation/startup2/test_diagnostic.py": {
+      "bytes": 13956,
+      "sha256": "d5bb4e40e17b69a99bb3746a6adb7e1595734c32fa3f5856e9b2f568be686717"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q2/source-review.json": {
+      "bytes": 11377,
+      "sha256": "91646cae8bec3cdcf6f2ddac0c086c550c8a4855e4c414583e8eb3c09e69ed6f"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q2/failure_32761684-ba2c-48f1-bea5-aa7133bacb6d/root-disposition.json": {
+      "bytes": 730,
+      "sha256": "970ee313ac2114600a75287fa7a599196673e6927b7ccc05ffa82ef222b0badc"
+    },
+    "tools/local_validation/v1/README.md": {
+      "bytes": 5187,
+      "sha256": "a4368f731a5d26f722dfc058ff0d3e10f9ceca69b26edfab7ab19a69c9ee3135"
+    },
+    "tools/local_validation/startup2/diagnostic.ps1": {
+      "bytes": 44573,
+      "sha256": "83b387dbeafaf46ac482d365c5ed25d324b4613c7626d562f95f916c2e56629b"
+    },
+    "tools/local_validation/sq3/child_entry.py": {
+      "bytes": 6404,
+      "sha256": "2e6411ddc950e3338b82f40e1995e9aa47f9f93309ddb92fbaf146214399ad03"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/actual-review.json": {
+      "bytes": 8809,
+      "sha256": "aaf367c72e92d0d4ab26237a203ef79167df934325233063229ca8113a00519e"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_q2/source-review.json": {
+      "bytes": 32315,
+      "sha256": "e588362a37076022bbc0d6662845e0f76aa43a6753773b4cb06f8ac403596887"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_q2/root-qualification.json": {
+      "bytes": 4589,
+      "sha256": "e79087eae3408acae35ec5e5dc353f6429641d875dfabfdde5489f0728c7935e"
+    },
+    "tools/local_validation/startup2/reordered_probe.ps1": {
+      "bytes": 900,
+      "sha256": "86ca363eb1aae01c441a93b68af8646d07eb1ba23555e1a05d4c862dd8a476bf"
+    },
+    "tools/local_validation/startup2/README.md": {
+      "bytes": 17632,
+      "sha256": "909c9be1c3053ea1c07dd5dd96b264d1a5c1a745211fb901d8d6a4a415224a0f"
+    },
+    "tools/local_validation/sq3/test_native_reader.py": {
+      "bytes": 17578,
+      "sha256": "2550724203182305281de53a5cc605a678563e096582c734ecff74ea9a12b313"
+    },
+    "docs/phase2/cho51_p3_startup_diagnostic_design_20261031.md": {
+      "bytes": 12247,
+      "sha256": "8bc99ed2ac435bff506c044723c7e275b23ce1a5bc3cf5eab2aea2064a5d9551"
+    },
+    "docs/phase2/cho51_p3_startup_scalar_successor_contract_20261031.md": {
+      "bytes": 2740,
+      "sha256": "291d801997bfd2511bffc8f819f3ddd71ae6ee4e5855757d2e457d361dc398df"
+    },
+    "tools/local_validation/sq3/README.md": {
+      "bytes": 2082,
+      "sha256": "9ff64c6f77a911aaa6c5802c6042c4432ba6029ac690d75c87f337668e37756f"
+    },
+    "tools/local_validation/startup2/contract.py": {
+      "bytes": 16236,
+      "sha256": "f26c0b526233f3c3c575d8d4034b4dff1eb426a1c4b103f46fb587aa7ec792f5"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/actual-review.json": {
+      "bytes": 50284,
+      "sha256": "f89980119cd3d8b6ed0d277fa58c23ed57a01cfaf67e3b74a17d279112849e62"
+    },
+    "tools/local_validation/startup2/malformed_probe.ps1": {
+      "bytes": 877,
+      "sha256": "edf98ce2591c9698155518ea6cfedf1309ae8eb6f7816ad89bedc07de836a7d5"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q2/failure_32761684-ba2c-48f1-bea5-aa7133bacb6d/actual-review.json": {
+      "bytes": 19317,
+      "sha256": "dd003590f3ba39297b5661a62c8e2e6e3477089ac579346ff088df8f4eea604d"
+    },
+    "docs/phase2/cho51_p3_q2_bootstrap_contract_20261029.md": {
+      "bytes": 4874,
+      "sha256": "c1c1593055af237e770d60a998275cea54488fb5f78282402346d0904f972790"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/root-disposition.json": {
+      "bytes": 1335,
+      "sha256": "1d88e03ddf0189a77de6ed4dac413b2ef44ddfa2019d27963956f74f487a08ba"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q1/failure_6e38cc79-b78c-45db-963a-03646152540b/root-disposition.json": {
+      "bytes": 737,
+      "sha256": "6d89c0922ecc7bbb541bc219949ae2a9f170f027994a38dffa3960234231a209"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_p2/failure_a29c2264-da0e-4306-9bc8-f7c1fea976af/actual-review.json": {
+      "bytes": 18553,
+      "sha256": "1b56add833bd576e215671fae1124074ce2034dcbbd64f672c96a3ef4ec785a6"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_d1/source-review.json": {
+      "bytes": 3914,
+      "sha256": "9a874414bf156fefe3f90026b26dd122c7493e4420623a9f6aa3bb2796416134"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q2/cache-source-analysis.json": {
+      "bytes": 2897,
+      "sha256": "64af5428f8858466752699b2ef8f5ac7c9366e1994b14fc00fecb93a472f01ea"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_p2/startup-design-review.json": {
+      "bytes": 1584,
+      "sha256": "5a8cff646a64b561112b7917f9e0f5aca6ee2ef3e6ee93c1dcbbf43dba095095"
+    },
+    "tools/local_validation/startup2/empty_probe.ps1": {
+      "bytes": 465,
+      "sha256": "570eefa7ffdf143a7ad228b8f6db9ad0bfac1367a089e97ae863f411687d3ec5"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "tools/local_validation/sq3/test_protocol.py": {
+      "bytes": 8181,
+      "sha256": "9144659fbd09b0f5ff6fddfb0fb598d13f8f78ce1430636c42d8652928c21d9b"
+    },
+    "tools/local_validation/sq3/invoke_q.ps1": {
+      "bytes": 48449,
+      "sha256": "31a01e27632c4befe95c30d1f4fd1e75851316372c699ec677abfcb01f0c9212"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "tools/local_validation/startup2/partial_probe.ps1": {
+      "bytes": 823,
+      "sha256": "110bbfbddae5dd5025a839c7ada991f4f41feb52ffa02405a26cb5cc9f7ff598"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/root-disposition.json": {
+      "bytes": 1082,
+      "sha256": "887c4cc3b7d4d0fb0cf94bbcd85c8e31a342a55f4d2032c7b4bdc0a42989bed8"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q1/source-review.json": {
+      "bytes": 10568,
+      "sha256": "54618a2480aaeca19d88a4e08bf6dbf58f574d9c968044741bf4d3e549899134"
+    },
+    "tools/local_validation/sq3/job_adapter.py": {
+      "bytes": 17041,
+      "sha256": "2c7daf028d83c29d0653a8db0a4f39b9b5457f344d0844cb0d5ca90a7a8ee9c2"
+    },
+    "tools/local_validation/sq3/controls.ps1": {
+      "bytes": 20753,
+      "sha256": "9238dc7a858aa998ef323008cebe8f9e81536ee0c98cbaaa7b9194d2d5b429d9"
+    },
+    "tools/local_validation/sq3/caller_native.cs": {
+      "bytes": 26302,
+      "sha256": "4600a49dd4637961d72af9123baa6edd290a0794c1469cba26eb9ad7ada9dd79"
+    },
+    "tools/local_validation/sq3/native_reader.py": {
+      "bytes": 21654,
+      "sha256": "4902393abc01633d4dacfebefa45e824b0941c5134a0014f533eb6608ca6a225"
+    },
+    "tools/local_validation/lp2/caller_native.cs": {
+      "bytes": 26773,
+      "sha256": "6b33092bce6ea186d184fa748484ede5e15de5b6cca059e222fd009a158bcfb2"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/design-review.json": {
+      "bytes": 5065,
+      "sha256": "65526bad7ee6599c403411502ff0e0296b69c3a688daf66a5bb2aa402f017e4b"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_p2/root-startup-design-acceptance.json": {
+      "bytes": 1080,
+      "sha256": "874ebd19c7e87e4ba7c0e847ae9579241680391ef164422fa002dfc1ff7ef242"
+    },
+    "tools/local_validation/sq3/protocol.py": {
+      "bytes": 13175,
+      "sha256": "2f0689d55a1c112fbe8ee8056439514cd7ca7de5ba558946f0778b52c3f8c0ae"
+    },
+    "tools/local_validation/startup2/stall_probe.ps1": {
+      "bytes": 880,
+      "sha256": "506aa8b617807afdcc37394fca913b655752df926ba13320aa69afd36406ce58"
+    },
+    "evaluation/phase2_supervision_primitives.py": {
+      "bytes": 46498,
+      "sha256": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "docs/phase2/cho51_p3_startup_cache_successor_contract_20261031.md": {
+      "bytes": 6531,
+      "sha256": "b5fbcf94a0e1b339a4ece8675b35a19aa704ad5db872e7f8d7226878200e1120"
+    },
+    "tools/local_validation/startup2/fast_probe.ps1": {
+      "bytes": 870,
+      "sha256": "e14b379c5a2a3cf19d9ef03c06cff44caecf31ee288eea221333af711c69a667"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/actual-review.json": {
+      "bytes": 16813,
+      "sha256": "201d23ba407ea9e0fc8c829ded08b36011d7e7f8c2f49f99813dc9f85617fb4c"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_p2/failure_a29c2264-da0e-4306-9bc8-f7c1fea976af/root-disposition.json": {
+      "bytes": 1173,
+      "sha256": "6e8b96085a612814c121983a4b59ace1b7fd4f6b86ca0f68c7d186dc596585e5"
+    },
+    "tools/local_validation/startup2/pdh_probe.ps1": {
+      "bytes": 1843,
+      "sha256": "284282d0922843c7661bac8016bf5fab8dd95d31ababc7da05cdcda178961047"
+    },
+    "tools/local_validation/sq3/supervisor.py": {
+      "bytes": 22224,
+      "sha256": "87451b2318bf7039b49dce22d7206f8e81c4b8abe0bac1541598c0d2063fa2e8"
+    },
+    "runs/coordination/cho51_p3_loader_implementation_20261031_q2/actual-review.json": {
+      "bytes": 37603,
+      "sha256": "0d01c70c7ca1f39cc58da1617dbdf6b0b3cb5cb6353434ccf5a7bae348e8dd17"
+    },
+    "runs/coordination/cho51_p3_startup_diagnostic_20261031_q1/failure_6e38cc79-b78c-45db-963a-03646152540b/actual-review.json": {
+      "bytes": 16542,
+      "sha256": "7b1b0aefc472f4cbb50f2898e5e4c704d5a84132bcd341c5cedaf4f4cece384c"
+    },
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/startup2/__init__.py": {
+      "bytes": 78,
+      "sha256": "ec9d93ef3bdbb0ca7366bf5630948fc6b9778c25ab8f4f79f6719b28ec20fd47"
+    },
+    "docs/phase2/cho51_p3_startup_implementation_contract_20261031.md": {
+      "bytes": 7965,
+      "sha256": "9fe4a83ae6dd49d755650b2e2f88dd3ed0d1e61301a7f40f6ce9f0e9e3776a38"
+    },
+    "docs/phase2/cho51_p3_q3_utc_contract_20261029.md": {
+      "bytes": 3115,
+      "sha256": "7c6ee3a6b5be1a18febdeedae408de7f2e39f851e36dc5520fb01755462f2bf4"
+    }
+  },
+  "findings": [],
+  "checks": [
+    "Verified the corrected SQ3 candidate hash and all 59 listed source byte lengths and hashes; 124 method IDs are proposed.",
+    "Compared the typed fixed-event array with both fast and single-marker stall branches, and inspected empty, negative marker and authority-refusal cardinality paths.",
+    "Inspected fixed sequential controls-first order, output/profile census, explicit Python lifecycle binding, original native guard and unchanged Q resource/deadline boundaries.",
+    "Compared frozen common source pins and the retained SQ2 failure review; predecessor partial results remain separate from SQ3 qualification."
+  ],
+  "limitations": [
+    "Static source review only; no Python, AST execution, tests, compiler, native calls, process launch or Git.",
+    "The 124 methods, eight UTC, two fault controls, eight syntax checks and eight actual controller controls require a fresh admitted attempt and separate actual-result review.",
+    "The typed-array correction has not been executed; actual runtime/cache behavior and all original lifecycle closure remain to be observed.",
+    "No D execution, P/L or scientific admission, or historical custody closure follows."
+  ]
+}

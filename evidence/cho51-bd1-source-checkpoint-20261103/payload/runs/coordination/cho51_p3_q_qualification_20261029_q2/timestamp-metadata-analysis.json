@@ -1,0 +1,14 @@
+{
+  "automatic_created_kind": "Utc",
+  "automatic_created_type": "System.DateTime",
+  "string_expiry_parse_utc": "2026-10-29T09:57:45.5917594Z",
+  "tests_executed": false,
+  "local_timezone": "Arab Standard Time",
+  "saved_expiry_literal": "2026-10-29T09:57:45.5917594Z",
+  "observed_utc": "2026-10-29T09:55:46.4637316Z",
+  "schema": "cho51_q2_timestamp_metadata_analysis_v1",
+  "automatic_created_text": "10/29/2026 9:52:45 AM",
+  "purpose": "Read-only interpretation of retained JSON timestamps; no project code or test execution",
+  "automatic_expiry_parse_utc": "2026-10-29T06:57:45.0000000Z",
+  "string_created_type": "System.String"
+}

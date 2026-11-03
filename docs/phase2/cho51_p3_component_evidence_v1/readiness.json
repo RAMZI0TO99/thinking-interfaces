@@ -1,0 +1,84 @@
+{
+  "schema": "cho51_cm3_evidence_design_readiness_v1",
+  "status": "DESIGN_ONLY_PENDING_INDEPENDENT_REVIEW",
+  "full_roster": 764,
+  "modules": 32,
+  "selected": 248,
+  "outside_execution": 516,
+  "new_methods": 0,
+  "scenario_count": 32,
+  "conditional_normal_events": 1000,
+  "conditional_normal_bytes": 512000,
+  "proposed_input_max_bytes": 4259840,
+  "model_output_authority": "UNAUTHENTICATED_ONLY",
+  "model_dispositions": [
+    "SUPPLIED_TRANSCRIPT_CONSISTENT",
+    "SUPPLIED_NEGATIVE_TRANSCRIPT"
+  ],
+  "invalid_inputs": "Refusal; no success Facts; outer attribution may say INCOMPLETE_REFUSED",
+  "raw_unobservable": [
+    "method_cleanup",
+    "duration_order",
+    "suite_closure",
+    "final_producer_refusal",
+    "actual_subcase_population",
+    "actual_exception_type_and_trace",
+    "native_guard",
+    "source_runtime_transport_custody"
+  ],
+  "gates": [
+    {
+      "gate": "event_join_implementation",
+      "status": "UNIMPLEMENTED"
+    },
+    {
+      "gate": "roster_successor_for_new_methods",
+      "status": "REQUIRED_BEFORE_IMPLEMENTATION_ACCEPTANCE"
+    },
+    {
+      "gate": "recursive_runtime_effects",
+      "status": "OPEN"
+    },
+    {
+      "gate": "formatter_failure_domains",
+      "status": "OPEN"
+    },
+    {
+      "gate": "case_suite_semantic_equivalence",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "gate": "original_lifecycle_and_final_latch_wire",
+      "status": "UNIMPLEMENTED"
+    },
+    {
+      "gate": "original_capture_and_tool_envelopes",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "gate": "complete_allocation",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "gate": "native_provider_guard_custody",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "gate": "asynchronous_closeout_lifecycle",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "gate": "timing_memory_final_reserves",
+      "status": "NOT_ESTABLISHED"
+    }
+  ],
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "operational_entry": "REFUSED_UNADMITTED",
+  "next": "Implement and independently review the supplied-byte event parser and collection/table join; freeze new test identities via explicit roster/budget successor; source-only, P disabled",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "scientific_cells": 0,
+  "scientific_total": 1020,
+  "freeze_signed": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_pc1_implementation_source_review_v1",
+  "status": "CHANGES_REQUESTED_SOURCE_ONLY",
+  "publisher": "project_root",
+  "reviewer": "cm4_design_review_sol",
+  "candidate": {
+    "bytes": 91039,
+    "sha256": "15e5605172bb9777d305539ba9c2197c54c562f41a1db3da4aa0f027e16e6e95"
+  },
+  "review_text": "CHANGES_REQUESTED_SOURCE_ONLY. Candidate candidate-v1.json:91039 bytes, SHA25615e5605172bb9777d305539ba9c2197c54c562f41a1db3da4aa0f027e16e6e95. Completed independent bulk-native audit of9748 unique current files covering all483 source pins,15 new-file pins, four external reference-only pins and9729 preserved inputs; mismatches=[]. Preservation-baseline SHA256af905a7032c0281056d0ead26537d48e2b96091729cd7eb00d6b2a06b1832862. Reviewed all ten PC1 package files, all59 test bodies and five contract/roster/debt/coverage/budget documents against accepted PC-D01/D02 design. Findings=[{id:PC-S01,priority:P2,file:tools/local_validation/pc1/parsers.py,line:35,issue:FROZEN/TERMINAL accept cutoff42,pending0,zero event_records and the valid empty event pin, with zero other activity and faultNONE. The frozen design requires complete event grammar for these states; although this API cannot verify referenced raw grammar, an empty reference is a provably impossible necessary condition for it.,required_change:Require nonzero event_records and nonempty events.bytes for FROZEN/TERMINAL, add empty refusal and nonempty supplied-only boundary cases, and retain explicit statements that nonempty references do not verify actual event count/grammar or native sealing.}]. No additional correctness finding identified. Static reasoning supports exact byte/subclass refusal before callback use,8192-byte preparse caps, depth/graph key+value accounting, bounded seven-digit integer conversion, canonical ASCII/LF roundtrip, duplicate/closed schemas, exact UUID/pin/enum/bool/int rules, empty digest enforcement, ingress algebra/BOUND-zero/cutoff/late semantics, independent expected canonical B and operation equality, exact whole-B-LF cross-binding pins, recursive immutable parser tuples and immutable unconditional false-authority result properties. Dedicated finite-code input refusals alone are classified; unexpected allocation/programming/cancellation failures propagate. No raw event/stream/ledger/actor/native verification or dispatch is implemented. Independently checked605 indexed method start lines/source pins,123 declaration/28 import rows, all51 module pins,59 textual methods with zero subTest contexts and all761 held semantic debt digest/module pins. Prior702 debt rows retain kind/token/module pins;761=516 BASELINE_HELD+245 NEW_TEST_UNQUALIFIED, with59 new methods outside fixed disjoint Q360/S140. Full1121/51 identity digest8444740f2a60ac96f1b834db1b0ed0b1d5a39787cd181679a57bf31ca466720e matches. Prior49 module-map entries,33 report reservations and original guard fields are exact; no role/cap transfer occurs. Four raw inputs total32768 bytes, four valid-path decodes/roundtrips and one observed-B hash remain representation/source-path counts, not peak-memory/time evidence. Conditional single-extra-escape summary regions and full population/wrapper/endpoint obligations retain scope. All59 tests remain held/unexecuted, all32 PC1 and prior scenarios unqualified. No executable syntax/test success, original B0/B1 authority/driver, dispatcher/provider/ingress/cutoff/capture/EOF/tool/closure, complete recursive effects/allocation/time/peak/F/M feasibility, runtime admission or scientific acceptance is established. Original guards, frozen receipts, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Audit completed normally; no owned scan remains. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "ae82166e4add53efdf095205040bbd31807efd45465a34275cecb4dc7d4e087a",
+  "findings": [
+    "PC-S01"
+  ],
+  "completed_preservation_audit": 9729,
+  "unique_current_files_audited": 9748,
+  "preservation_mismatches": 0,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

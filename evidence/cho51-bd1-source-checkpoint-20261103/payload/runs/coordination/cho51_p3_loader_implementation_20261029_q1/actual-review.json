@@ -1,0 +1,201 @@
+{
+  "schema": "cho51_lq1_failed_actual_review_v1",
+  "status": "ACCEPTED_LQ1_FAILURE_DISPOSITION",
+  "qualification_status": "FAILED_LQ1_CONSUMED_PRE_NATIVE_DISPATCH",
+  "reviewer": "l_actual_review",
+  "authors": [
+    "project_root",
+    "l_observer_impl",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T06:28:19.6414743Z",
+  "operation_id": "c6ca0ec3-8f89-48d1-a863-4c874207b273",
+  "review_scope": "Independent saved-result, JSON, text and byte/hash review only; no source authorship, Python, import, AST, compiler, tests, native probes, runtime execution or Git operation.",
+  "actual_tool_exit_code": 1,
+  "actual_tool_wall_time_seconds": 6.0068299,
+  "original_caller_elapsed_seconds": 5.1125091,
+  "external_elapsed_seconds": 5.1933283,
+  "error": "RuntimeException: native toolchain exact files",
+  "qualified": false,
+  "tests_run": 0,
+  "native_cases_run": 0,
+  "evidence": [
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/source-freeze.json",
+      "bytes": 62795,
+      "sha256": "46e207069d2bb670c811cea3a3d21df0a00b057cbeeb374ebe8ddd0b5761f364"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/source-review.json",
+      "bytes": 25793,
+      "sha256": "3e66749c6f4eca4842f6fd3ae7423567b839801df988972f86ba31fb9045e138"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/runtime-freeze-revision5.json",
+      "bytes": 286322,
+      "sha256": "95b1670c63263349032480ae9a8d2d129dd7a13ffdfbb137e7997c19b4c02879"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/contract-adoption.json",
+      "bytes": 913,
+      "sha256": "2057048c943ff9550ae670dec6d0ee3e09c005b1c36d66b3bb4481038a123671"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/admission_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 349854,
+      "sha256": "08dc06744567c7c977f93c88b45f6e555c58c0f6cbfeb54492585e256696e9dd"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/preflight_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 1029,
+      "sha256": "1972d9eb094bdc84eb55b1b3a2cbf9f99dd27f3d8fe4747378dac458e3fb13ae"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/admission-scope_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 1198,
+      "sha256": "8e31d3db3de15a9c1abf149e2896e0266f0c78c4637f5966839dd61a5be96a59"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/claim_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 272,
+      "sha256": "e15117bf048f6f77bd5152e03758d262abb743096f46aae59d8aad7fe9228e15"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/caller-return_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 4212,
+      "sha256": "290cc8b3b1765ad13edf5913e824bde8ced92f6a4972115d23e3f29cd6bc76ba"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/bootstrap_c6ca0ec3-8f89-48d1-a863-4c874207b273.jsonl",
+      "bytes": 6117,
+      "sha256": "3ca18783e162e8204ff91464905cf51f1fbb3b69ed86ce8ba7b0bcdbb75d2e6b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/native-build_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 39421,
+      "sha256": "a3737bdf60e6aa20d54192bf6d81afb091bc9f74ea3a4f3edad763ef3f4db50b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/native-diagnostic_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 9970,
+      "sha256": "bf3a288f7b7546165505e062ee02d61b7cfff9df7ae706fd9d632b62c1c54790"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/api-mapping_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 10293,
+      "sha256": "86caf70e64c103bd1823ce6ab2b983471c983166e6f64d850b2674586dc4e67a"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/native-helper_c6ca0ec3-8f89-48d1-a863-4c874207b273.dll",
+      "bytes": 21504,
+      "sha256": "22a7cd626f29f59ea8b05aa717789e566a222c9b6f0afc72994b2908ec5d1d62"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/timestamp-controls_c6ca0ec3-8f89-48d1-a863-4c874207b273.json",
+      "bytes": 950,
+      "sha256": "388f8c759e6be4929643f035e973793c5dd6173c3d7477b0e01e3763c0caff00"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/tool-return.json",
+      "bytes": 4163,
+      "sha256": "704eb7c6df86761964fc1d8f77eafbdde655b9d547875047b5887ba2b38bdda5"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261029_q1/preservation-baseline.json",
+      "bytes": 837619,
+      "sha256": "7b134c32d0feb02689a1b0a4540f408fe2785a562dc4d00b23e3b7137bbe61a0"
+    }
+  ],
+  "pin_checks": {
+    "sources": 134,
+    "runtime_files": 732,
+    "managed_compiler_files": 169,
+    "native_compiler_files": 112,
+    "caller_runtime_files": 1,
+    "preserved_predecessor_files": 3356,
+    "byte_hash_drift": 0,
+    "source_review_freeze_admission_sources_match": true,
+    "ordered_356_method_roster_matches": true,
+    "review_precedes_admission": true,
+    "referenced_record_bytes_and_hashes_match": true,
+    "preflight_preservation_drift": 0
+  },
+  "attempted_effects": [
+    "Fresh claim and bootstrap journal were created for the exact operation. Journal has 17 ordered sequence values 0 through 16 and ends caller_ready_to_close; it has no supervisor_dispatch event.",
+    "Caller bootstrap guard became ready and retained 21 resource samples. Eight timestamp controls are individually true, with ar-SA culture exercised. These are partial actual controls, not acceptance of the Q suite.",
+    "Reviewed in-process C# helper compilation, managed PNative PE emission, same-handle byte readback and assembly load completed. native-build records emitted_pe_verified, loaded_same_pe_bytes and original_output_identity_retained true; retained helper is 21504 bytes. This is managed helper emission, not the closed-header C observer build.",
+    "Managed P one-process and L two-process limit queries and empty-Job controls completed; a third process-count setting was refused. Source ordering checks Dispose, JobEmpty, JobClosed, WatchdogJoined and absence of CleanupError/Fault before publishing the positive receipt. These controls used empty Jobs and do not establish parent/child containment during an L operation.",
+    "Native diagnostic and API mapping were published. The diagnostic has 18 reference records, 17 acquired and 17 released references, all_owned_references_released true, 14 contract rows and five positive refusal controls. The negative lookup acquired no reference. Target modules were not loaded and loader_qualified remains false.",
+    "BuildLNative entered ancestry retention and exact toolchain census, then refused at build_l_native.ps1 line 108. The saved L native build state is bundle null, tool_inputs 0, operations empty, final_original_recheck false. No native compiler process, C output, disassembly, strict-receiver handoff or native bundle was established."
+  ],
+  "closure": {
+    "original_file_handles_closed": true,
+    "bootstrap_journal_closed": true,
+    "bootstrap_journal_bytes": 6117,
+    "bootstrap_journal_records": 17,
+    "bootstrap_guard_done": true,
+    "bootstrap_guard_joined": true,
+    "bootstrap_guard_closed": true,
+    "bootstrap_guard_completion_wait_closed": true,
+    "bootstrap_guard_error": null,
+    "bootstrap_guard_shutdown_seconds": 0.0609462,
+    "managed_p_empty_job_closed": true,
+    "managed_l_empty_job_closed": true,
+    "diagnostic_owned_references_released": true,
+    "caller_artifact_final_original_recheck": true,
+    "outer_custody": {},
+    "outer_child_creation": "NOT_REACHED",
+    "native_compiler_children": "NOT_CREATED",
+    "outer_child_reap_job_pipe_proof": "NOT_APPLICABLE_NO_OUTER_OWNER_OR_CHILD",
+    "native_compiler_reap_job_pipe_proof": "NOT_APPLICABLE_NO_COMPILER_OWNER_OR_CHILD",
+    "consumer_handoff": "NOT_EXERCISED",
+    "l_native_final_original_recheck": "NOT_ESTABLISHED_NO_BUNDLE",
+    "global_historical_cleanup": "UNRESOLVED_UNCHANGED"
+  },
+  "original_provisional_flags": {
+    "caller_guard_shutdown_pending": true,
+    "caller_tool_return_pending": true,
+    "caller_independent_actual_review_pending": true,
+    "caller_guard_joined": false,
+    "caller_guard_closed": false,
+    "caller_guard_completion_wait_closed": false,
+    "artifact_consumers_reaped": false,
+    "artifact_original_writers_held_through_consumers": false,
+    "artifact_final_original_recheck": true,
+    "explanation": "Original caller-return precedes file/journal closure and StopGuard, so its pending and false shutdown fields remain intact. Later external return supplies positive guard/file/journal closure. Both consumer flags remain false because no consumer was created; they are not rewritten or treated as a successful handoff."
+  },
+  "resources": {
+    "preflight_available_ram_gib": 5.194057464599609,
+    "preflight_free_disk_gib": 68.78303527832031,
+    "guard_minimum_ram_bytes": 6431830016,
+    "guard_minimum_disk_bytes": 73854754816,
+    "guard_peak_caller_private_bytes": 147202048,
+    "limits_observed_for_attempted_scope": true,
+    "interpretation": "Observed guard minima exceed admitted 4 GiB RAM and 20 GiB disk floors; caller private peak is below 512 MiB; external elapsed and shutdown are below 90 and 5 seconds. No compiler/child process or Job peak measurement is inferred."
+  },
+  "findings": [
+    "Actual exit 1 and accepted_by_caller false are consistent with the recorded exact-toolchain refusal before compiler ownership and before outer supervisor construction. Accept this as a consumed failed attempt only.",
+    "Failure occurs at the exact-file census guard before the NativeToolPin loop and RunLTool calls. The exact PowerShell list-construction diagnosis and any repair require a separate Root record and independently reviewed successor; this result review does not execute a reproduction or authorize retry."
+  ],
+  "checks": [
+    "Read required project policy, coordination, handoff and implementation supplement; independently inspected original caller-return, exact preserved tool return, bootstrap journal, timestamp controls, managed build receipt, mapping and native diagnostic.",
+    "Rehashed every admitted source, Python runtime, managed compiler, native compiler and caller runtime pin, plus all 3356 predecessor preservation pins; no drift. Joined source-review, freeze and admission source sets and ordered roster, and checked referenced record hashes/lengths.",
+    "Joined helper, diagnostic and mapping artifact bytes/hashes against original external references, and their recorded native identities across caller/build/diagnostic/mapping evidence. These retained identity claims are not a new native-identity probe.",
+    "Inspected reviewed source text solely to distinguish empty-Job receipt publication predicates, pre-dispatch refusal, cleanup ordering and provisional versus final return fields."
+  ],
+  "limitations": [
+    "356 proposed methods, two malformed-frame/timeout children, three sharing controls and five native observer cases were not dispatched. The 40-scenario mechanism matrix remains unqualified. No generated native callback instructions exist to inspect.",
+    "The managed emission, timestamp and diagnostic evidence is scoped partial evidence. It is not ACCEPTED_LQ1_TESTED_SCOPE or QUALIFIED_LQ1_MECHANISMS_ONLY, and does not establish native compiler binary streams, strict receiver custody or loaded observer behavior.",
+    "No refreshed P preparation, complete L plan, L collection, candidate execution, V/C admission or study was performed. The 117 candidate cases and 34 successor controls remain unexecuted; scientific cells remain 0/1020 and final freeze unsigned.",
+    "Historical bootstrap004 custody, earlier failed/unknown cleanup, diagnostics005 hold and unadmitted006 are unchanged. No positive historical custody, restart, boundary, dependency-closure, launch or scientific flag is inferred.",
+    "This UUID is consumed. No unchanged reissue or automatic retry is authorized. Successor sources, review, fresh pins, unused attempt, admission and separate actual-result acceptance remain required."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

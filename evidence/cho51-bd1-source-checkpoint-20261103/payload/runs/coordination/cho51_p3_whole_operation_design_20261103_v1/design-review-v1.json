@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_wo_design_review_v1",
+  "status": "CHANGES_REQUESTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 85577,
+    "sha256": "0bcd6afa50b4c236e24e677c3acb233334cdc1495fdd694854792f50f5e19867"
+  },
+  "findings": [
+    {
+      "id": "WO-D01",
+      "path": "docs/phase2/cho51_p3_whole_operation_v1/operation.md",
+      "priority": "P2",
+      "required_change": "Explicit acyclic independently admitted prerequisite-qualification root/driver and refusal coverage; no inferred existing authority"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_DESIGN_ONLY. Candidate candidate-v1.json:85577 bytes, SHA2560bcd6afa50b4c236e24e677c3acb233334cdc1495fdd694854792f50f5e19867. Independently verified all460 source pins, eight new-file pins, four external reference-only pins and all9657 preservation files without byte/hash mismatch; preservation-baseline SHA256a5d94d62bce77bb83a48e9c6a94640b04d52871164678d538d1f2bf655278576. Reviewed all eight design files against frozen source/design contracts. Findings=[{id:WO-D01,priority:P2,file:docs/phase2/cho51_p3_whole_operation_v1/operation.md,issue:W0 requires every gate including capability qualification established, but finite-path step4 invokes qualification under fresh scoped admissions without specifying its independently admitted lower-level driver/enforcement/observation root. Distinguishing prerequisite claims from full S140 does not itself break the self-hosted qualification cycle.,required_change:Specify an acyclic prerequisite-qualification bootstrap path with separately reviewed bounded admission and an independently established lower-level guard/stop/containment/capture/cleanup/observation basis. Explicitly mark that driver/root unimplemented/unqualified unless evidence is separately accepted; forbid candidate self-certification, circular borrowing of W0 acceptance or inference of an existing trusted driver. Add corresponding qualification/refusal coverage while preserving original guards and execution hold.}]. No additional design correctness finding identified. Independently checked546 effect method rows exactly equal prior index,16 inherited boundary classes exactly equal frozen map, all supplied source anchors valid, full1062/49/Q360/S140 identities and all702 held rows unchanged. Q/S remain separate fixed operations;46 wrapper tests remain outside both and unqualified. Checked33 named report slots/18890752 bytes with exact caller10/10878976, supervisor7/4718592 and closeout16/3293184 totals,10 memory families, ten stages and32 new unqualified scenarios. Valid source paths support four supplemental collection checks/eight direct raw-C parses/ten base context-D parses per join, without inferring simultaneous decoded-tree count. Conditional commit candidate2162688 and known concatenation payload4391424 arithmetic is valid only under stated unmodified-state/validated-command assumptions, excluding serialization/state/runtime/exception/heap overhead. Source work lower bounds remain cumulative, not elapsed-time/peak-memory/disk/output/guard-exceedance proof. Universal inline escaping fails its control-byte strategy counterexample only; retained-raw capture remains unimplemented/unqualified. Complete original allocation, recursive normal/failure effects, authoritative source/manifests, faithful dispatcher/provider/ingress/cutoff/observer/custody, finite publication/census/owned closeout and worst-case time/memory/F/M reserves remain OPEN/NOT_ESTABLISHED. Report reservations, source review and supplied consistency do not establish any gate. No code/method/runner/admission is added; all32 new and prior qualification obligations remain unqualified. Original guards, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. The slow initial native hash scan was interrupted and closed without an audit claim; the complete independent direct-file SHA256 fallback finished successfully, and no owned scan remains running. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "d43dd9fef392f5f4be6e357a627c69738a74dc32f049c253c336ce0ca773f88b",
+  "implementation_changed": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

@@ -1,0 +1,245 @@
+{
+  "schema": "cho51_pc_qualification_v1",
+  "scenario_count": 32,
+  "groups": {
+    "lifecycle": 8,
+    "basis": 8,
+    "projection": 8,
+    "packing": 8
+  },
+  "scenarios": [
+    {
+      "id": "PC-01",
+      "group": "basis",
+      "requirement": "B0 trust adoption separates foundational OS assumption from unobserved project mechanism; no current session/receipt/token establishes original authority",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-02",
+      "group": "basis",
+      "requirement": "B1 depends only on independently accepted B0; candidate cannot supply its own enforcing or completeness authority",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-03",
+      "group": "basis",
+      "requirement": "Target functional unknown allowed only inside independently bounded effect/failure/resource/custody domain",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-04",
+      "group": "basis",
+      "requirement": "Original guard T0 and retained actor/Job/pipe/clock/stop acquisition precede bootstrap including pre-Job failures",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-05",
+      "group": "basis",
+      "requirement": "Native enforcement remains outside mutated child globals/mocks; observer role introduces no extra worker or uncharged helper",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-06",
+      "group": "basis",
+      "requirement": "Expected O/source/runtime/basis/actor/clock pins come from independent inputs and do not embed own/later artifact hashes",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-07",
+      "group": "basis",
+      "requirement": "HB1 request4096 does not carry every8192 projection; supplied frame validity never authenticates native capability",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-08",
+      "group": "basis",
+      "requirement": "Startup200ms is minimum two-sample separation and250ms freshness; full sample schedule/population remains explicit and bounded",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-09",
+      "group": "projection",
+      "requirement": "Exact canonical ASCII bytes/LF/closed keys/exact primitive types and graph/cap refusal; no coercion or runtime/native access",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-10",
+      "group": "projection",
+      "requirement": "B independently expected O/all binding fields match; I/C same expected O and exact entire canonical B raw pin inclLF; reject same-O alternateB, swapped/cross-operation projections and noncanonical/omitted-LF pin; all authority/execution/debt flags false",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-11",
+      "group": "projection",
+      "requirement": "I entered equals committed+refused+pending with uint16 limits, no bool coercion or wrap",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-12",
+      "group": "projection",
+      "requirement": "I late is disjoint and cannot silently map to frozen producer attempts/post-footer counters",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-13",
+      "group": "projection",
+      "requirement": "BOUND zero entered/committed/refused/pending/event records/bytes plus cutoff/late0; reject malformed activity even if algebra fits, allow binding-stage fault; cutoff remains independent ordinal, not count; state/event invariants do not prove original seal",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-14",
+      "group": "projection",
+      "requirement": "Full original invocation map required, with every admitted/rejected/late/interrupted route; map hash not completeness",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-15",
+      "group": "projection",
+      "requirement": "C exact raw stream pins including empty bytes; EOF/status booleans remain supplied and all chunk/merge/error contents required",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-16",
+      "group": "projection",
+      "requirement": "Inner expected negative contexts remain distinct from outerS140; original complete negative versus incomplete prefix separated",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-17",
+      "group": "packing",
+      "requirement": "All33 report owners/partitions/caps and16 metadata roles exact; no pool/role transfer/extra report",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-18",
+      "group": "packing",
+      "requirement": "Two8192 summaries with one6x escape layer plus32768 remainder fit131072 only under exact stated conditions",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-19",
+      "group": "packing",
+      "requirement": "One8192 summary with one6x escape layer plus16384 remainder fits65536 only under exact stated conditions",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-20",
+      "group": "packing",
+      "requirement": "Existing mandatory wrappers must fit remaining cap without omission; another escaping layer invalidates current bound",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-21",
+      "group": "packing",
+      "requirement": "1MiB raw tool text plus envelope fails universal1MiB fit; control-byte6291456 counterexample preserved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-22",
+      "group": "packing",
+      "requirement": "No raw binary tool slot inferred; stream refs cannot replace actual tool response/chunk/EOF/error/cancel contents",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-23",
+      "group": "packing",
+      "requirement": "No full journal/ingress/sample/merge population bound inferred from counters/byte limit or fitted summary",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-24",
+      "group": "packing",
+      "requirement": "8192 confirmation separate remainder and whole destination envelope checks; exact postpublication independent pin required",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-25",
+      "group": "lifecycle",
+      "requirement": "Every ingress route revoked, admitted work settled and late attempts observed before original freeze",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-26",
+      "group": "lifecycle",
+      "requirement": "Blocked/native/timeout/stop/resource/refusal-helper failures consume original attempt and retain actual prefix under owned cleanup",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-27",
+      "group": "lifecycle",
+      "requirement": "Terminal writer cannot attest own later closure; subsequent raw join and external ownership edges remain acyclic",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-28",
+      "group": "lifecycle",
+      "requirement": "Census/publication self-writes charged, no own digest preimage or infinite final report chain, no paused human review",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-29",
+      "group": "lifecycle",
+      "requirement": "Final original observer failure leaves UNKNOWN/incomplete; existing SC1 backend close not native process/tool closure",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-30",
+      "group": "lifecycle",
+      "requirement": "Full1062/49 Q360/S140 and702 debt exact;46 CM6S methods outside both still need separate qualification decision",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-31",
+      "group": "lifecycle",
+      "requirement": "All seven WO gates,16 effects,546 indexed/516 other held, whole liveness/F/M and every guard preserved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "PC-32",
+      "group": "lifecycle",
+      "requirement": "Supplied PC1 parser successor source-only; no native provider/admission/P/science/debt discharge or combined prerequisite-profile success",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    }
+  ],
+  "prior_whole_operation_scenarios": 32,
+  "prior_cm6_scenarios": 32,
+  "prior_supplement_scenarios": 24,
+  "all_prior_scopes_preserved": true,
+  "new_methods": 0,
+  "tests_executed": 0,
+  "qualified_scenarios": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

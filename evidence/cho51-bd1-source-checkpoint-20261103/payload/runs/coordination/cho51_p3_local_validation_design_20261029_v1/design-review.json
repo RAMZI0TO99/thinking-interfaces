@@ -1,0 +1,89 @@
+{
+  "schema": "cho51_p3_local_validation_design_review_v1",
+  "status": "ACCEPTED_DESIGN",
+  "author": "project_root",
+  "reviewer": "provider_source_review",
+  "scope": "Independent static review of the six design documents, preservation baseline and selected policy, historical and inventory evidence; no operational acceptance.",
+  "pins": {
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/README.md": {
+      "bytes": 841,
+      "sha256": "a24a499ded261b3a5657387bfaca0dbf4be63bd37dee4130412954399c3be437"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/test-roster.json": {
+      "bytes": 7470,
+      "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/control-roster.json": {
+      "bytes": 11390,
+      "sha256": "cb51607b77782f556aca3ef4a2119cdff913818107aad250ebb11ad159a32113"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/dependency-plan.json": {
+      "bytes": 7406,
+      "sha256": "ff5033f1dc3698be5156a3768bf060e37db15b631f2f87e0dcead355b1b659bf"
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/acceptance-cases.json": {
+      "bytes": 6019,
+      "sha256": "f7a70ec775eb08033d052f77db63ee8532c6a5a99758477c2fe557bf41ddc5eb"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/preservation-baseline.json": {
+      "bytes": 151537,
+      "sha256": "8051ada2d3b88c9ef29d1e59a7e75d85f2a8c2f1cda83700f18ec1ac84e167c3"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/phase2/cho51_p3_inventory_contract_20261029.md": {
+      "bytes": 6438,
+      "sha256": "3e95ad2717005765732a95730e98f87f3e5052db8f4a27d69850469f3b8a1edf"
+    },
+    "runs/coordination/cho51_p3_inventory_observation_20261029_v8/actual-review.json": {
+      "bytes": 11741,
+      "sha256": "ff418f126145aa67bbb5398d9b6ab9f08917cfe58d748317c0d5b63778219999"
+    },
+    "runs/coordination/cho51_p3_inventory_observation_20261029_v8/root-qualification.json": {
+      "bytes": 1027,
+      "sha256": "bbc49e5cc911012112a62d102c85e2364b9916029467c99e505d3261fa823cf3"
+    },
+    "runs/coordination/cho51_p3_custody_intake_20261028_v6/disposition_001.json": {
+      "bytes": 2165,
+      "sha256": "9a4fb386803dca8a57b36cb0790fab110155ae50cc5904e77e3bc36aab48521d"
+    },
+    "runs/coordination/cho51_p3_contracts_20261027_v1/source-review.json": {
+      "bytes": 12698,
+      "sha256": "ab2df55aa4d36c66ce7f7d238f71683eddcb7dd773543c01da08dac4790df65a"
+    },
+    "core/provenance.py": {
+      "bytes": 3426,
+      "sha256": "14ac6a25bdb950d4853efd7533c323d20759c3ca57a0a8676e547e4d45155758"
+    }
+  },
+  "preservation": {
+    "files_checked": 636,
+    "changed": 0
+  },
+  "findings": [],
+  "resolved_findings": [
+    "The scoped policy replacement is explicit, limited to Q/P/L/V/C, and requires implementation-bound adoption; P is input qualification rather than operational authorization.",
+    "V caller origin, shared work and cleanup deadlines, admission coverage and 600/599 pure-control semantics are explicitly distinguished.",
+    "Both allowed Git argument vectors now match the source-capture implementation exactly."
+  ],
+  "checks": [
+    "Static roster sums 39 mapping and 78 telemetry cases across 25 functions, with 34 distinct successor control names.",
+    "The six candidate source pins and historical source-review digest match the retained files.",
+    "Q/P/L/V/C stages require separate reviewed sources, admissions, actual review and Root qualification; physical custody and loader closure remain implementation obligations."
+  ],
+  "limitations": [
+    "Design acceptance grants no launch, admission, historical release, boundary or scientific authority.",
+    "No Python, imports, compilation, test collection, tests, workload or native process observations were performed.",
+    "Candidate node IDs, third-party dependencies, loader closure, guards, side effects, artifact custody and resource behavior remain unqualified until separately implemented and reviewed.",
+    "The 26 qualification scenarios, 117 candidate tests and 34 successor controls remain unexecuted.",
+    "Bootstrap004 remains failed, unreleased and consumed; diagnostics005 remains held; the historical full-restart predicate and unresolved disposition are unchanged.",
+    "Trust and completeness are limited to the explicitly declared runtime, filesystem and observer assumptions; no loaded-code attestation or scientific cell follows."
+  ],
+  "next_step": "File-only preparation core and closed record validators may be implemented for separate source review; no Q/P/L/V/C execution follows without independently reviewed supervision, implementation-bound adoption and fresh admission."
+}

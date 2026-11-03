@@ -1,0 +1,186 @@
+{
+  "schema": "cho51_cm6s_design_qualification_v1",
+  "scenario_count": 24,
+  "groups": {
+    "membership_context_debt": 8,
+    "supplied_protocol": 8,
+    "feasibility_original_gates": 8
+  },
+  "scenarios": [
+    {
+      "id": "CM6S-01",
+      "group": "membership_context_debt",
+      "requirement": "Exact canonical S140 raw pin/order/digest equals all60 CM6 and80 cm6i frozen methods; no caller-selected substitute",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-02",
+      "group": "membership_context_debt",
+      "requirement": "Q360 is unchanged and disjoint from S; Q500 union and cross-profile ordinals refuse",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-03",
+      "group": "membership_context_debt",
+      "requirement": "Full current1016/45 baseline and all adopted additions verified before S view, with unchanged Q/H views and no expected-row substitution",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-04",
+      "group": "membership_context_debt",
+      "requirement": "All656 debt rows/kinds/pins remain; S subjects stay HELD, outside-S876 is not held876, negative S suffix remains separate",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-05",
+      "group": "membership_context_debt",
+      "requirement": "Future successor methods join full C as held; neither S nor Q auto-expands to qualify them",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-06",
+      "group": "membership_context_debt",
+      "requirement": "Exact external Q/S/D/E pins and operation, canonical schemas/types/counts/name/graph limits",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-07",
+      "group": "membership_context_debt",
+      "requirement": "E exact Q/S/D pin joins and common manifest references, distinct K_Q/K_S domains with no output/self expectation",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-08",
+      "group": "membership_context_debt",
+      "requirement": "Authentic predecessor/current source adoption and CM6-08 dependency/cycle/provenance remain independent open obligations",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-09",
+      "group": "supplied_protocol",
+      "requirement": "Raw six-input constructor validates complete context/collection/projections/tables before state or BEGIN; no caller Facts/order shortcut",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-10",
+      "group": "supplied_protocol",
+      "requirement": "Fixture owners retain128 cap and exact S affected positions; Q/H/full-C integers cannot substitute",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-11",
+      "group": "supplied_protocol",
+      "requirement": "New event header140, S ordinal order and exact unstarted negative suffix; old schema or context aliases refuse",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-12",
+      "group": "supplied_protocol",
+      "requirement": "Independent raw parser accepts event grammar without producer replay and reparses expected context/full collection",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-13",
+      "group": "supplied_protocol",
+      "requirement": "Closed subcase/immediate trace/cleanup/duration/failfast/fixture/suite/restoration/input/footer semantics preserved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-14",
+      "group": "supplied_protocol",
+      "requirement": "CM5-S01 nested postfooter and S02 secondary refusal helper protections, settlement and overflow refusal preserved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-15",
+      "group": "supplied_protocol",
+      "requirement": "Terminal six constructor pins/whole events retained exactly; complete accounting/detachment mandatory and incomplete state cannot seal",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-16",
+      "group": "supplied_protocol",
+      "requirement": "Nine-input/eight-pin independent raw join; all-PASS plus refused terminal negative; all authority/debt flags false",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-17",
+      "group": "feasibility_original_gates",
+      "requirement": "Conditional outer706 events/705 attempts is separate from at least20 inner streams/36120 records and extra qualification controls",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-18",
+      "group": "feasibility_original_gates",
+      "requirement": "At least3259828000 cumulative old-prefix bytes and no smaller full-hash reads are not peak RAM/disk/output/timing or guard-exceedance proof",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-19",
+      "group": "feasibility_original_gates",
+      "requirement": "New closed payload347/622/1098/1001 and nine-input5570560 bounds retain per-input caps; no free source sidecars or projection outputs",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-20",
+      "group": "feasibility_original_gates",
+      "requirement": "All140 body/effect/import/fixture obligations indexed; inherited unittest, recursive failure/capture and code/type/trace populations remain open",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-21",
+      "group": "feasibility_original_gates",
+      "requirement": "All original clocks/resources/ownership/stop/cleanup and final reserves preserved; no outside-clock work or unadmitted diagnostic",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-22",
+      "group": "feasibility_original_gates",
+      "requirement": "Complete allocation/peak lifetime/capture EOF/tool return/native custody and escaped output counterexample remain open",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-23",
+      "group": "feasibility_original_gates",
+      "requirement": "No partition cap bypass or aggregation into a passing single S140 run; any alternative needs separate scope/control/claim review",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6S-24",
+      "group": "feasibility_original_gates",
+      "requirement": "Fresh source/runtime pins and unused attempt/all gates plus independent actual review required; P/full Q/117/V34/science remain held",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    }
+  ],
+  "new_test_methods": 0,
+  "replaces_original_obligations": false,
+  "prior_cm6_scenarios": 32,
+  "prior_cm6_qualified": 0,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

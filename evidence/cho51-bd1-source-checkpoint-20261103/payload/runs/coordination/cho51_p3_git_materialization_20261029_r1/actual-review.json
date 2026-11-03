@@ -1,0 +1,42 @@
+{
+  "schema": "cho51_r1_actual_review_v1",
+  "status": "ACCEPTED_R1_MATERIALIZATION_SCOPE",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T12:39:36.3360959Z",
+  "operation_id": "49b1f44d-46ef-446e-a8fd-85a3ddb7ce36",
+  "source_review_sha256": "74c64c5fb7526cf68d51e86b6f5b76c121c1d8f8ed6399c21e2bea3a1ca56822",
+  "actual_tool_exit_code": 0,
+  "new_owned_lifecycle_closed": true,
+  "destination_root": "D:/Aenv/pro3/runs/local_runtimes/git_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36_0414odrw.2lf",
+  "seal": {
+    "bytes": 85500,
+    "sha256": "475a4e652a97f2cb79eb47c7e06766a4ac65510c23bc76f02998795b25a8d234",
+    "path": "runs/coordination/cho51_p3_git_materialization_20261029_r1/seal_49b1f44d-46ef-446e-a8fd-85a3ddb7ce36.json"
+  },
+  "files": 243,
+  "total_bytes": 189434327,
+  "findings": [],
+  "checks": [
+    "Independently inspected source review, exact admission, scoped contract adoption, copy manifest, original claim/origin, underlying seal, caller return, ten-record bootstrap journal and actual exec/write_stdin return. Reviewer differs from p2_source_review and implementation authors.",
+    "Rechecked nine frozen source pins, 1248 preserved file pins, admission referenced source/adoption/manifest/qualification/helper/caller identities and all 243 copied file lengths/hashes/ordinary LinkType-null metadata with no drift. Seal bytes and SHA256 match actual external return; each seal row joins exactly one original copy-manifest path/size/hash.",
+    "Seal binds 243 unique native target identities, 189434327 bytes, a fresh exclusive Directory.CreateTempSubdirectory destination and seven-directory topology. Read-only destination census finds exactly 243 files. Reviewed underlying copy and VerifyOriginals calls: create-new original target handles, 65536-byte bounded opaque reads/writes, source EOF, flush and same-original-handle hash readback, independent identities and final exact file/directory census precede accepted caller path.",
+    "Original origin UTC 2026-10-29T12:37:15.1363095Z and QPC 808550157060 at 10000000 Hz retained. Guard startup precedes R authority/all-source verification; final journal event records original payload handle closure.",
+    "Saved caller return has 258 input and 246 output handles with pre-return closure pending; actual tool stdout resolves closure with original_file_handles_closed true, bootstrap journal closed and guard done/joined/closed/completion_wait_closed true, error null. Actual write_stdin completion exit 0 and 12.5019568-second caller elapsed accepted only as provisioning.",
+    "Native empty Job probe queried limits and closed empty with watchdog joined and no cleanup error; explicitly contains_caller false and child_created false. Actual return reports zero child processes and compiler_invoked false. No copied Git execution is qualified.",
+    "Admission preserves 90-second whole, 60-second work, 65-second original-process hard deadline and 5-second cleanup; 512 MiB caller, 4 GiB startup/active RAM, 20 GiB free disk, 256 files, 16777216 bytes/file, 201326592 aggregate bytes, 65536 hash chunks and separately bounded metadata. Actual guard minimum RAM 9306304512, disk 78413340672, peak caller private 100139008 bytes; 103 samples and 0.0658702-second shutdown."
+  ],
+  "limitations": [
+    "Review used read-only text/JSON, metadata and hashes; no project imports, AST, native compilation, tests, Git or runtime validation were executed by this reviewer. Actual tool return is Root-retained evidence, independently checked against underlying seal/caller/bootstrap records.",
+    "Directory ancestry was checked before/after with final exact census, without retained native parent directory handles. This scoped local-observer provisioning acceptance is not P physical attestation; later P must enforce its own original native directory/file retention and strict single-link guards.",
+    "Only the exact opaque 243-file runtime materialization is accepted. Source hardlinks were permitted for copy input only; copied payload code was not executed. Git resources outside this finite manifest and Git execution, loader search, ABI and dependency completeness remain unqualified.",
+    "No P/L/V/C acceptance, historical repair or retry authority follows. Frozen failed P attempt remains consumed; bootstrap004/Q1 custody remains UNRESOLVED, diagnostics005 held, 117 candidates and 34 successor controls unexecuted, scientific cells 0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "git_execution_qualified": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

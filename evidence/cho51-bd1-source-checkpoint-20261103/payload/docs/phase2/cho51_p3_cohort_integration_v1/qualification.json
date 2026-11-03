@@ -1,0 +1,236 @@
+{
+  "schema": "cho51_cm6_design_qualification_v1",
+  "scope": "Design obligations only; no new test method or execution",
+  "scenario_count": 32,
+  "identity": 8,
+  "collection": 8,
+  "integration": 8,
+  "gates": 8,
+  "scenarios": [
+    {
+      "id": "CM6-01",
+      "boundary": "identity",
+      "requirement": "Exact canonical Q360 raw pin and separate ordered identity digest; zero new methods",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-02",
+      "boundary": "identity",
+      "requirement": "Distinct Q/C/H identities and explicit bijections; inserted held name cannot change Q ordinal meaning",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-03",
+      "boundary": "identity",
+      "requirement": "Exact primitive and dotted-name bounds including existing IDs longer than128; no coercion or bool-as-int",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-04",
+      "boundary": "identity",
+      "requirement": "Externally supplied expected Q/D pins are checked before report context; no observation-sourced expectation",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-05",
+      "boundary": "identity",
+      "requirement": "D closed schema, exact counts/order/module ownership/cohort partition and held debt-token conservation",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-06",
+      "boundary": "identity",
+      "requirement": "Supplied matching expected pins do not authenticate source/runtime/producer or admit dispatch",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-07",
+      "boundary": "identity",
+      "requirement": "Only Q360 integration profile adopted; generic smaller cohort mechanics cannot adopt a supplemental scope",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-08",
+      "boundary": "identity",
+      "requirement": "Acyclic Q/source/runtime/producer manifests then D then K; no self/forward/output pin used as input expectation",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-09",
+      "boundary": "collection",
+      "requirement": "Full876 baseline plus every declared addition before Q or H projection; omission/extra/equal-count swap refuses",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-10",
+      "boundary": "collection",
+      "requirement": "Exact observed test-module pins, loader literal and load_tests/partial=False for all modules",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-11",
+      "boundary": "collection",
+      "requirement": "Exact id/module/class/method/source_module/source_qualname ownership; alias/inheritance drift refuses",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-12",
+      "boundary": "collection",
+      "requirement": "Every eligibility flag exactFalse including held rows; scheduling HELD never represented as deselected",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-13",
+      "boundary": "collection",
+      "requirement": "Every baseline row/module pin conserved; drift refuses whole integration before historical projection",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-14",
+      "boundary": "collection",
+      "requirement": "Q view in Q order with exact module rows, complete held complement and explicit Q-to-C indices",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-15",
+      "boundary": "collection",
+      "requirement": "H full836 projection from checked observed rows plus independent CM4/CM2/CM1/HB1 parsing; no expected-pin substitution",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-16",
+      "boundary": "collection",
+      "requirement": "Distinct complete-C/Q/H/nested raw digests and identity-list digests; facts immutable and never source/custody evidence",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-17",
+      "boundary": "integration",
+      "requirement": "Raw constructor validates Q/D/fullC/projections/tables before usable state or BEGIN; no caller Facts/order bypass",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-18",
+      "boundary": "integration",
+      "requirement": "Q affected fixture set and code locations exact; held C identities and H ordinals cannot be coerced into Q",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-19",
+      "boundary": "integration",
+      "requirement": "New CM6 schema/context binding rejects H events/terminal or cross-context/census swaps with valid numeric ordinals",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-20",
+      "boundary": "integration",
+      "requirement": "Independent event parser checks full Q lifecycle/subcase/trace/cleanup/duration/negative suffix without producer replay",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-21",
+      "boundary": "integration",
+      "requirement": "Terminal binds exact constructor Q/D/collection/table pins and whole events; final join reparses all raw inputs",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-22",
+      "boundary": "integration",
+      "requirement": "All-PASS bytes with refused terminal stay negative; incomplete/empty/overflow/secondary failure has no completed join",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-23",
+      "boundary": "integration",
+      "requirement": "Port CM5-S01/S02 exactly: nested post-footer counters and secondary helper failure despite prior/partial sticky latch",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-24",
+      "boundary": "integration",
+      "requirement": "Exact closed-schema line/terminal/join widths; group/footer reserve and byte/record/trace/counter overflow refuse before success",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-25",
+      "boundary": "gates",
+      "requirement": "Current-census count/module maxima also require byte/depth/node caps; capacity refusal never truncates or drops held rows",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-26",
+      "boundary": "gates",
+      "requirement": "Q360 conditional2568events/2567attempts remains stable with held additions; H2368/2367 and synthetic1806/1606 remain separate",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-27",
+      "boundary": "gates",
+      "requirement": "New implementation tests appear in C with explicit unqualified obligations; Q regression success cannot qualify unselected new code",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-28",
+      "boundary": "gates",
+      "requirement": "Concrete future supplemental cohort requires separate membership/debt/effect/budget/profile adoption; no automatic Q union",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-29",
+      "boundary": "gates",
+      "requirement": "Q/D source inputs and projection buffers introduce no free runtime writes; full parent charges and unchanged33-file proposal remain scoped",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-30",
+      "boundary": "gates",
+      "requirement": "Seven raw-input caps5439488 and fixed field bounds do not establish peak memory or complete failure/capture fit",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-31",
+      "boundary": "gates",
+      "requirement": "Original dispatcher/observer/type/code/trace/capture/custody/resource/closeout gates remain; no model source review substitutes original evidence",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM6-32",
+      "boundary": "gates",
+      "requirement": "Fresh original admission, unused attempt, all holds/guards and separate actual review still required; P disabled and science unchanged",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    }
+  ],
+  "replaces_original_obligations": false
+}

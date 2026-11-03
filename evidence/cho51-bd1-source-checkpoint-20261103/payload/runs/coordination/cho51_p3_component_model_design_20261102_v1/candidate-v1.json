@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_cm1_design_candidate_v1",
+  "created_utc": "2026-11-02T12:38:22.6022766Z",
+  "author": "project_root",
+  "read_only_trace_contributor": "vfy_design_trace",
+  "status": "DESIGN_ONLY_PENDING_INDEPENDENT_REVIEW",
+  "files": {
+    "docs/phase2/cho51_p3_component_model_v1/capture-accounting.md": {
+      "bytes": 10746,
+      "sha256": "2fe5faa9287400cfe9d64215b408ab6f1d13b9258876f35a4684a37a3ac7fba9"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/collection.md": {
+      "bytes": 7806,
+      "sha256": "d4dd29b3fcd26fdce64ec0c2f7a30bfaa2193253a42e31942feebb15ce7de35b"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/qualification.md": {
+      "bytes": 6014,
+      "sha256": "6bac9b713961de7ef039c24f9efe9d1843eea9daf0f228bea505dd0525f986fb"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/readiness.json": {
+      "bytes": 5335,
+      "sha256": "5caf3077def86b043c0b7a9f9bd9ba43b5afb11c85f5ec06437cd50e08c81147"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/README.md": {
+      "bytes": 2750,
+      "sha256": "ec9318ed0a97e589c0acc7d52dd7a9e41ffc13be2cbec53013f268c4ddd90c51"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/roster.json": {
+      "bytes": 284316,
+      "sha256": "6f4a34af4289e60eb9584ba5775b6af408d4496a260b01bbf0dea12bcc3c74b2"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/runner.md": {
+      "bytes": 6279,
+      "sha256": "77abc13d763e4524e8f9e52eb7826a8d1fc631cf434fd13e17789b208669e540"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/source-map.json": {
+      "bytes": 54281,
+      "sha256": "ab4975ff5e66912d033a6a9be1ff430ad1f366783845f649c2decbee4a0c548d"
+    }
+  },
+  "design_files": 8,
+  "reference_input_count": 94,
+  "external_reference_count": 4,
+  "current_methods": 700,
+  "current_vfy": 184,
+  "proposed_new_methods": 32,
+  "proposed_full_methods": 732,
+  "proposed_selection": 216,
+  "proposed_modules": 30,
+  "implementation_accepted": false,
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "guards_preserved": true,
+  "obligations_discharged": 0,
+  "scope": "Finite component-model runner/source contract design; no operational readiness or actual provider proof",
+  "runtime_readiness": "REFUSED_PENDING_PREREQUISITES"
+}

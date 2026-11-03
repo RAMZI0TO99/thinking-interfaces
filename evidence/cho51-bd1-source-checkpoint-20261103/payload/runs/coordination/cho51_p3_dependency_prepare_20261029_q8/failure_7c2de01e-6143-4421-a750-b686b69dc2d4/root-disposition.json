@@ -1,0 +1,23 @@
+{
+  "schema": "cho51_q_root_disposition_v1",
+  "status": "FAILED_P2Q_CONSUMED_OWNED_CLOSED",
+  "author": "project_root",
+  "created_utc": "2026-10-29T16:39:21.9964781Z",
+  "operation_id": "7c2de01e-6143-4421-a750-b686b69dc2d4",
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_q8/failure_7c2de01e-6143-4421-a750-b686b69dc2d4/actual-review.json",
+    "bytes": 3826,
+    "sha256": "feed135ed0bace14ddf26895cdc7f5ade452867a447d18bf87f2212cdbc7e446"
+  },
+  "actual_tool_exit_code": 1,
+  "new_operation_owned_lifecycle_closed": true,
+  "native_contracts_observed": 14,
+  "native_acquisitions": 17,
+  "native_releases": 17,
+  "native_probe_controls": 5,
+  "tests_run": 0,
+  "retry_same_attempt": false,
+  "unchanged_reissue_allowed": false,
+  "next": "Changed independently reviewed custody handoff successor, then fresh Q admission",
+  "scientific_admission": false
+}

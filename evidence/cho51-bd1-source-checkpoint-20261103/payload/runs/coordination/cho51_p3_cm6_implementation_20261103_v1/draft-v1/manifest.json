@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_cm6_frozen_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 78126,
+    "sha256": "1502d571aa73789fc23aee9bb7d6ca4c1a71f68a0f402bba148a85f93e3be96a"
+  },
+  "review_pin": {
+    "bytes": 4184,
+    "sha256": "b3e2fd737cc498cb5e26f591f24faeaa240193d1b6b61ff2c11b5b01661ca04a"
+  },
+  "review_confirmation": "Confirmed CM6 source-review-v1.json exact4184 bytes SHA256b3e2fd737cc498cb5e26f591f24faeaa240193d1b6b61ff2c11b5b01661ca04a; UTF8 review_text SHA25684448f85dfdbdb1ea72c7d6a8ec04af8d434ea93f9d13e13f7643e62882ed4e5. Saved text exactly matches review; candidate1502d571…e3be96a/78126bytes, CHANGES_REQUESTED_SOURCE_ONLY, CM6-S01/P2 at CM6-08, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Review ownership temporarily released for Root exact source-index archival and correction; no writes/extra record.",
+  "finding": "CM6-S01",
+  "files": {
+    "docs/phase2/cho51_p3_cm6_source_coverage_20261103.json": {
+      "bytes": 842666,
+      "sha256": "1a38469b9ef142b0d77a2a9d68c3e50eafbfcd0a320b1afd5f3d84cfad097427"
+    }
+  },
+  "scope": "Exact source-index bytes before any correction; code/roster/ledger unchanged"
+}

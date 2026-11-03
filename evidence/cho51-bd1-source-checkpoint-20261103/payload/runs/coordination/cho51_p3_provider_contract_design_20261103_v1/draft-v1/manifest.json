@@ -1,0 +1,36 @@
+{
+  "schema": "cho51_pc_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate": {
+    "bytes": 87101,
+    "sha256": "f5d52309d6553d2b39e105dcd81326a19c1b1f50f5e020c6693146cadab2b0fa"
+  },
+  "review": {
+    "bytes": 4740,
+    "sha256": "3e056246ed1cec007df378a5b39762385e5f0ddee568c3362f4751ff3b4b1a72"
+  },
+  "saved_review_confirmation": "Confirmed PC1 design-review-v1.json exact4740 bytes SHA2563e056246ed1cec007df378a5b39762385e5f0ddee568c3362f4751ff3b4b1a72; UTF8 review_text SHA2564e9b079f437a7504d56426938d8835de5aa7b2c71116cbc92e0d1008cec08250. Saved text exactly matches review; candidatef5d52309…ab2b0fa/87101bytes, CHANGES_REQUESTED_DESIGN_ONLY, findings PC-D01/D02, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Completed9705-unique-file bulk audit including9693 preserved inputs is correctly distinguished from interrupted scan with no evidence claim; all owned scans closed. Review ownership temporarily released for exact archival/correction; no writes/extra record.",
+  "files": {
+    "docs/phase2/cho51_p3_provider_contract_v1/ingress.md": {
+      "bytes": 6803,
+      "sha256": "dc80829d5897fa5157a70a7b9c8fe424c01528a6afc26d377f00acd92369d122"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/packing.json": {
+      "bytes": 22266,
+      "sha256": "46a9dbdc7dc3ec7d837c73b745ef3cebd91f97806a32e98ce126a58e74cd2cc2"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/qualification.json": {
+      "bytes": 9663,
+      "sha256": "3b3358ad489820abfbc8fc484e25a525bdb89e6750cdfde0917602784612c09e"
+    },
+    "docs/phase2/cho51_p3_provider_contract_v1/readiness.json": {
+      "bytes": 4454,
+      "sha256": "eb9e80bfe1788a99c1be8dc12f99ca9d990fbda8947e8e811bd1927d438da06b"
+    }
+  },
+  "resolved_findings_planned": [
+    "PC-D01",
+    "PC-D02"
+  ],
+  "archive_before_edit": true
+}

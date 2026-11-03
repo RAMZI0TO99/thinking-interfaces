@@ -1,0 +1,53 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_OWNED_CLOSED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T14:22:55.9811242Z",
+  "operation_id": "a5578f8d-53d5-47bf-8c75-c360e886c4c0",
+  "actual_tool_exit_code": 1,
+  "elapsed_seconds": 63.3476368,
+  "new_operation_owned_lifecycle_closed": true,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "observed_refusal": "Refusal: duplicate import descriptor",
+  "final_full_input_verification_completed_before_release": false,
+  "source_review_sha256": "e3bb3522e2a4afa95e219f71db5bac5444309021c0584c513fbbc7e928f6b963",
+  "findings": [
+    "P5 consumed failure: supervisor returned duplicate import descriptor refusal, caller rejected supervisor exit and actual tool exit1 after63.3476368seconds. No accepted map or output handoff; final full input verification and input/output handoff identity verification false.",
+    "39provisional outputs22001747bytes retained; all saved descriptor byte/hash pins match current artifacts. These are partial observation evidence, not accepted nativePE closure or completed final verification."
+  ],
+  "checks": [
+    "Independent file/text/hash/metadata review inspected actual raw tool-return, underlying caller/supervisor stdout, bootstrap, source/coverage/adoption/admission and output descriptors. No Git/Python/import/AST/compiler/tests/runtime runner invoked.",
+    "Rechecked30source732runtime2195preserved pins without drift; source/coverage/adoption/qualification/nativehelper/index admission refs match exact files. Reviewer distinct from authors and p2_successor_review.",
+    "Underlying supervisor P_FAILED_CONSUMED has inputs/outputs/guard_thread_joined true, cleanup_errors empty and guard_fault null. Observation/coverage/acceptance/ABIloader/fullverification flags false, preserved without promotion.",
+    "Original outerPID44360 creationFILETIME134377569879370312 reaped/process/thread closed, atomicJobmembership/queriedlimits verified, Jobemptyclosed, both original pipesEOF/readersjoinedclosed/writers/threadhandlesclosed, NULclosed/watchdogjoined and no overflow/stream/cleanup faults.",
+    "Actual external return resolves pending caller fields: originalfilehandlesclosed,16record5778byte journalclosed, caller guarddone/joined/closed/completionwaitclosed, noerror,0.0394294secondshutdown. Caller acceptance remains false.",
+    "240work300whole5cleanup245hard5startup4096MiBprocessparent5120MiBJob4GiBRAM20GiBdisk limits retained. Supervisor minimumRAM9722011648,disk75818733568,peakprivate136241152bytes; outerpeakprocess136265728,Job142430208,caller99622912bytes."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "limitations": [
+    "Observed refusal does not establish exact offendingPE/import names unless separately diagnosed. Distinct import descriptors may require reviewed grammar/semantics changes; do not weaken duplicate/path/bounds guards without independent source review and fresh qualification.",
+    "No acceptedPmap/PEclosure/complete dependencyclosure/ABI/loader/Gitexecution/L/V/C/science. Closure applies only to this new attempt, not earlier startup/deadline or historical unknownclosures.",
+    "All consumed failures and Q2workflowdeviation custody remain unchanged;117candidates34controls unexecuted,custodyUNRESOLVED,scientificcells0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

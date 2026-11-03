@@ -1,0 +1,45 @@
+{
+  "schema": "cho51_cm2_root_design_acceptance_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "authors": [
+    "project_root",
+    "cm2_effect_inventory"
+  ],
+  "read_only_trace": "cm2_loader_trace",
+  "reviewer": "qd_source_review",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_cm2_design_20261102_v1/candidate-v2.json",
+    "bytes": 58845,
+    "sha256": "0baa6b1e7e23a6139d6656869a78c8aecfad135238baaf9af3fbdf5265ea0cfe"
+  },
+  "reviews": [
+    {
+      "path": "design-review-v1.json",
+      "bytes": 4529,
+      "sha256": "ef6cdc29f59748428602a29df4eea17312ed8d737c47208f7a83825917fb983b"
+    },
+    {
+      "path": "design-review-v2.json",
+      "bytes": 4089,
+      "sha256": "14b5bb5354cabaf69f8d5b965429e7873bb5cedab126b700fef4c06a65b2f7c4"
+    }
+  ],
+  "confirmations": [
+    "Confirmed `design-review-v1.json`: 4,529 bytes, SHA256 `ef6cdc29f59748428602a29df4eea17312ed8d737c47208f7a83825917fb983b`; review-text SHA256 `17db6feb3baa067a5cb6b7d5a6ea67e07fbbb013e7063f0b6ee1229f90362c63`.\n\nSaved text matches my review, candidate, authorship, `CHANGES_REQUIRED` status, CM2-D1/CM2-D2 findings and limits. Root transcription is disclosed.\n\nReview ownership released for revision. No files or sidecars written.",
+    "Confirmed `design-review-v2.json`: 4,089 bytes, SHA256 `14b5bb5354cabaf69f8d5b965429e7873bb5cedab126b700fef4c06a65b2f7c4`; review-text SHA256 `c8f488e5d3cfaaa31d130511c3e169fe39aa261846e18a251e995e56a1d2dd6d`.\n\nSaved text matches my review, candidate, authorship, `ACCEPTED_DESIGN_ONLY` status, empty findings, CM2-D1/CM2-D2 resolutions and limits. Root transcription is disclosed.\n\nReview ownership released. No files or sidecars written."
+  ],
+  "resolved_findings": [
+    "CM2-D1",
+    "CM2-D2"
+  ],
+  "accepted_scope": "216 direct-body method index, conditional210 subtest/860 event/440320 byte normal arithmetic,72-module14-parent skeleton and retained-loader/result/suite/aggregation design",
+  "complete_recursive_effect_closure": false,
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "tests_executed": 0,
+  "new_test_methods": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "obligations_discharged": 0,
+  "next": "Source-only supplied retained-byte/code-table and callback/suite state adapter implementation and review with explicit roster successor for new tests; no live imports/discovery/integration until open gates close."
+}

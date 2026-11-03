@@ -1,0 +1,110 @@
+{
+  "schema": "cho51_cm2_design_qualification_v1",
+  "scenarios": [
+    {
+      "id": "CM2-D01",
+      "requirement": "Retained source hash/handle/native identity mismatch refuses before compile; no ordinary-read fallback.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D02",
+      "requirement": "Module/spec/loader/parent binding substitution, duplicates and reload refuse.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D03",
+      "requirement": "Explicit namespaces never perform filesystem fallback; source package initializer is exact and once-only.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D04",
+      "requirement": "Bootstrap/frozen/builtin/extension and native-image witnesses are separate from current file hashes.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D05",
+      "requirement": "Bounded approved circular import INITIALIZING state; unknown cycle/reentry and partial-load continuation refuse.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D06",
+      "requirement": "Module hooks/descriptors/metaclasses/imported TestCase aliases/custom lifecycle/constructor wrappers refuse before loader calls.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D07",
+      "requirement": "Exact732 object-derived collection before700 projection and216 selection; no516 fixture execution.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D08",
+      "requirement": "Importer/global/mock restoration and original absence; independently live native guard remains outside patches.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D09",
+      "requirement": "Method setup/body/teardown/LIFO cleanup/duration/PASS/stop ordering; early PASS or missing end refuses.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D10",
+      "requirement": "Suite fixture failure before starts or after passed cases; preserve unseen cases and all cleanup errors.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D11",
+      "requirement": "210 conditional normal subtest callbacks and860 event arithmetic; no synthetic650 substitution.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D12",
+      "requirement": "Nested failure/skip/failfast unwind and swallowed callback refusal; unknown routes remain unavailable.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D13",
+      "requirement": "Exact exception-type/code/line mapping, complete128-frame group and4096 supplied locations; no string formatting.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D14",
+      "requirement": "Pre-result SkipTest, assert/mock/helper formatting; poison formatting behavior exposes unknown domains without claiming eligible runtime input.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D15",
+      "requirement": "Record/chunk/capture cap overflow consumes, preserves bounded prefix and refuses complete acceptance; no truncated success.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D16",
+      "requirement": "Final aggregate binds collection/projection/selection/events/raw bytes/inputs/native guard/census/owned closure and separate review.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D17",
+      "requirement": "Complete named allocation and original deadline minima, including failed/unused charges and asynchronous lifecycle; no extra sidecars.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    },
+    {
+      "id": "CM2-D18",
+      "requirement": "Missing provider/runtime closure/admission always refuses; no model token or exit0 creates COMPONENT_MODEL_ONLY/Q/P/science.",
+      "status": "DESIGN_SCENARIO_NOT_TEST_METHOD_NOT_EXECUTED"
+    }
+  ],
+  "scenario_count": 18,
+  "new_test_methods": 0,
+  "roster_change": false,
+  "coverage_policy": "Scenarios are implementation/review obligations, not invented tests or passes. Any future new method requires exact reviewed roster and budget successor; existing732/216 stay frozen. Model cases do not qualify real loader/native/provider controls.",
+  "preserved_scenarios": {
+    "local": 26,
+    "hb": 24,
+    "sc": 40,
+    "diagnostic": 36,
+    "original_custody": 48,
+    "candidate": 117,
+    "successor_controls": 34
+  },
+  "admission": false,
+  "p_enabled": false
+}

@@ -1,0 +1,277 @@
+{
+  "schema": "cho51_q_actual_failure_review_v2",
+  "status": "ACCEPTED_FAILED_CONSUMED_PRECOMPILER_BOOTSTRAP_CLOSED",
+  "reviewer": "q2_actual_review",
+  "source_authors": [
+    "project_root",
+    "q_native_reader_impl"
+  ],
+  "source_reviewer": "q2_source_review",
+  "operation_id": "d08269a8-5052-4c2a-910a-d3f1e3307286",
+  "scope": "Independent static file, text, JSON and SHA256 review of the saved Q2 failed external call and its exact source/runtime/preservation joins. No project execution, import, compilation, AST, tests, native workload or native process query.",
+  "reviewed_utc": "2026-10-29T09:58:23.5936290Z",
+  "artifact_pins": {
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/admission_d08269a8-5052-4c2a-910a-d3f1e3307286.json": {
+      "bytes": 227080,
+      "sha256": "e943fab2ee521747fc7162b8a4ceab0df5ca18324d37ec7a85a82d3e68e5d92d"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/bootstrap_d08269a8-5052-4c2a-910a-d3f1e3307286.jsonl": {
+      "bytes": 4151,
+      "sha256": "d0256d78e595530fc67c250eb0dccb7125faaa87f9afb8880213863b24c74d18"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/contract-adoption.json": {
+      "bytes": 819,
+      "sha256": "f55d39ccb736e5cabe042563fbc5d6a1a3078e867fbd224fbaa8defd63b1ff11"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/external-audit.json": {
+      "bytes": 5531,
+      "sha256": "752c9eb21a7cdb4e29a4dcb0260868c7f7d2772d1ee966c4930f2d75bf6d0f6f"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/preflight.json": {
+      "bytes": 517,
+      "sha256": "87f4fa89095074cba8490d29da872af4e440a131cc16e3355923f142434a53c6"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/preservation-baseline.json": {
+      "bytes": 162105,
+      "sha256": "930b88fc176d231f9cdc950d9712c490d4e1d5a5cff63f90d61f07b91fba82b1"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/root-schedule.json": {
+      "bytes": 2934,
+      "sha256": "b0283324fdea365bca688f253f9471eaf5439437bc100942f121c0addbe40a04"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/runtime-inventory.json": {
+      "bytes": 207761,
+      "sha256": "c9aad082c0461c3098ab44f2fb5412f885e21dc5fb594928ae88527285506ba5"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/source-freeze.json": {
+      "bytes": 3849,
+      "sha256": "9423292eac2587fb89281fc37212f216b1b2222826e79c8c996c4318001c6cbf"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/source-review.json": {
+      "bytes": 6346,
+      "sha256": "8fea11b7a782d2ddd00970fc2ad1e36f66bd2553a7518ee4a9056f1fe5b377ba"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/test-roster.json": {
+      "bytes": 8482,
+      "sha256": "c5ef058b84c1ad2ab7ed98014ba39dc9b592b52880b65fc665e3abea37ebf6ea"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/timestamp-metadata-analysis.json": {
+      "bytes": 641,
+      "sha256": "a70f3019352f8bbeea445f28d6d4731cae69f95081da424a0a0120524d2ca3cc"
+    }
+  },
+  "source_pins": {
+    "tools/local_validation/q2/native_reader.py": {
+      "bytes": 21424,
+      "sha256": "0accef9c6d93a17636c781fdcafc66803a8250b6ae874862954f94498e9232de"
+    },
+    "tools/local_validation/q2/test_native_reader.py": {
+      "bytes": 17065,
+      "sha256": "f8dad284a200ae39fd94bb31ce03f17d442b08f8c56384a42cc697141c17398d"
+    },
+    "tools/local_validation/q2/job_adapter.py": {
+      "bytes": 17041,
+      "sha256": "2c7daf028d83c29d0653a8db0a4f39b9b5457f344d0844cb0d5ca90a7a8ee9c2"
+    },
+    "tools/local_validation/q2/protocol.py": {
+      "bytes": 9354,
+      "sha256": "166676a219b5f2f0d111ed5a5ebdc617759085f60a408ecc4c535e899eb909a1"
+    },
+    "tools/local_validation/q2/test_protocol.py": {
+      "bytes": 7051,
+      "sha256": "f68bd932ded5abb1854ed087068f6b9996bc5e3e3aaae6a30dfe6d2c44184807"
+    },
+    "tools/local_validation/q2/child_entry.py": {
+      "bytes": 6220,
+      "sha256": "a6e5f8c849114ed2828e4ad67bb0786a399ea60da0fc18bb24c2c46b7f2763a2"
+    },
+    "tools/local_validation/q2/supervisor.py": {
+      "bytes": 22179,
+      "sha256": "c1f6fc688d1a7913384e27a3b6894133c7d91ff5413f79e8d097f0eb00b2596c"
+    },
+    "tools/local_validation/q2/invoke_q.ps1": {
+      "bytes": 31795,
+      "sha256": "d1d07503836e42bc7f266763ec91d073e43221ee07374f3762fb4012e7d0d952"
+    },
+    "tools/local_validation/q2/caller_native.cs": {
+      "bytes": 25333,
+      "sha256": "9bf9f06a9cdc0fcbc8f998b0ca80f98807b6c114f825d00d6bff2e061a337ae7"
+    },
+    "tools/local_validation/q2/README.md": {
+      "bytes": 17989,
+      "sha256": "c5bdcf567b35e79231369033f06f39940ed329dde7c4802dd4fd02cea919b0a1"
+    },
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "tools/local_validation/v1/README.md": {
+      "bytes": 5187,
+      "sha256": "a4368f731a5d26f722dfc058ff0d3e10f9ceca69b26edfab7ab19a69c9ee3135"
+    },
+    "evaluation/phase2_supervision_primitives.py": {
+      "bytes": 46498,
+      "sha256": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/design-review.json": {
+      "bytes": 5065,
+      "sha256": "65526bad7ee6599c403411502ff0e0296b69c3a688daf66a5bb2aa402f017e4b"
+    },
+    "docs/phase2/cho51_p3_q2_bootstrap_contract_20261029.md": {
+      "bytes": 4874,
+      "sha256": "c1c1593055af237e770d60a998275cea54488fb5f78282402346d0904f972790"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/actual-review.json": {
+      "bytes": 8809,
+      "sha256": "aaf367c72e92d0d4ab26237a203ef79167df934325233063229ca8113a00519e"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/root-disposition.json": {
+      "bytes": 1082,
+      "sha256": "887c4cc3b7d4d0fb0cf94bbcd85c8e31a342a55f4d2032c7b4bdc0a42989bed8"
+    }
+  },
+  "checks": {
+    "sources_checked": 21,
+    "runtime_files_checked": 732,
+    "runtime_bytes": 37294833,
+    "preserved_files_checked": 692,
+    "pin_mismatches": 0,
+    "source_freeze_review_and_admission_maps_match": true,
+    "runtime_inventory_and_admission_maps_match": true,
+    "runtime_recipe_root_and_platform_trust_match": true,
+    "source_review_sha256": "8fea11b7a782d2ddd00970fc2ad1e36f66bd2553a7518ee4a9056f1fe5b377ba",
+    "admission_sha256": "e943fab2ee521747fc7162b8a4ceab0df5ca18324d37ec7a85a82d3e68e5d92d",
+    "contract_adoption_sha256": "f55d39ccb736e5cabe042563fbc5d6a1a3078e867fbd224fbaa8defd63b1ff11",
+    "review_adoption_supplement_contract_design_and_predecessor_join_match": true,
+    "adoption_schema": "cho51_q_contract_adoption_v2",
+    "adoption_authority_flags_all_false": true,
+    "adoption_created_utc_literal": "2026-10-29T09:52:42.9273219Z",
+    "admission_created_utc_literal": "2026-10-29T09:52:45.5917594Z",
+    "admission_expires_utc_literal": "2026-10-29T09:57:45.5917594Z",
+    "caller_runtime_pin_matches": true,
+    "caller_runtime_version_declared": "7.6.5",
+    "caller_runtime_pin": {
+      "sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+      "bytes": 301368
+    },
+    "admission_and_static_roster_72_ids_match": true,
+    "attempts_and_disabled_bytecode_namespaces_empty_at_review": true,
+    "claim_origin_caller_return_suite_and_fault_reports_present": false,
+    "tool_chunk": "81f421",
+    "tool_exit_code": 1,
+    "wall_seconds": 3.7578968,
+    "before_boundary_utc": "2026-10-29T09:52:45.9738982Z",
+    "before_qpc": 709860147802,
+    "after_boundary_utc": "2026-10-29T09:52:49.5525331Z",
+    "after_qpc": 709895914133,
+    "frequency": 10000000,
+    "after_boundary_elapsed_seconds": 3.5766354,
+    "caller_elapsed_seconds": 3.5060523,
+    "original_caller_pid": 29876,
+    "original_caller_creation_filetime": 134377411657355474,
+    "independent_clock_before": "2026-10-29 09:52:45 UTC",
+    "independent_clock_after": "2026-10-29 09:52:49 UTC",
+    "complete_external_return_and_after_boundary_emitted": true,
+    "accepted_by_caller": false,
+    "caller_error": "RuntimeException: original caller window",
+    "journal_records": 12,
+    "journal_bytes": 4151,
+    "journal_sequence_operation_generation_qpc_and_pending_join_match": true,
+    "journal_events": [
+      "caller_entry",
+      "runspace_create",
+      "runspace_begin",
+      "guard_enter",
+      "assembly_loaded",
+      "counter_created",
+      "counter_read_begin",
+      "first_sample",
+      "guard_ready",
+      "startup_ready",
+      "caller_error",
+      "caller_ready_to_close"
+    ],
+    "journal_all_internal_authority_pending": true,
+    "journal_closed": true,
+    "original_file_handles_closed": true,
+    "guard": {
+      "shutdown_elapsed_seconds": 0.0332104,
+      "closed": true,
+      "stop_requested": true,
+      "done": true,
+      "minimum_disk_bytes": 79305494528,
+      "readiness_sample_elapsed_seconds": 3.3862482,
+      "joined": true,
+      "completion_wait_closed": true,
+      "minimum_ram_bytes": 11463962624,
+      "samples": 3,
+      "ready": true,
+      "error": null,
+      "peak_caller_private_bytes": 71557120,
+      "first_sample_elapsed_seconds": 3.1051706
+    },
+    "outer_custody_empty": true
+  },
+  "finding": {
+    "result": "Q2 failed and its operation identity is consumed. Accept the recorded refusal and scoped bootstrap closeout only; no Q suite or fault-control result is established.",
+    "control_flow": "The exact externally pinned caller has one original caller window throw, at invoke_q.ps1 line 244, after admission byte pinning/JSON identity checks and before source/runtime acceptance, authority_verified, claim, compiler_begin/Add-Type, QNative.Owner construction or supervisor dispatch. The complete caller error, ordered journal with pending authority, empty outer_custody, complete after boundary and empty output namespaces jointly support a preclaim, precompiler and prechild refusal under the reviewed source/platform trust. This conclusion is stronger than an inference from absent outputs alone.",
+    "closure": "For this Q2 bootstrap, the final external return reports the original journal and input/output file handles closed; guard stop, completion, join, runspace/pipeline close and completion wait close all succeeded, with no guard error. The actual external tool returned exit 1 with an after boundary. Since the refusal precedes native owner construction, no native Job/process/pipe closure is exercised or certified; empty outer_custody is consistent with that path. This is scoped Q2 bootstrap closure, not blanket machine quiescence, historical release, loaded-code attestation or independent kernel proof.",
+    "limits": "Recorded readiness precedes the 5-second startup deadline; shutdown is below the 1-second bound; the actual caller/tool return is within the original 60/65/90-second work/hard/whole limits. Observed RAM and disk minima exceed 4 GiB/20 GiB and caller private memory stays below 512 MiB. These are sampled bootstrap observations with a no-error guard report, not proof of an exercised 512/768 MiB native Job cap, 5-second native cleanup path, every adjacent sample interval, 60-second sustained workload or complete resource qualification. The readiness sample is the third total sample, so its spacing from the first is not an adjacent-sample interval.",
+    "cause": "The immediate recorded refusal is original caller window. Its deeper runtime operand/type cause was not captured contemporaneously. The retained UTC admission literals cover the external call and its required 90 seconds; elapsed time alone does not explain the rejection. Later Root metadata analysis records default JSON date coercion to System.DateTime, a zone-less string and expiry reparsing at 06:57:45Z instead of the saved 09:57:45.5917594Z in Arab Standard Time. The source at lines 242-244 uses that coercion/Parse sequence. This supports the date-coercion/timezone-reinterpretation mechanism as a strong explanation, but the later analysis is not authenticated capture of the failed caller operands and does not establish that deeper cause conclusively.",
+    "predecessor": "Q1 remains FAILED_CONSUMED_CUSTODY_UNKNOWN with unknown cause and cleanup, as pinned by the Q2 supplement, adoption and predecessor records. Q2 does not repair, release, reclassify, replay or prove termination of Q1."
+  },
+  "stage_resolution": {
+    "source_review": "Completed by distinct q2_source_review, exact pinned bytes.",
+    "adoption": "Exact v2 Q-only adoption and supplement join verified.",
+    "admission": "Fresh operation-specific admission, source/runtime pins and recorded preflight verified statically; internal authority validation stopped at caller window.",
+    "actual_operation": "Completed as failed external call; identity consumed without retry.",
+    "independent_actual_review": "Completed by this distinct reviewer for the narrow failed-refusal/bootstrap-closeout scope.",
+    "root_adoption": "Pending separate Root disposition. No frozen pending flag or historical record was rewritten."
+  },
+  "successor_requirements": [
+    "Preserve every Q1/Q2 source, journal, admission and outcome byte; use a distinct Q3 namespace and unused UUID/output directory. Never reuse this consumed Q2 identity.",
+    "Correct UTC timestamp handling in distinct successor source using explicitly preserved/validated strings or another strict UTC representation, retaining the full original caller window predicate and limits. Do not weaken or skip the failed guard.",
+    "Retain targeted timestamp qualification evidence covering UTC Z literals, fractional seconds, timezone/culture handling, non-string values, invalid or non-UTC inputs, and boundary/expired/future-created refusals. Any execution requires its own reviewed/admitted scope; this review itself authorizes none.",
+    "Obtain independent source/design acceptance of the exact successor and its treatment of Q1 uncertainty and Q2 failed scope, then implementation-specific Root adoption, fresh complete source/runtime/predecessor pins, resource/stop checks, containment/cleanup controls and admission.",
+    "Capture bounded parsed-time diagnostics before effect if appropriate, without relaxing journal, time, memory, process ownership or cleanup guards. Actual success requires the complete 72-method suite and both separate fault controls, with original Job/process/pipe/handle closure and genuine external return, followed by a different actual reviewer."
+  ],
+  "limitations": [
+    "No test pass is accepted: 31 foundation, 29 reader and 12 protocol methods and both fault controls remain unvalidated.",
+    "The 117 candidate cases and 34 successor controls remain unexecuted; full 26 qualification scenarios and original 48-case custody matrix remain incomplete.",
+    "Bootstrap004 remains FAILED_UNRELEASED_CONSUMED, diagnostics005 remains held, 006 remains unadmitted and historical custody UNRESOLVED.",
+    "The accepted v8 inventory is unchanged. Scientific cells remain 0/1020 and the final freeze unsigned. No commit or push authority is granted.",
+    "Review uses static bytes and saved trusted-platform records only. No process sweep, PID reopen, native query, unrelated termination or runtime repair was performed."
+  ],
+  "actual_tool_return_observed": true,
+  "successful_tool_return": false,
+  "qualification_passed": false,
+  "automatic_retry": false,
+  "operation_consumed": true,
+  "scoped_bootstrap_closeout_accepted": true,
+  "independent_actual_review_pending": false,
+  "root_adoption_pending": true,
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

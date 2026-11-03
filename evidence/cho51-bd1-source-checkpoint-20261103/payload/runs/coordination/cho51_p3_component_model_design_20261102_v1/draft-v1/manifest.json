@@ -1,0 +1,24 @@
+{
+  "schema": "cho51_cm1_preserved_draft_v1",
+  "author": "project_root",
+  "created_utc": "2026-11-02T12:45:48.2206991Z",
+  "candidate": "runs/coordination/cho51_p3_component_model_design_20261102_v1/candidate-v1.json",
+  "reason": "CM-D1 event acceptance/trace cardinality correction",
+  "files": {
+    "docs/phase2/cho51_p3_component_model_v1/capture-accounting.md": {
+      "copy": "runs/coordination/cho51_p3_component_model_design_20261102_v1/draft-v1/capture-accounting.md",
+      "bytes": 10746,
+      "sha256": "2fe5faa9287400cfe9d64215b408ab6f1d13b9258876f35a4684a37a3ac7fba9"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/qualification.md": {
+      "copy": "runs/coordination/cho51_p3_component_model_design_20261102_v1/draft-v1/qualification.md",
+      "bytes": 6014,
+      "sha256": "6bac9b713961de7ef039c24f9efe9d1843eea9daf0f228bea505dd0525f986fb"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/readiness.json": {
+      "copy": "runs/coordination/cho51_p3_component_model_design_20261102_v1/draft-v1/readiness.json",
+      "bytes": 5335,
+      "sha256": "5caf3077def86b043c0b7a9f9bd9ba43b5afb11c85f5ec06437cd50e08c81147"
+    }
+  }
+}

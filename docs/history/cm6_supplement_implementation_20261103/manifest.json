@@ -1,0 +1,55 @@
+{
+  "schema": "cho51_cm6s_implementation_document_archive_v1",
+  "publisher": "project_root",
+  "files": {
+    "AGENTS.md": {
+      "bytes": 7459,
+      "sha256": "5dd6cde08308383bbe52e28f3ad60a5563ffae011d27ea23bd35dbe719d8c6d8"
+    },
+    "HANDOFF.md": {
+      "bytes": 22119,
+      "sha256": "ae74470c96c6ddeb84db20204b6fac60a216ed8270d1246089726f7d23aeafb5"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7044,
+      "sha256": "c8dc2a04c7c7591bb9d0fe50123d6816effef49fb6f4de800714bb0033e628d9"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7540,
+      "sha256": "d4d5110c1172f6240956f7fb6247ffabc501368b2f2b2a0961190737374f72af"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6881,
+      "sha256": "df3144d7da3fe7b42d08381defa8821c717402810b1807b18e12880f4d99b7e2"
+    },
+    "README.md": {
+      "bytes": 7872,
+      "sha256": "2822b257a893cca33aa789663cf66a084e11c868ae7d4447361cc24d1d0df862"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11477,
+      "sha256": "fc96617fd391c938efff10b381a8e62e61e987f83c464990b70d10b922991080"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 15032,
+      "sha256": "ba8074df9fdb55ab6f1db921a01713c026bce7b51a7c331837269bba39bd60d5"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 12950,
+      "sha256": "032bdd04a1a0b3d5d0d7fc99d9af22e88e492c350f91119242b287b2c73cbf9c"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28470,
+      "sha256": "d10f39c7c15429fd12105fd311ce4194026ba04438ce14dad0e86634bff19146"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34503,
+      "sha256": "f4fee4d620892b139beccaf002c797e74bc8156ab93658b4f0e6e90bd14bf09c"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 55462,
+      "sha256": "f46e876973422fc9560ea1c36f39543746caa0f8bda1c9968b745e9d161d27f9"
+    }
+  },
+  "scope": "Exact preceding current documentation before implementation closeout"
+}

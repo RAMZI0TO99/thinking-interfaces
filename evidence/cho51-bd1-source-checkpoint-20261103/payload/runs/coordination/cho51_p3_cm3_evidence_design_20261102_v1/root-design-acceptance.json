@@ -1,0 +1,34 @@
+{
+  "schema": "cho51_cm3_evidence_root_adoption_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "design_reviewer": "qd_source_review",
+  "closeout_reviewer": "qd_closeout_review",
+  "candidate": {
+    "path": "candidate-v1.json",
+    "bytes": 62652,
+    "sha256": "2d246b6897fd0cf17d04226be20b01d8b737c612088bb211611a2f2b625af54b"
+  },
+  "review": {
+    "path": "design-review-v1.json",
+    "bytes": 4658,
+    "sha256": "24d03c665b09a92eda1229a6e255cdcd027e217336b7740ebd8bd5a9c2c8a300"
+  },
+  "saved_review_confirmation": "Confirmed `design-review-v1.json`: 4,658 bytes, SHA256 `24d03c665b09a92eda1229a6e255cdcd027e217336b7740ebd8bd5a9c2c8a300`; review-text SHA256 `53a556576826651de369ddb6096288409a64f3279839368eb25c8222db8e3c15`.\n\nSaved text matches my review, candidate, authorship, `ACCEPTED_DESIGN_ONLY` verdict, empty findings and limits. Root transcription is disclosed. No runtime authority follows.\n\nReview ownership released. No files or sidecars written.",
+  "findings": [],
+  "adoption": "Exact seven-file design candidate; pending-review status inside frozen candidate/readiness is superseded by this separate adoption without rewriting frozen bytes",
+  "source_pins": 335,
+  "external_reference_only_pins": 4,
+  "preservation_inputs": 9276,
+  "full_identities": 764,
+  "modules": 32,
+  "selected": 248,
+  "new_methods": 0,
+  "design_scenarios": 32,
+  "parser_join_implemented": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "next": "Source-only implementation and independent review of the supplied-byte event parser and collection/table join, with explicit new-method roster/budget adoption",
+  "limits": "No runtime, Q/P/L/V/scientific acceptance, original custody, lifecycle witness, complete capture/operation feasibility, second QD or obligation discharge; all guards and historical holds unchanged; no Git operation."
+}

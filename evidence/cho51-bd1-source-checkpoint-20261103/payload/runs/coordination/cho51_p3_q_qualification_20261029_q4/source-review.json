@@ -1,0 +1,145 @@
+{
+  "schema": "cho51_q_source_review_v1",
+  "status": "ACCEPTED_SOURCE_Q4",
+  "authors": [
+    "project_root",
+    "q_native_reader_impl"
+  ],
+  "reviewer": "q4_source_review",
+  "scope": "Independent static source and supplemental design review of exact 28-input Q4 unit; no runtime acceptance or operational admission.",
+  "sources": {
+    "tools/local_validation/q4/native_reader.py": {
+      "bytes": 21653,
+      "sha256": "26f5f1c9f45a194e2d158be1bbd5542e770a4e417703cccfa022cf724df4d2cd"
+    },
+    "tools/local_validation/q4/test_native_reader.py": {
+      "bytes": 17577,
+      "sha256": "fef2b8620bc01e2cf1f14f68ef3dda172edc0bb5acd4a42928103d4d742ddf4b"
+    },
+    "tools/local_validation/q4/job_adapter.py": {
+      "bytes": 17041,
+      "sha256": "2c7daf028d83c29d0653a8db0a4f39b9b5457f344d0844cb0d5ca90a7a8ee9c2"
+    },
+    "tools/local_validation/q4/protocol.py": {
+      "bytes": 9894,
+      "sha256": "bfdb543375c65a3eed97cefda73f434390b82e4fd08191f1e6c9007cc63e6c34"
+    },
+    "tools/local_validation/q4/test_protocol.py": {
+      "bytes": 7051,
+      "sha256": "2a02c6ce9154d5748718f6a9dfe65d5db9d34834fa24c99b95dffb4626ca6239"
+    },
+    "tools/local_validation/q4/child_entry.py": {
+      "bytes": 6220,
+      "sha256": "e3a446e1d3d0ee1bc24fdb20d78f392e46217257b3e943034ab70ffae611d70d"
+    },
+    "tools/local_validation/q4/supervisor.py": {
+      "bytes": 22179,
+      "sha256": "4c1e6ab3a7ed88b3074ad38ac17df8ed1ad192c9bc288fdcaf6a7317cc656406"
+    },
+    "tools/local_validation/q4/invoke_q.ps1": {
+      "bytes": 35649,
+      "sha256": "fb97acfb4607bfd0d15fe387c8784f5ef3e99926a686366acdd07f30f0395a52"
+    },
+    "tools/local_validation/q4/caller_native.cs": {
+      "bytes": 25333,
+      "sha256": "9bf9f06a9cdc0fcbc8f998b0ca80f98807b6c114f825d00d6bff2e061a337ae7"
+    },
+    "tools/local_validation/q4/README.md": {
+      "bytes": 19428,
+      "sha256": "3c061430fb6d25fadaf3c992f03350beaad21c63e96a04fd77a648453578bc46"
+    },
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "tools/local_validation/v1/README.md": {
+      "bytes": 5187,
+      "sha256": "a4368f731a5d26f722dfc058ff0d3e10f9ceca69b26edfab7ab19a69c9ee3135"
+    },
+    "evaluation/phase2_supervision_primitives.py": {
+      "bytes": 46498,
+      "sha256": "3590b6c72e9ddfbfa0de4e012b55b0237c77375ede5b75ccfe7352e4c8cb063e"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/actual-review.json": {
+      "bytes": 8809,
+      "sha256": "aaf367c72e92d0d4ab26237a203ef79167df934325233063229ca8113a00519e"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q1/root-disposition.json": {
+      "bytes": 1082,
+      "sha256": "887c4cc3b7d4d0fb0cf94bbcd85c8e31a342a55f4d2032c7b4bdc0a42989bed8"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/actual-review.json": {
+      "bytes": 16813,
+      "sha256": "201d23ba407ea9e0fc8c829ded08b36011d7e7f8c2f49f99813dc9f85617fb4c"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/root-disposition.json": {
+      "bytes": 1335,
+      "sha256": "1d88e03ddf0189a77de6ed4dac413b2ef44ddfa2019d27963956f74f487a08ba"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q2/timestamp-metadata-analysis.json": {
+      "bytes": 641,
+      "sha256": "a70f3019352f8bbeea445f28d6d4731cae69f95081da424a0a0120524d2ca3cc"
+    },
+    "docs/phase2/cho51_p3_q2_bootstrap_contract_20261029.md": {
+      "bytes": 4874,
+      "sha256": "c1c1593055af237e770d60a998275cea54488fb5f78282402346d0904f972790"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/actual-review.json": {
+      "bytes": 50284,
+      "sha256": "f89980119cd3d8b6ed0d277fa58c23ed57a01cfaf67e3b74a17d279112849e62"
+    },
+    "runs/coordination/cho51_p3_q_qualification_20261029_q3/root-disposition.json": {
+      "bytes": 1264,
+      "sha256": "a770e37633398819687adfb1351c22fa0dfd507f89498390d959ca07211f9e3d"
+    },
+    "docs/phase2/cho51_p3_q3_utc_contract_20261029.md": {
+      "bytes": 3115,
+      "sha256": "7c6ee3a6b5be1a18febdeedae408de7f2e39f851e36dc5520fb01755462f2bf4"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "runs/coordination/cho51_p3_local_validation_design_20261029_v1/design-review.json": {
+      "bytes": 5065,
+      "sha256": "65526bad7ee6599c403411502ff0e0296b69c3a688daf66a5bb2aa402f017e4b"
+    },
+    "docs/phase2/cho51_p3_q4_reader_contract_20261029.md": {
+      "bytes": 2649,
+      "sha256": "1633547423d0f58476d52f46296b936ff7bfd90704c93abe9b0a51f166c531c7"
+    }
+  },
+  "findings": [],
+  "checks": [
+    "All 25 previously accepted Q3 source pins still match. Full Q3-to-Q4 text diff examined; namespace, status, predecessor and supplement references updated consistently; substantive reader delta is fresh no-follow os.stat rather than DirEntry.stat, retaining hardlink, reparse, device and type predicates, selected native-handle validation, bounded hashing and membership resampling.",
+    "New real fixture creates and proves a hardlink and expects the enumeration hardlink refusal outside selected suffix. The three existing ordinary-tree methods remain unchanged, and their later drift assertions require actual execution.",
+    "Text-derived roster matches 73 unique entries exactly: 31 foundation, 30 reader and 12 protocol methods. Eight timestamp controls and two sequential fault Jobs remain distinct. Existing limits and lifecycle guards are unchanged from Q3.",
+    "Q3 actual review and Root disposition bind its consumed failed operation, 69 passing methods, three errors, eight timestamp controls, no fault Jobs, and scoped owned closure. Q1 custody remains unknown; Q2 precompiler failure remains preserved. Q4 supplement gives only narrow successor treatment and does not release historical custody.",
+    "Static hash comparison found no mismatches in 782 preservation baseline files and 732 recorded runtime files. Fresh admission must independently recheck current bytes, runtime, resources and stop conditions."
+  ],
+  "limitations": [
+    "Static file, text, JSON and SHA256 review only; no AST, import, compile, tests, native workload or Q operation performed.",
+    "Windows filesystem metadata semantics, hardlink fixture, timing, process and Job containment, and cleanup require a fresh admitted operation and independent actual-result review. Platform trust is local Windows, PowerShell and .NET without loaded-code attestation; directory membership remains resampled and privileged mutation excluded.",
+    "Root must adopt exact supplement and source review, issue fresh admission and use a different actual reviewer. This source review does not establish a Q pass, historical custody or release, restart, boundary, dependency closure, future launch or scientific authority."
+  ],
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

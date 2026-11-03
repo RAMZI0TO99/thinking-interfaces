@@ -1,0 +1,276 @@
+{
+  "schema": "cho51_wo_qualification_v1",
+  "scenario_count": 32,
+  "groups": {
+    "effect_mapping": 8,
+    "identity_adoption": 8,
+    "original_boundary": 8,
+    "allocation_feasibility": 8
+  },
+  "scenarios": [
+    {
+      "id": "WO-01",
+      "group": "identity_adoption",
+      "requirement": "Exact fixed Q360/S140 pins/order and disjoint indices; no union, remap, partition or implicit new cohort",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-02",
+      "group": "identity_adoption",
+      "requirement": "All1062 identities/49 module pins and702 debt rows conserved exactly, including kinds and unqualified status",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-03",
+      "group": "identity_adoption",
+      "requirement": "All46 CM6S methods remain outside both cohorts; separate wrapper/provider qualification obligation explicitly unresolved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-04",
+      "group": "identity_adoption",
+      "requirement": "Authoritative source/runtime/producer manifests are complete and acyclic Q/S->D->E->reports; no self or output-derived expectations",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-05",
+      "group": "identity_adoption",
+      "requirement": "Authentic predecessor/current source adoption and original host/actor/operation authority cannot be replaced by supplied hashes/Facts",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-06",
+      "group": "identity_adoption",
+      "requirement": "Full collection includes all held rows and49 modules before Q/H/S views; raw observed rows, never expected substitution",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-07",
+      "group": "identity_adoption",
+      "requirement": "Frozen nested fixture contexts remain original, including CM6i1016/45 within outer1062/49; inner supplied results are not original Q execution",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-08",
+      "group": "identity_adoption",
+      "requirement": "Exact required original controls and qualifier populations are independently adopted;706normal events and32design scenarios do not enumerate them",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-09",
+      "group": "effect_mapping",
+      "requirement": "All16 inherited boundaries and546body rows remain;516unindexed held bodies and full-module discovery/import effects stay explicit",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-10",
+      "group": "effect_mapping",
+      "requirement": "Every reachable normal/refusal/failure helper/type/input/cardinality/recursion/output domain is bounded before entry; unknowns refuse",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-11",
+      "group": "effect_mapping",
+      "requirement": "Ordinary setup/body/teardown/LIFO cleanup/duration/stop lifecycle and late class/module effects map faithfully",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-12",
+      "group": "effect_mapping",
+      "requirement": "Decorated skip/KeyboardInterrupt/nested-subtest/failfast unsupported paths refuse without synthetic cleanup/results or changing frozen semantics",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-13",
+      "group": "effect_mapping",
+      "requirement": "Upstream repr/str/pprint/difflib/mock/parser/native errors, destructor and traceback effects remain despite nonformatting result sink",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-14",
+      "group": "effect_mapping",
+      "requirement": "Original code/type/fixture/trace population and cardinality fit predeclared bounds; primitive enums/slots and128trace cap alone prove nothing",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-15",
+      "group": "effect_mapping",
+      "requirement": "Live stop/time/resource/ownership/capture remain outside mutable child globals/mocks and restoration is observed without repair-and-continue",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-16",
+      "group": "effect_mapping",
+      "requirement": "CM5-S01/S02, overflow, nested entry, secondary refusal failure and partial/empty prefixes retain distinct complete-negative versus incomplete routes",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-17",
+      "group": "allocation_feasibility",
+      "requirement": "All33report paths/owners/caps and16fixed roles exactly match prior proposal; unknown extra runtime writes block admission",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-18",
+      "group": "allocation_feasibility",
+      "requirement": "Q/S/D/E staging and partial/failed/temp/copy/unexpected writes are charged; no new projection/journal/closeout slot or role transfer",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-19",
+      "group": "allocation_feasibility",
+      "requirement": "Raw5570560 and per-input/graph/view caps remain representation bounds; source/runtime/native/decoded/state/exception overhead fully charged",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-20",
+      "group": "allocation_feasibility",
+      "requirement": "Commit transient candidate2162688 and concat payload4391424 have explicit internal-state conditions; aggregate rejection is not preallocation enforcement",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-21",
+      "group": "allocation_feasibility",
+      "requirement": "Constructor/events two S collections and join four imply4/4/8direct C parses and4/4/10base D parses; sequential versus simultaneous lifetimes distinguished",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-22",
+      "group": "allocation_feasibility",
+      "requirement": "Frozen20inner Q streams/3259828000cumulative prefix bytes do not establish peak RAM/time/outer output or guard violation",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-23",
+      "group": "allocation_feasibility",
+      "requirement": "Complete process512MiB/Job768MiB liveness including simultaneous owners, GC/traceback/unwind/import/heap/native state established before execution",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-24",
+      "group": "allocation_feasibility",
+      "requirement": "All90/60/5/65/55/40/12/2/5 clocks and child min(T0+55,T0+60-F-M) remain; F/M and every failure/cleanup/final reserve must be proved",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-25",
+      "group": "original_boundary",
+      "requirement": "Original guard/provider/host/parent/handles cover pre-Job bootstrap failure, blocked native work and stop paths; model authority never substitutes",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-26",
+      "group": "original_boundary",
+      "requirement": "Revoke/drain/freeze observes all admitted and late/reentrant ingress, exact immutable bytes and final latch; no leaked capabilities or future-absence inference",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-27",
+      "group": "original_boundary",
+      "requirement": "External terminal publication and independent raw join bind six constructor/eight raw pins; all-PASS plus refused terminal stays negative",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-28",
+      "group": "original_boundary",
+      "requirement": "All original raw/merge/chunk/EOF/error/pipe/tool/cancel evidence is bounded and retained; universal inline6xescaping into return caps refuses",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-29",
+      "group": "original_boundary",
+      "requirement": "Terminal/census/metadata publication and owned outer closure are noncircular, fixed-role and finite; no extra worker/window or recursive attestations",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-30",
+      "group": "original_boundary",
+      "requirement": "Failure after possible effects consumes original attempt; ambiguity stays UNKNOWN/INCOMPLETE_REFUSED and original owned cleanup cannot refresh clocks",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-31",
+      "group": "original_boundary",
+      "requirement": "Every feasibility gate must be established under exact reviewed successor source/runtime; original controls and independent actual evidence remain prerequisites Full-profile W0 cannot bootstrap its own prerequisites; use acyclic B0original-root->B1bounded-driver->B2targets->B3profile dependency with independently accepted earlier bases.",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    },
+    {
+      "id": "WO-32",
+      "group": "original_boundary",
+      "requirement": "Any diagnostic/capability qualification/full profile uses distinct fresh bounded admission and exact scoped claims; no combined fragment success, P/fullQ/117V34/science hold bypass B0/B1 remain unimplemented/unqualified; refuse missing independent guard/stop/containment/capture/cleanup/observation evidence, self-certification or circular/later-node dependencies. Only bounded target functional outcome may be unknown.",
+      "status": "DESIGN_ONLY_UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false,
+      "original_evidence_accepted": false
+    }
+  ],
+  "new_test_methods": 0,
+  "prior_cm6_scenarios": 32,
+  "prior_supplement_scenarios": 24,
+  "prior_qualified": 0,
+  "replaces_original_obligations": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

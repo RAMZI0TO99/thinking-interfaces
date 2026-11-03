@@ -1,0 +1,127 @@
+{
+  "schema": "cho51_cm3_implementation_static_closeout_v1",
+  "publisher": "project_root",
+  "scope": "File/text/JSON/hash/link checks and source arithmetic only",
+  "source_acceptance": "ACCEPTED_SOURCE_ONLY",
+  "source_pins_verified": 347,
+  "new_files_verified": 11,
+  "external_reference_only_pins_verified": 4,
+  "preservation_files_verified": 9304,
+  "archive_files_verified": 12,
+  "archive_manifest_pin": {
+    "bytes": 1835,
+    "sha256": "1b82dc49edda75ff9fcfcdadf5711b083fd7a6a2e7e7169040822173d967bd03"
+  },
+  "documentation_pins": {
+    "AGENTS.md": {
+      "bytes": 7847,
+      "sha256": "43308879b73bcfdb59d8803a693f9c77051db4b1558b3ad0587586a15bda2945"
+    },
+    "HANDOFF.md": {
+      "bytes": 20149,
+      "sha256": "3fd2cbaac94907dd87e0e18942d804859afddad9e72a696e917ce73c3c8d39cd"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7432,
+      "sha256": "c402429fad5f9089e246d99c894db48b45fbd10197ab79332114b8e056678c66"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7847,
+      "sha256": "54078ee46fbb0194aa43bed734835869ce0fb82692ad6f7f3231f411636e4697"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7269,
+      "sha256": "64446d21fc0228a364b0581fc916939938a31bb02000b59056e9e271e0551ac6"
+    },
+    "README.md": {
+      "bytes": 8260,
+      "sha256": "56d2c58063fa3599ecf74d87d1d995421a9f711cefdbc58172951b03e2e464bc"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11865,
+      "sha256": "bfa98584f936ca6a9a76fc5eea8743d72c3f7203ebd1afccf85ae4b378deacef"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 13270,
+      "sha256": "429aeb663a5d03372902ad04998bdcf3f73520b33a77f1b6de29afa6ad0a4aec"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13338,
+      "sha256": "22d3a064450aef84177254320d7a25d0cc13766b1cdb1a5534a118622b0a29e6"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 26704,
+      "sha256": "549612d26204d5558e86cc1030efa0a855747602c10e63c31687cf206d2c239f"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32679,
+      "sha256": "c5a674d266dfba0c5cc5c25db4d5e9483d614095f8cc89a08c1a2e2160b3660e"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 47368,
+      "sha256": "3f187dd709ff45f1237a0ab18f68a214b6ebb4c3610d0c3391f10d15ef0c2082"
+    },
+    "docs/phase2/cho51_p3_cm3_implementation_20261102.md": {
+      "bytes": 4795,
+      "sha256": "2fb84c6e0ca13f28a0cefff293a057471733a6b55e24e0791534581d7a4069d8"
+    },
+    "docs/phase2/cho51_p3_cm3_implementation_contract_20261102.md": {
+      "bytes": 7040,
+      "sha256": "1ad40a9ce12832ea3714fab04a03294bb90755e2566cb86e18cf55458de6cb87"
+    },
+    "tools/local_validation/cm3/README.md": {
+      "bytes": 3053,
+      "sha256": "0359df665e975b85a7ae7509857489ce04a5f3d69181e4ac4ee93158c1418090"
+    }
+  },
+  "review_record_pins": {
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/coordination.json": {
+      "bytes": 1899,
+      "sha256": "7ead8bfb8c66ac7bca3c49734e2ce7d74efbe3ea505c7291587bda4d1732a0db"
+    },
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/preservation-baseline.json": {
+      "bytes": 2222463,
+      "sha256": "38baf7add0888d7d93403e737fa44ac70f253a29bec05346a1403b945399d316"
+    },
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/candidate-v1.json": {
+      "bytes": 65554,
+      "sha256": "b45868de3cc66f23c859dd0d8539a90731363cccda6bede6fd9aa73ad42a4d3a"
+    },
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/source-review-v1.json": {
+      "bytes": 4914,
+      "sha256": "f1572a71d48058ee68505ec27a12473822b5b5c0c21f88423ef7f12cb0a51d0b"
+    },
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/root-source-acceptance.json": {
+      "bytes": 2250,
+      "sha256": "489295ae863bded6e44c0c7b1a4fce809b0a9adc8a49faefa1a9ffd245d8133e"
+    }
+  },
+  "existing_local_links_verified": 532,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/closeout-review.json",
+    "runs/coordination/cho51_p3_cm3_implementation_20261102_v1/final-static-checks.json"
+  ],
+  "full_identities": 796,
+  "modules": 34,
+  "selected": 280,
+  "new_methods_textually_verified": 32,
+  "historical_cm2_target": {
+    "selection": 248,
+    "modules": 32,
+    "full_identities": 764
+  },
+  "source_index_methods_verified": 280,
+  "design_scenarios": 32,
+  "source_scenario_examples": 23,
+  "scenarios_qualified": 0,
+  "new_normal_subtests": 0,
+  "total_normal_subtests": 254,
+  "conditional_future_normal_events": 1096,
+  "conditional_future_normal_bytes": 561152,
+  "current_roster_collection_event_implemented": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "complete_capture_feasibility": "NOT_ESTABLISHED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED"
+}

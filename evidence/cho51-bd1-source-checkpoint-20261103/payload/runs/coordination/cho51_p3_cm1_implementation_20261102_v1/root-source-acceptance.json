@@ -1,0 +1,38 @@
+{
+  "schema": "cho51_cm1_root_source_acceptance_v1",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "publisher": "project_root",
+  "source_authors": [
+    "project_root",
+    "cm1_protocol_author"
+  ],
+  "independent_reviewer": "qd_source_review",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_cm1_implementation_20261102_v1/candidate-v1.json",
+    "bytes": 55758,
+    "sha256": "82569f9af856ea5eaa06d8ae8de2af319e4a734db3e77fed5e0fcad43985f013"
+  },
+  "review": {
+    "path": "runs/coordination/cho51_p3_cm1_implementation_20261102_v1/source-review-v1.json",
+    "bytes": 4821,
+    "sha256": "aa419bbd6152504fa319bc6b7d4b96a6655a988a5cab05e119c532af4778f99e",
+    "review_text_sha256": "36f769d7d845b8c7e691ed60eb81ddfd2d1e1218550a473e94bf5425ac682325"
+  },
+  "reviewer_confirmation": "Confirmed `source-review-v1.json`: 4,821 bytes, SHA256 `aa419bbd6152504fa319bc6b7d4b96a6655a988a5cab05e119c532af4778f99e`; review-text SHA256 `36f769d7d845b8c7e691ed60eb81ddfd2d1e1218550a473e94bf5425ac682325`.\n\nSaved text matches my review, candidate pin, authorship, `ACCEPTED_SOURCE_ONLY` status, empty findings and limits. Root transcription is disclosed. No runtime, qualification or admission acceptance follows.\n\nReview ownership released. No files or sidecars written.",
+  "source_pins": 307,
+  "preservation_inputs": 9169,
+  "new_test_methods": 32,
+  "full_source_identities": 732,
+  "modules": 30,
+  "selected_model_identities": 216,
+  "executed_tests": 0,
+  "executed_collection": false,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "operational_dispatch": "REFUSED_UNADMITTED",
+  "complete_effect_closure": "NOT_ESTABLISHED",
+  "obligations_discharged": 0,
+  "scientific_cells": 0,
+  "next": "Complete the recursive method/subcase/effect and producer/capture bounds inventory; design/review the retained importer, actual collector/result producer and evidence aggregator. No runtime admission inferred.",
+  "limits": "Supplied-data models only. Native/provider/ownership/capture/allocation/lifecycle and full-Q feasibility remain unresolved. All historical failed/unknown evidence and guards preserved."
+}

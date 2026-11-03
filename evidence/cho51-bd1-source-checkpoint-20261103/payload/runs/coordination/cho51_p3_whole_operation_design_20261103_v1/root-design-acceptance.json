@@ -1,0 +1,75 @@
+{
+  "schema": "cho51_wo_design_adoption_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "design_author": "project_root",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "pin": {
+      "bytes": 86181,
+      "sha256": "58828a704831299181208eb89b7e783b3f2dde820822cd41ed871038ad728421"
+    },
+    "path": "runs/coordination/cho51_p3_whole_operation_design_20261103_v1/candidate-v2.json"
+  },
+  "review": {
+    "pin": {
+      "bytes": 3625,
+      "sha256": "64cb19410521414d6d0ca279e1753d71987ecd43a74a4042c72c7185398bf74b"
+    },
+    "path": "runs/coordination/cho51_p3_whole_operation_design_20261103_v1/design-review-v2.json"
+  },
+  "saved_review_confirmation": "Confirmed whole-operation design-review-v2.json exact3625 bytes SHA25664cb19410521414d6d0ca279e1753d71987ecd43a74a4042c72c7185398bf74b; UTF8 review_text SHA256241fafeab53729cad6f585651a30ae88e49131c293fca12426153ab6640bd680. Saved text exactly matches revised review; candidate58828a70…ad728421/86181bytes, ACCEPTED_DESIGN_ONLY/findings=[], resolved WO-D01, reviewer cm4_design_review_sol/publisher project_root and design-only/no-root/no-runtime limits are correct. Completed9657 audit and v2 carryforward are accurately distinguished from a repeat scan. Review ownership released for distinct metadata closeout; no writes/extra record.",
+  "findings": [],
+  "resolved_findings": [
+    "WO-D01"
+  ],
+  "adoption": "Whole-operation effects/allocation/feasibility obligations and explicit acyclic prerequisite admission design only",
+  "source_pins": 460,
+  "new_files": 8,
+  "external_reference_only_pins": 4,
+  "preserved_inputs": 9657,
+  "preservation_basis": "Completed independent v1 full audit, carried by accepted v2 after four new-file corrections; no claim of repeat full hashing",
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "baseline_held": 516,
+  "new_test_unqualified": 186,
+  "new_methods": 0,
+  "cm6s_held_outside_cohorts": 46,
+  "stages": 10,
+  "indexed_bodies": 546,
+  "inherited_boundaries": 16,
+  "memory_families": 10,
+  "report_files": 33,
+  "report_bytes": 18890752,
+  "raw_ceiling_sum": 5570560,
+  "valid_join": {
+    "base_d_parses": 10,
+    "s_collections": 4,
+    "direct_c_parses": 8
+  },
+  "conditional_commit_payload": {
+    "candidate": 2162688,
+    "scope": "Unmodified-state/validated-command payload arithmetic only; not heap/time/failure-domain proof",
+    "concat": 4391424
+  },
+  "new_scenarios": 32,
+  "qualified_scenarios": 0,
+  "prior_cm6": 32,
+  "prior_supplement": 24,
+  "B0": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+  "B1": "UNIMPLEMENTED_UNQUALIFIED_NOT_ESTABLISHED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "implementation_changed": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "next": "Source-only independent B0/B1 basis and original provider/ingress/capture witness contract with fixed-slot packing",
+  "limits": "No original root/driver, method, runtime qualification/admission, executable result, complete effects/allocation/time/memory/capture/custody or scientific acceptance; all original guards/holds/debts preserved"
+}

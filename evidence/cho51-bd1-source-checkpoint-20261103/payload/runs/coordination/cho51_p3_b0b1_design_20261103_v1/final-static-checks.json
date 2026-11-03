@@ -1,0 +1,233 @@
+{
+  "schema": "cho51_bd_static_closeout_v1",
+  "status": "STATIC_FILE_TEXT_JSON_HASH_LINK_ARITHMETIC_ONLY",
+  "publisher": "project_root",
+  "preservation": {
+    "audit_review": {
+      "pin": {
+        "bytes": 5149,
+        "sha256": "5ca636f8f4020dbb2253ffe227c6567368ded000ff916dd94e5004366e762c49"
+      },
+      "path": "runs/coordination/cho51_p3_b0b1_design_20261103_v1/design-review-v1.json"
+    },
+    "baseline": {
+      "bytes": 2314458,
+      "sha256": "27e4fbe82741f5d202c7d7040bd58a6cebce9d4f254e8c868bd9eead2976f8b3"
+    },
+    "audited_mismatches": 0,
+    "files": 9783,
+    "root_repeated_full_scan": false,
+    "basis": "Completed independent one-pass bulk-native audit of9783 preserved files and495 current source/reference pins without mismatch; no duplicate root full scan"
+  },
+  "candidate_pin": {
+    "bytes": 91238,
+    "sha256": "f9298285a4cce55619cd078b0628f5b681987b1d4b7ed9164aaabd6e60fd66a0"
+  },
+  "adoption_pin": {
+    "bytes": 3258,
+    "sha256": "7b4f13bbf9ab9b5656b11c154a98014d8abb65fdb83389e4b30cbf4c7092c49e"
+  },
+  "source_pins_checked": 491,
+  "new_file_pins_checked": 8,
+  "external_reference_only_pins_checked": 4,
+  "full_count": 1125,
+  "modules": 51,
+  "q": 360,
+  "s": 140,
+  "held": 765,
+  "baseline_held": 516,
+  "new_unqualified": 249,
+  "new_methods": 0,
+  "bd_scenarios": 40,
+  "qualified_scenarios": 0,
+  "arithmetic": {
+    "report_bytes": 18890752,
+    "closeout_roles": 16,
+    "report_files": 33,
+    "closeout_reserved_bytes": 3293184,
+    "records": [
+      80,
+      64
+    ],
+    "wire": [
+      96,
+      80
+    ],
+    "conditional_regions": 6,
+    "projection_widths": [
+      688,
+      684,
+      833
+    ]
+  },
+  "original_h0_established": false,
+  "final_m_retention_established": false,
+  "complete_capture_closure_packing": "NOT_ESTABLISHED",
+  "whole_operation_feasibility": "NOT_ESTABLISHED",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "resolved_findings": [],
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7579,
+      "sha256": "132f80980c5ad9775944c20a9de679ab7e2fda425c826bf99f5836d64fe27c2d"
+    },
+    "HANDOFF.md": {
+      "bytes": 24038,
+      "sha256": "b78c1bd1785c9504ee20a074ea45678b5aec52fe7cce30eb4ae35b5ab678ef75"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7164,
+      "sha256": "9797e20d615834ce2c7256e12951d0c49efe1e4976b4c794cb8c53d51ceba555"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7660,
+      "sha256": "1000282754bcd7b4ddbd7417a4b626b38903a7b2a5c31043282ab67b9e75fe5b"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7001,
+      "sha256": "2903887172f6adf0f0610cd8f6cdd3baf5abe50d1c60ffbc3300c4667fd9e932"
+    },
+    "README.md": {
+      "bytes": 7992,
+      "sha256": "3fe211a1a65681bf2f89993dd3039b822bff4f4dcf0dcfa043a36d6d9a183041"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11597,
+      "sha256": "5252ba751d0fb23055ff67d0cd430e638d13e1cb5e0326d587dd49a6dedbf124"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 16189,
+      "sha256": "598ec06631266e39ff88a9952c81d8423e2ce583667dd968fa96b973e68682a0"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13070,
+      "sha256": "6ddb4f4c883a60c2e4b7ae1103defc41af120992e00cf3e6ba28bcccf5f6a9e0"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 30389,
+      "sha256": "10f696c6f48e9df273fb526179c69296a19eed36e642d65d8b1b906159da7f07"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 35660,
+      "sha256": "2f89e01c02abdd2e14db9ac506b7dab2d933ab042ad530f39b67586c6b0ddf26"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 60021,
+      "sha256": "aa42f7cbcd7345f212b75bab9787385acc8be618ed78827417e401d39808a18d"
+    },
+    "docs/phase2/cho51_p3_b0b1_design_20261103.md": {
+      "bytes": 5053,
+      "sha256": "b849db455fa29c75a4e49ab1066d7846b08a9c5b0ff6ed7e36a7376810651e25"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/README.md": {
+      "bytes": 2220,
+      "sha256": "ef1c771a49e75a819bf48d85598fda4c72aa8cc5ad1dd426a1a8213145485169"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/provider.md": {
+      "bytes": 9209,
+      "sha256": "2ed0e5f6f6a7615af81d0e597a1938ff9013d60a2c362505ceb947a0a3a645d0"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/driver.md": {
+      "bytes": 7306,
+      "sha256": "9fa25927f15b7cf3d82098b1b9e236d4272948e453e1cf5b47bd9e15336294ba"
+    },
+    "docs/phase2/cho51_p3_b0b1_v1/retention.md": {
+      "bytes": 9037,
+      "sha256": "517a03d50771a9f8bcd5bea4d9fc5a7bfd7320b6e933bd92e956b1809db6d74d"
+    }
+  },
+  "archive_pins": {
+    "docs/history/b0b1_design_20261103/AGENTS.md": {
+      "bytes": 7663,
+      "sha256": "06fe028a0c15986275e406af328afe08135becc033f73582fc0695516ade8a48"
+    },
+    "docs/history/b0b1_design_20261103/HANDOFF.md": {
+      "bytes": 23779,
+      "sha256": "1e14f8e8b330ade1959f0edc673a7f0d929dacb0740526fde234f40724e3fc55"
+    },
+    "docs/history/b0b1_design_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7248,
+      "sha256": "5e9aeed07ab17a874115f1a866bfc1674de4c63d20224cfa85adee21fda6eb22"
+    },
+    "docs/history/b0b1_design_20261103/CONTINUE_HERE.md": {
+      "bytes": 7744,
+      "sha256": "1e00a392af2e7caf32dcabc734bcb1b68ec34f07081cd34bb1eb0b50258f1a5a"
+    },
+    "docs/history/b0b1_design_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7085,
+      "sha256": "197c6bce03b66f15577b6a192dc5ea2e7bee1e710775db974f95a1cf2b7d5f1c"
+    },
+    "docs/history/b0b1_design_20261103/README.md": {
+      "bytes": 8076,
+      "sha256": "4ad8cdad4a41bf465196b6cc763f11b0b6128bc38cb9466fccb0df6ad1d5a71e"
+    },
+    "docs/history/b0b1_design_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11681,
+      "sha256": "091cfe3df2a760ded8e376aaa102d5ca1f9a09219d88abe6880dde5e652b311e"
+    },
+    "docs/history/b0b1_design_20261103/docs/phase2/README.md": {
+      "bytes": 16281,
+      "sha256": "6f8bc01eef4ba7421fd21a9d6e3e74194bb3bca9bdc79db20b4130abed8c0c78"
+    },
+    "docs/history/b0b1_design_20261103/docs/where are we/README.md": {
+      "bytes": 13154,
+      "sha256": "96a95089dc0a708efdff8c25d788816100957d923bad89953c960a79ca359bf5"
+    },
+    "docs/history/b0b1_design_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 30130,
+      "sha256": "1195056331b3903e3b1b4118848a6a29edc73bf449fbbcacf2322c5c2cdd807f"
+    },
+    "docs/history/b0b1_design_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 35752,
+      "sha256": "d382cdd48a7b8908399c58a6fc1e1ba4e8d8421f3dc7fe6c842ceefb458d1d39"
+    },
+    "docs/history/b0b1_design_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 59207,
+      "sha256": "b66d892f0995f78b23e2974f81816036ba1da10d42db1cf4a7eac39e8f278451"
+    },
+    "docs/history/b0b1_design_20261103/manifest.json": {
+      "bytes": 2348,
+      "sha256": "28ebdbc57fc597bad7af27b441239c1cf9d85dc84a2a7192bd8c109f703e8c73"
+    }
+  },
+  "draft_pins": {},
+  "local_links_checked": 570,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/closeout-review.json",
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/final-static-checks.json"
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/candidate-v1.json": {
+      "bytes": 91238,
+      "sha256": "f9298285a4cce55619cd078b0628f5b681987b1d4b7ed9164aaabd6e60fd66a0"
+    },
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/coordination.json": {
+      "bytes": 2630,
+      "sha256": "47a98416ebf420e282cd976f4d1d8edc43febe6cd4d41f31e787154e5db2c93f"
+    },
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/design-review-v1.json": {
+      "bytes": 5149,
+      "sha256": "5ca636f8f4020dbb2253ffe227c6567368ded000ff916dd94e5004366e762c49"
+    },
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/preservation-baseline.json": {
+      "bytes": 2314458,
+      "sha256": "27e4fbe82741f5d202c7d7040bd58a6cebce9d4f254e8c868bd9eead2976f8b3"
+    },
+    "runs/coordination/cho51_p3_b0b1_design_20261103_v1/root-design-acceptance.json": {
+      "bytes": 3258,
+      "sha256": "7b4f13bbf9ab9b5656b11c154a98014d8abb65fdb83389e4b30cbf4c7092c49e"
+    }
+  },
+  "phase_root_records_after_this": 6,
+  "phase_root_records_after_closeout": 7,
+  "draft_files": 0,
+  "design_author": "project_root",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "implementation": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "limits": "Design/static metadata only; no implementation/build/native authority, original complete capture/closure/resources, qualification/admission, debt discharge or scientific acceptance"
+}

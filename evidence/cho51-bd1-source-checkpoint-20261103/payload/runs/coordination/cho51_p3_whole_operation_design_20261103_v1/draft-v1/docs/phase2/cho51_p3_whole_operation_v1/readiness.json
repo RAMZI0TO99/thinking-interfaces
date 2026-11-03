@@ -1,0 +1,114 @@
+{
+  "schema": "cho51_wo_readiness_v1",
+  "status": "SOURCE_ONLY_DESIGN_FOR_REVIEW",
+  "design_sources": {
+    "docs/phase2/cho51_p3_whole_operation_v1/README.md": {
+      "bytes": 2014,
+      "sha256": "25b161dace6dbca0e31a2912dc4fe6d963d8a34b9446e0722f626b12ed5acb2b"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/operation.md": {
+      "bytes": 12734,
+      "sha256": "67e5e8aba0f61760e5e321675036d6172381612c324e3592bfcbb2e437f87ff4"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/effects.json": {
+      "bytes": 1039541,
+      "sha256": "d2b7cccc7d3ddeafc7085b1eee5bf1cf16458f0e8a89d77c45cca64d65b200ba"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/allocations.json": {
+      "bytes": 18191,
+      "sha256": "e243b27b844a91d75fea75efd9d912fd1d8185ce51cd482e1e8f5bf1c51032aa"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/feasibility.md": {
+      "bytes": 8096,
+      "sha256": "e020a4c98560263a9e408e8a53c774922522fcc2e89aebfab75f5e5d01fb4a20"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/cohort-debt.json": {
+      "bytes": 630450,
+      "sha256": "7d2f6dbfef9478e1a3c9ada69b2bee0df77c328fee1c2d12fa2aaf70556ce987"
+    },
+    "docs/phase2/cho51_p3_whole_operation_v1/qualification.json": {
+      "bytes": 12148,
+      "sha256": "ed25d2ceab0db84d77f14ffbf21e843088d26251238ca5c1e3616a6c919353fd"
+    }
+  },
+  "prior_candidate": {
+    "path": "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/candidate-v2.json",
+    "pin": {
+      "bytes": 86587,
+      "sha256": "4fdb9e6fe41596fac3558f0af8c69629fde2eb57e18f35aa818c58f94acf7874"
+    }
+  },
+  "full_identities": 1062,
+  "modules": 49,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 702,
+  "new_methods": 0,
+  "implementation_changed": false,
+  "indexed_bodies": 546,
+  "unindexed_other_held": 516,
+  "inherited_effect_boundaries": 16,
+  "stage_count": 10,
+  "memory_families": 10,
+  "report_files": 33,
+  "report_bytes": 18890752,
+  "new_scenarios": 32,
+  "new_qualified": 0,
+  "prior_cm6_scenarios": 32,
+  "prior_supplement_scenarios": 24,
+  "prior_qualified": 0,
+  "gates": [
+    {
+      "id": "WO-G01",
+      "requirement": "Exact operation/control membership and authoritative source/runtime/dependency adoption",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G02",
+      "requirement": "Complete recursive normal/failure/type/formatter/import/fixture/effect domains",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G03",
+      "requirement": "Original provider/lifecycle/host/parent/ingress/cutoff/observer/custody mapping",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G04",
+      "requirement": "All allocations, simultaneous lifetimes and complete process/Job peak memory",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G05",
+      "requirement": "Every write, report/failure/capture/framing/EOF/tool witness and finite noncircular closeout packing",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G06",
+      "requirement": "Every stage/case/control worst-case cost, failed cleanup and F/M under original clocks",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G07",
+      "requirement": "Implemented original successors, exact wrapper/capability/control qualification and independently accepted actual results",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    }
+  ],
+  "admission_predicate": "All seven gates ESTABLISHED plus unchanged current source/runtime/resource/custody predicates and an unused attempt; unknown is refusal",
+  "execution_disposition": "REFUSED_UNADMITTED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED",
+  "capture_inline_universal_fit": "INFEASIBLE_FOR_CONTROL_BYTE_COUNTEREXAMPLE_ONLY",
+  "operational_writer_or_runner_added": false,
+  "next": "Source-only original provider/ingress/capture witness contract and fixed-slot packing; complete operation/effect/allocation closure remains mandatory",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

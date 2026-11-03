@@ -1,0 +1,60 @@
+{
+  "schema": "cho51_cm5_implementation_coordination_v1",
+  "scope": "Source-only CM5 supplied primitive-command producer/refusal/seal model and test roster/budget successor",
+  "publisher": "project_root only",
+  "implementation_author": "cm5_model_author",
+  "author_files": [
+    "tools/local_validation/cm5/__init__.py",
+    "tools/local_validation/cm5/producer.py",
+    "tools/local_validation/cm5/test_producer.py",
+    "tools/local_validation/cm5/test_refusal.py",
+    "tools/local_validation/cm5/README.md"
+  ],
+  "root_ownership": [
+    "tools/local_validation/cm5/registry.py",
+    "docs/phase2/cho51_p3_cm5_roster_successor_20261103.json",
+    "docs/phase2/cho51_p3_cm5_source_coverage_20261103.json",
+    "docs/phase2/cho51_p3_cm5_implementation_contract_20261103.md",
+    "all phase records, archives, milestone and current docs"
+  ],
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "source-review-v1.json",
+    "candidate-v2.json",
+    "source-review-v2.json",
+    "candidate-v3.json",
+    "source-review-v3.json",
+    "root-source-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "conditional_drafts": "Preserve exact affected frozen candidate files and manifest before correction",
+  "publication": "Message-only reviewers; Root saves exact text and obtains saved-byte confirmation; final closeout confirmation conversation-only",
+  "allowed": "File/text/JSON/hash/link/arithmetic and source edits",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime",
+  "producer_target": "Frozen CM4 836 identities/36 modules/320 selected",
+  "current_roster": "Explicit successor for new methods; not an expanded CM4 raw parser or current collector",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

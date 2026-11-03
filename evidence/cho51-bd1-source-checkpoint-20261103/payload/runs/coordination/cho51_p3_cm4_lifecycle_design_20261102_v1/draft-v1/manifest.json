@@ -1,0 +1,18 @@
+{
+  "schema": "cho51_cm4_rejected_draft_archive_v1",
+  "candidate_sha256": "3ffd5eab6a5e73db16921f10f4f2b257f2db938b57b1a2c6495c15252e56279e",
+  "finding": "CM4-D01",
+  "saved_review_confirmation": "Confirmed saved design-review-v1.json exact3029 bytes SHA256 ce4887e8222a613eb8ba625311f494d714a6ebb3c4b8c7e08b899a2969f45dce; UTF8 review_text SHA25616953b0fbe86aaa77a06ba1ae583528dff7c2dbfe8975570e01e3526399c6ab4. review_text matches my exact message, reviewer cm4_design_review_sol/role cm4_design_review, publisher project_root, status CHANGES_REQUESTED_DESIGN_ONLY and D01 attribution are correct. Review ownership temporarily released for Root archival and D01 correction; I own no writes. Re-review can follow.",
+  "files": {
+    "events.md": {
+      "bytes": 6041,
+      "sha256": "7539d644a7aab0297e2823709d58c93ec7738e2a8b68fa2d392fdb292ce35dca",
+      "original_path": "docs/phase2/cho51_p3_component_lifecycle_v1/events.md"
+    },
+    "qualification.json": {
+      "bytes": 5181,
+      "sha256": "88f9b61e879e5b41472ca560e520925f16ae8a6d49c9fd40fdb8aca4bb59a361",
+      "original_path": "docs/phase2/cho51_p3_component_lifecycle_v1/qualification.json"
+    }
+  }
+}

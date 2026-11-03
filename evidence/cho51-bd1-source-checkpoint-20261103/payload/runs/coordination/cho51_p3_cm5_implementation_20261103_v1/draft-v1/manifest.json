@@ -1,0 +1,36 @@
+{
+  "schema": "cho51_cm5_implementation_rejected_draft_v1",
+  "candidate_sha256": "ff0c9890219d46de205f2bdce9ccba08741ef2a41b3b1a3f1a335c23d4a9b728",
+  "findings": [
+    "CM5-S01",
+    "CM5-S02"
+  ],
+  "files": {
+    "producer.py": {
+      "original_path": "tools/local_validation/cm5/producer.py",
+      "bytes": 16228,
+      "sha256": "cd8a8e01b3587794c1041b3852181bd6c88ad267462a072340cd43811ff5e5d7"
+    },
+    "test_refusal.py": {
+      "original_path": "tools/local_validation/cm5/test_refusal.py",
+      "bytes": 7175,
+      "sha256": "4f79dac8a1063494056bebe3cbdf9990092009069689b816f52c5543bae4da15"
+    },
+    "registry.py": {
+      "original_path": "tools/local_validation/cm5/registry.py",
+      "bytes": 5250,
+      "sha256": "5cfb5cba279f1b13be2b006f7db6cad60f5e73ce6d051a8ea770b33005b1b2a5"
+    },
+    "cho51_p3_cm5_roster_successor_20261103.json": {
+      "original_path": "docs/phase2/cho51_p3_cm5_roster_successor_20261103.json",
+      "bytes": 136101,
+      "sha256": "99af86452c1798c920a3d7f34310f6e03bbe5f5d8f99c880ef6d3bb3a74b943c"
+    },
+    "cho51_p3_cm5_source_coverage_20261103.json": {
+      "original_path": "docs/phase2/cho51_p3_cm5_source_coverage_20261103.json",
+      "bytes": 771655,
+      "sha256": "979f4772688896cb566ea3312a062d0b858222a6ba6f0a6fccef7a724242a08f"
+    }
+  },
+  "saved_review_confirmation": "Confirmed source-review-v1.json exact3969 bytes SHA256c4de06a1faf7d8230dbfae7acfa7955da8fc968855f95c574d0d588b46a22d5d; UTF8 review_text SHA256aba7cfdd9b74ad512bb5641e4f8ce37b1ea3b8495e0a35e6cd6de4e12c687603. Saved text matches my exact review, status CHANGES_REQUESTED_SOURCE_ONLY, candidateff0c9890…9b728, findings CM5-S01/S02, reviewer cm4_design_review_sol/publisher project_root and no-runtime limits are correct. Ownership released temporarily for exact affected-file archival and Root correction; no writes/extra file."
+}

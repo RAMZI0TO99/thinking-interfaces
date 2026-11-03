@@ -1,0 +1,129 @@
+{
+  "schema": "cho51_cm3_evidence_design_static_closeout_v1",
+  "publisher": "project_root",
+  "scope": "File/text/JSON/hash/link checks and data arithmetic only",
+  "design_acceptance": "ACCEPTED_DESIGN_ONLY",
+  "design_files_verified": 7,
+  "source_pins_verified": 335,
+  "external_reference_only_pins_verified": 4,
+  "preservation_files_verified": 9276,
+  "archive_files_verified": 12,
+  "archive_manifest_pin": {
+    "bytes": 1836,
+    "sha256": "f367631df3d13a66b5aed482e7f8706b73aa38cd73dc9eb8ca129e39df358951"
+  },
+  "documentation_pins": {
+    "AGENTS.md": {
+      "bytes": 7812,
+      "sha256": "296bb09fae9e5bab3e4c4a24c9e19597892573dcca78deb800efae241beccd3b"
+    },
+    "HANDOFF.md": {
+      "bytes": 19867,
+      "sha256": "49a707432dd8c378bd5b73f9cecbaa55112ba8ddb724ded5de628f5a5e54dc59"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7397,
+      "sha256": "052c8f838cd70cf8b4cca1f5263f9080acd77a038b540d36709279123a43977a"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7797,
+      "sha256": "9ed6d10b22fdb452deb13a4bafa4d75a5039cd1028e9d56f8ccda307df12421e"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7234,
+      "sha256": "48e66a65652e3752b7decc5af646753a63ab97e1627c55b03056ad4c96d9a8c4"
+    },
+    "README.md": {
+      "bytes": 8225,
+      "sha256": "df65452c37babf8b21aac8d6baa4d916f986cf100ff99754bbe5af02b13c45b5"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11830,
+      "sha256": "73b9b44aa2054a773699cab26bb5c264d0348be1dbd352b1816ad5d74413cf22"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 13130,
+      "sha256": "ee55bb4ac25b389d9bac2b7fc5ce588aa5018ea135f851ad9f7fbeafa8b35ef2"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13303,
+      "sha256": "2817f5238b0ffdf7645da962e23486ddc8dc0da45c69bb2b6bcece7cce3a77d0"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 26437,
+      "sha256": "e875d3b9334e8a6ae4ddd0a895164524cde66820162b46e6c93b639ee70bacc8"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32524,
+      "sha256": "162d94a4fc1f26b19d1d0915d8c622f378ee750c56662d253d20a55d3ef2c162"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 46548,
+      "sha256": "5406e9aa7c5ef805759ba7c3d6427ccd3cd27f66f19d26efae52c77e17e5bdef"
+    },
+    "docs/phase2/cho51_p3_cm3_evidence_design_20261102.md": {
+      "bytes": 4395,
+      "sha256": "1fa7f8133c672ec49b58726390df7eec762dfcd32afbb8a3033498f1cca762e7"
+    },
+    "docs/phase2/cho51_p3_component_evidence_v1/capture.md": {
+      "bytes": 4858,
+      "sha256": "9ceb65631278d0fec5ee38dc6770f2fa87c0ec404b534998951c36346a06a50e"
+    },
+    "docs/phase2/cho51_p3_component_evidence_v1/event-verifier.md": {
+      "bytes": 8223,
+      "sha256": "2c7bfbab3d6cf7e6b098b039d09b04335d7e35e4fe02540360790725fbe1e07b"
+    },
+    "docs/phase2/cho51_p3_component_evidence_v1/evidence-join.md": {
+      "bytes": 5525,
+      "sha256": "483e512a17e654cfd2f4d9ce178606b1dee6275412c1dfb37e7ef50c9b3ee290"
+    },
+    "docs/phase2/cho51_p3_component_evidence_v1/failure-domain.md": {
+      "bytes": 5768,
+      "sha256": "0b22a402921341b114287b351c653186e9faf751fbc2bf138285e04eefe71c73"
+    },
+    "docs/phase2/cho51_p3_component_evidence_v1/README.md": {
+      "bytes": 3540,
+      "sha256": "4b1e4e1a31606f25558152285c7e747b5ff3508a2a97cc655e95cd57d0d43863"
+    }
+  },
+  "review_record_pins": {
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/coordination.json": {
+      "bytes": 1837,
+      "sha256": "d796bcdea15da988cd53d8575c0b0fe55e2b4c3e053d9993d33a2ac43921ee2c"
+    },
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/preservation-baseline.json": {
+      "bytes": 2217115,
+      "sha256": "67284d4017929313ee40bbff78214cfa93c3bc789367cf06d03bde2241e440d6"
+    },
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/candidate-v1.json": {
+      "bytes": 62652,
+      "sha256": "2d246b6897fd0cf17d04226be20b01d8b737c612088bb211611a2f2b625af54b"
+    },
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/design-review-v1.json": {
+      "bytes": 4658,
+      "sha256": "24d03c665b09a92eda1229a6e255cdcd027e217336b7740ebd8bd5a9c2c8a300"
+    },
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/root-design-acceptance.json": {
+      "bytes": 1909,
+      "sha256": "50ecc8a6e47d0344d9bd265added53ff123b215643dabcee3d4b40544f354128"
+    }
+  },
+  "existing_local_links_verified": 532,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/closeout-review.json",
+    "runs/coordination/cho51_p3_cm3_evidence_design_20261102_v1/final-static-checks.json"
+  ],
+  "design_scenarios": 32,
+  "full_identities": 764,
+  "modules": 32,
+  "selected": 248,
+  "new_methods": 0,
+  "conditional_normal_events": 1000,
+  "conditional_normal_bytes": 512000,
+  "combined_supplied_input_max_bytes": 4259840,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "complete_capture_feasibility": "NOT_ESTABLISHED",
+  "complete_operation_feasibility": "NOT_ESTABLISHED"
+}

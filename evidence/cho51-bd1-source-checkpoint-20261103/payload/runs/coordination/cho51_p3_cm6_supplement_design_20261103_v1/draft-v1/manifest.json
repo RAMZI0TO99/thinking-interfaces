@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_cm6s_design_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 82015,
+    "sha256": "da227201b532003f3101fee5016a5a83a2f88f26eb166586dc8fba8ba91df7b3"
+  },
+  "review_pin": {
+    "bytes": 4254,
+    "sha256": "f830c30da1638b2639a182690c7ac2b22febe4823e68b161379b8e2b2855804c"
+  },
+  "review_confirmation": "Confirmed CM6S design-review-v1.json exact4254 bytes SHA256f830c30da1638b2639a182690c7ac2b22febe4823e68b161379b8e2b2855804c; UTF8 review_text SHA256e07bbe41e6ce45cdb652277aab8dce28de26e7bb08215b061dae73b15e2bf1e2. Saved text exactly matches review; candidateda227201…91df7b3/82015bytes, CHANGES_REQUESTED_DESIGN_ONLY, CM6S-D01/P2, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Review ownership temporarily released for Root exact workload/readiness archival and correction; no writes/extra record.",
+  "finding": "CM6S-D01",
+  "files": {
+    "docs/phase2/cho51_p3_supplement_cohort_v1/workload.json": {
+      "bytes": 182962,
+      "sha256": "11e65c67fc8dee37678b3ea0cbd35de2861b81d99712dacd7ac9491f8f0d74c9"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/readiness.json": {
+      "bytes": 3671,
+      "sha256": "7803f4daf02e341be247c5fe25924ff9eef0fe16c53ad1e452bb68911c521c5c"
+    }
+  },
+  "scope": "Exact workload and dependent readiness bytes before correcting source anchor"
+}

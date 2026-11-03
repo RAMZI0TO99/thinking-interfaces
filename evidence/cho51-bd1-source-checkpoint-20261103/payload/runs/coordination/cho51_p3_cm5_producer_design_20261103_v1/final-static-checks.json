@@ -1,0 +1,252 @@
+{
+  "schema": "cho51_cm5_design_final_static_v1",
+  "status": "STATIC_CHECKS_PASS_DESIGN_ONLY",
+  "publisher": "project_root",
+  "allowed": "File/text/JSON/hash/link/arithmetic only; no project parser, import, AST, compiler, native call, tests or Git",
+  "preservation": {
+    "baseline_pin": {
+      "bytes": 2240961,
+      "sha256": "b3f7a05c2e10ddbafe1a683471936bc2cb56d6d40efadea56f48d828e2cb3a8f"
+    },
+    "files_checked": 9403,
+    "changed": 0,
+    "complete_rehash": true
+  },
+  "candidate_pin": {
+    "bytes": 71499,
+    "sha256": "ca4c0637ff12e639dc6f1452ad5f899cfda655e86dda8b3722556d96cf40325e"
+  },
+  "adoption_pin": {
+    "bytes": 2254,
+    "sha256": "6b5639fb28230aae5e0a345fe8c90e89cbcd89ba4ec4279dce5bf584dd8c7acc"
+  },
+  "source_pins_checked": 378,
+  "new_file_pins_checked": 8,
+  "external_reference_only_pins_checked": 4,
+  "correction_archive": {
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/draft-v1/effect-map.json": {
+      "sha256": "f4d05cff4e5616932460c24b413af4c0be352052e09d8eecd198046c92191c17",
+      "bytes": 420419
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/draft-v1/manifest.json": {
+      "sha256": "c418e5184b6f4006237acb09b3d62e085b692e097e6e6be64c9d81fbf359349e",
+      "bytes": 1024
+    }
+  },
+  "prior_candidate_and_review_verified": true,
+  "effect_map": {
+    "boundaries": 16,
+    "anchors_checked": 47,
+    "method_obligations": 320,
+    "source_index_pin": {
+      "sha256": "23c1ccae29372f44e55627d4f8a70be01ad192f0aa3969ff2324a103e5d8fd18",
+      "bytes": 694811
+    },
+    "unchanged_direct_method_fields": true,
+    "normal_subcases": 254,
+    "complete_recursive_effect_closure": "NOT_ESTABLISHED"
+  },
+  "scenarios": {
+    "total": 32,
+    "groups": {
+      "supplied_model": 14,
+      "original_dispatcher": 8,
+      "original_terminal": 6,
+      "effect_accounting": 4
+    },
+    "qualified": 0
+  },
+  "roster": {
+    "identities": 836,
+    "modules": 36,
+    "selected": 320,
+    "outside": 516,
+    "new_methods": 0
+  },
+  "arithmetic": {
+    "conditional_events": 2368,
+    "event_bytes": 1212416,
+    "guarded_attempts": 2367,
+    "max_group_scratch_bytes": 66048
+  },
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7666,
+      "sha256": "cae3bce00e90a67eb3b99012ba1f7181d7032732d0f2c401bea785dc2d548edb"
+    },
+    "HANDOFF.md": {
+      "bytes": 20838,
+      "sha256": "34c70e98866e03657e3045b4ac4f298a1ac301a167a9a98bc1ea57273f98cd7e"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7251,
+      "sha256": "2987b76469f26d991912178e55a34cccf9dd896b5596b180ce41281bf021fa07"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7705,
+      "sha256": "d7eebc5bb114202dbcd946519a4cdd1e920ed8abb8b3612266343715d9412cc2"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7088,
+      "sha256": "0e4c2aff5bc413b736dd9c344d485314af1c67d46f6cf86a64b3b76075f2c3f1"
+    },
+    "README.md": {
+      "bytes": 8079,
+      "sha256": "a59e178ec28fbb88670a380b88a19235e8367ed812cefe279eb5fa496ab9eec5"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11684,
+      "sha256": "51e5bae3f04175cfd0476a594a4f59129f40e0ce8d8e5b13b0697310f544852e"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 13504,
+      "sha256": "80199248efb587ff997b50649abee5f1a06eb3b43f11d7dd219db79a1d510d3c"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13159,
+      "sha256": "3e517e379a2bf94b1004536a03932b447696cf0776e4080d837c86d93c2f3f55"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 27356,
+      "sha256": "3e5f5029821cdb3a6066bebb2be5fb4f571e6787232322195222b49c875fe6ef"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32942,
+      "sha256": "3cc07518fb24639c2cabe145ce1dd14aec582ea23894b558bca4af941ddecec3"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 49888,
+      "sha256": "43176bcb96e35ac8ed8829fe033f66bf668f15f7755aa2067bf757560a7dfb13"
+    },
+    "docs/phase2/cho51_p3_cm5_producer_design_20261103.md": {
+      "bytes": 4897,
+      "sha256": "56c01e0fd0f08c553c61913a5d503ed2a691beb698b072f1efff779a78c8d12e"
+    },
+    "docs/phase2/cho51_p3_component_producer_v1/budgets.md": {
+      "bytes": 4130,
+      "sha256": "74b7df0570bed381795072185b88010ea125270d7c8bb367978b6e5a0669c88e"
+    },
+    "docs/phase2/cho51_p3_component_producer_v1/dispatcher.md": {
+      "bytes": 6143,
+      "sha256": "5186d04eb1965b0c59d3a7ff501a02029745b0d4e879dbbd0e2240c2905dde0b"
+    },
+    "docs/phase2/cho51_p3_component_producer_v1/producer.md": {
+      "bytes": 9739,
+      "sha256": "85fac0464c8a57115a6b9a8daa94c12d1bf2bd36f7c4a1154db02306f43f41da"
+    },
+    "docs/phase2/cho51_p3_component_producer_v1/README.md": {
+      "bytes": 3740,
+      "sha256": "ee33144379672a42bbf7c5cb99abf8d7b35b0bb02fdf570a8de2f5d461e70b76"
+    },
+    "docs/phase2/cho51_p3_component_producer_v1/terminal-boundary.md": {
+      "bytes": 5334,
+      "sha256": "25305b50cb9b78e10f4ccd7bc26d5d4b774a42f38df564c667206935faf4da89"
+    }
+  },
+  "archive_pins": {
+    "docs/history/cm5_producer_design_20261103/AGENTS.md": {
+      "bytes": 7787,
+      "sha256": "4ad83f3eb90bd01b22ce025b7614a2cc9dc2049407723192317c1c0f34fe881b"
+    },
+    "docs/history/cm5_producer_design_20261103/HANDOFF.md": {
+      "bytes": 20644,
+      "sha256": "103eac66531f059dcbc6dcff2c0d35a48276b8df30002be018ed784f09274919"
+    },
+    "docs/history/cm5_producer_design_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7372,
+      "sha256": "3c3806ddd4ced1147ef6110ec984cd01c0e04bb9bf682eccffcd689f61efc461"
+    },
+    "docs/history/cm5_producer_design_20261103/CONTINUE_HERE.md": {
+      "bytes": 7814,
+      "sha256": "77c0ebbd5198a1fadac27b923812219eeed008a607faee1cef48fa46bad6b795"
+    },
+    "docs/history/cm5_producer_design_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7209,
+      "sha256": "c2d49dbbad50deb92aa70e41b4d2fe20ec37c9dc8813e2396a4de85c208cfc97"
+    },
+    "docs/history/cm5_producer_design_20261103/README.md": {
+      "bytes": 8200,
+      "sha256": "f01bf7cd8d3d2f459dd75e282ad17319d58f33a381dcb325285a1b68fa6acef5"
+    },
+    "docs/history/cm5_producer_design_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11805,
+      "sha256": "230a452a597e8886bcbffd3118a6abf3161eee59ec229a51250fbfe529947530"
+    },
+    "docs/history/cm5_producer_design_20261103/docs/phase2/README.md": {
+      "bytes": 13463,
+      "sha256": "208ab49e4a14f77dea56613d620f53f284c7c79f3ae635d2a084f49aab8e58fa"
+    },
+    "docs/history/cm5_producer_design_20261103/docs/where are we/README.md": {
+      "bytes": 13278,
+      "sha256": "20d3e95198b391b088284df9ddfddbc66a5868eac76f8ca3456408d056e0b505"
+    },
+    "docs/history/cm5_producer_design_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 27172,
+      "sha256": "481b8a365c520c061cd57c5656e0ded736d95439d479ba66379e632179cc3f84"
+    },
+    "docs/history/cm5_producer_design_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32899,
+      "sha256": "734c971e22e17eeebcd0e8e5c4645658d1a396045a599dfecbc0cf247c2225e3"
+    },
+    "docs/history/cm5_producer_design_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 49076,
+      "sha256": "c38e1fe75dee77b875324b62014436bd3a8d548c3355e05452fd34290e27f519"
+    },
+    "docs/history/cm5_producer_design_20261103/manifest.json": {
+      "bytes": 1827,
+      "sha256": "ff411caa1f3b402e37a54a75a724473c79121fdbf139bda486adbcc7b25b9f36"
+    }
+  },
+  "local_links_checked": 537,
+  "predeclared_forward_links": [
+    {
+      "document": "docs/phase2/cho51_p3_cm5_producer_design_20261103.md",
+      "target": "../../runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/final-static-checks.json"
+    },
+    {
+      "document": "docs/phase2/cho51_p3_cm5_producer_design_20261103.md",
+      "target": "../../runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/closeout-review.json"
+    }
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/candidate-v1.json": {
+      "bytes": 70639,
+      "sha256": "e606ca389dfe6a4330380b28ad2522874c8f376ff8af05fc18747c12476bb6c3"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/candidate-v2.json": {
+      "bytes": 71499,
+      "sha256": "ca4c0637ff12e639dc6f1452ad5f899cfda655e86dda8b3722556d96cf40325e"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/coordination.json": {
+      "bytes": 2005,
+      "sha256": "30060200c32c49e8ae938eda0e487caa0718a00a9234e298bde29a5c9f99ae82"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/design-review-v1.json": {
+      "bytes": 3382,
+      "sha256": "f908834fe21124e713864b8412399818dba3085f256d94fab4a91a494cb9c795"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/design-review-v2.json": {
+      "bytes": 3022,
+      "sha256": "f846bb8d35bd13702eee41f1ce2adf4e77a92927c2bbc52442701165ef468b99"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/preservation-baseline.json": {
+      "bytes": 2240961,
+      "sha256": "b3f7a05c2e10ddbafe1a683471936bc2cb56d6d40efadea56f48d828e2cb3a8f"
+    },
+    "runs/coordination/cho51_p3_cm5_producer_design_20261103_v1/root-design-acceptance.json": {
+      "bytes": 2254,
+      "sha256": "6b5639fb28230aae5e0a345fe8c90e89cbcd89ba4ec4279dce5bf584dd8c7acc"
+    }
+  },
+  "phase_root_records_after_this": 8,
+  "phase_root_records_after_closeout": 9,
+  "draft_files": 2,
+  "closeout_reviewer": "cm4_closeout_review",
+  "source_reviewer": "cm4_design_review_sol",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "metadata_check_correction": "First static pass stopped before publication on an external absolute-path join; rooted-path handling corrected and all checks rerun. No project runtime or admission attempt occurred.",
+  "limits": "Design and metadata only. All original guards, consumed failures, UNKNOWN custody and open obligations remain. Source review does not qualify original execution, effects, capture, native ownership, allocation, timing, memory or science."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "cho51_cm6s_design_review_v1",
+  "status": "CHANGES_REQUESTED_DESIGN_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 82015,
+    "sha256": "da227201b532003f3101fee5016a5a83a2f88f26eb166586dc8fba8ba91df7b3"
+  },
+  "findings": [
+    {
+      "id": "CM6S-D01",
+      "priority": "P2",
+      "file": "docs/phase2/cho51_p3_supplement_cohort_v1/workload.json",
+      "field": "repeated_parsing.anchors",
+      "required_change": "Replace blank events.py:59 reference with exact relevant call line and refresh dependent pins after archival"
+    }
+  ],
+  "review_text": "CHANGES_REQUESTED_DESIGN_ONLY. Candidate candidate-v1.json:82015 bytes, SHA256da227201b532003f3101fee5016a5a83a2f88f26eb166586dc8fba8ba91df7b3. Independently verified all433 source pins, eight new-file pins, four external reference-only pins and all9579 preservation files without byte/hash mismatch; preservation-baseline SHA256cf713c664bd8611d6e2d22368d6b57eacfbd0173da3d3a77a34ef04cb94b53db. Reviewed all eight supplemental design files against frozen CM6 design/implementations. Findings=[{id:CM6S-D01,priority:P2,file:docs/phase2/cho51_p3_supplement_cohort_v1/workload.json,field:repeated_parsing.anchors,issue:tools/local_validation/cm6i/events.py:59 is a blank line rather than the claimed full-C/event-verifier source anchor.,required_change:Replace with the exact relevant nonblank call line, such as events.py63 for direct verify_collection or64 for parse_tables, and refresh dependent readiness/candidate pins after exact archival.}]. Other inspected source anchors are in range and relevant; no additional design correctness finding identified. Canonical S11102-byte manifest/SHA256ceaa4cfa0f05f38de3b58d1806c2380fad7eb213d1023e6733909dceff68b154 contains exactly60 CM6+80 cm6i identities in seven modules, disjoint from Q360; ordered identity digest746927e2bd26c698ab6a52f232db1c15c7bfb3a40e685b64ec0064c1b2f5b39c matches. Checked140 workload method start lines/source pins and all656 prior debt rows copied exactly, with1016/45 source census unchanged and no promotion/reclassification/discharge. Separate Q/S ordinals, Q-oriented D schedules, newer1016/45 conservation floor, independent expected Q/S/D/E pins, KQ/KS separation, fullC/Q/H before S views, six retained terminal-input pins and eight final-join pins are appropriately scoped supplied contracts. Source paths support20 complete inner all-PASS streams (one followed by intentional refusal),36120records/36100primary calls, old-prefix sum1629914 per stream and3259828000 cumulative old-prefix bytes with at least equal hash-read volume. Verified two full-C checks per constructor/events call and four full-C/six context parses per valid join, excluding fixture construction. These are cumulative work lower bounds, not peak-memory/time/output/guard-exceedance proof. Conditional outer706events/361472bytes/705attempts remains separate from Q2568/1314816/2567. Nine raw ceilings5570560 bytes,347-byte conservative event line,622-byte E,1098-byte conservative terminal and1001-byte join widths fit unchanged per-input caps;33-file/18890752-byte report proposal stays report-only. No free source sidecars or staged cap bypass is adopted. All24 new design scenarios and32 prior scenarios remain unimplemented/unexecuted or otherwise unqualified as scoped;140 subjects remain HELD/NEW_TEST_UNQUALIFIED. No new method, implementation, runtime admission, original collector/dispatcher/observer/cutoff/capture/custody, complete recursive effects/allocation/finite closeout/timing/memory feasibility or scientific acceptance is established. Future implementation tests need separate held accounting/cohort decisions. Original guards, consumed failures, UNKNOWN custody, P-disabled, execution holds and science0/1020 remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "e07bbe41e6ce45cdb652277aab8dce28de26e7bb08215b061dae73b15e2bf1e2",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

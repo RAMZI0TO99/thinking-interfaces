@@ -1,0 +1,148 @@
+{
+  "schema": "cho51_cm1_design_readiness_v1",
+  "status": "DESIGN_ONLY_RUNTIME_REFUSED",
+  "design_only": true,
+  "implemented": false,
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "second_qd_admitted": false,
+  "obligations_discharged": 0,
+  "current_source_methods": 700,
+  "current_vfy_methods": 184,
+  "planned_runner_methods": 32,
+  "planned_full_methods": 732,
+  "planned_selected_methods": 216,
+  "resource_limits": {
+    "hard_seconds": 65,
+    "gpus_hidden": true,
+    "original_stop_and_ownership": true,
+    "child_absolute_seconds": 55,
+    "native_mode_seconds": 12,
+    "available_ram_gib": 4,
+    "freshness_ms": 250,
+    "cpu_and_library_threads": 1,
+    "suite_mode_seconds": 40,
+    "startup_seconds": 5,
+    "free_disk_gib": 20,
+    "fault_mode_seconds": 2,
+    "work_seconds": 60,
+    "whole_seconds": 90,
+    "job_mib": 768,
+    "qd_only_seconds": [
+      45,
+      53,
+      55
+    ],
+    "startup_sample_gap_min_ms": 200,
+    "process_mib": 512,
+    "cleanup_seconds": 5
+  },
+  "output_partition_caps": {
+    "proposed_single_native_fixture": {
+      "bytes": 4194304,
+      "files": 32,
+      "implemented": false,
+      "auxiliary_bytes": 901120,
+      "auxiliary_files": 16,
+      "inner_publisher_files": 16,
+      "inner_reserved_bytes": 3293184,
+      "typed_join": "Optional single COMPONENT_NATIVE fixture_publication: distinct once-only UUID, exact scenario,16 role/path/cap pairs matched to fixtures reservations",
+      "no_production_promotion": true
+    },
+    "fixtures": {
+      "bytes": 33554432,
+      "files": 160
+    },
+    "closeout": {
+      "roles": 16,
+      "reserved_bytes": 3293184,
+      "bytes": 4194304,
+      "files": 16
+    },
+    "global": {
+      "bytes": 67108864,
+      "files": 256
+    },
+    "supervisor": {
+      "bytes": 8388608,
+      "files": 40
+    },
+    "caller": {
+      "bytes": 20971520,
+      "files": 40
+    }
+  },
+  "model_fixture_reservations": 0,
+  "inner_native_fixture_publication": null,
+  "event_record_cap_bytes": 512,
+  "event_record_ceiling": 4096,
+  "event_report_cap_bytes": 2097152,
+  "event_count_is_proved": false,
+  "collection_cap_bytes": 1048576,
+  "raw_stdout_cap_bytes": 1048576,
+  "raw_stderr_cap_bytes": 1048576,
+  "raw_tool_return_slot_bytes": 1048576,
+  "external_return_slot_bytes": 65536,
+  "full_q_timing_feasibility": "NOT_ESTABLISHED",
+  "complete_component_capture_feasibility": "NOT_ESTABLISHED",
+  "proposed_success_status": "COMPONENT_MODEL_ONLY after all independently checked prerequisites and results",
+  "entrypoint_default": "REFUSED_UNADMITTED; no old launcher reuse",
+  "missing_before_admission": [
+    "Implemented/reviewed exact CM1 source and32method pins",
+    "Complete700+32 discovery binding and full method/subcase/effect table",
+    "Independent live guard/retention isolated from8 shared patch surfaces",
+    "Complete recursive project/bootstrap/stdlib/native runtime closure and original loaded-code witnesses",
+    "Qualified original ownership/termination/resource/control boundary",
+    "Source-derived report/event/trace-depth bounds",
+    "Complete raw assertion/startup/native/cancellation/tool-envelope capture and final escaped-slot proof",
+    "Accounted durable operation claim, complete parent attribution and real preclaim approval",
+    "Finite asynchronous publication/review lifecycle within original clocks",
+    "Source-derived operation budget plus final-verification/closure reserve",
+    "Fresh local admission, unused attempt, stop controls and separate actual review"
+  ],
+  "next": "Source-only CM1 registry/collection/event/refusal implementation and independent review; prepare effect/capture contracts without enabling dispatch",
+  "unchanged_obligations": [
+    "Full Q32/100/384 and all modes/controls",
+    "24HB/40SC/36diagnostic/26localqualification scenarios",
+    "117candidate/34controls",
+    "18793rows/13406occurrences/724queues/1782frontiers/1786loads/3972effects",
+    "Complete continuation >=31002 vs24000 INFEASIBLE_UNDER_CURRENT_GUARDS",
+    "Historical failures/UNKNOWN custody and QD17/16 refusal",
+    "G2 INCOMPLETE_REFUSED and science0/1020, freeze unsigned"
+  ],
+  "event_closed_fields": [
+    "schema",
+    "seq",
+    "op",
+    "roster",
+    "event",
+    "case",
+    "sub",
+    "fixture",
+    "kind",
+    "code",
+    "line",
+    "count",
+    "prefix"
+  ],
+  "trace_frame_ceiling": 128,
+  "failfast": true,
+  "static_event_overestimate_bytes": 372,
+  "static_collection_exact_identity_envelope_bytes": 343177,
+  "static_arithmetic_scope": "JSON data/encoding arithmetic only; event row overestimates simultaneous nullable fields, module bytes use signed64 maximum; no runtime collection/test/serializer qualification",
+  "conditional_report_inventory": {
+    "caller_files": 8,
+    "caller_bytes": 9764864,
+    "supervisor_files": 6,
+    "supervisor_bytes": 4653056,
+    "closeout_files": 16,
+    "closeout_bytes": 3293184,
+    "total_files": 30,
+    "total_bytes": 17711104,
+    "complete_runtime_allocation": false,
+    "native_bootstrap_compiler_and_other_effect_paths": "UNENUMERATED_REQUIRED_BEFORE_ADMISSION"
+  }
+}

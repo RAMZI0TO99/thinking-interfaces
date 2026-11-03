@@ -1,0 +1,763 @@
+{
+  "schema": "cho51_lq2_actual_review_v1",
+  "status": "ACCEPTED_LQ1_TESTED_SCOPE",
+  "reviewer": "l_actual_review",
+  "authors": [
+    "project_root",
+    "l_observer_impl",
+    "l_author_finish"
+  ],
+  "created_utc": "2026-10-31T06:40:10.9385337Z",
+  "source_review_sha256": "e588362a37076022bbc0d6662845e0f76aa43a6753773b4cb06f8ac403596887",
+  "operation_id": "611baed2-cdb9-4ac5-aa67-091058962ec3",
+  "tests_run": 356,
+  "timestamp_controls_passed": 8,
+  "native_fault_controls_passed": 2,
+  "actual_tool_exit_code": 0,
+  "new_operation_owned_lifecycle_closed": true,
+  "native_helper": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-helper_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+    "bytes": 21504,
+    "sha256": "4308e2243171f0670f5e25fa6594aab87b22b23f77e8d2f820d6c2489e5d8f84"
+  },
+  "native_builder_controls": {
+    "empty_job_closed": true,
+    "emitted_pe_verified": true,
+    "l_empty_job_closed": true,
+    "loaded_same_pe_bytes": true,
+    "l_invalid_process_count_refused": true,
+    "helper_identity": "7a7c35f67c35ae2f:6d565f00000002000000000000000000",
+    "original_output_identity_retained": true,
+    "l_two_process_limits_query_verified": true,
+    "p_limits_query_verified": true
+  },
+  "api_mapping": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/api-mapping_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 10293,
+    "sha256": "67a89be17c1bbfe070d3c1be9053b77b41b82fca318166a027615908493b10dd"
+  },
+  "api_mapping_native_identity": "7a7c35f67c35ae2f:70565f00000002000000000000000000",
+  "native_diagnostic": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-diagnostic_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 9970,
+    "sha256": "9529119edcd7bfe53e952e90420fde4b57230446d4a6233a8329f9daaa11781e"
+  },
+  "native_diagnostic_native_identity": "7a7c35f67c35ae2f:6f565f00000002000000000000000000",
+  "artifact_handoff": {
+    "original_writers_held_through_consumers": true,
+    "consumers_reaped": true,
+    "final_original_recheck": true,
+    "artifacts": [
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-helper_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+          "bytes": 21504,
+          "sha256": "4308e2243171f0670f5e25fa6594aab87b22b23f77e8d2f820d6c2489e5d8f84"
+        },
+        "writer_share": 1,
+        "role": "helper",
+        "native_identity": "7a7c35f67c35ae2f:6d565f00000002000000000000000000"
+      },
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-diagnostic_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+          "bytes": 9970,
+          "sha256": "9529119edcd7bfe53e952e90420fde4b57230446d4a6233a8329f9daaa11781e"
+        },
+        "writer_share": 1,
+        "role": "diagnostic",
+        "native_identity": "7a7c35f67c35ae2f:6f565f00000002000000000000000000"
+      },
+      {
+        "reference": {
+          "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/api-mapping_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+          "bytes": 10293,
+          "sha256": "67a89be17c1bbfe070d3c1be9053b77b41b82fca318166a027615908493b10dd"
+        },
+        "writer_share": 1,
+        "role": "mapping",
+        "native_identity": "7a7c35f67c35ae2f:70565f00000002000000000000000000"
+      }
+    ]
+  },
+  "sharing_controls": {
+    "capability_authentication": true,
+    "cooperative_read_protected": true,
+    "ordinary_reader_strict": true
+  },
+  "l_native_bundle": {
+    "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-bundle_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+    "bytes": 10318,
+    "sha256": "1c74b9f40495c83a6333068a0bd5401476b928c5dd62794b9b7a5643bfa562b3"
+  },
+  "l_native_bundle_identity": "7a7c35f67c35ae2f:7c565f00000002000000000000000000",
+  "l_native_cases": [
+    "transient",
+    "overflow",
+    "badreason",
+    "badutf16",
+    "pathbound"
+  ],
+  "findings": [],
+  "checks": [
+    "Independent actual-result reviewer l_actual_review differs from source reviewer l_source_review and all three implementation authors. Read-only text, JSON, file and SHA256 inspection only; no Python, project imports, AST, compiler, tests, native probes, workload execution or Git operation was performed by this reviewer.",
+    "Read applicable project policy, coordination, handoff, implementation supplement and LQ2 successor supplement. Inspected LP2 protocol.validate_chain core review/count/artifact/custody joins so this record uses the exact retained mechanism contract fields; no P record or future identity is invented.",
+    "Rehashed all171 source files,732 Python runtime files,169 managed compiler files,112 native toolchain files, one caller executable and3474 preservation-baseline predecessors: no byte/hash drift. Source review, operation freeze and admission source maps and ordered356-method rosters match. Source review predates admission and execution. Saved preflight reports zero preservation drift and resources above the adopted floors.",
+    "Independently compared every actual ordered test ID with the admitted roster:356 unique exact IDs; successful true; errors, failures, skipped, expected_failures and unexpected_successes all zero. Retained compact output reports Ran356 tests and OK. This establishes the exact method roster, not the entire40-scenario obligation matrix.",
+    "Eight saved UTC controls are true with ar-SA culture exercised. The two actual owned fault children refused extra frame bytes and session deadline respectively; both have owned Job termination, empty Job, process/thread/result-pipe closure and no cleanup errors. Frame_protocol_complete remains false for these intentional fault controls.",
+    "All three sharing controls are true: cooperative_read_protected, ordinary_reader_strict and capability_authentication. The three original caller artifact writer references/native identities join the actual consumer capabilities with read_share3 and writer_share1; caller preserves original writers through reaped consumers, then final original rechecks pass.",
+    "Managed builder receipt contains exactly the eight required true boolean controls plus helper_identity. Same-byte emitted PE and original identity join the diagnostic, mapping and external caller. P one-process and L two-process empty-Job controls and refusal of a third option passed; those empty-Job controls do not establish an executed L parent/child operation.",
+    "Diagnostic success has18 reference records,17 acquired and17 released references, all_owned_references_released true,14 contract rows and five true refusal controls. Target modules_loaded and loader_qualified remain false. Diagnostic/mapping/helper lengths, hashes and recorded native identities join all saved caller, supervisor, test and payload references.",
+    "Seven sequential native compiler/linker/disassembly children have exit0, atomic Job membership, queried limits, reaping, empty/closed Jobs, closed original process/thread/NUL and pipe handles, strict stdout/stderr EOF and joined/closed readers/watchdogs; errors, cleanup faults and stream overflow are absent. Native bundle operations exactly match original caller/external build operations. All112 tool inputs and generated objects/artifacts have final original retained verification reported true.",
+    "Read the actual generated5144-byte COFF disassembly of l1_notification at0x110 through0x2be. It has no call instruction, external branch or unknown relocation target. All branches remain within that function; relocations reference only active_callbacks, started, stopped, produced, events, observer_generation and fault_bits. Validated nonzero/even path length is capped at0x7ff bytes then halved, bounding validation/copy to1023 UTF16 units; produced is checked against0x1fff before indexing the8192-entry ring. Lock instructions are individual atomics, with no spin/wait loop.",
+    "Five fresh native-case reports join the strict retained bundle inputs and operation-specific dispatch. Production transient case recorded two load/unload events, reference_released and observer_shutdown true. Separate injection cases refused overflow, invalid reason, invalid UTF16 and path bound with expected fault bits1,2,4,4. All cases report strict_inputs_verified, observer shutdown and zero live references.",
+    "All eight supervised suite/native/fault children have atomic assignment, queried512/768 MiB limits, empty/closed owned Jobs, process/thread and result-pipe handles closed, reader finished, root exit after Job close and no cleanup or peak-sampling errors. Payload and receipt operation states match exactly. Original supervisor final return reports retained input/output closure true.",
+    "Actual tool record preserves exec/write_stdin session18923 chunks with final exit0 and the complete structured external return. The external caller reports accepted true, error null,51.0094698 seconds, original file and6077-byte17-record journal closure; final guard done/joined/closed/completion_wait_closed true, no guard fault and0.0464044-second shutdown. Original outer PID36328/FILETIME134379021305043357 is reaped with empty/closed Job, process/thread/NUL closed, both pipes EOF, all readers/writers/thread handles closed and readers/watchdog joined; no overflow/stream/cleanup fault.",
+    "Resource observations remain within admitted90/60/5 seconds,512/768 MiB Q process/Job caps and4 GiB RAM/20 GiB disk floors. Caller minimum RAM5171634176 and disk73851064320 bytes, peak private149532672; outer process/Job peaks53420032/98996224; native compiler maxima11931648/17977344; supervised children maxima53420032/59609088 bytes. Shared-origin compiler elapsed values and final external return stay under the original deadline.",
+    "Rehashed referenced saved evidence and generated artifacts, including bundle, observer/injection/target PE, three COFF objects and callback text. Original receipt and caller pending flags were preserved; later supervisor/external closure resolves only this successful operation. No result.json is required or inferred: retained attempt outputs are test-report.json, payload.json, receipt.json and operation control/case records."
+  ],
+  "limitations": [
+    "Acceptance covers only these exact171 source pins, runtime/compiler pins,356 executed methods, eight UTC controls, two actual transport/timeout controls, three sharing controls, five native cases and their owned lifecycle. The40 accepted design scenarios retain substantive coverage gaps; the full26-scenario matrix and original48-case matrix are not automatically completed.",
+    "Generated callback instruction review establishes its retained instruction/relocation properties in this build; it does not establish every loader-lock interleaving, concurrent startup/shutdown race or installed package ABI. The transient case is a benign exact owned fixture DLL. The other four cases use the separate injection observer and are successful refusal tests, not successful production observations.",
+    "Native PE machine/export/TLS grammar was exercised by the reviewed retained-input validator in the actual children. This reviewer used retained source/JSON/text/hash evidence and did not rerun a PE parser or perform new native identity/loader probes. The installed compiler loaded-image attestation remains explicitly outside the contract.",
+    "The native bundle original qualification_pending flag and supervisor/caller pending-review flags remain unchanged. This independent review accepts the executed scope; Root qualification/adoption, fresh P coverage/admission, full physical final verification and independent P actual review are separate records.",
+    "The seed execution plan remains incomplete. No complete L plan, L collection, selected extension ABI qualification,117 candidate cases,34 successor controls,V/C operation or scientific study was executed by this Q attempt. Scientific cells remain0/1020 and final freeze unsigned.",
+    "Earlier Q2 operation0a56af13-c1f2-47e7-b521-c9ad09123712 remains consumed with explicit caller/guard/journal closure UNPROVEN. This successful operation does not explain or close that startup failure. Earlier Q1 failure and its own scoped closure, historical bootstrap004 custody, diagnostics005 hold, unadmitted006 and earlier unknown cleanups remain unchanged.",
+    "No historical custody/restart/full dependency closure or later launch/scientific authority follows. This record does not admit a repeat or a later workload."
+  ],
+  "pin_checks": {
+    "sources": 171,
+    "runtime_files": 732,
+    "managed_compiler_files": 169,
+    "native_compiler_files": 112,
+    "caller_executable_files": 1,
+    "preserved_predecessor_files": 3474,
+    "byte_hash_drift": 0,
+    "ordered_method_roster_exact": true
+  },
+  "evidence": [
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/source-review.json",
+      "bytes": 32315,
+      "sha256": "e588362a37076022bbc0d6662845e0f76aa43a6753773b4cb06f8ac403596887"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/source-freeze_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 69187,
+      "sha256": "869aad64fc242fb20f151425af642016b6098fa898c4f4f5fee4234bf4f272a2"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/runtime-refresh_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 286322,
+      "sha256": "b096ed76bbc6aaa43bc3d71bf2ceccb4b0decc60eef193ca6a0ff36b62e71d48"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/preservation-baseline.json",
+      "bytes": 859548,
+      "sha256": "de56ec1193305796cf010583e1783f610745e644013be1de99c325922ee988b4"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/admission_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 356222,
+      "sha256": "c9fcfaadfee7bf10562f3be3d30cb098e048342bfe52caeb03ba4cb6a3da7a00"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/admission-scope_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 1336,
+      "sha256": "fa997f8128af644a983a54516b38b88ef28050652b9c2d46814e6d32ab97741f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/preflight_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 1029,
+      "sha256": "970b16209c9886e2c17044707406f37086fa3c74096a20ee8e9ae2030ac291f1"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/bootstrap_611baed2-cdb9-4ac5-aa67-091058962ec3.jsonl",
+      "bytes": 6077,
+      "sha256": "2da94a11493f14248fd196c3f732c1942706782a3e280ac0bff8e0f6c59481a1"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/claim_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 272,
+      "sha256": "fb0d391605f8605f551c63c93c7648df9ab0677c02b57ae2ad8ec57f4754e46f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/origin_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 766,
+      "sha256": "b14fff75fb31fb333d5e5e4c857a566d33d15127aaa924eaa6d8f7ca063446d0"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/timestamp-controls_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 950,
+      "sha256": "f46df8cdcf14ba64cb5d4788490ee49e3adfe827f1ec558bdbb6eae80fb2331f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-build_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 39421,
+      "sha256": "d95bcc06d83bb599e6d65be7c70f4717b61e5176c2b0544a4dc92684e5513fdb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-helper_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+      "bytes": 21504,
+      "sha256": "4308e2243171f0670f5e25fa6594aab87b22b23f77e8d2f820d6c2489e5d8f84"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/native-diagnostic_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 9970,
+      "sha256": "9529119edcd7bfe53e952e90420fde4b57230446d4a6233a8329f9daaa11781e"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/api-mapping_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 10293,
+      "sha256": "67a89be17c1bbfe070d3c1be9053b77b41b82fca318166a027615908493b10dd"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/caller-return_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 16496,
+      "sha256": "5f403979e1d9c871de6be5e75647a8a1cd87e2987a532bb516dd0d0045ad8d5d"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/tool-return_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 29111,
+      "sha256": "182e54cb5dc80cf55ef5f7d5513901d69e73bc5a0df2a70ee6f5d9cce83f516f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-bundle_611baed2-cdb9-4ac5-aa67-091058962ec3.json",
+      "bytes": 10318,
+      "sha256": "1c74b9f40495c83a6333068a0bd5401476b928c5dd62794b9b7a5643bfa562b3"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-observer-object_611baed2-cdb9-4ac5-aa67-091058962ec3.obj",
+      "bytes": 4251,
+      "sha256": "c4dfe4a57aece77f8bd76963d9b7be6834a88d33ef7f044ac37e0a70ba2ce2da"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-injection-object_611baed2-cdb9-4ac5-aa67-091058962ec3.obj",
+      "bytes": 4427,
+      "sha256": "4c9433eae6ee296611dadc613cdcdfa43e3e6c706e9b3e10c1d6b7a59e00d82e"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-target-object_611baed2-cdb9-4ac5-aa67-091058962ec3.obj",
+      "bytes": 630,
+      "sha256": "d33c0d96d0070bdb75e89c64f4cb6ed37e745efa54947522f713c34feeef679b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-observer_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+      "bytes": 4096,
+      "sha256": "36a6ca51429dbb00fd785b8d0cbeebdf51b442866f8c8090fec97c3d7594643f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-injection_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+      "bytes": 4096,
+      "sha256": "510ffc72346ca99725bd2e9a1e5a118b307c5840862cabcb9d32f3762c4451d7"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-target_611baed2-cdb9-4ac5-aa67-091058962ec3.dll",
+      "bytes": 2048,
+      "sha256": "fe90fe4d89586d580115a5580bd2411b1fdff9fbb189ae3a036e1461f3c08ab9"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-callback_611baed2-cdb9-4ac5-aa67-091058962ec3.txt",
+      "bytes": 5144,
+      "sha256": "b8e5b4fe9c15c8c176fbd0014a124d3c52c7907922a6818f05336a029102c956"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/claim.json",
+      "bytes": 261,
+      "sha256": "284d422e260cbfe11fb6c7efcbeea43116cce54b6a6fbf2711654ec9739440f8"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_badframe.json",
+      "bytes": 161,
+      "sha256": "02e1d113abe8458ab2f6c0b9f341132a0031d4f433e6679b53dcea4a12381776"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_native-badreason.json",
+      "bytes": 161,
+      "sha256": "8a081abf44a1b97e539afc23b598254fb015c4226691e8a6bd2540850a1dc179"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_native-badutf16.json",
+      "bytes": 161,
+      "sha256": "ae4e48f5c6304fb181e148b8b4678931a3481f1c7a79b666f5f2a01d5ce2712f"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_native-overflow.json",
+      "bytes": 161,
+      "sha256": "b21b5171323c9acb8f0940cd33169db9c2daec7f56b78c79195de8268e9bd6cb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_native-pathbound.json",
+      "bytes": 161,
+      "sha256": "6e7b17ef096b2b33476c9a2768b43d04bfcd7c11e70bdeacd6cf222e617ead36"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_native-transient.json",
+      "bytes": 161,
+      "sha256": "252c702abc963f5ea3f2cd4b918d1d7d076d741ee2fd1ec14a398f3f85c54bdf"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_stall.json",
+      "bytes": 161,
+      "sha256": "8dc7459b5927f339ba8588b79f347e7f3fbc6644285f20f7f2ab728f9bcf20c5"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/deadline_suite.json",
+      "bytes": 161,
+      "sha256": "8fe6b8081c0fcb22605799d214a80cf4ff71510563bf3b2dd8224417c77db405"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_badframe.json",
+      "bytes": 1199,
+      "sha256": "d34bd48211796102f49c203a53302968cf73d4abfbe7a90ba0cfe1e2754f7013"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_native-badreason.json",
+      "bytes": 1215,
+      "sha256": "564f473718bfd927e95bfe45fb3a572dfb50501f5f666655d8945a3509c5bdb7"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_native-badutf16.json",
+      "bytes": 1213,
+      "sha256": "3061209e9d233c0b3dde50e819836d0bd130e4cc324b6b4d3c24ae23e23a3b2c"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_native-overflow.json",
+      "bytes": 1213,
+      "sha256": "0d3a018f6ceb4b93906f0d99d4d12fea439a01a5310d2f020803ee024153ed80"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_native-pathbound.json",
+      "bytes": 1215,
+      "sha256": "17a193526b10ddf1d0ed16b3bae4af9e65e4de16a4c90c1d24ff2ac928ac5af5"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_native-transient.json",
+      "bytes": 1215,
+      "sha256": "f3562ea114a060841081a9e9489be08a9dde2d2e16f230bced097848e0e3c13d"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_stall.json",
+      "bytes": 1193,
+      "sha256": "07e59394ac4e61c2105747e3d52600f6b9c2178d713ef6ade045ed0300271e3b"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/dispatch_suite.json",
+      "bytes": 1193,
+      "sha256": "c00ffd185fa20f479b9ecc02799f3dd803bfac447ca3fed5f6edfabf75d83ae6"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/native-badreason.json",
+      "bytes": 244,
+      "sha256": "4454496363eb4d86c32e82a37e54cce5a77c743ed96aeff30c6e7228620be1f8"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/native-badutf16.json",
+      "bytes": 242,
+      "sha256": "24ecb406ec1a2144141344ebeb0bf7e42f4f6b120bcb0577e83f26c8e98972ee"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/native-overflow.json",
+      "bytes": 242,
+      "sha256": "3047f0dae81fce148bfad64906f19986703a2fc36fa54457b462bbab5a15c6e2"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/native-pathbound.json",
+      "bytes": 244,
+      "sha256": "2e271a348360a3fa72646e30fd661f51550a911a732febe5c6ec8d606bd974eb"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/native-transient.json",
+      "bytes": 247,
+      "sha256": "b80f35c28d18554bc9e2ae96a7bc411b85d15fad23a99088376ddebc4c6129f6"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/payload.json",
+      "bytes": 13996,
+      "sha256": "da7af2913a3dd43315abb361106179baae5713b4a8dc4cd44deb1851c8b04373"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/receipt.json",
+      "bytes": 10035,
+      "sha256": "d0bfc6f4a7cba36484d76ece5d0f70dc31c648a732261f204da2d3877bea00cc"
+    },
+    {
+      "path": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/attempts/611baed2-cdb9-4ac5-aa67-091058962ec3/test-report.json",
+      "bytes": 38380,
+      "sha256": "677fb5d32c5f3d141afe806860d226fc156b5b36fbe388afe6d0bc7e8fa53425"
+    }
+  ],
+  "native_compiler_operations": [
+    {
+      "purpose": "compile-observer",
+      "pid": 43748,
+      "creation_filetime": 134379021237691481,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 8.9990671,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 11931648,
+      "peak_job_bytes": 17813504
+    },
+    {
+      "purpose": "link-observer",
+      "pid": 37296,
+      "creation_filetime": 134379021249520352,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 9.7953829,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 8531968,
+      "peak_job_bytes": 14692352
+    },
+    {
+      "purpose": "inspect-callback",
+      "pid": 49200,
+      "creation_filetime": 134379021257078475,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 10.4435496,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 6418432,
+      "peak_job_bytes": 12582912
+    },
+    {
+      "purpose": "compile-injection",
+      "pid": 36608,
+      "creation_filetime": 134379021263587271,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 10.7769037,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 11841536,
+      "peak_job_bytes": 17977344
+    },
+    {
+      "purpose": "link-injection",
+      "pid": 33780,
+      "creation_filetime": 134379021266889993,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 11.107608,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 8462336,
+      "peak_job_bytes": 14331904
+    },
+    {
+      "purpose": "compile-target",
+      "pid": 44952,
+      "creation_filetime": 134379021270198379,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 11.4108285,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 10579968,
+      "peak_job_bytes": 16453632
+    },
+    {
+      "purpose": "link-target",
+      "pid": 32904,
+      "creation_filetime": 134379021273225459,
+      "exit_code": 0,
+      "elapsed_from_original_origin_seconds": 11.6339864,
+      "owned_lifecycle_closed": true,
+      "peak_process_bytes": 8384512,
+      "peak_job_bytes": 14553088
+    }
+  ],
+  "supervised_operations": [
+    {
+      "mode": "suite",
+      "pid": 21952,
+      "creation_filetime": 134379021458698156,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 56553472,
+        "peak_process_memory_bytes": 50393088,
+        "pid": 21952,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "native-transient",
+      "pid": 47172,
+      "creation_filetime": 134379021495512452,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 59609088,
+        "peak_process_memory_bytes": 53420032,
+        "pid": 47172,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "native-overflow",
+      "pid": 19032,
+      "creation_filetime": 134379021507120434,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 50978816,
+        "peak_process_memory_bytes": 44810240,
+        "pid": 19032,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "native-badreason",
+      "pid": 3768,
+      "creation_filetime": 134379021555266254,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 50933760,
+        "peak_process_memory_bytes": 44777472,
+        "pid": 3768,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "native-badutf16",
+      "pid": 20232,
+      "creation_filetime": 134379021567032185,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 51085312,
+        "peak_process_memory_bytes": 44924928,
+        "pid": 20232,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "native-pathbound",
+      "pid": 23212,
+      "creation_filetime": 134379021576619712,
+      "failure": null,
+      "result": {
+        "exit_code": 0,
+        "peak_job_memory_bytes": 51613696,
+        "peak_process_memory_bytes": 45436928,
+        "pid": 23212,
+        "reason": "normal"
+      },
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": true,
+      "owned_job_termination_called": false
+    },
+    {
+      "mode": "badframe",
+      "pid": 33732,
+      "creation_filetime": 134379021585190711,
+      "failure": "SupervisionError: result frame contains extra bytes",
+      "result": null,
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": false,
+      "owned_job_termination_called": true
+    },
+    {
+      "mode": "stall",
+      "pid": 19900,
+      "creation_filetime": 134379021592595412,
+      "failure": "SupervisionError: result frame session_deadline",
+      "result": null,
+      "owned_lifecycle_closed": true,
+      "frame_protocol_complete": false,
+      "owned_job_termination_called": true
+    }
+  ],
+  "native_case_results": [
+    {
+      "case": "transient",
+      "live_references": 0,
+      "result": {
+        "case": "transient",
+        "events": 2,
+        "observer_shutdown": true,
+        "reference_released": true,
+        "transient_events": 2
+      },
+      "schema": "cho51_lq_native_case_v1",
+      "scientific_admission": false,
+      "strict_inputs_verified": true
+    },
+    {
+      "case": "overflow",
+      "live_references": 0,
+      "result": {
+        "case": "overflow",
+        "expected_fault": 1,
+        "faults": 1,
+        "observer_shutdown": true,
+        "operation_refused": true
+      },
+      "schema": "cho51_lq_native_case_v1",
+      "scientific_admission": false,
+      "strict_inputs_verified": true
+    },
+    {
+      "case": "badreason",
+      "live_references": 0,
+      "result": {
+        "case": "badreason",
+        "expected_fault": 2,
+        "faults": 2,
+        "observer_shutdown": true,
+        "operation_refused": true
+      },
+      "schema": "cho51_lq_native_case_v1",
+      "scientific_admission": false,
+      "strict_inputs_verified": true
+    },
+    {
+      "case": "badutf16",
+      "live_references": 0,
+      "result": {
+        "case": "badutf16",
+        "expected_fault": 4,
+        "faults": 4,
+        "observer_shutdown": true,
+        "operation_refused": true
+      },
+      "schema": "cho51_lq_native_case_v1",
+      "scientific_admission": false,
+      "strict_inputs_verified": true
+    },
+    {
+      "case": "pathbound",
+      "live_references": 0,
+      "result": {
+        "case": "pathbound",
+        "expected_fault": 4,
+        "faults": 4,
+        "observer_shutdown": true,
+        "operation_refused": true
+      },
+      "schema": "cho51_lq_native_case_v1",
+      "scientific_admission": false,
+      "strict_inputs_verified": true
+    }
+  ],
+  "callback_review": {
+    "artifact": "runs/coordination/cho51_p3_loader_implementation_20261031_q2/l-callback_611baed2-cdb9-4ac5-aa67-091058962ec3.txt",
+    "sha256": "b8e5b4fe9c15c8c176fbd0014a124d3c52c7907922a6818f05336a029102c956",
+    "named_body": "l1_notification",
+    "instruction_start": "0x110",
+    "instruction_return": "0x2be",
+    "external_calls": 0,
+    "unknown_relocation_targets": 0,
+    "maximum_path_utf16_units": 1023,
+    "ring_entries": 8192,
+    "scope": "Actual generated instructions and relocations only; finite no-call callback body, not all runtime scheduling."
+  },
+  "final_closure": {
+    "external_elapsed_seconds": 51.0094698,
+    "caller_original_file_handles_closed": true,
+    "bootstrap_journal_closed": true,
+    "bootstrap_guard": {
+      "stop_requested": true,
+      "samples": 433,
+      "completion_wait_closed": true,
+      "first_sample": {
+        "utc": "2026-10-31T06:35:18.6559726Z",
+        "qpc": 2319400011041,
+        "available_ram_bytes": 5761982464,
+        "free_disk_bytes": 73851383808,
+        "elapsed_seconds": 2.756325,
+        "caller_private_bytes": 67411968,
+        "sensor": "local_PDH_Available_Bytes_raw_NumberOfItems64"
+      },
+      "stage": "active",
+      "shutdown_elapsed_seconds": 0.0464044,
+      "done": true,
+      "closed": true,
+      "last_qpc": 2319881373927,
+      "peak_caller_private": 149532672,
+      "error": null,
+      "minimum_ram": 5171634176,
+      "ready": true,
+      "second_sample": {
+        "utc": "2026-10-31T06:35:18.9357496Z",
+        "qpc": 2319402808956,
+        "available_ram_bytes": 5760425984,
+        "free_disk_bytes": 73851383808,
+        "elapsed_seconds": 3.0361165,
+        "caller_private_bytes": 67354624,
+        "sensor": "local_PDH_Available_Bytes_raw_NumberOfItems64"
+      },
+      "joined": true,
+      "minimum_disk": 73851064320
+    },
+    "outer_custody": {
+      "owned_nul_closed": true,
+      "stderr_reader_joined": true,
+      "peak_process": 53420032,
+      "samples": 3492,
+      "reaped": true,
+      "stdout_writer_closed": true,
+      "resumed": true,
+      "stderr_eof": true,
+      "atomic_membership": true,
+      "job_closed": true,
+      "stdout_eof": true,
+      "cleanup_error": null,
+      "limits_verified": true,
+      "stderr_overflow": false,
+      "creation_filetime": 134379021305043357,
+      "peak_caller_private": 149532672,
+      "minimum_disk": 73851064320,
+      "stdout_cancel_attempted": false,
+      "pid": 36328,
+      "stdout_reader_thread_handle_closed": true,
+      "thread_closed": true,
+      "stdout_reader_joined": true,
+      "process_closed": true,
+      "creation_attempted": true,
+      "stderr_cancel_attempted": false,
+      "stdout_observed_bytes": 2433,
+      "stderr_observed_bytes": 0,
+      "stdout_overflow": false,
+      "stdout_error": null,
+      "job_empty": true,
+      "stderr_error": null,
+      "stderr_writer_closed": true,
+      "peak_job": 98996224,
+      "stderr_retained_bytes": 0,
+      "minimum_ram": 5203795968,
+      "stderr_reader_closed": true,
+      "watchdog_joined": true,
+      "stdout_reader_closed": true,
+      "stderr_reader_thread_handle_closed": true,
+      "stdout_retained_bytes": 2433,
+      "fault": null
+    },
+    "supervisor_handle_closure": {
+      "outputs": true,
+      "inputs": true,
+      "output_state": "closed"
+    },
+    "l_native_final_original_recheck": true,
+    "native_tool_inputs": 112
+  },
+  "full_40_scenario_matrix_completed": false,
+  "full_26_scenario_matrix_completed": false,
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "boundary_qualified": false,
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

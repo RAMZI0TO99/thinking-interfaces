@@ -1,0 +1,19 @@
+{
+  "schema": "cho51_cm5_implementation_source_review_v1",
+  "status": "CHANGES_REQUESTED_SOURCE_ONLY",
+  "reviewer": "cm4_design_review_sol",
+  "publisher": "project_root",
+  "candidate": {
+    "bytes": 73926,
+    "sha256": "ff0c9890219d46de205f2bdce9ccba08741ef2a41b3b1a3f1a335c23d4a9b728"
+  },
+  "findings": [
+    "CM5-S01",
+    "CM5-S02"
+  ],
+  "review_text": "CHANGES_REQUESTED_SOURCE_ONLY. Candidate candidate-v1.json:73926 bytes, SHA256ff0c9890219d46de205f2bdce9ccba08741ef2a41b3b1a3f1a335c23d4a9b728. Independently verified387 source pins, nine new-file pins, four external reference-only pins and all9436 preservation files without byte/hash mismatch; preservation-baseline SHA256702d5fbc05de9ffe151058b672301478d422e17fd5834f65bd7c993e9bbb1d21. Reviewed all six CM5 package files, all40 test bodies, implementation contract, roster and source/scenario index against accepted CM5 design and frozen CM4 grammar. Findings=[{id:CM5-S01,priority:P2,file:tools/local_validation/cm5/producer.py,line:89,issue:_nested bypasses apply's footer-entry accounting. FINISH with REENTER_POST commits the footer then admits a nested represented entry without incrementing post_footer_attempts; the resulting terminal incorrectly reports zero late attempts.,required_change:Apply the same footer-on-entry rule to every represented nested entry, preserving first-observed refusal, settlement and busy ownership; add a FINISH plus REENTER_POST test checking exact attempts/settled/first-refusal/post-footer counters and independent terminal parsing.},{id:CM5-S02,priority:P2,file:tools/local_validation/cm5/producer.py,line:138,issue:Secondary refusal-helper failure is recognized only when refused is false, both here and in active seal handling. With a preexisting sticky refusal, an unexpected Refusal from the helper can escape while accounting_complete remains true and a later seal can publish a completed terminal. The existing latch does not prove the new refusal update completed.,required_change:Distinguish a successfully completed intended refusal from secondary helper failure independently of the prior refused latch. Mark incomplete and suppress completed terminal on unexpected refusal-report failure, including failure after partial latch mutation; add preexisting-sticky apply and active-seal failure examples.}]. Other static checks support exact primitive/trace/table validation, CM4 lifecycle and closed-subcase mapping, immutable prepared output/lifecycle replacement, ordinary overflow/settlement, fixed target versus expanded source distinction and immutable false-authority snapshots. Independently checked360 indexed method start lines/source pins,74 declaration and21 import source rows,40 textual test methods with zero subTest contexts and ordered876/360 roster digests. Current census876/38/360 retains516 exclusions; producer remains frozen836/36/320. Full digestf6a3081e3becb650c5485cd70121a644ebdcebde278499fe85a385764b317739; selection digest321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08. Actual conditional2368events/1212416bytes/2367attempts remains distinct from hypothetical expanded2568/1314816/2567. All32 scenarios remain unqualified;14 model source examples,14 unimplemented original boundaries and four accounting/partial examples do not qualify original effects. No executable syntax/test success, runtime admission, original dispatcher/observer/cutoff/capture/custody or complete recursive failure/allocation/timing/memory feasibility is established. All original guards, P-disabled and execution/science holds remain. Inspection used file/text/JSON/hash/link/arithmetic only; no writes, Python/import/project parser/AST/compiler/native/tests/Git/runtime were performed. Candidate remains frozen pending exact review archival.",
+  "review_text_sha256": "aba7cfdd9b74ad512bb5641e4f8ce37b1ea3b8495e0a35e6cd6de4e12c687603",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

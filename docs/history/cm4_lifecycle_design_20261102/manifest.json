@@ -1,0 +1,53 @@
+{
+  "schema": "cho51_cm4_design_archive_v1",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "43308879b73bcfdb59d8803a693f9c77051db4b1558b3ad0587586a15bda2945",
+      "bytes": 7847
+    },
+    "HANDOFF.md": {
+      "sha256": "3fd2cbaac94907dd87e0e18942d804859afddad9e72a696e917ce73c3c8d39cd",
+      "bytes": 20149
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "c402429fad5f9089e246d99c894db48b45fbd10197ab79332114b8e056678c66",
+      "bytes": 7432
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "54078ee46fbb0194aa43bed734835869ce0fb82692ad6f7f3231f411636e4697",
+      "bytes": 7847
+    },
+    "PHASE2_START_HERE.md": {
+      "sha256": "64446d21fc0228a364b0581fc916939938a31bb02000b59056e9e271e0551ac6",
+      "bytes": 7269
+    },
+    "README.md": {
+      "sha256": "56d2c58063fa3599ecf74d87d1d995421a9f711cefdbc58172951b03e2e464bc",
+      "bytes": 8260
+    },
+    "WINDOWS_SETUP.md": {
+      "sha256": "bfa98584f936ca6a9a76fc5eea8743d72c3f7203ebd1afccf85ae4b378deacef",
+      "bytes": 11865
+    },
+    "docs/phase2/README.md": {
+      "sha256": "429aeb663a5d03372902ad04998bdcf3f73520b33a77f1b6de29afa6ad0a4aec",
+      "bytes": 13270
+    },
+    "docs/where are we/README.md": {
+      "sha256": "22d3a064450aef84177254320d7a25d0cc13766b1cdb1a5534a118622b0a29e6",
+      "bytes": 13338
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "sha256": "549612d26204d5558e86cc1030efa0a855747602c10e63c31687cf206d2c239f",
+      "bytes": 26704
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "sha256": "c5a674d266dfba0c5cc5c25db4d5e9483d614095f8cc89a08c1a2e2160b3660e",
+      "bytes": 32679
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "sha256": "3f187dd709ff45f1237a0ab18f68a214b6ebb4c3610d0c3391f10d15ef0c2082",
+      "bytes": 47368
+    }
+  }
+}

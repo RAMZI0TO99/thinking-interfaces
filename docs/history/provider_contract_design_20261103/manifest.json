@@ -1,0 +1,56 @@
+{
+  "schema": "cho51_pc_document_archive_v1",
+  "publisher": "project_root",
+  "files": {
+    "docs/history/provider_contract_design_20261103/AGENTS.md": {
+      "bytes": 7654,
+      "sha256": "06fbe353560e4e8d70161ad2bb5665f5fb08363360d18c3ae0274bfc36f834e1"
+    },
+    "docs/history/provider_contract_design_20261103/HANDOFF.md": {
+      "bytes": 22989,
+      "sha256": "c3ada78f77bbdb527c731e5f6a413a4b761c4536eacde86cec906c0b23ca0f0a"
+    },
+    "docs/history/provider_contract_design_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7239,
+      "sha256": "50a8b288c37219db0bd78cadabf6184e1f2ae4fc9dfb52545469f54d09817df5"
+    },
+    "docs/history/provider_contract_design_20261103/CONTINUE_HERE.md": {
+      "bytes": 7735,
+      "sha256": "5869e3bc22791cd3bed618a8ee000191c122dc7e50851f2f029f3e680c4b9572"
+    },
+    "docs/history/provider_contract_design_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7076,
+      "sha256": "4321939543da3ebfa00179ee1c445246bfa8382bd90c65f2d138b7766ed8add7"
+    },
+    "docs/history/provider_contract_design_20261103/README.md": {
+      "bytes": 8067,
+      "sha256": "c5415e4f0f0f35588cc917c2e843c1c1ef802c4f1a9eb9227f4f7ac34fabfbfa"
+    },
+    "docs/history/provider_contract_design_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11672,
+      "sha256": "6138e15cefb39fb08f4204a1e2975a7b7e855ded46b9847ac28463490fdc9fcc"
+    },
+    "docs/history/provider_contract_design_20261103/docs/phase2/README.md": {
+      "bytes": 15868,
+      "sha256": "d0fe44c7b4e6cf2cc8bad01d366af38e19a56dab7d07faa881b880d848c61649"
+    },
+    "docs/history/provider_contract_design_20261103/docs/where are we/README.md": {
+      "bytes": 13145,
+      "sha256": "1b3f8cb07afddf03c4224aa6e290fc82b149b69b5ae9f90f929130ffe1037a2d"
+    },
+    "docs/history/provider_contract_design_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 29340,
+      "sha256": "c67fb4b8421d81cc38e707344c514e8e614eede8991a79e4cb10b0685448ce21"
+    },
+    "docs/history/provider_contract_design_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 35339,
+      "sha256": "1d9bc35c912c523832dcdf7e977c7f9aaf729aa2651aa4759f5e0f2c30f53de2"
+    },
+    "docs/history/provider_contract_design_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 57167,
+      "sha256": "3152aff8c2b43b50c0e2763ae891bc5dab398eed863918c664b24ba17b09fa07"
+    }
+  },
+  "archive_count": 12,
+  "scope": "Exact preceding active pages before provider-contract design updates"
+}

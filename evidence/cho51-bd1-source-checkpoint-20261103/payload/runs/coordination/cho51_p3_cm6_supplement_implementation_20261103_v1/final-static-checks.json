@@ -1,0 +1,228 @@
+{
+  "schema": "cho51_cm6s_implementation_static_v1",
+  "status": "STATIC_FILE_TEXT_JSON_HASH_LINK_ARITHMETIC_ONLY",
+  "publisher": "project_root",
+  "preservation": {
+    "mismatches": 0,
+    "files": 9613,
+    "fresh_full_rehash": true,
+    "baseline": {
+      "bytes": 2280702,
+      "sha256": "faf4d57579d98ecf5a729c30a9f9ccb3de9324b92c2c958278e860ef0f078360"
+    }
+  },
+  "candidate_pin": {
+    "bytes": 86587,
+    "sha256": "4fdb9e6fe41596fac3558f0af8c69629fde2eb57e18f35aa818c58f94acf7874"
+  },
+  "adoption_pin": {
+    "bytes": 3047,
+    "sha256": "4cfc823ec407b1a6eaa44927c93be6cb96886e67fb4a761e9f0ec4fd88314462"
+  },
+  "source_pins_checked": 452,
+  "new_file_pins_checked": 19,
+  "external_reference_only_pins_checked": 4,
+  "identity": {
+    "new_tests": 46,
+    "q": 360,
+    "modules": 49,
+    "all45_prior_module_pins": true,
+    "full": 1062,
+    "q_s_overlap": 0,
+    "new_modules": 4,
+    "held": 702,
+    "baseline_held": 516,
+    "new_unqualified": 186,
+    "s": 140
+  },
+  "body_rows": 546,
+  "inherited_exact_body_rows": 500,
+  "new_declarations": 140,
+  "new_direct_imports": 73,
+  "qualified_scenarios": 0,
+  "resolved_findings": [
+    "CM6S-S01"
+  ],
+  "arithmetic": {
+    "s_events": 706,
+    "timing_peak_memory_original_feasibility": "NOT_ESTABLISHED",
+    "s_bytes": 361472,
+    "cumulative_old_prefix_byte_lower_bound": 3259828000,
+    "s_attempts": 705,
+    "nine_raw_ceilings": 5570560,
+    "inner_q_stream_minimum": 20
+  },
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7552,
+      "sha256": "ec0fbd5a6b0a02698ad3ec9287662f2f66e44341b721e1f6633caac26706e2a5"
+    },
+    "HANDOFF.md": {
+      "bytes": 22520,
+      "sha256": "d3a30bceab9aaaa60447c87fba5eb0bf58878184e35874bc001141f3074646e3"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7137,
+      "sha256": "e868ad063cb1164eccb5ac3b44701651a386e3fb02b17c76af6203c61e8ba55e"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7633,
+      "sha256": "33b7811bc304bd5bacb958592f0f277b7189ae2ced7b29eb97bd7aceb09ef11d"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6974,
+      "sha256": "434114ef6910c380b0af97a65cb86d2a6cb89fdf6adff9a4bb1ef6c79bdcb9e1"
+    },
+    "README.md": {
+      "bytes": 7965,
+      "sha256": "fbdf19a3e7fa24e86c90833b8afe6a3007a85fe5a85710da6180068ae3cee96d"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11570,
+      "sha256": "7a67ece0325c11a96ab834440631324a5d3f42689a18395d30ea95b1eb3905c4"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 15422,
+      "sha256": "0301e776b8d7394026f15fcff79907fe800da158d3fb36d459732d9816db3a27"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13043,
+      "sha256": "34a5796cdb660cd5f1564d698bd4b32699b207a67290314041ae268113d61d3e"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28871,
+      "sha256": "751404826563353aa2ef76a18c8f1d072b43bd86fecf6cef43fc32c34f328140"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34893,
+      "sha256": "e2f196f073b30c06f0cb16fdc429fe66039a0f0fa59bfd71cbb448c09ee3ef68"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 56323,
+      "sha256": "6de34208798c93ab0e2c82fbc032dcf5ca12b15edee8b217da0f1592408db4d0"
+    },
+    "docs/phase2/cho51_p3_cm6_supplement_implementation_20261103.md": {
+      "bytes": 4897,
+      "sha256": "3448d96571cf2156ef23300cf024f59b71c75b591ea8717aab029863974c1503"
+    },
+    "docs/phase2/cho51_p3_cm6_supplement_contract_20261103.md": {
+      "bytes": 7342,
+      "sha256": "253e0c5430e091d4c5fc5c319c82a8be4058cfbea9eb6c69aab5f9ca8bc60f72"
+    },
+    "tools/local_validation/cm6s/README.md": {
+      "bytes": 463,
+      "sha256": "1cbf269d23159a909d4278d1c17508c0d48c40963d68654d7878348b5e8e5dc3"
+    }
+  },
+  "archive_pins": {
+    "docs/history/cm6_supplement_implementation_20261103/AGENTS.md": {
+      "bytes": 7459,
+      "sha256": "5dd6cde08308383bbe52e28f3ad60a5563ffae011d27ea23bd35dbe719d8c6d8"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/HANDOFF.md": {
+      "bytes": 22119,
+      "sha256": "ae74470c96c6ddeb84db20204b6fac60a216ed8270d1246089726f7d23aeafb5"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7044,
+      "sha256": "c8dc2a04c7c7591bb9d0fe50123d6816effef49fb6f4de800714bb0033e628d9"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/CONTINUE_HERE.md": {
+      "bytes": 7540,
+      "sha256": "d4d5110c1172f6240956f7fb6247ffabc501368b2f2b2a0961190737374f72af"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/PHASE2_START_HERE.md": {
+      "bytes": 6881,
+      "sha256": "df3144d7da3fe7b42d08381defa8821c717402810b1807b18e12880f4d99b7e2"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/README.md": {
+      "bytes": 7872,
+      "sha256": "2822b257a893cca33aa789663cf66a084e11c868ae7d4447361cc24d1d0df862"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11477,
+      "sha256": "fc96617fd391c938efff10b381a8e62e61e987f83c464990b70d10b922991080"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/docs/phase2/README.md": {
+      "bytes": 15032,
+      "sha256": "ba8074df9fdb55ab6f1db921a01713c026bce7b51a7c331837269bba39bd60d5"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/docs/where are we/README.md": {
+      "bytes": 12950,
+      "sha256": "032bdd04a1a0b3d5d0d7fc99d9af22e88e492c350f91119242b287b2c73cbf9c"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28470,
+      "sha256": "d10f39c7c15429fd12105fd311ce4194026ba04438ce14dad0e86634bff19146"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34503,
+      "sha256": "f4fee4d620892b139beccaf002c797e74bc8156ab93658b4f0e6e90bd14bf09c"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 55462,
+      "sha256": "f46e876973422fc9560ea1c36f39543746caa0f8bda1c9968b745e9d161d27f9"
+    },
+    "docs/history/cm6_supplement_implementation_20261103/manifest.json": {
+      "bytes": 1961,
+      "sha256": "2b4ca1de313e2aae705e01fae370d1ff42f0908b3699442615d471fd6b7b3a47"
+    }
+  },
+  "draft_pins": {
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/draft-v1/manifest.json": {
+      "bytes": 1363,
+      "sha256": "7fa4fa3adb2e5397e060adcdacd37b8900023608541e55809d7642056aad9a44"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/draft-v1/docs/phase2/cho51_p3_cm6_supplement_debt_20261103.json": {
+      "bytes": 536437,
+      "sha256": "9d65799a1a7563b660c041c8a526738bd2d54fb69686f5a8fa254cd631a72a72"
+    }
+  },
+  "local_links_checked": 550,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/closeout-review.json",
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/final-static-checks.json"
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/candidate-v1.json": {
+      "bytes": 86117,
+      "sha256": "70df33d788669f738bdcbbb1ae3fa807fe455a645ce7fdd23780f4bc41ea87b0"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/candidate-v2.json": {
+      "bytes": 86587,
+      "sha256": "4fdb9e6fe41596fac3558f0af8c69629fde2eb57e18f35aa818c58f94acf7874"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/coordination.json": {
+      "bytes": 1903,
+      "sha256": "b9889647a309dfc88a720e8c3f034e947f62a66e2946f2c9e3737dca419f4949"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/preservation-baseline.json": {
+      "bytes": 2280702,
+      "sha256": "faf4d57579d98ecf5a729c30a9f9ccb3de9324b92c2c958278e860ef0f078360"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/root-source-acceptance.json": {
+      "bytes": 3047,
+      "sha256": "4cfc823ec407b1a6eaa44927c93be6cb96886e67fb4a761e9f0ec4fd88314462"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/source-review-v1.json": {
+      "bytes": 4450,
+      "sha256": "f51d2775f19a97eefe4ff45532822a998981bbd951b239d33cefdc5236344d4d"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_implementation_20261103_v1/source-review-v2.json": {
+      "bytes": 3533,
+      "sha256": "4d51d75305a14bba28b6e042db73e1b0cf8d7baa07e77d8a9209b427e310932a"
+    }
+  },
+  "phase_root_records_after_this": 8,
+  "phase_root_records_after_closeout": 9,
+  "draft_files": 2,
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "tests_executed": 0,
+  "syntax_checked": false,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "prior_incomplete_read_only_scan": "Owned session42126 closed with Ctrl+C/exit1 before this fresh complete audit; supplies no evidence and is not a project runtime attempt",
+  "limits": "Static checks only; no runtime, authentication, admission, debt discharge or scientific acceptance"
+}

@@ -1,0 +1,109 @@
+{
+  "runtime_admitted": false,
+  "predecessor_files_verified": 9169,
+  "documentation_pins": {
+    "AGENTS.md": {
+      "bytes": 7691,
+      "sha256": "fa6fe24c571e47db29ddec847afbf5d37ba15692d5014d76d4cdfe486021de12"
+    },
+    "HANDOFF.md": {
+      "bytes": 18981,
+      "sha256": "58f830ac2e9689709e7f8a8b90d724b078298dcd14a4a263bafaef2af35c8e71"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7276,
+      "sha256": "f55a7386e1ce0ed35835c9a3af215957d46d89d046be655adcbba77da7baf070"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7637,
+      "sha256": "44be776dfacb4eae55e2f6e9cd5a1148e43ef7adb4c13b6f0611772620d3cfc1"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7113,
+      "sha256": "a48507cb69e9644cccde88b13ff0c26329850bdf2d118c3e3ca2cae911ce645e"
+    },
+    "README.md": {
+      "bytes": 8104,
+      "sha256": "47518d33473df23e2e72f00e742e7997169aee7ceac27e6386f9f40171632857"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11709,
+      "sha256": "8c370cefd49ac738c9796d5d114e0b6078abd54364130ae2ad5ef0b3f9bc8c26"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 12694,
+      "sha256": "8d78611d6e8fd380265bc4c69b92dff90cb5825eb26de709ea9f24d5d881c1cd"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13182,
+      "sha256": "23db03eba23ef0a1790ea5f29262a7261a354a76b97d216cc2e64803e0b9a56f"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 25590,
+      "sha256": "f308d2fbdc6a44fb7a794b23d090173ca4673f011fa0ef17ec37fcbe6abbdcd8"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 32049,
+      "sha256": "0437bf4f4ab54cc51bfa1fc9f845ceaa689ec7539fec3a850555ae47ec2af2c8"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 44219,
+      "sha256": "3e463bea1fad1b7ab3722996e380a715fbf09e5109376a1016d8a3b09f54cb1f"
+    },
+    "docs/phase2/cho51_p3_cm1_implementation_20261102.md": {
+      "bytes": 3918,
+      "sha256": "bcc63b7b3416353aa8ad7477e5d4e3d8cd12a2b0635ccad8d3d1bd2adab0bac1"
+    },
+    "docs/phase2/cho51_p3_cm1_implementation_contract_20261102.md": {
+      "bytes": 5454,
+      "sha256": "0f491fe1fabfe9aade602c5f222c829cd2f93d0ddb0711a8bd7fe6634cec983d"
+    },
+    "tools/local_validation/cm1/README.md": {
+      "bytes": 2101,
+      "sha256": "7bee7e676312ccf6236a067c104530597b65ff8deff0deddec44a1ea39861de6"
+    }
+  },
+  "publisher": "project_root",
+  "full_source_identity_count": 732,
+  "existing_local_links_verified": 517,
+  "source_inventory_direct_imports": 22,
+  "selected_identity_count": 216,
+  "checks": "File/text/JSON/hash/link inspection only; no execution/import/parser/AST/compiler/native/tests/Git",
+  "review_record_pins": {
+    "coordination.json": {
+      "bytes": 1785,
+      "sha256": "1f09fd8898649266631baedfd4dc7c730b08c55e70b7f1ace66edb1d79ba78da"
+    },
+    "preservation-baseline.json": {
+      "bytes": 2197018,
+      "sha256": "405c0de0210227f717ea252414fc55ec0b1d292db09aadb98f0553f5fd20ed02"
+    },
+    "candidate-v1.json": {
+      "bytes": 55758,
+      "sha256": "82569f9af856ea5eaa06d8ae8de2af319e4a734db3e77fed5e0fcad43985f013"
+    },
+    "source-review-v1.json": {
+      "bytes": 4821,
+      "sha256": "aa419bbd6152504fa319bc6b7d4b96a6655a988a5cab05e119c532af4778f99e"
+    },
+    "root-source-acceptance.json": {
+      "bytes": 2118,
+      "sha256": "27c97118ad0baeb16f834ebff22f6d4cd0ea6e4e9ba6f26fd441df87ba8ff3a9"
+    }
+  },
+  "source_inventory_methods": 216,
+  "archive_files_verified": 12,
+  "source_inventory_declarations": 82,
+  "complete_effect_closure": "NOT_ESTABLISHED",
+  "candidate_files_verified": 307,
+  "predeclared_forward_links": [
+    "runs/coordination/cho51_p3_cm1_implementation_20261102_v1/final-static-checks.json",
+    "runs/coordination/cho51_p3_cm1_implementation_20261102_v1/closeout-review.json"
+  ],
+  "source_acceptance": "ACCEPTED_SOURCE_ONLY",
+  "schema": "cho51_cm1_final_static_checks_v1",
+  "p_enabled": false,
+  "tests_executed": 0,
+  "limitations": "No syntax execution, import, test discovery or runtime verification. Final closeout review remains separately predeclared.",
+  "new_declared_methods": 32
+}

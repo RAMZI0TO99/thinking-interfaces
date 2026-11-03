@@ -1,0 +1,109 @@
+{
+  "schema": "cho51_cm1_root_design_acceptance_v1",
+  "created_utc": "2026-11-02T12:53:43.6325068Z",
+  "author": "project_root",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/candidate-v2.json",
+    "bytes": 3144,
+    "sha256": "62fef6cf298558058172f11cbc1177c4e430f86d75fc94c4ae850a48110468c2"
+  },
+  "review": {
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/design-review-v2.json",
+    "bytes": 4324,
+    "sha256": "55892dc99bfd497dea7beb34c90405baf414501a95abc3ff13d2785c4c02d343"
+  },
+  "earlier_candidate": {
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/candidate-v1.json",
+    "bytes": 2363,
+    "sha256": "e53cc09a015b2b6b95e02122e662b4e5f3285e8801f84c5ce3150ad1201e03a2"
+  },
+  "earlier_review": {
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/design-review-v1.json",
+    "bytes": 4743,
+    "sha256": "9c82a1bad4b5a3cc87f996becd0c8e9c2c60876cb42b91a1ccc52c69bfdec473"
+  },
+  "preserved_draft_manifest": {
+    "path": "runs/coordination/cho51_p3_component_model_design_20261102_v1/draft-v1/manifest.json",
+    "bytes": 1182,
+    "sha256": "f76fa0d8dd66dac476969e204a6d15d734c79a2506024b23d041d14a9ce3a831"
+  },
+  "design_files": {
+    "docs/phase2/cho51_p3_component_model_v1/capture-accounting.md": {
+      "bytes": 15606,
+      "sha256": "d2f73243fd862318fe66b1f530983137ce00c5a8026702b9f4b175fe674dd480"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/collection.md": {
+      "bytes": 7806,
+      "sha256": "d4dd29b3fcd26fdce64ec0c2f7a30bfaa2193253a42e31942feebb15ce7de35b"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/qualification.md": {
+      "bytes": 6991,
+      "sha256": "a12a8f5c09fd52f01a9a614793f4add00440f90f8860b9732768e3dfe49c41c5"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/readiness.json": {
+      "bytes": 6117,
+      "sha256": "821628d891f4b63ecf082060a843bd2f665e9ede9c7c094ad6f8620dbbc1f68e"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/README.md": {
+      "bytes": 2750,
+      "sha256": "ec9318ed0a97e589c0acc7d52dd7a9e41ffc13be2cbec53013f268c4ddd90c51"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/roster.json": {
+      "bytes": 284316,
+      "sha256": "6f4a34af4289e60eb9584ba5775b6af408d4496a260b01bbf0dea12bcc3c74b2"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/runner.md": {
+      "bytes": 6279,
+      "sha256": "77abc13d763e4524e8f9e52eb7826a8d1fc631cf434fd13e17789b208669e540"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/source-map.json": {
+      "bytes": 54281,
+      "sha256": "ab4975ff5e66912d033a6a9be1ff430ad1f366783845f649c2decbee4a0c548d"
+    }
+  },
+  "peer_confirmations": [
+    {
+      "message_utf8_sha256": "94d4d851b56ed74c84ba2de16aa90a74aa261ae8586334dc737fefd39937dba1",
+      "message": "Confirmed `design-review-v1.json`: 4,743 bytes, SHA256 `9c82a1bad4b5a3cc87f996becd0c8e9c2c60876cb42b91a1ccc52c69bfdec473`; review-text SHA256 `38d757e9e458b159d6953980506091052a4566e06b276f9297c2be58034ac818`.\n\nThe saved text matches my message, candidate pin, `CHANGES_REQUIRED` status, CM-D1 finding, authorship and limits. Root transcription is disclosed. No runtime or admission acceptance is implied.\n\nReview ownership released for revision. No files or sidecars written.",
+      "revision": 1,
+      "reviewer": "qd_source_review"
+    },
+    {
+      "message_utf8_sha256": "3966019a909855dc352b5a4540cf957bbe56ac84ff9cda8b5263ae1474cfe433",
+      "message": "Confirmed `design-review-v2.json`: 4,324 bytes, SHA256 `55892dc99bfd497dea7beb34c90405baf414501a95abc3ff13d2785c4c02d343`; review-text SHA256 `3a53a36b9e98c4a01e4f60771bc42f6f78fd7705cd0df593b0c3f5ba98cb37d2`.\n\nSaved text matches my review, candidate pin, `ACCEPTED_DESIGN_ONLY` status, empty findings, CM-D1 resolution, authorship and limits. Root transcription is disclosed. No runtime or admission acceptance follows.\n\nReview ownership released. No files or sidecars written.",
+      "revision": 2,
+      "reviewer": "qd_source_review"
+    }
+  ],
+  "resolved_findings": [
+    "CM-D1"
+  ],
+  "findings": [],
+  "current_implemented_source_methods": 700,
+  "current_selected_source_methods": 184,
+  "new_planned_unimplemented_methods": 32,
+  "future_full_methods": 732,
+  "future_selected_methods": 216,
+  "future_modules": 30,
+  "reference_inputs": 94,
+  "external_reference_inputs": 4,
+  "preservation_files": 9134,
+  "preservation_check_utc": "2026-11-02T12:39:24.1482167Z",
+  "preservation_mismatches": [],
+  "design_only": true,
+  "implementation_accepted": false,
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "scientific_admission": false,
+  "second_qd_admitted": false,
+  "obligations_discharged": 0,
+  "provider": "UNAVAILABLE",
+  "capture_and_runtime_feasibility": "NOT_ESTABLISHED",
+  "runtime_readiness": "REFUSED_PENDING_PREREQUISITES",
+  "historical_qd": "a1f12701 INCOMPLETE_REFUSED17/16 unchanged",
+  "next": "Source-only CM1 registry/collection/event/refusal contracts and planned32methods, complete effect/bounds inventory, independent source review; operational dispatch remains refused",
+  "publication": "No commit/push in this phase; last published05b3a886ea9a4755c8e2fa6e7ec588cafb3c8b6c"
+}

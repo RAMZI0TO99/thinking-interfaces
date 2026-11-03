@@ -1,0 +1,236 @@
+{
+  "schema": "cho51_cm5_design_qualification_v1",
+  "scope": "Design obligations only; no test methods or scenario qualification",
+  "scenarios": [
+    {
+      "id": "CM5-01",
+      "boundary": "supplied_model",
+      "requirement": "Exact primitive commands and arities; BEGIN once and all CM4 normal lifecycle transitions",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-02",
+      "boundary": "supplied_model",
+      "requirement": "Recompute complete normal CM4 output and independently verify raw bytes; no producer Facts as verifier input",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-03",
+      "boundary": "supplied_model",
+      "requirement": "Pre-refusal emits no command output, settles attempt and preserves previous prefix",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-04",
+      "boundary": "supplied_model",
+      "requirement": "Post-refusal preserves committed group, including valid FINISH footer, and latches negative terminal",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-05",
+      "boundary": "supplied_model",
+      "requirement": "Reentry before output is counted/refused/settled without clearing outer busy ownership or emitting output",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-06",
+      "boundary": "supplied_model",
+      "requirement": "Reentry after output, swallowed inner refusal and first-observed ordinal2 versus later outer ordinal1",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-07",
+      "boundary": "supplied_model",
+      "requirement": "Exactly-once settlement under invalid command/fault, negative callback and unexpected BaseException",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-08",
+      "boundary": "supplied_model",
+      "requirement": "65535th representable entry versus65536th overflow; no wrap/clamp or fabricated first-refusal ordinal",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-09",
+      "boundary": "supplied_model",
+      "requirement": "Complete group/trace128 and record4096/footer reservations; encoding/hash/allocation failure before commit",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-10",
+      "boundary": "supplied_model",
+      "requirement": "D01 closed subcase interval, failfast new-entry refusal, mixed cleanup, special outcomes and late fixture negatives",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-11",
+      "boundary": "supplied_model",
+      "requirement": "Seal waits for no active attempt; reentrant seal refuses/latches; complete refused snapshot retained",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-12",
+      "boundary": "supplied_model",
+      "requirement": "No footer/empty prefix/partial accounting yields bounded failure facts, never completed CM4 terminal",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-13",
+      "boundary": "supplied_model",
+      "requirement": "Repeated seal and pure reads preserve immutable bytes; after-detach entry rejects without a future-absence claim",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-14",
+      "boundary": "supplied_model",
+      "requirement": "Fixed injection enums execute no callable/thread; facts always unauthenticated, runtime dispatch always refuses",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-15",
+      "boundary": "original_dispatcher",
+      "requirement": "Exact normal setup/body/teardown/LIFO cleanup/duration/primary/stop-finally mapping",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-16",
+      "boundary": "original_dispatcher",
+      "requirement": "Setup failure omits body/teardown but preserves reference cleanup and emitted callbacks",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-17",
+      "boundary": "original_dispatcher",
+      "requirement": "Decorated early skip has no fabricated cleanup/duration/END",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-18",
+      "boundary": "original_dispatcher",
+      "requirement": "KeyboardInterrupt versus SystemExit and BaseException routes preserve interrupted lifecycle and owned cleanup",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-19",
+      "boundary": "original_dispatcher",
+      "requirement": "Original flat subcase entry/result/trace/unwind completeness and source/code identity",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-20",
+      "boundary": "original_dispatcher",
+      "requirement": "Nested failfast _ShouldStop missing outer result remains unmapped/refused without flattening",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-21",
+      "boundary": "original_dispatcher",
+      "requirement": "Late class/module teardown and cleanup cardinality, unique slots and module first-exception semantics",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-22",
+      "boundary": "original_dispatcher",
+      "requirement": "Skip/assertion/mock/result/duration formatting domains and semantic differences before producer callback",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-23",
+      "boundary": "original_terminal",
+      "requirement": "Trusted original ingress revocation with complete enumeration of all producer entry capabilities",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-24",
+      "boundary": "original_terminal",
+      "requirement": "In-flight drain and final latch observation after every producer post-check and settlement",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-25",
+      "boundary": "original_terminal",
+      "requirement": "Snapshot publication on retained complete events after producer freeze, with distinct observer writer role",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-26",
+      "boundary": "original_terminal",
+      "requirement": "Late request/leaked callable/duplicate handle/active writer before custody closes invalidates old snapshot success",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-27",
+      "boundary": "original_terminal",
+      "requirement": "Observer outer-owned closure, original EOF/tool/cancel/census/source/restoration witnesses and finite closeout",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-28",
+      "boundary": "original_terminal",
+      "requirement": "Partial/empty event prefix, missing capture or counter overflow refuses without repairing completed joins",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-29",
+      "boundary": "effect_accounting",
+      "requirement": "Exact320 method conservation and pinned boundary anchors; all transitive unknown edges remain obligations",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-30",
+      "boundary": "effect_accounting",
+      "requirement": "Failure-during-refusal/restoration and unbounded formatting cannot recursively manufacture a complete result",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-31",
+      "boundary": "effect_accounting",
+      "requirement": "Conditional2368events/2367attempts only; all memory/output/report/ingress bounds must be separately established",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    },
+    {
+      "id": "CM5-32",
+      "boundary": "effect_accounting",
+      "requirement": "Original resource/deadline/stop/ownership/capture guards, fresh unused admission and independent actual review remain required",
+      "status": "UNIMPLEMENTED_UNEXECUTED",
+      "qualified": false
+    }
+  ],
+  "scenario_count": 32,
+  "supplied_model": 14,
+  "original_dispatcher": 8,
+  "original_terminal": 6,
+  "effect_accounting": 4,
+  "replaces_original_obligations": false
+}

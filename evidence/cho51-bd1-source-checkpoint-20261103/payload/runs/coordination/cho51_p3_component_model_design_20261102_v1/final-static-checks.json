@@ -1,0 +1,135 @@
+{
+  "schema": "cho51_cm1_final_static_checks_v1",
+  "created_utc": "2026-11-02T12:56:33.7248738Z",
+  "publisher": "project_root",
+  "scope": "file/text/JSON/hash/link/data arithmetic only",
+  "candidate": {
+    "bytes": 3144,
+    "sha256": "62fef6cf298558058172f11cbc1177c4e430f86d75fc94c4ae850a48110468c2"
+  },
+  "design_pins_checked": 8,
+  "reference_pins_checked": 94,
+  "external_reference_pins_checked": 4,
+  "external_scope": "Current byte references only, not admitted runtime closure",
+  "pin_mismatches": [],
+  "baseline_files": 9134,
+  "baseline_check_utc": "2026-11-02T12:39:24.1482167Z",
+  "baseline_mismatches": [],
+  "archive_docs": 12,
+  "archive_mismatches": [],
+  "preserved_draft_files": 3,
+  "draft_mismatches": [],
+  "document_pins": {
+    "AGENTS.md": {
+      "bytes": 7704,
+      "sha256": "6fe0f0fffb46709b4a954e540d8ec04671bd59092327c28437ea7126e72bd51f"
+    },
+    "HANDOFF.md": {
+      "bytes": 18842,
+      "sha256": "bbe6cb9b157314eaf4096b27a009c770f903021916ca120cd8a0ab3570a34b50"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7289,
+      "sha256": "fdd07e4978c5628a1924d6637140f1b12ac264ac01080614a50ae18c1bb61afd"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7630,
+      "sha256": "ed31e91125f13f94fa47fc6413a83565e1ee0b534fd34d86640c42a911eeb024"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7126,
+      "sha256": "a2087f1b66c0992c726e5a06e1ebec9a4733166352479cdc30a3cfa11cd0b087"
+    },
+    "README.md": {
+      "bytes": 8117,
+      "sha256": "ae462cb084a7f9fe000958abeb01c2cc8f6d499d9d451089960a0cb316ecb008"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11722,
+      "sha256": "fe1efc8dbed146fe0f60e59454460f8baeea5f7b3ce7415230e9c70f17dcf654"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 12661,
+      "sha256": "3119583eb5586f14eacd9994455287160fa9a1d39242f3c3a0dfae9fa56a2305"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13197,
+      "sha256": "5b8b87ae06e5310445d6be5ca2693d61f0bc5f96572e8766dfc0465cb1d34277"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 25453,
+      "sha256": "cef228673a28f114d7db8c69d42fb94022a9568ff2d8b7f57dd78b6e768bb07c"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 31996,
+      "sha256": "41b4995b53fc30e9c84a04b6e719342454796f5d75808638ea1e78e522815d70"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 43443,
+      "sha256": "bacea0d696f79fc2dbbb933a7d414a84ca828d908dc744bbbbac05a814ae2925"
+    },
+    "docs/phase2/cho51_p3_component_model_design_20261102.md": {
+      "bytes": 6547,
+      "sha256": "aec930162bc754949aca0f2b8e47e1e0a2b23e1982f0e3ad667e56f882d5c03a"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/capture-accounting.md": {
+      "bytes": 15606,
+      "sha256": "d2f73243fd862318fe66b1f530983137ce00c5a8026702b9f4b175fe674dd480"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/collection.md": {
+      "bytes": 7806,
+      "sha256": "d4dd29b3fcd26fdce64ec0c2f7a30bfaa2193253a42e31942feebb15ce7de35b"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/qualification.md": {
+      "bytes": 6991,
+      "sha256": "a12a8f5c09fd52f01a9a614793f4add00440f90f8860b9732768e3dfe49c41c5"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/README.md": {
+      "bytes": 2750,
+      "sha256": "ec9318ed0a97e589c0acc7d52dd7a9e41ffc13be2cbec53013f268c4ddd90c51"
+    },
+    "docs/phase2/cho51_p3_component_model_v1/runner.md": {
+      "bytes": 6279,
+      "sha256": "77abc13d763e4524e8f9e52eb7826a8d1fc631cf434fd13e17789b208669e540"
+    }
+  },
+  "local_link_occurrences": 512,
+  "broken_local_links": [],
+  "declared_forward_targets": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_component_model_design_20261102_v1\\closeout-review.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_component_model_design_20261102_v1\\final-static-checks.json"
+  ],
+  "current_methods": 700,
+  "current_selection": 184,
+  "planned_unimplemented_methods": 32,
+  "future_collection": 732,
+  "future_modules": 30,
+  "future_selection": 216,
+  "roster_digests_match": true,
+  "static_arithmetic": {
+    "event_file_ceiling_bytes": 2097152,
+    "event_count_ceiling": 4096,
+    "conditional_report_bytes": 17711104,
+    "conditional_report_files": 30,
+    "fixed_identity_collection_bytes": 343177,
+    "complete_effect_event_capture_allocation_or_timing_proof": false,
+    "event_ceiling_bytes": 512,
+    "event_overestimate_bytes": 372
+  },
+  "phase_files_before_this_record": [
+    "candidate-v1.json",
+    "candidate-v2.json",
+    "coordination.json",
+    "design-review-v1.json",
+    "design-review-v2.json",
+    "preservation-baseline.json",
+    "root-design-acceptance.json"
+  ],
+  "remaining_publisher_file": "closeout-review.json",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "python_import_ast_compiler_native_git_executed": false,
+  "runtime_admission": false,
+  "p_admitted": false,
+  "obligations_discharged": 0
+}

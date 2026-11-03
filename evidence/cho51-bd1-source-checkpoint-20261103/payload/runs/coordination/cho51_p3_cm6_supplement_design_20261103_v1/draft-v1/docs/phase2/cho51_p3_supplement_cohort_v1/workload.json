@@ -1,0 +1,3831 @@
+{
+  "schema": "cho51_cm6s_source_workload_v1",
+  "scope": "Source-text and conditional arithmetic only, not measured performance or complete effect closure",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "prior_method_index": {
+    "path": "docs/phase2/cho51_p3_cm6_integration_coverage_20261103.json",
+    "pin": {
+      "bytes": 956988,
+      "sha256": "81d9fc425e9951720d2f81f1aa9838c912200ba1068917fe0c85c688bbe22757"
+    }
+  },
+  "methods": [
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_auth_flags",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 29,
+      "end_line": 32,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.assertFalse",
+        "self.assertTrue",
+        "self.check",
+        "test_auth_flags"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_baseline_full",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 13,
+      "end_line": 13,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "report",
+        "self.assertEqual",
+        "self.check",
+        "test_baseline_full"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_baseline_held",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 14,
+      "end_line": 14,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "report",
+        "self.assertEqual",
+        "self.check",
+        "test_baseline_held"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_complete_exact",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 33,
+      "end_line": 34,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_complete_exact"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_equal_count_swap",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 51,
+      "end_line": 52,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_equal_count_swap"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_facts_frozen",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 26,
+      "end_line": 28,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.assertRaises",
+        "self.check",
+        "test_facts_frozen"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_h_target_unchanged",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 16,
+      "end_line": 16,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "h.expected_ids",
+        "h.expected_modules",
+        "h.selected_ids",
+        "len",
+        "self.assertEqual",
+        "test_h_target_unchanged"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_held_flag_before_projection",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 53,
+      "end_line": 57,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "in",
+        "next",
+        "report",
+        "self.denied",
+        "test_held_flag_before_projection"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_load_tests",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 47,
+      "end_line": 48,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_load_tests"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_loader",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 43,
+      "end_line": 44,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_loader"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_mapping",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 24,
+      "end_line": 25,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "report",
+        "self.assertEqual",
+        "self.check",
+        "test_mapping",
+        "tuple"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_missing_module",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 39,
+      "end_line": 40,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "pop",
+        "report",
+        "self.denied",
+        "test_missing_module"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_missing_test",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 49,
+      "end_line": 50,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "pop",
+        "report",
+        "self.denied",
+        "test_missing_test"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_module_pin",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 41,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_module_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_new_held",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 17,
+      "end_line": 23,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "n.rsplit",
+        "registry.expected_ids",
+        "report",
+        "self.assertEqual",
+        "self.check",
+        "test_new_held",
+        "tuple"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_owner_substitution",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 58,
+      "end_line": 59,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_owner_substitution"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_partial",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 45,
+      "end_line": 46,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_partial"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_q_count",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 15,
+      "end_line": 15,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "report",
+        "self.assertEqual",
+        "self.check",
+        "test_q_count"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_wrong_context",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 35,
+      "end_line": 36,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_wrong_context"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_collection.CollectionTests.test_wrong_operation",
+      "path": "tools/local_validation/cm6/test_collection.py",
+      "start_line": 37,
+      "end_line": 38,
+      "source_pin": {
+        "bytes": 3443,
+        "sha256": "5161b387e08e72ae40fd1366285f427f7538caba4890ac425da56a245a2a2aab"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.denied",
+        "test_wrong_operation"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_bad_external_d_pin",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 67,
+      "end_line": 69,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "args",
+        "context.parse_expected_context",
+        "descriptor",
+        "self.assertRaises",
+        "test_bad_external_d_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_bad_external_q_pin",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 64,
+      "end_line": 66,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "args",
+        "context.parse_expected_context",
+        "descriptor",
+        "self.assertRaises",
+        "test_bad_external_q_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_bad_set_hash",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 94,
+      "end_line": 95,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.denied",
+        "test_bad_set_hash"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_baseline_counts",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 46,
+      "end_line": 46,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "self.assertEqual",
+        "self.check",
+        "test_baseline_counts"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_baseline_module_pin",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 86,
+      "end_line": 87,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.denied",
+        "test_baseline_module_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_bool_count",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 77,
+      "end_line": 78,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.denied",
+        "test_bool_count"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_canonical_anchor_pin",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 45,
+      "end_line": 45,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "cohort",
+        "pin",
+        "self.assertEqual",
+        "test_canonical_anchor_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_cohort_obligation",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 92,
+      "end_line": 93,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "next",
+        "self.denied",
+        "test_cohort_obligation"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_count_bound",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 79,
+      "end_line": 80,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.denied",
+        "test_count_bound"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_current_registry_census",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 54,
+      "end_line": 63,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "n.rsplit",
+        "registry.expected_ids",
+        "registry.expected_modules",
+        "registry.selected_ids",
+        "self.assertEqual",
+        "self.check",
+        "set",
+        "test_current_registry_census",
+        "tuple"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_dispatch_refuses",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 101,
+      "end_line": 103,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "context.runtime_dispatch",
+        "self.assertRaises",
+        "test_dispatch_refuses"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_held_baseline",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 47,
+      "end_line": 47,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertEqual",
+        "self.check",
+        "sum",
+        "test_held_baseline"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_held_digest",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 90,
+      "end_line": 91,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "next",
+        "self.denied",
+        "test_held_digest"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_held_schedule",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 88,
+      "end_line": 89,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "next",
+        "self.denied",
+        "test_held_schedule"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_immutable_facts",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 52,
+      "end_line": 53,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertRaises",
+        "self.check",
+        "test_immutable_facts"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_missing_baseline",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 81,
+      "end_line": 85,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "base.expected_ids",
+        "descriptor",
+        "encode",
+        "extra",
+        "join",
+        "len",
+        "self.denied",
+        "sha",
+        "test_missing_baseline"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_new_held",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 48,
+      "end_line": 51,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "name.encode",
+        "next",
+        "self.assertEqual",
+        "self.check",
+        "sha",
+        "test_new_held"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_noncanonical",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 70,
+      "end_line": 74,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "args",
+        "bytearray",
+        "context.parse_expected_context",
+        "descriptor",
+        "in",
+        "pin",
+        "self.assertRaises",
+        "test_noncanonical"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_operation_binding",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 96,
+      "end_line": 100,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "args",
+        "context.parse_expected_context",
+        "descriptor",
+        "dict",
+        "len",
+        "raw",
+        "self.assertEqual",
+        "self.assertNotEqual",
+        "self.check",
+        "sha",
+        "test_operation_binding"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_context.ContextTests.test_unknown_field",
+      "path": "tools/local_validation/cm6/test_context.py",
+      "start_line": 75,
+      "end_line": 76,
+      "source_pin": {
+        "bytes": 6858,
+        "sha256": "86008983805bf8149cea03fac33f3047eefae40ec7998bc3c2cd35ce5b27d70d"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.denied",
+        "test_unknown_field"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_added_debt_held",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 21,
+      "end_line": 21,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_added_debt_held"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_contexts_separate",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 46,
+      "end_line": 47,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertNotEqual",
+        "self.run_pair",
+        "test_contexts_separate"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_current_collection_pin",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 50,
+      "end_line": 51,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "pin",
+        "raw",
+        "report",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_current_collection_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_current_held_count",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 23,
+      "end_line": 23,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "len",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_current_held_count"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_current_report_incomplete",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 43,
+      "end_line": 45,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_current_report_incomplete"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_descriptor_pins",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 52,
+      "end_line": 53,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "pin",
+        "raw",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_descriptor_pins"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_drop_prior_addition",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 24,
+      "end_line": 25,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_drop_prior_addition"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_execution_unaccepted",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 60,
+      "end_line": 63,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertFalse",
+        "self.assertTrue",
+        "self.run_pair",
+        "test_execution_unaccepted"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_immutable",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 54,
+      "end_line": 56,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_immutable"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_new_module_addition",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 14,
+      "end_line": 20,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "len",
+        "report",
+        "self.assertEqual",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_new_module_addition"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_noop_no_additions",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 13,
+      "end_line": 13,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_noop_no_additions"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_noop_preserves_all",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 12,
+      "end_line": 12,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_noop_preserves_all"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_preserved_held_count",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 22,
+      "end_line": 22,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "len",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_preserved_held_count"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_collection_pin",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 48,
+      "end_line": 49,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "pin",
+        "raw",
+        "report",
+        "self.assertEqual",
+        "self.run_pair",
+        "test_prior_collection_pin"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_debt_mutation",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 32,
+      "end_line": 34,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "next",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_prior_debt_mutation"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_pin_change",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 26,
+      "end_line": 31,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "next",
+        "report",
+        "rsplit",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_prior_pin_change"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_promotion",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 35,
+      "end_line": 37,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "next",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_prior_promotion"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_rename",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 38,
+      "end_line": 39,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "extra",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_prior_rename"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_prior_report_incomplete",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 40,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "report",
+        "self.assertRaises",
+        "self.run_pair",
+        "test_prior_report_incomplete"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6.test_reconciliation.ReconciliationTests.test_unauthenticated",
+      "path": "tools/local_validation/cm6/test_reconciliation.py",
+      "start_line": 57,
+      "end_line": 59,
+      "source_pin": {
+        "bytes": 4359,
+        "sha256": "717fa6fe42fe90d51653ab58e4fa1dbf8af2cd01e197fa1dfd0c69507c35c0c3"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No subTest calls; ordinary assertion contexts/loops do not add outer outcomes",
+      "textual_call_candidates": [
+        "descriptor",
+        "self.assertFalse",
+        "self.run_pair",
+        "test_unauthenticated"
+      ],
+      "direct_effect_class": "Synthetic supplied JSON/hash/tuple values and assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: helper, inherited unittest, imported-library, interpreter, allocation and failure-formatting effects",
+      "failure_and_teardown": "OPEN: actual exception/formatting/lifecycle/cleanup bounds",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_bad_collection_precedes_events",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 67,
+      "end_line": 69,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_bad_collection_precedes_events"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_bad_tables",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 70,
+      "end_line": 80,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "dict",
+        "enumerate",
+        "json.loads",
+        "list",
+        "n.rsplit",
+        "parse_tables",
+        "selected_ids",
+        "self.assertEqual",
+        "self.assertRaises",
+        "self.check",
+        "test_bad_tables",
+        "tuple",
+        "wire"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_bool_sequence",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 53,
+      "end_line": 54,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_bool_sequence"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_context",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 39,
+      "end_line": 40,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_context"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_dispatch_refusal",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 87,
+      "end_line": 92,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "events.dispatch",
+        "self.assertRaises",
+        "test_dispatch_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_empty_stream",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 81,
+      "end_line": 83,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_empty_stream"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_extra_field",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 55,
+      "end_line": 58,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "json.loads",
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "self.hand_negative",
+        "self.rebuild",
+        "splitlines",
+        "test_extra_field"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_count",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 43,
+      "end_line": 44,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_header_count"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_kind",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 49,
+      "end_line": 52,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "json.loads",
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "self.hand_negative",
+        "self.rebuild",
+        "splitlines",
+        "test_header_kind"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_owner",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 45,
+      "end_line": 48,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "json.loads",
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "self.hand_negative",
+        "self.rebuild",
+        "splitlines",
+        "test_header_owner"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_mutable_stream",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 84,
+      "end_line": 86,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "bytearray",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_mutable_stream"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_negative_disposition",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 31,
+      "end_line": 34,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertEqual",
+        "self.assertFalse",
+        "self.assertRaises",
+        "self.assertTrue",
+        "self.check",
+        "self.hand_negative",
+        "test_negative_disposition"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_negative_suffix",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 30,
+      "end_line": 30,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "len",
+        "self.assertEqual",
+        "self.check",
+        "test_negative_suffix"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_noncanonical",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 59,
+      "end_line": 61,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "replace",
+        "self.assertRaises",
+        "self.check",
+        "test_noncanonical"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_operation",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 41,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_operation"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_pass_count",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 29,
+      "end_line": 29,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "self.assertEqual",
+        "self.check",
+        "test_pass_count"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_schema",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 37,
+      "end_line": 38,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_schema"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_sequence",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 35,
+      "end_line": 36,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.changed",
+        "self.check",
+        "test_sequence"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_truncated_footer",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 62,
+      "end_line": 64,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_truncated_footer"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_events.EventTests.test_whole_digest",
+      "path": "tools/local_validation/cm6i/test_events.py",
+      "start_line": 65,
+      "end_line": 66,
+      "source_pin": {
+        "bytes": 5451,
+        "sha256": "993c3f72a85991eda5e5c1793140e4665c85d0d9e025d5afe1ae97b0090b4bea"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "hashlib.sha256",
+        "hexdigest",
+        "self.assertEqual",
+        "self.check",
+        "test_whole_digest"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_cohort_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 26,
+      "end_line": 27,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_cohort_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_collection_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 30,
+      "end_line": 31,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_collection_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_complete",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 11,
+      "end_line": 15,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "json.loads",
+        "list",
+        "pinobj",
+        "self.assertEqual",
+        "self.check",
+        "terminal.update",
+        "test_complete",
+        "wire"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_context",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 20,
+      "end_line": 21,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_context"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_descriptor_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 28,
+      "end_line": 29,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_descriptor_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_events_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 34,
+      "end_line": 35,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_events_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_extra_field",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 38,
+      "end_line": 39,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_extra_field"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_held_debt",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 17,
+      "end_line": 17,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "len",
+        "self.assertEqual",
+        "self.check",
+        "test_held_debt"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_incomplete_event",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 51,
+      "end_line": 53,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_incomplete_event"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_negative",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 16,
+      "end_line": 16,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "self.assertEqual",
+        "self.check",
+        "test_negative"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_negative_suffix_distinct",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 18,
+      "end_line": 19,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "len",
+        "self.assertEqual",
+        "self.check",
+        "test_negative_suffix_distinct"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_noncanonical",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 40,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_noncanonical"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_operation",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 24,
+      "end_line": 25,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_operation"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_runtime_refusal",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 55,
+      "end_line": 59,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "dispatch",
+        "self.assertRaises",
+        "test_runtime_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_schema",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 22,
+      "end_line": 23,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_schema"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_table_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 32,
+      "end_line": 33,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_table_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_table_substitution",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 43,
+      "end_line": 46,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "append",
+        "bundle",
+        "json.loads",
+        "list",
+        "pinobj",
+        "self.assertRaises",
+        "self.check",
+        "test_table_substitution",
+        "wire"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_terminal_pin",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 36,
+      "end_line": 37,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_terminal_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_terminal_substitution",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 47,
+      "end_line": 50,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "json.loads",
+        "list",
+        "pinobj",
+        "self.assertRaises",
+        "self.check",
+        "test_terminal_substitution",
+        "wire"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_join.JoinTests.test_unauthenticated",
+      "path": "tools/local_validation/cm6i/test_join.py",
+      "start_line": 54,
+      "end_line": 54,
+      "source_pin": {
+        "bytes": 3520,
+        "sha256": "d14d57aa676c039564a9ddb866951a3b092cde83d7e61e574ddf5726687fa9c1"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "self.assertFalse",
+        "self.check",
+        "test_unauthenticated"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_begin_emits_two",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 13,
+      "end_line": 14,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "m.facts",
+        "model",
+        "self.assertEqual",
+        "test_begin_emits_two"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_cleanup_required",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 32,
+      "end_line": 34,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertRaises",
+        "test_cleanup_required"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_constructor_bad_collection",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 7,
+      "end_line": 9,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "inputs",
+        "ProducerModel",
+        "self.assertRaises",
+        "test_constructor_bad_collection"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_constructor_bad_tables",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 10,
+      "end_line": 12,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "inputs",
+        "ProducerModel",
+        "self.assertRaises",
+        "test_constructor_bad_tables"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_full_pass_count",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 15,
+      "end_line": 16,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "finish",
+        "m.facts",
+        "model",
+        "passing",
+        "self.assertEqual",
+        "test_full_pass_count"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_invalid_trace_is_atomic",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 25,
+      "end_line": 28,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "m.raw_prefix",
+        "model",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_invalid_trace_is_atomic"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_negative_lifecycle",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 23,
+      "end_line": 24,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.seal",
+        "model",
+        "negative",
+        "self.assertIsNotNone",
+        "test_negative_lifecycle"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_nested_post_settled",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 47,
+      "end_line": 50,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_nested_post_settled"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_nested_postfooter_accounted",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 51,
+      "end_line": 54,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "finish",
+        "model",
+        "passing",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_nested_postfooter_accounted"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_nested_pre_settled",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 43,
+      "end_line": 46,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_nested_pre_settled"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_out_of_range_ordinal",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 20,
+      "end_line": 22,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertRaises",
+        "test_out_of_range_ordinal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_partial_seal_has_no_terminal",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 77,
+      "end_line": 78,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "m.seal",
+        "model",
+        "self.assertIsNone",
+        "test_partial_seal_has_no_terminal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_post_refusal",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 39,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "m.facts",
+        "model",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_post_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_pre_refusal",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 35,
+      "end_line": 38,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "m.raw_prefix",
+        "model",
+        "self.assertEqual",
+        "self.assertRaises",
+        "test_pre_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_runtime_refuses",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 83,
+      "end_line": 86,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "dispatch_runtime",
+        "self.assertRaises",
+        "test_runtime_refuses"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_seal_is_stable",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 79,
+      "end_line": 82,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.facts",
+        "m.seal",
+        "model",
+        "negative",
+        "self.assertFalse",
+        "self.assertIs",
+        "self.assertRaises",
+        "test_seal_is_stable"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_secondary_reject_helper_failure",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 55,
+      "end_line": 70,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "fail",
+        "fail_again",
+        "m.apply",
+        "m.seal",
+        "model",
+        "n.apply",
+        "n.seal",
+        "Refusal",
+        "self.assertFalse",
+        "self.assertIsNone",
+        "self.assertRaises",
+        "test_secondary_reject_helper_failure"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_secondary_settle_failure",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 71,
+      "end_line": 76,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "fail",
+        "m.apply",
+        "model",
+        "RuntimeError",
+        "self.assertFalse",
+        "self.assertRaises",
+        "test_secondary_settle_failure"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_subcase_interval",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 29,
+      "end_line": 31,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertRaises",
+        "test_subcase_interval"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_wrong_ordinal",
+      "path": "tools/local_validation/cm6i/test_producer.py",
+      "start_line": 17,
+      "end_line": 19,
+      "source_pin": {
+        "bytes": 4207,
+        "sha256": "f43c116a7e9557e516b816ef62dcc8cd255530ae725ea8c0f26a4b9db9df6e2a"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "m.apply",
+        "model",
+        "self.assertRaises",
+        "test_wrong_ordinal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_attempt_overflow",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 33,
+      "end_line": 34,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_attempt_overflow"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_bad_input_shape",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 49,
+      "end_line": 50,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_bad_input_shape"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_bool_attempts",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 31,
+      "end_line": 32,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_bool_attempts"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_boundary",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 27,
+      "end_line": 28,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_boundary"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_context",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 21,
+      "end_line": 22,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_context"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_detached",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 29,
+      "end_line": 30,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_detached"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_events_pin",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 17,
+      "end_line": 18,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "len",
+        "self.assertEqual",
+        "self.check",
+        "test_events_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_extra_field",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 45,
+      "end_line": 46,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_extra_field"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_first_refusal",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 41,
+      "end_line": 42,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_first_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_inflight",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 37,
+      "end_line": 38,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_inflight"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_inputs_pin",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 19,
+      "end_line": 20,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "self.assertEqual",
+        "self.check",
+        "test_inputs_pin"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_latch",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 39,
+      "end_line": 40,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_latch"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_late_without_refusal",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 43,
+      "end_line": 44,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_late_without_refusal"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_noncanonical",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 51,
+      "end_line": 53,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "list",
+        "self.assertRaises",
+        "self.check",
+        "test_noncanonical"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_operation",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 23,
+      "end_line": 24,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_operation"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_schema",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 25,
+      "end_line": 26,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_schema"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_terminal_complete",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 12,
+      "end_line": 16,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "hashlib.sha256",
+        "hexdigest",
+        "len",
+        "self.assertEqual",
+        "self.assertGreater",
+        "self.check",
+        "test_terminal_complete",
+        "tuple"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_unauthenticated",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 54,
+      "end_line": 55,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "bundle",
+        "self.assertFalse",
+        "self.check",
+        "test_unauthenticated"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_unsettled",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 35,
+      "end_line": 36,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_unsettled"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    },
+    {
+      "id": "tools.local_validation.cm6i.test_terminal.TerminalTests.test_wrong_event_pin_shape",
+      "path": "tools/local_validation/cm6i/test_terminal.py",
+      "start_line": 47,
+      "end_line": 48,
+      "source_pin": {
+        "bytes": 2918,
+        "sha256": "cac58b6e4149d317c6dea2c949dc522fb05ef5ef947a7415f333040b01514d1f"
+      },
+      "schedule": "HELD",
+      "obligation_kind": "NEW_TEST_UNQUALIFIED",
+      "classification": "SOURCE_TEXT_ONLY_NOT_EXECUTED",
+      "normal_subcase_count": 0,
+      "normal_subcase_basis": "No outer unittest subTest contexts; synthetic inner event/subcase commands are supplied data, not outer callbacks",
+      "textual_call_candidates": [
+        "self.assertRaises",
+        "self.change",
+        "self.check",
+        "test_wrong_event_pin_shape"
+      ],
+      "direct_effect_class": "Local supplied model mutation, synthetic JSON/hash/tuple/byte values and unittest assertions; no direct file/process/thread/native/clock operation",
+      "transitive_effects": "OPEN: fixture/producer/parser/hash/import/interpreter/allocation and unittest failure/formatting/lifecycle effects; not exhaustive recursive closure",
+      "qualified": false
+    }
+  ],
+  "method_count": 140,
+  "modules": 7,
+  "new_methods": 0,
+  "outer_subtests": 0,
+  "outer_normal": {
+    "cases": 140,
+    "formula": "5*140+3*0+6",
+    "events": 706,
+    "event_bytes_at_512": 361472,
+    "attempts": 705,
+    "controls_included": false
+  },
+  "q_anchor_normal": {
+    "events": 2568,
+    "bytes_at_512": 1314816,
+    "attempts": 2567,
+    "unchanged": true
+  },
+  "inner_q_lower_bound": {
+    "condition": "All referenced outer bodies follow their intended successful assertion paths; not a universal bound for failures",
+    "complete_all_pass_event_streams": 20,
+    "source_routes": [
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_pass_count",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 29,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_sequence",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 35,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_schema",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 37,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_context",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 39,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_operation",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 41,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_count",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 43,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_owner",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 45,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_header_kind",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 49,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_bool_sequence",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 53,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_extra_field",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 55,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "changed() builds bundle() before raw mutation"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_noncanonical",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 59,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_truncated_footer",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 62,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_whole_digest",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 65,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_bad_collection_precedes_events",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 67,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_bad_tables",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 70,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_empty_stream",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 81,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_events.EventTests.test_mutable_stream",
+        "path": "tools/local_validation/cm6i/test_events.py",
+        "start_line": 84,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "direct bundle() builds all-PASS Q360 stream"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_join.JoinTests.test_complete",
+        "path": "tools/local_validation/cm6i/test_join.py",
+        "start_line": 11,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "bundle() or passing()/finish()"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_full_pass_count",
+        "path": "tools/local_validation/cm6i/test_producer.py",
+        "start_line": 15,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "bundle() or passing()/finish()"
+      },
+      {
+        "id": "tools.local_validation.cm6i.test_producer.ProducerTests.test_nested_postfooter_accounted",
+        "path": "tools/local_validation/cm6i/test_producer.py",
+        "start_line": 51,
+        "complete_inner_q_streams_lower_bound": 1,
+        "route": "passing()/finish() emits complete all-PASS bytes before deliberate nested refusal; not an accepted inner terminal"
+      }
+    ],
+    "primary_apply_calls_per_stream": 1805,
+    "records_per_stream": 1806,
+    "primary_apply_calls": 36100,
+    "records": 36120,
+    "additional_known_nested_entry_attempts": 1,
+    "old_prefix_record_sum_per_stream": 1629914,
+    "minimum_bytes_per_record": 100,
+    "minimum_byte_basis": "Every generated ASCII record contains operation36 and context64 values; ignore all keys and other fields",
+    "cumulative_old_prefix_bytes_per_stream": 162991400,
+    "cumulative_old_prefix_bytes": 3259828000,
+    "cumulative_full_hash_read_bytes_at_least": 3259828000,
+    "source_anchors": [
+      "tools/local_validation/cm6i/fixtures.py:10",
+      "tools/local_validation/cm6i/fixtures.py:35",
+      "tools/local_validation/cm6i/fixtures.py:39",
+      "tools/local_validation/cm6i/producer.py:20",
+      "tools/local_validation/cm6i/producer.py:240",
+      "tools/local_validation/cm6i/producer.py:250",
+      "tools/local_validation/cm6/context.py:111"
+    ],
+    "not_claimed": [
+      "actual copy implementation",
+      "peak memory",
+      "disk writes",
+      "outer event count",
+      "elapsed time",
+      "guard exceedance",
+      "complete total workload"
+    ]
+  },
+  "repeated_parsing": {
+    "producer_constructor_full_c_verifications": 2,
+    "valid_events_call_full_c_verifications": 2,
+    "valid_join_call_full_c_verifications": 4,
+    "valid_join_call_context_parses": 6,
+    "scope": "Direct source paths for ordinary valid inputs, excluding fixture construction and outer collection; each full C verification builds Q/H views and frozen historical chain",
+    "anchors": [
+      "tools/local_validation/cm6i/producer.py:31",
+      "tools/local_validation/cm6i/tables.py:21",
+      "tools/local_validation/cm6i/events.py:59",
+      "tools/local_validation/cm6i/join.py:30",
+      "tools/local_validation/cm6/collection.py:38"
+    ]
+  },
+  "proposed_representation": {
+    "new_schema_family": "cho51_cm6s_*_v1",
+    "max_event_line": 347,
+    "max_expected_descriptor": 622,
+    "max_terminal": 1098,
+    "max_join": 1001,
+    "nine_raw_input_caps": 5570560,
+    "prior_seven_raw_input_caps": 5439488,
+    "additional_source_input_caps": 131072,
+    "field_width_basis": "ASCII compact JSON plus LF; per-field maxima may not form a semantically valid record. These are arithmetic bounds, not fabricated evidence or codec execution."
+  },
+  "open_effect_classes": [
+    "source module/import/loader effects and exact runtime dependencies",
+    "inherited unittest setup/teardown/assert/formatting/cleanup",
+    "local model monkeypatching and secondary refusal/settlement failure",
+    "nested fixtures/byte copies/full-prefix hashing/decoded graph lifetimes",
+    "exception paths/trace population/failfast/cancellation/observer closure",
+    "CM6-08 actual manifest dependency/provenance",
+    "original capture EOF/tool return/native custody and full parent allocation"
+  ],
+  "qualified": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

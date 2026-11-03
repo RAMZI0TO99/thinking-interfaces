@@ -1,0 +1,61 @@
+{
+  "schema": "cho51_bd_coordination_v1",
+  "scope": "Source-only concrete B0/B1 provider/driver and qualification-entry design, witness retention and capture/closure packing",
+  "publisher": "project_root only",
+  "design_author": "project_root",
+  "analysis_peer": "cm6_supplement_feasibility",
+  "analysis_scope": "Read-only existing native/caller/source interface analysis; completed and released",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "root_ownership": [
+    "docs/phase2/cho51_p3_b0b1_v1/README.md",
+    "docs/phase2/cho51_p3_b0b1_v1/provider.md",
+    "docs/phase2/cho51_p3_b0b1_v1/driver.md",
+    "docs/phase2/cho51_p3_b0b1_v1/retention.md",
+    "docs/phase2/cho51_p3_b0b1_v1/packing.json",
+    "docs/phase2/cho51_p3_b0b1_v1/qualification.json",
+    "docs/phase2/cho51_p3_b0b1_v1/cohort-debt.json",
+    "docs/phase2/cho51_p3_b0b1_v1/readiness.json",
+    "all phase records/archives/milestone/current docs"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "preserved_files": 9783,
+  "prior_candidate": {
+    "bytes": 91592,
+    "sha256": "85f7f0eb83e9e3a244d4b6f8299d31bb9c775f2806fde8499d040dd417744f32"
+  },
+  "prior_adoption": {
+    "bytes": 3773,
+    "sha256": "c485665c68f67756c4add0bd33389a777f002acd33f6c82f5ea905b775813785"
+  },
+  "full_identities": 1125,
+  "modules": 51,
+  "q_anchor": 360,
+  "supplement": 140,
+  "held": 765,
+  "new_methods": 0,
+  "allowed": "File/text/JSON/hash/link/arithmetic/design edits plus read-only Microsoft API documentation using BrowserOS neo",
+  "forbidden": "Python/import/project parser/AST/compiler/project-native/tests/Git/runtime or implementation edits",
+  "browser_skill": "C:/Users/aladdin-alyanai/.agents/skills/browseros-neo/SKILL.md",
+  "external_docs_scope": "Public API references only, not runtime/source identity pins or native qualification",
+  "frozen_correction": "Save exact review and byte confirmation, archive affected frozen candidate bytes before edits",
+  "publication": "Root CreateNew records; exact independent saved-byte confirmation; final closeout confirmation conversation-only",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

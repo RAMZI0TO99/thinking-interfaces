@@ -1,0 +1,46 @@
+{
+  "schema": "cho51_cm5_design_root_adoption_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "author": "project_root",
+  "analysis_peer": "cm5_boundary_trace",
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "candidate": {
+    "sha256": "ca4c0637ff12e639dc6f1452ad5f899cfda655e86dda8b3722556d96cf40325e",
+    "bytes": 71499
+  },
+  "review": {
+    "sha256": "f846bb8d35bd13702eee41f1ce2adf4e77a92927c2bbc52442701165ef468b99",
+    "bytes": 3022
+  },
+  "saved_review_confirmation": "Confirmed design-review-v2.json exact3022 bytes SHA256f846bb8d35bd13702eee41f1ce2adf4e77a92927c2bbc52442701165ef468b99; UTF8 review_text SHA256d5b57a589bb3d00fe1dee15de4446048665fd31b21ec468fa955419009a96a51. Saved review_text matches my exact revised message. Candidateca4c0637…40325e, ACCEPTED_DESIGN_ONLY/findings=[], resolved CM5-D01, reviewer cm4_design_review_sol, publisher project_root and design-only/no-runtime limits are correct. Review ownership released; no writes or extra record.",
+  "findings": [],
+  "resolved_findings": [
+    "CM5-D01"
+  ],
+  "adoption": "Exact eight-file candidate-v2; acceptance external to frozen pending-review markers",
+  "source_pins": 378,
+  "new_files": 8,
+  "external_reference_only_pins": 4,
+  "preservation_inputs": 9403,
+  "full_identities": 836,
+  "modules": 36,
+  "selected": 320,
+  "new_methods": 0,
+  "design_scenarios": 32,
+  "qualified_scenarios": 0,
+  "effect_boundary_classes": 16,
+  "direct_method_obligations": 320,
+  "complete_recursive_effect_closure": "NOT_ESTABLISHED",
+  "conditional_normal_events": 2368,
+  "conditional_normal_guarded_attempts": 2367,
+  "supplied_producer_implemented": false,
+  "original_dispatcher_implemented": false,
+  "trusted_observer_implemented": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "next": "Source-only primitive-command producer/refusal/seal model implementation and independent review, with explicit new-test roster/pin/effect/budget successor",
+  "limits": "All original guards/holds/obligations remain; no original execution/custody/capture/complete allocation/timing/memory/science acceptance or Git operation"
+}

@@ -1,6 +1,6 @@
 # Project handoff
 
-Updated 2 November 2026, Asia/Riyadh. Active work is focused exclusively on
+Updated 3 November 2026, Asia/Riyadh. Active work is focused exclusively on
 Thinking Interfaces and governed by the
 [project execution policy](docs/PROJECT_EXECUTION_POLICY.md).
 Root owns scheduling, source review and run admission within this project.
@@ -45,7 +45,26 @@ There is no dependency on another project or external chat approval.
 | Bounded startup-timing diagnostic | One fresh QD run:59/42 timing records, prefix37.76s, external45.45s; final verification and owned closure reviewed | INCOMPLETE_REFUSED for17/16 closeout reservations; no Q acceptance or retry; P disabled |
 | SC1 hash/RAM and fixed-slot publisher | Design and LP19/LQ19/lplan16 implementation independently source-reviewed; two implementation findings resolved;54 new methods unexecuted | HB1 design accepted; operational provider binding and native qualification remain open |
 | Trusted-host binding and bounded qualification design | Seven-file HB1 design independently accepted;580 source identities and24 new scenarios; two findings resolved | Real provider/lifecycle/capture prerequisites remain; P disabled |
-| HB1 frame/parent-join/refusal/collection checks | Independently source-reviewed13-file package;120 new methods unexecuted; exact700-method/28-module roster | Finite component-model runner design/review and exact runtime/capture prerequisites; no admission |
+| HB1 frame/parent-join/refusal/collection checks | Independently source-reviewed13-file package;120 new methods unexecuted; exact700-method/28-module roster | CM1 supplied contracts source-reviewed; operational provider/runtime/capture prerequisites remain |
+| CM1 bounded component-model runner design | Eight-file design independently accepted; CM-D1 resolved; frozen predecessor | Native/runtime/capture requirements remain |
+| CM1 supplied-data contracts | Eight-file package independently source-reviewed; 32 new methods unexecuted; frozen 732/30 roster and 216 selection | CM2 successor source-reviewed; actual runtime prerequisites remain |
+| CM2 direct effects and loader/result design | Eight-file design independently accepted; frozen 216-body / 210-subtest / 860-record normal scope | Supplied adapters implemented; complete failure/runtime gates remain |
+| CM2 supplied retained-data and callback adapters | Eight-file package independently source-reviewed; 32 new methods unexecuted; 764/32 roster and 248 selection; conditional 1,000-record normal envelope | CM3 parser/join source-reviewed; current-roster/native runtime gates remain |
+| CM3 independent evidence and failure/capture design | Seven design files independently accepted; 32 design obligations, none qualified | Supplied parser/join implemented; runtime gates remain |
+| CM3 supplied-event parser and evidence join | Eight-file package independently source-reviewed; 32 new methods unexecuted; CM3 snapshot 796/34 roster / 280 selection, frozen 764/248 target | CM4 supplied successor source-reviewed; original producer/observer/runtime gates remain |
+| CM4 lifecycle and current-roster integration design | Seven design files independently accepted; CM4-D01 resolved; 28 unqualified scenarios, no new methods | Supplied contracts implemented; original producer/observer/runtime gates remain |
+| CM4 supplied-data contracts and current roster | Ten-file package independently source-reviewed; 40 new methods unexecuted; 836/36 roster / 320 selection; conditional 2,368-event envelope | CM5 supplied model source-reviewed; original runtime gates remain |
+| CM5 bounded producer/dispatcher and terminal boundary design | Eight files independently accepted; CM5-D01 resolved; 16 effect classes / 320 direct-method obligations, 32 unqualified scenarios | Supplied model implemented/source-reviewed; all original runtime gates remain |
+| CM5 supplied producer/refusal/seal model | Six-file package independently source-reviewed; CM5-S01/S02 resolved; 40 new methods unexecuted; source census 876/38/360; producer target stays 836/36/320 | CM6 supplied integration source-reviewed; supplemental profile implementation and all original runtime gates remain |
+| CM6 stable cohort and current-census integration design | Eight files independently accepted; fixed Q360, complete C876/38 plus held additions, frozen H836/36/320; 32 unqualified scenarios | Supplied context/collection and integration now source-reviewed; qualification and original runtime gates remain; P disabled |
+| CM6 expected context, full collection and prior-debt contracts | Nine package files independently source-reviewed; CM6-S01 resolved; 936/41 source, fixed Q360, 576 held=516 prior+60 new; tests unexecuted | CM6 supplied integration source-reviewed; supplemental profile implementation and original manifest/source/adoption/runtime gates remain |
+| CM6 supplied producer/verifier/terminal integration | Thirteen package files independently source-reviewed, no findings; current1016/45, Q360 unchanged,656 held=576 prior+80 new; all new tests unexecuted | S140 design accepted; separate supplemental profile implementation and original execution prerequisites remain; P disabled |
+| CM6 S140 supplemental cohort and feasibility design | Eight-file design independently accepted; CM6S-D01 resolved; S140 disjoint Q360, unchanged1016/45 and656 held; conditional706 outer records | Supplied successor now source-reviewed; timing/memory/original feasibility NOT_ESTABLISHED;24 scenarios unqualified |
+| CM6 S140 supplied profile and independent raw verification | Fifteen package files source-reviewed after CM6S-S01 metadata correction; current1062/49, fixed Q360/S140,702 held=656 preserved+46 new unexecuted | Whole-operation design accepted; original root/driver/provider qualification remains; P disabled |
+| Whole-operation effect/allocation and feasibility design | Eight files independently accepted after WO-D01; explicit acyclic prerequisite path, ten stages,16 effect boundaries,33 report slots; unchanged1062/49,Q360/S140/702 held | B0/B1 root/driver and original provider/capture/packing/effects/resource qualification remain; actual feasibility NOT_ESTABLISHED; no execution |
+| PC1 original provider/ingress/capture contract | Eight-file design independently accepted after PC-D01/PC-D02 correction; three supplied projections and two conditional summary regions; unchanged1062/49,Q360/S140/702 held | Supplied parser/refusal implementation source-reviewed; original trust/population/capture/final closure and full feasibility remain unestablished; no execution |
+| PC1 supplied parsers, binding checks and refusal handling | Ten package files independently source-reviewed after PC-S01 correction;63 new unexecuted methods,1125/51 source, fixed Q360/S140 and765 held=702 preserved+63 new | BD1 design accepted; original H0/final-retention/population/capture/closure/effect/resource gates remain unestablished; P disabled |
+| BD1 native provider/driver and qualification entry design | Eight files independently design-reviewed; concrete H0/G0/S0 roles, E1_PROTOCOL and conditional80/64-byte record packing;1125/51, Q360/S140,765 held unchanged | Actual H0 authority/final witness retention, source/build/runtime/effects/peak/time and qualification remain open;40 scenarios unqualified; P disabled |
 
 The synthetic integration predictions were [1,0] against [0,1], so both were
 wrong. Engineering success is not an accuracy claim. No accepted final scientific
@@ -63,7 +82,9 @@ The [P2 dependency map and file-only caller](docs/phase2/cho51_p3_dependency_pre
 
 The [native-memory bootstrap and refreshed preparation](docs/phase2/cho51_p3_native_memory_bootstrap_20261031.md) are implemented and source-reviewed. Fresh native-bootstrap Q2 accepted 368 methods and all required controls, including two actual P-bootstrap cases. Separately admitted P2 returned successfully in 116.96 seconds, reporting 21,115 files, 893 native images and 4,847 dependency edges, full final verification and owned cleanup. P physical preparation is independently accepted for this operation.
 
-The [HB1 verifier/refusal/collection implementation](docs/phase2/cho51_p3_hb1_implementation_20261102.md) is independently accepted for source only. Its13-file package checks supplied frames, complete parent accounting and exact collection reports; the production host always refuses. All120 new methods remain unexecuted. The literal roster preserves580 existing plus120 new=700 identities across28 modules; the proposed verifier selection is184. Two pre-freeze review observations were resolved. No actual provider, durable claim, native custody, loaded-code witness, complete attributed census, asynchronous review lifecycle, capture bound or runtime feasibility is established. Next is design/review of the finite component-model runner and exact loading/collection/capture/accounting prerequisites. No admission follows; P stays disabled.
+The [BD1 B0/B1 provider/driver and qualification-entry design](docs/phase2/cho51_p3_b0b1_design_20261103.md) is independently accepted for design only. Eight files define proposed native G0/S0 under an independently adopted H0, a distinct one-request E1_PROTOCOL entry, witness ownership and conditional fixed-record packing. No test child or Q/S discovery is part of E1. Source remains1125/51, fixed Q360/S140 and765 exact held rows; no new methods or execution. All33 report roles and16 closeout roles remain unchanged; P stays disabled.
+
+The [PC1 supplied implementation](docs/phase2/cho51_p3_pc1_implementation_20261103.md), PC1 design and whole-operation predecessors remain frozen. BD1's40 scenarios join all32 PC1,32 whole-operation,32 CM6 and24 S140 scenarios as unqualified obligations. Conditional byte fit does not establish original H0 availability/isolation, full populations, final M witness retention or complete capture/closure/resource feasibility. Execution remains REFUSED_UNADMITTED. Next is source-only native G0/S0 skeleton and fixed wire/record codecs with unavailable-H0 refusal, finite effect/transition accounting and independent review; no compile/run. All original guards and debt remain.
 
 The [bounded resolver](docs/phase2/cho51_p3_bounded_resolver_20261031.md) and [supplied-data codec](docs/phase2/cho51_p3_lossless_codec_implementation_20261101.md) retain their accepted scoped evidence. The [fixed probe](docs/phase2/cho51_p3_probe_implementation_20261101.md) remains source-reviewed but fresh Q is NOT ACCEPTED: six consumed attempts, latest32 method and three sharing passes followed by a later control deadline and incomplete final verification. Latest owned cleanup is established;8bf386d1 final caller,6f9c898c final caller/outer/bootstrap and131bc595 outer/bootstrap custody remain UNKNOWN. Historical [QD a1f12701](docs/phase2/cho51_p3_qd_execution_20261102.md) retains59/42 timing records,37.7609334s prefix,45.4523028s external return, final verification and owned closure, but overall INCOMPLETE_REFUSED for17/16 closeout accounting. No repair, retry or second QD is inferred. [SC1](docs/phase2/cho51_p3_sc1_implementation_20261102.md) and the [HB1 design](docs/phase2/cho51_p3_host_binding_design_20261102.md) remain frozen source/design predecessors;54 SC1 and10 QD methods,24 HB/40 SC/36 diagnostic scenarios remain unqualified. Complete-Q timing/output feasibility is NOT_ESTABLISHED.
 
@@ -98,12 +119,17 @@ Exact source and saved records are available in the
 `runs/coordination/cho51_p3_diagnostics_20261028_v1`.
 These paths hold historical evidence, not reusable execution authority.
 
-The [2 November publication checkpoint](docs/phase2/cho51_push_checkpoint_20261102.md)
-collects the engineering source, designs and documentation through HB1, superseding
-c0cf850. Its selected source/evidence packet preserves original bytes; other live
-run artifacts and runtime assets remain local. Use the commit containing this
-checkpoint as the publication context, and capture fresh Git/source/runtime pins
-before future execution. Publication adds no runtime qualification.
+The [3 November publication checkpoint](docs/phase2/cho51_push_checkpoint_20261103.md)
+collects the reviewed CM1-through-CM6, S140 and PC1 supplied implementations,
+whole-operation and provider contracts, BD1 design and current documentation.
+Its [selected evidence packet](evidence/cho51-bd1-source-checkpoint-20261103/README.md)
+preserves705 exact files/73,547,959 bytes, including491 accepted source inputs
+and complete19 phase record directories. The twelve preceding active pages are
+archived before this publication update. The commit containing this checkpoint
+is the new publication context after a successful push;05b3a88 is its predecessor.
+Use Git history and the push confirmation for the resulting commit identity.
+Original source/receipts retain their identities; other live evidence and runtime
+assets remain local. Publication adds no runtime qualification or P admission.
 
 The previous app-managed Python base disappeared during preflight. The successful
 v3-v8 operations used a freshly pinned retained Python3.12.14 installation
@@ -150,7 +176,7 @@ rewrite evidence or start a new autonomous session.
 The frozen execution policy's dated "Current implementation boundary" paragraph
 describes the 28 October checkpoint; its sentence naming the boundary collector
 as next is historical progress, not the current work queue. The completed stages
-and current bounded resolver observation are recorded above. Preserve the policy bytes:
+and current BD1 provider/driver design are recorded above. Preserve the policy bytes:
 its substantive custody requirements change only within the accepted local
 validation contract's scope through implementation-specific adoption. Design
 acceptance does not activate that replacement or authorize execution.

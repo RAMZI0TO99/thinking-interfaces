@@ -1,0 +1,85 @@
+{
+  "schema": "cho51_cm6s_design_readiness_v1",
+  "status": "DESIGN_ONLY_EXECUTION_REFUSED",
+  "publisher": "project_root",
+  "design_sources": {
+    "docs/phase2/cho51_p3_supplement_cohort_v1/README.md": {
+      "bytes": 2723,
+      "sha256": "e0660155cc4817b8d9f98e561dad99e9490626982685a2a42a9c471112117886"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/cohort.json": {
+      "bytes": 11102,
+      "sha256": "ceaa4cfa0f05f38de3b58d1806c2380fad7eb213d1023e6733909dceff68b154"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/profile.md": {
+      "bytes": 8262,
+      "sha256": "c8a49e9d9f8c4c0a5cdd94b5c67314b20c11b93050e9b1df5484adf7f82fd89d"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/debt.json": {
+      "bytes": 472192,
+      "sha256": "495420459ff0ebfde835539057ea8a601527a6ca9843864b1aed089adfe739e9"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/workload.json": {
+      "bytes": 182962,
+      "sha256": "57893ee7afcacfc9a2d0e63cf4ec0339e85859145adba02d6404a14448c8bef0"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/feasibility.md": {
+      "bytes": 7718,
+      "sha256": "8368b484a45fae0bf34c6deb0ddbfed0ad3b83818ecd858ca2c84da64c0f8013"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/qualification.json": {
+      "bytes": 7844,
+      "sha256": "4158b39feec4536b7552d981be2211364316424f8cc353338a40bfacb27862aa"
+    }
+  },
+  "full_identities": 1016,
+  "modules": 45,
+  "q_anchor": 360,
+  "supplement_design_members": 140,
+  "supplement_modules": 7,
+  "held": 656,
+  "held_baseline": 516,
+  "held_new_unqualified": 140,
+  "new_methods": 0,
+  "source_indexed_s_bodies": 140,
+  "cohort_pin": {
+    "bytes": 11102,
+    "sha256": "ceaa4cfa0f05f38de3b58d1806c2380fad7eb213d1023e6733909dceff68b154"
+  },
+  "cohort_identity_digest": "746927e2bd26c698ab6a52f232db1c15c7bfb3a40e685b64ec0064c1b2f5b39c",
+  "q_anchor_unchanged": true,
+  "prior_debt_unchanged": true,
+  "supplied_profile_implemented": false,
+  "current_frozen_profile": "Q360_ONLY",
+  "normal_representation": "CONDITIONAL_FIELD_AND_RECORD_FIT_ONLY",
+  "timing_peak_memory_complete_operation": "NOT_ESTABLISHED",
+  "source_work_lower_bound": 3259828000,
+  "outer_events": 706,
+  "outer_event_bytes": 361472,
+  "outer_attempts": 705,
+  "new_raw_input_caps": 5570560,
+  "max_event_line": 347,
+  "max_expected": 622,
+  "max_terminal": 1098,
+  "max_join": 1001,
+  "report_allocation_changed": false,
+  "staged_execution_adopted": false,
+  "original_gates": [
+    "actual manifest dependency/cycle/expectation provenance and authentic predecessor/source adoption",
+    "original collector/dispatcher/observer/type/code/subcase/trace/cutoff semantics",
+    "recursive failure/capture effects and EOF/tool/cancel/parent closure",
+    "complete source/runtime/raw-input/parent output census and finite asynchronous closeout",
+    "native custody/process/Job ownership/cleanup/stop/resource telemetry",
+    "whole-operation timing/peak memory/final-work reserves under every unchanged guard"
+  ],
+  "design_scenarios": 24,
+  "qualified_scenarios": 0,
+  "prior_cm6_scenarios": 32,
+  "prior_cm6_qualified": 0,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "next": "Source-only implementation/review of the separate supplemental profile contracts and independent raw verification, with all new tests held; original execution prerequisites remain",
+  "limits": "No completed run, authentic observation, timing/memory bound, debt discharge or scientific acceptance. Existing guards/holds/consumed failures/UNKNOWN custody unchanged."
+}

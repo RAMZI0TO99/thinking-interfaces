@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_cm6s_implementation_correction_archive_v1",
+  "publisher": "project_root",
+  "candidate_pin": {
+    "bytes": 86117,
+    "sha256": "70df33d788669f738bdcbbb1ae3fa807fe455a645ce7fdd23780f4bc41ea87b0"
+  },
+  "review_pin": {
+    "bytes": 4450,
+    "sha256": "f51d2775f19a97eefe4ff45532822a998981bbd951b239d33cefdc5236344d4d"
+  },
+  "saved_review_confirmation": "Confirmed CM6S implementation source-review-v1.json exact4450 bytes SHA256f51d2775f19a97eefe4ff45532822a998981bbd951b239d33cefdc5236344d4d; UTF8 review_text SHA2564ed0287c74d24be0062caff6548c55fdf1b42e3badf4f62fa36c329b69acc031. Saved text exactly matches review; candidate70df33d7…1ea87b0/86117bytes, CHANGES_REQUESTED_SOURCE_ONLY, CM6S-S01/P2 prior_modules correction, reviewer cm4_design_review_sol/publisher project_root and source-only/no-runtime limits are correct. Owned metadata scans are closed; incomplete redundant scan makes no claim, completed .NET audit retained. Review ownership temporarily released for exact archival and correction; no writes/extra record.",
+  "finding": "CM6S-S01",
+  "files": {
+    "docs/phase2/cho51_p3_cm6_supplement_debt_20261103.json": {
+      "bytes": 536437,
+      "sha256": "9d65799a1a7563b660c041c8a526738bd2d54fb69686f5a8fa254cd631a72a72"
+    }
+  },
+  "scope": "Exact frozen affected bytes saved before correction"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "cho51_pc1_implementation_archive_v1",
+  "publisher": "project_root",
+  "files": {
+    "docs/history/pc1_implementation_20261103/AGENTS.md": {
+      "bytes": 7642,
+      "sha256": "65ff0ae9ce7f7228211cf69790bb9cd510266525393273959a78bd9db7d939ab"
+    },
+    "docs/history/pc1_implementation_20261103/HANDOFF.md": {
+      "bytes": 23354,
+      "sha256": "a4568130e89ca6bb2d07ebb54a63e435aa2a2fbe54fd31fdfb4e411792bfb7a3"
+    },
+    "docs/history/pc1_implementation_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7227,
+      "sha256": "4fed226a1554bbece46be5df5c28c4ea2326f85134fffc4e14aa480b5d6d6b1f"
+    },
+    "docs/history/pc1_implementation_20261103/CONTINUE_HERE.md": {
+      "bytes": 7723,
+      "sha256": "84d715158d55abc09e56903ca236159cf537c4aabb2315f8e923585effa41b31"
+    },
+    "docs/history/pc1_implementation_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7064,
+      "sha256": "2658f6da8fdba87c0f045c365aa5f7e2bbd5288aa51d32a2da09202871371688"
+    },
+    "docs/history/pc1_implementation_20261103/README.md": {
+      "bytes": 8055,
+      "sha256": "f2c0e9a38295233ed9d7eb780637d614c403fb3405919283ca8054aaf4084c42"
+    },
+    "docs/history/pc1_implementation_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11660,
+      "sha256": "f31c87d0ebdacfcb8a5b8ef35419b0e3d14452eed834c0835d9160f885665888"
+    },
+    "docs/history/pc1_implementation_20261103/docs/phase2/README.md": {
+      "bytes": 16091,
+      "sha256": "e8bfdc1d581a9abc61314ef8b3c217a5c7c05dece5ca8cdf0c099a8ae5e8f5d5"
+    },
+    "docs/history/pc1_implementation_20261103/docs/where are we/README.md": {
+      "bytes": 13133,
+      "sha256": "57fcbff97b670082b7654f66d4423f0a2de94be9865be2c12390711e55bec098"
+    },
+    "docs/history/pc1_implementation_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 29705,
+      "sha256": "d495fc66a62ff38140aa50e9b1a39923c6ab92ae8d8e49698d8aebe1075f6510"
+    },
+    "docs/history/pc1_implementation_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 35562,
+      "sha256": "e3903013a9803affd5ba0743b55e69999b196e438022b1e79b1df6adee96daad"
+    },
+    "docs/history/pc1_implementation_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 58234,
+      "sha256": "0396b3675aada2835e30b9d97025802f5fa9c0e1db1912890d5b4971700e038b"
+    }
+  },
+  "count": 12,
+  "scope": "Exact active pages preceding PC1 implementation; no frozen predecessor edits"
+}

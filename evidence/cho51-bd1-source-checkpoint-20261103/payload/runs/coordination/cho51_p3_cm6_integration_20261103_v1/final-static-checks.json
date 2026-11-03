@@ -1,0 +1,217 @@
+{
+  "schema": "cho51_cm6_integration_final_static_v1",
+  "status": "STATIC_METADATA_CHECKS_COMPLETE",
+  "publisher": "project_root",
+  "allowed": "File/text/JSON/hash/link/arithmetic only",
+  "preservation": {
+    "baseline_pin": {
+      "bytes": 2267179,
+      "sha256": "21217e9c487aa0e701821834081b2ce4abc5ddb891ca0f08f55b3b21fcf887c1"
+    },
+    "full_rehash_count": 9541,
+    "unchanged": 9541
+  },
+  "candidate_pin": {
+    "bytes": 81722,
+    "sha256": "ae3f71b24e536105f40005b2327b9c1e1c35bcf338e8cc0bb602111abb8e19a4"
+  },
+  "adoption_pin": {
+    "bytes": 3246,
+    "sha256": "c2211bf8983f327167fd7e6b39dfdb12806532e38c9e8506d3ee655305ec5b6e"
+  },
+  "source_pins_checked": 425,
+  "new_file_pins_checked": 17,
+  "external_reference_only_pins_checked": 4,
+  "identity": {
+    "full": 1016,
+    "modules": 45,
+    "q": 360,
+    "held": 656,
+    "prior_held": 576,
+    "new_held": 80,
+    "baseline_held": 516,
+    "new_unqualified_held": 140,
+    "full_digest": "34e9e6957665ac22836969dc25345e6c69e6167710a23e1171bdd6658f02f9e2",
+    "q_digest": "321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08",
+    "ascii_order_checked": true,
+    "prior_identity_or_pin_removals": 0,
+    "prior_kind_changes": 0,
+    "promoted": 0,
+    "discharged": 0
+  },
+  "body_index": {
+    "rows": 500,
+    "anchor": 360,
+    "held": 140,
+    "new_held": 80,
+    "declarations": 160,
+    "imports": 58,
+    "new_subtests": 0,
+    "normal_subtests": 254
+  },
+  "scenarios": 32,
+  "qualified": 0,
+  "arithmetic": {
+    "q_events": 2568,
+    "q_bytes": 1314816,
+    "q_attempts": 2567,
+    "minimal_q_events": 1806,
+    "minimal_q_attempts": 1805,
+    "frozen_h_events": 2368,
+    "seven_raw_bytes": 5439488,
+    "peak_memory_proven": false
+  },
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7638,
+      "sha256": "fb282f549c4c17bef3378e179592be722ea9b4aa53a9e0a780077fe08cb731ad"
+    },
+    "HANDOFF.md": {
+      "bytes": 21927,
+      "sha256": "51f4a558421c4021a90c14298096f6a80953a011c3decd7633bdce9d2e4dd3cf"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7223,
+      "sha256": "b84bb20eb4c15822db4e0a478127e302acd76c9c8bff916328eeb39af2fc93bd"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7719,
+      "sha256": "b1d7e3be1a716edfd9c6ef5d3e119e2ee2e0ac4ccea4dc5ce4aef119f8693a19"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 7060,
+      "sha256": "28988061bfc016db7d72cdee06ea5e84f31461d1eb73e37ce56426b09f454154"
+    },
+    "README.md": {
+      "bytes": 8051,
+      "sha256": "b2613f0343310a6c52d790e7ae2dd6941af2057a448e0ba8b9b22f815d145f68"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11656,
+      "sha256": "30c4da7ddf5e700b53876782663c6ed140aebc1f783fe88fb3ea80e1300d27f3"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 14748,
+      "sha256": "dd71619d0fcf9ad054b4347bd9a89a79e924092ae19179f7c01b6b5e76f74e3b"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 13127,
+      "sha256": "adb2ea4121cb7de1b6db6a50724e321e70b44efcc7eac0aab42de8507f34fb51"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28276,
+      "sha256": "915bead731129a7c89f2f85357f83a006471168b21064ee142bce436912050b4"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34229,
+      "sha256": "d5357172555e69eb734d91e6dbea088e80d5021d083789c06864a46b27056cfd"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 54221,
+      "sha256": "5487f770ed6e97107c947fa0041ec87312390eff391f8229d4dc27dbe9884197"
+    },
+    "docs/phase2/cho51_p3_cm6_integration_20261103.md": {
+      "bytes": 4572,
+      "sha256": "1352d4da41c0991808e9720a2360524ec80ed8275f3251794e12fd04101b66ea"
+    },
+    "docs/phase2/cho51_p3_cm6_integration_contract_20261103.md": {
+      "bytes": 9735,
+      "sha256": "09a5fa25fc9428298cf17e675e2f7c75820d6e61256fbf0ffb6994ca46083446"
+    },
+    "tools/local_validation/cm6i/README.md": {
+      "bytes": 673,
+      "sha256": "93bada77a7abba58b68ea91601a5221cd66263f1e5ad5188bbd6c2c0ca05ba9f"
+    }
+  },
+  "archive_pins": {
+    "docs/history/cm6_integration_20261103/AGENTS.md": {
+      "bytes": 7650,
+      "sha256": "df1f1e27183da64828cf2eedc32e9e9617b57839713e70e03819480f926a1ac5"
+    },
+    "docs/history/cm6_integration_20261103/HANDOFF.md": {
+      "bytes": 21626,
+      "sha256": "06f1d6e698e8236febf64f73c88d5e37f8bc763912dcdc7a132003f68afdd60a"
+    },
+    "docs/history/cm6_integration_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7235,
+      "sha256": "27186320d6a6e692181c369dc6d4b9db5394482f91c227ce7c689f8d96a41ed3"
+    },
+    "docs/history/cm6_integration_20261103/CONTINUE_HERE.md": {
+      "bytes": 7731,
+      "sha256": "a1d3d10bf56553210c298fe863915856457c6568c228973272914ac144c4766f"
+    },
+    "docs/history/cm6_integration_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7072,
+      "sha256": "445649e3e6a9a854c3708da454907be6e9a9896252562f07a611d0891a0439d5"
+    },
+    "docs/history/cm6_integration_20261103/README.md": {
+      "bytes": 8063,
+      "sha256": "bca9ff43a82effe6fd990fdba8b58b9d0ce9da483fb00842eb7c282794dcfdae"
+    },
+    "docs/history/cm6_integration_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11668,
+      "sha256": "00f0daeb48fbcdaef7b501774d5381777812ae30b01a2f6353c50152464a3186"
+    },
+    "docs/history/cm6_integration_20261103/docs/phase2/README.md": {
+      "bytes": 14319,
+      "sha256": "64e56d9d265bad38b3e50d414a66f15f0b9e3d9714dd1bf2148c60ea09791025"
+    },
+    "docs/history/cm6_integration_20261103/docs/where are we/README.md": {
+      "bytes": 13139,
+      "sha256": "0b70fa192d7a4a5c0924627f85ce828b7337d398f78c0534cf58b27f8bb9dcb3"
+    },
+    "docs/history/cm6_integration_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 27975,
+      "sha256": "ab0948a7f80821f3fb6e2e3a25d2fbdcb46ba2022cf378c061ea38fa6d01b2a5"
+    },
+    "docs/history/cm6_integration_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 33800,
+      "sha256": "1c875689d25c19b8f62bbcddf60a1d2a2457afad81922df6de94c05c462604ac"
+    },
+    "docs/history/cm6_integration_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 53016,
+      "sha256": "f707a12a52a391eb342f3e463ae4e1581f333970a3e234512a1180c6bec9272b"
+    },
+    "docs/history/cm6_integration_20261103/manifest.json": {
+      "bytes": 1832,
+      "sha256": "efa04befc4c94984a4bec8e16a78ad59c76a2de3cec7505db3f435d64cd31662"
+    }
+  },
+  "local_links_checked": 557,
+  "predeclared_forward_links": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_cm6_integration_20261103_v1\\final-static-checks.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_cm6_integration_20261103_v1\\closeout-review.json"
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_cm6_integration_20261103_v1/candidate-v1.json": {
+      "bytes": 81722,
+      "sha256": "ae3f71b24e536105f40005b2327b9c1e1c35bcf338e8cc0bb602111abb8e19a4"
+    },
+    "runs/coordination/cho51_p3_cm6_integration_20261103_v1/coordination.json": {
+      "bytes": 2972,
+      "sha256": "eb9ab4f5f7f80086fdcce26ce734a195f709f4898352210aec9ba0d18c3af26a"
+    },
+    "runs/coordination/cho51_p3_cm6_integration_20261103_v1/preservation-baseline.json": {
+      "bytes": 2267179,
+      "sha256": "21217e9c487aa0e701821834081b2ce4abc5ddb891ca0f08f55b3b21fcf887c1"
+    },
+    "runs/coordination/cho51_p3_cm6_integration_20261103_v1/root-source-acceptance.json": {
+      "bytes": 3246,
+      "sha256": "c2211bf8983f327167fd7e6b39dfdb12806532e38c9e8506d3ee655305ec5b6e"
+    },
+    "runs/coordination/cho51_p3_cm6_integration_20261103_v1/source-review-v1.json": {
+      "bytes": 3666,
+      "sha256": "99ef70b2689c19a40a567a15cdb8dc6db2c4e05da20d7f60611394390f586789"
+    }
+  },
+  "phase_root_records_after_this": 6,
+  "phase_root_records_after_closeout": 7,
+  "draft_files": 0,
+  "source_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "limits": "Source and metadata only; no executable syntax/test success, actual collection/manifest/source/custody authority, held-debt discharge, runtime admission or resource feasibility. All original guards/holds/obligations remain."
+}

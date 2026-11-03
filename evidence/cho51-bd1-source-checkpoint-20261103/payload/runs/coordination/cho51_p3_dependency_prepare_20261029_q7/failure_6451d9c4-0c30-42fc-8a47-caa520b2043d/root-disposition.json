@@ -1,0 +1,21 @@
+{
+  "schema": "cho51_q_root_disposition_v1",
+  "status": "FAILED_P2Q_CONSUMED_API_QUERY_NATIVE_RELEASE_UNPROVED",
+  "actual_tool_exit_code": 1,
+  "author": "project_root",
+  "scientific_admission": false,
+  "created_utc": "2026-10-29T16:13:24.8801875Z",
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_q7/failure_6451d9c4-0c30-42fc-8a47-caa520b2043d/actual-review.json",
+    "sha256": "0f7ae7b8685172d0e34229cda9c6b0cfedbe2e014b1a283872125a01f2da4c2f",
+    "bytes": 4113
+  },
+  "native_query_error": "GetApiSetModuleBaseName first exact contract returned 0x80004001",
+  "api_mapping_accepted": false,
+  "caller_file_guard_closure_established": true,
+  "retry_same_attempt": false,
+  "operation_id": "6451d9c4-0c30-42fc-8a47-caa520b2043d",
+  "tests_executed": 0,
+  "native_module_reference_closure_established": false,
+  "next": "Changed independently reviewed already-resident module reference observation; fresh admission and actual review required"
+}

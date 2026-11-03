@@ -1,0 +1,284 @@
+{
+  "schema": "cho51_p3_local_validation_control_roster_v1",
+  "status": "DESIGN_NOT_EXECUTED",
+  "expected_controls": 34,
+  "controls": [
+    {
+      "id": "C01",
+      "historical_name": "finite_json",
+      "successor_name": "finite_json",
+      "purpose": "Accept one bounded finite exact-type JSON graph.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C02",
+      "historical_name": "duplicate_json",
+      "successor_name": "duplicate_json",
+      "purpose": "Reject duplicate object keys before use.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C03",
+      "historical_name": "nan_json",
+      "successor_name": "nan_json",
+      "purpose": "Reject NaN/Infinity constants.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C04",
+      "historical_name": "overflow_json",
+      "successor_name": "overflow_json",
+      "purpose": "Reject out-of-range integers and nonfinite numeric conversions.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C05",
+      "historical_name": "nested_json",
+      "successor_name": "nested_json",
+      "purpose": "Refuse graph depth/node/string/encoded-size overflow.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C06",
+      "historical_name": "zero_budget",
+      "successor_name": "zero_budget",
+      "purpose": "Accept exactly the eight integer-zero operation counters.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C07",
+      "historical_name": "boolean_budget",
+      "successor_name": "boolean_budget",
+      "purpose": "Reject bool-as-int or any nonzero/missing/extra operation counter.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C08",
+      "historical_name": "owned_path",
+      "successor_name": "owned_path",
+      "purpose": "Accept a direct verified fresh-attempt-owned path.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C09",
+      "historical_name": "escaped_path",
+      "successor_name": "escaped_path",
+      "purpose": "Reject path escape, alias or unsupported ancestry before effects.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C10",
+      "historical_name": "first_create",
+      "successor_name": "first_create",
+      "purpose": "Create an unused owned result exactly once.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C11",
+      "historical_name": "duplicate_create",
+      "successor_name": "duplicate_create",
+      "purpose": "Refuse an existing output without replacing bytes.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C12",
+      "historical_name": "bounded_tail",
+      "successor_name": "bounded_tail",
+      "purpose": "Read only a bounded verified tail from the owned log.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C13",
+      "historical_name": "full_window",
+      "successor_name": "local_full_window",
+      "purpose": "Accept a local600-second complete validation window.",
+      "change": "Explicit local-window replacement; historical965s shared lease is not replayed.",
+      "expected_result": true
+    },
+    {
+      "id": "C14",
+      "historical_name": "short_window",
+      "successor_name": "local_short_window",
+      "purpose": "Refuse a local599-second window for the600-second validation envelope.",
+      "change": "Explicit local-window replacement; historical965s shared lease is not replayed.",
+      "expected_result": true
+    },
+    {
+      "id": "C15",
+      "historical_name": "junit_baseline",
+      "successor_name": "junit_baseline",
+      "purpose": "Accept exact expected physical JUnit identities/counts.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C16",
+      "historical_name": "junit_duplicate",
+      "successor_name": "junit_duplicate",
+      "purpose": "Reject duplicate JUnit cases.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C17",
+      "historical_name": "junit_failure",
+      "successor_name": "junit_failure",
+      "purpose": "Reject failing/error/skipped JUnit outcomes.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C18",
+      "historical_name": "junit_class",
+      "successor_name": "junit_class",
+      "purpose": "Reject unexpected testcase class/name bindings.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C19",
+      "historical_name": "reports_baseline",
+      "successor_name": "reports_baseline",
+      "purpose": "Accept exact setup/call/teardown phase report multiplicities.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C20",
+      "historical_name": "reports_missing",
+      "successor_name": "reports_missing",
+      "purpose": "Reject a missing node or phase report.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C21",
+      "historical_name": "reports_duplicate",
+      "successor_name": "reports_duplicate",
+      "purpose": "Reject duplicate phase reports.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C22",
+      "historical_name": "git_actual_spelling_list",
+      "successor_name": "git_actual_spelling_list",
+      "purpose": "Accept exact pinned Git executable's reviewed Windows spelling in argv list.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C23",
+      "historical_name": "git_actual_spelling_cmdline",
+      "successor_name": "git_actual_spelling_cmdline",
+      "purpose": "Accept only the same executable and allowed arguments in reviewed Windows command-line form.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C24",
+      "historical_name": "git_status_tail",
+      "successor_name": "git_status_tail",
+      "purpose": "Accept only the exact source-capture status suffix, no injected arguments.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C25",
+      "historical_name": "git_explicit_case_spelling",
+      "successor_name": "git_explicit_case_spelling",
+      "purpose": "Handle approved Windows case spelling with exact executable identity checks.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C26",
+      "historical_name": "git_alternate_executable",
+      "successor_name": "git_alternate_executable",
+      "purpose": "Reject a different executable.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C27",
+      "historical_name": "git_alternate_argument_executable",
+      "successor_name": "git_alternate_argument_executable",
+      "purpose": "Reject conflicting executable argument override.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C28",
+      "historical_name": "git_invalid_tail",
+      "successor_name": "git_invalid_tail",
+      "purpose": "Reject any unapproved Git command/argument tail.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C29",
+      "historical_name": "git_explicit_environment",
+      "successor_name": "git_explicit_environment",
+      "purpose": "Reject caller-supplied environment override.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C30",
+      "historical_name": "git_descendant_cwd",
+      "successor_name": "git_descendant_cwd",
+      "purpose": "Reject a descendant cwd instead of the exact project root.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C31",
+      "historical_name": "git_relative_cwd",
+      "successor_name": "git_relative_cwd",
+      "purpose": "Reject a relative cwd.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C32",
+      "historical_name": "pytest_alias_owned_paths",
+      "successor_name": "pytest_alias_owned_paths",
+      "purpose": "Permit only reviewed pytest aliases entirely inside owned basetemp.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C33",
+      "historical_name": "pytest_alias_outside_paths",
+      "successor_name": "pytest_alias_outside_paths",
+      "purpose": "Reject aliases involving an outside source.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    },
+    {
+      "id": "C34",
+      "historical_name": "pytest_alias_outside_destination",
+      "successor_name": "pytest_alias_outside_destination",
+      "purpose": "Reject aliases targeting an outside destination.",
+      "change": "Preserve purpose in separately reviewed successor; no historical execution claim.",
+      "expected_result": true
+    }
+  ],
+  "runtime_values_are_not_present": true,
+  "executed": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}
+

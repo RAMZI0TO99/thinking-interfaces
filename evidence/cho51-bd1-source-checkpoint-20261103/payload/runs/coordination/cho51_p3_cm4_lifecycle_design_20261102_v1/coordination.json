@@ -1,0 +1,57 @@
+{
+  "schema": "cho51_cm4_design_coordination_v1",
+  "scope": "Source-only lifecycle/final-refusal and full-current collection/event design",
+  "publisher": "project_root only",
+  "root_ownership": [
+    "docs/phase2/cho51_p3_component_lifecycle_v1",
+    "metadata archive, phase records and current docs"
+  ],
+  "analysis_peer": "cm4_boundary_analysis; read-only, released",
+  "design_reviewer": "cm4_design_review",
+  "closeout_reviewer": "cm4_closeout_review",
+  "max_active_peers": 1,
+  "design_files": [
+    "README.md",
+    "collection.md",
+    "events.md",
+    "terminal-join.md",
+    "allocation.md",
+    "qualification.json",
+    "readiness.json"
+  ],
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "design-review-v1.json",
+    "candidate-v2.json",
+    "design-review-v2.json",
+    "candidate-v3.json",
+    "design-review-v3.json",
+    "root-design-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "conditional_drafts": "Archive every affected exact frozen candidate file and manifest before revisions",
+  "publication": "Message-only reviewers; Root saves exact text and obtains saved-byte confirmation; final closeout confirmation conversation-only",
+  "allowed": "File/text/JSON/hash/link checks and arithmetic",
+  "forbidden": "Python/import/project parser/AST/compiler/native/tests/Git/runtime",
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false
+}

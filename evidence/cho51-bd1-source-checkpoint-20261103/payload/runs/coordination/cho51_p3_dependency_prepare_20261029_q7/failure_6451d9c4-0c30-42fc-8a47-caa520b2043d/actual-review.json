@@ -1,0 +1,67 @@
+{
+  "schema": "cho51_p2q_failed_actual_review_v1",
+  "status": "FAILED_P2Q_CONSUMED_API_QUERY_NATIVE_RELEASE_UNPROVED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T16:12:30.4251039Z",
+  "operation_id": "6451d9c4-0c30-42fc-8a47-caa520b2043d",
+  "actual_tool_exit_code": 1,
+  "tool_wall_seconds": 3.1199953,
+  "caller_elapsed_seconds": 2.4716443,
+  "new_operation_owned_lifecycle_closed": false,
+  "caller_files_and_guard_closed": true,
+  "native_module_references_release_proved": false,
+  "qualified": false,
+  "tests_run": 0,
+  "native_helper": {
+    "bytes": 20992,
+    "sha256": "b268cf928892a363b002450e26ee25e7bd9eefbebc8ea1cfe43682e3b4c11147",
+    "path": "runs/coordination/cho51_p3_dependency_prepare_20261029_q7/native-helper_6451d9c4-0c30-42fc-8a47-caa520b2043d.dll"
+  },
+  "native_builder_controls": {
+    "loaded_same_pe_bytes": true,
+    "original_output_identity_retained": true,
+    "p_limits_query_verified": true,
+    "helper_identity": "7a7c35f67c35ae2f:1ba45e00000002000000000000000000",
+    "emitted_pe_verified": true,
+    "empty_job_closed": true
+  },
+  "findings": [
+    "Actual native query failed at first exact api-ms-win-core-datetime-l1-1-0.dll request, returning80004001(E_NOTIMPL). Actualtool exit1;callerfalse,api_mapping/nativeidentitynull,noPythonchild/testdispatch. This is actualqueryrefusal,distinct from earlierstartupfailure.",
+    "Source finally calls FreeLibrary for acquired query/bootstrap references and records controls on a result object, but Run throws before returning that object; no actual mapping/release receipt retained. Do not promote source cleanup to proved native-reference release.",
+    "Caller originalfilehandles/journal/guardclosure proved by actual externalreturn; acquirednative-reference release notproved,so complete ownedlifecycleclosure notcertified."
+  ],
+  "checks": [
+    "Rechecked77source732runtime169compiler2591preserved byte/hash pins without drift. Inspected raw operation-specifictool/caller/bootstrap,nativebuild,timestamp/source text only;noAPI/runtime/Git/Python/import/AST/compile/tests invoked.",
+    "Nativehelper20992bytes b268cf928892a363b002450e26ee25e7bd9eefbebc8ea1cfe43682e3b4c11147 matches retainedbytes; buildcontrolsemittedPE/samebytes/originalidentity/Pquerylimits/emptyJobclosed. These are buildcontrols,notQqualification.",
+    "17record6206byte journal orders guardready/authority/compiler/nativebuilder then exactqueryerror andreadytoclose. OriginalcallerPID23644 creationFILETIME134377637340921917,origin2026-10-29T16:08:54.3519289Z.",
+    "Actualexternalreturn resolvespendingoriginalfilehandlesclosed,journalclosed,callerbootstrapguarddonejoinedclosedcompletionwaitclosed,true;errornullwithin guard,0.0452154secondshutdown. outercustodyempty andsupervisorexitnull correctly reflect no supervisedchildlaunch.",
+    "Eight savedUTCcontrolstrue;callerresourceguard14samples,minRAM11307884544,disk75764121600,peakprivate127127552bytes withinlimits."
+  ],
+  "limits": {
+    "threads": 1,
+    "active_ram_gib": 4,
+    "disk_gib": 20,
+    "whole_seconds": 90,
+    "frame_bytes": 1048576,
+    "parent_mib": 512,
+    "process_mib": 512,
+    "cleanup_seconds": 5,
+    "job_mib": 768,
+    "stream_bytes": 1048576,
+    "work_seconds": 60,
+    "startup_ram_gib": 4,
+    "gpu_visible": false
+  },
+  "limitations": [
+    "No successfulAPI mapping,fullqueryplan,Qmethods,nativefaultqualification,Pmap/PEclosure/ABI/L/V/C/science accepted. HRESULT labels do not establish why implementation unavailable.",
+    "Fresh-start allowance consumed. Nextwork requires changed separatelyreviewed successor with freshqualification/admission; no unchangedreissue,limitwaiver or fallbackmapping fabrication.",
+    "Earlierstartup/deadlineunknownclosures,workflowdeviation andhistoricalcustody unchanged;117candidates34controls unexecuted,custodyUNRESOLVED,scientificcells0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

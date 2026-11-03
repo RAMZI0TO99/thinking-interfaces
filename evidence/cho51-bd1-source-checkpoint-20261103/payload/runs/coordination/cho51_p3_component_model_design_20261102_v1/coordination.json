@@ -1,0 +1,63 @@
+{
+  "schema": "cho51_cm1_design_coordination_v1",
+  "created_utc": "2026-11-02T12:13:02.4506017Z",
+  "root_author": "project_root",
+  "scope": "CM1 bounded component-model runner design and independent review only",
+  "max_active_peers": 1,
+  "explorer": "vfy_design_trace, read-only source questions, no authorship",
+  "design_reviewer": "qd_source_review, read-only message-only",
+  "closeout_reviewer": "qd_closeout_review, separate read-only metadata review",
+  "publisher": "project_root only",
+  "root_ownership": [
+    "docs/phase2/cho51_p3_component_model_v1",
+    "docs/phase2/cho51_p3_component_model_design_20261102.md",
+    "runs/coordination/cho51_p3_component_model_design_20261102_v1",
+    "12 current pages and pre-step archive"
+  ],
+  "design_files": [
+    "README.md",
+    "runner.md",
+    "collection.md",
+    "capture-accounting.md",
+    "qualification.md",
+    "roster.json",
+    "readiness.json",
+    "source-map.json"
+  ],
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "design-review-v1.json",
+    "candidate-v2.json",
+    "design-review-v2.json",
+    "candidate-v3.json",
+    "design-review-v3.json",
+    "candidate-v4.json",
+    "design-review-v4.json",
+    "root-design-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "conditional_drafts": "draft-v1/v2/v3 affected files plus manifest before frozen candidate corrections",
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "implementation_admitted": false,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "publication": "No new commit/push in this design phase; published predecessor05b3a886ea9a4755c8e2fa6e7ec588cafb3c8b6c"
+}

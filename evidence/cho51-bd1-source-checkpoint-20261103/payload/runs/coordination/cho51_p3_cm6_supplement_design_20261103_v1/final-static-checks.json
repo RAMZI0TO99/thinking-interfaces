@@ -1,0 +1,248 @@
+{
+  "schema": "cho51_cm6s_final_static_v1",
+  "status": "STATIC_METADATA_CHECKS_COMPLETE",
+  "publisher": "project_root",
+  "allowed": "File/text/JSON/hash/link/arithmetic only",
+  "preservation": {
+    "baseline_pin": {
+      "bytes": 2274028,
+      "sha256": "cf713c664bd8611d6e2d22368d6b57eacfbd0173da3d3a77a34ef04cb94b53db"
+    },
+    "full_rehash_count": 9579,
+    "unchanged": 9579
+  },
+  "candidate_pin": {
+    "bytes": 82765,
+    "sha256": "bd14af0558bc9895ac0804f3ab1d2b02def8c3b060a50fc8e2e0020f8dc04c22"
+  },
+  "adoption_pin": {
+    "bytes": 3186,
+    "sha256": "b2ca78b94338bedd07bc3e24b8abf06d764dfb06938a67db0f0bc3e2b5d8515f"
+  },
+  "source_pins_checked": 433,
+  "new_file_pins_checked": 8,
+  "external_reference_only_pins_checked": 4,
+  "identity": {
+    "full": 1016,
+    "modules": 45,
+    "q": 360,
+    "s": 140,
+    "s_modules": 7,
+    "q_s_intersection": 0,
+    "held": 656,
+    "baseline_held": 516,
+    "new_unqualified_held": 140,
+    "debt_rows_copied_exactly": 656,
+    "new_methods": 0,
+    "s_raw_pin": {
+      "bytes": 11102,
+      "sha256": "ceaa4cfa0f05f38de3b58d1806c2380fad7eb213d1023e6733909dceff68b154"
+    },
+    "s_digest": "746927e2bd26c698ab6a52f232db1c15c7bfb3a40e685b64ec0064c1b2f5b39c",
+    "q_digest": "321e076ba18c3bb413d5c7f70f34b03e3780bce1712e5ff4f03fd7f6e4b60a08",
+    "c_digest": "34e9e6957665ac22836969dc25345e6c69e6167710a23e1171bdd6658f02f9e2"
+  },
+  "body_rows": 140,
+  "new_design_scenarios": 24,
+  "prior_cm6_scenarios": 32,
+  "qualified": 0,
+  "resolved_findings": [
+    "CM6S-D01"
+  ],
+  "arithmetic": {
+    "outer_events": 706,
+    "outer_bytes": 361472,
+    "outer_attempts": 705,
+    "inner_stream_routes": 20,
+    "inner_records": 36120,
+    "inner_primary_calls": 36100,
+    "cumulative_old_prefix_bytes": 3259828000,
+    "max_line": 347,
+    "max_e": 622,
+    "max_terminal": 1098,
+    "max_join": 1001,
+    "nine_raw_caps": 5570560,
+    "representation": "Conditional field/record bounds only",
+    "timing_memory_complete_operation": "NOT_ESTABLISHED"
+  },
+  "current_document_pins": {
+    "AGENTS.md": {
+      "bytes": 7459,
+      "sha256": "5dd6cde08308383bbe52e28f3ad60a5563ffae011d27ea23bd35dbe719d8c6d8"
+    },
+    "HANDOFF.md": {
+      "bytes": 22119,
+      "sha256": "ae74470c96c6ddeb84db20204b6fac60a216ed8270d1246089726f7d23aeafb5"
+    },
+    "AGENT_COORDINATION.md": {
+      "bytes": 7044,
+      "sha256": "c8dc2a04c7c7591bb9d0fe50123d6816effef49fb6f4de800714bb0033e628d9"
+    },
+    "CONTINUE_HERE.md": {
+      "bytes": 7540,
+      "sha256": "d4d5110c1172f6240956f7fb6247ffabc501368b2f2b2a0961190737374f72af"
+    },
+    "PHASE2_START_HERE.md": {
+      "bytes": 6881,
+      "sha256": "df3144d7da3fe7b42d08381defa8821c717402810b1807b18e12880f4d99b7e2"
+    },
+    "README.md": {
+      "bytes": 7872,
+      "sha256": "2822b257a893cca33aa789663cf66a084e11c868ae7d4447361cc24d1d0df862"
+    },
+    "WINDOWS_SETUP.md": {
+      "bytes": 11477,
+      "sha256": "fc96617fd391c938efff10b381a8e62e61e987f83c464990b70d10b922991080"
+    },
+    "docs/phase2/README.md": {
+      "bytes": 15032,
+      "sha256": "ba8074df9fdb55ab6f1db921a01713c026bce7b51a7c331837269bba39bd60d5"
+    },
+    "docs/where are we/README.md": {
+      "bytes": 12950,
+      "sha256": "032bdd04a1a0b3d5d0d7fc99d9af22e88e492c350f91119242b287b2c73cbf9c"
+    },
+    "docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28470,
+      "sha256": "d10f39c7c15429fd12105fd311ce4194026ba04438ce14dad0e86634bff19146"
+    },
+    "docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34503,
+      "sha256": "f4fee4d620892b139beccaf002c797e74bc8156ab93658b4f0e6e90bd14bf09c"
+    },
+    "docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 55462,
+      "sha256": "f46e876973422fc9560ea1c36f39543746caa0f8bda1c9968b745e9d161d27f9"
+    },
+    "docs/phase2/cho51_p3_cm6_supplement_design_20261103.md": {
+      "bytes": 4696,
+      "sha256": "b7ef0772f12e039d9d781dbac2ae18b0817708b6f4504024c1cdb6b94865431c"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/README.md": {
+      "bytes": 2723,
+      "sha256": "e0660155cc4817b8d9f98e561dad99e9490626982685a2a42a9c471112117886"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/profile.md": {
+      "bytes": 8262,
+      "sha256": "c8a49e9d9f8c4c0a5cdd94b5c67314b20c11b93050e9b1df5484adf7f82fd89d"
+    },
+    "docs/phase2/cho51_p3_supplement_cohort_v1/feasibility.md": {
+      "bytes": 7718,
+      "sha256": "8368b484a45fae0bf34c6deb0ddbfed0ad3b83818ecd858ca2c84da64c0f8013"
+    }
+  },
+  "archive_pins": {
+    "docs/history/cm6_supplement_design_20261103/AGENTS.md": {
+      "bytes": 7638,
+      "sha256": "fb282f549c4c17bef3378e179592be722ea9b4aa53a9e0a780077fe08cb731ad"
+    },
+    "docs/history/cm6_supplement_design_20261103/HANDOFF.md": {
+      "bytes": 21927,
+      "sha256": "51f4a558421c4021a90c14298096f6a80953a011c3decd7633bdce9d2e4dd3cf"
+    },
+    "docs/history/cm6_supplement_design_20261103/AGENT_COORDINATION.md": {
+      "bytes": 7223,
+      "sha256": "b84bb20eb4c15822db4e0a478127e302acd76c9c8bff916328eeb39af2fc93bd"
+    },
+    "docs/history/cm6_supplement_design_20261103/CONTINUE_HERE.md": {
+      "bytes": 7719,
+      "sha256": "b1d7e3be1a716edfd9c6ef5d3e119e2ee2e0ac4ccea4dc5ce4aef119f8693a19"
+    },
+    "docs/history/cm6_supplement_design_20261103/PHASE2_START_HERE.md": {
+      "bytes": 7060,
+      "sha256": "28988061bfc016db7d72cdee06ea5e84f31461d1eb73e37ce56426b09f454154"
+    },
+    "docs/history/cm6_supplement_design_20261103/README.md": {
+      "bytes": 8051,
+      "sha256": "b2613f0343310a6c52d790e7ae2dd6941af2057a448e0ba8b9b22f815d145f68"
+    },
+    "docs/history/cm6_supplement_design_20261103/WINDOWS_SETUP.md": {
+      "bytes": 11656,
+      "sha256": "30c4da7ddf5e700b53876782663c6ed140aebc1f783fe88fb3ea80e1300d27f3"
+    },
+    "docs/history/cm6_supplement_design_20261103/docs/phase2/README.md": {
+      "bytes": 14748,
+      "sha256": "dd71619d0fcf9ad054b4347bd9a89a79e924092ae19179f7c01b6b5e76f74e3b"
+    },
+    "docs/history/cm6_supplement_design_20261103/docs/where are we/README.md": {
+      "bytes": 13127,
+      "sha256": "adb2ea4121cb7de1b6db6a50724e321e70b44efcc7eac0aab42de8507f34fb51"
+    },
+    "docs/history/cm6_supplement_design_20261103/docs/where are we/PROJECT_PLAN.md": {
+      "bytes": 28276,
+      "sha256": "915bead731129a7c89f2f85357f83a006471168b21064ee142bce436912050b4"
+    },
+    "docs/history/cm6_supplement_design_20261103/docs/where are we/PROGRESS_REPORT.md": {
+      "bytes": 34229,
+      "sha256": "d5357172555e69eb734d91e6dbea088e80d5021d083789c06864a46b27056cfd"
+    },
+    "docs/history/cm6_supplement_design_20261103/docs/where are we/EVIDENCE_INDEX.md": {
+      "bytes": 54221,
+      "sha256": "5487f770ed6e97107c947fa0041ec87312390eff391f8229d4dc27dbe9884197"
+    },
+    "docs/history/cm6_supplement_design_20261103/manifest.json": {
+      "bytes": 1838,
+      "sha256": "9fc6add7c31651255ea1875a8d80bf5efa91293184b9aaa1959ef815aaf2526a"
+    }
+  },
+  "draft_pins": {
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/draft-v1/docs/phase2/cho51_p3_supplement_cohort_v1/workload.json": {
+      "bytes": 182962,
+      "sha256": "11e65c67fc8dee37678b3ea0cbd35de2861b81d99712dacd7ac9491f8f0d74c9"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/draft-v1/docs/phase2/cho51_p3_supplement_cohort_v1/readiness.json": {
+      "bytes": 3671,
+      "sha256": "7803f4daf02e341be247c5fe25924ff9eef0fe16c53ad1e452bb68911c521c5c"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/draft-v1/manifest.json": {
+      "bytes": 1434,
+      "sha256": "914ab78d93b3d5cd76ec7132b780b4f89413aa8f01a0ff842d1b05b632ce9fe8"
+    }
+  },
+  "local_links_checked": 553,
+  "predeclared_forward_links": [
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_cm6_supplement_design_20261103_v1\\final-static-checks.json",
+    "D:\\Aenv\\pro3\\runs\\coordination\\cho51_p3_cm6_supplement_design_20261103_v1\\closeout-review.json"
+  ],
+  "prior_phase_record_pins": {
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/candidate-v1.json": {
+      "bytes": 82015,
+      "sha256": "da227201b532003f3101fee5016a5a83a2f88f26eb166586dc8fba8ba91df7b3"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/candidate-v2.json": {
+      "bytes": 82765,
+      "sha256": "bd14af0558bc9895ac0804f3ab1d2b02def8c3b060a50fc8e2e0020f8dc04c22"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/coordination.json": {
+      "bytes": 2638,
+      "sha256": "9527ee69e63dee5ee3ceafd503c4e136bd00f3e5d82d7a64b5d1c8317f1aa390"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/design-review-v1.json": {
+      "bytes": 4254,
+      "sha256": "f830c30da1638b2639a182690c7ac2b22febe4823e68b161379b8e2b2855804c"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/design-review-v2.json": {
+      "bytes": 3499,
+      "sha256": "098c0fb3f4177a9ae880abf5f9822bb4bd2600365826f55916384abe91618963"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/preservation-baseline.json": {
+      "bytes": 2274028,
+      "sha256": "cf713c664bd8611d6e2d22368d6b57eacfbd0173da3d3a77a34ef04cb94b53db"
+    },
+    "runs/coordination/cho51_p3_cm6_supplement_design_20261103_v1/root-design-acceptance.json": {
+      "bytes": 3186,
+      "sha256": "b2ca78b94338bedd07bc3e24b8abf06d764dfb06938a67db0f0bc3e2b5d8515f"
+    }
+  },
+  "phase_root_records_after_this": 8,
+  "phase_root_records_after_closeout": 9,
+  "draft_files": 3,
+  "design_reviewer": "cm4_design_review_sol",
+  "closeout_reviewer": "cm4_closeout_review",
+  "implementation_added": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "commit_push": false,
+  "limits": "Design and metadata only; no authentic observation, implementation/test/runtime result, timing/memory/native feasibility or debt discharge. All original guards/holds/obligations remain."
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "cho51_p2_actual_review_v1",
+  "status": "FAILED_P2_P_CONSUMED_DEADLINE_CLOSURE_UNPROVED",
+  "reviewer": "p2_actual_review",
+  "authors": [
+    "project_root",
+    "p2_dependency_impl"
+  ],
+  "created_utc": "2026-10-29T17:08:52.5161746Z",
+  "operation_id": "1d498286-518e-47e4-9cb5-be8f595dfb33",
+  "actual_tool_exit_code": 1,
+  "new_operation_owned_lifecycle_closed": false,
+  "accepted_map": false,
+  "actual_result_accepted": false,
+  "source_review_sha256": "9b56ae7455216a2689726f02c48dc5d58946c99c6d19c55476441208c8fadc8d",
+  "coverage_review_sha256": "2854a3cfad043d8355189b33b6a7f811de679a84f0a511183a2b3a2aa8df8948",
+  "findings": [
+    "P9 reached the original 240-second work deadline. Bootstrap caller_error at 2026-10-29T17:06:55.0650717Z reports Poll original work deadline; guard_fault at 17:06:55.1269754Z reports independent caller work deadline. Final tool poll exited 1 with empty output. Attempt consumed.",
+    "A provisional result was written at elapsed 162.116561 seconds. Its status PHYSICAL_MAP_OBSERVED_REVIEW_PENDING and complete physical candidates summary do not establish acceptance. External caller return, independent actual review and handle closure remain explicitly pending; physical index requires final verification.",
+    "No caller-return or external closure receipt proves original process reaping, Job empty/closed, pipe EOF/join, original file closure or guard join. No later PID absence inference is permitted."
+  ],
+  "checks": [
+    "Independently inspected initial and poll tool returns, 16-event bootstrap, provisional result and native summary. Rechecked 43 source, 732 admission runtime and 2922 preserved byte/hash pins without drift. Exact source and coverage review hashes match.",
+    "58 provisional outputs total 25113762 bytes. All 37 physical and 18 native page byte/hash references in result.json match current artifacts. Native summary records 888 PE images, 4843 edges, 50 platform images and complete_physical_candidates true, with native_search_qualified and ABI false. These remain provisional observations.",
+    "Original caller PID 46628 creation FILETIME 134377669746921136, origin UTC 2026-10-29T17:02:55.0166486Z retained. Supervisor dispatch precedes result and deadline; no complete closeout marker follows.",
+    "Review used static file, text, JSON, hashes and metadata only. No API, Python, Git, AST, tests, runtime runner or process probes were invoked."
+  ],
+  "limits": {
+    "startup_ram_gib": 4,
+    "threads": 1,
+    "parent_mib": 4096,
+    "whole_seconds": 300,
+    "cleanup_seconds": 5,
+    "stream_bytes": 1048576,
+    "disk_gib": 20,
+    "process_mib": 4096,
+    "active_ram_gib": 4,
+    "job_mib": 5120,
+    "work_seconds": 240,
+    "gpu_visible": false
+  },
+  "source_supported_hotpaths": [
+    "After result serialization, supervisor calls prepared.verify(), outputs.verify() and guard.checkpoint before acceptance. Prepared verification calls selection.verify(), which calls reader.verify() and then full selector expansion for initial/final comparison; output verification is also called inside prepared.verify().",
+    "Reader.verify() rechecks every retained directory identity, every file fact, full file hash and post-hash facts, and every saved recipe enumeration. Its checkpoint invokes resource sampling. These nested full passes and frequent resource calls are plausible costs, not measured bottlenecks.",
+    "A successor may eliminate equivalent redundant passes or bound expensive resource sampling while preserving independent guards, deadline/stop responsiveness, full final original-handle hashes, identity checks, initial/final exact census and output readback. Any changed cadence or verification dependency requires separate source review and qualification."
+  ],
+  "limitations": [
+    "No accepted P map, complete dependency closure, final full verification, native search, loader/ABI, Git execution, L/V/C or science result. Provisional result resource measurements do not cover missing closeout.",
+    "Do not reissue unchanged or raise caps. Use a separately versioned, independently reviewed performance successor and fresh admission. New success cannot repair this operation cleanup uncertainty.",
+    "All earlier unknown closures and historical workflow/custody failures remain unchanged. 117 candidates and 34 controls remain unexecuted, custody UNRESOLVED and scientific cells 0/1020."
+  ],
+  "complete_dependency_closure": false,
+  "launch_authorized": false,
+  "scientific_admission": false
+}

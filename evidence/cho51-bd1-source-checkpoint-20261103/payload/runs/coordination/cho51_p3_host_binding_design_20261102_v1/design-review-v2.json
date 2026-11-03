@@ -1,0 +1,30 @@
+{
+  "tests_executed": 0,
+  "findings": [],
+  "publication_kind": "verbatim independent peer message transcription",
+  "review_text": "HB1 candidate-v2 independent design review: ACCEPTED_DESIGN_ONLY; findings []. Candidate is 8,400 bytes, SHA256 672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b. All 7 design files and 30 input pins match; all 4 preserved draft-v1 files match their original candidate pins. Exactly 4 design files changed. HB-D1 is resolved by the optional single COMPONENT_NATIVE fixture_publication with its distinct once-only UUID, exact scenario and 16 role/path/cap correspondence; inner and auxiliary artifacts stay charged in fixtures and the complete parent, with disjoint views, no production promotion and an acyclic independently approved authority/join pin graph. HB-D2 is resolved by the exact 8-byte uint32 little-endian H/P prefix, effective 4,088-byte header, validated lengths before body allocation, prefix/header agreement, exact complete-frame length and checksum/truncation/extra-tail refusal. Request 8+4,088+4,096=8,192 and response 8+4,088+131,072=135,168 preserve the fixed full-frame caps. Acceptance covers logical provider/bridge/verifier separation, unauthenticated supplied parsing, consumed/UNKNOWN/no-retry claim behavior, bounded transport/cancellation prerequisites, complete attributed parent/metadata/fixture conservation, independent review lifecycle gates, exact 580-method/23-module partition and finite component qualification design. The VFY set remains 64 existing methods plus exact future additions; 24 HB scenarios remain distinct from 40 SC/36 diagnostic obligations. Fixture 32-file/4MiB and 16-role closeout accounting, complete escaped capture/failure proof, original guards/clock/closure and full-Q32→100→384 controls remain prerequisites. No actual provider, original channel, durable claim, complete attribution, loaded-code binding, asynchronous handoff, runner, native qualification or complete timing/output feasibility is established. Provider availability remains NOT_ESTABLISHED and runtime readiness REFUSED_PENDING_PREREQUISITES. Frozen SC1 remains unchanged; no runtime, second QD, P, science or old-operation recertification follows. No files were written and no project runtime/import/AST/compiler/native/tests/Git executed.",
+  "runtime_admission": false,
+  "created_utc": "2026-11-02T10:23:26.2192629Z",
+  "resolved_findings": [
+    "HB-D1",
+    "HB-D2"
+  ],
+  "review_text_sha256": "a2b8d4fa507c2c4228ecf58cf8e2e487ffaa7a374f04a92396900b49a803e001",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "publisher": "project_root",
+  "reviewer": "qd_source_review",
+  "runtime_operations": 0,
+  "scientific_admission": false,
+  "qualification_accepted": false,
+  "schema": "cho51_hb1_independent_design_review_v1",
+  "p_admitted": false,
+  "authors": [
+    "project_root"
+  ],
+  "candidate": {
+    "path": "runs/coordination/cho51_p3_host_binding_design_20261102_v1/candidate-v2.json",
+    "bytes": 8400,
+    "sha256": "672c71c0fb64893c4b678d648797c100c68c533581bd4cf261388af867dfeb2b"
+  },
+  "implementation_accepted": false
+}

@@ -1,0 +1,379 @@
+{
+  "schema": "cho51_l_independent_design_review_v1",
+  "status": "ACCEPTED_DESIGN_ONLY",
+  "revision": 1,
+  "created_utc": "2026-10-29T18:10:29.7642094Z",
+  "reviewer": "l_design_review",
+  "reviewer_task": "/root/l_design_review",
+  "authors": [
+    "project_root"
+  ],
+  "analysis_contributor": "l_candidate_analysis",
+  "independent_of_authors_and_analysis_contributor": true,
+  "input_index": {
+    "path": "runs/coordination/cho51_p3_loader_design_20261029_v1/design-review-inputs.json",
+    "bytes": 8630,
+    "sha256": "4ac861bcec555582f95a47f385f2a7f6ce6b51110b591b7ff55099939ec5c940"
+  },
+  "design_files": {
+    "docs/phase2/cho51_p3_loader_design_20261029.md": {
+      "sha256": "85b5f22a99c19f9bcffbf7ba38f79d4108ec51e5ddbbe0d4437c9e137adba415",
+      "bytes": 22883
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/README.md": {
+      "sha256": "87a8807e72676d5fac89757d711fed3bb40f70e7caceacce52098695e242bb33",
+      "bytes": 817
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/record-contract.md": {
+      "sha256": "9e310115271e96926925828aa9b74fe8fcfbe07d40e0658792bf6b6f380fd4bd",
+      "bytes": 13299
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/source-trace.md": {
+      "sha256": "7626d538c5669724a17bd4006a9798f493381dad21bd8c1f8f90bba10b17980f",
+      "bytes": 5136
+    },
+    "docs/phase2/cho51_p3_loader_design_v1/acceptance-cases.json": {
+      "sha256": "13abd87a491880b2e33e6d9f966123e551cdd6199c63cba6f63a5945535085ec",
+      "bytes": 13884
+    }
+  },
+  "context_files": {
+    "HANDOFF.md": {
+      "sha256": "70a742e7dbb8f59aae5fa46690d424611b00be26dc8598f73628f72c4456a1e1",
+      "bytes": 8682
+    },
+    "AGENTS.md": {
+      "sha256": "51aab7b5d1d4e98308055d6fafa4e40900028ea23ebf67cc121e46ec3b377cbe",
+      "bytes": 4127
+    },
+    "AGENT_COORDINATION.md": {
+      "sha256": "497ecee80759232b1d8a282776865f1682dd7694d680b66abc674c799fb95dd9",
+      "bytes": 3712
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829",
+      "bytes": 5619
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f",
+      "bytes": 21107
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/test-roster.json": {
+      "sha256": "721f3dc323d58e83935c7c5afdca7f3e0c242c496af204e6fd99e51e63bf86a3",
+      "bytes": 7470
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/control-roster.json": {
+      "sha256": "cb51607b77782f556aca3ef4a2119cdff913818107aad250ebb11ad159a32113",
+      "bytes": 11390
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/dependency-plan.json": {
+      "sha256": "ff5033f1dc3698be5156a3768bf060e37db15b631f2f87e0dcead355b1b659bf",
+      "bytes": 7406
+    },
+    "docs/phase2/cho51_p3_local_validation_v1/acceptance-cases.json": {
+      "sha256": "f7a70ec775eb08033d052f77db63ee8532c6a5a99758477c2fe557bf41ddc5eb",
+      "bytes": 6019
+    },
+    "docs/phase2/cho51_p3_dependency_preparation_20261029.md": {
+      "sha256": "22c02fa4188b740f44896c70da487fbae3ec19b6fff59c96f0911e8c8945549d",
+      "bytes": 5208
+    },
+    "tools/local_validation/p2r10/dependency_coverage.md": {
+      "sha256": "b05294517ece332ad9669f943880008b141a8767c7172f7cdfc2bcd809d818e8",
+      "bytes": 14465
+    },
+    "tools/local_validation/p2r10/dependency_recipe.json": {
+      "sha256": "e2709825c5a94729777537fe598a7ee370e4b610143e76961138a49d13d5cc20",
+      "bytes": 15482
+    },
+    "tools/local_validation/p2r10/native_policy.json": {
+      "sha256": "36a370008ba689ace3ab3c9fbd2521ec7d247de147e75ceb4286ab91ae372109",
+      "bytes": 165713
+    },
+    "tools/local_validation/p2r10/protocol.py": {
+      "sha256": "d5d5e53105a1c875b46e2f6908cc077bae0389cd1df26c757a238ff9f91a9c37",
+      "bytes": 19990
+    },
+    "tools/local_validation/p2r10/supervisor.py": {
+      "sha256": "c2610f6ef37d682f6003c23f2da613b8dccca4dfe02fc554deff17ef092df106",
+      "bytes": 43541
+    },
+    "tools/local_validation/p2r10/native_reader.py": {
+      "sha256": "50c079115c9db5ad3491826f5ed8c4ef75b323f658c22fffaecdf49edc6a6b8a",
+      "bytes": 22152
+    },
+    "tools/local_validation/p2r10/caller_native.cs": {
+      "sha256": "8ba50547abb1d01e2c60b68437066f4eb7c602e2d6ecf65adc64232b6939a69e",
+      "bytes": 26363
+    },
+    "tools/local_validation/p2r10/manifest.py": {
+      "sha256": "590fb265acd91e9ff6b7854f40a7657aab3d996b5d8962d8a74aec20ae71cf01",
+      "bytes": 18398
+    },
+    "tools/local_validation/p2q10/protocol.py": {
+      "sha256": "a513889208efa353d744bdc3cba52aa0bc5707e6b988751cad2c8146483d5158",
+      "bytes": 16929
+    },
+    "runs/coordination/cho51_p3_dependency_prepare_20261029_q10/root-qualification.json": {
+      "sha256": "810d09935f5c6c97ce090ce10a904e111dce9307a29a3a05e16d31f6dc72a87f",
+      "bytes": 3978
+    },
+    "runs/coordination/cho51_p3_dependency_prepare_20261029_p10/actual-review.json": {
+      "sha256": "059be98fbf917101391cff7d0972b676dbad667bb24134887091e801a9901367",
+      "bytes": 44063
+    },
+    "runs/coordination/cho51_p3_dependency_prepare_20261029_p10/root-qualification.json": {
+      "sha256": "59dfa93c5712cc7a0156a32f9e59248c17ff70981cb3bbb47b357323cb7b63f8",
+      "bytes": 7656
+    },
+    "runs/coordination/cho51_p3_dependency_prepare_20261029_p10/final-closeout.json": {
+      "sha256": "70ca2f8a5459561f8ddf1bda04c2524c6af7c8a7b413acac4c657db6dc8052e7",
+      "bytes": 5215
+    },
+    "docs/phase2/cho51_worker_bridge_v1/worker_bridge.py": {
+      "sha256": "dc16336c5edccc9d9568e8a957cc02e0016eafcf62c8123736f0356f6134a977",
+      "bytes": 4289
+    },
+    "evaluation/phase2_selected_source_store.py": {
+      "sha256": "a5fe67558d20450100c1630dec4c2cbe6a09fa28a46e4501f2e2f69f675b7d38",
+      "bytes": 45975
+    },
+    "adaptation/source_checkpoint.py": {
+      "sha256": "1c41f3b620e66afad06b4978014e88f94bf999cea469951bc54d01e51e95948e",
+      "bytes": 10731
+    },
+    "evaluation/tcpl_publication.py": {
+      "sha256": "4efa01af664af75eeeec39ac2aaf4fd8cc2d1f8245ac606f4079c1f377bec474",
+      "bytes": 9796
+    },
+    ".venv/Lib/site-packages/torch/__init__.py": {
+      "sha256": "767496b63c899ec3d1106a4c1eeac664a9b3947a9b2f9eefa7a901cdfe8a0288",
+      "bytes": 114928
+    },
+    ".venv/Lib/site-packages/torch-2.13.0+cu130.dist-info/METADATA": {
+      "sha256": "c70f358c762d072ea6b9275b08e1af444abc989448dcf6b721f9049313c8e87b",
+      "bytes": 39472
+    },
+    ".venv/Lib/site-packages/torchaudio-2.11.0.dist-info/METADATA": {
+      "sha256": "1ac77b6a77750febc5fe4921ac29d43b3cebf5b191d03c0e1413cab7e343ac31",
+      "bytes": 6861
+    },
+    ".venv/Lib/site-packages/torchaudio/_extension/__init__.py": {
+      "sha256": "841fc37bdddb65a49b34ebc84aa6f49b5ac382649c8ae25c1674c2aed78c923e",
+      "bytes": 1397
+    },
+    ".venv/Lib/site-packages/torchaudio/_extension/utils.py": {
+      "sha256": "cfb6a592ff1609da55fbbc5cc047b3994a023e95648a382500f050119cba3d04",
+      "bytes": 5059
+    },
+    ".venv/Lib/site-packages/braindecode/models/brainmodule.py": {
+      "sha256": "77459c720858e3216ebf451d7dd9e876fe2ddbbf3f62f9125ce567168c537fa8",
+      "bytes": 41272
+    },
+    ".venv/Lib/site-packages/mne/_freesurfer.py": {
+      "sha256": "6c916658fda0bb912ae45c7f569459f4fed70abb872e1e2cab09b3543a4c1e0d",
+      "bytes": 27235
+    },
+    ".venv/Lib/site-packages/_pytest/config/__init__.py": {
+      "sha256": "98b05c2c37d09e1d5c05975efc2d9af98d4aff6ea47de410a8e93956420873c1",
+      "bytes": 80947
+    },
+    "docs/phase2/cho51_p3_adapter_v1/mapping.py": {
+      "sha256": "df60e588e8b3533d52ac4632f92ee32f56bd3b9d177f9f3673ccd9dcee562122",
+      "bytes": 12945
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_telemetry.py": {
+      "sha256": "7ce9def4e6d89375970aee1d53e0ff4c9c05acdd43cafae9a6a65e71f94ecbee",
+      "bytes": 17511
+    },
+    "docs/phase2/cho51_p3_adapter_v1/contracts.py": {
+      "sha256": "16877ae46c440ff6a645a334094ee3008f34b1bb4d709738496dc3cd20670429",
+      "bytes": 14415
+    },
+    "docs/phase2/cho51_p3_adapter_v1/README.md": {
+      "sha256": "c054f27971b99537f59a6f87aa9d697e52f91bb968913625c6f82e814a9aa76b",
+      "bytes": 4893
+    },
+    "docs/phase2/cho51_p3_adapter_v1/telemetry.py": {
+      "sha256": "f373fa4e159850deb6a7b733284cc14e3a554bdeee7ab5fa279357fd5c220e5c",
+      "bytes": 16973
+    },
+    "docs/phase2/cho51_p3_adapter_v1/test_mapping.py": {
+      "sha256": "f81456755fc721a3b24df321a5d72d682db3e78c307717d16732ef8f4a079384",
+      "bytes": 20488
+    }
+  },
+  "historical_context_archive": {
+    "path": "docs/history/loader_design_20261029/manifest.json",
+    "bytes": 2261,
+    "sha256": "426f47107363f0a7ea7995124dc13b896180d43ec95f43f43ece63ab3ffa2465",
+    "snapshot_count": 12,
+    "all_snapshot_bytes_and_hashes_match": true,
+    "interpretation": "The active context paths in the input index identify their exact pre-step bytes observed during this review. Twelve byte-identical archived snapshots preserve that historical context. This review does not freeze future active handoff/coordination documentation; later documentation maintenance must preserve these snapshots and distinguish the later state."
+  },
+  "inspection": {
+    "method": "Static file/text/JSON/hash inspection only",
+    "design_pin_count": 5,
+    "context_pin_count": 41,
+    "all_design_and_context_bytes_and_hashes_match": true,
+    "preservation_baseline": {
+      "path": "runs/coordination/cho51_p3_loader_design_20261029_v1/preservation-baseline.json",
+      "sha256": "8342172f13b3f3c6fd883a843ea26e8980f3593e861a3d5181c2567c2a5d9529",
+      "files_checked": 3322,
+      "mismatches": [],
+      "predecessor_p10_baseline_files": 3204,
+      "all_predecessor_p10_baseline_pins_included_unchanged": true
+    },
+    "qualification_cases": 40,
+    "unique_qualification_ids": 40,
+    "executed_qualification_cases": 0,
+    "static_candidate_functions": 25,
+    "static_candidate_cases": 117,
+    "static_mapping_cases": 39,
+    "static_telemetry_cases": 78
+  },
+  "checks": [
+    {
+      "id": "D01",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Scope and predecessor",
+        "cho51_p3_loader_design_20261029.md:Required sequence before L"
+      ],
+      "assessment": "The local contract remains controlling. Accepted Q10/P10 are factual provenance and physically scoped inputs, not loader/ABI qualification or L admission. New helper/observer/configuration requires independently reviewed source, fresh Q and fresh complete P before implementation-specific Root adoption and L admission. Current control inputs avoid physical-map self-reference."
+    },
+    {
+      "id": "D02",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Finite execution plan",
+        "record-contract.md:62-93"
+      ],
+      "assessment": "Finite module/origin/namespace/native/resource/ABI/guard/plugin policies are mandatory implementation-review inputs. No nonexistent binary hash, operational grant, complete node roster or ABI result is invented. Source-reviewed trusted-code operation and explicit bootstrap trust remain distinct from hostile-code sandbox claims."
+    },
+    {
+      "id": "D03",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Phase machine and guard order",
+        "source-trace.md:Early aliases and package graph",
+        "acceptance-cases.json:LQ25-LQ28"
+      ],
+      "assessment": "Confinement precedes non-bootstrap initialization; load/save/load_file/save_file safetensors blockers precede canonical by-value imports. Inspected canonical text confirms load/save aliases in all three cited modules. Missing symbols, stale aliases, broad numerical exemptions and swallowed unexpected denials refuse. Full constructor guards close before candidates; effect-free sentinel arguments do not invoke unguarded real APIs."
+    },
+    {
+      "id": "D04",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Native search and image observation",
+        "acceptance-cases.json:LQ13-LQ19"
+      ],
+      "assessment": "The proposed backend is a native LdrRegisterDllNotification callback plus bounded stable snapshots, not a managed/Python callback or polling-only observer. The callback has no cross-module calls, allocation, logging, filesystem or blocking locks; generated dependencies and bounded copies require source review and fresh native Q. Baseline, transient events, overflow, copied UTF16, exact physical/platform joins, snapshot instability, event reconciliation and shutdown uncertainty have refusal rules. Pre-registration bootstrap and native datafile mappings are expressly outside notification claims."
+    },
+    {
+      "id": "D05",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Native search and image observation",
+        "source-trace.md:Windows native paths and compatibility",
+        "acceptance-cases.json:LQ11-LQ12"
+      ],
+      "assessment": "Source text supports the traced Torch directory/glob/flags path and legacy fallback, plus torchaudio unique-choice risk. Restrictions precede Python-visible loads; legacy PATH mutation/LoadLibraryW fallback refuses before effects. Native equivalents require static tracing and post-load observation with an explicit statement that observation cannot prevent an initializer. API-set and system-image trust are refreshed and exact rather than guessed by basename/family."
+    },
+    {
+      "id": "D06",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Resources and ABI assessment",
+        "record-contract.md:75-82",
+        "acceptance-cases.json:LQ20,LQ23,LQ24"
+      ],
+      "assessment": "Resource declarations are finite prepared files; native reads need reviewed mediated call sites and operation-specific evidence or the branch refuses before use. Python read hooks and module enumeration are not claimed as universal native-I/O coverage. ABI checks require exact finite symbols/forwarders/safe-query signatures before review; observed initialization and required-symbol compatibility is separated from dormant exports, kernels, GPUs and general ABI. The Torch/torchaudio metadata mismatch remains an explicit unresolved compatibility risk."
+    },
+    {
+      "id": "D07",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Exact collection contract",
+        "record-contract.md:86-89,116-117",
+        "acceptance-cases.json:LQ29-LQ33"
+      ],
+      "assessment": "The exact pinned built-in/custom plugin identity set must be enumerated before implementation acceptance and enforced before hooks; environmental suppression alone is insufficient. Explicit paths/root/config, plain/importlib collection, no conftest/cache/stepwise/filters and zero fixture/protocol/phase-report counters define L. No fixture, candidate body, V control or passing JUnit report is represented as executed."
+    },
+    {
+      "id": "D08",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Exact collection contract",
+        "record-contract.md:144-149",
+        "acceptance-cases.json:LQ30-LQ32,LQ40"
+      ],
+      "assessment": "117 unique full IDs, exact 25 function multiplicities and 39/78 modules are required independently of count-only summaries. The first real accepted L roster establishes actual ordered IDs and parameter identities; the static roster is not misrepresented as an expected full-ID list. UTF8 JSON digest encoding, limits, originalname/source joins and independent parent recomputation are specified; V must recollect the same common workload/roster with reviewed stage-specific inputs."
+    },
+    {
+      "id": "D09",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Custody, budgets and output ownership",
+        "record-contract.md:95-125,127-154",
+        "acceptance-cases.json:LQ34-LQ39"
+      ],
+      "assessment": "The dedicated original inherited pipe endpoints and original process/Job custody authenticate producer ownership. Length/frame/queue/byte/page/file bounds precede allocation/publication. Parent create-new writer handles, flush/readback, complete retained inputs and final census/identity/hash checks precede release. Child terminal/index remain provisional; outer caller return and distinct actual acceptance cannot be preclaimed or inserted as future/self hashes."
+    },
+    {
+      "id": "D10",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Custody, budgets and output ownership",
+        "acceptance-cases.json:LQ05-LQ06,LQ38"
+      ],
+      "assessment": "Original external UTC/QPC origin covers preflight through actual caller return under L300/work240/cleanup5. No refreshed child/final-rehash window, cap increase or retry is permitted. Two startup samples, 4GiB active/startup availability,20GiB disk,4096MiB process/caller and5120MiB Job caps, thread/GPU controls, stop PRESENT/UNKNOWN,250ms checks, independent watchdog and explicit parent memory/IO exposure are retained."
+    },
+    {
+      "id": "D11",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "acceptance-cases.json",
+        "cho51_p3_loader_design_20261029.md:Acceptance and next implementation boundary"
+      ],
+      "assessment": "All40 unique LQ scenarios remain unexecuted and map their scoped parent obligations. The original26 matrix is not claimed complete; LV15 controls and LV17 executed-phase/JUnit requirements belong to V. LV19/LV26 mappings only address L denial/transition scope, not Git execution or completed C export. Q fixtures exclude candidate/third-party imports; native construction is separately reviewed/admitted Q work."
+    },
+    {
+      "id": "D12",
+      "status": "PASS_DESIGN",
+      "locations": [
+        "cho51_p3_loader_design_20261029.md:Acceptance and next implementation boundary",
+        "record-contract.md:32-47"
+      ],
+      "assessment": "117 candidates,34 successor controls,L/V/C execution and scientific work are not credited. Consumed004,held005,unadmitted006,Q1/other unknown cleanup,UNRESOLVED custody,0/1020 cells and unsigned freeze are preserved. The old watcher is not rearmed; historical sources and receipts are unchanged."
+    }
+  ],
+  "findings": [],
+  "accepted_scope": "Independent design acceptance of the exact five pinned revision-1 documents as a coherent implementation contract for a bounded L observer and collect-only runner. No material design defect found.",
+  "required_future_gates": [
+    "Assign implementation file ownership and implement new versioned sources without changing frozen predecessors.",
+    "Independently review exact implementation, complete finite initialization/native/resource/ABI/guard/plugin plan, generated helper dependencies and source comparisons before qualification.",
+    "Execute and independently accept separately admitted fresh Q mechanisms including native callback/snapshot/shutdown fixtures; this review proves no runtime mechanism.",
+    "Execute and independently accept fresh P covering all new L executable dependencies and refresh retained control inputs; P10 cannot cover an unreviewed overlay.",
+    "Create implementation-specific Root adoption and a new L UUID/request/admission only after those prerequisites; use genuine caller-return evidence, distinct actual-result reviewer and Root qualification afterward."
+  ],
+  "limitations": [
+    "Static design review is not source implementation acceptance, native helper correctness, executed Q/P/L qualification or real package/loader/resource/ABI compatibility proof.",
+    "Exact symbols, safe queries, plugin list and full initialization plan are intentionally deferred to mandatory implementation-specific source review, not waived.",
+    "No imports,Python,Git,AST,compiler,collection,tests,native APIs,process probes or package/data/weight access ran. Hashing read retained source/document/evidence files only.",
+    "No operational admission or launch command was created. No current-doc update, code edit, old result mutation, commit or push was performed by this reviewer.",
+    "The reviewer created only this new review file; accepted historical records and raw/frozen assets remain unchanged."
+  ],
+  "runtime_execution_performed": false,
+  "native_api_called": false,
+  "operational_admission_created": false,
+  "launch_authorized": false,
+  "historical_custody_closed": false,
+  "historical_operation_released": false,
+  "historical_retry_allowed": false,
+  "restart_qualified": false,
+  "scientific_admission": false,
+  "candidate_tests_executed": 0,
+  "successor_controls_executed": 0,
+  "scientific_cells_accepted": 0
+}

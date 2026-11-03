@@ -1,0 +1,383 @@
+{
+  "schema": "cho51_bd_qualification_v1",
+  "scope": "Forty design obligations for native provider/driver entry and witness boundary; distinct from test identities",
+  "count": 40,
+  "scenarios": [
+    {
+      "id": "BD-H01",
+      "title": "Actual H0 foundation",
+      "required_observation": "Adopt exact OS/host evidence and protected capabilities; no tool/session/PID/file-token substitution",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H02",
+      "title": "No target self-qualification",
+      "required_observation": "H0 guards and observes G0 qualification; B1 depends only on accepted earlier capabilities",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H03",
+      "title": "Access isolation",
+      "required_observation": "Prove actual G0/S0 inability to mutate guard/stop/native capability or refuse",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H04",
+      "title": "Original binding",
+      "required_observation": "Host/session/process creation/ancestry/Job/clock native objects bind O; recycled identity refused",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H05",
+      "title": "Before first effect",
+      "required_observation": "Guard, capture, T0 and owned cleanup cover pre-Job/bootstrap/ambiguous-create failure",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H06",
+      "title": "Pinned ABI and build",
+      "required_observation": "Source/runtime/build/loaded dependency closure, exact native APIs; unsupported behavior refuses",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H07",
+      "title": "Handle allowlist",
+      "required_observation": "Exact real inheritable handles and Job association before candidate instruction; no implicit handles",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H08",
+      "title": "Independent resources",
+      "required_observation": "Original RAM/disk/process/Job/thread/device enforcement and startup/freshness maintained",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H09",
+      "title": "Stop and clock",
+      "required_observation": "Owned stop/heartbeat/time independent of candidate; original deadlines and immediate failure capture",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-H10",
+      "title": "Host unavailability",
+      "required_observation": "Unavailable H0 methods/refusal path cause REFUSED_UNADMITTED without candidate effects",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D01",
+      "title": "Exact frame",
+      "required_observation": "96-byte request /80-byte response, complete expected O/nonce/payload digest, fixed numeric tags",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D02",
+      "title": "Malformed request",
+      "required_observation": "Short/long/bad magic/version/opcode/scenario/length/flags/reserved rejects with exact prefix",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D03",
+      "title": "Single invocation",
+      "required_observation": "One entry, reentry/second request and late postrevocation arrival retained in original domains",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D04",
+      "title": "Finite native effects",
+      "required_observation": "Complete normal/error/loader/formatter/type domains; no arbitrary callback/path/code",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D05",
+      "title": "Partial write/read",
+      "required_observation": "Every actual byte/read offset/order retained; exact framing distinct from EOF",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D06",
+      "title": "Overlapped lifecycle",
+      "required_observation": "Each pending op owns distinct state/event/buffer until actual completion",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D07",
+      "title": "Cancellation races",
+      "required_observation": "Normal/cancel/error after request handled; ERROR_NOT_FOUND not closure proof",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D08",
+      "title": "First fault and secondary failure",
+      "required_observation": "Monotone refusal latch; refusal-helper or publisher failure preserves original prefix",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D09",
+      "title": "Deadline and resource stop",
+      "required_observation": "Every partial state owned; no reset/resume/automatic retry after possible effect",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-D10",
+      "title": "Scoped result",
+      "required_observation": "Expected negative qualifies only exact observed claim with complete original capture/guards/closure",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R01",
+      "title": "Resource codec",
+      "required_observation": "Exact80-byte offsets, first-failed-call and missing-vs-zero status, QPC/overflow/reserved checks",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R02",
+      "title": "Capture codec",
+      "required_observation": "Exact64-byte offsets, original role/channel/ordinal/invocation/range/order; no model-counter substitution",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R03",
+      "title": "Canonical base64",
+      "required_observation": "Padding/unused bits/length/re-encoding checks; preserve raw bytes without authority claim",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R04",
+      "title": "Valid projection width",
+      "required_observation": "B688/I684/C833 fieldwise maxima; input8192 caps unchanged, malformed input outside tighter bound",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R05",
+      "title": "Full stream population",
+      "required_observation": "S128/128,G256/128 source proof includes every failure; no status-loop or dropped chunk",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R06",
+      "title": "Full host transport",
+      "required_observation": "Complete8192-byte/64-chunk tool and4096 external source grammars incl framing/error/cancel",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R07",
+      "title": "Role packing",
+      "required_observation": "Every row, syntax layer, wrapper/confirmation/remainder fits exact role without transfer or extra reports",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R08",
+      "title": "Resource schedule",
+      "required_observation": "100ms periodic plus all enumerated startup/transitions, no catchup/omission; suffix25 within90",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R09",
+      "title": "Original witness retention",
+      "required_observation": "Authored encoding/pin never replaces native capture source and independently retained object",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-R10",
+      "title": "Overflow and allocation",
+      "required_observation": "Unexpected oversize consumes/refuses with prefix; all live buffers, peak/process/Job cost bounded",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C01",
+      "title": "Exact entry admission",
+      "required_observation": "Unused O/distinct M, NOMINAL_ECHO-only membership; no Q/S/test-child batch implied",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C02",
+      "title": "Build/preparation costs",
+      "required_observation": "Separately guarded source-reviewed build artifacts; no outside-clock free compile/load/hash/copy",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C03",
+      "title": "Whole budget",
+      "required_observation": "F/M and all stage/failure/cleanup worst cases fit original90/60/65/etc; unknown refuses",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C04",
+      "title": "O closure",
+      "required_observation": "External G0/S0 exit/EOF/Job/input/response observation; process cannot prove own future return",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C05",
+      "title": "M publication",
+      "required_observation": "Exactly16 roles/33 reservations, once-only claims, full failed/temp write census and original guard",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C06",
+      "title": "Independent review",
+      "required_observation": "Authenticated complete review/confirmation within encoded caps, clock and original provenance",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C07",
+      "title": "Distinct O/M",
+      "required_observation": "Original O return preserved; later M closure not appended as O or substituted by O evidence",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C08",
+      "title": "Final last-writer witness",
+      "required_observation": "Actual H0 finalize_metadata route independently retained after last charged write within existing roles and clock; otherwise incomplete",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C09",
+      "title": "Incomplete evidence",
+      "required_observation": "Unknown custody, hidden cleanup, lost transport/final witness never promoted to scoped complete negative",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    },
+    {
+      "id": "BD-C10",
+      "title": "Debt preservation",
+      "required_observation": "1125/51,Q360/S140,765 exact held rows and all predecessor scenarios/117/V34/science unchanged",
+      "status": "UNIMPLEMENTED_UNQUALIFIED",
+      "source_example": false,
+      "executed": false,
+      "membership": "Design obligation, not an admitted E1 batch or cohort selection"
+    }
+  ],
+  "qualified": 0,
+  "first_proposed_entry": "E1_PROTOCOL/NOMINAL_ECHO",
+  "current_admission": "REFUSED_UNADMITTED",
+  "fixed_q": 360,
+  "fixed_s": 140,
+  "held": 765,
+  "new_methods": 0,
+  "prior_pc1_scenarios": 32,
+  "prior_wo_scenarios": 32,
+  "prior_cm6_scenarios": 32,
+  "prior_s140_scenarios": 24,
+  "prior_scenarios_qualified": 0,
+  "all_original_control_debt_retained": true,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

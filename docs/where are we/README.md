@@ -1,6 +1,6 @@
 # Where are we? — Thinking Interfaces
 
-Updated **2 November 2026 (Asia/Riyadh)**. This is the current project overview.
+Updated **3 November 2026 (Asia/Riyadh)**. This is the current project overview.
 Work is planned, reviewed and admitted within this project under the
 [project execution policy](../PROJECT_EXECUTION_POLICY.md).
 
@@ -17,7 +17,9 @@ The [P2 dependency map and file-only caller](../phase2/cho51_p3_dependency_prepa
 
 The [native-memory bootstrap and refreshed preparation](../phase2/cho51_p3_native_memory_bootstrap_20261031.md) are implemented and source-reviewed. Fresh native-bootstrap Q2 accepted 368 methods and all required controls, including two actual P-bootstrap cases. Separately admitted P2 returned successfully in 116.96 seconds, reporting 21,115 files, 893 native images and 4,847 dependency edges, full final verification and owned cleanup. P physical preparation is independently accepted for this operation.
 
-The [HB1 verifier/refusal/collection implementation](../phase2/cho51_p3_hb1_implementation_20261102.md) is independently accepted for source only. Its13-file package checks supplied frames, complete parent accounting and exact collection reports; the production host always refuses. All120 new methods remain unexecuted. The literal roster preserves580 existing plus120 new=700 identities across28 modules; the proposed verifier selection is184. Two pre-freeze review observations were resolved. No actual provider, durable claim, native custody, loaded-code witness, complete attributed census, asynchronous review lifecycle, capture bound or runtime feasibility is established. Next is design/review of the finite component-model runner and exact loading/collection/capture/accounting prerequisites. No admission follows; P stays disabled.
+The [BD1 B0/B1 provider/driver and qualification-entry design](../phase2/cho51_p3_b0b1_design_20261103.md) is independently accepted for design only. Eight files define proposed native G0/S0 under an independently adopted H0, a distinct one-request E1_PROTOCOL entry, witness ownership and conditional fixed-record packing. No test child or Q/S discovery is part of E1. Source remains1125/51, fixed Q360/S140 and765 exact held rows; no new methods or execution. All33 report roles and16 closeout roles remain unchanged; P stays disabled.
+
+The [PC1 supplied implementation](../phase2/cho51_p3_pc1_implementation_20261103.md), PC1 design and whole-operation predecessors remain frozen. BD1's40 scenarios join all32 PC1,32 whole-operation,32 CM6 and24 S140 scenarios as unqualified obligations. Conditional byte fit does not establish original H0 availability/isolation, full populations, final M witness retention or complete capture/closure/resource feasibility. Execution remains REFUSED_UNADMITTED. Next is source-only native G0/S0 skeleton and fixed wire/record codecs with unavailable-H0 refusal, finite effect/transition accounting and independent review; no compile/run. All original guards and debt remain.
 
 The [bounded resolver](../phase2/cho51_p3_bounded_resolver_20261031.md) and [supplied-data codec](../phase2/cho51_p3_lossless_codec_implementation_20261101.md) retain their accepted scoped evidence. The [fixed probe](../phase2/cho51_p3_probe_implementation_20261101.md) remains source-reviewed but fresh Q is NOT ACCEPTED: six consumed attempts, latest32 method and three sharing passes followed by a later control deadline and incomplete final verification. Latest owned cleanup is established;8bf386d1 final caller,6f9c898c final caller/outer/bootstrap and131bc595 outer/bootstrap custody remain UNKNOWN. Historical [QD a1f12701](../phase2/cho51_p3_qd_execution_20261102.md) retains59/42 timing records,37.7609334s prefix,45.4523028s external return, final verification and owned closure, but overall INCOMPLETE_REFUSED for17/16 closeout accounting. No repair, retry or second QD is inferred. [SC1](../phase2/cho51_p3_sc1_implementation_20261102.md) and the [HB1 design](../phase2/cho51_p3_host_binding_design_20261102.md) remain frozen source/design predecessors;54 SC1 and10 QD methods,24 HB/40 SC/36 diagnostic scenarios remain unqualified. Complete-Q timing/output feasibility is NOT_ESTABLISHED.
 
@@ -76,12 +78,22 @@ implementation-specific adoption; the full-restart claim remains unchanged.
 | Supplied-data codec/verifier | Implemented and independently reviewed; fresh Q384+100 accepted; P remains disabled |
 | Fixed supplied-byte probe | Implemented and source-reviewed; 32 provisional passes; fresh Q refused at a later control deadline; P disabled |
 | Startup-timing diagnostic | One fresh QD run; timing and owned cleanup independently reviewed; overall INCOMPLETE_REFUSED for17/16 closeout reservations; full Q held |
-| Startup-cost and metadata ownership | SC1 design accepted; bounded allocation changes and sole Root publication; complete-Q feasibility NOT_ESTABLISHED; no implementation or runtime |
+| Startup-cost and metadata ownership | SC1 implemented and source-reviewed;54 new methods unexecuted; complete-Q feasibility NOT_ESTABLISHED |
+| Supplied CM1-CM6/S140 and PC1 contracts | Independently source-reviewed; current1125 identities/51 modules; fixed Q360/S140 and765 held rows; no current runtime qualification |
+| BD1 native provider/driver design | Independently accepted design and separate metadata closeout; actual host authority and final-witness retention remain open |
 | Scientific cells / final freeze | **0/1020 / unsigned** |
 
 ## What happens next
 
-Implement and independently source-review SC1's invocation-local hash scratch, fresh typed RAM storage and fixed-slot metadata publisher in a new versioned successor. Preserve every live check, full verification and the consumed QD17/16 refusal. Complete-Q timing/output feasibility remains NOT_ESTABLISHED; a bounded qualification runner, explicit full roster and evidence-based budget still precede admission. No retry or guard relaxation follows design acceptance. Complete probe32 acceptance and separately admitted100/384 cohorts remain required before further integration;10 QD methods,36 diagnostic scenarios and40 planned SC scenarios remain separately open. P stays disabled, original-package-path custody and continuation remain unestablished, and complete continuation is still infeasible under unchanged guards. Complete G2 and matching host capabilities still precede complete-plan acceptance and L. L collection, V's117 expectations and34 controls, and C closeout each require their own admission and actual review. Physical preparation does not establish package compatibility or repair historical custody.
+Implement and independently review the source-only native G0/S0 skeleton and
+fixed wire/record codecs, with an explicit unavailable-H0 refusal path and finite
+effect/transition accounting. Actual original host authority/isolation, complete
+capture and final M witness retention, source/build/runtime closure and measured
+resource/time feasibility remain prerequisites for qualification. No compile/run
+or new admission is inferred. Q360/S140 and765 held rows remain fixed; P stays
+disabled. Full continuation remains infeasible under unchanged guards. G2,
+matching host capabilities and complete-plan acceptance still precede L, while
+117/V34 and closeout each need separate admission and actual review.
 
 Complete method-chain integration, checkpoint-specific cohort/overlap review,
 a measured operating budget and the final named experiment freeze still

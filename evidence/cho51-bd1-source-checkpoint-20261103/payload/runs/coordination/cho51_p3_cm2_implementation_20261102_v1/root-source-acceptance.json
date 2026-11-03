@@ -1,0 +1,49 @@
+{
+  "schema": "cho51_cm2_adapter_root_acceptance_v1",
+  "status": "ACCEPTED_SOURCE_ONLY",
+  "publisher": "project_root",
+  "source_reviewer": "qd_source_review",
+  "closeout_reviewer": "qd_closeout_review",
+  "candidate": {
+    "path": "candidate-v2.json",
+    "bytes": 60125,
+    "sha256": "8e99bb969a09b2d2007900cf8b590053615d98407ad97b6b801594affa1f83cb"
+  },
+  "review_v1": {
+    "path": "source-review-v1.json",
+    "bytes": 4924,
+    "sha256": "baabb344a1e91aaa38fa1c818ef7af6945b4039755eff25af2fb3579f2598f58"
+  },
+  "review_v2": {
+    "path": "source-review-v2.json",
+    "bytes": 4054,
+    "sha256": "fc3148ef0d709e1b4cbc2f876b6e4eddb2b99c5065e4243d6c4fdcfb1310b7c7"
+  },
+  "saved_review_confirmations": [
+    "Confirmed `source-review-v1.json`: 4,924 bytes, SHA256 `baabb344a1e91aaa38fa1c818ef7af6945b4039755eff25af2fb3579f2598f58`; review-text SHA256 `824dcc4a1f4a46f0640682077e112e2642fe995a60f5a3657a49714c9f053dcb`.\n\nSaved text matches my review, candidate, authorship, `CHANGES_REQUIRED` status, CM2-I1/CM2-I2 findings and limits. Root transcription is disclosed.\n\nReview ownership released for revision. No files or sidecars written.",
+    "Confirmed `source-review-v2.json`: 4,054 bytes, SHA256 `fc3148ef0d709e1b4cbc2f876b6e4eddb2b99c5065e4243d6c4fdcfb1310b7c7`; review-text SHA256 `407292f2baf303ac3f254a8720dbc480e8694e7ce660f9c12b79a6e9a3034690`.\n\nSaved text matches my review, candidate, authorship, `ACCEPTED_SOURCE_ONLY` verdict, empty findings, CM2-I1/CM2-I2 resolutions and limits. Root transcription is disclosed.\n\nReview ownership released. No files or sidecars written."
+  ],
+  "resolved_findings": [
+    "CM2-I1",
+    "CM2-I2"
+  ],
+  "findings": [],
+  "source_pins": 327,
+  "preservation_inputs": 9233,
+  "adoption": "Exact candidate-v2 source bytes and explicit CM2 roster/protocol successor only; frozen CM1/HB1 validators unchanged",
+  "full_identities": 764,
+  "modules": 32,
+  "selected_identities": 248,
+  "outside_execution": 516,
+  "new_methods_unexecuted": 32,
+  "conditional_normal_subtest_callbacks": 254,
+  "conditional_normal_records": 1000,
+  "conditional_normal_bytes": 512000,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false,
+  "complete_failure_capture_feasibility": "NOT_ESTABLISHED",
+  "complete_runtime_feasibility": "NOT_ESTABLISHED",
+  "next": "Source-only independent event/collection evidence join and failure-domain/capture contract for a real case/suite boundary",
+  "limits": "No runtime, Q/P/L/V/scientific acceptance, speedup, second QD, original custody, continuation or debt discharge. All guards and obligations remain. No Git operation."
+}

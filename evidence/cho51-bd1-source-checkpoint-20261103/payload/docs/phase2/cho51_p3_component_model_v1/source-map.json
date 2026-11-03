@@ -1,0 +1,1322 @@
+{
+  "schema": "cho51_cm1_source_trace_v1",
+  "author": "project_root",
+  "read_only_trace_contributor": "vfy_design_trace",
+  "design_only": true,
+  "reference_inputs": {
+    "tools/local_validation/v1/records.py": {
+      "bytes": 12062,
+      "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+    },
+    "tools/local_validation/v1/preparation.py": {
+      "bytes": 11791,
+      "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+    },
+    "tools/local_validation/q4/native_reader.py": {
+      "bytes": 21653,
+      "sha256": "26f5f1c9f45a194e2d158be1bbd5542e770a4e417703cccfa022cf724df4d2cd"
+    },
+    "tools/local_validation/p1/preparation.py": {
+      "bytes": 9278,
+      "sha256": "a1d95523da93c04cf30bf9c7d0c7172a30ed07de8c4cc91d2dcb1b46b2f28ad0"
+    },
+    "tools/local_validation/lp19/native_reader.py": {
+      "bytes": 22920,
+      "sha256": "0c870f61f47d40de54fddc4a10ce87f47c28dec93df547c21a3c1d4a80549fe2"
+    },
+    "tools/local_validation/lp19/manifest.py": {
+      "bytes": 18398,
+      "sha256": "590fb265acd91e9ff6b7854f40a7657aab3d996b5d8962d8a74aec20ae71cf01"
+    },
+    "tools/local_validation/lp19/pe.py": {
+      "bytes": 10733,
+      "sha256": "be38cc7c20e26321db65094e48ef55647cd52da2c927e0ea7a9a44fa65d4b2cf"
+    },
+    "tools/local_validation/lp19/api_mapping.py": {
+      "bytes": 9116,
+      "sha256": "e0c60d7c6f29de711cd4cb37333b77288497e5a9d6a635779dc02585ad573b5c"
+    },
+    "tools/local_validation/lp19/bootstrap_contract.py": {
+      "bytes": 2085,
+      "sha256": "b6bd5ca72895708ee665102e507f348da211366ac5421487e1bb9d8098f77d01"
+    },
+    "tools/local_validation/lp19/protocol.py": {
+      "bytes": 43208,
+      "sha256": "27c0ae7782e353edf6925e5c8a9736a8174b9caf98fe4e80254b81bb7ba2af17"
+    },
+    "tools/local_validation/lp19/supervisor.py": {
+      "bytes": 55555,
+      "sha256": "f9212c9ae669c842403789238d0a6a74bba8e456ef53a6515cf9bd87acf7af31"
+    },
+    "tools/local_validation/lq19/native_reader.py": {
+      "bytes": 32054,
+      "sha256": "8fc3aa5b81fc1effd65e82f4d3ccb0ef1e17ff1ddca3b285b1b38fd924296d0a"
+    },
+    "tools/local_validation/lq19/protocol.py": {
+      "bytes": 48609,
+      "sha256": "323bf281e02c60e90e96e59e266524fe45314a5826f71e7f7e92478762ea7d26"
+    },
+    "tools/local_validation/lq19/supervisor.py": {
+      "bytes": 40004,
+      "sha256": "f9ded4e1c82f8706a485c9c3923a2753ababb60588e3c12ef4aaaf4059ef1d0f"
+    },
+    "tools/local_validation/lq19/l_native.py": {
+      "bytes": 8172,
+      "sha256": "8e58941690efb83ed8804f0b299aab4ee8e9c6ef035a47bdc0740ff2e7de5b3d"
+    },
+    "tools/local_validation/l1/protocol.py": {
+      "bytes": 14621,
+      "sha256": "3c1f605ee3134496139494efb788663bddb1f3dea8b34d18b71f5c1d6668bd6e"
+    },
+    "tools/local_validation/l1/observation.py": {
+      "bytes": 13041,
+      "sha256": "2cdd2af97fffd2e40098504f11b59b0b63d66e08ce8ecb6293246954c2ad2219"
+    },
+    "tools/local_validation/l1/guards.py": {
+      "bytes": 14262,
+      "sha256": "687716d5584bf8e39ac786405397b3682e70c660e65fef8626ba888c7374c5e0"
+    },
+    "tools/local_validation/l1/imports.py": {
+      "bytes": 7184,
+      "sha256": "9ad17f8075238ddcc93c39aead1534e03bfa245bbd57f495717f2600ede2a247"
+    },
+    "tools/local_validation/l1/collection.py": {
+      "bytes": 6529,
+      "sha256": "d8b76e57622f6d7b19610f3638d43737bc12693b774b09cbb3b6053ca14d9b93"
+    },
+    "tools/local_validation/l1/native_bridge.py": {
+      "bytes": 7604,
+      "sha256": "f4ee11a1dbac808c4dac62edb1043e38cd04d7cf260feaf80a6278c11f1a52db"
+    },
+    "tools/local_validation/l1/test_support.py": {
+      "bytes": 2137,
+      "sha256": "5f88ad490fe3613c6c8f40f0f6af25f7fa96084591b08c11703ad9ee07af30f4"
+    },
+    "tools/local_validation/lhost1/authority.py": {
+      "bytes": 18618,
+      "sha256": "49a31e2068a83cd46d10a9ab597f5bcc2787b7fee2aa823eff3691dcf14eb43b"
+    },
+    "tools/local_validation/lhost1/abi.py": {
+      "bytes": 5453,
+      "sha256": "e11e5b33802038ac46c724567a2fe06c4560e7cd32a628200b5876d8e02653c2"
+    },
+    "tools/local_validation/lhost1/runtime.py": {
+      "bytes": 13571,
+      "sha256": "e6bf1917668c64acd512ea232fc847ce82c64f5637979d027bdf5566670612e2"
+    },
+    "tools/local_validation/lhost1/job_adapter.py": {
+      "bytes": 17713,
+      "sha256": "ce7a72b3761ba3d710c90ed8096d45f6fc92d7179a1f42b06a7182afc173f1ff"
+    },
+    "tools/local_validation/lhost1/transport.py": {
+      "bytes": 11658,
+      "sha256": "61d0361771036b438d26ffb50f4a52f071a3d4fdd335b558d144eb2a9ab2007e"
+    },
+    "tools/local_validation/lplan1/compiler.py": {
+      "bytes": 18152,
+      "sha256": "7a719e0d88403fca46aea653b2b0b197324f48ffc5029a29bb0999ebf5543099"
+    },
+    "tools/local_validation/lplan16/compiler.py": {
+      "bytes": 150810,
+      "sha256": "ea593abd2688e69b7d5ccb3c3406002576fa70a132b0cfd9b23ee1e856bf0e60"
+    },
+    "tools/local_validation/lplan16/migration.py": {
+      "bytes": 7399,
+      "sha256": "cfe711d507332d36deb35d55ef287a6a31d45376aebaf85540c20e531c85ae44"
+    },
+    "tools/local_validation/sc1/publisher.py": {
+      "bytes": 27970,
+      "sha256": "f5eb5e6ad9f9c38ed14cffed1076c2ce3004c4bdb80468d74eed6a553fd808af"
+    },
+    "tools/local_validation/sc1/native_backend.py": {
+      "bytes": 7857,
+      "sha256": "59d3da6fae5e78742058de4b85d41f60e6977768329a8db773512e05fc4c9155"
+    },
+    "tools/local_validation/hb1/baseline.py": {
+      "bytes": 80417,
+      "sha256": "0f927cf53881232ec86533ef930b733f83a764e00b539254f7b01c11d0bb7d89"
+    },
+    "tools/local_validation/hb1/common.py": {
+      "bytes": 9363,
+      "sha256": "c67740f8300c931d83f84c717377b0479c2e18d1c55d7fd05b88ba102bc2b6e3"
+    },
+    "tools/local_validation/hb1/frames.py": {
+      "bytes": 7611,
+      "sha256": "c4652fa5a4f1a664216c7e9ef563a67d5db2f3ecdd5717cd599f8534c8c5205b"
+    },
+    "tools/local_validation/hb1/refusal.py": {
+      "bytes": 10339,
+      "sha256": "b3636e7db8cd55339dcdb1627397c5b7e4b1163e51068f48f97a14702b5a7a0c"
+    },
+    "tools/local_validation/hb1/joins.py": {
+      "bytes": 12257,
+      "sha256": "907155237b4d83c281e8c8bac63cdcde007d98e220f30337e18e1f6712df6c49"
+    },
+    "tools/local_validation/hb1/collection.py": {
+      "bytes": 3961,
+      "sha256": "2bdef1c3a87e36f3bdd4ef8d4904cc6aac0c6fce9973f27f141eff0b8d6a125d"
+    },
+    "tools/local_validation/hb1/test_collection.py": {
+      "bytes": 5907,
+      "sha256": "9af4c7df8806fe4bdb608eed3f2ff78594c442fd203c76b5e7dda027e09ed3eb"
+    },
+    "tools/local_validation/hb1/test_common.py": {
+      "bytes": 3300,
+      "sha256": "2281229390bc59743da719742089abdbffcde055e5542614b7e4b850d4753245"
+    },
+    "tools/local_validation/hb1/test_frames.py": {
+      "bytes": 14826,
+      "sha256": "c8eef1cd18b613f91b6f8565a4b957f2b92e278e774cbf0cddf0ce8126ca2da3"
+    },
+    "tools/local_validation/hb1/test_joins.py": {
+      "bytes": 13137,
+      "sha256": "a21afc55a8898eb6260e6231be45a4f3c1d01b29496220d2836fcd14bee70eb4"
+    },
+    "tools/local_validation/hb1/test_refusal.py": {
+      "bytes": 14385,
+      "sha256": "1385128148d179ca0ffaf6f4343a0427b0a57866f8abafaff7c0f6509bffcc36"
+    },
+    "tools/local_validation/l1/test_collection.py": {
+      "bytes": 3228,
+      "sha256": "61f5285956a4b72dad3bdfe4fed5521c07cfeaa9d10e87d3de8962411a1ef19c"
+    },
+    "tools/local_validation/l1/test_guards.py": {
+      "bytes": 4436,
+      "sha256": "acc3b0ec3e17b8ae14cd6bd71708f95770c8b6a4e865f2041035f3d5b1649809"
+    },
+    "tools/local_validation/l1/test_imports.py": {
+      "bytes": 1814,
+      "sha256": "d70c1ea990fe7d7c4caf8e9d262622773878e22d889961575bd23ea5ad043ea9"
+    },
+    "tools/local_validation/l1/test_native.py": {
+      "bytes": 2898,
+      "sha256": "e96d47cd76572b206f966697e26bd3c79eb0b9846e613349c4805bd628144c6d"
+    },
+    "tools/local_validation/l1/test_observation.py": {
+      "bytes": 6302,
+      "sha256": "b3361500a99efdee7d258799e36a0e840d2dfc0b36dbe673c844aa8ccf3cb542"
+    },
+    "tools/local_validation/l1/test_protocol.py": {
+      "bytes": 2376,
+      "sha256": "9d713273e8c2c4c7ce362472ab398311582b21dd85397425544f135e3f5c1632"
+    },
+    "tools/local_validation/lhost1/test_authority.py": {
+      "bytes": 20600,
+      "sha256": "540e3fe7aa34385648e8fc670b5d6e12c95428471e9c8f30c0ae750bea4d4123"
+    },
+    "tools/local_validation/lhost1/test_transport.py": {
+      "bytes": 18557,
+      "sha256": "f3dc0f9c68840f9b3d78ede215698a574fb2166ed6f9c49e8a691492a3bbb8b1"
+    },
+    "tools/local_validation/lp19/test_bootstrap_contract.py": {
+      "bytes": 5133,
+      "sha256": "1d0d6ec6b2fef9518ab342b5bc2285b69795ab84aabbaeb3f2eb798f8b49190d"
+    },
+    "tools/local_validation/lp19/test_long_paths.py": {
+      "bytes": 4512,
+      "sha256": "71440c8dabd91ffc1c6d79e5cdb25ae720bd6aa719401d9f167422e7439eb027"
+    },
+    "tools/local_validation/lp19/test_manifest.py": {
+      "bytes": 8400,
+      "sha256": "89620c8baf234f4d231e94d681cbb5a30115a591782c39191532043a834d7d0d"
+    },
+    "tools/local_validation/lp19/test_pe.py": {
+      "bytes": 10129,
+      "sha256": "a69232bd9a41bee59d1873f2705019d368b659808fc0141a868589c40207103e"
+    },
+    "tools/local_validation/lp19/test_performance.py": {
+      "bytes": 9401,
+      "sha256": "3d14cbabbba5da62d055431cd049250689c17896b62476f9a73b9b9bb30f1ff9"
+    },
+    "tools/local_validation/lp19/test_protocol.py": {
+      "bytes": 29641,
+      "sha256": "6628e3cac074be4c76007534fffb752caf42b2462bbf577a25595eaea1897b57"
+    },
+    "tools/local_validation/lplan1/test_compiler.py": {
+      "bytes": 9300,
+      "sha256": "cddde7efb1b674b16c5ff857bed4f05c3261a8ef8595ca8fd6b7e46f01d9dedf"
+    },
+    "tools/local_validation/lplan16/test_compiler.py": {
+      "bytes": 551346,
+      "sha256": "a3c07134f091ee3806b1033a4680fbf7069c8a4b174741788dd423536dcb561b"
+    },
+    "tools/local_validation/lq19/test_l_native.py": {
+      "bytes": 6378,
+      "sha256": "f8203dc9675c23a29897f42b4c8ad5e508d60f6d5d17b9324d7d0415d57080c7"
+    },
+    "tools/local_validation/lq19/test_native_reader.py": {
+      "bytes": 21795,
+      "sha256": "3b753b538c8330cfe34693c28846a6438d1073d0932518a75712d67765211176"
+    },
+    "tools/local_validation/lq19/test_protocol.py": {
+      "bytes": 21158,
+      "sha256": "78e4b529b9ccfb5803236764fea5c0cd2cbd44b060b95f4f7ad4b789c31a81f0"
+    },
+    "tools/local_validation/lq19/test_sc1.py": {
+      "bytes": 14453,
+      "sha256": "d50f2467dcebe5e63d3ba24608da22c5544cb25eb5af73f606cc230e71b5493e"
+    },
+    "tools/local_validation/p1/test_preparation.py": {
+      "bytes": 9246,
+      "sha256": "3eba913b0d49afce11d1e55cc3bb30cb4311deab9cff053e01f3eb020ecaf059"
+    },
+    "tools/local_validation/sc1/test_publisher.py": {
+      "bytes": 34451,
+      "sha256": "997b3401b87371fdc7ec8ca6a67a56373f718aafb2d44a20f01a5c34ea5ce4a1"
+    },
+    "tools/local_validation/v1/test_foundation.py": {
+      "bytes": 19061,
+      "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+    },
+    "tools/local_validation/l1/__init__.py": {
+      "bytes": 86,
+      "sha256": "1ddfc88848a9a08f38d2c87a3a4b5ec859667501d3a5f1c4fda67fdea2b20afc"
+    },
+    "tools/local_validation/lhost1/__init__.py": {
+      "bytes": 70,
+      "sha256": "2f9aef6a84e029f48a1cc94efd162a79cdc4dae8e5504cf40cff15253a982a8b"
+    },
+    "tools/local_validation/lplan1/__init__.py": {
+      "bytes": 77,
+      "sha256": "33ecfb92bc541f408f8cc0143e5ee0e13204648aac1ef11bc513199cfb6e23d0"
+    },
+    "tools/local_validation/lplan16/__init__.py": {
+      "bytes": 69,
+      "sha256": "b2630f6a0f29da494573c8f529371f19c26fa1da665a078e7037e24c9c3c656a"
+    },
+    "tools/local_validation/sc1/__init__.py": {
+      "bytes": 75,
+      "sha256": "1c15b166a2c1c3b8dc8de4a4b804e6b8bbd4f54b9be4e227b969f83afe721cd8"
+    },
+    "tools/local_validation/hb1/__init__.py": {
+      "bytes": 81,
+      "sha256": "357d3fd632159ce391da79dfaa27815f6d52be3a2fad8d0ec6e3d4c8b311388e"
+    },
+    "docs/history/component_model_design_20261102/AGENTS.md": {
+      "bytes": 7210,
+      "sha256": "c9367666112a55339446c291d845449cc64021a1177e6df344f9951fd3b713c4"
+    },
+    "docs/PROJECT_EXECUTION_POLICY.md": {
+      "bytes": 5619,
+      "sha256": "d3fc102c6b14557d9eb54b4783221e99087182312653fd3e6bbd19b0c4e87829"
+    },
+    "docs/history/component_model_design_20261102/AGENT_COORDINATION.md": {
+      "bytes": 6795,
+      "sha256": "8990d9a18aaadc0bcb2d895d30fd3e3bd41f45d44d3bebad19eae710305ecc3d"
+    },
+    "docs/history/component_model_design_20261102/HANDOFF.md": {
+      "bytes": 17904,
+      "sha256": "a85c0b59eada39d6cc8b1c8234d0524c1fa799d38d108249cec14f15f44b59e2"
+    },
+    "docs/phase2/cho51_p3_local_validation_contract_20261029.md": {
+      "bytes": 21107,
+      "sha256": "7b38785af6d2dacdefe59baf2b365500c7dbdbcb0132cbb819e73b383bfb3a5f"
+    },
+    "docs/phase2/cho51_p3_hb1_implementation_contract_20261102.md": {
+      "bytes": 10634,
+      "sha256": "935b5ff6b1e0b39f3799cbebb57450bfeab4e4ad148013f358d77f27b319e927"
+    },
+    "docs/phase2/cho51_p3_hb1_implementation_20261102.md": {
+      "bytes": 6052,
+      "sha256": "a50965b619d99fce2c9530ea989c3f58dec8a668cc652f99679d3196cc5bb8c4"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/binding.md": {
+      "bytes": 20316,
+      "sha256": "9a0cc75d4aae85ffe4bc94d744afdf35f620f2313650a9ae225f7e73f34c259f"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/qualification.md": {
+      "bytes": 11903,
+      "sha256": "d728fc49a675e814ee9c98064b5c76f4d65e5ba1618c4571abcf7d4c520ea5bb"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/readiness.json": {
+      "bytes": 5549,
+      "sha256": "4ef91547f2cf6927455652a2b6081bb64481ac56c2d53d25545fecef46bdf60d"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/scenarios.json": {
+      "bytes": 10741,
+      "sha256": "3157f7e0316bee6c141fac04d9794ebdf2550888d04de06d92423d0e7aa733a4"
+    },
+    "docs/phase2/cho51_p3_host_binding_v1/roster.json": {
+      "bytes": 127664,
+      "sha256": "8bef7f6cb6d274eb8d8b4acacdfaaf0269ecb4327bde24bc3a3ce598839a4548"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/contract.md": {
+      "bytes": 16068,
+      "sha256": "6841fddd613234b55f715568b43a7a024da85a3830d2ce2abc100aad00f4e682"
+    },
+    "docs/phase2/cho51_p3_startup_cost_v1/metadata-ownership.json": {
+      "bytes": 10340,
+      "sha256": "2513b8cbb5d054da230cd05e5f055aae04c4f7ebd043d2ecb0fca0639c67b236"
+    },
+    "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-candidate-v1.json": {
+      "bytes": 51971,
+      "sha256": "3b0aa0fa5aa1200d5bac456c1d7cfb021dc3abeb889a816fa11bbd54c40bc1a8"
+    },
+    "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/source-review-v1.json": {
+      "bytes": 4784,
+      "sha256": "c427ab7f15c96340fea7a3da15cb2b55932e970363d7754c775a31cf5dbbed6e"
+    },
+    "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/root-source-acceptance.json": {
+      "bytes": 2864,
+      "sha256": "5faa0f270e005f9fff7da0ebbab7e7ab86d884fb1907637ca96a198be5591bcd"
+    },
+    "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/implementation-map.json": {
+      "bytes": 90695,
+      "sha256": "5b54c02d8b148721bf46233c301ded1986440bba6378aee82e749128dc76e18c"
+    },
+    "runs/coordination/cho51_p3_hb1_implementation_20261102_v1/closeout-review.json": {
+      "bytes": 3122,
+      "sha256": "ad5db029cb561c6e476cd14448057d4fd0f61204b9036de9258413e941fa56b4"
+    },
+    "tools/local_validation/lq19/child_entry.py": {
+      "bytes": 19802,
+      "sha256": "8854d97669fd820c33f4de24641d9ffd2259da1b7895c603d21936c52f83174d"
+    },
+    "tools/local_validation/lhost1/supervisor.py": {
+      "bytes": 16601,
+      "sha256": "8c4e8169d6c0ece27d598c79c9d44426477493a70b08ee0bec8ce173870e0877"
+    },
+    "tools/local_validation/lp1/supervisor.py": {
+      "bytes": 45768,
+      "sha256": "4edb42f44974497351c0ec47768a32cdc5e6c267cecff2278fc85386fd05172c"
+    }
+  },
+  "external_reference_inputs": {
+    "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/unittest/result.py": {
+      "bytes": 9130,
+      "sha256": "5db286bdd3821d64150377e554d7edbdd58db7bb8b950772f977e9ec1d535617"
+    },
+    "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/unittest/loader.py": {
+      "bytes": 21116,
+      "sha256": "7f0af414bfa7fe8612a424b14cfcf8a3c34fcac999d976461beb738ef8b211b8"
+    },
+    "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/unittest/case.py": {
+      "bytes": 57531,
+      "sha256": "45bac6d80a4fc3a0dea8340a80681e30b263f017b4a5002cb8f489a632e0f987"
+    },
+    "C:/Users/aladdin-alyanai/.cache/codex-runtimes/codex-primary-runtime.previous-ca2c371f-2297-45d6-beb8-492c2b15e9cd/dependencies/python/Lib/unittest/suite.py": {
+      "bytes": 13512,
+      "sha256": "ed2da92bc9f97c53403ee2d3d12cc53b16a96e85d596ebc887b5a93458f3f6bc"
+    }
+  },
+  "external_scope": "current byte references only; not selected/current loaded runtime or admitted closure",
+  "definition_modules": 38,
+  "test_modules": 28,
+  "module_skeleton": [
+    {
+      "module": "tools.local_validation.v1.records",
+      "path": "tools/local_validation/v1/records.py",
+      "pin": {
+        "bytes": 12062,
+        "sha256": "34bbbd132edeeb55353abeb9803ea921c9efdc8ccfdd982e96d8e3d4cd9d6737"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.v1.preparation",
+      "path": "tools/local_validation/v1/preparation.py",
+      "pin": {
+        "bytes": 11791,
+        "sha256": "3b4bd4b7bffcbd5850a730dcde792d059b9e8fedc4bdb013b05748e8cc9e135c"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.q4.native_reader",
+      "path": "tools/local_validation/q4/native_reader.py",
+      "pin": {
+        "bytes": 21653,
+        "sha256": "26f5f1c9f45a194e2d158be1bbd5542e770a4e417703cccfa022cf724df4d2cd"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.p1.preparation",
+      "path": "tools/local_validation/p1/preparation.py",
+      "pin": {
+        "bytes": 9278,
+        "sha256": "a1d95523da93c04cf30bf9c7d0c7172a30ed07de8c4cc91d2dcb1b46b2f28ad0"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.native_reader",
+      "path": "tools/local_validation/lp19/native_reader.py",
+      "pin": {
+        "bytes": 22920,
+        "sha256": "0c870f61f47d40de54fddc4a10ce87f47c28dec93df547c21a3c1d4a80549fe2"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.manifest",
+      "path": "tools/local_validation/lp19/manifest.py",
+      "pin": {
+        "bytes": 18398,
+        "sha256": "590fb265acd91e9ff6b7854f40a7657aab3d996b5d8962d8a74aec20ae71cf01"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.pe",
+      "path": "tools/local_validation/lp19/pe.py",
+      "pin": {
+        "bytes": 10733,
+        "sha256": "be38cc7c20e26321db65094e48ef55647cd52da2c927e0ea7a9a44fa65d4b2cf"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.api_mapping",
+      "path": "tools/local_validation/lp19/api_mapping.py",
+      "pin": {
+        "bytes": 9116,
+        "sha256": "e0c60d7c6f29de711cd4cb37333b77288497e5a9d6a635779dc02585ad573b5c"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.bootstrap_contract",
+      "path": "tools/local_validation/lp19/bootstrap_contract.py",
+      "pin": {
+        "bytes": 2085,
+        "sha256": "b6bd5ca72895708ee665102e507f348da211366ac5421487e1bb9d8098f77d01"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.protocol",
+      "path": "tools/local_validation/lp19/protocol.py",
+      "pin": {
+        "bytes": 43208,
+        "sha256": "27c0ae7782e353edf6925e5c8a9736a8174b9caf98fe4e80254b81bb7ba2af17"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.supervisor",
+      "path": "tools/local_validation/lp19/supervisor.py",
+      "pin": {
+        "bytes": 55555,
+        "sha256": "f9212c9ae669c842403789238d0a6a74bba8e456ef53a6515cf9bd87acf7af31"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.native_reader",
+      "path": "tools/local_validation/lq19/native_reader.py",
+      "pin": {
+        "bytes": 32054,
+        "sha256": "8fc3aa5b81fc1effd65e82f4d3ccb0ef1e17ff1ddca3b285b1b38fd924296d0a"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.protocol",
+      "path": "tools/local_validation/lq19/protocol.py",
+      "pin": {
+        "bytes": 48609,
+        "sha256": "323bf281e02c60e90e96e59e266524fe45314a5826f71e7f7e92478762ea7d26"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.supervisor",
+      "path": "tools/local_validation/lq19/supervisor.py",
+      "pin": {
+        "bytes": 40004,
+        "sha256": "f9ded4e1c82f8706a485c9c3923a2753ababb60588e3c12ef4aaaf4059ef1d0f"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.l_native",
+      "path": "tools/local_validation/lq19/l_native.py",
+      "pin": {
+        "bytes": 8172,
+        "sha256": "8e58941690efb83ed8804f0b299aab4ee8e9c6ef035a47bdc0740ff2e7de5b3d"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.protocol",
+      "path": "tools/local_validation/l1/protocol.py",
+      "pin": {
+        "bytes": 14621,
+        "sha256": "3c1f605ee3134496139494efb788663bddb1f3dea8b34d18b71f5c1d6668bd6e"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.observation",
+      "path": "tools/local_validation/l1/observation.py",
+      "pin": {
+        "bytes": 13041,
+        "sha256": "2cdd2af97fffd2e40098504f11b59b0b63d66e08ce8ecb6293246954c2ad2219"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.guards",
+      "path": "tools/local_validation/l1/guards.py",
+      "pin": {
+        "bytes": 14262,
+        "sha256": "687716d5584bf8e39ac786405397b3682e70c660e65fef8626ba888c7374c5e0"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.imports",
+      "path": "tools/local_validation/l1/imports.py",
+      "pin": {
+        "bytes": 7184,
+        "sha256": "9ad17f8075238ddcc93c39aead1534e03bfa245bbd57f495717f2600ede2a247"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.collection",
+      "path": "tools/local_validation/l1/collection.py",
+      "pin": {
+        "bytes": 6529,
+        "sha256": "d8b76e57622f6d7b19610f3638d43737bc12693b774b09cbb3b6053ca14d9b93"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.native_bridge",
+      "path": "tools/local_validation/l1/native_bridge.py",
+      "pin": {
+        "bytes": 7604,
+        "sha256": "f4ee11a1dbac808c4dac62edb1043e38cd04d7cf260feaf80a6278c11f1a52db"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_support",
+      "path": "tools/local_validation/l1/test_support.py",
+      "pin": {
+        "bytes": 2137,
+        "sha256": "5f88ad490fe3613c6c8f40f0f6af25f7fa96084591b08c11703ad9ee07af30f4"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.authority",
+      "path": "tools/local_validation/lhost1/authority.py",
+      "pin": {
+        "bytes": 18618,
+        "sha256": "49a31e2068a83cd46d10a9ab597f5bcc2787b7fee2aa823eff3691dcf14eb43b"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.abi",
+      "path": "tools/local_validation/lhost1/abi.py",
+      "pin": {
+        "bytes": 5453,
+        "sha256": "e11e5b33802038ac46c724567a2fe06c4560e7cd32a628200b5876d8e02653c2"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.runtime",
+      "path": "tools/local_validation/lhost1/runtime.py",
+      "pin": {
+        "bytes": 13571,
+        "sha256": "e6bf1917668c64acd512ea232fc847ce82c64f5637979d027bdf5566670612e2"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.job_adapter",
+      "path": "tools/local_validation/lhost1/job_adapter.py",
+      "pin": {
+        "bytes": 17713,
+        "sha256": "ce7a72b3761ba3d710c90ed8096d45f6fc92d7179a1f42b06a7182afc173f1ff"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.transport",
+      "path": "tools/local_validation/lhost1/transport.py",
+      "pin": {
+        "bytes": 11658,
+        "sha256": "61d0361771036b438d26ffb50f4a52f071a3d4fdd335b558d144eb2a9ab2007e"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lplan1.compiler",
+      "path": "tools/local_validation/lplan1/compiler.py",
+      "pin": {
+        "bytes": 18152,
+        "sha256": "7a719e0d88403fca46aea653b2b0b197324f48ffc5029a29bb0999ebf5543099"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lplan16.compiler",
+      "path": "tools/local_validation/lplan16/compiler.py",
+      "pin": {
+        "bytes": 150810,
+        "sha256": "ea593abd2688e69b7d5ccb3c3406002576fa70a132b0cfd9b23ee1e856bf0e60"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lplan16.migration",
+      "path": "tools/local_validation/lplan16/migration.py",
+      "pin": {
+        "bytes": 7399,
+        "sha256": "cfe711d507332d36deb35d55ef287a6a31d45376aebaf85540c20e531c85ae44"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.sc1.publisher",
+      "path": "tools/local_validation/sc1/publisher.py",
+      "pin": {
+        "bytes": 27970,
+        "sha256": "f5eb5e6ad9f9c38ed14cffed1076c2ce3004c4bdb80468d74eed6a553fd808af"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.sc1.native_backend",
+      "path": "tools/local_validation/sc1/native_backend.py",
+      "pin": {
+        "bytes": 7857,
+        "sha256": "59d3da6fae5e78742058de4b85d41f60e6977768329a8db773512e05fc4c9155"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.baseline",
+      "path": "tools/local_validation/hb1/baseline.py",
+      "pin": {
+        "bytes": 80417,
+        "sha256": "0f927cf53881232ec86533ef930b733f83a764e00b539254f7b01c11d0bb7d89"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.common",
+      "path": "tools/local_validation/hb1/common.py",
+      "pin": {
+        "bytes": 9363,
+        "sha256": "c67740f8300c931d83f84c717377b0479c2e18d1c55d7fd05b88ba102bc2b6e3"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.frames",
+      "path": "tools/local_validation/hb1/frames.py",
+      "pin": {
+        "bytes": 7611,
+        "sha256": "c4652fa5a4f1a664216c7e9ef563a67d5db2f3ecdd5717cd599f8534c8c5205b"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.refusal",
+      "path": "tools/local_validation/hb1/refusal.py",
+      "pin": {
+        "bytes": 10339,
+        "sha256": "b3636e7db8cd55339dcdb1627397c5b7e4b1163e51068f48f97a14702b5a7a0c"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.joins",
+      "path": "tools/local_validation/hb1/joins.py",
+      "pin": {
+        "bytes": 12257,
+        "sha256": "907155237b4d83c281e8c8bac63cdcde007d98e220f30337e18e1f6712df6c49"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.collection",
+      "path": "tools/local_validation/hb1/collection.py",
+      "pin": {
+        "bytes": 3961,
+        "sha256": "2bdef1c3a87e36f3bdd4ef8d4904cc6aac0c6fce9973f27f141eff0b8d6a125d"
+      },
+      "kind": "definition_import_skeleton",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.test_collection",
+      "path": "tools/local_validation/hb1/test_collection.py",
+      "pin": {
+        "bytes": 5907,
+        "sha256": "9af4c7df8806fe4bdb608eed3f2ff78594c442fd203c76b5e7dda027e09ed3eb"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.test_common",
+      "path": "tools/local_validation/hb1/test_common.py",
+      "pin": {
+        "bytes": 3300,
+        "sha256": "2281229390bc59743da719742089abdbffcde055e5542614b7e4b850d4753245"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.test_frames",
+      "path": "tools/local_validation/hb1/test_frames.py",
+      "pin": {
+        "bytes": 14826,
+        "sha256": "c8eef1cd18b613f91b6f8565a4b957f2b92e278e774cbf0cddf0ce8126ca2da3"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.test_joins",
+      "path": "tools/local_validation/hb1/test_joins.py",
+      "pin": {
+        "bytes": 13137,
+        "sha256": "a21afc55a8898eb6260e6231be45a4f3c1d01b29496220d2836fcd14bee70eb4"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.hb1.test_refusal",
+      "path": "tools/local_validation/hb1/test_refusal.py",
+      "pin": {
+        "bytes": 14385,
+        "sha256": "1385128148d179ca0ffaf6f4343a0427b0a57866f8abafaff7c0f6509bffcc36"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_collection",
+      "path": "tools/local_validation/l1/test_collection.py",
+      "pin": {
+        "bytes": 3228,
+        "sha256": "61f5285956a4b72dad3bdfe4fed5521c07cfeaa9d10e87d3de8962411a1ef19c"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_guards",
+      "path": "tools/local_validation/l1/test_guards.py",
+      "pin": {
+        "bytes": 4436,
+        "sha256": "acc3b0ec3e17b8ae14cd6bd71708f95770c8b6a4e865f2041035f3d5b1649809"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_imports",
+      "path": "tools/local_validation/l1/test_imports.py",
+      "pin": {
+        "bytes": 1814,
+        "sha256": "d70c1ea990fe7d7c4caf8e9d262622773878e22d889961575bd23ea5ad043ea9"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_native",
+      "path": "tools/local_validation/l1/test_native.py",
+      "pin": {
+        "bytes": 2898,
+        "sha256": "e96d47cd76572b206f966697e26bd3c79eb0b9846e613349c4805bd628144c6d"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_observation",
+      "path": "tools/local_validation/l1/test_observation.py",
+      "pin": {
+        "bytes": 6302,
+        "sha256": "b3361500a99efdee7d258799e36a0e840d2dfc0b36dbe673c844aa8ccf3cb542"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.l1.test_protocol",
+      "path": "tools/local_validation/l1/test_protocol.py",
+      "pin": {
+        "bytes": 2376,
+        "sha256": "9d713273e8c2c4c7ce362472ab398311582b21dd85397425544f135e3f5c1632"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.test_authority",
+      "path": "tools/local_validation/lhost1/test_authority.py",
+      "pin": {
+        "bytes": 20600,
+        "sha256": "540e3fe7aa34385648e8fc670b5d6e12c95428471e9c8f30c0ae750bea4d4123"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lhost1.test_transport",
+      "path": "tools/local_validation/lhost1/test_transport.py",
+      "pin": {
+        "bytes": 18557,
+        "sha256": "f3dc0f9c68840f9b3d78ede215698a574fb2166ed6f9c49e8a691492a3bbb8b1"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_bootstrap_contract",
+      "path": "tools/local_validation/lp19/test_bootstrap_contract.py",
+      "pin": {
+        "bytes": 5133,
+        "sha256": "1d0d6ec6b2fef9518ab342b5bc2285b69795ab84aabbaeb3f2eb798f8b49190d"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_long_paths",
+      "path": "tools/local_validation/lp19/test_long_paths.py",
+      "pin": {
+        "bytes": 4512,
+        "sha256": "71440c8dabd91ffc1c6d79e5cdb25ae720bd6aa719401d9f167422e7439eb027"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_manifest",
+      "path": "tools/local_validation/lp19/test_manifest.py",
+      "pin": {
+        "bytes": 8400,
+        "sha256": "89620c8baf234f4d231e94d681cbb5a30115a591782c39191532043a834d7d0d"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_pe",
+      "path": "tools/local_validation/lp19/test_pe.py",
+      "pin": {
+        "bytes": 10129,
+        "sha256": "a69232bd9a41bee59d1873f2705019d368b659808fc0141a868589c40207103e"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_performance",
+      "path": "tools/local_validation/lp19/test_performance.py",
+      "pin": {
+        "bytes": 9401,
+        "sha256": "3d14cbabbba5da62d055431cd049250689c17896b62476f9a73b9b9bb30f1ff9"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lp19.test_protocol",
+      "path": "tools/local_validation/lp19/test_protocol.py",
+      "pin": {
+        "bytes": 29641,
+        "sha256": "6628e3cac074be4c76007534fffb752caf42b2462bbf577a25595eaea1897b57"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lplan1.test_compiler",
+      "path": "tools/local_validation/lplan1/test_compiler.py",
+      "pin": {
+        "bytes": 9300,
+        "sha256": "cddde7efb1b674b16c5ff857bed4f05c3261a8ef8595ca8fd6b7e46f01d9dedf"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lplan16.test_compiler",
+      "path": "tools/local_validation/lplan16/test_compiler.py",
+      "pin": {
+        "bytes": 551346,
+        "sha256": "a3c07134f091ee3806b1033a4680fbf7069c8a4b174741788dd423536dcb561b"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.test_l_native",
+      "path": "tools/local_validation/lq19/test_l_native.py",
+      "pin": {
+        "bytes": 6378,
+        "sha256": "f8203dc9675c23a29897f42b4c8ad5e508d60f6d5d17b9324d7d0415d57080c7"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.test_native_reader",
+      "path": "tools/local_validation/lq19/test_native_reader.py",
+      "pin": {
+        "bytes": 21795,
+        "sha256": "3b753b538c8330cfe34693c28846a6438d1073d0932518a75712d67765211176"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.test_protocol",
+      "path": "tools/local_validation/lq19/test_protocol.py",
+      "pin": {
+        "bytes": 21158,
+        "sha256": "78e4b529b9ccfb5803236764fea5c0cd2cbd44b060b95f4f7ad4b789c31a81f0"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.lq19.test_sc1",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "pin": {
+        "bytes": 14453,
+        "sha256": "d50f2467dcebe5e63d3ba24608da22c5544cb25eb5af73f606cc230e71b5493e"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.p1.test_preparation",
+      "path": "tools/local_validation/p1/test_preparation.py",
+      "pin": {
+        "bytes": 9246,
+        "sha256": "3eba913b0d49afce11d1e55cc3bb30cb4311deab9cff053e01f3eb020ecaf059"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.sc1.test_publisher",
+      "path": "tools/local_validation/sc1/test_publisher.py",
+      "pin": {
+        "bytes": 34451,
+        "sha256": "997b3401b87371fdc7ec8ca6a67a56373f718aafb2d44a20f01a5c34ea5ce4a1"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "module": "tools.local_validation.v1.test_foundation",
+      "path": "tools/local_validation/v1/test_foundation.py",
+      "pin": {
+        "bytes": 19061,
+        "sha256": "37e5d6eab1068e62bd269df3e5dffb39c9dfa913b74b80facd36c8f573f369cd"
+      },
+      "kind": "discovery_test_module",
+      "phase": "PROPOSED_DISCOVERY; transitive effects/stdlib closure not certified",
+      "effect_status": "SOURCE_TRACE_ONLY_NOT_RUNTIME_ALLOWLIST"
+    }
+  ],
+  "package_parents": [
+    {
+      "module": "tools",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.v1",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.q4",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.p1",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.lp19",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.lq19",
+      "initializer_present": false,
+      "path": null,
+      "planned_kind": "explicit_closed_namespace",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.l1",
+      "initializer_present": true,
+      "path": "tools/local_validation/l1/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.lhost1",
+      "initializer_present": true,
+      "path": "tools/local_validation/lhost1/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.lplan1",
+      "initializer_present": true,
+      "path": "tools/local_validation/lplan1/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.lplan16",
+      "initializer_present": true,
+      "path": "tools/local_validation/lplan16/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.sc1",
+      "initializer_present": true,
+      "path": "tools/local_validation/sc1/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    },
+    {
+      "module": "tools.local_validation.hb1",
+      "initializer_present": true,
+      "path": "tools/local_validation/hb1/__init__.py",
+      "planned_kind": "retained_source_package",
+      "filesystem_namespace_search": false
+    }
+  ],
+  "edge_kinds": [
+    "bootstrap",
+    "discovery_import",
+    "selected_model_call",
+    "unselected_deferred_call",
+    "data_only_reference",
+    "native_runtime_dependency"
+  ],
+  "required_final_edge_fields": [
+    "source_path",
+    "source_pin",
+    "source_location",
+    "target_path_or_module",
+    "target_pin",
+    "phase",
+    "effect",
+    "owner",
+    "pre_effect_guard",
+    "closure_disposition"
+  ],
+  "complete_edge_graph": false,
+  "known_deferred_edge": {
+    "further_target": "tools.local_validation.lp1",
+    "target": "tools.local_validation.lhost1.supervisor",
+    "source": "tools/local_validation/lhost1/test_authority.py",
+    "not_discharged": true,
+    "phase": "UNSELECTED_DEFERRED",
+    "line": 239
+  },
+  "patch_surfaces": [
+    {
+      "line": 179,
+      "surface": "ctypes.create_string_buffer",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 2
+    },
+    {
+      "line": 229,
+      "surface": "shutil.disk_usage",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 12
+    },
+    {
+      "line": 270,
+      "surface": "ctypes.get_last_error",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 4
+    },
+    {
+      "line": 305,
+      "surface": "tools.local_validation.lq19.supervisor.absent",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 1
+    },
+    {
+      "line": 313,
+      "surface": "tools.local_validation.lq19.supervisor._MemoryStatus",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 1
+    },
+    {
+      "line": 313,
+      "surface": "ctypes.WinDLL",
+      "path": "tools/local_validation/lq19/test_sc1.py",
+      "applications": 1
+    },
+    {
+      "line": 624,
+      "surface": "tools.local_validation.sc1.native_backend.RetainedReader",
+      "path": "tools/local_validation/sc1/test_publisher.py",
+      "applications": 10
+    },
+    {
+      "line": 625,
+      "surface": "os.lstat",
+      "path": "tools/local_validation/sc1/test_publisher.py",
+      "applications": 9
+    }
+  ],
+  "normal_path_patch_applications": 40,
+  "fake_instance_method_applications": 3,
+  "additional_disposable_fake_write_new_assignment": 1,
+  "effects_not_proved_absent": [
+    "thread/process/file/native effects across every184 method and recursive dependency"
+  ],
+  "observed_real_runtime_work": [
+    "16MiB supplied hash boundary allocation",
+    "ctypes memory/copy/layout work",
+    "threading.RLock construction",
+    "datetime.now read"
+  ],
+  "method_effect_table": "REQUIRED_BEFORE_ADMISSION; not complete",
+  "subtest_event_bound": "NOT_ESTABLISHED",
+  "runtime_operations": 0,
+  "tests_executed": 0,
+  "p_admitted": false
+}

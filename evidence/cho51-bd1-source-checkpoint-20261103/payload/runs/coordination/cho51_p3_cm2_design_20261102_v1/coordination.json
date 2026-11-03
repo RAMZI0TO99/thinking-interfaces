@@ -1,0 +1,61 @@
+{
+  "tests_executed": 0,
+  "current_docs": [
+    "AGENTS.md",
+    "HANDOFF.md",
+    "AGENT_COORDINATION.md",
+    "CONTINUE_HERE.md",
+    "PHASE2_START_HERE.md",
+    "README.md",
+    "WINDOWS_SETUP.md",
+    "docs/phase2/README.md",
+    "docs/where are we/README.md",
+    "docs/where are we/PROJECT_PLAN.md",
+    "docs/where are we/PROGRESS_REPORT.md",
+    "docs/where are we/EVIDENCE_INDEX.md"
+  ],
+  "worker": {
+    "name": "cm2_effect_inventory",
+    "file": "docs/phase2/cho51_p3_component_runtime_v2/method-effects.json"
+  },
+  "design_files": [
+    "README.md",
+    "method-effects.json",
+    "phase-edges.json",
+    "loader.md",
+    "results.md",
+    "feasibility.md",
+    "readiness.json",
+    "qualification.json"
+  ],
+  "schema": "cho51_cm2_design_coordination_v1",
+  "p_enabled": false,
+  "reviewer": "qd_source_review",
+  "closeout_reviewer": "qd_closeout_review",
+  "publisher": "project_root only",
+  "phase_records": [
+    "coordination.json",
+    "preservation-baseline.json",
+    "candidate-v1.json",
+    "design-review-v1.json",
+    "candidate-v2.json",
+    "design-review-v2.json",
+    "candidate-v3.json",
+    "design-review-v3.json",
+    "candidate-v4.json",
+    "design-review-v4.json",
+    "root-design-acceptance.json",
+    "final-static-checks.json",
+    "closeout-review.json"
+  ],
+  "commit_push": false,
+  "max_active_peers": 1,
+  "conditional_drafts": "draft-v1/v2/v3 changed frozen files with manifest before correction",
+  "runtime_admitted": false,
+  "root_ownership": [
+    "all design files except method-effects.json",
+    "phase metadata",
+    "current docs and pre-step archive"
+  ],
+  "scope": "Source-only effect/output feasibility analysis and retained-loader/result-producer design; no runtime or Git"
+}

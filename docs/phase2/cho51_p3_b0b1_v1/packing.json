@@ -1,0 +1,1050 @@
+{
+  "schema": "cho51_bd_packing_v1",
+  "status": "CONDITIONAL_REPRESENTATION_PLAN_ONLY",
+  "scope": "E1_PROTOCOL exact normal/failure source domain; no full Q/S operation or native completeness proof",
+  "predecessor": {
+    "path": "docs/phase2/cho51_p3_pc1_budget_20261103.json",
+    "pin": {
+      "bytes": 26235,
+      "sha256": "5db23986fe47f138063965748c9297a3487e1f90bee4f68c16b3fc2d6aad481e"
+    }
+  },
+  "pc1_widths": [
+    {
+      "kind": "B",
+      "fieldwise_maximum_object": {
+        "schema": "cho51_pc_binding_projection_v1",
+        "operation": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+        "basis": {
+          "bytes": 4194304,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "source": {
+          "bytes": 4194304,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "runtime": {
+          "bytes": 4194304,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "actors": {
+          "bytes": 4194304,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "clock_domain": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+        "acquired": 65535,
+        "native_witness": {
+          "bytes": 131072,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        }
+      },
+      "canonical_upper_bytes": 688,
+      "conservative_valid_bytes": 1024,
+      "input_guard_bytes": 8192,
+      "semantic_example": false
+    },
+    {
+      "kind": "I",
+      "fieldwise_maximum_object": {
+        "schema": "cho51_pc_ingress_projection_v1",
+        "operation": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+        "binding": {
+          "bytes": 8192,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "state": "TERMINAL",
+        "cutoff": 65535,
+        "entered": 65535,
+        "committed": 65535,
+        "refused": 65535,
+        "pending": 65535,
+        "late": 65535,
+        "first_fault": "REFUSAL_HELPER",
+        "event_records": 4096,
+        "events": {
+          "bytes": 2097152,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "invocation_map": {
+          "bytes": 131072,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "native_witness": {
+          "bytes": 131072,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        }
+      },
+      "canonical_upper_bytes": 684,
+      "conservative_valid_bytes": 1024,
+      "input_guard_bytes": 8192,
+      "semantic_example": false
+    },
+    {
+      "kind": "C",
+      "fieldwise_maximum_object": {
+        "schema": "cho51_pc_capture_projection_v1",
+        "operation": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+        "binding": {
+          "bytes": 8192,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "stdout": {
+          "bytes": 1048576,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "stderr": {
+          "bytes": 1048576,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "stdout_eof": false,
+        "stderr_eof": false,
+        "stdout_chunks": 65535,
+        "stderr_chunks": 65535,
+        "merge_records": 65535,
+        "ledger": {
+          "bytes": 131072,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "raw_tool_role": "closeout/raw_tool_return",
+        "external_return_role": "closeout/external_return",
+        "status": "INCOMPLETE",
+        "native_witness": {
+          "bytes": 131072,
+          "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        }
+      },
+      "canonical_upper_bytes": 833,
+      "conservative_valid_bytes": 1024,
+      "input_guard_bytes": 8192,
+      "semantic_example": false
+    }
+  ],
+  "width_derivation": "Fixed canonical ASCII keys/punctuation/LF; each field independently takes its largest valid encoded width. Fieldwise object need not satisfy cross-field semantics. These maxima upper-bound valid B/I/C, not arbitrary malformed 8192-byte input. Quotes/wrappers separately charged; no parser/domain change.",
+  "wire": {
+    "byte_order": "little-endian",
+    "request_bytes": 96,
+    "response_bytes": 80,
+    "request_fields": [
+      [
+        "magic",
+        4
+      ],
+      [
+        "version",
+        2
+      ],
+      [
+        "opcode",
+        2
+      ],
+      [
+        "O",
+        16
+      ],
+      [
+        "nonce",
+        16
+      ],
+      [
+        "scenario",
+        2
+      ],
+      [
+        "flags",
+        2
+      ],
+      [
+        "payload_length",
+        4
+      ],
+      [
+        "payload",
+        32
+      ],
+      [
+        "reserved0",
+        16
+      ]
+    ],
+    "response_fields": [
+      [
+        "magic",
+        4
+      ],
+      [
+        "version",
+        2
+      ],
+      [
+        "flags",
+        2
+      ],
+      [
+        "O",
+        16
+      ],
+      [
+        "nonce",
+        16
+      ],
+      [
+        "result",
+        4
+      ],
+      [
+        "payload_length",
+        4
+      ],
+      [
+        "sha256_payload",
+        32
+      ]
+    ],
+    "expected_opcode": "ECHO_SHA256",
+    "first_scenario": "NOMINAL_ECHO",
+    "payload_bytes": 32,
+    "reserved_zero": true,
+    "implementation_numeric_tag_assignment": "OPEN before codec implementation freeze; no native packet currently dispatchable"
+  },
+  "resource_record": {
+    "bytes": 80,
+    "layout": [
+      {
+        "field": "sequence",
+        "offset": 0,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "kind",
+        "offset": 2,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "actor",
+        "offset": 3,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "presence_status",
+        "offset": 4,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "first_failed_call",
+        "offset": 6,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "reserved0a",
+        "offset": 7,
+        "bytes": 1,
+        "type": "zero"
+      },
+      {
+        "field": "qpc_begin",
+        "offset": 8,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "qpc_end",
+        "offset": 16,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "available_ram",
+        "offset": 24,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "free_disk",
+        "offset": 32,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "outer_private",
+        "offset": 40,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "supervisor_private",
+        "offset": 48,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "child_private",
+        "offset": 56,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "job_aggregate",
+        "offset": 64,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "native_status",
+        "offset": 72,
+        "bytes": 4,
+        "type": "u32"
+      },
+      {
+        "field": "ordinal",
+        "offset": 76,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "reserved0b",
+        "offset": 78,
+        "bytes": 2,
+        "type": "zero"
+      }
+    ],
+    "base64_chars": 108,
+    "direct_json_with_separator": 111,
+    "direct_reservation": 112,
+    "one_extra_json_layer_reservation": 128,
+    "sample_values": "Original native values only; explicit presence/success flags; stop at first failed query with immediately captured status/call id; unqueried fields absent, never claimed measured zero",
+    "clock": "independently bound nonnegative QPC interval, begin<=end",
+    "unknown_tags": "REFUSE",
+    "reserved": "must be zero",
+    "tables": "Closed kind/actor/call/flag/order tables must be enumerated in implementation; current layout not an operational codec"
+  },
+  "capture_record": {
+    "bytes": 64,
+    "layout": [
+      {
+        "field": "sequence",
+        "offset": 0,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "kind",
+        "offset": 2,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "actor",
+        "offset": 3,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "channel",
+        "offset": 4,
+        "bytes": 1,
+        "type": "u8"
+      },
+      {
+        "field": "reserved0a",
+        "offset": 5,
+        "bytes": 1,
+        "type": "zero"
+      },
+      {
+        "field": "flags",
+        "offset": 6,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "ordinal",
+        "offset": 8,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "related_invocation",
+        "offset": 10,
+        "bytes": 2,
+        "type": "u16"
+      },
+      {
+        "field": "native_status",
+        "offset": 12,
+        "bytes": 4,
+        "type": "u32"
+      },
+      {
+        "field": "qpc_begin",
+        "offset": 16,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "qpc_end",
+        "offset": 24,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "offset",
+        "offset": 32,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "length",
+        "offset": 40,
+        "bytes": 8,
+        "type": "u64"
+      },
+      {
+        "field": "auxiliary",
+        "offset": 48,
+        "bytes": 4,
+        "type": "u32"
+      },
+      {
+        "field": "reserved0b",
+        "offset": 52,
+        "bytes": 12,
+        "type": "zero"
+      }
+    ],
+    "base64_chars": 88,
+    "direct_json_with_separator": 91,
+    "one_extra_layer_upper": 94,
+    "reservation": 96,
+    "range": "offset/length exact named role/source, checked additions and bounds",
+    "count_domain": "Original native read/invocation/control domain, not model apply counters",
+    "tables": "Closed channel/kind/actor/flag/status/aux tables and role bindings required before implementation adoption"
+  },
+  "encoding": "Canonical base64 with padding and unused bits checked via decode/re-encode; direct arrays or exactly one declared metadata text escape layer. No arbitrary nested dumps. Encoding does not authenticate observations.",
+  "entry_source_bounds": {
+    "s0_stdout": 128,
+    "s0_stderr": 128,
+    "g0_stdout": 256,
+    "g0_stderr": 128,
+    "complete_h0_tool_text": 8192,
+    "complete_external_text": 4096,
+    "tool_chunks_min": 1,
+    "tool_chunks_max": 64,
+    "all_failure_loader_cancel_paths_included": true,
+    "transport_encoding": "H0 complete text envelope includes lossless encoding of all G0 binary stream bytes plus complete actual tool framing; 8192 includes it all",
+    "unknown_original_population": "REFUSE_BEFORE_EFFECTS",
+    "unexpected_overflow": "Consume/refuse and retain actual prefix; never accept truncation",
+    "status_loops": "Explicit finite event-loop bound required; zero-byte completions cannot be bounded by byte volume"
+  },
+  "resource_schedule": {
+    "periodic_ms": 100,
+    "whole_periodic_positions": 901,
+    "startup_positions": 2,
+    "transition_positions": 32,
+    "whole_total": 935,
+    "whole_reserved": 1024,
+    "startup_gap_min_ms": 200,
+    "freshness_max_ms": 250,
+    "transition_sites": "Enumerate all actual sites before implementation acceptance; any additional required site needs preserved-capacity review",
+    "catchup_fabrication": false,
+    "guard_on_missed_required_sample": "STOP_REFUSE",
+    "suffix_deadline": "min(T0+90, observed original O return+25 seconds)",
+    "suffix_periodic_positions": 251,
+    "suffix_transition_positions": 32,
+    "suffix_total": 283,
+    "suffix_reserved": 320
+  },
+  "conditional_regions": [
+    {
+      "role": "caller/guard-closure.json",
+      "cap": 131072,
+      "components": [
+        {
+          "count": 1024,
+          "bytes": 114688,
+          "bytes_each": 112,
+          "name": "resource rows"
+        },
+        {
+          "count": 2,
+          "bytes": 12288,
+          "bytes_each": 6144,
+          "name": "B/I valid text, one 6x layer"
+        },
+        {
+          "count": 1,
+          "bytes": 4096,
+          "bytes_each": 4096,
+          "name": "closed wrapper"
+        }
+      ],
+      "total": 131072,
+      "wrapper_fields": [
+        "schema",
+        "operation",
+        "basis_pin",
+        "source_pin",
+        "runtime_pin",
+        "actors_pin",
+        "binding_text",
+        "ingress_text",
+        "resource_records",
+        "resource_count",
+        "resource_pin",
+        "first_fault",
+        "owner",
+        "cutoff",
+        "closure_status"
+      ],
+      "wrapper_domain": "Fixed ASCII identifiers/enums<=64 chars, 36-char UUID, pins bytes<=4194304/digest64, counters<=65535; payload values excluded from4096 wrapper allowance and separately counted",
+      "original_owner": "external guard owner",
+      "complete_wrapper_schema_implemented": false
+    },
+    {
+      "role": "caller/journal.ndjson",
+      "cap": 131072,
+      "components": [
+        {
+          "count": 384,
+          "bytes": 36864,
+          "bytes_each": 96,
+          "name": "capture/control rows"
+        },
+        {
+          "count": 1,
+          "bytes": 4096,
+          "bytes_each": 4096,
+          "name": "header"
+        }
+      ],
+      "total": 40960,
+      "population": {
+        "ingress": 32,
+        "status": 16,
+        "s0_positive_reads": 256,
+        "lifecycle": 64,
+        "header_other": 16
+      },
+      "original_owner": "outer caller"
+    },
+    {
+      "role": "closeout/journal_analysis",
+      "cap": 131072,
+      "components": [
+        {
+          "count": 528,
+          "bytes": 50688,
+          "bytes_each": 96,
+          "name": "host rows"
+        },
+        {
+          "count": 1,
+          "bytes": 32768,
+          "bytes_each": 32768,
+          "name": "wrapper and analysis"
+        }
+      ],
+      "total": 83456,
+      "population": {
+        "lifecycle": 64,
+        "g0_positive_reads": 384,
+        "tool_chunks": 64,
+        "status": 16
+      },
+      "original_owner": "Root M publisher under H0"
+    },
+    {
+      "role": "closeout/timing_join",
+      "cap": 65536,
+      "components": [
+        {
+          "count": 320,
+          "bytes": 40960,
+          "bytes_each": 128,
+          "name": "suffix resources"
+        },
+        {
+          "count": 1,
+          "bytes": 24576,
+          "bytes_each": 24576,
+          "name": "wrapper"
+        }
+      ],
+      "total": 65536,
+      "original_owner": "Root M publisher under H0"
+    },
+    {
+      "role": "closeout/raw_tool_return",
+      "cap": 1048576,
+      "components": [
+        {
+          "count": 8192,
+          "bytes": 49152,
+          "bytes_each": 6,
+          "name": "complete H0 text one 6x escape"
+        },
+        {
+          "count": 64,
+          "bytes": 256,
+          "bytes_each": 4,
+          "name": "chunk syntax"
+        },
+        {
+          "count": 1,
+          "bytes": 4096,
+          "bytes_each": 4096,
+          "name": "envelope"
+        }
+      ],
+      "total": 53504,
+      "original_owner": "Root M publisher under H0"
+    },
+    {
+      "role": "closeout/external_return",
+      "cap": 65536,
+      "components": [
+        {
+          "count": 4096,
+          "bytes": 24576,
+          "bytes_each": 6,
+          "name": "complete external text one 6x escape"
+        },
+        {
+          "count": 1,
+          "bytes": 4096,
+          "bytes_each": 4096,
+          "name": "envelope"
+        }
+      ],
+      "total": 28672,
+      "original_owner": "Root M publisher under H0"
+    }
+  ],
+  "other_wrappers": "Header/analysis/envelope allowances are bounded budgets, not established compatibility with all required fields. Closed schemas, complete populations and exactly specified escape layers require implementation review/qualification before entry.",
+  "caller_return_summary": {
+    "writer": "outer caller",
+    "summary_upper_bytes": 49152,
+    "inner_cap_each": 8192,
+    "fit": "CONDITIONAL_SUMMARY_RESERVATION_ONLY",
+    "escape_factor": 6,
+    "projection_count": 1,
+    "role": "caller/return.json",
+    "wrapper_remainder_cap": 16384,
+    "additional_escape_layers": 1,
+    "role_cap": 65536,
+    "projections": [
+      "C"
+    ]
+  },
+  "projection_scope": "E1 does not fabricate collection/events or CM terminal. I may represent BOUND/REVOKED/DRAINED prefix only; FROZEN/TERMINAL needs nonempty full event grammar absent in E1. G0 pre-exit C is INCOMPLETE and never a claim of its own later original return/host/M closure. Width theorem is not a claim that E1 produces a full PC1 terminal join.",
+  "inherited_report_reservations": [
+    {
+      "relative_path_template": "caller/collection.json",
+      "partition": "caller",
+      "writer": "collection adapter",
+      "reserved_bytes": 1048576,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/events.ndjson",
+      "partition": "caller",
+      "writer": "event producer",
+      "reserved_bytes": 2097152,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/stdout.raw",
+      "partition": "caller",
+      "writer": "external capture owner",
+      "reserved_bytes": 1048576,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/stderr.raw",
+      "partition": "caller",
+      "writer": "external capture owner",
+      "reserved_bytes": 1048576,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/return.json",
+      "partition": "caller",
+      "writer": "outer caller",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/journal.ndjson",
+      "partition": "caller",
+      "writer": "outer caller",
+      "reserved_bytes": 131072,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/input-inventory.json",
+      "partition": "caller",
+      "writer": "outer caller",
+      "reserved_bytes": 4194304,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/guard-closure.json",
+      "partition": "caller",
+      "writer": "external guard owner",
+      "reserved_bytes": 131072,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/tables.json",
+      "partition": "caller",
+      "writer": "fixed-table adapter",
+      "reserved_bytes": 1048576,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "caller/evidence-join.json",
+      "partition": "caller",
+      "writer": "outer join recorder",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/input-manifest.json",
+      "partition": "supervisor",
+      "writer": "supervisor",
+      "reserved_bytes": 4194304,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/journal.ndjson",
+      "partition": "supervisor",
+      "writer": "supervisor",
+      "reserved_bytes": 131072,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/command.json",
+      "partition": "supervisor",
+      "writer": "supervisor",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/output-census.json",
+      "partition": "supervisor",
+      "writer": "external census owner",
+      "reserved_bytes": 131072,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/loaded-code.json",
+      "partition": "supervisor",
+      "writer": "external code observer",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/return-closure.json",
+      "partition": "supervisor",
+      "writer": "supervisor",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "supervisor/producer-terminal.json",
+      "partition": "supervisor",
+      "writer": "external terminal observer",
+      "reserved_bytes": 65536,
+      "publisher_role": null,
+      "transaction": "original parent O"
+    },
+    {
+      "relative_path_template": "closeout/admission_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 1048576,
+      "publisher_role": "admission",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/scope_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "scope",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/external_return_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "external_return",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/raw_tool_return_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 1048576,
+      "publisher_role": "raw_tool_return",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/journal_analysis_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 131072,
+      "publisher_role": "journal_analysis",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/actual_review_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 131072,
+      "publisher_role": "actual_review",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/root_disposition_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 131072,
+      "publisher_role": "root_disposition",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/source_recheck_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "source_recheck",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/runtime_recheck_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "runtime_recheck",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/output_census_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 131072,
+      "publisher_role": "output_census",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/cleanup_assessment_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "cleanup_assessment",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/timing_join_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "timing_join",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/allocation_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "allocation",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/source_review_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 131072,
+      "publisher_role": "source_review",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/contract_adoption_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 16384,
+      "publisher_role": "contract_adoption",
+      "transaction": "distinct once-only metadata M"
+    },
+    {
+      "relative_path_template": "closeout/closeout_<M>.json",
+      "partition": "closeout",
+      "writer": "Root fixed-slot publisher under original host authority",
+      "reserved_bytes": 65536,
+      "publisher_role": "closeout",
+      "transaction": "distinct once-only metadata M"
+    }
+  ],
+  "inherited_report_totals": {
+    "supervisor_bytes": 4718592,
+    "bytes": 18890752,
+    "caller_files": 10,
+    "caller_bytes": 10878976,
+    "supervisor_files": 7,
+    "files": 33,
+    "closeout_files": 16,
+    "closeout_bytes": 3293184
+  },
+  "report_files": 33,
+  "report_bytes": 18890752,
+  "closeout_roles": 16,
+  "closeout_reserved_bytes": 3293184,
+  "reserved_unused_e1": [
+    "caller/collection.json",
+    "caller/events.ndjson",
+    "caller/tables.json",
+    "caller/evidence-join.json",
+    "supervisor/producer-terminal.json"
+  ],
+  "reserved_unused_rule": "Record explicit absence in expected E1 census; keep reservation and writer mapping, never synthesize discovery/CM results or transfer space",
+  "confirmations": {
+    "each_encoded_cap": 8192,
+    "source_review_inside": "contract_adoption",
+    "actual_review_inside": "root_disposition",
+    "contract_adoption_whole_cap": 16384,
+    "independent_remainder_and_envelope_check": true
+  },
+  "original_guards": {
+    "process_mib": 512,
+    "raw_stdout_bytes": 1048576,
+    "inner_auxiliary_files": 16,
+    "gpus_hidden": true,
+    "closeout_bytes": 4194304,
+    "inner_fixture_files": 32,
+    "cleanup_seconds": 5,
+    "library_threads": 1,
+    "sample_gap_ms": 200,
+    "work_seconds": 60,
+    "native_seconds": 12,
+    "global_files": 256,
+    "closeout_files": 16,
+    "caller_files": 40,
+    "external_return_bytes": 65536,
+    "global_bytes": 67108864,
+    "raw_stderr_bytes": 1048576,
+    "per_file_bytes": 8388608,
+    "inner_fixture_bytes": 4194304,
+    "freshness_ms": 250,
+    "supervisor_files": 40,
+    "startup_seconds": 5,
+    "inner_auxiliary_bytes": 901120,
+    "caller_bytes": 20971520,
+    "fault_seconds": 2,
+    "fixtures_files": 160,
+    "cpu_threads": 1,
+    "available_ram_gib": 4,
+    "supervisor_bytes": 8388608,
+    "fixtures_bytes": 33554432,
+    "child_seconds": 55,
+    "whole_seconds": 90,
+    "free_disk_gib": 20,
+    "job_mib": 768,
+    "hard_seconds": 65,
+    "suite_seconds": 40,
+    "raw_tool_return_bytes": 1048576
+  },
+  "time_reserve": {
+    "child_deadline": "min(T0+55,T0+60-F-M)",
+    "outside_clock_work_allowed": false,
+    "cleanup": "min(original fault+5, applicable original hard deadline)",
+    "F": null,
+    "T0_reset_allowed": false,
+    "M": null,
+    "per_stage_worst_cases": null
+  },
+  "whole_operation_gates": [
+    {
+      "id": "WO-G01",
+      "requirement": "Exact operation/control membership and authoritative source/runtime/dependency adoption",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G02",
+      "requirement": "Complete recursive normal/failure/type/formatter/import/fixture/effect domains",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G03",
+      "requirement": "Original provider/lifecycle/host/parent/ingress/cutoff/observer/custody mapping",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G04",
+      "requirement": "All allocations, simultaneous lifetimes and complete process/Job peak memory",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G05",
+      "requirement": "Every write, report/failure/capture/framing/EOF/tool witness and finite noncircular closeout packing",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G06",
+      "requirement": "Every stage/case/control worst-case cost, failed cleanup and F/M under original clocks",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    },
+    {
+      "id": "WO-G07",
+      "requirement": "Implemented original successors, exact wrapper/capability/control qualification and independently accepted actual results",
+      "status": "OPEN_NOT_ESTABLISHED",
+      "admission_blocks": true
+    }
+  ],
+  "final_retention": {
+    "status": "OPEN_NOT_ESTABLISHED",
+    "requirement": "Original H0 witness after final charged M write covering all writer/handle/process/pipe/census/transport closure, retained without17th report, sidecar, self-pin or recursive self-closure",
+    "o_m_distinct": true,
+    "live_assertion_suffices": false,
+    "current_tool_session_assumed_provider": false,
+    "complete_e1_acceptance_blocked": true
+  },
+  "manifest_population": "Existing caller/input-inventory and supervisor/input-manifest caps remain; build/source/runtime/actor closure and all read/hash costs OPEN, no free staging",
+  "all_failed_partial_temp_writes_charged": true,
+  "role_transfer_allowed": false,
+  "extra_report_allowed": false,
+  "representation_fit": "CONDITIONAL_FOR_DECLARED_E1_DOMAIN",
+  "complete_capture_closure_packing": "NOT_ESTABLISHED",
+  "whole_operation_feasibility": "NOT_ESTABLISHED",
+  "native_authority": false,
+  "tests_executed": 0,
+  "runtime_admitted": false,
+  "p_enabled": false
+}

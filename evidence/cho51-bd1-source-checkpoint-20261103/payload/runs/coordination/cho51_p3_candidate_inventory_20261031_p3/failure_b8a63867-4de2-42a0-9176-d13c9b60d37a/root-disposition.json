@@ -1,0 +1,19 @@
+{
+  "final_verification_completed": false,
+  "created_utc": "2026-10-31T15:43:28.1527132Z",
+  "schema": "cho51_candidate_inventory_p_failure_v1",
+  "operation_id": "b8a63867-4de2-42a0-9176-d13c9b60d37a",
+  "retry_same_attempt_allowed": false,
+  "successor": "LP8/LQ8/lplan5 pinned stdlib preloads/readiness before unchanged strict audit; fresh independent review and Q4 then separate P4",
+  "cause_limit": "Runtime rejected compilation; specific tokenize/namedtuple/eval path is source inference, not retained traceback",
+  "partial_artifacts_accepted_as_physical_preparation": false,
+  "author": "project_root",
+  "status": "FAILED_CONSUMED_UNACCEPTED",
+  "owned_closure_accepted": true,
+  "actual_review": {
+    "path": "runs/coordination/cho51_p3_candidate_inventory_20261031_p3/failure_b8a63867-4de2-42a0-9176-d13c9b60d37a/actual-review.json",
+    "sha256": "48b6701865205ab408933805f7a9cd49b5a67bac542a353242f034e27168c58a",
+    "bytes": 19213
+  },
+  "scientific_admission": false
+}

@@ -1,0 +1,30 @@
+{
+  "historical_operation_released": false,
+  "q1_status": "FAILED_CONSUMED_CUSTODY_UNKNOWN",
+  "timestamp_controls_passed": 8,
+  "source_and_attempt_frozen": true,
+  "actual_review": {
+    "path": "actual-review.json",
+    "bytes": 50284,
+    "sha256": "f89980119cd3d8b6ed0d277fa58c23ed57a01cfaf67e3b74a17d279112849e62"
+  },
+  "suite_passed": 69,
+  "scientific_admission": false,
+  "scope": "Executed subset and original outer/inner Job/process/pipe/file/guard closure accepted; aggregate refused",
+  "launch_authorized": false,
+  "restart_qualified": false,
+  "schema": "cho51_q_root_failure_disposition_v1",
+  "successor": "Distinct Q4 full no-follow stat reader repair and real hardlink enumeration regression; source review/adoption/new admission/actual review required",
+  "complete_dependency_closure": false,
+  "historical_custody_closed": false,
+  "boundary_qualified": false,
+  "status": "FAILED_CONSUMED_SUITE_ERRORS_OWNED_LIFECYCLE_CLOSED",
+  "historical_retry_allowed": false,
+  "native_fault_controls_executed": 0,
+  "created_utc": "2026-10-29T10:16:22.0979197Z",
+  "operation_id": "5406df40-61dc-4a83-9e36-6501a1887688",
+  "author": "project_root",
+  "suite_executed": 72,
+  "retry_allowed": false,
+  "suite_errors": 3
+}
